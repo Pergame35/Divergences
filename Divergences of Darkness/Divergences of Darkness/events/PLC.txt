@@ -1,0 +1,159 @@
+country_event = { 
+	id = 202201 #Treaty of Hadiach
+	title = "POL1.T"
+	desc = "POL1.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "What will the Ruthenians decide ?"
+	random_list = { 
+	50 = { country_event = 202202 }
+	50 = { country_event = 202203 }
+		}
+	}
+
+}
+
+country_event = { 
+	id = 202202 #Treaty of Hadiach : Accepted
+	title = "POL2.T"
+	desc = "POL2.D"
+	picture = "PLC_RUT"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Long live the Commonwealth !"
+	add_accepted_culture = ruthenian
+	RUT = { all_core = { add_core = THIS } }
+	prestige = 20
+	}
+}
+
+country_event = { 
+	id = 202203 #Treaty of Hadiach : Refusal
+	title = "POL3.T"
+	desc = "POL3.D"
+	picture = "Cossacks"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Cossack bastards !"
+	any_pop = { limit = { culture = ruthenian } militancy = 4 consciousness = 5 }
+	prestige = -20
+	set_country_flag = refused_hadiach
+	}
+}
+
+country_event = { 
+	id = 202204 #Lithuanian port
+	title = "POL4.T"
+	desc = "POL4.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We must bow to the Scandinavians ..."
+	365 = {
+			secede_province = FROM
+			}
+		}
+	}
+
+country_event = { 
+	id = 202205 #Ruthenian lands
+	title = "POL5.T"
+	desc = "POL5.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We must bow to the Russians ..."
+	any_owned = { 
+	limit = { is_core = RUS }
+		secede_province = FROM
+			}
+	}
+}
+
+country_event = { 
+	id = 202206 #Deluge
+	title = "POL6.T"
+	desc = "POL6.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "How could we allow that ..."
+	release_vassal = LIT 
+	release_vassal = UKR 
+	release_vassal = RUT
+	any_owned = {  
+		limit = { region = RUS_955}
+		secede_province = RUT
+		}
+	any_owned = {
+				limit = {
+					is_core = PLC
+				}
+				remove_core = PLC
+			}
+	any_country = {
+			any_owned = {
+				limit = {
+					is_core = PLC
+				}
+				remove_core = PLC
+			}
+		}
+	change_tag = POL
+	
+	}
+}
+
+country_event = { 
+	id = 202210 #Breakup of the Commonwealth
+	title = "POL10.T"
+	desc = "POL10.D"
+	
+	major = yes
+	
+	trigger = { 
+	tag = PLC 
+	year = 1870 
+	NOT = { has_country_flag = lublin_new }
+	}
+	
+	mean_time_to_happen = { 
+	months = 50 
+	}
+	
+	option = { 
+	name = "How could we allow that ..."
+	release_vassal = LIT 
+	release_vassal = UKR 
+	release_vassal = RUT
+	any_owned = {  
+		limit = { region = RUS_955}
+		secede_province = RUT
+		}
+	any_owned = {
+				limit = {
+					is_core = PLC
+				}
+				remove_core = PLC
+			}
+	any_country = {
+			any_owned = {
+				limit = {
+					is_core = PLC
+				}
+				remove_core = PLC
+			}
+		}
+	change_tag = POL
+	
+	}
+}

@@ -1,0 +1,13 @@
+owner = AMA
+controller = AMA
+add_core = AMA
+add_core = EQN
+trade_goods = tropical_wood
+life_rating = 35
+terrain = swamp_jungle
+                          
+state_building = {
+	level = 1 
+	building = tropical_lumber_mill
+	upgrade = yes
+}

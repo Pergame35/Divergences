@@ -1,0 +1,191 @@
+leader = {
+	name = "Zhu Yuanzhang"
+	type = land
+	date = 1836.1.1
+	personality = tactful
+	background = rags_to_riches
+}
+
+leader = {
+	name = "Mu Ying"
+	type = land
+	date = 1836.1.1
+	personality = resourceful
+	background = inventor
+}
+
+leader = {
+	name = "Wang Jiawei"
+	type = sea
+	date = 1836.1.1
+	personality = indecisive
+	background = diplomat
+}
+
+army = {
+	name = "1st Yellow Standard Army"
+	location = 2221
+	regiment = {
+		name= "1st Yellow Standard"
+		type = infantry
+		home = 2221
+	}
+
+	regiment = {
+		name= "2nd Yellow Standard"
+		type = infantry
+		home = 2221
+	}
+
+	regiment = {
+		name= "3rd Yellow Standard"
+		type = infantry
+		home = 2221
+	}
+	
+	regiment = {
+		name= "4th Yellow Standard"
+		type = infantry
+		home = 2221
+	}
+
+	regiment = {
+		name= "5th Yellow Standard"
+		type = infantry
+		home = 2221
+	}
+
+	regiment = {
+		name= "6th Yellow Standard"
+		type = infantry
+		home = 2221
+	}
+	
+	regiment = {
+		name= "7th Yellow Standard"
+		type = infantry
+		home = 2221
+	}
+
+	regiment = {
+		name= "8th Yellow Standard"
+		type = hussar
+		home = 2221
+	}
+
+	regiment = {
+		name= "9th Yellow Standard"
+		type = hussar
+		home = 2221
+	}
+	
+	regiment = {
+		name= "10th Yellow Standard"
+		type = hussar
+		home = 2221
+	}
+}
+
+army = {
+	name = "2nd Yellow Standard Army"
+	location = 1539
+
+	regiment = {
+		name= "11th Yellow Standard"
+		type = infantry
+		home = 1539
+	}
+
+	regiment = {
+		name= "12th Yellow Standard"
+		type = infantry
+		home = 1539
+	}
+	
+	regiment = {
+		name= "13th Yellow Standard"
+		type = infantry
+		home = 1539
+	}
+
+	regiment = {
+		name= "14th Yellow Standard"
+		type = infantry
+		home = 1539
+	}
+
+	regiment = {
+		name= "15th Yellow Standard"
+		type = infantry
+		home = 1539
+	}
+	
+	regiment = {
+		name= "16th Yellow Standard"
+		type = infantry
+		home = 1539
+	}
+
+	regiment = {
+		name= "17th Yellow Standard"
+		type = infantry
+		home = 1539
+	}
+
+	regiment = {
+		name= "18th Yellow Standard"
+		type = hussar
+		home = 1539
+	}
+
+	regiment = {
+		name= "19th Yellow Standard"
+		type = hussar
+		home = 1539
+	}
+
+	regiment = {
+		name= "20th Yellow Standard"
+		type = hussar
+		home = 1539
+	}
+}
+
+navy = {
+	name = "Imperial Fleet"
+	location = 1606
+	ship = {
+		name= "Nanjing"
+		type = frigate
+	}
+
+	ship = {
+		name= "Ming"
+		type = frigate
+	}
+
+	ship = {
+		name= "Jiangsu"
+		type = frigate
+	}
+
+	ship = {
+		name= "Guangzhou"
+		type = frigate
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+}

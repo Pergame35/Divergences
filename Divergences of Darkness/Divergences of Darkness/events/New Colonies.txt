@@ -1,0 +1,73 @@
+#########################################################
+#														#
+#      			   Colonial Core Spread					#
+#														#
+#########################################################
+
+#South Africa
+province_event = {
+	id = 98900
+	title = "EVTNAME98800"
+	desc = "EVTDESC98900"
+	
+	trigger = {
+		OR = {
+			region = ENG_2096
+			region = ENG_2087
+			region = ENG_2092
+			region = ENG_2096
+			region = ORA_2103
+			region = TRN_2108
+			region = ZUL_2113
+			region = ENG_2083
+			region = POR_2049
+			region = ENG_2097
+			region = ENG_2074
+			region = GRQ_2081
+			region = ENG_2078
+		}
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = SAF
+		}
+		owner = {
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 2087 }
+				SAF = { exists = no }
+			}
+			SAF = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+		NOT = {
+			is_core = SAF
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+		modifier = {
+			factor = 5
+			region = ENG_2083
+		}
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = SAF }
+				}
+				add_core = SAF
+				any_pop = { militancy = -3 }
+			}
+		}
+	}
+}

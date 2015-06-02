@@ -1,0 +1,33 @@
+owner = SCA
+controller = SCA
+add_core = SCA
+add_core = SCO
+trade_goods = copper
+life_rating = 35
+naval_base = 2 
+terrain = marginal_farmland
+state_building = {
+	level = 1
+	building = steamer_shipyard
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = lumber_mill
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = liquor_distillery
+	upgrade = yes
+}
+state_building = {
+	level = 6
+	building = clipper_shipyard
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = gunpowder_factory
+	upgrade = yes
+}

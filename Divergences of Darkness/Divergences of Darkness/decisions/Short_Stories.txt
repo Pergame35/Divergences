@@ -1,0 +1,21 @@
+political_decisions = { 
+	DUA_SS = { 
+	alert = no 
+	
+	potential = { 
+	tag = DUA 
+	}
+	
+	allow = { 
+	year = 1836
+		}
+		
+	effect = { 
+	country_event = 145001 
+		}
+	ai_will_do = {
+				factor = 0
+			}	
+	}
+
+}

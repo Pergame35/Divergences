@@ -1,0 +1,189 @@
+political_decisions = {
+	form_yugoslavia = {
+		potential = {
+			NOT = {	YUG = { exists = yes }	}
+			OR = {
+				primary_culture = croat
+				primary_culture = serb
+				primary_culture = slavonian
+				primary_culture = bulgarian
+				primary_culture = slovene
+				primary_culture = bosniak
+				}
+			NOT = { has_country_flag = macedon_greece }
+		}
+
+		allow = {
+			NOT = { war = yes }
+			NOT = { is_vassal = yes }
+			rank = 20
+			prestige = 50
+			771 = { owned_by = THIS }
+			783 = { owned_by = THIS }
+			2583 = { owned_by = THIS }
+			794 = { owned_by = THIS }
+			780 = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 20
+			change_tag = YUG
+			add_accepted_culture = croat
+			add_accepted_culture = serb
+			add_accepted_culture = slavonian
+			add_accepted_culture = slovene
+			add_accepted_culture = bosniak
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = THIS
+					in_sphere = THIS
+				}
+				country_event = 11101
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	claim_albania = {
+		potential = {
+			tag = YUG
+			NOT = { has_country_flag = yugalbania }
+		}
+
+		allow = {
+			NOT = { war = yes }
+			NOT = {	ALB = { exists = yes }	}
+			is_greater_power = yes
+			ALB = {
+				all_core = {
+						owned_by = THIS
+				}
+			}
+			YUG = {
+				all_core = {
+						owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 5
+			set_country_flag = yugalbania
+			add_accepted_culture = albanian
+			ALB = {
+				all_core = {
+					add_core = YUG
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	claim_bulgaria = {
+		potential = {
+			tag = YUG
+			NOT = { has_country_flag = yugbulgaria }
+		}
+
+		allow = {
+			NOT = { war = yes }
+			NOT = {	BUL = { exists = yes }	}
+			is_greater_power = yes
+			BUL = {
+				all_core = {
+						owned_by = THIS
+				}
+			}
+			YUG = {
+				all_core = {
+						owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 5
+			set_country_flag = yugbulgaria
+			add_accepted_culture = bulgarian
+			BUL = {
+				all_core = {
+					add_core = YUG
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	claim_greeks = {
+		potential = {
+			OR = {
+				tag = YUG
+				tag = SER
+			}
+			NOT = { has_country_flag = yuggreece }
+		}
+
+		allow = {
+			NOT = { war = yes }
+			is_greater_power = yes
+			YUG = {
+				all_core = {
+						owned_by = THIS
+				}
+			}
+			TUR_819 = {
+				owned_by = THIS
+			}
+			TUR_806 = {
+				owned_by = THIS
+			}
+			TUR_832 = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			prestige = 10
+			set_country_flag = yuggreece
+			add_accepted_culture = greek
+			TUR_819 = {
+				add_core = SER
+				add_core = YUG
+			}
+			TUR_806 = {
+				add_core = SER
+				add_core = YUG
+			}
+			TUR_832 = {
+				add_core = SER
+				add_core = YUG
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	integrate_serbia = { 
+	picture = "SERCRO_union"
+	potential = { 
+	tag = CRO 
+	SER = { vassal_of = THIS } 
+	}
+	
+	allow = { 
+	rank = 16 
+	OR = { 
+	year = 1850 
+	780 = { owned_by = THIS }
+		}
+	}
+	
+	effect = { 
+	country_event = 1400105
+	}
+	
+	}
+}

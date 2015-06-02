@@ -1,0 +1,488 @@
+# Bridge over Salzach
+country_event = {
+	id = 598000
+	title = "EVTNAME598000"
+	desc = "EVTDESC598000"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA598000"
+		relation = {
+			who = BOH
+			value = 350
+		}
+		relation = {
+			who = BRG
+			value = -100
+		}
+		relation = {
+			who = SCA
+			value = -100
+		}
+		relation = {
+			who = ARA
+			value = -100
+		}	
+		prestige = 15
+		BOH = { prestige = 15 }
+		set_global_flag = salzach
+		create_alliance = BOH
+		ai_chance = {
+			factor = 75
+			modifier = {
+					factor = 0.25
+					has_country_flag = meddle_in_italy
+				}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB598000"
+		prestige = -15
+		BOH = { prestige = -15 }
+		relation = {
+			who = BOH
+			value = -200
+		}
+		relation = {
+			who = BRG
+			value = 20
+		}
+		relation = {
+			who = SCA
+			value = 20
+		}
+		relation = {
+			who = ARA
+			value = 20
+		}
+		set_global_flag = salzachrefused
+		ai_chance = {
+			factor = 25
+			modifier = {
+					factor = 0	
+					NOT = { has_country_flag = meddle_in_italy }
+				}
+		}
+	}
+}
+
+# Partition of Venice
+country_event = {
+	id = 598001
+	title = "EVTNAME598001"
+	desc = "EVTDESC598001"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA598001"
+		any_owned = {
+			limit = {
+				is_core = AUS
+			}
+			secede_province = AUS
+		}
+		any_owned = {
+			limit = {
+				is_core = CYP
+			}
+			secede_province = DUA
+		}
+		release_vassal = GRE
+		release = GRE
+		any_owned = {
+			limit = {
+				is_core = GRE
+			}
+			secede_province = GRE
+		}
+		any_owned = {
+			limit = {
+				is_core = ATS
+			}
+			secede_province = ATS
+		}
+		any_country = {
+			any_owned = {
+					limit = {
+						NOT = { 	
+							province_id = 734
+							province_id = 735
+							province_id = 615
+							province_id = 729
+							province_id = 730
+							province_id = 731
+							province_id = 732
+							province_id = 733
+						}
+  						is_core = VEN
+					}
+  				remove_core = VEN
+			}
+		}
+		#any_country = { 
+		#	limit = {
+		#		is_releasable_vassal = yes
+		#		NOT = { tag = ITA }
+		#	}
+		#	country_event = 598002
+		#}
+		any_country = {
+			limit = {
+				NOT = { tag = ITA }
+			}
+			country_event = 598003
+		}
+	}
+}
+
+# Clean-up for Partition
+#country_event = {
+#
+#	id = 598002
+#	
+#	is_triggered_only = yes
+#
+#	title = "EVTNAME598002"
+#	desc = "EVTDESC598002"
+#	picture = "Administration"
+#
+#	option = {
+#		name = "EVTOPTA598002"
+#		FROM = { 
+#			release = THIS
+#		}
+#	}
+#}
+
+# Clean-up for Partition I
+country_event = {
+
+	id = 598003
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME598003"
+	desc = "EVTDESC598003"
+	picture = "Administration"
+
+	option = {
+		name = "EVTOPTA598003"
+		FROM = {
+			release_vassal = THIS
+			any_owned = {
+				limit = {
+					is_core = THIS
+					NOT = { is_core = FROM }
+				}
+				secede_province = THIS
+			}
+			country_event = 598004
+		}
+	}
+}
+
+# Clean-up for Partition II
+country_event = {
+
+	id = 598004
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME598004"
+	desc = "EVTDESC598004"
+	picture = "Administration"
+
+	option = {
+		name = "EVTOPTA598004"
+		
+		any_owned = {
+			limit = {
+				NOT = { is_core = THIS }
+			}
+			secede_province = DUA
+		}
+		random_country = {
+			limit = {
+				tag = AUS
+				OR = {
+					NOT = { DUA = { has_country_flag = meddle_in_italy } }
+					DUA = { war = yes }
+					DUA = { is_greater_power = no }
+					PRV = { 
+						all_core = { 
+							NOT = { owned_by = DUA }
+						}
+					}
+				}	
+			}
+			inherit = VEN
+			set_global_flag = death_of_venice
+		}
+		random_country = {
+			limit = {
+				tag = DUA
+				has_country_flag = meddle_in_italy
+				NOT = { war = yes }
+				is_greater_power = yes
+				PRV = { 
+					all_core = { 
+						owned_by = DUA
+					}
+				}
+			}
+			set_country_flag = letsthinkaboutit
+		}
+	}
+}
+
+# French Decision
+country_event = {
+
+	id = 598005
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME598005"
+	desc = "EVTDESC598005"
+	picture = "Administration"
+
+	option = {
+		name = "EVTOPTA598005"
+		prestige = 5
+		AUS = {
+			inherit = VEN
+			set_global_flag = death_of_venice
+		}			
+		any_country = {
+			limit = {
+				is_culture_group = italian
+			}
+			relation = {
+				who = THIS
+				value = -130
+			}
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	option = {
+		name = "EVTOPTB598005"
+		prestige = 5
+		badboy = 10
+		AUS = {
+			inherit = VEN
+			set_global_flag = death_of_venice
+		}
+		SAR = {
+			country_event = 598006
+		}			
+		any_country = {
+			limit = {
+				is_culture_group = italian
+			}
+			relation = {
+				who = THIS
+				value = -140
+			}
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	option = {
+		name = "EVTOPTC598005"
+		prestige = -20
+		relation = {
+			who = BOH
+			value = -300
+		}
+		leave_alliance = BOH
+		relation = {
+			who = AUS
+			value = -300
+		}
+		leave_alliance = AUS
+		SAR = {
+			country_event = 598007
+		}
+		diplomatic_influence = {
+				who = SAR
+				value = 400
+		}			
+		any_country = {
+			limit = {
+				is_culture_group = italian
+				NOT = { primary_culture = catalan }
+				NOT = { primary_culture = athesian }
+			}
+			relation = {
+				who = THIS
+				value = 100
+			}
+		}	
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 2
+				NOT = { alliance_with = BOH }
+			}
+			modifier = {
+				factor = .5
+				OR = {
+					alliance_with = AUS
+					AND = {
+						alliance_with = BOH
+						relation = {
+							who = AUS
+							value = 100
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Anschluss of Savoy
+country_event = {
+
+	id = 598006
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME598006"
+	desc = "EVTDESC598006"
+	picture = "Administration"
+
+	option = {
+		name = "EVTOPTA598006"	
+		prestige = 10		
+		FROM = {
+			prestige = -10
+			badboy = 5
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = conquest
+					}
+
+				defender_goal = {
+					casus_belli = status_quo
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB598006"			
+		FROM = {
+			inherit = THIS
+			any_pop = {
+				limit = {
+					culture = north_italian
+				}
+				militancy = 2
+      			consciousness = 4
+			}
+		}
+		
+	}
+}
+
+# Italian Saviour
+country_event = {
+
+	id = 598007
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME598007"
+	desc = "EVTDESC598007"
+	picture = "Administration"
+
+	option = {
+		name = "EVTOPTA598007"
+
+		465 = {
+			secede_province = DUA
+			remove_core = SAR
+			remove_core = LOM
+			remove_core = ARI
+			remove_core = ITA
+			add_core = DUA
+			add_core = GNV
+		}
+		466 = {
+			secede_province = DUA
+			remove_core = SAR
+			remove_core = LOM
+			remove_core = ARI
+			remove_core = ITA
+			add_core = DUA
+			add_core = GNV
+		}
+		721 = {
+			secede_province = DUA
+			remove_core = SAR
+			remove_core = LOM
+			remove_core = ARI
+			remove_core = ITA
+			add_core = DUA
+			add_core = GNV
+			}
+		609  = {
+			secede_province = DUA
+			remove_core = SAR
+			remove_core = LOM
+			remove_core = ARI
+			remove_core = ITA
+			add_core = DUA
+			add_core = GNV
+			}	
+		change_tag = ITA	
+		add_accepted_culture = south_italian
+		any_country = {
+			limit = {
+				OR = {
+					primary_culture = north_italian
+					tag = PAP
+					tag = SRD
+				}
+				exists = yes
+				NOT = { tag = THIS }
+				NOT = { rank = 20 }
+				ai = yes
+			}
+			country_event = 598008
+		}
+		
+	}
+}
+
+# Italian Saviour - Reaction
+country_event = {
+
+	id = 598008
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME598008"
+	desc = "EVTDESC598008"
+	picture = "Administration"
+
+	option = {
+		name = "EVTOPTA598008"			
+		FROM = {
+			inherit = THIS
+			prestige = 2
+		}	
+	}
+}

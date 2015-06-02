@@ -1,0 +1,12 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = KUR
+trade_goods = opium
+life_rating = 35
+terrain = hills
+
+revolt = {
+	type = nationalist_rebels
+	controller = yes
+}

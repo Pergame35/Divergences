@@ -1,0 +1,12 @@
+owner = PLA
+controller = PLA
+add_core = PLA
+trade_goods = cotton
+life_rating = 35
+terrain = forested_farmland 
+    
+state_building = {
+	level = 1 
+	building = fabric_factory
+	upgrade = yes
+}

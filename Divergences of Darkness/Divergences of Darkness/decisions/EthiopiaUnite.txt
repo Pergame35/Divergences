@@ -1,0 +1,183 @@
+political_decisions = {
+	
+	unite_ethiopia_1 = {
+		potential = {
+			tag = AMT	
+		}
+		
+		allow = {
+			NOT = { ETH = { exists = yes } }
+			NOT = { war = yes }
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = ETH
+			any_country = {
+				any_owned = {
+					limit = {
+						is_core = AMT
+					}
+					remove_core = AMT
+				}
+			}
+			any_owned = {
+				limit = {
+					is_core = AMT
+					}
+				remove_core = AMT
+			}
+			add_accepted_culture = oromo
+			add_accepted_culture = tigray
+			add_accepted_culture = amhara
+			set_country_flag = amatsa
+			capital = 1859
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	unite_ethiopia_2 = {
+		potential = {
+			tag = ETH
+			NOT = { has_country_flag = amatsa }	
+		}
+		
+		allow = {
+			NOT = { AMT = { exists = yes } }
+			NOT = { war = yes }
+		}
+		
+		effect = {
+			set_country_flag = amatsa
+			prestige = 20
+			any_country = {
+				any_owned = {
+					limit = {
+						is_core = AMT
+					}
+				remove_core = AMT
+				add_core = ETH
+				}
+			}
+			any_owned = {
+				limit = {
+					is_core = AMT
+				}
+				remove_core = AMT
+				add_core = ETH
+			}
+			add_accepted_culture = oromo
+			add_accepted_culture = tigray
+			add_accepted_culture = amhara
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	unite_ethiopia_3 = {
+		potential = {
+			tag = ORO	
+		}
+		
+		allow = {
+			NOT = { AMT = { exists = yes } }
+			NOT = { war = yes }
+			ETH = { all_core = { owned_by = THIS } }
+			NOT = { ETH = { exists = yes } }
+		}
+		
+		effect = {
+			prestige = 20
+			any_country = {
+				any_owned = {
+					limit = {
+						is_core = AMT
+					}
+				remove_core = AMT
+				add_core = ETH
+				}
+			}
+			any_owned = {
+				limit = {
+					is_core = AMT
+				}
+				remove_core = AMT
+				add_core = ETH
+			}
+			change_tag = ETH
+			add_accepted_culture = oromo
+			add_accepted_culture = tigray
+			add_accepted_culture = amhara
+			capital = 1859
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	unite_ethiopia_4 = {
+		potential = {
+			tag = ADA
+			NOT = { has_country_flag = greater_adal }	
+		}
+		
+		allow = {
+			NOT = { AMT = { exists = yes } }
+			NOT = { war = yes }
+			NOT = { ETH = { exists = yes } }
+			ETH = { all_core = { owned_by = THIS } }
+		}
+		
+		effect = {
+			set_country_flag = greater_adal
+			prestige = 20
+			any_country = {
+				any_owned = {
+					limit = {
+						is_core = AMT
+					}
+				remove_core = AMT
+				add_core = ADA
+				}
+			}
+			any_country = {
+				any_owned = {
+					limit = {
+						is_core = FUN
+					}
+				add_core = ADA
+				}
+			}
+			any_country = {
+				any_owned = {
+					limit = {
+						is_core = ETH
+					}
+				add_core = ADA
+				}
+			}
+			any_owned = {
+				limit = {
+					is_core = AMT
+				}
+				remove_core = AMT
+				add_core = ADA
+			}
+			any_owned = {
+				limit = {
+					is_core = ETH
+				}
+				add_core = ADA
+			}
+			any_owned = {
+				limit = {
+					is_core = FUN
+				}
+				add_core = ADA
+			}
+		} 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

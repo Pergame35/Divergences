@@ -1,0 +1,27 @@
+owner = BRG
+controller = BRG
+add_core = BRG
+add_core = FLA
+trade_goods = cattle
+life_rating = 35
+terrain = marginal_farmland
+state_building = {
+level = 2
+building = fabric_factory
+upgrade = yes
+}
+state_building = {
+level = 3
+building = canned_food_factory
+upgrade = yes
+}
+state_building = {
+level = 2
+building = cement_factory
+upgrade = yes
+}
+state_building = {
+level = 2
+building = furniture_factory
+upgrade = yes
+}

@@ -1,0 +1,397 @@
+political_decisions = {
+	restore_valois_italy = {
+		potential = {
+			NOT = { has_country_flag = valois_rulez }
+			NOT = { exists = ITA }
+			NOT = { exists = ARI }
+			tag = PRV
+		}	
+		allow = {
+			NOT = { part_of_sphere = yes }
+			NOT = { war = yes }
+			744 = {
+				owned_by = THIS	
+				}
+			FRR = {
+				OR = {
+				NOT = { exists = yes }
+				in_sphere = THIS
+				vassal_of = THIS
+				}
+			}
+			749 = {
+				owned_by = THIS	
+				}
+		}
+		
+		effect = {
+			prestige = 15
+			any_owned = {
+					limit = {
+							is_core = THIS
+					}
+					add_core = ITA
+			}
+			any_country = {
+				any_owned = {
+						limit = {
+							is_core = THIS
+					}
+					remove_core = PRV
+				}
+			}
+			any_country = {
+				limit = {
+					primary_culture = north_italian
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			change_tag = ITA
+			add_accepted_culture = south_italian
+			add_accepted_culture = north_italian
+			capital = 749
+			set_country_flag = valois_italy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	reclaim_occitania = { 
+
+		potential = { 
+			tag = ITA 
+			has_country_flag = valois_italy
+			OR = { 
+			government = prussian_constitutionalism 
+			government = hms_government 
+			government = absolute_monarchy 
+			}			
+			NOT = { has_country_flag = occitania_claimed }
+		}
+
+		allow = {
+			ITA = { 
+				all_core = {
+					owned_by = THIS
+					}
+				}
+			nationalism_n_imperialism = 1
+		}
+
+		effect = { 
+		FRA_451 = { 
+			add_core = THIS 
+		}
+		OCC = {
+				all_core = {
+						add_core = THIS	
+				}
+			}
+		set_country_flag = occitania_claimed
+		ai_will_do = {
+			factor = 1
+			}
+		}
+	}
+	
+	renew_war_DUA = { 
+
+		potential = { 
+			tag = ITA 
+			OR = { 
+			government = prussian_constitutionalism 
+			government = hms_government 
+			government = absolute_monarchy 
+			}
+			has_country_flag = occitania_claimed
+			NOT = { has_country_flag = renew_war }
+		}
+
+		allow = {
+			ITA = { 
+				all_core = {
+					owned_by = THIS
+					}
+				}
+			nationalism_n_imperialism = 1
+		}
+
+		effect = { 
+		any_owned = {
+				limit = {
+					is_core = OCC
+					is_core = FRA
+				}
+				add_core = THIS
+			}
+			any_country = {
+				any_owned = {
+						limit = {
+							is_core = DUA
+							NOT = { is_core = ENL }
+							NOT = { is_core = WLS }
+							NOT = { is_core = SCO }
+							NOT = { is_core = IRE }
+							continent = europe
+					}
+					add_core = THIS
+				}
+			}
+		set_country_flag = renew_war 
+		ai_will_do = {
+			factor = 1
+			}
+		}
+	}
+	
+	france_italy = { 
+	potential = { 
+			tag = ITA 
+			OR = { 
+			government = prussian_constitutionalism 
+			government = hms_government 
+			government = absolute_monarchy 
+			}
+			has_country_flag = renew_war 
+		}
+	allow = {
+			ITA = { 
+				all_core = {
+					owned_by = THIS
+					}
+				}
+		}
+
+	effect = { 
+	change_tag = FRT 
+	FRA_428 = { add_core = THIS }
+	GNV = { all_core = { add_core = THIS } }
+	country_event =  110620
+	prestige = 50 
+		}
+	
+	}
+	
+	treaty_of_paris = {
+		picture = treaty_signing
+		potential = {
+			OR = {
+				AND = {
+					tag = PRV
+					has_country_flag = valois_rulez
+				}
+				AND = {
+					tag = ITA 
+					has_country_flag = renew_war
+				}
+			}
+			425 = {
+				owned_by = DUA 
+			}
+			war_with = DUA 
+		}
+		
+		allow = {
+			war = yes
+			425 = { controlled_by = THIS 
+			province_control_days = 720 }
+			
+		OR = {	
+			ITA = {
+				all_core = {
+					OR = {
+						province_id = 419
+						controlled_by = THIS
+						controller = { alliance_with = THIS }
+						owner = {
+							NOT = { war_with = THIS }
+							}
+						}
+					}
+				}
+			AND = { 
+				has_country_flag = valois_rulez
+				PRV = {
+				all_core = {
+					OR = {
+						province_id = 419
+						controlled_by = THIS
+						controller = { alliance_with = THIS }
+						owner = {
+							NOT = { war_with = THIS }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			DUA = { country_event = 110619 }	
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	challenge_usurpers = {
+		potential = {
+			NOT = { has_country_flag = valois_rulez }
+			OR = { 
+			government = prussian_constitutionalism 
+			government = hms_government 
+			government = absolute_monarchy 
+			}
+			tag = PRV
+		}	
+		allow = {
+			NOT = { war = yes }
+			OR = { 
+			NOT = { part_of_sphere = yes }  
+			has_country_flag = motherland_liberation
+				}
+			PRV = {
+				all_core = {
+						owned_by = THIS	
+				}
+			}
+			OCC = {
+				all_core = {
+						owned_by = THIS	
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 50
+			OCC = {
+				all_core = {
+						add_core = THIS	
+				}
+			}
+			any_owned = {
+				limit = {
+					is_core = OCC
+					is_core = FRA
+				}
+				add_core = THIS
+			}
+			any_country = {
+				any_owned = {
+						limit = {
+							is_core = DUA
+							NOT = { is_core = ENL }
+							NOT = { is_core = WLS }
+							NOT = { is_core = SCO }
+							NOT = { is_core = IRE }
+							continent = europe
+					}
+					add_core = THIS
+				}
+			}
+			set_country_flag = valois_rulez
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reclaim_paris_PRV = {
+		potential = {
+			tag = PRV
+			has_country_flag = valois_rulez
+			NOT = { has_country_flag = PRV_paris }
+		}
+		allow = {
+			owns = 425
+		}
+		effect = {
+			capital = 425
+			prestige = 10
+			change_tag = FRA
+			set_country_flag = PRV_paris
+			any_province = { limit ={ is_core = OCC } remove_core = DUA }
+			DUA = {
+				capital = 300
+				prestige = -250
+			}
+		}
+	}
+	
+	reclaim_paris_DUA = {
+		potential = {
+			tag = DUA
+			FRA = { has_country_flag = PRV_paris }
+		}
+		allow = {
+			owns = 425
+		}
+		effect = {
+			capital = 425
+			prestige = 10
+			FRA = {
+				capital = 470
+				prestige = -25
+				clr_country_flag = PRV_paris
+			}
+		}
+	}
+	
+	integrate_bretons = { 
+	potential = { 
+	OR = { tag = FRT 
+	AND = { tag = PRV has_country_flag = valois_rulez }
+	AND = { tag = FRA has_country_flag = valois_rulez } }
+	NOT = { has_country_flag = britany_acc }
+	}
+	
+	allow = { 
+	BRT = { all_core = { owned_by = THIS } }
+	revolution_n_counterrevolution = 1 
+	}
+	
+	effect = { 
+	set_country_flag = britany_acc
+	add_accepted_culture = breton 
+	}
+	
+	}
+	
+	lucca_war = { 
+	potential = { 
+	tag = PRV 
+	OR = { 
+	government = absolute_monarchy
+	government = prussian_constitutionalism
+	}
+	owns = 744	
+		}
+	allow = { 
+		LUC = { 
+		OR = { 
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+			}
+		NOT = { vassal_of = THIS }
+			}
+		}
+		
+	effect = { LUC = { country_event = 110603 } }
+	
+	ai_will_do = { 
+	factor = 1 
+	modifier = { 
+		factor = 0 
+		NOT = { year = 1848 }
+			}
+		}
+	}
+}

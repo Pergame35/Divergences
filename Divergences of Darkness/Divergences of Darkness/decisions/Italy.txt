@@ -1,0 +1,183 @@
+political_decisions = {
+	form_italy = {
+		potential = {
+			is_culture_group = italian
+			NOT = {
+				primary_culture = catalan
+				primary_culture = athesian
+			}
+			NOT = {
+				exists = ITA
+			}
+			NOT = {
+				exists = ARI
+			}
+		}
+	
+		allow = {
+			prestige = 45
+			NOT = { war = yes }
+			SAR_720 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			PAP_741 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			MOD_739 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			TUS_744 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			PAP_752 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			AUS_726 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+	
+		effect = {
+			prestige = 15
+			change_tag = ITA
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			any_country = {
+				limit = {
+					is_culture_group = italian
+					NOT = {
+						primary_culture = catalan
+						primary_culture = athesian
+					}
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				country_event = 11101
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	roma_capital = {
+		potential = {
+			tag = ITA
+			NOT = { capital = 749 }
+		}
+		allow = {
+			prestige = 45
+			is_greater_power = yes
+			NOT = { war = yes }
+			ITA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 5
+			capital = 749
+			any_country = {
+				limit = {
+					is_culture_group = italian
+					NOT = { 
+						primary_culture = catalan
+						primary_culture = athesian
+					}
+					in_sphere = THIS
+				}
+				country_event = 11101
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	venetians_culture = { 
+		potential = { 
+			tag = ITA
+			NOT = { culture = venetian }
+			NOT = { has_country_flag = venetian_culture }
+		}
+
+		allow = { 
+			is_greater_power = yes 
+			owns = 729
+		}
+
+		effect = { 
+		add_accepted_culture = venetian
+		set_country_flag = venetian_culture
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	italia_irredenta = {
+		potential = {
+			tag = ITA
+			NOT = { has_country_flag = italia_ulterior }
+		}
+
+		allow = {
+			is_greater_power = yes
+			all_core = {
+				owned_by = THIS
+			}
+		}
+
+		effect = {
+			set_country_flag = italia_ulterior
+			AUS_729 = { 
+				add_core = ITA
+			}
+			AUS_736 = {
+				add_core = ITA
+			}
+			AUS_780 = {
+				add_core = ITA
+			}
+		}
+	}
+}

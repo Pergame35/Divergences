@@ -1,0 +1,44 @@
+political_decisions = {
+	khans_of_khazaks = {
+		potential = {
+			NOT = { part_of_sphere = yes }
+			tag = KHI
+			OR = { 	
+				government = absolute_monarchy
+				government = hms_government
+				government = prussian_constitutionalism
+				government = feudal_monarchy
+			}
+		}	
+		allow = {
+			NOT = { war = yes }
+			NOT = { exists = KZH }
+			KZH = { 
+				all_core = { 
+					owned_by = THIS 
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 15
+			capital = 1185
+			any_owned = {
+				limit = {
+					is_core = THIS
+				}
+				add_core = KZH
+			}
+			change_tag = KZH
+			remove_country_modifier = feudal
+			political_reform = appointed
+			clr_country_flag = feudal
+			government = absolute_monarchy
+			primary_culture = kazak
+			add_accepted_culture = uzbek
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

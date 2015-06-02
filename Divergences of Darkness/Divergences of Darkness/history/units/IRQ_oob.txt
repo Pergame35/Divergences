@@ -1,0 +1,118 @@
+leader = {
+	name = "Faisal I"
+	type = land
+	date = 1836.1.1
+	personality = unruly
+	background = aristocrat
+}
+
+leader = {
+	name = "Nuri as-Said"
+	type = land
+	date = 1836.1.1
+	personality = inept
+	background = renowned_adventurer
+}
+
+army = {
+	name = "Army of Mosul"
+	location = 923
+	regiment = {
+		name= "1. Iraqi"
+		type = regular
+		home = 923
+	}
+
+	regiment = {
+		name= "2. Iraqi"
+		type = regular
+		home = 923
+	}
+
+	regiment = {
+		name= "3. Iraqi"
+		type = infantry
+		home = 923
+	}
+
+	regiment = {
+		name= "4. Iraqi"
+		type = infantry
+		home = 923
+	}
+}
+
+army = {
+	name = "Army of Baghdad"
+	location = 926
+	regiment = {
+		name= "1. Iraqi"
+		type = regular
+		home = 926
+	}
+
+	regiment = {
+		name= "2. Iraqi"
+		type = regular
+		home = 926
+	}
+
+	regiment = {
+		name= "3. Iraqi"
+		type = infantry
+		home = 935
+	}
+
+	regiment = {
+		name= "1. Irani"
+		type = infantry
+		home = 1132
+	}
+}
+
+army = {
+	name = "Army of Kermanshah"
+	location = 1117
+	regiment = {
+		name= "1. Irani"
+		type = hussar
+		home = 1117
+	}
+
+	regiment = {
+		name= "2. Irani"
+		type = hussar
+		home = 1117
+	}	
+}
+
+navy = {
+	name = "Victorious Fleet"
+	location = 935
+	ship = {
+		name= "Basra"
+		type = manowar
+	}
+
+	ship = {
+		name= "Cairo"
+		type = frigate
+	}
+
+	ship = {
+		name= "Mecca"
+		type = frigate
+	}
+
+	ship = {
+		name= "1st Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2nd Transport Flotilla"
+		type = clipper_transport
+	}
+
+}
+

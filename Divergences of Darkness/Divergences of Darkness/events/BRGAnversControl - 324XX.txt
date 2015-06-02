@@ -1,0 +1,89 @@
+country_event = {
+		
+	id = 32402 # Anvers Lost!
+	
+	trigger = {
+		capital = 390
+		tag = BRG
+		OR = {
+			owns = 2217 #Batavia
+			owns = 1413 #Jamaica
+			owns = 2087 #Cape Town
+		}		
+		FLA = {
+			owns = 401 #Arras
+			owns = 388 #Brugges
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	title = "Anvers Lost!"
+	desc = "Our capital is now very isolated. We need to reconsider it."
+	picture = "?"
+		
+	option = {
+		name = "We are maritime power, after all"
+		prestige = -20
+		war_exhaustion = 20
+		any_pop = {
+      		consciousness = -1
+			militancy = 2.5
+		}
+		capital = 2217
+		capital = 1413
+		capital = 2087
+		390 = {
+			secede_province = FLA
+		}
+		random_owned = {
+      			limit = {
+      				owner = {
+      					capital = 2087
+				}
+			}
+			owner = {
+      				set_global_flag = Burgundy_is_cape
+			}
+		}
+	}
+}
+
+country_event = {
+		
+	id = 32403 # Anvers Reconquered
+	
+	trigger = {
+		owns = 390
+		controls = 390
+		NOT = { capital = 390 }
+		tag = BRG
+		NOT = { war = yes }
+		FLA = {
+      			all_core = {
+      				owned_by = THIS
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+
+
+	title = "Anvers Reconquered"
+	desc = "We can rebuild the capital palace in Anvers right away!"
+	picture = "?"
+		
+	option = {
+		name = "At last" # At last
+		prestige = 5
+		any_pop = {
+			militancy = -1
+		}
+		capital = 390
+		clr_global_flag = Burgundy_is_cape
+	}
+}

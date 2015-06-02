@@ -1,0 +1,200 @@
+country_event = {                      #Japan approaches Manchu with the desire to buy parts of Manchuria
+
+	id = 334300
+
+	title = "EVTNAME334300"
+	desc = "EVTDESC334300"
+	picture = "asian_administration"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA334300"
+
+		any_owned = {
+      limit = {
+        OR = {
+            region = RUS_1072
+            region = CHI_1082
+        }
+      }
+      secede_province = JAP
+    }
+    money = 50000
+    years_of_research = 0.3
+    JAP = {
+    money = -50000
+    }  
+    prestige = -15
+		ai_chance = {
+			factor = 80
+		}
+	}          
+
+	option = {
+		name = "EVTOPTB334300"   
+    JAP = { country_event = 334301 }
+		prestige = 10
+		ai_chance = {
+			factor = 20
+      modifier = {
+				factor = 0.75
+				relation = { who = FROM value = 50 }
+			}
+			modifier = {
+				factor = 0.5
+				alliance_with = FROM
+			}
+		}
+	}
+}
+
+country_event = {   #Japan is informed of the refusal
+
+	id = 334301
+
+	title = "EVTNAME334301"
+	desc = "EVTDESC334301"
+	picture = "asian_administration"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA334301"
+    prestige = -15
+    add_casus_belli = {
+				target = MCK
+				type = humiliate
+				months = 12
+		}
+    relation = {
+			who = FROM
+			value = -50
+		}
+    any_pop = {
+			dominant_issue = {
+				factor = 0.02
+				value = jingoism
+			}
+		}
+	}
+}
+
+country_event = {   #Qinqiu is informed of the invasion
+
+	id = 334302
+
+	title = "EVTNAME334302"
+	desc = "EVTDESC334302"
+	picture = "boshin_war"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA334302"
+    prestige = -1
+	}
+}
+
+country_event = {
+
+	id = 334303
+	title = "EVTNAME334303" #The Hawaiian Islands Purchase
+	desc = "EVTDESC334303"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sell our independence"
+		FROM = { country_event = 334305 }
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.5
+				truce_with = FROM
+			}
+		}
+	}
+	option = {
+		name = "Never!"
+		FROM = { country_event = 334304 }
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.75
+				relation = { who = FROM value = 100 }
+			}
+			modifier = {
+				factor = 0.5
+				alliance_with = FROM
+			}
+		}		
+	}
+}
+
+country_event = {
+
+	id = 334304
+	title = "EVTNAME334304" #Refused
+	desc = "EVTDESC334304"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+  
+	
+	option = {
+		name = "A foolish move that shall be punished"
+		relation = {
+			who = FROM
+			value = -50
+		}
+		leave_alliance = FROM 
+    badboy = 5
+    prestige = -10
+    add_casus_belli = {
+				target = FROM
+				type = conquest
+				months = 12
+		}
+		any_pop = {
+			dominant_issue = {
+				factor = 0.02
+				value = jingoism
+			}
+		}
+	}  
+	
+	option = {
+		name = "They can have their silly islands"
+		relation = {
+			who = FROM
+			value = -50
+		}
+		leave_alliance = FROM
+		any_pop = {
+			dominant_issue = {
+				factor = 0.02
+				value = jingoism
+			}
+		}
+	}
+}
+
+country_event = {
+	
+	id = 334305
+	title = "EVTNAME334305"
+	desc = "EVTDESC334305"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A wise move."
+		money = -50000
+    prestige = 5
+    badboy = 1
+		inherit = HAW
+	}
+}

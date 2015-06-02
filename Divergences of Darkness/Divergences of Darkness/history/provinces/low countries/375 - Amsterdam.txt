@@ -1,0 +1,17 @@
+owner = BRG
+controller = BRG
+add_core = BRG
+add_core = NET
+trade_goods = cattle
+life_rating = 35
+terrain = good_farmland
+state_building = {
+	level = 1
+	building = fabric_factory
+	upgrade = yes
+}
+state_building = {
+level = 2
+building = fish_cannery
+upgrade = yes
+}

@@ -1,0 +1,62 @@
+leader = {
+	name = "Mohammed ibn Saud"
+	type = land
+	date = 1836.1.1
+	personality = intuitive 
+	background = aristocrat
+}
+
+army = {
+	name = "Bedouin Army"
+	location = 1159
+	regiment = {
+		name= "1. Shammari"
+		type = infantry
+		home = 1159
+	}
+
+	regiment = {
+		name= "2. Shammari"
+		type = infantry
+		home = 1161
+	}
+}
+
+army = {
+	name = "Ibn Saud's Army"
+	location = 1157
+	regiment = {
+		name= "1. Saudi"
+		type = infantry
+		home = 1157
+	}
+
+	regiment = {
+		name= "2. Saudi"
+		type = infantry
+		home = 1157
+	}
+
+	regiment = {
+		name= "3. Saudi"
+		type = infantry
+		home = 1164
+	}
+
+}
+
+army = {
+	name = "Nejdi Army"
+	location = 1158
+	regiment = {
+		name= "1. 'Ateba"
+		type = infantry
+		home = 1158
+	}
+
+	regiment = {
+		name= "2. 'Ateba"
+		type = infantry
+		home = 1163
+	}
+}

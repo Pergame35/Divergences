@@ -1,0 +1,17 @@
+owner = HEK
+controller = HEK
+add_core = HEK
+add_core = GER
+trade_goods = coal
+life_rating = 40
+terrain = hilly_farmland
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = luxury_clothes_factory
+	upgrade = yes
+}

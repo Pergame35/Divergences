@@ -1,0 +1,319 @@
+#########The Canton Treaty ########
+country_event = { 
+
+	id = 44201 
+	title = "CHI1.T" 
+	desc = "CHI1.D" 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "The holy Crusade does not need strangers !"
+	relation = { who = FROM value = -200 }
+	SPA = { country_event = 44202 }
+	ai_chance = { 
+	factor = 5 
+		}
+	}
+	
+	option = { 
+	name = "Give them an island in exchange for some help "
+	1498 = { secede_province = SPA }
+	SPA = { country_event = 44203 }
+	ai_chance = { 
+	factor = 35 
+		}
+	}
+	
+	option = { 
+	name = "We fully accept the treaty !"
+	1498 = { secede_province = SPA }
+	1496 = { secede_province = SPA }	
+	SPA = { country_event = 44204 }
+	ai_chance = { 
+	factor = 60 
+		}
+	}
+}
+
+country_event = { 
+
+	id = 44202
+	title = "CHI2.T" 
+	desc = "CHI2.D" 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We'll consider other means to benefit from South China ...."
+	SPA = { 
+			casus_belli = {
+				target = FROM 
+				type = demand_concession 
+				months = 60
+			}
+		}
+	prestige = -10
+	
+	}
+	
+}
+
+country_event = { 
+
+	id = 44203
+	title = "CHI3.T" 
+	desc = "CHI3.D" 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We'll use Macao for the time being"
+	prestige = 5
+	diplomatic_influence = { who = TAI value = 50 }
+	}
+	
+}
+
+country_event = { 
+
+	id = 44204
+	title = "CHI4.T" 
+	desc = "CHI4.D" 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Excellent"
+	prestige = 15
+	diplomatic_influence = { who = TAI value = 150 }
+	}
+	
+}
+
+
+country_event = {
+	id = 1316082
+	title = "EVTNAME1316082" #The Unequal Treaty (with other countries -- if war still ongoing)
+	desc = "EVTDESC1316082"
+	picture = "Opiumwar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give them what they want."
+		FROM = { country_event = 1316083 }
+		prestige = -5
+		treasury = -200000
+		capital_scope = {
+			add_province_modifier = {
+				name = legation_quarter
+				duration = -1
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { has_country_modifier = uncivilized_isolationism }
+			}
+			owner = {
+				remove_country_modifier = uncivilized_isolationism
+				add_country_modifier = {
+					name = "western_influences"
+					duration = -1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { diplomatic_reform = isolationism }
+			}
+			owner = {
+				economic_reform = interactive
+				activate_technology = classicism_n_early_romanticism
+				any_pop = {
+					scaled_militancy = {
+						ideology = liberal
+						factor = -10
+					}
+					scaled_militancy = {
+						ideology = conservative
+						factor = 3
+					}
+					scaled_militancy = {
+						ideology = reactionary
+						factor = 6
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "Never! We shall not submit!"
+		FROM = { country_event = 1316084 }
+		prestige = 5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 1316083
+	title = "EVTNAME1316083" #The Qing Emperor Agrees
+	desc = "EVTDESC1316083"
+	news = yes
+	news_title = "EVTNAME1316083_NEWS_TITLE"
+	news_desc_long = "EVTDESC1316083_NEWS_LONG"
+	news_desc_medium = "EVTDESC1316083_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1316083_NEWS_SHORT"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		clr_country_flag = negotiate_unequal_treaty
+		FROM = {
+			clr_country_flag = negotiate_unequal_treaty
+			end_war = THIS
+		}
+		treasury = 200000
+		relation = { who = FROM value = 300 }
+		diplomatic_influence = { who = FROM value = 50 }
+		random_owned = {
+			limit = {
+				owner = { tag = ENG }
+				FROM = { NOT = { owns = 1496 } }
+			}
+			FROM = {
+				random_owned = {
+					limit = {
+						OR = {
+							province_id = 1498
+							province_id = 1538
+							province_id = 1566
+							province_id = 1481
+							province_id = 1569
+							province_id = 1606
+						}
+					}
+					secede_province = THIS
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = ENG }
+				FROM = { owns = 1496 }
+			}
+			1496 = { secede_province = ENG }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = RUS }
+				FROM = { NOT = { owns = 1481 } }
+			}
+			FROM = {
+				random_owned = {
+					limit = {
+						OR = {
+							province_id = 1498
+							province_id = 1538
+							province_id = 1566
+							province_id = 1569
+							province_id = 1606
+							province_id = 1496
+						}
+					}
+					secede_province = THIS
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = RUS }
+				FROM = { owns = 1481 }
+			}
+			1481 = { secede_province = RUS }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { tag = ENG }
+					NOT = { tag = RUS }
+				}
+			}
+			FROM = {
+				random_owned = {
+					limit = {
+						OR = {
+							province_id = 1498
+							province_id = 1538
+							province_id = 1496
+							province_id = 1566
+							province_id = 1481
+							province_id = 1569
+							province_id = 1606
+						}
+					}
+					secede_province = THIS
+				}
+			}
+		}
+		FROM = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+		any_country = {
+			limit = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					is_greater_power = no
+				}
+				alliance_with = THIS
+				war_with = FROM
+			}
+			end_war = FROM
+			end_war = KOR
+			end_war = TIB
+			end_war = MGL
+		}
+		any_country = {
+			limit = {
+				OR = {
+					vassal_of = FROM
+					substate_of = FROM
+					alliance_with = FROM
+				}
+				war_with = THIS
+			}
+			end_war = THIS
+		}
+	}
+}
+
+country_event = {
+	id = 1316084
+	title = "EVTNAME1316084" #The Qing Emperor has Refused!
+	desc = "EVTDESC1316084"
+	picture = "Opiumwar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "An unfortunate choice."
+		FROM = { clr_country_flag = negotiate_unequal_treaty }
+		casus_belli = {
+			target = FROM
+			type = humiliate
+			months = 100
+		}
+	}
+}

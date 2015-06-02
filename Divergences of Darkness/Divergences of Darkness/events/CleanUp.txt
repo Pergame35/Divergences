@@ -1,0 +1,1163 @@
+country_event = {
+	id = 60000
+	title = "Communists Seize Power"
+	desc = "EVTDESC60000"
+	news = yes
+	news_title = "EVTNAME60000_NEWS_TITLE"
+	news_desc_long = "EVTDESC60000_NEWS_LONG"
+	news_desc_medium = "EVTDESC60000_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60000_NEWS_SHORT"
+	picture = "communist_crowd"
+	
+	trigger = {
+		is_vassal = no
+		civilized = yes
+		NOT = { government = proletarian_dictatorship }
+		ruling_party_ideology = communist
+		average_militancy = 3
+		OR = {
+			num_of_revolts = 1
+			national_provinces_occupied = .10
+			is_disarmed = yes
+			communist = 20
+			socialist = 40
+			average_militancy = 5
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.8
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 0.5
+			revolt_percentage = .25
+		}
+	}
+	major = yes
+	option = {
+		name = "EVTOPTA60000"
+		government = proletarian_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+		political_reform = nobody_gets_out
+		political_reform = mandatory_service
+		political_reform = protected
+		political_reform = no_slavery
+		social_reform = good_minimum_wage
+		social_reform = eight_hours
+		social_reform = good_subsidies
+		social_reform = good_pensions
+		social_reform = good_health_care
+		prestige = -25
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win
+		country_event = 800052
+	}
+}
+
+country_event = {
+	id = 60010
+	title = "Military Coup d'Etat"
+	desc = "EVTDESC60010"
+	news = yes
+	news_title = "EVTNAME60010_NEWS_TITLE"
+	news_desc_long = "EVTDESC60010_NEWS_LONG"
+	news_desc_medium = "EVTDESC60010_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60010_NEWS_SHORT"
+	picture = "Fascist"
+	
+	trigger = {
+		is_vassal = no
+		civilized = yes
+		government = democracy
+		ruling_party_ideology = reactionary
+		average_militancy = 3
+		OR = {
+			revolt_percentage = .10
+			national_provinces_occupied = .10
+			is_disarmed = yes
+			upper_house = { ideology = reactionary value = 0.3 }
+			average_militancy = 5
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.8
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 0.5
+			revolt_percentage = .25
+		}
+		modifier = {
+			factor = 2
+			literacy = 0.3
+		}
+		modifier = {
+			factor = 3
+			literacy = 0.5
+		}
+		modifier = {
+			factor = 4
+			literacy = 0.7
+		}
+	}
+	major = yes
+	option = {
+		name = "This is only temporary until the crisis passes"
+		government = presidential_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+		political_reform = mandatory_service
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win
+		remove_country_modifier = expert_diplomat
+		remove_country_modifier = successful_industrialist
+		remove_country_modifier = ivory_tower_intellectual
+		remove_country_modifier = man_of_the_people
+		remove_country_modifier = landed_gentleman
+		remove_country_modifier = military_man
+		remove_country_modifier = lord_admiral
+		remove_country_modifier = raving_loon
+		remove_country_modifier = luddite
+		remove_country_modifier = great_statesman
+		remove_country_modifier = backroom_boy
+		remove_country_modifier = great_reformer
+		remove_country_modifier = gauche_buffoon
+		remove_country_modifier = administrative_genius
+		remove_country_modifier = visionary_thinker
+		remove_country_modifier = competent_placeholder
+		remove_country_modifier = imperious_autocrat
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = efficient_sociopath
+		remove_country_modifier = pig_headed_isolationist
+		remove_country_modifier = ambitious_union_boss
+		remove_country_modifier = dour_economist
+		add_country_modifier = {
+			name = national_confusion
+			duration = 365
+		}
+		prestige = -25
+		country_event = 800050
+	}
+}
+
+country_event = {
+	id = 60020
+	title = "Anarcho-Liberals Seize Power"
+	desc = "EVTDESC60020"
+	news = yes
+	news_title = "EVTNAME60020_NEWS_TITLE"
+	news_desc_long = "EVTDESC60020_NEWS_LONG"
+	news_desc_medium = "EVTDESC60020_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60020_NEWS_SHORT"
+	picture = "election"
+	
+	trigger = {
+		is_vassal = no
+		civilized = yes
+		NOT = { government = bourgeois_dictatorship }
+		ruling_party_ideology = anarcho_liberal
+		average_militancy = 3
+		OR = {
+			num_of_revolts = 1
+			national_provinces_occupied = .10
+			is_disarmed = yes
+			anarcho_liberal = 20
+			average_militancy = 5
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.8
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 0.5
+			revolt_percentage = .25
+		}
+	}
+	major = yes
+	option = {
+		name = "EVTOPTA60020"
+		government = bourgeois_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = all_trade_unions
+		political_reform = underground_parties
+		political_reform = naturalization
+		political_reform = no_draft
+		political_reform = protected
+		social_reform = no_minimum_wage
+		social_reform = no_work_hour_limit
+		social_reform = no_safety
+		social_reform = no_subsidies
+		social_reform = no_pensions
+		social_reform = no_health_care
+		any_owned = {
+			remove_province_modifier = anarcho_liberal_stronghold
+		}
+		country_event = 800053
+	}
+}
+
+country_event = {
+	id = 60030
+	title = "Fascist Coup D'Etat"
+	desc = "EVTDESC60030"
+	news = yes
+	news_title = "EVTNAME60030_NEWS_TITLE"
+	news_desc_long = "EVTDESC60030_NEWS_LONG"
+	news_desc_medium = "EVTDESC60030_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60030_NEWS_SHORT"
+	picture = "Fascist"
+	
+	trigger = {
+		is_vassal = no
+		civilized = yes
+		NOT = { government = fascist_dictatorship }
+		ruling_party_ideology = fascist
+		average_militancy = 3
+		OR = {
+			num_of_revolts = 1
+			national_provinces_occupied = .10
+			is_disarmed = yes
+			fascist = 20
+			average_militancy = 5
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.8
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 0.5
+			revolt_percentage = .25
+		}
+	}
+	major = yes
+	option = {
+		name = "Our destiny awaits."
+		government = fascist_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+		political_reform = nobody_gets_out
+		political_reform = mandatory_service
+		political_reform = oppression
+		prestige = -25
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win	
+		country_event = 800051
+	}
+}
+
+country_event = {
+	id = 60050
+	title = "EVTNAME60050"
+	desc = "EVTDESC60050"
+	news = yes
+	news_desc_long = "EVTDESC60050_NEWS_LONG"
+	news_desc_medium = "EVTDESC60050_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60050_NEWS_SHORT"
+	picture = "senate_debate"
+	
+	trigger = {
+		OR = {
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+		}
+		civilized = yes
+		NOT = { vote_franschise = none_voting }
+		NOT = { political_parties = underground_parties }
+		NOT = { upper_house_composition = party_appointed }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	major = yes
+	option = {
+		name = "EVTOPTA60050"
+		remove_country_modifier = fight_the_power
+		government = democracy
+		election = yes
+	}
+}
+
+country_event = {
+	id = 60040
+	title = "EVTNAME60040"
+	desc = "EVTDESC60040"
+	picture = "Monarchy"
+	
+	trigger = {
+		OR = {
+			government = hms_government
+			government = prussian_constitutionalism
+		}
+		civilized = yes	
+		vote_franschise = none_voting
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60040"
+		government = absolute_monarchy
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win
+	}
+}
+
+country_event = {
+	id = 60060
+	title = "EVTNAME60060"
+	desc = "EVTDESC60060"
+	news = yes
+	news_title = "EVTNAME60060_NEWS_TITLE"
+	news_desc_long = "EVTDESC60060_NEWS_LONG"
+	news_desc_medium = "EVTDESC60060_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60060_NEWS_SHORT"
+	picture = "Monarchy"
+	
+	trigger = {
+		government = absolute_monarchy
+		NOT = { vote_franschise = none_voting }		
+		civilized = yes	
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTNAME60060"
+		government = prussian_constitutionalism
+	}
+}
+
+country_event = {
+	id = 60070
+	title = "EVTNAME60070"
+	desc = "EVTDESC60070"
+	news = yes
+	news_title = "EVTNAME60070_NEWS_TITLE"
+	news_desc_long = "EVTDESC60070_NEWS_LONG"
+	news_desc_medium = "EVTDESC60070_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60070_NEWS_SHORT"
+	picture = "Monarchy"
+	
+	trigger = {
+		government = prussian_constitutionalism
+		OR = {
+			political_parties = secret_ballots
+			political_parties = non_secret_ballots
+		}
+		civilized = yes
+		OR = {
+			vote_franschise = universal_weighted_voting
+			vote_franschise = universal_voting
+                }
+                OR = {
+                                AND = {
+                                        ruling_party_ideology = Liberal
+                                        average_militancy = 6
+                                }
+                                AND = {
+                                        ruling_party_ideology = socialist
+                                        average_militancy = 6
+                                }
+                                AND = {   
+				        upper_house = {
+					        ideology = socialist
+					        value = 0.34
+				        }
+                                        average_militancy = 4
+                                }
+				AND = {   
+				        upper_house = {
+					        ideology = liberal
+					        value = 0.34
+				        }
+                                        average_militancy = 4
+                                }
+				AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.18
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.18
+                                        }
+                                        average_militancy = 4
+                                }
+                                AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.26
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.13 
+                                        }
+                                        average_militancy = 4                                      
+                                }
+				AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.13
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.26
+                                        }
+                                        average_militancy = 4
+                                }
+                                AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.30
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.1                           
+					}
+                                        average_militancy = 4
+                                }
+                                AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.1
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.30                           
+					}
+                                        average_militancy = 4
+				}            
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60070"
+		government = hms_government
+	}
+}
+
+country_event = {
+	id = 60080
+	title = "Voting Rights Rescinded"
+	desc = "EVTDESC60080"
+	news = yes
+	news_title = "EVTNAME60080_NEWS_TITLE"
+	news_desc_long = "EVTDESC60080_NEWS_LONG"
+	news_desc_medium = "EVTDESC60080_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60080_NEWS_SHORT"
+	picture = "communist_crowd"
+	
+	trigger = {
+		government = democracy
+		vote_franschise = none_voting		
+		OR = {
+			ruling_party_ideology = conservative
+			ruling_party_ideology = reactionary
+			ruling_party_ideology = liberal
+			ruling_party_ideology = socialist
+		}
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	major = yes
+	option = {
+		name = "Long Live the President!"
+		government = presidential_dictatorship
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win
+	}
+}
+
+country_event = {
+	id = 60090
+	title = "Voting Rights Rescinded"
+	desc = "EVTDESC60080"
+	news = yes
+	news_title = "EVTNAME60080_NEWS_TITLE"
+	news_desc_long = "EVTDESC60080_NEWS_LONG"
+	news_desc_medium = "EVTDESC60080_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60080_NEWS_SHORT"
+	picture = "communist_crowd"
+	
+	trigger = {
+		government = democracy
+		vote_franschise = none_voting
+		ruling_party_ideology = anarcho_liberal
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	major = yes
+	option = {
+		name = "Long Live the Bourgeois!"
+		government = bourgeois_dictatorship
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win
+	}
+}
+
+country_event = {
+	id = 60100
+	title = "Voting Rights Rescinded"
+	desc = "EVTDESC60080"
+	news = yes
+	news_title = "EVTNAME60080_NEWS_TITLE"
+	news_desc_long = "EVTDESC60080_NEWS_LONG"
+	news_desc_medium = "EVTDESC60080_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60080_NEWS_SHORT"
+	picture = "communist_crowd"
+	
+	trigger = {
+		government = democracy
+		vote_franschise = none_voting
+		ruling_party_ideology = communist
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	major = yes
+	option = {
+		name = "The Workers have prevailed!"
+		government = proletarian_dictatorship
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win
+	}
+}
+
+country_event = {
+	id = 60110
+	title = "Voting Rights Rescinded"
+	desc = "EVTDESC60080"
+	news = yes
+	news_title = "EVTNAME60080_NEWS_TITLE"
+	news_desc_long = "EVTDESC60080_NEWS_LONG"
+	news_desc_medium = "EVTDESC60080_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60080_NEWS_SHORT"
+	picture = "communist_crowd"
+	
+	trigger = {
+		government = democracy
+		vote_franschise = none_voting
+		ruling_party_ideology = fascist
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	major = yes
+	option = {
+		name = "The $COUNTRY_ADJ$ Destiny!"
+		government = fascist_dictatorship
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win
+	}
+}
+
+# Annex SoIs
+country_event = {
+	id = 60120
+	title = "EVTNAME60120"
+	desc = "EVTDESC60120"
+	picture = "greatpowers"
+	
+	trigger = {
+		ai = yes
+		war = no
+		part_of_sphere = yes
+		sphere_owner = {
+			is_greater_power = yes
+			is_culture_group = THIS
+			is_cultural_union = yes
+			war = no
+		}
+		OR = {
+			is_vassal = no
+			AND = {
+				is_vassal = yes
+				sphere_owner = { is_our_vassal = THIS }
+			}
+		}
+		OR = {
+			sphere_owner = { ideological_thought = 1 }
+			NOT = { is_culture_group = american_cultures }
+		}
+		OR = {
+			NOT = { tag = BAN }
+			sphere_owner = { neighbour = THIS }
+		}
+		NOT = {
+			tag = KUK
+			tag = AUS
+			tag = DNB
+			tag = CSA
+			tag = FSA
+			tag = UIL
+			tag = UNB
+		}
+		NOT = { has_country_flag = post_colonial_country }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA60120"
+		sphere_owner = {
+			country_event = 60130
+		}
+	}
+}
+
+# Get them Annexed
+country_event = {
+	id = 60130
+	title = "EVTNAME60130"
+	desc = "EVTDESC60130"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA60130"
+		prestige = 5
+		random_country = {
+			limit = {
+				tag = FROM
+				civilized = no
+				THIS = { civilized = yes }
+			}
+			civilized = yes
+		}
+		inherit = FROM
+		ai_chance = {
+			factor = 95
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB60130"
+		clr_country_flag = crown_from_the_gutter
+		any_pop = {
+			militancy = 0.1
+		}
+		FROM = {
+			set_country_flag = does_not_want_to_unify
+			any_pop = {
+				limit = { is_primary_culture = yes }
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+				}
+			}
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+country_event = {
+	id = 60140
+	title = "EVTNAME60140"
+	desc = "EVTDESC60140"
+	picture = "Administration"
+	
+	trigger = {
+		upper_house_composition = party_appointed
+		OR = {
+			ruling_party_ideology = liberal
+			ruling_party_ideology = socialist
+			ruling_party_ideology = conservative
+			ruling_party_ideology = social_liberal
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60140"
+		political_reform = appointed
+	}
+}
+
+country_event = {
+	id = 60150
+	title = "EVTNAME60150"
+	desc = "EVTDESC60150"
+	picture = "Unite"
+	
+	trigger = {
+		has_country_modifier = female_suffrage
+		NOT = { vote_franschise = universal_weighted_voting }
+		NOT = {	vote_franschise = universal_voting }
+		NOT = { vote_franschise = wealth_voting }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60150"
+		war_exhaustion = 5
+		remove_country_modifier = female_suffrage
+	}
+}
+
+#independence event
+country_event = {
+	id = 60160
+	title = "EVTNAME60160"
+	desc = "EVTDESC60160"
+	news = yes
+	news_title = "EVTNAME60160_NEWS_TITLE"
+	news_desc_long = "EVTDESC60160_NEWS_LONG"
+	news_desc_medium = "EVTDESC60160_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60160_NEWS_SHORT"
+	picture = "Unite"
+	
+	trigger = {
+		exists = yes
+		war = no
+		NOT = { has_country_flag = existing_country }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "Hurrah for $COUNTRY$!"
+		set_country_flag = existing_country
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			militancy = -2
+		}
+		random_owned = {
+			limit = {
+				owner = { has_country_flag = civilize_after_release }
+			}
+			owner = { civilized = yes }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1880
+					NOT = { year = 1900 }
+				}
+			}
+			owner = { years_of_research = 0.5 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1900
+					NOT = { year = 1920 }
+				}
+			}
+			owner = { years_of_research = 0.75 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1920
+				}
+			}
+			owner = { years_of_research = 1 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					admin_reform = no_admin_reform
+					year = 1880
+				}
+			}
+			owner = {
+				economic_reform = yes_admin_reform
+				activate_technology = enlightenment_thought
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					taxation_reform = tax_farmers
+					year = 1920
+				}
+			}
+			owner = {
+				economic_reform = tax_inspectors
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					taxation_reform = tax_farmers
+					finance_reform = no_finance_reform
+					year = 1880
+				}
+			}
+			owner = {
+				economic_reform = yes_finance_reform
+				activate_technology = no_standard
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					taxation_reform = tribute
+					year = 1860
+				}
+			}
+			owner = {
+				economic_reform = tax_farmers
+				activate_technology = private_banks
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					any_owned_province = { port = yes }
+					foreign_navies = no_foreign_navies
+					OR = {
+						foreign_training = yes_foreign_training
+						army_schools = yes_army_schools
+						foreign_officers = yes_foreign_officers
+					}
+					year = 1880
+				}
+			}
+			owner = {
+				military_reform = yes_foreign_navies
+				activate_technology = clipper_design
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_officers = no_foreign_officers
+					OR = {
+						foreign_training = yes_foreign_training
+						army_schools = yes_army_schools
+					}
+					year = 1900
+				}
+			}
+			owner = {
+				military_reform = yes_foreign_officers
+				activate_technology = army_command_principle
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_training = yes_foreign_training
+					army_schools = no_army_schools
+					year = 1900
+				}
+			}
+			owner = {
+				military_reform = yes_army_schools
+				activate_technology = bronze_muzzle_loaded_artillery
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_training = no_foreign_training
+					foreign_weapons = yes_foreign_weapons
+					year = 1880
+				}
+			}
+			owner = {
+				military_reform = yes_foreign_training
+				activate_technology = military_staff_system
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_weapons = yes_foreign_weapons
+					year = 1920
+				}
+			}
+			owner = {
+				military_reform = modern_weapons
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_weapons = no_foreign_weapons
+					year = 1870
+				}
+			}
+			owner = {
+				military_reform = yes_foreign_weapons
+				activate_technology = flintlock_rifles
+			}
+		}		
+		any_country = {
+			limit = {
+				exists = no
+				has_country_flag = existing_country
+			}
+			clr_country_flag = existing_country
+		}
+	}
+}
+
+country_event = {
+	id = 60095
+	title = "EVTNAME600795"
+	desc = "EVTDESC60095"
+	picture = "senate_debate"
+	
+	trigger = {
+		government = merchant_republic
+                public_meetings = yes_meeting
+                OR = {
+                        press_rights = censored_press
+                        press_rights = free_press
+                }
+		OR = {
+			political_parties = secret_ballots
+			political_parties = non_secret_ballots
+                        political_parties = gerrymandering
+		}
+		civilized = yes
+		OR = {
+			vote_franschise = universal_weighted_voting
+			vote_franschise = universal_voting
+                }
+                OR = {
+                                AND = {
+                                        ruling_party_ideology = Liberal
+                                        average_militancy = 6
+                                }
+                                AND = {
+                                        ruling_party_ideology = socialist
+                                        average_militancy = 6
+                                }
+                                AND = {   
+				        upper_house = {
+					        ideology = socialist
+					        value = 0.34
+				        }
+                                        average_militancy = 4
+                                }
+				AND = {   
+				        upper_house = {
+					        ideology = liberal
+					        value = 0.34
+				        }
+                                        average_militancy = 4
+                                }
+				AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.18
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.18
+                                        }
+                                        average_militancy = 4
+                                }
+                                AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.26
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.13 
+                                        }
+                                        average_militancy = 4                                      
+                                }
+				AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.13
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.26
+                                        }
+                                        average_militancy = 4
+                                }
+                                AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.30
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.1                           
+					}
+                                        average_militancy = 4
+                                }
+                                AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.1
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.30                           
+					}
+                                        average_militancy = 4
+				}            
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "EVTOPTA60070"
+		government = democracy
+	}
+}

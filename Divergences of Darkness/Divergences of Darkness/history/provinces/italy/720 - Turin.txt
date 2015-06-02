@@ -1,0 +1,27 @@
+owner = SAR
+controller = SAR
+add_core = SAR
+add_core = ITA
+trade_goods = silk
+life_rating = 35
+terrain = floodplain_farmland
+#state_building = {
+#	level = 1
+#	building = steel_factory
+#	upgrade = yes
+#}
+state_building = {
+	level = 1
+	building = regular_clothes_factory
+	upgrade = yes
+}
+#state_building = {
+#	level = 1
+#	building = ammunition_factory
+#	upgrade = yes
+#}
+#state_building = {
+#	level = 1
+#	building = small_arms_factory
+#	upgrade = yes
+#}

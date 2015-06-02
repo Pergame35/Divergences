@@ -1,0 +1,24 @@
+leader = {
+	name = "Giovanni Rivera"
+	type = land
+	date = 1836.1.1
+	personality = pompous
+	background = sycophant
+}
+
+army = {
+	name = "Esercito di Modena"
+	location = 739
+	regiment = {
+		name= "1. Fanteria di Linea"
+		type = regular
+		home = 739
+	}
+
+	regiment = {
+		name= "2. Fanteria di Linea"
+		type = regular
+		home = 740
+	}
+}
+

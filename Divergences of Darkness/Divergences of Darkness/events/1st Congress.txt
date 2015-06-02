@@ -1,0 +1,424 @@
+country_event = {
+
+	id = 46411
+
+	title = "EVTNAME46411"
+	desc = "EVTDESC46411"
+	picture = "Administration"
+	
+	major = yes
+
+	trigger = {
+		tag = CLM
+   		war = no
+		NOT = {
+			has_global_flag = congress_of_panama
+			has_global_flag = partial_peace 
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+		}
+		
+		modifier = {
+			factor = 0.2 #increase likelihood to happen
+			year = 1840
+		}
+	
+	
+
+	option = {
+		name = "EVTOPTA46411"
+		any_pop = {
+    			consciousness = 1
+		}
+		set_global_flag = congress_of_panama
+		remove_country_modifier = CLM_fight
+		CUB = { all_core = { add_core = THIS } }
+	}
+}
+
+country_event = {
+
+	id = 46408
+
+	title = "EVTNAME46408"
+	desc = "EVTDESC46408"
+	picture = "Administration"
+	 
+
+	trigger = {
+		tag = CLM        
+   		war = no
+		has_global_flag = congress_of_panama
+		NOT = {
+			has_global_flag = congress_of_panama_over
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "EVTOPTA46408"
+		random_list = {
+			40 = { country_event = 46409 }
+			35 = { country_event = 46410 }
+			25 = { country_event = 46412 }
+		}
+	}
+}
+
+country_event = {
+
+	id = 46409
+
+	title = "EVTNAME46409"
+	desc = "EVTDESC46409"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "EVTOPTA46409"
+		any_pop = {
+			limit = {
+				OR = { 
+					NOT = { culture = mexican }
+					NOT = { culture = lusitanian }
+					NOT = { culture = central_american }
+					}
+			}
+			militancy = 2
+      			consciousness = 4
+		}
+		add_accepted_culture = lusitanian
+		add_accepted_culture = central_american
+		add_accepted_culture = granadan
+		prestige = 25
+		set_global_flag = congress_of_panama_over
+		set_global_flag = columbian_unity
+		
+	}
+}
+
+country_event = {
+
+	id = 46410
+
+	title = "EVTNAME46410"
+	desc = "EVTDESC46410"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "EVTOPTA46410"
+
+		random_list = {
+			20 = { country_event = 46413 }
+			20 = { country_event = 46414 }
+			20 = { country_event = 46415 }
+			20 = { country_event = 46416 }
+		}
+
+		prestige = -25
+		add_accepted_culture = lusitanian
+		add_accepted_culture = central_american
+		set_global_flag = congress_of_panama_over
+		set_global_flag = columbian_unity
+		ai_chance = {
+			factor = 80
+		}
+	}
+
+	option = {
+		name = "EVTOPTB46410"
+			any_pop = {
+			    limit = {
+			    	NOT = { culture = mexican }
+			    }
+			militancy = 5
+         		consciousness = 5
+			}
+		set_global_flag = congress_of_panama_over
+		set_country_flag = dictatorshipgc
+		government = presidential_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = underground_parties
+		BRZ_2408 = { 
+		add_core = CLM
+			}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = {
+
+	id = 46412
+
+	title = "EVTNAME46412"
+	desc = "EVTDESC46412"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "EVTOPTA46412"
+
+		any_owned = {
+			limit = {
+				is_core = CLM
+			}
+			remove_core = CLM
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					is_core = CLM
+				}
+			remove_core = CLM
+			}
+		}
+
+		change_tag = MEX
+
+		any_owned = {
+			limit = {
+				is_core = CUB
+			}
+			secede_province = CUB
+		}
+		any_owned = {
+			limit = {
+				is_core = LST
+			}
+			secede_province = LST
+		}
+
+		CUB = { country_event = 46423 }
+		LST = { country_event = 46423 }
+
+		random_list = {
+			50 = { country_event = 46419 }
+			50 = { country_event = 46420 }
+		}
+		
+		random_list = {
+			20 = { country_event = 46413 }
+			20 = { country_event = 46414 }
+			20 = { country_event = 46415 }
+			20 = { country_event = 46416 }
+		}
+
+		random_list = {
+			50 = { country_event = 46417 }
+			50 = { country_event = 46418 }
+		}
+
+		prestige = -50
+		set_global_flag = congress_of_panama_over
+		
+		ai_chance = {
+			factor = 70
+		}
+	}
+
+	option = {
+		name = "EVTOPTB46412"
+			any_pop = {
+			    limit = {
+			    	NOT = { culture = mexican }
+			    }
+			militancy = 7
+         		consciousness = 7
+			}
+		set_global_flag = congress_of_panama_over
+		set_country_flag = dictatorshipgc
+		government = presidential_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = underground_parties
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+country_event = {
+
+	id = 46423
+
+	title = "EVTNAME46423"
+	desc = "EVTDESC46423"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA46423"
+		set_country_flag = thepath_tobe_chosen1
+	}
+}
+
+country_event = {
+
+	id = 46424
+
+	title = "EVTNAME46424"
+	desc = "EVTDESC46424"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA46424"
+		set_country_flag = thepath_tobe_chosen2
+	}
+}
+
+country_event = {
+
+	id = 46425
+
+	title = "EVTNAME46423"
+	desc = "EVTDESC46425"
+	picture = "Administration"
+	
+	trigger = {
+		has_country_flag = thepath_tobe_chosen1
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA46425"
+		clr_country_flag = thepath_tobe_chosen1
+		any_pop = {
+			limit = {
+				culture = mexican
+			}
+			militancy = 2
+      			consciousness = 2
+		}
+		random_list = {
+			30 = { 
+				government = democracy
+				political_reform = appointed
+				political_reform = landed_voting
+				political_reform = yes_meeting
+				political_reform = state_press
+				political_reform = no_trade_unions
+				political_reform = first_past_the_post
+				political_reform = non_secret_ballots
+			}
+			20 = { 
+				government = democracy
+				political_reform = state_equal_weight
+				political_reform = universal_weighted_voting
+				political_reform = yes_meeting
+				political_reform = free_press
+				political_reform = all_trade_unions
+				political_reform = first_past_the_post
+				political_reform = gerrymandering
+			}
+			40 = { 
+				government = presidential_dictatorship
+				political_reform = none_voting
+				political_reform = party_appointed
+				political_reform = no_meeting
+				political_reform = state_press
+				political_reform = no_trade_unions
+				political_reform = first_past_the_post
+				political_reform = underground_parties 
+			}
+			5 = { 
+				government = prussian_constitutionalism
+				political_reform = appointed
+				political_reform = wealth_voting
+				political_reform = yes_meeting
+				political_reform = censored_press
+				political_reform = no_trade_unions
+				political_reform = first_past_the_post
+				political_reform = non_secret_ballots
+			}
+			5 = { 
+				government = hms_government
+				political_reform = state_equal_weight
+				political_reform = universal_weighted_voting
+				political_reform = yes_meeting
+				political_reform = censored_press
+				political_reform = no_trade_unions
+				political_reform = first_past_the_post
+				political_reform = non_secret_ballots
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 46426
+
+	title = "EVTNAME46424"
+	desc = "EVTDESC46425"
+	picture = "Administration"
+	
+	trigger = {
+		has_country_flag = thepath_tobe_chosen2
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA46425"
+		clr_country_flag = thepath_tobe_chosen2
+		any_pop = {
+			limit = {
+				culture = mexican
+			}
+			militancy = 3
+      			consciousness = 3
+		}
+		random_list = {
+			50 = { 
+				government = democracy
+				political_reform = appointed
+				political_reform = wealth_voting
+				political_reform = yes_meeting
+				political_reform = censored_press
+				political_reform = no_trade_unions
+				political_reform = first_past_the_post
+				political_reform = non_secret_ballots
+			}
+			50 = { 
+				government = prussian_constitutionalism
+				political_reform = appointed
+				political_reform = landed_voting
+				political_reform = yes_meeting
+				political_reform = state_press
+				political_reform = no_trade_unions
+				political_reform = first_past_the_post
+				political_reform = non_secret_ballots
+			}
+		}
+	}
+}

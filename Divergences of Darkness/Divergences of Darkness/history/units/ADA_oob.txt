@@ -1,0 +1,39 @@
+leader = {
+	name = "Ahmad ibn Ibrihim al-Ghazi"
+	type = land
+	date = 1836.1.1
+	personality = resourceful
+	background = war_college
+}
+
+army = {
+	name = "Freedom Warriors"
+	location = 1873
+	regiment = {
+		name= "1st Freedom Division"
+		type = infantry
+		home = 1866
+	}
+
+	regiment = {
+		name= "2nd Freedom Division"
+		type = infantry
+		home = 1866
+	}
+}
+
+army = {
+	name = "Army of the Sultan"
+	location = 1866
+	regiment = {
+		name= "1st Sultan's Division"
+		type = infantry
+		home = 1866
+	}
+
+	regiment = {
+		name= "2nd Sultan's Division"
+		type = infantry
+		home = 1866
+	}
+}

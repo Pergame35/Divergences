@@ -1,0 +1,245 @@
+country_event = {
+	id = 333220
+	title = "EVTNAME333220"
+	desc = "EVTDESC333220"
+	picture = "administration"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA333220"
+		random_list = {
+			60 = { 
+				add_accepted_culture = catalan
+				badboy = -5
+			}
+			40 = { 
+				any_pop = {
+					limit = {
+						culture = catalan
+					}
+					militancy = 5
+         				consciousness = 5
+				}
+				badboy = 5
+			}
+		}
+	}
+}
+
+country_event = { #### Rif and Mauretania 
+	id = 333221
+	title = "Rif.T"
+	desc = "Rif.D"
+	picture = "Rif"
+	
+	trigger = { 
+	tag = SPA 
+	owns = 1686 
+	1686 = { is_core = MOR }
+	NOT = { has_country_flag = rif_resolved }
+	}
+	
+	mean_time_to_happen = { 
+	months = 15 
+	}
+	
+	option = { 
+	name = "We need both banks of the strait"
+	MOR_1688 = { remove_core = MOR remove_core = MGH }
+	set_country_flag = rif_resolved
+	}
+	
+	option = { 
+	name = "It is not Spanish land"
+	set_country_flag = rif_resolved
+	}
+}
+
+country_event = { #### Mancomunnidad
+	id = 333222
+	title = "Clm_lib6.T"
+	desc = "Clm_lib6.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Viva la Mancomunnidad de las Naciones Columbianas"
+	government = hms_government
+	political_reform = state_equal_weight
+	political_reform = universal_weighted_voting
+	political_reform = yes_meeting
+	political_reform = censored_press
+	political_reform = no_trade_unions
+	political_reform = first_past_the_post
+	political_reform = non_secret_ballots
+	}
+}
+
+country_event = {
+
+	id = 333223
+
+	title = "The Cuban Dominion"
+	desc = "The Cubans have asked to be granted the same status as their Colombian brothers."
+	picture = "danishgovernment"
+
+	major = yes
+
+	trigger = {
+		tag = SPA
+		exists = yes
+		war = no
+		year = 1910
+		has_country_flag = mancomunidad
+		any_owned_province = { is_core = CUB }
+		NOT = { exists = CUB }
+		is_possible_vassal = CUB
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 10
+			has_country_flag = CUB_independence_refused
+		}
+		modifier = {
+			factor = 0.8
+			any_state = {
+				any_owned_province = { is_core = MOR }
+				average_militancy = 3
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_state = {
+				any_owned_province = { is_core = MOR }
+				average_militancy = 4
+			}
+		}
+		modifier = {
+			factor = 0.5
+			year = 1920
+			NOT = { has_country_flag = CUB_independence_refused }
+		}
+	}
+
+	option = {
+		name = "This can only be good for the empire."
+		clr_country_flag = CUB_independence_refused
+		prestige = -20
+		badboy = -5
+		any_pop = {
+			limit = { location = { is_core = CUB } }
+			militancy = -10
+		}
+		CUB = {
+			all_core = { remove_core = SPA }
+		}
+		release_vassal = CUB
+		CUB = {
+			prestige = -80
+		}
+		relation = {
+			who = MOR
+			value = 100
+		}
+		diplomatic_influence = {
+			who = MOR
+			value = 200
+		}
+		any_pop = {
+			consciousness = 1
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				OR = {
+					government = proletarian_dictatorship
+					government = bourgeois_dictatorship
+					government = fascist_dictatorship
+					government = presidential_dictatorship
+				}
+			}
+			modifier = {
+				factor = 0.25
+				government = absolute_monarchy
+			}
+			modifier = {
+				factor = 1.5
+				government = democracy
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 0.75
+				war_policy = pro_military
+			}
+			modifier = {
+				factor = 1.25
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 1.5
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 1.2
+				militancy = 3
+			}
+			modifier = {
+				factor = 1.2
+				militancy = 5
+			}
+			
+		}	
+	}
+	option = {
+		name = "No, they shall remain under our direct control"
+		set_country_flag = CUB_independence_refused
+		any_owned = {
+			limit = { is_core = CUB }
+			any_pop = {
+				militancy = 3
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.75
+				government = absolute_monarchy
+			}
+			modifier = {
+				factor = 0.5
+				government = democracy
+			}
+			modifier = {
+				factor = 1.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 1.25
+				war_policy = pro_military
+			}
+			modifier = {
+				factor = 0.75
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 0.8
+				militancy = 3
+			}
+			modifier = {
+				factor = 0.8
+				militancy = 5
+			}
+		}
+	}
+}

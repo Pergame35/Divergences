@@ -1,0 +1,213 @@
+political_decisions = {
+	
+	pearl_delta_control = {
+  picture = unequal_treaty 
+	potential = { 
+	tag = SPA 
+	1499 = { owned_by = SPA }
+	AND = { 
+	1498 = { owned_by = TAI }
+	1496 = { owned_by = TAI }
+		}
+	}
+	
+	allow = { 
+	is_greater_power = yes 
+	war = no 
+	TAI = { war = no }
+	relation = { who = TAI value = 100}
+	}
+	
+	effect = { 
+	badboy = 5
+	TAI = { country_event = 44201 }
+		}
+	
+	}   
+  
+jiangsu_control = {
+   picture = unequal_treaty 
+	potential = { 
+	tag = TNG
+    NOT = { has_global_flag = jiangsu_status_resolved }
+    war = yes
+    MIG = { ai = yes } 
+    MIG = { exists = yes }
+    ai = yes 
+	}
+	
+	allow = { 	
+	2221 = { controlled_by = THIS }
+	}
+	
+	effect = {
+    set_global_flag = jiangsu_status_resolved 
+	end_war = MIG
+    inherit = MIG
+		}
+	}
+
+
+
+	unequal_treaty = {
+		potential = {
+			any_owned_province = { continent = asia }
+			NOT = { has_country_flag = intervened_boxer_war }
+			is_greater_power = yes
+			NOT = {
+				has_country_flag = negotiate_unequal_treaty
+				is_culture_group = chinese
+			}
+			MCK = {
+				civilized = no
+				war_with = THIS
+				NOT = { has_country_flag = negotiate_unequal_treaty }
+				OR = {
+					owns = 1481
+					owns = 1496
+					owns = 1498
+					owns = 1538
+					owns = 1566
+					owns = 1569
+					owns = 1606
+				}
+			}
+		}
+		
+		allow = {
+			war_with = MCK
+			MCK = {
+				OR = {
+					war_exhaustion = 50
+					any_owned_province = { controlled_by = THIS }
+				}
+				OR = {
+					national_provinces_occupied = 0.05
+					blockade = 0.50
+				}
+				war_exhaustion = 10
+			}
+		}
+		
+		effect = {
+			set_country_flag = negotiate_unequal_treaty
+			badboy = 2
+			MCK = {
+				set_country_flag = negotiate_unequal_treaty
+				country_event = 1316082
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	unequal_treaty_TPG = {
+		picture = unequal_treaty
+		potential = {
+			any_owned_province = { continent = asia }
+			is_greater_power = yes
+			NOT = {
+				has_country_flag = negotiate_unequal_treaty
+				is_culture_group = chinese
+				}
+			TAI = {
+				civilized = no
+				war_with = THIS
+				NOT = { has_country_flag = negotiate_unequal_treaty }
+				OR = {
+					owns = 1481
+					owns = 1496
+					owns = 1498
+					owns = 1538
+					owns = 1566
+					owns = 1569
+					owns = 1606
+				}
+			}
+		}
+		
+		allow = {
+			war_with = TAI
+			TAI = {
+				OR = {
+					war_exhaustion = 50
+					any_owned_province = { controlled_by = THIS }
+				}
+				OR = {
+					national_provinces_occupied = 0.05
+					blockade = 0.50
+				}
+				war_exhaustion = 10
+			}
+		}
+		
+		effect = {
+			set_country_flag = negotiate_unequal_treaty
+			badboy = 2
+			TAI = {
+				set_country_flag = negotiate_unequal_treaty
+				country_event = 1316082
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	unequal_treaty_TNG = {
+		picture = unequal_treaty
+		potential = {
+			any_owned_province = { continent = asia }
+			is_greater_power = yes
+			NOT = {
+				has_country_flag = negotiate_unequal_treaty
+				is_culture_group = chinese
+				}
+			TNG = {
+				civilized = no
+				war_with = THIS
+				NOT = { has_country_flag = negotiate_unequal_treaty }
+				OR = {
+					owns = 1481
+					owns = 1496
+					owns = 1498
+					owns = 1538
+					owns = 1566
+					owns = 1569
+					owns = 1606
+				}
+			}
+		}
+		
+		allow = {
+			war_with = TNG
+			TNG = {
+				OR = {
+					war_exhaustion = 50
+					any_owned_province = { controlled_by = THIS }
+				}
+				OR = {
+					national_provinces_occupied = 0.05
+					blockade = 0.50
+				}
+				war_exhaustion = 10
+			}
+		}
+		
+		effect = {
+			set_country_flag = negotiate_unequal_treaty
+			badboy = 2
+			TNG = {
+				set_country_flag = negotiate_unequal_treaty
+				country_event = 1316082
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

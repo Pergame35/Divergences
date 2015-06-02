@@ -1,0 +1,574 @@
+country_event = { #Navarran Independance 
+	
+	id = 987401
+	title = "NAV1.T"
+	desc = "NAV1.D" 
+	
+	major = yes 
+	
+	trigger = { 
+		tag = NAV 
+		war = no
+		vassal_of = ARA
+		ARA = { 
+			NOT = { 
+				is_greater_power = yes 
+				}
+			}
+		in_sphere = DUA
+		DUA = { 
+			OR = { 
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+			}
+		}
+		NOT = { has_country_flag = independence_NAV }
+		}
+
+	mean_time_to_happen = { 
+		months = 24 
+	}
+	
+	option = { 
+	name = "We will contact the Anglo-French for help !" 
+	set_country_flag = independence_NAV
+	DUA = { country_event = 987402 } 
+	ai_chance = { 
+		factor =  95
+		}
+	}
+	
+	option = { 
+	name = "We are no vultures. Aragon has our loyalty !"
+	set_country_flag = independence_NAV
+	DUA = { 
+		diplomatic_influence = { who = NAV value = -100 }
+		relation = { who = NAV value = -50 }
+		}
+	ai_chance = { 
+		factor =  5
+		}
+	}
+}
+
+country_event = { #Dual-Monarchy's answer 
+	
+	id = 987402
+	title = "NAV2.T"
+	desc = "NAV2.D" 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Of course we will help Navarre" 
+	NAV = { country_event = 987403 }
+		diplomatic_influence = { who = NAV value = 100 }
+		relation = { who = NAV value = 50 }
+	ai_chance = { 
+		factor = 75
+		}
+	}
+	
+	option = { 
+	name = "He must know what his place is, and it is under the Aragonese yoke !"
+	diplomatic_influence = { who = NAV value = -100 }
+	relation = { who = NAV value = -50 }
+	relation = { who = ARA value = 50 }
+	NAV = { country_event = 987405 }
+	ai_chance = { 
+		factor = 25 
+		}
+	}
+}
+
+country_event = { #Basque Proclamation of Independence (DUA support) 
+
+	id = 987403 
+	title = "NAV3.T"
+	desc = "NAV3.D"
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+	name = "Let them come !"
+	ARA = { 
+		release_vassal = NAV
+		leave_alliance = NAV
+		country_event = 987404
+		}
+	}
+}
+
+country_event = { #Basque Proclamation of Independence : Aragon's reaction 
+
+	id = 987404 
+	title = "NAV4.T"
+	desc = "NAV4.D"
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "We will recognize the independence of Navarre...."
+	prestige_factor = -0.20
+	relation = { who = NAV value = 50 }
+	relation = { who = DUA value = 50 }
+	ai_chance = { 
+	factor = 95 
+		}
+	}
+	
+	option = { 
+	name = "Declare war ! We will remove Navarre from the maps !"
+	badboy = 5 
+	casus_belli = {
+				target = NAV
+				type = conquest
+				months = 60
+			}
+	war = {
+			target = NAV
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		call_ally = yes
+		}
+	ai_chance = { 
+		factor = 5
+		modifier = { 
+		factor = 0.1 
+		DUA = { 
+			AND = { 
+				war_with = ENL 
+				has_country_flag = glorious_revolution
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Basque re-evaluate the situation after DUA refusal
+
+	id = 987405
+	title = "NAV5.T"
+	desc = "NAV5.D"
+	
+	is_triggered_only = yes	
+	
+	option = { 
+	name = "Call the Spanish king !"
+	SPA = { country_event = 987406 }
+	ai_chance = { 
+		factor =  75
+		}
+	} 
+	
+	option = { 
+	name = "Well, it may be time to give up this folly ...."
+	prestige = -5
+	ai_chance = { 
+		factor =  25
+		}
+	}
+}
+
+country_event = { #Spanish answer
+
+	id = 987406
+	title = "NAV6.T"
+	desc = "NAV6.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Of course, we will help Navarre !" 
+	NAV = { country_event = 987407 }
+	prestige = 5 
+	SPA = { 
+		diplomatic_influence = { who = NAV value = 100 }
+		relation = { who = NAV value = 50 }
+		}
+	ai_chance = { 
+		factor = 80
+		}
+	}
+	
+	option = { 
+	name = "It is Aragon demesne ...." 
+	relation = { who = ARA value = 50 }
+	relation = { who = NAV value = -50 }
+	ai_chance = { 
+		factor = 20
+		}
+	}
+}
+
+country_event = { #Basque Proclamation of Independence (SPA support) 
+
+	id = 987407
+	title = "NAV7.T"
+	desc = "NAV7.D"
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+	name = "Let them come !"
+	ARA = { 
+		release_vassal = NAV
+		country_event = 987408
+		}
+	}
+}
+
+country_event = { #Basque Proclamation of Independence : Aragon's reaction 
+
+	id = 987408 
+	title = "NAV8.T"
+	desc = "NAV8.D"
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "We will recognize the independence of Navarre...."
+	prestige_factor = -0.20
+	relation = { who = NAV value = 50 }
+	relation = { who = SPA value = 50 }
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+	
+	option = { 
+	name = "Declare war ! We will remove Navarre from the maps !"
+	badboy = 5 
+	casus_belli = {
+				target = NAV
+				type = conquest
+				months = 60
+			}
+	war = {
+			target = NAV
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		call_ally = yes
+		}
+	ai_chance = { 
+		factor = 50
+		}
+	}
+}
+
+####### The war of Bourbon Succession ####### 
+
+country_event = { 
+	
+	id = 987410
+	title = "NAV10.T"
+	desc = "NAV10.D" 
+	
+	major = yes 
+	
+	trigger = { 
+		tag = NAV 
+		war = no
+		year = 1850
+		OR = { 
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+			}
+		vassal_of = ARA
+		ARA = { 
+			OR = { 
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+			}
+		}
+		DUA = { 
+			OR = { 
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+			}
+		}
+		NOT = { has_global_flag = end_bourbon  }
+		}
+
+	mean_time_to_happen = { 
+		months = 35
+	}
+	
+	option = { 
+	name = "The infante of Bilbao is the rightful queen !" 
+	set_global_flag = end_bourbon
+	DUA = { 
+	country_event = 987411
+	inherit = NAV 
+	}
+	ai_chance = { 
+		factor =  50
+		}
+	}
+	
+	option = { 
+	name = "The countess of St-Sebastian is the rightful queen ! "
+	set_global_flag = end_bourbon
+	ARA = { 
+	country_event = 9874
+	inherit = NAV 
+	}
+	ai_chance = { 
+		factor =  50
+		}
+	}
+	
+	option = { 
+	name = "We don't need any monarchs !"
+	set_global_flag = end_bourbon 
+	government = democracy
+	ai_chance = { 
+		factor = 0
+		}
+	}
+}
+
+country_event = { #DUA notification 
+
+	id = 987411
+	title = "NAV11.T"
+	desc = "NAV11.D"
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "We will be soon kings of France, England and Navarre"
+	prestige = 10
+	ESK_1 = {
+		add_core = DUA
+		}
+	ARA = { country_event = 987412 }
+	}
+}
+
+country_event = { #Aragon's reaction
+
+	id = 987412
+	title = "NAV12.T"
+	desc = "NAV12.D"
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "Crown her queen of Navarra !"
+	ESK_1 = {
+		add_core = ARA
+		}
+	set_country_flag = contest_NAV
+	ai_chance = { 
+		factor =  75
+		}
+	}
+	
+	option = { 
+	name = "Acknowledge the infante of Bilbao..."
+	prestige = -10 
+	relation = { who = DUA value = 100 }
+	ai_chance = { 
+		factor =  25
+		}
+	}
+}
+
+country_event = { 
+	
+	id = 987413 
+	title = "NAV13.T"
+	desc = "NAV13.D"
+	
+	trigger = { 
+	tag = DUA 
+	owns = 492 
+	war = no 
+	ARA = { has_country_flag = contest_NAV }
+	}
+	
+	mean_time_to_happen = { 
+		days = 10 
+		}
+		
+	option = { 
+	name = "Send an ultimatum to Barcelona !"
+	ARA = { country_event = 987414
+			clr_country_flag = contest_NAV }
+		ai_chance = { 
+			factor = 100
+		}
+	}
+	
+	option = { 
+	name = "Who cares of Aragon ?"
+	ARA = { clr_country_flag = contest_NAV }
+	ai_chance = { 
+			factor = 0
+		}
+	}
+}
+	
+country_event = { #Aragon's reaction
+
+	id = 987414
+	title = "NAV14.T"
+	desc = "NAV14.D"
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "Navarre is rightfully ours !"
+	DUA = { 
+		casus_belli = {
+				target = ARA
+				type = cut_down_to_size
+				months = 60
+			}
+		}
+	FROM = {
+	war = {
+			target = ARA
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+			defender_goal =  { 
+				casus_belli = acquire_core_state
+				state_province_id = 492
+				}
+			}
+		}
+	}
+	
+	option = { 
+	name  = "We will surrender our claims ..." 
+	prestige = -25
+	ESK_1 = { 
+		remove_core = ARA
+		}
+	}
+}
+
+country_event = { #ARA notification 
+
+	id = 987415
+	title = "NAV15.T"
+	desc = "NAV15.D"
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "Navarre has always been ours"
+	prestige = 10
+	ESK_1 = {
+		add_core = DUA
+		}
+	DUA = { country_event = 987412 }
+	}
+}
+
+country_event = { #Aragon's reaction
+
+	id = 987416
+	title = "NAV16.T"
+	desc = "NAV16.D"
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "Crown her queen of Navarra !"
+	ESK_1 = {
+		add_core = DUA
+		}
+	set_country_flag = contest_NAV
+	ai_chance = { 
+		factor =  75
+		}
+	}
+	
+	option = { 
+	name = "Acknowledge the countess of St-Sebastian..."
+	prestige = -10 
+	relation = { who = ARA value = 100 }
+	ai_chance = { 
+		factor =  25
+		}
+	}
+}
+
+country_event = { 
+	
+	id = 987417 
+	title = "NAV17.T"
+	desc = "NAV17.D"
+	
+	trigger = { 
+	tag = ARA
+	owns = 492 
+	war = no 
+	DUA = { has_country_flag = contest_NAV }
+	}
+	
+	mean_time_to_happen = { 
+		days = 10 
+		}
+		
+	option = { 
+	name = "Send an ultimatum to Paris !"
+	DUA = { country_event = 987414
+			clr_country_flag = contest_NAV }
+		ai_chance = { 
+			factor = 100
+		}
+	}
+	
+	option = { 
+	name = "Who cares of the claims of the Anglo-French ?"
+	DUA = { clr_country_flag = contest_NAV }
+	ai_chance = { 
+			factor = 0
+		}
+	}
+}
+	
+country_event = { #Paris reaction
+
+	id = 987418
+	title = "NAV18.T"
+	desc = "NAV18.D"
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "Navarre is rightfully ours !"
+	ARA = { 
+		casus_belli = {
+				target = DUA
+				type = cut_down_to_size
+				months = 60
+			}
+		}
+	FROM = {
+		war = {
+			target = DUA
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+			defender_goal =  { 
+				casus_belli = acquire_core_state
+				state_province_id = 492
+				}
+			}
+		}
+	}
+}

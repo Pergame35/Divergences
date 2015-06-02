@@ -1,0 +1,38 @@
+political_decisions = {
+	to_north = {
+			potential = {
+				tag = MAC
+				NOT = { has_country_flag = macedon_greece }
+				NOT = { has_country_flag = macedon_serb }
+			}
+		
+			allow = {
+				NOT = {
+					BUL = { exists = yes }
+				}
+				NOT = { is_vassal = yes }
+				NOT = { war = yes }
+				BUL = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}
+		
+			effect = {
+				prestige = 10
+				BUL = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				primary_culture = bulgarian
+				remove_accepted_culture = turkish
+				add_accepted_culture = greek
+				set_country_flag = macedon_serb
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+}

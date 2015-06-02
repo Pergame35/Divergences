@@ -1,0 +1,143 @@
+political_decisions = {	
+
+	mycenaean_excavations = {
+		potential = {
+			civilized = yes
+			revolution_n_counterrevolution = 1
+			exists = GRE
+			840 = {
+				owned_by = GRE
+			}
+			NOT = {
+				owns = 840
+				has_global_flag = agamemnon_found
+				has_country_modifier = mycenaean_excavations
+				has_country_flag = greece_refused
+			}
+		}
+		
+		allow = {
+			prestige = 100
+		}
+		
+		effect = {		
+			GRE = {
+				country_event = 190401
+			}
+		}
+	}
+	
+	forced_mycenaean_excavations = {
+		picture = mycenaean_excavations
+		potential = {
+			is_greater_power = yes
+			revolution_n_counterrevolution = 1
+			OR = {
+				owns = 840
+				840 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = agamemnon_found
+				has_country_modifier = mycenaean_excavations
+			}
+		}
+		
+		allow = {
+			civilized = yes
+			OR = {
+				owns = 840
+				840 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = mycenaean_excavations
+				duration = -1
+			}
+		}
+	}
+
+	minoan_excavations = {
+		potential = {
+			civilized = yes
+			revolution_n_counterrevolution = 1
+			847 = {
+				OR = {
+					owned_by = CRE
+					owned_by = GRE
+				}
+			}
+			NOT = {
+				owns = 847
+				has_global_flag = minos_found
+				has_country_modifier = minoan_excavations
+				has_country_flag = started_minoan_excavations
+				has_country_flag = crete_refused
+			}
+		}
+		
+		allow = {
+			prestige = 100
+		}
+		
+		effect = {
+			set_country_flag = started_minoan_excavations
+			847 = {
+				owner = {
+					country_event = 1904012
+				}
+			}
+		}
+	}
+	
+	forced_minoan_excavations = {
+		picture = minoan_excavations
+		potential = {
+			is_greater_power = yes
+			revolution_n_counterrevolution = 1
+			OR = {
+				owns = 847
+				847 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = minos_found
+				has_country_modifier = minoan_excavations
+			}
+		}
+		
+		allow = {
+			civilized = yes
+			OR = {
+				owns = 847
+				847 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = minoan_excavations
+				duration = -1
+			}
+		}
+	}
+
+
+
+}

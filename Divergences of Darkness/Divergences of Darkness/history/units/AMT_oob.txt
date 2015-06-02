@@ -1,0 +1,31 @@
+leader = {
+	name = "Tekle Giyorgis"
+	type = land
+	date = 1836.1.1
+	personality = competent
+	background = cavalry_school
+}
+
+army = {
+	name = "Army of the True Emperor"
+	location = 1848
+	regiment = {
+		name= "1st Noble Division"
+		type = regular
+		home = 1848
+	}
+
+	regiment = {
+		name= "2nd Noble Division"
+		type = regular
+		home = 1848
+	}
+
+	regiment = {
+		name= "3rd Noble Division"
+		type = hussar
+		home = 1856
+	}
+
+}
+

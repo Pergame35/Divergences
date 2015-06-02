@@ -1,0 +1,139 @@
+leader = {
+	name = "Selamet III Giray"
+	type = land
+	date = 1836.1.1
+	personality = tyrant
+	background = member_of_elite
+}
+
+army = {
+	name = "Army of the Khanate of Crimea"
+	location = 967
+	regiment = {
+		name= "1.Tatar"
+		type = hussar
+		home = 964
+	}
+
+	regiment = {
+		name= "2.Tatar"
+		type = hussar
+		home = 964
+	}
+
+	regiment = {
+		name= "3.Tatar"
+		type = hussar
+		home = 964
+	}
+
+	regiment = {
+		name= "4.Tatar"
+		type = hussar
+		home = 964
+	}
+
+	regiment = {
+		name= "5.Tatar"
+		type = hussar
+		home = 965
+	}
+
+	regiment = {
+		name= "6.Tatar"
+		type = hussar
+		home = 965
+	}
+
+	regiment = {
+		name= "7.Tatar"
+		type = hussar
+		home = 965
+	}
+
+	regiment = {
+		name= "8.Tatar"
+		type = hussar
+		home = 965
+	}
+}
+
+army = {
+	name = "infantry of Crimea"
+	location = 968
+	regiment = {
+		name= "1.Tatar"
+		type = infantry
+		home = 965
+	}
+
+	regiment = {
+		name= "2.infantry"
+		type = infantry
+		home = 965
+	}
+
+	regiment = {
+		name= "3.infantry"
+		type = infantry
+		home = 965
+	}
+
+	regiment = {
+		name= "4.infantry"
+		type = infantry
+		home = 965
+	}
+
+	regiment = {
+		name= "5.infantry"
+		type = infantry
+		home = 965
+	}
+
+	regiment = {
+		name= "6.infantry"
+		type = infantry
+		home = 965
+	}
+}
+
+army = {
+	name = "Army of Odessa"
+	location = 1047
+	regiment = {
+		name= "1.Tatar"
+		type = hussar
+		home = 965
+	}
+
+	regiment = {
+		name= "2.Tatar"
+		type = hussar
+		home = 977
+	}
+
+	regiment = {
+		name= "3.Tatar"
+		type = hussar
+		home = 977
+	}
+
+	regiment = {
+		name= "4.Tatar"
+		type = hussar
+		home = 977
+	}
+
+	regiment = {
+		name= "5.Tatar"
+		type = hussar
+		home = 977
+	}
+
+	regiment = {
+		name= "6.Tatar"
+		type = hussar
+		home = 979
+	}
+}

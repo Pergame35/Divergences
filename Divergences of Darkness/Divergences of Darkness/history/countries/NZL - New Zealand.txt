@@ -1,0 +1,44 @@
+capital = 2512
+primary_culture = british
+religion = protestant
+government = hms_government
+plurality = 0.88
+nationalvalue = nv_liberty
+literacy = 0.5
+civilized = yes
+
+
+# Political reforms
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = wealth_voting
+public_meetings = yes_meeting
+press_rights = free_press
+trade_unions = all_trade_unions
+voting_system = jefferson_method
+political_parties = non_secret_ballots
+minorities_reform = oppression
+immigration_policy = quota_immigration
+conscription=two_year_draft
+pollution=no_controls
+child_labor = child_labor_legal
+arts_endowment=no_endowment
+education = elite
+# Social Reforms
+wage_reform = low_minimum_wage
+work_hours = ten_hours
+safety_regulations = low_safety
+health_care = low_health_care
+unemployment_subsidies = low_subsidies
+pensions = low_pensions
+
+ruling_party = NWZ_conservative
+upper_house = {
+	fascist = 0
+	liberal = 30
+	conservative = 60
+	reactionary = 5
+	anarcho_liberal = 5
+	socialist = 0
+	communist = 0
+}

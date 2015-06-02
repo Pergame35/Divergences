@@ -1,0 +1,13 @@
+owner = BRG
+controller = BRG
+add_core = BRG
+add_core = LRR
+add_core = RHI
+trade_goods = timber
+life_rating = 32
+terrain = forested_farmland
+state_building = {
+	level = 2 
+	building = steel_factory
+	upgrade = yes
+}

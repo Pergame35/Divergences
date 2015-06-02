@@ -1,0 +1,37 @@
+# The Incident
+country_event = {
+	id = 126100
+	title = "EVTNAME126100"
+	desc = "EVTDESC126100"
+	picture = "angry_natives"
+	
+	trigger = {
+		OR = {
+			tag = ETH
+			tag = AMT
+			tag = FUN
+			tag = ADA
+			tag = ERI
+		}
+		ETH_1864 = {
+			owned_by = THIS
+		}
+		year = 1838
+		AMT = { exists = yes }
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "EVTOPTA126100"
+		any_pop = {
+			limit = {
+				has_pop_culture = oromo
+			}
+		militancy = 5
+		consciousness = 2
+		}
+	}
+}

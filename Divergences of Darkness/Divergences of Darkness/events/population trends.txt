@@ -1,0 +1,865 @@
+#############################################################
+#															#
+#                  	Birth Rate Events						#
+#															#
+#############################################################
+
+country_event = {
+	id = 2260601
+	title = "Birth Rate Tumbles!"
+	desc = "Our population appear to have lost interest in raising families."
+	picture = "administration"
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = point_five_children 
+			has_country_modifier = one_child
+			has_country_modifier = one_point_five_children
+			has_country_modifier = two_children 
+			has_country_modifier = two_point_five_children
+			has_country_modifier = three_children
+			has_country_modifier = four_children
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 60
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 70
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 80
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 90
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 1 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.95 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.9 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.85 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.8 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.75
+		}
+		modifier = {
+			factor = 0.7
+			has_country_modifier = the_female_shortage
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 99
+		}
+		modifier = {
+			factor = 0.9
+			consciousness = 9
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				nationalvalue = nv_unity
+				nationalvalue = nv_prosperity
+				nationalvalue = nv_equality
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				nationalvalue = nv_order
+				nationalvalue = nv_might
+				nationalvalue = nv_productivity
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment = 0.5
+		}
+		modifier = {
+			factor = 0.5
+			tag = FRA
+		}
+		modifier = {
+			factor = 1.5
+			poor_strata_everyday_needs = 0.25
+		}
+		modifier = {
+			factor = 1.5
+			poor_strata_life_needs = 1
+		}
+		modifier = {
+			factor = 0.5
+			not = { poor_strata_life_needs = 0.25 }
+		}
+	}
+	
+	option = {
+		name = "Then every child is precious."
+		remove_country_modifier = point_five_children 
+		remove_country_modifier = one_child
+		remove_country_modifier = one_point_five_children
+		remove_country_modifier = two_children 
+		remove_country_modifier = two_point_five_children
+		remove_country_modifier = three_children
+		remove_country_modifier = four_children
+		add_country_modifier = {
+			name = point_five_children
+			duration = 3650
+		}
+	}
+}
+country_event = {
+	id = 2260602
+	title = "Birth Rate Very Low!"
+	desc = "Our population seem to be breeding less."
+	picture = "administration"
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = point_five_children 
+			has_country_modifier = one_child
+			has_country_modifier = one_point_five_children
+			has_country_modifier = two_children 
+			has_country_modifier = two_point_five_children
+			has_country_modifier = three_children
+			has_country_modifier = four_children
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 30
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 40
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 50
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 60
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 70
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.70
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.65
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.6 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.55
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.5 
+		}
+		modifier = {
+			factor = 0.9
+			consciousness = 8
+		}
+		modifier = {
+			factor = 0.8
+			has_country_modifier = the_female_shortage
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				nationalvalue = nv_unity
+				nationalvalue = nv_prosperity
+				nationalvalue = nv_equality
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+				nationalvalue = nv_order
+				nationalvalue = nv_might
+				nationalvalue = nv_productivity
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment = 0.4
+		}
+		modifier = {
+			factor = 0.5
+			tag = FRA
+		}
+		modifier = {
+			factor = 1.5
+			poor_strata_everyday_needs = 0.5
+		}
+		modifier = {
+			factor = 1.5
+			poor_strata_everyday_needs = 0.25
+		}
+		modifier = {
+			factor = 0.5
+			not = { poor_strata_life_needs = 0.5 }
+		}
+	}
+	
+	option = {
+		name = "Then every child is precious."
+		remove_country_modifier = point_five_children 
+		remove_country_modifier = one_child
+		remove_country_modifier = one_point_five_children
+		remove_country_modifier = two_children 
+		remove_country_modifier = two_point_five_children
+		remove_country_modifier = three_children
+		remove_country_modifier = four_children
+		add_country_modifier = {
+			name = one_child
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = 2260603
+	title = "Birth Rate Low!"
+	desc = "Our population is no longer increasing."
+	picture = "administration"
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = point_five_children 
+			has_country_modifier = one_child
+			has_country_modifier = one_point_five_children
+			has_country_modifier = two_children 
+			has_country_modifier = two_point_five_children
+			has_country_modifier = three_children
+			has_country_modifier = four_children
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 20
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 30
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 40
+		}
+		modifier = {
+			factor = 0.9
+			war_exhaustion = 50
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.45 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.4 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.35 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.3
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.25 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.2
+		}
+		modifier = {
+			factor = 0.9
+			consciousness = 7
+		}
+		modifier = {
+			factor = 0.9
+			has_country_modifier = the_female_shortage
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				nationalvalue = nv_unity
+				nationalvalue = nv_prosperity
+				nationalvalue = nv_equality
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+				nationalvalue = nv_order
+				nationalvalue = nv_might
+				nationalvalue = nv_productivity
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			poor_strata_everyday_needs = 0.75
+		}
+		modifier = {
+			factor = 1.5
+			poor_strata_everyday_needs = 0.5
+		}
+		modifier = {
+			factor = 0.5
+			not = { poor_strata_life_needs = 0.75 }
+		}
+	}
+	
+	option = {
+		name = "Then every child is precious."
+		remove_country_modifier = point_five_children 
+		remove_country_modifier = one_child
+		remove_country_modifier = one_point_five_children
+		remove_country_modifier = two_children 
+		remove_country_modifier = two_point_five_children
+		remove_country_modifier = three_children
+		remove_country_modifier = four_children
+		add_country_modifier = {
+			name = one_point_five_children 
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = 2260604
+	title = "Birth Rate Stable!"
+	desc = "Our population appears to be stablizing."
+	picture = "administration"
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = point_five_children 
+			has_country_modifier = one_child
+			has_country_modifier = one_point_five_children
+			has_country_modifier = two_children 
+			has_country_modifier = two_point_five_children
+			has_country_modifier = three_children
+			has_country_modifier = four_children
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 100 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 90 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 80 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 70 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 60 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 50 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 1 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.9 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.8 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.7 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.6 }
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.5 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.4 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.3
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.2 
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.1
+		}
+		modifier = {
+			factor = 1.1
+			has_country_modifier = the_female_shortage
+		}
+		modifier = {
+			factor = 0.5
+			not = { unemployment = 0.3 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { poor_strata_everyday_needs = 1 }
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_everyday_needs = 0.25
+		}
+		modifier = {
+			factor = 1.5
+			not = { poor_strata_life_needs = 1 }
+			not = { poor_strata_everyday_needs = 0.01 }
+		}
+	}
+	
+	option = {
+		name = "This is good news."
+		remove_country_modifier = point_five_children 
+		remove_country_modifier = one_child
+		remove_country_modifier = one_point_five_children
+		remove_country_modifier = two_children 
+		remove_country_modifier = two_point_five_children
+		remove_country_modifier = three_children
+		remove_country_modifier = four_children
+		add_country_modifier = {
+			name = two_children 
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = 2260605
+	title = "Birth Rate High!"
+	desc = "Our population appears to be increasing."
+	picture = "administration"
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = point_five_children 
+			has_country_modifier = one_child
+			has_country_modifier = one_point_five_children
+			has_country_modifier = two_children 
+			has_country_modifier = two_point_five_children
+			has_country_modifier = three_children
+			has_country_modifier = four_children
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 70 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 60 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 50 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 40 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 30 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 1 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.9 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.8 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.7 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.6 }
+		}
+		modifier = {
+			factor = 1.3
+			has_country_modifier = the_female_shortage
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				nationalvalue = nv_unity
+				nationalvalue = nv_prosperity
+				nationalvalue = nv_equality
+			}
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				nationalvalue = nv_order
+				nationalvalue = nv_might
+				nationalvalue = nv_productivity
+			}
+		}
+		modifier = {
+			factor = 0.5
+			not = { unemployment = 0.2 }
+		}
+		modifier = {
+			factor = 0.75
+			AND = {
+				NOT = { poor_strata_everyday_needs = 1 }
+				NOT = { poor_strata_luxury_needs = 0.01 }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			poor_strata_everyday_needs = 0.5
+		}
+		modifier = {
+			factor = 2
+			not = { poor_strata_life_needs = 1 }
+			not = { poor_strata_everyday_needs = 0.01 }
+		}
+	}
+	
+	option = {
+		name = "This is good news."
+		remove_country_modifier = point_five_children 
+		remove_country_modifier = one_child
+		remove_country_modifier = one_point_five_children
+		remove_country_modifier = two_children 
+		remove_country_modifier = two_point_five_children
+		remove_country_modifier = three_children
+		remove_country_modifier = four_children
+		add_country_modifier = {
+			name = two_point_five_children
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = 2260606
+	title = "Birth Rate Very High!"
+	desc = "Our population appears to be increasing rapidly."
+	picture = "administration"
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = point_five_children 
+			has_country_modifier = one_child
+			has_country_modifier = one_point_five_children
+			has_country_modifier = two_children 
+			has_country_modifier = two_point_five_children
+			has_country_modifier = three_children
+			has_country_modifier = four_children
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 60 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 50 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 40 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 30 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 20 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.75 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.65 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.55 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.45 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.35 }
+		}
+		modifier = {
+			factor = 1.5
+			has_country_modifier = the_female_shortage
+		}
+		modifier = {
+			factor = 1.3
+			OR = {
+				nationalvalue = nv_unity
+				nationalvalue = nv_prosperity
+				nationalvalue = nv_equality
+			}
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				nationalvalue = nv_order
+				nationalvalue = nv_might
+				nationalvalue = nv_productivity
+			}
+		}
+		modifier = {
+			factor = 1.5
+			tag = FRA
+		}
+		modifier = {
+			factor = 0.5
+			not = { unemployment = 0.1 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { poor_strata_luxury_needs = 0.25 }
+		}
+		modifier = {
+			factor = 0.75
+			poor_strata_everyday_needs = 0.75
+		}
+		modifier = {
+			factor = 2
+			not = { poor_strata_life_needs = 1 }
+			not = { poor_strata_everyday_needs = 0.01 }
+		}
+	}
+	
+	option = {
+		name = "This is good news."
+		remove_country_modifier = point_five_children 
+		remove_country_modifier = one_child
+		remove_country_modifier = one_point_five_children
+		remove_country_modifier = two_children 
+		remove_country_modifier = two_point_five_children
+		remove_country_modifier = three_children
+		remove_country_modifier = four_children
+		add_country_modifier = {
+			name = three_children
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = 2260607
+	title = "Birth Rate Exploding!"
+	desc = "Our population appears to be breeding like rabbits!"
+	picture = "administration"
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = point_five_children 
+			has_country_modifier = one_child
+			has_country_modifier = one_point_five_children
+			has_country_modifier = two_children 
+			has_country_modifier = two_point_five_children
+			has_country_modifier = three_children
+			has_country_modifier = four_children
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 50 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 40 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 30 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 20 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war_exhaustion = 10 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.5 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 0.1 }
+		}
+		modifier = {
+			factor = 1.5
+			has_country_modifier = the_female_shortage
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+				nationalvalue = nv_unity
+				nationalvalue = nv_prosperity
+				nationalvalue = nv_equality
+			}
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				nationalvalue = nv_order
+				nationalvalue = nv_might
+				nationalvalue = nv_productivity
+			}
+		}
+		modifier = {
+			factor = 1.5
+			tag = FRA
+		}
+		modifier = {
+			factor = 0.5
+			not = { unemployment = 0.01 }
+		}
+		modifier = {
+			factor = 0.75
+			poor_strata_luxury_needs = 0.5 
+		}
+		modifier = {
+			factor = 0.75
+			poor_strata_everyday_needs = 1
+		}
+		modifier = {
+			factor = 4
+			not = { poor_strata_life_needs = 1 }
+			not = { poor_strata_everyday_needs = 0.01 }
+		}
+	}
+	
+	option = {
+		name = "Must be something in the water."
+		remove_country_modifier = point_five_children 
+		remove_country_modifier = one_child
+		remove_country_modifier = one_point_five_children
+		remove_country_modifier = two_children 
+		remove_country_modifier = two_point_five_children
+		remove_country_modifier = three_children
+		remove_country_modifier = four_children
+		add_country_modifier = {
+			name = four_children
+			duration = 3650
+		}
+	}
+}

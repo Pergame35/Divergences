@@ -1,0 +1,83 @@
+leader = {
+	name = "Artur Rasizade"
+	type = land
+	date = 1836.1.1
+	personality = cruel
+	background = gifted_administrator
+}
+
+leader = {
+	name = "Ilham Aliyev"
+	type = land
+	date = 1836.1.1
+	personality = fearsome
+	background = introverted_philosopher
+}
+
+army = {
+	name = "Army of the Safavids"
+	location = 1102
+	regiment = {
+		name= "1.1st Division"
+		type = regular
+		home = 1102
+	}
+
+	regiment = {
+		name= "2.1st Division"
+		type = regular
+		home = 1102
+	}
+
+	regiment = {
+		name= "3.1st Division"
+		type = regular
+		home = 1102
+	}
+	
+	regiment = {
+		name= "4.1st Division"
+		type = hussar
+		home = 1052
+	}
+	
+	regiment = {
+		name= "5.1st Division"
+		type = hussar
+		home = 1090
+	}
+}
+
+army = {
+	name = "Army of the Empire"
+	location = 1090
+	regiment = {
+		name= "1.1st Division"
+		type = infantry
+		home = 1090
+	}
+
+	regiment = {
+		name= "2.1st Division"
+		type = infantry
+		home = 1094
+	}
+
+	regiment = {
+		name= "3.1st Division"
+		type = infantry
+		home = 1098
+	}
+	
+	regiment = {
+		name= "4.1st Division"
+		type = hussar
+		home = 1108
+	}
+	
+	regiment = {
+		name= "5.1st Division"
+		type = hussar
+		home = 1108
+	}
+}

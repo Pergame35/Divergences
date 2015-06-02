@@ -1,0 +1,763 @@
+SWI = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
+BRE = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
+HAN = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
+LIP = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
+FRM = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
+NAS = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
+BAD = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
+WUR = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
+FRI = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
+
+BEG = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
+MNR = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
+HYD = { 
+
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+
+
+leader = {
+	name = "Tristan Duras"
+	type = land
+	date = 1836.1.1
+	personality = secretive
+	background = eccentric_genius
+}
+
+leader = {
+	name = "Guillame de Anvers"
+	type = land
+	date = 1836.1.1
+	personality = glory_hound
+	background = aristocrat
+}
+
+leader = {
+	name = "Jean Ferro"
+	type = land
+	date = 1836.1.1
+	personality = shirker
+	background = sinner
+}
+
+leader = {
+	name = "Paul Laforgue"
+	type = land
+	date = 1836.1.1
+	personality = daring
+	background = unqualified
+}
+
+leader = {
+	name = "Hector Millet"
+	type = land
+	date = 1836.1.1
+	personality = dauntless
+	background = school_of_the_bayonet
+}
+
+leader = {
+	name = "Georges Roussel"
+	type = land
+	date = 1836.1.1
+	personality = scared
+	background = unqualified
+}
+
+
+leader = {
+	name = "Antoine Villon"
+	type = sea
+	date = 1836.1.1
+	personality = expert
+	background = cartographer
+}
+
+army = {
+	name = "Armée du Nord"
+	location = 381
+  regiment = {
+		name= "1. Infantrie de Bourgogne"
+		type = regular
+		home = 428
+	}	
+  regiment = {
+		name= "2. Infantrie de Bourgogne"
+		type = regular
+		home = 428
+	}	
+  regiment = {
+		name= "3. Infantrie de Bourgogne"
+		type = regular
+		home = 411
+	}	
+  regiment = {
+		name= "4. Infantrie de Bourgogne"
+		type = regular
+		home = 411
+	}	
+  regiment = {
+		name= "5. Infantrie de Bourgogne"
+		type = regular
+		home = 412
+	}	
+  regiment = {
+		name= "6. Infantrie de Bourgogne"
+		type = regular
+		home = 394
+	}	
+  regiment = {
+		name= "7. Infantrie de Bourgogne"
+		type = artillery
+		home = 394
+	}	            
+}
+army = {
+	name = "Armée d'Alsace"
+	location = 571
+  regiment = {
+		name= "1. Infantrie d'Alsace"
+		type = regular
+		home = 394
+	}	
+  regiment = {
+		name= "2. Infantrie d'Alsace"
+		type = regular
+		home = 394
+	}	
+  regiment = {
+		name= "3. Infantrie d'Alsace"
+		type = regular
+		home = 394
+	}	
+  regiment = {
+		name= "4. Infantrie d'Alsace"
+		type = regular
+		home = 395
+	}	
+  regiment = {
+		name= "5. Infantrie d'Alsace"
+		type = regular
+		home = 399
+	}	
+  regiment = {
+		name= "6. Infantrie d'Alsace"
+		type = regular
+		home = 399
+	}	
+  regiment = {
+		name= "7. Infantrie d'Alsace"
+		type = artillery
+		home = 572
+	}	            
+}
+
+army = {
+	name = "Armée de Lorraine"
+	location = 411
+  regiment = {
+		name= "1. Infantrie de Lorraine"
+		type = regular
+		home = 399
+	}	
+  regiment = {
+		name= "2. Infantrie de Lorraine"
+		type = regular
+		home = 385
+	}	
+  regiment = {
+		name= "3. Infantrie de Lorraine"
+		type = regular
+		home = 390
+	}	
+  regiment = {
+		name= "4. Infantrie de Lorraine"
+		type = regular
+		home = 390
+	}	
+  regiment = {
+		name= "5. Infantrie de Lorraine"
+		type = regular
+		home = 390
+	}	
+  regiment = {
+		name= "6. Infantrie de Lorraine"
+		type = regular
+		home = 390
+	}	
+  regiment = {
+		name= "7. Infantrie de Lorraine"
+		type = artillery
+		home = 572
+	}	            
+}
+
+army = {
+	name = "Armée de Flandres"
+	location = 400
+  regiment = {
+		name= "1. Infantrie de Flandres"
+		type = regular
+		home = 381
+	}	
+  regiment = {
+		name= "2. Infantrie de Flandres"
+		type = regular
+		home = 394
+	}	
+  regiment = {
+		name= "3. Infantrie de Flandres"
+		type = regular
+		home = 381
+	}	
+  regiment = {
+		name= "4. Infantrie de Flandres"
+		type = regular
+		home = 394
+	}	
+  regiment = {
+		name= "5. Infantrie de Flandres"
+		type = regular
+		home = 581
+	}	
+  regiment = {
+		name= "6. Infantrie de Flandres"
+		type = regular
+		home = 581
+	}	
+  regiment = {
+		name= "7. Infantrie de Flandres"
+		type = artillery
+		home = 565
+	}	            
+}
+
+army = {
+	name = "Armée de Cologne"
+	location = 575
+  regiment = {
+		name= "1. Infantrie du Rhin"
+		type = regular
+		home = 581
+	}	
+  regiment = {
+		name= "2. Infantrie du Rhin"
+		type = regular
+		home = 581
+	}	
+  regiment = {
+		name= "3. Infantrie du Rhin"
+		type = regular
+		home = 581
+	}	
+  regiment = {
+		name= "4. Infantrie du Rhin"
+		type = regular
+		home = 385
+	}	
+  regiment = {
+		name= "5. Infantrie du Rhin"
+		type = regular
+		home = 385
+	}	
+  regiment = {
+		name= "6. Infantrie du Rhin"
+		type = regular
+		home = 394
+	}	
+  regiment = {
+		name= "7. Infantrie du Rhin"
+		type = artillery
+		home = 565
+	}	            
+}
+
+army = {
+	name = "Armée du Cap"
+	location = 2087
+  regiment = {
+		name= "1. Infantrie"
+		type = infantry
+		home = 2217
+	}	
+  regiment = {
+		name= "2. Infantrie"
+		type = infantry
+		home = 2087
+	}	
+  regiment = {
+		name= "3. Infantrie"
+		type = infantry
+		home = 2087
+	}	 
+  regiment = {
+		name= "1. Cavalerie"
+		type = hussar
+		home = 1414
+	}
+  regiment = {
+		name= "2. Cavalerie"
+		type = hussar
+		home = 565
+	}         
+}
+
+army = {
+	name = "Armée de Java"
+	location = 1414
+  regiment = {
+		name= "1. Infantrie"
+		type = infantry
+		home = 1414
+	}	
+  regiment = {
+		name= "2. Infantrie"
+		type = infantry
+		home = 1414
+	}	
+  regiment = {
+		name= "3. Infantrie"
+		type = infantry
+		home = 1414
+	}	
+  regiment = {
+		name= "4. Infantrie"
+		type = infantry
+		home = 1414
+	}	
+  regiment = {
+		name= "5. Infantrie"
+		type = infantry
+		home = 607
+	}        
+}
+
+army = {
+	name = "Garnison de l'Inde"
+	location = 1306
+  regiment = {
+		name= "1. Infantrie"
+		type = infantry
+		home = 375
+	}	
+  regiment = {
+		name= "2. Infantrie"
+		type = infantry
+		home = 2096
+	}	
+  regiment = {
+		name= "3. Infantrie"
+		type = infantry
+		home = 390
+	}	
+  regiment = {
+		name= "4. Infantrie"
+		type = infantry
+		home = 607
+	}	
+  regiment = {
+		name= "5. Infantrie"
+		type = infantry
+		home = 1306
+	}       
+}
+
+navy = {
+	name = "Escadre de Flandre"
+	location = 388
+	ship = {
+		name= "Triton"
+		type = manowar
+	}
+
+	ship = {
+		name= "Etats de Flandres"
+		type = manowar
+	}
+
+	ship = {
+		name= "Souverain"
+		type = manowar
+	}
+
+	ship = {
+		name= "Marengo"
+		type = manowar
+	}
+
+	ship = {
+		name= "Ville de Brugges"
+		type = manowar
+	}
+
+	ship = {
+		name= "Hercule"
+		type = manowar
+	}
+
+	ship = {
+		name= "Montebello "
+		type = manowar
+	}
+
+	ship = {
+		name= "Centaure"
+		type = manowar
+	}
+
+	ship = {
+		name= "Jupiter"
+		type = manowar
+	}
+
+	ship = {
+		name= "Duc de Lorraine"
+		type = manowar
+	}
+
+	ship = {
+		name= "Hercules"
+		type = manowar
+	}
+
+	ship = {
+		name= "Généreux"
+		type = manowar
+	}
+
+	ship = {
+		name= "Diadème"
+		type = manowar
+	}
+
+	ship = {
+		name= "Couronne"
+		type = manowar
+	}
+
+	ship = {
+		name= "Suffren"
+		type = manowar
+	}
+
+	ship = {
+		name= "Trident"
+		type = manowar
+	}
+
+	ship = {
+		name= "Royal Louis"
+		type = manowar
+	}
+
+	ship = {
+		name= "Commerces d'Amsterdam"
+		type = manowar
+	}
+
+	ship = {
+		name= "Anvers"
+		type = manowar
+	}
+
+	ship = {
+		name= "Lorraine"
+		type = manowar
+	}
+
+	ship = {
+		name= "Terpsichore"
+		type = frigate
+	}
+
+	ship = {
+		name= "Arthémise"
+		type = frigate
+	}
+
+	ship = {
+		name= "Belle Gabrielle"
+		type = frigate
+	}
+
+	ship = {
+		name= "Didon"
+		type = frigate
+	}
+
+	ship = {
+		name= "Caroline"
+		type = frigate
+	}
+
+	ship = {
+		name= "Herminie"
+		type = frigate
+	}
+
+	ship = {
+		name= "Melpomène"
+		type = frigate
+	}
+
+	ship = {
+		name= "Uranie"
+		type = frigate
+	}
+
+	ship = {
+		name= "Andromède"
+		type = frigate
+	}
+
+	ship = {
+		name= "Rotterdam"
+		type = frigate
+	}
+
+	ship = {
+		name= "Belle Poule"
+		type = frigate
+	}
+
+	ship = {
+		name= "Erigone"
+		type = frigate
+	}
+
+	ship = {
+		name= "Nereide"
+		type = frigate
+	}
+
+	ship = {
+		name= "Gloire"
+		type = frigate
+	}
+
+	ship = {
+		name= "Reine Blanche"
+		type = frigate
+	}
+
+	ship = {
+		name= "Lotharingia"
+		type = frigate
+	}
+
+	ship = {
+		name= "Bruxelles"
+		type = frigate
+	}
+
+	ship = {
+		name= "Friesland"
+		type = frigate
+	}
+
+	ship = {
+		name= "Vespuccia"
+		type = frigate
+	}
+
+	ship = {
+		name= "Leeuwin"
+		type = frigate
+	}
+
+	ship = {
+		name= "Santa Magdalena"
+		type = frigate
+	}
+
+	ship = {
+		name= "Terraferma"
+		type = frigate
+	}
+
+	ship = {
+		name= "1ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "4ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "5ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "6ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "7ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "8ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "9ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "10ème Flotille de Transport"
+		type = clipper_transport
+	}
+}
+
+navy = {
+	name = "Escadre de Java"
+	location = 1414
+	ship = {
+		name= "Deus"
+		type = manowar
+	}
+
+	ship = {
+		name= "Alsatia"
+		type = manowar
+	}
+
+	ship = {
+		name= "Neuwelt"
+		type = manowar
+	}
+
+	ship = {
+		name= "Arcadia"
+		type = manowar
+	}
+
+	ship = {
+		name= "Athena"
+		type = manowar
+	}
+
+	ship = {
+		name= "Calvinia"
+		type = frigate
+	}
+
+	ship = {
+		name= "Calais"
+		type = frigate
+	}
+
+	ship = {
+		name= "Burgunda"
+		type = frigate
+	}
+
+	ship = {
+		name= "Santa Maria"
+		type = frigate
+	}
+
+	ship = {
+		name= "Charleroi"
+		type = frigate
+	}
+
+	ship = {
+		name= "1ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "4ème Flotille de Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "5ème Flotille de Transport"
+		type = clipper_transport
+	}
+}

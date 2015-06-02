@@ -1,0 +1,26 @@
+leader = {
+	name = "Jens Böhrnsen"
+	type = land
+	date = 1836.1.1
+	personality = diligent
+	background = war_college
+}
+
+army = {
+	name = "Bremer Armee"
+	location = 539
+	regiment = {
+		name= "1. Bremer Infanterie-Brigade"
+		type = regular
+		home = 539
+	}
+}
+
+navy = {
+	name = "Bremer Fleet"
+	location = 539
+	ship = {
+		name= "1st Transport Flotilla"
+		type = clipper_transport
+	}
+}

@@ -1,0 +1,380 @@
+promotion_focus = {
+	promote_aristocrats = {
+		aristocrats = 0.15 #10% more likeley to become artisans
+		icon = 2
+		outliner_show_as_percent = yes
+	}
+
+	promote_artisans = {
+		artisans = 0.15 #10% more likeley to become this type
+		icon = 3
+		outliner_show_as_percent = yes
+	}
+
+	promote_bureaucrats = {
+		bureaucrats = 0.15 #10% more likeley to become this type
+		icon = 4
+		outliner_show_as_percent = yes
+	}
+
+	promote_capitalists = {
+		capitalists = 0.15 #10% more likeley to become this type
+		icon = 5
+		outliner_show_as_percent = yes
+		limit = { 
+			civilized = yes
+			literacy = 0.1
+			is_colonial = no
+		}
+
+	}
+	
+	promote_clergymen = {
+		clergymen = 0.15 #10% more likeley to become this type
+		icon = 6
+		outliner_show_as_percent = yes
+	}
+
+	promote_clerks = {
+		clerks = 0.15 #10% more likeley to become this type
+		icon = 7
+		outliner_show_as_percent = yes
+		limit = { 
+			civilized = yes
+			literacy = 0.3
+			is_colonial = no
+		}
+	}
+
+	promote_craftsmen = {
+		craftsmen = 0.15 #10% more likeley to become this type
+		icon = 8
+		outliner_show_as_percent = yes
+		limit = {
+			is_colonial = no
+		}
+	}
+
+	promote_farmers = {
+		farmers = 0.15 #10% more likeley to become this type
+		outliner_show_as_percent = yes
+		icon = 9
+	}
+	
+	promote_labourers = {
+		labourers = 0.15 #10% more likeley to become this type
+		outliner_show_as_percent = yes
+		icon = 10
+	}
+
+	promote_officers = {
+		officers = 0.15 #10% more likeley to become this type
+		icon = 11
+		outliner_show_as_percent = yes
+	}
+
+	promote_soldiers = {
+		soldiers = 0.15 #10% more likeley to become this type
+		icon = 12
+		outliner_show_as_percent = yes
+	}
+}
+
+
+heavy_industry_focus = {	
+	encourage_rail = {
+		railroads = 10 #Capitalists 100% more likeley to choose railroads
+		icon = 13
+	}
+	
+	basic_industry_focus = {
+		steel = 10.5
+		bronze = 10.5
+		cement = 10.5
+		icon = 14
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	mechanical_industry_focus = {
+		machine_parts = 10.5
+		electric_gear = 10.5
+		icon = 15
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	wood_focus = {
+		paper = 10.5
+		lumber = 10.5
+		icon = 16
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	shipping_focus = {
+		steamer_convoy = 10.5
+		clipper_convoy = 10.5
+		icon = 17
+		limit = { 
+			civilized = yes
+			port = yes
+		}
+	}
+	
+	automation_focus = {
+		aeroplanes = 10.5
+		automobiles = 10.5
+		icon = 18
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	chemical_focus = {
+		fertilizer = 10.5
+		dye = 10.5
+		icon = 19
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	oil_focus = {
+		fuel = 10.5
+		oil = 10.5
+		rubber = 10.5
+		icon = 20
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	electricity_focus = {
+		electric_power = 10.5
+		icon = 21
+		limit = { 
+			civilized = yes
+		}
+	}
+}
+
+consumer_goods_focus = {
+	
+	furniture_focus = {
+		luxury_furniture = 10.5
+		furniture = 10.5
+		icon = 22
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	textile_focus = {
+		luxury_clothes = 10.5
+		regular_clothes = 10.5
+		fabric = 10.5
+		silk = 10.5
+		icon = 23
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	food_focus = {
+		canned_food = 10.5
+		sugar = 10.5
+		icon = 24
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	bottling_focus = {
+		liquor = 10.5
+		wine = 10.5
+		glass = 10.5
+		icon = 25
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	leather_focus = {
+		shoes = 10.5
+		boots = 10.5
+		icon = 26
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	tobacco_focus = {
+		cigars = 10.5
+		cigarettes = 10.5
+		icon = 27
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	pharmaceuticals_focus = {
+		pharmaceuticals = 10.5
+		icon = 28
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	electrical_focus = {
+		radio = 10.5
+		telephones = 10.5
+		icon = 29
+		limit = { 
+			civilized = yes
+		}
+	}
+
+	commercial_focus = {
+		financial_services = 10.5
+		shares = 10.5
+		icon = 30
+		limit = {
+			civilized = yes
+		}
+	}
+}
+
+military_goods_focus = {
+	
+	munitions_focus = {
+		gunpowder = 10.5
+		explosives = 10.5
+		ammunition = 10.5
+		icon = 31
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	armaments_focus =  {
+		artillery = 10.5
+		small_arms = 10.5
+		barrels = 10.5
+		icon = 32
+		limit = { 
+			civilized = yes
+		}
+	}
+	
+	cavalry_focus = {
+		horses = 10.5
+		icon = 33
+		limit = { 
+			civilized = yes
+		}
+	}	
+}
+
+immigration_colonization_focus = 
+{	
+	immigration = {
+		immigrant_attract = 1 #increases attactiveness to immigrants by 100 %
+		global_immigrant_attract = 0.2
+		icon = 35
+		limit = { 
+			NOT = { continent = europe }
+			NOT = { continent = asia }
+			civilized = yes
+		}
+	}
+	increase_tension = {
+		icon = 43
+		has_flashpoint = yes
+		own_provinces = no
+
+		flashpoint_tension = 0.075
+		limit = { 
+			OR = {
+				THIS = {is_greater_power = yes }
+				AND = { 
+					THIS = { is_secondary_power = yes }
+					continent = THIS
+				}
+				AND = { 
+					THIS = { civilized = yes }
+					state_scope = {
+						any_owned_province = {
+							any_neighbor_province = { owned_by = THIS }
+						}
+					}
+				}
+				is_core = THIS
+			}
+		}
+	}
+
+	progress_focus = {
+		pop_consciousness_modifier = 0.1
+		pop_militancy_modifier = 0.03
+		icon = 41
+		limit = {
+			THIS = { ai = no }
+		}
+	}
+	
+	order_focus = {
+		pop_consciousness_modifier = -0.1
+		pop_militancy_modifier = -0.03
+		icon = 38
+		}
+	}
+
+party_loyalty_focus = {
+	fascist_focus = {
+		ideology = fascist
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 36
+	}
+	
+	reactionary_focus = {
+		ideology = reactionary
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 37
+	}
+	
+	conservative_focus = {
+		ideology = conservative
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 38
+	}
+	
+	socialist_focus = {
+		ideology = socialist
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 39
+	}
+	
+	communist_focus = {
+		ideology = communist
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 40
+	}
+	
+	liberal_focus = {
+		ideology = liberal
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 41
+	}
+	
+	anarcho_liberal_focus = {
+		ideology = anarcho_liberal
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 42
+	}
+}
+
+

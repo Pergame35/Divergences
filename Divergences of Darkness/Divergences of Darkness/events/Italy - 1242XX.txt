@@ -1,0 +1,670 @@
+country_event = {
+	id = 124200 # Call to Council of Italy
+	title = "EVTNAME124200"
+	desc = "EVTDESC124200"
+	picture = "?"
+	
+	trigger = {
+		primary_culture = north_italian
+		has_global_flag = council_of_italy
+		NOT = { has_country_flag = accept_call_to_unite }
+		NOT = { has_country_flag = refuse_call_to_unite }
+		NOT = { tag = TUS }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Push for unification"
+		set_country_flag = accept_call_to_unite
+		relation = {
+			who = TUS
+			value = 200
+		}
+		TUS = {
+			country_event = 124201
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = .5
+				rank = TUS
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { rank = TUS }
+			}
+			modifier = {
+				factor = .5
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 1.5
+				relation = {
+					who = TUS
+					value = 50
+				}
+			}
+			modifier = {
+				factor = .5
+				NOT = {
+					relation = {
+						who = TUS
+						value = -50
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					relation = {
+						who = TUS
+						value = -150
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Resist unification"
+		set_country_flag = refuse_call_to_unite
+		relation = {
+			who = TUS
+			value = -200
+		}
+		TUS = {
+			country_event = 124202
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = .5
+				NOT = { rank = TUS }
+			}
+			modifier = {
+				factor = 1.5
+				rank = TUS
+			}
+			modifier = {
+				factor = 0
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					relation = {
+						who = TUS
+						value = -50
+					}
+				}
+			}
+			modifier = {
+				factor = .5
+				relation = {
+					who = TUS
+					value = 50
+				}
+			}
+			modifier = {
+				factor = 0
+				relation = {
+					who = TUS
+					value = 150
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 124201 # Acceptance
+	title = "EVTNAME124201"
+	desc = "EVTDESC124201"
+	picture = "?"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great"
+		prestige = 3
+		any_country = {
+			limit = {
+				has_country_flag = accept_call_to_unite
+				OR = {
+					tag = MOD
+					tag = LUC
+					tag = PAR
+					tag = FRR
+				}
+			}
+			country_event = 598008
+		}
+	}
+}
+
+country_event = {
+	id = 124202 # Refusal
+	title = "EVTNAME124202"
+	desc = "EVTDESC124202"
+	picture = "?"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Withhold support"
+		prestige = -2
+		
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				money = 1500
+			}
+		}
+	}
+	
+	option = {
+		name = "Give support"
+		prestige = -2
+		money = -1000
+		FROM = {
+			country_event = 124203
+		}
+		
+		ai_chance = {
+			factor = 66
+			modifier = {
+				factor = 0
+				NOT = { money = 1000 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 124203 # Supported Liberals
+	title = "EVTNAME124203"
+	desc = "EVTDESC124203"
+	picture = "?"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Curses"
+		relation = {
+			who = FROM
+			value = -50
+		}
+		ARA = {
+			limit = {
+				is_greater_power = yes
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = 50
+			}
+		}
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+			}
+			ideology = {
+				value = liberal
+				factor = 0.05
+			}
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 4
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 4
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 124204 # Liberals Victorious
+	title = "EVTNAME124204"
+	desc = "EVTDESC124204"
+	picture = "?"
+	
+	trigger = {
+		has_country_flag = refuse_call_to_unite
+		has_global_flag = council_of_italy
+		ruling_party_ideology = liberal
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Okay"
+		clr_country_flag = refuse_call_to_unite
+		set_country_flag = accept_call_to_unite
+		relation = {
+			who = TUS
+			value = 200
+		}
+		TUS = { country_event = 124201 }
+	}
+}
+
+country_event = {
+	id = 124205 # Success of Council of Italy
+	title = "EVTNAME124205"
+	desc = "EVTDESC124205"
+	picture = "?"
+	major = yes
+	
+	trigger = {
+		tag = TUS
+		government = democracy
+		has_global_flag = council_of_italy
+		has_country_flag = had_liberal_revolution
+		NOT = { in_sphere = ARA }
+		is_vassal = no
+		ITA = {
+			all_core = {
+				owner = {
+					OR = {
+						AND = {
+							primary_culture = north_italian
+							has_country_flag = liberal_revolution_fired
+						}
+						NOT = { primary_culture = north_italian }
+					}
+				}
+			}
+		}
+		OR = {
+			AND = {
+				OR = {
+					VEN = {
+						has_country_flag = accept_call_to_unite
+					}
+					THIS = { owns = 729 }
+				}
+				OR = {
+					LOM = {
+						has_country_flag = accept_call_to_unite
+					}
+					THIS = { owns = 726 }
+				}
+			}
+			AND = {
+				OR = {
+					VEN = {
+						has_country_flag = accept_call_to_unite
+					}
+					THIS = { owns = 729 }
+				}
+				OR = {
+					SAR = {
+						has_country_flag = accept_call_to_unite
+					}
+					THIS = { owns = 720 }
+				}
+			}
+			AND = {
+				OR = {
+					LOM = {
+						has_country_flag = accept_call_to_unite
+					}
+					THIS = { owns = 742 }
+				}
+				OR = {
+					SAR = {
+						has_country_flag = accept_call_to_unite
+					}
+					THIS = { owns = 720 }
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "Avanti Italia!"
+		prestige = 20
+		change_tag = ITA
+		add_accepted_culture = south_italian
+		clr_global_flag = council_of_italy
+		any_country = {
+			limit = {
+				has_country_flag = accept_call_to_unite
+			}
+			clr_country_flag = accept_call_to_unite
+			country_event = 598008
+		}
+		any_country = {
+			limit = {
+				has_country_flag = refuse_call_to_unite
+			}
+			clr_country_flag = refuse_call_to_unite
+			country_event = 124207
+		}
+		any_country = {
+			limit = {
+				is_greater_power = yes
+				OR = {
+					capital_scope = { continent = europe }
+					tag = TUR
+				}
+				NOT = { tag = ARA }
+			}
+			country_event = 124208
+		}
+		any_country = {
+			limit = {
+				is_greater_power = yes
+				tag = ARA
+			}
+			country_event = 124209
+		}
+	}
+}
+
+country_event = {
+	id = 124206 # Failure of Council of Italy
+	title = "EVTNAME124206"
+	desc = "EVTDESC124206"
+	picture = "?"
+	major = yes
+	
+	trigger = {
+		tag = TUS
+		has_global_flag = council_of_italy
+		OR = {
+			NOT = { government = democracy }
+			in_sphere = ARA
+			is_vassal = yes
+			AND = {
+				government = democracy
+				has_country_flag = had_liberal_revolution
+				ITA = {
+					all_core = {
+						owner = {
+							OR = {
+								AND = {
+									primary_culture = north_italian
+									has_country_flag = liberal_revolution_fired
+								}
+								NOT = { primary_culture = north_italian }
+							}
+						}
+					}
+				}
+				NOT = {
+					OR = {
+						AND = {
+							OR = {
+								VEN = {
+									has_country_flag = accept_call_to_unite
+								}
+								THIS = { owns = 729 }
+							}
+							OR = {
+								LOM = {
+									has_country_flag = accept_call_to_unite
+								}
+								THIS = { owns = 726 }
+							}
+						}
+						AND = {
+							OR = {
+								VEN = {
+									has_country_flag = accept_call_to_unite
+								}
+								THIS = { owns = 729 }
+							}
+							OR = {
+								SAR = {
+									has_country_flag = accept_call_to_unite
+								}
+								THIS = { owns = 720 }
+							}
+						}
+						AND = {
+							OR = {
+								LOM = {
+									has_country_flag = accept_call_to_unite
+								}
+								THIS = { owns = 742 }
+							}
+							OR = {
+								SAR = {
+									has_country_flag = accept_call_to_unite
+								}
+								THIS = { owns = 720 }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "The fools"
+		prestige = -20
+		clr_global_flag = council_of_italy
+		any_country = {
+			clr_country_flag = accept_call_to_unite
+			clr_country_flag = refuse_call_to_unite
+		}
+	}
+}
+
+country_event = {
+	id = 124207 # Reconsider Unification
+	title = "EVTNAME124207"
+	desc = "EVTDESC124207"
+	picture = "?"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join Italy"
+		FROM = {
+			inherit = THIS
+			prestige = 2
+		}
+		
+		ai_chance = {
+			factor = 66
+			modifier = {
+				factor = 0
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0
+				rank = FROM
+			}
+		}
+	}
+	
+	option = {
+		name = "Refuse offer"
+		relation = {
+			who = FROM
+			value = -50
+		}
+		FROM = {
+			casus_belli = {
+				target = THIS
+				type = unification_annex_casus_belli
+				months = 24
+			}
+		}
+		ARA = {
+			limit = {
+				is_greater_power = yes
+			}
+			create_alliance = THIS
+			diplomatic_influence = {
+				who = THIS
+				value = 100
+			}
+		}
+		
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				ruling_party_ideology = liberal
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 124208 # European GP reactions to Italian Unification
+	title = "EVTNAME124208"
+	desc = "EVTDESC124208"
+	picture = "?"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Friendship"
+		relation = {
+			who = FROM
+			value = 100
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				tag = BRG
+			}
+			modifier = {
+				factor = 1.5
+				tag = SCA
+			}
+			modifier = {
+				factor = 1.5
+				tag = SPA
+			}
+			modifier = {
+				factor = .5
+				tag = BOH
+			}
+			modifier = {
+				factor = .5
+				tag = DUA
+			}
+		}
+	}
+	
+	option = {
+		name = "Enmity"
+		relation = {
+			who = FROM
+			value = -100
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = .5
+				tag = BRG
+			}
+			modifier = {
+				factor = .5
+				tag = SCA
+			}
+			modifier = {
+				factor = .5
+				tag = SPA
+			}
+			modifier = {
+				factor = 1.5
+				tag = BOH
+			}
+			modifier = {
+				factor = 1.5
+				tag = DUA
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 124209 # Aragon reaction to Italian Unification
+	title = "EVTNAME124209"
+	desc = "EVTDESC124209"
+	picture = "?"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They must be stopped"
+		relation = {
+			who = FROM
+			value = -400
+		}
+		diplomatic_influence = {
+			who = FROM
+			value = -200
+		}
+		casus_belli = {
+			target = FROM
+			type = humiliate
+			months = 24
+		}
+		casus_belli = {
+			target = FROM
+			type = acquire_state
+			months = 24
+		}
+		casus_belli = {
+			target = FROM
+			type = place_in_the_sun
+			months = 24
+		}
+		casus_belli = {
+			target = FROM
+			type = free_peoples
+			months = 24
+		}
+	}
+}
+
+country_event = {
+	id = 124210 # Cleanup
+	title = "Council of Italy Cleanup"
+	desc = "Italy has been formed in the middle of the Council of Italy event series."
+	picture = "?"
+	
+	trigger = {
+		ai = yes
+		exists = ITA
+		has_global_flag = council_of_italy
+		NOT = { is_culture_group = italian }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Clear Council of Italy flags"
+		clr_global_flag = council_of_italy
+		any_country = {
+			clr_country_flag = accept_call_to_unite
+			clr_country_flag = refuse_call_to_unite
+		}
+	}
+}

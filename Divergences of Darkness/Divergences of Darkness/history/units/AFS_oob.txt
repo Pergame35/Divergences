@@ -1,0 +1,79 @@
+leader = {
+	name = "Tahmasp Afsharid"
+	type = land
+	date = 1836.1.1
+	personality = diligent
+	background = military_theoretician
+}
+
+leader = {
+	name = "Adil Artuqid"
+	type = land
+	date = 1836.1.1
+	personality = inspiring
+	background = megalomaniac
+}
+
+army = {
+	name = "Afsharid Army"
+	location = 1204
+	regiment = {
+		name= "1. Infantry Brigade"
+		type = infantry
+		home = 1196
+	}
+
+	regiment = {
+		name= "2. Infantry Brigade"
+		type = infantry
+		home = 1196
+	}
+
+	regiment = {
+		name= "3. Infantry Brigade"
+		type = infantry
+		home = 1196
+	}
+
+	regiment = {
+		name= "4. Infantry Brigade"
+		type = infantry
+		home = 1196
+	}
+	
+	regiment = {
+		name= "5. Infantry Brigade"
+		type = infantry
+		home = 1196
+	}
+	
+	regiment = {
+		name= "6. Infantry Brigade"
+		type = infantry
+		home = 1196
+	}
+}
+
+army = {
+	location = 1149
+	name = "Turkmen Cavalry"
+
+	regiment = {
+		name= "2. Turkmen Cavalry"
+		type = hussar
+		home = 1127
+	}
+
+	regiment = {
+		name= "2. Turkmen Cavalry"
+		type = hussar
+		home = 1127
+	}
+
+	regiment = {
+		name= "2. Turkmen Cavalry"
+		type = hussar
+		home = 1113
+	}
+
+}

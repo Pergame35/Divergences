@@ -1,0 +1,2054 @@
+#aesthetics
+classicism_n_early_romanticism = {
+	area = aesthetics
+	year = 1821
+	cost = 4600
+	permanent_prestige = 2
+	prestige = 0.05
+	
+	ai_chance = {
+		factor = 100
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+romanticism = {
+	area = aesthetics
+	year = 1825
+	cost = 7750
+	permanent_prestige = 2
+	prestige = 0.05
+	
+	ai_chance = {
+		factor = 50
+		modifier = {
+			factor = 2.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+			continent = north_america
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+realism = {
+	area = aesthetics
+	year = 1840
+	cost = 10200
+	permanent_prestige = 5
+	prestige = 0.1
+	
+	ai_chance = {
+		factor = 25
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+impressionism = {
+	area = aesthetics
+	year = 1850
+	cost = 12750
+	permanent_prestige = 5
+	prestige = 0.1
+	
+	ai_chance = {
+		factor = 10
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+expressionism = {
+	area = aesthetics
+	year = 1870
+	cost = 20400
+	permanent_prestige = 10
+	prestige = 0.1
+	
+	ai_chance = {
+		factor = 5
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+mass_culture_n_the_avant_garde = {
+	area = aesthetics
+	year = 1900
+	cost = 30000
+	permanent_prestige = 10
+	prestige = 0.1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 25
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+#philosophy
+late_enlightenment_philosophy = {
+	area = philosophy
+	year = 1821
+	cost = 4600
+	permanent_prestige = 2
+	increase_research = 0.4
+	
+	ai_chance = {
+		factor = 500
+		modifier = {
+			factor = 5
+			year = 1856
+		}
+		modifier = {
+			factor = 2
+			year = 1876
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+idealism = {
+	area = philosophy
+	year = 1840
+	cost = 7750
+	permanent_prestige = 2
+	
+	ai_chance = {
+		factor = 350
+		modifier = {
+			factor = 5
+			year = 1860
+		}
+		modifier = {
+			factor = 2
+			year = 1880
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+empiricism = {
+	area = philosophy
+	year = 1860
+	cost = 10200
+	permanent_prestige = 5
+	
+	ai_chance = {
+		factor = 250
+		modifier = {
+			factor = 5
+			year = 1880
+		}
+		modifier = {
+			factor = 2
+			year = 1900
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+analytic_philosophy = {
+	area = philosophy
+	year = 1870
+	cost = 12750
+	permanent_prestige = 5
+	
+	ai_chance = {
+		factor = 250
+		modifier = {
+			factor = 5
+			year = 1900
+		}
+		modifier = {
+			factor = 2
+			year = 1920
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+phenomenology_n_hermeneutic = {
+	area = philosophy
+	year = 1890
+	cost = 20400
+	permanent_prestige = 10
+	increase_research = 0.15
+	
+	ai_chance = {
+		factor = 100
+		modifier = {
+			factor = 5
+			year = 1910
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+anti__rationalism = {
+	area = philosophy
+	year = 1900
+	cost = 30000
+	permanent_prestige = 10
+	increase_research = 0.3
+	
+	ai_chance = {
+		factor = 50
+		modifier = {
+			factor = 2
+			year = 1920
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+#social_thought
+malthusian_thought = {
+	area = social_thought
+	year = 1821
+	cost = 4600
+	permanent_prestige = 2
+	colonial_points = 50
+	education_efficiency = 0.25
+	
+	ai_chance = {
+		factor = 250
+		modifier = {
+			factor = 1.5
+			year = 1856
+		}
+		modifier = {
+			factor = 1.5
+			year = 1876
+		}
+		modifier = {
+			factor = 2
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = { literacy = 0.1 }
+		}
+		modifier = {
+			factor = 1.8
+			literacy = 0.1
+			NOT = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = 1.6
+			literacy = 0.2
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.4
+			literacy = 0.3
+			NOT = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = 1.2
+			literacy = 0.4
+			NOT = { literacy = 0.6 }
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				big_producer = cattle
+				big_producer = wool
+				big_producer = timber
+			}
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+positivism = {
+	area = social_thought
+	year = 1830
+	cost = 7750
+	permanent_prestige = 2
+	colonial_points = 50
+	education_efficiency = 0.25
+	
+	ai_chance = {
+		factor = 100
+		modifier = {
+			factor = 1.5
+			year = 1856
+		}
+		modifier = {
+			factor = 1.5
+			year = 1876
+		}
+		modifier = {
+			factor = 3
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = { literacy = 0.1 }
+		}
+		modifier = {
+			factor = 1.8
+			literacy = 0.1
+			NOT = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = 1.6
+			literacy = 0.2
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.4
+			literacy = 0.3
+			NOT = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = 1.2
+			literacy = 0.4
+			NOT = { literacy = 0.6 }
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+functionalism = {
+	area = social_thought
+	year = 1850
+	cost = 10200
+	permanent_prestige = 5
+	education_efficiency = 0.5
+	colonial_points = 10
+	factory_goods_throughput = {
+		shoes = 0.05
+	}
+	factory_goods_output = {
+		shoes = 0.1
+	}
+	
+	ai_chance = {
+		factor = 50
+		modifier = {
+			factor = 1.5
+			year = 1870
+		}
+		modifier = {
+			factor = 1.5
+			year = 1890
+		}
+		modifier = {
+			factor = 3
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = { literacy = 0.1 }
+		}
+		modifier = {
+			factor = 1.8
+			literacy = 0.1
+			NOT = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = 1.6
+			literacy = 0.2
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.4
+			literacy = 0.3
+			NOT = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = 1.2
+			literacy = 0.4
+			NOT = { literacy = 0.6 }
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+biologism = {
+	area = social_thought
+	year = 1870
+	cost = 12750
+	permanent_prestige = 5
+	colonial_points = 10
+	education_efficiency = 0.5
+	factory_goods_throughput = {
+		boots  = 0.1
+	}
+	factory_goods_output = {
+		boots = 0.05
+	}
+	
+	ai_chance = {
+		factor = 25
+		modifier = {
+			factor = 1.5
+			year = 1890
+		}
+		modifier = {
+			factor = 1.5
+			year = 1910
+		}
+		modifier = {
+			factor = 3
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = { literacy = 0.1 }
+		}
+		modifier = {
+			factor = 1.8
+			literacy = 0.1
+			NOT = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = 1.6
+			literacy = 0.2
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.4
+			literacy = 0.3
+			NOT = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = 1.2
+			literacy = 0.4
+			NOT = { literacy = 0.6 }
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+social_science = {
+	area = social_thought
+	year = 1880
+	cost = 20400
+	permanent_prestige = 10
+	education_efficiency = 0.5
+	colonial_points = 10
+	
+	ai_chance = {
+		factor = 10
+		modifier = {
+			factor = 4
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 5
+			NOT = { literacy = 0.1 }
+		}
+		modifier = {
+			factor = 4
+			literacy = 0.1
+			NOT = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = 3
+			literacy = 0.2
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 2
+			literacy = 0.3
+			NOT = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = 1.5
+			literacy = 0.4
+			NOT = { literacy = 0.6 }
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+social_alienation = {
+	area = social_thought
+	year = 1900
+	cost = 30000
+	permanent_prestige = 10
+	war_exhaustion = -0.25
+	education_efficiency = 0.75
+	colonial_points = 10
+	
+	ai_chance = {
+		factor = 5
+		modifier = {
+			factor = 4
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 10
+			NOT = { literacy = 0.1 }
+		}
+		modifier = {
+			factor = 8
+			literacy = 0.1
+			NOT = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = 6
+			literacy = 0.2
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 4
+			literacy = 0.3
+			NOT = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = 2
+			literacy = 0.4
+			NOT = { literacy = 0.6 }
+		}
+		modifier = {
+			factor = 1.25
+			war = yes
+		}
+		modifier = {
+			factor = 1.25
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+#political_thought
+enlightenment_thought = {
+	area = political_thought
+	year = 1821
+	cost = 4600
+	permanent_prestige = 2
+	max_national_focus = 1
+	cb_creation_speed = 0.25
+	influence = 0.15
+	
+	ai_chance = {
+		factor = 500
+		modifier = {
+			factor = 1.5
+			year = 1856
+		}
+		modifier = {
+			factor = 1.5
+			year = 1876
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.25
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 2
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 10
+		}
+		modifier = {
+			factor = 2
+			liberal = 25
+			literacy = 0.4
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+ideological_thought = {
+	area = political_thought
+	year = 1840
+	cost = 7750
+	permanent_prestige = 2
+	max_national_focus = 1 
+	cb_creation_speed = 0.25
+	influence = 0.15
+	
+	ai_chance = {
+		factor = 250
+		modifier = {
+			factor = 1.5
+			year = 1860
+		}
+		modifier = {
+			factor = 1.5
+			year = 1880
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.25
+			is_greater_power = no
+			is_secondary_power = no
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 3
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 6
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 12
+		}
+		modifier = {
+			factor = 2
+			liberal = 25
+			literacy = 0.4
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+state_n_government = {
+	area = political_thought
+	year = 1850
+	cost = 10200
+	permanent_prestige = 5
+	max_national_focus = 1 
+	influence = 0.15
+	cb_creation_speed = 0.25
+	
+	ai_chance = {
+		factor = 100
+		modifier = {
+			factor = 1.5
+			year = 1870
+		}
+		modifier = {
+			factor = 1.5
+			year = 1890
+		}
+		modifier = {
+			factor = 4
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 3
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = no
+			is_secondary_power = no
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 4
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 8
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 16
+		}
+		modifier = {
+			factor = 2
+			liberal = 25
+			literacy = 0.4
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+nationalism_n_imperialism = {
+	area = political_thought
+	year = 1860
+	cost = 12750
+	permanent_prestige = 5
+	max_national_focus = 1
+	influence = 0.15
+	cb_creation_speed = 0.5
+	
+	ai_chance = {
+		factor = 50
+		modifier = {
+			factor = 1.5
+			year = 1880
+		}
+		modifier = {
+			factor = 1.5
+			year = 1900
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = no
+			is_secondary_power = no
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 5
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 10
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 20
+		}
+		modifier = {
+			factor = 2
+			liberal = 25
+			literacy = 0.4
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+revolution_n_counterrevolution = {
+	area = political_thought
+	year = 1870
+	cost = 20400
+	permanent_prestige = 10
+	max_national_focus = 1
+	influence = 0.15
+	diplomatic_points = 0.25
+	cb_creation_speed = 0.25
+	
+	ai_chance = {
+		factor = 25
+		modifier = {
+			factor = 1.5
+			year = 1890
+		}
+		modifier = {
+			factor = 1.5
+			year = 1910
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = no
+			is_secondary_power = no
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 6
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 12
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 24
+		}
+		modifier = {
+			factor = 2
+			liberal = 25
+			literacy = 0.4
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+mass_politics = {
+	area = political_thought
+	year = 1900
+	cost = 30000
+	permanent_prestige = 10
+	max_national_focus = 1
+	influence = 0.15
+	cb_creation_speed = 0.25
+	
+	ai_chance = {
+		factor = 10
+		modifier = {
+			factor = 2
+			year = 1920
+		}
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 25
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = no
+			is_secondary_power = no
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 7
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 14
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 28
+		}
+		modifier = {
+			factor = 2
+			liberal = 25
+			literacy = 0.4
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+#psychology
+introspectionism = {
+	area = psychology
+	year = 1821
+	cost = 4600
+	permanent_prestige = 2
+	education_efficiency = 0.15
+	reinforce_rate = 0.05
+	war_exhaustion = -0.05
+	
+	ai_chance = {
+		factor = 250
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 2
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 20
+		}
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+associationism = {
+	area = psychology
+	year = 1840
+	cost = 7750
+	permanent_prestige = 2
+	education_efficiency = 0.15
+	reinforce_rate = 0.05
+	war_exhaustion = -0.05
+	
+	ai_chance = {
+		factor = 50
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 2
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 20
+		}
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+phenomenalism = {
+	area = psychology
+	year = 1850
+	cost = 10200
+	permanent_prestige = 5
+	education_efficiency = 0.15
+	reinforce_rate = 0.05
+	war_exhaustion = -0.05
+	
+	ai_chance = {
+		factor = 25
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 2
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 20
+		}
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+experimental_psychology = {
+	area = psychology
+	year = 1860
+	cost = 12750
+	permanent_prestige = 5
+	education_efficiency = 0.15
+	reinforce_rate = 0.05
+	war_exhaustion = -0.05
+	
+	ai_chance = {
+		factor = 10
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 2
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 20
+		}
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+psychoanalysis = {
+	area = psychology
+	year = 1870
+	cost = 20400
+	permanent_prestige = 10
+	education_efficiency = 0.15
+	reinforce_rate = 0.05
+	war_exhaustion = -0.05
+	
+	ai_chance = {
+		factor = 5
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 2
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 20
+		}
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+behaviorism = {
+	area = psychology
+	year = 1900
+	cost = 30000
+	permanent_prestige = 10
+	education_efficiency = 0.15
+	reinforce_rate = 0.05
+	war_exhaustion = -0.05
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 2
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 20
+		}
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}

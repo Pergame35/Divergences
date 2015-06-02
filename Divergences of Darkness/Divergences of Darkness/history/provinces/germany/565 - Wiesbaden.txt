@@ -1,0 +1,12 @@
+owner = NAS
+controller = NAS
+add_core = NAS
+add_core = GER
+trade_goods = coal
+life_rating = 38
+terrain = deciduous_forest_hills
+state_building = {
+	level = 2 
+	building = winery
+	upgrade = yes
+}

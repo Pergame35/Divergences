@@ -1,0 +1,32 @@
+political_decisions = {	
+	greater_griqualand = {
+		potential = {
+			tag = GRQ
+			NOT = { has_country_flag = greater_griqualand }
+		}
+
+		allow = {
+			NOT = { war = yes }
+			is_greater_power = yes
+			GRQ = {
+				all_core = {
+						owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			set_country_flag = greater_griqualand
+			ENG_2068 = { add_core = GRQ }
+			ENG_2014 = { add_core = GRQ }
+			POR_2006 = { add_core = GRQ }
+			POR_2003 = { add_core = GRQ }
+			POR_1999 = { add_core = GRQ }
+			BEL_1977 = { add_core = GRQ }
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

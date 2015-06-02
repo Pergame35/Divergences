@@ -1,0 +1,60 @@
+leader = {
+	name = "Ibrahim Kolapo"
+	type = land
+	date = 1836.1.1
+	personality = inefficient
+	background = amateur
+}
+
+army = {
+	name = "Army of the Sultan of Ilorin"
+	location = 1927
+	regiment = {
+		name= "1.Fulbe"
+		type = hussar
+		home = 1927
+	}
+
+	regiment = {
+		name= "2.Fulbe"
+		type = infantry
+		home = 1927
+	}
+
+	regiment = {
+		name= "3.Fulbe"
+		type = infantry
+		home = 1927
+	}
+	
+	regiment = {
+		name= "4. Fulbe"
+		type = hussar
+		home = 1927
+	}
+
+	regiment = {
+		name= "5. Fulbe"
+		type = infantry
+		home = 1927
+	}
+
+	regiment = {
+		name= "6. Fulbe"
+		type = infantry
+		home = 1927
+	}
+
+	regiment = {
+		name= "7. Fulbe"
+		type = infantry
+		home = 1810
+	}
+
+	regiment = {
+		name= "8. Fulbe"
+		type = infantry
+		home = 1810
+	}
+
+}

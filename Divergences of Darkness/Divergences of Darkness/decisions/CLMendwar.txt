@@ -1,0 +1,43 @@
+political_decisions = {
+
+	end_the_CWI = {
+		potential = {
+			tag = CLM
+			war_with = SPA
+			NOT = { 
+				OR = { 
+					has_country_flag = enforced_peace_clm 
+					has_global_flag = partial_peace 
+					has_global_flag = congress_of_panama
+				} 
+			}
+		}
+
+		allow = {
+			NOT = {
+				any_owned_province = { 
+					AND = {   
+						OR = {
+						is_core = MEX  
+						is_core = LST
+						is_core = UCA
+						}
+          controlled_by = SPA
+					}   
+				}	   
+			}	
+      }  
+
+
+		effect = {   
+      set_country_flag = enforced_peace_clm
+			SPA = {
+				country_event = 46452
+			}			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}  

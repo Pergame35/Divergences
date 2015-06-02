@@ -1,0 +1,11 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+trade_goods = copper
+life_rating = 35
+terrain = hilly_farmland
+state_building = {
+	level = 2
+	building = glass_factory
+	upgrade = yes
+}

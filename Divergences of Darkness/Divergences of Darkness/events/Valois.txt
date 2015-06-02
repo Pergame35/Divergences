@@ -1,0 +1,588 @@
+country_event = { #Restoration of order in Etruria 
+
+	id = 110601
+	title = "VAL1.T"
+	desc = "VAL1.D"
+	
+	fire_only_once = yes
+	
+	trigger = { 
+	tag = PRV 
+	NOT = { war = yes }
+	TUS = { exists = yes }
+	TUS = { government = democracy }
+	OR = { 
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+			}
+	}
+	
+	mean_time_to_happen = {
+	months = 20 
+	}
+	
+	option = { 
+	name = "Nous reprendrons nos droits!"
+	badboy = 10
+	relation = { who = ARA value = -150 }
+	war = {
+			target = TUS
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		ai_chance = { 
+		factor = 10
+		}
+	}
+	
+	option = { 
+	name = "Le risque est trop grand ...." 
+	prestige = -5 
+	relation = { who = ARA value = 100 }
+	}
+}
+
+country_event = { 
+
+	id = 110603
+	title = "VAL3.T"
+	desc = "VAL3.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Feudality is over ! We will not submit !" 
+	any_country = { 
+		limit = {
+		exists = yes
+		primary_culture = north_italian 
+			NOT = {
+				vassal_of = THIS 
+				tag = SAR
+				tag = LOM
+				tag = PAP
+				}
+			} 
+			country_event = 110604
+		}
+	LOM = { country_event = 110605 }
+	PAP = { country_event = 110606 } 
+	PRV = { country_event = 110607 } 
+	ai_chance = { 
+		factor = 90 
+		} 
+	}
+	
+	option = { 
+	name = "We welcome our Provençaux overlords" 
+	PRV = { country_event = 110608 }
+	ai_chance = { 
+		factor = 10 
+		} 
+	}
+}
+
+country_event = { 
+	id = 110604 
+	title = "VAL4.T"
+	desc = "VAL4.D"	
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We will help our Italian brothers against the Valois !"
+	set_country_flag = alliance_valois 
+	ai_chance = { 
+		factor = 90 
+		modifier = {
+				factor = 0
+		vassal_of = PRV
+			}
+		} 
+	}
+	
+	option = { 
+	name = "Helping Lucca is not in our interest" 
+	prestige = -5 
+	relation = { who = LUC value = -150 }
+	relation = { who = PRV value = 100 }
+	ai_chance = { 
+		factor = 10
+		}
+	}
+}
+
+country_event = { 
+	id = 110605
+	title = "VAL5.T"
+	desc = "VAL5.D"	
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We will help our Italian brothers against the Valois !"
+	set_country_flag = alliance_valois 
+	ai_chance = { 
+		factor = 65 
+		modifier = {
+				factor = 0
+		vassal_of = PRV
+			}
+		} 
+	}
+	
+	option = { 
+	name = "Helping Lucca is not in our interest" 
+	prestige = -5 
+	relation = { who = LUC value = -150 }
+	relation = { who = PRV value = 50 }
+	ai_chance = { 
+		factor = 35
+			}
+	}
+}
+
+country_event = { 
+	id = 110606 
+	title = "VAL6.T"
+	desc = "VAL6.D"	
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We will help Lucca against the heretics!"
+	set_country_flag = alliance_valois_p
+	ai_chance = { 
+		factor = 100 
+		modifier = {
+				factor = 0
+		vassal_of = PRV
+			}
+		} 
+	}
+	
+	option = { 
+	name = "Helping Lucca is not in our interest" 
+	prestige = -5 
+	relation = { who = LUC value = -150 }
+	relation = { who = PRV value = 200 }
+		ai_chance = { 
+		factor = 10
+		}
+	}
+}
+
+country_event = { 
+	id = 110607 
+	title = "VAL7.T"
+	desc = "VAL7.D"	
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We will subdue all of them !" 
+	badboy = 10
+	ARA = { 
+		diplomatic_influence = { who = PRV value = -100 }
+		country_event = 110612
+		}
+	war = {
+			target = LUC
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+	any_country = { 
+		limit = { 
+		has_country_flag = alliance_valois 
+		}
+		country_event = 110609
+		}
+	any_country = { 
+		limit = { 
+		has_country_flag = alliance_valois_p
+		}
+		country_event = 110610
+		}
+	}
+	
+	option = { 
+	name = "Well, Lucca can keep its independence after all..." 
+	prestige = -20 
+	}
+}
+
+country_event = { 
+	id = 110608 
+	title = "VAL8.T"
+	desc = "VAL8.D"	
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "One step further in our ambitions"
+	prestige = 10 
+	create_vassal = LUC
+	}
+}
+	
+country_event = {
+	id = 110609 
+	title = "VAL9.T"
+	desc = "VAL9.D"	
+	
+	is_triggered_only = yes  
+	
+	option = { 
+	name = "The Valois will leave Italy !"
+	PRV = { 
+			casus_belli = {
+				target = THIS
+				type = make_puppet
+				months = 60
+			}
+		}
+	casus_belli = {
+				target = PRV
+				type = free_peoples
+				months = 60
+			}
+	war = {
+			target = PRV
+			attacker_goal = {
+				casus_belli = free_peoples
+				state_province_id = 744
+				country = TUS
+			}
+			defender_goal =  { 
+				casus_belli = make_puppet 
+			}
+		}
+	}
+}
+	
+country_event = {
+	id = 110610 
+	title = "VAL10.T"
+	desc = "VAL10.D"	
+	
+	is_triggered_only = yes  	
+	
+	option = { 
+	name = "Let them come !"
+	PRV = { 
+			casus_belli = {
+				target = THIS
+				type = conquest
+				months = 60
+			}
+		}
+	casus_belli = {
+				target = PRV
+				type = free_peoples
+				months = 60
+			}
+	war = {
+			target = PRV
+			attacker_goal = {
+				casus_belli = free_peoples
+				state_province_id = 744
+				country = TUS
+			}
+		}
+	}
+}
+ 
+country_event = {
+	id = 110611
+	title = "VAL11.T" #Peace with Provence ?
+	desc = "VAL11.D"
+
+	trigger = {
+		war_with = PRV
+		has_country_flag = alliance_valois
+		PRV = { 
+			NOT = {
+				owns = 744
+				}
+			}
+		}
+	
+	
+	only_fire_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "Make peace. Italy is freed from the kings in France."
+		clr_country_flag = alliance_valois
+		prestige = 5
+		end_war = PRV
+	}
+}
+
+country_event = { 
+
+	id = 110612
+	title = "VAL12.T" 
+	desc = "VAL12.D"
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = { 
+	name = "Worrisome..." 
+	set_global_flag = Italian_war
+	ARA = { 
+	diplomatic_influence = { who = FRR value = -100 }
+		}	
+	}
+}
+
+country_event = { 
+
+	id = 110613 
+	title = "VAL13.T" 
+	desc = "VAL13.D" 
+	
+	major = yes 
+	fire_only_once = yes
+	
+	trigger = { 
+	tag = ARA 
+	owns = 754
+	ITA = { 
+	has_country_flag = valois_italy
+		}
+	}
+	
+	mean_time_to_happen = { 
+		months = 12 
+		}
+	
+	option = { 
+	name = "We won't allow an independant Italy !"
+	casus_belli = {
+				target = ITA
+				type = conquest
+				months = 60
+			}
+	war = {
+			target = ITA
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal =  { 
+				casus_belli = acquire_all_cores
+				country = ITA
+			}
+		}
+	}
+}
+	
+country_event = { 
+
+	id = 110614
+	title = "VAL14.T" 
+	desc = "VAL14.D"
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = { 
+	name = "Risorgimento !" 
+	}
+}
+
+country_event = { 
+
+	id = 110615
+	title = "VAL15.T"
+	desc = "VAL15.D" 
+	
+	trigger = { 
+	tag = SAR 
+	has_global_flag = Italian_war
+	NOT = { 
+		LUC = { 
+			exists = yes 
+			} 
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = { 
+	days = 15 
+	}
+	
+	option = { 
+	name = "We will free Tuscany !"
+	war = {
+			target = PRV
+			attacker_goal = {
+				casus_belli = free_peoples
+				state_province_id = 744
+				country = TUS
+			}
+		}
+	PRV = { country_event = 110616 }
+	ai_chance = { 
+		factor = 100
+		}
+	}
+	
+	option = { 
+	name = "We will not intervene" 
+	prestige = -5 
+		ai_chance = { 
+		factor = 0
+		}
+	}
+}
+
+country_event = { 
+
+	id = 110616
+	title = "VAL16.T"
+	desc = "VAL16.D" 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We shall overcome"
+	casus_belli = {
+			target = SAR
+			type = make_puppet
+			months = 60
+		}
+	}
+}
+
+country_event = { #Event ensuring the disparition of Provence ASAP
+
+	id = 110617
+	title = "VAL17.T"
+	desc = "VAL17.D" 
+	
+	major = yes
+	
+	trigger = { 
+	tag = DUA 
+	NOT = { war_with = PRV }
+	PRV = { 
+	exists = yes 
+	OR = { 
+	in_sphere = no 
+	in_sphere = THIS 
+		}
+	}
+	NOT = { rank = 20 }
+	NOT = { ARA = { is_greater_power = yes } }
+	}
+	
+	mean_time_to_happen = { 
+		days = 120 
+		}
+		
+	option = { 
+	name = "It is the end for the Valois !" 
+	badboy = 5
+	casus_belli = {
+				target = PRV
+				type = conquest
+				months = 60
+			}
+	war = {
+			target = PRV
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+	}
+}
+	
+	
+country_event = { #Event ensuring the disparition of Provence ASAP (once more)
+
+	id = 110618
+	title = "VAL17.T"
+	desc = "VAL17.D" 
+	
+	trigger = { 
+	tag = DUA 
+	NOT = { war_with = PRV }
+	PRV = { in_sphere = THIS } 
+	PRV = { ai = yes }
+	year = 1850 
+	} 
+	
+	mean_time_to_happen = { 
+	months = 1 
+	}
+	
+	option = {
+	name = "Of course we'll annex them "
+	inherit = PRV
+	badboy = 5 
+	}
+}
+
+country_event = { #Event ensuring the disparition of Provence ASAP (once more)
+
+	id = 110619
+	title = "VAL17.T"
+	desc = "VAL17.D" 
+
+	is_triggered_only = yes 
+	
+	option = { 
+	end_war = FROM 
+	name = "London is a fine place I think ...."
+	capital = 300 
+	prestige = -300
+	any_owned = { 
+		limit = { is_core = FROM }
+		secede_province = FROM 
+		}
+	}
+}
+	
+	
+country_event = { #Capital choice for the FRT 
+
+	id = 110620
+	title = "VAL20.T"
+	desc = "VAL20.D" 
+
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Roma is eternal ..."
+	capital = 749 
+	primary_culture = south_italian 
+	add_accepted_culture = provencal 
+	}
+	
+	option = { 
+	name = "Paris is the true capital !" 
+	capital = 425 
+	primary_culture = french  
+	add_accepted_culture = provencal 
+	}
+	
+	option = { 
+	name = "Compromise : Toulon it is "
+	capital = 470 
+	}
+}

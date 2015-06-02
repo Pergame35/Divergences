@@ -1,0 +1,18 @@
+owner = NBG
+controller = NBG
+add_core = NBG
+add_core = VIN
+trade_goods = grain
+life_rating = 40
+terrain = marginal_farmland
+
+state_building = {
+	level = 2 
+	building = fabric_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2 
+	building = glass_factory
+	upgrade = yes
+}

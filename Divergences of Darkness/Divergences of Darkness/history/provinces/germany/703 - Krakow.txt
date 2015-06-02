@@ -1,0 +1,18 @@
+owner = PLC
+controller = PLC
+add_core = PLC
+add_core = POL
+trade_goods = coal
+life_rating = 35
+terrain = good_farmland 
+    
+state_building = {
+	level = 2 
+	building = glass_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1 
+	building = liquor_distillery
+	upgrade = yes
+}

@@ -1,0 +1,347 @@
+political_decisions = {
+
+	pas_de_calais = { 
+	picture = Pas_de_Calais
+	potential = {
+			tag = DUA
+			NOT = {
+				has_country_flag = pale_calais
+			}
+		}	
+		allow = {
+			is_greater_power = yes
+			NOT = { war = yes }
+			owns = 400
+		}
+		
+		effect = {
+			prestige = 5
+			set_country_flag = pale_calais
+			400 = {
+				add_core = THIS
+			}
+			401 = {
+				add_core = THIS
+			}
+			399 = {
+				add_core = THIS
+			}
+		}
+	
+	}
+	
+	form_franche_comte = {
+		picture = apanage
+		potential = {
+			tag = DUA
+			NOT = {
+				has_country_flag = franchecomte
+			}
+		}	
+		allow = {
+			is_greater_power = yes
+			NOT = { war = yes }
+			owns = 428
+		}
+		
+		effect = {
+			prestige = 5
+			set_country_flag = franchecomte
+			428 = {
+				add_core = THIS
+			}
+			429 = {
+				add_core = THIS
+			}
+			430 = {
+				add_core = THIS
+			}
+			431 = {
+				add_core = THIS
+			}
+			433 = {
+				add_core = THIS
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	treaty_of_neuchatel = {
+		potential = {
+			NOT = { owns = 406 }
+			NOT = { owns = 407 }
+			tag = BRG
+			NOT = {
+				has_country_flag = treaty_of_neuchatel
+			}
+		}	
+		allow = {
+			NOT = { war = yes }
+		}
+		
+		effect = {
+			prestige = 10
+			badboy = -10
+			any_pop = {
+				militancy = -3
+			}
+			set_country_flag = treaty_of_neuchatel
+			428 = {
+				secede_province = DUA
+				add_core = DUA
+				remove_core = BRG
+			}
+			429 = {
+				secede_province = DUA
+				add_core = DUA
+				remove_core = BRG
+			}
+			430 = {
+				secede_province = DUA
+				add_core = DUA
+				remove_core = BRG
+			}
+			431 = {
+				secede_province = DUA
+				add_core = DUA
+				remove_core = BRG
+			}
+			433 = {
+				secede_province = DUA
+				add_core = DUA
+				remove_core = BRG
+			}
+			451 = {
+				secede_province = DUA
+				add_core = DUA
+				remove_core = BRG
+			}
+			452 = {
+				secede_province = DUA
+				add_core = DUA
+				remove_core = BRG
+			}
+			453 = {
+				secede_province = DUA
+				add_core = DUA
+				remove_core = BRG
+			}
+			454 = {
+				secede_province = DUA
+				add_core = DUA
+				remove_core = BRG
+			}
+
+			607 = {
+				secede_province = GNV
+				remove_core = BRG
+			}
+			608 = {
+				secede_province = GNV
+				remove_core = BRG
+			}
+			465 = {
+				secede_province = GNV
+				remove_core = BRG
+			}
+			466 = {
+				secede_province = GNV
+				remove_core = BRG
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	savoi_at_last = {
+		picture = Savoie
+		potential = {
+			tag = BRG
+			NOT = {
+				has_country_flag = treaty_of_neuchatel
+				has_country_flag = savoya
+			}
+		}	
+		allow = {
+			is_greater_power = yes
+			NOT = { war = yes }
+			owns = 465
+			owns = 466
+			owns = 721 
+			owns = 609 
+		}
+		
+		effect = {
+			prestige = 5
+			set_country_flag = savoya
+			465 = {
+				add_core = BRG
+				add_core = GNV
+				remove_core = SAR
+				remove_core = DUA
+				remove_core = ITA
+			}
+			466 = {
+				add_core = BRG
+				add_core = GNV
+				remove_core = SAR
+				remove_core = DUA
+				remove_core = ITA
+			}
+			721 = {
+				add_core = BRG
+				add_core = GNV
+				remove_core = SAR
+				remove_core = DUA
+				remove_core = ITA
+			}
+			609  = {
+				add_core = BRG
+				add_core = GNV
+				remove_core = SAR
+				remove_core = DUA
+				remove_core = ITA
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	savoi_at_last2 = {
+		potential = {
+			tag = GNV
+			NOT = {
+				has_country_flag = savoya2
+			}
+		}	
+		allow = {
+			NOT = { war = yes }
+			owns = 465
+			owns = 466
+		}
+		
+		effect = {
+			prestige = 5
+			set_country_flag = savoya2
+			465 = {
+				add_core = GNV
+				remove_core = SAR
+				remove_core = DUA
+				remove_core = ITA
+				remove_core = BRG
+			}
+			466 = {
+				add_core = GNV
+				remove_core = SAR
+				remove_core = DUA
+				remove_core = ITA
+				remove_core = BRG
+			}
+
+			607 = {
+				remove_core = BRG
+			}
+			608 = {
+				remove_core = BRG
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#	form_lotharingia = {
+#		potential = {
+#			tag = BRG
+#			NOT = {
+#			has_country_flag = lothaaringia
+#				has_country_flag = treaty_of_neuchatel
+#			}
+#		}	
+#		allow = {
+#			is_greater_power = yes
+#			NOT = { war = yes }
+#			BRG = {
+#				all_core = {
+#					owned_by = THIS
+#				}
+#			}
+#			GER = { exists = no }
+#		}
+#		
+#		effect = {
+#			prestige = 25
+#			set_country_flag = lothaaringia
+#			FRA_404 = {
+#				add_core = BRG
+#			}
+#			FRA_451 = {
+#				add_core = BRG
+#			}
+#			HEK_568 = {
+#				add_core = BRG
+#			}
+#			SAX_1 = {
+#				add_core = BRG
+#			}
+#			PRU_553 = {
+#				add_core = BRG
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+
+	fall_of_burgundy = {
+		potential = {
+			tag = BRG
+			has_global_flag = Burgundy_is_cape
+		}
+		allow = {
+			NOT = {
+				BRG = {
+					any_owned_province = {
+						continent = europe
+					}
+				}
+			}
+			is_greater_power = no
+			war = no
+		}
+		effect = {
+			change_tag = SAF
+			prestige = 10
+			add_accepted_culture = boer
+			any_owned = {
+				remove_core = BRG
+			}
+			any_country = {
+				any_owned = {
+					remove_core = BRG
+				}
+			}
+			any_owned = {
+				limit = {
+					continent = europe
+				}
+				remove_core = THIS
+			}
+			any_country = {
+				any_owned = {
+					limit = {
+						continent = europe
+					}
+					remove_core = THIS
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

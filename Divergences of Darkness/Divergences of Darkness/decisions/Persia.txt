@@ -1,0 +1,183 @@
+political_decisions = {
+	unite_persia = {
+    picture = persia_map
+		potential = {
+			NOT = {	PER = { exists = yes }	}
+			NOT = { tag = ARY }
+			OR = {
+				is_culture_group = iranian
+				AND = {	
+					tag = IRQ
+					has_country_flag = persiania
+				}
+				tag = AZB
+        tag = AFS
+			}
+		}
+		allow = {
+			NOT = { war = yes }
+			prestige = 50
+			PER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			change_tag = PER
+			add_accepted_culture = persian
+			add_accepted_culture = hazara
+			any_country = {
+				limit = {
+					is_culture_group = iranian
+					in_sphere = THIS
+				}
+			country_event = 11101
+			}
+			capital = 1121
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	greater_iran = {   
+    picture = aryanam_form
+		potential = {
+			NOT = {	ARY = { exists = yes }	}
+			tag = PER
+		}
+		allow = {
+			NOT = { war = yes }
+			prestige = 100
+			PER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			IRQ = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			KAL = {  
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			AFG = {   
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}  
+			AFS = {  
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 40
+			change_tag = ARY
+			add_accepted_culture = persian
+			add_accepted_culture = pashtun
+			add_accepted_culture = baluchi
+			add_accepted_culture = kurdish
+			add_accepted_culture = hazara
+			add_accepted_culture = tajik
+			any_country = {
+				limit = {
+					OR = {
+              AND = {
+                  is_culture_group = iranian
+					        in_sphere = THIS
+              } 
+              AND = {
+                  tag = IRQ
+					        in_sphere = THIS
+              }
+              AND = {
+                  tag = KAL
+					        in_sphere = THIS
+              }
+              AND = {
+                  tag = AFG
+					        in_sphere = THIS
+              } 
+              AND = {
+                  tag = AFS
+					        in_sphere = THIS
+              }               
+          }
+				}
+			country_event = 11101
+			}
+			PER = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			IRQ = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			TJK = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			AFG = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KAL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			AFS = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			capital = 1121
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,45 @@
+capital = 549
+primary_culture = ashkenazi
+culture = sephardic
+religion = jewish
+government = democracy
+plurality = 0.15
+nationalvalue = nv_order
+literacy = 0.87
+civilized = yes
+
+# Political reforms
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = universal_weighted_voting
+public_meetings = yes_meeting
+press_rights = free_press
+trade_unions = all_trade_unions
+voting_system = first_past_the_post
+political_parties = non_secret_ballots
+minorities_reform = limited
+immigration_policy = quota_immigration
+conscription=two_year_draft
+pollution=no_controls
+child_labor = child_labor_legal
+arts_endowment=no_endowment
+education = elite
+# Social Reforms
+wage_reform = low_minimum_wage
+work_hours = twelve_hours
+safety_regulations = good_safety
+health_care = good_health_care
+unemployment_subsidies = low_subsidies
+pensions = good_pensions
+
+
+ruling_party = ISR_liberal
+upper_house = {
+	fascist = 0
+	liberal = 55
+	conservative = 25
+	reactionary = 5
+	anarcho_liberal = 5
+	socialist = 5
+	communist = 5
+}

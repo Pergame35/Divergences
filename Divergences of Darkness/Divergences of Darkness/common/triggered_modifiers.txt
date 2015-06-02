@@ -1,0 +1,328 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+the_british_raj  = {
+	trigger = {
+		1236 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1251 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1297 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+	}
+	research_points = 1
+	prestige = 0.02
+	icon = 19
+}
+
+
+dutch_east_india = {
+	trigger = {
+		1413 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1418 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+	}
+	research_points = 0.5
+	prestige = 0.01
+	icon = 19
+}
+
+populationsize_25k = {
+	trigger = {
+		total_pops = 6250
+		NOT = {
+			total_pops = 12500
+		}
+	}
+	research_points = -1
+	global_population_growth = 0.005
+	mobilisation_size = 0.10
+	tax_efficiency = 0.05
+	icon = 11
+}
+
+populationsize_50k = {
+	trigger = {
+		total_pops = 12500
+		NOT = {
+			total_pops = 25000
+		}
+	}
+	research_points = -0.75
+	global_population_growth = 0.004
+	mobilisation_size = 0.05
+	tax_efficiency = 0.04
+	icon = 11
+}
+
+populationsize_100k = {
+	trigger = {
+		total_pops = 25000
+		NOT = {
+			total_pops = 62500
+		}
+	}
+	research_points = -0.66
+	global_population_growth = 0.003
+	mobilisation_size = 0.03
+	tax_efficiency = 0.03
+	icon = 5
+}
+
+populationsize_250k = {
+	trigger = {
+		total_pops = 62500
+		NOT = {
+			total_pops = 125000
+		}
+	}
+	research_points = -0.5
+	global_population_growth = 0.002
+	mobilisation_size = 0.01
+	tax_efficiency = 0.02
+	icon = 5
+}
+
+populationsize_500k = {
+	trigger = {
+		total_pops = 125000
+		NOT = {
+			total_pops = 250000
+		}
+	}
+	research_points = -0.25
+	global_population_growth = 0.002
+	mobilisation_size = 0.01
+	tax_efficiency = 0.01
+	icon = 5
+}
+
+populationsize_1M = {
+	trigger = {
+		total_pops = 250000
+		NOT = {
+			total_pops = 625000
+
+		}
+	}
+	research_points = -0.15
+	global_population_growth = 0.001
+	mobilisation_size = 0.005
+	icon = 5
+}
+
+populationsize_2_5M = {
+	trigger = {
+		total_pops = 625000
+		NOT = {
+			total_pops = 1250000
+		}
+	}
+	global_population_growth = 0.001
+	tax_efficiency = -0.01
+	icon = 5
+}
+
+populationsize_5M = {
+	trigger = {
+		total_pops = 1250000
+		NOT = {
+			total_pops = 2500000
+		}
+	}
+	research_points = 0.15
+	tax_efficiency = -0.02
+	icon = 5
+}
+
+populationsize_10M = {
+	trigger = {
+		total_pops = 2500000
+		NOT = {
+			total_pops = 6250000
+		}
+	}
+	research_points = 0.25
+	tax_efficiency = -0.03
+	icon = 5
+}
+
+populationsize_25M = {
+	trigger = {
+		total_pops = 6250000
+		NOT = {
+			total_pops = 12500000
+		}
+	}
+	research_points = 0.33
+	tax_efficiency = -0.04
+	icon = 5
+}
+
+populationsize_50M = {
+	trigger = {
+		total_pops = 12500000
+		NOT = {
+			total_pops = 25000000
+		}
+	}
+	research_points = 0.5
+	tax_efficiency = -0.05
+	icon = 5
+}
+
+populationsize_100M = {
+	trigger = {
+		total_pops = 25000000
+		NOT = {
+			total_pops = 50000000
+		}
+	}
+	research_points = 0.66
+	tax_efficiency = -0.06
+	icon = 5
+}
+
+populationsize_200M = {
+	trigger = {
+		total_pops = 50000000
+		NOT = {
+			total_pops = 75000000
+		}
+	}
+	research_points = 0.75
+	tax_efficiency = -0.08
+	icon = 5
+}
+
+populationsize_300M = {
+	trigger = {
+		total_pops = 75000000
+	}
+	research_points = 1
+	tax_efficiency = -0.1
+	icon = 5
+}
+
+grand_navy = {
+	trigger = {
+	civilized = yes
+	total_amount_of_ships = 100
+	}
+	prestige = 0.01
+	icon = 9
+}
+
+grand_army = {
+	trigger = {
+	total_amount_of_divisions = 100
+	civilized = yes
+	}
+	icon = 9
+	prestige = 0.01
+}
+
+city_state = {
+	trigger = {
+		NOT = {
+			num_of_cities = 2
+		}
+	}
+	icon = 10
+	prestige = -0.05
+}
+
+small_nation = {
+	trigger = {
+		civilized = yes
+		num_of_cities = 2
+		NOT = {
+			num_of_cities = 8
+		}
+	}
+	icon = 10
+	prestige = -0.025
+}
+
+large_nation = {
+	trigger = {
+		civilized = yes
+		num_of_cities = 50
+		NOT = {
+			num_of_cities = 100
+		}
+	}
+	icon = 9
+	prestige = 0.025
+}
+
+sprawling_empire = {
+	trigger = {
+		civilized = yes
+		num_of_cities = 100
+	}
+	icon = 9
+	prestige = 0.05
+}
+
+well_drilled = {
+	trigger = {
+		officers = 0.002
+		civilized = yes
+	}
+	icon = 17
+	land_organisation = 0.25
+	naval_organisation = 0.25
+}
+
+
+drilled = {
+	trigger = {
+		not = { officers = 0.002 }
+		officers = 0.0015
+		civilized = yes
+	}
+	icon = 17
+	land_organisation = 0.1
+	naval_organisation = 0.1
+}
+
+poorly_drilled = {
+	trigger = {
+		not = { officers = 0.001 }
+		officers = 0.0005
+	}
+	icon = 18
+	land_organisation = -0.1
+	naval_organisation = -0.1
+}
+
+undisciplined_mob = {
+	trigger = {
+		not = { officers = 0.0005 }
+	}
+	icon = 18
+	land_organisation = -0.25
+	naval_organisation = -0.25
+}
+
+vassal_nation = {
+	trigger = {
+		is_vassal = yes
+	}
+	icon = 10
+	prestige = -0.1
+}

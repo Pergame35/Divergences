@@ -1,0 +1,15 @@
+owner = ARA
+controller = ARA
+add_core = ARA
+add_core = ITA
+add_core = SIC
+trade_goods = fish
+life_rating = 35
+terrain = good_farmland
+naval_base = 2
+state_building = {
+	level = 1
+	building = fish_cannery
+	upgrade = yes
+}
+

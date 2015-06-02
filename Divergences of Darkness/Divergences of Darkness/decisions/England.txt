@@ -1,0 +1,140 @@
+political_decisions = {
+	form_england = {
+		potential = {
+			NOT = { exists = ENL }
+			tag = WLS
+		}	
+		allow = {
+			NOT = { part_of_sphere = yes }
+			NOT = { war = yes }
+			ENL = {
+				all_core = {
+						owned_by = THIS	
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_owned = {
+				limit = {
+					is_core = THIS
+				}
+				add_core = ENL
+			}
+			change_tag = ENL
+			add_accepted_culture = anglois
+			capital = 300
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	create_british_empire = {
+		potential = {
+			NOT = { has_global_flag = britemp }
+			OR = { 
+				tag = ENL
+				tag = SCO
+				tag = IRE
+			}
+		}	
+		allow = {
+			NOT = { war = yes }
+			NOT = { part_of_sphere = yes }
+			is_greater_power = yes
+			WLS = {
+				all_core = {
+						owned_by = THIS	
+				}
+			}
+			ENL = {
+				all_core = {
+						owned_by = THIS	
+				}
+			}
+			SCO = {
+				all_core = {
+						owned_by = THIS	
+				}
+			}
+			IRE = {
+				all_core = {
+						owned_by = THIS	
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 30
+			any_owned = {
+				limit = {
+					is_core = SCO
+				}
+				add_core = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = ENL
+				}
+				add_core = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = IRE
+				}
+				add_core = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = WLS
+				}
+				add_core = THIS
+			}
+			change_tag = ENG
+			set_global_flag = britemp
+			add_accepted_culture = anglois
+			add_accepted_culture = english
+			add_accepted_culture = scottish
+			add_accepted_culture = welsh
+			add_accepted_culture = irish
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ENL_recognized = {
+		potential = {
+			tag = ENL
+			NOT = { has_country_flag = ENL_recognized }
+		}
+		
+		allow = {
+			war = no
+			is_vassal = no
+		}
+		
+		effect = {
+			set_country_flag = ENL_recognized
+			set_global_flag = ENL_loss
+			any_owned = {
+				limit = { is_core = THIS }
+				remove_core = DUA
+			}
+			any_country = {
+				limit = {
+					any_owned_province = { is_core = ENL }
+					NOT = { primary_culture = english}
+				}
+				relation = { who = THIS value = -100 }
+				leave_alliance = THIS
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

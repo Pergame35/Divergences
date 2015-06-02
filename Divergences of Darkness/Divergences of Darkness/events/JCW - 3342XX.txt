@@ -1,0 +1,129 @@
+province_event = {
+
+	id = 334200
+
+	title = "EVTNAME334200"
+	desc = "EVTDESC334200"
+	picture = "boxers"
+
+	trigger = {
+		is_core = KOR
+		owner = {
+				tag = JAP
+		}
+
+		controller = {
+			NOT = { tag = JAP }
+			NOT = {
+				has_global_flag = korea_status_resolved
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA334200"
+		KOR = { prestige = 1 }
+		secede_province = KOR
+	}
+}
+
+country_event = {
+
+	id = 334201
+	
+	title = "EVTNAME334212"
+	desc = "EVTDESC334212"
+	picture = "boxers"
+	
+	trigger = {
+		tag = JAP
+		war = no         
+		NOT = { has_global_flag = korea_status_resolved }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	option = {
+		name = "EVTOPTB334212"
+		set_global_flag = korea_status_resolved
+	}
+}
+
+country_event = {   #Japan is informed of the end of the war
+
+	id = 334202
+
+	title = "Enforced Peace"
+	desc = "EVTDESC334202"
+	picture = "boxers"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Damn the Joseons!"
+    prestige = -15
+    any_pop = {
+			dominant_issue = {
+				factor = 0.02
+				value = jingoism
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 334203
+	
+	title = "EVTNAME334203"
+	desc = "EVTDESC334203"
+	picture = "boxers"
+	
+	trigger = {
+		tag = TNG
+		war = no         
+		NOT = { has_global_flag = jiangsu_status_resolved }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	option = {
+		name = "EVTOPTB334203"
+		set_global_flag = jiangsu_status_resolved
+	}
+}
+
+country_event = {
+
+	id = 334204
+	
+	title = "Victory"
+	desc = "The Chinese people believe in us"
+	picture = "boxers"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TNG
+		war = no         
+		has_global_flag = jiangsu_status_resolved
+		owns = 10
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	option = {
+		name = "EVTOPTB334203"
+		add_country_modifier = {
+				name = CLM_fight
+				duration = 7000
+			}
+	}
+}

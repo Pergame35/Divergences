@@ -1,0 +1,113 @@
+leader = {
+	name = "Wi Man"
+	type = land
+	date = 1836.1.1
+	personality = quixotic
+	background = ethnic
+}
+
+leader = {
+	name = "Hyeokgeose Geoseogan"
+	type = land
+	date = 1836.1.1
+	personality = hellbent
+	background = state_ideologue
+}
+
+army = {
+	name = "Joseon Army"
+	location = 1624
+	regiment = {
+		name= "1.Royal regular"
+		type = regular
+		home = 1624
+	}
+
+	regiment = {
+		name= "2. Royal regular"
+		type = regular
+		home = 1624
+	}
+
+	regiment = {
+		name= "3. Royal regular"
+		type = regular
+		home = 1635
+	}
+  
+  regiment = {
+		name= "1. cavalry"
+		type = hussar
+		home = 1624
+	}
+
+	regiment = {
+		name= "1. artillery"
+		type = artillery
+		home = 1624
+	}
+  
+	regiment = {
+		name= "1. infantry"
+		type = regular
+		home = 1635
+	}   
+	regiment = {
+		name= "2. infantry"
+		type = regular
+		home = 1620
+	}
+	regiment = {
+		name= "3. infantry"
+		type = regular
+		home = 1620
+	}
+
+	regiment = {
+		name= "1. hussar"
+		type = hussar
+		home = 1635
+	}
+
+}
+
+navy = {
+	name = "Revolutionary Fleet"
+	location = 1630
+	
+	ship = {
+		name= "Gwanggaeto"
+		type = manowar
+	}
+
+	ship = {
+		name= "Baekje"
+		type = manowar
+	}
+
+	ship = {
+		name= "Changbai"
+		type = frigate
+	}
+
+	ship = {
+		name= "Duman"
+		type = frigate
+	}
+
+	ship = {
+		name= "Baekdu"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Munmu"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Dokdo"
+		type = clipper_transport
+	}
+
+}

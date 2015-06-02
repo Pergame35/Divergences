@@ -1,0 +1,15 @@
+political_decisions = {
+
+DUA_setup = {
+		potential = {
+			tag = DUA
+			always = no
+		}
+		allow = {
+			year = 1821
+		}
+		effect = {
+		diplomatic_influence = { who = NAV value = 200 }
+		}
+	}
+}

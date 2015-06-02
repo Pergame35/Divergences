@@ -1,0 +1,523 @@
+country_event = {
+	id = 190401
+	title = "Mycenaean Excavations"
+	desc = "A great power has come to us asking to excavate local ruins."
+	picture = "ValleyoftheKings"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Certainly"
+		set_global_flag = greek_excavation_rights
+		FROM = {
+			country_event = 190411
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.1
+				has_global_flag = greek_excavation_rights
+			}
+			modifier = {
+				factor = 3
+				FROM = {
+					prestige = 365
+				}
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					is_greater_power = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Never!"
+		FROM = {
+			country_event = 190421
+		}
+	}
+}
+
+#Egypt Allows
+country_event = {
+	id = 190411
+	title = "Greece permits!"
+	desc = "The Greeks have agreed that we may excavate at Mycenae"
+	picture = "ValleyoftheKings"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Hurrah!"
+		add_country_modifier = {
+			name = mycenaean_excavations
+			duration = -1
+		}
+		relation = {
+			who = FROM
+			value = 20
+		}
+		set_global_flag = mycenaean_excavation_rights
+		prestige = 5
+	}
+}
+
+#Egypt Refuses
+country_event = {
+	id = 190421
+	title = "Greece refuses!"
+	desc = "The foolish Greeks have refused our antiquarians access!"
+	picture = "ValleyoftheKings"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Damnation!"
+		relation = {
+			who = FROM
+			value = -20
+		}
+		prestige = -5
+		set_country_flag = greece_refused
+	}
+}
+
+# Excavation team gets into trouble
+country_event = {
+	id = 190431
+	title = "Legal Issues"
+	desc = "There's been some unfortunate allegations in Greece..."
+	picture = "ValleyoftheKings"
+	
+	trigger = {
+		has_country_modifier = mycenaean_excavations
+		NOT = {
+			owns = 840
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "A little money may help?"
+		treasury = -20000
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.1
+				NOT = { money = 20000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "Bring them home"
+		relation = {
+			who = GRE
+			value = -20
+		}
+		clr_global_flag = mycenaean_excavation_rights
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# Tomb Found
+country_event = {
+	id = 190441
+	title = "Greek Tomb discovered!"
+	desc = "A royal tomb has been found in Greece"
+	picture = "Tomb"
+	
+	trigger = {
+		has_country_modifier = mycenaean_excavations
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "excellent"
+		years_of_research = 0.1
+	}
+}
+
+country_event = {
+	id = 190451
+	title = "Accusations of Fraud"
+	desc = "Some of the jewelery our excavators have found is of questionable validity..."
+	picture = "Egyptian"
+		
+	trigger = {
+		has_country_modifier = mycenaean_excavations
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "Blast!"
+		prestige = -5
+	}
+}
+
+country_event = {
+	id = 190461
+	title = "The Face of Agamemnon"
+	desc = "And as we pulled the mask from the body, I gazed into the face of Agamemnon."
+	news = yes
+	news_desc_long = "EVTDESC190461_NEWS_LONG"
+	news_desc_medium = "EVTDESC190461_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC190461_NEWS_SHORT"
+	picture = "Egyptian"	
+	
+	trigger = {
+		has_country_modifier = mycenaean_excavations
+		NOT = {
+			has_global_flag = agamemnon_found
+		}
+	}
+	
+	major = yes
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "Splendid"
+		prestige = 30
+		years_of_research = 1
+		set_global_flag = agamemnon_found
+		any_country = {
+			remove_country_modifier = mycenaean_excavations
+		}
+		remove_country_modifier = mycenaean_excavations
+		clr_global_flag = mycenaean_excavation_rights
+	}
+}
+
+
+
+
+country_event = {
+	id = 1904012
+	title = "Minoan Excavations"
+	desc = "A great power has come to us asking to excavate local ruins."
+	picture = "ValleyoftheKings"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Certainly"
+		set_global_flag = crete_excavation_rights
+		FROM = {
+			country_event = 1904112
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.1
+				has_global_flag = crete_excavation_rights
+			}
+			modifier = {
+				factor = 3
+				FROM = {
+					prestige = 365
+				}
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					is_greater_power = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Never!"
+		FROM = {
+			country_event = 1904212
+		}
+	}
+}
+
+#Egypt Allows
+country_event = {
+	id = 1904112
+	title = "Crete permits!"
+	desc = "The Creteans have agreed that we may excavate at Knossos"
+	picture = "ValleyoftheKings"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Hurrah!"
+		add_country_modifier = {
+			name = minoan_excavations
+			duration = -1
+		}
+		relation = {
+			who = FROM
+			value = 20
+		}
+		set_global_flag = minoan_excavation_rights
+		prestige = 5
+	}
+}
+
+#Egypt Refuses
+country_event = {
+	id = 1904212
+	title = "Crete refuses!"
+	desc = "The foolish Creteans have refused our antiquarians access!"
+	picture = "ValleyoftheKings"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Damnation!"
+		relation = {
+			who = FROM
+			value = -20
+		}
+		prestige = -5
+		set_country_flag = crete_refused
+	}
+}
+
+# Excavation team gets into trouble
+country_event = {
+	id = 1904312
+	title = "Legal Issues"
+	desc = "There's been some unfortunate allegations in Crete..."
+	picture = "ValleyoftheKings"
+	
+	trigger = {
+		has_country_modifier = minoan_excavations
+		NOT = {
+			owns = 847
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "A little money may help?"
+		treasury = -20000
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.1
+				NOT = { money = 20000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "Bring them home"
+		relation = {
+			who = CRE
+			value = -20
+		}
+		clr_global_flag = minoan_excavation_rights
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# Tomb Found
+country_event = {
+	id = 1904412
+	title = "Great Palace discovered!"
+	desc = "A great palace has been found in Knossos!"
+	picture = "ValleyoftheKings"
+	
+	trigger = {
+		has_country_modifier = minoan_excavations
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "Intriguing"
+		years_of_research = 0.1
+	}
+}
+
+
+country_event = {
+	id = 1904612
+	title = "The Labyrinth"
+	desc = "EVTDESC1904612_NEWS_LONG"
+	news = yes
+	news_title = "EVTNAME1904612_NEWS_TITLE"
+	news_desc_long = "EVTDESC1904612_NEWS_LONG"
+	news_desc_medium = "EVTDESC1904612_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1904612_NEWS_SHORT"
+	picture = "Egyptian"	
+	
+	trigger = {
+		has_country_modifier = minoan_excavations
+		NOT = {
+			has_global_flag = minos_found
+		}
+	}
+	
+	major = yes
+	
+	mean_time_to_happen = {
+		months = 400
+	}
+	
+	option = {
+		name = "Splendid"
+		prestige = 20
+		years_of_research = 0.5
+		set_global_flag = minos_found
+		any_country = {
+			remove_country_modifier = minoan_excavations
+		}
+		remove_country_modifier = minoan_excavations
+		clr_global_flag = minoan_excavation_rights
+	}
+}
+
+country_event = {
+	id = 1905101
+	title = "Homo Neanderthalensis discovered!"
+	desc = "EVTDESC1905101_NEWS_LONG"
+	news = yes
+	news_title = "EVTNAME1905101_NEWS_TITLE"
+	news_desc_long = "EVTDESC1905101_NEWS_LONG"
+	news_desc_medium = "EVTDESC1905101_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1905101_NEWS_SHORT"
+	picture = "ValleyoftheKings"
+	
+	trigger = {
+		NOT = {
+			has_global_flag = neanderthal
+		}
+		is_greater_power = yes
+		OR = {
+			owns = 840
+			840 = {
+				owner = {
+					in_sphere = THIS
+				}
+			}
+		}
+		cheap_steel = 1
+	}
+	
+	major = yes
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "Marvellous!"
+		set_global_flag = neanderthal
+		years_of_research = 0.5
+	}
+	
+}
+country_event = {
+	id = 1905201
+	title = "Homo Erectus discovered!"
+	desc = "EVTDESC1905201_NEWS_LONG"
+	news = yes
+	news_title = "EVTNAME1905201_NEWS_TITLE"
+	news_desc_long = "EVTDESC1905201_NEWS_LONG"
+	news_desc_medium = "EVTDESC1905201_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1905201_NEWS_SHORT"
+	picture = "ValleyoftheKings"
+	
+	trigger = {
+
+		NOT = {
+			has_global_flag = erectus #hahaahahahahahahhhhahaha
+		}
+		is_greater_power = yes
+		OR = {
+			owns = 1414
+			1414 = {
+				owner = {
+					in_sphere = THIS
+				}
+			}
+		}
+		phenomenology_n_hermeneutic = 1
+	}
+	
+	major = yes
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "Marvellous!"
+		set_global_flag = erectus
+		years_of_research = 0.5
+	}
+	
+}
+
+country_event = {
+	id = 1905301
+	title = "Australopithecus africanus discovered!"
+	desc = "EVTDESC1905301_NEWS_LONG"
+	news = yes
+	news_title = "EVTNAME1905301_NEWS_TITLE"
+	news_desc_long = "EVTDESC1905301_NEWS_LONG"
+	news_desc_medium = "EVTDESC1905301_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1905301_NEWS_SHORT"
+	picture = "ValleyoftheKings"
+	
+	trigger = {
+
+		NOT = {
+			has_global_flag = africanus
+		}
+		is_greater_power = yes
+		OR = {
+			owns = 2095
+			2095 = {
+				owner = {
+					in_sphere = THIS
+				}
+			}
+		}
+		anti__rationalism = 1
+		year = 1920
+	}
+	
+	major = yes
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "Marvellous!"
+		set_global_flag = africanus
+		years_of_research = 0.5
+	}
+	
+}

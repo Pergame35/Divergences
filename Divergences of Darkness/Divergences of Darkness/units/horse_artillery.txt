@@ -1,0 +1,40 @@
+horse_artillery = { 
+	icon = 22
+	
+	type = land
+	sprite = Artillery
+	active = no
+	unit_type = support
+	floating_flag = no
+	#Core Abilities
+	priority = 20
+	max_strength = 3
+	default_organisation = 5
+	maximum_speed = 5.00
+	weighted_value = 7.0
+
+	#Building Costs
+	build_time = 40
+	build_cost = {
+		artillery = 2
+		regular_clothes = 3
+		horses = 2
+	}
+	
+	supply_consumption = 1
+	supply_cost = {
+		artillery = 0.25
+		gunpowder = 1
+		horses = 0.5
+	}
+	
+
+	#Land Abilties
+	reconnaissance = 0
+	attack = 0.5
+	defence = 0.5
+	discipline = 0.5
+	support = 2
+	maneuver = 4
+	siege = 1
+}

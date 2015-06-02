@@ -1,0 +1,33 @@
+political_decisions = {
+
+	treaty_of_waitangiDVG = {
+	
+		potential = {
+			is_greater_power = yes
+			owns = 2515
+			AOT = { 	
+				civilized = no
+				owns = 2571
+			}
+			has_global_flag = berlin_conference
+			NOT = { has_global_flag = treaty_of_waitangiDVG }
+			NOT = { has_global_flag = treaty_of_waitangirefused }
+		}	
+		allow = {
+			NOT = { AOT = { war = yes } }
+			NOT = { war = yes }
+		}
+		
+		effect = {
+			prestige = 15
+			badboy = 5
+			set_global_flag = treaty_of_waitangiDVG
+			AOT = {
+				country_event = 333004
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,895 @@
+﻿country_event = { 
+
+		id = 98401
+		title = "AMA1.T"
+		desc = "AMA1.D"
+		
+		trigger = { 
+		tag = AMA 
+		CLM = { 
+		AND = { 
+		owns = 2414 
+		owns = 2415
+		owns = 2408
+		owns = 2412
+				}
+		war_with = SPA 
+			}
+		NOT = { has_global_flag = congress_of_panama }
+		}
+		
+		mean_time_to_happen = { 
+		months = 2
+		}
+		
+		option = { 
+		name = "Take the opportunity while no one is watching"
+		CLM = { country_event = 98402 }
+		badboy = 5 
+		prestige = 3 
+		BRZ_2408 = { 
+		add_core = AMA
+		add_core = EQN
+				}
+		}
+		
+		option = { 
+		name = "It is not our territory, call them back !"
+		prestige = 5 
+		relation = { who = CLM value = 150 }
+		}
+}
+
+country_event = { 
+		
+		id = 98402 
+		title = "AMA2.T"
+		desc = "AMA2.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "The bastards !"
+			BRZ_2408  = {
+		remove_core = CLM 
+		}
+		any_owned = { 
+		limit = { region = BRZ_2408 }
+		secede_province = AMA
+		}
+	}
+}
+
+##########Post-war reactions######### 
+
+country_event = { ######SPA reaction after Partial Peace
+	id = 98403 
+	title = "AMA3.T"
+	desc = "AMA3.D"
+		
+	trigger = { 
+	tag = SPA 
+	has_global_flag = partial_peace 
+	2414 = { owned_by = AMA }
+	NOT = { 
+		OR = { 
+	has_global_flag = paracash 
+	has_global_flag = paraclaim 
+	has_global_flag = paraabandon
+			}
+		}
+	}
+	
+	mean_time_to_happen = { 
+	days = 1 
+	}
+	
+	option = { 
+	name = "We will settle the matter if they pay us"
+	set_global_flag = paracash 
+	AMA = { country_event = 98404 }
+	prestige = -5 
+	ai_chance = { 
+	factor = 30
+		}
+	}
+	
+	option = { 
+	name = "Send this message : 'Para or War' "
+	set_global_flag = paraclaim 
+	AMA = { country_event = 98412 }
+	ai_chance = { 
+	factor = 60
+		}
+	}
+	
+	option = { 
+	name = "Why bother about some inhospitable jungle ?"
+	set_global_flag = paraabandon
+	AMA = { country_event = 97095 }
+	ai_chance = { 
+	factor = 10 
+		}
+	}
+}
+	
+country_event = { ######Money ? 
+		
+		id = 98404
+		title = "AMA4.T"
+		desc = "AMA4.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "Just some money ? Take the chance while they are asking !"
+		money = -50000 
+		country_event = { id = 98407 days = 1095 }
+		SPA = { country_event = 98405 }
+		ai_chance = { 
+			factor = 100
+			}
+		}
+		
+		option = { 
+		name = "And what will they do if we don't ?"
+		prestige = 5 
+		SPA = { country_event = 98406 }
+		ai_chance = { 
+			factor = 0
+			}
+		}
+	}
+	
+country_event = { ######Money ? 
+		
+		id = 98405
+		title = "AMA5.T"
+		desc = "AMA5.D"
+		
+		is_triggered_only = yes
+		
+		option = { 
+		name = "I think we have made a great deal gentlemen"
+		money = 50000 
+		set_global_flag = paracash
+		}
+	}
+	
+country_event = { 
+
+		id = 98406
+		title = "AMA6.T"
+		desc = "AMA6.D"
+		
+		is_triggered_only = yes
+		
+		option = { 
+		name = "They want war ? They'll get war !"
+		SPA = { 
+			casus_belli = {
+				target = AMA
+				type = acquire_state 
+				months = 60
+				}
+			}
+		war = {
+			target = AMA
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 2414
+				}
+			}
+		}
+}
+
+country_event = { ######Money ? 
+		
+		id = 98407
+		title = "AMA7.T"
+		desc = "AMA7.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "Send the money"
+		money = -50000 
+		country_event = { id = 98409 days = 1095 }
+		SPA = { country_event = 98408 }
+		}
+	}
+	
+country_event = { ######Money ? 
+		
+		id = 98408
+		title = "AMA8.T"
+		desc = "AMA8.D"
+		
+		is_triggered_only = yes
+		
+		option = { 
+		name = "Always a pleasure ..."
+		money = 50000 
+		}
+	}
+		
+country_event = { ######Money ? 
+		
+		id = 98409
+		title = "AMA9.T"
+		desc = "AMA9.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "Send the money"
+		money = -50000 
+		country_event = { id = 98410 days = 1095 }
+		SPA = { country_event = 98408 }
+		}
+	}		
+	
+country_event = { ######Money ? 
+		
+		id = 98410
+		title = "AMA10.T"
+		desc = "AMA10.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "At last"
+		money = -50000 
+		SPA = { country_event = 98411 }
+		}
+	}
+		
+country_event = { ######Money ? 
+		
+		id = 98411
+		title = "AMA11.T"
+		desc = "AMA11.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "It was good while it lasted"
+		money = 50000
+		}
+	}
+
+country_event = { ######AMA reaction
+		
+		id = 98412
+		title = "AMA12.T"
+		desc = "AMA12.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "We don't have a lot of choices ..."
+		any_owned = { 
+		limit = { region = BRZ_2408}
+		secede_province = SPA
+		}
+		SPA = { country_event = 98413 }
+		ai_chance = { 
+			factor = 90 
+			}
+		}
+		
+		option = { 
+		name = "Let them come !"
+		prestige = 5 
+		SPA = { country_event = 98406 }
+		ai_chance = { 
+			factor = 10 
+			}
+		}
+	}	
+	
+country_event = { ######Notice for SPA
+		
+		id = 98413
+		title = "AMA13.T"
+		desc = "AMA13.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "Glory to Espana !"
+		prestige = 10
+		}
+	}
+	
+country_event = { ######SPA reaction after Complete Victory 
+	id = 98414
+	title = "AMA14.T"
+	desc = "AMA14.D"
+		
+	trigger = { 
+	tag = SPA 
+	has_global_flag = spaCLM 
+	2414 = { owned_by = AMA }
+	NOT = { 
+		OR = { 
+	has_global_flag = paracash 
+	has_global_flag = paraclaim 
+	has_global_flag = paraabandon
+			}
+		}
+	}
+	
+	mean_time_to_happen = { 
+	days = 1 
+	}
+	
+	option = { 
+	name = "We will settle the matter if they pay us"
+	AMA = { country_event = 98404 }
+	set_global_flag = paracash
+	prestige = -5 
+	ai_chance = { 
+	factor = 50
+		}
+	}
+	
+	option = { 
+	name = "Send this message : 'Para or War' "
+	set_global_flag = paraclaim
+	AMA = { country_event = 98412 }
+	ai_chance = { 
+	factor = 40
+		}
+	}
+	
+	option = { 
+	name = "Why bother about some inhospitable jungle ?"
+	set_global_flag = paraabandon
+	AMA = { country_event = 97095 }
+	ai_chance = { 
+	factor = 10 
+		}
+	}
+}
+
+country_event = { ######CLM united reaction 
+	id = 98415
+	title = "AMA15.T"
+	desc = "AMA15.D"
+		
+	trigger = { 
+	tag = CLM
+	has_global_flag = columbian_unity 
+	NOT = { GRA = { exists = yes } }
+	2414 = { owned_by = AMA }
+	NOT = { 
+		OR = { 
+	has_global_flag = paracash 
+	has_global_flag = paraclaim 
+	has_global_flag = paraabandon
+			}
+		}
+	}
+	
+	mean_time_to_happen = { 
+	days = 1 
+	}
+	
+	option = { 
+	name = "We will settle the matter if they pay us"
+	AMA = { country_event = 98416 }
+	set_global_flag = paracash
+	prestige = -5 
+	ai_chance = { 
+	factor = 25
+		}
+	}
+	
+	option = { 
+	name = "Send this message : 'Para or War' "
+	AMA = { country_event = 98424 }
+	set_global_flag = paraclaim 
+	ai_chance = { 
+	factor = 75
+		}
+	}
+	
+	option = { 
+	name = "Why bother about some inhospitable jungle ?"
+	AMA = { country_event = 97095 }
+	set_global_flag = paraabandon
+	ai_chance = { 
+	factor = 0 
+		}
+	}
+}
+
+country_event = { ######Money ? 
+		
+		id = 98416
+		title = "AMA16.T"
+		desc = "AMA16.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "Just some money ? Take the chance while they are asking !"
+		money = -50000 
+		country_event = { id = 98419 days = 1095 }
+		CLM = { country_event = 98417 }
+		ai_chance = { 
+			factor = 100
+			}
+		}
+		
+		option = { 
+		name = "And what will they do if we don't ?"
+		prestige = 5 
+		CLM = { country_event = 98418 }
+		ai_chance = { 
+			factor = 0
+			}
+		}
+	}
+	
+country_event = { ######Money ? 
+		
+		id = 98417
+		title = "AMA17.T"
+		desc = "AMA17.D"
+		
+		is_triggered_only = yes
+		
+		option = { 
+		name = "I think we have made a great deal gentlemen"
+		money = 50000 
+		set_global_flag = paracash
+		}
+	}
+	
+country_event = { 
+
+		id = 98418
+		title = "AMA18.T"
+		desc = "AMA18.D"
+		
+		is_triggered_only = yes
+		
+		option = { 
+		name = "They want war ? They'll get war !"
+		add_core = CLM 
+		CLM = { 
+			casus_belli = {
+				target = AMA
+				type = acquire_state 
+				months = 60
+				}
+			}
+		war = {
+			target = AMA
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 2414
+				}
+			}
+		}
+}
+
+country_event = { ######Money ? 
+		
+		id = 98419
+		title = "AMA19.T"
+		desc = "AMA19.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "Send the money"
+		money = -50000 
+		country_event = { id = 98421 days = 1095 }
+		CLM = { country_event = 98420 }
+		}
+	}
+	
+country_event = { ######Money ? 
+		
+		id = 98420
+		title = "AMA20.T"
+		desc = "AMA20.D"
+		
+		is_triggered_only = yes
+		
+		option = { 
+		name = "Always a pleasure ..."
+		money = 50000 
+		}
+	}
+		
+country_event = { ######Money ? 
+		
+		id = 98421
+		title = "AMA21.T"
+		desc = "AMA21.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "Send the money"
+		money = -50000 
+		country_event = { id = 98422 days = 1095 }
+		CLM = { country_event = 98420 }
+		}
+	}		
+	
+country_event = { ######Money ? 
+		
+		id = 98422
+		title = "AMA10.T"
+		desc = "AMA10.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "At last"
+		money = -50000 
+		CLM = { country_event = 98423 }
+		}
+	}
+		
+country_event = { ######Money ? 
+		
+		id = 98423
+		title = "AMA23.T"
+		desc = "AMA23.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "It was good while it lasted"
+		money = 50000
+		}
+	}
+
+country_event = { ######AMA reaction
+		
+		id = 98424
+		title = "AMA24.T"
+		desc = "AMA24.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "We don't have a lot of choices ..."
+		any_owned = { 
+		limit = { region = BRZ_2408}
+		add_core = CLM
+		secede_province = CLM 
+		}
+		CLM = { country_event = 98425 }
+		ai_chance = { 
+			factor = 60
+			}
+		}
+		
+		option = { 
+		name = "Let them come !"
+		prestige = 5 
+		CLM = { country_event = 98418 }
+		ai_chance = { 
+			factor = 40 
+			}
+		}
+	}	
+	
+country_event = { ######Notice for CLM
+		
+		id = 98425
+		title = "AMA25.T"
+		desc = "AMA25.D"
+		
+		is_triggered_only = yes
+		
+		option = {
+		name = "Glory to Gran Columbia !"
+		prestige = 10
+		}
+	}
+	
+################### The Amazonian Civil War ############### 
+
+country_event = { ######Possibilty of a military dictatorship if Atlantia is lost 
+		
+		id = 98426
+		title = "AMA26.T"
+		desc = "AMA26.D"
+		
+		trigger = { 
+		tag = AMA 
+		government = democracy 
+		NOT = { owns = 2447 }
+		NOT = { has_country_flag = military_failure }
+		NOT = { has_country_flag = military_takeover }
+		}
+		
+		mean_time_to_happen = { 
+		months = 5 
+		}
+		
+		option = { 
+		name = "The military take control of the Parliament"
+		set_country_flag = military_takeover
+		government = presidential_dictatorship
+		ruling_party_ideology = conservative
+		political_reform = none_voting
+		political_reform = no_meeting
+		political_reform = censored_press
+		political_reform = no_trade_unions
+		political_reform = underground_parties
+		political_reform = nobody_gets_out
+		political_reform = appointed
+		add_country_modifier = {
+				name = fight_the_power
+				duration = 2000
+			}
+		ai_chance = { 
+		factor = 70
+			}
+		}
+		
+		option = { 
+		name = "The government vanquishes the high-command" 
+		leadership = -100 
+		set_country_flag = military_failure
+		ai_chance = { 
+		factor = 30 
+			}
+		}
+	}
+
+country_event = { #####Talks of secession in Equinoxia 
+
+	id = 98427
+	title = "AMA27.T"
+	desc = "AMA27.D"
+	
+	
+	trigger = { 
+		tag = AMA 
+		NOT = { government = democracy }
+		}
+	
+	fire_only_once = yes 
+	
+	option = { 
+	name = "We'll have to watch them closely ... "
+	AMA_2410 = { add_core = EQN }
+	
+	any_owned = {
+			limit = { 
+				is_core = EQN
+			}
+			any_pop = { militancy = 2 }
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 3650
+			}
+		}
+	}
+}
+		
+country_event = { ###### The Equinoxian Secession 
+	id = 98428
+	title = "AMA28.T"
+	desc = "AMA28.D" 
+		
+	fire_only_once = yes
+
+	trigger = { 
+	tag = AMA 
+	NOT = { government = democracy }
+	NOT = { EQN = { exists = yes } } 
+	NOT = { has_country_flag = AMACivilwar }
+	any_owned_province = {
+			is_core = EQN
+			any_pop = {
+				OR = {
+					type = aristocrats
+					type = bureaucrats
+				}
+				militancy = 5
+			}
+		}
+	}
+	
+	mean_time_to_happen = { 
+	months = 5 
+	}
+	
+	option = { 
+	name = "We will crush them !"
+	set_country_flag = AMACivilwar 
+	release = EQN
+		war = {
+			target = EQN
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+	}
+}
+
+country_event = { ########Equinoxian victory if Port-Liberté is held 
+	id = 98429 
+	title = "AMA29.T"
+	desc = "AMA29.D"
+	
+	trigger = { 
+	tag = EQN 
+	controls = 2431 
+	war_with = AMA 
+	}
+	
+	mean_time_to_happen = { 
+	days = 1 }
+	
+	option = { 
+	name = "We shall reestablish democracy in Amazonia ! "
+	end_war = AMA 
+	inherit = AMA 
+	change_tag = AMA 
+	capital = 2431 
+	prestige = 25 
+	government = democracy 
+	ruling_party_ideology = liberal
+	political_reform = universal_voting
+	political_reform = population_equal_weight
+	political_reform = yes_meeting
+	political_reform = free_press
+	}
+}
+
+country_event = { #### End of the Civil War 
+
+	id = 98430
+	title = "AMA30.T"
+	desc = "AMA30.D" 
+		
+	fire_only_once = yes
+
+	trigger = { 
+	tag = AMA 
+	NOT = { EQN = { exists = yes } } 
+	has_country_flag = AMACivilwar 
+	}
+	
+	mean_time_to_happen = { 
+	months = 1 
+	}
+	
+	option = { 
+	name = "We are united once again ! "
+	set_country_flag = newgov  
+	prestige = 5 
+	}
+}
+
+country_event = { #### Monarchy ? 
+
+	id = 98431
+	title = "AMA31.T"
+	desc = "AMA31.D" 
+		
+	fire_only_once = yes
+
+	trigger = { 
+	tag = AMA 
+	has_country_flag = newgov
+	war = no 
+	}
+	
+	mean_time_to_happen = { 
+	months = 5 
+	}
+	
+	option = { 
+	name = "It is time for the return of the king. "
+	clr_country_flag = newgov 
+	country_event = 98432
+	ai_chance = { 
+	factor = 50 } 
+	}
+	
+	option = { 
+	name = "We are fine as we are thanks "
+	any_pop = { 
+		limit = { 
+		culture = amazonian  
+			}
+		militancy = -2 
+		}
+	}
+}
+
+country_event = { #### Homeland or Plantagenia ?  
+
+	id = 98432
+	title = "AMA32.T"
+	desc = "AMA32.D" 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "The duke of Brittany will become king "
+	government = absolute_monarchy 
+	relation = { who = DUA value = 200 }
+	DUA = { diplomatic_influence = { who = AMA value = 150 } }
+	country_event = 98433
+	ai_chance = { 
+	factor = 40 } 
+	}
+	
+	option = { 
+	name = "The duke of Leonie will become king"
+	government = absolute_monarchy 
+	relation = { who = PLA value = 200 }
+	country_event = 98433
+	ai_chance = { 
+	factor = 60 } 
+	}
+}
+
+country_event = { #### Choice of government  
+
+	id = 98433
+	title = "AMA33.T"
+	desc = "AMA33.D" 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "The military knows best how to rule this country"
+	government = absolute_monarchy 
+	political_reform = none_voting
+	political_reform = no_meeting
+	political_reform = censored_press
+	political_reform = no_trade_unions
+	political_reform = underground_parties
+	political_reform = nobody_gets_out
+	political_reform = appointed
+	ai_chance = { 
+	factor = 40 } 
+	}
+	
+	option = { 
+	name = "Some reforms are needed"
+	government = prussian_constitutionalism
+	political_reform = appointed
+	political_reform = wealth_voting
+	political_reform = yes_meeting
+	political_reform = censored_press
+	political_reform = no_trade_unions
+	political_reform = first_past_the_post
+	political_reform = non_secret_ballots
+	ai_chance = { 
+	factor = 40 } 
+	}
+	
+	option = { 
+	name = "The king reigns but does not rule"
+	government = hms_government
+	political_reform = state_equal_weight
+	political_reform = universal_weighted_voting
+	political_reform = yes_meeting
+	political_reform = censored_press
+	political_reform = no_trade_unions
+	political_reform = first_past_the_post
+	political_reform = non_secret_ballots
+	ai_chance = { 
+	factor = 20 } 
+	}
+}

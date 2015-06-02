@@ -1,0 +1,236 @@
+political_decisions = {
+	japanese_korea = {
+    picture = annex_korea
+		potential = {
+			tag = JAP
+			has_global_flag = korea_status_resolved  
+			NOT = { has_country_flag = koreaisjapanese }
+			NOT = { has_country_flag = japanese_offer }
+		}
+
+		allow = {
+			NOT = { war = yes }
+			KOR = {
+				all_core = {
+						owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			set_country_flag = koreaisjapanese
+			KOR = {
+				all_core = {
+						add_core = THIS
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+  
+  korean_korea = {
+    picture = annex_korea
+		potential = {
+			tag = KOR
+			NOT = { has_global_flag = korea_status_resolved } 
+      war = yes
+		}
+
+		allow = {
+			KOR = {
+				all_core = {
+						owned_by = THIS 
+						controlled_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			set_global_flag = korea_status_resolved 
+			set_global_flag = korea_wins
+			end_war = JAP
+      JAP = { country_event = 334202 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+  
+  japanese_korea_repeat = {
+    picture = annex_korea
+		potential = {
+			tag = JAP
+			has_global_flag = korea_status_resolved  
+			has_global_flag = korea_wins  
+      NOT = { has_country_flag = retry_jap } 
+			ideological_thought = 1
+      KOR = {
+				exists = yes
+        civilized = no
+			}
+		}
+
+		allow = {
+			NOT = { war = yes } 
+      NOT = { truce_with = KOR }
+			ideological_thought = 1
+		}
+		effect = {
+			prestige = 5
+      badboy = 5
+			clr_global_flag = korea_wins
+      set_country_flag = retry_jap 
+			add_casus_belli = {
+				target = KOR
+				type = conquest
+				months = 24
+		 }
+		}
+		ai_will_do = {
+			factor = 1  
+      modifier = {
+				factor = 0
+				badboy = 20
+			} 
+		}
+	}
+  
+ japanese_offer = {
+    picture = treaty_of_nanking
+		potential = {
+			tag = JAP
+			has_country_flag = koreaisjapanese   
+			NOT = { has_country_flag = japanese_offer }
+      MCK = {
+        owns = 1084
+        civilized = no
+      }
+		}
+
+		allow = {
+			NOT = { war = yes }
+      money = 50000
+			KOR = {
+				all_core = {
+						owned_by = THIS
+				}
+			}
+      ideological_thought = 1
+		}
+		effect = {
+			prestige = 10
+			clr_country_flag = koreaisjapanese
+      set_country_flag = japanese_offer
+      MCK = { country_event = 334300 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+  
+	japanese_ainu = {
+    picture = unequal_treaty
+		potential = {
+			tag = JAP
+			NOT = { has_country_flag = ainuisjapanese }
+      AIN = { 
+          vassal_of = THIS
+          ai = yes    
+      }
+		}
+
+		allow = {
+			NOT = { war = yes }
+			state_n_government = 1 
+			medicine = 1
+		}
+		effect = {
+			prestige = 3
+			set_country_flag = ainuisjapanese
+			inherit = AIN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+  
+  man_in_the_castle = {
+    picture = high_castle
+		potential = {
+			tag = JAP
+			NOT = { has_country_flag = high_castle }
+      owns = 1
+      DNG = { 
+          owns = 15  
+      }
+		}
+
+		allow = {
+			NOT = { war = yes }
+			nationalism_n_imperialism = 1
+      great_power = yes
+      DNG = { great_power = no }
+		}
+	
+		effect = {
+			prestige = 10
+			set_country_flag = high_castle
+			badboy = 20
+      DNG = { country_event = 334302 }
+      war = {
+				target = DNG
+				attacker_goal = {
+					casus_belli = conquest
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+      modifier = {
+				factor = 0
+				average_militancy = 4
+			}   
+      modifier = {
+				factor = 0
+				NOT = { badboy = 0.2 } 
+			} 
+      modifier = {
+				factor = 0
+				DNG = { rank = 12 }
+			}
+		}
+	}
+  
+  hawaiian_purchase = {
+		picture = annex_hawaii
+		potential = {
+			nationalism_n_imperialism = 1
+			HAW = {
+				exists = yes
+				civilized = no
+				in_sphere = THIS
+			}
+			NOT = { has_country_flag = hawaiian_purchase }
+		}
+		
+		allow = {
+			war = no
+			money = 50000
+			HAW = {
+					war = no                
+					relation = { who = THIS value = 50 }
+				}
+		}
+		
+		effect = {
+			set_country_flag = hawaiian_purchase
+			HAW = { country_event = 334303 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

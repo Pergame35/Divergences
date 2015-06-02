@@ -1,0 +1,37 @@
+# Get them Annexed
+country_event = {
+	id = 32410
+	title = "EVTNAME32410"
+	desc = "EVTDESC32410"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA32410"
+		FROM = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA32410"
+		badboy = 5
+		prestige = 20
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			defender_goal = {
+				casus_belli = civil_war
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,14 @@
+owner = DUA
+controller = DUA
+add_core = DUA
+add_core = WLS
+add_core = ENL
+trade_goods = coal
+life_rating = 35
+naval_base = 1
+terrain = hilly_farmland
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}

@@ -1,0 +1,26 @@
+leader = {
+	name = "Pietro Berio"
+	type = land
+	date = 1836.1.1
+	personality = forgiving
+	background = religious_leader
+}
+
+army = {
+	name = "Esercito Pontificio"
+	location = 749
+	regiment = {
+		name= "1. Zuavi Pontifici"
+		type = regular
+		home = 749
+	}
+
+	regiment = {
+		name= "4. Zuavi Pontifici"
+		type = artillery
+		home = 751
+	}
+}
+
+
+

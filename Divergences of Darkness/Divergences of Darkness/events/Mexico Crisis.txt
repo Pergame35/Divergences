@@ -1,0 +1,145 @@
+country_event = {
+
+	id = 46419
+
+	title = "EVTNAME46419"
+	desc = "EVTDESC46419"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA46419"
+		random_list = {
+			50 = { prestige = 1 }
+			50 = { country_event = 46427 }
+		}
+	}
+}
+
+country_event = {
+
+	id = 46420
+
+	title = "EVTNAME46420"
+	desc = "EVTDESC46420"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA46420"
+
+		any_owned = {
+			limit = {
+				is_core = YUC
+			}
+			secede_province = YUC
+		}
+
+		random_list = {
+			75 = { country_event = 46421 }
+			25 = { country_event = 46419 }
+		}
+
+		YUC = { country_event = 46424 }
+	}
+}
+
+country_event = {
+
+	id = 46421
+
+	title = "EVTNAME46421"
+	desc = "EVTDESC46421"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA46421"
+
+		any_owned = {
+			limit = {
+				is_core = ZAP
+			}
+			secede_province = ZAP
+		}
+
+		any_owned = {
+			limit = {
+				is_core = PUR
+			}
+			secede_province = PUR
+		}
+
+		random_list = {
+			75 = { country_event = 46422 }
+			25 = { country_event = 46419 }
+		}
+
+		ZAP = { country_event = 46424 }
+		PUR = { country_event = 46424 }
+	}
+}
+
+country_event = {
+
+	id = 46422
+
+	title = "EVTNAME46422"
+	desc = "EVTDESC46422"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA46422"
+		
+		any_owned = {
+			limit = {
+				is_core = AZT
+			}
+			secede_province = AZT
+		}
+
+		AZT = { country_event = 46424 }
+
+		change_tag = JLS
+		capital = 2161
+		country_event = 46423
+
+		any_country = {
+			any_owned = {
+				limit = {
+					is_core = MEX
+				}
+				remove_core = JLS
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 46427
+
+	title = "EVTNAME46427"
+	desc = "EVTDESC46427"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA46425"
+		
+		any_owned = {
+			limit = {
+				is_core = JLS
+			}
+			secede_province = JLS
+		}
+
+		JLS = { country_event = 46423 }
+	}
+}

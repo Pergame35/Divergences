@@ -1,0 +1,31 @@
+country_event = {
+	id = 333110
+	title = "EVTNAME333110"
+	desc = "EVTDESC333110"
+	picture = "?"
+	
+	trigger = {
+		tag = ETH
+		NOT = { war_with = AMT }
+		AMT = { exists = yes }
+		any_neighbor_country = { tag = AMT }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA333110"
+		war = {
+			target = AMT
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			
+			defender_goal = {
+				casus_belli = civil_war
+			}
+		}	
+	}
+}

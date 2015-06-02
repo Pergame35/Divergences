@@ -1,0 +1,22 @@
+leader = {
+	name = "Louis Bréa"
+	type = land
+	date = 1836.1.1
+	personality = ruthless
+	background = member_of_elite
+}
+
+army = {
+	name = "Armée des Valois"
+	location = 470
+	regiment = {
+		name= "1. Brigade"
+		type = regular
+		home = 467
+	}
+	regiment = {
+		name= "2. Brigade"
+		type = regular
+		home = 467
+	}
+}

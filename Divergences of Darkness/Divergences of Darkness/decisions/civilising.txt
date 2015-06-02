@@ -1,0 +1,24 @@
+political_decisions = {	
+	letatcestmoi = {
+		alert = yes
+		potential = {
+			has_country_flag = feudal
+			NOT = { ruling_party_ideology = reactionary }
+		}
+		allow = {
+			NOT = { average_militancy = 2.5 }
+			civilization_progress = 0.5
+		}
+		effect = {
+			#prestige = 10
+			remove_country_modifier = feudal
+			clr_country_flag = feudal
+			aristocrats = { militancy = 5 }
+			political_reform = appointed
+			government = absolute_monarchy
+		}
+		ai_will_do = {
+			factor = 1
+			}
+	}
+}

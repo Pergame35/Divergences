@@ -1,0 +1,24 @@
+owner = DUA
+controller = DUA
+add_core = DUA
+add_core = ENL
+trade_goods = fish
+life_rating = 40
+terrain = marginal_farmland
+railroad = 1
+state_building = {
+	level = 3
+	building = fabric_factory
+	upgrade = yes
+}
+state_building = {
+	level = 4
+	building = regular_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = bronze_factory 
+	upgrade = yes
+}
+naval_base = 2

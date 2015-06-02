@@ -1,0 +1,72 @@
+leader = {
+	name = "Sadeq Larijani"
+	type = land
+	date = 1836.1.1
+	personality = bigoted
+	background = hated
+}
+
+leader = {
+	name = "Hasan Basri"
+	type = land
+	date = 1836.1.1
+	personality = inspiring
+	background = megalomaniac
+}
+
+army = {
+	name = "Army of Teheran"
+	location = 1121
+	regiment = {
+		name= "1. hussar Brigade"
+		type = hussar
+		home = 1121
+	}
+
+	regiment = {
+		name= "2. hussar Brigade"
+		type = hussar
+		home = 1121
+	}
+
+	regiment = {
+		name= "1. Bakhsh-i Piyadenizam"
+		type = infantry
+		home = 1121
+	}
+
+	regiment = {
+		name= "2. Bakhsh-i Piyadenizam"
+		type = infantry
+		home = 1127
+	}
+}
+
+army = {
+	location = 1149
+	name = "Eastern Army"
+
+	regiment = {
+		name= "3. Bakhsh-i Piyadenizam"
+		type = infantry
+		home = 1127
+	}
+
+	regiment = {
+		name= "4. Bakhsh-i Piyadenizam"
+		type = infantry
+		home = 1127
+	}
+
+	regiment = {
+		name= "5. Bakhsh-i Piyadenizam"
+		type = infantry
+		home = 1113
+	}
+
+	regiment = {
+		name= "6. Bakhsh-i Piyadenizam"
+		type = infantry
+		home = 1113
+	}
+}

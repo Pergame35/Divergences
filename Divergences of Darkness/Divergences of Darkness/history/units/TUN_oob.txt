@@ -1,0 +1,75 @@
+leader = {
+	name = "Al-Husayn ibn Mahmud"
+	type = land
+	date = 1836.1.1
+	personality = aggresive
+	background = uncommonly_young
+}
+
+army = {
+	name = "Army of the Bey of Tunis"
+	location = 1730
+	regiment = {
+		name= "1.Askäris"
+		type = regular
+		home = 1727
+	}
+
+	regiment = {
+		name= "2.Askäris"
+		type = regular
+		home = 1727
+	}
+
+	regiment = {
+		name= "3.Askäris"
+		type = regular
+		home = 1727
+	}
+
+	regiment = {
+		name= "4.Askäris"
+		type = hussar
+		home = 1727
+	}
+}
+
+army = {
+	name = "Army of Tripoli"
+	location = 1734
+	regiment = {
+		name= "1.Askäris"
+		type = infantry
+		home = 1731
+	}
+
+	regiment = {
+		name= "2.Askäris"
+		type = infantry
+		home = 1731
+	}
+
+	regiment = {
+		name= "3.Askäris"
+		type = infantry
+		home = 1731
+	}
+
+	regiment = {
+		name= "4.Askäris"
+		type = hussar
+		home = 1731
+	}
+
+	regiment = {
+		name= "5.Askäris"
+		type = hussar
+		home = 1731
+	}
+
+	regiment = {
+		name= "6.Askäris"
+		type = hussar
+		home = 1731
+	}
+}

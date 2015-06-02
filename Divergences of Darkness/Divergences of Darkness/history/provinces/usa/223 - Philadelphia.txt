@@ -1,0 +1,12 @@
+owner = NBG
+controller = NBG
+add_core = NBG
+trade_goods = iron
+life_rating = 40
+terrain = good_farmland
+
+state_building = {
+	level = 2 
+	building = steel_factory
+	upgrade = yes
+}

@@ -1,0 +1,24 @@
+leader = {
+	name = "Walter Köhler"
+	type = land
+	date = 1836.1.1
+	personality = aggressive
+	background = member_of_elite
+}
+
+army = {
+	name = "Badische Armee"
+	location = 586
+	
+	regiment = {
+		name = "1. Badische Infanterie-Brigade"
+		type = regular
+		home = 586
+	}
+	
+	regiment = {
+		name = "2. Badische Infanteri-Brigade"
+		type = regular
+		home = 587
+	}
+}

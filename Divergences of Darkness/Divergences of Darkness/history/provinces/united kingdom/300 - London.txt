@@ -1,0 +1,43 @@
+owner = DUA
+controller = DUA
+add_core = DUA
+add_core = ENL
+trade_goods = iron
+life_rating = 45
+terrain = marginal_farmland
+fort = 1
+state_building = {
+level = 2
+building = furniture_factory
+upgrade = yes
+}
+state_building = {
+level = 1
+building = paper_mill
+upgrade = yes
+}
+state_building = {
+level = 2
+building = ammunition_factory
+upgrade = yes
+}
+state_building = {
+level = 2
+building = small_arms_factory
+upgrade = yes
+}
+state_building = {
+level = 1
+building = stock_exchange
+upgrade = yes
+}
+state_building = {
+level = 1
+building = bank
+upgrade = yes
+}
+state_building = {
+level = 4
+building = machine_parts_factory
+upgrade = yes
+}
