@@ -1,16 +1,56 @@
 country_event = {
+	id = 36725
+	title = "Beginning of the Council of Italy." #Beginning of the Council of Italy 
+	desc = "Italian representatives have gathered in Florence to discuss unification."
+	picture = "greatpowers"
+
+	trigger = {
+			tag = TUS
+			has_global_flag = council_of_italy
+			NOT = { has_country_flag = hosting_council_ITA }
+	}
+
+	mean_time_to_happen = {
+		days = 28
+	}
+
+	option = {
+		name = "We will await the will of the Italian people"
+		prestige = 5
+		set_country_flag = hosting_council_ITA
+		RAP = {
+			set_variable = {
+				which = unification_ITA
+				value = 0
+			}
+			set_variable = {
+				which = refusal_ITA
+				value = 0
+			}
+		}
+		any_country = {
+			limit = {
+				OR = {
+				primary_culture = north_italian 
+				primary_culture = south_italian
+				}
+			}
+			country_event = 124200
+		}
+		THIS = { country_event = 124200 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
 	id = 124200 # Call to Council of Italy
 	title = "EVTNAME124200"
 	desc = "EVTDESC124200"
 	picture = "?"
 	
-	trigger = {
-		primary_culture = north_italian
-		has_global_flag = council_of_italy
-		NOT = { has_country_flag = accept_call_to_unite }
-		NOT = { has_country_flag = refuse_call_to_unite }
-		NOT = { tag = TUS }
-	}
+	is_triggered_only = yes 
 	
 	mean_time_to_happen = {
 		months = 1
@@ -23,22 +63,29 @@ country_event = {
 			who = TUS
 			value = 200
 		}
-		TUS = {
-			country_event = 124201
+		RAP = {
+			change_variable = {
+				which = unification_ITA
+				value = 1
+			}
 		}
 		
 		ai_chance = {
 			factor = 50
 			modifier = {
-				factor = .5
+				factor = 0.5
 				rank = TUS
+			}
+			modifier = {
+				factor = 1.5
+				TUS = { is_greater_power = yes }
 			}
 			modifier = {
 				factor = 1.5
 				NOT = { rank = TUS }
 			}
 			modifier = {
-				factor = .5
+				factor = 0.25
 				ruling_party_ideology = reactionary
 			}
 			modifier = {
@@ -76,8 +123,11 @@ country_event = {
 			who = TUS
 			value = -200
 		}
-		TUS = {
-			country_event = 124202
+		RAP = {
+			change_variable = {
+				which = refusal_ITA
+				value = 1
+			}
 		}
 		
 		ai_chance = {
@@ -121,141 +171,6 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = 124201 # Acceptance
-	title = "EVTNAME124201"
-	desc = "EVTDESC124201"
-	picture = "?"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "Great"
-		prestige = 3
-		any_country = {
-			limit = {
-				has_country_flag = accept_call_to_unite
-				OR = {
-					tag = MOD
-					tag = LUC
-					tag = PAR
-					tag = FRR
-				}
-			}
-			country_event = 598008
-		}
-	}
-}
-
-country_event = {
-	id = 124202 # Refusal
-	title = "EVTNAME124202"
-	desc = "EVTDESC124202"
-	picture = "?"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "Withhold support"
-		prestige = -2
-		
-		ai_chance = {
-			factor = 33
-			modifier = {
-				factor = 0
-				money = 1500
-			}
-		}
-	}
-	
-	option = {
-		name = "Give support"
-		prestige = -2
-		money = -1000
-		FROM = {
-			country_event = 124203
-		}
-		
-		ai_chance = {
-			factor = 66
-			modifier = {
-				factor = 0
-				NOT = { money = 1000 }
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 124203 # Supported Liberals
-	title = "EVTNAME124203"
-	desc = "EVTDESC124203"
-	picture = "?"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "Curses"
-		relation = {
-			who = FROM
-			value = -50
-		}
-		ARA = {
-			limit = {
-				is_greater_power = yes
-			}
-			diplomatic_influence = {
-				who = THIS
-				value = 50
-			}
-		}
-		any_pop = {
-			limit = {
-				location = { is_colonial = no }
-			}
-			ideology = {
-				value = liberal
-				factor = 0.05
-			}
-			scaled_consciousness = {
-				ideology = liberal
-				factor = 4
-			}
-			scaled_militancy = {
-				ideology = liberal
-				factor = 4
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 124204 # Liberals Victorious
-	title = "EVTNAME124204"
-	desc = "EVTDESC124204"
-	picture = "?"
-	
-	trigger = {
-		has_country_flag = refuse_call_to_unite
-		has_global_flag = council_of_italy
-		ruling_party_ideology = liberal
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	option = {
-		name = "Okay"
-		clr_country_flag = refuse_call_to_unite
-		set_country_flag = accept_call_to_unite
-		relation = {
-			who = TUS
-			value = 200
-		}
-		TUS = { country_event = 124201 }
-	}
-}
 
 country_event = {
 	id = 124205 # Success of Council of Italy
@@ -268,70 +183,45 @@ country_event = {
 		tag = TUS
 		government = democracy
 		has_global_flag = council_of_italy
-		has_country_flag = had_liberal_revolution
 		NOT = { in_sphere = ARA }
 		is_vassal = no
-		ITA = {
-			all_core = {
-				owner = {
-					OR = {
-						AND = {
-							primary_culture = north_italian
-							has_country_flag = liberal_revolution_fired
-						}
-						NOT = { primary_culture = north_italian }
-					}
-				}
-			}
-		}
-		OR = {
-			AND = {
-				OR = {
-					VEN = {
-						has_country_flag = accept_call_to_unite
-					}
-					THIS = { owns = 729 }
-				}
-				OR = {
-					LOM = {
-						has_country_flag = accept_call_to_unite
-					}
-					THIS = { owns = 726 }
-				}
-			}
-			AND = {
-				OR = {
-					VEN = {
-						has_country_flag = accept_call_to_unite
-					}
-					THIS = { owns = 729 }
-				}
-				OR = {
-					SAR = {
-						has_country_flag = accept_call_to_unite
-					}
-					THIS = { owns = 720 }
-				}
-			}
-			AND = {
-				OR = {
-					LOM = {
-						has_country_flag = accept_call_to_unite
-					}
-					THIS = { owns = 742 }
-				}
-				OR = {
-					SAR = {
-						has_country_flag = accept_call_to_unite
-					}
-					THIS = { owns = 720 }
-				}
+		RAP = {
+			check_variable = {
+					which = unification_ITA
+					value = 2
 			}
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 6
+		months = 2
+		modifier = {
+			factor = 0.5
+			RAP = {
+				check_variable = {
+					which = unification_ITA
+					value = 3
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			RAP = {
+				check_variable = {
+					which = unification_ITA
+					value = 4
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			RAP = {
+				check_variable = {
+					which = unification_ITA
+					value = 5
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -341,36 +231,13 @@ country_event = {
 		add_accepted_culture = south_italian
 		clr_global_flag = council_of_italy
 		any_country = {
-			limit = {
-				has_country_flag = accept_call_to_unite
+			limit = { OR = {
+				primary_culture = north_italian 
+				primary_culture = south_italian 
+				}
 			}
 			clr_country_flag = accept_call_to_unite
 			country_event = 598008
-		}
-		any_country = {
-			limit = {
-				has_country_flag = refuse_call_to_unite
-			}
-			clr_country_flag = refuse_call_to_unite
-			country_event = 124207
-		}
-		any_country = {
-			limit = {
-				is_greater_power = yes
-				OR = {
-					capital_scope = { continent = europe }
-					tag = TUR
-				}
-				NOT = { tag = ARA }
-			}
-			country_event = 124208
-		}
-		any_country = {
-			limit = {
-				is_greater_power = yes
-				tag = ARA
-			}
-			country_event = 124209
 		}
 	}
 }
@@ -385,70 +252,40 @@ country_event = {
 	trigger = {
 		tag = TUS
 		has_global_flag = council_of_italy
-		OR = {
-			NOT = { government = democracy }
-			in_sphere = ARA
-			is_vassal = yes
-			AND = {
-				government = democracy
-				has_country_flag = had_liberal_revolution
-				ITA = {
-					all_core = {
-						owner = {
-							OR = {
-								AND = {
-									primary_culture = north_italian
-									has_country_flag = liberal_revolution_fired
-								}
-								NOT = { primary_culture = north_italian }
-							}
-						}
-					}
+		RAP = {
+			check_variable = {
+					which = refusal_ITA
+					value = 2
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+		modifier = {
+			factor = 0.5
+			RAP = {
+				check_variable = {
+					which = refusal_ITA
+					value = 3
 				}
-				NOT = {
-					OR = {
-						AND = {
-							OR = {
-								VEN = {
-									has_country_flag = accept_call_to_unite
-								}
-								THIS = { owns = 729 }
-							}
-							OR = {
-								LOM = {
-									has_country_flag = accept_call_to_unite
-								}
-								THIS = { owns = 726 }
-							}
-						}
-						AND = {
-							OR = {
-								VEN = {
-									has_country_flag = accept_call_to_unite
-								}
-								THIS = { owns = 729 }
-							}
-							OR = {
-								SAR = {
-									has_country_flag = accept_call_to_unite
-								}
-								THIS = { owns = 720 }
-							}
-						}
-						AND = {
-							OR = {
-								LOM = {
-									has_country_flag = accept_call_to_unite
-								}
-								THIS = { owns = 742 }
-							}
-							OR = {
-								SAR = {
-									has_country_flag = accept_call_to_unite
-								}
-								THIS = { owns = 720 }
-							}
-						}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			RAP = {
+				check_variable = {
+					which = refusal_ITA
+					value = 4
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			RAP = {
+				check_variable = {
+					which = refusal_ITA
+					value = 5
 					}
 				}
 			}

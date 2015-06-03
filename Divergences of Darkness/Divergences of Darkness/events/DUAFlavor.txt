@@ -1822,14 +1822,40 @@ country_event = { ##The Total Revolution
 					region = FRA_445 
 					region = FRA_438
 					region = FRA_404
+					region = FRA_442
+					region = FRA_435
 				}
 			}
 			secede_province = FRA 
 		}
-	IRE = { government = democracy set_country_flag = anschluss_DUA }
-	OCC = { government = democracy set_country_flag = anschluss_DUA }
-	FRA = { government = democracy set_country_flag = anschluss_DUA }
-	ENL = { government = democracy set_country_flag = anschluss_DUA }
+	IRE = { government = democracy 
+	set_country_flag = anschluss_DUA 
+	add_country_modifier = {
+				name = taiping_draft
+				duration = 7300
+				}
+			}
+	OCC = { government = democracy 
+	set_country_flag = anschluss_DUA 
+	add_country_modifier = {
+				name = taiping_draft
+				duration = 7300
+				}
+			}
+	FRA = { government = democracy 
+	set_country_flag = anschluss_DUA 
+	add_country_modifier = {
+				name = taiping_draft
+				duration = 7300
+				}
+			}
+	ENL = { government = democracy 
+	set_country_flag = anschluss_DUA 
+	add_country_modifier = {
+				name = taiping_draft
+				duration = 7300
+				}
+			}
 	war = { 
 	target = ENL 
 	attacker_goal = {

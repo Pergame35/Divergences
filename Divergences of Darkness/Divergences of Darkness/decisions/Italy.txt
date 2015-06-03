@@ -93,6 +93,7 @@ political_decisions = {
 	}
 	
 	roma_capital = {
+	picture = Roma
 		potential = {
 			tag = ITA
 			NOT = { capital = 749 }
@@ -101,16 +102,9 @@ political_decisions = {
 			prestige = 45
 			is_greater_power = yes
 			NOT = { war = yes }
-			ITA = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
-				}
-			}
+			owns = 749 
+			owns = 753
+			owns = 754
 		}
 		effect = {
 			prestige = 5
