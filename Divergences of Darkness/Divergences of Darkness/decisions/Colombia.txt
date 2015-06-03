@@ -366,6 +366,8 @@ political_decisions = {
 		
 		restore_greater_salvador = { 
 		
+		picture = restore_order_GC
+		
 		potential = { 
 		tag = SPA 
 		war = no
@@ -381,7 +383,12 @@ political_decisions = {
 		
 		effect = { 
 		badboy = 5 
-		UCA = { country_event = 46484 }
+		any_country = {
+			limit = {
+			tag = UCA
+			}
+		country_event = 46484
+			}
 		}
 			
 		ai_will_do = { 
@@ -391,6 +398,7 @@ political_decisions = {
 		}
 		
 		restore_lusitania = { 
+		picture = restore_order_GC
 		potential = { 
 		tag = SPA 
 		has_global_flag = partial_peace 
@@ -408,7 +416,12 @@ political_decisions = {
 		}
 		
 		effect = { 
-		LST = { country_event = 46484 }
+		any_country = {
+			limit = {
+			tag = LST
+			}
+		country_event = 46484
+			}
 		badboy = 5 
 			}
 		
@@ -418,6 +431,7 @@ political_decisions = {
 		}
 		
 		restore_mexico = { 
+		picture = restore_order_GC
 		
 		potential = { 
 		tag = SPA 
@@ -437,11 +451,18 @@ political_decisions = {
 		
 		effect = { 
 		badboy = 15 
-		MEX = { country_event = 46484 }
-		JLS = { country_event = 46484 }
-		ZAP = { country_event = 46484 }
-		PUR = { country_event = 46484 }
-		AZT = { country_event = 46484 }
+		any_country = {
+			limit = {
+			OR = { 
+			tag = MEX
+			tag = JLS
+			tag = ZAP
+			tag = PUR
+			tag = AZT
+				}
+			}
+		country_event = 46484
+			}	
 		}
 		
 		ai_will_do = { 

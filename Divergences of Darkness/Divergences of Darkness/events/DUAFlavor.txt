@@ -120,7 +120,7 @@ country_event = {
 		set_country_flag = french_integration
 		set_country_flag = choice_pokemon
 		ai_chance = { 
-		factor = 75
+		factor = 0
 		}
 	}
 	
@@ -138,7 +138,7 @@ country_event = {
 		set_country_flag = choice_pokemon
 		country_event = 650240 
 		ai_chance = { 
-			factor = 25
+			factor = 100
 		}
 	}
 }
@@ -920,6 +920,9 @@ country_event = { #Sorbonne
 	option = { 
 	name = "Do not take part in philological debates" 
 	prestige = 10 
+	ai_chance = {
+		factor = 40
+		}
 	}
 }
 
@@ -942,7 +945,6 @@ country_event = { #the Minister choice
 	OR = { 
 	has_country_flag = french_integration 
 	has_country_flag = english_integration 
-	has_country_flag = dual_integration
 		}
 	}
 	
@@ -953,16 +955,25 @@ country_event = { #the Minister choice
 	option = { 
 	name = "Richelieu shall be Prime Minister"
 	set_country_flag = richelieu_minister
+	ai_chance = {
+		factor = 34
+		}
 	}
 	
 	option = { 
 	name = "Rohan shall be Prime Minister" 
 	set_country_flag = rohan_minister 
+	ai_chance = {
+		factor = 33
+		}
 	}
 	
 	option = { 
 	name = "Devonshire shall be Prime Minister"
 	set_country_flag = devonshire_minister 
+	ai_chance = {
+		factor = 33
+		}
 	}
 }
 
@@ -1004,6 +1015,9 @@ country_event = { #the Shakespeare festival
 			}
 			consciousness  = 3
 		}
+	ai_chance = {
+		factor = 50
+		}
 	}
 	
 	option = { 
@@ -1019,6 +1033,9 @@ country_event = { #the Shakespeare festival
 			consciousness  = 2
 			militancy = 1 
 		}
+	ai_chance = {
+		factor = 25
+		}
 	}
 	
 	option = { 
@@ -1033,6 +1050,9 @@ country_event = { #the Shakespeare festival
 				}
 			}
 			militancy = 3
+		}
+	ai_chance = {
+		factor = 25
 		}
 	}
 }
@@ -3372,7 +3392,8 @@ country_event = { #Death of the Dauphin, Orléans
 	has_country_flag = Anglois_accepted
 			}
 		}
-	has_country_flag = travel_ENL
+	has_country_flag = travel_FRA
+	NOT = { has_country_flag = death_dauphin }
 	NOT = { has_country_flag = banned_org }
 	}
 	
@@ -3417,7 +3438,8 @@ country_event = { #Death of the Dauphin, Liverpool
 	has_country_flag = Anglois_accepted
 			}
 		}
-	has_country_flag = travel_FRA
+	has_country_flag = travel_ENL
+	NOT = { has_country_flag = death_dauphin }
 	NOT = { has_country_flag = banned_org }
 	}
 	
@@ -4176,7 +4198,7 @@ country_event = {
 	NOT = { OCC = { exists = yes } }
 	NOT = { ENL = { exists = yes } }
 	NOT = { IRE = { exists = yes } }
-	NOT = { has_country_flag = Paris_congress }
+	NOT = { has_country_flag = Paris_congress has_country_flag = Anglois_accepted }
 	}
 	
 	mean_time_to_happen = { 
@@ -4239,7 +4261,7 @@ country_event = { ######Sister Republics
 	remove_accepted_culture = provencal
 	add_accepted_culture = french
 	OCC = { capital = 455 }
-	ENL = { capital = 300 add_accepted_culture = anglois }
+	ENL = { capital = 300 add_accepted_culture = anglois has_country_flag = Anglois_accepted }
 	IRE = { capital = 263 }
 	change_tag = FRA
 	}
@@ -4260,7 +4282,7 @@ country_event = {
 	IRE = { exists = yes } 
 	}
 	NOT = { exists = FRA }
-	NOT = { has_country_flag = Paris_congress }
+	NOT = { has_country_flag = Paris_congress has_country_flag = Anglois_accepted}
 	}
 	
 	mean_time_to_happen = { 
@@ -4308,7 +4330,7 @@ country_event = {
 	IRE = { exists = yes } 
 	}
 	NOT = { exists = ENL }
-	NOT = { has_country_flag = Paris_congress }
+	NOT = { has_country_flag = Paris_congress has_country_flag = Anglois_accepted }
 	}
 	
 	mean_time_to_happen = { 

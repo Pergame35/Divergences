@@ -80,6 +80,7 @@ political_decisions = {
 	}
 
 	etrurian_manifesto = {
+	picture = council_Etruria
 		potential = {
 			tag = TUS
 			has_global_flag = death_of_venice
@@ -151,6 +152,7 @@ political_decisions = {
 	}
 	
 	call_council_of_italy = {
+	picture = council_Etruria
 		potential = {
 			tag = TUS
 			government = democracy
