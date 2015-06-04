@@ -635,6 +635,7 @@ political_decisions = {
 				tag = NBG
 				tag = LOT	
 				tag = AZL 
+				tag = ARC	
 			}
 			NOT = { has_country_flag = slave_citizens }
 		}

@@ -1688,16 +1688,26 @@ country_event = {
 	release_vassal = UCA 
 	any_owned = { limit = { province_id = 1723 } secede_province = FROM }
 	any_owned = { limit = { province_id = 2285 } secede_province = FROM }
-	any_owned = { limit = { province_id = 2285 } secede_province = FROM }
+	any_owned = { limit = { province_id = 2237 } secede_province = FROM }
 	any_owned = { limit = { region = ENG_2228 } add_core = CUB }
 	any_owned = { limit = { region = ENG_2224 } add_core = CUB }
 	release = CUB 
+	CUB = { government = democracy }
+	break_alliance = UCA 
+	break_alliance = LST 
+	break_alliance = MEX 
+	break_alliance = GRA
 		FROM = { 
 	diplomatic_influence = { who = LST value = 300 } 
 	diplomatic_influence = { who = MEX value = 300 } 
 	diplomatic_influence = { who = UCA value = 300 } 
 	diplomatic_influence = { who = GRA value = 300 } 
 	diplomatic_influence = { who = CUB value = 300 } 
+	relation = { who = LST value = 300 } 
+	relation = { who = MEX value = 300 } 
+	relation = { who = UCA value = 300 } 
+	relation = { who = GRA value = 300 } 
+	relation = { who = CUB value = 300 } 
 		}
 	}
 }
@@ -1727,10 +1737,20 @@ country_event = {
 	release_vassal = SAN
 	any_owned = { limit = { province_id = 1723 } secede_province = FROM }
 	any_owned = { limit = { province_id = 2285 } secede_province = FROM }
-	any_owned = { limit = { province_id = 2285 } secede_province = FROM }
+	any_owned = { limit = { province_id = 2237 } secede_province = FROM }
 	any_owned = { limit = { region = ENG_2228 } add_core = CUB }
 	any_owned = { limit = { region = ENG_2224 } add_core = CUB }
 	release = CUB 
+	CUB = { government = democracy }
+	break_alliance = LST 
+	break_alliance = MEX 
+	break_alliance = SAN
+	break_alliance = UCA 
+	break_alliance = QUI 
+	break_alliance = JLS
+	break_alliance = GUY
+	break_alliance = CAS
+	break_alliance = SAN
 		FROM = { 
 	diplomatic_influence = { who = LST value = 300 } 
 	diplomatic_influence = { who = MEX value = 300 } 
@@ -1741,6 +1761,15 @@ country_event = {
 	diplomatic_influence = { who = JLS value = 300 } 
 	diplomatic_influence = { who = GUY value = 300 } 
 	diplomatic_influence = { who = CAS value = 300 } 
+	relation = { who = LST value = 300 } 
+	relation = { who = MEX value = 300 } 
+	relation = { who = UCA value = 300 } 
+	relation = { who = SAN value = 300 } 
+	relation = { who = CUB value = 300 } 
+	relation = { who = QUI value = 300 } 
+	relation = { who = JLS value = 300 } 
+	relation = { who = GUY value = 300 } 
+	relation = { who = CAS value = 300 } 
 		}
 	}
 }
@@ -1769,7 +1798,7 @@ country_event = {
 	release = SAN
 	any_owned = { limit = { province_id = 1723 } secede_province = FROM }
 	any_owned = { limit = { province_id = 2285 } secede_province = FROM }
-	any_owned = { limit = { province_id = 2285 } secede_province = FROM }
+	any_owned = { limit = { province_id = 2237 } secede_province = FROM }
 	any_owned = { limit = { region = ENG_2228 } add_core = CUB }
 	any_owned = { limit = { region = ENG_2224 } add_core = CUB }
 	release = CUB 
@@ -1783,6 +1812,15 @@ country_event = {
 	diplomatic_influence = { who = JLS value = 300 } 
 	diplomatic_influence = { who = GUY value = 300 } 
 	diplomatic_influence = { who = CAS value = 300 } 
+	relation = { who = LST value = 300 } 
+	relation = { who = MEX value = 300 } 
+	relation = { who = UCA value = 300 } 
+	relation = { who = SAN value = 300 } 
+	relation = { who = CUB value = 300 } 
+	relation = { who = QUI value = 300 } 
+	relation = { who = JLS value = 300 } 
+	relation = { who = GUY value = 300 } 
+	relation = { who = CAS value = 300 } 
 		}
 	}
 }

@@ -167,6 +167,9 @@ political_decisions = {
 			NA_15 = {
 				add_core = PLA
 			}
+			TEX_132 = {
+				add_core = PLA
+			}
 			DNG_2 = {
 				add_core = PLA
 			}
@@ -266,6 +269,10 @@ political_decisions = {
 				AND = { 
 					tag = NBG
 					owns = 204 
+					} 
+				AND = { 
+					tag = ARC
+					owns = 204 
 					}
 				AND = { 
 					tag = CLM 
@@ -361,6 +368,11 @@ political_decisions = {
 					}
 				AND = { 
 					tag = NBG
+					owns = 200 
+					owns = 2219 
+					}
+				AND = { 
+					tag = ARC
 					owns = 200 
 					owns = 2219 
 					}
@@ -494,7 +506,10 @@ political_decisions = {
 		picture = map_central_america
 		potential = { 
 			war_with = CLM
-			NOT = { tag = SPA }
+			OR = {
+			continent = north_america
+			continent = south_america
+		}
 			is_greater_power = yes 
 		}
 		
@@ -556,7 +571,7 @@ political_decisions = {
 	picture = Great_North 
 	
 	potential = { 
-	tag = VIN 
+	OR = { tag = VIN tag = ARC }
 	year = 1860 
 	2596 = { empty = yes }
 	9 = { empty = yes }

@@ -1,0 +1,911 @@
+;;;;;;;;;;;;;;x                                          
+reclaim_occitania_title;Free Occitania;;;;;;;;;;;;;x         
+reclaim_occitania_desc;Even now that we are king of Italy we can't forget our claims in France. Our state is the reunion of many cultures, the French and Occitan having the same rights than the Italians we have united. We can't establish a Dual-Monarchy of France-Italy for now but we could claim the Mediterranean provinces of the usurpers. ;;;;;;;;;;;;;x    
+venetians_culture_title;Integration of the Venetians;;;;;;;;;;;;;x       
+venetians_culture_desc;The people under the government of the Serenissima have distinguished themselves from their Italians brothers because of their ties with the East. But now that Venice is in the hands of the Italian Nation, it is our duty to fully integrate them into our national fabric;;;;;;;;;;;;;x  
+dominium_maris_baltici_title; Dominium Maris Baltici;;;;;;;;;;;;;x    
+dominium_maris_baltici_desc; The greatest aspiration of the Kalmar Union has always been the complete control of the Baltic Sea. While the Scandinavians gained several holdings in the region, they still miss Prussia and the Lithuanian coast. Let us claim these areas for the glory of the Union !  ;;;;;;;;;;;;;x 
+claim_livonia_title; Claiming Livonia ;;;;;;;;;;;;;x  
+claim_livonia_desc; Scandinavia has been our rival for centuries in the Baltic. To take the advantage on them we must claim the duchy of Livonia! ;;;;;;;;;;;;;x  
+kurland_annexation_title; The annexation of Kurland;;;;;;;;;;;;;x  
+kurland_annexation_desc; The last obstacle to our complete domination of the Baltic sea is the small state of Kourland. For too long, we have let them pursue a semi-independent policy and it is now time to reclaim their full integration in the kingdom ;;;;;;;;;;;;;x  
+treaty_of_Corfu_title; Treaty of Corfu ;;;;;;;;;;;;;x  
+treaty_of_Corfu_desc;The Doge has been unable to take back the mainland. The war which erupted a while ago is drawing on its end and we are winning ! Aragon and Bohemia have offered to mediate in our advantage the signature of a treaty which will push Venice out of Hellas. ;;;;;;;;;;;;;x  
+222120.T; Flight to Greece;;;;;;;;;;;;;x    
+222120.D; The defeat is total for the Venetians. They have been pushed away from their homeland by the Italian nationalists. But they still hold many holdings in the East, where their government fled. Upon entering the city of Athens, the Doge was forced by the Greeks to proclaim an Hellenic Republic while still holding his old title. A new state has emerged from the ashes of the Serenessima, what will it become ?  ;;;;;;;;;;;;;x  
+ENL1.T;English nationalism ;;;;;;;;;;;;;x 
+ENL1.D;Upset by what they feel is French domination over the Dual-Monarchy, a group of English intellectuals have formed an organization designed to remove these influences from the Plantagenet king.;;;;;;;;;;;;;x 
+ENL2.T;The Glorious Revolution ;;;;;;;;;;;;;x 
+ENL2.D;Because of the spread of both liberal and nationalist ideas throughout England, the English people have revolted against the Plantagenet Monarchy. They have established a republic uniting the English, Welsh and even Anglois people under St-George's Cross. Paris has already stated that they will reconquer their rightful domain. How will this Glorious Revolution turn ? ;;;;;;;;;;;;;x 
+ENL3.T;Retreat from England  ;;;;;;;;;;;;;x 
+ENL3.D;We have been unable to retake England from the Jacobites. We are forced to surrender our claims to the English territory ;;;;;;;;;;;;;x 
+ENL4.T;The Irish Revolution;;;;;;;;;;;;;x 
+ENL4.D;Inspired by the English revolution the Irish have declared their independence and are now in open revolt. We could declare war on them right now but it would be a nuisance in our effort to retake England. ;;;;;;;;;;;;;x 
+VAL1.T;The restoration of order in Etruria ;;;;;;;;;;;;;x 
+VAL1.D;The republic of Etruria is the threat to the Italian Order. While Aragon is reluctant to go to war against them, we haven't forgotten our right to the grand duchy of Tuscany. The various monarchs of North Italy would not react to this declaration because we would erase a threat to their personal power but Aragon would be angered by our demonstration of force. What do we choose ? ;;;;;;;;;;;;;x 
+lucca_war_title;Pre-eminence in Etruria;;;;;;;;;;;;;x 
+lucca_war_desc;The liberal republic of Etruria has been reduced to ashes with the King in France reclaiming his inheritance of Tuscany. But the duchy of Lucca has not accepted our renewed role in the area, proclaiming being freed from any feudal links toward us. While it is an obscure claim, we could always press it to strengthen our rule in Italy...;;;;;;;;;;;;;x 
+VAL3.T;The Provencal Demands ;;;;;;;;;;;;;x  
+VAL3.D;The grand-duke of Tuscany and king of France has threatened us to press his rightful claim to our duchy if we do not bow to him. Many people in Italy would be eager to help us if the Valois would invade our duchy and a new anti-Valois league is slowly forming. Perhaps we are strong enough to force them to fall back ? ;;;;;;;;;;;;;x  
+VAL4.T;The Luccan league;;;;;;;;;;;;;x 
+VAL4.D;We have been contacted by the duke of Lucca who has been threatened at multiple times by the king in France. He asks us to join a league against the Valois and free Tuscany from their hands if they dared take any action against the duchy. What do we do ?;;;;;;;;;;;;;x 
+VAL5.T;The Luccan league;;;;;;;;;;;;;x 
+VAL5.D;The Valois have taken back Florence. Threatened by the renewed threat in the region, Lucca has asked us to back them against the ambitions of the kings in France. What do we do ? ;;;;;;;;;;;;;x 
+VAL6.T;The Luccan league;;;;;;;;;;;;;x 
+VAL6.D;We have been contacted by the duke of Lucca who has been threatened at multiple times by the king in France. He asks us to join a league against the Valois and free Tuscany from their hands if they dared take any action against the duchy. What do we do ?;;;;;;;;;;;;;x 
+VAL7.T;Response from Lucca;;;;;;;;;;;;;x 
+VAL7.D;The duke of Lucca has refused to bow to our demands. Moreover he has apparently received the support of the various Italian principalites against us. We could take the chances and froce all Italians to bow before us but it would be a long and difficult war or we can still fall back our claims;;;;;;;;;;;;;x 
+VAL8.T;Response from Lucca;;;;;;;;;;;;;x 
+VAL8.D;The duke of Lucca has bowed to our demands. We are now in control of Lucca in all but name;;;;;;;;;;;;;x 
+VAL9.T;The Valois attack ;;;;;;;;;;;;;x 
+VAL9.D;The Provencal have attacked our ally in Lucca. It is now our duty to take part in the oncoming war !;;;;;;;;;;;;;x 
+VAL10.T;The Valois attack ;;;;;;;;;;;;;x 
+VAL10.D;Not feeling threatened by our guarantees, the Valois attacked Lucca and warned us that they will soon take Rome from us !;;;;;;;;;;;;;x 
+VAL11.T;Peace with Provence ;;;;;;;;;;;;;x 
+VAL11.D;Now that Florence is free we will make peace with the Valois;;;;;;;;;;;;;x 
+VAL12.T;The Italian War;;;;;;;;;;;;;x 
+VAL12.D;A new war has erupted in Italy. Having regained Tuscany, the king in France has tried to extend his influence throughout the Italian states. But the Italian princes have now allied against him, and their armies are trying to push him out of Italy. This war puts the dream of a Valois kingdom of Italy at great risk, however if the Valois ever win this war, it could mark the birth of a new power in Southern Europe;;;;;;;;;;;;;x 
+VAL13.T;The Italian crown ;;;;;;;;;;;;;x 
+VAL13.D;Merging the Italian and Aragon crowns has been our goals for centuries. The pesky kings in France have claimed the Italian crown and are stirring the South Italian to revolt. We can't allow it. If we ever want to remain a great power then we must annex this upstart state in the North ! ;;;;;;;;;;;;;x 
+VAL14.T;The Italian war of Independence;;;;;;;;;;;;;x 
+VAL14.D;The king of Aragon has refused to acknowledge our right to the Italian Crown. They have issued a declaration of war against us to "take what is theirs". This war will define the very future of Italy. Will the Valois succeed or will the crown of Aragon emerge victorious ?;;;;;;;;;;;;;x 
+VAL15.T;Savoyard Intervention ? ;;;;;;;;;;;;;x 
+VAL15.D;We have stayed out the Italian war until now, but it is now our duty to free Tuscany. The duke of Lucca has fled to our court begging our support in the war which he has lost for now ;;;;;;;;;;;;;x 
+VAL16.T;Savoy enters the arena;;;;;;;;;;;;;x 
+VAL16.D;The duke of Savoy, angered by the reunion of Lucca to our duchy has entered the Italian war, promising to make us leave Italy forever;;;;;;;;;;;;;x 
+VAL17.T;The end of the Valois  ;;;;;;;;;;;;;x  
+VAL17.D;Provence has lived long enough. At least it's what the Dual-Monarchy thinks. Diplomatically isolated since the decaying of Aragon, this little state which still defies the Plantagenet will be crushed. For St-Denis and St-Georges, let us end the Hundred Years War forever ! ;;;;;;;;;;;;;x  
+GRE1.T;Greek Nationalism;;;;;;;;;;;;;x  
+GRE1.D; Venice's hold of Greece has been tedious since the beginning of the occupation during the Ottoman collapse. With the liberal movement gaining weight at home, the Greek nationalists have become more audacious over time. They reclaim an assembly of all Greeks to decide their future in the Republic. If this council is not held, this could lead to the rise of a rebellion;;;;;;;;;;;;;x 
+GRE2.T; Opening of the Council of Athens ;;;;;;;;;;;;;x  
+GRE2.D; The Greek council finally opens in Athens, the magnificent city of Ancient Greece. Three great factions have formed over the previous months : the Zimisceses, followers of the general who helped Venice "protect" Greece 20 years ago, who want to establish an independent Greek state, the Exarchates, who want to acquire more autonomy, and the Pireans or "Italians", loyalists of Venice.;;;;;;;;;;;;;x 
+GRE3.T; The result of the Council;;;;;;;;;;;;;x 
+GRE3.D; It is finally the end of the Council, what will happen ?;;;;;;;;;;;;;x 
+GRE4.T; The Council of Athens : Zimisceses' victory ;;;;;;;;;;;;;x 
+GRE4.D; The Zimisceses have won the majority of the votes during the Council. Zimisces has profited from the occasion to declare the independence of Greece, and has rallied most of the Greek soldiers around him ;;;;;;;;;;;;;x 
+GRE5.T; The Council of Athens : Exarchates' victory ;;;;;;;;;;;;;x 
+GRE5.D; The Exarchates have won the majority of the votes during the Council. They now ask for autonomy under the protection of Venice. ;;;;;;;;;;;;;x    
+GRE6.T; Failure of the Exarchates' proposition ;;;;;;;;;;;;;x 
+GRE6.D; Venice refusing Home Rule for the Greeks has led the Exarchates to rally with the Zimisceses and to proclaim the independence of Greece. Most of continental Greece is already in their control.;;;;;;;;;;;;;x 
+GRE7.T; The Council of Athens : Pireans' Victory ;;;;;;;;;;;;;x 
+GRE7.D; Unexpectedly, the Venetians loyalists won the majority of the vote during the Council. They are ready to stay under the government of Venice but only if Venice reforms itself and give the same political rights to Greeks as the Italians;;;;;;;;;;;;;x  
+GRE8.T; Pireans failure ;;;;;;;;;;;;;x 
+GRE8.D; Venice has refused the chart proposed by the Loyalists. It has discredited them and most of the Greek representatives have rallied around Zimisces. Nearly all of continental Greece is now under their control ;;;;;;;;;;;;;x 
+GRE9.T; Council of Athens : No majority ;;;;;;;;;;;;;x 
+GRE9.D; No majority has emerged from the Council. Angered by the indecision of the politicians, the Greek general and war hero Zimisces has rallied his supportes in Thessalia and Attica and is determined to deliver Greece from the Italian oppressors. ;;;;;;;;;;;;;x 
+GRE10.T; Fight for Freedom !;;;;;;;;;;;;;x  
+GRE10.D; We are at war with Venice for our freedom. Let us collect all we need for our fight !;;;;;;;;;;;;;x 
+GRE11.T; Question of Crete ;;;;;;;;;;;;;x 
+GRE11.D; The island of Crete has not seceded along other provinces but the Greeks nationalists have spread their venom all over the island. A local assembly is held in Iraklion on the stance to adopt during the war ;;;;;;;;;;;;;x 
+GRE12.T; Loyalists won ;;;;;;;;;;;;;x 
+GRE12.D; The Pireans have convinced the population of Crete to stay under our rule and fight against the rebels ! ;;;;;;;;;;;;;x 
+GRE13.T; Exarchates won ;;;;;;;;;;;;;x 
+GRE13.D; Cretans declared their neutrality in the war. ;;;;;;;;;;;;;x 
+GRE14.T; Zimisceses victory ;;;;;;;;;;;;;x 
+GRE14.D; The Cretans have proclaimed the island of Crete to be a full part of Greece ! ;;;;;;;;;;;;;x 
+GRE15.D; The island of Crete has not seceded along other provinces but the Greeks nationalists have spread their venom all over the island. A local assembly is held in Nicosia on the stance to adopt during the war ;;;;;;;;;;;;;x
+GRE16.T; Exarchates won ;;;;;;;;;;;;;x 
+GRE16.D; Cyprus declared neutrality in the ongoing war under the influence of the Exarchates;;;;;;;;;;;;;x 
+GRE17.T; Zimisceses victory;;;;;;;;;;;;;x 
+GRE17.D; The Cypriots have proclaimed the island of Cyprus to be a full part of Greece !;;;;;;;;;;;;;x 
+GRE18.T; The treaty of Corfu ;;;;;;;;;;;;;x 
+GRE18.D; The war with Greece has been lost. Guaranteed by Aragon and Bohemia, Zimisces has forces the signature of an humiliating treaty on the island of Corfu. Greece will be independent and Venice will free the territories under its control and relinquish any claims on Greek territories;;;;;;;;;;;;;x 
+GRE19.T; The Constitution ;;;;;;;;;;;;;x 
+GRE19.D; Greece has won its independence by the treaty of Corfu, but now a new problem arises. Zimisces has had all powers during the revolution but not everybody is ready to agree with it. A new Greek council has been called in Delphi to settle the question.;;;;;;;;;;;;;x 
+GRE20.T; Greek Rebellion Crushed ! ;;;;;;;;;;;;;x  
+GRE20.D; Venice has reclaimed all rebels' territory ! Zimisces has been arrested and executed in the city of Athens. ;;;;;;;;;;;;;x  
+GRE21.T; End of the war ;;;;;;;;;;;;;x 
+GRE21.D; Venice has won the war. It would be now time to join back....;;;;;;;;;;;;;x 
+GRE22.T; Crete comes back ;;;;;;;;;;;;;x 
+GRE22.D; Seeing our victory the Cretans have proposed to join the Serenissima. ;;;;;;;;;;;;;x 
+GRE23.T; End of the war. ;;;;;;;;;;;;;x 
+GRE23.D; Greece has won its independence. It is now the time to unite with them ;;;;;;;;;;;;;x 
+GRE24.T; Crete joins Greece ;;;;;;;;;;;;;x 
+GRE24.D; With our victory, we have proved to the Cretans that the right choice was to join us ;;;;;;;;;;;;;x 
+GRE25.T; End of the war ;;;;;;;;;;;;;x 
+GRE25.D; Venice has won against Zimisces. It would be wise to join them back ;;;;;;;;;;;;;x 
+GRE26.T; Cyprus comes back ;;;;;;;;;;;;;x 
+GRE26.D; The Cypriots are coming back after the war ;;;;;;;;;;;;;x 
+GRE27.T; End of the war ;;;;;;;;;;;;;x 
+GRE27.D; Greece has won its independence. It is now the time to unite with them ;;;;;;;;;;;;;x 
+GRE28.T; Cyprus joins Greece ;;;;;;;;;;;;;x 
+GRE28.D; With our victory, we have proved to the Cypriots that the right choice was to join us ;;;;;;;;;;;;;x 
+GRE29.T; A new council ;;;;;;;;;;;;;x 
+GRE29.D; Greece has won its independence, but now a new problem arises. Zimisces has had all powers during the revolution but not everybody is ready to agree with it. A new Greek council has been called in Delphi to settle the question ;;;;;;;;;;;;;x 
+GRE30.T; Zimisces' rebels ! ;;;;;;;;;;;;;x 
+GRE30.D; After the interdiction of the council of Athens, Greek nationalists have radicalized. They founded the secret society of Filiki Eteria and recruited new members all over the Greek terriory. They rose led by the general and war hero Zimisces who has proclaimed the independence of a new Greek state !;;;;;;;;;;;;;x 
+GRE31.T; Pireans' Victory ;;;;;;;;;;;;;x 
+GRE31.D; Cyprus has chosen to stay under Venice dominion ;;;;;;;;;;;;;x
+GRE40.T; Opening of the Delphi Council  ;;;;;;;;;;;;;x
+GRE40.D; A new council is held in Greece. This time, the Greek representatives have assembled to discuss the draft of a constitution and there are already different factions opposing each other. First the Zimisceses, who defend a strong monarchy under Zimisces, the war hero and current leader of the state. There is also the Alexandros faction, who support the election of the king of Macedonia to the Greek throne but with more restrictions on the power of monarch. Finally the Pericles faction which wants to institute a real Republic. No matter what the result will be, the shadow of Zimisces is always present and he could try to take power for himself;;;;;;;;;;;;;x 
+GRE41.T; Opening of the Delphi Council ;;;;;;;;;;;;;x
+GRE41.D; It is the end of the Delphi Council ;;;;;;;;;;;;;x
+GRE42.T; Delphi Council : Zimisceses resolution;;;;;;;;;;;;;x
+GRE42.D; The Greek representatives have decided to give the power to the current leader Konstantinos Zimisces, who will be crowned king of the Hellens. An assembly will be called, and political liberties are guaranteed but the king retains much of the power ;;;;;;;;;;;;;x
+GRE43.T; Delphi Council : Alexandros resolution;;;;;;;;;;;;;x
+GRE43.D; The Greek representatives have chosen to unite with Macedonia. But it will be at the coast of many political reforms asked by the liberals. Moreover Zimisces seems to be ready to launch a coup to claim power. What will happen ?;;;;;;;;;;;;;x
+GRE44.T; The crown of Greece ;;;;;;;;;;;;;x
+GRE44.D; The Supporters of the Macedonian king have succeeded during the council of Athens. But they are saying that in exchange of the crown, the monarch will have to rescind its power and give a democratic assembly to the people and stop the multicultural policy started in Macedonia. That's the cost for allying the liberals to the idea. But we could enter Greece by force and take Athens to force them to bow to our conditions. ;;;;;;;;;;;;;x
+GRE45.T; The Macedonian attack !;;;;;;;;;;;;;x
+GRE45.D; The king of Macedonia has refused the reforms of the liberals and is determined to take Greece under its conditions. To face him, the assembly has elected Zimisces king of the Greeks and hope that he can force him out.;;;;;;;;;;;;;x
+GRE46.T; Zimisces Coup d'Etat ;;;;;;;;;;;;;x
+GRE46.D; Zimisces has seized the power despite the choice of our king in the council. We must march on Athens and take what is ours from this upstart general !;;;;;;;;;;;;;x
+GRE47.T; Macedonian Victory !;;;;;;;;;;;;;x
+GRE47.D; We have taken the city of Athens and captured Zimisces. He has been promptly executed and the Greek government has proclaimed the end of the war !;;;;;;;;;;;;;x
+GRE48.T; Zimisces Rebellion !;;;;;;;;;;;;;x
+GRE48.D; Since the union of Greece and Macedonia, Zimisces has been plotting against the new monarch hoping to seize power in its place. Large tracts of Greece have risen in favor of Zimisces. We must crush him !;;;;;;;;;;;;;x
+GRE49.T; Zimisces victory !;;;;;;;;;;;;;x
+GRE49.D; Macedonia is utterly vainquished and the king has already fled to Aragon. Long live Zimisces !;;;;;;;;;;;;;x
+GRE50.T;Council of Delphi : Pericles' victory;;;;;;;;;;;;;x
+GRE50.D; The Council of Delphi has led to the establishment of a new Hellen Democracy. Let us hope that the Republic will bring us to glory !;;;;;;;;;;;;;x
+GRE51.T; Coup d'Etat !;;;;;;;;;;;;;x
+GRE51.D; Zimisces has been plotting since the establishment of the Republic to gain power. Today he has entered Athens and asked the military to help him end the political squabbles. ;;;;;;;;;;;;;x
+GRE52.T; Council of Delphi : Zimisces Coup d'Etat;;;;;;;;;;;;;x
+GRE52.D; Seeing that no majority emerged from the Council, Zimisces took action and seized power. He must now face both the anger of the Macedonians and the democrats !;;;;;;;;;;;;;x
+end_of_exarchate_title; End of the Exarchate Regime;;;;;;;;;;;;;x
+end_of_exarchate_desc; Since the council of Athens, many things have changed. We are now a democratic regime and we have created ties with our Greek puppet over the years. It is now the time to fully integrate them into our republic !;;;;;;;;;;;;;x
+greek_integration_title; Greek Integration ;;;;;;;;;;;;;x
+greek_integration_desc; Since the repression of the independence movements, our Republic has seen many changes. Our government is now more democratic and the Greek have accepted our rule. It is now time to fully integrate them into our republic !;;;;;;;;;;;;;x 
+NAV1.T; Basque Independence ? ;;;;;;;;;;;;;x
+NAV1.D; Navarra is at the centre of influence conflicts since the Renaissance. Forsaken by the Spanish Crown which pursued its exploration policies, Navarra was both coveted by the king of Aragon and the Dual-Monarchy. Aragon attacked first and invaded Higher-Navarra in 1508. The queen from Navarra fled to her possessions in Aquitaine, Lower-Navarra. Before war erupted, a compromise was found between Aragon and the Dual-Monarchy in Perpignan : The Anglo-French would annex Lower-Navarra while the queen of Navarra would pledge fidelity to the king of Aragon. Over the centuries, the political setup did not change much, with Navarra using both kingdoms against each other to preserve some independence, like with Henri III who took part in the Wars of Religion. But now, Aragon is the shadow of itself, not even considered as a Great Power by many. The king Henry IV thinks he can profit from it, by pulling his Anglo-French allies to help him. What will happen ? ;;;;;;;;;;;;;x
+NAV2.T; A call from Pampelune;;;;;;;;;;;;;x
+NAV2.D; The king of Navarra has asked us to help him in his independence's inclination. Aragon might be decaying but it is still not dead. Henry IV awaits an answer. ;;;;;;;;;;;;;x
+NAV3.T; Independence of Navarre !;;;;;;;;;;;;;x
+NAV3.D; With the backing of the Anglo-French, Navarre has proclaimed its independence. The Aragonese legate, who was there to ensure the loyalty of the kingdom was expelled along with all Aragonese officials. Henry IV has been acclaimed by the crowds of Pampeluna, however what will be Aragon's reaction ? ;;;;;;;;;;;;;x
+NAV4.T; Reaction from Barcelona;;;;;;;;;;;;;x
+NAV4.D; Navarre has proclaimed its independence ! They have expelled our representatives with the support of the Dual-Monarchy. We could always intervene militarily and annex this kingdom we have coveted for centuries. But if we do so, we will have to face the Dual-Monarchy ... ;;;;;;;;;;;;;x
+NAV5.T; A new ally ? ;;;;;;;;;;;;;x
+NAV5.D; Our allies from over the Pyrenees have refused to help us ! Without allies our plan is sure to fail but there is still someone who could help us. The kingdom of Spain would be pleased to help us against Aragon, probably ... ;;;;;;;;;;;;;x
+NAV6.T; A call from Pampelune;;;;;;;;;;;;;x
+NAV6.D; The king of Navarra has asked us to help him in his independence's will. Aragon might be decaying but it is still not dead. Henry IV de Bourbon awaits an answer. ;;;;;;;;;;;;;x
+NAV7.T; Proclaimation of Independence !;;;;;;;;;;;;;x
+NAV7.D; With the backing of the Spanish, Navarre has proclaimed its independence. The Aragonese legate, who was there to ensure the loyalty of the kingdom was expelled along with all Aragonese officials. Henry IV has been acclaimed by the crowds of Pampeluna, however what will be Aragon's reaction ? ;;;;;;;;;;;;;x
+NAV8.T; Reaction from Barcelona;;;;;;;;;;;;;x
+NAV8.D; Navarre has proclaimed its independence ! They have expelled our representatives with the support of Spain. We could always intervene militarily and annex this kingdom we have coveted for centuries. But if we do so, we will have to face Spain …. ;;;;;;;;;;;;;x
+CLM_fight; War of Independence;;;;;;;;;;;;;x
+CLM_fight_desc;Despite our differences we are united against the Spanish oppressor !;;;;;;;;;;;;;x
+athesia_purchase_title; The Athesian Purchase ;;;;;;;;;;;;;x
+athesia_purchase_desc; The Venitian colony of Athesia is located on a major strategic point. The port of Rialto watches most of ships passing through the Athesian strait and thus controls the traffic going in and out la Baie de Nouvelle-France. Since Venice has been declining lately, it might be the occasion to acquire this territory in exchange of some money ;;;;;;;;;;;;;x
+athesia_force_title; Ultimatum for Athesia ;;;;;;;;;;;;;x
+athesia_force_desc; Despite our generous proposal, Venice has not let Athesia go. Now it is time to revert to force and to show them that one does not treat us like a minor power ....;;;;;;;;;;;;;x
+habana_purchase_title; The Habanan purchase ;;;;;;;;;;;;;x
+habana_purchase_desc; With our control over Athesia established, it is time to turn our eyes south. The island of Habana is the only colony that did not join Gran Colombia during the war of independence. It is one of the last Spanish holdings in the New World and it holds a strategic position. To be free from any intervention or disruption of commerce in the Gulf of Mexico, we must control the island. It will require however a large amount of cash and even that will not bind Spain to give Habana...;;;;;;;;;;;;;x
+ayiti_purchase_title; The Sudurhafeyjar Purchase ;;;;;;;;;;;;;x
+ayiti_purchase_desc; Scandinavia still holds the archipelago they called the Islands of the South consisting of Righavn and Ayiti. Buying these islands would strengthen even more our position in the Caribbean;;;;;;;;;;;;;x
+jamaican_purchase_title; The Eendrachtsland Purchase ;;;;;;;;;;;;;x
+jamaican_purchase_desc; Burgundy still holds the island of Eendrachtsland in the Caribbean. This little island does not present an importance as great as Habana or Ayiti but it would improve our standing in Arcadia even more if we acquired this island. ;;;;;;;;;;;;;x
+dissolve_CLM_title; Dissolve the Federation ;;;;;;;;;;;;;x
+dissolve_CLM_desc; This war has shown us something. The former Spanish colonies united under the same flag are a threat to our influence in Arcadia and Ameriga. Some in our governments has suggested that we make Gran Colombia dissolve itself in little states easier to control and manipulate. Thus there will only be one power in the New-World, us.;;;;;;;;;;;;;x
+DUA1.T;The Anglois Dilemma;;;;;;;;;;;;;x
+DUA1.D;Ever since the Treaty of Rome in 1498, the Dual Monarchy has had to walk a fine line in not favoring one of its ethnic groups over the others. Recent censi have shown that the English and French represent around one-fifth of the population. What is more threatening to either group is not the other but rather a growing group calling themselves Anglois. These groups have created the dilemma for the monarchy in who to favor. There are those in power that believe that it is best to pick a side while others believe that the Anglois ideology of blending the best customs of English and French is the way of the future. **** NOTE : only French path done yet ****;;;;;;;;;;;;;x
+DUA2.T;The Death of King Henri X;;;;;;;;;;;;;x
+DUA2.D;Tragedy has struck the Dual Monarchy as His Majesty King Henri X has passed with no heir. Due to traditional laws within the Dual Monarchy, the Estates-General has been called to select their choice for the next ruler of the Kingdom. The Estates have narrowed the selection between Elisabeth, Duchess of Anjou, Edouard, the Duke of York, and Henri, the Duke of Gascony.;;;;;;;;;;;;;x
+DUA3.T;Coronation of Elisabeth I ;;;;;;;;;;;;;x
+DUA3.D;Despite some opposition votes the Estates-General has declared that Elisabeth will be the next Queen of the Dual Monarchy. Being the daughter of the King's brother gave her the strongest claim to the throne but her pro-Anglois ties has led to some opposition from those in France and England. Both Edouard and Henri have respected the Estates decision and pledged their support to Elisabeth in the future of the Dual Monarchy;;;;;;;;;;;;;x
+DUA4.T;Coronation of Edouard X ;;;;;;;;;;;;;x
+DUA4.D;It took the Estates-General some rounds of voting but they have settled on Edouard, the Duke of York, as the next King of the Dual Monarchy. England has received the news with great joy while France is worried of potential retribution by the new king for past injustices. Elisabeth and Henri have renounced the throne but Henri vows that he will participate in the Parliament of Lords in preventing bias legislation by the King from being passed.;;;;;;;;;;;;;x
+DUA5.T;Coronation of Henri XI;;;;;;;;;;;;;x
+DUA5.D;To the shock of many Henri, the Duke of Gascony, has been elected the next King of the Dual Monarchy. His election as King has been recieved with joy in the southern regions of the country but outrage has broken out in England. Elisabeth and Edouard has both renounced the throne but Edouard expressed his great displeasure with the results.;;;;;;;;;;;;;x
+DUA10.T;The French Monarchy;;;;;;;;;;;;;x
+DUA10.D;After the questions of the last years, the monarchy has affirmed its French character. Rooted in Paris, the monarchy has gained the support of the French population and of its leaders. This French orientation has allowed them to suppress any rebellion in the South but in the same time has alienated them a great part of the English population...;;;;;;;;;;;;;x
+DUA11.T;The Glorious Revolution ;;;;;;;;;;;;;x
+DUA11.D;The radicalization of the English society has increased over the past few months. The French turnout of Henri X has alienated him many Englishmen, who were eager to support the monarchy have turned to the liberal hydra. Yesterday the repression of a student manifestation in Cambridge has launched a spiral of violence all over England. It has culminated in the creation of the English Republic which is decided to push “the French out of England”. Apart from some loyalists bastion in Wales and Londres, the revolutionaries are already in control of most the island.  ;;;;;;;;;;;;;x
+DUA12.T;St-Louis Speech;;;;;;;;;;;;;x
+DUA12.D;The king of the Dual-Monarchy has organised a great ceremony throughout the cities of France to honour his ancestor Louis XI king of France later sanctified as “Saint Louis”. He has put the accent on the treaty of Paris who settled peace between the Plantagenets and the Capetians. In a speech pronounced in the capital by Henri X affirming the French character of the monarchy who always has never forgotten its French roots. While praised on the continent, the speech has been criticized by many in England.;;;;;;;;;;;;;x 
+DUA13.T;The great travel of Henri;;;;;;;;;;;;;x
+DUA13.D;To further enhance his presence, Henri X decided to travel amongst France. He first visited Normandie where he praised his ancestor Guillaume who embarked to conquer England. He then turned to Brittany, a land attached to the Plantegenian monarchs. His travel led him then to La Rochelle. There he met several of the “Young French” leaders who spontaneously rallied to him and praised his signs in favour of France. He then travelled south passing through Gascony, Toulouse. He then made a stop in Vichy to remember the last great battle against the Valois before returning to the capital. Many people are acclaiming the king for this action that has strengthened the hold of the monarchy in France. ;;;;;;;;;;;;;x
+DUA14.T;The Sons of Harold;;;;;;;;;;;;;x
+DUA14.D;Lately a wave of contests have risen in England towards the French turn-around of Henri X. The English people have been indeed absent from the speeches of Henri and many are looking to alternatives. A certain John Tolsmith, professor in Cambridge, lately published a monumental history of England before the Norman Conquest. His book has become incredibly popular amongst the English students who have created an association to valorise their “English inheritance” called the “sons of Harold”, in reference to Harold Godwinson, the last Anglo-Saxon king. While this may only be a cultural association, many of its members are prone to radical ideas and it is said that the slogan of “Freiheit, Gleicheit, Brüderlichkeit” are murmured in these circles …  ;;;;;;;;;;;;;x
+DUA15.T;Spread of the Sons of Harold ;;;;;;;;;;;;;x
+DUA15.D;The sons of Harold have implemented themselves in this province and are already spreading their ideas ...;;;;;;;;;;;;;x
+DUA16.T;"L'anglais est-il est une langue ?" ;;;;;;;;;;;;;x
+DUA16.D;A dispute has emerged in the Sorbonne between two scholars to determine if English can be considered as a true language worthy of being spoken in the high spheres such as the government. While it can be seen as just a philological debate, we could influence the result in one way or the other.;;;;;;;;;;;;;x
+DUA17.T;A new minister;;;;;;;;;;;;;x
+DUA17.D;Sadly our prime minister has died in office. It falls upon the monarch to choose a new prime minister. Three candidates have the favour of the Parliament : the duke of Richelieu, known for his inclination for the Young French, the duke of Rohan, the Breton moderate and lastly the duke of Devonshire, well-known in the island. ;;;;;;;;;;;;;x
+DUA18.T;The Shakespeare festival;;;;;;;;;;;;;x
+DUA18.D;The English have organised a festival in Stratford upon Avon to honour a play-writer called William Shakespeare. Rediscovered by the sons of Harold, this unknown author has written many tragicomedies in English, which criticize heavily the Parisian Monarchy while praising English historical figures like his life of Alfred the Great in 4 plays. This festival could become a centre of protestation especially if they represent Henry VI ;;;;;;;;;;;;;x
+DUA19.T;The death of the Prince of Wales ;;;;;;;;;;;;;x
+DUA19.D;While visiting England, the Prince of Wales and his entourage were attacked by radicals in the city of Liverpool. It resulted in the death of Henry, the heir of the Dual-Monarchy, his pregnant wife and his son. The attack made with an artisanal weaponry, that many call "the Infernal Machine", was imagined by students affiliated to the Sons of Harold. While Tolsmith has denied any implication of his organisation and vigorously condemned the attack, the king is persuaded of his implication and is determined in his grief to shut the the organisation.;;;;;;;;;;;;;x
+DUA27.T;Spread of the Sons of St-Louis ;;;;;;;;;;;;;x
+DUA27.D;The sons of St-Louis have implemented themselves in this province and are already spreading their ideas ...;;;;;;;;;;;;;x
+DUA40.T;The Anglois dilemma;;;;;;;;;;;;;x
+DUA40.D;Reconciling both French and English will not be an easy task, Henri X knows it very well. The two groups may not like each other but they hate Paris even more, so an alliance of both needs to be prevented. However one must not charge too much against one group unless one wants a local revolution to happen ...;;;;;;;;;;;;;x
+DUA41.T;The Glorious Revolution;;;;;;;;;;;;;x
+DUA42.T;Pacification of England;;;;;;;;;;;;;x
+DUA42.D;Despite the peril we managed to win against the revolutionaries, a fact that has strengthened our hold on all our territories;;;;;;;;;;;;;x
+DUA43.T;Independence of England;;;;;;;;;;;;x
+DUA43.D;The English nationalists have secured their independence. We can't succeed in our current policy with them being independent;;;;;;;;;;;;x
+DUA44.T;Pacification of the Midi ;;;;;;;;;;;;x
+DUA44.D;The Southern parts of our kingdom have been secured ! Despite the rebellion we can continue our policy of accepting both French and English !;;;;;;;;;;;;x
+DUA45.T;Independent Occitania;;;;;;;;;;;;x
+DUA45.D;The South has escaped from our power. With our mainland territories threatened we can't surely make our rule accepted in both England and France. ;;;;;;;;;;;;x
+DUA46.T;The Midi Revolution;;;;;;;;;;;;x
+DUA47.T;The Franco-English Revolution;;;;;;;;;;;;x 
+DUA47.D;Revolters have swarmed the streets of the great cities of the Dual-Monarchy in a scale not seen since the First German Revolution ! The nationalist rebels are decided to end the monarchy in blood if necessary and with it the very idea of the Anglois dream.;;;;;;;;;;;;x
+DUA48.T;The Anglo-French monarchy;;;;;;;;;;;;x 
+DUA48.D;The Plantagenet throne has endured ! Despite the threat of radicals, nationalists and foreign power, all its people stands ready to serve their country ! The coming decades will surely be Anglois for who can stand against the combined force of the Dual-Monarchy of France and England ?;;;;;;;;;;;;x 
+DUA50.T;Choosing a Patron;;;;;;;;;;;;x 
+DUA50.D;The King has to choose an historical figure to honor in the coming months. Several proposals have emerged : Alfred the Great, the old Saxon king is admired by many across the Channel, Louis XI the Holy is seen as a benevolent figure here on the continent, Edouard IV was the first Plantagenet born in Paris and thus is seen as both a rallying figure for the Anglois but also a usurper for the French and a traitor for the English. No matter who the King chooses to honour it will not please everyone. ;;;;;;;;;;;;x 
+DUA51.T;Liberal agitations ;;;;;;;;;;;;x 
+DUA51.D;Liberals and Nationalists from both sides of the Channel have formed societies aimed at spreading their ideas. If we allow them, the Sons of Harold and Saint Louis will surely provoke problems in our territories but banishing them will provoke an even bigger reaction ... ;;;;;;;;;;;;x 
+DUA52.T;'Histoire de la France depuis ses origines';;;;;;;;;;;;x 
+DUA52.D;The historian Pierre Guizot has published a new book upon the history of France. The book has received a warm response from French scholars for its exhaustivity. But its portrayal of English and early Plantagenets is quite troublesome and his idea of "a distinct spirit existing since the Gauls' War" only amuses the French nationalists;;;;;;;;;;;;x 
+DUA53.T;Saxon poetry;;;;;;;;;;;;;x
+DUA53.D;An anthology of English poetry has been published in Cambridge by the Sons of Harold. Regrouping old and new poets alike, this book has become widely applaused in England but many scholars from Paris consider it a complete waste of time ...;;;;;;;;;;;;;x
+DUA54.T;Travel of the Dauphin;;;;;;;;;;;;;x
+DUA54.D;Henry X is becoming unfit to travel outside of Paris. He now has to delegate this duty to his son Henry, Dauphin of France and Prince of Wales;;;;;;;;;;;;;x
+DUA55.T;A night in theatre ...;;;;;;;;;;;;;x
+DUA55.D;Paris is bursting with cultural creation. Theatres attract the crowds with 3 great pieces having a huge success. First the adaptation of Alfred the Great, the main work of the English author Shakespeare which combines epic and comic, in a way that pleases the Romanticists. Another troup is playing 'Le Malade Imaginaire' of Moliere, a French comic author that travelled the roads of Southern France. Eventually another adaptation of 'Joan the Mad', the tragedy of Racine is still very loved by the court. If one of the Royals would attend one of these spectacles it would surely be seen as a symbol.;;;;;;;;;;;;;x
+DUA56.T;Les Immortels;;;;;;;;;;;;;x 
+DUA56.D;The Rotal Academy was founded in the XVIIth century to host the greatest literary minds of the whole kingdom and it has since evolved to also codify the official language from the monarchy. One of the Immortals' siege has been liberated and we have to nominate someone. Tolsmith despite being a Saxon is recognized as one of the greatest philologists from the kingdom. In Occitania the poet Jasmin has achieved in seducing the minds of the court. But the grammarian Morel could be nominated to show our will of uniformisation;;;;;;;;;;;;;x
+DUA57.T;Celebration of the German Revolution ;;;;;;;;;;;;;x 
+DUA57.D;Radicals in the Kingdom are preparing for the 55th anniversary of the First German Revolution. Some advisors have talked about allowing them to do so to better control them but if we do so then it will cost us our relations with the Bohemian court... Forbidding them to commemorate and organizing great ceremonies remembering the prowess of our armies during the ensuing wars would certainly be a good symbol of unity.;;;;;;;;;;;;;x 
+DUA58.T;The Rebellions;;;;;;;;;;;;;x 
+DUA58.D;The ongoing 'Springtime of Nations' threaten our efforts of integration !;;;;;;;;;;;;;x 
+DUA59.T;End of the Springtime;;;;;;;;;;;;;x 
+DUA59.D;Rebellions have stopped in the kingdom, showing our resilience !;;;;;;;;;;;;;x 
+DUA60.T;Resilience of the Anglois idea;;;;;;;;;;;;;x 
+DUA60.D;For 20 years the monarchy has encouraged the unity of the peoples on each side of the Channel. It seems that slowly the idea is winning the hearts of the crowds;;;;;;;;;;;;;x 
+DUA61.T;Resilience of the Anglois idea;;;;;;;;;;;;;x 
+DUA61.D;For 25 years the monarchy has encouraged the unity of the peoples on each side of the Channel. It seems that slowly the idea is winning the hearts of the crowds;;;;;;;;;;;;;x 
+DUA62.T;Conquest of Provence;;;;;;;;;;;;;x 
+DUA62.D;The little Provencal state is no more. Our armies have taken control of what was the biggest thorn on our borders. With the Valois gone, the Anglois state prevails !;;;;;;;;;;;;;x 
+DUA63.T;Conquest of Bourgogne;;;;;;;;;;;;;x 
+DUA63.D;The duchy of Bourgogne is now completely in our control, a fact that has weakened the French movement !;;;;;;;;;;;;;x 
+DUA64.T;Conquest of Calais;;;;;;;;;;;;;x 
+DUA64.D;Calais has been retaken by our brave forces ! We now control the closest coast from Britain and proposals of building a link between the continent be it by bridge or tunnel flourish and show our unity !;;;;;;;;;;;;;x 
+DUA65.T;Northern Border secured;;;;;;;;;;;;;x 
+DUA65.D;With Scotland closely placed in our Sphere of Influence, we can now control more efficiently the English movement !;;;;;;;;;;;;;x 
+DUA66.T;Failure of the Anglois model;;;;;;;;;;;;;x 
+DUA66.D;With separatists having taken control of some of our core territories, the Anglois dream is fading !;;;;;;;;;;;;;x 
+DUA67.T;Failure of the Anglois model;;;;;;;;;;;;;x 
+DUA67.D;With separatists having taken control of some of our core territories, the Anglois dream is fading !;;;;;;;;;;;;;x 
+DUA68.T;Scottish problems;;;;;;;;;;;;;x 
+DUA68.D;Our Northern Border allows the worse English elements to find support, weapons or shelter in Scotland. Unless we take control of Scotland, directly or indirectly, the situation could worsen.;;;;;;;;;;;;;x 
+DUA69.T;Provencal Problems;;;;;;;;;;;;;x 
+DUA69.D;Tolon is a nest of problems for our state. The kings in-France publish propaganda serving them and give them to agents who easily cross the border. Ending the Provencal state seems the only way to stop this state of affairs.;;;;;;;;;;;;;x 
+DUA72.T;Resilience of the Anglois idea;;;;;;;;;;;;;x 
+DUA72.D;For 30 years the monarchy has encouraged the unity of the peoples on each side of the Channel. It seems that slowly the idea is winning the hearts of the crowds;;;;;;;;;;;;;x 
+DUA73.T;Resilience of the Anglois idea;;;;;;;;;;;;;x 
+DUA73.D;For 30 years the monarchy has encouraged the unity of the peoples on each side of the Channel. It seems that slowly the idea is winning the hearts of the crowds;;;;;;;;;;;;;x 
+DUA74.T;La Machine Infernale ! ;;;;;;;;;;;;;x 
+DUA74.D;Yesterday the Dauphin was killed by French nationalists while visiting the city of Orleans ! The explosion also took the lives of his wife, his son and 70 other people. Full of grief the King has enacted several decrees restraining liberties with the assent of the Parliament. The line of succession that was clear is now disputed and the folly of Henry X due to his loss does not ease the situation...;;;;;;;;;;;;;x 
+DUA75.T;The Infernal Machine !;;;;;;;;;;;;;x  
+DUA75.D;Yesterday the Dauphin was killed by English nationalists while visiting the city of Livreport ! The explosion also took the lives of his wife, his son and 63 other people. Full of grief the King has enacted several decrees restraining liberties with the assent of the Parliament. The line of succession that was clear is now disputed and the folly of Henry X due to his loss does not ease the situation...;;;;;;;;;;;;;x 
+DUA90.T;End of the Angevin Legacy;;;;;;;;;;;;;x 
+DUA90.D;The Great Revolt is over : where the Plantagenets ruled, 4 new nations have arisen. The king has been executed by radicals in Paris and the members from the Royal Family who have survived, escaped to their New World haven of Plantagenia. The overseas territories have been snatched by the other Colonialist Powers and the 4 Sisters Republics of Ireland, England, France and Occitania have pledged to defend each other against the threat of the Counter-revolution. The Anglois dream of multiculturalism is dead and it seems that nationalism may threaten the old European order ... ;;;;;;;;;;;;;x
+austral_destiny_title;Austral Destiny ;;;;;;;;;;;;;x
+austral_destiny_desc;For many years our people have dreamed of going back to the Middle Kingdom. But as we can see know Zuharra has truly become the centre of culture like our old homeland. We can now claim the Mandate of Heaven and rule over our previous tributaries !;;;;;;;;;;;;;x
+accept_aborigine_title; Aborigine Integration ;;;;;;;;;;;;;x
+accept_aborigine_desc; Even if our culture is the best one we have come to acknowledge the valor of the primary people of Zuharra. It is time to recognize them and integrate them into state. ;;;;;;;;;;;;;x
+accept_maori_title; Integration of the Maoris;;;;;;;;;;;;;x 
+accept_maori_desc; The Maoris people were the first people, the new Treasure fleets encountered when our kings decided to spread their dominion across the Austral Seas. Now that we control the Eastern Islands we can recognize our old tributaries as an integral part of our culture ;;;;;;;;;;;;;x
+accept_melanesian_title; Integration of the Melanesians;;;;;;;;;;;;;x
+accept_melanesian_desc; The Melanesian people are spread across the Northern Islands predominantly on the one called Papua. We have established ties during the Era of Expansion and now we fully control the territory occupied by these people we can integrate them into our ever growing state;;;;;;;;;;;;;x
+assimilate_tributaries_title; Zhourao superiority ;;;;;;;;;;;;;x 
+assimilate_tributaries_desc; One thing has appeared to us over the centuries. We are the true deposits of Culture. Instead of trying to dialogue with our tributaries we should expand our way of life and bring them to civilization !;;;;;;;;;;;;;x
+assimilate_tributaries_modif; Zhourao Integration;;;;;;;;;;;;;x 
+assimilate_tributaries_modif_desc; We are pursuing a policy of integration in this province;;;;;;;;;;;;;x 
+CLM1.T; The reorganization of Gran Colombia ;;;;;;;;;;;;;x 
+CLM1.D; Now we have defeated the rebels we have to decide how we shall administer this vast territory. Some are in favor of keeping the Colombians under our rule but it will cost us tremendous amounts of money to successfully rule the area. Most are proposing home rule. Some propose to reestablish the vice-royalties of Lusitania, Mexico and Granada along with the Capitancy-General of Greater Salvador. However we could also dislocate the Granadan territory between a colony around Cartagena, establishing a new Capitancy in Essequibo and giving the rest of Tierra Firme to a Castillian vice-royalty around Caracas. The Andes provinces would be divided between Arequipa and Quito and to avoid a strong Mexico we would separate Jalisco. The choice is the hands of the king. ;;;;;;;;;;;;;x 
+LOT_NAN_friendship_decision_title;Build a Statue for Edward IV in Fort Lothere;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOT_NAN_friendship_decision_desc;Years ago, Edward IV, King of Beornia, has helped us install order in our country, when the vile Monarchist regime had seized power. It is past time we paid tribute to this great man, who stood up for our security and traditions in times of peril.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup1name;Lotharingia calls for Summit;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup1desc;Lotharingia has paid tribute to our king Edward IV in their capital, Fort Lothere. Seeing as a fit opportunity, they called for a meeting with our government and our king, and presented us with the possibility of a friendship agreement. We could benefit a lot from their alliance, but we must consider well.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup1opt1;Beornians and Lotharians have always be friends.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup1opt2;While they are ouf friends, we have our divides.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup1opt3;Attend the summit, but keep our distance.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup2name;Beornian-Lotharian summit a success!;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup2desc;The tribute to King Edward IV has gone smoothly, and the summit was a success. Our friends in the south have accepted our proposal of a friendship agreement. Let the world know we are brothers, and Ameriga tremble before our power.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup3name;Beornian-Lotharian summit stalled.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup3desc;The tribute to King Edward IV was appreciated and the summit was amiable, but in the end there were differences that still kept us apart. And alliance was signed, but nothing further than that.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup4name;Our approach has failed!.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup4desc;The tribute to King Edward IV was appreciated, but the Beornian delegation was uninterested in further commitment towards an alliance.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup5name;Beornian-Lotharian summit;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup5desc;With the inauguration of Edward IV's statue in Fort Lothar, we see an opportunity to bring Beornia and Lotharingia even closer. We could invite King Edward for a summit to cement our friendship for the years to come.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup5opt1;We can only gain from this.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipsetup5opt2;This is not really necessary.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent1name;Beornian relations are cooling;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent1desc;Our relations with Beornia have been cooling for some time. By evoking our Friendship agreement, we can come closer again.;;;;;;;;;;;;;;x
+LOTNANfriendshipevent1opt1;Do it immediately.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent1opt2;Try talking to their ambassador, but there's no need for a fuss over this.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent1opt3;In fact, we rather let them cool down a bit.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent1opt4;This non-sense has gone too far.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent2name;Beornian relations are cooling;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent2desc;Our relations with Beornia have been cooling for some time. By evoking our Friendship agreement, we can come closer again.;;;;;;;;;;;;;;x
+LOTNANfriendshipevent2opt1;Do it immediately.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent2opt2;Try talking to their ambassador, but there's no need for a fuss over this.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent2opt3;In fact, we rather let them cool down a bit.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent2opt4;This non-sense has gone too far.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent3name;Our nations are growing apart.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent3desc;For too long, our nations have grown apart from our friendship. Now it is time we accept the divide between us is too big to heal.;;;;;;;;;;;;;;x
+LOTNANfriendshipevent3opt1;Just like my ex-girlfriend.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent4name;Our nations are growing apart.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOTNANfriendshipevent4desc;For too long, our nations have grown apart from our friendship. Now it is time we accept the divide between us is too big to heal.;;;;;;;;;;;;;;x
+LOTNANfriendshipevent4opt1;Just like my ex-wife.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+kingstatueevent1name;Edward IV's Statue vandalized!;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+kingstatueevent1desc;Rebels in control of Fort Lothere have vandalized the monument to King Edward IV.;;;;;;;;;;;;;;x
+kingstatueevent1opt1;Damn peasa- I mean, citizens.;;;;;;;;;;;;;;x
+accept_caribenos_title;Integration of the Caribenos;;;;;;;;;;;;;;x
+accept_caribenos_desc;With Habana in our hands, it is time to integrate our fellow brothers into the Federation ;;;;;;;;;;;;;;x
+conquest_of_the_desertNAN_title;Conquest of the Desert;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+conquest_of_the_desertNAN_desc;The Beornians have always tried to expand into the Mapuche lands. But their harsh resistance led to a treaty that delimited the border around the river Graham. But now the Beornians have the advantage on the Mapuche tribes and it is needed to secure these lands before the Incans do the same. ;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+occupation_of_araucaniaINC_title;Occupation of Araucania;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+occupation_of_araucaniaINC_desc;A proposal has been brought forth to finally push into the southern lands of Araucania and pacify them once and for all. The Mapuche have refused for centuries to accept our rule and it is our duty to spread the glory of the Inca in the Southern Andes;;;;;;;;;;;;;x
+Ameriga1.T; Occupation of the Southern Andes;;;;;;;;;;;;;x 
+Ameriga1.D; Incan forces have occupied more of the lands in the southern continent. The pacification of the local natives is ongoing.
+Ameriga2.T; Conquest of the Desert;;;;;;;;;;;;x
+Ameriga2.D; Beornian forces have occupied more of the lands in the southern continent. The pacification of the local natives is ongoing.;;;;;;;;;;;;x
+Ameriga3.T; Exploration of the Amazonas ;;;;;;;;;;;;x
+Ameriga3.D;Our forces have occupied more of the lands in the Amazonas. The pacification of the local natives is ongoing.;;;;;;;;;;;;x
+Ameriga4.T; Amazonian Destiny ;;;;;;;;;;;;x
+Ameriga4.D;The partisans of Amazonian expansionnism are divided into three camps. First are those who only want to annex the border states near la Cote du Café. But some are also wanting to take all lands where Guarani people inhabit and integrate them into our society to balance the power of the Lotharians in the area. And eventually a fringe minority calls for the complete annexation of Lotharingia to form a greater Amerigan Federation. But should we declare such an ambition, the greater powers would surely act against us ....;;;;;;;;;;;;x
+Ameriga5.T; The Congress of Nouvelle-Amsterdam ;;;;;;;;;;;;x
+Ameriga5.D; We have assembled the representatives of the newly acquired states of the Federation to discuss their integration into our state. What will they decide ? ;;;;;;;;;;;;x
+Ameriga6.T; The Congress of Nouvelle-Amsterdam;;;;;;;;;;;;x 
+Ameriga6.D;We have assembled the representatives of the newly acquired states of the Federation to discuss their integration into our state. What will they decide ? ;;;;;;;;;;;;x
+Ameriga7.T; The Congress of Fort Lothère;;;;;;;;;;;;x 
+Ameriga7.D;We have assembled the representatives of the newly acquired states of the Federation to discuss their integration into our state. What will they decide ? ;;;;;;;;;;;;x
+Ameriga8.T;The Question of Government ;;;;;;;;;;;;x 
+Ameriga8.D;With the reconquest of Atlantia, some people are beginning to argue about the benevolent rule of Denis d'Aigle. Our president has now announced that he will be making a speech to answer the question of the nature of our government. ;;;;;;;;;;;;x 
+Ameriga9.T;A note about Para ;;;;;;;;;;;;x 
+Ameriga9.D;The winner of the Columbian war has relinquished all claims on Para  ;;;;;;;;;;;;x 
+Ameriga10.T;$FROMCOUNTRY_ADJ$ Envoy   ;;;;;;;;;;;;x 
+Ameriga10.D;We have been proposed to enter a greater Federation with $FROMCOUNTRY$ ;;;;;;;;;;;;x 
+Ameriga11.T;$COUNTRY_ADJ$ claims ;;;;;;;;;;;;x 
+Ameriga11.D;With $COUNTRY_ADJ$ forces occupying the vast pampas of New-Cornwall, our claim is now recognized by the entire World !;;;;;;;;;;;;x 
+Ameriga12.T;$COUNTRY_ADJ$ claims ;;;;;;;;;;;;x 
+Ameriga12.D;With $COUNTRY_ADJ$ forces occupying the detroit between the Pacific and Atlantic oceans, our claim is now recognized by the entire World ! ;;;;;;;;;;;;x 
+Ameriga13.T;$COUNTRY_ADJ$ claims ;;;;;;;;;;;;x 
+Ameriga13.D;With $COUNTRY_ADJ$ forces occupying the territories west of the Andes, our claim is now recognized by the World ! ;;;;;;;;;;;;x 
+Ameriga14.T;An Amerigan Proposition ;;;;;;;;;;;;x 
+Ameriga14.D;Representatives from the Amerigan State have arrived to our capital to discuss the integration of Beornia into their state. We have had ties with the Lotharians for centuries and should we refuse it is likely they will invade us anyway. ;;;;;;;;;;;;x 
+Ameriga15.T;Positive Response;;;;;;;;;;;;x 
+Ameriga15.D;The Beornians have accepted, the whole Amerigan Atlantic Coast is now united !;;;;;;;;;;;;x 
+Ameriga16.T;Negative Response;;;;;;;;;;;;x 
+Ameriga16.D;The Beornians have refused to integrate the Federation;;;;;;;;;;;;x 
+Ameriga17.T;The Congress of Camelot;;;;;;;;;;;;x 
+Ameriga17.D;The Beornian representatives have been assembled there in their old capital. What will be their choice ? ;;;;;;;;;;;;x 
+Ameriga18.T;The Congress of Cartagena;;;;;;;;;;;;x 
+Ameriga18.D;The Granadan representatives have been assembled there in their old capital. What will be their choice ? ;;;;;;;;;;;;x 
+exploration_of_Amazonia_GRA_title; Exploration of Amazonia;;;;;;;;;;;;x
+exploration_of_Amazonia_GRA_desc; The vast jungles along the Amazon river are void and non-occupied. From our bases in Para we can claim the are and take the territory for ourselves;;;;;;;;;;;;x
+exploration_of_Amazonia_GUY_title; Exploration of Amazonia ;;;;;;;;;;;;x
+exploration_of_Amazonia_GUY_desc; The vast jungles along the Amazon river are void and non-occupied. From our bases in Para we can claim the are and take the territory for ourselves;;;;;;;;;;;;x
+LST_recognized_title;Recognition of Lusitania;;;;;;;;;;;;x
+LST_recognized_desc; We truly are the dominant power in the area and Mexico will be forced to back his claims ! ;;;;;;;;;;;;x
+ATL_recognized_title; Atlantia in the Federation ;;;;;;;;;;;;x
+ATL_recognized_desc; Lotharingia is now forced to recognize the inclusion of Atlantia in the Amazonian Federation. All hail Amazonia ! ;;;;;;;;;;;;x
+Manifest_destiny_AMADEM_title; Southern Ambitions ;;;;;;;;;;;;x
+Manifest_destiny_AMADEM_desc; With Atlantia integrated in the Federation many in the high spheres have asked for expansion into Lotharingia. Many plans have been proposed but which one will get the vote of the Parliament ? ;;;;;;;;;;;;x
+integrate_guarani_title; Integration of the Guaranis;;;;;;;;;;;;x
+integrate_guarani_desc;Now that we have conquered territories where reside Guaranis, we can integrate them into the Federation to counterbalance the Lotharian influence in the area, a move the Lotharians won't like. ;;;;;;;;;;;;x
+new_amsterdam_treaty_border_title; The Lotharian Congress ;;;;;;;;;;;;x
+new_amsterdam_treaty_border_desc; Now we are in control of Libreville and Nouvelle-Alsace, we should assemble the Lotharian representatives to try to make them accept our rule. However should they refuse, it would be an action that could spark a revolt in the new territories...;;;;;;;;;;;;x
+new_amsterdam_treaty_guarani_title;The Lotharian Congress ;;;;;;;;;;;;x
+new_amsterdam_treaty_guarani_desc; With our control over the new states of the Federation established, we should assemble the Lotharian representatives to try to make them accept our rule. However should they refuse, it would be an action that could spark a revolt in the new territories...;;;;;;;;;;;;x
+new_amsterdam_treaty_federation_title; The Lotharian Congress;;;;;;;;;;;;x
+new_amsterdam_treaty_federation_desc; With our complete control over what was Lotharingia, we should assemble the Lotharian representatives to try to make them accept our rule. However should they refuse, it would be an action that could spark a revolt in the new territories...;;;;;;;;;;;;x
+colombian_empire2_title; The Colombian Empire ;;;;;;;;;;;;x
+colombian_empire2_desc; The Veracruz Plan may have failed but we have achieved complete dominance over the rebels. It is time to crown our glorious leader emperor of Gran Colombia and free our southern brethren !;;;;;;;;;;;;x
+buy_falklands_title;Buy the Falklands;;;;;;;;;;;;x 
+buy_falklands_desc;We have lost the Falkland Islands to the Scandinavians and no one objected their seizure. But now they are not recognized as a Great power anymore we could offer to buy the islands for a hefty price;;;;;;;;;;;;x
+135623.T;A Beornian envoy ;;;;;;;;;;;;x 
+135623.D;We have received a proposition from Beornia about the islands in South Atlantic. They are ready to buy them for a really good price;;;;;;;;;;;;x 
+135624.T;Positive Response ;;;;;;;;;;;;x 
+135624.D;The Scandinavians have sold us the Falklands. Long live Beornia ! ;;;;;;;;;;;;x 
+135625.T;Negative Response;;;;;;;;;;;;x 
+135625.D;The Scandinavians have declined our offer ....;;;;;;;;;;;;x 
+135626.T;Renaming the Islands ;;;;;;;;;;;;x 
+135626.D;Now we control the islands we can finally say that the Falklands are Beornian !;;;;;;;;;;;;x 
+135627.T;Claiming South Georgia;;;;;;;;;;;;x  
+135657.D;South of the Falklands lies the island of South Georgia. A frozen rock some say but at least it's our useless rock in the Atlantic ! ;;;;;;;;;;;;x 
+AMA1.T;La Rive Gauche ;;;;;;;;;;;;x
+AMA1.D;The Para region which controls the west bank of the Amazon river has been under Spanish domination for decades. However it is a backward place where nobody lives except the local tribes and some Guianan outposts. Settlers from the Equinoxian Republic have begun inhabiting the region and are advancing more every day. We could take advantage of the current war to seize Para and annex it to Equinoxia. However we should be aware that when the war ends, the victor could come back reclaiming these lands ... ;;;;;;;;;;;;x
+AMA2.T;Message from Para ;;;;;;;;;;;;x
+AMA2.D;The Amazonian settlers have seized the entirety of the Para area ! ;;;;;;;;;;;;x
+AMA3.T;Para ? ;;;;;;;;;;;;x
+AMA3.D;My king, one matter has come to the attention of our councillors. The region of Para was nominally under our protection for decades but the Amazonian settlers have profited from the war to seize it. It is worthless lands ans swamps but by principle we should ask a compensation. We could threaten to go to war or ask a monetary compensation to finance our war debts ... ;;;;;;;;;;;;x
+AMA4.T; Spanish envoy ;;;;;;;;;;;;x
+AMA4.D; The Spanish delegates have approached us about our seizure of Para. They are willing to drop the matter if we pay them "reparations" on a 12year basis. What do we do ? ;;;;;;;;;;;;x
+AMA5.T; Amazonian Response;;;;;;;;;;;;x
+AMA5.D; The Amazonian have accepted. The first payment is fulfilled. ;;;;;;;;;;;;x
+AMA6.T; Amazonian Response  ;;;;;;;;;;;;x
+AMA6.D; The Amazonian have refused to pay reparations. There is only one solution : war.  ;;;;;;;;;;;;x
+AMA7.T; Second payment ;;;;;;;;;;;;x
+AMA7.D; It is the time to pay our "reparations" to Spain ;;;;;;;;;;;;x
+AMA8.T;Reparations for Para;;;;;;;;;;;;x
+AMA8.D;The Amazonian government has sent us another payment of the reparations;;;;;;;;;;;;x
+AMA9.T;Third payment ;;;;;;;;;;;;x
+AMA9.D;We have to pay for the reparations. Just one more time and it will be finished;;;;;;;;;;;;x
+AMA10.T;Last payment ;;;;;;;;;;;;x
+AMA10.D;Finally we must complete the reparations;;;;;;;;;;;;x
+AMA11.T;Last payment;;;;;;;;;;;;x 
+AMA11.D;Amazonie has paid all the reparations ;;;;;;;;;;;;x
+AMA12.T;Spanish Demands ;;;;;;;;;;;;x
+AMA12.D;The Spanish government has asked us to relinquish our control of Para. Should we choose not to give it up, it will mean war .... ;;;;;;;;;;;;x
+AMA13.T;Para regained ;;;;;;;;;;;;x
+AMA13.D;Amazonie has bowed before our demands ! ;;;;;;;;;;;;x
+AMA14.T;Para ? ;;;;;;;;;;;;x
+AMA14.D;While we were rejoicing over our total victory over the insurgents, some our councillors have reminded us of Para. The region of Para was nominally under our protection for decades but the Amazonian settlers have profited from the war to seize it. It is worthless lands ans swamps but by principle we should ask a compensation. We could threaten to go to war or ask a monetary compensation to finance our war debts ...  ;;;;;;;;;;;;x
+AMA15.T;Amazonian crimes ;;;;;;;;;;;;x
+AMA15.D;We have faced many hardships : we vainquished Spain definitely and proved to the world that we stand united and it is now time to settle the conflict with Amazonia. They seized Para during the war, thinking no one would try to take it but they are wrong, we did not forget and foremost, we didn't forgive. We can ask them to give up the area or we could settle for some monetary "reparations" ;;;;;;;;;;;;x
+AMA16.T; Colombian envoy ;;;;;;;;;;;;x 
+AMA16.D; The Colombian delegates have approached us about our seizure of Para. They are willing to drop the matter if we pay them "reparations" on a 12year basis. What do we do ?  ;;;;;;;;;;;;x 
+AMA17.T;Amazonian Response ;;;;;;;;;;;;x 
+AMA17.D; The Amazonian have accepted. The first payment is fulfilled.;;;;;;;;;;;;x 
+AMA18.T; Amazonian Response;;;;;;;;;;;;x  
+AMA18.D; The Amazonian have refused to pay reparations. There is only one solution : war.   ;;;;;;;;;;;;x  
+AMA19.T;Second payment ;;;;;;;;;;;;x 
+AMA19.D;It is the time to pay our "reparations" to Gran Colombia ;;;;;;;;;;;;x 
+AMA20.T; Reparations for Para;;;;;;;;;;;;x 
+AMA20.D; The Amazonian government has sent us another payment of the reparations;;;;;;;;;;;;x 
+AMA21.T; Third payment;;;;;;;;;;;;x 
+AMA21.D; We have to pay for the reparations. Just one more time and it will be finished;;;;;;;;;;;;x 
+AMA22.T; Last payment;;;;;;;;;;;;x 
+AMA22.D;  Finally we must complete the reparations;;;;;;;;;;;;x 
+AMA23.T; Last payment;;;;;;;;;;;;x 
+AMA23.D; Amazonie has paid all the reparations;;;;;;;;;;;;x 
+AMA24.T; Colombian Demands;;;;;;;;;;;;x  
+AMA24.D; The Colombian government has asked us to relinquish our control of Para. Should we choose not to give it up, it will mean war .... ;;;;;;;;;;;;x 
+AMA25.T; Para regained ;;;;;;;;;;;;x 
+AMA25.D;Amazonie has bowed before our demands ! ;;;;;;;;;;;;x 
+AMA26.T;Chaos in the Federation ;;;;;;;;;;;;x 
+AMA26.D;The loss of Atlantia has created a great distrust between the government and the military, the latter accusing the former of having betrayed them and that victory was near. A circle of officer has decided to end the democratic rabble and plan to take the Parliament by force. ;;;;;;;;;;;;x 
+AMA27.T;Talks of secession in Equinoxia  ;;;;;;;;;;;;x 
+AMA27.D; The Equinoxian republic has always been distinct inside the Federation and also one of the most democratic. The end of the democracy in Amazonia has made some Equinoxian think about secession and it seems their movement spread to Vaura ... ;;;;;;;;;;;;x 
+AMA28.T;The Cappadocian Revolution !;;;;;;;;;;;;x 
+AMA28.D;The Equinoxian patriots have risen against the government decided to leave the Federation to create their own democratic state ! ;;;;;;;;;;;;x 
+AMA29.T;Seizure of Port-Liberté;;;;;;;;;;;;x 
+AMA29.D;With the capture of the military commandment, the war has been declared null and void. The Equinoxian leader has proclaimed the Federation and reestablished the Constitution ;;;;;;;;;;;;x 
+AMA30.T; End of the Civil War;;;;;;;;;;;;x 
+AMA30.D; With the last strongholds taken by our forces, Amazonia is once again one and indivisible !;;;;;;;;;;;;x 
+AMA31.T;The return of the king ? ;;;;;;;;;;;;x 
+AMA31.D;Many in the military are supporters of a monarchy in Amazonia. Should we start looking for a monarch ? ;;;;;;;;;;;;x 
+AMA32.T;Homeland or New World ? ;;;;;;;;;;;;x 
+AMA32.D; Two possible monarchs were found. The Duke of Brittany and the duke of Leonie. Choosing one will also guide our external policy;;;;;;;;;;;;x 
+AMA33.T; The Constitution ;;;;;;;;;;;;x 
+AMA33.D; The new monarch must choose how he will rule (or not). ;;;;;;;;;;;;x 
+Ameriga_AMA_title; The Federation ;;;;;;;;;;;;x 
+Ameriga_AMA_desc; Despite the wars with Lotharingia, we now stand proud as the dominant power of Ameriga. We can now unify the two former Frankish colonies into a single state that will rivalize with the Great European Powers. Long Live Ameriga ! ;;;;;;;;;;;;x 
+Ameriga_LOT_title; The Federation ;;;;;;;;;;;;x 
+Ameriga_LOT_desc; Despite the wars with Amazonia, we now stand proud as the dominant power of Ameriga. We can now unify the two former Frankish colonies into a single state that will rivalize with the Great European Powers. Long Live Ameriga ! ;;;;;;;;;;;;x 
+Northern_border_title;The Northern Border;;;;;;;;;;;;x 
+Northern_border_desc;North of the vast Amazonian jungle is located the old Spanish territories of Guyana. With the forest an integral part of our country we have to act and annex the border to avoid any threats to it. ;;;;;;;;;;;;x 
+Federation_NAN_title;Beornia in the Federation ;;;;;;;;;;;;x 
+Federation_NAN_desc;With our control of Eastern Ameriga complete and secured some of our politics have talked to integrate Beornia into the Federation. They are likely to refuse but their small size will let us integrate them by force if necessary;;;;;;;;;;;;x 
+NAN_congress_title;The Beornian Congress;;;;;;;;;;;;x 
+NAN_congress_desc; With the old Beornian capital in our hands and their country under our control we can call a council to try to integrate the Beornians into the Federation. Should they refuse it would mean countless years of opposition from the natives ;;;;;;;;;;;;x 
+Granada_border_title;The Conquest of Granada ;;;;;;;;;;;;x 
+Granada_border_desc;Our Federation now extends from the Caribbean to the Pampas ! But until we secure Granada and Andagoya, we won't truly be the dominant power of Ameriga ! ;;;;;;;;;;;;x 
+GRA_congress_title;The Granadan Congress;;;;;;;;;;;;x 
+GRA_congress_desc; With the Cartagena de Indias in our hands and we can call a council to try to integrate the Granadans into the Federation.;;;;;;;;;;;;x 
+DUA_SS_title; History of the Dual-Monarchy ;;;;;;;;;;;;x
+DUA_SS_desc; The World of Divergences is vastly different from ours. If you aren't familiar with its history, you should read that piece of text ;;;;;;;;;;;;x
+SS1.T; History of the Dual-Monarchy ;;;;;;;;;;;;x
+SS1.D; The execution of Joan of Arc would come to mark the beginning of the end for the French Wars of Succession (1337-1498), as the Armagnac Party would never again rise to what it once was. The Valois and their allies would fight on for another seventy years, but with the victory of Edward the Red Prince at Vichy the future of a Dual Monarchy of France and England was secured, only being confirmed with the 1498 Treaty of Rome. The threat of encirclement with the Marriage of Anne of Brittany with Jean III of Burgundy, led to the breakdown of the Anglo-Burgundian alliance in 1490 when, unable to challenge the marriage, invaded Brittany during the Anglo-Franco-Breton War (1490-1492). Burgundy, unable to provide support against France due to rebellion fermented by the House of Lorraine, forced Brittany's surrender. While it was too late to annul the marriage, with Jean having consummated it, the Treaty of Le Verger effectively saw Brittany annexed into the French crown.;;;;;;;;;;;;x
+SS2.T; History of the Dual-Monarchy ;;;;;;;;;;;;x
+SS2.D;The Reformation presented new challenges to the unity of the thrones. The deep involvement of the Valois in aiding Zwingli's escape from Papal and Imperial imprisonment was too good a pretext to end any alternate succession, causing the Languedoc War (1532), and ending with the conquest of Languedoc & Auvergne, leaving only a rump Provencal state in the Azure Coast and in Rhone. In addition to the affairs of Provence, it also engaged in what became known as the Great Game with the Kingdom of Burgundy and the Crown of Aragon. The subject of these wars of influence came about with Navarre (which saw the conquest of the County of Foix & Bearn in 1516), the Italian Peninsula (which ended largely as a victory for the Aragonese, as most of the Peninsula, save Savoy, Genoa, Milan, and the Emilian Dukedoms fell under their influence, compared to only Savoy for the Dual Monarchy), and even the County of Provence (which easily fell into the Aragonese camp to save them from being destroyed by the Plantagenets.);;;;;;;;;;;;x
+SS3.T; The History of the Dual-Monarchy ;;;;;;;;;;;;x
+SS3.D;While aggressively fighting heresy abroad the Kings of Both Thrones were initially tolerant of Protestants. King Francois I was torn between dynastic links to the firmly Catholic Jagiellons of Bohemia and a large portion of his populace firm in their new faith. Further strife in England and in Aquitaine combined with the growing threat of Burgundy (long the champion of the Protestant cause) tipped the balance leading first to the Anglo-French Wars of Religion (1598-1614) both within the Kingdom and among its neighbors, and later after the defeat of the Protestants, the Exodus of the Protestant Huguenots to Burgundy, Scandinavia and Colonial New Burgundy (now the Seven Republics) and the Anglican Father Pilgrim and their followers to what they would call New England (now Beornia).;;;;;;;;;;;;x
+SS4.D;While England was briefly a viceroyalty under the Dukes of Gloucester, the throne would be forever undivided following the dissolution of the English Parliament by Henry VII in 1537, and its merging into the Estates General. The nobility with the exception of some distant provinces converged increasingly to Paris as French, became the official language throughout both kingdoms. This led to the gradual Francification of England as once English names were increasingly replaced by French. By the turn of the 19th century, French has become the primary common language in the Southern parts of England. The concept of a centralized Parliamentary body was revolutionary for its time, and, almost ironically, would influence the future legislative bodies of the Burgundian Estates-General, the Savoyard Subalpine Senate, the Aragonese Cortes and the Scandinavian Riksdag, among other European states.;;;;;;;;;;;;x
+SS5.D;The Anglo-French history in Ireland was also something of a peculiar moment. During the French Wars of Succession, English, and later Anglo-French control of the Island was left in the hands of the House of Fitzgerald, the Earls of Kildare as much time was spent in building a new administrative apparatus for both England and France. Because of this, the Kildares, along with the House of Desmond, both began to rule Ireland as if it was their own Kingdom. The issues, which had been building up during the twilight years of the reign of Henri VIII culminated in the three Irish Wars (1573-1579, 1583-1594 and the Nine Years’ War, 1598-1607). Which gradually saw Ireland pacified, the rebel Irish Lords killed and the King of England and France reaffirmed as Lord of Ireland. ;;;;;;;;;;;;x
+SS6.D;With the unexpected ascension of James IV of Scotland to the Throne of the North in 1500 the Plantagenêts faced the threat of encirclement by the alliance of Burgundy and the former. The exodus of the early 17th century was compounded by wars against Burgundy and Scandinavia pushing emigration to the colonies of Plantagenia and Amazonie. However the pushing towards these colonies were not without strife there as well, as conflicts were rife between Colonial Vinland and New Burgundy, as well as against the Cherokee and Creek, among other First Nation Tribes.;;;;;;;;;;;;x
+SS7.D;Eventually, the Dual Monarchy secured its position as the unquestioned power in Western Europe amid the gradual decline of Spain. A period of relative peace in Europe allowed the Dual Monarchy to expand its influences abroad. The Dual Monarchy established trading posts along the coast of Sierra Lionne, allowed them to trade European goods for slaves to be sent to the New World. A series of wars with the Kingdom of Kandy (1696-1703, 1705-1715, 1716-1717) saw the entirety of Ceylon becoming an Anglo-French crown colony, allowing access to the Indian Ocean Trade through good relations with the Nasirid Sultans of Bengal. At the same time there was a great degree of expansion in the Anglo-French colonies in the New World, as colonial conflicts with Scandinavia, Burgundy and Spain, reinforced its mother country’s position. This period of colonial expansion was broken with the War of the Anglo-French Succession, leading to the independence of Plantagenia under a cadet branch of the House of Plantagenêt.;;;;;;;;;;;;x
+SS8.D; Remaining largely aloof during the opening stages of the Great German Wars allowed the industrial revolution to take hold and the Dual Monarchy seemed set to dominate this new realm as well. But the battles of the later war quickly demonstrated that the old rival Burgundy was again on the rise as even beaten and battered it remained victorious, losing only its other colony Amazonie to independence. The Dual Monarchy enters the middle of the 19th century as the ultimate global power, but for the first time in over a century its position does not appear unassailable in Anvers and courts beyond.;;;;;;;;;;;;x
+restore_greater_salvador_title; Claim Mesoameriga  ;;;;;;;;;;;;x
+restore_greater_salvador_desc; With the dismantlement of what was Gran Colombia we are in the position to take back Mesoameriga ! ;;;;;;;;;;;;x
+restore_lusitania_title; Claim Lusitania ;;;;;;;;;;;;x
+restore_lusitania_desc; Before taking Mexico we should secure the Lusitanian lands, then we can march on Mexico;;;;;;;;;;;;x
+restore_mexico_title; Claim Mexico ;;;;;;;;;;;;x
+restore_mexico_desc; It is time to take back Mexico City to end once and for all the ideas of an independent Latin America ! ;;;;;;;;;;;;x 
+CLM1.T; Administration of Gran Colombia ;;;;;;;;;;;;x
+CLM1.D; We have reconquered Gran Colombia but now we have to administrate it. We could keep the rebellious colonies under our direct control but it has proved to be inefficient and one of the causes of the rebellion. We could then allow some home-rule with a direct administrator from Spain to rule over the colonies. The question is then how to divide the area : along the old vice-royalties or on a smaller basis ? ;;;;;;;;;;;;x
+CLMcusco.T;The question of Cuzco ;;;;;;;;;;;;x 
+CLMcusco.D;The old imperial city of the Incan Empire is in our hands since the end of the rebellion. Cuzco has been under our control since 1575 but the area is still predominantly inhabited by Quechua people and few have adopted our customs. Some in our government have suggested to give the territories depending of the Arequipa Capitancy to the Incan Empire to thank them for their intervention during the war. Although they were forced to surrender, the Incans decided the issue of the war by killing the Rebel leader Bolivar. Ceding Cuzco would surely assure us a period of peace in Colombia and ease the tensions that have accumulated over the years.;;;;;;;;;;;;x 
+CLM_lib1.T;The end of the rebellion ;;;;;;;;;;;;x 
+CLM_lib1.D;The rebels have spread liberal ideas throughout Colombia and many people in our colonies are inclined toward these. Many of the soldiers fighting in the war have heard of them and it seems the liberal hydra will be hard to stop. We can choose to keep absolutism and force the colonies to bow before our representatives. However reconciling with them by allowing them to elect their government under our supervision will be appreciated over the Atlantic but will create dissent here in Spain. Or more simply we could grant a Constitution to both the Colombians and the Spanish peoples.;;;;;;;;;;;;x 
+CLM_lib2.T;The Royal terror ;;;;;;;;;;;;x 
+CLM_lib2.D;The Royal officers are enforcing the Spanish law in our country ... ;;;;;;;;;;;;x 
+CLM_lib3.T;The new Constitution ;;;;;;;;;;;;x 
+CLM_lib3.D;The King has granted us concessions and partial home-rule !;;;;;;;;;;;;x 
+CLM_lib4.T;Governor intervention ;;;;;;;;;;;;x 
+CLM_lib4.D;The governor is placing the politics under the Spanish law. No reform is allowed by the Crown ...  ;;;;;;;;;;;;x 
+CLM_lib5.T;The end of the colonial order ? ;;;;;;;;;;;;x 
+CLM_lib5.D;With the end of absolutism in Spain, our subjects from Colombia are asking us to grant them partial home-rule;;;;;;;;;;;;x 
+CLM_lib6.T;The Mancomunidad;;;;;;;;;;;;x 
+CLM_lib6.D;With the Commonwealth proclaimed, the local government has accessed to home-rule.;;;;;;;;;;;;x 
+emperor_of_india_title;The Empire of Indias;;;;;;;;;;;;x 
+emperor_of_india_desc;Our hold on Colombia is clearly a success. To raise our status among the European Powers and also in our colonies, we can crown our King, "Emperor de las Indias Occidentales" and thus give him a special place in the Royal Families of the Old Continent ;;;;;;;;;;;;x 
+mancomunidad_de_naciones_title;Mancomunidad de las naciones Colombianas ;;;;;;;;;;;;x 
+mancomunidad_de_naciones_desc;Liberalisation has changed our society and the king no longer holds the same power as his forefathers. Our Prime Minister has presented us with a new proposal : grant home-rule to the colonies and create a Commonwealth grouping the metropolis and its colonies while crowning the sovereign in each Colombian state. It will surely make Spain and Colombia enter a new age of cordial relations and democracy;;;;;;;;;;;;x
+Rif.T;The Strait of Gibraltar ;;;;;;;;;;;;x 
+Rif.D;The region of Rif controls the African part of the Gibraltar strait, which controls a large portion of the international trade. Rif was integrated into our Mauretanian colony but some inhabitants have demanded to be integrated directly into Spain. It is the region where the Spanish are the more numerous and it could be interesting to keep it even if we grant autonomy to the Berbers in the future. ;;;;;;;;;;;;x 
+CLM10.T; Lusitania reclaimed ;;;;;;;;;;;;x
+CLM10.D; Rejoice citizens of Gran Columbia! Our armies have expelled the Spanish corps that had occupied the Lusitanian coast. The loyalists in the area have already given a copious donation for the war effort;;;;;;;;;;;;x
+CLM11.T; Yucatan recaptured ;;;;;;;;;;;;x
+CLM11.D;After fierce fightings in the jungle our armed forces have successfully repelled the Monarchists from the Yucatan peninsula. A threat to the heart of the resistance has been deleted and a generous donation has been made for the war effort ! ;;;;;;;;;;;;x
+CLM12.T;Carthago Nova deleta est ;;;;;;;;;;;;x 
+CLM12.D;The Antioquia region has been retaken by the glorious forces of his Majesty. Once the heart of the vice-royalty of Granada, Cartagena de Indias is now in ruins. Victim of fierce fightings between Loyalists and Independentists, the city was shelled by the Spanish navy in 1819 and never fully recovered. However many of the landowners of the area are trusting the monarchy to rebuild the city and they have made a gracious donation to help vanquish the rebels.  ;;;;;;;;;;;;x
+CLM13.T;Cuzco retaken ;;;;;;;;;;;;x
+CLM13.D;Our forces are parading in the streets of the old capital of the Inca Empire. The looting of the area has provided a nice benefit for the crown and the control of the Amerigan region shows that the war will soon be over ;;;;;;;;;;;;x
+CLM14.T;Partial Peace ? ;;;;;;;;;;;;x
+CLM14.D;The victory in Yucatan and Lusitania can't hide the fact that the war is harsh. Maybe we could try to ask a deal with the Spanish to secure the revolution in the Northern territories ? We could cede them the Granadan territories allowing us to lick our wounds and later save them;;;;;;;;;;;;x
+CLM15.T;Peace in Colombia ? ;;;;;;;;;;;;x
+CLM15.D;Rebel representatives have approached us to discuss a peace. They are ready to relinquish all Granadan territories if we accept the independence of their Federation;;;;;;;;;;;;x
+CLM16.T;Treaty of Cartagena  ;;;;;;;;;;;;x
+CLM16.D;After a long and bloody war, Mexican representatives have agreed on peace with the Spanish crown. Gran Colombia is recognized as an independent nation but all the territories dependent of the old vice-royalty of Granada along with Andagoya will be ceded to Spain. Already, crowds are gathering in Nova Lisboa and San Salvador to blame the Mexican government and the so-proclaimed president Miranda for the defeat. What will happen to the Federation ? ;;;;;;;;;;;;x
+CLM17.T;Administration of Granada;;;;;;;;;;;;x
+CLM17.D;The treaty of Cartagena has left us with many possibilities in Ameriga. We could maintain the old order but at the cost of increased rebellions or allow home-rule. In the latter we have to decide how to divide the area. Keeping a strong Granada could be needed against the belligerent Federation in the North but it could also be dangerous, should it rebel ... ;;;;;;;;;;;;x
+CLM18.T;Legitimity questionned ;;;;;;;;;;;;x
+CLM18.D;With the signature of the peace of Cartagena, the hold of Mexico over the Federation has loosened. Both Lusitanian and Mesoamericans are asking for a congress to be held in Mexico to decide of the future of the federation. However many generals fear the outcome of this session and partisans of the war hero Santa Anna want him to take command. Such a move would however only increase the various independentists movements... ;;;;;;;;;;;;x
+CLM19.T;The Congress of Mexico : Opening ;;;;;;;;;;;;x
+CLM19.D;The various representatives from all the Federation have arrived in Mexico City to decide of their future. ;;;;;;;;;;;;x
+CLM20.T;The Congress of Mexico : Closing  ;;;;;;;;;;;;x
+CLM20.D;It is the end of the congress : what have they chosen ? ;;;;;;;;;;;;x
+CLM21.T;The Congress of Mexico : United Gran Colombia;;;;;;;;;;;;x
+CLM21.D;Despite the apparent ditrust toward the government the Federation will continue to live. With the inclusion of Mesoamerigan and Lusitanian in our government we can prepare the liberation of Granada ! ;;;;;;;;;;;;x
+CLM22.T;The Congress of Mexico : End of the Federation ;;;;;;;;;;;;x
+CLM22.D;The Lusitanian and Mesoamerigan have voted the end of Gran Colombia. The distrust, the fear accumulated against the Mexican government has shown itself and it is too late to maintain Gran Colombia as it is. ;;;;;;;;;;;;x
+CLM23.T;The Congress of Mexico : Division of Mexico  ;;;;;;;;;;;;x
+CLM23.D;The Federation has lived but even Mexico is crumbling under the independists demands. Determined to get their independence, the Lusitanian and Mesoamerigan representatives have turned the natives against the old government, each asking a country on their own. The military has now retired to Jalisco, the only province they have managed to retain ... ;;;;;;;;;;;;x
+CLM24.T;The Veracruz Plan ;;;;;;;;;;;;x
+CLM24.D;Maintaining Order in Gran Colombia has been hard since the accession of Santa Anna to Presidency. Liberals are criticizing "the extraordinary measures" took by Santa Anna and some already think that Spanish domination would be softer than the one imposed by the Mexican miltary. To help fight the secessionist movements in Lusitania and Mesoamerica, Santa Anna has met in Veracruz with Inacio Madeira and José Morazan. The first is a Lusitanian war hero who has led the recapture of Nova Lisboa in the last moments of the war and thus acquired a prestigious figure in Lusitania. The second is the symbol of assimilation of the Native populations, his family indeed originates from Mayan caciques who then became great figures in San Salvador. A leader of the independence war, he is revered by both Mayan and Mesoamerigan populations. Along with these two prominent figures, Santa Anna has designed a plan which divides the country into three spheres of influence until the Federation is ready to fight once more the Spanish.  ;;;;;;;;;;;;x
+CLM25.T;The Monclova Fort ;;;;;;;;;;;;x
+CLM25.D;Tension have erupted in Tejas since the Veracruz Plan. Madeira has always refused to accept Mexican claims on the territories that belonged to the vice-royalty of Lusitania. But Santa Anna recently said a small garrison near Monclova in a move to anger Madeira. He reacted and destroyed the fort, killing the Mexican soldiers. Now it is war against Mexico for the independence of Lusitania ! ;;;;;;;;;;;;x
+CLM26.T;Tejas incident ;;;;;;;;;;;;x
+CLM26.D;Mexican forces have been killed in a fort located in Lusitanian territory ! Madeira has refused to condemn the attack and has declared the independence of Lusitania, free from Mexico ! ;;;;;;;;;;;;x
+CLM27.T;An herald from Salvador ;;;;;;;;;;;;x
+CLM27.D;Morazan has refused to take action against Madeira ! Furthermore he wants us to acknowledge the independence of the Mesoamerigans or he'll go to war against Mexico ... ;;;;;;;;;;;;x 
+CLM28.T;Failure of Veracruz Plan ;;;;;;;;;;;;x 
+CLM28.D;With the ongoing war, no one can say that we represent the Federation... ;;;;;;;;;;;;x
+CLM29.T;The Tarascan uprising ;;;;;;;;;;;;x
+CLM29.D;Taking advantage of the war, nationalists have declared Purepacha free ! ;;;;;;;;;;;;x 
+CLM31.T;The Zapotec uprising ;;;;;;;;;;;;x
+CLM31.D;Taking advantage of the war, nationalists have declared Oaxaca free ! ;;;;;;;;;;;;x 
+CLM32.T;Liberal uprising ! ;;;;;;;;;;;;x 
+CLM32.D;The liberal opposition has taken the control of the Western provinces and is determined to take Mexico ! ;;;;;;;;;;;;x  
+CLM33.T;The Jalisco constitution ;;;;;;;;;;;;x 
+CLM33.D;We are different from Santa Anna ;;;;;;;;;;;;x  
+CLM34.T;$FROMCOUNTRY_ADJ$ Ultimatum;;;;;;;;;;;;;x
+CLM34.D;With the downfall of the Federation, our former Spanish overlords are trying to recover control over their shattered empire. Anyway we must decide the future of $COUNTRY$.;;;;;;;;;;;;x
+CLM35.T;They Refuse!;;;;;;;;;;;;;x
+CLM35.D;$FROMCOUNTRY$ rejected our ultimatum! Diplomacy has failed, but they will submit one way or the other!;;;;;;;;;;;;x
+CLM36.T;They Agree!;;;;;;;;;;;;;x
+CLM36.D;Clearly fearing our might, $FROMCOUNTRY$ decided to satisfy our demands. Our former subjects are ready to rejoin the Empire and the Spanish flag is already hoisted in the streets of $FROMCOUNTRY_CAPITAL$;;;;;;;;;;;;x
+CLM37.T;Lusitanian border ;;;;;;;;;;;;;x 
+CLM37.D;Profiting from the conflicts that erupted since the Colombian War, Plantagenia has taken rightful Lusitanian lands. With their lands reincorporated in the Empire, we are in the position to ask Plantagenia to relinquish their claims and give back the lands;;;;;;;;;;;;;x
+CLM38.T;$FROMCOUNTRY_ADJ$ Ultimatum;;;;;;;;;;;;;x
+CLM38.D;With the downfall of Lusitania,the Spanish are trying to recover control over the areas we seized from their old vice-royalty. We have now the choice of giving up the land or fight for it ...;;;;;;;;;;;;x
+CLM39.T;They Refuse!;;;;;;;;;;;;;x
+CLM39.D;$FROMCOUNTRY$ rejected our ultimatum! Diplomacy has failed, but they will submit one way or the other!;;;;;;;;;;;;x
+CLM40.T;They Agree!;;;;;;;;;;;;;x
+CLM40.D;Clearly fearing our might, $FROMCOUNTRY$ decided to satisfy our demands. People in Nova Lisboa rejoice to be reunited with their brethren ! ;;;;;;;;;;;;x
+CLM41.T; Reorganisation of the vice-royalties;;;;;;;;;;;;;x 
+CLM41.D; Now that we control all the former lands of our Empire, we must decide how we will rule the lands. We could establish the old-vice-royalties or keep the territory under close surveillance ;;;;;;;;;;;;;x
+CLM50.T;Treaty of Havana;;;;;;;;;;;;;x 
+CLM50.D;The $FROMCOUNTRY_ADJ$ Spanish war is over. Representatives from Spain have been forced to sign an humiliating treaty that makes them free all their Colombian holdings along with their Caribbean ones. $FROMCOUNTRY$ has affirmed itself as a World Power and Europeans powers now begin to pay more attention to affairs on the other side of the Atlantic ...;;;;;;;;;;;;;x 
+CLM53.T;La Revolucion Gloriosa !;;;;;;;;;;;;;x 
+CLM53.D;The Spanish population has lost confidence in the monarchy. The defeat and the loss of Gran Colombia has allowed Republicans to gain influence in the Spanish society. Seeing the decay of the state and the monarchy, radicals have overthrown the King and proclaimed the Republic ! Many wonder how the country will evolve ...;;;;;;;;;;;;;x 
+CLM54.T;Military Coup d'Etat !;;;;;;;;;;;;;x 
+CLM54.D;Following the defeat in Colombia, a group of generals have forced the King to abdicate. These men have taken the power for themselves, promising to end the decay of the Spanish state.;;;;;;;;;;;;;x 
+CLM55.T;End of the Dictatorship;;;;;;;;;;;;;x 
+CLM55.D;Following their defeat in Colombia, the clique of generals that controlled Spain has been ousted and the Republic proclaimed !;;;;;;;;;;;;;x 
+CLM56.T;La revolucion popular ! ;;;;;;;;;;;;;x 
+CLM56.D;The defeat in the Colombian War has shaken the very foundations of the Spanish state. The previous government has been overthrown by the vanguard party who has proclaimed the birth of the Spanish proletarian dictatorship;;;;;;;;;;;;;x 
+CLM57.T;Stabilization of the regime;;;;;;;;;;;;;x 
+CLM57.D;Despite the defeat in Colombia the current regime is still supported by the Spanish people and democracy will endure !;;;;;;;;;;;;;x 
+spanish_treaty_1_title;The treaty of Habana;;;;;;;;;;;;;x 
+spanish_treaty_1_desc;Spain has won in the Colombian wars of independence and now occup large lands on our continent. It is our duty to 'free' the Colombians and destroy the few influence the Spanish could have in our demesne !;;;;;;;;;;;;;x 
+spanish_treaty_2_title;The Treaty of Habana ;;;;;;;;;;;;;x 
+spanish_treaty_2_desc;Spain has won in the Colombian wars of independence and now occup large lands on our continent. It is our duty to 'free' the Colombians and destroy the few influence the Spanish could have in our demesne ! ;;;;;;;;;;;;;x 
+spanish_treaty_3_title;The Treaty of Habana;;;;;;;;;;;;;x  
+spanish_treaty_3_desc;Spain has won in the Colombian wars of independence and now occup large lands on our continent. It is our duty to 'free' the Colombians and destroy the few influence the Spanish could have in our demesne ! ;;;;;;;;;;;;;x 
+pearl_delta_control_title; Control of the Pearl River Delta ;;;;;;;;;;;;;x 
+pearl_delta_control_desc; Amongst the Chinese states, we hold a special relationship with Taiping. This state while professing a deviant interpretation of the Holy Faith, is still Christian, a quality the others warring states don't have. Moreover, it is close to our base in Hainan from where we used to trade with China. We could propose to help them against their opponents in exchange for some ports in the area ...  ;;;;;;;;;;;;;x 
+CHI1.T; A Spanish embassy;;;;;;;;;;;;;x
+CHI1.D; The Spanish who control the island of Hainan have approached us to negotiate a treaty of friendship and assistance between the Catholic king and our leader. In exchange of Macao or Hong-Kong, they are ready to assist us in our Crusade and protect us from the European dogs lurking on our riches;;;;;;;;;;;;;x
+CHI2.T; They refused ! ;;;;;;;;;;;;;x
+CHI2.D; The Taiping dogs have refused to give us the ports along the Pearl Delta. Already we are making preparations to "protect the locals" from the mad heretics ;;;;;;;;;;;;;x
+CHI3.T; Macao is ours ! ;;;;;;;;;;;;;x 
+CHI3.D; The Taiping leaders have accepted to lease us the port of Macao in exchange of some protection.  ;;;;;;;;;;;;;x
+CHI4.T; They accepted ! ;;;;;;;;;;;;;x
+CHI4.D; The Chinese have accepted to give us the control of Macao and Hong-Kong, allowing us to exert a great influence in the area. However, we are now expected to protect them against the various threats of the Chinese claimants ;;;;;;;;;;;;;x
+hre_unification;Imperial Authority;;;;;;;;;;;;;x
+hre_unification_desc;We have to beat our ennemies and unify the HRE under our authority ! ;;;;;;;;;;;;;x
+hre_unification2;Imperial Authority;;;;;;;;;;;;;x
+hre_unification2_desc;We have to beat our ennemies and unify the HRE under our authority ! ;;;;;;;;;;;;;x
+PskovF.T;The end of Pskov ? ;;;;;;;;;;;;;x
+PskovF.D; Our overlords in Copenhagen ask us to relinquish our independence ;;;;;;;;;;;;;x
+reclaimPOM_title;Reclaiming Pomerania;;;;;;;;;;;;;x
+reclaimPOM_desc;Even if we have lost Pomerania, they are still rightful Scandinavian lands. Let us proclaim it high and wide and let the Germans fear our coming back !;;;;;;;;;;;;;x
+centralize_hre_title;The Thousand Years' Reich ;;;;;;;;;;;;;x
+centralize_hre_desc;The Holy Roman Empire could have been the greatest power of the continent if it had been united. The previous emperor tried to centralize the various principalities during the Revolution but the Great German War forced him to withdraw its claims. But now we are strong enough to try the adventure once more and this time, maybe establish a Reich that will last a Thousand Years ! ;;;;;;;;;;;;;x
+move_to_frankfurt_title;Move the capital to Frankfurt;;;;;;;;;;;;;x
+move_to_frankfurt_desc;Despite our efforts, the princes of the Empire did not accept our claim. We defeated them and we can rightfully be recognized Kaiser by the Germans ! Ein Reich, Ein Deustchland ! ;;;;;;;;;;;;;x
+form_elbian_confederation_title;Form the Confederation at the Elbe;;;;;;;;;;;;;x
+form_elbian_confederation_desc;The dream of reunifying the German lands under our dominion is now forfeit. The revolutions and the rise of German nationalism have provoked an immense opposition to the unified Reich. However we hold special ties with the Elbian people and if we could bring the North German lands under our protection we could annex the princes of the north and govern the Elbians as equals to the Bohemians ;;;;;;;;;;;;;x
+integrate_prussia_title; Integration of Prussia;;;;;;;;;;;;;x
+integrate_prussia_desc;Although Prussia was never part of our sphere of influence, the lands we ahve conquereds are still predominently inhabited by Germans. We can thus add them to our Realm;;;;;;;;;;;;;x
+integrate_elsass_title;Integration of Elsass ;;;;;;;;;;;;;x
+integrate_elsass_desc;The Elsass lands have been out of the HRE since the first Burgundian wars. Predominantly inhabited by Rhenish people, we can add this area to the glorious Reich !;;;;;;;;;;;;;x 
+HRE3.T;An Imperial Proposition ;;;;;;;;;;;;;x
+HRE3.D;The Emperor has decided to pursue the centralisation of the empire.;;;;;;;;;;;;;x
+HRE4.T;An Imperial Proposition ;;;;;;;;;;;;;x
+HRE4.D;The Emperor has decided to pursue the centralisation of the empire. ;;;;;;;;;;;;;x
+HRE5.T;An Imperial Proposition ;;;;;;;;;;;;;x
+HRE5.D;The Emperor has decided to pursue the centralisation of the empire. ;;;;;;;;;;;;;x
+HRE7.T;Negotiations;;;;;;;;;;;;;x
+HRE7.D;The local diets have shown different results and we've entered negotiations with the various princes. How it will end is another matter though;;;;;;;;;;;;;x
+HRE9.T;The Prague Proclamation;;;;;;;;;;;;;x 
+HRE9.D;After having reaffirmed his hegemony over the various principalities of the Holy Roman Empire, the emperor, Sigismund V has issued a Proclamation destined to all the members of the Imperial Diet. Determined to pursue the reforms of centralization advocated by his father Wenceslaus VIII during the German Wars, the emperor asks all the princes of the empires to join in a single state from the Danube to the Elbe. Should the Empire be centralized it would mean an upheaval of the balance of powers on the continent but nothing is set in stone for now. ;;;;;;;;;;;;;x 
+HRE10.T;The Reactions towards the Proclamation;;;;;;;;;;;;;x 
+HRE10.D;The Proclamation has had various results throughout the Empire. Already all the good princes have joined the Reich !;;;;;;;;;;;;;x 
+HRE11.T;The Prague Proclamation : Success  ;;;;;;;;;;;;;x 
+HRE11.D;The majority of the princes and free cities of the Empire have accepted the Proclamation. The discordant voices are alone amongst this common sentiment. The Emperor is really now the king of the Germans and to give them guarantees he already moved his court to Frankfurt am Main where all the institutions will be centralized. However this move has angered the Bohemians who don’t accept to be the heart of the Empire and the idea of secession is brewing in the mind of some.  ;;;;;;;;;;;;;x 
+HRE12.T;The Prague Proclamation : Complete Failure  ;;;;;;;;;;;;;x 
+HRE12.D;Instead of achieving a centralized empire the Proclamation launched the contrary move. All German princes ahve united and are marching toward Prague ! ;;;;;;;;;;;;;x 
+HRE13.T;Local Unification;;;;;;;;;;;;;x 
+HRE13.D;We unite to push back the Bohemians !;;;;;;;;;;;;;x 
+HRE14.T;German Revolt;;;;;;;;;;;;;x
+HRE14.D;We won't go down without a fight ! ;;;;;;;;;;;;;x
+HRE19.T;The end of the Reich;;;;;;;;;;;;;x
+HRE19.D;We have been defeated by the Germans. Already our power barely extands outside of the Bohemian Crown. The HRE is now forfeit and we go back to being Bohemians....;;;;;;;;;;;;;x
+HRE20.T;Prague Proclamation : Mixed results ;;;;;;;;;;;;;x
+HRE20.D;The princes of the Empire did not go much in favour or against the centralisation and most are pushing for negotiations. We'll see that in each region;;;;;;;;;;;;;x
+HRE21.T;Rhenish acceptance ;;;;;;;;;;;;;x
+HRE21.D;Rhenish princes have majority integrated the Empire. Our power is now felt along the Rhine and already our brothers from Aachen and Trier await us .... ;;;;;;;;;;;;;x
+HRE22.T;Rhenish refusal ;;;;;;;;;;;;;x
+HRE22.D;The Rhenish princes have opposed the centralisation and already are revolting against our fair rule ! ;;;;;;;;;;;;;x
+HRE23.T;Negotiations in Rhineland;;;;;;;;;;;;;x
+HRE23.D;As for the Empire as a whole no tendency has won in Rhineland. The various princes of the area have begun the negotiations with the Emperor himself for keeping their privileges;;;;;;;;;;;;;x
+HRE25.T;Rhenish association;;;;;;;;;;;;;x
+HRE25.D;We have to watch these negotiations in the West ... ;;;;;;;;;;;;;x
+HRE26.T;Elbian acceptance ;;;;;;;;;;;;;x
+HRE26.D;Elbian princes have for the majority integrated the Empire. Our power is now felt along the Elbe and already our brothers from Kiel and Heligoland await us .... ;;;;;;;;;;;;;x
+HRE27.T;Elbian refusal ;;;;;;;;;;;;;x
+HRE27.D;The Elbian princes have opposed the centralisation and already are revolting against our fair rule ! ;;;;;;;;;;;;;x
+HRE28.T;Negotiations in the North;;;;;;;;;;;;;x
+HRE28.D;Like the Empire as a whole no tendency has won in North Germany. The various princes of the area have begun the negotiations with the Emperor himself for keeping their privileges;;;;;;;;;;;;;x
+HRE43.T;Elbian association;;;;;;;;;;;;;x
+HRE43.D;We have to watch these negotiations in the North ... ;;;;;;;;;;;;;x
+HRE30.T;Danubian acceptance ;;;;;;;;;;;;;x
+HRE30.D;Danubian princes have for the majority integrated the Empire. Our power is now felt along the Danube and the biggest threat to the Imperial integrity is now in our control;;;;;;;;;;;;;x
+HRE31.T;Danubian refusal ;;;;;;;;;;;;;x
+HRE31.D;The Danubian princes have opposed the centralisation and already are revolting against our fair rule ! ;;;;;;;;;;;;;x
+HRE32.T;Negotiations in the North;;;;;;;;;;;;;x
+HRE32.D;Like the Empire as a whole no tendency has won in North Germany. The various princes of the area have begun the negotiations with the Emperor himself for keeping their privileges;;;;;;;;;;;;;x
+HRE42.T;Danubian association;;;;;;;;;;;;;x
+HRE42.D;We have to watch these negotiations in the South ... ;;;;;;;;;;;;;x
+HRE35.T;The end of the negotiations;;;;;;;;;;;;;x
+HRE35.D;Ulcerated by the slowness of the negotiations, the Emperor Sigismund has decided to use the harsh way to pass his ideas : Submission or Conquest, here is the choice he left to the last independent princes ;;;;;;;;;;;;;x
+HRE37.T;Southern Campaign ;;;;;;;;;;;;;x
+HRE37.D;The Danubians have refused the ultimatum ! ;;;;;;;;;;;;;x
+HRE39.T;Northern Campaign ;;;;;;;;;;;;;x
+HRE39.D;The Elbians have refused the ultimatum ! ;;;;;;;;;;;;;x
+HRE41.T;Western Campaign ;;;;;;;;;;;;;x
+HRE41.D;The Rhenish have refused the ultimatum ! ;;;;;;;;;;;;;x
+HRE50.T;Bohemian nationalism ? ;;;;;;;;;;;;;x 
+HRE50.D;"Lion over Eagle!" "We are no Germans!" "Down with the traitor!" These and many more shouts can be heard almost everyday in Prague, Pilsen, Brünn,...The Bohemian people feel betrayed by the recent development in the realm and they fear that their privileged position they have been enjoying as citizens of the Imperial heartland for centuries is waning. Is it a sign of things to come ?;;;;;;;;;;;;;x 
+HRE51.T;Bohemian riots;;;;;;;;;;;;;x 
+HRE51.D;It started as a meaningless brawl. One drunk Bohemian anti-Imperialist was loudly swearing and a nearby walking police officer tried to calm him down, only to be punched to the face. When the officer tried to defend himself, the drunk pulled a knife, the policeman panicked and shot him in the chest. Other Bohemians seeing that promptly killed the officer, stormed a close weapons depot and started building a barricade in one of the city's streets. Looks like trouble is brewing.;;;;;;;;;;;;;x 
+HRE54.T;The Bohemian Revolution !;;;;;;;;;;;;;x 
+HRE54.D;"To arms! To arms! For our freedom and our pride! Down with the German tyranny!" After a series of incidents following the unification of the Holy Roman Empire and the subsequent centralisation acts, the situation in Bohemia escalated in a full-blown crisis. Bohemian aristocrats formed a national assembly and declared the Bohemian Crown Lands independent from the rest of the Empire. Disgruntled Bohemians, joined by many veteran soldiers of Holy Roman armies are already flocking to their ranks, gearing for war. Is peace in central Europe really a dream impossible to come true? ;;;;;;;;;;;;;x 
+HRE55.T;Intervention in Mitteleuropa ? ;;;;;;;;;;;;;x 
+HRE55.D;With the Bohemians rebelling, we have a chance to cripple the Kaiserreich. For glory ! ;;;;;;;;;;;;;x 
+HRE56.T;Independence ;;;;;;;;;;;;;x 
+HRE56.D;At last we have succeeded. The war cost us many lives but we have secured our homeland from the traitor Kaiser ! Let it be known that Bohemia will never bow again before the Germans ! ;;;;;;;;;;;;;x 
+HRE57.T;Bohemian Mobilisation ;;;;;;;;;;;;;x 
+HRE57.D;Now it is obvious that the war between the Holy Roman Empire and Bohemia will be fought on a scale never seen before. The Bohemian citizens are en masse joining the Free Corps and donating their belongings to the war effort. The story of a girl who, having no other property or money, donated a lock of her hair is just one of the many. The Bohemian lion is now standing tall, ready to take on his enemies. ;;;;;;;;;;;;;x 
+HRE58.T;Prague is lost ;;;;;;;;;;;;;x 
+HRE58.D;Ein Reich, ein Deutschland. That's easier to say than to fulfil. The Bohemians decided not to be just regular members of the Holy Roman Empire and somehow managed to defeat our newborn country, striking a deep wound into its flesh. With the blue-red-white tricolour flying over the Prague Castle, they have lost the chance to be full citizens of the Empire. ;;;;;;;;;;;;;x 
+HRE59.T;The Revolution was crushed ! ;;;;;;;;;;;;;x 
+HRE59.D;Ein Reich, ein Deutschland. Only fools would want to stand against the wind of destiny. The foolish Bohemians have tried to do just that and paid the price of blood for it. But our Empire has bled, too, and so it is important that the peace shall now rule in Mitteleuropa for eternity. And thanks only to our glorious nation. ;;;;;;;;;;;;;x 
+HRE60.T;The new Constitution ;;;;;;;;;;;;;x 
+HRE60.D; The war is over and won. The national assembly is now to be dissolved and replaced with a proper form of government. The only question now stands - what form it shall take? ;;;;;;;;;;;;;x 
+form_batavia_title;Boer Unification;;;;;;;;;;;;;x 
+form_batavia_desc;Since the Boer Wars following the Great German Wars a new idea has spread amongst the Afrikaans people. More and more people are advocating for a new state to rise to unify the Boer States. This state will maybe be able to reclaim Kaap and maybe even threaten the European establishment ;;;;;;;;;;;;;x 
+unequal_treaty_TNG_title;The Unequal Treaty ;;;;;;;;;;;;;x 
+unequal_treaty_TNG_desc;The Ming Empire is at disadvantage. We are in a position to bring them to the negotiating table, and wrangle concessions of both land and reparation - provided they are willing of course... ;;;;;;;;;;;;;x 
+reclaim_old_empire_title;Reestablish the old borders ;;;;;;;;;;;;;x 
+reclaim_old_empire_desc;The Empire has regained the upper hand in the peninsula but it is far from its old standing. It is time to bring the Thai and the Champas under our leadership to regain pre-eminence in the region ! ;;;;;;;;;;;;;x 
+become_sole_leader_title;The Khmer Peninsula ;;;;;;;;;;;;;x 
+become_sole_leader_desc;With the submission of both Thais and Champa we have regained the size of our ancestors empire. But we can't stop now ! It is time to spread our culture and dominion to the Burmese and the Viet and become the sole leader between India and China !  ;;;;;;;;;;;;;x 
+indochina_union_title;The Unification of the Empire;;;;;;;;;;;;;x 
+indochina_union_desc;We have endured the years passing and we are even now recognized as equals by the European imperialists. Angkor, our old capital is now as important as in the past. Our empire is strong and cover many people which have no part in our government. We can try to enact a series of decision to integrate the people of Indochina and thus strengthen the Empire ;;;;;;;;;;;;;x 
+announce_interest_SAF_title;The Boer States;;;;;;;;;;;;;x 
+announce_interest_SAF_desc;The Cape Duchy was established after the end of the German Wars and is the sole area we could take back from the old Boer colonies. The duke of the Cape has sent us many messages, urging us to enhance our position in the area to protect the colony we have allowed him to rule. Moreover, it seems that Africa is becoming interesting for Great Powers and it will be good for us to have a stronger position when the real colonization begins.;;;;;;;;;;;;;x 
+SAF1.T;The Leuwin state ;;;;;;;;;;;;;x 
+SAF1.D;The Leuwin state was consituted by the infamous brother of the Duke and has been provoking us for too much time. He'll understand what is Burgundian rule or we will make him understand ! ;;;;;;;;;;;;;x 
+SAF2.T;Burgundian Ultimatum ;;;;;;;;;;;;;x 
+SAF2.D;Our old Burgundian overlords are trying to exert their influence over all Boer States. We can bow or we can fight ! ;;;;;;;;;;;;;x 
+SAF3.T;Negative answer ;;;;;;;;;;;;;x 
+SAF3.T;The $FROMCOUNTRY_ADJ$ bastards have refused to acknowledge our rule. there can be only one solution, war ! ;;;;;;;;;;;;;x 
+SAF4.T;Annexation of Leuwin ;;;;;;;;;;;;;x 
+SAF4.D;We have strengthened our rule on our old colony and it is time to integrate the state of Leuwin directly into the Cape Colony ! ;;;;;;;;;;;;;x 
+SAF5.T;The Xhosa tribes;;;;;;;;;;;;;x 
+SAF5.D;The Xhosa tribes are inhabiting the coast. They block us from spreading our influence to the rest of the Boer states and must be then integrated into our colony ! ;;;;;;;;;;;;;x 
+SAF6.T;The Zulu tribes;;;;;;;;;;;;;x 
+SAF6.D;The Zulu tribes are inhabiting the coast. They block us from spreading our influence to the rest of the Boer states and must be then integrated into our colony ! ;;;;;;;;;;;;;x 
+SAF7.T;The Burgundian menace ;;;;;;;;;;;;;x 
+SAF7.D;Who knows where the Burgundians will stop ? After having taken the rump state of Leuwin they might surely come for us. Some have proposed that we send to the Boers of Transkaap a Union with our Republic to keep our independence from the Burgundians ! ;;;;;;;;;;;;;x 
+SAF8.T;The Burgundian threat;;;;;;;;;;;;;x 
+SAF8.D;The Boers from Nieuw Antwerpen have asked us to unify to fight the Burgundians ;;;;;;;;;;;;;x 
+SAF9.T;Boer unification ;;;;;;;;;;;;;x 
+SAF9.D;The remaining Boer republics have unified and created the state of Batavia. The idea of this state grouping all the Boers is a threat to our domination in the area and the Duke has already asked us to intervene against them ;;;;;;;;;;;;;x 
+SAF10.T;Boer ressources;;;;;;;;;;;;;x 
+SAF10.D; It's a life or death situation for our state. Let us fight hard and push the Burgundians out of Batavia ! ;;;;;;;;;;;;;x 
+SAF11.T;The republic of Nuweflander ;;;;;;;;;;;;;x 
+SAF11.D;With our control of the coast, only remains the republic of Nuweflander. The last expedition mounted against them was a disaster and cost the lives of 15000 soldiers in the process. We have to make them pay this act ! ;;;;;;;;;;;;;x 
+SAF12.T;Annexation of Nuweflander ;;;;;;;;;;;;;x 
+SAF12.D;We have strengthened our rule on our old colony and it is time to integrate the state of Nuweflander directly into the Cape Colony !  ;;;;;;;;;;;;;x 
+SAF13.T;The state of Transkaap ;;;;;;;;;;;;;x 
+SAF13.D;Only one Boezr state is out of our control. It is time to make the Boers from Pretoria submit to our power ! ;;;;;;;;;;;;;x 
+SAF14.T;Annexation of Transkaap ;;;;;;;;;;;;;x 
+SAF14.D;We have strengthened our rule on our old colony and it is time to integrate the state of Transkaap directly into the Cape Colony !  ;;;;;;;;;;;;;x 
+SAF15.T;The Baastard state ;;;;;;;;;;;;;x 
+SAF15.D;The old Boer states are completely under our domination. However north of the colony stands the state of Vryland ruled by Bastaards, coloured people speaking Afrikaans. They rule over a nice portion of lands and it is our duty to civilise them ... ;;;;;;;;;;;;;x 
+SAF16.T;Annexation of Vryland ;;;;;;;;;;;;;x 
+SAF16.D;Vryland is perfectly controlled and could be integrated into the Cape Colony. However it could be in our interest to keep them as a special dominion of our empire to avoid to strengthen the power of the Duke of the Cape.  ;;;;;;;;;;;;;x 
+TURREB.T;Defeat of the Janissaries ;;;;;;;;;;;;;x 
+TURREB.D;The Janissaries that had revolted against you have been defeated ! Unable to capitalize on their successful Anatolian uprising their movement has been routed and cities are each day welcoming us as their new saviours. The main leaders have been captured and beheaded, their heads thrown into the Bosporus. We have captured their arsenals and supplies to help for the war effort It is likely we won’t see another rebellion soon : most of the populations are weary and only want peace after decades of war. It is time to finish the still ongoing wars for the better or the worse and let the peoples of our empire rest at least.;;;;;;;;;;;;;x 
+integrate_serbia_title;The Serbo-Croat Union;;;;;;;;;;;;;x 
+integrate_serbia_desc;Serbia has entered a state of personal Union since we liberated them with our King ruling also over the Serbs. Now it is time to integrate them into our state directly to unify the South Slavic populations !;;;;;;;;;;;;;x  
+freeSER_title;Liberation of Serbia ;;;;;;;;;;;;;x 
+freeSER_desc;Serbia is under our control. We have captured the forts along the Danube and penetrated deep into the Empire's territory. The Sultan will be forced to acknowledge our victory ! ;;;;;;;;;;;;;x 
+1TUR.T;Illyrian vultures;;;;;;;;;;;;;x 
+1TUR.D;The king of Illyria has decided to take advantage of the void in Serbia and attacked us for the control of the province. We could buy peace easily by ceding it to them.;;;;;;;;;;;;;x 
+6TUR.T;Illyrian victory;;;;;;;;;;;;;x 
+6TUR;D;We are forced to cede Southern Serbia to the Illyrians... ;;;;;;;;;;;;;x 
+7TUR.T;Hungarian Victory ;;;;;;;;;;;;;x 
+7TUR.D;We are forced to cede Northern Serbia to the Magyars ;;;;;;;;;;;;;x 
+8TUR.T;Safavid victory;;;;;;;;;;;;;x 
+8TUR.D;We are forced to cede Trabzon to the Azeris... ;;;;;;;;;;;;;x 
+9TUR.T;Illyrian victory ;;;;;;;;;;;;;x 
+9TUR.D;We are forced to cede all Serbia to the Illyrians ... ;;;;;;;;;;;;;x 
+18TUR.T;Seizure of Dobrudja;;;;;;;;;;;;;x 
+18TUR.D;The Moldavians have taken control of the Dobrudja region ! Should we try to take it back ? ;;;;;;;;;;;;;x 
+ROM56.T;Intervention in the Wallachian Election ;;;;;;;;;;;;;x 
+ROM56.D;The Wallachian principality has elected his sovereign vovoide since its recent independence. With our hegemony assured in the Romanian inhabited area we could step forward and try to make our hospodar elected and assure this way the swift unification of the Romanian people ! ;;;;;;;;;;;;;x 
+ROM57.T;The Moldavian candidate ;;;;;;;;;;;;;x 
+ROM57.D;The Prince of Moldavia takes part in the election as a candidate. Should he be named domnitor of the two principalities or should we elect a local boyar ? ;;;;;;;;;;;;;x 
+ROM58.T;Wallachia elected our prince ! ;;;;;;;;;;;;;x 
+ROM58.D;The unification of the two principalites is now complete !  ;;;;;;;;;;;;;x 
+ROM59.T;Wallachia refused our candidacy;;;;;;;;;;;;;x 
+ROM59.D;The unification is delayed because of the Wallachians ;;;;;;;;;;;;;x 
+EGY50.T;Zahiri victory ;;;;;;;;;;;;;x 
+EGY50.D;Muhammad Zahiri took a risky bet on revolting but it paid off. The Empire has been forced out of our ancestral lands and we now control territories as far as the Sinai ! The Zahiri now appear like a legitimate dynasty unlike the decaying house of Osman and no one can deny the superiority of the Western technologies that helped with winning the uprising.  ;;;;;;;;;;;;;x 
+EGY51.T;Misri Al-Nahda :  ;;;;;;;;;;;;;x 
+EGY51.D;Glory to the house of Zahiri ! Not only have they managed to push the Turks out of Egypt but our troops have conquered one of the Holy Cities, Al-Quds. With Palestine in our hands, people in the Levant are already approaching us to liberate them from the Sultan’s yoke. This crushing victory has proven the legitimacy of the Zahiri dynasty and all opponents are now mute before the success of Sultan Muhammad. Determined to end Arab decay he has used his great popularity to introduce great reforms in the country and most European courts think of him as a potential interlocutor in the Middle-East.  ;;;;;;;;;;;;;x 
+egypt_levant_title;Egyptian Levant;;;;;;;;;;;;;x 
+egypt_levant_desc;Since the successful rebellion of the Zahiri, Egypt has become a beacon of light in the Arab World. With Al-Quds under our control and the European Powers acknowledging our power we can safely proclaim ourselves the Protector of the Arabs and expel the Turks from the Mashriq !  ;;;;;;;;;;;;;x 
+cyrenaica_TUN_title;Hafsid Cyrenaica  ;;;;;;;;;;;;;x 
+cyrenaica_TUN_desc;We have successfully taken Cyrenaica from the Egyptian rebels. It is time to integrate it into our country.;;;;;;;;;;;;;x 
+CRO1.T;Illyrian Brothers ? ;;;;;;;;;;;;;x 
+CRO1.D;The ongoing Civil war present us with an interesting choice right now. We have asserted our independence from the Empire recently but we have become a beacon of hope for the Slav populations living under the Muslim yoke. A proposition was made recently to enter a war against the Empire to free Serbia before Hungary or another vulture takes the territory for itself. Or we could just wait for the Empire to be in an even worse situation and take the territory for ourselves ….  ;;;;;;;;;;;;;x 
+CRO2.T;Liberation of Serbia ;;;;;;;;;;;;;x 
+CRO2.D;The Sultan has conceded us the vilayet of Serbia. We will now look carefully the actions of our Slavic brothers... ;;;;;;;;;;;;;x 
+CRO3.T;The end of the Personal Union ;;;;;;;;;;;;;x 
+CRO3.D;Serbia has been ruled by our king since its liberation near the end of the Ottoman Civil War but has enjoyed a relative autonomy in its internal affairs. The young king Tomislav II who was crowned recently has decided to bring this matter to its end and has reclaimed the unification of the crown of Tomislav and Stefan.;;;;;;;;;;;;;x 
+CRO4.T;Illyrian Ultimatum ;;;;;;;;;;;;;x
+CRO4.D;The Illyrian king has issued a declaration in which he asks for a closer union of the Croats and the Serb. But can we really trust him ? ;;;;;;;;;;;;;x
+CRO5.T;The Union of the Croats and the Serbs ;;;;;;;;;;;;;x
+CRO5.D;Serbia is now an integral part of our nation and its people is supporting our rule ! ;;;;;;;;;;;;;x
+CRO6.T;Serbian Rebellion ;;;;;;;;;;;;;x
+CRO6.D;Belgrade and the entire Serbian provinces have revolted and want to dethrone Tomislav II and put a Serb noble on the throne ! ;;;;;;;;;;;;;x
+CRO7.T;Intervention in Montenegro ? ;;;;;;;;;;;;;x
+CRO7.D;Before the Civil War, Montenegro was divided in various principalites. The Metropolitan finally achieved unification around him and went on expelling the powerful Simic family which ruled Kotor. The heir to the war hero Peter Simic, Joseph Simic is an idealistic panslavist and he has many times confessed that his father wanted Montenegro to join the Illyian kingdom. We could let him act and enter Montenegro with followers to see if we could not force the Metropolitan to bow before us. ;;;;;;;;;;;;;x
+CRO8.T;The Simic rebellion ;;;;;;;;;;;;;x
+CRO8.D;The Illyrian have allowed the claimant to the dukedom of Montenegro, Jospeh Simic to sneak into Kotor where he actually tries to convince people to join our heretic neighbour. Should we take action against him, it is likely the Croat will advance into our country so we must try to find someone to back our independence. ;;;;;;;;;;;;;x
+CRO9.T;Simic suceeds !;;;;;;;;;;;;;x
+CRO9.D;Our agent, the duke of Kotor has taken power in Montenegro and has asked to join our kingdom !;;;;;;;;;;;;;x
+CRO10.T;Montenegrin embassy ;;;;;;;;;;;;;x
+CRO10.D;The Illyrians threaten the rule of the Metropolitan who has asked us to protect him. How should we react ? ;;;;;;;;;;;;;x
+CRO11.T;$FROMCOUNTRY$ supports Montenegro !;;;;;;;;;;;;;x
+CRO11.D;The Metropolitan has been swift to act against Simic. He expelled him and has found an ally to protect him in case we decide to invade his country ... ;;;;;;;;;;;;;x
+CRO12.T;$FROMCOUNTRY$ threw away the Montenegro embassy !;;;;;;;;;;;;;x
+CRO12.D;The Metropolitan tried to find someone to protect him after the expulsion of Simic but $FROMCOUNTRY$ refused to protect him. We can now easily override their defences and annex Montenegro into our glorious kingdom ! ;;;;;;;;;;;;;x
+CRO13.T;The status of Belgrade ;;;;;;;;;;;;;x
+CRO13.D;During the Ottoman Civil War, Hungary attacked the Empire and took Belgrade while we were liberating Serbia. It has been a long time since their campaign of "protection" of the Serbs and we have a duty to ask them to give Belgrade to the crown of Stefan ;;;;;;;;;;;;;x
+CRO14.T;Illyrian Ultimatum ;;;;;;;;;;;;;x
+CRO14.D;The Illyian King has issued a declaration in which he demands us to relinquish the Serbian lands we captured during the Civil War. The Serbs have been restless around their old capital and holding unto them will harm relations with our allies. ;;;;;;;;;;;;;x
+CRO15.T;Hungarian refusal ;;;;;;;;;;;;;x
+CRO15.D;Hungary has refused to give back Belgrade to Serbia. It is our duty to fight and free Serbia from the horrid Magyar ! ;;;;;;;;;;;;;x
+claim_the_desert_title;Claim the Sahara ;;;;;;;;;;;;;x
+claim_the_desert_desc;The Sahara is immense and empty and forms a perfect frontier for our nation. However we should claim it before other nations take control of it !;;;;;;;;;;;;;x
+claim_the_west_desert_title;The Western Sahara;;;;;;;;;;;;;x
+claim_the_west_desert_desc;With our control of Morocco complete we should claim the western Sahara lands before any imperialists try to take control of these lands ! ;;;;;;;;;;;;;x
+claim_tripoli_title;Claim Tripolitania ;;;;;;;;;;;;;x
+claim_tripoli_desc;With Maghreb under our control, we have to take control of Tripolitania to protect our brothers from the Imperialists ! ;;;;;;;;;;;;;x
+organize_mauretania_title;Organize Mauretania ;;;;;;;;;;;;;x
+organize_mauretania_desc;Now that the Magrebi tribes were defeated we should reorganize our Moroccan territories in a new colony. We must create the proper structures, so that it stands on par with our other national states. ;;;;;;;;;;;;;x
+organize_numidia_title;Organize Numidia ;;;;;;;;;;;;;x
+organize_numidia_desc;Now that the Magrebi tribes were defeated we should reorganize our Maghrebi territories in a new colony. We must create the proper structures, so that it stands on par with our other national states. ;;;;;;;;;;;;;x
+organize_libia_title;Organize Libya ;;;;;;;;;;;;;x
+organize_libia_desc;Now that we control Tripoli, we should reorganize our African territories in a new colony. We must create the proper structures, so that it stands on par with our other national states. ;;;;;;;;;;;;;x
+integrate_navarra_title;Unify with Navarra ;;;;;;;;;;;;;x
+integrate_navarra_desc;To really become the Iberian Union we have to integrate the lands of the Basque people into our country ;;;;;;;;;;;;;x
+integrate_catalans_title;Catalan acceptance ;;;;;;;;;;;;;x
+integrate_catalans_desc;The Catalans nay have refused the unification at first but our important status in Europe has made them rethink about their previous actions ;;;;;;;;;;;;;x
+treaty_of_waitangiDVG_title;Treaty of Waitangi ;;;;;;;;;;;;;x
+treaty_of_waitangiDVG_desc;With our control over the Southern Island complete, we can now force the Maori to sign an unequal treaty with us ;;;;;;;;;;;;;x
+marching_apache_title;The Expulsion of the Mexicanos;;;;;;;;;;;;;x
+marching_apache_desc;Competition between Mexico and Nova Lisboa was fierce for the colonization of the territories north of Lusitania. Ultimately most of the settlers came from Mexico and now that Lusitania is independent they could prove to be a fifth column in the case of a war against their Southern neighbour. Thus it has been proposed to relocate them in Tejas and Santa Catarina amongst the local Castillian-speaking community where they could be better controlled.;;;;;;;;;;;;;x
+act_of_union_title;The new act of Union;;;;;;;;;;;;;x
+act_of_union_desc;The Commonwealth has experienced a severe decay in the last century. Problems with the Sejm, foreign intervention and weakness of the government led to a near break-up of the Union. But now we have reasserted our status in the European Concert and rid ourselves from foreign intervention, we can centralize the state in Warsaw and retake our place in Eastern Europe ! ;;;;;;;;;;;;;x
+baltic_cultures_title;The Baltic peoples;;;;;;;;;;;;;x
+baltic_cultures_desc;The Livonians and Estonian people never truly enjoyed independence, being contested between the Commonwealth and Scandinavia. But in contrary to the Scandinavians, we have a tradition of accepting the local cultures and integrate in our state ! Long live the Polish rule of Livonia !;;;;;;;;;;;;;x 
+treaty_hadiach_title;Treaty of Hadiach;;;;;;;;;;;;;x
+treaty_hadiach_desc;The Ruthenians constitute the most important ethnic group in the Commonwealth behind the Polish. Over the centuries, we have tried to integrate in our fabric, granting some of their nobles rights in the Sejm, encouraging the Uniate Church in spreading catholiscism. Now a new proposition has emerged to transform our state into a Polish-Lithuanian-Ruthenian Commonwealth but it needs the approval of the Ruthenian leaders;;;;;;;;;;;;;x
+treaty_hadiach_2_title;The Treaty of Kiev;;;;;;;;;;;;;x
+treaty_hadiach_2_desc;Despite the failure of the Hadiach Treaty, our resilience and our power has allowed to win over the hearts of the majority of the Ruthenian people. We can now enact a new treaty to make them an integral part of our state !;;;;;;;;;;;;;x
+lithuanian_port_title;The Lithuanian port;;;;;;;;;;;;;x
+lithuanian_port_desc;With Eastern Prussia in our hands we can easily now ask the Lithuanian magnates to cede us the last non Nordic port of the Baltic.;;;;;;;;;;;;;x
+end_the_hetmanate_title;Negotiating with the Cossacks;;;;;;;;;;;;;x
+end_the_hetmanate_desc;The Cossacks control large swaths of lands in the Commonwealth and obey only on paper to the orders of Warsaw. We can use our influence to bring Kiev under our power, the old capital of the Rus'.;;;;;;;;;;;;;x
+nordtyskland_title;Nordtyskland;;;;;;;;;;;;;x
+nordtyskland_desc;Despite all their attempts, the Bohemians could not stop our ambition. We control much of Northern Germany and it is our duty to help the Elbian people and accept them into our Union. Let us proclaim them brothers of the Scandinavians and use them to strenghten our state !;;;;;;;;;;;;;x
+annex_russian_lands_RUT_title;Russian lands;;;;;;;;;;;;;x
+annex_russian_lands_RUT_desc;The Ruthenian part of the Commonwealth holds rightful Russian territories. We can use our influence to "ask" them to relinquish them to our control;;;;;;;;;;;;;x
+deluge_title;End of the Commonwealth;;;;;;;;;;;;;x
+deluge_desc;No matter how much we weaken it, the Commonwealth is still a force to be reckoned in Eastern Europe and they won't abandon their Baltic ambitions should the balance of power change. It is in our interest to completely break it by supporting the various nationalist movements and break one opponent to our hegemony;;;;;;;;;;;;;x
+POL1.T;Ruthenian decision ;;;;;;;;;;;;;x
+POL1.D;The Ruthenian representatives have assembled to discuss the treaty.;;;;;;;;;;;;;x
+POL2.T;Ruthenian acceptance;;;;;;;;;;;;;x
+POL2.D;The Ruthenians leaders have signed the treaty, making Ruthenia an integral part of the Commonwealth !;;;;;;;;;;;;;x
+POL3.T;Ruthenian refusal;;;;;;;;;;;;;x
+POL3.D;The Ruthenians leaders have refused to sign the treaty and are talking of secession !;;;;;;;;;;;;;x
+POL4.T;Scandinavian demands;;;;;;;;;;;;;x
+POL4.D;The Nordic have demanded the cession of Palanga ...;;;;;;;;;;;;;x
+POL5.T;Russian demands;;;;;;;;;;;;;x
+POL5.D;The Russians ask us to cede the region of Polotsk;;;;;;;;;;;;;x
+POL6.T;Potop !;;;;;;;;;;;;;x
+POL6.D;The Scandinavians have encouraged secession movements. The Commonwealth is dead !;;;;;;;;;;;;;x
+POL10.T;Dissolution of the Commonwealth;;;;;;;;;;;;;x
+POL10.D;The incapacity of the Commonwealth to reform has provoked the rise of nationalist movements. Already Lithuanian, Cossacks and Ruthenians have formed their own government. The Commonwealth is dead !;;;;;;;;;;;;;x
+rename_laofeng_title;Renaming Laofeng;;;;;;;;;;;;;x
+rename_laofeng_desc;The territories of Dine Bikeyah were first explored by the Dong-guo city states that called the area Laofeng. But now we control the area, we can erase these Chinese names from the maps and call these lands as the Lusitanians always did : Rio Vermelho;;;;;;;;;;;;;x
+restore_laofeng_title;Restore Laofeng;;;;;;;;;;;;;x
+restore_laofeng_desc;The Colombians renamed lands that our ancestors had discovered first. Now that we control the area, we can force the other powers to use the real name of this region : Laofeng;;;;;;;;;;;;;x
+VAL20.T;The capital of Transalpina;;;;;;;;;;;;;x
+VAL20.D;We have established a new union on the continent, one that unifies both our claims on France and Italy. But now arises the question of where should we rule ? The revanchist elements of our royal family want to install ourselves into Paris, the old capital of the Capetians. Others want to retain the Eternal City as our siege of government. But perhaps we could go back to Toulon to establish a compromise between the various factions of the Federation ?;;;;;;;;;;;;;x 
+integrate_bretons_title;Integrate Bretons;;;;;;;;;;;;;x
+integrate_bretons_desc;While Bretons were not an integral part of the Capetian kingdom we have expelled the usurpers from this land nonetheless. We have a tradition of multiculturalism so it's normal to accept them too;;;;;;;;;;;;;x
+renew_war_DUA_title;Challenge the Usurpers;;;;;;;;;;;;;x
+renew_war_DUA_desc;Occitania is under our complete control. The dream of expelling the Plantagenets from our homeland is closer than ever. Let us retake the lands of France and be recognized as the true kings OF France. Montjoie St-Denis !;;;;;;;;;;;;;x
+france_italy_title;Creation of the Dual-Monarchy;;;;;;;;;;;;;x
+france_italy_desc;The kingdom of France has been reclaimed. However we can't present us as the sole king of Italy or we will face unrest from the population. We can establish a Dual-Monarchy like the Plantagenets, ruling both French and Italians. Long live Transalpina.;;;;;;;;;;;;;x 
+treaty_of_paris_title;Treaty of Paris;;;;;;;;;;;;;x 
+treaty_of_paris_desc;Our control of France is complete. We can now force the usurpers to come to negotiations and cede all the territories of the mainland to the rightful King of France.;;;;;;;;;;;;;x 
+rohnst_decision_title;Integration of the Rohnst;;;;;;;;;;;;;x 
+rohnst_decision_desc;Our policy of integrating the native peoples of Arcadia in our state must extend to the Rohnst who are closer to us than most of the other tribes !;;;;;;;;;;;;;x 
+iroquois_decision_desc;The Iroquois people are numberous in the Great Lakes region. We have had a mxied relationship with the old Confederation but with steps taken to integrate the tribes into our social fabric we can make them accept our rule;;;;;;;;;;;;;;x
+iroquois_decision_title;Integration of the Iroquois ;;;;;;;;;;;;;x 
+algonquin_decision_desc;The Algonquin tribes are the second largest native people in Vinland behind the Iroquois. Despite being organized in small tribes, they have acquired a common conscience over the years because of the colonization of their lands. With our policy towards the natives hinted at collaboration we can negotiate with them to make them full Vinlandic citizens;;;;;;;;;;;;;;x
+algonquin_decision_title;Integration of the Algonquin;;;;;;;;;;;;;x 
+sioux_decision_desc;The Great Plains of Arcadia are inhabited by the Sioux people, divided between the Nakota, Lakota and Dakota tribes. Their territory is challenged by many different states and we could enforce our claims by making the Sioux full citizens of our country.;;;;;;;;;;;;;x 
+sioux_decision_title;The Tribes from the Plains ;;;;;;;;;;;;;x 
+cherokee_decision_title;Integration of the Cherokee;;;;;;;;;;;;;x 
+cherokee_decision_desc;The Cherokee, or Tsalagi in their own language, are the Native people with whom the Dual-Monarchy had the most contacts. The Kingdom of Plantagenia ended their independence but the Cherokee never forgot their very culture. Proposals have emerged in Nouvelle-Orleans to make a special Cherokee act that would grant full citizenship to the tribes from the Montagnes Enfumees.;;;;;;;;;;;;;x 
+apache_decision_title;Integration of the Apache;;;;;;;;;;;;;x 
+apache_decision_desc;Spanish colonization of Ameriga and Southern Arcadia integrated the Native elites in the colonial system granting nobility title to the most Hispanicized. But in the northern parts of Lusitania, the city social system did not exist and many encroachements between Lusitanian and Apache tribes erupted. With our control over the numerous Apache territories complete we can grant them citizenship and let them administrate thier territories in our name;;;;;;;;;;;;;x 
+pueblo_decision_title;Integration of the Cunmin ;;;;;;;;;;;;;x 
+pueblo_decision_desc;The Cunmin tribes were the prime trade partners of the early Dong Guo city states and differentiated themselves from the many other Native tribes the Chinese settlers met by living in villages hence their name which mean "Villagers", more commonly known as Pueblo because of Spanish conquistadors. As the Federation expands east it controls more and more of their territory and some of the politicians of Sanbao have suggested that we should grant them full citizenship to strenghten our rule on the Wild East.;;;;;;;;;;;;;x  
+SAF17.T;Future of Batavia;;;;;;;;;;;;;x 
+SAF17.D;Leuwin under the rule of the Governor-Militant Aloysuis van Afrika has united the three old Boer Republics in one state that controls nearly all of South Africa. Many wonder what will Aloysuis do ? ;;;;;;;;;;;;;x 
+odensmark_title;The Great White North;;;;;;;;;;;;;x 
+odensmark_desc;With our position secured in Northern Arcadia we can occupy the lands we claim in the West !;;;;;;;;;;;;;x  
+AFG_punjab_title;The gate of India;;;;;;;;;;;;;x 
+AFG_punjab_desc;The conquest of Punjab was fierce but the lack of leadership amongst the Panjabis after the death of Ranjit Singh allowed us to take control of many territories along the Indus. However the occupation is harsh and expensive with the Panjabis more numerous that all the Afghan tribes... But if we can take all of Punjab, maybe a new path could emerge for the Sadozai, and maybe they could enter the Indian game .... ;;;;;;;;;;;;;x 
+PNJ_revolt.T;Punjab in open revolt !;;;;;;;;;;;;;x 
+PNJ_revolt.D;The Panjabis have revolted against our rule and rallied around the late son of Rajit Singh, Dhulip Singh who has entered Lahore in triumph ! We have to act swiftly or our Indian ambitions will end there !;;;;;;;;;;;;;x 
+ENL_recognized_title;English independence;;;;;;;;;;;;;x 
+ENL_recognized_desc;With an independent English government established, the Dual-Monarchy is forced to stop claiming the lands in their possession;;;;;;;;;;;;;x 
+ENL_claim_title;Reclaim England !;;;;;;;;;;;;;x 
+ENL_claim_desc;The existence of an independent English state is a very insult to our Unity ! Let us reclaim what is rightfully ours now that the ENglish aren't able to act on the international stage !;;;;;;;;;;;;;x 
+pas_de_calais_title;Le Pas de Calais;;;;;;;;;;;;;x 
+pas_de_calais_desc;Calais and the surrounding plains of Picardie were important places during the Hundred Years War. Sadly this territory was lost with Calais being surrendered to the Burgundian king during the Anglo-French wars of Religion. But with our troops having recaptured the closest land to England we could make the International Concert recognize our claim !;;;;;;;;;;;;;x 
+puppet_Manchuria_title;Organizing Manchukuo ;;;;;;;;;;;;;x 
+puppet_Manchuria_desc;Our expansion has given us the rich lands of Manchuria. Their goods will be very important for our industry but the numerous local population could resist us. Let us establish a puppet state under the rule of a Manchu prince which will allow us to better control the local population.;;;;;;;;;;;;;x  
+organize_yakutia_title;Organizing Yakutia ;;;;;;;;;;;;;x 
+organize_yakutia_desc;The frozen Seihoku lands would be interesting to exploit but the lack of population and the unwilligness from our citizens to move there does not allow us to benefit fully from it, worse, these lands cost us much. We could create another Co-prosperity sphere member by 'civilizing' the Yakut tribes and then grant us sovereignity over all the inland Seihoku lands we possess. ;;;;;;;;;;;;;x 

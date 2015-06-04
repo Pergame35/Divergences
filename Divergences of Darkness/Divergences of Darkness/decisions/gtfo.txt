@@ -2,6 +2,7 @@ political_decisions = {
 	gtfo_on = { picture = gtfo alert = no potential = { NOT = { has_country_flag = gtfo } } allow = { ai = no } effect = { set_country_flag = gtfo } }
 	gtfo_off = { picture = gtfo alert = no potential = { has_country_flag = gtfo } allow = { ai = no } effect = { clr_country_flag = gtfo } }
 	gtfo_ENG = { picture = gtfo alert = no potential = { has_country_flag = gtfo ENG = { OR = { vassal_of = THIS in_sphere = THIS } } } allow = { ai = no } effect = { release_vassal = ENG diplomatic_influence = { who = ENG value = -200 } } }
+	gtfo_ARC = { picture = gtfo alert = no potential = { has_country_flag = gtfo ARC = { OR = { vassal_of = THIS in_sphere = THIS } } } allow = { ai = no } effect = { release_vassal = ARC diplomatic_influence = { who = ARC value = -200 } } }
 	gtfo_RUS = { picture = gtfo alert = no potential = { has_country_flag = gtfo RUS = { OR = { vassal_of = THIS in_sphere = THIS } } } allow = { ai = no } effect = { release_vassal = RUS diplomatic_influence = { who = RUS value = -200 } } }
 	gtfo_FRA = { picture = gtfo alert = no potential = { has_country_flag = gtfo FRA = { OR = { vassal_of = THIS in_sphere = THIS } } } allow = { ai = no } effect = { release_vassal = FRA diplomatic_influence = { who = FRA value = -200 } } }
 	gtfo_PRU = { picture = gtfo alert = no potential = { has_country_flag = gtfo PRU = { OR = { vassal_of = THIS in_sphere = THIS } } } allow = { ai = no } effect = { release_vassal = PRU diplomatic_influence = { who = PRU value = -200 } } }

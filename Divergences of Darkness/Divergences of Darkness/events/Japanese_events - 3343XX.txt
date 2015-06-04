@@ -119,6 +119,11 @@ country_event = {
 	option = {
 		name = "Never!"
 		FROM = { country_event = 334304 }
+		relation = {
+			who = FROM
+			value = -50
+		}
+		leave_alliance = FROM 
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -144,16 +149,11 @@ country_event = {
   
 	
 	option = {
-		name = "A foolish move that shall be punished"
-		relation = {
-			who = FROM
-			value = -50
-		}
-		leave_alliance = FROM 
+	name = "A foolish move that shall be punished"
     badboy = 5
     prestige = -10
     add_casus_belli = {
-				target = FROM
+				target = HAW
 				type = conquest
 				months = 12
 		}
@@ -196,5 +196,71 @@ country_event = {
     prestige = 5
     badboy = 1
 		inherit = HAW
+	}
+}
+
+country_event = {
+	
+	id = 334306
+	title = "The Manchukuo state"
+	desc = "We can now release a puppet Manchu state that will serve our interests in Asia"
+	
+	trigger = { 
+	has_country_flag = Manchukuo 
+	NOT = { MCH = { exists = yes } } 
+	} 
+	
+	mean_time_to_happen = { 
+	months = 1
+	}
+	
+	option = { 
+	name = "Onwards for the Greater Co-prosperity sphere !"
+	any_owned = { 
+	limit = { is_core = MCH }
+	secede_province = MCH 
+	}
+	create_vassal = MCH
+	relation = { who = MCH value = 200 }
+	diplomatic_influence = { who = MCH value = 300 }
+	MCH = { capital = 1555 primary_culture = manchu }
+	ai_chance = { 
+		factor = 100 
+		}
+	}
+	
+	option = { 
+	name = "It is not the right time ..."
+	}
+}
+
+country_event = {
+	
+	id = 334307
+	title = "The Yakutian state"
+	desc = "The wastelands of Siberia could be better organised under an 'independent' Yakutian state."
+	
+	trigger = { 
+	year = 1915 
+	NOT = { YKT = { exists = yes } } 
+	YKT = { all_core = { owned_by = THIS } }
+	} 
+	
+	mean_time_to_happen = { 
+	months = 20
+	}
+	
+	option = { 
+	name = "Onwards for the Greater Co-prosperity sphere !"
+	release_vassal = YKT
+	relation = { who = YKT value = 200 }
+	diplomatic_influence = { who = YKT value = 300 }
+	ai_chance = { 
+		factor = 100 
+		}
+	}
+	
+	option = { 
+	name = "It is not the right time ..."
 	}
 }

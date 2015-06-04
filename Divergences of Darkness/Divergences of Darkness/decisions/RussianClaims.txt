@@ -109,6 +109,7 @@ political_decisions = {
 		
 			effect = {
 				prestige = 20
+				YKT = { all_core = { add_core = RUS } }
 				RUS_1182 = {
 					add_core = RUS
 				}

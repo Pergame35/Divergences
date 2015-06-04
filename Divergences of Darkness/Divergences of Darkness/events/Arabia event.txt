@@ -412,7 +412,7 @@ country_event = {
 province_event = {
 	id = 22248
 	title = "Region integrated in Mauretania!"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Mauretanian colony"
+	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Yakutian colony"
 	
 	trigger = {
 		OR = {
@@ -980,6 +980,60 @@ country_event = {
 		change_tag_no_core_switch = ALD
 		ai_chance = {
 			factor = 0
+		}
+	}
+}
+province_event = {
+	id = 44345
+	title = "Region integrated in Yakutia!"
+	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Yakutian colony"
+	
+	trigger = {
+		OR = {
+			region = RUS_2621
+			region = RUS_1079
+			region = RUS_1469
+			region = RUS_1075
+			region = RUS_2694
+			region = RUS_2615
+			region = RUS_1070
+			region = MON_1075
+		}
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = YKT
+		}
+		owner = {
+			civilized = yes
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1648 }
+				YKT = { exists = no }
+			}
+			YKT = {
+				vassal_of = THIS
+			}
+		}
+		NOT = {
+			is_core = YKT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = YKT }
+				}
+				add_core = YKT
+			}
 		}
 	}
 }

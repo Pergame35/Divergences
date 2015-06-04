@@ -177,7 +177,7 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			set_country_flag = high_castle
-			badboy = 20
+			badboy = 5
       DNG = { country_event = 334302 }
       war = {
 				target = DNG
@@ -233,4 +233,115 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	bonin_administration = {
+		picture = meiji_court
+		potential = {
+			tag = JAP
+			tag = TKG
+			owns = 1654
+			owns = 2525
+			NOT = { has_country_flag = bonin_administration }
+		}
+		allow = {
+			civilized = yes
+			owns = 1654
+			owns = 2525
+		}
+		effect = {
+			prestige = 1
+			1654 = {
+				change_province_name = "Iwo Jima"
+			}
+			2525 = {
+				add_core = THIS
+				life_rating = 15
+				change_province_name = "Minami Torishima"
+				state_scope = {
+					change_region_name = "Ogasawara"
+				}
+			}
+			set_country_flag = bonin_administration
+		}	
+	}  	
+
+	taiwan_administration = {
+		picture = meiji_court
+		potential = {
+			tag = JAP
+			owns = 1485
+			owns = 2562
+			NOT = { has_country_flag = taiwan_administration }
+		}
+		allow = {
+			civilized = yes
+			owns = 1485
+			owns = 2562
+		}
+		effect = {
+			prestige = 1
+			1485 = {
+				add_core = TAI
+				remove_core = FJN
+				change_province_name = "Taihoku"
+			}
+			2562 = {
+				add_core = TAI
+				remove_core = FJN
+				change_province_name = "Takao"
+				state_scope = {
+					change_region_name = "Takasago"
+				}
+			}
+			set_country_flag = taiwan_administration
+		}	
+	}
+	
+	puppet_Manchuria = { 
+	picture = Manchuria
+	potential = { 
+	OR = { tag = JAP tag = KOR }
+	OR = { owns = 1082 
+	owns = 1619 }
+	NOT = { has_country_flag = Manchukuo }
+	}
+	
+	allow = { 
+	owns = 1555
+	owns = 1481 
+	owns = 1552
+	nationalism_n_imperialism = 1 
+	}
+	
+	effect = { 
+	set_country_flag = Manchukuo
+	CHI_1553 = { add_core = MCH }
+	CHI_5 = { add_core = MCH }
+	1481 = { remove_core = MCH add_core = JAP}
+	MCH = { set_country_flag = civilize_after_release }
+	}
+	
+	}
+	
+	organize_yakutia = { 
+	potential = {
+	NOT = { primary_culture = russian }
+	owns = 2669 
+	civilized = yes
+	NOT = { YKT = { exists = yes } }
+	NOT = { has_country_flag = yakutia_org }
+	}
+	
+	allow = { 
+	nationalism_n_imperialism = 1 
+	}
+	
+	effect = { 
+	set_country_flag = yakutia_org
+	YKT = { set_country_flag = civilize_after_release 
+		primary_culture = THIS add_accepted_culture = yakut
+			}
+		}
+	}
+	
 }
