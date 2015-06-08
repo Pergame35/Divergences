@@ -627,4 +627,36 @@ political_decisions = {
             clr_global_flag = laofeng_renamed
         }
     }    
+	
+	dictatorshipCLM = { 
+	potential = { 
+	tag = CLM 
+	has_country_flag = dictatorshipCLM
+		}
+		
+	allow = { 
+	OR = { 
+	year = 1855 
+	state_n_government = 1 
+		}
+	war = no 
+	}
+
+	effect = { 
+	any_country = { 
+	limit = { OR = { tag = LST tag = UCA } annex_to = THIS } 	
+	}
+	government = absolute_monarchy 
+	LST = { all_core = { add_core = THIS } }
+	MEX = { all_core = { add_core = THIS } }
+	UCA = { all_core = { add_core = THIS } }
+	GRA = { all_core = { add_core = THIS } }
+	add_accepted_culture = lusitanian 
+	add_accepted_culture = central_american 
+	add_accepted_culture = granadan 
+	clr_country_flag = dictatorshipCLM 
+	clr_country_flag = calm_before_tempest
+	}		
+	
+	}
 }

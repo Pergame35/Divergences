@@ -146,6 +146,7 @@ political_decisions = {
 	}	
 
 	form_bharata = {
+		picture = chakra_bharata
 		potential = {
 			OR = {
 				tag = HND
@@ -209,6 +210,7 @@ political_decisions = {
 			add_accepted_culture = burmese
 			add_accepted_culture = pashtun
 			add_accepted_culture = nepali
+			add_accepted_culture = assamese
 			1329 = { add_core = BHA }
 			1328 = { add_core = BHA }
 			1326 = { add_core = BHA }

@@ -2,29 +2,28 @@
 #ruled by Russia 1836
 #Sitka (8000/2000 POPS)
 1 = {
-	bureaucrats = {
-		culture = kaiganese
-		religion = shinto
-		size = 2
-	}
-
 	clergymen = {
 		culture = kaiganese
-		religion = shinto
-		size = 13
+		religion = mahayana
+		size = 200
 	}
 
 	artisans = {
 		culture = kaiganese
-		religion = shinto
-		size = 28
+		religion = mahayana
+		size = 800
 	}
 
 	soldiers = {
 		culture = kaiganese
-		religion = shinto
-		size= 10
+		religion = mahayana
+		size = 350
+	}
 
+	farmers = {
+		culture = kaiganese
+		religion = mahayana
+		size = 5670
 	}
 
 	aristocrats = {
@@ -60,6 +59,29 @@
 }
 #Yakutat (4000/1000 POPS)
 2 = {
+		clergymen = {
+		culture = kaiganese
+		religion = mahayana
+		size = 200
+	}
+
+	artisans = {
+		culture = kaiganese
+		religion = mahayana
+		size = 800
+	}
+
+	soldiers = {
+		culture = kaiganese
+		religion = mahayana
+		size = 350
+	}
+
+	farmers = {
+		culture = kaiganese
+		religion = mahayana
+		size = 5670
+	}
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
@@ -93,6 +115,30 @@
 }
 #Kenai (2400/600 POPS)
 3 = {
+
+		clergymen = {
+		culture = kaiganese
+		religion = mahayana
+		size = 200
+	}
+
+	artisans = {
+		culture = kaiganese
+		religion = mahayana
+		size = 800
+	}
+
+	soldiers = {
+		culture = kaiganese
+		religion = mahayana
+		size = 350
+	}
+
+	farmers = {
+		culture = kaiganese
+		religion = mahayana
+		size = 5670
+	}
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
@@ -126,9 +172,14 @@
 }
 #Dutch Harbor (2000/500 POPS)
 4 = {
+	farmers = {
+		culture = kaiganese
+		religion = mahayana
+		size = 1500
+	}
 	aristocrats = {
-		culture = inuit
-		religion = animist
+		culture = kaiganese
+		religion = mahayana
 		size = 5
 	}
 
@@ -159,10 +210,15 @@
 }
 #Bethel (2000/500 POPS)
 5 = {
+	farmers = {
+		culture = kaiganese
+		religion = mahayana
+		size = 1500
+	}
 	aristocrats = {
-		culture = inuit
-		religion = animist
-		size = 2
+		culture = kaiganese
+		religion = mahayana
+		size = 100
 	}
 
 	clergymen = {
@@ -223,6 +279,29 @@
 }
 #Fairbanks (2000/500 POPS)
 2599 = {
+		clergymen = {
+		culture = kaiganese
+		religion = mahayana
+		size = 200
+	}
+
+	artisans = {
+		culture = kaiganese
+		religion = mahayana
+		size = 800
+	}
+
+	soldiers = {
+		culture = kaiganese
+		religion = mahayana
+		size = 350
+	}
+
+	farmers = {
+		culture = kaiganese
+		religion = mahayana
+		size = 5670
+	}
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
@@ -286,12 +365,40 @@
 		religion = animist
 		size = 360
 	}
+		clergymen = {
+		culture = kaiganese
+		religion = mahayana
+		size = 200
+	}
+
+	artisans = {
+		culture = kaiganese
+		religion = mahayana
+		size = 800
+	}
+
+	soldiers = {
+		culture = kaiganese
+		religion = mahayana
+		size = 350
+	}
+
+	farmers = {
+		culture = kaiganese
+		religion = mahayana
+		size = 5670
+	}
 }
 #Unalakeet (3000/750 POPS)
 2631 = {
+	farmers = {
+		culture = kaiganese
+		religion = mahayana
+		size = 1000
+	}
 	aristocrats = {
-		culture = inuit
-		religion = animist
+		culture = kaiganese
+		religion = mahayana
 		size = 5
 	}
 

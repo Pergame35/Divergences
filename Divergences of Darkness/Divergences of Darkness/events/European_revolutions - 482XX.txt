@@ -1,0 +1,222 @@
+#####################
+Scotland insurrection following English independence 
+Irish insurrection following English independence 
+Dutch insurrection following French independence 
+Portuguese/Spanish insurrection following Occitania independence/France which absorbed Occitania
+Creation of Italia by France/Occitania : Etruria becomes hegemon but cedes the Western Alpes 
+Catalan union with Occitania 
+#################
+
+
+country_event = { ##Scotish agitator Walter Scott arrives in England
+
+	id = 48201
+	title = ""
+	desc = ""
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "It could serve our interests ..."
+	money = -50000 
+	relation = { who = SCA value = -150 }
+	set_global_flag = ENL_help_SCO 
+	}
+	
+	option = { 
+	name = "Scotland is only a source of problems for England..."
+	prestige = -15 
+	}
+	
+}
+
+country_event = { ##Scotish agitator Walter Scott arrives in England
+
+	id = 48202
+	title = "EUR2.T"
+	desc = "EUR2.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "It could serve our interests ..."
+	money = -50000 
+	relation = { who = SCA value = -150 }
+	set_global_flag = ENL_help_SCO 
+	}
+	
+	option = { 
+	name = "Scotland is only a source of problems for England..."
+	prestige = -15 
+	}
+	
+}
+
+country_event = { ##Young Scotland revolts 
+
+	id = 48203
+	title = "EUR3.T"
+	desc = "EUR3.D"
+	
+	trigger = { 
+	tag = SCA 
+	owns = 269
+	owns = 267 
+	has_global_flag = ENL_help_SCO  
+	NOT = { has_country_flag = SCO_free }
+	}
+	
+	mean_time_to_happen = { 
+	months = 35 
+	}
+	
+	option = { 
+	name = "How dare they ?!"
+	any_owned = { 
+	limit = { is_core = SCO } 
+	secede_province = SCO 
+		}
+	SCO = { capital = 269 government = democracy }
+	ENL = { country_event = 48204 }
+	
+	any_country = { 
+	limit = { AND = { government = democracy has_country_flag = Anschluss_DUA } } 
+	country_event = 48205
+		}
+	country_event = { id = 48206 days = 6 }
+	}
+}
+	
+country_event = { ##Young Scotland revolts -ENL
+
+	id = 48204
+	title = "EUR4.T"
+	desc = "EUR4.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Scotland will be free from the Northmen !"
+	create_alliance = SCO 
+	relation = { who = SCO value = 200 }
+	diplomatic_influence = { who = SCO value = 50 }
+	ai_chance = { 
+	factor = 100 
+		}
+	}
+	
+	option = { 
+	name = "They are alone on this..."
+	}
+}
+	
+country_event = { ##Standard event for the 'Sister Republics' to join a pending Revolution
+
+	id = 48205
+	title = "EUR5.T"
+	desc = "EUR5.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We will join the fight for Freedom !"
+	create_alliance = SCO
+	ai_chance = { 
+	factor = 80 
+		}
+	}
+	
+	option = { 
+	name = "We have other matters to attend ..."
+	ai_chance = { 
+	factor = 20 
+	modifier = { 
+	factor = 2.5
+	war = yes 
+			}
+		}
+	}
+}
+
+country_event = { ##The Scandinavian Reaction 
+
+	id = 48206
+	title = "EUR6.T"
+	desc = "EUR6.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "The Stuarts will reconquer their throne, alone !"
+	prestige = 25 
+	war = {
+			target = SCO
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+		}
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+	
+	option = { 
+	name = "The Stuarts will reconquer their throne !"
+	prestige = 25 
+	war = {
+			target = SCO
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+		call_ally = yes 
+		}
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+}
+	
+country_event = { ##Scotish agitator Walter Scott and Scandinavian reaction
+
+	id = 48201
+	title = "EUR1.T"
+	desc = "EUR1.D"
+	
+	trigger = { 
+	tag = SCA 
+	owns = 269
+	owns = 267 
+	has_global_flag = glorious_revolution 
+	NOT = { government = democracy }
+	ENL = { exists = yes }
+	ENL = { government = democracy }
+	NOT = { alliance_with = ENL }
+	NOT = { has_country_flag = WScott }
+	}
+	
+	mean_time_to_happen = { 
+	months = 15 
+	}
+	
+	option = { 
+	name = "Banish Scott and his supporters, we don't need such agitators."
+	set_country_flag = WScott
+	ENL = { country_event = 48202 }
+	prestige = 15 
+	}
+	
+	option = { 
+	name = "Well let them agitate, it's not like an independent Scotland is possible."
+	set_country_flag = WScott
+	prestige = -20 
+	any_pop = { limit = { culture = scottish } militancy = 4 consciousness = 5 }
+	any_owned = { limit = { is_core = SCO } add_province_modifier = {
+				name = nationalist_agitation
+				duration = 2000
+			}	
+		}
+	}
+
+}
+
+	

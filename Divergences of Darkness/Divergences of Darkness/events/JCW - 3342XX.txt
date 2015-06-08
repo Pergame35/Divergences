@@ -67,6 +67,7 @@ country_event = {   #Japan is informed of the end of the war
 	option = {
 		name = "Damn the Joseons!"
     prestige = -15
+	relation = { who = KOR value = -200 }
     any_pop = {
 			dominant_issue = {
 				factor = 0.02

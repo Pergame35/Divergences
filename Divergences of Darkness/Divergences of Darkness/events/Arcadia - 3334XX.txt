@@ -1,0 +1,1803 @@
+########## Vinland chain ############
+country_event = {
+
+	id = 333440
+	title = "ARC0.T"
+	desc = "ARC0.D"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Support the unification"
+		ARC = { country_event = 333441 }
+		ai_chance = { 
+		     factor = 100
+         modifier = { 
+			     factor = 0
+			     AND = {
+            ARC = { NOT = { government = democracy } }  
+            ARC = { NOT = { government = hms_government } }
+          }
+			  }
+		}
+	}
+	
+	option = {
+		name = "Demand additional conditions"  
+		ARC = { country_event = 333442 }
+		ai_chance = { 
+			factor = 50      
+      modifier = { 
+			   factor = 1.5 
+			   ARC = { NOT = { political_reform = proportional_representation } }
+			  }    
+      modifier = { 
+			   factor = 1.5 
+			   ARC = { NOT = { political_reform = yes_meeting } }
+			  }  
+      modifier = { 
+			   factor = 1.5 
+			   ARC = { NOT = { political_reform = free_press } }
+			  }  
+      modifier = { 
+			   factor = 1.5 
+			   AND = {
+            ARC = { NOT = { political_reform = non_secret_ballots } }  
+            ARC = { NOT = { political_reform = secret_ballots } }
+         }   
+			  }
+      modifier = { 
+			   factor = 2 
+			   AND = {
+            ARC = { NOT = { political_reform = open_immigration } }  
+            ARC = { NOT = { political_reform = naturalization } }
+         }   
+			  }
+      modifier = { 
+			   factor = 4 
+			   ARC = { NOT = { political_reform = protected  } }
+			  }  
+			}
+		}
+    
+	option = {
+		name = "Oppose the idea of panarcadianism"		
+		ARC = { country_event = 333443 }
+		ai_chance = { 
+			factor = 20
+      modifier = { 
+			     factor = 20
+			     AND = {
+            ARC = { NOT = { government = democracy } }  
+            ARC = { NOT = { government = hms_government } }
+          }
+			  }
+		} 
+	}
+}
+
+country_event = {
+
+	id = 333441
+	title = "ARC1.T"
+	desc = "ARC1.D" 
+	picture = "Celebration"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Hurray for Vinland"
+    prestige = 10
+    add_accepted_culture = vinlander
+    VIN = { all_core = { remove_core = VIN	} }
+    set_country_flag = vinlandic_arcadia 
+    clr_country_flag = vinlandic_arcadia_trial
+		any_pop = {
+			limit = {
+				culture = vinlander
+			}
+			militancy = -2
+      consciousness = 2 
+ 			 ideology = {
+			 	 value = liberal
+				  factor = 0.05
+			 }         
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+ 			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 }     
+			scaled_militancy = {
+					ideology = reactionary
+					factor = 2
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = 2
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = 1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = 2
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = 2
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = 1
+			}  
+		}      
+		ai_chance = { 
+		     factor = 100
+		}
+	}
+} 
+
+country_event = {
+
+	id = 333442
+	title = "ARC2.T"
+	desc = "ARC2.D"     
+	picture = "deliberation"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Bow to their demands"
+    prestige = -20
+    add_accepted_culture = vinlander
+    set_country_flag = vinlandic_arcadia  
+    clr_country_flag = vinlandic_arcadia_trial
+		political_reform = naturalization
+		political_reform = universal_voting    
+		political_reform = population_equal_weight
+		political_reform = secret_ballots  
+		political_reform = free_press    
+		political_reform = yes_meeting   
+		political_reform = proportional_representation
+    political_reform = protected
+		any_pop = {
+			limit = {
+				culture = vinlander
+			}
+			militancy = -2
+      consciousness = 2 
+			 ideology = {
+			 	 value = liberal
+				  factor = 0.05
+			 }          
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.1
+			 }      
+			scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = 3
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = 2
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = 3
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = 3
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = 2
+			}  
+		}  
+    
+		ai_chance = { 
+		     factor = 50
+		}
+	}
+  	option = {
+    name = "Turn them down"
+    prestige = -10
+    political_reform = limited
+		any_pop = {
+			limit = {
+				culture = vinlander
+			}
+			militancy = 4
+      consciousness = 3
+      ideology = {
+			 	 value = separatist
+				  factor = 0.1
+			 }     
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+      ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 }
+			scaled_militancy = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = -1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = -1
+			}  
+		}      
+		ai_chance = { 
+		     factor = 50
+		}
+	}
+}
+
+country_event = {
+
+	id = 333443
+	title = "ARC3.T"
+	desc = "ARC3.D"  
+	picture = "communist_riot"
+
+	is_triggered_only = yes
+	
+	option = {
+    name = "Curse the Northerners!"
+    prestige = -20
+    set_country_flag = vinlandic_refusal  
+		any_pop = {
+			limit = {
+				culture = vinlander
+			}
+      ideology = {
+			 	 value = separatist
+				  factor = 0.1
+			 }
+			militancy = 4
+      consciousness = 3     
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 }      
+			scaled_militancy = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = -1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = -1
+			}  
+		}      
+		ai_chance = { 
+		     factor = 100
+		}
+	}
+}
+################## 7Rep chain #################
+country_event = {
+
+	id = 333444
+	title = "ARC4.T"
+	desc = "ARC4.D"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Support the unification"
+		ARC = { country_event = 333445 }
+		ai_chance = { 
+		     factor = 100
+         modifier = { 
+			     factor = 0
+			     AND = {
+            ARC = { NOT = { government = democracy } }  
+            ARC = { NOT = { government = hms_government } }
+          }
+			  }
+		}
+	}
+	
+	option = {
+		name = "Demand additional conditions"  
+		ARC = { country_event = 333446 }
+		ai_chance = { 
+			factor = 50      
+      modifier = { 
+			   factor = 1.5 
+			   ARC = { NOT = { political_reform = proportional_representation } }
+			  }    
+      modifier = { 
+			   factor = 1.5 
+			   ARC = { NOT = { political_reform = yes_meeting } }
+			  }  
+      modifier = { 
+			   factor = 1.5 
+			   ARC = { NOT = { political_reform = free_press } }
+			  }  
+      modifier = { 
+			   factor = 1.5 
+			   AND = {
+            ARC = { NOT = { political_reform = non_secret_ballots } }  
+            ARC = { NOT = { political_reform = secret_ballots } }
+         }   
+			  }
+      modifier = { 
+			   factor = 2 
+			   AND = {
+            ARC = { NOT = { political_reform = open_immigration } }  
+            ARC = { NOT = { political_reform = naturalization } }
+         }   
+			  }
+      modifier = { 
+			   factor = 4 
+			   ARC = { NOT = { political_reform = protected  } }
+			  }  
+			}
+		}
+    
+	option = {
+		name = "Oppose the idea of panarcadianism"		
+		ARC = { country_event = 333447 }
+		ai_chance = { 
+			factor = 20
+      modifier = { 
+			     factor = 20
+			     AND = {
+            ARC = { NOT = { government = democracy } }  
+            ARC = { NOT = { government = hms_government } }
+          }
+			  }
+		} 
+	}
+}
+
+country_event = {
+
+	id = 333445
+	title = "ARC5.T"
+	desc = "ARC5.D"     
+	picture = "Celebration"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Hurray for New Burgundy"
+    prestige = 10
+    add_accepted_culture = septiman
+    NBG = { all_core = { remove_core = NBG	} }
+    set_country_flag = septiman_arcadia
+    clr_country_flag = septiman_arcadia_trial
+		any_pop = {
+			limit = {
+				culture = septiman
+			}
+			militancy = -2
+      consciousness = 2
+			 ideology = {
+			 	 value = liberal
+				  factor = 0.05
+			 }     
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 } 
+			scaled_militancy = {
+					ideology = reactionary
+					factor = 2
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = 2
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = 1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = 2
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = 2
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = 1
+			}  
+		}      
+		ai_chance = { 
+		     factor = 100
+		}
+	}
+} 
+
+country_event = {
+
+	id = 333446
+	title = "ARC6.T"
+	desc = "ARC6.D"    
+	picture = "deliberation"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Bow to their demands"
+    prestige = -20
+    add_accepted_culture = septiman
+    set_country_flag = septiman_arcadia
+    clr_country_flag = septiman_arcadia_trial
+		political_reform = naturalization
+		political_reform = universal_voting    
+		political_reform = population_equal_weight
+		political_reform = secret_ballots  
+		political_reform = free_press    
+		political_reform = yes_meeting   
+		political_reform = proportional_representation
+    political_reform = protected
+		any_pop = {
+			limit = {
+				culture = septiman
+			} 
+			 ideology = {
+			 	 value = liberal
+				  factor = 0.05
+			 } 
+			militancy = -2
+      consciousness = 2     
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.1
+			 } 
+			scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = 3
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = 2
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = 3
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = 3
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = 2
+			}  
+		}  
+    
+		ai_chance = { 
+		     factor = 50
+		}
+	}
+  	option = {
+    name = "Turn them down"
+    prestige = -10
+    political_reform = limited
+		any_pop = {
+			limit = {
+				culture = septiman
+			}
+			 ideology = {
+			 	 value = separatist
+				  factor = 0.1
+			 } 
+			militancy = 4
+      consciousness = 3     
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 } 
+			scaled_militancy = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = -1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = -1
+			}  
+		}      
+		ai_chance = { 
+		     factor = 50
+		}
+	}
+}
+
+country_event = {
+
+	id = 333447
+	title = "ARC7.T"
+	desc = "ARC7.D" 
+	picture = "communist_riot"
+
+	is_triggered_only = yes
+	
+	option = {
+    name = "Curse the Septimans!" 
+    set_country_flag = septiman_refusal 
+    prestige = -20
+		any_pop = {
+			limit = {
+				culture = septiman
+			}
+			militancy = 4
+      consciousness = 3
+			 ideology = {
+			 	 value = separatist
+				  factor = 0.1
+			 }      
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			} 
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 } 
+			scaled_militancy = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = -1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = -1
+			}  
+		}      
+		ai_chance = { 
+		     factor = 100
+		}
+	}
+}
+########## Plantagenia chain ###############  
+country_event = {
+
+	id = 333448
+	title = "ARC8.T"
+	desc = "ARC8.D" 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Support the unification"
+		ARC = { country_event = 333449 }
+		ai_chance = { 
+		     factor = 100
+         modifier = { 
+			     factor = 0
+			     AND = {
+            ARC = { NOT = { government = democracy } }  
+            ARC = { NOT = { government = hms_government } }
+          }
+			  }
+		}
+	}
+	
+	option = {
+		name = "Demand additional conditions"  
+		ARC = { country_event = 333450 }
+		ai_chance = { 
+			factor = 50      
+      modifier = { 
+			   factor = 1.5 
+			   ARC = { NOT = { political_reform = proportional_representation } }
+			  }    
+      modifier = { 
+			   factor = 1.5 
+			   ARC = { NOT = { political_reform = yes_meeting } }
+			  }  
+      modifier = { 
+			   factor = 1.5 
+			   ARC = { NOT = { political_reform = free_press } }
+			  }  
+      modifier = { 
+			   factor = 1.5 
+			   AND = {
+            ARC = { NOT = { political_reform = non_secret_ballots } }  
+            ARC = { NOT = { political_reform = secret_ballots } }
+         }   
+			  }
+      modifier = { 
+			   factor = 2 
+			   AND = {
+            ARC = { NOT = { political_reform = open_immigration } }  
+            ARC = { NOT = { political_reform = naturalization } }
+         }   
+			  }
+      modifier = { 
+			   factor = 4 
+			   ARC = { NOT = { political_reform = protected  } }
+			  }  
+			}
+		}
+    
+	option = {
+		name = "Oppose the idea of panarcadianism"		
+		ARC = { country_event = 333451 }
+		ai_chance = { 
+			factor = 20
+      modifier = { 
+			     factor = 20
+			     AND = {
+            ARC = { NOT = { government = democracy } }  
+            ARC = { NOT = { government = hms_government } }
+          }
+			  }
+		} 
+	}
+}
+
+country_event = {
+
+	id = 333449
+	title = "ARC9.T"
+	desc = "ARC9.D"      
+	picture = "Celebration"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Hurray for Plantagenia"
+    prestige = 10
+    add_accepted_culture = plantagenian
+    PLA = { all_core = { remove_core = PLA	} }
+    set_country_flag = plantagenian_arcadia 
+    clr_country_flag = plantagenian_arcadia_trial
+		any_pop = {
+			limit = {
+				culture = plantagenian
+			}
+			militancy = -2
+      consciousness = 2
+			 ideology = {
+			 	 value = liberal
+				  factor = 0.05
+			 }      
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 } 
+			scaled_militancy = {
+					ideology = reactionary
+					factor = 2
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = 2
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = 1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = 2
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = 2
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = 1
+			}  
+		}      
+		ai_chance = { 
+		     factor = 100
+		}
+	}
+} 
+
+country_event = {
+
+	id = 333450
+	title = "ARC10.T"
+	desc = "ARC10.D" 
+	picture = "deliberation"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Bow to their demands"
+    prestige = -20
+    add_accepted_culture = plantagenian
+    set_country_flag = plantagenian_arcadia 
+    clr_country_flag = plantagenian_arcadia_trial
+		political_reform = naturalization
+		political_reform = universal_voting    
+		political_reform = population_equal_weight
+		political_reform = secret_ballots  
+		political_reform = free_press    
+		political_reform = yes_meeting   
+		political_reform = proportional_representation
+    political_reform = protected
+		any_pop = {
+			limit = {
+				culture = plantagenian
+			}  
+			 ideology = {
+			 	 value = liberal
+				  factor = 0.05
+			 } 
+			militancy = -2
+      consciousness = 2     
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			} 
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.1
+			 } 
+			scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = 3
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = 2
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = 3
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = 3
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = 2
+			}  
+		}  
+    
+		ai_chance = { 
+		     factor = 50
+		}
+	}
+  	option = {
+    name = "Turn them down"
+    prestige = -10
+    political_reform = limited
+		any_pop = {
+			limit = {
+				culture = plantagenian
+			} 
+			 ideology = {
+			 	 value = separatist
+				  factor = 0.1
+			 } 
+			militancy = 4
+      consciousness = 3     
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 } 
+			scaled_militancy = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = -1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = -1
+			}  
+		}      
+		ai_chance = { 
+		     factor = 50
+		}
+	}
+}
+
+country_event = {
+
+	id = 333451
+	title = "ARC11.T"
+	desc = "ARC11.D"    
+	picture = "communist_riot"
+
+	is_triggered_only = yes
+	
+	option = {
+    name = "Curse the Southerners!"
+    set_country_flag = plantagenian_refusal 
+    prestige = -20
+		any_pop = {
+			limit = {
+				culture = plantagenian
+			}
+			militancy = 4
+      consciousness = 3
+			 ideology = {
+			 	 value = separatist
+				  factor = 0.05
+			 }      
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}     
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 } 
+			scaled_militancy = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = -1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = -1
+			}  
+		}      
+		ai_chance = { 
+		     factor = 100
+		}
+	}
+}
+
+######################## Flavor event - formation
+
+country_event = {
+
+	id = 333452
+	title = "ARC12.T"
+	desc = "ARC12.D"   
+
+	is_triggered_only = yes
+	
+	major = yes
+	
+
+	option = {  
+      name = "A new star arises!"
+		  prestige = 5
+	}
+}
+
+######################## Capital choosing event
+
+country_event = {
+
+	id = 333453
+	title = "ARC13.T"
+	desc = "ARC13.D"       
+	picture = "Capitol"
+
+	is_triggered_only = yes
+	
+
+	option = {        
+      name = "Cap Valois is the perfect spot"
+      treasury = -50000
+		capital_scope = {
+      any_pop = {
+			 militancy = 2
+			 consciousness = 2
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.1
+			 }
+		  }
+     }
+		any_pop = {
+			 ideology = {
+			 	 value = liberal
+				  factor = 0.05
+			 } 
+			scaled_militancy = {
+					ideology = liberal
+					factor = -1
+			} 
+			scaled_consciousness = {
+					ideology = liberal
+					factor = 1
+			}
+    }                
+		    capital = 219
+				prestige = 30	
+		    219 = {
+				    life_rating = 5
+				    change_province_name = "Tripolis"
+				    state_scope = {
+					     change_region_name = "Tripolis"
+				    }            
+			   }     
+		    222 = {
+				    life_rating = 2
+			   }
+		    ai_chance = { 
+		       factor = 100
+		    }          
+	}
+  option = {        
+      name = "The capital shall be the heart of the country"
+            treasury = -50000
+		capital_scope = {
+      any_pop = {
+			 militancy = 2
+			 consciousness = 2
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.1
+			 }
+		  }
+     }
+		any_pop = {
+			 ideology = {
+			 	 value = liberal
+				  factor = 0.1
+			 } 
+			scaled_militancy = {
+					ideology = liberal
+					factor = -2
+			} 
+			scaled_consciousness = {
+					ideology = liberal
+					factor = 2
+			}
+    } 
+		    capital = 178
+				prestige = 30	
+		    178 = {
+				    life_rating = 5
+				    change_province_name = "Tripolis"
+				    state_scope = {
+					     change_region_name = "Tripolis"
+				    }            
+			   } 
+		    ai_chance = { 
+		       factor = 30
+		    }           
+	}
+  option = {        
+      name = "We already have a capital..."
+     capital_scope = {
+      any_pop = {
+			 militancy = -2
+			 consciousness = -2
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 }
+		  }
+     }
+        prestige = 20
+        capital_scope = { life_rating = 5 }
+		    ai_chance = { 
+		       factor = 30
+		    }
+		any_pop = {
+			limit = {
+				is_primary_culture = no
+			}
+			militancy = 1
+      consciousness = 2 
+			scaled_militancy = {
+					ideology = liberal
+					factor = 2
+			} 
+			scaled_consciousness = {
+					ideology = liberal
+					factor = 3
+			}          
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			} 
+          
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 }
+			scaled_militancy = {
+					ideology = liberal
+					factor = 2
+			} 
+			scaled_consciousness = {
+					ideology = liberal
+					factor = 3
+			}          
+			scaled_militancy = {
+					ideology = reactionary
+					factor = -1
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = -1
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = -1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = -1
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = -1
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = -1
+			}  
+		}                         
+	}  
+}
+
+########################  The Continental Congress
+
+country_event = {
+
+	id = 333454
+	title = "ARC14.T"
+	desc = "ARC14.D"      
+	picture = "chartists"
+	       
+  is_triggered_only = yes
+	
+	
+
+	option = {
+		name = "The future is in their hands"
+		money = -20000
+    set_country_flag = arc_continental_congress_2	
+	}
+}
+
+country_event = {
+
+	id = 333455
+	title = "ARC15.T"
+	desc = "ARC15.D"     
+	picture = "chartists"
+	 
+
+	trigger = {
+		 tag = ARC        
+   	 war = no
+     has_country_flag = arc_continental_congress_2	
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "Fingers crossed!"
+    clr_country_flag = arc_continental_congress_2
+		random_list = {
+			75 = { country_event = 333456 }
+			25 = { country_event = 333457 }
+		}
+	}
+}
+
+country_event = {
+
+	id = 333456
+
+	title = "ARC16.T"
+	desc = "ARC16.D"
+	
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "The dream lives on!"
+    prestige = 25
+      set_country_flag = plantagenian_arcadia
+      set_country_flag = septiman_arcadia
+      set_country_flag = vinlandic_arcadia 
+        clr_country_flag = vinlandic_refusal
+        clr_country_flag = septiman_refusal 
+        clr_country_flag = plantagenian_refusal 
+        clr_country_flag = vinlandic_arcadia_trial
+        clr_country_flag = septiman_arcadia_trial
+        clr_country_flag = plantagenian_arcadia_trial 
+		any_pop = {
+    	  ideology = {
+			 	 value = liberal
+				  factor = 0.05
+			 }  
+			scaled_consciousness = {
+					ideology = liberal
+					factor = 2
+				}	
+     		scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}        
+		}       		
+	}
+}
+
+country_event = {
+
+	id = 333457
+
+	title = "ARC17.T"
+	desc = "ARC17.D"
+	
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "Well...damn."
+    prestige = -25
+		any_pop = {
+			limit = {
+				is_primary_culture = no
+			}
+			militancy = 1
+      consciousness = 2
+      ideology = {
+			 	 value = separatist
+				  factor = 0.05
+			 }   
+			scaled_militancy = {
+					ideology = liberal
+					factor = 2
+			} 
+			scaled_consciousness = {
+					ideology = liberal
+					factor = 3
+			}          
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			} 
+          
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 }
+			scaled_militancy = {
+					ideology = liberal
+					factor = 2
+			} 
+			scaled_consciousness = {
+					ideology = liberal
+					factor = 3
+			} 
+		}         		
+	}
+}
+
+################### The annexation event AKA what you don't do yourself
+
+country_event = {
+	id = 333458
+	title = "EVTNAME11101"
+	desc = "EVTDESC11101"
+	picture = "Celebration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA11101"
+		any_country = {
+			limit = {
+				OR = {
+					is_sphere_leader_of = THIS
+					is_our_vassal = THIS
+				}
+				NOT = { tag = FROM }
+			}
+			relation = {
+				who = FROM
+				value = -25
+			}
+			casus_belli = {
+				target = FROM
+				type = humiliate
+				months = 24
+			}
+			casus_belli = {
+				target = FROM
+				type = free_peoples
+				months = 24
+			}
+		}
+		FROM = { inherit = THIS }	
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				is_greater_power = yes
+				NOT = { has_country_flag = wants_to_unify }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					alliance_with = FROM
+					relation = { who = FROM value = 100 }
+				}
+			}
+			modifier = {
+				factor = 0.1
+				government = fascist_dictatorship
+				FROM = { government = proletarian_dictatorship }
+			}
+			modifier = {
+				factor = 0.1
+				government = proletarian_dictatorship
+				FROM = { government = fascist_dictatorship }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11101"
+		clr_country_flag = wants_to_unify
+		prestige = 1
+		leave_alliance = FROM
+		relation = {
+			who = FROM
+			value = -200
+		}
+		FROM = {
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+		}
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			militancy = 3
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_country_flag = wants_to_unify
+			}
+			modifier = {
+				factor = 0.75
+				is_secondary_power = no
+			}
+			modifier = {
+				factor = 0.75
+				part_of_sphere = no
+			}
+			modifier = {
+				factor = 1.5
+				truce_with = FROM
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					relation = { who = FROM value = 0 }
+				}
+			}
+			modifier = {
+				factor = 0.25
+				in_sphere = FROM
+			} 
+			modifier = {
+				factor = 0.25
+				government = fascist_dictatorship
+				FROM = { government = fascist_dictatorship }
+			}
+			modifier = {
+				factor = 0.25
+				government = proletarian_dictatorship
+				FROM = { government = proletarian_dictatorship }
+			}
+			modifier = {
+				factor = 0.25
+				OR = {
+					government = democracy
+					government = prussian_constitutionalism
+					government = hms_government
+				}
+				FROM = {
+					OR = {
+						government = democracy
+						government = prussian_constitutionalism
+						government = hms_government
+					}
+				}
+			}
+		}
+	}
+}
+
+########################### Bonus chain for Plantagenia and Lusitanians
+
+country_event = {
+
+	id = 333459
+	title = "ARC19.T"
+	desc = "ARC19.D" 
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Support the unification"
+		ARC = { country_event = 333460 }
+		ai_chance = { 
+		     factor = 100
+         modifier = { 
+			     factor = 0
+			     AND = {
+            ARC = { NOT = { government = democracy } }  
+            ARC = { NOT = { government = hms_government } }
+          }
+			  }
+		}
+	}
+	
+	option = {
+		name = "Demand additional conditions"  
+		ARC = { country_event = 333461 }
+		ai_chance = { 
+			factor = 50      
+      modifier = { 
+			   factor = 1.5 
+			   ARC = { NOT = { political_reform = proportional_representation } }
+			  }    
+      modifier = { 
+			   factor = 1.5 
+			   ARC = { NOT = { political_reform = yes_meeting } }
+			  }  
+      modifier = { 
+			   factor = 1.5 
+			   ARC = { NOT = { political_reform = free_press } }
+			  }  
+      modifier = { 
+			   factor = 1.5 
+			   AND = {
+            ARC = { NOT = { political_reform = non_secret_ballots } }  
+            ARC = { NOT = { political_reform = secret_ballots } }
+         }   
+			  }
+      modifier = { 
+			   factor = 2 
+			   AND = {
+            ARC = { NOT = { political_reform = open_immigration } }  
+            ARC = { NOT = { political_reform = naturalization } }
+         }   
+			  }
+      modifier = { 
+			   factor = 4 
+			   ARC = { NOT = { political_reform = protected  } }
+			  }  
+			}
+		}
+    
+	option = {
+		name = "Oppose the idea of panarcadianism"		
+		ARC = { country_event = 333462 }
+		ai_chance = { 
+			factor = 20
+      modifier = { 
+			     factor = 20
+			     AND = {
+            ARC = { NOT = { government = democracy } }  
+            ARC = { NOT = { government = hms_government } }
+          }
+			  }
+		} 
+	}
+}
+
+country_event = {
+
+	id = 333460
+	title = "ARC20.T"
+	desc = "ARC20.D"      
+	picture = "Celebration"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Hurray for Lusitania"
+    prestige = 10
+    add_accepted_culture = lusitanian
+    LST = { all_core = { remove_core = LST	} }
+    set_country_flag = lusitanian_arcadia 
+    clr_country_flag = lusitanian_arcadia_trial
+		any_pop = {
+			limit = {
+				culture = lusitanian
+			}
+			militancy = -2
+      consciousness = 2
+			 ideology = {
+			 	 value = liberal
+				  factor = 0.05
+			 }      
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 } 
+			scaled_militancy = {
+					ideology = reactionary
+					factor = 2
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = 2
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = 1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = 2
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = 2
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = 1
+			}  
+		}      
+		ai_chance = { 
+		     factor = 100
+		}
+	}
+} 
+
+country_event = {
+
+	id = 333461
+	title = "ARC21.T"
+	desc = "ARC21.D" 
+	picture = "deliberation"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Bow to their demands"
+    prestige = -20
+    add_accepted_culture = lusitanian
+    set_country_flag = lusitanian_arcadia 
+    clr_country_flag = lusitanian_arcadia_trial
+		political_reform = naturalization
+		political_reform = universal_voting    
+		political_reform = population_equal_weight
+		political_reform = secret_ballots  
+		political_reform = free_press    
+		political_reform = yes_meeting   
+		political_reform = proportional_representation
+    political_reform = protected
+		any_pop = {
+			limit = {
+				culture = lusitanian
+			}  
+			 ideology = {
+			 	 value = liberal
+				  factor = 0.05
+			 } 
+			militancy = -2
+      consciousness = 2     
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			} 
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.1
+			 } 
+			scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = 3
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = 2
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = 3
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = 3
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = 2
+			}  
+		}  
+    
+		ai_chance = { 
+		     factor = 50
+		}
+	}
+  	option = {
+    name = "Turn them down"
+    prestige = -10
+    political_reform = limited
+		any_pop = {
+			limit = {
+				culture = lusitanian
+			} 
+			 ideology = {
+			 	 value = separatist
+				  factor = 0.1
+			 } 
+			militancy = 4
+      consciousness = 3     
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 } 
+			scaled_militancy = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = -1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = -1
+			}  
+		}      
+		ai_chance = { 
+		     factor = 50
+		}
+	}
+}
+
+country_event = {
+
+	id = 333462
+	title = "ARC22.T"
+	desc = "ARC22.D"    
+	picture = "communist_riot"
+
+	is_triggered_only = yes
+	
+	option = {
+    name = "Curse the Lusitanians!"
+    set_country_flag = lusitanian_refusal 
+    prestige = -20
+		any_pop = {
+			limit = {
+				culture = lusitanian
+			}
+			militancy = 4
+      consciousness = 3
+			 ideology = {
+			 	 value = separatist
+				  factor = 0.05
+			 }      
+		}    
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}     
+			 ideology = {
+			 	 value = reactionary
+				  factor = 0.05
+			 } 
+			scaled_militancy = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = -1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = -2
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = -2
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = -1
+			}  
+		}      
+		ai_chance = { 
+		     factor = 100
+		}
+	}
+}
+
+########################

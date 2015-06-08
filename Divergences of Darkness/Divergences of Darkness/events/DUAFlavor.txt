@@ -120,7 +120,7 @@ country_event = {
 		set_country_flag = french_integration
 		set_country_flag = choice_pokemon
 		ai_chance = { 
-		factor = 0
+		factor = 60
 		}
 	}
 	
@@ -138,7 +138,7 @@ country_event = {
 		set_country_flag = choice_pokemon
 		country_event = 650240 
 		ai_chance = { 
-			factor = 100
+			factor = 40
 		}
 	}
 }

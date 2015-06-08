@@ -595,4 +595,24 @@ political_decisions = {
 	}
 	
 	}
+	
+	integrate_kita = { 
+	picture = map_alaska
+	potential = { 
+	tag = DNG 
+	KKN = { exists = yes }
+	NOT = { has_country_flag = kaiga }
+	}
+	
+	allow = { 
+	is_greater_power = yes 
+	KKN = { in_sphere = THIS }
+	}
+	
+	effect = { 
+	inherit = KKN 
+	add_accepted_culture = kaiganese 
+	set_country_flag = kaiga
+		}
+	}
 }

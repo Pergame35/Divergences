@@ -14,9 +14,10 @@ political_decisions = {
 					OR = {
 						controlled_by = THIS
 						controller = { alliance_with = THIS }
+						controller = { has_country_flag = anschluss_DUA }
 						empty = yes
 						province_id = 419
-						owner = {
+						controller = {
 							NOT = { war_with = THIS }
 						}
 					}
@@ -36,7 +37,7 @@ political_decisions = {
 	tag = FRA 
 	government = democracy 
 	is_greater_power = yes 
-	NOT = { culture = provencal }
+	NOT = { has_country_flag = occitania_reclaime }
 		}
 		
 	allow = { 
@@ -46,7 +47,8 @@ political_decisions = {
 	
 	effect = { 
 	inherit = OCC
-	add_accepted_culture = provencal 
+	add_accepted_culture = provencal
+	set_country_flag = occitania_reclaime
 		}
 	
 	}
@@ -59,6 +61,7 @@ political_decisions = {
 	is_greater_power = yes 
 	NOT = { culture = provencal }
 	NOT = { OCC = { exists = yes } }
+	NOT = { has_country_flag = occitania_reclaime }
 		}
 		
 	allow = { 
@@ -68,6 +71,45 @@ political_decisions = {
 	effect = { 
 	OCC = { all_core = { add_core = THIS } }
 	add_accepted_culture = provencal 
+	set_country_flag = occitania_reclaime
+		}
+	
+	}
+	
+	savoy_cores_OCC = { 
+	potential = { 
+	OR = { tag = OCC
+	AND = { tag = FRA 
+			has_country_flag = occitania_reclaime
+			}
+		}
+	NOT = { has_global_flag = savoy_cores }
+	}
+	
+	allow = { 
+	owns = 466 
+	}
+	
+	effect = { 
+	SAR_466 = { remove_core = ITA }
+	set_global_flag = savoy_cores
+		}
+	
+	}
+	
+	savoy_cores_ITA = { 
+	potential = { 
+	tag = ITA
+	NOT = { has_global_flag = savoy_cores }
+	}
+	
+	allow = { 
+	owns = 466 
+	}
+	
+	effect = { 
+	SAR_466 = { remove_core = OCC remove_core = FRA }
+	set_global_flag = savoy_cores
 		}
 	
 	}
