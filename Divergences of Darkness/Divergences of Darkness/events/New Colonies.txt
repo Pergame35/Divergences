@@ -71,3 +71,371 @@ province_event = {
 		}
 	}
 }
+
+## Indonesian colony spread
+province_event = {
+	id = 97130
+	title = "$STATENAME$ Colonial Incorporation"
+	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Indonesian colony"
+	
+	trigger = {
+		OR = {
+			region = BAL_1438 #Bali
+			region = NET_1398 #Sumatra
+			region = NET_1399 #Palembang
+			region = ATJ_1405 #Atjeh
+			region = NET_1426 #Lanfang
+			region = NET_1423 #Borneo
+			region = SPA_1463 #Mindanao
+			region = BRU_1394 #Brunei 
+			region = ENG_1386 #Malacca
+			region = ENG_1392 #Pattani
+		}
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = IND
+		}
+		owner = {
+			civilized = yes
+			NOT = { is_culture_group = southeast_asian }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1413 }
+				IND = { exists = no }
+			}
+			IND = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+		NOT = {
+			is_core = IND
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = IND }
+				}
+				add_core = IND
+				any_pop = { militancy = -3 }
+				add_province_modifier = {
+					name = colonial_exploitation
+					duration = 1095
+				}
+			}
+		}
+		IND = { add_accepted_culture = malay }
+	}
+}
+
+province_event = {
+	id = 97131
+	title = "$STATENAME$ Colonial Incorporation"
+	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Indonesian colony"
+	
+	trigger = {
+		OR = {
+			region = BAL_1446 #Timor
+			region = NET_1449 #Moluccas
+			region = NET_1430 #Makassar
+			region = NET_1433 #Menado
+		}
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = IND
+		}
+		owner = {
+			civilized = yes
+			NOT = { is_culture_group = southeast_asian }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1413 }
+				IND = { exists = no }
+			}
+			IND = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+		NOT = {
+			is_core = IND
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = IND }
+				}
+				add_core = IND
+				any_pop = { militancy = -3 }
+				add_province_modifier = {
+					name = colonial_exploitation
+					duration = 1095
+				}
+			}
+		}
+		IND = { add_accepted_culture = moluccan }
+	}
+}
+
+province_event = {
+	id = 97132
+	title = "$STATENAME$ Colonial Incorporation"
+	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Indonesian colony"
+	
+	trigger = {
+		OR = {
+			region = NET_1451 #West New Guinea
+			region = AST_2529 #Southeast New Guinea
+			region = GER_2531 #Northeast New Guinea
+		}
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = IND
+		}
+		owner = {
+			civilized = yes
+			NOT = { is_culture_group = southeast_asian }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1413 }
+				IND = { exists = no }
+			}
+			IND = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+		NOT = {
+			is_core = IND
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = IND }
+				}
+				add_core = IND
+				any_pop = { militancy = -3 }
+				add_province_modifier = {
+					name = colonial_exploitation
+					duration = 1095
+				}
+			}
+		}
+		IND = { add_accepted_culture = melanesian }
+	}
+}
+
+##Christiania spread 
+
+## Indonesian colony spread
+province_event = {
+	id = 97300
+	title = "$STATENAME$ Colonial Incorporation"
+	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Christiania colony"
+	
+	trigger = {
+		OR = {
+			region = BAL_1438 #Bali
+			region = NET_1398 #Sumatra
+			region = NET_1399 #Palembang
+			region = ATJ_1405 #Atjeh
+			region = NET_1426 #Lanfang
+			region = NET_1423 #Borneo
+			region = SPA_1463 #Mindanao
+			region = BRU_1394 #Brunei 
+			region = ENG_1386 #Malacca
+			region = ENG_1392 #Pattani
+		}
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = CHR
+		}
+		owner = {
+			civilized = yes
+			NOT = { is_culture_group = southeast_asian }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1463 }
+				CHR = { exists = no }
+			}
+			CHR = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+		NOT = {
+			is_core = CHR
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = CHR }
+				}
+				add_core = CHR
+				any_pop = { militancy = -3 }
+				add_province_modifier = {
+					name = colonial_exploitation
+					duration = 1095
+				}
+			}
+		}
+		CHR = { add_accepted_culture = malay }
+	}
+}
+
+province_event = {
+	id = 97131
+	title = "EVTNAME98800"
+	desc = "EVTDESC97130"
+	
+	trigger = {
+		OR = {
+			region = BAL_1446 #Timor
+			region = NET_1449 #Moluccas
+			region = NET_1430 #Makassar
+			region = NET_1433 #Menado
+		}
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = CHR
+		}
+		owner = {
+			civilized = yes
+			NOT = { is_culture_group = southeast_asian }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1463 }
+				CHR = { exists = no }
+			}
+			CHR = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+		NOT = {
+			is_core = CHR
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = CHR }
+				}
+				add_core = CHR
+				any_pop = { militancy = -3 }
+				add_province_modifier = {
+					name = colonial_exploitation
+					duration = 1095
+				}
+			}
+		}
+		CHR = { add_accepted_culture = moluccan }
+	}
+}
+
+province_event = {
+	id = 97132
+	title = "EVTNAME98800"
+	desc = "EVTDESC97130"
+	
+	trigger = {
+		OR = {
+			region = NET_1451 #West New Guinea
+			region = AST_2529 #Southeast New Guinea
+			region = GER_2531 #Northeast New Guinea
+		}
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = CHR
+		}
+		owner = {
+			civilized = yes
+			NOT = { is_culture_group = southeast_asian }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1463 }
+				CHR = { exists = no }
+			}
+			CHR = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+		NOT = {
+			is_core = CHR
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = CHR }
+				}
+				add_core = CHR
+				any_pop = { militancy = -3 }
+				add_province_modifier = {
+					name = colonial_exploitation
+					duration = 1095
+				}
+			}
+		}
+		CHR = { add_accepted_culture = melanesian }
+	}
+}

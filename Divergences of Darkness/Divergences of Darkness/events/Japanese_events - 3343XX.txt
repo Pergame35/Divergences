@@ -429,7 +429,7 @@ country_event = {
 	tag = JAP
 	has_global_flag = korea_status_resolved
 	KOR = { exists = yes }
-	NOT = { year = 1840 }
+	NOT = { year = 1845 }
 	NOT = { has_country_flag = kita_korea }
 	owns = 3 
 	KKN = { exists = no }

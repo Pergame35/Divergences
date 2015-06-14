@@ -397,7 +397,7 @@ country_event = {
 	option =  { 
 	name = "Send an ultimatum to Budapest"
 	prestige = 10 
-	HUN { country_event = 1400114 }
+	HUN = { country_event = 1400114 }
 	}
 }
 

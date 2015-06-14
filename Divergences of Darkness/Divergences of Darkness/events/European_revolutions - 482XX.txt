@@ -1,10 +1,10 @@
 #####################
-Scotland insurrection following English independence 
-Irish insurrection following English independence 
-Dutch insurrection following French independence 
-Portuguese/Spanish insurrection following Occitania independence/France which absorbed Occitania
-Creation of Italia by France/Occitania : Etruria becomes hegemon but cedes the Western Alpes 
-Catalan union with Occitania 
+#Scotland insurrection following English independence 
+#Irish insurrection following English independence 
+#Dutch insurrection following French independence 
+#Portuguese/Spanish insurrection following Occitania independence/France which absorbed Occitania
+#Creation of Italia by France/Occitania : Etruria becomes hegemon but cedes the Western Alpes 
+#Catalan union with Occitania 
 #################
 
 
@@ -147,7 +147,7 @@ country_event = { ##The Scandinavian Reaction
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "The Stuarts will reconquer their throne, alone !"
+	name = "Scandinavia stands alone !"
 	prestige = 25 
 	war = {
 			target = SCO
@@ -161,8 +161,8 @@ country_event = { ##The Scandinavian Reaction
 	}
 	
 	option = { 
-	name = "The Stuarts will reconquer their throne !"
-	prestige = 25 
+	name = "The Stuarts will reconquer their throne with the help of their allies !"
+	prestige = -25 
 	war = {
 			target = SCO
 			attacker_goal = {

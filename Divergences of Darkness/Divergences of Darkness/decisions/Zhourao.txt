@@ -1,5 +1,6 @@
 political_decisions = { 
 	austral_destiny = { 
+	picture = zuharra
 		potential = { 
 		tag = GAN 
 		rank = 20 
@@ -38,6 +39,10 @@ political_decisions = {
 			AST_2534 = {
 				add_core = GAN
 			}
+			TUI = { all_core = { add_core = THIS } 
+			}
+			LFG = { all_core = { add_core = THIS } 
+			}
 		}
 	ai_will_do = {
 				factor = 1
@@ -45,6 +50,7 @@ political_decisions = {
 	}
 	
 	accept_aborigine = { 
+	picture = aborigine
 		potential = { 
 		tag = GAN
 		NOT = { has_country_flag = assimilate_tributaries } 
@@ -123,6 +129,7 @@ political_decisions = {
 		tag = GAN
 		NOT = { has_country_flag = assimilate_tributaries } 
 		NOT = { has_country_flag = aborigine_acc } 
+		rank = 20 
 		}
 		
 		allow = { 
@@ -143,17 +150,12 @@ political_decisions = {
 					duration = -1
 				}
 			}
-			random_owned = {
-				limit = {
-					YOL = { exists = no }
-				}
-				YOL = { all_core = { remove_core = YOL } }
-			}
-			random_owned = {
-				limit = {
-					NOO = { exists = no }
-				}
-				NOO = { all_core = { remove_core = NOO } }
+		}
+		ai_will_do = { 
+		factor = 1 
+		modifier = { 
+		factor = 0 
+		NOT = { government = absolute_monarchy }
 			}
 		}
 	}

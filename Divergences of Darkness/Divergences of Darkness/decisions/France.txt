@@ -47,6 +47,7 @@ political_decisions = {
 	
 	effect = { 
 	inherit = OCC
+	OCC = { all_core = { add_core = THIS }}
 	add_accepted_culture = provencal
 	set_country_flag = occitania_reclaime
 		}
@@ -112,5 +113,138 @@ political_decisions = {
 	set_global_flag = savoy_cores
 		}
 	
+	}
+	
+	integrating_provencal = { 
+	potential = {
+	NOT = { has_country_flag = Paris_congress }
+	NOT = { has_country_flag = provencal_acc }
+	NOT = { has_country_flag = DUA_schooling }
+	tag = DUA 
+	OR = { has_country_flag = Anglois_accepted 
+	has_global_flag = french_int }
+	}
+	
+	allow = { 
+	OCC = { all_core = { owned_by = THIS } }
+	nationalism_n_imperialism = 1 
+	}
+	
+	effect = { 
+	set_country_flag = provencal_acc
+	add_accepted_culture = provencal 
+	}
+	
+	}
+	
+	integrating_irish = { 
+	potential = {
+	NOT = { has_country_flag = Paris_congress }
+	NOT = { has_country_flag = irish_acc }
+	NOT = { has_country_flag = DUA_schooling }
+	tag = DUA 
+	OR = { has_country_flag = Anglois_accepted 
+	has_global_flag = english_int }
+	}
+	
+	allow = { 
+	IRE = { all_core = { owned_by = THIS } }
+	nationalism_n_imperialism = 1 
+	}
+	
+	effect = { 
+	set_country_flag = irish_acc
+	add_accepted_culture = irish 
+		}
+	
+	}
+	
+	integrate_scotland = { 
+	potential = {
+	tag = DUA 
+	NOT = { has_country_flag = Paris_congress }
+	NOT = { has_country_flag = scotland_acc }
+	has_global_flag = english_int
+	}
+	
+	allow = { 
+	SCO = { all_core = { owned_by = THIS } }
+	}
+	
+	effect = { 
+	set_country_flag = scotland_acc 
+	SCO = { all_core = { add_core = THIS } }
+	}
+	
+	}
+	
+	integrating_scottish = { 
+	potential = {
+	NOT = { has_country_flag = Paris_congress }
+	NOT = { has_country_flag = scottish_acc }
+	NOT = { has_country_flag = DUA_schooling }
+	tag = DUA 
+	has_country_flag = scotland_acc
+	}
+	
+	allow = { 
+	SCO = { all_core = { owned_by = THIS } }
+	nationalism_n_imperialism = 1 
+	}
+	
+	effect = { 
+	set_country_flag = scottish_acc
+	add_accepted_culture = scottish 
+		}
+	
+	}
+	
+	integrating_basque = { 
+	potential = {
+	NOT = { has_country_flag = Paris_congress }
+	NOT = { has_country_flag = basque_acc }
+	NOT = { has_country_flag = DUA_schooling }
+	tag = DUA 
+	has_global_flag = end_bourbon
+	}
+	
+	allow = { 
+	NAV = { all_core = { owned_by = THIS } }
+	nationalism_n_imperialism = 1 
+	}
+	
+	effect = { 
+	set_country_flag = basque_acc
+	add_accepted_culture = basque 
+		}
+	}
+	
+	anglois_language_schooling = {
+	
+		potential = {
+			tag = DUA
+			OR = { has_global_flag = english_int has_global_flag = french_int has_country_flag = Anglois_accepted }
+			NOT = {
+				has_country_flag = enacted_anglois_schooling
+				education = elite
+			}
+		}
+		
+		allow = {
+			war = no
+			invention = biased_multiculturalism
+			invention = social_darwinism
+		}
+		
+		effect = { 
+		set_country_flag = enacted_anglois_schooling
+		random_owned = {
+				limit = {
+					owner = { education = church }
+				}
+				owner = { social_reform = public }
+			}
+		country_event = 650330
+		}
 	}
 }

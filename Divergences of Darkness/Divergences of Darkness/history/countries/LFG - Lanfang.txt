@@ -5,21 +5,23 @@ culture = malay
 religion = mahayana
 government = democracy
 plurality = 0.0
-nationalvalue = nv_tradition
+nationalvalue = nv_order
 literacy = 0.14
+
+
 
 # Political reforms
 slavery = no_slavery
-upper_house_composition = party_appointed
-vote_franschise = landed_voting
+upper_house_composition = appointed
+vote_franschise = none_voting
 public_meetings = yes_meeting
 press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = underground_parties
-minorities_reform = limited
-immigration_policy = nobody_gets_out
-conscription=mandatory_service
+minorities_reform = oppression
+immigration_policy = quota_immigration
+conscription=two_year_draft
 pollution=no_controls
 child_labor = child_labor_legal
 arts_endowment=no_endowment
@@ -32,34 +34,31 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
 
-ruling_party = AAA_reactionary_1
+ruling_party = AAA_conservative_3
 upper_house = {
 	fascist = 0
 	liberal = 10
-	conservative = 0
-	reactionary = 100
+	conservative = 75
+	reactionary = 15
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
 
-# Level_2
 # Technologies
-early_classical_theory_and_critique = 1
-late_enlightenment_philosophy = 1
-enlightenment_thought = 1
+post_napoleonic_thought = 1
+flintlock_rifles = 1
+post_nelsonian_thought = 1
 private_banks = 1
+no_standard = 1
+guild_based_production = 1
+classicism_n_early_romanticism = 1
+late_enlightenment_philosophy = 1
+water_wheel_power = 1
 
 # Inventions
-
-# Unciv Reforms
-diplomatic_reform = interactive
-academic_institutions = madrasahs
-admin_reform = yes_admin_reform
-taxation_reform = tax_farmers
 
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
-
 oob = "LFG_oob.txt"

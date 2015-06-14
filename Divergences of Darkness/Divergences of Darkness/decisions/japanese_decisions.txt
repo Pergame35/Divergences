@@ -238,7 +238,6 @@ political_decisions = {
 		picture = meiji_court
 		potential = {
 			tag = JAP
-			tag = TKG
 			owns = 1654
 			owns = 2525
 			NOT = { has_country_flag = bonin_administration }
@@ -252,6 +251,7 @@ political_decisions = {
 			prestige = 1
 			1654 = {
 				change_province_name = "Iwo Jima"
+				add_core = THIS
 			}
 			2525 = {
 				add_core = THIS
@@ -281,13 +281,9 @@ political_decisions = {
 		effect = {
 			prestige = 1
 			1485 = {
-				add_core = TAI
-				remove_core = FJN
 				change_province_name = "Taihoku"
 			}
 			2562 = {
-				add_core = TAI
-				remove_core = FJN
 				change_province_name = "Takao"
 				state_scope = {
 					change_region_name = "Takasago"

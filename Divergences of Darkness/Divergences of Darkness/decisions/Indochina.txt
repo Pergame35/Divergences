@@ -33,15 +33,9 @@ political_decisions = {
 	
 	effect = { 
 	badboy = 21 
-	SIA = { all_core = { add_core = THIS } }
-	ANN_1374 = { add_core = THIS }
-	ANN_1371 = { add_core = THIS }
+	BUR = { all_core = { add_core = THIS } }
+	DAI = { all_core = { add_core = THIS } }
 	set_country_flag = sole_leader_indochi
 		}
 	}
-
-
-
-
-
 }

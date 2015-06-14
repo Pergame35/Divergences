@@ -1093,7 +1093,7 @@ country_event = { ######### The Monclova Incident (or Tejas incident in which Lu
 	}
 	
 	option = { 
-	name "It is time to end Santa Anna's rule ! Lusitania shall be free"
+	name = "It is time to end Santa Anna's rule ! Lusitania shall be free !"
 	CLM = { country_event = 46476 }
 	}
 }

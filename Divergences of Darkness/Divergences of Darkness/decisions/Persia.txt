@@ -11,22 +11,16 @@ political_decisions = {
 					has_country_flag = persiania
 				}
 				tag = AZB
-        tag = AFS
+				tag = AFS
 			}
 		}
 		allow = {
 			NOT = { war = yes }
 			prestige = 50
-			PER = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
-				}
-			}
+			owns = 1140 
+			owns = 1135
+			QAJ = { exists = no }
+			ZND = { exists = no }
 		}
 		effect = {
 			prestige = 20
@@ -179,5 +173,28 @@ political_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+	}
+	
+	timurid_legacy = { 
+	potential = { 
+	tag = ZND 
+	QAJ = { exists = yes }
+	NOT = { truce_with = QAJ }
+		}
+	allow = { 
+	all_core = { owned_by = THIS }
+		}
+		
+	effect = { 
+	government = absolute_monarchy 
+	remove_country_modifier = feudal 
+	war = { 
+		target = QAJ 
+		attacker_goal = { 
+		casus_belli = conquest 
+			}
+		}
+	}
+	
 	}
 }

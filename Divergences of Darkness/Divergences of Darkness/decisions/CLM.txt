@@ -103,7 +103,7 @@ political_decisions = {
 			controller = { alliance_with = THIS }
 			}
 			province_control_days = 365 }
-	2254 { OR = {
+	2254 = { OR = {
 			controlled_by = THIS
 			controller = { alliance_with = THIS }
 			}
@@ -113,7 +113,7 @@ political_decisions = {
 			controller = { alliance_with = THIS }
 			}
 			province_control_days = 365 }
-	2172 { OR = {
+	2172 = { OR = {
 			controlled_by = THIS
 			controller = { alliance_with = THIS }
 			}
@@ -170,7 +170,7 @@ political_decisions = {
 			controller = { alliance_with = THIS }
 			}
 			province_control_days = 365 }
-	2254 { OR = {
+	2254 = { OR = {
 			controlled_by = THIS
 			controller = { alliance_with = THIS }
 			}
@@ -180,7 +180,7 @@ political_decisions = {
 			controller = { alliance_with = THIS }
 			}
 			province_control_days = 365 }
-	2172 { OR = {
+	2172 = { OR = {
 			controlled_by = THIS
 			controller = { alliance_with = THIS }
 			}
@@ -234,7 +234,7 @@ political_decisions = {
 			controller = { alliance_with = THIS }
 			}
 			province_control_days = 365 }
-	2254 { OR = {
+	2254 = { OR = {
 			controlled_by = THIS
 			controller = { alliance_with = THIS }
 			}
@@ -244,7 +244,7 @@ political_decisions = {
 			controller = { alliance_with = THIS }
 			}
 			province_control_days = 365 }
-	2172 { OR = {
+	2172 = { OR = {
 			controlled_by = THIS
 			controller = { alliance_with = THIS }
 			}

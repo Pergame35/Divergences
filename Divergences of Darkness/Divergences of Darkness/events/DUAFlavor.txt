@@ -1959,6 +1959,18 @@ country_event = { ##The Anglois success
 				remove_core = FRA
 			}
 		}
+	any_owned = {
+				limit = {
+				is_core = FRA 
+					}
+				remove_core = FRA
+		}
+	any_owned = {
+				limit = {
+				is_core = ENL 
+				}
+			remove_core = ENL
+		}
 	}
 	
 }
@@ -3834,6 +3846,7 @@ country_event = { ######All cultures accepted
 	desc = "DUA101.D"
 	
 	is_triggered_only = yes 
+	major = yes 
 	
 	option = { 
 	name = "We don't need no monarch to be united ! Long Live the United Republic !"
@@ -3853,6 +3866,7 @@ country_event = { ###Irish and English puppets
 	desc = "DUA102.D"
 	
 	is_triggered_only = yes 
+	major = yes 
 	
 	option = { 
 	name = "England and Ireland deserve a special treatment after what they have suffered"
@@ -3880,6 +3894,7 @@ country_event = { ###Irish and English leave
 	desc = "DUA103.D"
 	
 	is_triggered_only = yes 
+	major = yes 
 	
 	option = { 
 	name = "It was good while it lasted ..."
@@ -4046,7 +4061,7 @@ country_event = { ###Occitan and French puppets
 	}
 }
 
-country_event = { ###Irish and English leave 
+country_event = { ###France and Occitania leave 
 	id = 650313
 	title = "DUA113.T"
 	desc = "DUA113.D"
@@ -4129,8 +4144,8 @@ country_event = {
 
 country_event = { 
 	id = 650315
-	title = "DUA115.T"
-	desc = "DUA115.D"
+	title = "DUA114.T"
+	desc = "DUA114.D"
 	
 	trigger = { 
 	tag = DUA 
@@ -4177,8 +4192,8 @@ country_event = {
 
 country_event = { 
 	id = 650316
-	title = "DUA116.T"
-	desc = "DUA116.D"
+	title = "DUA114.T"
+	desc = "DUA114.D"
 	
 	trigger = { 
 	tag = DUA 
@@ -4362,7 +4377,7 @@ country_event = {
 	tag = DUA 
 	government = democracy 
 	has_country_flag = dual_integration
-	OR { 
+	OR = { 
 	OCC = { exists = yes } 
 	FRA = { exists = yes } 
 	IRE = { exists = yes } 
@@ -4399,5 +4414,44 @@ country_event = {
 	FRA = { capital = 425 add_accepted_culture = anglois }
 	IRE = { capital = 263 }
 	change_tag = ENL
+	}
+
+}
+
+country_event = { 
+	id = 650330
+	title = "DUA130.T"
+	desc = "DUA130.D"
+	picture = "spit_breton"
+
+	is_triggered_only = yes 
+	
+	option = {
+	name = "Our country is strong because of its variety !"
+	prestige = 25 
+	ai_chance = { factor = 50 }
+	}
+	
+	option = {
+	name = "One country, one people !"
+	set_country_flag = DUA_schooling
+	remove_accepted_culture = breton 
+	remove_accepted_culture = welsh 
+	remove_accepted_culture = french 
+	remove_accepted_culture = english 
+	remove_accepted_culture = irish 
+	remove_accepted_culture = scottish 
+	remove_accepted_culture = provencal
+	remove_accepted_culture = basque
+	any_owned = {
+				limit = {
+					is_core = DUA 
+				}
+				add_province_modifier = {
+					name = anglois_cultural_unity
+					duration = -1
+				}
+			}
+	ai_chance = { factor = 50 }
 	}
 }
