@@ -2296,6 +2296,7 @@ assimilate_tributaries_modif = {
 	assimilation_rate = 1.5
 	icon = 19
 }
+
 JCW_fight = { 
 	core_pop_militancy_modifier = -0.90
 	core_pop_consciousness_modifier = -0.90
@@ -2308,5 +2309,21 @@ Anglois_dilemma = {
 }
 anglois_cultural_unity = {
 	assimilation_rate = 2.5
+	icon = 19
+}
+
+revolution_aftermath = {
+	pop_militancy_modifier = -0.1
+	local_factory_output = -0.25
+	local_RGO_throughput = -0.25
+	immigrant_attract = -0.25
+	immigrant_push = 1.5
+	population_growth = -0.002
+	icon = 4
+}
+
+beornia_english = {
+	global_immigrant_attract = 0.3
+	assimilation_rate = 0.5
 	icon = 19
 }

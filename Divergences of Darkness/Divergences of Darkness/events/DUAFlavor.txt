@@ -29,7 +29,7 @@ country_event = {
 	option = { 
 	name = "We will claim Savoy !"
 	SAR = { country_event = 101106 }
-	badboy = 6
+	badboy = 7
 	} 
 	
 	option = { 
@@ -49,23 +49,18 @@ country_event = {
 	option = { 
 	name = "We will not risk a war against Burgundy ..." 
 	prestige = -20
-		466 = {
-			secede_province = BRG
-		}
-		465 = {
-			secede_province = BRG
-		}
+	any_owned = { limit = { region = SAR_466 } secede_province = BRG}
 	ai_chance = { 
-		factor = 10 
+		factor = 30 
 		}
 	}
 	
 	option = { 
-	name = "We will not surrender our ancestral claims !"
+	name = "We will not surrender our ancestral lands !"
 	prestige = 10
 	BRG = { country_event = 101107 }
 		ai_chance = { 
-		factor = 90
+		factor = 70
 		}
 	}
 }
@@ -120,7 +115,7 @@ country_event = {
 		set_country_flag = french_integration
 		set_country_flag = choice_pokemon
 		ai_chance = { 
-		factor = 60
+		factor = 50
 		}
 	}
 	
@@ -129,7 +124,7 @@ country_event = {
 		set_country_flag = english_integration
 		set_country_flag = choice_pokemon
 		ai_chance = { 
-			factor = 0
+			factor = 20
 			}
 		}
 	option = {
@@ -138,7 +133,7 @@ country_event = {
 		set_country_flag = choice_pokemon
 		country_event = 650240 
 		ai_chance = { 
-			factor = 40
+			factor = 30
 		}
 	}
 }
@@ -432,6 +427,7 @@ country_event = { ######War with England
 	
 	option = { 
 	name = "The English will be taught the true power of the Dual-Monarchy !"
+	clr_global_flag = wait_DUA
 	diplomatic_influence = { who = ENL value = -300}
 	war = { 
 	target = ENL 
@@ -549,7 +545,7 @@ country_event = { ## Glorious Revolution
 		has_country_flag = sons_of_harold
 		}
 	modifier = { 
-		factor = 0.7
+		factor = 0.5
 		has_country_modifier = springtime_of_nations
 		}
 	modifier = { 
@@ -585,32 +581,24 @@ country_event = { ## Glorious Revolution
 		has_country_flag = shakespeare_no
 		}
 	modifier = { 
-		factor = 0.8
-		any_owned = {
-			is_core = ENL
-			any_pop = {
+		factor = 0.3	
+		any_pop = {
+				is_core = ENL 
 				culture = english
 				OR = {
 					type = aristocrats
 					type = bureaucrats
 				}
 				militancy = 6
-				}
 			}
 		}
 	}
 	
 	option = { 
-	name = "We will crush these revolutionnaries !"
+	name = "We will crush these revolutionaries!"
+	set_global_flag = wait_DUA
+	set_country_flag = ENL_revolted	
 	set_global_flag = glorious_revolution
-	
-	ENL = { 
-	country_event = 650206
-	add_country_modifier = {
-				name = taiping_draft
-				duration = 1000
-			}
-		}
 	any_owned = {
 			limit = {
 				OR = {
@@ -622,6 +610,13 @@ country_event = { ## Glorious Revolution
 				}
 			}
 			secede_province = ENL
+		}
+	ENL = { 
+	country_event = 650206
+	add_country_modifier = {
+				name = taiping_draft
+				duration = 1000
+			}
 		}
 	diplomatic_influence = { who = ENL value = 300 }
 	}
@@ -1137,6 +1132,10 @@ country_event = {
 	mean_time_to_happen = { 
 	months = 350
 	modifier = { 
+		factor = 0.95
+		has_country_flag = great_travel_ENL
+		}
+	modifier = { 
 		factor = 0.8
 		has_country_flag = edward_york
 		}
@@ -1151,6 +1150,22 @@ country_event = {
 		owns = 269
 			}
 		}
+	modifier = { 
+		factor = 0.8
+		has_country_flag = romanticism_ENL
+		}	
+	modifier = { 
+		factor = 1.3
+		has_country_flag = romanticism_FRA
+		}	
+	modifier = { 
+		factor = 0.9
+		has_country_flag = romanticism_ENL
+		}	
+	modifier = { 
+		factor = 1.2
+		has_country_flag = romanticism_FRA
+		}	
 	modifier = { 
 		factor = 0.9 
 		has_country_flag = devonshire_minister 
@@ -1172,11 +1187,8 @@ country_event = {
 			militancy = -4
 		}
 		random_owned = {
-				limit = {
-					ENL = { exists = no }
-				}
-				ENL = { all_core = { remove_core = ENL } }
-			}
+			ENL = { all_core = { remove_core = ENL } }
+		}
 	}
 }
 
@@ -1192,13 +1204,14 @@ country_event = { ## Midi Revolution
 	tag = DUA 
 	has_country_flag = english_integration 
 	has_global_flag = liberal_revolution_somewhere
+	year = 1841
 	NOT = { has_country_flag = had_liberal_revolution }
 	}
 	
 	mean_time_to_happen = { 
-	months = 170
+	months = 13
 	modifier = { 
-		factor = 0.7
+		factor = 0.5
 		has_country_modifier = springtime_of_nations
 		}
 	modifier = { 
@@ -1209,6 +1222,14 @@ country_event = { ## Midi Revolution
 		factor = 0.9
 		has_country_flag = edward_york
 		}
+	modifier = { 
+		factor = 0.9
+		has_country_flag = romanticism_ENL
+		}	
+	modifier = { 
+		factor = 1.2
+		has_country_flag = romanticism_FRA
+		}	
 	modifier = { 
 		factor = 1.2
 		has_country_flag = henry_gascony 
@@ -1231,7 +1252,9 @@ country_event = { ## Midi Revolution
 	
 	option = { 
 	name = "What is happening ?!"
+	set_global_flag = wait_DUA
 	set_global_flag = glorious_revolution
+	set_country_flag = OCC_revolted	
 	any_owned = {
 			limit = {
 				is_core = OCC 
@@ -1264,8 +1287,9 @@ country_event = { ## Midi Revolution : Occitan choices
 	
 	option = { 
 	name = "We don't need petty kings !"
-	DUA = { country_event = { id = 65022 days = 30 } }
+	DUA = { country_event = { id = 650226 days = 30 } }
 	government = democracy
+	country_event = 650207
 	ruling_party_ideology = liberal
 	political_reform = universal_voting
 	political_reform = population_equal_weight
@@ -1286,6 +1310,7 @@ country_event = { ## Midi Revolution : PRV inherits OCC
 	set_country_flag = motherland_liberation
 	THIS = { inherit = FROM }
 	prestige = 30 
+	country_event = 650207
 	DUA = {
 	diplomatic_influence = { who = THIS value = 300 }
 	country_event = { id = 650225 days = 30 } 
@@ -1293,7 +1318,7 @@ country_event = { ## Midi Revolution : PRV inherits OCC
 	}
 }
 
-country_event = { ## Midi Revolution : PRV inherits OCC
+country_event = { ## Midi Revolution : DUA fights back the pretenders
 	id = 650225
 	title = "DUA25.T"
 	desc = "DUA25.D"
@@ -1302,6 +1327,7 @@ country_event = { ## Midi Revolution : PRV inherits OCC
 	
 	option = { 
 	name = "It is the last time the Valois deny our rights !"
+	clr_global_flag = wait_DUA
 	diplomatic_influence = { who = PRV value = -300 }
 	war = {
 			target = PRV
@@ -1315,10 +1341,33 @@ country_event = { ## Midi Revolution : PRV inherits OCC
 	}
 }
 
-country_event = { #Sons of St-Louis
+country_event = { ## Midi Revolution : DUA fights back the pretenders
 	id = 650226
 	title = "DUA26.T"
 	desc = "DUA26.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "It is the last time the Occitan rebel !"
+	clr_global_flag = wait_DUA
+	diplomatic_influence = { who = OCC value = -300 }
+	war = {
+			target = OCC
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+			defender_goal = { 
+				casus_belli = acquire_all_cores
+			}
+		}
+	}
+}
+
+country_event = { #Sons of St-Louis
+	id = 650227
+	title = "DUA27.T"
+	desc = "DUA27.D"
 	picture = "liberals_org"
 	
 	fire_only_once = yes 
@@ -1326,6 +1375,7 @@ country_event = { #Sons of St-Louis
 	trigger = { 
 	tag = DUA 
 	has_country_flag = english_integration 
+	has_country_modifier = global_liberal_agitation 
 	NOT = { 
 		OR = { 
 		has_global_flag = english_int
@@ -1335,7 +1385,7 @@ country_event = { #Sons of St-Louis
 	}
 
 	mean_time_to_happen = { 
-	months = 70
+	months = 30
 	}
 	
 	option = { 
@@ -1369,9 +1419,9 @@ country_event = { #Sons of St-Louis
 }
 
 province_event = { #Spread of the Sons of St-Louis
-	id = 650227
-	title = "DUA27.T"
-	desc = "DUA27.D"
+	id = 650228
+	title = "DUA28.T"
+	desc = "DUA28.D"
 
 	trigger = {
 		NOT = { has_province_modifier = sons_of_louis }
@@ -1483,6 +1533,72 @@ province_event = { #Spread of the Sons of St-Louis
 	}
 }
 
+country_event = { #The great travel
+	id = 650229
+	title = "DUA29.T"
+	desc = "DUA29.D"
+	
+	fire_only_once = yes 
+	
+	trigger = { 
+	tag = DUA 
+	has_country_flag = english_integration 
+	NOT = { has_country_flag = great_travel_ENL }
+	NOT = { 
+		OR = { 
+		has_global_flag = english_int
+		has_global_flag = glorious_revolution
+			}
+		}
+	}	
+	
+	mean_time_to_happen = { 
+	months = 50 
+	}
+	
+	option = { 
+	name = "The Plantegenets are truly the Kings of England !"
+	set_country_flag = great_travel_ENL
+	}
+}
+
+country_event = { #Saxon poetry
+	id = 650230
+	title = "DUA30.T"
+	desc = "DUA30.D"
+	picture = "saxon_poetry"
+	
+	fire_only_once = yes 
+	
+	trigger = { 
+	tag = DUA 
+	has_country_flag = english_integration 
+	NOT = { 
+		OR = { 
+		has_global_flag = english_int
+		has_global_flag = glorious_revolution
+			}
+		}
+	}
+	
+	mean_time_to_happen = { 
+	months = 35
+	}
+	
+	option = { 
+	name = "Support the movement!"
+	prestige = -15
+	set_country_flag = romanticism_ENL 
+	}
+	
+	option = { 
+	name = "Classic Poetry is best!"
+	prestige = 15 
+	set_country_flag = romanticism_FRA
+	}
+}
+
+######Anglois events
 country_event = { ##The Anglois Path 
 	id = 650240
 	title = "DUA40.T"
@@ -1594,6 +1710,11 @@ country_event = { ##The Glorious Revolution -reconquest
 	ENG_273 = { remove_core = ENL }
 	ENG_296 = { remove_core = ENL }
 	ENG_300 = { remove_core = ENL }
+	any_owned = { limit = { is_core = ENL } add_province_modifier = {
+				name = revolution_aftermath
+				duration = 2000
+			}
+		}  
 	any_pop = {
 				limit = {
 					has_pop_culture = english
@@ -1610,6 +1731,11 @@ country_event = { ##The Glorious Revolution -reconquest
 				militancy = -1
 				move_pop = 2348
 			}
+	NAN = { add_country_modifier = { 
+	name = beornia_english 
+	duration = 2000 
+		}
+	}
 	RAP = { 
 	change_variable = {
 				which = Anglois_ACC
@@ -1667,6 +1793,34 @@ country_event = { ##The Midi Revolution -reconquest
 	option = { 
 	name = "Pesky little Occitans ..."
 	set_country_flag = OCC_revolt_end
+	any_owned = { limit = { is_core = OCC } add_province_modifier = {
+				name = revolution_aftermath
+				duration = 2000
+			}
+		}  
+	any_pop = {
+				limit = {
+					has_pop_culture = provencal
+						location = {
+								province_id = 458
+						}
+				}
+				consciousness = 2
+				militancy = -1
+				move_pop = 139
+			}
+	any_pop = {
+				limit = {
+					has_pop_culture = provencal
+						location = {
+								province_id = 459 
+						}
+				}
+				consciousness = 2
+				militancy = -1
+				move_pop = 2432
+			}
+			
 	RAP = { 
 	change_variable = {
 				which = Anglois_ACC
@@ -1943,6 +2097,9 @@ country_event = { ##The Anglois success
 	prestige = 100 
 	add_accepted_culture = french 
 	add_accepted_culture = english 
+	any_pop = { 
+	militancy = -3 
+	}
 	any_country = {
 			any_owned = {
 				limit = {
@@ -3806,6 +3963,105 @@ country_event = {
 	IRE = { capital = 263 }
 	OCC = { capital = 455 }
 	}
+}
+
+country_event = { ##The Glorious Revolution -reconquest
+	id = 650291
+	title = "DUA42.T"
+	desc = "DUA42.D"
+	
+	trigger = { 
+	tag = DUA 
+	has_country_flag = french_integration
+	has_global_flag = glorious_revolution	
+	NOT = { has_country_flag = ENL_revolt_end }
+	NOT = { ENL = { exists = yes } }
+	}
+	
+	mean_time_to_happen = { months = 1 }
+	
+	option = { 
+	name = "Pesky little English ..."
+	set_country_flag = ENL_revolt_end
+	ENG_273 = { remove_core = ENL }
+	ENG_296 = { remove_core = ENL }
+	ENG_300 = { remove_core = ENL }
+	any_owned = { limit = { is_core = ENL } add_province_modifier = {
+				name = revolution_aftermath
+				duration = 2000
+			}
+		}  
+	any_pop = {
+				limit = {
+					has_pop_culture = english
+						location = {
+							OR = {
+								province_id = 299
+								province_id = 296 
+								province_id = 297 
+								province_id = 298
+							}
+						}
+				}
+				consciousness = 2
+				militancy = -1
+				move_pop = 2348
+			}
+	NAN = { add_country_modifier = { 
+	name = beornia_english 
+	duration = 2000 
+			}
+		}
+	}
+	
+}
+
+country_event = { ##The Midi Revolution -reconquest
+	id = 650292
+	title = "DUA44.T"
+	desc = "DUA44.D"
+	
+	trigger = { 
+	tag = DUA 
+	has_country_flag = english_integration
+	has_country_flag = OCC_revolted	
+	NOT = { has_country_flag = OCC_revolt_end }
+	NOT = { OCC = { exists = yes } }
+	owns = 455 
+	}
+	
+	mean_time_to_happen = { months = 1 }
+	
+	option = { 
+	name = "Pesky little Occitans ..."
+	set_country_flag = OCC_revolt_end
+	any_owned = { limit = { is_core = OCC } add_province_modifier = {
+				name = revolution_aftermath
+				duration = 2000
+			}
+		}  
+	any_pop = {
+				limit = {
+					has_pop_culture = provencal
+						location = {
+								province_id = 458
+						}
+				}
+				consciousness = 2
+				militancy = -1
+				move_pop = 139
+			}
+	any_pop = {
+				limit = {
+					has_pop_culture = provencal
+						location = {
+								province_id = 459 
+						}
+				}
+				consciousness = 2
+				militancy = -1
+				move_pop = 2432
+			}
 }
 
 #######United Republic events

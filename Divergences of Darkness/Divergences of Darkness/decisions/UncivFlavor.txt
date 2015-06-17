@@ -161,4 +161,39 @@ political_decisions = {
 			}
 		}
 	}
+	
+	end_the_merina_monarchy = {
+		potential = {
+			is_greater_power = yes
+			continent = europe
+			MAD = {
+				exists = yes
+				civilized = no
+			}
+			has_global_flag = berlin_conference
+			NOT = { has_global_flag = merina_monarchy_is_over1 }
+			OR = { 
+			2126 = { owned_by = THIS } #Bourbon
+			2125 = { owned_by = THIS } #Dom Sebastao
+			2057 = { owned_by = THIS } #Gundersborg
+			2061 = { owned_by = THIS } #Karlsten
+			2124 = { owned_by = THIS } #Mayotte
+			}
+		}
+		
+		allow = {
+			MAD = {
+				in_sphere = THIS
+				war = no
+			}
+			nationalism_n_imperialism = 1
+			invention = mission_to_civilize
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = merina_monarchy_is_over1
+			MAD = { country_event = 95505 }
+		}
+	}
 }

@@ -13,14 +13,12 @@ treaty_of_Corfu_title; Treaty of Corfu ;;;;;;;;;;;;;x
 treaty_of_Corfu_desc;The Doge has been unable to take back the mainland. The war which erupted a while ago is drawing on its end and we are winning ! Aragon and Bohemia have offered to mediate in our advantage the signature of a treaty which will push Venice out of Hellas. ;;;;;;;;;;;;;x  
 222120.T; Flight to Greece;;;;;;;;;;;;;x    
 222120.D; The defeat is total for the Venetians. They have been pushed away from their homeland by the Italian nationalists. But they still hold many holdings in the East, where their government fled. Upon entering the city of Athens, the Doge was forced by the Greeks to proclaim an Hellenic Republic while still holding his old title. A new state has emerged from the ashes of the Serenessima, what will it become ?  ;;;;;;;;;;;;;x  
-ENL1.T;English nationalism ;;;;;;;;;;;;;x 
-ENL1.D;Upset by what they feel is French domination over the Dual-Monarchy, a group of English intellectuals have formed an organization designed to remove these influences from the Plantagenet king.;;;;;;;;;;;;;x 
-ENL2.T;The Glorious Revolution ;;;;;;;;;;;;;x 
-ENL2.D;Because of the spread of both liberal and nationalist ideas throughout England, the English people have revolted against the Plantagenet Monarchy. They have established a republic uniting the English, Welsh and even Anglois people under St-George's Cross. Paris has already stated that they will reconquer their rightful domain. How will this Glorious Revolution turn ? ;;;;;;;;;;;;;x 
-ENL3.T;Retreat from England  ;;;;;;;;;;;;;x 
-ENL3.D;We have been unable to retake England from the Jacobites. We are forced to surrender our claims to the English territory ;;;;;;;;;;;;;x 
-ENL4.T;The Irish Revolution;;;;;;;;;;;;;x 
-ENL4.D;Inspired by the English revolution the Irish have declared their independence and are now in open revolt. We could declare war on them right now but it would be a nuisance in our effort to retake England. ;;;;;;;;;;;;;x 
+ENL5.T;A Savoyard opportunity;;;;;;;;;;;;;x 
+ENL5.D;For a long time we have coveted the Alpine passes held by the Duke of Savoy. The Dual-Monarchy faces open rebellion and is thus less inclined to protect the Duke.;;;;;;;;;;;;;x 
+ENL6.T;Ultimatum from Antwerp;;;;;;;;;;;;;x 
+ENL6.D;Burgundy asks us to relinquish our Alpine lands to integrate them into 'the Duchy of Geneva'. With the Dual-Monarchy facing harsh unrest we should not count too much on their protection;;;;;;;;;;;;;x 
+ENL7.T;Savoyard Answer;;;;;;;;;;;;;x 
+ENL7.D;The duke of Savoy has refused, meaning that only war will resolve the problem of the Alpes.;;;;;;;;;;;;;x 
 VAL1.T;The restoration of order in Etruria ;;;;;;;;;;;;;x 
 VAL1.D;The republic of Etruria is the threat to the Italian Order. While Aragon is reluctant to go to war against them, we haven't forgotten our right to the grand duchy of Tuscany. The various monarchs of North Italy would not react to this declaration because we would erase a threat to their personal power but Aragon would be angered by our demonstration of force. What do we choose ? ;;;;;;;;;;;;;x 
 lucca_war_title;Pre-eminence in Etruria;;;;;;;;;;;;;x 
@@ -146,22 +144,40 @@ end_of_exarchate_title; End of the Exarchate Regime;;;;;;;;;;;;;x
 end_of_exarchate_desc; Since the council of Athens, many things have changed. We are now a democratic regime and we have created ties with our Greek puppet over the years. It is now the time to fully integrate them into our republic !;;;;;;;;;;;;;x
 greek_integration_title; Greek Integration ;;;;;;;;;;;;;x
 greek_integration_desc; Since the repression of the independence movements, our Republic has seen many changes. Our government is now more democratic and the Greek have accepted our rule. It is now time to fully integrate them into our republic !;;;;;;;;;;;;;x 
-NAV1.T; Basque Independence ? ;;;;;;;;;;;;;x
-NAV1.D; Navarra is at the centre of influence conflicts since the Renaissance. Forsaken by the Spanish Crown which pursued its exploration policies, Navarra was both coveted by the king of Aragon and the Dual-Monarchy. Aragon attacked first and invaded Higher-Navarra in 1508. The queen from Navarra fled to her possessions in Aquitaine, Lower-Navarra. Before war erupted, a compromise was found between Aragon and the Dual-Monarchy in Perpignan : The Anglo-French would annex Lower-Navarra while the queen of Navarra would pledge fidelity to the king of Aragon. Over the centuries, the political setup did not change much, with Navarra using both kingdoms against each other to preserve some independence, like with Henri III who took part in the Wars of Religion. But now, Aragon is the shadow of itself, not even considered as a Great Power by many. The king Henry IV thinks he can profit from it, by pulling his Anglo-French allies to help him. What will happen ? ;;;;;;;;;;;;;x
-NAV2.T; A call from Pampelune;;;;;;;;;;;;;x
-NAV2.D; The king of Navarra has asked us to help him in his independence's inclination. Aragon might be decaying but it is still not dead. Henry IV awaits an answer. ;;;;;;;;;;;;;x
-NAV3.T; Independence of Navarre !;;;;;;;;;;;;;x
-NAV3.D; With the backing of the Anglo-French, Navarre has proclaimed its independence. The Aragonese legate, who was there to ensure the loyalty of the kingdom was expelled along with all Aragonese officials. Henry IV has been acclaimed by the crowds of Pampeluna, however what will be Aragon's reaction ? ;;;;;;;;;;;;;x
-NAV4.T; Reaction from Barcelona;;;;;;;;;;;;;x
-NAV4.D; Navarre has proclaimed its independence ! They have expelled our representatives with the support of the Dual-Monarchy. We could always intervene militarily and annex this kingdom we have coveted for centuries. But if we do so, we will have to face the Dual-Monarchy ... ;;;;;;;;;;;;;x
-NAV5.T; A new ally ? ;;;;;;;;;;;;;x
-NAV5.D; Our allies from over the Pyrenees have refused to help us ! Without allies our plan is sure to fail but there is still someone who could help us. The kingdom of Spain would be pleased to help us against Aragon, probably ... ;;;;;;;;;;;;;x
-NAV6.T; A call from Pampelune;;;;;;;;;;;;;x
-NAV6.D; The king of Navarra has asked us to help him in his independence's will. Aragon might be decaying but it is still not dead. Henry IV de Bourbon awaits an answer. ;;;;;;;;;;;;;x
-NAV7.T; Proclaimation of Independence !;;;;;;;;;;;;;x
-NAV7.D; With the backing of the Spanish, Navarre has proclaimed its independence. The Aragonese legate, who was there to ensure the loyalty of the kingdom was expelled along with all Aragonese officials. Henry IV has been acclaimed by the crowds of Pampeluna, however what will be Aragon's reaction ? ;;;;;;;;;;;;;x
-NAV8.T; Reaction from Barcelona;;;;;;;;;;;;;x
-NAV8.D; Navarre has proclaimed its independence ! They have expelled our representatives with the support of Spain. We could always intervene militarily and annex this kingdom we have coveted for centuries. But if we do so, we will have to face Spain …. ;;;;;;;;;;;;;x
+NAV1.T;Basque Independence ? ;;;;;;;;;;;;;x
+NAV1.D;Navarra is at the centre of influence conflicts since the Renaissance. Forsaken by the Spanish Crown which pursued its exploration policies, Navarra was both coveted by the king of Aragon and the Dual-Monarchy. Aragon attacked first and invaded Higher-Navarra in 1508. The queen from Navarra fled to her possessions in Aquitaine, Lower-Navarra. Before war erupted, a compromise was found between Aragon and the Dual-Monarchy in Perpignan : The Anglo-French would annex Lower-Navarra while the queen of Navarra would pledge fidelity to the king of Aragon. Over the centuries, the political setup did not change much, with Navarra using both kingdoms against each other to preserve some independence, like with Henri III who took part in the Wars of Religion. But now, Aragon is the shadow of itself, not even considered as a Great Power by many. The king Henry IV thinks he can profit from it, by pulling his Anglo-French allies to help him. What will happen ? ;;;;;;;;;;;;;x
+NAV2.T;A call from Pampelune;;;;;;;;;;;;;x
+NAV2.D;The king of Navarra has asked us to help him in his independence's inclination. Aragon might be decaying but it is still not dead. Henry IV awaits an answer. ;;;;;;;;;;;;;x
+NAV3.T;Independence of Navarre !;;;;;;;;;;;;;x
+NAV3.D;With the backing of the Anglo-French, Navarre has proclaimed its independence. The Aragonese legate, who was there to ensure the loyalty of the kingdom was expelled along with all Aragonese officials. Henry IV has been acclaimed by the crowds of Pampeluna, however what will be Aragon's reaction ? ;;;;;;;;;;;;;x
+NAV4.T;Reaction from Barcelona;;;;;;;;;;;;;x
+NAV4.D;Navarre has proclaimed its independence ! They have expelled our representatives with the support of the Dual-Monarchy. We could always intervene militarily and annex this kingdom we have coveted for centuries. But if we do so, we will have to face the Dual-Monarchy ... ;;;;;;;;;;;;;x
+NAV5.T;A new ally ? ;;;;;;;;;;;;;x
+NAV5.D;Our allies from over the Pyrenees have refused to help us ! Without allies our plan is sure to fail but there is still someone who could help us. The kingdom of Spain would be pleased to help us against Aragon, probably ... ;;;;;;;;;;;;;x
+NAV6.T;A call from Pampelune;;;;;;;;;;;;;x
+NAV6.D;The king of Navarra has asked us to help him in his independence's will. Aragon might be decaying but it is still not dead. Henry IV de Bourbon awaits an answer. ;;;;;;;;;;;;;x
+NAV7.T;Proclaimation of Independence !;;;;;;;;;;;;;x
+NAV7.D;With the backing of the Spanish, Navarre has proclaimed its independence. The Aragonese legate, who was there to ensure the loyalty of the kingdom was expelled along with all Aragonese officials. Henry IV has been acclaimed by the crowds of Pampeluna, however what will be Aragon's reaction ? ;;;;;;;;;;;;;x
+NAV8.T;Reaction from Barcelona;;;;;;;;;;;;;x
+NAV8.D;Navarre has proclaimed its independence ! They have expelled our representatives with the support of Spain. We could always intervene militarily and annex this kingdom we have coveted for centuries. But if we do so, we will have to face Spain …. ;;;;;;;;;;;;;x
+NAV10.D;The Bourbon dynasty has seen fewer and fewer male members born these last years. The last true Bourbon, descendant of Hugh Capet has died in Pampeluna yesterday. He leaves two possible heirs : his sister the countess of St-Sebastian married into the Aragonese family and the infante of Bilbao his illegimate daughter married to the Dauphin. The Navarran Estates have gathered to choose who will succeed to Henry and thus in which country Navarra will be tied with.;;;;;;;;;;;;;x
+NAV10.T;Death of Henry IV of Navarra;;;;;;;;;;;;;x
+NAV11.T;The coronation of the Infante of Bilbao ;;;;;;;;;;;;;x
+NAV11.D;The wife of the Dauphin has been crowned Queen of Navarra. Anglois troops have entered the Basque lands to secure the country from a possible Aragonese attack.;;;;;;;;;;;;;x
+NAV12.T;Reaction to Anglois takeover.;;;;;;;;;;;;;x
+NAV12.D;The Navarran Estates have chosen the Infante of Bilbao as Queen, denying the rights of her aunt the countess of St-Sebastian. We could claim these lands in her name or let the matter drop ...;;;;;;;;;;;;;x
+NAV13.T;Aragonese claims ;;;;;;;;;;;;;x
+NAV13.D;The king of Aragon has decided to push the claims of the countess of St-Sebastian to the throne of Navarra. Even if it just concerns Navarra, we should send an ultimatum to Aragon demanding them to back down and acknowledge the infante as the rightful queen !;;;;;;;;;;;;;x
+NAV14.T;The Anglois Ultimatum ;;;;;;;;;;;;;x
+NAV14.D;The Dual-Monarchy asks us to renounce our claims on Navarra. Should we refuse then it would mean war ...;;;;;;;;;;;;;x
+NAV15.T;The coronation of the Countess of St-Sebastian ;;;;;;;;;;;;;x
+NAV15.D;The Navarran Estates have chosen the sister of Henry IV as the Queen of Navarra. Our troops have already secured the Basque mountains, fearing an Anglois intervention. ;;;;;;;;;;;;;x
+NAV16.T;Reaction to Aragonese takeover.;;;;;;;;;;;;;x
+NAV16.D;The Navarran Estates have chosen the Countess of St-Sebastian as Queen, denying the rights of her nice the Infante of Bilbao. We could claim these lands in her name or let the matter drop ... ;;;;;;;;;;;;;x
+NAV17.T;Anglois claims  ;;;;;;;;;;;;;x
+NAV17.D;The king of the Dual-Monarchy has decided to push the claims of the Infante of Bilbao to the throne of Navarra. We should send an ultimatum to Paris demanding them to back down and acknowledge the Countess as the rightful queen ! ;;;;;;;;;;;;;x
+NAV18.T;The Aragonese Ultimatum ;;;;;;;;;;;;;x
+NAV18.D;Aragon asks us to renounce our claims on Navarra. Should we refuse then it would mean war ...;;;;;;;;;;;;;x
 CLM_fight; War of Independence;;;;;;;;;;;;;x
 CLM_fight_desc;Despite our differences we are united against the Spanish oppressor !;;;;;;;;;;;;;x
 athesia_purchase_title; The Athesian Purchase ;;;;;;;;;;;;;x
@@ -174,10 +190,10 @@ ayiti_purchase_title; The Sudurhafeyjar Purchase ;;;;;;;;;;;;;x
 ayiti_purchase_desc; Scandinavia still holds the archipelago they called the Islands of the South consisting of Righavn and Ayiti. Buying these islands would strengthen even more our position in the Caribbean;;;;;;;;;;;;;x
 jamaican_purchase_title; The Eendrachtsland Purchase ;;;;;;;;;;;;;x
 jamaican_purchase_desc; Burgundy still holds the island of Eendrachtsland in the Caribbean. This little island does not present an importance as great as Habana or Ayiti but it would improve our standing in Arcadia even more if we acquired this island. ;;;;;;;;;;;;;x
-dissolve_CLM_title; Dissolve the Federation ;;;;;;;;;;;;;x
-dissolve_CLM_desc; This war has shown us something. The former Spanish colonies united under the same flag are a threat to our influence in Arcadia and Ameriga. Some in our governments has suggested that we make Gran Colombia dissolve itself in little states easier to control and manipulate. Thus there will only be one power in the New-World, us.;;;;;;;;;;;;;x
+dissolve_CLM_title;Dissolve the Federation ;;;;;;;;;;;;;x
+dissolve_CLM_desc;This war has shown us something. The former Spanish colonies united under the same flag are a threat to our influence in Arcadia and Ameriga. Some in our government have suggested that we make Gran Colombia dissolve itself in little states easier to control and manipulate. Thus there will only be one power in the New-World, us.;;;;;;;;;;;;;x
 DUA1.T;The Anglois Dilemma;;;;;;;;;;;;;x
-DUA1.D;Ever since the Treaty of Rome in 1498, the Dual Monarchy has had to walk a fine line in not favoring one of its ethnic groups over the others. Recent censi have shown that the English and French represent around one-fifth of the population. What is more threatening to either group is not the other but rather a growing group calling themselves Anglois. These groups have created the dilemma for the monarchy in who to favor. There are those in power that believe that it is best to pick a side while others believe that the Anglois ideology of blending the best customs of English and French is the way of the future. **** NOTE : only French path done yet ****;;;;;;;;;;;;;x
+DUA1.D;Ever since the Treaty of Rome in 1498, the Dual Monarchy has had to walk a fine line in not favouring one of its ethnic groups over the others. Recent censi have shown that the English and French represent around one-fifth of the population. What is more threatening to either group is not the other but rather a growing group calling themselves Anglois. These groups have created the dilemma for the monarchy in who to favor. There are those in power that believe that it is best to pick a side while others believe that the Anglois ideology of blending the best customs of English and French is the way of the future. ;;;;;;;;;;;;;x
 DUA2.T;The Death of King Henri X;;;;;;;;;;;;;x
 DUA2.D;Tragedy has struck the Dual Monarchy as His Majesty King Henri X has passed with no heir. Due to traditional laws within the Dual Monarchy, the Estates-General has been called to select their choice for the next ruler of the Kingdom. The Estates have narrowed the selection between Elisabeth, Duchess of Anjou, Edouard, the Duke of York, and Henri, the Duke of Gascony.;;;;;;;;;;;;;x
 DUA3.T;Coronation of Elisabeth I ;;;;;;;;;;;;;x
@@ -186,6 +202,14 @@ DUA4.T;Coronation of Edouard X ;;;;;;;;;;;;;x
 DUA4.D;It took the Estates-General some rounds of voting but they have settled on Edouard, the Duke of York, as the next King of the Dual Monarchy. England has received the news with great joy while France is worried of potential retribution by the new king for past injustices. Elisabeth and Henri have renounced the throne but Henri vows that he will participate in the Parliament of Lords in preventing bias legislation by the King from being passed.;;;;;;;;;;;;;x
 DUA5.T;Coronation of Henri XI;;;;;;;;;;;;;x
 DUA5.D;To the shock of many Henri, the Duke of Gascony, has been elected the next King of the Dual Monarchy. His election as King has been recieved with joy in the southern regions of the country but outrage has broken out in England. Elisabeth and Edouard has both renounced the throne but Edouard expressed his great displeasure with the results.;;;;;;;;;;;;;x
+DUA6.T;The English Constitution;;;;;;;;;;;;;x
+DUA6.D;England is now free but what form of government shall it take?;;;;;;;;;;;;;x
+DUA7.T;Protection;;;;;;;;;;;;;x
+DUA7.D;The Anglois will surely not let us go so easily and we are at a disadvantage. We need to contact a Great Power to counter the threat from Paris : Scandinavia has a good navy and shares a border in Scotland ; Burgundy will surely dominate on the Continent, Aragon can easily pierce through Occitania.;;;;;;;;;;;;;x
+DUA8.T;$FROMCOUNTRY_ADJ$ embassy;;;;;;;;;;;;;x 
+DUA8.D;The $FROMCOUNTRY_ADJ$ have revolted against the Dual-Monarchy and are asking to protect them from the Anglois. Such a move will lead to war against Paris but it is a golden opportunity to weaken the Plantagenets!;;;;;;;;;;;;;x
+DUA9.T;A new Hastings;;;;;;;;;;;;;x 
+DUA9.D;The English will face our might !;;;;;;;;;;;;;x
 DUA10.T;The French Monarchy;;;;;;;;;;;;;x
 DUA10.D;After the questions of the last years, the monarchy has affirmed its French character. Rooted in Paris, the monarchy has gained the support of the French population and of its leaders. This French orientation has allowed them to suppress any rebellion in the South but in the same time has alienated them a great part of the English population...;;;;;;;;;;;;;x
 DUA11.T;The Glorious Revolution ;;;;;;;;;;;;;x
@@ -204,10 +228,28 @@ DUA17.T;A new minister;;;;;;;;;;;;;x
 DUA17.D;Sadly our prime minister has died in office. It falls upon the monarch to choose a new prime minister. Three candidates have the favour of the Parliament : the duke of Richelieu, known for his inclination for the Young French, the duke of Rohan, the Breton moderate and lastly the duke of Devonshire, well-known in the island. ;;;;;;;;;;;;;x
 DUA18.T;The Shakespeare festival;;;;;;;;;;;;;x
 DUA18.D;The English have organised a festival in Stratford upon Avon to honour a play-writer called William Shakespeare. Rediscovered by the sons of Harold, this unknown author has written many tragicomedies in English, which criticize heavily the Parisian Monarchy while praising English historical figures like his life of Alfred the Great in 4 plays. This festival could become a centre of protestation especially if they represent Henry VI ;;;;;;;;;;;;;x
-DUA19.T;The death of the Prince of Wales ;;;;;;;;;;;;;x
+DUA19.T;The death of the Prince of Wales;;;;;;;;;;;;;x
 DUA19.D;While visiting England, the Prince of Wales and his entourage were attacked by radicals in the city of Liverpool. It resulted in the death of Henry, the heir of the Dual-Monarchy, his pregnant wife and his son. The attack made with an artisanal weaponry, that many call "the Infernal Machine", was imagined by students affiliated to the Sons of Harold. While Tolsmith has denied any implication of his organisation and vigorously condemned the attack, the king is persuaded of his implication and is determined in his grief to shut the the organisation.;;;;;;;;;;;;;x
-DUA27.T;Spread of the Sons of St-Louis ;;;;;;;;;;;;;x
-DUA27.D;The sons of St-Louis have implemented themselves in this province and are already spreading their ideas ...;;;;;;;;;;;;;x
+DUA21.T;The English Monarchy;;;;;;;;;;;;;x
+DUA21.D;Despite the troubles of the past years the monarchy has asserted its English roots. With London and Paris weighing the same in political matters the monarchy has gained the support of the English population!;;;;;;;;;;;;;x 
+DUA22.T;The Midi Revolution;;;;;;;;;;;;;x
+DUA22.D;The English backlash of Henry X has alienated the Southern French lands. The local Occitans have always been more rebellious because of their protestant roots and also because of their support for the Valois kings. The Revolt supported by the Sons of St-Louis has gained the control of most Occitania!;;;;;;;;;;;;;x
+DUA23.T;Choosing the Government;;;;;;;;;;;;;x 
+DUA23.D;The Occitan state must now choose what form of government it shall be : will they welcome the Valois pretender or proclaim a free Republic ?;;;;;;;;;;;;;x
+DUA24.T;The March on Toulouse;;;;;;;;;;;;;x 
+DUA24.D;The rebellious Occitan have acknowledged the Valois as the true Kings of France and pledged their loyalty to the reconquest of the throne.;;;;;;;;;;;;;x 
+DUA25.T;The new Hundred Years War;;;;;;;;;;;;;x  
+DUA25.D;Provence has taken control of our rebellious provinces and has pledged to not stop until Paris! We can't let them do this and must put an end to the War for the French Throne!;;;;;;;;;;;;;x  
+DUA26.T;The Counter-revolution;;;;;;;;;;;;;x  
+DUA26.D;Occitania has affirmed as an independent Republic! We can't let them do such a thing!;;;;;;;;;;;;;x 
+DUA27.T;Creation of the Sons of St-Louis;;;;;;;;;;;;;x  
+DUA27.D;A french nationalist organisation has been created yesterday in La Rochelle by a certain Francois Guizot, a university historian. The aim of this association is to strengthen the conscience of the French and Provencal people and make them aware of their distinctness from the British. The name has been taken from Louis XI, a King who was later canonized and who he is seen as a fatherly figure of French history. It is particularly popular amongst the French students and many fear they might be spreading revolutionary ideals...;;;;;;;;;;;;;x  
+DUA28.T;Spread of the Sons of St-Louis;;;;;;;;;;;;;x
+DUA28.D;The sons of St-Louis have implemented themselves in this province and are already spreading their ideas ...;;;;;;;;;;;;;x
+DUA29.T;The Great Royal Travel;;;;;;;;;;;;;x
+DUA29.D;To further enhance his presence, Henri X decided to travel amongst England. He first landed near Hastings where he praised his ancestor Guillaume who there managed to win the English crown. He then went to Londres where he visited the locals of the East Indian Company on the boards of the Tamise. His travel led him then to Cambridge and Ofxord. There he met several of the “Young English” leaders who spontaneously rallied to him and praised his signs in favour of England. He then travelled west and north passing through Wales and Livreport. He then made a stop in York to praise Richard Plantagenet, duke of York, one of the heroes of the early Dual-Monarchy. Many people are acclaiming the king for this action that has strengthened the hold of the monarchy in England. ;;;;;;;;;;;;;x
+DUA30.T;Romanticism;;;;;;;;;;;;;x
+DUA30.D;A new school has appeared in arts. The Romanticists defy the laws established by the classical school of Paris and coming back to the roots of Baroque. It is especially successful in England. Tolsmith and Lord Byron are publishing poems taking their roots in the old Saxon mythology, Scnery is writing plays who are inspired by Shakespeare... This school has however little sucess amongst the literary critics of the capital who accuse them of recklessly crossing laws that were fixed by wise Elders.;;;;;;;;;;;;;x
 DUA40.T;The Anglois dilemma;;;;;;;;;;;;;x
 DUA40.D;Reconciling both French and English will not be an easy task, Henri X knows it very well. The two groups may not like each other but they hate Paris even more, so an alliance of both needs to be prevented. However one must not charge too much against one group unless one wants a local revolution to happen ...;;;;;;;;;;;;;x
 DUA41.T;The Glorious Revolution;;;;;;;;;;;;;x
@@ -479,7 +521,7 @@ NAN_congress_desc; With the old Beornian capital in our hands and their country 
 Granada_border_title;The Conquest of Granada ;;;;;;;;;;;;x 
 Granada_border_desc;Our Federation now extends from the Caribbean to the Pampas ! But until we secure Granada and Andagoya, we won't truly be the dominant power of Ameriga ! ;;;;;;;;;;;;x 
 GRA_congress_title;The Granadan Congress;;;;;;;;;;;;x 
-GRA_congress_desc; With the Cartagena de Indias in our hands and we can call a council to try to integrate the Granadans into the Federation.;;;;;;;;;;;;x 
+GRA_congress_desc; With Cartagena de Indias in our hands and we can call a council to try to integrate the Granadans into the Federation.;;;;;;;;;;;;x 
 DUA_SS_title; History of the Dual-Monarchy ;;;;;;;;;;;;x
 DUA_SS_desc; The World of Divergences is vastly different from ours. If you aren't familiar with its history, you should read that piece of text ;;;;;;;;;;;;x
 SS1.T; History of the Dual-Monarchy ;;;;;;;;;;;;x
@@ -583,8 +625,8 @@ CLM40.T;They Agree!;;;;;;;;;;;;;x
 CLM40.D;Clearly fearing our might, $FROMCOUNTRY$ decided to satisfy our demands. People in Nova Lisboa rejoice to be reunited with their brethren ! ;;;;;;;;;;;;x
 CLM41.T;Reorganisation of the vice-royalties;;;;;;;;;;;;;x 
 CLM41.D;Now that we control all the former lands of our Empire, we must decide how we will rule the lands. We could establish the old-vice-royalties or keep the territory under close surveillance ;;;;;;;;;;;;;x
-CLM50.T;Treaty of Havana;;;;;;;;;;;;;x 
-CLM50.D;The $FROMCOUNTRY_ADJ$ Spanish war is over. Representatives from Spain have been forced to sign an humiliating treaty that makes them free all their Colombian holdings along with their Caribbean ones. $FROMCOUNTRY$ has affirmed itself as a World Power and Europeans powers now begin to pay more attention to affairs on the other side of the Atlantic ...;;;;;;;;;;;;;x 
+CLM50.T;Treaty of Habana;;;;;;;;;;;;;x 
+CLM50.D;The $FROMCOUNTRY_ADJ$ Spanish war is over. Representatives from Spain have been forced to sign an humiliating treaty that makes them free all their Colombian and Caribbean holdings . $FROMCOUNTRY$ has affirmed itself as a World Power and Europeans powers now begin to pay more attention to affairs on the other side of the Atlantic ...;;;;;;;;;;;;;x 
 CLM53.T;La Revolucion Gloriosa !;;;;;;;;;;;;;x 
 CLM53.D;The Spanish population has lost confidence in the monarchy. The defeat and the loss of Gran Colombia has allowed Republicans to gain influence in the Spanish society. Seeing the decay of the state and the monarchy, radicals have overthrown the King and proclaimed the Republic ! Many wonder how the country will evolve ...;;;;;;;;;;;;;x 
 CLM54.T;Military Coup d'Etat !;;;;;;;;;;;;;x 
@@ -902,7 +944,11 @@ PNJ_revolt.D;The Panjabis have revolted against our rule and rallied around the 
 ENL_recognized_title;English independence;;;;;;;;;;;;;x 
 ENL_recognized_desc;With an independent English government established, the Dual-Monarchy is forced to stop claiming the lands in their possession;;;;;;;;;;;;;x 
 ENL_claim_title;Reclaim England !;;;;;;;;;;;;;x 
-ENL_claim_desc;The existence of an independent English state is a very insult to our Unity ! Let us reclaim what is rightfully ours now that the ENglish aren't able to act on the international stage !;;;;;;;;;;;;;x 
+ENL_claim_desc;The existence of an independent English state is a very insult to our Unity ! Let us reclaim what is rightfully ours now that the English aren't able to act on the international stage !;;;;;;;;;;;;;x 
+OCC_recognized_title;Occitan independence;;;;;;;;;;;;;x 
+OCC_recognized_desc;With an independent Occitan government established, the Dual-Monarchy is forced to stop claiming the lands in their possession;;;;;;;;;;;;;x 
+OCC_claim_title;Reclaim Occitania !;;;;;;;;;;;;;x 
+OCC_claim_desc;The existence of an independent Occitan state is a very insult to our Unity ! Let us reclaim what is rightfully ours now that the Occitan aren't able to act on the international stage !;;;;;;;;;;;;;x 
 pas_de_calais_title;Le Pas de Calais;;;;;;;;;;;;;x 
 pas_de_calais_desc;Calais and the surrounding plains of Picardie were important places during the Hundred Years War. Sadly this territory was lost with Calais being surrendered to the Burgundian king during the Anglo-French wars of Religion. But with our troops having recaptured the closest land to England we could make the International Concert recognize our claim !;;;;;;;;;;;;;x 
 puppet_Manchuria_title;Organizing Manchukuo;;;;;;;;;;;;;x 
@@ -997,3 +1043,21 @@ DUA130.T;Anglois education;;;;;;;;;;;;;x
 DUA130.D;Two camps oppose in the question of education. First, the "Federalists" want to allow our accepted minorities to continue to use their language in school along with the standardized language of Paris. The "Unionists" want to affirm one language to strenghten the state around one people, speaking one language. Our decision will not only affect education and the removal of the local dialects in school will mean their slow disappearance of the Anglois society. ;;;;;;;;;;;;;x
 organize_christiania_title;Organize Christiania;;;;;;;;;;;;;x,,,,,,,,,,,,,
 organize_christiania_desc;Our colonies in the East Indies are becoming a true part of the country. We must create the proper structures, so that they stand on par with our other national states.;;;;;;;;;;;;;x,,,,,,,,,,,, 
+sons_of_harold;The Sons of Harold;;;;;;;;;;;;;x,,,,,,,,,,,,, 
+sons_of_harold_desc;Firebrands are arguing the cause of English nationalism;;;;;;;;;;;;;x,,,,,,,,,,,,, 
+sons_of_louis;The Sons of St-Louis;;;;;;;;;;;;;x,,,,,,,,,,,,, 
+sons_of_louis_desc;Firebrands are arguing the cause of French nationalism;;;;;;;;;;;;;x,,,,,,,,,,,,, 
+french_cultural_unity;Anglois Cultural Unity;;;;;;;;;;;;x,,,,,,,,,,,,,
+french_cultural_unity_desc;New schooling policies are slowly assimilating patois-speaking Anglois.;;;;;;;;;;;;x,,,,,,,,,,,,,
+anglois_dilemma;The Anglois Dilemma.;;;;;;;;;;;;x,,,,,,,,,,,,,
+anglois_dilemma_desc;Our policies of integration are provoking troubles across the country.;;;;;;;;;;;;x,,,,,,,,,,,,,
+revolution_aftermath;Aftermath of the Revolution;;;;;;;;;;;;x,,,,,,,,,,,,,
+revolution_aftermath_desc;The Reoccupation of the country is harsh and many cities lie in ruins after the fightings;;;;;;;;;;;;x,,,,,,,,,,,,,
+beornia_english;Beornian haven;;;;;;;;;;;;x,,,,,,,,,,,,,
+beornia_english_desc;Following the Glorious Revolution the Beornian lands saw an influx of English immigrants;;;;;;;;;;;;x,,,,,,,,,,,,,
+organize_new_zealand_title;Organize New-Zealand;;;;;;;;;;;;x,,,,,,,,,,,,,
+organize_new_zealand_desc;Our colonies in the Maori Islands are becoming a true part of the country. We must create the proper structures, so that they stand on par with our other national states.;;;;;;;;;;;;x,,,,,,,,,,,,
+reorganize_new_zealand_title;Reorganize New-Zealand;;;;;;;;;;;;x,,,,,,,,,,,,,
+reorganize_new_zealand_desc;We have taken the Maori islands and we can now reorganize the old colony of New-Zealand;;;;;;;;;;;;x,,,,,,,,,,,,,
+accept_maoris_title;Accepting the Maoris;;;;;;;;;;;;x,,,,,,,,,,,,,
+accept_maoris_desc;The New-Zealand colony is recent and the Maori tribes still represent a large part of our population. instead of oppressing them we should guarantee the rights given by the treaty of Waitangi to better integrate them into our social fabric.;;;;;;;;;;;;x,,,,,,,,,,,,,

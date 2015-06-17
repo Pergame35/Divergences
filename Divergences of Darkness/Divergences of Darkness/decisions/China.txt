@@ -14,11 +14,18 @@ political_decisions = {
   			CHI = {
 				all_core = {
 					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
+  						owned_by = THIS
+  						owner = {
+  							in_sphere = THIS
+  						}
+						province_id = 1498
+						province_id = 1538
+						province_id = 1566
+						province_id = 1481
+						province_id = 1569
+						province_id = 1606
+						province_id = 1496
+  					}
 				}
 			}
   		}
@@ -166,6 +173,13 @@ political_decisions = {
   						owner = {
   							in_sphere = THIS
   						}
+						province_id = 1498
+						province_id = 1538
+						province_id = 1566
+						province_id = 1481
+						province_id = 1569
+						province_id = 1606
+						province_id = 1496
   					}
   				}
   			}
@@ -300,10 +314,19 @@ political_decisions = {
   						owner = {
   							in_sphere = THIS
   						}
+						province_id = 1498
+						province_id = 1538
+						province_id = 1566
+						province_id = 1481
+						province_id = 1569
+						province_id = 1606
+						province_id = 1496
   					}
+						
   				}
   			}
   		}
+		
   		effect = {
   			prestige = 30
   			add_accepted_culture = beifaren
@@ -432,11 +455,18 @@ political_decisions = {
   			CHI = {
 				all_core = {
 					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
+  						owned_by = THIS
+  						owner = {
+  							in_sphere = THIS
+  						}
+						province_id = 1498
+						province_id = 1538
+						province_id = 1566
+						province_id = 1481
+						province_id = 1569
+						province_id = 1606
+						province_id = 1496
+  					}
 				}
 			}
   		}
@@ -570,10 +600,17 @@ political_decisions = {
   			CHI = {
 				all_core = {
 					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
+  						owned_by = THIS
+  						owner = {
+  							in_sphere = THIS
+  						}
+						province_id = 1498
+						province_id = 1538
+						province_id = 1566
+						province_id = 1481
+						province_id = 1569
+						province_id = 1606
+						province_id = 1496
 					}
 				}
 			}
@@ -593,6 +630,13 @@ political_decisions = {
 					}
 				}
 				annex_to = THIS
+				province_id = 1498
+				province_id = 1538
+				province_id = 1566
+				province_id = 1481
+				province_id = 1569
+				province_id = 1606
+				province_id = 1496
 			}
 			any_country = {
   				limit = {
@@ -696,11 +740,18 @@ political_decisions = {
   			CHI = {
 				all_core = {
 					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
+  						owned_by = THIS
+  						owner = {
+  							in_sphere = THIS
+  						}
+						province_id = 1498
+						province_id = 1538
+						province_id = 1566
+						province_id = 1481
+						province_id = 1569
+						province_id = 1606
+						province_id = 1496
+  					}
 				}
 			}
   		}
