@@ -17,24 +17,38 @@ political_decisions = {
 		allow = {
 			NOT = { war = yes }
 			prestige = 50
-			owns = 1140 
-			owns = 1135
-			QAJ = { exists = no }
-			ZND = { exists = no }
+			owns = 1121
+            owns = 1135
+            owns = 1127
+			OR = { QAJ = { exists = no } tag = QAJ }
+			OR = { ZND = { exists = no } tag = ZND }
 		}
 		effect = {
-			prestige = 20
-			change_tag = PER
-			add_accepted_culture = persian
-			add_accepted_culture = hazara
-			any_country = {
+            prestige = 20
+            change_tag = PER
+            add_accepted_culture = persian
+            any_country = {
+                limit = {
+                    is_culture_group = iranian
+                    OR = {
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                }
+            country_event = 11101
+            }
+			random_owned = {
 				limit = {
-					is_culture_group = iranian
-					in_sphere = THIS
+					ZND = { exists = no }
 				}
-			country_event = 11101
+				ZND = { all_core = { remove_core = ZND } }
 			}
-			capital = 1121
+			random_owned = {
+				limit = {
+					QAJ = { exists = no }
+				}
+				QAJ = { all_core = { remove_core = QAJ } }
+			}
 		}
 		
 		ai_will_do = {
@@ -49,59 +63,88 @@ political_decisions = {
 			tag = PER
 		}
 		allow = {
-			NOT = { war = yes }
-			prestige = 100
-			PER = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
-				}
-			}
-			IRQ = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
-				}
-			}
-			KAL = {  
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
-				}
-			}
-			AFG = {   
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
-				}
-			}  
-			AFS = {  
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
-				}
-			}
-		}
+		 923 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        in_sphere = THIS
+                    }
+                    owner = {
+                        vassal_of = THIS
+                    }
+                }
+            }
+            926 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        in_sphere = THIS
+                    }
+                    owner = {
+                        vassal_of = THIS
+                    }
+                }
+            }
+            1108 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        in_sphere = THIS
+                    }
+                    owner = {
+                        vassal_of = THIS
+                    }
+                }
+            }
+            1204 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        in_sphere = THIS
+                    }
+                    owner = {
+                        vassal_of = THIS
+                    }
+                }
+            }
+            1209 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        in_sphere = THIS
+                    }
+                    owner = {
+                        vassal_of = THIS
+                    }
+                }
+            }
+            KAL = {  
+                all_core = {
+                    OR = {
+                        owned_by = THIS
+                        owner = {
+                            in_sphere = THIS
+                        }
+                        owner = {
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            PER = {  
+                all_core = {
+                    OR = {
+                        owned_by = THIS
+                        owner = {
+                            in_sphere = THIS
+                        }
+                        owner = {
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+        }
 		effect = {
 			prestige = 40
 			change_tag = ARY
@@ -116,23 +159,23 @@ political_decisions = {
 					OR = {
               AND = {
                   is_culture_group = iranian
-					        in_sphere = THIS
+					OR = {  in_sphere = THIS vassal_of = THIS }
               } 
               AND = {
-                  tag = IRQ
-					        in_sphere = THIS
+					tag = IRQ
+					OR = {  in_sphere = THIS vassal_of = THIS }
               }
               AND = {
                   tag = KAL
-					        in_sphere = THIS
+					OR = {  in_sphere = THIS vassal_of = THIS }
               }
               AND = {
                   tag = AFG
-					        in_sphere = THIS
+					OR = {  in_sphere = THIS vassal_of = THIS }
               } 
               AND = {
                   tag = AFS
-					        in_sphere = THIS
+					OR = {  in_sphere = THIS vassal_of = THIS }
               }               
           }
 				}
@@ -168,7 +211,6 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			capital = 1121
 		}
 		ai_will_do = {
 			factor = 1
@@ -181,6 +223,7 @@ political_decisions = {
 	QAJ = { exists = yes }
 	NOT = { truce_with = QAJ }
 		}
+	
 	allow = { 
 	all_core = { owned_by = THIS }
 		}

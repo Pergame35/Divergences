@@ -8,13 +8,12 @@ literacy = 0.46
 civilized = yes
 prestige = 5
 
-
 # Political reforms
 slavery = no_slavery
 upper_house_composition = state_equal_weight
 vote_franschise = universal_weighted_voting
 public_meetings = yes_meeting
-press_rights = state_press
+press_rights = free_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = non_secret_ballots
@@ -34,12 +33,12 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
 
-ruling_party = AAA_liberal_2
+ruling_party = TUS_liberal_1
 upper_house = {
 	fascist = 0
-	liberal = 20
-	conservative = 65
-	reactionary = 15
+	liberal = 50
+	conservative = 40
+	reactionary = 10
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
@@ -78,5 +77,9 @@ consciousness = 3
 nonstate_consciousness = 1
 
 schools = army_tech_school
+
+decision = TUS_setup
+
+set_country_flag = existing_country
 
 oob = "TUS_oob.txt"

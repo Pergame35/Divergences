@@ -556,6 +556,21 @@ emigration_chance =
 		}
 	}
 	modifier = {
+		factor = 2
+		AND = {	
+			militancy = 1.5
+			location = {
+				is_core = ITA
+				}
+			}
+		}
+	modifier = {
+			factor = 1.2
+			location = {
+				is_core = ITA
+			}
+		}
+	modifier = {
 		factor = 3
 		has_pop_religion = jewish
 		location = { NOT = { is_core = ISR } } 

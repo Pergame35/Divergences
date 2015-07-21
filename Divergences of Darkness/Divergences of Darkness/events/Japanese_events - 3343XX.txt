@@ -520,7 +520,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "They are part of Japan as the Home Islands !"
+	name = "They are as part of Japan as the Home Islands !"
 	release = KKN 
 	KKN = { government = democracy capital = 3 add_country_modifier = {
 				name = taiping_draft
@@ -540,3 +540,15 @@ country_event = {
 	} 
 }
 	
+country_event = { 
+	id = 334317 
+	title = "Ainu_ann.T"
+	desc = "Ainu_ann.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Worrying ..."
+	relation = { who = JAP value = -25}
+	}
+}

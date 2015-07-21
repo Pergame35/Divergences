@@ -259,7 +259,8 @@ political_decisions = {
 			is_vassal = no
 			OR = { 
 			is_greater_power = yes 
-			truce_with = MEX }
+			truce_with = MEX 
+			}
 		}
 		
 		effect = {

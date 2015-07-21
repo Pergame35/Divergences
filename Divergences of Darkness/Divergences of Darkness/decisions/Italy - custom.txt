@@ -160,6 +160,7 @@ political_decisions = {
 			NOT = { has_country_flag = etruria_of_italy }
 			NOT = { has_global_flag = death_of_venice }
 			NOT = { has_global_flag = council_of_italy }
+			NOT = { has_country_flag = council_TUS }
 		}
 		
 		allow = {
@@ -180,6 +181,7 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			set_global_flag = council_of_italy
+			set_country_flag = council_TUS
 			relation = {
 				who = ARA
 				value = -100

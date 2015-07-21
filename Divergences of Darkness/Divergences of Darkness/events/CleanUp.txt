@@ -1055,101 +1055,22 @@ country_event = {
 	picture = "senate_debate"
 	
 	trigger = {
-		government = merchant_republic
+				government = merchant_republic
                 public_meetings = yes_meeting
-                OR = {
-                        press_rights = censored_press
-                        press_rights = free_press
+        OR = {
+                press_rights = censored_press
+                press_rights = free_press
                 }
 		OR = {
 			political_parties = secret_ballots
 			political_parties = non_secret_ballots
-                        political_parties = gerrymandering
+            political_parties = gerrymandering
 		}
 		civilized = yes
 		OR = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
-                }
-                OR = {
-                                AND = {
-                                        ruling_party_ideology = Liberal
-                                        average_militancy = 6
-                                }
-                                AND = {
-                                        ruling_party_ideology = socialist
-                                        average_militancy = 6
-                                }
-                                AND = {   
-				        upper_house = {
-					        ideology = socialist
-					        value = 0.34
-				        }
-                                        average_militancy = 4
-                                }
-				AND = {   
-				        upper_house = {
-					        ideology = liberal
-					        value = 0.34
-				        }
-                                        average_militancy = 4
-                                }
-				AND = {
-					upper_house = {
-						ideology = socialist
-						value = 0.18
-					}
-					upper_house = {
-						ideology = liberal
-						value = 0.18
-                                        }
-                                        average_militancy = 4
-                                }
-                                AND = {
-					upper_house = {
-						ideology = socialist
-						value = 0.26
-					}
-					upper_house = {
-						ideology = liberal
-						value = 0.13 
-                                        }
-                                        average_militancy = 4                                      
-                                }
-				AND = {
-					upper_house = {
-						ideology = socialist
-						value = 0.13
-					}
-					upper_house = {
-						ideology = liberal
-						value = 0.26
-                                        }
-                                        average_militancy = 4
-                                }
-                                AND = {
-					upper_house = {
-						ideology = socialist
-						value = 0.30
-					}
-					upper_house = {
-						ideology = liberal
-						value = 0.1                           
-					}
-                                        average_militancy = 4
-                                }
-                                AND = {
-					upper_house = {
-						ideology = socialist
-						value = 0.1
-					}
-					upper_house = {
-						ideology = liberal
-						value = 0.30                           
-					}
-                                        average_militancy = 4
-				}            
-		}
+              }
 	}
 	
 	mean_time_to_happen = {
@@ -1157,7 +1078,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA60070"
+		name = "Long live the people's republic!"
 		government = democracy
 	}
 }

@@ -196,4 +196,24 @@ political_decisions = {
 			MAD = { country_event = 95505 }
 		}
 	}
+	
+	pegu_treaty = { 
+	potential = { 
+	tag = SPA 
+	owns = 1330 
+	is_greater_power = yes 
+	BUR = { civilized = no exists = yes owns = 1332 }
+	NOT = { has_country_flag = pegu_treaty }
+	}
+	
+	allow = { 
+	BUR = { in_sphere = THIS }
+	}
+	
+	effect = { 
+	set_country_flag = pegu_treaty 
+	BUR = { country_event = 333040 }
+	}
+	
+	}
 }

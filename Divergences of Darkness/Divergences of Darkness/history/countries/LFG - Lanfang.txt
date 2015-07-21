@@ -6,8 +6,8 @@ religion = mahayana
 government = democracy
 plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.14
-
+literacy = 0.29
+civilized = yes
 
 
 # Political reforms
@@ -26,6 +26,7 @@ pollution=no_controls
 child_labor = child_labor_legal
 arts_endowment=no_endowment
 education = elite
+
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
@@ -59,6 +60,7 @@ water_wheel_power = 1
 # Inventions
 
 # Starting Consciousness
-consciousness = 0
-nonstate_consciousness = 0
+consciousness = 1
+nonstate_consciousness = 3
+
 oob = "LFG_oob.txt"

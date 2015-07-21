@@ -190,5 +190,46 @@ political_decisions = {
 		}	
 	}
 	
-	
+	organize_terra_d_oro = { 
+	potential = {
+			civilized = yes
+			owns = 1784
+			NOT = {
+				exists = TRO
+				has_global_flag = terraoro_organized
+				continent = africa
+			}
+		}
+		
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			owns = 1784
+		}
+		
+		effect = {
+			set_global_flag = terraoro_organized
+			prestige = 5
+			any_owned = {
+				limit = {
+					OR = {
+						region = VEN_1784 
+						region = FRA_1775 
+						region = FRA_1783
+					}
+				}
+				add_core = TRO
+				add_province_modifier = {
+					name = colonial_exploitation
+					duration = 1095
+				}
+			}
+			TRO = {
+				set_country_flag = post_colonial_country
+				set_country_flag = civilize_after_release
+				primary_culture = THIS
+				add_accepted_culture = maures
+			}
+		}	
+	}
 }

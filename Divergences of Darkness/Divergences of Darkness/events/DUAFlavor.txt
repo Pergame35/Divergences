@@ -613,10 +613,6 @@ country_event = { ## Glorious Revolution
 		}
 	ENL = { 
 	country_event = 650206
-	add_country_modifier = {
-				name = taiping_draft
-				duration = 1000
-			}
 		}
 	diplomatic_influence = { who = ENL value = 300 }
 	}
@@ -1719,17 +1715,45 @@ country_event = { ##The Glorious Revolution -reconquest
 				limit = {
 					has_pop_culture = english
 						location = {
-							OR = {
-								province_id = 299
-								province_id = 296 
-								province_id = 297 
-								province_id = 298
-							}
+								province_id = 296
 						}
 				}
 				consciousness = 2
 				militancy = -1
 				move_pop = 2348
+			}
+	any_pop = {
+				limit = {
+					has_pop_culture = english
+						location = {
+								province_id = 299
+						}
+				}
+				consciousness = 2
+				militancy = -1
+				move_pop = 2355
+			}
+	any_pop = {
+				limit = {
+					has_pop_culture = english
+						location = {
+								province_id = 297 
+						}
+				}
+				consciousness = 2
+				militancy = -1
+				move_pop = 2361
+			}
+	any_pop = {
+				limit = {
+					has_pop_culture = english
+						location = {
+								province_id = 298
+						}
+				}
+				consciousness = 2
+				militancy = -1
+				move_pop = 2354
 			}
 	NAN = { add_country_modifier = { 
 	name = beornia_english 
@@ -3568,7 +3592,7 @@ country_event = { #Anglois resilience -1870
 	
 	option = { 
 	name = "The country stands united !"
-	set_country_flag = DUA_1860
+	set_country_flag = DUA_1870
 	RAP = {
 			change_variable = {
 				which = Anglois_ACC 
@@ -3995,17 +4019,45 @@ country_event = { ##The Glorious Revolution -reconquest
 				limit = {
 					has_pop_culture = english
 						location = {
-							OR = {
-								province_id = 299
-								province_id = 296 
-								province_id = 297 
-								province_id = 298
-							}
+								province_id = 296
 						}
 				}
 				consciousness = 2
 				militancy = -1
 				move_pop = 2348
+			}
+	any_pop = {
+				limit = {
+					has_pop_culture = english
+						location = {
+								province_id = 299
+						}
+				}
+				consciousness = 2
+				militancy = -1
+				move_pop = 2355
+			}
+	any_pop = {
+				limit = {
+					has_pop_culture = english
+						location = {
+								province_id = 297 
+						}
+				}
+				consciousness = 2
+				militancy = -1
+				move_pop = 2361
+			}
+	any_pop = {
+				limit = {
+					has_pop_culture = english
+						location = {
+								province_id = 298
+						}
+				}
+				consciousness = 2
+				militancy = -1
+				move_pop = 2354
 			}
 	NAN = { add_country_modifier = { 
 	name = beornia_english 

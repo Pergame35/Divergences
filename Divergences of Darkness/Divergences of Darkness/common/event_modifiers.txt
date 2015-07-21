@@ -2327,3 +2327,29 @@ beornia_english = {
 	assimilation_rate = 0.5
 	icon = 19
 }
+
+etrurian_agitation = {
+	pop_consciousness_modifier = 0.25
+	pop_militancy_modifier = 0.1
+	icon = 18
+}
+
+italian_emigration = {
+	immigrant_attract = -0.25
+	immigrant_push = 1.1
+	pop_militancy_modifier = 0.1
+	icon = 4
+}
+
+integration_sicily = { 
+	tax_efficiency = -0.2
+}
+
+integration_arborea = { 
+	tax_efficiency = -0.05
+}
+
+integration_venice = { 
+	tax_efficiency = -0.15
+}
+

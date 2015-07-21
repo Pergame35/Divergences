@@ -26,6 +26,7 @@ country_event = { #Restoration of order in Etruria
 	name = "Nous reprendrons nos droits!"
 	badboy = 10
 	relation = { who = ARA value = -150 }
+	TUS = { country_event = 36756 }
 	war = {
 			target = TUS
 			attacker_goal = {

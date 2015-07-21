@@ -188,6 +188,9 @@ political_decisions = {
 					add_core = DUA
 				}
 			}
+			any_owned = { 
+			limit = { is_core = PRV } 
+			remove_core = PRV }
 		}
 			
 		ai_will_do = {

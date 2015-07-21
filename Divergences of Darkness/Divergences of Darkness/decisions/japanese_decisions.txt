@@ -150,6 +150,13 @@ political_decisions = {
 			prestige = 3
 			set_country_flag = ainuisjapanese
 			inherit = AIN
+			any_country = { 
+			OR = { 	
+					continent = asia
+					primary_culture = russian 
+				}
+			country_event = 334317
+			}
 		}
 		ai_will_do = {
 			factor = 1

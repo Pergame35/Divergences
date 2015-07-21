@@ -12,7 +12,7 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		tag = ENG
+		tag = DUA
 		year = 1844
 		any_owned_province = {
 			is_core = IRE
@@ -62,7 +62,7 @@ country_event = {
 		any_pop = {
 			limit = {
 				is_primary_culture = yes
-				location = { is_core = ENG }
+				location = { is_core = DUA }
 			}
 			scaled_consciousness = {
 				issue = laissez_faire
@@ -74,7 +74,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 20
+			factor = 25
 			modifier = {
 				factor = 0.5
 				economic_policy = laissez_faire
@@ -123,7 +123,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 30
+			factor = 50
 			modifier = {
 				factor = 0
 				NOT = { money = 100000 }
@@ -173,7 +173,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 50
+			factor = 25
 			modifier = {
 				factor = 2
 				economic_policy = laissez_faire
@@ -317,7 +317,7 @@ country_event = {
 	picture = "arrested"
 	
 	trigger = {
-		tag = ENG
+		tag = DUA
 		any_owned_province = { is_core = IRE }
 		has_country_flag = great_irish_famine
 		OR = {
@@ -803,8 +803,8 @@ province_event = {
 			any_owned = {
 				limit = {
 					is_colonial = no
-					culture = british
-					is_core = ENG
+					culture = anglois
+					is_core = DUA
 				}
 				add_province_modifier = {
 					name = loss_of_support
@@ -821,7 +821,7 @@ province_event = {
 			}
 		}
 		any_pop = {
-			limit = { has_pop_culture = british }
+			limit = { has_pop_culture = anglois }
 			militancy = 5
 		}
 		ai_chance = {

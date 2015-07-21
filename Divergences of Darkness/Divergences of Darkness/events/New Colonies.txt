@@ -439,3 +439,60 @@ province_event = {
 		CHR = { add_accepted_culture = melanesian }
 	}
 }
+
+province_event = { ### Spread of Terra d'Oro cores 
+	id = 971341
+	title = "$STATENAME$ Colonial Incorporation"
+	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Aurean colony"
+	
+	trigger = {
+		OR = {
+			region = FRA_1775 #Coastal Mauritania
+			region = FRA_1783 #Gorèa
+			region = FRA_1780 #Inner Mautiania
+		}
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = TRO
+		}
+		owner = {
+			civilized = yes
+			NOT = { continent = africa }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1784 }
+				TRO = { exists = no }
+			}
+			TRO = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+		NOT = {
+			is_core = TRO
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = TRO }
+				}
+				add_core = TRO
+				any_pop = { militancy = -3 }
+				add_province_modifier = {
+					name = colonial_exploitation
+					duration = 1095
+				}
+			}
+		}
+	}
+}

@@ -2247,7 +2247,6 @@ liberal_rebels = {
 		modifier = {
 			factor = 0.5
 			average_militancy = 8
-
 		}
 		modifier = {
 			factor = 0.1
@@ -2257,6 +2256,9 @@ liberal_rebels = {
 			factor = 0.5
 			has_country_modifier = global_liberal_agitation
 		}
+		modifier = { 
+			factor = 0.2
+			AND = { has_country_flag = carbonari_activity NOT = { has_country_flag = had_liberal_revolution } }
 	}
 	
 	# The rebel type with the highest modifier for this pop gets picked
@@ -2540,6 +2542,10 @@ liberal_rebels = {
 				owner = { NOT = { political_parties = non_secret_ballots } }
 			}
 			owner = { political_reform = secret_ballots }
+		}
+		random_owned = { 
+			limit = { owner = { has_country_flag = carbonari_activity } }
+			government = democracy
 		}
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win

@@ -16,45 +16,6 @@ country_event = {
 }
 
 
-# Conference
-country_event = {
-	id = 333002
-	title = "EVTNAME333002"
-	desc = "EVTDESC333002"
-	picture = "greatpowers"
-	
-	trigger = {
-		OR = {
-			is_greater_power = yes
-			AND = {
-				colonial_nation = yes
-				any_owned_province = { continent = africa }
-			}
-		}
-		capital_scope = { continent = europe }
-		invention = prophylaxis_against_malaria
-		nationalism_n_imperialism = 1
-		OR = {
-			machine_guns = 1
-			naval_statistics = 1
-		}
-	}
-
-	fire_only_once = yes
-	
-	major = yes
-	
-	mean_time_to_happen = {
-		months = 24
-	}
-	
-	option = {
-		name = "EVTOPTA333002"
-		set_global_flag = berlin_conference
-		prestige = 25
-	}
-}
-
 # Africa
 country_event = {
 	id = 333003
@@ -1001,5 +962,44 @@ country_event = {
 	name = "Excellent"
 	prestige = 25
 	money = -100000
+	}
+}
+
+###Unequal Treaty for Pegu 
+
+country_event = {
+	id = 333040
+	title = "Pegu1.T"
+	desc = "Pegu1.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "We will give them the coastline ..."
+	any_owned = { limit = { region = BUR_1330 } secede_province = FROM}
+	ai_chance = { 
+	factor = 90 
+		}
+	}
+	
+	option = {
+	name = "Over our dead bodies !"
+	FROM = { 
+	casus_belli = { 
+	name = demand_concession_casus_belli
+	target = BUR 
+	months = 60 
+		}
+	war = { 
+	target = BUR 
+		attacker_goal = { 
+		casus_belli = demand_concession_casus_belli 
+		state_province_id = 1332
+			}
+		}
+	}
+	ai_chance = { 
+	factor = 10 
+		}
 	}
 }

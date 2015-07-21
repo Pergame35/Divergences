@@ -33,13 +33,13 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
 
-ruling_party = AAA_conservative_3
+ruling_party = PLA_conservative_2 # Parti d'Avant Garde
 upper_house = {
 	fascist = 0
-	liberal = 35
+	liberal = 25
 	conservative = 55
-	reactionary = 5
-	anarcho_liberal = 5
+	reactionary = 20
+	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
