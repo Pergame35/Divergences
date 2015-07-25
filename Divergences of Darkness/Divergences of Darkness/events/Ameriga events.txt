@@ -1,6 +1,6 @@
-country_event = {
+﻿country_event = {
 	
-	ID = 775404
+	id = 775404
 	title = "LOTNANfriendshipsetup5name"
 	desc = "LOTNANfriendshipsetup5desc"
 	fire_only_once = yes
@@ -49,7 +49,7 @@ country_event = {
 
 country_event = {
 
-	ID = 775400 	
+	id = 775400 	
 	title = "LOTNANfriendshipsetup1name"
 	desc = "LOTNANfriendshipsetup1desc"
 	
@@ -133,7 +133,7 @@ country_event = {
 country_event = {
 
 	is_triggered_only = yes
-	ID = 775401
+	id = 775401
 	title = "LOTNANfriendshipsetup2name" 
 	desc = "LOTNANfriendshipsetup2desc"
 		
@@ -163,7 +163,7 @@ country_event = {
 country_event = {
 	
 	is_triggered_only = yes
-	ID = 775402
+	id = 775402
 	title = "LOTNANfriendshipsetup3name" #partialfailure#
 	desc = "LOTNANfriendshipsetup3desc"
 		
@@ -186,7 +186,7 @@ country_event = {
 country_event = {
 	
 	is_triggered_only = yes
-	ID = 775403
+	id = 775403
 	title = "LOTNANfriendshipsetup4name" 
 	desc = "LOTNANfriendshipsetup4desc"
 		
@@ -203,7 +203,7 @@ country_event = {
 
 country_event = {
 
-	ID = 775405
+	id = 775405
 	title = "LOTNANfriendshipevent1name"
 	desc = "LOTNANfriendshipevent1desc"
 	
@@ -267,7 +267,7 @@ country_event = {
 
 country_event = {
 
-	ID = 775406
+	id = 775406
 	title = "LOTNANfriendshipevent2name"
 	desc = "LOTNANfriendshipevent2desc"
 	
@@ -330,7 +330,7 @@ country_event = {
 }
 
 country_event = {
-	ID = 775407
+	id = 775407
 	title = "LOTNANfriendshipevent3name"
 	desc = "LOTNANfriendshipevent3desc"
 
@@ -366,7 +366,7 @@ country_event = {
 }
 
 country_event = {
-	ID = 775408
+	id = 775408
 	title = "LOTNANfriendshipevent4name"
 	desc = "LOTNANfriendshipevent4desc"
 
@@ -402,7 +402,7 @@ country_event = {
 
 country_event = {
 	
-	ID = 775409
+	id = 775409
 	title = "kingstatueevent1name"
 	desc = "kingstatueevent1desc"
 	
@@ -427,7 +427,7 @@ country_event = {
 
 country_event = {
 	
-	ID = 775410
+	id = 775410
 	title = "kingstatueevent2name"
 	desc = "kingstatueevent2desc"
 	

@@ -1,5 +1,6 @@
 political_decisions = {
 	form_grossdeutschland = {
+	picture = Germania
 		potential = {
 			is_culture_group = germanic
 			NOT = {
@@ -155,7 +156,7 @@ political_decisions = {
 	potential = { 
 	tag = BOH 
 	has_global_flag = liberal_revolutions_should_now_fire
-	NOT = { government = absolute_monarchy}
+	NOT = { government = absolute_monarchy }
 	}
 		
 	allow = { 
@@ -347,9 +348,7 @@ political_decisions = {
 	SAX_558 = { add_core = CAE }	#Saxony
 	any_country = {
 				limit = {
-					OR = {
-						primary_culture = north_german
-					}
+					primary_culture = north_german
 					in_sphere = THIS
 					NOT = {
 						tag = THIS
@@ -368,7 +367,7 @@ political_decisions = {
 	integrate_prussia = { 
 		
 	potential = { 
-	OR = { tag = HRE tag = CAE} 
+	OR = { tag = HRE tag = CAE } 
 	690 = { owned_by = THIS }
 	698 = { owned_by = THIS }
 	NOT = { has_country_flag = integrate_prussia }

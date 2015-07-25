@@ -29,7 +29,7 @@ reactionary_rebels = {
 		hms_government = absolute_monarchy
 		democracy = presidential_dictatorship
 		merchant_republic = presidential_dictatorship
-		theocracy = absolute_monarchy
+		theocracy = theocracy
 	}
 	
 	
@@ -212,7 +212,11 @@ reactionary_rebels = {
 		}
 		modifier = {
 			factor = 0
-			country = { government = absolute_monarchy}
+			country = { government = absolute_monarchy }
+		}
+		modifier = {
+			factor = 0
+			country = { government = theocracy }
 		}
 		modifier = {
 			factor = 0.2
@@ -377,6 +381,8 @@ fascist_rebels = {
 		prussian_constitutionalism = fascist_dictatorship
 		hms_government = fascist_dictatorship
 		democracy = fascist_dictatorship
+		theocracy = fascist_dictatorship 
+		merchant_republic = fascist_dictatorship
 	}
 	
 	
@@ -1354,6 +1360,8 @@ nationalist_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		theocracy = democracy 
+		merchant_republic = democracy
 	}
 	
 	
@@ -1623,6 +1631,8 @@ pan_nationalist_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		theocracy = democracy
+		merchant_republic = democracy
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -2259,6 +2269,7 @@ liberal_rebels = {
 		modifier = { 
 			factor = 0.2
 			AND = { has_country_flag = carbonari_activity NOT = { has_country_flag = had_liberal_revolution } }
+		}
 	}
 	
 	# The rebel type with the highest modifier for this pop gets picked
@@ -2400,18 +2411,6 @@ liberal_rebels = {
 			}
 		}
 		modifier = {
-			factor = 0.1
-			country = {
-				tag = SPC
-				OR = {
-					government = hms_government
-					government = prussian_constitutionalism
-					government = absolute_monarchy
-				}
-			}
-			pop_majority_ideology = liberal
-		}
-		modifier = {
 			factor = 0.25
 			is_culture_group = germanic
 			country = {
@@ -2422,20 +2421,7 @@ liberal_rebels = {
 				NOT = { tag = KUK }
 				NOT = { has_country_flag = wants_to_unify }
 			}
-		}
-		modifier = {
-			factor = 0.25
-			is_culture_group = italian
-			country = {
-				is_greater_power = no
-				is_culture_group = italian
-				OR = {
-					has_global_flag = italian_call_to_union
-					has_global_flag = garibaldi_redshirts
-				}
-				NOT = { has_country_flag = wants_to_unify }
-			}
-		}		
+		}	
 	}
  
  	#This is checked for EACH province in the Area of Operations

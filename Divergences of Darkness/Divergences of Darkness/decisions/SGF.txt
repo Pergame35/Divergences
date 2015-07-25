@@ -1,5 +1,6 @@
 political_decisions = {
 	form_lesser_germany = {
+		picture = frankfurt_parliament
 		potential = {
 			primary_culture = south_german
 			NOT = {
@@ -153,6 +154,10 @@ political_decisions = {
 			SAX_1 = { add_core = SGF }
 			#Southern Rheinland
 			PRU_572 = {
+				add_core = SGF
+			}
+			#Palatinate
+			HES_2560 = {
 				add_core = SGF
 			}
 			change_tag = SGF

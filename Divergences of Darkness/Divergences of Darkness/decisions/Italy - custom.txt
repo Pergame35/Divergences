@@ -198,4 +198,31 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	help_germany = { 
+	picture = Germania
+	potential = { 
+	tag = ITA 
+	government = democracy 
+	NOT = { exists = SGF }
+	NOT = { exists = CAE }
+	NOT = { exists = GER }
+	NOT = { exists = HRE }
+	NOT = { has_global_flag = first_council_of_munich }
+	NOT = { has_global_flag = revolution_germany }
+		}
+		
+	allow = { 
+	capital = 749 
+	is_greater_power = yes 
+	}
+	
+	effect = { 
+	prestige = 25
+	set_global_flag = revolution_germany
+		}
+	ai_will_do = {
+			factor = 1
+		}
+	}
 }

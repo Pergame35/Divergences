@@ -132,7 +132,7 @@ country_event = { ##Sending an embassy to Florence ( not for TUS cores )
 	fire_only_once = yes 
 	
 	mean_time_to_happen = { 
-	days = 30 
+	days = 10 
 	}
 	
 	option = { 
@@ -182,7 +182,7 @@ country_event = { ##Embassy -vassal
 	is_triggered_only = yes 
 	
 	mean_time_to_happen = { 
-	days = 30 
+	days = 10 
 	}
 	
 	option = { 
@@ -319,7 +319,7 @@ country_event = { #### Francesco Pepe leaves Florence
 	NOT = { has_country_flag = pepe }
 	}
 	
-	mean_time_to_happen = { months = 2 }
+	mean_time_to_happen = { months = 25 }
 	
 	option = { 
 	name = "He should at least have asked us!"
@@ -1293,7 +1293,7 @@ country_event = {
 	tag = ARA 
 	ITA = { exists = yes }
 	NOT = { ITA = { has_country_flag = valois_italy } }
-	has_country_flag = conquest_ITA
+	NOT = { has_country_flag = conquest_ITA }
 	}
 	
 	fire_only_once = yes 
@@ -1850,5 +1850,143 @@ country_event = { #Venitian emigration
 	citizenship_policy = full_citizenship 
 			}
 		}
+	}
+}
+
+country_event = { 
+	id = 124223
+	title = "ITA4.T"
+	desc = "ITA4.D"
+	picture = "risorgimento"
+	
+	trigger = { 
+	tag = ITA 
+	OCC = { exists = yes government = democracy} 
+	FRA = { exists = yes government = democracy}
+	DUA = { exists = no }
+	}
+	
+	mean_time_to_happen = { months = 1 }
+	
+	fire_only_once = yes
+	
+	option = { 
+	name = "We will establish special ties with the French and Occitan Republics!"
+	OCC = { country_event = 124224}
+	FRA = { country_event = 124224}
+	ai_chance = { 
+	factor = 65 
+		}
+	}
+	
+	option = { 
+	name = "We will only ally Occitania"
+	OCC = { country_event = 124224 }
+	ai_chance = { 
+	factor = 65 
+		}
+	}
+	
+	option = { 
+	name = "We don't care about what is across the Alpes"
+	ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { 
+	id = 124224
+	title = "ITA5.T"
+	desc = "ITA5.D"
+	picture = "risorgimento"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Long live the Friendship between Italy and $COUNTRY$ !"
+	create_alliance = FROM 
+	relation = { who = FROM value = 300}
+	}
+}
+
+country_event = { 
+	id = 124225 #Cleanup of Provence
+	title = "ITA6.T"
+	desc = "ITA6.D"
+	picture = "risorgimento"
+	
+	trigger = { 
+	tag = PRV 
+	OCC = { exists = yes government = democracy }
+	DUA = { exists = no }
+	war = no 
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = { 
+	months = 2 
+	}
+	
+	option = { 
+	name = "Long Live the Republic!"
+	OCC = { inherit = THIS }
+	ai_chance = { factor = 100 }
+	}
+	
+	option = { 
+	name = "They can go to hell!"
+	ai_chance = { factor = 0 }
+	}
+}
+
+
+country_event = {
+	id = 123111 # The Congress of Roma
+	title = "GER1.T"
+	desc = "GER1.D"
+	picture = "german_radicals"
+	
+	trigger = { 
+	tag = ITA 
+	has_global_flag = revolution_germany 
+	NOT = { has_country_flag = roma_congress } 
+	}
+	
+	mean_time_to_happen = { months = 3 }
+	
+	option = { 
+	name = "We will support the German Revolutionaries with our full might !"
+	set_country_flag = roma_congress
+	relation = { who = BRG value = -150 }
+	relation = { who = BOH value = -150 }
+	BAV = { country_event = { id = 123116 days = 60 } }
+	random_country = {
+			limit = { 
+				tag = THIS
+				exists = DUA
+				NOT = { 428 = { owned_by = DUA } }
+			}
+	country_event = 123112
+		}
+	}
+}
+
+country_event = {
+	id = 123112 # A Pact with DUA ?
+	title = "GER2.T"
+	desc = "GER2.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Well we should at least try."
+	DUA = { country_event = 123113 }
+	ai_chance = 50 
+	}
+	
+	option = { 
+	name = "We should not bother with such nonsense"
+	prestige = 5 
+	ai_chance = 50 
 	}
 }

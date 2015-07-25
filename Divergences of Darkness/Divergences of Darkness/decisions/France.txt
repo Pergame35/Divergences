@@ -8,8 +8,7 @@ political_decisions = {
 	allow = {
 		425 = { controlled_by = THIS 
 			province_control_days = 365 }
-			
-			DUA = {
+		DUA = {
 				all_core = {
 					OR = {
 						controlled_by = THIS
@@ -17,6 +16,7 @@ political_decisions = {
 						controller = { has_country_flag = anschluss_DUA }
 						empty = yes
 						province_id = 419
+						province_id = 304
 						controller = {
 							NOT = { war_with = THIS }
 						}

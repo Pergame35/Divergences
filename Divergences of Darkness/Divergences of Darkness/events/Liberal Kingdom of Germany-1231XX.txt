@@ -4,10 +4,11 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		NOT = { exists = GER }
+		NOT = { OR = {exists = GER exists = SGF } }
 		ai = yes
 		exists = yes
 		has_global_flag = liberal_revolutions_should_now_fire
+		NOT = { has_global_flag = revolution_germany }
 		OR = {
 			tag = DUA
 			tag = SPA
@@ -474,12 +475,16 @@ country_event = {
 		PRU_572 = {
 			add_core = SGF
 		}
+		#Palatinate
+		HES_2560 = {
+			add_core = SGF
+		}
 		change_tag = SGF
 		BOH = { 
-			country_event = 123104
+			country_event = { id = 123104 days = 30 }
 		}
 		BRG = { 
-			country_event = 123105
+			country_event = { id = 123105 days = 30 }
 		}
 		political_reform = wealth_voting
 		political_reform = state_equal_weight
@@ -736,5 +741,628 @@ country_event = {
 			remove_core = SCA
 			remove_core = BOH
 		}
+	}
+}
+
+#########################
+# 	Danubian Revolution	
+#123111 = Etruria welcomes the German Revolutionaries
+#123112 = Etruria decides whether to strike a deal with the DUA 
+#123113 = DUA choice
+#123114 = DUA accepts 
+#123115 = DUA refuses
+#123116 = Proper Revolution in Bavaria (more central than Vienna)
+#123117 = Danubian States join the new Federation 
+#123118 = Rhenish states choices
+#123119 = DUA attack on the Burgundians 
+#123120 = Burgundy is informed of Anglois attack	
+#	North German League 
+#123131 = Proclamation of the North German league
+#2) Expansion of the League ?
+#####################
+
+country_event = {
+	id = 123113 # A Pact with Italia ?
+	title = "GER3.T"
+	desc = "GER3.D"
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "We will not get a better chance to reaffirm our claims!"
+	set_country_flag = secret_pact_ITA
+	FROM = { country_event = 123114 }
+	ai_chance = { 
+	factor = 70 
+		}
+	}
+	
+	option = { 
+	name = "We will leave them taking care of that problem alone."
+	FROM = { country_event = 123115 }
+	ai_chance = { 
+	factor = 30
+	modifier = { 
+	factor = 2 
+	NOT = { relation = { who = FROM value = -100 } }
+			}
+	modifier = { 
+	factor = 1.5 
+	NOT = { relation = { who = FROM value = 0 } }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 123114 # Secret Pact with Paris
+	title = "GER4.T"
+	desc = "GER4.D"
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "Good, at least we can handle Burgundy!"
+	relation = { who = DUA value = 75 }
+	}
+}
+
+country_event = {
+	id = 123115 # Paris refused
+	title = "GER5.T"
+	desc = "GER5.D"
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "We can manage alone!"
+	relation = { who = DUA value = -75 }
+	set_country_flag = never_forget_DUA
+	}
+}
+
+country_event = { 
+	id = 123116 #The Bavarian Republic
+	title = "GER6.T"
+	desc = "GER6.D"
+	
+	is_triggered_only = yes 
+	
+	major = yes 
+	
+	option = { 
+	name = "Again Germany is in flames !"
+	government = democracy 
+	ruling_party_ideology = liberal
+	political_reform = universal_voting
+	political_reform = state_equal_weight
+	political_reform = yes_meeting
+	political_reform = free_press
+	political_reform = non_socialist
+	political_reform = secret_ballots
+	relation = { who = FROM value = 300 }
+	create_alliance = FROM 
+	add_country_modifier = { name = taiping_draft duration = 1200 }
+	add_accepted_culture = rheinish 
+	treasury = 10000
+	ammunition = 1000
+	small_arms = 1000
+	artillery = 1000
+	canned_food = 1000
+	regular_clothes = 1000
+	#Austria
+		AUS = {
+			all_core = {
+				limit = {
+					is_core = GER
+				}
+				add_core = SGF
+			}
+		}
+		#Bavaria
+		BAV = {
+			all_core = {
+				add_core = SGF
+			}
+		}
+		#Wurtemberg
+		WUR = {
+			all_core = {
+				add_core = SGF
+			}
+		}
+		#Baden
+		BAD = {
+			all_core = {
+				add_core = SGF
+			}
+		}
+		#Swiss
+		SWI = {
+			all_core = {
+				add_core = SGF
+			}
+		}
+		#Hesse-Nassau
+		NAS = {
+			all_core = {
+				add_core = SGF
+			}
+		}
+		#Hesse-Kessel
+		HEK = {
+			all_core = {
+				add_core = SGF
+			}
+		}
+		#Saxe-Meiningen
+		MEI = {
+			all_core = {
+				add_core = SGF
+			}
+		}
+		#Saxony
+		SAX = {
+			all_core = {
+				add_core = SGF
+			}
+		}
+		#Tirol
+		AUS_612 = {
+			add_core = SGF
+		}
+		#Southern Rheinland
+		PRU_572 = {
+			add_core = SGF
+		}
+		#Palatinate
+		HES_2560 = {
+			add_core = SGF
+		}
+	change_tag = SGF
+	any_country = { limit = { primary_culture = south_german } country_event = 123117 } 
+	any_country = { limit = { primary_culture = rheinish } country_event = 123118 } 
+	any_country = { limit = { has_country_flag = anschluss_DUA} create_alliance = THIS }
+	BOH = { 
+			country_event = { id = 123104 days = 30 }
+		}
+	BRG = { 
+			country_event = { id = 123105 days = 30 }
+		}
+	}
+}
+
+country_event = { 
+	id = 123117 #The Danubian options
+	title = "GER7.T"
+	desc = "GER7.D"	
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We will join the Republic!"
+	FROM = { inherit = THIS }
+	ai_chance = { factor = 100 }
+	}
+	
+	option = { 
+	name = "I AM THE REPUBLIC!"
+	change_tag_no_core_switch = LST
+	SGF = { inherit = THIS }
+	}
+}
+
+country_event = { 
+	id = 123118 #The Rhenish options
+	title = "GER8.T"
+	desc = "GER8.D"	
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We will join the Republic!"
+	FROM = { inherit = THIS }
+	ai_chance = { factor = 35 
+	modifier = {
+	factor = 0
+	ruling_party_ideology = reactionary
+			}
+	modifier = {
+	factor = 0
+	government = theocracy
+			}
+	modifier = {
+	factor = 0
+	government = absolute_monarchy
+			}
+	modifier = {
+	factor = 2.5
+	government = democracy
+			}
+		}
+	}
+	
+	option = { 
+	name = "No thank you..."
+	relation = { who = FROM value = -100}
+	ai_chance = {
+			factor = 65
+			modifier = {
+				factor = 0
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0
+				ruling_party_ideology = anarcho_liberal
+			}
+			modifier = {
+				factor = 0
+				is_greater_power = yes
+			}
+		}
+	}
+}	
+
+country_event = { 
+	id = 123119 #Anglois intervention in Burgundy
+	title = "GER9.T"
+	desc = "GER9.D"	
+	
+	trigger = { 
+	tag = DUA 
+	has_country_flag = secret_pact_ITA 
+	BRG = { war_with = SGF }
+	NOT = { owns = 428 } #Dijon
+	}
+	
+	mean_time_to_happen = { 
+	days = 15 
+	}
+	
+	option = { 
+	name = "Onwards to Dijon gentlemen !"
+	clr_country_flag = secret_pact_ITA
+	end_war = SGF
+	end_war = ITA
+	relation = { who = ITA value = 150 }
+	relation = { who = SGF value = 150 }
+	badboy = 5
+	BRG = { country_event = 123120 }
+	add_casus_belli = {
+				target = BRG
+				type = acquire_state
+				months = 24
+		}
+	war = {
+		target = BRG
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 428
+			}
+		}
+	}
+	
+	option = { 
+	name = "We won't do it after all..."
+	clr_country_flag = secret_pact_ITA
+	relation = { who = ITA value = -150 }
+	relation = { who = SGF value = -150 }
+	relation = { who = BRG value = 50 }
+	relation = { who = BOH value = 50 }
+	prestige = -20
+	}
+}
+
+country_event = { 
+	id = 123120 #Anglois attacks Burgundy
+	title = "GER10.T"
+	desc = "GER10.D"	
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Damn the Plantagenets!"
+	}
+}
+
+#North German League
+
+country_event = { 
+	id = 123131 #Proclamation of the League of Berlin
+	title = "GER21.T"
+	desc = "GER21.D"	
+	
+	major = yes 
+	
+	trigger = { 
+	tag = BOH 
+	owns = 549 
+	owns = 546 
+	NOT = { owns = 369 }
+	war_with = SGF 
+	NOT = { has_country_flag = berlin_commune }
+	has_country_flag = german_unrest
+	}
+	
+	mean_time_to_happen = { 
+	months = 2
+	}
+	
+	option = { 
+	name = "They will pay for that!"
+	set_country_flag = berlin_commune
+	any_owned = { 
+	limit = {
+	OR = { is_core = POM is_core = HOL is_core = BRN }
+			}
+	secede_province = NGF 
+	}
+	PRU_572 = { add_core = NGF } 	#Rhineland
+	HES_2560 = { add_core = NGF }	#Palatinate
+	PRU_575 = { add_core = NGF }	#Nordrhein
+	HES_566 = { add_core = NGF }	#Hessen
+	PRU_581 = { add_core = NGF }	#Westphalia
+	HAN_534 = { add_core = NGF }	#East Frisia
+	HAM_528 = { add_core = NGF }	#Hanover
+	MEC_544 = { add_core = NGF }	#Mecklemburg
+	PRU_546 = { add_core = NGF remove_core = SCA}	#Pomerania
+	HEK_568 = { add_core = NGF }	#Brunswick
+	SAX_1 = { add_core = NGF }		#Thuringia
+	HOL_369 = { add_core = NGF }	#Holstein
+	PRU_553 = { add_core = NGF }	#Anhalt
+	PRU_549 = { add_core = NGF }	#Brandenburg
+	SAX_558 = { add_core = NGF }	#Saxony
+	NGF = { 	
+	government = democracy 
+	ruling_party_ideology = liberal
+	political_reform = universal_voting
+	political_reform = state_equal_weight
+	political_reform = yes_meeting
+	political_reform = free_press
+	political_reform = non_socialist
+	political_reform = secret_ballots
+	capital = 549
+	treasury = 10000
+	ammunition = 1000
+	small_arms = 1000
+	artillery = 1000
+	canned_food = 1000
+	regular_clothes = 1000
+	add_country_modifier = {
+				name = taiping_draft
+				duration = 365
+				}
+			}
+	BOH = { NGF = { split_troops = 0.30 } }
+	any_country = { limit = { primary_culture = north_german } country_event = 123132 }
+	country_event = { id = 123133 days = 15 }
+	}
+}
+	
+country_event = { 
+	id = 123132 #Elbian front?
+	title = "GER22.T"
+	desc = "GER32.D"	
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We will join the Republic!"
+	NGF = { inherit = THIS }
+	ai_chance = { factor = 35 
+	modifier = {
+	factor = 0
+	ruling_party_ideology = reactionary
+			}
+	modifier = {
+	factor = 0
+	government = theocracy
+			}
+	modifier = {
+	factor = 0
+	government = absolute_monarchy
+			}
+	modifier = {
+	factor = 2.5
+	government = democracy
+			}
+	modifier = { 
+	factor = 0 
+	is_subject = yes 
+			}
+	modifier = { 
+	factor = 0 
+	tag = KRL 
+			}
+		}
+	}
+	
+	option = { 
+	name = "No thank you..."
+	relation = { who = FROM value = -100}
+	ai_chance = {
+			factor = 65
+			modifier = {
+				factor = 0
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0
+				ruling_party_ideology = anarcho_liberal
+			}
+			modifier = {
+				factor = 0
+				is_greater_power = yes
+			}
+		}
+	}
+}		
+country_event = {
+	id = 123133 #Bohemia reaction 
+	title = "GER23.T"
+	desc = "GER23.D"	
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "They will bow!"
+	war = {
+			target = NGF
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+		}
+	}
+}	
+
+country_event = { 
+	id = 123134 
+	title = "GER24.T"
+	desc = "GER24.D"
+	
+	trigger = { 
+	tag = BOH 
+	owns = 549 
+	owns = 546 
+	NOT = { owns = 369 }
+	}
+	
+	mean_time_to_happen = { 
+	months = 5 
+	}
+	
+	option = { 
+	name = "Worrying"
+	any_owned = { 
+	limit = {
+	OR = { is_core = POM is_core = HOL is_core = BRN }
+			}
+	add_core = NGF 
+	NOT = { has_country_flag = german_unrest }
+		}
+	}
+}
+
+country_event = { 
+	id = 123135
+	title = "GER25.T"
+	desc = "GER25.D"
+	
+	trigger = { 
+	tag = SGF 
+	NGF = { exists = yes war = no }
+	NOT = { has_country_flag = berlin_compromise }
+	}
+	
+	mean_time_to_happen = { 
+	months = 5 
+	}
+	
+	option = { 
+	name = "Send them the proposal!"
+	NGF = { country_event = 123136 }
+	set_country_flag = berlin_compromise
+	ai_chance = { factor = 100 }
+	}
+	
+	option = { 
+	name = "I don't think it's good for us ..."
+	set_country_flag = berlin_compromise
+	ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { 
+	id = 123136
+	title = "GER26.T"
+	desc = "GER26.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Fur die Deutsche Einheit!"
+	SGF = { inherit = NGF add_accepted_culture = north_german }
+	FROM = { country_event = 123137 }
+	ai_chance = { 
+	factor = 75 
+	modifier = { 
+	factor = 0 
+	FROM = { is_greater_power = no }
+			}
+	modifier = { 
+	factor = 2 
+	AND = { 
+	THIS = { government = democracy }	
+	FROM = { government = democracy }	
+				}
+			}
+	modifier = { 
+	factor = 2 
+	AND = {	
+	THIS = { OR = { government = absolute_monarchy government = prussian_constitutionalism government = hms_government } }
+	FROM = { OR = { government = absolute_monarchy government = prussian_constitutionalism government = hms_government } }	
+				}
+			}	
+	modifier = { 
+	factor = 0.5
+	AND = {	
+	THIS = { government = democracy }
+	FROM = { OR = { government = absolute_monarchy government = prussian_constitutionalism government = hms_government } }	
+				}
+			}
+	modifier = { 
+	factor = 0.5
+	AND = {	
+	FROM = { government = democracy }
+	THIS = { OR = { government = absolute_monarchy government = prussian_constitutionalism government = hms_government } }	
+				}
+			}
+	
+	modifier = { 
+	factor = 2
+	AND = {	
+	FROM = { government = proletarian_dictatorship }
+	THIS = { government = proletarian_dictatorship }	
+				}
+			}
+	modifier = { 
+	factor = 0
+	AND = {	
+	FROM = { government = proletarian_dictatorship }
+	THIS = { OR = { government = democracy government = absolute_monarchy government = prussian_constitutionalism government = hms_government }}	
+				}
+			}
+	modifier = { 
+	factor = 0
+	AND = {	
+	THIS = { government = proletarian_dictatorship }
+	FROM = { OR = { government = democracy government = absolute_monarchy government = prussian_constitutionalism government = hms_government }}
+				}
+			}
+		}
+	}
+	
+	option = { 
+	name = "There are too much differences between us to consider unification..."
+	ai_chance = { factor = 25 }
+	}
+	
+	option = { 
+	name = "WE WILL UNIFY GERMANY!"
+	NGF = { inherit = SGF add_accepted_culture = south_german add_accepted_culture = rheinish}
+	country_event = 123137
+	ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { 
+	id = 123137
+	title = "GER27.T"
+	desc = "GER27.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Deutschland von Tyrol zum Belt!"
 	}
 }

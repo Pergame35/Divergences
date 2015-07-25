@@ -861,6 +861,7 @@ country_event = {
 					}
 					has_country_flag = carbonari_activity 
 					OR = { 
+					government = absolute_monarchy
 					government = prussian_constitutionalism 
 					government = hms_government 
 					}
