@@ -11,51 +11,31 @@
 	clergymen = {
 		culture = venetian
 		religion = catholic
-		size = 200
+		size = 425
 	}
 
 	artisans = {
 		culture = venetian
 		religion = catholic
-		size = 1450
+		size = 2350
 	}
 
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size= 225
-
+		size= 475
 	}
 
 	farmers = {
 		culture = venetian
 		religion = catholic
-		size = 30875
-	}
-
-	clergymen = {
-		culture = croat
-		religion = catholic
-		size = 225
-	}
-
-	artisans = {
-		culture = croat
-		religion = catholic
-		size = 900
-	}
-
-	soldiers = {
-		culture = croat
-		religion = catholic
-		size= 250
-
+		size = 25600
 	}
 
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 13625
+		size = 18900
 	}
 }
 #Croatia Region (870000)
@@ -72,12 +52,6 @@
 		culture = croat
 		religion = catholic
 		size = 250
-	}
-	
-	bureaucrats = {
-		culture = south_german
-		religion = catholic
-		size = 500
 	}
 
 	officers = {
@@ -157,7 +131,7 @@
 	bureaucrats = {
 		culture = south_german
 		religion = catholic
-		size = 50
+		size = 550
 	}
 
 	clergymen = {
@@ -331,32 +305,32 @@
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 9525
+		size = 11525
 	}
 
 	clergymen = {
-		culture = venetian
-		religion = catholic
+		culture = serb
+		religion = orthodox
 		size = 100
 	}
 
 	artisans = {
-		culture = venetian
-		religion = catholic
-		size = 1550
+		culture = serb
+		religion = orthodox
+		size = 550
 	}
 
 	soldiers = {
-		culture = venetian
-		religion = catholic
-		size= 1125
+		culture = serb
+		religion = orthodox
+		size= 125
 
 	}
 
 	farmers = {
-		culture = venetian
-		religion = catholic
-		size = 12225
+		culture = serb
+		religion = orthodox
+		size = 10225
 	}
 }
 #Varadzin (68000/17000 POPS)
@@ -397,26 +371,26 @@
 	clergymen = {
 		culture = croat
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	artisans = {
 		culture = croat
 		religion = catholic
-		size = 150
+		size = 400
 	}
 
 	soldiers = {
 		culture = croat
 		religion = catholic
-		size= 25
+		size= 75
 
 	}
 
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 2675
+		size = 7325
 	}
 
 	clergymen = {
@@ -442,31 +416,6 @@
 		culture = serb
 		religion = orthodox
 		size = 4625
-	}
-
-	clergymen = {
-		culture = czech
-		religion = catholic
-		size = 50
-	}
-
-	artisans = {
-		culture = czech
-		religion = catholic
-		size = 250
-	}
-
-	soldiers = {
-		culture = czech
-		religion = catholic
-		size= 50
-
-	}
-
-	farmers = {
-		culture = czech
-		religion = catholic
-		size = 4650
 	}
 }
 #Pozega (80000/20000 POPS)
@@ -504,29 +453,16 @@
 }
 #Fiume (52000/13000 POPS)
 778 = {
-	clergymen = {
-		culture = croat
-		religion = catholic
-		size = 50
-	}
-
 	artisans = {
 		culture = croat
 		religion = catholic
 		size = 1200
 	}
 
-	soldiers = {
-		culture = croat
-		religion = catholic
-		size= 50
-
-	}
-
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 2700
+		size = 4700
 	}
 
 	aristocrats = {
@@ -538,26 +474,51 @@
 	clergymen = {
 		culture = venetian
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	artisans = {
 		culture = venetian
 		religion = catholic
-		size = 1550
+		size = 2500
 	}
 
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size= 100
+		size= 125
 
 	}
 
 	farmers = {
 		culture = venetian
 		religion = catholic
-		size = 7125
+		size = 4425
+	}
+
+	clergymen = {
+		culture = hungarian
+		religion = catholic
+		size = 25
+	}
+
+	artisans = {
+		culture = hungarian
+		religion = catholic
+		size = 250
+	}
+
+	soldiers = {
+		culture = hungarian
+		religion = catholic
+		size= 25
+
+	}
+
+	farmers = {
+		culture = hungarian
+		religion = catholic
+		size = 700
 	}
 }
 #Baranya Region (180000) #see Hungary.txt for balance of Region
@@ -681,7 +642,7 @@
 #Split (140000/35000 POPS)
 780 = {
 	aristocrats = {
-		culture = venetian
+		culture = croat
 		religion = catholic
 		size = 400
 	}
@@ -699,28 +660,28 @@
 	}
 
 	soldiers = {
-		culture = venetian
+		culture = croat
 		religion = catholic
-		size= 3000
+		size= 350
 
 	}
 
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 23350
+		size = 34350
 	}
 
 	clergymen = {
 		culture = venetian
 		religion = catholic
-		size = 225
+		size = 25
 	}
 
 	artisans = {
 		culture = venetian
 		religion = catholic
-		size = 1500
+		size = 500
 	}
 
 	soldiers = {
@@ -733,13 +694,13 @@
 	farmers = {
 		culture = venetian
 		religion = catholic
-		size = 24450
+		size = 450
 	}
 }
 #Zadar (128000/32000 POPS)
 781 = {
 	aristocrats = {
-		culture = croat
+		culture = venetian
 		religion = catholic
 		size = 250
 	}
@@ -778,7 +739,7 @@
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 16525
+		size = 20525
 	}
 
 	bureaucrats = {
@@ -790,32 +751,37 @@
 	clergymen = {
 		culture = venetian
 		religion = catholic
-		size = 275
+		size = 150
 	}
 
 	artisans = {
 		culture = venetian
 		religion = catholic
-		size = 2000
+		size = 1000
 	}
 
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size= 2100
-
+		size= 100
 	}
 
 	farmers = {
 		culture = venetian
 		religion = catholic
-		size = 21125
+		size = 2125
+	}
+
+	farmers = {
+		culture = serb
+		religion = orthodox
+		size = 6550
 	}
 }
 #Dubrovnik (52000/13000 POPS)
 782 = {
 	aristocrats = {
-		culture = venetian
+		culture = croat
 		religion = catholic
 		size = 75
 	}
@@ -823,7 +789,7 @@
 	clergymen = {
 		culture = croat
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	artisans = {
@@ -842,11 +808,11 @@
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 7225
+		size = 9225
 	}
 
 	aristocrats = {
-		culture = north_italian
+		culture = venetian
 		religion = catholic
 		size = 50
 	}
@@ -854,27 +820,53 @@
 	clergymen = {
 		culture = venetian
 		religion = catholic
-		size = 125
+		size = 25
 	}
 
 	artisans = {
 		culture = venetian
 		religion = catholic
-		size = 600
+		size = 500
 	}
 
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size= 1025
+		size= 25
 
 	}
 
 	farmers = {
 		culture = venetian
 		religion = catholic
-		size = 10225
+		size = 400
 	}
+
+	clergymen = {
+		culture = serb
+		religion = orthodox
+		size = 50
+	}
+
+	artisans = {
+		culture = serb
+		religion = orthodox
+		size = 100
+	}
+
+	soldiers = {
+		culture = serb
+		religion = orthodox
+		size= 25
+
+	}
+
+	farmers = {
+		culture = serb
+		religion = orthodox
+		size = 1825
+	}
+
 }
 #Banat-Bacska Region (104000) #See Serbia.txt and Romania.txt for balance of region 
 #under the rule of Austria in 1836  

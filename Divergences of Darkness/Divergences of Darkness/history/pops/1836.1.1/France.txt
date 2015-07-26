@@ -63,107 +63,99 @@
 }
 #Dunkirk (396000/99000 POPS)
 400 = {
-	aristocrats = {
+	artisans = {
+
+		size = 3000
 		culture = burgundian
 		religion = protestant
-		size = 2800
+
+	}
+	artisans = {
+
+		size = 1000
+		culture = anglois
+		religion = catholic
+
+	}
+	artisans = {
+
+		size = 800
+		culture = dutch
+		religion = protestant
+
+	}
+	clergymen = {
+
+		size = 50
+		culture = dutch
+		religion = protestant
+
+	}
+	clergymen = {
+
+		size = 420
+		culture = burgundian
+		religion = protestant
+	}
+	clergymen = {
+
+		size = 140
+		culture = anglois
+		religion = catholic
+	}
+	farmers = {
+
+		size = 36000
+		culture = burgundian
+		religion = protestant
+
+	}
+	farmers = {
+
+		size = 12000
+		culture = anglois
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 2300
+		culture = dutch
+		religion = protestant
+
+	}
+}
+#Egedesminde (12/17800 POPS)
+2636 = {
+
+	artisans = {
+		size = 4300
+		culture = dutch
+		religion = protestant
 	}
 
 	clergymen = {
-		culture = burgundian
+		size = 710
+		culture = dutch
 		religion = protestant
-		size = 2050
 	}
 
-	officers = {
+	clergymen = {
+		size = 100
 		culture = burgundian
 		religion = protestant
-		size = 1050
-	}
-	
-	bureaucrats = {
-		culture = burgundian
-		religion = protestant
-		size = 2500
-	}
-	
-	capitalists = {
-		culture = burgundian
-		religion = protestant
-		size = 250
-	}
-	
-	artisans = {
-		culture = burgundian
-		religion = protestant
-		size = 10000
-	}
-	
-	artisans = {
-		culture = anglois
-		religion = catholic
-		size = 10000
-	}
-
-	soldiers = {
-		culture = anglois
-		religion = catholic
-		size= 1500
-	}
-
-	soldiers = {
-		culture = burgundian
-		religion = protestant
-		size = 3000
-	}
-
-	soldiers = {
-		culture = burgundian
-		religion = protestant
-		size = 3000
-	}
-
-	soldiers = {
-		culture = burgundian
-		religion = protestant
-		size = 3000
-	}
-
-	soldiers = {
-		culture = burgundian
-		religion = protestant
-		size = 1000
 	}
 
 	farmers = {
+		size = 4300
 		culture = burgundian
 		religion = protestant
-		size = 103350
 	}
 
 	farmers = {
-		culture = anglois
-		religion = catholic
-		size = 12000
-	}
-	
-	artisans = {
+		size = 29300
 		culture = dutch
 		religion = protestant
-		size = 8500
-	}
-
-	soldiers = {
-		culture = dutch
-		religion = protestant
-		size = 3000
-
-	}
-
-	farmers = {
-		culture = dutch
-		religion = protestant
-		size = 15000
 	}
 }
 #Arras (428000/107000 POPS)

@@ -2,28 +2,29 @@
 #ruled by Russia 1836
 #Sitka (8000/2000 POPS)
 1 = {
+	bureaucrats = {
+		culture = kaiganese
+		religion = shinto
+		size = 2
+	}
+
 	clergymen = {
 		culture = kaiganese
-		religion = mahayana
-		size = 200
+		religion = shinto
+		size = 13
 	}
 
 	artisans = {
 		culture = kaiganese
-		religion = mahayana
-		size = 800
+		religion = shinto
+		size = 28
 	}
 
 	soldiers = {
 		culture = kaiganese
-		religion = mahayana
-		size = 350
-	}
+		religion = shinto
+		size= 10
 
-	farmers = {
-		culture = kaiganese
-		religion = mahayana
-		size = 5670
 	}
 
 	aristocrats = {
@@ -59,29 +60,6 @@
 }
 #Yakutat (4000/1000 POPS)
 2 = {
-		clergymen = {
-		culture = kaiganese
-		religion = mahayana
-		size = 200
-	}
-
-	artisans = {
-		culture = kaiganese
-		religion = mahayana
-		size = 800
-	}
-
-	soldiers = {
-		culture = kaiganese
-		religion = mahayana
-		size = 350
-	}
-
-	farmers = {
-		culture = kaiganese
-		religion = mahayana
-		size = 5670
-	}
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
@@ -115,30 +93,6 @@
 }
 #Kenai (2400/600 POPS)
 3 = {
-
-		clergymen = {
-		culture = kaiganese
-		religion = mahayana
-		size = 200
-	}
-
-	artisans = {
-		culture = kaiganese
-		religion = mahayana
-		size = 800
-	}
-
-	soldiers = {
-		culture = kaiganese
-		religion = mahayana
-		size = 350
-	}
-
-	farmers = {
-		culture = kaiganese
-		religion = mahayana
-		size = 5670
-	}
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
@@ -172,14 +126,9 @@
 }
 #Dutch Harbor (2000/500 POPS)
 4 = {
-	farmers = {
-		culture = kaiganese
-		religion = mahayana
-		size = 1500
-	}
 	aristocrats = {
-		culture = kaiganese
-		religion = mahayana
+		culture = inuit
+		religion = animist
 		size = 5
 	}
 
@@ -198,7 +147,7 @@
 	soldiers = {
 		culture = inuit
 		religion = animist
-		size = 5
+		size= 5
 
 	}
 
@@ -210,15 +159,10 @@
 }
 #Bethel (2000/500 POPS)
 5 = {
-	farmers = {
-		culture = kaiganese
-		religion = mahayana
-		size = 1500
-	}
 	aristocrats = {
-		culture = kaiganese
-		religion = mahayana
-		size = 100
+		culture = inuit
+		religion = animist
+		size = 2
 	}
 
 	clergymen = {
@@ -279,29 +223,6 @@
 }
 #Fairbanks (2000/500 POPS)
 2599 = {
-		clergymen = {
-		culture = kaiganese
-		religion = mahayana
-		size = 200
-	}
-
-	artisans = {
-		culture = kaiganese
-		religion = mahayana
-		size = 800
-	}
-
-	soldiers = {
-		culture = kaiganese
-		religion = mahayana
-		size = 350
-	}
-
-	farmers = {
-		culture = kaiganese
-		religion = mahayana
-		size = 5670
-	}
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
@@ -365,40 +286,12 @@
 		religion = animist
 		size = 360
 	}
-		clergymen = {
-		culture = kaiganese
-		religion = mahayana
-		size = 200
-	}
-
-	artisans = {
-		culture = kaiganese
-		religion = mahayana
-		size = 800
-	}
-
-	soldiers = {
-		culture = kaiganese
-		religion = mahayana
-		size = 350
-	}
-
-	farmers = {
-		culture = kaiganese
-		religion = mahayana
-		size = 5670
-	}
 }
 #Unalakeet (3000/750 POPS)
 2631 = {
-	farmers = {
-		culture = kaiganese
-		religion = mahayana
-		size = 1000
-	}
 	aristocrats = {
-		culture = kaiganese
-		religion = mahayana
+		culture = inuit
+		religion = animist
 		size = 5
 	}
 
@@ -1313,26 +1206,26 @@
 #Pocatello / Xinzhou (12000/3000 POPS)
 93 = {
 	aristocrats = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size = 50
 	}
 
 	clergymen = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size = 75
 	}
 
 	soldiers = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size= 25
 
 	}
 
 	farmers = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size = 2700
 	}
@@ -1342,26 +1235,26 @@
 #Carson City / Zhendongfu (4000/1000 POPS)
 94 = {
 	aristocrats = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size = 130
 	}
 
 	clergymen = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size = 225
 	}
 
 	soldiers = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size= 600
 
 	}
 
 	farmers = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size = 3900
 	}
@@ -1563,26 +1456,26 @@
 #Moab / Xinhe(4000/1000 POPS)
 99 = {
 	aristocrats = {
-		culture = apache
+		culture = pueblo
 		religion = animist
 		size = 10
 	}
 
 	clergymen = {
-		culture = apache
+		culture = pueblo
 		religion = animist
 		size = 25
 	}
 
 	soldiers = {
-		culture = apache
+		culture = pueblo
 		religion = animist
 		size= 15
 
 	}
 
 	farmers = {
-		culture = apache
+		culture = pueblo
 		religion = animist
 		size = 900
 	}
@@ -2130,59 +2023,59 @@
 #Alamosa / Longshiqiao (4000/1000 POPS)
 108 = {
 	aristocrats = {
-		culture = apache
+		culture = pueblo
 		religion = animist
 		size = 10
 	}
 
 	clergymen = {
-		culture = apache
+		culture = pueblo
 		religion = animist
 		size = 25
 	}
 
 	soldiers = {
-		culture = apache
+		culture = pueblo
 		religion = animist
 		size= 15
 
 	}
 
 	farmers = {
-		culture = apache
+		culture = pueblo
 		religion = animist
-		size = 1900
+		size = 900
 	}
 }
 #Pueblo / Laofeng (4000/1000 POPS)
 109 = {
 	aristocrats = {
-		culture = apache
+		culture = native_american_minor
 		religion = animist
 		size = 10
 	}
 
 	clergymen = {
-		culture = apache
+		culture = native_american_minor
 		religion = animist
 		size = 25
 	}
 
 	artisans = {
-		culture = apache
+		culture = native_american_minor
 		religion = animist
 		size = 50
 	}
 
 	soldiers = {
-		culture = apache
+		culture = native_american_minor
 		religion = animist
 		size= 15
 
 	}
 
 	farmers = {
-		culture = apache
+		culture = native_american_minor
 		religion = animist
 		size = 900
 	}
@@ -2225,32 +2118,32 @@
 #Cody / Changfeng (12000/3000 POPS)
 111 = {
 	aristocrats = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size = 50
 	}
 
 	clergymen = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size = 150
 	}
 
 	soldiers = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size= 25
 
 	}
 
 	farmers = {
-		culture = pueblo
+		culture = native_american_minor
 		religion = animist
 		size = 2700
 	}
@@ -3804,7 +3697,7 @@
 
 	farmers = {
 		culture = native_american_minor
-		religion = animist 
+		religion = animist
 		size = 1675
 	}
 }

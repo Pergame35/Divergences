@@ -1,214 +1,270 @@
 #Suriye Region (36000)  #see Syria.txt & Lebanon.txt for balance of region
-#under the rule of Egypt in 1836
+#under the rule of Egypt in 1836  
 #Amman (20000/5000 POPS) #now part of Jordan
 908 = {
-    clergymen = {
-        culture = mashriqi
-        religion = sunni
-        size = 25
-    }
+	aristocrats = {
+		culture = mashriqi
+		religion = sunni
+		size = 245
+	}
 
-    artisans = {
-        culture = mashriqi
-        religion = sunni
-        size = 50
-    }
+	clergymen = {
+		culture = mashriqi
+		religion = sunni
+		size = 100
+	}
 
-    farmers = {
-        culture = mashriqi
-        religion = sunni
-        size = 875
-    }
+	artisans = {
+		culture = mashriqi
+		religion = sunni
+		size = 550
+	}
 
-    bureaucrats = {
-        culture = mashriqi
-        religion = sunni
-        size = 15
-    }
+	soldiers = {
+		culture = mashriqi
+		religion = sunni
+		size= 150
 
-    officers = {
-        culture = mashriqi
-        religion = sunni
-        size = 5
-    }
+	}
 
-    clergymen = {
-        culture = bedouin
-        religion = sunni
-        size = 75
-    }
+	farmers = {
+		culture = mashriqi
+		religion = sunni
+		size = 6875
+	}
 
-    artisans = {
-        culture = bedouin
-        religion = sunni
-        size = 175
-    }
+	aristocrats = {
+		culture = bedouin
+		religion = sunni
+		size = 50
+	}
 
-    farmers = {
-        culture = bedouin
-        religion = sunni
-        size = 3675
-    }
+	clergymen = {
+		culture = bedouin
+		religion = sunni
+		size = 75
+	}
+
+	artisans = {
+		culture = bedouin
+		religion = sunni
+		size = 175
+	}
+
+	soldiers = {
+		culture = bedouin
+		religion = sunni
+		size= 25
+
+	}
+
+	farmers = {
+		culture = bedouin
+		religion = sunni
+		size = 1675
+	}
+
+	clergymen = {
+		culture = druze
+		religion = druze
+		size = 75
+	}
+
+	artisans = {
+		culture = druze
+		religion = druze
+		size = 1000
+	}
 }
 #Jerash (16000/4000 POPS) #now part of Jordan
 909 = {
-    clergymen = {
-        culture = mashriqi
-        religion = sunni
-        size = 75
-    }
+	aristocrats = {
+		culture = mashriqi
+		religion = sunni
+		size = 85
+	}
 
-    artisans = {
-        culture = mashriqi
-        religion = sunni
-        size = 150
-    }
+	clergymen = {
+		culture = mashriqi
+		religion = sunni
+		size = 140
+	}
 
-    farmers = {
-        culture = mashriqi
-        religion = sunni
-        size = 2715
-    }
+	artisans = {
+		culture = mashriqi
+		religion = sunni
+		size = 375
+	}
 
-    clergymen = {
-        culture = bedouin
-        religion = sunni
-        size = 15
-    }
+	soldiers = {
+		culture = mashriqi
+		religion = sunni
+		size= 100
+	}
 
-    artisans = {
-        culture = bedouin
-        religion = sunni
-        size = 35
-    }
+	farmers = {
+		culture = mashriqi
+		religion = sunni
+		size = 8465
+	}
 
-    farmers = {
-        culture = bedouin
-        religion = sunni
-        size = 910
-    }
+	aristocrats = {
+		culture = bedouin
+		religion = sunni
+		size = 15
+	}
+
+	clergymen = {
+		culture = bedouin
+		religion = sunni
+		size = 15
+	}
+
+	artisans = {
+		culture = bedouin
+		religion = sunni
+		size = 35
+	}
+
+	soldiers = {
+		culture = bedouin
+		religion = sunni
+		size= 25
+
+	}
+
+	farmers = {
+		culture = bedouin
+		religion = sunni
+		size = 910
+	}
 }
 #Badiyat al-Sham Region (40000)  #see Syria.txt, Iraq.txt & Saudi Arabia.txt for balance of region
-#under the "rule" of Egypt in 1836
-#Ruwayshid (12000/3000 POPS) #now part of Jordan
+#under the "rule" of Egypt in 1836  
+#Ruwayshid (12000/3000 POPS) #now part of Jordan 
 910 = {
-    aristocrats = {
-        culture = bedouin
-        religion = sunni
-        size = 190
-    }
+	aristocrats = {
+		culture = bedouin
+		religion = sunni
+		size = 50
+	}
 
-    clergymen = {
-        culture = bedouin
-        religion = sunni
-        size = 50
-    }
+	clergymen = {
+		culture = bedouin
+		religion = sunni
+		size = 50
+	}
 
-    artisans = {
-        culture = bedouin
-        religion = sunni
-        size = 125
-    }
+	artisans = {
+		culture = bedouin
+		religion = sunni
+		size = 125
+	}
 
-    soldiers = {
-        culture = bedouin
-        religion = sunni
-        size = 175
-    }
+	soldiers = {
+		culture = bedouin
+		religion = sunni
+		size= 125
+	}
 
-    farmers = {
-        culture = bedouin
-        religion = sunni
-        size = 2725
-    }
-
-    aristocrats = {
-        culture = mashriqi
-        religion = sunni
-        size = 85
-    }
-
-    soldiers = {
-        culture = mashriqi
-        religion = sunni
-        size = 100
-    }
+	farmers = {
+		culture = bedouin
+		religion = sunni
+		size = 2725
+	}
 }
-#Maan (28000/7000 POPS) #now part of Jordan
+#Maan (12000/3000 POPS) #now part of Jordan
 911 = {
-    clergymen = {
-        culture = mashriqi
-        religion = sunni
-        size = 50
-    }
 
-    artisans = {
-        culture = mashriqi
-        religion = sunni
-        size = 150
-    }
+	aristocrats = {
+		culture = bedouin
+		religion = sunni
+		size = 50
+	}
 
-    farmers = {
-        culture = mashriqi
-        religion = sunni
-        size = 2750
-    }
+	clergymen = {
+		culture = bedouin
+		religion = sunni
+		size = 75
+	}
 
-    clergymen = {
-        culture = bedouin
-        religion = sunni
-        size = 75
-    }
+	artisans = {
+		culture = bedouin
+		religion = sunni
+		size = 150
+	}
 
-    artisans = {
-        culture = bedouin
-        religion = sunni
-        size = 150
-    }
+	soldiers = {
+		culture = bedouin
+		religion = sunni
+		size= 50
 
-    farmers = {
-        culture = bedouin
-        religion = sunni
-        size = 3675
-    }
+	}
+
+	farmers = {
+		culture = bedouin
+		religion = sunni
+		size = 2675
+	}
 }
 #Palestine Region (20000)  #see Israel-Palestine.txt for balance of region
-#under the rule of Egypt in 1836
-#Aqaba (20000/5000 POPS) #now part of Jordan
+#under the rule of Egypt in 1836  
+#Aqaba (20000/5000 POPS) #now part of Jordan 
 922 = {
-    clergymen = {
-        culture = mashriqi
-        religion = sunni
-        size = 25
-    }
+	clergymen = {
+		culture = mashriqi
+		religion = sunni
+		size = 40
+	}
 
-    artisans = {
-        culture = mashriqi
-        religion = sunni
-        size = 50
-    }
+	artisans = {
+		culture = mashriqi
+		religion = sunni
+		size = 100
+	}
 
-    farmers = {
-        culture = mashriqi
-        religion = sunni
-        size = 900
-    }
+	soldiers = {
+		culture = mashriqi
+		religion = sunni
+		size= 45
 
-    clergymen = {
-        culture = bedouin
-        religion = sunni
-        size = 25
-    }
+	}
 
-    artisans = {
-        culture = bedouin
-        religion = sunni
-        size = 150
-    }
+	farmers = {
+		culture = mashriqi
+		religion = sunni
+		size = 2900
+	}
 
-    farmers = {
-        culture = bedouin
-        religion = sunni
-        size = 3775
-    }
+	aristocrats = {
+		culture = bedouin
+		religion = sunni
+		size = 25
+	}
+
+	clergymen = {
+		culture = bedouin
+		religion = sunni
+		size = 25
+	}
+
+	artisans = {
+		culture = bedouin
+		religion = sunni
+		size = 150
+	}
+
+	soldiers = {
+		culture = bedouin
+		religion = sunni
+		size= 25
+
+	}
+
+	farmers = {
+		culture = bedouin
+		religion = sunni
+		size = 2775
+	}
+
 }

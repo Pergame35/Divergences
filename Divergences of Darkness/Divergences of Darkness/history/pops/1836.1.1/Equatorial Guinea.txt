@@ -2,72 +2,94 @@
 #Ruled By Spain in 1836
 #Fernando Po (11000/2750 POPS)
 1955 = {
-    clergymen = {
-        culture = castilian
-        religion = catholic
-        size = 5
-    }
+	aristocrats = {
+		culture = spanish
+		religion = catholic
+		size = 3
+	}
 
-    artisans = {
-        culture = castilian
-        religion = catholic
-        size = 5
-    }
+	bureaucrats = {
+		culture = spanish
+		religion = catholic
+		size = 2
+	}
 
-    soldiers = {
-        culture = castilian
-        religion = catholic
-        size = 5
-    }
+	clergymen = {
+		culture = spanish
+		religion = catholic
+		size = 5
+	}
 
-    officers = {
-        culture = castilian
-        religion = catholic
-        size = 3
-    }
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 5
+	}
 
-    artisans = {
-        culture = fang
-        religion = catholic
-        size = 120
-    }
+	soldiers = {
+		culture = spanish
+		religion = catholic
+		size= 5
 
-    soldiers = {
-        culture = fang
-        religion = catholic
-        size = 50
-    }
+	}
 
-    farmers = {
-        culture = fang
-        religion = catholic
-        size = 1530
-    }
+	artisans = {
+		culture = fang
+		religion = catholic
+		size = 120
+	}
 
-    slaves = {
-        culture = fang
-        religion = animist
-        size = 1000
-    }
+	soldiers = {
+		culture = fang
+		religion = catholic
+		size= 50
+
+	}
+
+	farmers = {
+		culture = fang
+		religion = catholic
+		size = 1530
+	}
+
+	slaves = {
+		culture = fang
+		religion = animist
+		size = 1100
+	}
 }
 #uncolonized in 1836
-#Bata (132000/33000 POPS)
+#Bata (132000/33000 POPS) 
 1973 = {
-    clergymen = {
-        culture = fang
-        religion = animist
-        size = 300
-    }
+	aristocrats = {
+		culture = fang
+		religion = animist
+		size = 350
+	}
 
-    artisans = {
-        culture = fang
-        religion = animist
-        size = 1500
-    }
+	clergymen = {
+		culture = fang
+		religion = animist
+		size = 300
+	}
 
-    farmers = {
-        culture = fang
-        religion = animist
-        size = 31500
-    }
+	artisans = {
+		culture = fang
+		religion = animist
+		size = 1500
+	}
+
+	soldiers = {
+		culture = fang
+		religion = animist
+		size= 350
+
+	}
+
+	farmers = {
+		culture = fang
+		religion = animist
+		size = 31500
+	}
+
 }

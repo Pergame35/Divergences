@@ -1,133 +1,94 @@
-#Ruanda-Urundi Region (944000)
+#Ruanda-Urundi Region (944000)  
 #uncolonized in 1836/ruled by kingdom of Rwanda
-#Kigali (496000/124000 POPS)
+#Kigali (496000/124000 POPS) 
 2034 = {
-    aristocrats = {
-        culture = baganda
-        religion = animist
-        size = 5098
-    }
+	aristocrats = {
+		culture = ruanda
+		religion = animist
+		size = 2450
+	}
 
-    bureaucrats = {
-        culture = baganda
-        religion = animist
-        size = 40
-    }
+	bureaucrats = {
+		culture = ruanda
+		religion = animist
+		size = 25
+	}
 
-    officers = {
-        culture = baganda
-        religion = animist
-        size = 125
-    }
+	officers = {
+		culture = ruanda
+		religion = animist
+		size = 125
+	}
 
-    clergymen = {
-        culture = baganda
-        religion = animist
-        size = 1750
-    }
+	clergymen = {
+		culture = ruanda
+		religion = animist
+		size = 1750
+	}
 
-    artisans = {
-        culture = baganda
-        religion = animist
-        size = 6200
-    }
+	artisans = {
+		culture = ruanda
+		religion = animist
+		size = 6200
+	}
 
-    soldiers = {
-        culture = baganda
-        religion = animist
-        size = 4324
-    }
+	soldiers = {
+		culture = ruanda
+		religion = animist
+		size= 1250
 
-    farmers = {
-        culture = baganda
-        religion = animist
-        size = 113200
-    }
+	}
 
-    aristocrats = {
-        culture = unyamwezi
-        religion = animist
-        size = 2425
-    }
-
-    aristocrats = {
-        culture = african_minor
-        religion = animist
-        size = 362
-    }
-
-    aristocrats = {
-        culture = sukuma
-        religion = animist
-        size = 1075
-    }
-
-    aristocrats = {
-        culture = luo
-        religion = animist
-        size = 475
-    }
-
-    aristocrats = {
-        culture = maasai
-        religion = animist
-        size = 125
-    }
-
-    soldiers = {
-        culture = unyamwezi
-        religion = animist
-        size = 1250
-    }
-
-    soldiers = {
-        culture = african_minor
-        religion = animist
-        size = 100
-    }
-
-    soldiers = {
-        culture = sukuma
-        religion = animist
-        size = 1874
-    }
-
-    soldiers = {
-        culture = luo
-        religion = animist
-        size = 250
-    }
-
-    soldiers = {
-        culture = maasai
-        religion = animist
-        size = 500
-    }
+	farmers = {
+		culture = ruanda
+		religion = animist
+		size = 113200
+	}
 }
 #uncolonized in 1836/ruled by kingdom of Burundi
-#Usumbura (448000/112000 POPS)
+#Usumbura (448000/112000 POPS) 
 2035 = {
-    officers = {
-        culture = baganda
-        religion = animist
-        size = 110
-    }
+	aristocrats = {
+		culture = rundi
+		religion = animist
+		size = 2175
+	}
 
-    clergymen = {
-        culture = baganda
-        religion = animist
-        size = 1125
-    }
+	bureaucrats = {
+		culture = rundi
+		religion = animist
+		size = 15
+	}
 
-    artisans = {
-        culture = baganda
-        religion = animist
-        size = 5600
-    }
+	officers = {
+		culture = rundi
+		religion = animist
+		size = 110
+	}
 
-    farmers = {
-        culture = baganda
-        religion = animist
-        size = 101850
-    }
+	clergymen = {
+		culture = rundi
+		religion = animist
+		size = 1125
+	}
+
+	artisans = {
+		culture = rundi
+		religion = animist
+		size = 5600
+	}
+
+	soldiers = {
+		culture = rundi
+		religion = animist
+		size= 1125
+
+	}
+
+	farmers = {
+		culture = rundi
+		religion = animist
+		size = 101850
+	}
+
 }

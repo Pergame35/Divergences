@@ -1,253 +1,262 @@
-#Khwarazm Region (40000) #see Uzbekistan.txt and Kazakhstan.txt for balance of region
-#under the rule of Khiva in 1836
-#Dashhowuz (40000/10000 POPS) #now part of Turkmenistan
+#Khwarazm Region (40000) #see Uzbekistan.txt and Kazakhstan.txt for balance of region 
+#under the rule of Khiva in 1836  
+#Dashhowuz (40000/10000 POPS) #now part of Turkmenistan  
 1196 = {
-    aristocrats = {
-        culture = turkmen
-        religion = sunni
-        size = 325
-    }
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 175
+	}
 
-    clergymen = {
-        culture = turkmen
-        religion = sunni
-        size = 75
-    }
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 75
+	}
 
-    artisans = {
-        culture = turkmen
-        religion = sunni
-        size = 450
-    }
+	artisans = {
+		culture = turkmen
+		religion = sunni
+		size = 450
+	}
 
-    soldiers = {
-        culture = turkmen
-        religion = sunni
-        size = 175
-    }
+	soldiers = {
+		culture = turkmen
+		religion = sunni
+		size= 100
 
-    farmers = {
-        culture = turkmen
-        religion = sunni
-        size = 9200
-    }
+	}
 
-    aristocrats = {
-        culture = turkmen
-        religion = sunni
-        size = 7250
-    }
-
-    aristocrats = {
-        culture = kazak
-        religion = sunni
-        size = 550
-    }
-
-    aristocrats = {
-        culture = tajik
-        religion = sunni
-        size = 550
-    }
-
-    aristocrats = {
-        culture = mashriqi
-        religion = sunni
-        size = 100
-    }
-
-    soldiers = {
-        culture = turkmen
-        religion = sunni
-        size = 23675
-    }
-
-    bureaucrats = {
-        culture = turkmen
-        religion = sunni
-        size = 30
-    }
-
-    officers = {
-        culture = turkmen
-        religion = sunni
-        size = 100
-    }
-
-    soldiers = {
-        culture = kazak
-        religion = sunni
-        size = 250
-    }
-
-    soldiers = {
-        culture = tajik
-        religion = sunni
-        size = 275
-    }
-
-    soldiers = {
-        culture = mashriqi
-        religion = sunni
-        size = 100
-    }
-
-    bureaucrats = {
-        culture = turkmen
-        religion = sunni
-        size = 525
-    }
+	farmers = {
+		culture = turkmen
+		religion = sunni
+		size = 9200
+	}
 }
-#Turkmenia Region (368000)
-#under the rule of Khiva in 1836
-#Ashkabad (148000/32000 POPS)
+#Turkmenia Region (368000) 
+#under the rule of Khiva in 1836  
+#Ashkabad (148000/32000 POPS)   
 1204 = {
-    clergymen = {
-        culture = turkmen
-        religion = sunni
-        size = 275
-    }
-	
-    clergymen = {
-        culture = persian
-        religion = sunni
-        size = 475
-    }
-	
-    aristocrats = {
-        culture = persian
-        religion = sunni
-        size = 500
-    }
-	
-    artisans = {
-        culture = turkmen
-        religion = sunni
-        size = 1250
-    }
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 500
+	}
 
-    farmers = {
-        culture = turkmen
-        religion = sunni
-        size = 25675
-    }
-	
-    farmers = {
-        culture = persian
-        religion = sunni
-        size = 17825
-    }
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 275
+	}
 
-    clergymen = {
-        culture = persian
-        religion = shiite
-        size = 25
-    }
+	artisans = {
+		culture = turkmen
+		religion = sunni
+		size = 1250
+	}
 
-    artisans = {
-        culture = persian
-        religion = shiite
-        size = 200
-    }
+	soldiers = {
+		culture = turkmen
+		religion = sunni
+		size= 300
 
-    farmers = {
-        culture = persian
-        religion = shiite
-        size = 3750
-    }
+	}
+
+	farmers = {
+		culture = turkmen
+		religion = sunni
+		size = 25675
+	}
+
+	clergymen = {
+		culture = persian
+		religion = shiite
+		size = 25
+	}
+
+	artisans = {
+		culture = persian
+		religion = shiite
+		size = 200
+	}
+
+	soldiers = {
+		culture = persian
+		religion = shiite
+		size= 25
+
+	}
+
+	farmers = {
+		culture = persian
+		religion = shiite
+		size = 3750
+	}
 }
-#Kizil Arvut (88000/22000 POPS)
+#Kizil Arvut (88000/22000 POPS)   
 1205 = {
-    clergymen = {
-        culture = turkmen
-        religion = sunni
-        size = 175
-    }
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 375
+	}
 
-    artisans = {
-        culture = turkmen
-        religion = sunni
-        size = 850
-    }
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 175
+	}
 
-    farmers = {
-        culture = turkmen
-        religion = sunni
-        size = 17400
-    }
+	artisans = {
+		culture = turkmen
+		religion = sunni
+		size = 850
+	}
 
-    clergymen = {
-        culture = persian
-        religion = shiite
-        size = 25
-    }
+	soldiers = {
+		culture = turkmen
+		religion = sunni
+		size= 200
 
-    artisans = {
-        culture = persian
-        religion = shiite
-        size = 150
-    }
+	}
 
-    farmers = {
-        culture = persian
-        religion = shiite
-        size = 2800
-    }
+	farmers = {
+		culture = turkmen
+		religion = sunni
+		size = 17400
+	}
+
+	clergymen = {
+		culture = persian
+		religion = shiite
+		size = 25
+	}
+
+	artisans = {
+		culture = persian
+		religion = shiite
+		size = 150
+	}
+
+	soldiers = {
+		culture = persian
+		religion = shiite
+		size= 25
+
+	}
+
+	farmers = {
+		culture = persian
+		religion = shiite
+		size = 2800
+	}
 }
-#under the rule of Bukhara in 1836
-#Merv (132000/33000 POPS)
+#under the rule of Bukhara in 1836  
+#Merv (132000/33000 POPS)   
 1206 = {
-    clergymen = {
-        culture = tajik
-        religion = sunni
-        size = 25
-    }
+	aristocrats = {
+		culture = tajik
+		religion = sunni
+		size = 25
+	}
 
-    artisans = {
-        culture = tajik
-        religion = sunni
-        size = 100
-    }
+	clergymen = {
+		culture = tajik
+		religion = sunni
+		size = 25
+	}
 
-    farmers = {
-        culture = tajik
-        religion = sunni
-        size = 1825
-    }
+	artisans = {
+		culture = tajik
+		religion = sunni
+		size = 100
+	}
 
-    clergymen = {
-        culture = turkmen
-        religion = sunni
-        size = 225
-    }
+	soldiers = {
+		culture = tajik
+		religion = sunni
+		size= 25
 
-    artisans = {
-        culture = turkmen
-        religion = sunni
-        size = 1100
-    }
+	}
 
-    farmers = {
-        culture = turkmen
-        religion = sunni
-        size = 21025
-    }
+	farmers = {
+		culture = tajik
+		religion = sunni
+		size = 1825
+	}
 
-    clergymen = {
-        culture = persian
-        religion = shiite
-        size = 50
-    }
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 400
+	}
 
-    artisans = {
-        culture = persian
-        religion = shiite
-        size = 400
-    }
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 225
+	}
 
-    farmers = {
-        culture = persian
-        religion = shiite
-        size = 7425
-    }
+	artisans = {
+		culture = turkmen
+		religion = sunni
+		size = 1100
+	}
+
+	soldiers = {
+		culture = turkmen
+		religion = sunni
+		size= 250
+
+	}
+
+	farmers = {
+		culture = turkmen
+		religion = sunni
+		size = 21025
+	}
+
+	aristocrats = {
+		culture = persian
+		religion = shiite
+		size = 50
+	}
+
+	clergymen = {
+		culture = persian
+		religion = shiite
+		size = 50
+	}
+
+	artisans = {
+		culture = persian
+		religion = shiite
+		size = 400
+	}
+
+	soldiers = {
+		culture = persian
+		religion = shiite
+		size= 75
+
+	}
+
+	farmers = {
+		culture = persian
+		religion = shiite
+		size = 6925
+	}
+
+	clergymen = {
+		culture = parsi
+		religion = zoroastrian
+		size = 48
+	}
+
+	farmers = {
+		culture = parsi
+		religion = zoroastrian
+		size = 1100
+	}
+
 }

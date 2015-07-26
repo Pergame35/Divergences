@@ -9,6 +9,12 @@ christian = {
 		color = { 0.8 0.8 0 }
 	}
 
+	assyrian = {
+		icon = 1
+		color = { 0 0.5 0.7 }
+		
+	}
+
 	protestant = {
 		icon = 2
 		color = { 0 0 0.7 }
@@ -32,7 +38,7 @@ christian = {
 	}
 	
 	taiping = {
-		icon = 15
+		icon = 1
 		color = { 0.5 0.5 0 }
 		
 	}
@@ -46,12 +52,31 @@ muslim = {
 		
 	}
 
+	ibadi = {
+		icon = 5
+		color = { 0 0 0.8 }
+		
+		
+	}
+
+	druze = {
+		icon = 6
+		color = { 0.3 0 0.3 }
+	}
+
 	shiite = {
 		icon = 6
 		color = { 0 0.8 0 }
 		
 	}
 
+}
+
+zoroastrian_group = {
+	zoroastrian = {
+		icon = 15
+		color = { 0.7 0.2 0.1 }
+	}
 }
 
 jewish_group = {
@@ -62,7 +87,8 @@ jewish_group = {
 }
 
 eastern = {
-	mahayana = {	
+	mahayana = {
+	
 		color = { 0.8 0.3 0 }
 		icon = 8
 	}
@@ -90,6 +116,11 @@ eastern = {
 	sikh = {
 		color = { 0.3 0.8 0 }
 		icon = 13
+	}
+
+	jain = {
+		color = { 0 0.1 0 }
+		icon = 	16
 	}
 
 }

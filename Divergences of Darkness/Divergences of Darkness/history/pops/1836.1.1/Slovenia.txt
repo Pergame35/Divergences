@@ -86,24 +86,6 @@
 		size = 100
 	}
 
-	craftsmen = {
-		culture = slovene
-		religion = catholic
-		size = 2000
-	}
-  
-  capitalists = {
-		culture = slovene
-		religion = catholic
-		size = 20
-	}
-  
-  clerks = {
-		culture = slovene
-		religion = catholic
-		size = 100
-	}
-
 	clergymen = {
 		culture = slovene
 		religion = catholic
@@ -132,7 +114,7 @@
 #Postojna (180000/45000 POPS) 
 769 = {
 	aristocrats = {
-		culture = venetian
+		culture = slovene
 		religion = catholic
 		size = 500
 	}
@@ -150,7 +132,7 @@
 	}
 
 	soldiers = {
-		culture = venetian
+		culture = slovene
 		religion = catholic
 		size= 425
 
@@ -159,19 +141,19 @@
 	farmers = {
 		culture = slovene
 		religion = catholic
-		size = 18575
+		size = 39575
 	}
 
 	clergymen = {
-		culture = venetian
+		culture = south_german
 		religion = catholic
-		size = 225
+		size = 25
 	}
 
 	farmers = {
-		culture = venetian
+		culture = south_german
 		religion = catholic
-		size = 21975
+		size = 1975
 	}
 
 }

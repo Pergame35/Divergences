@@ -1111,13 +1111,13 @@
     }
 
     soldiers = {
-        culture = nanfaren
+        culture = beifaren
         religion = mahayana
         size = 50
     }
 
     bureaucrats = {
-        culture = nanfaren
+        culture = beifaren
         religion = mahayana
         size = 5
     }
@@ -1905,19 +1905,19 @@
     }
 
     clergymen = {
-        culture = nanfaren
+        culture = beifaren
         religion = mahayana
         size = 75
     }
 
     artisans = {
-        culture = nanfaren
+        culture = beifaren
         religion = mahayana
         size = 200
     }
 
     farmers = {
-        culture = nanfaren
+        culture = beifaren
         religion = mahayana
         size = 3670
     }
@@ -1940,5 +1940,159 @@
         culture = japanese
         religion = mahayana
         size = 18225
+    }
+}
+#Sakhalin-Kurile Region (16200)
+#uncolonized in 1836
+#Pogobi (4100/1025 POPS)
+1086 = {
+    aristocrats = {
+        culture = ainu
+        religion = animist
+        size = 15
+    }
+
+    clergymen = {
+        culture = ainu
+        religion = animist
+        size = 25
+    }
+
+    officers = {
+        culture = ainu
+        religion = animist
+        size = 4
+    }
+
+    artisans = {
+        culture = ainu
+        religion = animist
+        size = 50
+    }
+
+    soldiers = {
+        culture = ainu
+        religion = animist
+        size = 10
+    }
+
+    farmers = {
+        culture = ainu
+        religion = animist
+        size = 900
+    }
+
+    aristocrats = {
+        culture = japanese
+        religion = mahayana
+        size = 7
+    }
+
+    soldiers = {
+        culture = japanese
+        religion = mahayana
+        size = 10
+    }
+}
+#Ootomari (4100/1025 POPS)
+1087 = {
+    clergymen = {
+        culture = ainu
+        religion = animist
+        size = 8
+    }
+
+    artisans = {
+        culture = ainu
+        religion = animist
+        size = 50
+    }
+
+    farmers = {
+        culture = ainu
+        religion = animist
+        size = 925
+    }
+
+    farmers = {
+        culture = japanese
+        religion = mahayana
+        size = 25
+    }
+}
+#Shumshu (4000/1000 POPS)
+1088 = {
+    aristocrats = {
+        culture = ainu
+        religion = animist
+        size = 2814
+    }
+
+    clergymen = {
+        culture = ainu
+        religion = animist
+        size = 8
+    }
+
+    artisans = {
+        culture = ainu
+        religion = animist
+        size = 50
+    }
+
+    soldiers = {
+        culture = ainu
+        religion = animist
+        size = 1270
+    }
+
+    farmers = {
+        culture = ainu
+        religion = animist
+        size = 925
+    }
+
+    aristocrats = {
+        culture = japanese
+        religion = mahayana
+        size = 100
+    }
+
+    soldiers = {
+        culture = japanese
+        religion = mahayana
+        size = 225
+    }
+
+    soldiers = {
+        culture = japanese
+        religion = shinto
+        size = 225
+    }
+
+    bureaucrats = {
+        culture = japanese
+        religion = mahayana
+        size = 25
+    }
+}
+#Etorofu (4000/1000 POPS)
+1089 = {
+    clergymen = {
+        culture = ainu
+        religion = animist
+        size = 8
+    }
+
+    artisans = {
+        culture = ainu
+        religion = animist
+        size = 50
+    }
+
+    farmers = {
+        culture = ainu
+        religion = animist
+        size = 925
     }
 }
