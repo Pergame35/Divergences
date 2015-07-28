@@ -1,0 +1,176 @@
+political_decisions = {
+	restore_macedonia = {
+			potential = {
+				tag = MAC
+				
+				primary_culture = greek
+				NOT = { has_country_flag = macedon_greece }
+				NOT = { has_country_flag = macedon_serb }
+			}
+		
+			allow = {
+			OR = {	AND = { 
+			NOT = { GRE = { exists = yes }
+				}
+				NOT = { is_vassal = yes }
+				NOT = { war = yes }
+				GRE = {
+					all_core = {
+						owned_by = THIS
+						}
+					} 
+				}
+				has_country_flag = help_greece
+				}
+			}
+		
+			effect = {
+				prestige = 10
+				GRE = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+ 				add_core = 828
+				add_core = 859
+				add_core = 858
+				add_core = 861
+				add_core = 860
+				primary_culture = greek
+				remove_accepted_culture = turkish
+				set_country_flag = macedon_greece
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	macedi_idea = {
+			potential = {
+				tag = MAC
+				NOT = { is_vassal = yes }
+				NOT = { has_country_flag = macedi_idea }
+				has_country_flag = macedon_greece
+				primary_culture = greek
+			}
+		
+			allow = {
+				NOT = {
+					TUR = { is_greater_power = yes }
+					}
+				NOT = { war = yes }
+				is_greater_power = yes
+				GRE = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+				NOT = {
+					GRE = { exists = yes }
+					}
+			}
+		
+			effect = {
+				prestige = 20
+				add_core = 828
+				add_core = 859
+				add_core = 858
+				add_core = 861
+				add_core = 860
+				add_core = 862
+				add_core = 863
+				add_core = 864
+				add_core = 865
+				add_core = 866
+				add_core = 867
+				add_core = 868
+				add_core = 869
+				add_core = 870
+				add_core = 871
+				add_core = 872
+				add_core = 855
+				add_core = 856
+				add_core = 857
+				add_core = 844
+				add_core = 845
+				add_core = 846
+				add_core = 847
+				add_core = 848
+				add_core = 826
+				add_core = 827
+				add_core = 834
+				add_core = 835
+				add_core = 836
+				add_core = 837
+				add_core = 838
+				add_core = 824
+				add_core = 825
+				add_core = 831
+				add_core = 832
+				add_core = 833
+				add_core = 849
+				add_core = 850
+				add_core = 851
+				add_core = 852
+				add_core = 853
+				add_core = 819
+				add_core = 820
+				add_core = 821
+				add_core = 805
+				add_core = 806
+				add_core = 807
+				add_core = 808
+				add_core = 809
+				add_core = 822
+				add_core = 823
+				add_core = 815
+				add_core = 816
+				add_core = 817
+				add_core = 829
+				add_core = 830
+				set_country_flag = macedi_idea
+				860 = {
+					change_province_name = "Constantinople"
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+
+	to_north = {
+			potential = {
+				tag = MAC
+				NOT = { has_country_flag = macedon_greece }
+				NOT = { has_country_flag = macedon_serb }
+			}
+		
+			allow = {
+				NOT = {
+					BUL = { exists = yes }
+				}
+				NOT = { is_vassal = yes }
+				NOT = { war = yes }
+				BUL = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}
+		
+			effect = {
+				prestige = 10
+				BUL = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				primary_culture = bulgarian
+				remove_accepted_culture = turkish
+				add_accepted_culture = greek
+				set_country_flag = macedon_serb
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+}
