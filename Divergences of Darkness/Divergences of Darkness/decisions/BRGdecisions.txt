@@ -26,6 +26,7 @@ political_decisions = {
 			399 = {
 				add_core = THIS
 			}
+			404 = { add_core = THIS }
 		}
 	
 	}
@@ -59,7 +60,7 @@ political_decisions = {
 			431 = {
 				add_core = THIS
 			}
-			433 = {
+			407 = {
 				add_core = THIS
 			}
 		}
@@ -301,6 +302,7 @@ political_decisions = {
 		potential = {
 			tag = BRG
 			has_global_flag = Burgundy_is_cape
+			NOT = { SAF = { exists = yes } }
 		}
 		allow = {
 			NOT = {
