@@ -1,5 +1,7 @@
 political_decisions = {
+	
 		cusco_capital = {
+		picture = Incas
 			potential = {
 				tag = INC
 				NOT = { capital = 2302 }
@@ -46,6 +48,7 @@ political_decisions = {
 		}
 
 		empire_inca = {
+		picture = Incas
 			potential = {
 				tag = INC
 				capital = 2302
@@ -114,6 +117,7 @@ political_decisions = {
 		}
 		
 		empire_inca_2 = {
+		picture = Incas
 			potential = {
 				tag = INC
 				capital = 2302

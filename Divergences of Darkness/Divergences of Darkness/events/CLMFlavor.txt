@@ -109,6 +109,8 @@ country_event = { ### Administration of the reconquered colonies
 	diplomatic_influence = { who = MEX value = 300 }
 	release_vassal = GRA
 	diplomatic_influence = { who = GRA value = 300 }
+	GRA = { capital = 2254 }
+	UCA = { capital = 2191 }
 	ai_chance = { 
 	factor = 55
 		}
@@ -142,6 +144,10 @@ country_event = { ### Administration of the reconquered colonies
 	release_vassal = QUI
 	diplomatic_influence = { who = QUI value = 300 }
 	create_alliance = QUI
+	SAN = { capital = 2254 }
+	UCA = { capital = 2191 }
+	QUI = { capital = 2279 }
+	CAS = { capital = 2264 }
 	ai_chance = { 
 	factor = 30
 		}

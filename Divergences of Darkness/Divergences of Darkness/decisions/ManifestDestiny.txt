@@ -130,6 +130,7 @@ political_decisions = {
 	}
 	
 	pla_manifest_destiny = { # Plantagenia
+	picture = Destiny_PLA
 		potential = {
 			tag = PLA
 			NOT = { has_country_flag = pla_manifest_destiny }

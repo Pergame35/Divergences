@@ -2253,7 +2253,7 @@ country_event = {
 		
 		change_tag = POL
 		remove_accepted_culture = lithuanian
-		remove_accepted_culture = byelorussian
+		remove_accepted_culture = ruthenian
 		
 		any_owned = {
 			limit = {
@@ -2636,7 +2636,6 @@ country_event = {
 			}
 			capital = 498
 			remove_accepted_culture = south_italian
-			add_accepted_culture = spanish
 			any_country = {
 				any_owned = {
 					limit = {

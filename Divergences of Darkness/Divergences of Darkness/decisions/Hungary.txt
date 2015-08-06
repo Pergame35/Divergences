@@ -1,0 +1,65 @@
+political_decisions = { 
+	holy_crown_HUN = { 
+	
+	picture = hungary
+	
+	potential = { 
+	NOT = { has_country_flag = HUN_asked }
+	NOT = { exists = HRE }
+	tag = HUN
+	}
+	
+	allow = { 
+	war = no 
+	OR = { 
+		year = 1842 
+		romanticism = 1 
+		}
+	}
+	
+	effect = { 
+	set_country_flag = HUN_asked
+	set_global_flag =  crown_stefen 
+	BOH = { country_event = 265401 }
+		}
+
+	}
+
+	HUN_prague = { 
+	picture = hungary
+	potential = { 
+	tag = HUN 
+	war_with = BOH 
+	has_global_flag = crown_stefen
+		}
+	
+	allow = {
+	625 = { controlled_by = THIS}
+		}
+	
+	effect = { 
+	clr_global_flag = crown_stefen
+	country_event = 265411
+	BOH = { country_event = 265412 }
+		}
+	}
+	
+	BOH_buda = { 
+	picture = hungary
+	potential = { 
+	tag = BOH 
+	war_with = HUN 
+	has_global_flag = crown_stefen
+		}
+	
+	allow = {
+	641 = { controlled_by = THIS}
+		}
+	
+	effect = { 
+	clr_global_flag = crown_stefen
+	HUN = { country_event = 265413 }
+		}
+	
+	}
+}

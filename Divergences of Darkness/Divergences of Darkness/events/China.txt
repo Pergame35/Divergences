@@ -676,7 +676,7 @@ country_event = {
 	option = { 
 	name = "To the East through China."
 	set_country_flag = modernization_CHG
-	JAP = { country_event = { id = days = 50}}
+	JAP = { country_event = { id = 48930 days = 50 } }
 	ai_chance = { 
 	factor = 40 
 		}
@@ -685,25 +685,10 @@ country_event = {
 	option = { 
 	name = "To the South through India."
 	set_country_flag = modernization_CHG
+	random_country = { limit = { continent = europe any_owned_province = { OR = { is_core = HND is_core = DRA } } } country_event = { id = 48940 days = 275 } }
 	ai_chance = { 
 	factor = 20 
 		}
-	}
-}
-
-country_event = { 
-	id = 48908
-	title = "DZG8.T"
-	desc = "DZG8.D"
-	picture = "cossack_baron"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "Welcome back!"
-	research_points = 8000 
-	set_country_flag = foreign_adviser
-	set_country_flag = mad_baron
 	}
 }
 
@@ -973,7 +958,7 @@ country_event = {
 	name = "Expand the library but do not go further."
 	set_country_flag = script_question
 	money = -100000
-	literacy = 5
+	any_pop = { literacy = 0.05 }
 	random_owned = { limit = { owner = { education_reform = yes_education_reform } } owner = { economic_reform = advanced_education_reform activate_technology = positivism  }  }
 	random_owned = { limit = { owner = { education_reform = no_education_reform } } owner = { economic_reform = yes_education_reform activate_technology = malthusian_thought }  }
 	ai_chance = { 
@@ -990,7 +975,7 @@ country_event = {
 	set_country_flag = university_urumqi
 	set_country_flag = script_question
 	money = -1000000
-	literacy = 10
+	any_pop = { literacy = 0.1  }
 	random_owned = { limit = { owner = { education_reform = yes_education_reform } } owner = { economic_reform = advanced_education_reform activate_technology = positivism  }  }
 	random_owned = { limit = { owner = { education_reform = no_education_reform } } owner = { economic_reform = yes_education_reform activate_technology = malthusian_thought }  }
 	random_owned = { limit = { owner = { academic_institutions = universities  } } owner = { research_points = 8000 }  }
@@ -1085,7 +1070,7 @@ country_event = {
 	option = { 
 	name = "The old Mongol alphabet will be fit for the Modern Age!"
 	clr_country_flag = script_question
-	literacy = 1
+	any_pop = { literacy = 0.01 }
 	ai_chance = { 
 	factor = 60 
 		}
@@ -1094,7 +1079,7 @@ country_event = {
 	option = { 
 	name = "Latin alphabet for the future!"
 	clr_country_flag = script_question
-	literacy = 1
+	any_pop = { literacy = 0.01  }
 	ai_chance = { 
 	factor = 25 	
 		}
@@ -1102,10 +1087,277 @@ country_event = {
 	
 	option = { 
 	name = "Arabic it is!"
-	literacy = 1
+	any_pop = { literacy = 0.01  }
 	clr_country_flag = script_question 
 	ai_chance = { 
 	factor = 15 	
 		}
 	}
 }
+
+country_event = {
+	id = 48930
+	title = "DZG30.T"
+	desc = "DZG30.D"
+	picture = "central_asia"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Interesting. Maybe we could take advantage of this ..."
+	diplomatic_influence = { who = CHG value = 150 }
+	relation = { who = CHG value = 150 }
+	CHG = { country_event = 48931 }
+	}
+}
+
+country_event = { 
+	id = 48931
+	title = "DZG31.T"
+	desc = "DZG31.D"
+	picture = "central_asia"
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "Excellent!"
+	research_points = 11000
+	set_country_flag = kawaguchi
+	}
+}
+
+country_event = { 
+	id = 48932
+	title = "DZG32.T"
+	desc = "DZG32.D"
+	picture = "japanese_lama"
+	
+	trigger = { 
+	tag = CHG
+	has_country_flag = kawaguchi
+	war = no 
+	neighbour = TIB 
+	NOT = { TIB = { vassal_of = CHG } }
+	}
+	
+	mean_time_to_happen = { 
+	months = 25
+	}
+	
+	option = { 
+	name = "Let him go to Tibet unharmed" 
+	TIB = { country_event = 48933 }
+	relation = { who = TIB value = 200 }
+	relation = { who = JAP value = 50 }
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+	
+	option = { 
+	name = "Forbid him access through our passes!"
+	clr_country_flag = kawaguchi
+	relation = { who = JAP value = -50 }
+	relation = { who = TIB value = -50 }
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+}
+
+country_event = { 
+	id = 48933
+	title = "DZG33.T"
+	desc = "DZG33.D"
+	picture = "japanese_lama"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "An interesting man"
+	JAP = { country_event = 48934 }
+	relation = { who = JAP value = 50 }
+	}
+}
+
+country_event = { 
+	id = 48934
+	title = "DZG34.T"
+	desc = "DZG34.D"
+	picture = "japanese_lama"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Another exploit for Japan!"
+	prestige = 4 
+	}
+}
+
+country_event = { 
+	id = 48935 #Operation Tsunami
+	title = "DZG35.T"
+	desc = "DZG35.D"
+	picture = "central_asia"
+	
+	trigger = { 
+	tag = JAP 
+	neighbour = CHG
+	CHG = { civilized = no }
+	NOT = { CHG = { has_country_flag = kawaguchi} }
+	}
+	
+	option = { 
+	name = "The Steppes will be brought under our control!" 
+	CHG = { country_event = 48936 }
+	war = {
+			target = CHG
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+		}
+	ai_chance = { factor = 80 }
+	}
+	
+	option = { 
+	name = "Who brought such an idea to the court ?"
+	prestige = 2 
+	ai_chance = { 
+	factor = 20 
+	modifier = { 
+	factor = 3 
+	alliance_with = CHG 
+			}
+	modifier = { 
+	factor = 2 
+	is_greater_power = no 
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 48936 #Operation Tsunami
+	title = "DZG36.T"
+	desc = "DZG36.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Damn!"
+	}
+}
+
+country_event = { 
+	id = 48937 
+	title = "DZG37.T"
+	desc = "DZG37.D"
+	
+	trigger = { 
+	tag = CHG 
+	vassal_of = JAP 
+	OR = { owns = 1469 owns = 1075 }
+	}
+	
+	mean_time_to_happen = { 
+	days = 1 
+	}
+	
+	option = { 
+	name = "We bow before our Japanese overlords..."
+	any_owned = { limit = { OR = { region = MON_1075 region = RUS_1469 } } secede_province = JAP }
+	}
+}
+
+country_event = { 
+	id = 48938 
+	title = "DZG38.T"
+	desc = "DZG38.D"
+	picture = "central_asia"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Good"
+	}
+}
+
+country_event = { 
+	id = 48940
+	title = "DZG40.T"
+	desc = "DZG40.D"
+	picture = "central_asia"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Bring them to Europe and show them our power!"
+	CHG = { country_event = { id = 48941 days = 150 } }
+	ai_chance = { 
+	factor = 70 
+		}
+	}
+	
+	option = { 
+	name = "Make them return to their steppes!"
+	ai_chance = { 
+	factor = 30 
+		}
+	}
+}
+
+country_event = { 
+	id = 48941
+	title = "DZG41.T"
+	desc = "DZG41.D"
+	picture = "central_asia"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "At last they come back!"
+	research_points = 15000
+	set_country_flag = europe_travel
+	}
+}
+
+country_event = { 
+	id = 48942
+	title = "DZG42.T"
+	desc = "DZG42.D"
+	picture = "central_asia"
+	
+	trigger = { 
+	tag = CHG 
+	civilization_progress = 50 
+	has_country_flag = europe_travel
+	}
+	
+	option = { 
+	name = "Interesting"
+	any_pop = { 
+	literacy = 0.01 
+	ideology = {
+		value = liberal
+		factor = 0.10
+			}
+		}
+	}
+}
+	
+country_event = { 
+	id = 48908
+	title = "DZG8.T"
+	desc = "DZG8.D"
+	picture = "cossack_baron"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Welcome back!"
+	research_points = 8000 
+	set_country_flag = foreign_adviser
+	set_country_flag = mad_baron
+	}
+}
+	
