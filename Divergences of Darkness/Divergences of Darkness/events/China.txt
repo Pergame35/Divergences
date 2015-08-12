@@ -1207,6 +1207,8 @@ country_event = {
 	NOT = { CHG = { has_country_flag = kawaguchi} }
 	}
 	
+	fire_only_once = yes 
+	
 	option = { 
 	name = "The Steppes will be brought under our control!" 
 	CHG = { country_event = 48936 }
