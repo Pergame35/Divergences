@@ -58,7 +58,8 @@ political_decisions = {
 	tag = PLC 
 	NOT = { has_country_flag = lublin_new }
 	LIT = { substate_of = PLC }
-	RUT = { substate_of = PLC }
+	BLR = { substate_of = PLC }
+	PRU = { substate_of = PLC }
 	OR = { 
 		UKR = { substate_of = PLC } 
 		NOT = { UKR = { exists = yes } }
@@ -74,8 +75,9 @@ political_decisions = {
 	
 	effect = { 
 	inherit = LIT 
-	inherit = RUT 
+	inherit = BLR 
 	inherit = UKR
+	inherit = PRU
 	RUS_354 = { add_core = PLC }
 	RUS_349 = { add_core = PLC }
 	relation = { who = RUS value = -100 }
@@ -158,6 +160,23 @@ political_decisions = {
 		}
 	}
 	
+	end_of_prussia = { 
+	potential = { 
+	tag = SCA 
+	owns = 690 
+	PRU = { exists = yes }
+	}
+	allow = { 
+	is_greater_power = yes 
+	war = no 
+	}
+	
+	effect = { 
+	inherit = PRU 
+	}
+	
+	}
+	
 	lithuanian_port = { 
 	potential = { 
 	tag = SCA 
@@ -167,7 +186,7 @@ political_decisions = {
 	
 	allow = { 
 	LIT = { in_sphere = THIS }
-	owns = 698
+	owns = 695
 	}
 	
 	effect = { 
@@ -203,17 +222,17 @@ political_decisions = {
 	potential = {
 	OR = { tag = RUS 
 	tag = MUS }
-	RUT = { substate_of = PLC  }
-	946 = { owned_by = RUT }
+	BLR = { substate_of = PLC  }
+	946 = { owned_by = BLR }
 	}
 	
 	allow = {
-	RUT = { in_sphere = THIS }	
-	NOT = { PLC = { rank = 15 } }
+	BLR = { in_sphere = THIS }	
+	NOT = { PLC = { rank = 10 } }
 		}
 	
 	effect = { 
-	RUT = { country_event = 202205 }
+	BLR = { country_event = 202205 }
 		}
 	
 	ai_will_do = {
@@ -258,7 +277,7 @@ political_decisions = {
 	tag = SCA 
 	is_greater_power = yes 
 	has_country_flag = baltic_claimed
-	NOT = { has_global_flag = hre_formed has_global_flag = cae_formed has_country_flag = nordtyskland}
+	NOT = { has_global_flag = hre_formed has_global_flag = cae_formed has_country_flag = nordtyskland }
 	}
 	
 	allow = { 

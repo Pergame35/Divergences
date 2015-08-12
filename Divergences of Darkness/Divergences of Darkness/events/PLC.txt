@@ -57,10 +57,13 @@ country_event = {
 	option = { 
 	name = "We must bow to the Scandinavians ..."
 	365 = {
-			secede_province = FROM
-			}
+		secede_province = FROM
+		}
+	698  = {
+		secede_province = FROM
 		}
 	}
+}
 
 country_event = { 
 	id = 202205 #Ruthenian lands
@@ -135,9 +138,10 @@ country_event = {
 	release_vassal = LIT 
 	release_vassal = UKR 
 	release_vassal = RUT
+	release_vassal = BLR
 	any_owned = {  
 		limit = { region = RUS_955}
-		secede_province = RUT
+		secede_province = BLR
 		}
 	any_owned = {
 				limit = {

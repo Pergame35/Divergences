@@ -253,6 +253,9 @@ country_event = {
 		political_reform = state_press
 		political_reform = no_trade_unions
 		political_reform = underground_parties
+		BRZ_2408  = {
+		add_core = CLM 
+		}
 		ai_chance = {
 			factor = 30
 		}
