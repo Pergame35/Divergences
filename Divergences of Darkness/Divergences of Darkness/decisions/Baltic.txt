@@ -1,304 +1,529 @@
 political_decisions = {
+
+	claim_prussia_as_big_german = {
+		potential = {
+			OR = {
+				tag = HRE
+				tag = GER
+			}
+			is_greater_power = yes
+			NOT = { has_global_flag = ger_pru }
+		}
+			
+		allow = { 
+			owns = 549
+			owns = 546 	
+			nationalism_n_imperialism = 1
+		}
+			
+		effect = { 
+			prestige = 10
+			badboy = 5
+			PRU = { all_core = { add_core = THIS } }
+			set_country_flag = ger_pru
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
 	dominium_maris_baltici = {
 		potential = {
 			tag = SCA 
 			is_greater_power = yes 
 			NOT = { has_country_flag = baltic_claimed }
-			}
+		}
 			
 		allow = { 
 			owns = 354
 			owns = 546 	
-			state_n_government = 1
+			OR = {
+				state_n_government = 1
+				AND =  {
+					war_with = PLC
+					year = 1840
+				}
 			}
+		}
 			
 		effect = { 
-			PRU_690 = { 
-			add_core = THIS 
+			prestige = 10
+			badboy = 8
+			any_country = {
+				limit = {
+					tag = PRU
+					substate_of = PLC
+					PLC = { war_with = THIS }
+				}
+				annex_to = SCA
 			}
-			PRU_695 = { 
-			add_core = THIS 
-			}
-			365 = { 
-			add_core = THIS 
-			}
-			698 = { 
-			add_core = THIS 
-			}
+			PRU = { all_core = { add_core = SCA } }
 			set_country_flag = baltic_claimed
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	reclaimPOM = { 
-	
-		potential = { 
-		tag = SCA 
-		NOT = { 544 = { is_core  = THIS } }
+
+	lithuania_kidnapping = {
+		potential = {
+			tag = SCA
+			is_greater_power = yes 
+			has_country_flag = baltic_claimed
+			NOT = { has_country_flag = lol_gg }
+			LIT = { substate_of = PLC }
 		}
-		
-		allow = { 
-		is_greater_power = yes 
-		war_policy = jingoism
+			
+		allow = {
+			owns = 357
+			owns = 354
+			owns = 546
+			owns = 695
+			OR = {
+				revolution_n_counterrevolution = 1
+				AND =  {
+					war_with = PLC
+					year = 1870
+				}
+			}
 		}
-		
-		effect = { 
-		PRU_546 = { add_core = SCA }
-		badboy = 10
+			
+		effect = {
+			set_country_flag = lol_gg
+			country_event = 22240
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	
-	act_of_union = { 
-	potential = {
-	tag = PLC 
-	NOT = { has_country_flag = lublin_new }
-	LIT = { substate_of = PLC }
-	BLR = { substate_of = PLC }
-	PRU = { substate_of = PLC }
-	OR = { 
-		UKR = { substate_of = PLC } 
-		NOT = { UKR = { exists = yes } }
+	reclaimPOM = {
+	
+		potential = { 
+			tag = SCA 
+			NOT = {
+				544 = { is_core  = THIS }
+				has_country_flag = lol_rekt
+			}
 		}
-	}
-	
-	allow = { 
-	is_greater_power = yes 
-	war = no 
-	690 = { owned_by = THIS }
-	695 = { owned_by = THIS }
-	}
-	
-	effect = { 
-	inherit = LIT 
-	inherit = BLR 
-	inherit = UKR
-	inherit = PRU
-	RUS_354 = { add_core = PLC }
-	RUS_349 = { add_core = PLC }
-	relation = { who = RUS value = -100 }
-	relation = { who = SCA value = -100 }
-	relation = { who = BOH value = -100 }
-	relation = { who = CAE value = -100 }
-	relation = { who = HRE value = -100 }
-	set_country_flag = lublin_new
-	} 
-	ai_will_do = {
+		
+		allow = { 
+			is_greater_power = yes 
+			war_policy = jingoism
+		}
+		
+		effect = {
+			set_country_flag = lol_rekt
+			PRU_690 = { add_core = SCA }
+			PRU_546 = { add_core = SCA }
+			badboy = 10
+		}
+
+		ai_will_do = {
 			factor = 1
 		}
 	}
 	
-	baltic_cultures = { 
-	potential = {
-	tag = PLC 
-	has_country_flag = lublin_new 
+	act_of_union = {
+
+		potential = {
+			tag = PLC 
+			NOT = { has_country_flag = lublin_new }
+			OR = {
+				LIT = { substate_of = PLC }
+				BLR = { substate_of = PLC }
+				UKR = { substate_of = PLC }
+				PRU = { substate_of = PLC }
+			}
 		}
 	
-	allow = { 
-	owns = 354 
-	owns = 349 
-	nationalism_n_imperialism = 1 
-	}
+		allow = { 
+			OR = {
+				AND = {
+					is_greater_power = yes
+					state_n_government = 1
+				}
+				AND = {
+					rank = 12
+					mass_politics = 1
+				}
+			}
+			OR = {
+				LIT = { substate_of = PLC }
+				BLR = { substate_of = PLC }
+				UKR = { substate_of = PLC }
+				PRU = { substate_of = PLC }
+			}
+			OR = {
+				LIT = { substate_of = PLC }
+				BLR = { exists = no }
+			}
+			OR = {
+				BLR = { substate_of = PLC }
+				BLR = { exists = no }
+			}
+			OR = {
+				UKR = { substate_of = PLC }
+				UKR = { exists = no }
+			}
+			OR = {
+				PRU = { substate_of = PLC }
+				PRU = { exists = no }
+			}
+			war = no
+			690 = { owned_by = THIS }
+		}
 	
-	effect = {  
-	add_accepted_culture = estonian 
-	add_accepted_culture = latvian 
-	}
-	ai_will_do = {
+		effect = {
+			prestige = 30
+			badboy = 5
+			any_country = {
+				limit = {
+					OR = {
+						tag = LIT
+						tag = BLR
+						tag = UKR
+						tag = PRU
+					}
+					is_substate_of = THIS
+				}
+				annex_to = THIS
+			}
+			any_pop = {
+				limit = {
+					OR = {
+					has_pop_culture = north_german
+					has_pop_culture = russian
+					}
+				}
+				militancy = 6
+			}
+			relation = { who = MOS value = -200 }
+			relation = { who = RUS value = -200 }
+			relation = { who = SCA value = -200 }
+			relation = { who = BOH value = -200 }
+			relation = { who = CAE value = -200 }
+			relation = { who = HRE value = -200 }
+			set_country_flag = lublin_new
+		}
+	
+		ai_will_do = {
 			factor = 1
 		}
 	}
 	
-	treaty_hadiach = { 
-	picture = "Hadiach_treaty"
-	potential = { 
-	tag = PLC 
-	has_country_flag = lublin_new 
-	NOT = { has_country_flag = treaty_hadiach }
+	moldavia_commonwealth_friends_forever = {
+
+		potential = {
+			tag = PLC
+			OR = {
+				MOL = { exists = yes }
+				ROM = { exists = yes }
+			}
+			NOT = {
+				968 = { owned_by = ROM }
+				968 = { owned_by = MOL }
+			}
+			NOT = { has_country_flag = best_f }
+		}
+
+		allow = {
+			war = no
+			968 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+					owner = {
+						vassal_of = THIS
+					}
+					owner = {
+						substate_of = THIS
+					}
+				}
+			}
+			OR = {
+				AND = {
+					ROM = { war = no exists = yes is_vassal = no}
+					MOL = { exists = no }
+				}
+				AND = {
+					MOL = { war = no exists = yes is_vassal = no}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			set_country_flag = best_f
+			any_country = {
+				limit = {
+					OR = {
+						AND = {
+							tag = ROM
+							exists = yes
+							MOL = { exists = no }
+						}
+						AND = {
+							tag = MOL
+							exists = yes
+						}
+					}
+				}
+				country_event = 22230
+			}
+		}
 	}
+
+	baltic_cultures = {
+
+		potential = {
+			tag = PLC
+			has_country_flag = lublin_new
+			owns = 354
+			NOT = { has_country_flag = my_latvian_brother }
+		}
 	
-	allow = { 
-	owns = 958 
-	owns = 718 
-	owns = 946 
-	}
+		allow = {
+			war = no
+			government = hm_government
+			minorities_reform = limited
+			vote_fraschise = universal_weighted_voting
+			nationalism_n_imperialism = 1
+			owns = 354
+			owns = 349
+		}
 	
-	effect = { 
-	set_country_flag = treaty_hadiach 
-	country_event = 202201
-	}
-	ai_will_do = {
+		effect = {
+			set_country_flag = my_latvian_brother
+			prestige = 10
+			add_accepted_culture = latvian 
+		}
+
+		ai_will_do = {
 			factor = 1
 		}
 	}
 	
-	treaty_hadiach_2 = { 
-	picture = "Hadiach_treaty"
-	potential = { 
-	tag = PLC 
-	has_country_flag = refused_hadiach 
-	NOT = { has_country_flag = treaty_hadiach2 }
-	}
+	treaty_hadiach = {
+		picture = "Hadiach_treaty"
+
+		potential = { 
+			tag = PLC 
+			has_country_flag = lublin_new 
+			NOT = { has_country_flag = treaty_hadiach }
+		}
+
+		allow = {
+			public_metting = yes_meeting
+			vote_franschise = wealth_weighted_voting
+			NOT { religious_policy = moralism }
+			nationalism_n_imperialism = 1
+			owns = 958 
+			owns = 718 
+			owns = 946
+			
+		}
 	
-	allow = { 
-	PLC = { all_core = { owned_by = THIS } }
-	revolution_n_counterrevolution = 1 
-	}
-	
-	effect = { 
-	set_country_flag = treaty_hadiach2 
-	badboy = 15
-	add_accepted_culture = ruthenian
-	RUT = { all_core = { add_core = THIS } }
-	}
-	ai_will_do = {
+		effect = { 
+			set_country_flag = treaty_hadiach
+			prestige = 20
+			add_accepted_culture = ruthenian
+			any_pop = {
+				limit = {
+					culture = polish
+				}
+				militancy = 3
+				consciousness = 3
+				ideology = {
+					factor = 0.2
+					value = reactionary
+				}
+			}
+			any_pop = {
+				limit = {
+					culture = ruthenian
+				}
+				consciousness = 1
+				militancy = -5
+				ideology = {
+					factor = 0.1
+					value = liberal
+				}
+			}
+		}
+
+		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	end_of_prussia = { 
-	potential = { 
-	tag = SCA 
-	owns = 690 
-	PRU = { exists = yes }
-	}
-	allow = { 
-	is_greater_power = yes 
-	war = no 
-	}
-	
-	effect = { 
-	inherit = PRU 
-	}
-	
-	}
-	
-	lithuanian_port = { 
-	potential = { 
-	tag = SCA 
-	has_country_flag = baltic_claimed 
-	NOT = { owns = 365 }
-	}
-	
-	allow = { 
-	LIT = { in_sphere = THIS }
-	owns = 695
-	}
-	
-	effect = { 
-	LIT = { country_event = 202204 }
+
+	integrate_germans = {
+
+		potential = {
+			tag = SCA
+			is_greater_power = yes
+			OR = {
+				has_country_flag = baltic_claimed
+				year = 1890
+			}
 		}
-	ai_will_do = {
+
+		allow = {
+			industrial_score = 200
+			press_rights = free_press
+			public_meetings = yes_meeting
+			vote_franschise = wealth_weighted_voting
+			OR = {
+				549 = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+						owner = {
+							vassal_of = THIS
+						}
+					}
+				}
+				534 = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+						owner = {
+							vassal_of = THIS
+						}
+					}
+				}
+				695 = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+						owner = {
+							vassal_of = THIS
+						}
+					}
+				}
+
+			}
+		}
+
+		effect = {
+			prestige = 20
+			set_country_flag = north_integration
+			add_accepted_culture = north_german
+			any_pop = {
+				limit = {
+					culture = scandinavian
+				}
+				militancy = 3
+				consciousness = 3
+				ideology = {
+					factor = 0.2
+					value = reactionary
+				}
+			}
+			any_pop = {
+				limit = {
+					culture = north_german
+				}
+				consciousness = -1
+				militancy = -3
+				ideology = {
+					factor = 0.1
+					value = liberal
+				}
+			}
+		}
+
+		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	end_the_hetmanate = { 
-	
-	potential = {
-	OR = { tag = RUS 
-	tag = MUS }
-	UKR = { substate_of = PLC }
-	}
-	
-	allow = {
-	UKR = { in_sphere = THIS }	
-	NOT = { PLC = { rank = 15 } }
-		}
-	
-	effect = { 
-	inherit = UKR 
-		}
-	ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	annex_russian_lands_RUT = { 
-	potential = {
-	OR = { tag = RUS 
-	tag = MUS }
-	BLR = { substate_of = PLC  }
-	946 = { owned_by = BLR }
-	}
-	
-	allow = {
-	BLR = { in_sphere = THIS }	
-	NOT = { PLC = { rank = 10 } }
-		}
-	
-	effect = { 
-	BLR = { country_event = 202205 }
-		}
-	
-	ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	deluge = {
-	
-	potential = { 
-	tag = SCA 
-	NOT = { has_country_flag = deluge }
-	is_greater_power = yes 
-	has_country_flag = baltic_claimed
-	SCA = { all_core = { owned_by = THIS } } 
-	RUT = { substate_of = PLC }
-	LIT = { substate_of = PLC }
-	UKR = { substate_of = PLC }
-	}
-	
-	allow = { 
-	RUT = { in_sphere = THIS }
-	PLC = { in_sphere = THIS } 
-	LIT = { in_sphere = THIS }
-	UKR = { in_sphere = THIS }
-	}
-	
-	effect = { 
-	PLC = { country_event = 202206 }
-	set_country_flag = deluge
-	}
-	
-	ai_will_do = {
-			factor = 1
-		}
-	
-	}		
+			
+
 
 	nordtyskland = {
 	
-	potential = { 
-	tag = SCA 
-	is_greater_power = yes 
-	has_country_flag = baltic_claimed
-	NOT = { has_global_flag = hre_formed has_global_flag = cae_formed has_country_flag = nordtyskland }
-	}
+		potential = { 
+			tag = SCA 
+			is_greater_power = yes 
+			has_country_flag = baltic_claimed
+			NOT = { has_global_flag = hre_formed has_global_flag = cae_formed has_country_flag = nordtyskland}
+		}
 	
-	allow = { 
-	SCA = {
-			all_core = {
+		allow = { 
+			has_country_flag = north_integration
+			549 = {
+				OR = {
 					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+					owner = {
+						vassal_of = THIS
 					}
 				}
-	owns = 549
-	owns = 555
-	}
+			}
+			534 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			555 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			695 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			690 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+		}
 	
-	effect = { 
-	set_country_flag = nordtyskland
-	add_accepted_culture = north_german 
-	PRU_553 = { add_core = THIS }
-	PRU_549 = { add_core = THIS }
-	HAM_528 = { add_core = THIS }
-	OLD = { all_core  = { add_core = THIS } }
-	HEK_568 = { add_core = THIS }
-	any_country = {
+		effect = { 
+			set_country_flag = nordtyskland
+			PRU_553 = { add_core = THIS }
+			PRU_549 = { add_core = THIS }
+			HAM_528 = { add_core = THIS }
+			OLD = { all_core  = { add_core = THIS } }
+			HEK_568 = { add_core = THIS }
+			any_country = {
 				limit = {
 					primary_culture = north_german
 					in_sphere = THIS
@@ -307,10 +532,11 @@ political_decisions = {
 			}
 		}
 		
-	ai_will_do = {
-	factor = 1 
+		ai_will_do = {
+			factor = 1 
 		}
-	
 	}
+
+
+
 }	
-		
