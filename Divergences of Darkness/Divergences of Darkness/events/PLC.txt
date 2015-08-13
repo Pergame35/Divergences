@@ -1,163 +1,137 @@
-country_event = { 
-	id = 202201 #Treaty of Hadiach
-	title = "POL1.T"
-	desc = "POL1.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "What will the Ruthenians decide ?"
-	random_list = { 
-	50 = { country_event = 202202 }
-	50 = { country_event = 202203 }
-		}
+country_event = {
+	id = 22240
+	title = "An independent Lithuanian Duchy?"
+	desc = "Our position and power brings us the possibility to claim to be the liberator of the Lithuanians, however the land we can claim is not yet decided."
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Claim the current Duchy´s borders!"
+		prestige = 20
+		badboy = 12
+		set_global_flag = big_lit
 	}
 
-}
+	option = {
+		name = "Leave the Ruthenian land to the Commonwealth, we don´t need them"
+		prestige = 15
+		badboy = 8
+		set_global_flag = mid_lit
+	}
 
-country_event = { 
-	id = 202202 #Treaty of Hadiach : Accepted
-	title = "POL2.T"
-	desc = "POL2.D"
-	picture = "PLC_RUT"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "Long live the Commonwealth !"
-	add_accepted_culture = ruthenian
-	RUT = { all_core = { add_core = THIS } }
-	prestige = 20
+	option = {
+		name = "Claim pure Lithuanian speaking areas only!"
+		prestige = 10
+		badboy = 5
+		set_global_flag = lite_lit
 	}
 }
 
-country_event = { 
-	id = 202203 #Treaty of Hadiach : Refusal
-	title = "POL3.T"
-	desc = "POL3.D"
-	picture = "Cossacks"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "Cossack bastards !"
-	any_pop = { limit = { culture = ruthenian } militancy = 4 consciousness = 5 }
-	prestige = -20
-	set_country_flag = refused_hadiach
-	}
-}
+country_event = {
+	id = 22230
+	title = "Polish-Romanian alliance?"
+	desc = "The Commonwealth offered us the Transnistria province in exchange of an alliance and economic union!"
+	picture = "greatpowers"
 
-country_event = { 
-	id = 202204 #Lithuanian port
-	title = "POL4.T"
-	desc = "POL4.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "We must bow to the Scandinavians ..."
-	365 = {
-		secede_province = FROM
-		}
-	698  = {
-		secede_province = FROM
-		}
-	}
-}
+	is_triggered_only = yes
 
-country_event = { 
-	id = 202205 #Ruthenian lands
-	title = "POL5.T"
-	desc = "POL5.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "We must bow to the Russians ..."
-	any_owned = { 
-	limit = { is_core = RUS }
-		secede_province = FROM
-			}
-	}
-}
-
-country_event = { 
-	id = 202206 #Deluge
-	title = "POL6.T"
-	desc = "POL6.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "How could we allow that ..."
-	release_vassal = LIT 
-	release_vassal = UKR 
-	release_vassal = RUT
-	any_owned = {  
-		limit = { region = RUS_955}
-		secede_province = RUT
-		}
-	any_owned = {
-				limit = {
-					is_core = PLC
-				}
-				remove_core = PLC
-			}
-	any_country = {
+	option = {
+		name = "Of course we accept!"
+		prestige = 5
+		military_access = FROM
+		968 = { secede_province = THIS }
+		969 = { secede_province = THIS }
+		FROM = {
+			country_event = 22231
 			any_owned = {
 				limit = {
-					is_core = PLC
+					OR = {
+						is_core = ROM
+						is_core = MOL
+					}
 				}
-				remove_core = PLC
+				remove_core = THIS
+				remove_core = POL
+				secede_province = THIS
+			}
+			relation = {
+				who = THIS
+				value = 1000
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = 1000
+			}
+			create_alliance = THIS
+			military_access = THIS
+		}
+	}
+
+	option = {
+		name = "I don´t trust them, they will undermine our independence!"
+		relation = {
+			who = FROM
+			value = -100
+		}
+		FROM =  {
+			country_event = 22232
+			diplomatic_influence = {
+				who = THIS
+				value = -100
 			}
 		}
-	change_tag = POL
-	
 	}
 }
 
-country_event = { 
-	id = 202210 #Breakup of the Commonwealth
-	title = "POL10.T"
-	desc = "POL10.D"
-	
-	major = yes
-	
-	trigger = { 
-	tag = PLC 
-	year = 1870 
-	NOT = { has_country_flag = lublin_new }
+country_event = {
+	id = 22231
+	title = "Offer accepted!"
+	desc = "The Romanians accepted our offer!"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Yes!"
+		prestige = 20
 	}
-	
-	mean_time_to_happen = { 
-	months = 50 
+}
+
+country_event = {
+	id = 22232
+	title = "Offer refused!"
+	desc = "The paranoid Romanians refused our offer!"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Well, they will regret this"
+		prestige = -5
 	}
-	
-	option = { 
-	name = "How could we allow that ..."
-	release_vassal = LIT 
-	release_vassal = UKR 
-	release_vassal = RUT
-	release_vassal = BLR
-	any_owned = {  
-		limit = { region = RUS_955}
-		secede_province = BLR
-		}
-	any_owned = {
-				limit = {
-					is_core = PLC
-				}
-				remove_core = PLC
-			}
-	any_country = {
-			any_owned = {
-				limit = {
-					is_core = PLC
-				}
-				remove_core = PLC
-			}
-		}
-	change_tag = POL
-	
+}
+
+country_event = {
+	id = 22233
+	title = "Crimean land moved under Kiev´s control!"
+	desc = "To defend better these lands from any Turkish, Tatar or Russian invasion we have to give these new territories to the Hetmanate!"
+	picture = "greatpowers"
+
+	trigger = {
+		tag = PLC
+		UKR = { substate_of = THIS }
+		NOT = { has_country_flag = lublin_new }
+		RUS_965 = { owned_by = THIS }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "Seems legit"
+		prestige = 5
+		RUS_965 = { secede_province = UKR }
 	}
 }
