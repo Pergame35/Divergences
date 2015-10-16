@@ -487,13 +487,16 @@
 		culture = mashriqi
 		religion = sunni
 		size= 475
-
+		militancy = 9
+        rebel_type = nationalist_rebels
 	}
 
 	farmers = {
 		culture = mashriqi
 		religion = sunni
 		size = 18475
+		militancy = 9
+        rebel_type = nationalist_rebels
 	}
 
 	clergymen = {
@@ -506,12 +509,16 @@
 		culture = mashriqi
 		religion = shiite
 		size = 760
+		militancy = 9
+        rebel_type = nationalist_rebels
 	}
 
 	farmers = {
 		culture = mashriqi
 		religion = shiite
 		size = 12475
+		militancy = 9
+        rebel_type = nationalist_rebels
 	}
 
 	clergymen = {
