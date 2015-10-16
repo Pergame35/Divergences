@@ -219,8 +219,11 @@ political_decisions = {
 			}
 			is_greater_power = yes
 			PRV = { 
-				all_core = { 
-					owned_by = THIS
+				OR = {
+					all_core = { 
+						owned_by = THIS
+					}
+					exists = no
 				}
 			}	
 		}
