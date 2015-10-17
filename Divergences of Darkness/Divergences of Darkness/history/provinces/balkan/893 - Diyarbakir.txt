@@ -1,12 +1,7 @@
-owner = TUR
-controller = TUR
+owner = KUR
+controller = KUR
 add_core = TUR
 add_core = KUR
 trade_goods = iron
 life_rating = 35
 terrain = hilly_farmland
-
-revolt = {
-	type = nationalist_rebels
-	controller = yes
-}
