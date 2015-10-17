@@ -374,8 +374,12 @@ political_decisions = {
 	government = absolute_monarchy
 	government = prussian_constitutionalism
 	}
+	LUC = { exists = yes }
+	NOT = { war = yes }
+	NOT = { has_country_flag = lucca_submission }
 	owns = 744	
-		}
+	}
+		
 	allow = { 
 		LUC = { 
 		OR = { 
@@ -391,6 +395,7 @@ political_decisions = {
 	
 	ai_will_do = { 
 	factor = 1 
+	set_country_flag = lucca_submission
 	modifier = { 
 		factor = 0 
 		NOT = { year = 1848 }

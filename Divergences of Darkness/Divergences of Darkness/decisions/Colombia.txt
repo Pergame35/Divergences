@@ -656,7 +656,67 @@ political_decisions = {
 	add_accepted_culture = granadan 
 	clr_country_flag = dictatorshipCLM 
 	clr_country_flag = calm_before_tempest
-	}		
+		}		
+	}
 	
+	integrate_granadans = {
+		potential = {
+			tag = CLM
+			has_country_flag = granadans_refusal
+			NOT = { exists = GRA }
+		}
+		
+		allow = {
+		NOT = { government = absolute_monarchy }
+			GRA = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			nationalism_n_imperialism = 1
+			OR = {
+				rank = 4
+				revolution_n_counterrevolution = 1
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			add_accepted_culture = granadan
+			clr_country_flag = granadans_refusal
+			
+			any_pop = {
+				limit = {
+					has_pop_culture = granadan
+				}
+				militancy = -2
+				consciousness = 2
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = central_american
+				}
+				militancy = -2
+				consciousness = 2
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = lusitanian
+				}
+				militancy = -1
+				consciousness = -1
+			}
+			any_pop = {
+				limit = { 
+				has_pop_culture = mexican
+				}
+				militancy = -1
+				consciousness = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
 }

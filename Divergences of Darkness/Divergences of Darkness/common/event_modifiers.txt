@@ -2353,3 +2353,88 @@ integration_venice = {
 	tax_efficiency = -0.15
 }
 
+stroganov_romanov = { 
+	research_points = 1
+	pop_militancy_modifier = -0.01
+	pop_consciousness_modifier = 0.06
+}
+dahomey_amazons = {
+	org_regain = 0.1
+	land_organisation = 0.1
+	mobilisation_size = 0.02
+	prestige = 0.05
+	icon = 15
+}
+
+recent_raid = {
+	pop_militancy_modifier = 0.05
+	pop_consciousness_modifier = -0.05
+	local_RGO_throughput = -0.3
+	immigrant_push = 0.8
+	population_growth = -0.0005
+	prestige = -0.01
+	icon = 18
+}
+
+dhy_schools = {
+	global_pop_consciousness_modifier = 0.02
+	education_efficiency_modifier = 0.3
+	prestige = 0.01
+	icon = 3
+}
+
+dhy_universities = {
+	global_pop_consciousness_modifier = 0.01
+	research_points = 0.3
+	prestige = 0.05
+	icon = 3
+}
+
+developing_homeland = {
+	prestige = 0.03
+	assimilation_rate = 0.5
+	immigrant_attract = 1
+	population_growth = 0.002
+	pop_militancy_modifier = -0.05
+	pop_consciousness_modifier = -0.05
+	icon = 19
+}
+
+inca_excavations = {
+	prestige = 0.02
+	icon = 5
+}
+
+inca_excavations_interrupted = {
+	prestige = -0.01
+	icon = 6
+}
+
+local_excavations = {
+	icon = 5
+}
+
+maya_excavations = {
+	prestige = 0.01
+	icon = 5
+}
+
+mesopotamian_excavations = {
+	prestige = 0.01
+	icon = 5
+}
+
+mycenaean_excavations = {
+	prestige = 0.01
+	icon = 3
+}
+
+minoan_excavations = {
+	prestige = 0.01
+	icon = 3
+}
+
+pompeji_excavations = {
+	prestige = 0.01
+	icon = 3
+}

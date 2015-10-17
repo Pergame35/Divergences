@@ -3648,3 +3648,893 @@ scientific_forestry = {
 		}
 	}
 }
+
+early_archaeology = {
+	limit = { idealism = 1 }
+	chance = {
+		base = 1
+		modifier = {
+			factor = 1
+			functionalism = 1
+		}
+		modifier = {
+			factor = 1
+			invention = i_empiricism
+		}
+		modifier = {
+			factor = 2
+			has_country_modifier = egyptian_excavations
+		}
+	}
+	effect = {
+		education_efficiency = 0.025
+	}
+}
+
+modern_archaeology = {
+	limit = {
+		analytic_philosophy = 1
+		invention = early_archaeology
+	}
+	chance = {
+		base = 1
+		modifier = {
+			factor = 1
+			invention = modern_logics
+		}
+		modifier = {
+			factor = 1
+			invention = darwinism
+		}
+		modifier = {
+			factor = 1
+			has_country_modifier = egyptian_excavations
+		}
+		modifier = {
+			factor = 1
+			has_country_modifier = maya_excavations
+		}
+		modifier = {
+			factor = 1
+			has_country_modifier = mycenaean_excavations
+		}
+		modifier = {
+			factor = 1
+			has_country_modifier = pompeji_excavations
+		}
+	}
+	effect = {
+		education_efficiency = 0.025
+	}
+}
+
+the_metro = {
+	limit = { iron_railroad = 1 }
+	news = no
+	chance = {
+		base = 3
+		modifier = {
+			factor = -5
+			NOT = { invention = the_iron_horse }
+		}
+		modifier = {
+			factor = -5
+			NOT = { invention = bessemer_steel }
+		}
+		modifier = {
+			factor = 2
+			steam_turbine = 1
+		}
+	}
+	effect = {
+		shared_prestige = 20
+	}
+}
+
+skyscrapers = {
+	limit = { advanced_metallurgy = 1 }
+	news = no
+	chance = {
+		base = 3
+		modifier = {
+			factor = -3
+			NOT = { invention = steel_alloys }
+		}
+		modifier = {
+			factor = 3
+			invention = stainless_steel
+		}
+	}
+	effect = {
+		shared_prestige = 30
+	}
+}
+
+social_engineering = {
+	limit = { mass_politics = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = -5
+			not = { year = 1910 }
+		}
+		modifier = {
+			factor = 1
+			OR = {
+				nationalvalue = nv_might
+				nationalvalue = nv_dominion
+				nationalvalue = nv_glory
+				nationalvalue = nv_supremacy
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ruling_party_ideology = fascist
+				ruling_party_ideology = communist
+			}
+		}
+	}
+	effect = {
+		max_national_focus = 1
+	}
+}
+
+technocracy = {
+	limit = { mass_politics = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = -5
+			not = { year = 1920 }
+		}
+		modifier = {
+			factor = 1
+			OR = {
+				nationalvalue = nv_prosperity
+				nationalvalue = nv_liberty
+				nationalvalue = nv_freedom
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = social_liberal
+			}
+		}
+	}
+	effect = {
+		max_national_focus = 1
+	}
+}
+
+roaring_twenties = {
+	limit = { mass_culture_n_the_avant_garde = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = -5
+			not = { year = 1920 }
+		}
+		modifier = {
+			factor = -2
+			not = { social_alienation = 1 }
+		}
+		modifier = {
+			factor = -2
+			not = { anti__rationalism = 1 }
+		}
+		modifier = {
+			factor = 1
+			OR = {
+				nationalvalue = nv_prosperity
+				nationalvalue = nv_liberty
+				nationalvalue = nv_freedom
+			}
+		}
+		modifier = {
+			factor = 1
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = social_liberal
+			}
+		}
+	}
+	effect = {
+		shared_prestige = 30
+	}
+}
+
+art_deco = {
+	limit = { mass_culture_n_the_avant_garde = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = -5
+			not = { year = 1920 }
+		}
+		modifier = {
+			factor = -2
+			not = { behaviorism = 1 }
+		}
+		modifier = {
+			factor = -2
+			not = { anti__rationalism = 1 }
+		}
+		modifier = {
+			factor = 1
+			OR = {
+				nationalvalue = nv_liberty
+				nationalvalue = nv_prosperity
+			}
+		}
+		modifier = {
+			factor = 1
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = social_liberal
+			}
+		}
+	}
+	effect = {
+		shared_prestige = 30
+	}
+}
+
+modern_infrastructure = {
+	limit = { limited_access_roads = 1 }
+	news = no
+	chance = {
+		base = 5
+		modifier = {
+			factor = -5
+			NOT = { invention = autobahn }
+		}
+		modifier = {
+			factor = -5
+			NOT = { year = 1930 }
+		}
+	}
+	effect = {
+		max_railroad = 1
+		mobilisation_size = 0.002
+	}
+}
+
+early_1930_army_armament = {
+	limit = { modern_divisional_structure = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = -5
+			NOT = { year = 1930 }
+		}
+		modifier = {
+			factor = 2
+			war = yes
+		}
+	}
+	effect = {
+		regular = {
+			attack = 0.25
+			defence = 0.25
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		guard = {
+			attack = 0.25
+			defence = 0.25
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		engineer = {
+			attack = 0.2
+			defence = 0.2
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		artillery = {
+			attack = 0.1
+			defence = 0.1
+			support = 0.25
+			supply_consumption = 0.1
+		}
+		horse_artillery = {
+			attack = 0.1
+			defence = 0.1
+			support = 0.25
+			supply_consumption = 0.1
+		}
+		tank = {
+			attack = 0.25
+			defence = 0.25
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		plane = {
+			attack = 0.25
+			defence = 0.25
+			support = 1
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		cuirassier = {
+			attack = 0.2
+			defence = 0.2
+			discipline = 0.1
+			supply_consumption = 0.1
+		}
+		dragoon = {
+			attack = 0.2
+			defence = 0.2
+			discipline = 0.1
+			supply_consumption = 0.1
+		}
+		hussar = {
+			attack = 0.2
+			defence = 0.2
+			discipline = 0.1
+			supply_consumption = 0.1
+		}
+		infantry = {
+			attack = 0.2
+			defence = 0.2
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		cavalry = {
+			attack = 0.1
+			defence = 0.1
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		irregular = {
+			attack = 0.1
+			defence = 0.1
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+	}
+}
+
+mid_1930_army_armament	= {
+	limit = { modern_divisional_structure = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			war = yes
+		}
+		modifier = {
+			factor = -5
+			NOT = { invention = early_1930_army_armament }
+		}
+		modifier = {
+			factor = -5
+			NOT = { year = 1933 }
+		}
+	}
+	effect = {
+		regular = {
+			attack = 0.25
+			defence = 0.25
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		guard = {
+			attack = 0.25
+			defence = 0.25
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		engineer = {
+			attack = 0.2
+			defence = 0.2
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		artillery = {
+			attack = 0.1
+			defence = 0.1
+			support = 0.25
+			supply_consumption = 0.1
+		}
+		horse_artillery = {
+			attack = 0.1
+			defence = 0.1
+			support = 0.25
+			supply_consumption = 0.1
+		}
+		tank = {
+			attack = 0.25
+			defence = 0.25
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		plane = {
+			attack = 0.25
+			defence = 0.25
+			support = 1
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		cuirassier = {
+			attack = 0.2
+			defence = 0.2
+			discipline = 0.1
+			supply_consumption = 0.1
+		}
+		dragoon = {
+			attack = 0.2
+			defence = 0.2
+			discipline = 0.1
+			supply_consumption = 0.1
+		}
+		hussar = {
+			attack = 0.2
+			defence = 0.2
+			discipline = 0.1
+			supply_consumption = 0.1
+		}
+		infantry = {
+			attack = 0.2
+			defence = 0.2
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		cavalry = {
+			attack = 0.1
+			defence = 0.1
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+		irregular = {
+			attack = 0.1
+			defence = 0.1
+			discipline = 0.15
+			supply_consumption = 0.1
+		}
+	}
+}
+
+early_1930_army_doctrine = {
+	limit = { modern_army_doctrine = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = -5
+			NOT = { year = 1930 }
+		}
+		modifier = {
+			factor = 2
+			war = yes
+		}
+	}
+	effect = {
+		army_base = {
+			reconnaissance = 0.25
+			maximum_speed = 0.25
+			supply_consumption = 0.05
+		}
+	}
+}
+
+mid_1930_army_doctrine	= {
+	limit = { modern_army_doctrine = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			war = yes
+		}
+		modifier = {
+			factor = -5
+			NOT = { invention = early_1930_army_doctrine }
+		}
+		modifier = {
+			factor = -5
+			NOT = { year = 1933 }
+		}
+	}
+	effect = {
+		army_base = {
+			reconnaissance = 0.25
+			maximum_speed = 0.25
+			supply_consumption = 0.05
+		}
+	}
+}
+
+early_1930_army_leadership = {
+	limit = { great_war_experience = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = -5
+			NOT = { year = 1930 }
+		}
+		modifier = {
+			factor = 2
+			war = yes
+		}
+	}
+	effect = {
+		army_base = {
+			default_organisation = 5
+			supply_consumption = 0.05
+		}
+		military_tactics = 0.05
+	}
+}
+
+mid_1930_army_leadership = {
+	limit = { great_war_experience = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			war = yes
+		}
+		modifier = {
+			factor = -5
+			NOT = { invention = early_1930_army_leadership }
+		}
+		modifier = {
+			factor = -5
+			NOT = { year = 1933 }
+		}
+	}
+	effect = {
+		army_base = {
+			default_organisation = 5
+			supply_consumption = 0.05
+		}
+		military_tactics = 0.05
+	}
+}
+
+early_1930_navy_armament = {
+	limit = { modern_naval_design = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = -5
+			NOT = { year = 1930 }
+		}
+		modifier = {
+			factor = 2
+			war = yes
+		}
+	}
+	effect = {
+		dreadnought = {
+			gun_power = 2
+			hull = 2
+			supply_consumption = 0.05
+		}
+		cruiser = {
+			gun_power = 2
+			hull = 2
+			supply_consumption = 0.05
+		}
+		ironclad = {
+			gun_power = 1
+			hull = 1
+			supply_consumption = 0.05
+		}
+		monitor = {
+			gun_power = 1
+			hull = 1
+			supply_consumption = 0.05
+		}
+		submarine = {
+			gun_power = 1
+			hull = 0.5
+			supply_consumption = 0.05
+		}
+	}
+}
+
+mid_1930_navy_armament = {
+	limit = { modern_naval_design = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			war = yes
+		}
+		modifier = {
+			factor = -5
+			NOT = { invention = early_1930_navy_armament }
+		}
+		modifier = {
+			factor = -5
+			NOT = { year = 1933 }
+		}
+	}
+	effect = {
+		dreadnought = {
+			gun_power = 2
+			hull = 2
+			supply_consumption = 0.05
+		}
+		cruiser = {
+			gun_power = 2
+			hull = 2
+			supply_consumption = 0.05
+		}
+		ironclad = {
+			gun_power = 1
+			hull = 1
+			supply_consumption = 0.05
+		}
+		monitor = {
+			gun_power = 1
+			hull = 1
+			supply_consumption = 0.05
+		}
+		submarine = {
+			gun_power = 1
+			hull = 0.5
+			supply_consumption = 0.05
+		}
+	}
+}
+
+early_1930_navy_leadership = {
+	limit = { modern_naval_training = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = -5
+			NOT = { year = 1930 }
+		}
+		modifier = {
+			factor = 2
+			war = yes
+		}
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 1
+		}
+	}
+}
+
+mid_1930_navy_leadership = {
+	limit = { modern_naval_training = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			war = yes
+		}
+		modifier = {
+			factor = -5
+			NOT = { invention = early_1930_navy_leadership }
+		}
+		modifier = {
+			factor = -5
+			NOT = { year = 1933 }
+		}
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 1
+		}
+	}
+}
+
+early_1930_navy_doctrine = {
+	limit = { modern_naval_doctrine = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = -5
+			NOT = { year = 1930 }
+		}
+		modifier = {
+			factor = 2
+			war = yes
+		}
+	}
+	effect = {
+		max_naval_base = 1
+		navy_base = {
+			default_organisation = 1
+			maximum_speed = 0.25
+		}
+	}
+}
+
+mid_1930_navy_doctrine = {
+	limit = { modern_naval_doctrine = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			war = yes
+		}
+		modifier = {
+			factor = -5
+			NOT = { invention = early_1930_navy_doctrine }
+		}
+		modifier = {
+			factor = -5
+			NOT = { year = 1933 }
+		}
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 1
+			maximum_speed = 0.25
+		}
+	}
+}
+
+early_1930_navy_logistics = {
+	limit = { naval_integration = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = -5
+			NOT = { year = 1930 }
+		}
+		modifier = {
+			factor = 2
+			war = yes
+		}
+	}
+	effect = {
+		supply_range = 0.25
+		navy_base = {
+			supply_consumption = -0.05			
+		}
+	}
+}
+
+mid_1930_navy_logistics = {
+	limit = { naval_integration = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			war = yes
+		}
+		modifier = {
+			factor = -5
+			NOT = { invention = early_1930_navy_logistics }
+		}
+		modifier = {
+			factor = -5
+			NOT = { year = 1933 }
+		}
+	}
+	effect = {
+		supply_range = 0.25
+		navy_base = {
+			supply_consumption = -0.05			
+		}
+	}
+}
+
+military_horse_breeding = {
+	limit = { army_professionalism = 1 }
+	news = no
+	chance = {
+		base = 6
+		modifier = {
+			factor = -5 
+			civilized = no
+		}
+		modifier = {
+			factor = -10 
+			NOT = { invention = stables }
+		}
+	}
+	effect = {
+		factory_goods_throughput = {
+			horses = 0.10
+		}
+	}
+}
+
+improved_synthetic_materials = {
+	limit = { synthetic_polymers = 1 }
+	news = no
+	chance = {
+		base = 6
+	}
+	effect = {
+		rgo_goods_throughput = {
+			coal = 1
+		}
+		rgo_goods_throughput = {
+			iron = 1
+		}
+		rgo_goods_throughput = {
+			copper = 1
+		}
+		rgo_goods_throughput = {
+			lead = 1
+		}
+		rgo_goods_throughput = {
+			oil = 1
+		}
+		rgo_goods_throughput = {
+			timber = 1.0
+		}
+		rgo_goods_throughput = {
+			tropical_wood = 1.0
+		}
+		factory_goods_throughput = {
+			cement = 0.25
+		} 
+		rgo_goods_throughput = {
+			sulphur = 1
+		}
+	}
+}
+
+colonial_exploitation = {
+	limit = { nationalism_n_imperialism = 1 }
+	news = no
+	chance = {
+		base = 0
+		modifier = {
+			factor = -20
+			is_greater_power = no
+		}
+		modifier = {
+			factor = -20
+			colonial_nation = no
+		}
+		modifier = {
+			factor = 20
+			has_global_flag = berlin_conference
+		}
+	}
+	effect = {
+		colonial_points = 100
+		rgo_goods_throughput = {
+			tea = 0.25
+		}
+		rgo_goods_throughput = {
+			coffee = 0.25
+		}
+		rgo_goods_throughput = {
+			opium = 0.25
+		}
+		rgo_goods_throughput = {
+			spices = 0.25
+		}
+		rgo_goods_throughput = {
+			fruit = 0.25
+		}
+		rgo_goods_throughput = {
+			grain = 0.25
+		}
+		rgo_goods_throughput = {
+			sugar = 0.25
+		}
+	}
+}
+

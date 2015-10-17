@@ -11,7 +11,7 @@ political_decisions = {
 			OR = {
 				tag = LWE
 				AND = { 
-					NOT = { exists = yes } 
+					NOT = { LWE = { exists = yes } }
 					owns = 2096
 					}
 				in_sphere = THIS

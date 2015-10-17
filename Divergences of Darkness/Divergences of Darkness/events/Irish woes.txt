@@ -42,7 +42,7 @@ country_event = {
 	option = {
 		name = "Do whatever it takes to help them."
 		prestige = -50
-		treasury = -1000000
+		treasury = -300000
 		set_country_flag = help_for_the_irish
 		set_country_flag = great_irish_famine
 		random_state = {
@@ -89,7 +89,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				NOT = { money = 1000000 }
+				NOT = { money = 300000 }
 			}
 		}
 	}
@@ -844,7 +844,7 @@ province_event = {
 	
 country_event = {
 	id = 1010024
-	title = "EVTNAME1010024" #The Sinn Féin Demand
+	title = "EVTNAME1010024" #The Sinn FÃ©in Demand
 	desc = "EVTDESC1010024"
 	news = yes
 	news_desc_long = "EVTDESC1010024"

@@ -27,7 +27,8 @@ political_decisions = {
 					}
 				remove_core = AMT
 			}
-			add_accepted_culture = oromo
+			state_religion = coptic
+			1864 = { secede_province = THIS }
 			add_accepted_culture = tigray
 			add_accepted_culture = amhara
 			set_country_flag = amatsa
@@ -44,8 +45,8 @@ political_decisions = {
 		}
 		
 		allow = {
-			NOT = { AMT = { exists = yes } }
-			NOT = { war = yes }
+			AMT = { exists = no }
+			 war = yes
 		}
 		
 		effect = {
@@ -67,7 +68,7 @@ political_decisions = {
 				remove_core = AMT
 				add_core = ETH
 			}
-			add_accepted_culture = oromo
+			1864 = { secede_province = THIS }
 			add_accepted_culture = tigray
 			add_accepted_culture = amhara
 		}
@@ -81,10 +82,10 @@ political_decisions = {
 		}
 		
 		allow = {
-			NOT = { AMT = { exists = yes } }
-			NOT = { war = yes }
+			AMT = { exists = mo }
+			war = no
 			ETH = { all_core = { owned_by = THIS } }
-			NOT = { ETH = { exists = yes } }
+			ETH = { exists = mo }
 		}
 		
 		effect = {
@@ -107,7 +108,6 @@ political_decisions = {
 			}
 			change_tag = ETH
 			add_accepted_culture = oromo
-			add_accepted_culture = tigray
 			add_accepted_culture = amhara
 			capital = 1859
 		}
@@ -122,10 +122,10 @@ political_decisions = {
 		}
 		
 		allow = {
-			NOT = { AMT = { exists = yes } }
-			NOT = { war = yes }
-			NOT = { ETH = { exists = yes } }
+			AMT = { exists = mo }
+			war = no
 			ETH = { all_core = { owned_by = THIS } }
+			ETH = { exists = mo }
 		}
 		
 		effect = {
@@ -134,47 +134,22 @@ political_decisions = {
 			any_country = {
 				any_owned = {
 					limit = {
-						is_core = AMT
+						is_core = ADA
 					}
 				remove_core = AMT
-				add_core = ADA
 				}
 			}
 			any_country = {
 				any_owned = {
 					limit = {
-						is_core = FUN
+						is_core = AJU
 					}
 				add_core = ADA
 				}
 			}
-			any_country = {
-				any_owned = {
-					limit = {
-						is_core = ETH
-					}
-				add_core = ADA
-				}
-			}
-			any_owned = {
-				limit = {
-					is_core = AMT
-				}
-				remove_core = AMT
-				add_core = ADA
-			}
-			any_owned = {
-				limit = {
-					is_core = ETH
-				}
-				add_core = ADA
-			}
-			any_owned = {
-				limit = {
-					is_core = FUN
-				}
-				add_core = ADA
-			}
+			1858 = { add_core = THIS }
+			1851 = { add_core = THIS }
+			1875 = { add_core = THIS }
 		} 
 		ai_will_do = {
 			factor = 1

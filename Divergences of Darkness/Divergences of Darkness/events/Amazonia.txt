@@ -31,12 +31,18 @@
 		add_core = AMA
 		add_core = EQN
 				}
+		ai_chance = { 
+		factor = 99 
+			}
 		}
 		
 		option = { 
 		name = "It is not our territory, call them back !"
 		prestige = 5 
 		relation = { who = CLM value = 150 }
+		ai_chance = { 
+		factor = 1
+			}
 		}
 }
 
@@ -50,7 +56,7 @@ country_event = {
 		
 		option = {
 		name = "The bastards !"
-			BRZ_2408  = {
+		BRZ_2408  = {
 		remove_core = CLM 
 		}
 		any_owned = { 
@@ -69,7 +75,7 @@ country_event = { ######SPA reaction after Partial Peace
 		
 	trigger = { 
 	tag = SPA 
-	has_global_flag = partial_peace 
+	OR = { has_global_flag = partial_peace set_country_flag = spaCLM } 
 	2414 = { owned_by = AMA }
 	NOT = { 
 		OR = { 

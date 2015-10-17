@@ -95,6 +95,7 @@ country_event = { ## The council of Athens
 	id = 100602
 	title = "GRE2.T"
 	desc = "GRE2.D"
+	picture = "vouli"
 	
 	major = yes 
 	fire_only_once = yes 
@@ -121,6 +122,7 @@ country_event = { ## The council of Athens : the vote
 	id = 100603
 	title = "GRE3.T"
 	desc = "GRE3.D"
+	picture = "vouli"
 	
 	fire_only_once = yes
 	
@@ -151,6 +153,7 @@ country_event = { ## The council of Athens : Secession
 	id = 100604
 	title = "GRE4.T"
 	desc = "GRE4.D"
+	picture = "zimisceses"
 	
 	major = yes 
 	
@@ -255,6 +258,7 @@ country_event = { ## Failure of Home Rule
 	id = 100606
 	title = "GRE6.T"
 	desc = "GRE6.D"
+	picture = "zimisceses"
 	
 	major = yes 
 	is_triggered_only = yes
@@ -313,7 +317,6 @@ country_event = { ## Failure of Home Rule
 			attacker_goal = {
 				casus_belli = annex_core_country
 			}
-			call_ally = yes
 		}
 	}
 }
@@ -418,7 +421,6 @@ country_event = { ## Failure of the Pireans
 			attacker_goal = {
 				casus_belli = annex_core_country
 			}
-			call_ally = yes
 		}
 	}
 }
@@ -428,6 +430,8 @@ country_event = { ## No majority
 	id = 100609
 	title = "GRE9.T"
 	desc = "GRE9.D"
+	
+	picture = "zimisceses"
 	
 	major = yes 
 	is_triggered_only = yes
@@ -484,6 +488,7 @@ country_event = { # Mobilization of ressources
 	id = 100610
 	title = "GRE10.T"
 	desc = "GRE10.D"
+	picture = "zimisceses"
 	
  	trigger = {
 		tag = GRE
@@ -560,8 +565,8 @@ country_event = {
 	option = { 
 	name = "At least, they did not join Zimisces ..." 
 	prestige = -5 
-	release = KRE
-	KRE = { 
+	release = CRE
+	CRE = { 
 		set_country_flag = waiting_end_rebellion
 		}
 	}
@@ -578,7 +583,7 @@ country_event = {
 	name = "We shall overcome anyway !" 
 	any_owned = {
 			limit = {
-				is_core = KRE
+				is_core = CRE
 				}
 		secede_province = GRE
 		}
@@ -635,7 +640,7 @@ country_event = {
 	name = "At least, they did not join Zimisces ..." 
 	prestige = -5 
 	release = CYP
-	KRE = { 
+	CYP = { 
 		set_country_flag = waiting_end_rebellion
 		}
 	}
@@ -901,6 +906,7 @@ country_event = {
 	id = 100630
 	title = "GRE30.T"
 	desc = "GRE30.D"
+	picture = "zimisceses"
 	
 	major = yes 
 	trigger = { 
@@ -1510,5 +1516,32 @@ country_event = {
 		ai_chance = { 
 			factor = 50 
 		}	
+	}
+}
+
+country_event = { 
+	id = 106053
+	title = "GRE53.T"
+	desc = "GRE53.D"
+	
+	trigger = { 
+	tag = MAC 
+	VEN = { owns = 834 has_country_flag = Venice_victorious }
+	}
+	
+	fire_only_once = yes 
+	
+	option = { 
+	name = "We will protect the Greeks!"
+	set_country_flag = help_greece
+	prestige = 15 
+	relation = { who = VEN value = -200 }
+	ai_chance = { factor = 75 }
+	}
+	
+	option = { 
+	name = "Venice is powerful and Greece is not our primary interest."
+	relation = { who = VEN value = 50 }
+	ai_chance = { factor = 25 }
 	}
 }

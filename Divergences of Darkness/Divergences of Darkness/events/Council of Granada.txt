@@ -19,7 +19,7 @@ country_event = {
 			secede_province = GRA
 		}
 
-		GRA = { country_event = 46423 }
+		GRA = { country_event = 46423 capital = 2247 }
 	}
 }
 
@@ -76,8 +76,8 @@ country_event = {
 		}
 
 		GUY = { country_event = 46423 }
-		GRA = { country_event = 46423 }
-		QUI = { country_event = 46423 }
+		GRA = { country_event = 46423 capital = 2247 }
+		QUI = { country_event = 46423 capital = 2279 }
 
 	}
 }
@@ -134,9 +134,8 @@ country_event = {
 		}
 
 		GUY = { country_event = 46423 }
-		GRA = { country_event = 46423 
-		capital = 2254 }
-		QUI = { country_event = 46423 }
+		GRA = { country_event = 46423 capital = 2254 }
+		QUI = { country_event = 46423 capital = 2279 }
 		ARE = { country_event = 46423 }
 
 	}
@@ -193,9 +192,9 @@ country_event = {
 
 		GUY = { country_event = 46423 }
 		CAS = { country_event = 46423 }
-		SAN = { country_event = 46423 }
-		QUI = { country_event = 46423 }
-		ARE = { country_event = 46423 }
+		SAN = { country_event = 46423 capital = 2254 }
+		QUI = { country_event = 46423 capital = 2279 }
+		ARE = { country_event = 46423 capital = 2264 }
 
 	}
 }

@@ -188,8 +188,8 @@ habana_purchase_title; The Habanan purchase ;;;;;;;;;;;;;x
 habana_purchase_desc; With our control over Athesia established, it is time to turn our eyes south. The island of Habana is the only colony that did not join Gran Colombia during the war of independence. It is one of the last Spanish holdings in the New World and it holds a strategic position. To be free from any intervention or disruption of commerce in the Gulf of Mexico, we must control the island. It will require however a large amount of cash and even that will not bind Spain to give Habana...;;;;;;;;;;;;;x
 ayiti_purchase_title; The Sudurhafeyjar Purchase ;;;;;;;;;;;;;x
 ayiti_purchase_desc; Scandinavia still holds the archipelago they called the Islands of the South consisting of Righavn and Ayiti. Buying these islands would strengthen even more our position in the Caribbean;;;;;;;;;;;;;x
-jamaican_purchase_title; The Eendrachtsland Purchase ;;;;;;;;;;;;;x
-jamaican_purchase_desc; Burgundy still holds the island of Eendrachtsland in the Caribbean. This little island does not present an importance as great as Habana or Ayiti but it would improve our standing in Arcadia even more if we acquired this island. ;;;;;;;;;;;;;x
+jamaica_purchase_title; The Eendrachtsland Purchase ;;;;;;;;;;;;;x
+jamaica_purchase_desc; Burgundy still holds the island of Eendrachtsland in the Caribbean. This little island does not present an importance as great as Habana or Ayiti but it would improve our standing in Arcadia even more if we acquired this island. ;;;;;;;;;;;;;x
 dissolve_CLM_title;Dissolve the Federation ;;;;;;;;;;;;;x
 dissolve_CLM_desc;This war has shown us something. The former Spanish colonies united under the same flag are a threat to our influence in Arcadia and Ameriga. Some in our government have suggested that we make Gran Colombia dissolve itself in little states easier to control and manipulate. Thus there will only be one power in the New-World, us.;;;;;;;;;;;;;x
 DUA1.T;The Anglois Dilemma;;;;;;;;;;;;;x
@@ -824,7 +824,7 @@ egypt_levant_desc;Since the successful rebellion of the Zahiri, Egypt has become
 cyrenaica_TUN_title;Hafsid Cyrenaica  ;;;;;;;;;;;;;x 
 cyrenaica_TUN_desc;We have successfully taken Cyrenaica from the Egyptian rebels. It is time to integrate it into our country.;;;;;;;;;;;;;x 
 CRO1.T;Illyrian Brothers ? ;;;;;;;;;;;;;x 
-CRO1.D;The ongoing Civil war present us with an interesting choice right now. We have asserted our independence from the Empire recently but we have become a beacon of hope for the Slav populations living under the Muslim yoke. A proposition was made recently to enter a war against the Empire to free Serbia before Hungary or another vulture takes the territory for itself. Or we could just wait for the Empire to be in an even worse situation and take the territory for ourselves ….  ;;;;;;;;;;;;;x 
+CRO1.D;The ongoing Ottoman Civil war present us with an interesting choice right now. We have asserted our independence from the Empire recently and we have become a beacon of hope for the Slav populations living under the Muslim yoke. A proposition was made recently to enter a war against the Empire to free Serbia before Hungary or another vulture takes the territory for itself. Or we could just wait for the Empire to be in an even worse situation and take the territory for ourselves ….  ;;;;;;;;;;;;;x 
 CRO2.T;Liberation of Serbia ;;;;;;;;;;;;;x 
 CRO2.D;The Sultan has conceded us the vilayet of Serbia. We will now look carefully the actions of our Slavic brothers... ;;;;;;;;;;;;;x 
 CRO3.T;The end of the Personal Union ;;;;;;;;;;;;;x 
@@ -947,6 +947,10 @@ ENL_claim_title;Reclaim England !;;;;;;;;;;;;;x
 ENL_claim_desc;The existence of an independent English state is a very insult to our Unity ! Let us reclaim what is rightfully ours now that the English aren't able to act on the international stage !;;;;;;;;;;;;;x 
 OCC_recognized_title;Occitan independence;;;;;;;;;;;;;x 
 OCC_recognized_desc;With an independent Occitan government established, the Dual-Monarchy is forced to stop claiming the lands in their possession;;;;;;;;;;;;;x 
+IRE_recognized_title;Irish independence;;;;;;;;;;;;;x 
+IRE_recognized_desc;With an independent Irish government controlling the Emerald Island the Dual-Monarchy will be forced to stop claiming Eire!;;;;;;;;;;;;;x 
+IRE_claim_title;Reclaim Ireland;;;;;;;;;;;;;x 
+IRE_claim_desc;Ireland was lost but with our power firmly established in the islands we can easily reclaim what was once ours.;;;;;;;;;;;;;x 
 OCC_claim_title;Reclaim Occitania !;;;;;;;;;;;;;x 
 OCC_claim_desc;The existence of an independent Occitan state is a very insult to our Unity ! Let us reclaim what is rightfully ours now that the Occitan aren't able to act on the international stage !;;;;;;;;;;;;;x 
 pas_de_calais_title;Le Pas de Calais;;;;;;;;;;;;;x 
@@ -1129,6 +1133,12 @@ organize_terra_d_oro_title;Organize Terra d'Oro;;;;;;;;;;;;x,,,,,,,,,,,,,
 organize_terra_d_oro_desc;With the Scramble for Africa launched the colony of Terra d'Oro should be formally organized to better rule over our African territories;;;;;;;;;;;;x,,,,,,,,,,,,,
 reorganize_terra_d_oro_title;Reorganize Terra d'Oro;;;;;;;;;;;;x,,,,,,,,,,,,,
 reorganize_terra_d_oro_desc;We have taken the Aurean lands and we can now reorganize the old colony of Terra d'Oro;;;;;;;;;;;;x,,,,,,,,,,,,,
+Terra d'Oro.1.T;Terra d'Oro purchase;;;;;;;;;;;;x
+Terra d'Oro.1.D;We have acquired several lands in Mauritania but the small colony of Terra d'Oro is not our hands. We could offer to buy it for a small price ?;;;;;;;;;;;;x
+Terra d'Oro.2.T;$FROMCOUNTRY_ADJ$ offer;;;;;;;;;;;;x
+Terra d'Oro.2.D;$FROMCOUNTRY$ has offered us to buy Terra d'Oro;;;;;;;;;;;;x
+Terra d'Oro.3.T;Purchase Succesfuk;;;;;;;;;;;;x
+Terra d'Oro.3.D;We have acquired Terra d'Oro!;;;;;;;;;;;;x
 help_germany_title;The heart of the Revolution;;;;;;;;;;;;x,,,,,,,,,,,,, 
 help_germany_desc;Germany was the heart of the Revolution but alas the old Republican flame is nowhere to be seen across the Alpes. Our Republic has the duty of helping our fellow revolutionaries to have a solid ally in the North! We need to pay caution though since it will surely not be to the liking of Burgundy and Bohemia...;;;;;;;;;;;;x,,,,,,,,,,,,,
 GER1.T;The Congress of Roma;;;;;;;;;;;;x,,,,,,,,,,,,, 
@@ -1165,3 +1175,172 @@ GER26.T;A Danubian Proposal;;;;;;;;;;;;x,,,,,,,,,,,,,
 GER26.D;The Danubians are proposing us to unify our state which would basically be Germany unified. Do we accept the proposal ?;;;;;;;;;;;;x,,,,,,,,,,,,,
 GER27.T;The Compromise of Berlin;;;;;;;;;;;;x,,,,,,,,,,,,,
 GER27.D;The two German states have unified today, bringing much of Germany under their power. German unification will surely be completed soonly.;;;;;;;;;;;;x,,,,,,,,,,,,,
+DZG1.T;The Khanate;;;;;;;;;;;;x,,,,,,,,,,,,,
+DZG1.D;The Khanate of Dzungaria is the last great remnant of the Mongolian Empire. Founded by OIrat Mongol in the XVIIth century it grew in importance in the following century unifying the Mongolian camps and vainquishing the Qing during several campaigns. It is said that it’s thanks to the Oirat that China is not dominated by the Manchu. The actual Khan, Galdan converted to Islam following his conquests of Samarkand and khiva but has shown tolerance towards the Buddhists lamas of his realm. While already aged he has said he wanted to advance into China but already his sons want to divide the Khanate following their desires…. ;;;;;;;;;;;;x,,,,,,,,,,,,,
+DZG2.T;The death of Galdan Khan;;;;;;;;;;;;x,,,,,,,,,,,,,
+DZG2.D;Galdan Khan, the supreme chief of the Asian steppe died yesterday at the venerable age of 76 years. The size of the Khanate combined with the ambitions of his sons has seen the Empire already divided, each army pledging an oath to a different son. The heir Tushiyetu has seized the crown lands of Dzungaria but he now must choose : will he try to stop his brothers’ ambition or will he completely let the Empire disrupt ? ;;;;;;;;;;;;x,,,,,,,,,,,,,
+DZG3.T;Reclaiming the Tarim Basin;;;;;;;;;;;;x
+DZG3.D;The Khan let his brothers disrupt the Khanate years ago but Uyghurs have been a thorn in our side for too long! They often pose problems in Urumqi siding in feuds of their community and trade routes have been let to waste under their rule. The Oirat must step up and take back this territory in memory of our great Khans!;;;;;;;;;;;;x,,,,,,,,,,,,,
+DZG4.T;The legacy of Genghis ;;;;;;;;;;;;x
+DZG4.D;The Khanate of Mongolia is our principal opponent in the area. The Mongols are our direct brothers compared to the Turkic people of the Steppes but their leader is too ambitious to accept our hegemony without fighting. Some call on to our leader to use the new knowledge he gained to strike at our enemies and see them submit once again before their rightful Khan! ;;;;;;;;;;;;x
+DZG5.T;Submitting the Kazaks ;;;;;;;;;;;;x
+DZG5.D;The Kazakh Khanate lies in the steppes of the West. With our base secured in the East there has been talk about annexing back the Kazakhs.;;;;;;;;;;;;x
+DZG6.T;The Tuvan Steppe;;;;;;;;;;;;x
+DZG6.D;Tannu Tuva is a desolate frozen place. Sitting on the north of our border, we have little interest in attacking them but it would be nooying that someone else took the lands instead of us.;;;;;;;;;;;;x
+DZG7.T;Modernization of the Steppe.;;;;;;;;;;;;x
+DZG7.D;The Western World is coming to the Asian Steppe. We feel it everyday with new ideas spreading through the old Silk Road. Fortunately we are isolated naturally with Siberia and the Divided China not allowing the Europeans to approach our cities and peoples. But the Khan has had enough. Japanese, Russians, all are looking into the Future and they will surely threaten the Oirat when they are ready. To this extent the Khan has gathered a little group tasked to find help in this modernization process but where shall they be sent ? ;;;;;;;;;;;;x
+DZG8.T;Coming back from the West.;;;;;;;;;;;;x
+DZG8.D;Our expedition has eventually come back from the West! They have brought with them limitless knowledge on politics, science and war. They have also established contact with most of the khans of Europe, who for most of them did not know the existence of our glorious country! To serve as military advisers they have also hired ‘Cossacks’, great warriors from the Western Steppes they claim. Their leader the Baron Roman Stroganov-Romanov, a disinherited noble has made a great impression to the Khan but he seems to be an ambitious man, full of eccentricities.;;;;;;;;;;;;x
+DZG9.T;The Cossack Baron;;;;;;;;;;;;x
+DZG9.D;Roman Stroganov-Romanov is a strange man but he has found his home here in the open steppe, riding a horse with a falcon on his wrist and feeling the wind in his hair. His military ability in the recent campaigns is worthy of praise. Despite his foreign background he is well perceived by the quriltai. We could nominate him as our right arm, ‘Minister’ as they say in the ‘civilized’ states, make him the leader of our forces or order him to leave...;;;;;;;;;;;;x
+DZG10.D;Tibet is the religious center of the Buddhists of Central Asia. The dalai-lamas were installed rulers thanks to the Oirat two centuries ago and we have thus acquired a special place in Tibetan affairs. The current Dalai-lama is rebellious and has vigorously condemned our expansion through Asia. Our European minister has proposed we conduct a punitive expedition to make the Dalai-lama understand his place and why not recuperate some territories settled by Nomads ?;;;;;;;;;;;;x
+DZG10.T;The Dalai-lama;;;;;;;;;;;;x
+DZG11.T;Submitting to the Dzungars;;;;;;;;;;;;x
+DZG11.D;Our new overlords have asked us to transfer some territories where Mongol populations live.;;;;;;;;;;;;x
+DZG12.T;Transfer of authority;;;;;;;;;;;;x
+DZG12.D;With Tibet submitted we have acquired some Qinghai territories;;;;;;;;;;;;x
+DZG13.T;The Asiatic Legions;;;;;;;;;;;;x
+DZG13.D;Our minister Stroganov-Romanov has been pushing for some time for a modernization of our armies. He wants to institute 'Asiatic' Legions with professional officers trained with mixed European and Chinese tactics. This project is widely refused by our traditional belligerent elite and the actual officers who might lose their position. But if the reforms were to pass we would then acquire an ascendant on our neighbours !;;;;;;;;;;;;x
+DZG14.T;The Mad Baron;;;;;;;;;;;;x
+DZG14.D;Since he was left on his own in the steppe by the Oirat Stroganov-Romanov has been going mad. Lately he has assembled a whole corp of cavalry, delcaring his intention to build a Great Empire to purge back Europe. Thus he has attacked the Khan in Ugra to take power in Mongolia. If he wins he has declared that the Oirat would be next.;;;;;;;;;;;;x
+DZG15.T;Mongolian attack;;;;;;;;;;;;x
+DZG15.D;Stroganov-Romanov has taken control of Mongolia and has decided to 'purge us' for our faults!;;;;;;;;;;;;x
+DZG20.T;The Creation of the Urumqi university;;;;;;;;;;;;x
+DZG20.D;Amongst the men who came back from their mission to the outer world years ago, a wealthy Uygur from Urumqi has decided to build a library in our capital and has asked for our patronage. The collection is limited, consisting mostly of Buddhist treaties and Qur’ans but he says that he could try to buy them abroad with our help. Moreover he says we could establish an institute tasked of educating the children of our nation and help the development of our growing bureaucracy. ;;;;;;;;;;;;x
+DZG21.T;Cave paintings;;;;;;;;;;;;x
+DZG21.D;Our University still growing has welcomed several European archaeologists following certain discoveries in the Tarim basin. Apparently European looking people appear in cave paintings from the area and it has interested many archaeologists. What should we do about this discovery ? ;;;;;;;;;;;;x
+DZG22.T;The Tocharians;;;;;;;;;;;;x
+DZG22.D;Central Asia has entered on the world stage following the recent findings of archaelogists in the Tarim Basin. Cave findings and other remains have made the world discover a new civilization there, since long dead but who seems to be the Tokharoi described in the Greek texts. Anyway these findings have increased the prestige of the Oirat state which despite his entrance in the Modern World is still very isolated. ;;;;;;;;;;;;x
+DZG23.T;The question of script;;;;;;;;;;;;x
+DZG23.D;The National Library of Urumqi is filling with books since our investment! But our scholars have asked ourselves which script we should use for the translation of foreign books into our language. Central Asia has been using plenty of ways of writing : Muslim elites often use Arabic, merchants used Chinese, monks use Tibetan... A Mongol script was created by Genghis Khan and is still enduring. We could also adapt the Latin alphabet to our needs and become closer to the Western World or promulgate Arabic to please the Muslim populations.;;;;;;;;;;;;x
+DZG30.T;A Dzungar caravan;;;;;;;;;;;;x
+DZG30.D;Yesterday a ship brought several Oirat men with gifts from the Khan in Urumqi. They have asked us to study here in Japan for a while before going back to their homeland.;;;;;;;;;;;;x
+DZG31.T;Return from Japan;;;;;;;;;;;;x
+DZG31.D;Our chosen men who travelled to Japan have come back filled with new knowledge gained in the Japanese universities. A lot of them have come to consider Japan as a natural ally for our country and with them getting new positions at the court, the Tenno can count on several allies in Urumqi.;;;;;;;;;;;;x
+DZG32.T;A Japanese Request;;;;;;;;;;;;x
+DZG32.D;Yesterday a caravan has arrived from Japan with a letter from the Emperor. He asks us to protect a group of Buddhist monks who want to travel to Tibet without crossing the ever-warring China.;;;;;;;;;;;;x
+DZG33.T;A Japanese lama;;;;;;;;;;;;x
+DZG33.D;Yesterday a caravan arrived from Urumqi with several Japanese monks who have come to study our sacred texts and establish better relations between Japan and Tibet. Their leader Kawaguchi has already gained the support of the current dalai-lama, who considers him one of the most 'wise monks' he ever encountered.;;;;;;;;;;;;x
+DZG34.T;Japanese enter Lhasa!;;;;;;;;;;;;x
+DZG34.D;A group of Buddhist monks have entered Lhasa, the isolated capital of Tibet. Few men have and their success brings prestige over our nation!;;;;;;;;;;;;x
+DZG35.T;Operation Tsunami;;;;;;;;;;;;x
+DZG35.D;The Steppe is a hard place to control. Far from our Home Islands and empty they only have interesting ressources. It is thus more interesting to use 'friendly regimes' to rule over these populations. The Dzungar Khanate would be a fine target as a puppet of our glorious nation and would enhance our position as masters of Asia.;;;;;;;;;;;;x
+DZG36.T;Operation Tsunami;;;;;;;;;;;;x
+DZG36.D;Japan has attacked us over a futile matter! We have to resist the Imperialist forces!;;;;;;;;;;;;x
+DZG37.T;Japanese demands;;;;;;;;;;;;x
+DZG37.D;With Japanese demands enforced our countries we are forced to secede our northern provinces...;;;;;;;;;;;;x
+DZG38.T;Siberian territories;;;;;;;;;;;;x
+DZG38.D;Siberian territories have been transferred to us following our victory over Dzungaria.;;;;;;;;;;;;x
+DZG40.T;Emissary from Urumqi;;;;;;;;;;;;x
+DZG40.D;A delegation coming from the isolated khanate of Urumqi has entered our Indian colonies. They ask to be brought to Europe to learn of our ways. What do we say to our colonial adviser ?;;;;;;;;;;;;x
+DZG41.T;Return from $FROMCOUNTRY_CAPITAL$$;;;;;;;;;;;;x
+DZG41.D;Our delegation has finally made its way back to Urumqi! They have spent many months in $FROMCOUNTRY$, attending to universities and military schools. They seem to have been quite the attraction in Europe from what they say and we are now known to European courts as an effect.;;;;;;;;;;;;x
+DZG42.T;'Travels to Europe';;;;;;;;;;;;x
+DZG42.D;The imam who travelled to Europe with the delegation has published a book describing the trip he made to Europe. The great sense of detail of the book along with the reflexion on the Western Civilization has charmed our literate elite!;;;;;;;;;;;;x
+stroganov_romanov;Roman Stroganov-Romanov;;;;;;;;;;;;x
+stroganov_romanov_desc;Roman Stroganov-Romanov, nicknamed the Steppe Baron ought to transform the Steppes to avoid that they end up destroyed by the Western World. He is ruthless but admired by the common folk;;;;;;;;;;;;x
+uniting_turania_title;Unification of the Steppe;;;;;;;;;;;;;x
+uniting_turania_desc;The Steppes have seen the fall of many nomad empires : the Saka, the Xiongnu, the Mongols ... All have faded and are now only remembered in history. But the Steppes need a leader to unite them into a single state, not a Khanate a relic of the past, and who will protect them from Imperialism, be it from Europe or Asia!;;;;;;;;;;;;;x
+expanding_manchuria_title;Rescue the Manchus;;;;;;;;;;;;;x
+expanding_manchuria_desc;The Manchus are closely related to our homeland. In fact if it were not for the petty Qing Empire they would have surely joined us. Japan has interests in the area and it is our duty to protect the Manchu from China and Japan alike. And an access to the sea would be interesting for our country ...;;;;;;;;;;;;;x
+BrS.T;'Brown Sugar';;;;;;;;;;;;x,,,,,,,,,,,,,
+BrS.D;The novel of the Plantagonian author, Mr Armstrong has become one of the best sold book of the decade. The story which takes place in a plantation in Alibamon is virulently abolitionist and has sensibilized many people in Plantagenia and abroad about the inhumanity of the practice.;;;;;;;;;;;;x,,,,,,,,,,,,,
+BOHR.T;Bohemian Rhapsody;;;;;;;;;;;;x
+BOHR.D;The composer Smetana has published his new opus, 'Bohemian Rhapsody'. This little romantic music has been a great success at the court in Prague and musicians from the whole world are now playing it!;;;;;;;;;;;;x
+GRE53.T;The Greek Cause;;;;;;;;;;;;x
+GRE53.D;Greece has been beaten by Venice who now occupies once again the cradle of Western Civilization. We have an opportunity to proclaim Macedonia the true heir of Alexander by supporting the Greek Cause and thus gaining the support of the oppressed populations of Hellas...;;;;;;;;;;;;x
+end_tribute_relation_title;Refuse Status as Tributary;;;;;;;;;;;;x,,,,,,,,,,,,,
+end_tribute_relation_desc;Ever since the 18th century, Dahomey has been paying tribute to the Oyo Empire to prevent war. Well we shall have no more of that, Dahomey shall stand on her own legs from now on. We are of course not as strong as them, which is why we've taken the liberty to get some foreign help with professional officers. Let us break free from the Oyo oppression!;;;;;;;;;;;;x,,,,,,,,,,,,,
+into_ewe_lands_title;Expand Into Ewe Lands;;;;;;;;;;;;x,,,,,,,,,,,,,
+into_ewe_lands_desc;The Ewe people west of our nation are ruled by unorganized tribes all fighting eachother, it is time for us to step in and claim the land in the name of order and the mighty flag of the elephant.;;;;;;;;;;;;x,,,,,,,,,,,,,
+convert_to_islam_title;Convert to Islam;;;;;;;;;;;;x,,,,,,,,,,,,,
+convert_to_islam_desc;We've already embraced a part of the islamic culture and it taught us alot, maybe we should take it one step further and make Islam our state-religion?;;;;;;;;;;;;x,,,,,,,,,,,,,
+convert_to_catholicism_title;Convert to Catholicism;;;;;;;;;;;;x,,,,,,,,,,,,,
+convert_to_catholicism_desc;We've already embraced a part of the western culture and it taught us alot, maybe we should take it one step further and make Catholicism our state-religion?;;;;;;;;;;;;x,,,,,,,,,,,,,
+convert_to_protestantism_title;Convert to Protestantism;;;;;;;;;;;;x,,,,,,,,,,,,,
+convert_to_protestantism_desc;We've already embraced a part of the western culture and it taught us alot, maybe we should take it one step further and make Protestantism our state-religion?;;;;;;;;;;;;x,,,,,,,,,,,,,
+expanding_into_northen_savannahs_title;Expand Into The Northen Savannahs;;;;;;;;;;;;x,,,,,,,,,,,,,
+expanding_into_northen_savannahs_desc;The Savannahs to the north of us are unsettled and free for taking. The few people living there shouldn't be able to resist us and will hopefully just submit instantly. Let's send our troops there to claim the provinces for the great land of the flag of the elephant!;;;;;;;;;;;;x,,,,,,,,,,,,,
+disputes_with_akan_title; The Dispute with the Akans;;;;;;;;;;;;x,,,,,,,,,,,,,
+disputes_with_akan_desc;Raiders from the Akan lands have been pillaging our countryside for too long. Since the leaders of the Akan people claim that they are uncontrollable, we can only assume that they are incapable of properly ruling their people. It is time for us to take control of the region and stabilize it ourselves!;;;;;;;;;;;;x,,,,,,,,,,,,,
+establish_dhy_schools_title;Establish New Schools;;;;;;;;;;;;x,,,,,,,,,,,,,
+establish_dhy_schools_desc;We can establish new schools throughout the country to better educate the populace and increase he literacy rate. Even though it's an expensive endeavour it will surely improve our research rate!;;;;;;;;;;;;x,,,,,,,,,,,,,
+establish_dhy_universities_title;Establish New Universities;;;;;;;;;;;;x,,,,,,,,,,,,,
+establish_dhy_universities_desc;We can establish new universities in the country to educate our people into some of the brightest in Africa, and maybe even the world. Even though this will be very expensive it will make sure we get some of the finest academics!;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135100;Dahomey Refuses to Pay Tribute;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135100;To ensure the peace between our nations, Dahomey has been paying us tribute ever since the 18th century. It has become tradition at this point, but Dahomey has just rejected it. The tribute was the only thing keeping us from attacking them, now we let's show them why they paid it in the first place!;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135101;We Have Won The War;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135101;We have managed to keep our independence and are no longer obligated to pay tribute to the Oyo Empire. This is a great day for our nation. Let the flag of the elephant fly in the winds!;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135102;We Have Lost The War;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135102;It is a dark day for our nation, we tried to break free and we failed. This was not the day of the flag of the elephant...;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135103;The Dahomey Amazons;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135103;The Dahomey Amazons were originally established as a group of female elephant hunters in the 17th century by King Houegbadja, in the early 18th century his son, King Agaja, made them into the bodyguards of the king, armed with muskets. According to tradition, Agaja also developed them into a militia that helped win a war against the Kingdom of Savi. What their job in the army always has been is just to hold banners to make the army seem bigger than it actually is, however some suggest that we might make even better use of them if they were turned into an actual female corp that'd fight.;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135104;Ideas of Absolutism;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135104;The idea of an absolute monarch being able to rule better than a feudal one is spreading throughout the kingdom, although not widespread it continues to be more and more popular. They are taking the European states and some of our neighbors as proof of absolutism being better, seeing as many of them seem to be more successful. Maybe we can capitalize on this and abolish the stubborn tribes of our Kingdom?;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135105;Slave Market Failing;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135105;The market for slavery is doing worse and worse everyday, people don't want to buy new ones and instead try to sell their old ones. Some of the reasons for this are that slaves have demanded more and more rights under the years and you now have the responsability of taking care of your slaves well being aswell as many slave revolts in the Kingdom resulting in several owners killed. The advisers are trying to come up with ideas with how we can fix this problem, but so far the only options we seem to have are either loosening the restrictions on owning a slave and encouraging slavery amongst the farms or just completely abolish slavery as many consider it unethical aswell as it not being very benefitial for the economy.;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135106;The Culture of Dahomey;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135106;The culture in Dahomey has always been very distinct from elsewhere in Africa. Much of the arts are subsidized by the royal family and the artists aren't of any specific class, but instead can be created by anyone from a lord to a peasant. One of the many things that make our country so great is the Royal Palaces of Abomey which are several palaces spread over a large complex, every palace contains stone carvings depicting the many accomplishments of the king and every king had his own palace. There are two unique aspects of art in Dahomey, firstly it's the assembling of different components, using many different materials, and secondly it's the borrowing of culture from neighboring people. Some say our focus should lie in developing our own culture, but many are also intrigued by the cultures of the outside world. We could either focus on and subsidize our own local culture and develop it or we could embrace some of the western ideas in hopes of becoming more like them or we could embrace some of our islamic neighbors' traditions and learn from them instead.;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135107;A Backward Country;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135107;While there's no doubt that our country is great and beautiful it is no lie that we are behind many other countries in the region, especially the European nations on the coast. We must combat this by developing our own country into something it couldn't even imagine a few generations ago. One of the biggest reasons the Europeans, and some of our neighbors, are so ahead is their academia, their's are much larger than ours. To be able to transform into a developed country we must increase it, however we're not completely sure of what the best way of doing do would be. Some say educating the people is the best way, just look at the literacy rate in Europe, while some say that we should just further educate what we have and refine it into an elite.;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135108;Akans Raiding;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135108;Recently we've recieved several reports of of raidings from the Ewe chiefs, and all of them are claiming that the raiders are Akans. They are telling us that the raiders are coming on a weekly basis, stealing food and loot. Confronting some of the leaders of the Akan people they told us that they were former soldiers who pillaged for food and then claimed that they couldn't do anything about it.;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135109;Helping A Home or A Helping Hand?;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135109;Our nation has developed into something so magnificent, all of Africa adores it. Our great handling of diplomacy, economy and military has led us to this beautiful moment. The only question left is, where do we go now? People in the capital have talked about a great metropolis that might aswell be the capital of Africa, others have mentioned that we should help the other peoples of Africa reach the same greatness as us by embracing them into our society.;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135110;Embracing the Yoruba;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135110;The lands of the Yoruba people are under our control and administration. The the benevolent rulers wer are we shall grant them full minority rights and embrace their fascinating culture.;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135111;Embracing the Ibo;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135111;The lands of the Ibo people are under our control and administration. The the benevolent rulers wer are we shall grant them full minority rights and embrace their fascinating culture.;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135112;Embracing the Ibibio;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135112;The lands of the Ibibio people are under our control and administration. The the benevolent rulers wer are we shall grant them full minority rights and embrace their fascinating culture.;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135113;Embracing the Kru;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135113;The lands of the Kru people are under our control and administration. The the benevolent rulers wer are we shall grant them full minority rights and embrace their fascinating culture.;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTNAME135114;Embracing the Mossi;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTDESC135114;The lands of the Mossi people are under our control and administration. The the benevolent rulers wer are we shall grant them full minority rights and embrace their fascinating culture.;;;;;;;;;;;;x,,,,,,,,,,,,,
+dahomey_amazons;The Dahomey Amazons;;;;;;;;;;;;x,,,,,,,,,,,,,
+dahomey_amazons_desc;The Dahomey Amazons are now an official, female corp that fights in the army.;;;;;;;;;;;;x,,,,,,,,,,,,,
+recent_raid;Recently Raided;;;;;;;;;;;;x,,,,,,,,,,,,,
+recent_raid_desc;This provinces has recently been raided. Homes have been burnt, food is scarce and people are worried for the future.;;;;;;;;;;;;x,,,,,,,,,,,,,
+dhy_schools;The Dahomey Schools;;;;;;;;;;;;x,,,,,,,,,,,,,
+dhy_schools_desc;To combat the illiteracy in our country we've seriously invested in improving the national schools into some of Africa's best.;;;;;;;;;;;;x,,,,,,,,,,,,,
+dhy_universities;The Dahomey Universities;;;;;;;;;;;;x,,,,,,,,,,,,,
+dhy_universities_desc;We've founded several large universities in our cities to create some of the Africa's brightest men.;;;;;;;;;;;;x,,,,,,,,,,,,,
+developing_homeland;Developing Homeland;;;;;;;;;;;;x,,,,,,,,,,,,,
+developing_homeland_desc;This province is a part of our homeland and is currently being developed into the pride of our nation.;;;;;;;;;;;;x,,,,,,,,,,,,,
+reclaim_flanders_title;Reclaim Flanders;;;;;;;;;;;;x
+reclaim_flanders_desc;Flanders have been the heart of the Dutch people since the Middle-Ages. The independence movement may have taken control of the Netherlands but until Antwerp and Brugge aren't in our control we can't seriously proclaim to be the Dutch state!;;;;;;;;;;;;x
+seize_bengal_title;Retake Bengal;;;;;;;;;;;;x
+seize_bengal_desc;Bengal has been a province of our Empire since its conquest by Akbar the Great in 1576. The Nasirid governors took advantage from our troubles to proclaim their independence and become Sultans but once the area will be in our hands, none will deny us our legitimacy.;;;;;;;;;;;;x
+holy_crown_HUN_title;The Crown of San Stefen;;;;;;;;;;;;x
+holy_crown_HUN_desc;The Holy Crown of Hungary, the very embodiment of our state is in the hands of the Bohemian Kings who still like to pretend they are claimants to the throne. Alas for us no Hungarian King can be considered truly worthy of ruling until he has been crowned with the Holy Crown of Saint Stefen, first King of Hungary. Now we can ask the Emperor to give us back the Crown but it will likely come with demands…;;;;;;;;;;;;x
+HUN1.T;An Hungarian Envoy;;;;;;;;;;;;x
+HUN1.D;The Holy Crown of Saint Stefen is the most important relics of Hungary. No Hungarian King could really be considered worthy of ruling until he had been crowned with this very Crown. The Kings of Bohemia have been in control of the Crown since the Ottoman Conquest, transferring the Crown in Prague where it would not be threatened. But the Dukes of Nitra we established to protect our lands proclaimed themselves Kings of Hungary following the expelling of the Turks. Gabriel I of Hungary has come to ask us to relinquish the Crown once and for all and is ready to “give in to any demands”.;;;;;;;;;;;;x
+HUN2.T;Bohemian Answer;;;;;;;;;;;;x
+HUN2.D;The Emperor has granted our request without any demands ! The Crown has been escorted to Budapest where Gabor I was formally crowned King of Hungary. It will surely inaugurate a new period of peace between our Kingdoms!;;;;;;;;;;;;x
+HUN3.D;The Emperor will only relinquish the Crown if we go to Prague and kneel before him. This move would damage our international status but we need it to secure our Throne;;;;;;;;;;;;x
+HUN4.T;Humiliation of Hungary;;;;;;;;;;;;x
+HUN4.D; After negotiations the King of Hungary has come to Prague to regain the Holy Crown of Saint Stefen. The most precious relic of the Kingdom was only given to Gabor I after he knelt before the Bohemian Emperor in an humiliating ceremonial. The move has critically damaged the international standing of the Hungarian Kingdom along with their relations with Bohemia. One can guess that Bohemia made a serious enemy of her neighbour…;;;;;;;;;;;;x
+HUN5.T;End of negotiations;;;;;;;;;;;;x
+HUN5.D;The King of Hungary has refused our offer.;;;;;;;;;;;;x
+HUN6.D;The Bohemian Emperor has asked us to release a semi-independent Duchy of Nitra in exchange of the Crown of San Stefen. Nitra was the march installed by the Jagiellon to protect the Empire from Turkish attacks but it was ruled by Hungarian noblemen following the marriage between Charles Bethven and Maria Jagiellon, duchess of Nitra. The Hungarian revolution saw the duke of Nitra become King of Hungary by popular demands but it felt like an insult for Prague. Giving up full control on the duchy will surely be a thorn for our Kingdom but we would gain the Holy Crown…;;;;;;;;;;;;x
+HUN7.T;The New Duchy of Nitra;;;;;;;;;;;;x
+HUN7.D;At our demand the King of Hungary has offered autonomy to the Slovaks and we have been allowed a right to intervene in their affairs;;;;;;;;;;;;x
+HUN8.D;The Bohemians have refused to give us the Crown and they will refuse all concessions we might offer...;;;;;;;;;;;;x
+HUN9.T;Prague Heist!;;;;;;;;;;;;x
+HUN9.D;Stupor has struck Prague after an attempt by Hungarian nationalists to gain the Holy Crown! A dozen of Hungarian plotters bribed their way in the Castle of Prague and killed at least 27 guards before being caught. The question made them reveal that they were helped by the Hungarian government after the failure of negotiations to gain the Holy Crown. Such a slanderous behaviour needs to be addressed firmly without waiting for ‘apologies’. We’ll make Hungary pay for this!;;;;;;;;;;;;x
+HUN10.T;Heist Failure;;;;;;;;;;;;x
+HUN10.D;Our government had secretly funded Magyar nationalists to steal the Holy Crown in Prague and bring it to Budapest but the Heist did not go as planned. Now Bohemian Forces are mobilizing and we must now march to Prague and take back the Crown!;;;;;;;;;;;;x
+HUN11.T;Coronation of Gabor I;;;;;;;;;;;;x
+HUN11.D;Gabor I Bethmen was solemnly crowned yesterday in Budapest by the archbishop with the Holy Crown of St Stefen! Despite the difficulty we are now possessing once again our most precious jewel.;;;;;;;;;;;;x
+HUN12.T;Defeat;;;;;;;;;;;;x
+HUN12.D;The Hungarian armies have stormed our capital, taking back their crown and forcing to apologize for our misdeeds....;;;;;;;;;;;;x
+HUN13.T;Defeat;;;;;;;;;;;;x
+HUN13.D;The Bohemian armies have stormed our capital,forcing us to apologize for our misdeeds and relinquish Slovakia...;;;;;;;;;;;;x
+HUN14.T;Victory!;;;;;;;;;;;;x
+HUN14.D;The Magyars have been dealt with ! Another superb victory for the Emperor !;;;;;;;;;;;;x
+INC_archa1.T;Machu Picchu;;;;;;;;;;;;x
+INC_archa1.D;Machu Pichu, an old seat of power from the Great Incas, which no one visited for hundreds of years is once again under our control! Most of the knowledge about the mountain has been lost during the Spanish conquest and the few inscriptions we have tell us that it was Pachacuti himself who chose the site to be one of his residences. We have also found a great temple dedicated to Inti in the ruins and the priests of the Empire have asked that they be given the site to build a great sanctuary to honour Inti and the past Incas. The site would also be a magnificent retreat for our sovereigns if we renovated the whole place. Also the European advisers of our court have expressed their interest in funding missions to study this example of our old Civilization.;;;;;;;;;;;;x
+integrate_granadans_title;Granadan integration;;;;;;;;;;;;x
+integrate_granadans_desc;The Draft of the Constitution may have failed but our Empire is now more stable than ever and steps have been made to further integrate the southern provinces into our social fabric. Long live Colombia united!;;;;;;;;;;;;x
+end_of_prussia_title;End of Prussia;;;;;;;;;;;;x
+end_of_prussia_desc;It is time to formally annex the duchy of Prussia!;;;;;;;;;;;;x

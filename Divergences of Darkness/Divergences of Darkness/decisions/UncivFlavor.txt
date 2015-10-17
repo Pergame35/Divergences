@@ -216,4 +216,106 @@ political_decisions = {
 	}
 	
 	}
+	
+	uniting_turania = { 
+	potential = { 
+	OR = { 
+	tag = MGL 
+	tag = CHG 
+	tag = UGH 
+	tag = KZH 
+	tag = UZB 
+	tag = TNT 
+	tag = MCH
+	tag = KOK
+		}
+	}
+	
+	allow = { 
+	civilized = yes
+	1600 = { #Urumqi
+	OR = {
+		owned_by = THIS
+		owner = {
+			OR = {
+				in_sphere = THIS
+				vassal_of = THIS
+					}
+				}
+			}
+		}
+	1465 = {
+	OR = {
+		owned_by = THIS
+		owner = {
+			OR = {
+				in_sphere = THIS
+				vassal_of = THIS
+					}
+				}
+			}
+		}
+	1186 = {
+	OR = {
+		owned_by = THIS
+		owner = {
+			OR = {
+				in_sphere = THIS
+				vassal_of = THIS
+					}
+				}
+			}
+		}
+	1594 = {
+	OR = {
+		owned_by = THIS
+		owner = {
+			OR = {
+				in_sphere = THIS
+				vassal_of = THIS
+					}
+				}
+			}
+		}
+	}
+	
+	effect = { 
+	change_tag = TKS 
+	add_accepted_culture = oirat 
+	add_accepted_culture = mongol 
+	add_accepted_culture = kazak
+	add_accepted_culture = uighur  
+	add_accepted_culture = uzbek 
+	add_accepted_culture = kirgiz
+	DZG = { all_core = { add_core = THIS } }
+	KZH = { all_core = { add_core = THIS } }
+	UZB = { all_core = { add_core = THIS } }
+	TJK = { all_core = { add_core = THIS } }
+	MGL = { all_core = { add_core = THIS } }
+	TNT = { all_core = { add_core = THIS } }
+	UGH = { all_core = { add_core = THIS } }
+	KOK = { all_core = { add_core = THIS } }
+	}
+	
+	}
+	
+	expanding_manchuria = { 
+	potential = { 
+	tag = TKS 
+	NOT = { has_country_flag = manchuria}
+		}
+		
+	allow = { 
+	nationalism_n_imperialism = 1 
+	all_core = { owned_by = THIS }
+	}
+	
+	effect = { 
+	CHI_1553 = { add_core = TKS }
+	CHI_5 = { add_core = TKS }
+	add_accepted_culture = manchu
+	}
+	
+	}
+	
 }
