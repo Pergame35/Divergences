@@ -641,7 +641,10 @@ country_event = {
 	
 	trigger = {
 		tag = TUR
+		NOT = { war_with = KUR }
 		KUR = { exists = yes }
+		KUR = { owns = 893 }
+		NOT = { year = 1860 }
 		NOT = { has_country_flag = kurdistanTUR }
 		NOT = { has_global_flag = fartheewell }
 	}
@@ -656,6 +659,14 @@ country_event = {
 		set_country_flag = kurdistanTUR
 		set_country_flag = kurdistanTURloss
 		prestige = -5
+		KUR = {
+			any_owned = {
+				limit = {
+					is_core = KUR
+				}
+				remove_core = TUR
+			}
+		}
 		TUR_889 = {
 			remove_core = THIS
 		}
@@ -715,23 +726,30 @@ country_event = {
 	trigger = {
 		tag = TUR
 		KUR = { exists = no }
+		NOT = { year = 1850 }
 		891 = {
 			NOT = { controlled_by = REB }
+			owned_by = THIS
 		}
 		899 = {
 			NOT = { controlled_by = REB }
+			owned_by = THIS
 		}
 		893 = {
 			NOT = { controlled_by = REB }
+			owned_by = THIS
 		}
 		889 = {
 			NOT = { controlled_by = REB }
+			owned_by = THIS
 		}
 		890 = {
 			NOT = { controlled_by = REB }
+			owned_by = THIS
 		}
 		892 = {
 			NOT = { controlled_by = REB }
+			owned_by = THIS
 		}
 		NOT = { has_country_flag = kurdistanTUR }
 		NOT = { has_global_flag = fartheewell }
@@ -745,7 +763,7 @@ country_event = {
 		name = "EVTOPTA125120"
 		
 		set_country_flag = kurdistanTUR
-		prestige = 1
+		prestige = 5
 	}
 }
 
