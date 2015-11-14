@@ -566,7 +566,52 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = 333218
+	title = "The trekkers"
+	desc = "Following the Burgundian conquest of Kaapstat some Boers instead of fleeing to Leuuwin or staying under Burgundian domination decided to create their own communities in the North. They have agreeed to integrate our growing state now that Burgundy has fled."
+	picture = "boer_war"
+	
+	trigger = { 
+	OR = { tag = SAF tag = BTV }
+	2093 = { empty = yes }
+	2088 = { empty = yes }
+	2087 = { owned_by = THIS }
+	}
+	
+	mean_time_to_happen = { 
+	months = 10 
+	}
+	
+	option = { 
+	name = "Excellent!"
+	2088 = { secede_province = THIS }
+	2093 = { secede_province = THIS }
+	}
+}
 
+country_event = {
+	id = 333219
+	title = "The future of South Africa"
+	desc = "South Africa is attracting colonists from Europe after promises of empty land and peace have been heard."
+
+	trigger = { 
+	tag = SAF 
+	primary_culture = boer 
+	NOT = { is_vassal = yes }
+	}
+	
+	fire_only_once = yes 
+	
+	option = { 
+	name = "May it last!" 
+	add_country_modifier = { 
+	name = trek_boers
+	duration = 10000
+		}
+	}
+}
+	
 country_event = {
 	id = 98247
 	title = "EVTNAME98247" #South Africa is Lost

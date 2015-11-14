@@ -42,7 +42,7 @@ country_event = {
 	option = {
 		name = "Do whatever it takes to help them."
 		prestige = -50
-		treasury = -300000
+		treasury = -1000000
 		set_country_flag = help_for_the_irish
 		set_country_flag = great_irish_famine
 		random_state = {
@@ -89,7 +89,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				NOT = { money = 300000 }
+				NOT = { money = 1000000 }
 			}
 		}
 	}
@@ -844,7 +844,7 @@ province_event = {
 	
 country_event = {
 	id = 1010024
-	title = "EVTNAME1010024" #The Sinn FÃ©in Demand
+	title = "EVTNAME1010024" #The Sinn Féin Demand
 	desc = "EVTDESC1010024"
 	news = yes
 	news_desc_long = "EVTDESC1010024"
@@ -1227,10 +1227,11 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		tag = ENG
+		tag = DUA
 		war = no
 		is_possible_vassal = IRE
 		any_owned_province = { is_core = IRE }
+		NOT = { has_country_flag  = irish_acc }
 		OR = {
 			has_country_flag = parnell_discouraged
 			has_country_flag = parnell_encouraged
@@ -1306,17 +1307,12 @@ country_event = {
 			}
 			militancy = -10
 		}
+		release_vassal = IRE
 		IRE = {
 			all_core = { remove_core = THIS }
 		}
-		release_vassal = IRE
 		IRE = {
 			prestige = -80
-			any_owned = {
-				limit = { region = ENG_254 }
-				add_core = THIS
-				secede_province = THIS
-			}
 		}
 		relation = {
 			who = IRE
@@ -1449,11 +1445,6 @@ country_event = {
 		release_vassal = IRE
 		IRE = {
 			prestige = -80
-			any_owned = {
-				limit = { region = ENG_254 }
-				add_core = THIS
-				secede_province = THIS
-			}
 		}
 		relation = {
 			who = IRE
