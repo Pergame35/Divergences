@@ -118,7 +118,7 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			has_country_flag = baltic_focus
-			NOT = { has _country_flag = RUS_moved_capital }
+			NOT = { has_country_flag = RUS_moved_capital }
 		}
 
 		#Must control all of Estonia and Karelia
@@ -144,9 +144,9 @@ political_decisions = {
 				    add_province_modifier = {
 				    	name = gateway_to_russia
 						duration = 7300
-	 				}  
-	 				add_country_flag = RUS_moved_capital   
+	 				}  	  
 			}
+			set_country_flag = RUS_moved_capital 
 		}
 		ai_will_do = {
 			factor = 1
@@ -158,7 +158,7 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			has_country_flag = southern_focus
-			NOT = { has _country_flag = RUS_moved_capital }
+			NOT = { has_country_flag = RUS_moved_capital }
 		}
 
 		#Must control Crimea, Luhansk, and Rostov regions
@@ -189,9 +189,150 @@ political_decisions = {
 						duration = 7300
 	 				}      
 			}
+			set_country_flag = RUS_moved_capital 
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
+
+#Once you've moved the capital and picked up some tech, you can start accepting cultures.
+	integrate_ruthenian_culture = {
+		potential = {
+			tag = RUS
+			has_country_flag = panslavic_focus
+			NOT = { has_accepted_culture = ruthenian}
+		}
+		#Ruthenes have higher tech requirements and lower capitol movement requirements. 
+		allow = {
+			revolution_n_counterrevolution = 1 
+			biologism = 1 
+			#nationalism_n_imperialism = 1 
+		}
+		effect = {
+			prestige = 5
+			add_accepted_culture = ruthenian
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Steppe/Caucasus cultures
+	integrate_tatar_culture = {
+		potential = {
+			tag = RUS
+			has_country_flag = southern_focus
+			has_country_flag = RUS_moved_capital
+			NOT = { has_accepted_culture = tatar}
+		}
+		#Ruthenes have higher tech requirements and lower capitol movement requirements. 
+		allow = {
+			nationalism_n_imperialism = 1 
+		}
+		effect = {
+			prestige = 5
+			add_accepted_culture = tatar
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	integrate_astrakhani_culture = {
+		potential = {
+			tag = RUS
+			has_country_flag = southern_focus
+			has_country_flag = RUS_moved_capital
+			NOT = { has_accepted_culture = astrakhani}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			biologism = 1 
+		}
+		effect = {
+			prestige = 5
+			add_accepted_culture = astrakhani
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	integrate_georgian_culture = {
+		potential = {
+			tag = RUS
+			has_country_flag = southern_focus
+			has_country_flag = RUS_moved_capital
+			NOT = { has_accepted_culture = georgian}
+		}
+		#Georgians, being further away but Orthodox Christian, take a while.
+		allow = {
+			revolution_n_counterrevolution = 1 
+			biologism = 1 
+		}
+		effect = {
+			prestige = 5
+			add_accepted_culture = georgian
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	#Baltic cultures
+	integrate_estonian_culture = {
+		potential = {
+			tag = RUS
+			has_country_flag = baltic_focus
+			has_country_flag = RUS_moved_capital
+			NOT = { has_accepted_culture = estonian}
+		}
+		allow = {
+			nationalism_n_imperialism = 1 
+		}
+		effect = {
+			prestige = 5
+			add_accepted_culture = estonian
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	integrate_latvian_culture = {
+		potential = {
+			tag = RUS
+			has_country_flag = baltic_focus
+			has_country_flag = RUS_moved_capital
+			NOT = { has_accepted_culture = latvian}
+		}
+		allow = {
+			nationalism_n_imperialism = 1 
+		}
+		effect = {
+			prestige = 5
+			add_accepted_culture = latvian
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	integrate_finnish_culture = {
+		potential = {
+			tag = RUS
+			has_country_flag = baltic_focus
+			has_country_flag = RUS_moved_capital
+			NOT = { has_accepted_culture = finnish}
+		}
+		allow = {
+			revolution_n_counterrevolution = 1 
+			biologism = 1 
+		}
+		effect = {
+			add_accepted_culture = finnish
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+
 }
