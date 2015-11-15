@@ -88,4 +88,26 @@ political_decisions = {
 			MGL = { country_event = 80115 }
 		}
 	}
+
+	#New Russian focus event.
+	set_expansion_focus = {
+			potential = {
+				tag = RUS
+			}
+			allow = {
+				NOT = { 
+					has_country_flag = baltic_focus
+					has_country_flag = panslavic_focus
+					has_country_flag = southern_focus
+				}
+			}
+			effect = {
+				prestige = 10
+				badboy = 5
+				country_event = 202201
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
 }
