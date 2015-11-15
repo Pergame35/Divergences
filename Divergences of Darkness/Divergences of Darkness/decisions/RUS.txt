@@ -95,10 +95,12 @@ political_decisions = {
 				tag = RUS
 			}
 			allow = {
-				NOT = { 
-					has_country_flag = baltic_focus
-					has_country_flag = panslavic_focus
-					has_country_flag = southern_focus
+				AND = {
+					NOT = { 
+						has_country_flag = baltic_focus
+						has_country_flag = panslavic_focus
+						has_country_flag = southern_focus
+					}
 				}
 			}
 			effect = {
@@ -109,5 +111,87 @@ political_decisions = {
 			ai_will_do = {
 				factor = 1
 			}
+	}
+#Next step: Moving the capital, once all relevant territory is reclaimed.
+	#St. Petersburg will be named after Mikhail I ("Mikhailgrad")
+	move_capital_to_nyenschantz = {
+		potential = {
+			tag = RUS
+			has_country_flag = baltic_focus
+			NOT = { has _country_flag = RUS_moved_capital }
+		}
+
+		#Must control all of Estonia and Karelia
+		allow = {
+			RUS_339 = {
+				all_core = {
+					owned_by = THIS
+				}
+			}			
+			RUS_349 = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+
+		effect = {
+			prestige = 10
+			capital = 994
+			994 = {
+				    life_rating = 5
+				    change_province_name = "Mikhailgrad" 
+				    add_province_modifier = {
+				    	name = gateway_to_russia
+						duration = 7300
+	 				}  
+	 				add_country_flag = RUS_moved_capital   
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Rostov retains its name.
+	move_capital_to_rostov = {
+		potential = {
+			tag = RUS
+			has_country_flag = southern_focus
+			NOT = { has _country_flag = RUS_moved_capital }
+		}
+
+		#Must control Crimea, Luhansk, and Rostov regions
+		allow = {
+			RUS_964 = {
+				all_core = {
+					owned_by = THIS
+				}
+			}			
+			RUS_1048 = {
+				all_core = {
+					owned_by = THIS
+				}
+			}			
+			RUS_980 = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			capital = 979
+			979 = {
+				    life_rating = 5
+				    add_province_modifier = {
+				    	name = gateway_to_russia
+						duration = 7300
+	 				}      
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 }
