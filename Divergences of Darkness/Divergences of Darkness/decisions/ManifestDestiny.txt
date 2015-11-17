@@ -361,6 +361,7 @@ political_decisions = {
 	habana_purchase = {
 		picture = map_caribbean
 		potential = {
+			NOT = { has_global_flag = spanish_vic } 
 			OR = { 
 				AND = { 
 					tag = PLA 
@@ -377,6 +378,7 @@ political_decisions = {
 					owns = 200 
 					owns = 2219 
 					}
+				tag = ATS
 				}
 			2209 = {
 				NOT = { owned_by = THIS }
