@@ -400,6 +400,7 @@ country_event = {
 			limit = {
 				OR = {
 					is_core = JAM
+					is_core = CRC
 				}
 			}
 			secede_province = FROM
@@ -433,6 +434,11 @@ country_event = {
 		prestige = 5
 		money = -250000
 		JAM = {
+			all_core = {
+					add_core = THIS
+				}
+			}
+		CRC = {
 			all_core = {
 					add_core = THIS
 				}
