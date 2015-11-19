@@ -457,7 +457,7 @@ political_decisions = {
 	OR = { tag = NGF tag RHI }
 	NOT = { accepted_culture = south_german }
 	OR = { any_owned_province = { is_core = BAV } any_owned_province = { is_core = SWI } any_owned_province = { is_core = AUS } }
-	NOT = { has_country_flag = elbe_acc }
+	NOT = { has_country_flag = south_acc }
 	}
 	
 	allow = { 
@@ -465,7 +465,7 @@ political_decisions = {
 	}
 	
 	effect = { 
-	set_country_flag = elbe_acc
+	set_country_flag = south_acc
 	add_accepted_culture = north_german 
 	}
 	
