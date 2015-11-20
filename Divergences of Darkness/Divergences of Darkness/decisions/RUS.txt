@@ -201,6 +201,7 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			has_country_flag = panslavic_focus
+			NOT = { has_country_flag = ruthenian_culture }
 			NOT = { has_accepted_culture = ruthenian}
 		}
 		#Ruthenes have higher tech requirements and lower capitol movement requirements. 
@@ -212,7 +213,7 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			add_accepted_culture = ruthenian
-			
+			set_country_flag = ruthenian_culture
 		}
 		ai_will_do = {
 			factor = 1
@@ -225,6 +226,7 @@ political_decisions = {
 			has_country_flag = southern_focus
 			has_country_flag = RUS_moved_capital
 			NOT = { has_accepted_culture = tatar}
+			NOT = { has_country_flag = tatar_culture }
 		}
 		#Ruthenes have higher tech requirements and lower capitol movement requirements. 
 		allow = {
@@ -233,6 +235,7 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			add_accepted_culture = tatar
+			set_country_flag = tatar_culture 
 		}
 		ai_will_do = {
 			factor = 1
@@ -243,7 +246,7 @@ political_decisions = {
 			tag = RUS
 			has_country_flag = southern_focus
 			has_country_flag = RUS_moved_capital
-			NOT = { has_accepted_culture = astrakhani}
+			NOT = { has_country_flag = astrakhan_culture }
 		}
 		allow = {
 			nationalism_n_imperialism = 1
@@ -252,7 +255,7 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			add_accepted_culture = astrakhani
-			
+			set_country_flag = astrakhan_culture 
 		}
 		ai_will_do = {
 			factor = 1
@@ -264,6 +267,7 @@ political_decisions = {
 			has_country_flag = southern_focus
 			has_country_flag = RUS_moved_capital
 			NOT = { has_accepted_culture = georgian}
+			NOT = { has_country_flag = georgian_culture }
 		}
 		#Georgians, being further away but Orthodox Christian, take a while.
 		allow = {
@@ -273,6 +277,7 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			add_accepted_culture = georgian
+			set_country_flag = georgian_culture
 		}
 		ai_will_do = {
 			factor = 1
@@ -285,6 +290,7 @@ political_decisions = {
 			has_country_flag = baltic_focus
 			has_country_flag = RUS_moved_capital
 			NOT = { has_accepted_culture = estonian}
+			NOT = { has_country_flag = estonian_culture }
 		}
 		allow = {
 			nationalism_n_imperialism = 1 
@@ -292,6 +298,7 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			add_accepted_culture = estonian
+			set_country_flag = estonian_culture
 		}
 		ai_will_do = {
 			factor = 1
@@ -302,7 +309,7 @@ political_decisions = {
 			tag = RUS
 			has_country_flag = baltic_focus
 			has_country_flag = RUS_moved_capital
-			NOT = { has_accepted_culture = latvian}
+			NOT = { has_country_flag = latvian_culture }
 		}
 		allow = {
 			nationalism_n_imperialism = 1 
@@ -310,6 +317,7 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			add_accepted_culture = latvian
+			set_country_flag = latvian_culture
 		}
 		ai_will_do = {
 			factor = 1
@@ -320,7 +328,7 @@ political_decisions = {
 			tag = RUS
 			has_country_flag = baltic_focus
 			has_country_flag = RUS_moved_capital
-			NOT = { has_accepted_culture = finnish}
+			NOT = { has_country_flag = finnish_culture }
 		}
 		allow = {
 			revolution_n_counterrevolution = 1 
@@ -328,6 +336,7 @@ political_decisions = {
 		}
 		effect = {
 			add_accepted_culture = finnish
+			set_country_flag = finnish_culture
 		}
 		ai_will_do = {
 			factor = 1
