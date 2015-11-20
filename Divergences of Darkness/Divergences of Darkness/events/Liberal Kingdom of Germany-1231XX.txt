@@ -443,40 +443,8 @@ country_event = {
 				add_core = SGF
 			}
 		}
-		#Hesse-Nassau
-		NAS = {
-			all_core = {
-				add_core = SGF
-			}
-		}
-		#Hesse-Kessel
-		HEK = {
-			all_core = {
-				add_core = SGF
-			}
-		}
-		#Saxe-Meiningen
-		MEI = {
-			all_core = {
-				add_core = SGF
-			}
-		}
-		#Saxony
-		SAX = {
-			all_core = {
-				add_core = SGF
-			}
-		}
 		#Tirol
 		AUS_612 = {
-			add_core = SGF
-		}
-		#Southern Rheinland
-		PRU_572 = {
-			add_core = SGF
-		}
-		#Palatinate
-		HES_2560 = {
 			add_core = SGF
 		}
 		change_tag = SGF
@@ -883,40 +851,8 @@ country_event = {
 				add_core = SGF
 			}
 		}
-		#Hesse-Nassau
-		NAS = {
-			all_core = {
-				add_core = SGF
-			}
-		}
-		#Hesse-Kessel
-		HEK = {
-			all_core = {
-				add_core = SGF
-			}
-		}
-		#Saxe-Meiningen
-		MEI = {
-			all_core = {
-				add_core = SGF
-			}
-		}
-		#Saxony
-		SAX = {
-			all_core = {
-				add_core = SGF
-			}
-		}
 		#Tirol
 		AUS_612 = {
-			add_core = SGF
-		}
-		#Southern Rheinland
-		PRU_572 = {
-			add_core = SGF
-		}
-		#Palatinate
-		HES_2560 = {
 			add_core = SGF
 		}
 	change_tag = SGF
@@ -1364,5 +1300,42 @@ country_event = {
 	
 	option = { 
 	name = "Deutschland von Tyrol zum Belt!"
+	}
+}
+
+country_event = { 
+	id = 123138
+	title = "GER28.T"
+	desc = "GER28.D"
+	
+	trigger = { 
+	tag = SGF
+	NOT = { has_country_flag = cleanupSGF }
+	owns = 595
+	owns = 599
+	owns = 613
+	owns = 619 
+	owns = 612 
+	owns = 589 
+	owns = 586 
+	owns = 605 
+	war = no 
+	}
+	
+	mean_time_to_happen =  { months = 12 }
+	
+	option = { 
+	name = "Deutschland uber alles!"
+	prestige = 2 
+	set_country_flag = cleanupSGF
+	any_owned = { 
+	remove_core = BAV 
+	remove_core = AUS 
+	remove_core = TIR 
+	remove_core = SAL 
+	remove_core = BAD 
+	remove_core = WUR 
+	remove_core = SWI
+		}
 	}
 }

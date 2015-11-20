@@ -35,6 +35,7 @@ political_decisions = {
           tag = PLA
           tag = NBG
           tag = KKN
+		  tag = ATS
           }
 					in_sphere = THIS
 				}
@@ -82,6 +83,7 @@ political_decisions = {
 					OR = {
           tag = PLA
           tag = VIN
+		  tag = ATS
           }
 					in_sphere = THIS
 				}
@@ -132,6 +134,7 @@ political_decisions = {
           tag = VIN
           tag = NBG
           tag = LST
+		  tag = ATS
           }
 					in_sphere = THIS
 				}
@@ -426,4 +429,211 @@ political_decisions = {
 		}
   } 
  
+
+
+###########################
+#	Caribbean cultures	  #
+###########################
+	accepting_athesia = {
+	picture = "athesia"
+	potential = { 
+	ATS = { exists = no }
+	OR = { 
+	tag = PLA 
+	tag = ARC 
+	tag = CUB 
+	tag = SFJ 
+	}
+	owns = 200 
+	NOT = { has_country_flag = athesian_culture }
+	}
+
+	allow = { 
+	OR = { 
+	government = democracy 
+	government = hms_government 
+	}
+	citizenship_policy = full_citizenship 
+	state_n_government = 1 
+	OR = {
+				upper_house = {
+					ideology = socialist
+					value = 0.3
+				}
+				upper_house = {
+					ideology = liberal
+					value = 0.3
+				}
+				AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.15
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.15
+					}
+				}
+			}
+	
+	}
+	
+	effect = { 
+	add_accepted_culture = athesian 
+	set_country_flag = athesian_culture
+	any_pop = { 
+	limit = { culture = athesian }
+		militancy = -3
+			}
+	random_owned = {
+			limit = { 
+			200 = { NOT = { is_core = THIS } } 
+			}
+			NA_16 = { add_core = THIS }
+			}
+		}
+	}
+	
+	accepting_caribenos = { 
+	potential = { 
+	CUB = { exists = no }
+	OR = { 
+	tag = PLA 
+	tag = ARC 
+	tag = ATS 
+	tag = SFJ 
+	}
+	owns = 2209 
+	NOT = { has_country_flag = caribeno_culture }
+	}
+
+	allow = { 
+	OR = { 
+	government = democracy 
+	government = hms_government 
+	}
+	citizenship_policy = full_citizenship 
+	state_n_government = 1 
+	OR = {
+				upper_house = {
+					ideology = socialist
+					value = 0.3
+				}
+				upper_house = {
+					ideology = liberal
+					value = 0.3
+				}
+				AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.15
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.15
+					}
+				}
+			}
+		
+	}
+	
+	effect = { 
+	add_accepted_culture = caribeno 
+	set_country_flag = caribeno_culture
+	any_pop = { 
+	limit = { culture = caribeno }
+		militancy = -3
+			}
+	random_owned = {
+			limit = {
+			2209 = { NOT = { is_core = THIS } } 
+			}
+			SPA_2209 = { add_core = THIS }
+			}
+		}
+	}
+	
+	accepting_ayitians = { 
+	potential = { 
+	NOT = { SFJ = { exists = yes } }
+	OR = { 
+	tag = PLA 
+	tag = ARC 
+	tag = ATS 
+	tag = CUB 
+	}
+	owns = 2213 
+	NOT = { has_country_flag = ayitian_culture }
+	}
+
+	allow = { 
+	OR = { 
+	government = democracy 
+	government = hms_government 
+	}
+	citizenship_policy = full_citizenship 
+	state_n_government = 1 
+	OR = {
+				upper_house = {
+					ideology = socialist
+					value = 0.3
+				}
+				upper_house = {
+					ideology = liberal
+					value = 0.3
+				}
+				AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.15
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.15
+					}
+				}
+			}
+	
+	}
+	
+	effect = { 
+	add_accepted_culture = ayitian 
+	set_country_flag = ayitian_culture
+	any_pop = { 
+	limit = { culture = ayitian }
+		militancy = -3
+			}
+	random_owned = {
+			limit = {
+			2213 = { NOT = { is_core = THIS } } 
+			}
+			SFJ_2213 = { add_core = THIS }
+			}
+		}
+	}
+	
+	Western_border_treaty = { 
+	picture = Manifest_Destiny_ARC
+	
+	potential = { 
+	tag = ARC 
+	NOT = { DNG = { rank = 8 } }
+	NOT = { has_country_flag = manifest_destiny_arc }
+	has_country_flag = panarcadianism 
+		}
+		
+	allow = { 
+	DNG = { NOT = { war = yes }}
+	NOT = { war = yes }
+	money = 1000000
+		}
+	
+	effect = { 
+	prestige = 5 
+	badboy = 10 
+	country_event = 333470
+	set_country_flag = manifest_destiny_arc
+		}
+		
+	}
 }
