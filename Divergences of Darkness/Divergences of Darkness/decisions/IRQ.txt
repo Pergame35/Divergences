@@ -13,7 +13,10 @@ political_decisions = {
 			civilized = yes
 			IRQ = {
 				all_core = {
+					OR = {	
 						owned_by = THIS
+						province_id = 931
+					}
 				}
 			}
 		}
@@ -59,8 +62,10 @@ political_decisions = {
 			NOT = { is_vassal = yes }
 			IRQ = {
 				all_core = {
+					OR = {	
 						owned_by = THIS
-				}
+						province_id = 931
+					}
 			}
 			PER_1127 = {
 				owned_by = THIS
