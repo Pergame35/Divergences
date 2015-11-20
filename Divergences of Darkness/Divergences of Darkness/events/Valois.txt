@@ -1,4 +1,4 @@
-country_event = { #Restoration of order in Etruria 
+﻿country_event = { #Restoration of order in Etruria 
 
 	id = 110601
 	title = "VAL1.T"
@@ -585,5 +585,353 @@ country_event = { #Capital choice for the FRT
 	option = { 
 	name = "Compromise : Toulon it is "
 	capital = 470 
+	}
+}
+
+country_event = { #Installation of a sister-republic 
+
+	id = 110630
+	title = "VAL30.T"
+	desc = "VAL30.D" 
+	major = yes 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We don't have much choice"
+	change_tag = OCC 
+	government = democracy 
+	vote_franschise = universal_voting
+	set_country_flag = etrurian_master
+	ruling_party_ideology = liberal
+	FROM = { country_event = 110631 }
+	capital = 467
+	ARA = { diplomatic_influence = { who = THIS value = -200 } }
+	}
+}
+
+country_event = { #Installation of a sister-republic 
+
+	id = 110631
+	title = "VAL31.T"
+	desc = "VAL31.D" 
+
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Good thing"
+	create_vassal = FROM 
+	country_event = 110632 
+	}
+}
+
+country_event = { #What to do with the King ?
+
+	id = 110632
+	title = "VAL32.T"
+	desc = "VAL32.D" 
+	picture = "execution_king"
+	
+	is_triggered_only = yes 
+
+	option = {
+	name = "Execute him after a 'fair trial' on the Piazza dei Priori"
+	prestige = 5 
+	any_country = { 
+	limit = { continent = europe OR = { government = absolute_monarchy government = prussian_constitutionalism government = hms_government } } 
+	relation = { who = THIS value = -100 } }
+	}
+	
+	option = { 
+	name = "Let him go ..."
+	prestige = -2 
+	}
+}
+
+country_event = { #Riot of Avignon 
+
+	id = 110633
+	title = "VAL33.T"
+	desc = "VAL33.D" 
+	picture = "occitan_revolt"
+	
+	trigger = { 
+	tag = OCC 
+	vassal_of = TUS
+	has_country_flag = etrurian_master 
+	}
+	
+	mean_time_to_happen = { 
+	months = 3 
+	}
+	
+	option = { 
+	name = "It was bound to arrive..."
+	set_global_flag = occ_riot
+	TUS = { country_event = 110634 }
+	any_pop = { 
+	militancy = 3 
+		}
+	}
+}
+
+country_event = { #Riot of Avignon 
+
+	id = 110634
+	title = "VAL34.T"
+	desc = "VAL34.D" 
+	picture = "occitan_revolt"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We'll keep the current situation as it is!"
+	prestige = 5  
+	}
+	
+	option = { 
+	name = "It might be better to let them go free"
+	release_vassal = FROM
+	badboy = -5 
+	}
+}
+
+country_event = { 
+	id = 110635
+	title = "VAL35.T"
+	desc = "VAL35.D" 
+	picture = "occitan_revolt"
+	
+	trigger = { 
+	tag = DUA 
+	OCC = { exists = yes has_global_flag = occ_riot government = democracy }
+	}
+	
+	mean_time_to_happen = { 
+	days = 15
+	}
+	
+	option = { 
+	name = "We should not involve ourselves in Mediteranean problems..."
+	clr_global_flag = occ_riot
+	ai_chance = { 
+	factor = 10 
+	modifier = { 
+	factor = 1.5 
+	has_country_flag = english_integration  
+			}
+		}
+	}
+	
+	option = { 
+	name = "We could negotiate with Etruria ..."
+	TUS = { country_event = 110636 }
+	clr_global_flag = occ_riot
+	ai_chance = { 
+	factor = 50 
+	modifier = { 
+	factor = 1.5 
+	has_country_flag = dual_integration  
+			}
+		}
+	}
+	
+	option = { 
+	name = "Threaten the Republic with force, they should understand that!"
+	TUS = { country_event = 110641 }
+	clr_global_flag = occ_riot
+	ai_chance = { 
+	factor = 40 
+	modifier = { 
+	factor = 1.5 
+	has_country_flag = french_integration  
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 110636
+	title = "VAL36.T"
+	desc = "VAL36.D" 
+	picture = "treaty_fr"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Demand their non intervention in case of Italian unification and that's a deal!"
+	FROM = { country_event = 110637 }
+	badboy = 2 
+	ai_chance = { 
+	factor = 99 
+		}
+	}
+	
+	option = { 
+	name = "We won't betray the Occitan republicans!"
+	FROM = { country_event = 110638 }
+	ai_chance = { 
+	factor = 1
+		}
+	}
+}
+
+country_event = { 
+	id = 110637
+	title = "VAL37.T"
+	desc = "VAL37.D" 
+	picture = "treaty_fr"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Sign it, it's not like Etruria can unify Italy."
+	set_global_flag = lyon_accord
+	FROM = { country_event = 110638 }
+	OCC = { country_event = 110639 }
+	}
+	
+	option = { 
+	name = "Absolutely unacceptable!"
+	ai_chance = { 
+	factor = 0 }
+	}
+}
+
+country_event = { 
+	id = 110638
+	title = "VAL38.T"
+	desc = "VAL38.D" 
+	picture = "treaty_fr"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Such things are common in times of need..."
+	prestige = -5 
+	release_vassal = OCC 
+	break_alliance = OCC 
+	relation = { who = DUA value = 100 }
+	}
+}
+
+country_event = { 
+	id = 110639
+	title = "VAL39.T"
+	desc = "VAL39.D" 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Even betrayed we won't surrender!"
+	FROM = { country_event = 110640 }
+	ai_chance = { 
+	factor = 40 
+		}
+	}
+	
+	option = { 
+	name = "There is no point fighting alone ..."
+	FROM = { inherit = THIS }
+	ai_chance = { 
+	factor = 60 
+		}
+	}
+}
+
+country_event = { 
+	id = 110640
+	title = "VAL40.T"
+	desc = "VAL40.D" 
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Well, we'll just erase them from the map!"
+	war = {
+			target = OCC
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+	badboy = -10 
+	}
+}
+
+country_event = { 
+	id = 110641
+	title = "VAL41.T"
+	desc = "VAL41.D" 
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "Backdown from Provence, we can't win against Paris!"
+	release_vassal = OCC 
+	break_alliance = OCC 
+	OCC = { country_event = 110639 }
+	ai_chance = { 
+	factor = 85 
+		}
+	}
+	
+	option = { 
+	name = "We fight with them!"
+	FROM = { country_event = 110640 }
+	ai_chance = { 
+	factor = 15 
+		}
+	}
+	
+}
+
+country_event = {
+	id = 37230
+	title = "EVTNAME37230" #The Kingdom of Pomare
+	desc = "EVTDESC37230"
+	picture = "Waitangi"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_greater_power = yes 
+		continent = europe 
+		any_owned_province = { naval_base = 2 }
+		exists = yes
+		war = no
+		money = 1000
+		801 = { empty = yes }
+		invention = prophylaxis_against_malaria
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			year = 1842
+		}
+		modifier = {
+			factor = 0.5
+			year = 1845
+		}
+	}
+	
+	option = {
+		name = "We never hoped that!"
+		prestige = 5
+		badboy = 2
+		treasury = -1000
+		801 = {
+			secede_province = THIS
+			naval_base = 1
+		}
+		ai_chance = { factor = 95 }
+	}
+	
+	option = {
+		name = "We have no interest in the Pacific."
+		prestige = -5
+		badboy = -2
+		ai_chance = { factor = 5 }
 	}
 }
