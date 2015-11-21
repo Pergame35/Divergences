@@ -1,0 +1,107 @@
+political_decisions = {
+    form_tatarstan = { 
+   
+        potential = { 
+        OR = { 
+        primary_culture = astrakhani 
+        primary_culture = crimean 
+        primary_culture = tatar
+            } 
+        NOT = { TAR = { exists = yes } }
+        }
+       
+        allow = { 
+        AND = {
+            OR = {
+                tag = CRI
+                AND = { 
+                    NOT = { CRI = { exists = yes } }
+                    owns = 967 #Sebastopol
+                    }
+                in_sphere = THIS
+                vassal_of = THIS
+                }
+            OR = {
+                tag = ASK
+                AND = { 
+                    NOT = { ASK = { exists = yes } }
+                    owns = 1036 #Astrakhan
+                    }
+                in_sphere = THIS
+                vassal_of = THIS
+                }
+            OR = {
+                tag = NOG
+                AND = { 
+                    NOT = { NOG = { exists = yes } }
+                    owns = 1182 #capital of Nogai
+                    }
+                in_sphere = THIS
+                vassal_of = THIS
+                }
+            }   
+        }
+   
+    effect = { 
+        any_country = {
+            limit = {
+                culture_group = tatar_group
+                OR = {
+                    in_sphere = THIS
+                    vassal_of = THIS
+                }
+            }
+            annex_to = THIS
+        }
+        CRI = { all_core = { add_core = TAR } }
+        ASK = { all_core = { add_core = TAR } }
+        NOG = { all_core = { add_core = TAR } }
+        SIB = { all_core = { add_core = TAR } }
+        add_accepted_culture = crimean 
+        add_accepted_culture = astrakhani 
+        add_accepted_culture = tatar
+        change_tag = TAR 
+        years_of_research = 1.0 # to help westernizing (You can only bank up to 1 year of RP. Maybe give them a RP boost modifier like the Incas if this isn't enough?)
+        prestige = 20 
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    #Makes Sevestapol and Astrakhan grow. More POPs for a unified Tataristan.
+    TAR_encourage_sedentarization = {
+        potential = {
+            tag = TAR
+            NOT = { has_country_flag = TAR_urbanization}
+        }
+        allow = {
+            is_civilized = yes
+            owns = 967 #Sebestapol
+            owns = 1036 #Astrakhan
+            medicine = 1 #City planning has a health component to it.
+
+        }
+        effect = {
+            set_country_flag = TAR_urbanization
+            967 = {
+                    life_rating = 5
+                    add_province_modifier = {
+                        name = baby_boom
+                        duration = 1825
+                    }     
+            }            
+            967 = {
+                    life_rating = 5
+                    add_province_modifier = {
+                        name = baby_boom
+                        duration = 1825
+                    }     
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+
+    }
+
+}
