@@ -42,7 +42,7 @@ country_event = {
 	option = {
 		name = "Do whatever it takes to help them."
 		prestige = -50
-		treasury = -1000000
+		treasury = -400000
 		set_country_flag = help_for_the_irish
 		set_country_flag = great_irish_famine
 		random_state = {
@@ -74,7 +74,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 25
+			factor = 35
 			modifier = {
 				factor = 0.5
 				economic_policy = laissez_faire
@@ -89,7 +89,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				NOT = { money = 1000000 }
+				NOT = { money = 400000 }
 			}
 		}
 	}
@@ -123,7 +123,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 50
+			factor = 40
 			modifier = {
 				factor = 0
 				NOT = { money = 100000 }
@@ -161,7 +161,7 @@ country_event = {
 		any_pop = {
 			limit = {
 				is_primary_culture = yes
-				location = { is_core = ENG }
+				location = { is_core = DUA }
 			}
 			scaled_consciousness = {
 				issue = laissez_faire
