@@ -1,0 +1,293 @@
+country_event = { 
+	id = 203500
+	title = "TAR1.T" #Mobilization of troops for the Khanates 
+	desc = "TAR1.D"
+	
+	trigger = { 
+	OR = { 
+	tag = NOG 
+	tag = ASK 
+	tag = CRI 
+	tag = SIB 
+		}
+	OR = { war_with = MUS war_with = RUS war_with = NOV }
+	NOT = { year = 1842 }
+	NOT = { has_country_flag = mobilization_TAR }
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = { 
+	name = "They won't get the Steppe so easily!"
+	set_country_flag = mobilization_TAR
+	add_country_modifier = {
+				name = taiping_draft
+				duration = 365
+		}
+	}
+
+}
+
+#Crimea's fate
+
+country_event = { 
+	id = 203510 
+	title = "TAR10.T" #Crisis of Succession
+	desc "TAR10.D"
+	picture = "Crimea"
+	
+	trigger = { 
+	tag = CRI 
+	NOT = { in_sphere = TUR }
+	NOT = { has_country_flag = succession_CRI }
+	}
+	
+	mean_time_to_happen = { 
+	months = 2
+	}
+	
+	option = { 
+	name = "Selim's plot succeeds and Murad is executed" # Selim = Conservative 
+	set_country_flag = succession_CRI
+	any_pop = { 
+	scaled_militancy = {
+			ideology = reactionary
+			factor = -6
+					}
+	scaled_militancy = {
+			ideology = liberal
+			factor = 5
+					}
+			}
+	ai_chance = { 
+	factor = 50 	
+		}
+	}
+	
+	option = { 
+	name = "Selim's plot backfires and Murad becomes heir"
+	set_country_flag = succession_CRI
+	set_country_flag = murad
+	any_pop = { 
+	scaled_militancy = {
+			ideology = reactionary
+			factor = 6
+					}
+	scaled_militancy = {
+			ideology = liberal
+			factor = -5
+					}
+			}
+	ai_chance = { 
+	factor = 50 	
+		}
+	}
+}
+
+country_event = { 
+	id = 203511 #Murad succeeds his father
+	title = "TAR11.T"
+	desc "TAR11.D"
+	picture = "Crimea"
+	
+	trigger = { 
+	has_country_flag = murad 
+	NOT = { has_country_flag = murad_khan }
+	}
+	
+	mean_time_to_happen = { 
+	months = 5
+	}
+	
+	option = { 
+	name = "A new era for Crimea!"
+	prestige = 5 
+	clr_country_flag = murad 
+	set_country_flag = murad_khan
+	}
+}
+
+country_event = { 
+	id = 203512 #Latin writing of Crimean language
+	title = "TAR12.T"
+	desc "TAR12.D"
+	picture = "Crimea"
+	
+	trigger = { 
+	has_country_flag = murad_khan 
+	NOT = { has_country_flag = crimean_standardized }
+	}
+	
+	mean_time_to_happen = { 
+	months = 15
+	}
+	
+	option = { 
+	name = "How do you read this ?"
+	any_pop = {
+			literacy = 0.1
+		}
+	set_country_flag = crimean_standardized
+	}
+}
+
+country_event = { 
+	id = 203513 #Ban on raids in the West (and maybe promotion of sedentarization ? would need its own chain I think) 
+	title = "TAR13.T"
+	desc "TAR13.D"
+	picture = "Crimea"
+	
+	trigger = { 
+	has_country_flag = murad_khan 
+	NOT = { has_country_flag = ban_raids }
+	}
+	
+	mean_time_to_happen = { 
+	months = 7
+	}
+	
+	option = { 
+	name = "With that we should secure our borders in the West!"
+	any_pop = { 
+		limit = { type = soldiers }
+		militancy = 2 
+	}
+	set_country_flag = ban_raids
+	relation = { who = PLC value = 150 }
+	relation = { who = MOL value = 100 }
+	relation = { who = UKR value = 50 }
+	}
+}
+
+country_event = { 
+	id = 203514 #Unification of the Steppes ?
+	title = "TAR14.T" #Conquest of Astrakhan
+	desc "TAR14.D"
+	picture = "tatar_soldiers"
+	
+	trigger = { 
+	has_country_flag = murad_khan 
+	ASK = { exists = yes }
+	war = no 
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = { 
+	months = 15
+	}
+	
+	option = { 
+	name = "Time to unify the Tatars!"
+	badboy = 10 
+	casus_belli = {
+				target = ASK
+				type = conquest
+				months = 24
+			}
+	war = {
+			target = ASK
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+	
+	option = { 
+	name = "It's not the right time ..."
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+}
+
+country_event = { 
+	id = 203515 #Unification of the Steppes ?
+	title = "TAR15.T" #Conquest of Nogai
+	desc "TAR15.D"
+	picture = "tatar_soldiers"
+	
+	trigger = { 
+	has_country_flag = murad_khan 
+	ASK = { exists = no }
+	owns = 1036 
+	NOG = { exists = yes }
+	war = no 
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = { 
+	months = 2
+	}
+	
+	option = { 
+	name = "We will finish what we have begun"
+	badboy = 7 
+	casus_belli = {
+				target = NOG
+				type = conquest
+				months = 24
+			}
+	war = {
+			target = NOG
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+	ai_chance = { 
+	factor = 100 
+		}
+	}
+	
+	option = { 
+	name = "It's not the right time ..."
+	ai_chance = { 
+	factor = 0 
+		}
+	}
+}
+
+country_event = { 
+	id = 203515 #Novgorodian opportunism
+	title = "TAR16.T" #Novgorod attacking for Tver 
+	desc "TAR16.D"
+	
+	fire_only_once = yes 
+	
+	trigger = { 
+	tag = NOV 
+	NOT = { war = yes truce_with = MUS }
+	OR = { MUS = { war_with = ASK } MUS = { war_with = NOG } MUS = { war_with = ASK } }
+	998 = { owned_by = MUS }
+	NOT = { year = 1845 } 
+	}
+	
+	mean_time_to_happen = { 
+	days = 16 }
+	
+	option = { 
+	name = "Let us try our chance!"
+	war = {
+			target = MUS
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 998
+			}
+			call_ally = yes
+		}
+	ai_chance = { 
+	factor = 80 
+		}
+	}
+	
+	option = { 
+	name = "We should not attempt this ..."
+	ai_chance = { 
+	factor = 20
+		}
+	}
+}
