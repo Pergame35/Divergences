@@ -1,6 +1,6 @@
 country_event = { 
 	id = 203500
-	title = "TAR1.T" #Mobilization of troops for the Khanates 
+	title = "TAR1.T"
 	desc = "TAR1.D"
 	
 	trigger = { 
@@ -28,12 +28,132 @@ country_event = {
 
 }
 
+country_event = { 
+	id = 203501 #Novgorodian opportunism
+	title = "TAR2.T"
+	desc = "TAR2.D"
+	picture = "Novgorod_SCA"
+	
+	fire_only_once = yes 
+	
+	trigger = { 
+	tag = NOV 
+	NOT = { war = yes truce_with = MUS }
+	OR = { MUS = { war_with = ASK } MUS = { war_with = NOG } MUS = { war_with = ASK } }
+	998 = { owned_by = MUS }
+	in_sphere = SCA 
+	NOT = { year = 1845 }
+	}
+	
+	mean_time_to_happen = { 
+	days = 16 }
+	
+	option = { 
+	name = "Let us try our chance!"
+	SCA = { country_event = 203502 }
+	ai_chance = { 
+	factor = 80 
+		}
+	}
+	
+	option = { 
+	name = "We should not attempt this ..."
+	prestige = -5 
+	ai_chance = { 
+	factor = 20
+		}
+	}
+}
+
+country_event = { 
+	id = 203502 #Novgorodian opportunism
+	title = "TAR3.T"
+	desc = "TAR3.D"
+	picture = "Novgorod_SCA"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "It is in our interest to weaken Moscow!"
+	FROM = { country_event = 203503 }
+	ai_chance = { 
+	factor = 90 
+	modifier = { 
+	factor = 0.5 
+	war = yes 
+			}
+		}
+	}
+	
+	option = { 
+	name = "Nay, let Moscow civilize the steppe for what we care..."
+	FROM = { country_event = 203504 }
+	}
+}
+
+country_event = { 
+	id = 203503 #Novgorodian opportunism
+	title = "TAR4.T"
+	desc = "TAR4.D"
+	picture = "Novgorod_SCA"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Copenhagen has always been there for us!"
+	create_alliance = SCA 
+	relation = { who = SCA value = 200 }
+	war = {
+			target = MUS
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 998
+			}
+			call_ally = yes
+		}
+	}
+}
+
+country_event = { 
+	id = 203504 #Novgorodian opportunism
+	title = "TAR5.T"
+	desc = "TAR5.D"
+	picture = "Novgorod_SCA"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Well we don't have much choice here ..."
+	prestige = -10 
+	relation = { who = SCA value = 50 }
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+	
+	option = { 
+	name = "We will do without them!"
+	break_alliance = SCA 
+	relation = { who = SCA value = -100 }
+	war = {
+			target = MUS
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 998
+			}
+		}
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+}
+
 #Crimea's fate
 
 country_event = { 
 	id = 203510 
-	title = "TAR10.T" #Crisis of Succession
-	desc "TAR10.D"
+	title = "TAR10.T"
+	desc = "TAR10.D"
 	picture = "Crimea"
 	
 	trigger = { 
@@ -47,7 +167,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Selim's plot succeeds and Murad is executed" # Selim = Conservative 
+	name = "Selim's plot succeeds and Murad is executed"
 	set_country_flag = succession_CRI
 	any_pop = { 
 	scaled_militancy = {
@@ -87,7 +207,7 @@ country_event = {
 country_event = { 
 	id = 203511 #Murad succeeds his father
 	title = "TAR11.T"
-	desc "TAR11.D"
+	desc = "TAR11.D"
 	picture = "Crimea"
 	
 	trigger = { 
@@ -110,8 +230,8 @@ country_event = {
 country_event = { 
 	id = 203512 #Latin writing of Crimean language
 	title = "TAR12.T"
-	desc "TAR12.D"
-	picture = "Crimea"
+	desc = "TAR12.D"
+	picture = "Crimean_school"
 	
 	trigger = { 
 	has_country_flag = murad_khan 
@@ -132,9 +252,9 @@ country_event = {
 }
 
 country_event = { 
-	id = 203513 #Ban on raids in the West (and maybe promotion of sedentarization ? would need its own chain I think) 
+	id = 203513 #Ban on raids in the West
 	title = "TAR13.T"
-	desc "TAR13.D"
+	desc = "TAR13.D"
 	picture = "Crimea"
 	
 	trigger = { 
@@ -161,8 +281,8 @@ country_event = {
 
 country_event = { 
 	id = 203514 #Unification of the Steppes ?
-	title = "TAR14.T" #Conquest of Astrakhan
-	desc "TAR14.D"
+	title = "TAR14.T"
+	desc = "TAR14.D"
 	picture = "tatar_soldiers"
 	
 	trigger = { 
@@ -206,8 +326,8 @@ country_event = {
 
 country_event = { 
 	id = 203515 #Unification of the Steppes ?
-	title = "TAR15.T" #Conquest of Nogai
-	desc "TAR15.D"
+	title = "TAR15.T"
+	desc = "TAR15D"
 	picture = "tatar_soldiers"
 	
 	trigger = { 
@@ -247,47 +367,6 @@ country_event = {
 	name = "It's not the right time ..."
 	ai_chance = { 
 	factor = 0 
-		}
-	}
-}
-
-country_event = { 
-	id = 203515 #Novgorodian opportunism
-	title = "TAR16.T" #Novgorod attacking for Tver 
-	desc "TAR16.D"
-	
-	fire_only_once = yes 
-	
-	trigger = { 
-	tag = NOV 
-	NOT = { war = yes truce_with = MUS }
-	OR = { MUS = { war_with = ASK } MUS = { war_with = NOG } MUS = { war_with = ASK } }
-	998 = { owned_by = MUS }
-	NOT = { year = 1845 } 
-	}
-	
-	mean_time_to_happen = { 
-	days = 16 }
-	
-	option = { 
-	name = "Let us try our chance!"
-	war = {
-			target = MUS
-			attacker_goal = {
-				casus_belli = acquire_core_state
-				state_province_id = 998
-			}
-			call_ally = yes
-		}
-	ai_chance = { 
-	factor = 80 
-		}
-	}
-	
-	option = { 
-	name = "We should not attempt this ..."
-	ai_chance = { 
-	factor = 20
 		}
 	}
 }

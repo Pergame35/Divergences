@@ -343,5 +343,35 @@ political_decisions = {
 		}
 	}	
 
-
+	moscow_expansion_steppes = { 
+	picture = RUS_tsar
+	potential = { 
+	tag = MUS
+	NOT = { has_country_flag = steppes_conquest }
+	NOT = { TAR = { exists = yes }}
+	}
+	
+	allow = {
+	OR = { 
+		AND = { 
+		rank = 16 
+		NOT = { SCA = { is_greater_power = yes } }
+			}
+		AND = { 
+		rank = 16 
+		year = 1845 
+				}
+		is_greater_power = yes 
+			}
+		}
+	
+	effect = { 
+	set_country_flag = steppes_conquest
+	prestige = 15 
+	RUS_1034 = { add_core = THIS }
+	RUS_979 = { add_core = THIS }
+	RUS_980 = { add_core = THIS }
+		}
+	
+	}
 }

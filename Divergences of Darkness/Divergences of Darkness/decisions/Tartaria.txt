@@ -1,5 +1,6 @@
 political_decisions = {
     form_tatarstan = { 
+	picture = Tatarstan
    
         potential = { 
         OR = { 
@@ -61,7 +62,7 @@ political_decisions = {
         add_accepted_culture = astrakhani 
         add_accepted_culture = tatar
         change_tag = TAR 
-        years_of_research = 1.0 # to help westernizing (You can only bank up to 1 year of RP. Maybe give them a RP boost modifier like the Incas if this isn't enough?)
+        years_of_research = 3.0
         prestige = 20 
         }
         ai_will_do = {
