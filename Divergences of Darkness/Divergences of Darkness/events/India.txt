@@ -9,6 +9,7 @@ country_event = {
 	NOT = { PNJ = { exists = yes } }
 	NOT = { has_country_flag = PNJ_revolt }
 	year = 1858
+	NOT = { has_country_flag = PNJ_capital }
 	}
 	
 	mean_time_to_happen = { 

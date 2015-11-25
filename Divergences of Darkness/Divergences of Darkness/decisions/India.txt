@@ -305,4 +305,25 @@ political_decisions = {
 	}
 	
 	}
+	
+	seize_bengal = {
+	
+	picture = Mughals
+		
+	potential = { 
+	tag = MUG 
+	NOT = { has_country_flag = Bengal_MUG }
+	}
+	
+	allow = { 
+	owns = 1251
+	owns = 1257 
+	}
+	
+	effect = { 
+	BEN = { all_core = { add_core = THIS } }
+	add_accepted_culture = bengali
+	}
+	
+	}
 }
