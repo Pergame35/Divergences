@@ -1,30 +1,62 @@
 political_decisions = {
 
 	kingdom_of_hanover = {
-		potential = {
-			tag = HAN
-			NOT = { has_country_flag = kingdom_of_hanover }
-		}
+        potential = {
+            tag = HAN
+            NOT = { has_country_flag = kingdom_of_hanover }
+        }
 
-		allow = {
-			war = no
-			is_greater_power = yes
-			owns = 536
-			owns = 539
-		}
+        allow = {
+            war = no
+            is_greater_power = yes
+      OR = {
+                government = absolute_monarchy
+                government = prussian_constitutionalism
+                government = hms_government
+            }
+      536 = {
+              OR = {
+                                owned_by = HAN
+                                owner = {
+                  tag = BRA
+                                    in_sphere = HAN
+                                }
+                            }     
+      }   
+      539 = {
+              OR = {
+                                owned_by = HAN
+                                owner = {
+                  tag = BRE
+                                    in_sphere = HAN
+                                }
+                            }     
+      }
+        }
 
-		effect = {
-			prestige = 10
-			HAM_528 = { add_core = HAN }
-			HAN_534 = { add_core = HAN }
-			HEK_568 = { add_core = HAN }
-			set_country_flag = kingdom_of_hanover
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+        effect = {
+            prestige = 10     
+      any_country = {
+            limit = {
+                war = no
+              in_sphere = HAN
+        OR = {
+         tag = BRA
+         tag = BRE
+        }
+            }
+            country_event = 11101
+          }
+            HAM_528 = { add_core = HAN }
+            HAN_534 = { add_core = HAN }
+            HEK_568 = { add_core = HAN }
+            set_country_flag = kingdom_of_hanover
+        }
+       
+        ai_will_do = {
+            factor = 1
+        }
+    }
 	
 	united_frisia = {
 		potential = {
