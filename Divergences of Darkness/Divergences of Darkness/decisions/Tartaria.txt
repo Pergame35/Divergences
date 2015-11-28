@@ -19,8 +19,8 @@ political_decisions = {
                     NOT = { CRI = { exists = yes } }
                     owns = 967 #Sebastopol
                     }
-                in_sphere = THIS
-                vassal_of = THIS
+            	CRI = { in_sphere = THIS }
+                CRI = { vassal_of = THIS }
                 }
             OR = {
                 tag = ASK
@@ -28,8 +28,8 @@ political_decisions = {
                     NOT = { ASK = { exists = yes } }
                     owns = 1036 #Astrakhan
                     }
-                in_sphere = THIS
-                vassal_of = THIS
+                ASK = { in_sphere = THIS }
+                ASK = { vassal_of = THIS }
                 }
             OR = {
                 tag = NOG
@@ -37,8 +37,8 @@ political_decisions = {
                     NOT = { NOG = { exists = yes } }
                     owns = 1182 #capital of Nogai
                     }
-                in_sphere = THIS
-                vassal_of = THIS
+               NOG = { in_sphere = THIS }
+               NOG = { vassal_of = THIS }
                 }
             }   
         }
