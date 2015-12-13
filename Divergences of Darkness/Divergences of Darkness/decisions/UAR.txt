@@ -15,7 +15,12 @@ political_decisions = {
 			NOT = { war = yes }
 			JOR = {
 				all_core = {
-					owned_by = THIS	
+					OR = {
+						owned_by = THIS
+						#Jordan wastelands
+						province_id = 910
+						province_id = 911	
+					}
 				}
 			}
 			SYR = {
@@ -41,7 +46,16 @@ political_decisions = {
 				}
 				NEJ = {
 					all_core = {
-						owned_by = THIS	
+						OR = {
+							owned_by = THIS
+							#Northern Arabian wastelands
+							province_id = 931
+							province_id = 1158 
+							#Southern Arabian wastelands
+							province_id = 2586
+							province_id = 1175
+							province_id = 1172
+						}
 					}
 				}
 			}
