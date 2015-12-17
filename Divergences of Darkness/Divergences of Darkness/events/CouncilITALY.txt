@@ -588,6 +588,8 @@ country_event = {
 	
 	fire_only_once = yes 
 	
+	major = yes 
+	
 	option = {
 		name = "They must be stopped"
 		relation = {
@@ -609,6 +611,7 @@ country_event = {
 				casus_belli = conquest
 			}
 		}
+	ITA = { country_event = 124217 }
 	set_country_flag = conquest_ITA
 	ai_chance = { 
 	factor = 80 
@@ -861,3 +864,17 @@ country_event = {
 		}
 	}
 }
+
+country_event = { 
+	id = 124216
+	title = "Aragonese Attack"
+	desc = "The King of Aragon has attacked us wanting to destroy the Italian Republic"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We will win in the end"
+	}
+}
+
+	

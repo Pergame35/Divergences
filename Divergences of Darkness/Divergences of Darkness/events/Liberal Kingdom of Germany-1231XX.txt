@@ -448,6 +448,10 @@ country_event = {
 			add_core = SGF
 		}
 		change_tag = SGF
+		add_country_modifier = {
+				name = taiping_draft2
+				duration = 365
+			}
 		BOH = { 
 			country_event = { id = 123104 days = 30 }
 		}
@@ -557,19 +561,13 @@ country_event = {
 	option = {
 		name = "EVTOPTA123104" #Let's teach them a lesson in equality!
 		war = {
-			target = FROM
+			target = SGF
 			attacker_goal = {
 				casus_belli = cut_down_to_size
 			}
 
 			defender_goal = {
 				casus_belli = status_quo
-			}
-		}
-		FROM = {
-			add_country_modifier = {
-				name = taiping_draft
-				duration = 365
 			}
 		}
 		ai_chance = {
@@ -591,7 +589,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB123104" #Just a minute...
-		FROM = {
+		SGF = {
 			add_casus_belli = {
 				target = THIS
 				type = acquire_state
@@ -616,19 +614,13 @@ country_event = {
 	option = {
 		name = "EVTOPTA123104" #Let's teach them a lesson in equality!
 		war = {
-			target = FROM
+			target = SGF
 			attacker_goal = {
 				casus_belli = cut_down_to_size
 			}
 
 			defender_goal = {
 				casus_belli = status_quo
-			}
-		}
-		FROM = {
-			add_country_modifier = {
-				name = taiping_draft2
-				duration = 365
 			}
 		}
 		ai_chance = {
@@ -650,7 +642,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB123104" #Just a minute...
-		FROM = {
+		SGF = {
 			add_casus_belli = {
 				target = THIS
 				type = acquire_state
@@ -675,6 +667,7 @@ country_event = {
 	
 	option = {
 		name = "Great!"
+		
 		BOH = {
 			prestige = -50
 		}
@@ -709,6 +702,42 @@ country_event = {
 			remove_core = SCA
 			remove_core = BOH
 		}
+		country_event = 123111
+	}
+}
+
+country_event = {
+	id = 123111 # Dissolution of HRE
+	title = "EVTNAME123110"
+	desc = "EVTDESC123110"
+	picture = "?"
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+	name = "We want to reconcile with Prague"
+	relation = { who = BOH value = 200 }
+	badboy = -5 
+	}
+	
+	option = { 
+	name = "We'll claim Lower Silesia"
+	badboy = 5 
+	682 = { add_core = THIS  }
+	683 = { add_core = THIS  }
+	}
+	
+	option = { 
+	name = "We'll claim all of Silesia"
+	badboy = 12
+	SIL = { all_core = { add_core = THIS }}
+	}
+	
+	option = { 
+	name = "Prague will bow under the German heel!"
+	badboy = 26 
+	BOH = { all_core = { add_core = THIS }}
 	}
 }
 

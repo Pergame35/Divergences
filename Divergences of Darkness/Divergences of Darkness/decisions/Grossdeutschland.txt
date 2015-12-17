@@ -43,28 +43,8 @@ political_decisions = {
 					add_core = GER
 				}
 			}
-			#Bohemia
-			BOH = {
-				all_core = {
-					add_core = GER
-				}
-			}
-			#Slovenia
-			SLO = {
-				all_core = {
-					add_core = GER
-				}
-			}
-			#Posen
-			PRU_701 = {
-				add_core = GER
-			}
 			#Alsace-Lorraine
 			FRA_412 = {
-				add_core = GER
-			}
-			#Tirol
-			AUS_612 = {
 				add_core = GER
 			}
 			capital = 564
@@ -103,11 +83,11 @@ political_decisions = {
 							province_id = 570
 							province_id = 571 
 							province_id = 533
+							province_id = 624
 						}
 					}
 			}
 		}
-	
 	effect = { 
 	set_global_flag = hre_formed
 	prestige = 50 
