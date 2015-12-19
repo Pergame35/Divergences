@@ -768,7 +768,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 120
 		modifier = {
 			factor = 10
 			has_country_flag = SAF_independence_refused
