@@ -317,13 +317,17 @@ political_decisions = {
 
 		allow = {
 			public_metting = yes_meeting
+			OR = { 
 			vote_franschise = wealth_weighted_voting
+			vote_franschise = wealth_voting
+			vote_franschise = universal_weighted_voting
+			vote_franschise = universal_voting
+			}
 			NOT { religious_policy = moralism }
 			nationalism_n_imperialism = 1
 			owns = 958 
 			owns = 718 
 			owns = 946
-			
 		}
 	
 		effect = { 
