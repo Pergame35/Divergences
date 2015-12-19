@@ -1204,7 +1204,8 @@ country_event = {
 	tag = JAP 
 	neighbour = CHG
 	CHG = { civilized = no }
-	NOT = { CHG = { has_country_flag = kawaguchi} }
+	NOT = { CHG = { has_country_flag = kawaguchi } }
+	NOT = { 1186 = { owned_by = CHG } 1465 = { owned_by = CHG }}
 	}
 	
 	fire_only_once = yes 

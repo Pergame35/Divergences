@@ -372,6 +372,7 @@ political_decisions = {
 				has_country_flag = baltic_claimed
 				year = 1890
 			}
+			NOT = { has_country_flag = north_integration }
 		}
 
 		allow = {
@@ -458,7 +459,7 @@ political_decisions = {
 			tag = SCA 
 			is_greater_power = yes 
 			has_country_flag = baltic_claimed
-			NOT = { has_global_flag = hre_formed has_global_flag = cae_formed has_country_flag = nordtyskland}
+			NOT = { has_global_flag = hre_formed has_global_flag = cae_formed has_country_flag = nordtyskland }
 		}
 	
 		allow = { 
