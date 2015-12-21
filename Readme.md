@@ -15,7 +15,6 @@ In perpetual beta some might say but slowly advancing toward a polished version.
 
 What needs to be done ? 
 - Graphics : you like the mod and are good with graphics such as making images for events/decisions then you can always contribute 
-- Finishing the Dual-Monarchy events and decisions (first on the list) 
 - Making new colonial nations in Africa. 
 - Adding colonial interactions between the Great Power in Asia to create a Great Game ITTL 
 - Redoing the map to make it more distinct from the real wolrd
