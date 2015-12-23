@@ -277,6 +277,7 @@ political_decisions = {
 	}
 	
 	ATL_recognized = {
+	picture = Atlantia 
 		potential = {
 			tag = AMA
 			NOT = { has_country_flag = ATL_recognized }
@@ -367,7 +368,7 @@ political_decisions = {
 	}
 	
 	new_amsterdam_treaty_border = { 
-	
+	picture = Congress_AMA
 		potential = { 
 		tag = AMA 
 		has_global_flag = borderAMA
@@ -391,7 +392,7 @@ political_decisions = {
 	}
 
 	new_amsterdam_treaty_guarani = { 
-	
+	picture = Congress_AMA
 		potential = { 
 		tag = AMA 
 		has_global_flag = AMAguarani
@@ -420,7 +421,7 @@ political_decisions = {
 	}	
 	
 	new_amsterdam_treaty_federation = { 
-	
+	picture = Congress_AMA
 		potential = { 
 		tag = AMA 
 		has_global_flag = Amerigue 
@@ -567,7 +568,7 @@ political_decisions = {
 	}
 
 	NAN_congress = { 
-	
+	picture = Congress_AMA
 	potential = { 
 	tag = AZL 
 	is_greater_power = yes 
@@ -609,6 +610,7 @@ political_decisions = {
 	}
 	
 	GRA_congress = { 
+	picture = Congress_AMA
 	
 	potential = { 
 	tag = AZL 
@@ -629,6 +631,7 @@ political_decisions = {
 	}
 
 	afro_french_slave_citizens = {
+	picture = acceptation_afro 
 		potential = {
 			OR = {
 				tag = AMA
@@ -685,6 +688,7 @@ political_decisions = {
 	}
 
 	afro_colombian_slave_citizens = {
+	picture = acceptation_afro 
 		potential = {
 			OR = {
 				tag = CLM
