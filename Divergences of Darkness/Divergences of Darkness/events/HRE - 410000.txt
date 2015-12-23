@@ -1975,6 +1975,7 @@ country_event = {
 	has_country_flag = frankfurt_unify 
 	NOT = { BOH = { exists = yes } }
 	NOT = { has_country_flag = Czechia }
+	NOT = { has_country_flag = civil_war_happened }
 	}
 	
 	mean_time_to_happen = { 
@@ -2050,6 +2051,7 @@ country_event = {
 	
 	option = { 
 	name = "When one attacks the Empire, the Empire strikes back !"
+	set_country_flag = civil_war_happened 
 	clr_global_flag = Prague_waiting 
 	set_global_flag = BOH_civil_war 
 	any_owned = { 
@@ -2105,7 +2107,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will support the Bohemians !"
+	name = "We will 'support' the Bohemians !"
 	casus_belli = {
 			target = HRE
 			type = cut_down_to_size
