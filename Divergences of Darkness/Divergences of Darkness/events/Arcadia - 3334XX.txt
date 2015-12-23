@@ -1961,8 +1961,31 @@ country_event = {
 	name = "Excellent, one step closer towards Arcadian domination of the (New) World!"
 	prestige = 25 
 	money = -1000000
+	random_owned = { 
+		owner = { 
+		has_country_flag = vinlandic_arcadia
+			}
+		country_event = 333474
+		}
+
 	}
 } 
+
+country_event = { 
+	id = 333474 #Xiazhou not concerned by this act
+	title = "DNGARC5.T"
+	desc = "DNGARC5.D"
+	picture = "Qingqiu_VIN"
+	
+	is_triggered_only = yes 
+
+	option = { 
+	name = "They'll integrate eventually..."
+	any_pop = { limit = { culture = qingqiuan } consciousness = 7 militancy = 3 }
+	DNG_4 = { add_core = DNG }
+	DNG_5 = { add_core = DNG }
+	}
+}
 
 ########################
 country_event = { 

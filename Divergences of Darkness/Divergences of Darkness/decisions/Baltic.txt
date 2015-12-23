@@ -1,31 +1,4 @@
 political_decisions = {
-
-	claim_prussia_as_big_german = {
-		potential = {
-			OR = {
-				tag = HRE
-				tag = GER
-			}
-			is_greater_power = yes
-			NOT = { has_global_flag = ger_pru }
-		}
-			
-		allow = { 
-			owns = 549
-			owns = 546 	
-			nationalism_n_imperialism = 1
-		}
-			
-		effect = { 
-			prestige = 10
-			badboy = 5
-			PRU = { all_core = { add_core = THIS } }
-			set_country_flag = ger_pru
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}	
 	
 	dominium_maris_baltici = {
 		potential = {

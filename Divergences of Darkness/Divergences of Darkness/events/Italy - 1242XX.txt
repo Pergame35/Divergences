@@ -663,17 +663,26 @@ country_event = { ##Status of Greece
 	tag = ITA 
 	owns = 834 
 	NOT = { has_country_flag = greece_status } 	
+	NOT = { has_country_flag = greek_integration }
 	}
 	
 	mean_time_to_happen = { 
-	months = 1
+	months = 25
 	}
 	
 	option = { 
 	name = "Greece shall be completely autonomous."
+	set_country_flag = greece_status
 	any_owned = { 
-			limit = {
+	limit = {
 		province_id = 826 
+		}
+	remove_core = GRE 
+	add_core = ITA
+		}
+	any_owned = { 
+	limit = {
+		province_id = 827 
 		}
 	remove_core = GRE 
 	add_core = ITA
@@ -685,9 +694,18 @@ country_event = { ##Status of Greece
 	
 	option = { 
 	name = "We will keep the Greek islands where Venetians are present."
+	set_country_flag = greece_status
+	badboy = 3
 	any_owned = { 
 			limit = {
 		province_id = 826 
+		}
+	remove_core = GRE 
+	add_core = ITA
+		}
+	any_owned = { 
+	limit = {
+		province_id = 827 
 		}
 	remove_core = GRE 
 	add_core = ITA
@@ -703,9 +721,18 @@ country_event = { ##Status of Greece
 	
 	option = { 
 	name = "We will keep all Greece !"
+	set_country_flag = greece_status
+	badboy = 10 
 	any_owned = { 
-			limit = {
+	limit = {
 		province_id = 826 
+		}
+	remove_core = GRE 
+	add_core = ITA
+		}
+	any_owned = { 
+	limit = {
+		province_id = 827 
 		}
 	remove_core = GRE 
 	add_core = ITA
