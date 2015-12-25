@@ -409,6 +409,12 @@ the_homestead_act = {
 	icon = 9
 }
 
+the_homestead_act2 = {
+	global_immigrant_attract = 0.5	#50%
+	global_assimilation_rate = 0.5
+	icon = 9
+}
+
 the_slavery_debate = {
 	global_pop_consciousness_modifier = 0.25
 	icon = 4
