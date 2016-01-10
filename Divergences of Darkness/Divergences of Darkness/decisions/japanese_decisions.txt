@@ -67,8 +67,7 @@ political_decisions = {
       NOT = { has_country_flag = retry_jap } 
 			ideological_thought = 1
       KOR = {
-				exists = yes
-        civilized = no
+			exists = yes
 			}
 		}
 
@@ -184,8 +183,13 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			set_country_flag = high_castle
-			badboy = 5
+			badboy = 20
       DNG = { country_event = 334302 }
+	  add_casus_belli = {
+				target = DNG
+				type = conquest
+				months = 24
+		 }
       war = {
 				target = DNG
 				attacker_goal = {
@@ -201,7 +205,7 @@ political_decisions = {
 			}   
       modifier = {
 				factor = 0
-				NOT = { badboy = 0.2 } 
+				NOT = { badboy = 0.8 } 
 			} 
       modifier = {
 				factor = 0
