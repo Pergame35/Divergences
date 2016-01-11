@@ -303,4 +303,291 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	take_egyptian_desert = {
+        potential = {
+            OR = {
+                owns = 1760
+                owns = 1759
+            }
+            1758 = { empty = yes }
+        }
+
+        allow = {
+            organic_chemistry = 1
+        }
+
+        effect = {
+            prestige = 10
+            1758 = { secede_province = THIS }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    take_cyrenaican_desert = {
+        potential = {
+            owns = 1735
+            1739 = { empty = yes }
+        }
+
+        allow = {
+            organic_chemistry = 1
+        }
+
+        effect = {
+            prestige = 10
+            1739 = { secede_province = THIS }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    take_tripolitanian_desert = {
+        potential = {
+            OR = {
+                owns = 1742
+                owns = 1744
+                owns = 1732
+            }
+            1743 = { empty = yes }
+        }
+  
+        allow = {
+            organic_chemistry = 1
+        }
+  
+        effect = {
+            prestige = 10
+            1743 = { secede_province = THIS }
+        }
+  
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    take_lybian_desert = {
+        potential = {
+            OR = {
+                owns = 1742
+                owns = 1740
+            }
+            2585 = { empty = yes }
+        }
+
+        allow = {
+            organic_chemistry = 1
+        }
+
+        effect = {
+            prestige = 10
+            2585 = { secede_province = THIS }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    take_nubian_desert = {
+        potential = {
+            owns = 1835
+            2564 = { empty = yes }
+        }
+
+        allow = {
+            organic_chemistry = 1
+        }
+
+        effect = {
+            prestige = 10
+            2564 = { secede_province = THIS }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    take_iraqi_desert = {
+        potential = {
+            owns = 926
+            931 = { empty = yes }
+        }
+  
+        allow = {
+            OR = {
+                owns = 1160
+                organic_chemistry = 1
+            }
+        }
+
+        effect = {
+            prestige = 10
+            931 = { secede_province = THIS }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    take_yemenit_desert = {
+        potential = {
+            owns = 1178
+            1175 = { empty = yes }
+        }
+
+        allow = {
+            OR = {
+                owns = 2586
+                organic_chemistry = 1
+            }
+        }
+
+        effect = {
+            prestige = 10
+            1175 = { secede_province = THIS }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    take_omanese_desert = {
+        potential = {
+            owns = 1166
+            1172 = { empty = yes }
+        }
+
+        allow = {
+            OR = {
+                owns = 2586
+                organic_chemistry = 1
+            }
+        }
+
+        effect = {
+            prestige = 10
+            1172 = { secede_province = THIS }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    take_nejd_desert = {
+        potential = {
+            owns = 1157
+            2586 = { empty = yes }
+        }
+
+        allow = {
+            OR = {
+                owns = 1167
+                organic_chemistry = 1
+            }
+        }
+
+        effect = {
+            prestige = 10
+            2586 = { secede_province = THIS }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    take_hail_desert = {
+        potential = {
+            owns = 1160
+            1158 = { empty = yes }
+        }
+  
+        allow = {
+            OR = {
+                owns = 926
+                organic_chemistry = 1
+            }
+        }
+
+        effect = {
+            prestige = 10
+            931 = { secede_province = THIS }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    take_jordan_desert = {
+        potential = {
+            owns = 908
+            911 = { empty = yes }
+        }
+
+        allow = {
+            OR = {
+                owns = 1154  
+                organic_chemistry = 1
+            }
+        }
+
+        effect = {
+            prestige = 10
+            931 = { secede_province = THIS }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    take_middle_desert = {
+        potential = {
+            OR = {
+                owns = 1160
+                owns = 908
+            }
+            910 = { empty = yes }
+        }
+
+        allow = {
+            OR = {
+                AND = {
+                    owns = 911
+                    owns = 1158
+                }
+                AND = {
+                    owns = 911
+                    owns = 1160
+                }
+                AND = {
+                    owns = 911
+                    organic_chemistry = 1
+                }
+                AND = {
+                    owns = 1158
+                    organic_chemistry = 1
+                }
+            }
+        }
+        effect = {
+            prestige = 10
+            910 = { secede_province = THIS }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
 }
