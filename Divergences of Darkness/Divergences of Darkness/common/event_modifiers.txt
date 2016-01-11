@@ -409,6 +409,12 @@ the_homestead_act = {
 	icon = 9
 }
 
+the_homestead_act2 = {
+	global_immigrant_attract = 0.5	#50%
+	global_assimilation_rate = 0.5
+	icon = 9
+}
+
 the_slavery_debate = {
 	global_pop_consciousness_modifier = 0.25
 	icon = 4
@@ -2438,3 +2444,12 @@ pompeji_excavations = {
 	prestige = 0.01
 	icon = 3
 }
+
+#Expires after 20 years
+gateway_to_russia = {
+	immigrant_attract = 2 #Local
+	population_growth = 0.003
+	assimilation_rate = 2
+	icon = 9
+}
+

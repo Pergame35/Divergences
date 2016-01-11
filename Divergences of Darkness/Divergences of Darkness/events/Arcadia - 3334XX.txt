@@ -1800,6 +1800,193 @@ country_event = {
 	}
 }
 
+country_event = { 
+	id = 333470
+	title = "DNGARC1.T"
+	desc = "DNGARC1.D"
+	picture = "ARC_WEST"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Our claims are clearly defined, now it is their turn"
+	NA_30 = { add_core = THIS }
+	NA_15 = { add_core = THIS }
+	NA_14 = { add_core = THIS }
+	NA_13 = { add_core = THIS }
+	NA_5 = { add_core = THIS }
+	NA_6 = { add_core = THIS }
+	DNG = { country_event = 333471 }
+	}
+}
+
+country_event = { 
+	id = 333471
+	title = "DNGARC2.T"
+	desc = "DNGARC2.D"
+	picture = "ARC_WEST"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We will sign it, better to gain a hefty sum of money from this loss..."
+	any_owned = { 
+	limit = { is_core = ARC }
+	remove_core = DNG 
+	secede_province = ARC 
+		}
+	any_country = {
+		any_owned = { 
+			limit = { is_core = ARC }
+			remove_core = DNG 
+			secede_province = ARC 
+			}
+		}
+	FROM = { country_event = 333473 }
+	money = 1000000
+	ai_chance = { 
+	factor = 70 
+	modifier = { 
+	factor = 0.9 
+	NOT = { relation = { who = ARC value = 0 } }
+			}
+	modifier = { 
+	factor = 0.8
+	NOT = { relation = { who = ARC value = -50 } }
+			}
+	modifier = { 
+	factor = 0.7
+	NOT = { relation = { who = ARC value = -100 } }
+			}
+	modifier = { 
+	factor = 0.6
+	NOT = { relation = { who = ARC value = -150 } }
+			}
+	modifier = { 
+	factor = 0.8
+	NOT = { in_sphere = FROM }
+			}
+	modifier = { 
+	factor = 1.2
+	NOT = { in_sphere = THIS }
+			}
+	modifier = { 
+	factor = 0.7
+	rank = 16
+			}
+	modifier = { 
+	factor = 1.1 
+	relation = { who = ARC value = 50 }
+			}
+	modifier = { 
+	factor = 1.2
+	relation = { who = ARC value = 100 }
+			}
+	modifier = { 
+	factor = 1.3
+	relation = { who = ARC value = 150 }
+			}
+	modifier = {
+				factor = 2
+				ARC = { brigades_compare = 2 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					ARC = { brigades_compare = 1 }
+				}
+			}
+		}
+	}
+	
+	option = { 
+	name = "We won't be manipulated like that!"
+	prestige = 15 
+	FROM = { country_event = 333472 }
+	}
+}
+
+country_event = { 
+	id = 333472
+	title = "DNGARC3.T"
+	desc = "DNGARC3.D"
+	picture = "ARC_WEST"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Our military could use the target practice."
+		war_exhaustion = -20
+		relation = { who = FROM value = -200 }
+		diplomatic_influence = { who = FROM value = -200 }
+		leave_alliance = FROM
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+				country = THIS
+			}
+		}
+		any_pop = {
+			limit = { has_pop_culture = qingqiuan  }
+			militancy = 6
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+	name = "We don't need this to come to a war yet."
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = { 
+	id = 333473
+	title = "DNGARC4.T"
+	desc = "DNGARC4.D"
+	major = yes 
+	
+	is_triggered_only = yes
+	
+	option = { 
+	name = "Excellent, one step closer towards Arcadian domination of the (New) World!"
+	prestige = 25 
+	money = -1000000
+	random_owned = { 
+		owner = { 
+		has_country_flag = vinlandic_arcadia
+			}
+		country_event = 333474
+		}
+
+	}
+} 
+
+country_event = { 
+	id = 333474 #Xiazhou not concerned by this act
+	title = "DNGARC5.T"
+	desc = "DNGARC5.D"
+	picture = "Qingqiu_VIN"
+	
+	is_triggered_only = yes 
+
+	option = { 
+	name = "They'll integrate eventually..."
+	any_pop = { limit = { culture = qingqiuan } consciousness = 7 militancy = 3 }
+	DNG_4 = { add_core = DNG }
+	DNG_5 = { add_core = DNG }
+	}
+}
+
 ########################
 country_event = { 
 	id = 333500

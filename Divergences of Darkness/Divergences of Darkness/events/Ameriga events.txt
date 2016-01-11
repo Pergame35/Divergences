@@ -1592,6 +1592,7 @@ country_event = {
 			75 = { 
 				add_accepted_culture = beornian
 				badboy = -5
+				set_country_flag = beornia_accepted
 			}
 			25 = { 
 				any_pop = {
@@ -1621,6 +1622,7 @@ country_event = {
 			50 = { 
 				add_accepted_culture = granadan
 				badboy = -5
+				set_country_flag = ameriga_united
 			}
 			50 = { 
 				any_pop = {

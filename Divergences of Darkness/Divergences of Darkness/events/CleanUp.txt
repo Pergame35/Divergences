@@ -271,6 +271,7 @@ country_event = {
 		NOT = { government = fascist_dictatorship }
 		ruling_party_ideology = fascist
 		average_militancy = 3
+		year = 1905
 		OR = {
 			num_of_revolts = 1
 			national_provinces_occupied = .10

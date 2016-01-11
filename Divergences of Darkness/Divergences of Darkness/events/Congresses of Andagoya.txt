@@ -33,6 +33,20 @@ country_event = {
 		any_pop = {
     			consciousness = 1
 		}
+		RAP = {
+			set_variable = {
+				which = colombian_unity
+				value = 0
+			}
+			set_variable = {
+				which = granadan_separatists
+				value = 0
+			}
+			set_variable = {
+				which = dismantlement_clm
+				value = 0
+			}
+		}
 		set_global_flag = congress_of_panama
 		remove_country_modifier = CLM_fight
 		CUB = { all_core = { add_core = THIS } }
@@ -43,30 +57,363 @@ country_event = {
 
 	id = 46408
 
-	title = "EVTNAME46408"
-	desc = "EVTDESC46408"
-	picture = "Administration"
-	 
-
-	trigger = {
-		tag = CLM        
-   		war = no
-		has_global_flag = congress_of_panama
-		NOT = {
-			has_global_flag = congress_of_panama_over
+	title = "Andagoya1.T"
+	desc = "Andagoya1.D"
+	picture = "La_Independencia_del_Perú"
+	
+	trigger = { 
+	tag = CLM 
+	has_global_flag = congress_of_panama
+	NOT = { has_global_flag = congress_of_panama_over }
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = { 
+	days = 1 
+	}
+	
+	option = { 
+	name = "Miranda and the Colombians take the stage"
+	RAP = {
+			change_variable = {
+				which = colombian_unity
+				value = 1
+			}
+		}
+	ai_chance = { 
+	factor = 40 
 		}
 	}
 	
-	mean_time_to_happen = {
-		months = 3
+	option = { 
+	name = "The Granadan independentists secure the first debates"
+	RAP = {
+			change_variable = {
+				which = granadan_separatists
+				value = 1
+			}
+		}
+	ai_chance = { 
+	factor = 35 
+		}
 	}
+	
+	option = { 
+	name = "The Federalistas critics convince the assembly"
+	RAP = {
+			change_variable = {
+				which = dismantlement_clm
+				value = 1
+			}
+		}
+	ai_chance = { 
+	factor = 25 
+		}
+	}
+	
+}
 
+country_event = {
+
+	id = 46401
+
+	title = "Andagoya2.T"
+	desc = "Andagoya2.D"
+	picture = "troubles_in_streets"
+	
+	trigger = { 
+	tag = CLM 
+	has_global_flag = congress_of_panama
+	NOT = { has_global_flag = congress_of_panama_over }
+	NOT = { has_country_flag = trouble_streets }
+	}
+	
+	mean_time_to_happen = { 
+	days = 2 
+	}
+	
+	option = { 
+	name = "The Granadans are to blame here obviously ..."
+	set_country_flag = trouble_streets
+	RAP = {
+			change_variable = {
+				which = granadan_separatists
+				value = 1
+			}
+		}
+	any_pop = { 
+	limit = { culture = granadan } militancy = 2 }
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+	
+	option = { 
+	name = "Salvadorians should have behave!"
+	set_country_flag = trouble_streets
+	RAP = {
+			change_variable = {
+				which = dismantlement_clm
+				value = 1
+			}
+		}
+	any_pop = { 
+	limit = { culture = central_american  } militancy = 2 
+		}
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+}
+
+country_event = {
+
+	id = 46402
+
+	title = "Andagoya3.T"
+	desc = "Andagoya3.D"
+	picture = "colombian_clergy"
+	
+	trigger = { 
+	tag = CLM 
+	has_global_flag = congress_of_panama
+	NOT = { has_global_flag = congress_of_panama_over }
+	NOT = { has_country_flag = priests_CLM }
+	}
+	
+	mean_time_to_happen = { 
+	days = 3 
+	}
+	
+	option = { 
+	name = "God wills it!"
+	set_country_flag = priests_CLM 
+	RAP = {
+			change_variable = {
+				which = colombian_unity
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 46403
+
+	title = "Andagoya3.T"
+	desc = "Andagoya4.D"
+	picture = "colombian_clergy"
+	
+	trigger = { 
+	tag = CLM 
+	has_global_flag = congress_of_panama
+	NOT = { has_global_flag = congress_of_panama_over }
+	NOT = { has_country_flag = priests_CLM }
+	}
+	
+	mean_time_to_happen = { 
+	days = 3 
+	}
+	
+	option = { 
+	name = "God wills it!"
+	set_country_flag = priests_CLM 
+	RAP = {
+			change_variable = {
+				which = granadan_separatists
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 46404
+
+	title = "Andagoya3.T"
+	desc = "Andagoya5.D"
+	picture = "colombian_clergy"
+	
+	trigger = { 
+	tag = CLM 
+	has_global_flag = congress_of_panama
+	NOT = { has_global_flag = congress_of_panama_over }
+	NOT = { has_country_flag = priests_CLM }
+	}
+	
+	mean_time_to_happen = { 
+	days = 3 
+	}
+	
+	option = { 
+	name = "God wills it!"
+	set_country_flag = priests_CLM 
+	RAP = {
+			change_variable = {
+				which = dismantlement_clm
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 46405
+
+	title = "Andagoya6.T"
+	desc = "Andagoya6.D"
+	picture = "colombian_military"
+	
+	trigger = { 
+	tag = CLM 
+	has_global_flag = congress_of_panama
+	NOT = { has_global_flag = congress_of_panama_over }
+	NOT = { has_country_flag = caudillos }
+	}
+	
+	mean_time_to_happen = { days = 10 }
+	
+	option = { 
+	name = "The Army was fundamental in liberating the New World and shall keep certain priviliges"
+	any_pop = { limit = { OR = { type = officers type = soldiers } } militancy = -3 }
+	set_country_flag = caudillos 
+	RAP = {
+			change_variable = {
+				which = dismantlement_clm
+				value = 1
+			}
+			change_variable = {
+				which = granadan_separatists
+				value = 1
+			}
+		}
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+	
 	option = {
-		name = "EVTOPTA46408"
-		random_list = {
-			40 = { country_event = 46409 }
-			35 = { country_event = 46410 }
-			25 = { country_event = 46412 }
+	name = "Our new state should avoid giving too much power to the military"
+	any_pop = { limit = { OR = { type = officers type = soldiers } } militancy = 3 }
+	set_country_flag = caudillos
+	RAP = {
+			change_variable = {
+				which = colombian_unity
+				value = 1
+			}
+		}
+	ai_chance = { 
+	factor = 50 
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 46406
+
+	title = "Andagoya7.T"
+	desc = "Andagoya7.D"
+	picture = "casta"
+	
+	trigger = { 
+	tag = CLM 
+	has_global_flag = congress_of_panama
+	NOT = { has_global_flag = congress_of_panama_over }
+	NOT = { has_country_flag = castas }
+	}
+	
+	mean_time_to_happen = { 
+	days = 5 
+	}
+	
+	option = { 
+	name = "We are Gran Colombia, a Hispanic country!"
+	any_pop = { limit = { OR = { culture = zapotec culture = nahua culture = quechua culture = tarascan  culture = mayan } } militancy = 4 }
+	set_country_flag = castas
+	RAP = {
+			change_variable = {
+				which = colombian_unity
+				value = 1
+			}
+		}
+	ai_chance = { 
+	factor = 70 
+		}
+	}
+	
+	option = { 
+	name = "We could maybe grant them some concessions. "
+	any_pop = { limit = { OR = { culture = mexican culture = lusitanian culture = granadan culture = central_american } } militancy = 2 }
+	set_country_flag = castas
+	RAP = {
+			change_variable = {
+				which = dismantlement_clm
+				value = 1
+			}
+		}
+	ai_chance = { 
+	factor = 30 
+		}
+	}
+}
+
+country_event = {
+
+	id = 46407
+
+	title = "Andagoya8.T"
+	desc = "Andagoya8.D"
+	picture = "slave_revolt"
+	
+	trigger = { 
+	tag = CLM 
+	has_global_flag = congress_of_panama
+	NOT = { has_global_flag = congress_of_panama_over }
+	NOT = { has_country_flag = slavery }
+	}
+	
+	mean_time_to_happen = { 
+	days = 5 
+	}
+	
+	option = { 
+	name = "We should not anger the local hacendados..."
+	any_pop = { limit = { type = aristocrats } militancy = -2 }
+	set_country_flag = slavery
+	RAP = {
+			change_variable = {
+				which = colombian_unity
+				value = 1
+			}
+		}
+	ai_chance = { 
+	factor = 70 
+		}
+	}
+	
+	option = { 
+	name = "We will abolish this inhumane practise!"
+	any_pop = { limit = { type = aristocrats } militancy = 5 }
+	set_country_flag = slavery
+	political_reform = no_slavery
+	RAP = {
+			change_variable = {
+				which = dismantlement_clm
+				value = 1
+			}
+			change_variable = {
+				which = granadan_separatists
+				value = 1
+			}
+		}
+	ai_chance = { 
+	factor = 30 
 		}
 	}
 }
@@ -78,8 +425,48 @@ country_event = {
 	title = "EVTNAME46409"
 	desc = "EVTDESC46409"
 	picture = "Administration"
+		
+	trigger = { 
+	tag = CLM 
+	has_global_flag = congress_of_panama 
+	NOT = { has_global_flag = congress_of_panama_over }
+	RAP = { check_variable = {
+				which = colombian_unity
+				value = 1
+			}
+		}
+	}
 	
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 60
+		modifier = {
+			factor = 0.75
+			RAP = {
+				check_variable = {
+					which = colombian_unity
+					value = 2
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			RAP = {
+				check_variable = {
+					which = colombian_unity
+					value = 3
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			RAP = {
+				check_variable = {
+					which = colombian_unity
+					value = 4
+				}
+			}
+		}
+	}
 	major = yes
 
 	option = {
@@ -93,7 +480,7 @@ country_event = {
 					}
 			}
 			militancy = 2
-      			consciousness = 4
+      		consciousness = 4
 		}
 		add_accepted_culture = lusitanian
 		add_accepted_culture = central_american
@@ -101,7 +488,6 @@ country_event = {
 		prestige = 25
 		set_global_flag = congress_of_panama_over
 		set_global_flag = columbian_unity
-		
 	}
 }
 
@@ -111,10 +497,49 @@ country_event = {
 
 	title = "EVTNAME46410"
 	desc = "EVTDESC46410"
-	picture = "Administration"
-	
-	is_triggered_only = yes
 	major = yes
+	
+	trigger = { 
+	tag = CLM 
+	has_global_flag = congress_of_panama 
+	NOT = { has_global_flag = congress_of_panama_over }
+	RAP = { check_variable = {
+				which = granadan_separatists
+				value = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+		modifier = {
+			factor = 0.75
+			RAP = {
+				check_variable = {
+					which = granadan_separatists
+					value = 2
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			RAP = {
+				check_variable = {
+					which = granadan_separatists
+					value = 3
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			RAP = {
+				check_variable = {
+					which = granadan_separatists
+					value = 4
+				}
+			}
+		}
+	}
 
 	option = {
 		name = "EVTOPTA46410"
@@ -171,7 +596,47 @@ country_event = {
 	desc = "EVTDESC46412"
 	picture = "Administration"
 	
-	is_triggered_only = yes
+	trigger = { 
+	tag = CLM 
+	has_global_flag = congress_of_panama 
+	NOT = { has_global_flag = congress_of_panama_over }
+	RAP = { check_variable = {
+				which = dismantlement_clm
+				value = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+		modifier = {
+			factor = 0.75
+			RAP = {
+				check_variable = {
+					which = dismantlement_clm
+					value = 2
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			RAP = {
+				check_variable = {
+					which = dismantlement_clm
+					value = 3
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			RAP = {
+				check_variable = {
+					which = dismantlement_clm
+					value = 4
+				}
+			}
+		}
+	}
 	major = yes
 
 	option = {

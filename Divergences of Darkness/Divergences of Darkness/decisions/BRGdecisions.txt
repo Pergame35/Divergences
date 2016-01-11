@@ -346,4 +346,117 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	move_to_namur = { 
+	
+		potential = { 
+		tag = BRG 
+		NOT = { owns = 381 }
+		owns = 392 
+		NOT = { has_country_flag = anvers_lost }
+		}
+		
+		allow = { 
+		NOT = { owns = 381 }
+		}
+		
+		effect = { 
+		set_country_flag = anvers_lost
+		capital = 392 
+		}
+	}
+	
+	move_back_anvers = { 
+		potential = { 
+			tag = BRG 
+			has_country_flag = anvers_lost
+		}
+	
+		allow = { 
+			owns = 381
+			owns = 390 
+		}
+	
+		effect = { 
+			clr_country_flag = anvers_lost 
+			capital = 390 
+		}
+		
+	}
+	
+	reclaim_flanders = { 
+		potential = { 
+		tag = NET 
+		exists = yes 
+		all_core = { owned_by = THIS }
+		NOT = { has_country_flag = flanders_reclaimed }
+		}
+		
+		allow = { 
+		nationalism_n_imperialism = 1 
+		OR = { 
+		AND = { 
+			BRG = { is_greater_power = no }
+			rank = 16 
+				}
+		AND = { 
+			BRG = { is_greater_power = yes }
+			is_greater_power = yes 
+				}
+			}
+		}
+		
+		effect = { 
+		set_country_flag = flanders_reclaimed 
+		BUR_390 = { add_core = NET }
+		BEL_387 = { add_core = NET }
+		}
+	
+	}
+	
+	dutch_flanders = { 
+		potential = { 
+			tag = NET  
+			has_country_flag = flanders_reclaimed 
+			NOT = { has_global_flag = flanders_renamed }
+		}
+		
+		allow = { 
+		all_core = { owned_by = THIS }
+		}
+		
+		effect = { 
+		387 = { change_province_name = "Brussel" }
+		388 = { change_province_name = "Brugge" }
+		389 = { change_province_name = "Ghent" }
+		390 = { change_province_name = "Antwerp" }
+		393 = { change_province_name = "Doornik"}
+		2636 = { change_province_name = "Dunkirk" }
+		set_global_flag = flanders_renamed
+		}
+	}
+	
+	burgundian_flanders = {
+	
+		potential = { 
+		has_global_flag = flanders_renamed
+		}
+		
+		allow = { 
+		387 = { owned_by = THIS }
+		388 = { owned_by = THIS }
+		2636 = { owned_by = THIS }
+		}
+		
+		effect = { 
+		clr_global_flag = flanders_renamed
+		387 = { change_province_name = "Bruxelles" }
+		388 = { change_province_name = "Bruges" }
+		389 = { change_province_name = "Gand" }
+		390 = { change_province_name = "Anvers" }
+		393 = { change_province_name = "Tournai"}
+		2636 = { change_province_name = "Dunkerque" }
+		}
+	
+	}
 }

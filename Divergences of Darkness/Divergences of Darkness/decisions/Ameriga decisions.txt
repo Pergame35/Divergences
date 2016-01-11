@@ -277,6 +277,7 @@ political_decisions = {
 	}
 	
 	ATL_recognized = {
+	picture = Atlantia 
 		potential = {
 			tag = AMA
 			NOT = { has_country_flag = ATL_recognized }
@@ -367,7 +368,7 @@ political_decisions = {
 	}
 	
 	new_amsterdam_treaty_border = { 
-	
+	picture = Congress_AMA
 		potential = { 
 		tag = AMA 
 		has_global_flag = borderAMA
@@ -391,7 +392,7 @@ political_decisions = {
 	}
 
 	new_amsterdam_treaty_guarani = { 
-	
+	picture = Congress_AMA
 		potential = { 
 		tag = AMA 
 		has_global_flag = AMAguarani
@@ -420,7 +421,7 @@ political_decisions = {
 	}	
 	
 	new_amsterdam_treaty_federation = { 
-	
+	picture = Congress_AMA
 		potential = { 
 		tag = AMA 
 		has_global_flag = Amerigue 
@@ -516,7 +517,7 @@ political_decisions = {
 	}
 	
 	Northern_border = { 
-	
+	picture = Guyana
 	potential = { 
 	tag = AZL 
 	is_greater_power = yes 
@@ -567,7 +568,7 @@ political_decisions = {
 	}
 
 	NAN_congress = { 
-	
+	picture = Congress_AMA
 	potential = { 
 	tag = AZL 
 	is_greater_power = yes 
@@ -581,6 +582,7 @@ political_decisions = {
 	
 	effect = { 
 	AZL = { country_event = 775414 }
+	set_country_flag = congress_NAN
 	}
 	
 	
@@ -609,6 +611,7 @@ political_decisions = {
 	}
 	
 	GRA_congress = { 
+	picture = Congress_AMA
 	
 	potential = { 
 	tag = AZL 
@@ -623,12 +626,145 @@ political_decisions = {
 	
 	effect = { 
 	AZL = { country_event = 775415 }
+	set_country_flag = congress_GRA
 	}
 	
+	}
+	
+	integrate_beornians = { 
+	
+	potential = {
+	owns = 2348 
+	NOT = { has_country_flag = beornia_accepted }
+	has_country_flag = congress_NAN
+	}
+	
+	allow = { 
+	NAN = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			nationalism_n_imperialism = 1
+			OR = {
+				rank = 4
+				revolution_n_counterrevolution = 1
+			}
+	}
+	
+	effect = { 
+	add_accepted_culture = beornian
+	prestige = 15 
+	set_country_flag = beornia_accepted
+	}
+	
+	}
+	
+	integrate_granadan = { 
+	
+	potential = {
+	owns = 2348 
+	has_country_flag = congress_GRA
+	NOT = { has_country_flag = ameriga_united }
+	}
+	
+	allow = { 
+	AZL = {
+		all_core = {
+					owned_by = THIS
+				}
+			}
+			nationalism_n_imperialism = 1
+			OR = {
+				rank = 4
+				revolution_n_counterrevolution = 1
+			}
+	}
+	
+	effect = { 
+	add_accepted_culture = granadan
+	prestige = 15 
+	set_country_flag = ameriga_united
+	}
 	
 	}
 
+	embrace_ameriganism = {       
+    picture = "Panarcadianism"
+		potential = {
+		tag = AZL
+      has_country_flag = ameriga_united
+      NOT = { has_country_flag = amerigan_ideal }
+		}
+		allow = {
+			is_greater_power = yes
+			political_thought = 1  
+		war = no  
+		}
+		effect = {
+		prestige = 30			
+		set_country_flag = amerigan_ideal 
+        nationalvalue = nv_prosperity
+		any_pop = {
+			limit = {
+				is_accepted_culture = yes
+			}
+			militancy = -2
+      consciousness = 2
+			scaled_consciousness = {
+					ideology = liberal
+					factor = 1
+				}      
+		}         
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+			} 
+			scaled_militancy = {
+					ideology = fascist
+					factor = 3
+			}    
+			scaled_militancy = {
+					ideology = conservative
+					factor = 1
+			} 
+			scaled_consciousness = {
+					ideology = reactionary
+					factor = 3
+			} 
+			scaled_consciousness = {
+					ideology = fascist
+					factor = 3
+			}    
+			scaled_consciousness = {
+					ideology = conservative
+					factor = 1
+			}
+			scaled_consciousness = {
+					ideology = liberal
+					factor = 1
+			}   
+			scaled_militancy = {
+					ideology = liberal
+					factor = 1
+			}        
+		}         
+        add_country_modifier = {
+				  name = the_homestead_act2
+				  duration = -1
+			  }
+		}
+    ai_will_do = {
+			factor = 1
+		}
+  }
+	
 	afro_french_slave_citizens = {
+	picture = acceptation_afro 
 		potential = {
 			OR = {
 				tag = AMA
@@ -685,6 +821,7 @@ political_decisions = {
 	}
 
 	afro_colombian_slave_citizens = {
+	picture = acceptation_afro 
 		potential = {
 			OR = {
 				tag = CLM
