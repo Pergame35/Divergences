@@ -341,18 +341,25 @@ political_decisions = {
 		potential = {
 			tag = SCA
 			is_greater_power = yes
+			NOT = {
+				has_country_flag = north_integration
+			}
 			OR = {
 				has_country_flag = baltic_claimed
 				year = 1890
 			}
-			NOT = { has_country_flag = north_integration }
 		}
 
 		allow = {
 			industrial_score = 200
 			press_rights = free_press
 			public_meetings = yes_meeting
-			vote_franschise = wealth_weighted_voting
+			OR = {
+				vote_franschise = wealth_weighted_voting
+				vote_franschise = wealth_voting
+				vote_franschise = universal_weighted_voting
+				vote_franschise = universal_voting
+				}
 			OR = {
 				549 = {
 					OR = {

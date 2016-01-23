@@ -314,7 +314,7 @@ political_decisions = {
         }
 
         allow = {
-            organic_chemistry = 1
+            inorganic_chemistry = 1
         }
 
         effect = {
@@ -334,7 +334,7 @@ political_decisions = {
         }
 
         allow = {
-            organic_chemistry = 1
+            inorganic_chemistry = 1
         }
 
         effect = {
@@ -358,7 +358,7 @@ political_decisions = {
         }
   
         allow = {
-            organic_chemistry = 1
+            inorganic_chemistry = 1
         }
   
         effect = {
@@ -381,7 +381,7 @@ political_decisions = {
         }
 
         allow = {
-            organic_chemistry = 1
+            inorganic_chemistry = 1
         }
 
         effect = {
@@ -401,7 +401,7 @@ political_decisions = {
         }
 
         allow = {
-            organic_chemistry = 1
+            inorganic_chemistry = 1
         }
 
         effect = {
@@ -423,7 +423,7 @@ political_decisions = {
         allow = {
             OR = {
                 owns = 1160
-                organic_chemistry = 1
+                inorganic_chemistry = 1
             }
         }
 
@@ -446,7 +446,7 @@ political_decisions = {
         allow = {
             OR = {
                 owns = 2586
-                organic_chemistry = 1
+                inorganic_chemistry = 1
             }
         }
 
@@ -469,7 +469,7 @@ political_decisions = {
         allow = {
             OR = {
                 owns = 2586
-                organic_chemistry = 1
+                inorganic_chemistry = 1
             }
         }
 
@@ -492,7 +492,7 @@ political_decisions = {
         allow = {
             OR = {
                 owns = 1167
-                organic_chemistry = 1
+                inorganic_chemistry = 1
             }
         }
 
@@ -515,7 +515,7 @@ political_decisions = {
         allow = {
             OR = {
                 owns = 926
-                organic_chemistry = 1
+                inorganic_chemistry = 1
             }
         }
 
@@ -538,7 +538,7 @@ political_decisions = {
         allow = {
             OR = {
                 owns = 1154  
-                organic_chemistry = 1
+                ininorganic_chemistry = 1
             }
         }
 
@@ -573,11 +573,11 @@ political_decisions = {
                 }
                 AND = {
                     owns = 911
-                    organic_chemistry = 1
+                    inorganic_chemistry = 1
                 }
                 AND = {
                     owns = 1158
-                    organic_chemistry = 1
+                    inorganic_chemistry = 1
                 }
             }
         }
