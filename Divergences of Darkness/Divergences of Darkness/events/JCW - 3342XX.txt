@@ -127,3 +127,55 @@ country_event = {
 		years_of_research = 4
 	}
 }
+
+country_event = {
+
+	id = 334205
+	
+	title = "334205.T"
+	desc = "334205.D"
+	picture = "boxers"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MIG
+		war = no         
+		has_global_flag = jiangsu_status_resolved
+		owns = 2221
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}	
+	option = {
+		name = "The Song dynasty arises!"
+		government = absolute_monarchy 
+		any_pop = { militancy = 1 }
+		years_of_research = 2
+		ai_chance = { 
+		factor = 30 	
+			}
+	}
+	
+	option = { 
+		name = "The Regency will endure."
+		government = merchant_republic 
+		political_reform = landed_voting
+		any_pop = { militancy = 2 }
+		factor = 40
+	}
+	
+	option = { 
+		name = "The First Chinese Republic is created in Nanjing!"
+		government = democracy 
+	political_reform = wealth_voting
+	political_reform = state_equal_weight
+	political_reform = yes_meeting
+	political_reform = free_press
+	ruling_party_ideology = liberal
+	any_pop = { militancy = 1 }
+	years_of_research = 4
+	factor = 30 
+	}
+}

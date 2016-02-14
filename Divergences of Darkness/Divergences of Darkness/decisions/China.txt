@@ -33,7 +33,6 @@ political_decisions = {
   		effect = {
   			prestige = 30
   			add_accepted_culture = beifaren
-  			add_accepted_culture = nanfaren
   			change_tag = CHI
         1499 = { add_core = THIS }
 			any_country = {
@@ -187,7 +186,6 @@ political_decisions = {
   		effect = {
   			prestige = 30
   			add_accepted_culture = beifaren
-  			add_accepted_culture = nanfaren
   			change_tag = CHI  
         1499 = { add_core = THIS }
   			any_country = {
@@ -330,7 +328,6 @@ political_decisions = {
   		effect = {
   			prestige = 30
   			add_accepted_culture = beifaren
-  			add_accepted_culture = nanfaren
 			add_accepted_culture = mongol
   			change_tag = CHI 
         1499 = { add_core = THIS }
@@ -586,7 +583,7 @@ political_decisions = {
       picture = form_china
   		potential = {
   			OR = { 
-				  primary_culture = "qingqiuan "
+				  primary_culture = qingqiuan
 				  primary_culture = ganguan
 			  }
   			NOT = {
@@ -618,7 +615,6 @@ political_decisions = {
   		effect = {
   			prestige = 30
   			add_accepted_culture = beifaren
-  			add_accepted_culture = nanfaren
   			change_tag = CHI 
         1499 = { add_core = THIS }
 			any_country = {
@@ -758,7 +754,6 @@ political_decisions = {
   		effect = {
   			prestige = 30
   			add_accepted_culture = beifaren
-  			add_accepted_culture = nanfaren
   			change_tag = CHI 
         1499 = { add_core = THIS }
 			any_country = {

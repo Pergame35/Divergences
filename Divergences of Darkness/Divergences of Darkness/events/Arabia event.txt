@@ -58,7 +58,7 @@ country_event = {
 	option = {
 		name = "We will fight against the heathens!"
 		prestige = 5
-		infamy = 3
+		badboy = 3
 		war = {
 			target = MGH
 			attacker_goal = {
@@ -356,7 +356,7 @@ country_event = {
 
 	option = {
 		name = "Why?"
-		infamy = 5
+		badboy = 5
 		prestige = -5
 		set_global_flag = no_division
 		ai_chance = {
