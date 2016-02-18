@@ -228,6 +228,7 @@ political_decisions = {
 	tag = ZND 
 	QAJ = { exists = yes }
 	NOT = { truce_with = QAJ }
+	NOT = { has_country_flag = legacy_timur }
 		}
 	
 	allow = { 
@@ -235,8 +236,7 @@ political_decisions = {
 		}
 		
 	effect = { 
-	government = absolute_monarchy 
-	remove_country_modifier = feudal 
+	set_country_flag = legacy_timur
 	war = { 
 		target = QAJ 
 		attacker_goal = { 
