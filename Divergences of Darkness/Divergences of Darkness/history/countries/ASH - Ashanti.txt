@@ -46,54 +46,14 @@ upper_house = {
 
 set_country_flag = existing_country
 
-foreign_weapons = yes_foreign_weapons
-diplomatic_reform = interactive
-
+# Level_0
 # Technologies
-flintlock_rifles = 1
 early_classical_theory_and_critique = 1
 
 # Inventions
 
-# Starting Consciousness
-consciousness = 0
-nonstate_consciousness = 0
-
-oob = "ASH_oob.txt"
-
-1836.1.1 = {
-literacy = 0.04
-non_state_culture_literacy = 0
-
-foreign_training = yes_foreign_training
-foreign_weapons = yes_foreign_weapons
-taxation_reform = tax_farmers
+# Unciv Reforms
 diplomatic_reform = interactive
-
-# Technologies
-military_staff_system = 1
-flintlock_rifles = 1
-private_banks = 1
-early_classical_theory_and_critique = 1
-}
-
-1861.1.1 = {
-	oob = "/1861/ASH_oob.txt"
-}
-1861.1.1 = {
-
-admin_reform = yes_admin_reform
-foreign_training = yes_foreign_training
-foreign_weapons = yes_foreign_weapons
-taxation_reform = tax_farmers
-diplomatic_reform = interactive
-
-# Technologies
-enlightenment_thought = 1
-military_staff_system = 1
-flintlock_rifles = 1
-private_banks = 1
-early_classical_theory_and_critique = 1
 
 # Inventions
 

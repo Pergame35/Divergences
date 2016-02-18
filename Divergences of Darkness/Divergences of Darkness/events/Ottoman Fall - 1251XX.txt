@@ -1345,7 +1345,20 @@ country_event = {
 		prestige = -3
 
 		any_pop = { scaled_militancy = { factor = -5  ideology = reactionary } }
-
+		
+		any_owned = { 
+			limit = { OR = { is_core = GRE is_core = BUL is_core = SER is_core = SYR is_core = EGY is_core = KUR } }
+			add_province_modifier = { 
+			name = janissary_system 
+			duration = 10000
+				}
+		}
+		
+		add_country_modifier = { 
+		name = janissary_rule
+		duration = 1000
+		}
+		
 		TUR_803 = {
 			remove_core = THIS
 		}
@@ -1443,10 +1456,6 @@ country_event = {
 				ideology = reactionary
 			}
 		}
-		add_country_modifier = {
-				name = CLM_fight
-				duration = 900
-			}
 		prestige = -3
 		government = presidential_dictatorship
 		political_reform = none_voting
@@ -1455,7 +1464,6 @@ country_event = {
 		political_reform = state_press
 		political_reform = no_trade_unions
 		political_reform = underground_parties
-
 	}
 }
 

@@ -2453,3 +2453,17 @@ gateway_to_russia = {
 	icon = 9
 }
 
+#Janissary
+janissary_rule = {
+	assimilation_rate = -0.25
+	pop_militancy_modifier = 0.05
+	icon = 7
+}
+
+janissary_system = { 
+	pop_militancy_modifier = 0.02
+	non_accepted_pop_militancy_modifier = 0.2
+	non_accepted_pop_consciousness_modifier = 0.5 
+	icon = 16
+}
+
