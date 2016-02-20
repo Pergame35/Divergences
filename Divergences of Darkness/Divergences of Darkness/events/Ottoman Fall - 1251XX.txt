@@ -1451,6 +1451,7 @@ country_event = {
 		
 		any_pop = {
 		limit = { culture = turkish }
+			militancy = -2 
 			scaled_militancy = {
 				factor = -5
 				ideology = reactionary

@@ -590,4 +590,61 @@ political_decisions = {
             factor = 1
         }
     }
+	
+	United_syria = { 
+		potential = { 
+			tag = SYR 
+			NOT = { has_country_flag = syria_all }
+			owns = 913 
+			owns = 906
+			owns = 897
+		}
+		
+		allow = { 
+		civilized = yes 
+		citizenship_policy = full_citizenship 
+		state_n_government = 1 
+		NOT = { religious_policy = moralism }
+		}
+		
+		effect = { 
+		prestige = -15 
+		set_country_flag = syria_all 
+		add_accepted_culture = druze 
+		add_accepted_culture = syriac 
+		any_pop = { 
+		scaled_militancy = {
+				issue = moralism
+				factor = 3
+				}
+			}
+		}
+	}
+	
+	Kurds_Assyria = { 
+		potential = { 
+			tag = KUR 
+			NOT = { has_country_flag = assyria_KUR }
+			owns = 892 
+			owns = 923
+		}
+		
+		allow = { 
+		citizenship_policy = full_citizenship 
+		nationalism_n_imperialism = 1 
+		NOT = { religious_policy = moralism }
+		}
+		
+		effect = { 
+		prestige = -15
+		set_country_flag = assyria_KUR 
+		add_accepted_culture = assyrian  
+		any_pop = { 
+		scaled_militancy = {
+				issue = moralism
+				factor = 3
+				}
+			}
+		}
+	}
 }

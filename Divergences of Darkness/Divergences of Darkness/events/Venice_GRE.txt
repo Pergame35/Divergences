@@ -1545,3 +1545,15 @@ country_event = {
 	ai_chance = { factor = 25 }
 	}
 }
+
+country_event = { 
+	id = 106054
+	title = "Macedonian Attack"
+	desc = "The traitorous Macedonians have launched a campaign to end our state!"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "The time of Philip and Alexander is over!"
+	}
+}

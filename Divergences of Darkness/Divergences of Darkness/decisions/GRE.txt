@@ -106,65 +106,19 @@ political_decisions = {
 		
 			effect = {
 				prestige = 20
-				add_core = 828
-				add_core = 859
-				add_core = 858
-				add_core = 861
-				add_core = 862
-				add_core = 863
-				add_core = 864
-				add_core = 865
-				add_core = 866
-				add_core = 867
-				add_core = 868
-				add_core = 869
-				add_core = 870
-				add_core = 871
-				add_core = 872
-				add_core = 855
-				add_core = 856
-				add_core = 857
-				add_core = 844
-				add_core = 845
-				add_core = 846
-				add_core = 847
-				add_core = 848
-				add_core = 826
-				add_core = 827
-				add_core = 834
-				add_core = 835
-				add_core = 836
-				add_core = 837
-				add_core = 838
-				add_core = 824
-				add_core = 825
-				add_core = 831
-				add_core = 832
-				add_core = 833
-				add_core = 849
-				add_core = 850
-				add_core = 851
-				add_core = 852
-				add_core = 853
-				add_core = 819
-				add_core = 820
-				add_core = 821
-				add_core = 805
-				add_core = 806
-				add_core = 807
-				add_core = 808
-				add_core = 809
-				add_core = 822
-				add_core = 823
-				add_core = 815
-				add_core = 816
-				add_core = 817
-				add_core = 829
-				add_core = 830
+				865 = { add_core = THIS }
+				864 = { add_core = THIS }
+				869 = { add_core = THIS }
+				872 = { add_core = THIS }
+				863 = { add_core = THIS }
+				862 = { add_core = THIS }
+				881 = { add_core = THIS }
+				880 = { add_core = THIS }
+				883 = { add_core = THIS }
+				884 = { add_core = THIS }
+				882 = { add_core = THIS }
 				set_country_flag = megali_idea
-				860 = {
-					change_province_name = "Constantinople"
-				}
+				capital = 860 
 			}
 			ai_will_do = {
 				factor = 1
