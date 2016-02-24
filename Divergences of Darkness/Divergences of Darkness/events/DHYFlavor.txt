@@ -1,0 +1,1138 @@
+country_event = {
+
+	id = 135100
+
+	is_triggered_only = yes
+
+	title = "EVTNAME135100"
+	desc = "EVTDESC135100"
+	picture = "maghreb_war"
+
+	option = {
+		name = "We cannot accept this"
+		prestige = 2
+		money = -10000
+		war = {
+			target = DHY
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+		}
+		DHY = {
+			set_country_flag = oyo_started_war
+		}
+	}
+}
+
+country_event = {
+
+	id = 135101
+
+	trigger = {
+		tag = DHY
+		war = no
+		is_vassal = no
+		has_country_flag = oyo_started_war
+		NOT = { has_country_flag = stop_firing_damnit }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME135101"
+	desc = "EVTDESC135101"
+	picture = "elephant_flag"
+
+	option = {
+		name = "Dahomey, a tributary no more"
+		prestige = 2
+		set_country_flag = stop_firing_damnit
+	}
+}
+
+country_event = {
+
+	id = 135102
+
+	trigger = {
+		tag = DHY
+		war = no
+		is_vassal = yes
+		has_country_flag = oyo_started_war
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME135102"
+	desc = "EVTDESC135102"
+	picture = "dying_elephant"
+
+	option = {
+		name = "We have failed our people"
+		prestige = -5
+		money = -10000
+		OYO = { money = 10000 }
+	}
+}
+
+country_event = {
+
+	id = 135103
+
+	title = "EVTNAME135103"
+	desc = "EVTDESC135103"
+	picture = "dahomey_amazons"
+
+	trigger = {
+		tag = DHY
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.7
+			is_vassal = no
+		}
+		modifier = {
+			factor 0.9
+			military_staff_system = 1
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 2
+		}
+		modifier = {
+			factor = 0.7
+			war = yes
+		}
+	}
+
+	option = {
+		name = "Summon the daughters of every family for military training!"
+		prestige = 3
+		any_pop = {
+			militancy = 1
+			consciousness = 3
+		}
+		add_country_modifier = {
+			name = dahomey_amazons
+			duration = -1
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.8
+				average_militancy = 4
+			}
+			modifier = {
+				factor = 0.8
+				average_militancy = 6
+			}
+			modifier = {
+				factor = 0.2
+				average_militancy = 8
+			}
+		}
+	}
+
+	option = {
+		name = "Keep them ceremonial and let them help the economy when we're at peace"
+		prestige = 2
+		money = 30000
+		any_pop = {
+			militancy = -1
+			consciousness = -3
+		}
+		ai_chance = { factor 0 }
+	}
+}
+
+country_event = {
+
+	id = 135104
+
+	trigger = {
+		tag = DHY
+		war = no
+		is_vassal = no
+		NOT = { average_militancy = 6 }
+		government = feudal_monarchy
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.9
+			NOT = { average_militancy = 4 }
+		}
+		modifier = {
+			factor = 0.8
+			civilization_progress = 30
+		}
+		modifier = {
+			factor = 0.8
+			civilization_progress = 40
+		}
+		modifier = {
+			factor = 0.8
+			admin_reform = yes_admin_reform
+		}
+		modifier = {
+			factor = 0.7
+			admin_reform = advanced_admin_reform
+		}
+	}
+
+	title = "EVTNAME135104"
+	desc = "EVTDESC135104"
+	picture = "african_king"
+
+	option = {
+		name = "We must implement these ideas immediately"
+		prestige = 5
+		any_pop = {
+			militancy = 1
+			consciousness = 3
+		}
+		aristocrats = { militancy = 6 }
+		government = absolute_monarchy
+		remove_country_modifier = feudal
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				average_militancy = 6
+			}
+			modifier = {
+				factor = 0.5
+				average_militancy = 4
+			}
+		}
+			
+	}
+
+	option = {
+		name = "We can't break this age old tradition"
+		prestige = 2
+		any_pop = { consciousness = -3 }
+		aristocrats = { militancy = -3 }
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+
+	id = 135105
+
+	trigger = {
+		tag = DHY
+		slavery = yes_slavery
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 480
+		modifier = {
+			factor = 0.8
+			civilized = yes
+		}
+		modifier = {
+			factor = 0.9
+			has_country_modifier = the_rights_of_man
+		}
+		modifier = {
+			factor = 0.8
+			has_country_modifier = political_ideology
+		}
+		modifier = {
+			factor = 1.2
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.2
+			unemployment = 5
+		}
+		modifier = {
+			factor = 1.2
+			unemployment = 10
+		}
+		modifier = {
+			factor = 1.2
+			is_vassal = yes
+		}
+		modifier = {
+			factor = 0.9
+			trade_policy = free_trade
+		}
+	}
+
+	title = "EVTNAME135105"
+	desc = "EVTDESC135105"
+	picture = "slavery"
+
+	option = {
+		name = "I suppose it's a bit outdated"
+		prestige = 2
+		any_pop = {
+			militancy = 2
+			consciousness = 6
+		}
+		slaves = {
+			militancy = -10
+			consciousness = -3
+		}
+		political_reform = no_slavery
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.8
+				average_militancy = 3
+			}
+			modifier = {
+				factor = 0.2
+				average_militancy = 5
+			}
+			modifier = {
+				factor = 1.2
+				NOT = { average_militancy = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = "Loosening the restrictions should help"
+		slaves = {
+			militancy = 8
+			consciousness = 8
+		}
+		farmers = { consciousness = -2 }
+		ai_chance = { factor = 20 }
+	}
+}
+
+country_event = {
+
+	id = 135106
+
+	title = "EVTNAME135106"
+	desc = "EVTDESC135106"
+	picture = "dahomey_culture"
+
+	trigger = {
+		tag = DHY
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.8
+			is_vassal = no
+		}
+		modifier = {
+			factor = 0.9
+			civilization_progress = 30
+		}
+		modifier = {
+			factor = 0.9
+			prestige = 30
+		}
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 7
+		}
+		modifier = {
+			factor = 0.8
+			literacy = 10
+		}
+		modifier = {
+			factor = 0.8
+			middle_strata_life_needs = 1
+		}
+		modifier = {
+			factor = 1.3
+			NOT = { pop_majority_culture = fon }
+		}
+	}
+
+	option = {
+		name = "Embrace our own great and beautiful culture"
+		prestige_factor = 0.6
+		any_pop = {
+			militancy = -1
+			consciousness = -3
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0.3
+				NOT = { average_militancy = 2
+			}
+			modifier = {
+				factor = 1.5
+				prestige = 40
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 20 }
+			}
+		}
+	}
+
+	option = {
+		name = "Embrace some of the western beliefs"
+		prestige_factor = 0.1
+		years_of_research = 2.5
+		set_country_flag = embraced_western_culture
+		any_pop = {
+			militancy = 3
+			consciousness = 6
+		}
+		any_country = {
+			limit = { is_greater_power = yes }
+			relation = {
+				who = THIS
+				value = 20
+			}
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				average_militancy = 5
+			}
+			modifier = {
+				factor = 3
+				NOT = { average_militancy = 1 }
+			}
+			modifier = {
+				factor = 0.5
+				prestige = 40
+			}
+			modifier = {
+				factor = 1.3
+				NOT = { prestige = 20 }
+			}
+		}
+	}
+
+	option = {
+		name = "Integrate some of the islamic culture into our society"
+		prestige_factor = 0.4
+		years_of_research = 1
+		any_pop = {
+			militancy = 1
+			consciousness = 4
+		}
+		set_country_flag = embraced_islamic_culture
+		any_pop = {
+			limit = { has_pop_religion = sunni }
+			militancy = -3
+			consciousness = -6
+		}
+		ai_chance = { factor = 40 }
+	}
+}
+
+country_event = {
+
+	id = 135107
+
+	title = "EVTNAME135107"
+	desc = "EVTDESC135107"
+	picture = "academy_france"
+
+	trigger = {
+		tag = DHY
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 480
+		modifier = {
+			factor = 0.8
+			is_vassal = no
+		}
+		modifier = {
+			factor = 0.9
+			civilization_progress = 30
+		}
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { literacy = 8 }
+		}
+		modifier = {
+			factor = 0.8
+			education_reform = yes_education_reform
+		}
+		modifier = {
+			factor = 0.6
+			education_reform = advanced_education_reform
+		}
+		modifier = {
+			factor = 0.9
+			academic_institutions = madrasahs
+		}
+		modifier = {
+			factor = 0.8
+			academic_institutions = universities
+		}
+		modifier = {
+			factor = 0.9
+			middle_strata_life_needs = 1
+		}
+	}
+
+	option = {
+		name = "We must educate our people, it is a human right!"
+		prestige = 2
+		set_country_flag = favoured_schools
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			literacy = 0.08
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				NOT = { literacy = 8 }
+			}
+			modifier = {
+				factor = 0.5
+				literacy = 12
+			}
+		}
+	}
+
+	option = {
+		name = "We should focus on further educating our already intelligent"
+		prestige = 2
+		set_country_flag = favoured_universities
+		years_of_research = 1
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+
+	id = 135108
+
+	title = "EVTNAME135108"
+	desc = "EVTDESC135108"
+	picture = "african_raid"
+
+	trigger = {
+		tag = DHY
+		exists = yes
+		is_vassal = no
+		1914 = {
+			is_core = DHY
+			owned_by = DHY
+		}
+		1917 = {
+			is_core = DHY
+			owned_by = DHY
+		}
+		1910 = {
+			NOT = {
+				OR = {
+					owned_by = DHY
+					is_core = DHY
+				}
+			}
+		}
+		1912 = {
+			NOT = {
+				OR = {
+					owned_by = DHY
+					is_core = DHY
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					1912 = { owned_by = ASH }
+					war_with = ASH
+				}
+				AND = {
+					1910 = { owned_by = ASH }
+					war_with = ASH
+				}
+				AND = {
+					1912 = { owned_by = ASH }
+					alliance_with = ASH
+				}
+				AND = {
+					1910 = { owned_by = ASH }
+					alliance_with = ASH
+				}
+			}
+		}
+		
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.9
+			NOT = {
+				OR = {
+					AND = {
+						1912 = { owned_by = ASH }
+						relation = {
+							who = ASH
+							value = 50
+						}
+					}
+					AND = {
+						1912 = { owned_by = ASH }
+						relation = {
+							who = ASH
+							value = 50
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				OR = {
+					AND = {
+						1912 = { owned_by = ASH }
+						relation = {
+							who = ASH
+							value = 0
+						}
+					}
+					AND = {
+						1912 = { owned_by = ASH }
+						relation = {
+							who = ASH
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				OR = {
+					AND = {
+						1912 = { owned_by = ASH }
+						relation = {
+							who = ASH
+							value = -50
+						}
+					}
+					AND = {
+						1912 = { owned_by = ASH }
+						relation = {
+							who = ASH
+							value = -50
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			civilized = yes
+		}
+		modifier = {
+			factor = 0.8
+			war_exhaustion = 50
+		}
+		modifier = {
+			factor = 0.8
+			war_exhaustion = 80
+		}
+		modifier = {
+			factor = 1.1
+			part_of_sphere = yes
+		}
+		modifier = {
+			factor = 1.3
+			ASH = { is_vassal = yes }
+		}
+		modifier = {
+			factor = 0.9
+			government = absolute_monarchy
+		}
+		modifier = {
+			factor = 0.9
+			military_policy = pacifism
+		}
+		modifier = {
+			factor = 0.9
+			war = yes
+		}
+	}
+
+	option = {
+		name = "This is intolerable!"
+		prestige = -6
+		set_country_flag = raided
+		1914 = {
+			add_province_modifier = {
+				name = recent_raid
+				duration = 1825
+			}
+		}
+		1917 = {
+			add_province_modifier = {
+				name = recent_raid
+				duration = 1825
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 135109
+
+	title = "EVTNAME135109"
+	desc = "EVTDESC135109"
+	picture = "elephant_flag"
+
+	trigger = {
+		tag = DHY
+		is_vassal = no
+		1912 = {
+			owned_by = DHY
+			is_core = DHY
+		}
+		1910 = {
+			owned_by = DHY
+			is_core = DHY
+		}
+		1914 = {
+			owned_by = DHY
+			is_core = DHY
+		}
+		1922 = {
+			owned_by = DHY
+			is_core = DHY
+		}
+		civilized = yes
+		war = no
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 240 = {
+		modifier = {
+			factor = 0.9
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 0.8
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.8
+			citizenship_policy = full_citizenship
+		}
+		modifier = {
+			factor = 0.9
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 1.1
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1.1
+			war_exhaustion = 30
+		}
+		modifier = {
+			factor = 1.1
+			war_exhaustion = 50
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { literacy_rate = 20 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { money = 300000 }
+		}
+	}
+
+	option = {
+		name = "Our capital will be the envy of Africa!"
+		prestige = 15
+		money = -300000
+		any_pop = {
+			limit = { has_pop_culture = fon }
+			militancy = -2
+			consciousness = -3
+		}
+		1919 = {
+			add_province_modifier = {
+				name = developing_homeland
+				duration = 3650
+			}
+			life_rating = 3
+		}
+		1920 = {
+			add_province_modifier = {
+				name = developing_homeland
+				duration = 3650
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.8
+				NOT = { money = 300000 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { money = 100000 }
+			}
+			modifier = {
+				factor = 1.1
+				money = 300000
+			}
+			modifier = {
+				factor = 1.1
+				money = 500000
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { average_militancy = 1 }
+			modifier = {
+				factor = 0.9
+				average_militancy = 3
+			}
+			modifier = {
+				factor = 0.9
+				average_militancy = 5
+			}
+			modifier = {
+				factor = 0.9
+				average_militancy = 8
+			}
+			modifier = {
+				factor = 0.9
+				NOT = { pop_majority_culture = fon }
+			}
+		}
+	}
+
+	option = {
+		name = "We should embrace and help our minorities."
+		prestige = 2
+		any_pop = {
+			limit = { is_accepted_culture = no }
+			militancy = -1
+			consciousness = -3
+		}
+		any_pop = {
+			limit = { is_accepted_culture = yes }
+			consciousness = 3
+		}
+		any_pop = {
+			limit = { has_pop_culture = akan }
+			militancy = -1
+			consciousness = -2
+		}
+		add_accepted_culture = akan
+		set_country_flag = embracing_minorities
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+
+	id = 135110
+
+	title = "EVTNAME135110"
+	desc = "EVTDESC135110"
+	picture = "dahomey_people"
+
+	trigger = {
+		tag = DHY
+		has_country_flag = embracing_minorities
+		NOT = { has_country_flag = embraced_yoruba }
+		1923 = { owned_by = DHY }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 30
+			war = yes
+		}
+	}
+
+	option = {
+		name = "Embrace them as our own"
+		prestige = 2
+		any_pop = {
+			limit = { is_accepted_culture = yes }
+			consciousness = 3
+		}
+		any_pop = {
+			limit = { has_pop_culture = yoruba }
+			militancy = -2
+			consciousness = -5
+		}
+		add_accepted_culture = yoruba
+		set_country_flag = embraced_yoruba
+	}
+}
+
+country_event = {
+
+	id = 135111
+
+	title = "EVTNAME135111"
+	desc = "EVTDESC135111"
+	picture = "dahomey_people"
+
+	trigger = {
+		tag = DHY
+		has_country_flag = embracing_minorities
+		NOT = { has_country_flag = embraced_ibo }
+		1933 = { owned_by = DHY }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 30
+			war = yes
+		}
+	}
+
+	option = {
+		name = "Embrace them as our own"
+		prestige = 2
+		any_pop = {
+			limit = { is_accepted_culture = yes }
+			consciousness = 3
+		}
+		any_pop = {
+			limit = { has_pop_culture = ibo }
+			militancy = -2
+			consciousness = -5
+		}
+		add_accepted_culture = ibo
+		set_country_flag = embraced_ibo
+	}
+}
+
+country_event = {
+
+	id = 135112
+
+	title = "EVTNAME135112"
+	desc = "EVTDESC135112"
+	picture = "dahomey_people"
+
+	trigger = {
+		tag = DHY
+		has_country_flag = embracing_minorities
+		NOT = { has_country_flag = embraced_ibibio }
+		1934 = { owned_by = DHY }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 30
+			war = yes
+		}
+	}
+
+	option = {
+		name = "Embrace them as our own"
+		prestige = 2
+		any_pop = {
+			limit = { is_accepted_culture = yes }
+			consciousness = 3
+		}
+		any_pop = {
+			limit = { has_pop_culture = ibibio }
+			militancy = -2
+			consciousness = -5
+		}
+		add_accepted_culture = ibibio
+		set_country_flag = embraced_ibibio
+	}
+}
+
+country_event = {
+
+	id = 135113
+
+	title = "EVTNAME135113"
+	desc = "EVTDESC135113"
+	picture = "dahomey_people"
+
+	trigger = {
+		tag = DHY
+		has_country_flag = embracing_minorities
+		NOT = { has_country_flag = embraced_kru }
+		OR = {
+			1893 = { owned_by = DHY }
+			1887 = { owned_by = DHY }
+			1889 = { owned_by = DHY }
+			1896 = { owned_by = DHY }
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 30
+			war = yes
+		}
+	}
+
+	option = {
+		name = "Embrace them as our own"
+		prestige = 2
+		any_pop = {
+			limit = { is_accepted_culture = yes }
+			consciousness = 3
+		}
+		any_pop = {
+			limit = { has_pop_culture = kru }
+			militancy = -2
+			consciousness = -5
+		}
+		add_accepted_culture = kru
+		set_country_flag = embraced_kru
+	}
+}
+
+country_event = {
+
+	id = 135114
+
+	title = "EVTNAME135114"
+	desc = "EVTDESC135114"
+	picture = "dahomey_people"
+
+	trigger = {
+		tag = DHY
+		has_country_flag = embracing_minorities
+		NOT = { has_country_flag = embraced_mossi }
+		1902 = { owned_by = DHY }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 30
+			war = yes
+		}
+	}
+
+	option = {
+		name = "Embrace them as our own"
+		prestige = 2
+		any_pop = {
+			limit = { is_accepted_culture = yes }
+			consciousness = 3
+		}
+		any_pop = {
+			limit = { has_pop_culture = mossi }
+			militancy = -2
+			consciousness = -5
+		}
+		add_accepted_culture = mossi
+		set_country_flag = embraced_mossi
+	}
+}
+
+country_event = {
+
+	id = 135101
+
+	trigger = {
+		tag = DHY
+		war = no
+		is_vassal = no
+		has_country_flag = oyo_started_war
+		NOT = { has_country_flag = stop_firing_damnit }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME135101"
+	desc = "EVTDESC135101"
+	picture = "elephant_flag"
+
+	option = {
+		name = "Dahomey, a tributary no more"
+		prestige = 2
+		set_country_flag = stop_firing_damnit
+	}
+}
