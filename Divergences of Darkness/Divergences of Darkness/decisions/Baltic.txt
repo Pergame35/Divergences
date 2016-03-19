@@ -352,7 +352,12 @@ political_decisions = {
 			industrial_score = 200
 			press_rights = free_press
 			public_meetings = yes_meeting
-			vote_franschise = wealth_weighted_voting
+			OR = {
+				vote_franschise = wealth_weighted_voting
+				vote_franschise = wealth_voting
+				vote_franschise = universal_weighted_voting
+				vote_franschise = universal_voting
+			}
 			OR = {
 				549 = {
 					OR = {
