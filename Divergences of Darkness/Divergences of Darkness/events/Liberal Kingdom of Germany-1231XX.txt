@@ -4,12 +4,7 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		NOT = {
-			OR = {
-				exists = GER
-				exists = SGF
-			}
-		}
+		NOT = { OR = {exists = GER exists = SGF } }
 		ai = yes
 		exists = yes
 		has_global_flag = liberal_revolutions_should_now_fire
@@ -18,8 +13,8 @@ country_event = {
 			tag = DUA
 			tag = SPA
 			tag = PLC
+			}
 		}
-	}
 
 	fire_only_once = yes
  
@@ -51,8 +46,8 @@ country_event = {
 					primary_culture = south_german
 					tag = FRM
 					tag = NAS
+					}
 				}
-			}
 			country_event = 123102
 		}
 		any_country = { 
@@ -63,8 +58,8 @@ country_event = {
 					primary_culture = south_german
 					tag = NAS
 					tag = FRM
+					}
 				}
-			}
 			country_event = 123108
 		}
 		set_global_flag = first_council_of_munich
@@ -96,7 +91,7 @@ country_event = { #Leave SoI? - SG
 		any_owned = { 
 			limit = {
 				is_core = THIS 
-			}
+				}
 			add_core = SGF
 		}
 		ai_chance = {
@@ -632,7 +627,7 @@ country_event = {
 		}
 		FROM = {
 			add_country_modifier = {
-				name = taiping_draft
+				name = taiping_draft2
 				duration = 365
 			}
 		}
