@@ -1,29 +1,29 @@
 ;;;;*;*;*;*;;;;;;;x
-EVTNAME67500;Turmoil in $PROVINCENAME$;;;;;;;;;;;;x
-EVTDESC67500;$PROVINCENAME$ has been recently been brought into $COUNTRY_ADJ$ control, and the region is currently in turmoil over the change. Looting and other crimes are commonplace and there is some resistance to our rule. Until we can gain control of the situation and finally integrate the province, it will be less productive. Placing troops in the vicinity should help bring the province under control.;;;;;;;;;;;;x
-EVTOPTA67500;Assuming Direct Control!;;;;;;;;;;;;x
-EVTNAME67502;Resistance in $PROVINCENAME$;;;;;;;;;;;;x
-EVTDESC67502;The turmoil in $PROVINCENAME$ is over and control has been established, however the locals are resisting our rule. Violent resistance isn't our only problem, passive resistance is catching on, with workers staying home. Improving the locals opinion of us as well as a policy of full citizenship should help smooth the transition.;;;;;;;;;;;;x
-EVTOPTA67502;Damn.;;;;;;;;;;;;x
-EVTNAME67503;Integrating $PROVINCENAME$;;;;;;;;;;;;x
-EVTDESC67503;With the recent problems in $PROVINCENAME$ over we can begin with the integration of $PROVINCENAME$ into our grand nation. Without the proper infrastructure our administration is suffering, and alas there isn't much we can do to speed up the process.;;;;;;;;;;;;x
-EVTOPTA67503;Well get a move on!;;;;;;;;;;;;x
-EVTNAME67505;Integrated $PROVINCENAME$;;;;;;;;;;;;x
-EVTDESC67505;The infrastructure in $PROVINCENAME$ has been established and all thats left is to wait for the locals to accept their fate and for the international community to accept our rule as legitimate.;;;;;;;;;;;;x
-EVTOPTA67505;It's only a matter of time now.;;;;;;;;;;;;x
-EVTNAME67506;$PROVINCENAME$ Rule Legitimized;;;;;;;;;;;;x
-EVTDESC67506;The international community has accepted that we now control $PROVINCENAME$ and our rule is considered legitimate. The people have grown to feel as though they are a part our grand nation.;;;;;;;;;;;;x
-EVTOPTA67506;Finally!;;;;;;;;;;;;x
-EVTNAME67507;$PROVINCENAME$ Already Legitimate;;;;;;;;;;;;x
-EVTDESC67507;The international community has realized that our rule of $PROVINCENAME$ is legitimate. These are our people.;;;;;;;;;;;;x
-EVTOPTA67507;Finally!;;;;;;;;;;;;x
-EVTNAME67510;Unrecognized Possessions;;;;;;;;;;;;x
-EVTDESC67510;All provinces with unrecognized claims have begun being integrated into our nation.;;;;;;;;;;;;x
-EVTOPTA67510;Great!;;;;;;;;;;;;x
-gain_core_process;Acquiring Core;;;;;;;;;;;;x
-core_turmoil_refusal;Core: Turmoil;;;;;;;;;;;;x
-core_turmoil_integrate;Core: Turmoil;;;;;;;;;;;;x
-core_refusal;Core: Refusal;;;;;;;;;;;;x
-core_integrate;Core: Integration;;;;;;;;;;;;x
-core_acceptance;Core: Acceptance;;;;;;;;;;;;x
+EVTNAME67500;$PROVINCENAME$的混乱;;;;;;;;;;;;x
+EVTDESC67500;$PROVINCENAME$最近才被纳入$COUNTRY_ADJ$统治之下,这一改变使当地进入了混乱之中。抢劫掠夺和各种暴力犯罪随处可见，许多人反抗我们的统治。在我们控制住局势并在这一省份重新建立秩序前，当地生产会受到严重影响。应当派遣部队以帮助控制恶化的事态。;;;;;;;;;;;;x
+EVTOPTA67500;加以直接控制;;;;;;;;;;;;x
+EVTNAME67502;$PROVINCENAME$的抵抗;;;;;;;;;;;;x
+EVTDESC67502;$PROVINCENAME$的混乱局面已经结束，秩序恢复了。但当地人依然在抵抗我们的统治，我们面对的不仅是暴力抵抗，还有消极的不合作。如果我们能采取完整公民权政策，或许我们可以缓和紧张的局势，改善当地人对我们的态度并让他们回到工作岗位上来。;;;;;;;;;;;;x
+EVTOPTA67502;该死.;;;;;;;;;;;;x
+EVTNAME67503;融合$PROVINCENAME$;;;;;;;;;;;;x
+EVTDESC67503;最近在$PROVINCENAME$出现的问题终于过去了，我们可以开始考虑将$PROVINCENAME$融入我们伟大的国家。如果没有完善的基础设施建设我们将很难进行有效的管理和加快这样融合的进程。;;;;;;;;;;;;x
+EVTOPTA67503;那就赶快！;;;;;;;;;;;;x
+EVTNAME67505;融合$PROVINCENAME$;;;;;;;;;;;;x
+EVTDESC67505;所有的基础已经打好，剩下的只是等待当地人接受他们的宿命以及国际社会接受我们对$PROVINCENAME$的统治这一既成事实;;;;;;;;;;;;x
+EVTOPTA67505;这只是时间问题;;;;;;;;;;;;x
+EVTNAME67506;我们对$PROVINCENAME$的控制受到认可;;;;;;;;;;;;x
+EVTDESC67506;国际社会已经接受了我们对$PROVINCENAME$的控制并认同我们的管理。当地人已经逐渐感觉到他们是我们伟大国家的一份子。;;;;;;;;;;;;x
+EVTOPTA67506;终于！;;;;;;;;;;;;x
+EVTNAME67507;我们对$PROVINCENAME$的统治合法化了;;;;;;;;;;;;x
+EVTDESC67507;国际社会已经意识到我们对$PROVINCENAME$的统治是合情合理的，他们就是我们的人民。;;;;;;;;;;;;x
+EVTOPTA67507;终于！;;;;;;;;;;;;x
+EVTNAME67510;未被承认的财产;;;;;;;;;;;;x
+EVTDESC67510;所有未被宣称的省份都将成为我们国家的一部分.;;;;;;;;;;;;x
+EVTOPTA67510;太好了;;;;;;;;;;;;x
+gain_core_process;获得核心中;;;;;;;;;;;;x
+core_turmoil_refusal;核心：混乱;;;;;;;;;;;;x
+core_turmoil_integrate;核心：混乱;;;;;;;;;;;;x
+core_refusal;核心：拒绝;;;;;;;;;;;;x
+core_integrate;核心：融合;;;;;;;;;;;;x
+core_acceptance;核心：接纳;;;;;;;;;;;;x
 ;;;;*;*;*;*;;;;;;;x
