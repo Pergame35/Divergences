@@ -1,24 +1,16 @@
-A mod for Victoria II with Heart of Darkness Expansion that continues the legacy of Divergences : An Alter Vicky mod created by Kinniken 
+分歧是一个 维多利亚2 的架空历史模组。
 
+这是个人的分歧的汉化项目。
 
-According to the quantum theory, every decision made in the universe creates an alternative universe where all the following events take a different way. The first decision that diverged the timeline is called the Point of Divergence.
+汉化工作基于mod本身和前人的工作，感谢社区的每一个人。
 
-In the Divergences mod there are PODs that are not bound to each other:
-- The duke of Burgundy decides to continue his support for Plantagenets in the Hundred Years' War
-- The personal union of Denmark, Norway and Sweden survives and evolves to a unitary state
-- Isabella of Spain married a Portuguese prince, instead of Ferdinand II.
-- The Chenghua Emperor does not stop Ming China's explorations, but decides to pursue them with greater zeal than before
-But that were not all the changes. The timeline began to diverge more and more and after 400 years the very world as we know it looks absolutely different...
-"Official canon" can be found here : https://forum.paradoxplaza.com/forum/index.php?threads/divergences-of-darkness-history-thread.823974/
+------
 
-In perpetual beta some might say but slowly advancing toward a polished version. 
+Divergences is an alternative history mod for Victoria II.
 
-What needs to be done ? 
-- Graphics : you like the mod and are good with graphics such as making images for events/decisions then you can always contribute 
-- Making new colonial nations in Africa. 
-- Adding colonial interactions between the Great Power in Asia to create a Great Game ITTL 
-- Redoing the map to make it more distinct from the real wolrd
-- Always more flavor for countries ! 
-Feel free to contribute in those areas if you know a bit of code and if you have suggestions you can always tell them here or on the official thread : https://forum.paradoxplaza.com/forum/index.php?threads/divergences-of-darkness.743333/
+This is a project of Chinese localization for Divergences.
 
-Aussi hélas pas de traduction française mais si quelqu'un esst motivé il a mes encouragements !
+Thanks every contributor of the community.
+
+https://forum.paradoxplaza.com/forum/index.php?threads/mod-divergences-of-darkness.870326/
+
