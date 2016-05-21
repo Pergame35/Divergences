@@ -1,42 +1,351 @@
-ARA_conservative;Renaixen鏰 Aragones;Renaixen鏰 Aragones;Renaixen鏰 Aragones;;;;;;;;;;;x
-ARA_liberal;Centre Aragonesa;Centre Aragonesa;Centre Aragonesa;;;;;;;;;;;x
-ARA_anarcho_liberal;Uni丒Aragonesa;Uni丒Aragonesa;Uni丒Aragonesa;;;;;;;;;;;x
-ARA_conservative_2;Regionalista Aragones;Regionalista Aragones;Regionalista Aragones;;;;;;;;;;;x
-ARA_liberal_2;Solidaritat Aragones;Solidaritat Aragones;Solidaritat Aragones;;;;;;;;;;;x
-ARA_socialist;Socialistes de Aragon;Socialistes de Aragon;Socialistes de Aragon;;;;;;;;;;;x
-ARA_liberal_3;Partit Radical Republic丒Partit Radical Republic丒Partit Radical Republic丒;;;;;;;;;;x
-ARA_reactionary;Nationalist de Aragon;Nationaliste de Aragon;Nationalist de Aragon;;;;;;;;;;;x
-ARA_communist;Communist de Aragon;Communiste de Aragon;Communist de Aragon;;;;;;;;;;;x
-ARA_fascist;Fascist de Aragon;Fasciste de Aragon;Fascist de Aragon;;;;;;;;;;;x
-BRG_liberal;Parti Lib閞al;Parti Lib閞al;Parti Lib閞al;;;;;;;;;;;x
-BRG_conservative;Parti Calviniste;Parti Calviniste;Parti Calviniste;;;;;;;;;;;x
-BRG_socialist;Parti des Travailleurs de Bourgogne;Parti des Travailleurs de Bourgogne;Parti des Travailleurs de Bourgogne;;;;;;;;;;;x
-BRG_conservative_2;Parti Chr閠ien D閙ocrate;Parti Chr閠ien D閙ocrate;Parti Chr閠ien D閙ocrate;;;;;;;;;;;x
-BRG_conservative_3;Parti Conservateur;Parti Conservateur;Parti Conservateur;;;;;;;;;;;x
-BRG_reactionary;Parti de la Nation;Parti de la Nation;Parti de la Nation;;;;;;;;;;;x
-BRG_anarcho_liberal;Parti Radical;Parti Radical;Parti Radical;;;;;;;;;;;x
-BRG_communist;Parti Communiste;Parti Communiste;Parti Communiste;;;;;;;;;;;x
-BRG_fascist;Ligue des Bourguinions;Ligue des Bourguinions;Ligue des Bourguinions;;;;;;;;;;;x
-DNG_reactionary;Conservatives;Conservateurs;Konservative;;;;;;;;;;;x
-DNG_liberal;Liberals;Lib閞aux;Lib閞aux;;;;;;;;;;;x
-DNG_liberal_2;Pro-Western;Pro-occident;Pro-occident;;;;;;;;;;;x
-DNG_conservative;Nationalists;Nationalistes;Nationalists;;;;;;;;;;;x
-DNG_liberal_3;New Liberals;Lib閞aux;Liberale;;;;;;;;;;;x
-DNG_anarcho_liberal;Radicals;Radicaux;Radikale;;;;;;;;;;;x
-DNG_conservative_2;Royalist;Royaliste;Royalisten;;;;;;;;;;;x
-DNG_socialist;Socialist;Socialiste;Sozialisten;;;;;;;;;;;x
-DNG_communist;Communist;Communistes;Kommunisten;;;;;;;;;;;x
-DNG_fascist;Fascist;Fasciste;Faschisten;;;;;;;;;;;x
-GAN_reactionary;Conservatives;Conservateurs;Konservative;;;;;;;;;;;x
-GAN_liberal;Liberals;Lib閞aux;Lib閞aux;;;;;;;;;;;x
-GAN_liberal_2;Pro-Western;Pro-occident;Pro-occident;;;;;;;;;;;x
-GAN_conservative;Nationalists;Nationalistes;Nationalists;;;;;;;;;;;x
-GAN_liberal_3;New Liberals;Lib閞aux;Liberale;;;;;;;;;;;x
-GAN_anarcho_liberal;Radicals;Radicaux;Radikale;;;;;;;;;;;x
-GAN_conservative_2;Royalist;Royaliste;Royalisten;;;;;;;;;;;x
-GAN_socialist;Socialist;Socialiste;Sozialisten;;;;;;;;;;;x
-GAN_communist;Communist;Communistes;Kommunisten;;;;;;;;;;;x
-GAN_fascist;Fascist;Fasciste;Faschisten;;;;;;;;;;;x
+ARA_conservative;阿拉贡复兴党;;;;;;;;;;;x
+ARA_liberal;阿拉贡中间党;;;;;;;;;;;x
+ARA_anarcho_liberal;阿拉贡联合党;;;;;;;;;;;x
+ARA_conservative_2;阿拉贡地方党;;;;;;;;;;;x
+ARA_liberal_2;阿拉贡团结党;;;;;;;;;;;x
+ARA_socialist;阿拉贡社会党;;;;;;;;;;;x
+ARA_liberal_3;激进共和党;;;;;;;;;;x
+ARA_reactionary;阿拉贡民族党;;;;;;;;;;;x
+ARA_communist;阿拉贡共产党;;;;;;;;;;;x
+ARA_fascist;阿拉贡法西斯党;;;;;;;;;;;x
+BRG_liberal;自由党;;;;;;;;;;;x
+BRG_conservative;加尔文党;;;;;;;;;;;x
+BRG_socialist;勃艮第工人党;;;;;;;;;;;x
+BRG_conservative_2;天主教民主党;;;;;;;;;;;x
+BRG_conservative_3;保守党;;;;;;;;;;;x
+BRG_reactionary;国家党;;;;;;;;;;;x
+BRG_anarcho_liberal;激进党;;;;;;;;;;;x
+BRG_communist;共产党;;;;;;;;;;;x
+BRG_fascist;勃艮第民族同盟;;;;;;;;;;;x
+DNG_reactionary;保守党;;;;;;;;;;;x
+DNG_liberal;自由党;;;;;;;;;;;x
+DNG_liberal_2;西化派;;;;;;;;;;;x
+DNG_conservative;国家党;;;;;;;;;;;x
+DNG_liberal_3;新自由党;;;;;;;;;;;x
+DNG_anarcho_liberal;激进党;;;;;;;;;;;x
+DNG_conservative_2;保皇党;;;;;;;;;;;x
+DNG_socialist;社会党;;;;;;;;;;;x
+DNG_communist;共产党;;;;;;;;;;;x
+DNG_fascist;法西斯党;;;;;;;;;;;x
+GAN_reactionary;保守党;;;;;;;;;;;x
+GAN_liberal;自由党;;;;;;;;;;;x
+GAN_liberal_2;西化派;;;;;;;;;;;x
+GAN_conservative;国家党;;;;;;;;;;;x
+GAN_liberal_3;新自由党;;;;;;;;;;;x
+GAN_anarcho_liberal;激进党;;;;;;;;;;;x
+GAN_conservative_2;保皇党;;;;;;;;;;;x
+GAN_socialist;社会党;;;;;;;;;;;x
+GAN_communist;共产党;;;;;;;;;;;x
+GAN_fascist;法西斯党;;;;;;;;;;;x
+FUN_conservative;皇家派;;;;;;;;;;;x
+FUN_liberal;自由派;;;;;;;;;;;x
+FUN_reactionary;民族派;;;;;;;;;;;x
+FUN_anarcho_liberal;激进派;;;;;;;;;;;x
+INC_conservative;皇家派;;;;;;;;;;;x
+INC_liberal;自由派;;;;;;;;;;;x
+INC_reactionary;民族派;;;;;;;;;;;x
+INC_anarcho_liberal;激进派;;;;;;;;;;;x
+MAL_conservative;皇家派;;;;;;;;;;;x
+MAL_liberal;自由派;;;;;;;;;;;x
+MAL_reactionary;民族派;;;;;;;;;;;x
+MAL_anarcho_liberal;激进派;;;;;;;;;;;x
+MUS_conservative;斯拉夫主义;;;;;;;;;;;x
+MUS_liberal;西化派;;;;;;;;;;;x
+MUS_communist;社会民主工党;;;;;;;;;;;x
+MUS_communist_2;布尔什维克;;;;;;;;;;;x
+MUS_socialist;孟什维克;;;;;;;;;;;x
+MUS_reactionary;泛斯拉夫主义;;;;;;;;;;;x
+MUS_liberal_2;立宪民主党;;;;;;;;;;;x
+MUS_conservative_2;十月党;;;;;;;;;;;x
+MUS_socialist_2;民粹派;;;;;;;;;;;x
+MUS_socialist_3;社会革命党;;;;;;;;;;;x
+MUS_anarcho_liberal;激进党;;;;;;;;;;;x
+MUS_fascist;法西斯党;;;;;;;;;;;x
+NAN_conservative;基督教党;;;;;;;;;;;x
+NAN_liberal;改革党;;;;;;;;;;;x
+NAN_reactionary;天主党;;;;;;;;;;;x
+NAN_anarcho_liberal;世俗党;;;;;;;;;;;x
+NAN_socialist;社会党;;;;;;;;;;;x
+NAN_communist;共产党;;;;;;;;;;;x
+NAN_fascist;正义联盟;;;;;;;;;;;x
+NBG_liberal;爱国党;;;;;;;;;;;x
+NBG_liberal_2;自由党;;;;;;;;;;;x
+NBG_conservative;保守党;;;;;;;;;;;x
+NBG_socialist;劳工党;;;;;;;;;;;x
+NBG_liberal_3;国家党;;;;;;;;;;;x
+NBG_reactionary;民族党;;;;;;;;;;;x
+NBG_anarcho_liberal;激进党;;;;;;;;;;;x
+NBG_communist;共产党;;;;;;;;;;;x
+NBG_fascist;法西斯党;;;;;;;;;;;x
+LOT_liberal;爱国党;;;;;;;;;;;x
+LOT_liberal_2;自由党;;;;;;;;;;;x
+LOT_conservative;保守党;;;;;;;;;;;x
+LOT_socialist;劳工党;;;;;;;;;;;x
+LOT_liberal_3;国家党;;;;;;;;;;;x
+LOT_reactionary;民族党;;;;;;;;;;;x
+LOT_anarcho_liberal;激进党;;;;;;;;;;;x
+LOT_communist;共产党;;;;;;;;;;;x
+LOT_fascist;法西斯党;;;;;;;;;;;x
+NOV_liberal;自由党;;;;;;;;;;;x
+NOV_conservative;中间党;;;;;;;;;;;x
+NOV_liberal_2;自由国家党 ;;;;;;;;;;;x
+NOV_liberal_3;自由党;;;;;;;;;;;x
+NOV_socialist;工党;;;;;;;;;;;x
+NOV_socialist_2;社会党;;;;;;;;;;;x
+NOV_socialist_3;社会主义工人党;;;;;;;;;;;x
+NOV_reactionary;民族党;;;;;;;;;;;x
+NOV_conservative_2;保守党;;;;;;;;;;;x
+NOV_conservative_3;基督教工人党;;;;;;;;;;;x
+NOV_anarcho_liberal;激进工人党;;;;;;;;;;;x
+NOV_communist;共产党;;;;;;;;;;;x
+NOV_fascist;祖国同盟;;;;;;;;;;;x
+PLA_liberal;爱国党;;;;;;;;;;;x
+PLA_liberal_2;自由党;;;;;;;;;;;x
+PLA_conservative;保守党;;;;;;;;;;;x
+PLA_socialist;劳工党;;;;;;;;;;;x
+PLA_liberal_3;国家党;;;;;;;;;;;x
+PLA_reactionary;民族党;;;;;;;;;;;x
+PLA_anarcho_liberal;激进党;;;;;;;;;;;x
+PLA_communist;共产党;;;;;;;;;;;x
+PLA_fascist;法西斯党;;;;;;;;;;;x
+AMA_liberal;爱国党;;;;;;;;;;;x
+AMA_liberal_2;自由党;;;;;;;;;;;x
+AMA_conservative;保守党;;;;;;;;;;;x
+AMA_socialist;劳工党;;;;;;;;;;;x
+AMA_liberal_3;国家党;;;;;;;;;;;x
+AMA_reactionary;民族党;;;;;;;;;;;x
+AMA_anarcho_liberal;激进党;;;;;;;;;;;x
+AMA_communist;共产党;;;;;;;;;;;x
+AMA_fascist;法西斯党;;;;;;;;;;;x
+VIJ_conservative;皇家派;;;;;;;;;;;x
+VIJ_liberal;自由派;;;;;;;;;;;x
+VIJ_reactionary;民族派;;;;;;;;;;;x
+VIJ_anarcho_liberal;激进派;;;;;;;;;;;x
+VIJ_socialist;社会主义派;;;;;;;;;;;x
+VIJ_communist;共产主义派;;;;;;;;;;;x
+VIJ_fascist;法西斯党;;;;;;;;;;;x
+VIN_liberal;自由党;;;;;;;;;;;x
+VIN_conservative;保守党;;;;;;;;;;X
+VIN_liberal_2;民族自由党;;;;;;;;;;;x
+VIN_socialist;社会民主党;;;;;;;;;;;x
+VIN_reactionary;昆解党;;;;;;;;;;;x
+VIN_anarcho_liberal;激进自由党;;;;;;;;;;;x
+VIN_communist;共产党;;;;;;;;;;;x
+VIN_fascist;法西斯党;;;;;;;;;;;x
+SAN_anarcho_liberal;联邦党;;;;;;;;;;;x
+SAN_conservative;保守党;;;;;;;;;;;x
+SAN_liberal;自由党;;;;;;;;;;;x
+SAN_liberal_2;民族党;;;;;;;;;;;x
+SAN_reactionary;国家党;;;;;;;;;;;x
+SAN_socialist;社会党;;;;;;;;;;;x
+SAN_communist;共产党;;;;;;;;;;;x
+SAN_fascist;法西斯党;;;;;;;;;;;x
+GUY_anarcho_liberal;联邦党;;;;;;;;;;;x
+GUY_conservative;保守党;;;;;;;;;;;x
+GUY_liberal;自由党;;;;;;;;;;;x
+GUY_liberal_2;民族党;;;;;;;;;;;x
+GUY_reactionary;国家党;;;;;;;;;;;x
+GUY_socialist;社会党;;;;;;;;;;;x
+GUY_communist;共产党;;;;;;;;;;;x
+GUY_fascist;法西斯党;;;;;;;;;;;x
+ASK_conservative;皇家派;;;;;;;;;;;x
+ASK_liberal;自由派;;;;;;;;;;;x
+ASK_reactionary;民族派;;;;;;;;;;;x
+ASK_anarcho_liberal;激进派;;;;;;;;;;;x
+ASK_socialist;社会主义派;;;;;;;;;;;x
+ASK_communist;共产主义派;;;;;;;;;;;x
+ASK_fascist;法西斯派;;;;;;;;;;;x
+BEN_conservative;皇家派;;;;;;;;;;;x
+BEN_liberal;自由派;;;;;;;;;;;x
+BEN_reactionary;民族派;;;;;;;;;;;x
+BEN_anarcho_liberal;激进派;;;;;;;;;;;x
+BEN_socialist;社会主义派;;;;;;;;;;;x
+BEN_communist;共产主义派;;;;;;;;;;;x
+BEN_fascist;法西斯派;;;;;;;;;;;x
+FRA_reactionary;保皇党;;;;;;;;;;;x
+FRA_liberal;自由党;;;;;;;;;;;x
+FRA_conservative;联合党;;;;;;;;;;;x
+FRA_socialist;劳工党;;;;;;;;;;;x
+FRA_anarcho_liberal;共和党;;;;;;;;;;;x
+FRA_communist;劳工党;;;;;;;;;;;x
+FRA_fascist;民族党;;;;;;;;;;;x
+TUR_liberal;人民同盟;;;;;;;;;;;x
+TUR_socialist;民主阵线;;;;;;;;;;;x
+OYO_conservative;皇家派;;;;;;;;;;;x
+OYO_liberal;自由派;;;;;;;;;;;x
+OYO_reactionary;民族派;;;;;;;;;;;x
+OYO_anarcho_liberal;激进派;;;;;;;;;;;x
+OYO_communist;共产主义派;;;;;;;;;;;x
+OYO_socialist;社会主义派;;;;;;;;;;;x
+OYO_fascist;法西斯派;;;;;;;;;;;x
+NRI_conservative;皇家派;;;;;;;;;;;x
+NRI_liberal;自由派;;;;;;;;;;;x
+NRI_reactionary;民族派;;;;;;;;;;;x
+NRI_anarcho_liberal;激进派;;;;;;;;;;;x
+NRI_communist;共产主义派;;;;;;;;;;;x
+NRI_socialist;社会主义派;;;;;;;;;;;x
+NRI_fascist;法西斯派;;;;;;;;;;;x
+KGO_conservative;皇家派;;;;;;;;;;;x
+KGO_liberal;自由派;;;;;;;;;;;x
+KGO_reactionary;民族派;;;;;;;;;;;x
+KGO_anarcho_liberal;激进派;;;;;;;;;;;x
+KGO_communist;共产主义派;;;;;;;;;;;x
+KGO_socialist;社会主义派;;;;;;;;;;;x
+KGO_fascist;法西斯派;;;;;;;;;;;x
+UGA_conservative;皇家派;;;;;;;;;;;x
+UGA_liberal;自由派;;;;;;;;;;;x
+UGA_reactionary;民族派;;;;;;;;;;;x
+UGA_anarcho_liberal;激进派;;;;;;;;;;;x
+UGA_communist;共产主义派;;;;;;;;;;;x
+UGA_socialist;社会主义派;;;;;;;;;;;x
+UGA_fascist;法西斯派;;;;;;;;;;;x
+AVA_conservative;皇家派;;;;;;;;;;;x
+AVA_liberal;自由派;;;;;;;;;;;x
+AVA_reactionary;民族派;;;;;;;;;;;x
+AVA_anarcho_liberal;激进派;;;;;;;;;;;x
+AVA_communist;共产主义派;;;;;;;;;;;x
+AVA_socialist;社会主义派;;;;;;;;;;;x
+AVA_fascist;法西斯派;;;;;;;;;;;x
+ANI_conservative;皇家派;;;;;;;;;;;x
+ANI_liberal;自由派;;;;;;;;;;;x
+ANI_reactionary;民族派;;;;;;;;;;;x
+ANI_anarcho_liberal;激进派;;;;;;;;;;;x
+ANI_communist;共产主义派;;;;;;;;;;;x
+ANI_socialist;社会主义派;;;;;;;;;;;x
+ANI_fascist;法西斯派;;;;;;;;;;;x
+ARU_conservative;皇家派;;;;;;;;;;;x
+ARU_liberal;自由派;;;;;;;;;;;x
+ARU_reactionary;民族派;;;;;;;;;;;x
+ARU_anarcho_liberal;激进派;;;;;;;;;;;x
+ARU_communist;共产主义派;;;;;;;;;;;x
+ARU_socialist;社会主义派;;;;;;;;;;;x
+ARU_fascist;法西斯派;;;;;;;;;;;x
+TAP_conservative;皇家派;;;;;;;;;;;x
+TAP_liberal;自由派;;;;;;;;;;;x
+TAP_reactionary;民族派;;;;;;;;;;;x
+TAP_anarcho_liberal;激进派;;;;;;;;;;;x
+TAP_communist;共产主义派;;;;;;;;;;;x
+TAP_socialist;社会主义派;;;;;;;;;;;x
+TAP_fascist;法西斯派;;;;;;;;;;;x
+OCE_conservative;皇家派;;;;;;;;;;;x
+OCE_liberal;自由派;;;;;;;;;;;x
+OCE_reactionary;民族派;;;;;;;;;;;x
+OCE_anarcho_liberal;激进派;;;;;;;;;;;x
+OCE_communist;共产主义派;;;;;;;;;;;x
+OCE_socialist;社会主义派;;;;;;;;;;;x
+OCE_fascist;法西斯派;;;;;;;;;;;x
+DIN_conservative;皇家派;;;;;;;;;;;x
+DIN_liberal;自由派;;;;;;;;;;;x
+DIN_reactionary;民族派;;;;;;;;;;;x
+DIN_anarcho_liberal;激进派;;;;;;;;;;;x
+DIN_communist;共产主义派;;;;;;;;;;;x
+DIN_socialist;社会主义派;;;;;;;;;;;x
+DIN_fascist;法西斯派;;;;;;;;;;;x
+AZT_conservative;皇家派;;;;;;;;;;;x
+AZT_liberal;自由派;;;;;;;;;;;x
+AZT_reactionary;民族派;;;;;;;;;;;x
+AZT_anarcho_liberal;激进派;;;;;;;;;;;x
+AZT_communist;共产主义派;;;;;;;;;;;x
+AZT_socialist;社会主义派;;;;;;;;;;;x
+AZT_fascist;法西斯派;;;;;;;;;;;x
+HHR_conservative;皇家派;;;;;;;;;;;x
+HHR_liberal;自由派;;;;;;;;;;;x
+HHR_reactionary;民族派;;;;;;;;;;;x
+HHR_anarcho_liberal;激进派;;;;;;;;;;;x
+HHR_communist;共产主义派;;;;;;;;;;;x
+HHR_socialist;社会主义派;;;;;;;;;;;x
+HHR_fascist;法西斯派;;;;;;;;;;;x
+DAR_conservative;皇家派;;;;;;;;;;;x
+DAR_liberal;自由派;;;;;;;;;;;x
+DAR_reactionary;民族派;;;;;;;;;;;x
+DAR_anarcho_liberal;激进派;;;;;;;;;;;x
+DAR_communist;共产主义派;;;;;;;;;;;x
+DAR_socialist;社会主义派;;;;;;;;;;;x
+DAR_fascist;法西斯派;;;;;;;;;;;x
+ZIM_conservative;皇家派;;;;;;;;;;;x
+ZIM_liberal;自由派;;;;;;;;;;;x
+ZIM_reactionary;民族派;;;;;;;;;;;x
+ZIM_anarcho_liberal;激进派;;;;;;;;;;;x
+ZIM_communist;共产主义派;;;;;;;;;;;x
+ZIM_socialist;社会主义派;;;;;;;;;;;x
+ZIM_fascist;法西斯派;;;;;;;;;;;x
+IRO_conservative;皇家派;;;;;;;;;;;x
+IRO_liberal;自由派;;;;;;;;;;;x
+IRO_reactionary;民族派;;;;;;;;;;;x
+IRO_anarcho_liberal;激进派;;;;;;;;;;;x
+IRO_communist;共产主义派;;;;;;;;;;;x
+IRO_socialist;社会主义派;;;;;;;;;;;x
+IRO_fascist;法西斯派;;;;;;;;;;;x
+FJA_conservative;皇家派;;;;;;;;;;;x
+FJA_liberal;自由派;;;;;;;;;;;x
+FJA_reactionary;民族派;;;;;;;;;;;x
+FJA_anarcho_liberal;激进派;;;;;;;;;;;x
+FJA_communist;共产主义派;;;;;;;;;;;x
+FJA_socialist;社会主义派;;;;;;;;;;;x
+FJA_fascist;法西斯派;;;;;;;;;;;x
+NUN_conservative;皇家派;;;;;;;;;;;x
+NUN_liberal;自由派;;;;;;;;;;;x
+NUN_reactionary;民族派;;;;;;;;;;;x
+NUN_anarcho_liberal;激进派;;;;;;;;;;;x
+NUN_communist;共产主义派;;;;;;;;;;;x
+NUN_socialist;社会主义派;;;;;;;;;;;x
+NUN_fascist;法西斯派;;;;;;;;;;;x
+BHA_conservative;皇家派;;;;;;;;;;;x
+BHA_liberal;自由派;;;;;;;;;;;x
+BHA_reactionary;民族派;;;;;;;;;;;x
+BHA_anarcho_liberal;激进派;;;;;;;;;;;x
+BHA_communist;共产主义派;;;;;;;;;;;x
+BHA_socialist;社会主义派;;;;;;;;;;;x
+BHA_fascist;法西斯派;;;;;;;;;;;x
+NUS_conservative;皇家派;;;;;;;;;;;x
+NUS_liberal;自由派;;;;;;;;;;;x
+NUS_reactionary;民族派;;;;;;;;;;;x
+NUS_anarcho_liberal;激进派;;;;;;;;;;;x
+NUS_communist;共产主义派;;;;;;;;;;;x
+NUS_socialist;社会主义派;;;;;;;;;;;x
+NUS_fascist;法西斯派;;;;;;;;;;;x
+DRA_conservative;皇家派;;;;;;;;;;;x
+DRA_liberal;自由派;;;;;;;;;;;x
+DRA_reactionary;民族派;;;;;;;;;;;x
+DRA_anarcho_liberal;激进派;;;;;;;;;;;x
+DRA_communist;共产主义派;;;;;;;;;;;x
+DRA_socialist;社会主义派;;;;;;;;;;;x
+DRA_fascist;法西斯派;;;;;;;;;;;x
+YOL_conservative;皇家派;;;;;;;;;;;x
+YOL_liberal;自由派;;;;;;;;;;;x
+YOL_reactionary;民族派;;;;;;;;;;;x
+YOL_anarcho_liberal;激进派;;;;;;;;;;;x
+YOL_communist;共产主义派;;;;;;;;;;;x
+YOL_socialist;社会主义派;;;;;;;;;;;x
+YOL_fascist;法西斯派;;;;;;;;;;;x
+NOO_conservative;皇家派;;;;;;;;;;;x
+NOO_liberal;自由派;;;;;;;;;;;x
+NOO_reactionary;民族派;;;;;;;;;;;x
+NOO_anarcho_liberal;激进派;;;;;;;;;;;x
+NOO_communist;共产主义派;;;;;;;;;;;x
+NOO_socialist;社会主义派;;;;;;;;;;;x
+NOO_fascist;法西斯派;;;;;;;;;;;x
+ADW_conservative;皇家派;;;;;;;;;;;x
+ADW_liberal;自由派;;;;;;;;;;;x
+ADW_reactionary;民族派;;;;;;;;;;;x
+ADW_anarcho_liberal;激进派;;;;;;;;;;;x
+ADW_communist;共产主义派;;;;;;;;;;;x
+ADW_socialist;社会主义派;;;;;;;;;;;x
+ADW_fascist;法西斯派;;;;;;;;;;;x
+KNO_conservative;皇家派;;;;;;;;;;;x
+KNO_liberal;自由派;;;;;;;;;;;x
+KNO_reactionary;民族派;;;;;;;;;;;x
+KNO_anarcho_liberal;激进派;;;;;;;;;;;x
+KNO_communist;共产主义派;;;;;;;;;;;x
+KNO_socialist;社会主义派;;;;;;;;;;;x
+KNO_fascist;法西斯派;;;;;;;;;;;x
+ILO_conservative;皇家派;;;;;;;;;;;x
+ILO_liberal;自由派;;;;;;;;;;;x
+ILO_reactionary;民族派;;;;;;;;;;;x
+ILO_anarcho_liberal;激进派;;;;;;;;;;;x
+ILO_communist;共产主义派;;;;;;;;;;;x
+ILO_socialist;社会主义派;;;;;;;;;;;x
+ILO_fascist;法西斯派;;;;;;;;;;;x
 GCO_anarcho_liberal;Confederalistas;;;;;;;;;;;;;x
 GCO_conservative;Centralistas;;;;;;;;;;;;;x
 GCO_conservative_2;Hacendados;;;;;;;;;;;;;x
@@ -48,308 +357,6 @@ GCO_socialist;Populistas;;;;;;;;;;;;;x
 GCO_socialist_2;Partido de la Liberaci髇;;;;;;;;;;;;;x
 GCO_communist;Internacionalistas;;;;;;;;;;;;;x
 GCO_fascist;Comuni髇 Libertaria Bolivariana;;;;;;;;;;;;;x
-FUN_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-FUN_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-FUN_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-FUN_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-INC_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-INC_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-INC_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-INC_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-MAL_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-MAL_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-MAL_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-MAL_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-MUS_conservative;Slavophile;Slavophile;Slawophile;;;;;;;;;;;x
-MUS_liberal;Westerniser;Westerniser;Westler;;;;;;;;;;;x
-MUS_communist;Social Democratic;Social-d閙ocrate;Social Democratic;;;;;;;;;;;x
-MUS_communist_2;Bolshevik;Bolshevik;Bolschewiki;;;;;;;;;;;x
-MUS_socialist;Menshevik;Menshevik;Menschewiki;;;;;;;;;;;x
-MUS_reactionary;Panslavic;Panslavic;Panslawisten;;;;;;;;;;;x
-MUS_liberal_2;Kadets;Kadets;Kadetten;;;;;;;;;;;x
-MUS_conservative_2;Octobrists;Octobristes;Octobristen;;;;;;;;;;;x
-MUS_socialist_2;Populists;Populistes;Populisten;;;;;;;;;;;x
-MUS_socialist_3;Socialist Revolutionary;R関olutionnaire socialiste;Sozialrevolution鋜e;;;;;;;;;;;x
-MUS_anarcho_liberal;Radicals;Radicaux;Radikale;;;;;;;;;;;x
-MUS_fascist;Fascists;Fascistes;Faschisten;;;;;;;;;;;x
-NAN_conservative;Christian Party;Christian Party;Christian Party;;;;;;;;;;;x
-NAN_liberal;Reform Party;Reform Party;Reform Party;;;;;;;;;;;x
-NAN_reactionary;Party of God;Party of God;Party of God;;;;;;;;;;;x
-NAN_anarcho_liberal;Secular Party;Secular Party;Secular Party;;;;;;;;;;;x
-NAN_socialist;Socialist Party;Socialist Party;Socialist Party;;;;;;;;;;;x
-NAN_communist;Communist Party;Communist Party;Communist Party;;;;;;;;;;;x
-NAN_fascist;League of the Righteous;League of the Righteous;League of the Righteous;;;;;;;;;;;x
-NBG_liberal;Parti Patriote;Parti patriote;Parti Patriote;;;;;;;;;;;x
-NBG_liberal_2;Parti Lib閞al;Parti lib閞al;Parti Lib閞al;;;;;;;;;;;x
-NBG_conservative;Parti Conservateur;Parti conservateur;Parti Conservateur;;;;;;;;;;;x
-NBG_socialist;Parti Ouvrier;Parti ouvrier;Parti Ouvrier;;;;;;;;;;;x
-NBG_liberal_3;Parti Nationaliste;Parti nationaliste;Parti Nationaliste;;;;;;;;;;;x
-NBG_reactionary;Parti de la Nation;Parti nationaliste;Parti Nationalist;;;;;;;;;;;x
-NBG_anarcho_liberal;Parti Radical;Parti radical;Parti Radical;;;;;;;;;;;x
-NBG_communist;Parti Communiste;Parti communiste;Parti Communist;;;;;;;;;;;x
-NBG_fascist;Parti Fasciste;Parti fasciste;Parti Fascist;;;;;;;;;;;x
-LOT_liberal;Parti Patriote;Parti patriote;Parti Patriote;;;;;;;;;;;x
-LOT_liberal_2;Parti Lib閞al;Parti lib閞al;Parti Lib閞al;;;;;;;;;;;x
-LOT_conservative;Parti Conservateur;Parti conservateur;Parti Conservateur;;;;;;;;;;;x
-LOT_socialist;Parti Ouvrier;Parti ouvrier;Parti Ouvrier;;;;;;;;;;;x
-LOT_liberal_3;Parti Nationaliste;Parti nationaliste;Parti Nationaliste;;;;;;;;;;;x
-LOT_reactionary;Parti de la Nation;Parti nationaliste;Parti Nationalist;;;;;;;;;;;x
-LOT_anarcho_liberal;Parti Radical;Parti radical;Parti Radical;;;;;;;;;;;x
-LOT_communist;Parti Communiste;Parti communiste;Parti Communist;;;;;;;;;;;x
-LOT_fascist;Parti Fasciste;Parti fasciste;Parti Fascist;;;;;;;;;;;x
-NOV_liberal;Liberals. Partei;Liberaldem. Partei;Liberaldem. Partei;;;;;;;;;;;x
-NOV_conservative;Centrists;Zentrumspartei;Zentrumspartei;;;;;;;;;;;x
-NOV_liberal_2;Liberal-Nationalists ;Nationalliberale ;Nationalliberale ;;;;;;;;;;;x
-NOV_liberal_3;Freedom Party;Freisinnige Partei;Freisinnige Partei;;;;;;;;;;;x
-NOV_socialist;Workers' Party;Deutscher Arbeiterverein;Deutscher Arbeiterverein;;;;;;;;;;;x
-NOV_socialist_2;Socialist Party;Sozialdem. Arbeiterpartei ;Sozialdem. Arbeiterpartei ;;;;;;;;;;;x
-NOV_socialist_3;Socialist Workers' Party;Sozial. Arbeiterpartei ;Sozial. Arbeiterpartei ;;;;;;;;;;;x
-NOV_reactionary;National Party;Nationale Partei;Nationale Partei;;;;;;;;;;;x
-NOV_conservative_2;Conservative Party;Konservative Partei;Konservative Partei;;;;;;;;;;;x
-NOV_conservative_3;Christian Workers' Party;Christsoz. Arbeiterpartei;Christsoz. Arbeiterpartei;;;;;;;;;;;x
-NOV_anarcho_liberal;Radical Workers' Party;Arbeiterpartei radical;Radikale Arbeiterpartei;;;;;;;;;;;x
-NOV_communist;Communist Party;Arbeiterparei communiste;Kommunistische Arbeiterpartei;;;;;;;;;;;x
-NOV_fascist;Motherland Union;NSDP;NSDP;;;;;;;;;;;x
-AMA_fascist_1;La Croix du Sud;;;;;;;;;;;;x,,,,,,,,,,,,,
-AMA_communist_1;Parti des Travailleurs;;;;;;;;;;;;x,,,,,,,,,,,,,
-AMA_anarcho_liberal_1;Bartholomeens;;;;;;;;;;;;x,,,,,,,,,,,,,
-AMA_reactionary_1;Monarchistes;;;;;;;;;;;;x,,,,,,,,,,,,,
-AMA_socialist_2;Cosmopolitains;;;;;;;;;;;;x,,,,,,,,,,,,,
-AMA_socialist_1;Socialistes;;;;;;;;;;;;x,,,,,,,,,,,,,
-AMA_liberal_2;Parti f閐閞aliste;;;;;;;;;;;;x,,,,,,,,,,,,,
-AMA_liberal_1;Equinox閑ns;;;;;;;;;;;;x,,,,,,,,,,,,,
-AMA_conservative_2;Centralisateurs;;;;;;;;;;;;x,,,,,,,,,,,,,
-AMA_conservative_1;Parti des Planteurs;;;;;;;;;;;;x,,,,,,,,,,,,,
-AMA_social_liberal;Parti D閙ocrate;;;;;;;;;;;;x,,,,,,,,,,,,,
-VIJ_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-VIJ_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-VIJ_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-VIJ_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-VIJ_socialist;The Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;;;;;;;;;;x
-VIJ_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;x
-VIJ_fascist;The Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;;;x
-VIN_liberal;Venstre;Venstre;Venstre;;;;;;;;;;;x
-VIN_conservative;H鴍re;H鴍re;H鴍re;;;;;;;;;;;x
-VIN_liberal_2;National-liberale;National-liberale;National-liberale;;;;;;;;;;;x
-VIN_socialist;Socialdemokratiet;Socialdemokratiet;Socialdemokratiet;;;;;;;;;;;x
-VIN_reactionary;Konge Partiet;Konge Partiet;Konge Partiet;;;;;;;;;;;x
-VIN_anarcho_liberal;Radikale-Venstre;Radikale-Venstre;Radikale-Venstre;;;;;;;;;;;x
-VIN_communist;Communists;Communistes;Kommunisten;;;;;;;;;;;x
-VIN_fascist;Fascists;Fascistes;Faschisten;;;;;;;;;;;x
-SAN_anarcho_liberal;Federalistas;Federalistas;Federalistas;;;;;;;;;;;x
-SAN_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;;;;;;;;;x
-SAN_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;;;;;;;;;;x
-SAN_liberal_2;Partido Nacional;Partido Nacional;Partido Nacional;;;;;;;;;;;x
-SAN_reactionary;Partido Nationalist;Partido nationaliste;Partido Nationalist;;;;;;;;;;;x
-SAN_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;;;;;;;;;x
-SAN_communist;Partido Communist;Partido communiste;Partido Communist;;;;;;;;;;;x
-SAN_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;;;;;;;;;x
-GUY_anarcho_liberal;Federalistas;Federalistas;Federalistas;;;;;;;;;;;x
-GUY_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;;;;;;;;;x
-GUY_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;;;;;;;;;;x
-GUY_liberal_2;Partido Nacional;Partido Nacional;Partido Nacional;;;;;;;;;;;x
-GUY_reactionary;Partido Nationalist;Partido nationaliste;Partido Nationalist;;;;;;;;;;;x
-GUY_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;;;;;;;;;x
-GUY_communist;Partido Communist;Partido communiste;Partido Communist;;;;;;;;;;;x
-GUY_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;;;;;;;;;x
-ASK_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-ASK_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-ASK_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-ASK_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-ASK_socialist;The Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;;;;;;;;;;x
-ASK_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;x
-ASK_fascist;The Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;;;x
-BEN_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-BEN_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-BEN_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-BEN_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-BEN_socialist;The Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;;;;;;;;;;x
-BEN_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;x
-BEN_fascist;The Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;;;x
-FRA_reactionary;Parti du Royaume;Parti du Royaume;Parti du Royaume;;;;;;;;;;;x
-FRA_liberal;Parti Lib閞al;Parti Lib閞al;Parti Lib閞al;;;;;;;;;;;x
-FRA_conservative;Parti Unioniste;Parti Unioniste;Parti Unioniste;;;;;;;;;;;x
-FRA_socialist;Parti des Travailleurs;Parti des Travailleurs;Parti des Travailleurs;;;;;;;;;;;x
-FRA_anarcho_liberal;Parti R閜ublicain;Parti R閜ublicain;Parti R閜ublicain;;;;;;;;;;;x
-FRA_communist;Parti Ouvrier;Parti Ouvrier;Parti Ouvrier;;;;;;;;;;;x
-FRA_fascist;Parti de la Nation;Parti de la Nation;Parti de la Nation;;;;;;;;;;;x
-TUR_liberal;People's Union;Union populaire;Volksunion;;;;;;;;;;;x
-TUR_socialist;Democratic Front;Front d閙ocratique;Demokratische Front;;;;;;;;;;;x
-OYO_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-OYO_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-OYO_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-OYO_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-OYO_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-OYO_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-OYO_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-NRI_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-NRI_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-NRI_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-NRI_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-NRI_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-NRI_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-NRI_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-KGO_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-KGO_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-KGO_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-KGO_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-KGO_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-KGO_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-KGO_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-UGA_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-UGA_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-UGA_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-UGA_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-UGA_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-UGA_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-UGA_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-AVA_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-AVA_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-AVA_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-AVA_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-AVA_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-AVA_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-AVA_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-ANI_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-ANI_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-ANI_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-ANI_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-ANI_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-ANI_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-ANI_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-ARU_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-ARU_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-ARU_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-ARU_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-ARU_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-ARU_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-ARU_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-TAP_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-TAP_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-TAP_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-TAP_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-TAP_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-TAP_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-TAP_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-OCE_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-OCE_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-OCE_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-OCE_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-OCE_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-OCE_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-OCE_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-DIN_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-DIN_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-DIN_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-DIN_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-DIN_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-DIN_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-DIN_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-AZT_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-AZT_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-AZT_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-AZT_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-AZT_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-AZT_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-AZT_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-HHR_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-HHR_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-HHR_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-HHR_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-HHR_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-HHR_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-HHR_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-DAR_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-DAR_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-DAR_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-DAR_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-DAR_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-DAR_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-DAR_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-ZIM_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-ZIM_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-ZIM_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-ZIM_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-ZIM_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-ZIM_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-ZIM_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-IRO_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-IRO_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-IRO_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-IRO_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-IRO_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-IRO_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-IRO_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-FJA_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-FJA_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-FJA_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-FJA_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-FJA_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-FJA_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-FJA_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-NUN_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-NUN_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-NUN_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-NUN_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-NUN_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-NUN_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-NUN_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-BHA_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-BHA_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-BHA_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-BHA_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-BHA_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-BHA_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-BHA_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-NUS_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-NUS_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-NUS_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-NUS_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-NUS_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-NUS_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-NUS_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-DRA_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-DRA_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-DRA_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-DRA_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-DRA_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-DRA_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-DRA_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-YOL_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-YOL_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-YOL_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-YOL_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-YOL_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-YOL_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-YOL_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-NOO_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-NOO_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-NOO_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-NOO_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-NOO_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-NOO_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-NOO_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-ADW_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-ADW_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-ADW_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-ADW_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-ADW_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-ADW_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-ADW_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-KNO_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-KNO_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-KNO_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-KNO_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-KNO_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-KNO_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-KNO_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-ILO_conservative;Royal Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-ILO_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-ILO_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
-ILO_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
-ILO_communist;Communist Faction;Faction royale;K鰊igsfraktion;;;;;;;;;;;x
-ILO_socialist;The Socialist Faction;Faction lib閞ale;Die liberale Fraktion;;;;;;;;;;;x
-ILO_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
 LWE_conservative_1;Aloysius' Party;Aloysius' Party;Aloysius' Party;;;;;;;;;;;x
 LWE_conservative_2; United Boer Party; United Boer Party; United Boer Party;;;;;;;;;;;x
 LWE_liberal_1;Bastaards' Party;Bastaards' Party;Bastaards' Party;;;;;;;;;;;x
