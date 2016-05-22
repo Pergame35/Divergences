@@ -1,11 +1,11 @@
+;;;;;;;;;;;x
 ADA;阿达尔;;;;;;;;;;;x
+ADA_absolute_monarchy;阿达尔王国;;;;;;;;;;;x
 ADA_ADJ;阿达尔的;;;;;;;;;;;x
 ADR;安得拉;;;;;;;;;;;x
 ADR_ADJ;安得拉的;;;;;;;;;;;x
-ADR;安得拉;;;;;;;;;;;x
-ADR_ADJ;安得拉的;;;;;;;;;;;x
-ADW;Adamawa;Adamawa;Adamawa;;;;;;;;;;;x;;;;;;;;;;;;;;;
-ADW_ADJ;Adamawan;Adamawan;Adamawan;;;;;;;;;;;x;;;;;;;;;;;;;;;
+ADW;阿达马瓦;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+ADW_ADJ;阿达马瓦的;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 AFG_absolute_monarchy;阿富汗;;;;;;;;;;;x
 AFG_absolute_monarchy_ADJ;阿富汗的;;;;;;;;;;;x
 AFG_ADJ;阿富汗的;;;;;;;;;;;x
@@ -15,6 +15,7 @@ AFS;阿夫沙尔王朝;;;;;;;;;;;;;x
 AFS_ADJ;阿夫沙尔的;;;;;;;;;;;x
 AIN;阿伊努;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 AIN_ADJ;阿伊努的;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+AIN_absolute_monarchy;阿伊努茅希利;;;;;;;;;;;;;x
 AJU;阿居乌壤国;;;;;;;;;;;;;x
 AJU_ADJ;阿居乌壤的;;;;;;;;;;;;;x
 AJU_proletarian_dictatorship;东索马里人民共和国;;;;;;;;;;;;;x
@@ -26,8 +27,8 @@ AJU_absolute_monarchy;阿居乌壤帝国;;;;;;;;;;;;;x
 AJU_prussian_constitutionalism;阿居乌壤帝国;;;;;;;;;;;;;x
 AJU_hms_government;阿居乌壤苏丹国;;;;;;;;;;;;;x
 AJU_democracy;阿居乌壤共和国;;;;;;;;;;;;;x
-ALD;Numidia;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-ALD_ADJ;Numidian;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+ALD;努米底亚;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+ALD_ADJ;努米底亚的;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 ALH;哈萨;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
 ALH_ADJ;哈萨的;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
 AMA;亚马逊尼亚;;;;;;;;;;;x
@@ -48,10 +49,10 @@ ARI;阿拉贡-意大利;;;;;;;;;;;x
 ARI_ADJ;阿拉贡-意大利的;;;;;;;;;;;x
 ARU;普罗莫卡;;;;;;;;;;;x
 ARU_ADJ;普罗莫卡的;;;;;;;;;;;x
-ARY;Aryanam;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-ARY_ADJ;Aryan;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
-ASH;Ashanti;Ashanti;Aschanti;;Asantia;;;;;;;;x;;;;;;;;;;;;;;;;
-ASH_ADJ;Ashanti;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+ARY;雅利安;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+ARY_ADJ;雅利安的;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
+ASH;阿散蒂;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
+ASH_ADJ;阿散蒂的;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 ASH_anarcho_liberal;Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 ASH_bourgeois_dictatorship;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;;x;;;;;;;;;;;;;;
 ASH_bourgeois_dictatorship_ADJ;Ghanaian;Ghanaian;Ghanaisch;;Ghan?s;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -83,8 +84,8 @@ ATS;阿赛西亚;;;;;;;;;;;x
 ATS_ADJ;阿赛西亚的;;;;;;;;;;;x
 AVA;塔拉圭;;;;;;;;;;;x
 AVA_ADJ;塔拉圭的;;;;;;;;;;;x
-AZA;Azande;Azande;Azande;;Azande;;;;;;;;;;x;;;;;;;;;;;;;;
-AZA_ADJ;Zande;Zande;Zande;;;;;;;;;;;;x;;;;;;;;;;;;;;
+AZA;阿赞德;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+AZA_ADJ;阿赞德的;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 AZA_anarcho_liberal;Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 AZA_communist;Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 AZA_conservative;Royal Faction;Faction royale;K?nigsfraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -454,8 +455,8 @@ LUA_bourgeois_dictatorship;老挝;;;;;;;;;;;x
 LUA_democracy;老挝;;;;;;;;;;;x
 LUA_presidential_dictatorship;老挝;;;;;;;;;;;x
 LUA_proletarian_dictatorship;老挝;;;;;;;;;;;x
-LUN;Lunda;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-LUN_ADJ;Lunda;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+LUN;伦达;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+LUN_ADJ;伦达的;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 LUN_anarcho_liberal;Radical Faction;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 LUN_communist;Communist Faction;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 LUN_conservative;Royal Faction;;;;;;;;;;;;x;;;;;;;;;;;;;;;
@@ -492,29 +493,29 @@ MDR;马杜赖;;;;;;;;;;;x
 MDR_ADJ;马杜赖的;;;;;;;;;;;x
 MGH;马格里布;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 MGH_ADJ;马格里布的;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
-MIG;南京;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIG_absolute_monarchy;大宋;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIG_absolute_monarchy_ADJ;大宋的;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIG_ADJ;江苏的;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIG_feudal_monarchy;大宋;Song;Song;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIG_feudal_monarchy_ADJ;大宋的;Song;Song;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIG_hms_government;大宋;Song;Song;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIG_hms_government_ADJ;大宋的;Song;Song;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIG_prussian_constitutionalism;大宋;Song;Song;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIG_prussian_constitutionalism_ADJ;大宋的;Song;Song;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIG_presidential_dictatorship;南京摄政议会;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIG_merchant_republic;南京摄政议会;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIG_democracy;南京共和国;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIX;闽;Min;Min;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MIX_ADJ;闽的;Min;Min;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG;大明;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG_absolute_monarchy;大明;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG_absolute_monarchy_ADJ;大明的;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG_ADJ;大明的;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG_feudal_monarchy;大明的;Song;Song;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG_feudal_monarchy_ADJ;大明的;Song;Song;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG_hms_government;大明的;Song;Song;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG_hms_government_ADJ;大明的;Song;Song;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG_prussian_constitutionalism;大明的;Song;Song;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG_prussian_constitutionalism_ADJ;大明的;Song;Song;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG_presidential_dictatorship;南京摄政;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG_merchant_republic;南京共和国;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIG_democracy;大明共和国;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIX;大闽;Min;Min;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MIX_ADJ;大闽的;Min;Min;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MKS;望加锡;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MKS_ADJ;望加锡的;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MLD;马尔代夫;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MLD_ADJ;马尔代夫的;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MLT;马耳他;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MLT_ADJ;马耳他的;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MNG;Mongo;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-MNG_ADJ;Mongo;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MNG;芒戈;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MNG_ADJ;芒戈的;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MNG_anarcho_liberal;Radical Faction;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MNG_communist;Communist Faction;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MNG_conservative;Royal Faction;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
@@ -879,7 +880,6 @@ ZIM;姆帕塔;;;;;;;;;;x
 ZIM_ADJ;姆帕塔的;;;;;;;;;x
 ZND;桑德王朝;;;;;;;;;;;;;x
 ZND_ADJ;桑德的;;;;;;;;;;;;;x
-
 RAJ;拉杰普塔纳;;;;;;;;;;;;;x
 RAJ_ADJ;拉杰普塔的;;;;;;;;;;;;;x
 PROV1346;吞武里;Thonburi;Thonburi;;;;;;;;;;;x
