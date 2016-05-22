@@ -1,2 +1,0 @@
-The flag of Republican Burgundy is peculiar. i proposed several others that are in the different folders here. You can see the different flags in the sample image 
-If you want to take a flag (like the Lorrain or '3') then copy it and paste it /gfx/flags and accept when it ask to erase the precedent 
