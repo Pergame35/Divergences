@@ -81,25 +81,7 @@ NEW_CORE_EFFECT_TAG;$TAG$ will gain §Yall§W as core.\n;$TAG$ obtiendra §Ytout§W 
 ANY_OWNED_LIMITED;For Any province that is\n;Pour toute province qui est\n;Für jede Provinz, die\n;;;;;;;;;;;x
 TECH_MINE_SIZE;Mine Size;Taille de la mine;Minengröße;;;;;;;;;;;x
 TECH_FARM_SIZE;Farm Size;Taille de la ferme;Farmgröße;;;;;;;;;;;x
-USA_absolute_monarchy;Kingdom of America;Royaume d'Amérique;Kingdom of America;;;;;;;;;;;x
-USA_absolute_monarchy_ADJ;American;Américain;Amerikanisch;;;;;;;;;;;x
-USA_hms_government;Kingdom of America;Royaume d'Amérique;Kingdom of America;;;;;;;;;;;x
-USA_hms_government_ADJ;American;Américain;Amerikanisch;;;;;;;;;;;x
-USA_proletarian_dictatorship;American People's Republic;République populaire d'Amérique;American People's Republic;;;;;;;;;;;x
-USA_proletarian_dictatorship_ADJ;American;Américain;Amerikanisch;;;;;;;;;;;x
-ENG_proletarian_dictatorship;The Worker's Commonwealth;Commonwealth des ouvriers;The Worker's Commonwealth;;;;;;;;;;;x
-ENG_proletarian_dictatorship_ADJ;British;Britannique;Britisch;;;;;;;;;;;x
-BOH_democracy;Czech Republic;République tchèque;Tschechische Republik;;;;;;;;;;;x
-BOH_democracy_ADJ;Czech;Tchèque;Tschechisch;;;;;;;;;;;x
-TUR_democracy;Turkey;Turquie;Türkei;;;;;;;;;;;x
-TUR_democracy_ADJ;Turkish;Turc;Türkisch;;;;;;;;;;;x
-KUK_democracy;The Danubian Confederation;Confédération danubienne;Die Donau-Konföderation;;;;;;;;;;;x
-KUK_democracy_ADJ;Danubian;Danubien;Donau-;;;;;;;;;;;x
 TRIGGER_STATE;(State);(État);(Staat);;;;;;;;;;;x
-BAV_proletarian_dictatorship;Bavarian Räterepublik;Räterepublik bavaroise;Bayerische Räterepublik;;;;;;;;;;;x
-BAV_proletarian_dictatorship;Bavarian;Bavarois;Bayerisch;;;;;;;;;;;x
-RUS_proletarian_dictatorship;Soviet Union;Union Soviétique;Sowjetunion;;;;;;;;;;;x
-RUS_proletarian_dictatorship_ADJ;Soviet;Soviétique;Sowjetisch;;;;;;;;;;;x
 NO_TECH_SELECTED;None Selected;Pas de sélection;Keine ausgewählt;;;;;;;;;;;x
 IS_CIVILIZED;is civilized.;est civilisé.;ist zivilisiert.;;;;;;;;;;;x
 IS_NOT_CIVILIZED;is NOT civilized.;n'est PAS civilisé.;ist NICHT zivilisiert.;;;;;;;;;;;x
@@ -377,15 +359,6 @@ POP_DETAIL_LIFENEEDS;Life Needs;Besoins vitaux;Lebensbedürfnisse;;;;;;;;;;;x
 POP_DETAIL_EVERYDAYNEEDS;Everyday Needs;Besoins quotidiens;Alltagsbedürfnisse;;;;;;;;;;;x
 POP_DETAIL_LUXUARYNEEDS;Luxury Needs;Besoins de luxe;Luxusbedürfnisse;;;;;;;;;;;x
 CLICK_FOR_DETAILS;Click for more details.;Cliquez pour obtenir plus de détails.;Klicken Sie für weitere Details.;;;;;;;;;;;x
-CZH;Czechoslovakia;Tchécoslovaquie;Tschechoslowakei;;;;;;;;;;;x
-CZH_ADJ;Czechoslovakian;Tchécoslovaquien;Tschechoslowakisch;;;;;;;;;;;x
-CZH_fascist;CNSP;CNSP;CNSP;;;;;;;;;;;x
-CZH_socialist;CSSD;CSSD;CSSD;;;;;;;;;;;x
-CZH_conservative;CSL;CSL;CSL;;;;;;;;;;;x
-CZH_liberal;RSZML;RSZML;RSZML;;;;;;;;;;;x
-CZH_communist;KSC;KSC;KSC;;;;;;;;;;;x
-CZH_reactionary;CsND;CsND;CsND;;;;;;;;;;;x
-CZH_anarcho_liberal;Ceska strana libertarianismus;Ceska strana libertarianismus;Ceska Strana Libertarianismus;;;;;;;;;;;x
 YUG;Yugoslavia;Yougoslavie;Jugoslawien;;;;;;;;;;;x
 YUG_ADJ;Yugoslavian;Yougoslavien;Jugoslawisch;;;;;;;;;;;x
 YUG_fascist;National Front;Front national;Nationale Front;;;;;;;;;;;x
@@ -395,107 +368,14 @@ YUG_liberal;People's Party;Parti populaire;Volkspartei;;;;;;;;;;;x
 YUG_communist;Communist Party;Parti communiste ;Kommunistische Partei;;;;;;;;;;;x
 YUG_reactionary;Monarchist Party;Parti monarchiste;Monarchistische Partei;;;;;;;;;;;x
 YUG_anarcho_liberal;Freedom Party;Parti de la liberté;Freiheitspartei;;;;;;;;;;;x
-AZB;Azerbaijan;Azerbaïdjan;Aserbaidschan;;;;;;;;;;;x
-AZB_ADJ;Azerbaijani;Azerbaïdjanais;Aserbaidschanisch;;;;;;;;;;;x
-AZB_fascist;National Front;Front national;Nationale Front;;;;;;;;;;;x
-AZB_socialist;Muslim Social Democratic Party;Parti social-démocrate musulman;Muslimische sozialdemokratische Partei;;;;;;;;;;;x
-AZB_conservative;Ittihad;Ittihad;Ittihad;;;;;;;;;;;x
-AZB_liberal;Musavat;Musavat;Musavat;;;;;;;;;;;x
-AZB_communist;Bolshevik Party;Parti bolchevique;Bolschewistische Partei ;;;;;;;;;;;x
-AZB_reactionary;Nationalist Party;Parti nationaliste;Nationalistische Partei;;;;;;;;;;;x
-AZB_anarcho_liberal;Freedom Party;Parti de la liberté;Freiheitspartei;;;;;;;;;;;x
-IRQ;Iraq;Iraq;Irak;;;;;;;;;;;x
-IRQ_ADJ;Iraqi;Iraquien;Irakisch;;;;;;;;;;;x
-IRQ_reactionary;Hashemite Faction;Faction hachémite;Hashemitische Fraktion;;;;;;;;;;;x
-IRQ_socialist;Baath Party;Parti Baas;Baath-Partei;;;;;;;;;;;x
-IRQ_communist;Communist Party;Parti communiste ;Kommunistische Partei;;;;;;;;;;;x
-IRQ_liberal;Liberal Party;Parti libéral;Liberale Partei;;;;;;;;;;;x
-IRQ_anarcho_liberal;Freedom Party;Parti de la liberté;Freiheitspartei;;;;;;;;;;;x
-IRQ_conservative;Conservative Party;Parti conservateur;Konservative Partei;;;;;;;;;;;x
-IRQ_fascist;Unity Party;Parti unitaire;Einheitspartei;;;;;;;;;;;x
-MGL;Mongolia;Mongolie;Mongolei;;;;;;;;;;;x
-MGL_ADJ;Mongolian;Mongole;Mongolisch;;;;;;;;;;;x
-MGL_reactionary;Lama Faction;Faction Lama;Lama-Fraktion;;;;;;;;;;;x
-MGL_socialist;Socialist Party;Parti socialiste;Sozialistische Partei;;;;;;;;;;;x
-MGL_communist;Communist Party;Parti communiste ;Kommunistische Partei;;;;;;;;;;;x
-MGL_liberal;Liberal Party;Parti libéral;Liberale Partei;;;;;;;;;;;x
-MGL_anarcho_liberal;Freedom Party;Parti de la liberté;Freiheitspartei;;;;;;;;;;;x
-MGL_conservative;Conservative Party;Parti conservateur;Konservative Partei;;;;;;;;;;;x
-MGL_fascist;Unity Party;Parti unitaire;Einheitspartei;;;;;;;;;;;x
-PHI;Philippines;Philippines;Philippinen;;;;;;;;;;;x
-PHI_ADJ;Philippine;Philippine;Philippinisch;;;;;;;;;;;x
-PHI_reactionary;Partido Tradicionalista;Partido Tradicionalista;Partido Tradicionalista;;;;;;;;;;;x
-PHI_socialist;Partido Demokratiko;Partido Demokratiko;Partido Demokratiko;;;;;;;;;;;x
-PHI_communist;Partido Komunista;Partido Komunista;Partido Komunista;;;;;;;;;;;x
-PHI_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;;;;;;;;;;x
-PHI_anarcho_liberal;Partido Libertad;Partido Libertad;Partido Libertad;;;;;;;;;;;x
-PHI_conservative;Partido Nacionalista;Partido Nacionalista;Partido Nacionalista;;;;;;;;;;;x
-PHI_fascist;Partido Fascista;Partido Fascista;Partido Fascista;;;;;;;;;;;x
-MCK;Manchukuo;Manchukuo;Manchukuo;;;;;;;;;;;x
-MCK_ADJ;Manchu;Mandchou;Manchu;;;;;;;;;;;x
-MCK_reactionary;Restoration Faction;Faction de la restauration;Restaurationsfraktion;;;;;;;;;;;x
-MCK_socialist;Manchu Socialist Party;Parti socialiste mandchou;Sozialistische Partei Mandschurei;;;;;;;;;;;x
-MCK_communist;Chinese Communist Party;Parti communiste chinois;Kommunistische Partei China;;;;;;;;;;;x
-MCK_liberal;Liberal Party;Parti libéral;Liberale Partei;;;;;;;;;;;x
-MCK_conservative;Palace Faction;Faction palatiale;Palastfraktion;;;;;;;;;;;x
-MCK_fascist;Fascist Party;Parti fasciste;Faschistische Partei;;;;;;;;;;;x
-MCK_anarcho_liberal;A Very Unlikely Candidate;Un candidat très improbable;Ein äußerst merkwürdiger Kandidat;;;;;;;;;;;x
 CHI_1504;Guangxi;Kwangsi;Guangxi;;;;;;;;;;;x
 CHI_1529;Hunan;Hunan;Hunan;;;;;;;;;;;x
 CHI_1495;Guangdong;Kwangtung;Guangdong;;;;;;;;;;;X
 CHI_1499;Hainan;Hainan;Hainan;;;;;;;;;;;X
-GXI;Guangxi Clique;Clique de Guangxi;Guangxi-Clique;;;;;;;;;;;x
-GXI_ADJ;Guangxi;Kwangsi;Guangxi;;;;;;;;;;;x
-GXI_reactionary;Rongting Faction;Faction Rongting;Rongting-Fraktion;;;;;;;;;;;x
-GXI_socialist;Socialist Party;Parti socialiste;Sozialistische Partei;;;;;;;;;;;x
-GXI_communist;Chinese Communist Party;Parti communiste chinois;Kommunistische Partei China;;;;;;;;;;;x
-GXI_liberal;Liberal Party;Parti libéral;Liberale Partei;;;;;;;;;;;x
-GXI_conservative;Kuomintang Faction;Faction Kuomintang;Guomintang-Fraktion;;;;;;;;;;;x
-GXI_fascist;Fascist Party;Parti fasciste;Faschistische Partei;;;;;;;;;;;x
-GXI_anarcho_liberal;Freedom Party;Parti de la liberté;Freiheitspartei;;;;;;;;;;;x
 CHI_1576;Shanxi;Shanxi;Shanxi;;;;;;;;;;;x
-SXI;Shanxi Clique;Clique de Shanxi;Shanxi-Clique;;;;;;;;;;;x
-SXI_ADJ;Shanxi;Shanxi;Shanxi;;;;;;;;;;;x
-SXI_reactionary;Hsi-Shan Faction;Faction de Hsi-Shan;Xi-Shan-Fraktion;;;;;;;;;;;x
-SXI_socialist;Socialist Party;Parti socialiste;Sozialistische Partei;;;;;;;;;;;x
-SXI_communist;Chinese Communist Party;Parti communiste chinois;Kommunistische Partei China;;;;;;;;;;;x
-SXI_liberal;Liberal Party;Parti libéral;Liberale Partei;;;;;;;;;;;x
-SXI_conservative;Kuomintang Faction;Faction Kuomintang;Guomintang-Fraktion;;;;;;;;;;;x
-SXI_fascist;Fascist Party;Parti fasciste;Faschistische Partei;;;;;;;;;;;x
-SXI_anarcho_liberal;Freedom Party;Parti de la liberté;Freiheitspartei;;;;;;;;;;;x
-REAL_DEMAND;Real Demand: $VAL$;Demande réelle : $VAL$;Tatsächliche Nachfrage: $VAL$;;;;;;;;;;;x
-SXI_anarcho_liberal;Freedom Party;Parti de la liberté;Freiheitspartei;;;;;;;;;;;x
-CHI_1601;Yunnan;Yunnan;Yunnan;;;;;;;;;;;x
-YNN;Yunnan Clique;Clique de Yunnan;Yunnan-Clique;;;;;;;;;;;x
-YNN_ADJ;Yunnan;Yunnan;Yunnan;;;;;;;;;;;x
-YNN_reactionary;Cai E's Faction;Faction Cai E's;Cai Es Fraktion;;;;;;;;;;;x
-YNN_socialist;Socialist Party;Parti socialiste;Sozialistische Partei;;;;;;;;;;;x
-YNN_communist;Chinese Communist Party;Parti communiste chinois;Kommunistische Partei China;;;;;;;;;;;x
-YNN_liberal;Liberal Party;Parti libéral;Liberale Partei;;;;;;;;;;;x
-YNN_conservative;Kuomintang Faction;Faction Kuomintang;Guomintang-Fraktion;;;;;;;;;;;x
-YNN_fascist;Fascist Party;Parti fasciste;Faschistische Partei;;;;;;;;;;;x
-YNN_anarcho_liberal;Freedom Party;Parti de la liberté;Freiheitspartei;;;;;;;;;;;x
 CHI_1557;Qinghai;Tsinghai;Qinghai;;;;;;;;;;;x
 CHI_1490;Gansu;Kansuh;Gansu;;;;;;;;;;;x
 CHI_2062;Ningxia;Ningxia;Ningxia;;;;;;;;;;;x
-XBI;Xibei San Ma;Xibei San Ma;Xibei San Ma;;;;;;;;;;;x
-XBI_ADJ;Ma;Ma;Ma;;;;;;;;;;;x
-XBI_reactionary;Ma Family;Famille Ma;Ma-Familie;;;;;;;;;;;x
-XBI_socialist;Socialist Party;Parti socialiste;Sozialistische Partei;;;;;;;;;;;x
-XBI_communist;Chinese Communist Party;Parti communiste chinois;Kommunistische Partei China;;;;;;;;;;;x
-XBI_liberal;Liberal Party;Parti libéral;Liberale Partei;;;;;;;;;;;x
-XBI_conservative;Kuomintang Faction;Faction Kuomintang;Guomintang-Fraktion;;;;;;;;;;;x
-XBI_fascist;Fascist Party;Parti fasciste;Faschistische Partei;;;;;;;;;;;x
-XBI_anarcho_liberal;Freedom Party;Parti de la liberté;Freiheitspartei;;;;;;;;;;;x
-XIN;Xinjiang Clique;Clique de Xinjiang;Xinjiang-Clique;;;;;;;;;;;x
-XIN_ADJ;Xinjiang;Xinjiang;Xinjiang;;;;;;;;;;;x
-XIN_reactionary;Zenxin Faction;Faction de Zenxin;Zenxin-Fraktion;;;;;;;;;;;x
-XIN_socialist;Socialist Party;Parti socialiste;Sozialistische Partei;;;;;;;;;;;x
-XIN_communist;Chinese Communist Party;Parti communiste chinois;Kommunistische Partei China;;;;;;;;;;;x
-XIN_liberal;Liberal Party;Parti libéral;Liberale Partei;;;;;;;;;;;x
-XIN_conservative;Kuomintang Faction;Faction Kuomintang;Guomintang-Fraktion;;;;;;;;;;;x
-XIN_fascist;Fascist Party;Parti fasciste;Faschistische Partei;;;;;;;;;;;x
-XIN_anarcho_liberal;Freedom Party;Parti de la liberté;Freiheitspartei;;;;;;;;;;;x
 TRADE_TOP_PRODUCERS;Top 5 producers:;5 meilleurs producteurs :;Top 5-Produzenten:;;;;;;;;;;;x
 EVTNAME10001;An Age of Liberalism;Ère du libéralisme;Ein Zeitalter des Liberalismus;;;;;;;;;;;x
 EVTDESC10001;Although the German revolutionaries failed in their attempt to end catholic domination over the German states and create a United German state, their impact has been felt throughout the world. The Holy Roman Empire's institutions have been abolished, and Europe has lost its grip over the new world after failing to stem the tide of revolution. Throughout the world, in coffeehouses and universities, the ideas of liberalism, political reform, freedom of speech, and the rights of peoples, rather than of monarchs, are proving again the old proverb that there is no stopping an idea whose time has come. Across the world, minorities have begun to realize their own power, while these new empire set their sights on the riches of Africa and India. As the dust settles on the fields of Germany, Europe stands again at the beginning of a new era: An age of nationalism and liberalism. Can the forces of old maintain the status quo, or will the world succumb to revolution?;Although the German revolutionaries failed in their attempt to end catholic domination over the German states and create a United German state, their impact has been felt throughout the world. The Holy Roman Empire's institutions have been abolished, and Europe has lost its grip over the new world after failing to stem the tide of revolution. Throughout the world, in coffeehouses and universities, the ideas of liberalism, political reform, freedom of speech, and the rights of peoples, rather than of monarchs, are proving again the old proverb that there is no stopping an idea whose time has come. Across the world, minorities have begun to realize their own power, while these new empire set their sights on the riches of Africa and India. As the dust settles on the fields of Germany, Europe stands again at the beginning of a new era: An age of nationalism and liberalism. Can the forces of old maintain the status quo, or will the world succumb to revolution?;Although the German revolutionaries failed in their attempt to end catholic domination over the German states and create a United German state, their impact has been felt throughout the world. The Holy Roman Empire's institutions have been abolished, and Europe has lost its grip over the new world after failing to stem the tide of revolution. Throughout the world, in coffeehouses and universities, the ideas of liberalism, political reform, freedom of speech, and the rights of peoples, rather than of monarchs, are proving again the old proverb that there is no stopping an idea whose time has come. Across the world, minorities have begun to realize their own power, while these new empire set their sights on the riches of Africa and India. As the dust settles on the fields of Germany, Europe stands again at the beginning of a new era: An age of nationalism and liberalism. Can the forces of old maintain the status quo, or will the world succumb to revolution?;;;;;;;;;;;x

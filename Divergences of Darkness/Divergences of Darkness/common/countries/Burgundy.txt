@@ -2,7 +2,7 @@ color = { 166  72  110 }
 graphical_culture = EuropeanGC
 
 party = {
-	name = "AAA_conservative_2" # Centrists
+	name = "BRG_conservative_1" # Centrists
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "AAA_conservative_4" # Moderates
+	name = "BRG_conservative_2" # Moderates
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -24,13 +24,13 @@ party = {
 
 	economic_policy = interventionism
 	trade_policy = free_trade
-	religious_policy = secularized
+	religious_policy = moralism
 	citizenship_policy = limited_citizenship
 	war_policy = anti_military
 }
 
 party = {
-	name = "AAA_liberal_2" # Parliamentarists
+	name = "BRG_liberal_1" # Parliamentarists
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "AAA_liberal_3" # Reformists
+	name = "BRG_liberal_2" # Reformists
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "AAA_socialist_1" # Labour Party
+	name = "BRG_socialist_1" # Labour Party
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "AAA_socialist_4" # Social Democrats
+	name = "BRG_socialist_2" # Social Democrats
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "AAA_reactionary_2" # Restorationists
+	name = "BRG_reactionary" # Restorationists
 	start_date = 1820.1.1
 	end_date = 2000.1.1
 
@@ -100,7 +100,7 @@ party = {
 }
 
 party = {
-	name = "AAA_anarcho_liberal_2" # Radicals
+	name = "BRG_anarcho_liberal" # Radicals
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -114,7 +114,7 @@ party = {
 }
 
 party = {
-	name = "AAA_communist_1" # Workers' Party
+	name = "BRG_communist" # Workers' Party
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
@@ -128,7 +128,7 @@ party = {
 }
 
 party = {
-	name = "AAA_fascist_2" # Falangists
+	name = "BRG_fascist" # Falangists
 	start_date = 1905.1.1
 	end_date = 2000.1.1
 
@@ -139,6 +139,20 @@ party = {
 	religious_policy = moralism
 	citizenship_policy = residency
 	war_policy = pro_military
+}
+
+party = {
+	name = "BRG_social_liberal" # 
+	start_date = 1880.1.1
+	end_date = 2000.1.1
+	
+	ideology = social_liberal
+	
+	economic_policy = interventionism
+	trade_policy = free_trade
+	religious_policy = secularized
+	citizenship_policy = full_citizenship
+	war_policy = anti_military
 }
 
 unit_names = {
