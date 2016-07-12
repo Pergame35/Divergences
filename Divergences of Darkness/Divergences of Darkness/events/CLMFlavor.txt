@@ -213,6 +213,8 @@ country_event = {
 	title = "CLM_lib1.T"
 	desc = "CLM_lib1.D"
 	
+	major = yes
+	
 	trigger = { 
 	tag = SPA 
 	OR = { 
@@ -1022,7 +1024,8 @@ country_event = { ###### The Veracruz Plan
 	desc = "CLM24.D" 
 		
 	fire_only_once = yes
-
+	major = yes
+	
 	trigger = { 
 	tag = CLM 
 	NOT = { 
@@ -1179,13 +1182,20 @@ country_event = { ## Failure of Veracruz Plan ; end of GC
 	desc = "CLM28.D" 
 		
 	fire_only_once = yes
+	major = yes
 	
 	trigger = { 
 	tag = CLM
 	has_country_flag = calm_before_tempest
+	OR = { 
 	AND = { 
 	war_with = LST 
 	war_with = UCA 
+		}
+	AND = { 
+	war_with = LST 
+	NOT = { LST = { vassal_of = CLM } }
+			}
 		}
 	}
 	

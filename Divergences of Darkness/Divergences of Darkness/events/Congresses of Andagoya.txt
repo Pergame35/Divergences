@@ -426,6 +426,8 @@ country_event = {
 	desc = "EVTDESC46409"
 	picture = "Administration"
 		
+	major = yes	
+		
 	trigger = { 
 	tag = CLM 
 	has_global_flag = congress_of_panama 
@@ -497,6 +499,8 @@ country_event = {
 
 	title = "EVTNAME46410"
 	desc = "EVTDESC46410"
+	major = yes
+	
 	major = yes
 	
 	trigger = { 
@@ -595,6 +599,8 @@ country_event = {
 	title = "EVTNAME46412"
 	desc = "EVTDESC46412"
 	picture = "Administration"
+	
+	major = yes
 	
 	trigger = { 
 	tag = CLM 
