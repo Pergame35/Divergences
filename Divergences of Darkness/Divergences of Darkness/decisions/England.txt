@@ -296,4 +296,138 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	end_DUA_ENL = { 
+		potential = { 
+				OR = { 
+					tag = ENL 
+					tag = ENG 
+				}
+				DUA = { exists = yes }
+				FRA = { exists = no }
+			}
+	
+		allow = { 
+			all_core = { owned_by = THIS }
+			OR = { 
+				AND = { 
+					is_greater_power = yes 
+					DUA = { is_greater_power = no }
+					}
+				AND = { 
+					DUA = { is_greater_power = yes }
+					THIS = { rank = 4 }
+					}
+				}
+		
+			}
+		
+		effect = { 
+		prestige = 50 
+		DUA = { country_event = 650295 }
+		}
+	
+	}
+	
+	English_north_ENL = { 
+		potential = { 
+			OR = { tag = ENL tag = ENG }
+			owns = 281 
+			owns = 277
+			owns = 284
+			NOT = { has_global_flag = North_ENL_renamed }
+		}
+		
+		allow = { 
+		NOT = { war = yes }
+		}
+		
+		effect = { 
+		277 = { change_province_name = "Liverpool" }
+		278 = { change_province_name = "Manchester" }
+		280 = { change_province_name = "Newcastle On Tyne" }
+		282 = { change_province_name = "Leeds" }
+		283 = { change_province_name = "Sheffield"}
+		285 = { change_province_name = "Chester" }
+		286 = { change_province_name = "Shrewesbury" }
+		288 = { change_province_name = "Nottingham" }
+		289 = { change_province_name = "Leicester" }
+		290 = { change_province_name = "Lincoln" }
+		set_global_flag = North_ENL_renamed
+		}
+	}
+	
+	English_north_DUA = { 
+		potential = { 
+			tag = DUA
+			owns = 281 
+			owns = 277
+			owns = 284
+			has_global_flag = North_ENL_renamed
+		}
+		
+		allow = { 
+		NOT = { war = yes }
+		}
+		
+		effect = { 
+		277 = { change_province_name = "Livreport" }
+		278 = { change_province_name = "Manchester" }
+		280 = { change_province_name = "Neufchâtel Sur Tyne" }
+		282 = { change_province_name = "Loinèr" }
+		283 = { change_province_name = "Chef-des-Champs"}
+		285 = { change_province_name = "Cestre"}
+		286 = { change_province_name = "Amwythig" }
+		288 = { change_province_name = "Nottingville" }
+		289 = { change_province_name = "Leicestre" }
+		290 = { change_province_name = "Lindre" }
+		clr_global_flag = North_ENL_renamed
+		}
+	}
+	
+	English_south_ENL = { 
+		potential = { 
+			OR = { tag = ENL tag = ENG }
+			owns = 287 
+			owns = 303
+			owns = 293
+			NOT = { has_global_flag = South_ENL_renamed }
+		}
+		
+		allow = { 
+		NOT = { war = yes }
+		}
+		
+		effect = { 
+		287 = { change_province_name = "Salisbury" }
+		299 = { change_province_name = "Plymouth" }
+		300 = { change_province_name = "London" }
+		301 = { change_province_name = "Canterbury" }
+		303 = { change_province_name = "Brighton"}
+		set_global_flag = South_ENL_renamed
+		}
+	}
+	
+	English_south_DUA = { 
+		potential = { 
+			tag = DUA
+			owns = 287 
+			owns = 303
+			owns = 293
+			has_global_flag = South_ENL_renamed
+		}
+		
+		allow = { 
+		NOT = { war = yes }
+		}
+		
+		effect = { 
+		287 = { change_province_name = "Plymville" }
+		299 = { change_province_name = "Plymouth" }
+		300 = { change_province_name = "Londres" }
+		301 = { change_province_name = "Cantorbéry" }
+		303 = { change_province_name = "Hantone"}
+		clr_global_flag = South_ENL_renamed
+		}
+	}
 }

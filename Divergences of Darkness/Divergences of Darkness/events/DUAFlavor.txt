@@ -4152,4 +4152,57 @@ country_event = { ##The Midi Revolution -reconquest
 				militancy = -1
 				move_pop = 2432
 			}
+		}
+}
+
+country_event = { ##End of the Dual-Monarchy
+	id = 650295
+	title = "DUAendEnl.T"
+	desc = "DUAendEnl.D"
+	
+	major = yes
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "The utter end of an era"
+	prestige = -100
+	any_country = { 
+			any_owned = { 
+				limit = {
+				OR = {
+					is_core = ENL
+					is_core = IRE
+					is_core = ENG 
+					is_core = WLS
+					}
+				}
+				remove_core = DUA
+			}
+		}
+	change_tag = FRA 
+	remove_accepted_culture = english 
+	remove_accepted_culture = welsh 
+	remove_accepted_culture = irish 
+	add_accepted_culture = french
+	add_accepted_culture = provencal 
+	any_country = { 
+			any_owned = { 
+				limit = {
+				OR = {
+					is_core = DUA
+					}
+				}
+				remove_core = DUA
+			}
+	any_owned = { 
+				limit = {
+				OR = {
+					is_core = DUA
+					}
+				}
+				remove_core = DUA
+			}
+		}
+	}
 }

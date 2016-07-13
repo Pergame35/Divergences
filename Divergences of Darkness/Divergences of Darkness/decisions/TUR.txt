@@ -509,5 +509,52 @@ political_decisions = {
 		}
 	}
 
+	move_capital_to_ankara = {
+		potential = {
+			tag = TUR
+			NOT = { capital = 876 }
+			owns = 876
+		}
 
+		allow = {
+			OR = {
+				NOT = { owns = 817 }
+				NOT = { owns = 816 }
+				NOT = { owns = 830 }
+				has_country_flag = ottomans_to_turks
+			}
+		}
+
+		effect = {
+			capital = 876
+		any_country = { 
+		any_owned = { 
+				limit = {
+				OR = {
+					is_core = SER
+					is_core = BUL 
+					is_core = GRE
+					is_core = ROM 
+					}
+				}
+				remove_core = TUR
+				}
+			}
+		any_owned = { 
+				limit = {
+				OR = {
+					is_core = SER
+					is_core = BUL 
+					is_core = GRE
+					is_core = ROM 
+					}
+				}
+				remove_core = TUR
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }	

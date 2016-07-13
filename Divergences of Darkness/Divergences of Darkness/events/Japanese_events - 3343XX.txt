@@ -253,6 +253,7 @@ country_event = {
 	option = { 
 	name = "Onwards for the Greater Co-prosperity sphere !"
 	release_vassal = YKT
+	YKT = { civilized = yes }
 	relation = { who = YKT value = 200 }
 	diplomatic_influence = { who = YKT value = 300 }
 	ai_chance = { 

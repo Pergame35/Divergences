@@ -86,6 +86,20 @@ party = {
 }
 
 party = {
+	name = "AAA_social_liberal_1" # Democrats
+	start_date = 1880.1.1
+	end_date = 2000.1.1
+	
+	ideology = social_liberal
+	
+	economic_policy = interventionism
+	trade_policy = free_trade
+	religious_policy = secularized
+	citizenship_policy = full_citizenship
+	war_policy = anti_military
+}
+
+party = {
 	name = "AAA_reactionary_2" # Restorationists
 	start_date = 1820.1.1
 	end_date = 2000.1.1
