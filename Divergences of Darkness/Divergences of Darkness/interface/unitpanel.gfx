@@ -45,6 +45,10 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\unit_reorg.dds"
 	}
 	spriteType = {
+		name = "GFX_unit_splitinhalf"
+		texturefile = "gfx\\interface\\unit_splitinhalf.dds"
+	}	
+	spriteType = {
 		name = "GFX_unit_close"
 		texturefile = "gfx\\interface\\unit_close.dds"
 	}
