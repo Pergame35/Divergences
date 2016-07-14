@@ -1,11 +1,10 @@
 capital = 498
 primary_culture = catalan
-culture = castilian
 culture = south_italian
 religion = catholic
 government = prussian_constitutionalism
 plurality = 0.0
-nationalvalue = nv_liberty
+nationalvalue = nv_might
 literacy = 0.24
 civilized = yes
 
@@ -81,7 +80,5 @@ basic_chemistry = 1
 # Starting Consciousness
 consciousness = 3
 nonstate_consciousness = 1
-
-schools = commerce_tech_school
 
 oob = "ARA_oob.txt"

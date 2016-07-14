@@ -128,8 +128,12 @@ political_decisions = {
 	
 	venetians_culture = { 
 		potential = { 
-			tag = ITA
-			NOT = { culture = venetian }
+			OR = { tag = ITA
+				AND = { 
+				has_country_flag = italian_integration
+				tag = ARI 
+				}
+			}
 			NOT = { has_country_flag = venetian_culture }
 		}
 

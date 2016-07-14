@@ -1,3 +1,106 @@
+#Give sphere leaders military access to spherelings
+country_event = {
+	id = 800004
+	title = "Extend Military Access"
+	desc = "We are under the influence of a Great Power, and as such we must permit them to station troops in our territory."
+	picture = "boer_war"
+	
+	trigger = {
+		exists = yes
+		is_vassal = no
+		part_of_sphere = yes
+		NOT = { has_country_flag = military_access_granted }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Let us hope they don't cause trouble"
+		set_country_flag = military_access_granted
+		any_country = {
+			limit = {
+				is_sphere_leader_of = THIS
+			}
+			country_event = 800005
+		}
+		any_country = {
+			limit = {
+				military_access = THIS
+				NOT = { is_sphere_leader_of = THIS }
+			}
+			country_event = 800007
+		}
+	}
+}
+
+country_event = {
+	id = 800005
+	title = "Friendly Government Grants Access"
+	desc = "Our growing influence in a foreign government allows us to station troops in their territory."
+	picture = "boer_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		military_access = FROM
+	}
+}
+
+country_event = {
+	id = 800006
+	title = "Rescind Military Access"
+	desc = "With our country no longer dominated by our former protector, we needn't tolerate their troops in our territory."
+	picture = "boer_war"
+	
+	trigger = {
+		exists = yes
+		is_vassal = no
+		has_country_flag = military_access_granted
+		OR = {
+			any_greater_power = {
+				military_access = THIS
+				NOT = { is_sphere_leader_of = THIS }
+			}
+			part_of_sphere = no
+			is_greater_power = yes
+		}
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Good riddance!"
+		clr_country_flag = military_access_granted
+		any_country = {
+			limit = {
+				military_access = THIS
+				NOT = { is_sphere_leader_of = THIS }
+			}
+			country_event = 800007
+		}
+	}
+}
+
+country_event = {
+	id = 800007
+	title = "Military Access Rescinded"
+	desc = "Our waning influence in a foreign government means that we may no longer station troops within their borders."
+	picture = "boer_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Blast!"
+		end_military_access = FROM
+	}
+}
+
+
 # Great Power Contention
 country_event = {
 	id = 19006

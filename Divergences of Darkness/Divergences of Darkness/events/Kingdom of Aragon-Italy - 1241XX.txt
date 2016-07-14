@@ -289,3 +289,102 @@ country_event = {
 		}
 	}
 }
+
+country_event = { 
+	id = 124110 
+	title = "ARI.1.T"
+	desc = "ARI.1.D"
+	picture = "ARA_TUN"
+	
+	trigger = { 
+	OR = { 
+	tag = ARA 
+	tag = ARI 
+		}
+	owns = 1725
+	TUN = { civilized = no }
+	year = 1860 
+	is_greater_power = yes 
+	war = no 
+		}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = { months = 20 }
+	
+	option = { 
+	name = "Time to finish what we started and end the Hafsids!"
+	badboy = 5 
+	TUN = { country_event = 124111 }
+	ai_chance = { factor = 70 }
+	}
+
+	option = { 
+	name = "We have better things to do..."
+	ai_chance = { factor = 30 }
+	}
+}
+
+country_event = { 
+	id = 124111 
+	title = "ARI.2.T"
+	desc = "ARI.2.D"
+	picture = "ARA_TUN"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Give up, we can't fight them ..."
+	FROM = { country_event = 124112 }
+	ai_chance = { 
+		factor = 30 
+		modifier = { 
+		factor = 1.5 
+		FROM = { rank = 4 }
+			}
+		}
+	}
+	
+	option = { 
+	name = "We shall not surrender our independence!"
+	FROM = { country_event = 124113 }
+	}
+}
+
+country_event = { 
+	id = 124112
+	title = "ARI.3.T"
+	desc = "ARI.3.D"
+	picture = "ARA_TUN"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "They made the wise choice."
+	inherit = FROM
+	}
+}
+
+country_event = { 
+	id = 124113
+	title = "ARI.4.T"
+	desc = "ARI.4.D"
+	picture = "ARA_TUN"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "That makes no difference in the end."
+	add_casus_belli = {
+				target = FROM
+				type = establish_protectorate
+				months = 24
+			}
+	war = {
+		target = FROM
+		attacker_goal = {
+				casus_belli = establish_protectorate
+			}
+		}
+	}	
+}
