@@ -260,9 +260,15 @@ political_decisions = {
 	
 		allow = {
 			war = no
-			government = hm_government
-			minorities_reform = limited
-			vote_fraschise = universal_weighted_voting
+			government = hms_government
+			OR = {
+				minorities_reform = limited
+				minorities_reform = protected
+			}
+			OR = {
+				vote_franschise = universal_weighted_voting
+				vote_franschise = universal_voting
+			}
 			nationalism_n_imperialism = 1
 			owns = 354
 			owns = 349
