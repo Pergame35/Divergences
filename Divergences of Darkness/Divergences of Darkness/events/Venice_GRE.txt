@@ -1557,3 +1557,183 @@ country_event = {
 	name = "The time of Philip and Alexander is over!"
 	}
 }
+
+country_event = { 
+	id = 106060
+	title = "VEN1.T"
+	desc = "VEN1.D"
+	
+	picture = "ottoman_ship_fire"
+	
+	trigger = { 
+	tag = VEN 
+	NOT = { has_country_flag = ottoman_weakness }
+	MAC = { exists = yes }
+	NOT = { year = 1839 }
+	}
+	
+	mean_time_to_happen = { 
+	months = 20 
+	}
+	
+	option = { 
+	name = "Seize the Egean Islands!"
+	set_country_flag = ottoman_weakness 
+	843 = { secede_province = THIS }
+	846 = { secede_province = THIS }
+	844 = { secede_province = THIS }
+	TUR = { country_event = 106061 }
+	badboy = 5 
+	ai_chance = { factor = 30 }
+	}
+	
+	option = { 
+	name = "Smyrna is a worthy target ..."
+	set_country_flag = ottoman_weakness 
+	843 = { secede_province = THIS }
+	846 = { secede_province = THIS }
+	844 = { secede_province = THIS }
+	869 = { secede_province = THIS }
+	badboy = 15 
+	TUR = { country_event = 106063 }
+	ai_chance = { factor = 10 }
+	}
+	
+	option = { 
+	name = "Our Greek holdings are enough to manage"
+	badboy = -2
+	relation = { who = TUR value = 75 }
+	set_country_flag = ottoman_weakness 
+	ai_chance = { factor = 60 }
+	}
+}
+
+country_event = { 
+	id = 106061
+	title = "VEN2.T"
+	desc = "VEN2.D"
+	
+	picture = "ottoman_ship_fire"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We have enough problems as it stands, leave them be!"
+	prestige = -5 
+	ai_chance = { factor = 70 }
+	}
+	
+	option = { 
+	name = "The vultures will be punished!"
+	FROM = { country_event = 106062 }
+	war = {
+			target = VEN
+				attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 846
+				defender_goal = { 
+				casus_belli = status_quo
+				}
+			}
+		}
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = { 
+	id = 106062
+	title = "VEN3.T"
+	desc = "VEN3.D"
+	
+	picture = "ottoman_ship_fire"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "Then it is truly war!"
+	}
+}
+
+country_event = { 
+	id = 106063
+	title = "VEN4.T"
+	desc = "VEN4.D"
+	
+	picture = "ottoman_ship_fire"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We have enough problems as it stands, leave them be!"
+	prestige = -5 
+	ai_chance = { factor = 20 }
+	}
+	
+	option = { 
+	name = "The vultures will be punished!"
+	FROM = { country_event = 106062 }
+	war = {
+			target = VEN
+				attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 846
+				}
+				attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 869
+				}
+				defender_goal = { 
+				casus_belli = status_quo
+				}
+		}
+		ai_chance = { factor = 80 }
+	}
+}
+
+country_event = { 
+	id = 106064
+	title = "VEN5.T"
+	desc = "VEN5.D"
+	
+	trigger = { 
+	tag = VEN 
+	owns = 869
+	war = no 
+	year = 1840 
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = { 
+	days = 4 
+	}
+	
+	option = { 
+	name = "Smyrna, Izmir, it's all the same for me!"
+	869 = { add_core = GRE }
+	}
+}
+
+country_event = { 
+	id = 106065
+	title = "VEN6.T"
+	desc = "VEN6.D"
+	
+	picture = "biennale_VEN"
+	
+	trigger = { 
+	owns = 729 
+	has_global_flag = ven_building
+	year = 1895
+	}
+	
+	mean_time_to_happen = { 
+	months = 5 
+	}
+	
+	option = { 
+	name = "Who got the big prize ?"
+	prestige = 25 
+	}
+	
+}

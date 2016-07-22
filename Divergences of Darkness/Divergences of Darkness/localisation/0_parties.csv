@@ -103,6 +103,17 @@ AZA_fascist;Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;
 AZA_liberal;Reform Faction;Faction de r·forme;Verbesserung Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 AZA_reactionary;Empire Faction;Faction d'empire;Reich Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 AZA_socialist;Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+AZL_reactionary;Impérialistes;;;;;;;;;;;;;x
+AZL_conservative_1;Parti Conservateur;;;;;;;;;;;;;x
+AZL_conservative_2;Mouvement Nativiste;;;;;;;;;;;;;x
+AZL_liberal_1;Parti Libéral;;;;;;;;;;;;;x
+AZL_liberal_2;Fédéralistes;;;;;;;;;;;;;x
+AZL_socialist_1;Parti des Travailleurs d'Amérigue;;;;;;;;;;;;;x
+AZL_socialist_2;Alliance Progressiste;;;;;;;;;;;;;x
+AZL_communist;Parti Communiste d'Amérigue;;;;;;;;;;;;;x
+AZL_fascist;Les Croix du Sud;;;;;;;;;;;;;x
+AZL_social_liberal;Démocrates;;;;;;;;;;;;;x
+AZL_anarcho_liberal;Ultra-Libéraux;;;;;;;;;;;;;x
 AZT_communist;Communist Faction;Faction royale;Königsfraktion;;;;;;;;;;;x
 AZT_conservative;Royal Faction;Faction royale;Königsfraktion;;;;;;;;;;;x
 AZT_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
@@ -264,6 +275,28 @@ GAN_liberal_2;Pro-Western;Pro-occident;Pro-occident;;;;;;;;;;;x
 GAN_liberal_3;New Liberals;Libéraux;Liberale;;;;;;;;;;;x
 GAN_reactionary;Conservatives;Conservateurs;Konservative;;;;;;;;;;;x
 GAN_socialist;Socialist;Socialiste;Sozialisten;;;;;;;;;;;x
+GEN_GER_reactionary;Die Konterrevolutionäre;;;;;;;;;;;;;x
+GEN_GER_conservative_1;Zentrumspartei;;;;;;;;;;;;;x
+GEN_GER_conservative_2;Konservative Partei;;;;;;;;;;;;;x
+GEN_GER_liberal_1;Liberale Vereinigung;;;;;;;;;;;;;x
+GEN_GER_liberal_2;Liberaldemokratische Partei;;;;;;;;;;;;;x
+GEN_GER_socialist_1;Sozialdemokratische Partei;;;;;;;;;;;;;x
+GEN_GER_socialist_2;Sozialistiche Arbeiterverein;;;;;;;;;;;;;x
+GEN_GER_communist;Kommunistische Arbeiterpartei;;;;;;;;;;;;;x
+GEN_GER_fascist;Alldeutscher Verband;;;;;;;;;;;;;x
+GEN_GER_anarcho_liberal;Radikale;;;;;;;;;;;;;x
+GEN_GER_social_liberal;Fortschrittliche Volkspartei;;;;;;;;;;;;;x
+GER_reactionary;Adels Partei;;;;;;;;;;;;;x
+GER_conservative_1;Zentrumspartei;;;;;;;;;;;;;x
+GER_conservative_2;DNVP;;;;;;;;;;;;;x
+GER_liberal_1;Nationalliberale Partei;;;;;;;;;;;;;x
+GER_liberal_2;Deutschedemokratische Partei;;;;;;;;;;;;;x
+GER_socialist_1;SPD;;;;;;;;;;;;;x
+GER_socialist_2;Sozialistiche Arbeiterverein;;;;;;;;;;;;;x
+GER_communist;KPD;;;;;;;;;;;;;x
+GER_fascist;NSPD;;;;;;;;;;;;;x
+GER_anarcho_liberal;Radikale;;;;;;;;;;;;;x
+GER_social_liberal;Fortschrittliche Volkspartei;;;;;;;;;;;;;x
 GCO_anarcho_liberal;Confederalistas;;;;;;;;;;;;;x
 GCO_communist;Internacionalistas;;;;;;;;;;;;;x
 GCO_conservative;Centralistas;;;;;;;;;;;;;x
@@ -517,6 +550,17 @@ NBG_liberal_3;Parti Nationaliste;Parti nationaliste;Parti Nationaliste;;;;;;;;;;
 NBG_reactionary;Parti de la Nation;Parti nationaliste;Parti Nationalist;;;;;;;;;;;x
 NBG_socialist;Parti Ouvrier;Parti ouvrier;Parti Ouvrier;;;;;;;;;;;x
 NOO_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
+NeuKur_conservative_1;Zentrumspartei;;;;;;;;;;;;;x
+NeuKur_conservative_2;Konservative Partei;;;;;;;;;;;;;x
+NeuKur_liberal_1;Nationalliberale;;;;;;;;;;;;;x
+NeuKur_liberal_2;Junge Kuren;;;;;;;;;;;;;x
+NeuKur_socialist_1;Sozialdemokratische Partei Neu-Kurlands;;;;;;;;;;;;;x
+NeuKur_socialist_2;Arbeiterverein;;;;;;;;;;;;;x
+NeuKur_reactionary;Die Alte Kuren;;;;;;;;;;;;;x
+NeuKur_anarcho_liberal;Radikale;;;;;;;;;;;;;x
+NeuKur_communist;Kommunistiche Arbeiterpartei;;;;;;;;;;;;;x
+NeuKur_fascist;Die Schwertbrüder;;;;;;;;;;;;;x
+NeuKur_social_liberal;Fortschrittliche Volkspartei;;;;;;;;;;;;;x
 NOO_communist;Communist Faction;Faction royale;Königsfraktion;;;;;;;;;;;x
 NOO_conservative;Royal Faction;Faction royale;Königsfraktion;;;;;;;;;;;x
 NOO_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
@@ -689,6 +733,20 @@ UGA_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Frakti
 UGA_liberal;The Liberal Faction;Faction libérale;Die liberale Fraktion;;;;;;;;;;;x
 UGA_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
 UGA_socialist;The Socialist Faction;Faction libérale;Die liberale Fraktion;;;;;;;;;;;x
+VEN_reactionary_1;Conservatori;;;;;;;;;;;;;x
+VEN_reactionary_2;Veneto Stato;;;;;;;;;;;;;x
+VEN_conservative_1;Moderati;;;;;;;;;;;;;x
+VEN_conservative_2;Partito Nasional Veneto;;;;;;;;;;;;;x
+VEN_conservative_3;Liga Vèneta;;;;;;;;;;;;;x
+VEN_liberal_1;Riformatori;;;;;;;;;;;;;x
+VEN_liberal_2;Partito dei Veneti;;;;;;;;;;;;;x
+VEN_liberal_3;Liga Vèneta Republica;;;;;;;;;;;;;x
+VEN_anarcho_liberal;Radicale;;;;;;;;;;;;;x
+VEN_socialist_1;Partito Socialista Veneta;;;;;;;;;;;;;x
+VEN_socialist_2;Unitá Popolare Veneta;;;;;;;;;;;;;x 
+VEN_communist;Partito Comunista d'Venezia;;;;;;;;;;;;;x
+VEN_fascist;Prima il Veneto;;;;;;;;;;;;;x
+VEN_social_liberal;Liga Democratica Comunitaria;;;;;;;;;;;;;x
 VIJ_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
 VIJ_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;x
 VIJ_conservative;Royal Faction;Faction royale;Königsfraktion;;;;;;;;;;;x

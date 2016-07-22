@@ -891,6 +891,24 @@ political_decisions = {
 		}
 	}
 	
+	independent_equinoxia = { 
+		potential = { 
+		tag = EQN 
+		NOT = { has_country_flag = indepence_EQN }
+		}
+		
+		allow = { 
+		NOT = { AMA = { is_greater_power = yes } } 
+		war = no 
+		year = 1860 
+		}
+		
+		effect = { 
+		EQN = { all_core = { remove_core = AMA } }
+		set_country_flag = indepence_EQN
+		}
+	}
+	
 }
 
 

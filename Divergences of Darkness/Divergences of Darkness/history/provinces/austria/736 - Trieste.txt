@@ -8,19 +8,13 @@ life_rating = 32
 naval_base = 2
 terrain = deciduous_forest_hills
 state_building = {
-	level = 4
+	level = 2
 	building = liquor_distillery
 	upgrade = yes
 }
           
 state_building = {
-	level = 2
+	level = 1
 	building = winery
 	upgrade = yes
 }       
-
-state_building = {
-	level = 4
-	building = bakery
-	upgrade = yes
-}

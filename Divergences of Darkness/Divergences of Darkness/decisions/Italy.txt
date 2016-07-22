@@ -408,4 +408,82 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	build_the_ponte_liberta = { 
+	
+		picture = ponte_liberta
+	
+		potential = { 
+		NOT = { has_global_flag = ponte_venice }
+		OR = { tag = VEN tag = ARI tag = ITA}
+		owns = 729 
+		}
+		
+		allow = { 
+		cheap_iron = 1 
+		iron_railroad = 1 
+		}
+		
+		effect = { 
+		set_global_flag = ponte_venice
+		prestige = 10
+		729 = {
+				life_rating = 3
+				add_province_modifier = {
+				    	name = gateway_to_harbor
+						duration = 2500
+	 				} 
+			}
+		}
+	}
+	
+	risanamento_VEN = { 
+	
+		picture = Venice_panorama
+	
+		potential = { 
+		NOT = { has_global_flag = ven_building }
+		OR = { 
+		tag = VEN tag = ITA tag = ARI 	
+			}
+		owns = 729 
+		}
+		
+		allow = { 
+		medicine = 1 
+		cheap_iron = 1 
+		OR = { 
+		realism = 1 
+		state_n_government = 1 
+			}
+		}
+		
+		effect = { 
+		prestige = 20 
+		set_global_flag = ven_building
+		729 = {
+				life_rating = 5
+			}
+		}
+	}
+	
+	extand_the_arsenal = { 
+		
+		picture = arsenale 	
+			
+		potential = { 
+		tag = VEN 
+		NOT = { has_country_flag = steamer_arsenal }
+		}
+		
+		allow = { 
+		invention = steamer_shipyards 
+		}
+		
+		effect = { 
+		prestige = 5 
+		build_factory_in_capital_state = steamer_shipyard
+		set_country_flag = steamer_arsenal 
+		}
+	}
 }

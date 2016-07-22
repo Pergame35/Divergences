@@ -368,7 +368,7 @@ country_event = {
 			add_core = SCA
 		}
 		ai_chance = {
-			factor = 1
+			factor = 70
 		}
 	}
 	
@@ -395,6 +395,38 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 0
+		}
+	}
+	
+	option = { 
+		name = "Go into exile in Neu Kurland"
+		prestige = 5 
+		capital = 2229 
+		any_owned = { 
+			limit = { NOT = { is_core = UBD } }
+			secede_province = SCA
+		}
+		primary_culture = livlandian
+		remove_accepted_culture = elbian 
+		remove_accepted_culture = latvian
+		change_tag = UBD
+		any_country = { 
+		any_owned = { 
+		limit = { is_core = KRL }
+		remove_core = UDB
+			}
+		}
+		357 = {
+			add_core = SCA
+		}
+		358 = {
+			add_core = SCA
+		}
+		359 = {
+			add_core = SCA
+		}
+	ai_chance = {
+			factor = 30
 		}
 	}
 }

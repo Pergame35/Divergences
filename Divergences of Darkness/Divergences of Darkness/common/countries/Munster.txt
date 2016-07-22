@@ -2,13 +2,27 @@ color = { 76  221  139 }
 graphical_culture = EuropeanGC
 
 party = {
-	name = "AAA_conservative_1" # Loyalists
+	name = "GEN_GER_conservative_1" #Zentrums
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
 	ideology = conservative
 
 	economic_policy = interventionism
+	trade_policy = free_trade
+	religious_policy = pluralism
+	citizenship_policy = limited_citizenship
+	war_policy = anti_military
+}
+
+party = {
+	name = "GEN_GER_conservative_2" #Conservative
+	start_date = 1830.1.1
+	end_date = 2000.1.1
+
+	ideology = conservative
+
+	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = moralism
 	citizenship_policy = residency
@@ -16,21 +30,7 @@ party = {
 }
 
 party = {
-	name = "AAA_conservative_3" # Monarchists
-	start_date = 1830.1.1
-	end_date = 2000.1.1
-
-	ideology = conservative
-
-	economic_policy = interventionism
-	trade_policy = protectionism
-	religious_policy = pluralism
-	citizenship_policy = full_citizenship
-	war_policy = jingoism
-}
-
-party = {
-	name = "AAA_liberal_4" # Liberal Democrats
+	name = "GEN_GER_liberal_1" # Liberal Union
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -39,40 +39,40 @@ party = {
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = secularized
-	citizenship_policy = full_citizenship
-	war_policy = pacifism
+	citizenship_policy = limited_citizenship
+	war_policy = anti_military
 }
 
 party = {
-	name = "AAA_liberal_5" # National Liberals
+	name = "GEN_GER_liberal_2" # Lib-Dem Party
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
 	ideology = liberal
 
-	economic_policy = state_capitalism
+	economic_policy = interventionism
 	trade_policy = free_trade
 	religious_policy = secularized
 	citizenship_policy = limited_citizenship
-	war_policy = jingoism
+	war_policy = anti_military
 }
 
 party = {
-	name = "AAA_socialist_1" # Labour Party
+	name = "GEN_GER_socialist_1" # Soc-dem 
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
 	ideology = socialist
 
 	economic_policy = interventionism
-	trade_policy = protectionism
+	trade_policy = free_trade
 	religious_policy = secularized
-	citizenship_policy = limited_citizenship
-	war_policy = jingoism
+	citizenship_policy = full_citizenship
+	war_policy = anti_military
 }
 
 party = {
-	name = "AAA_socialist_3" # People's Party
+	name = "GEN_GER_socialist_2" # Socialists
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
@@ -82,11 +82,11 @@ party = {
 	trade_policy = protectionism
 	religious_policy = pro_atheism
 	citizenship_policy = full_citizenship
-	war_policy = pacifism
+	war_policy = pacifism 
 }
 
 party = {
-	name = "AAA_reactionary_2" # Restorationists
+	name = "GEN_GER_reactionary" # Counterrevolutionaries
 	start_date = 1820.1.1
 	end_date = 2000.1.1
 
@@ -94,13 +94,13 @@ party = {
 
 	economic_policy = interventionism
 	trade_policy = protectionism
-	religious_policy = pluralism
-	citizenship_policy = limited_citizenship
-	war_policy = pro_military
+	religious_policy = moralism
+	citizenship_policy = residency
+	war_policy = jingoism
 }
 
 party = {
-	name = "AAA_anarcho_liberal_1" # Free Trade Party
+	name = "GEN_GER_anarcho_liberal" # Radicals
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -109,12 +109,12 @@ party = {
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = secularized
-	citizenship_policy = full_citizenship
-	war_policy = pacifism
+	citizenship_policy = residency
+	war_policy = anti_military
 }
 
 party = {
-	name = "AAA_communist_2" # Internationalists
+	name = "GEN_GER_communist" # Commies 
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
@@ -124,11 +124,11 @@ party = {
 	trade_policy = protectionism
 	religious_policy = pro_atheism
 	citizenship_policy = full_citizenship
-	war_policy = jingoism
+	war_policy = pro_military
 }
 
 party = {
-	name = "AAA_fascist_2" # Falangists
+	name = "GEN_GER_fascist" # Pan-German League
 	start_date = 1905.1.1
 	end_date = 2000.1.1
 
@@ -138,7 +138,21 @@ party = {
 	trade_policy = protectionism
 	religious_policy = moralism
 	citizenship_policy = residency
-	war_policy = pro_military
+	war_policy = jingoism
+}
+
+party = { 
+	name = "GEN_GER_social_liberal"
+	start_date = 1880.1.1
+	end_date = 2000.1.1
+	
+	ideology = social_liberal
+	
+	economic_policy = interventionism 
+	trade_policy = free_trade
+	religious_policy = secularized
+	citizenship_policy = full_citizenship
+	war_policy = anti_military
 }
 
 unit_names = {

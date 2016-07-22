@@ -246,7 +246,7 @@ country_event = {
 		NOT = { RAP = {
 			check_variable = {
 					which = unification_ITA
-					value = 3
+					value = 2
 				}
 			}
 		}
@@ -286,13 +286,13 @@ country_event = {
 		RAP = {
 			check_variable = {
 					which = unification_ITA
-					value = 3
+					value = 2
 				}
 		}
 		NOT = {
 		check_variable = {
 				which = unification_ITA
-				value = 6
+				value = 5
 			}
 		}
 	}

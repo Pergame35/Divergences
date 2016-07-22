@@ -1285,3 +1285,520 @@ country_event = {
 		clr_global_flag = 2479rebelled
 	}
 }
+
+country_event = {
+	id = 371261
+	title = "NeuKur1.T"
+	desc = "NeuKur1.D"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	name = "We gladly accept."
+		money = 100000
+		2233 = { remove_core = THIS }
+		FROM = { country_event = 371262 }
+		ai_chance = {
+			factor = 75
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 100 }
+			}
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 150 }
+			}
+		}
+	}
+
+	option = {
+	name = "We refuse."
+	FROM = { country_event = 371263 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 371262
+	title = "NeuKur2.T"
+	desc = "NeuKur2.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Excellent."
+	prestige = 5
+	money = -100000
+	2233 = { secede_province = THIS }
+	relation = { who = FROM value = 50 }
+	any_pop = { consciousness = -1 }
+	}
+}
+
+country_event = {
+	id = 371263
+	title = "NeuKur3.T"
+	desc = "NeuKur3.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Hm, I see."
+	relation = { who = FROM value = -100 }
+	}
+}
+
+country_event = {
+	id = 371264
+	title = "NeuKur1.T"
+	desc = "NeuKur4.D"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	name = "We gladly accept."
+		money = 150000
+		any_owned = { 
+		ENG_2228 = { remove_core = THIS secede_province = FROM }
+		}
+		FROM = { country_event = 371265 }
+		ai_chance = {
+			factor = 75
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 100 }
+			}
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 150 }
+			}
+		}
+	}
+
+	option = {
+	name = "We refuse."
+	FROM = { country_event = 371266 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 371265
+	title = "NeuKur2.T"
+	desc = "NeuKur5.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Excellent."
+	prestige = 5
+	money = -150000
+	relation = { who = FROM value = 50 }
+	any_pop = { consciousness = -1 }
+	}
+}
+
+country_event = {
+	id = 371266
+	title = "NeuKur3.T"
+	desc = "NeuKur3.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Hm, I see."
+	relation = { who = FROM value = -100 }
+	}
+}
+
+country_event = {
+	id = 371267
+	title = "NeuKur1.T"
+	desc = "NeuKur7.D"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	name = "We gladly accept."
+		money = 100000
+		2231 = { remove_core = THIS}
+		FROM = { country_event = 371268 }
+		ai_chance = {
+			factor = 75
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 100 }
+			}
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 150 }
+			}
+		}
+	}
+
+	option = {
+	name = "We refuse."
+	FROM = { country_event = 371269 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 371268
+	title = "NeuKur2.T"
+	desc = "NeuKur8.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Excellent."
+	prestige = 5
+	money = -100000
+	2231 = { secede_province = THIS }
+	relation = { who = FROM value = 50 }
+	any_pop = { consciousness = -1 }
+	}
+}
+
+country_event = {
+	id = 371269
+	title = "NeuKur3.T"
+	desc = "NeuKur3.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Hm, I see."
+	relation = { who = FROM value = -100 }
+	}
+}
+country_event = {
+	id = 371270
+	title = "NeuKur1.T"
+	desc = "NeuKur10.D"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	name = "We gladly accept."
+		money = 150000
+		any_owned = { 
+		2228 = { remove_core = THIS secede_province = FROM }
+		}
+		FROM = { country_event = 371271 }
+		ai_chance = {
+			factor = 75
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 100 }
+			}
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 150 }
+			}
+		}
+	}
+
+	option = {
+	name = "We refuse."
+	FROM = { country_event = 371272 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 371271
+	title = "NeuKur2.T"
+	desc = "NeuKur11.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Excellent."
+	prestige = 5
+	money = -150000
+	relation = { who = FROM value = 50 }
+	any_pop = { consciousness = -1 }
+	}
+}
+
+country_event = {
+	id = 371272
+	title = "NeuKur3.T"
+	desc = "NeuKur3.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Hm, I see."
+	relation = { who = FROM value = -100 }
+	}
+}
+
+country_event = {
+	id = 371273
+	title = "NeuKur1.T"
+	desc = "NeuKur13.D"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	name = "We gladly accept."
+		money = 150000
+		any_owned = { 
+		ENG_2224 = { remove_core = THIS secede_province = FROM }
+		}
+		FROM = { country_event = 371274 }
+		ai_chance = {
+			factor = 75
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 100 }
+			}
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 150 }
+			}
+		}
+	}
+
+	option = {
+	name = "We refuse."
+	FROM = { country_event = 371275 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 371274
+	title = "NeuKur2.T"
+	desc = "NeuKur14.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Excellent."
+	prestige = 5
+	money = -150000
+	relation = { who = FROM value = 50 }
+	any_pop = { consciousness = -1 }
+	}
+}
+
+country_event = {
+	id = 371275
+	title = "NeuKur3.T"
+	desc = "NeuKur3.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Hm, I see."
+	relation = { who = FROM value = -100 }
+	}
+}
+
+country_event = {
+	id = 371276
+	title = "NeuKur1.T"
+	desc = "NeuKur16.D"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	name = "We gladly accept."
+		money = 50000
+		any_owned = { 
+		ENG_2224 = { remove_core = THIS secede_province = FROM }
+		}
+		FROM = { country_event = 371277 }
+		ai_chance = {
+			factor = 75
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 100 }
+			}
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 150 }
+			}
+		}
+	}
+
+	option = {
+	name = "We refuse."
+	FROM = { country_event = 371278 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 371277
+	title = "NeuKur2.T"
+	desc = "NeuKur17.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Excellent."
+	prestige = 5
+	money = -50000
+	relation = { who = FROM value = 50 }
+	any_pop = { consciousness = -1 }
+	}
+}
+
+country_event = {
+	id = 371278
+	title = "NeuKur3.T"
+	desc = "NeuKur3.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Hm, I see."
+	relation = { who = FROM value = -100 }
+	}
+}
+
+country_event = {
+	id = 371279
+	title = "NeuKur1.T"
+	desc = "NeuKur19.D"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	name = "We gladly accept."
+	money = 50000
+	any_owned = { 
+		ENG_2224 = { remove_core = THIS secede_province = FROM }
+		}
+	FROM = { country_event = 371280 }
+		ai_chance = {
+			factor = 75
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 100 }
+			}
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 150 }
+			}
+		}
+	}
+
+	option = {
+	name = "We refuse."
+	FROM = { country_event = 3712781 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 371280
+	title = "NeuKur2.T"
+	desc = "NeuKur20.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Excellent."
+	prestige = 5
+	money = -50000
+	relation = { who = FROM value = 50 }
+	any_pop = { consciousness = -1 }
+	}
+}
+
+country_event = {
+	id = 371281
+	title = "NeuKur3.T"
+	desc = "NeuKur3.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Hm, I see."
+	relation = { who = FROM value = -100 }
+	}
+}
+
+country_event = {
+	id = 371282
+	title = "NeuKur1.T"
+	desc = "NeuKur22.D"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	name = "We gladly accept."
+	money = 75000
+	2223 = { secede_province = FROM }
+	2226 = { secede_province = FROM }
+	2236 = { secede_province = FROM}
+	FROM = { country_event = 371283 }
+		ai_chance = {
+			factor = 75
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 100 }
+			}
+		modifier = { 
+		factor = 1.5 
+		relation = { who = FROM value = 150 }
+			}
+		}
+	}
+
+	option = {
+	name = "We refuse."
+	FROM = { country_event = 3712784 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 371283
+	title = "NeuKur2.T"
+	desc = "NeuKur23.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Excellent."
+	prestige = 5
+	money = -75000
+	relation = { who = FROM value = 50 }
+	any_pop = { consciousness = -1 }
+	}
+}
+
+country_event = {
+	id = 371284
+	title = "NeuKur3.T"
+	desc = "NeuKur3.D"
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "Hm, I see."
+	relation = { who = FROM value = -100 }
+	}
+}

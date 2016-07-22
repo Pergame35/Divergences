@@ -1233,7 +1233,7 @@ DZG38.T;Siberian territories;;;;;;;;;;;;x
 DZG38.D;Siberian territories have been transferred to us following our victory over Dzungaria.;;;;;;;;;;;;x
 DZG40.T;Emissary from Urumqi;;;;;;;;;;;;x
 DZG40.D;A delegation coming from the isolated khanate of Urumqi has entered our Indian colonies. They ask to be brought to Europe to learn of our ways. What do we say to our colonial adviser ?;;;;;;;;;;;;x
-DZG41.T;Return from $FROMCOUNTRY_CAPITAL$;;;;;;;;;;;;x
+DZG41.T;Return from $FROMCOUNTRY_CAPITAL$$;;;;;;;;;;;;x
 DZG41.D;Our delegation has finally made its way back to Urumqi! They have spent many months in $FROMCOUNTRY$, attending to universities and military schools. They seem to have been quite the attraction in Europe from what they say and we are now known to European courts as an effect.;;;;;;;;;;;;x
 DZG42.T;'Travels to Europe';;;;;;;;;;;;x
 DZG42.D;The imam who travelled to Europe with the delegation has published a book describing the trip he made to Europe. The great sense of detail of the book along with the reflexion on the Western Civilization has charmed our literate elite!;;;;;;;;;;;;x
@@ -1509,15 +1509,69 @@ English_south_ENL_title;London not LONDRES!;;;;;;;;;;;;x
 English_south_ENL_desc;With the whole island controlled by England we can end the Anglois names on the island.;;;;;;;;;;;;x
 English_south_DUA_title;Londres not LONDON!;;;;;;;;;;;;x
 English_south_DUA_desc;With the southern coast controlled by our government we can rename the streets and cities!;;;;;;;;;;;;x
-ARI.1.T;The Hafsid protectorate;;;;;;;;;;;;x
-ARI.1.D;The Hafsid Kingdom had long been a threat to Aragonese domination of the Mediterranean, until Husayn I formally decided to bow before Aragon. The Hafsid still are independent, and there is a threat that they no longer be considered by other powers as backwards, and thus more difficult to annex without intervention from a foreign power. Yesterday some tribes living on both sides of our border fought each other, killing a Catalan soldier in the process. It is the perfect excuse for us to intervene and end the independent Tunisian state!;;;;;;;;;;;;x
-ARI.2.T;$FROMCOUNTRY_ADJ$ Ultimatum;;;;;;;;;;;;x
-ARI.2.D;Our independence has always been quite preacarious, with the Aragonese ready to end our Kingdom at any wrong step. Yesterday a border incident escalated, leading to the death of a $FROMCOUNTRY_ADJ$ soldier. $FROMCOUNTRY_CAPITAL$ has issued a ultimatum, demanding that we formally accept to surrender before them.;;;;;;;;;;;;x
-ARI.3.T;The Hafsids surrender;;;;;;;;;;;;x
-ARI.3.D;Instead of fighting a lost cause, the Sultan has surrendered, leading to the annexation of his Kingdom in our glorious nation!;;;;;;;;;;;;x
-ARI.4.T;Ultimatum denied;;;;;;;;;;;;x
-ARI.4.D;The Hafsids have decided to fight for their land, whatever the cost...;;;;;;;;;;;;x
-venetian_question_title;Securizing our Eastern border;;;;;;;;;;;;x
-venetian_question_desc;Venice while distinct from the rest of Italy should be a core part of our Realm.;;;;;;;;;;;;x
-annex_provence_title;Annexation of Provence;;;;;;;;;;;;x
-annex_provence_desc;Provence has held for such a long time because of our protection but now that our Mediterranean ambitions have been stated it is time to end their petty state.;;;;;;;;;;;;x
+build_the_ponte_liberta_title;Build the Ponte della Liberta;;;;;;;;;;;;x
+build_the_ponte_liberta_desc;Venice has benefited from most of its history of being an island. But the changes of our modern world and the advance of the railways have rendered Venice quite isolated from other urban centres. We could boost immigration by creating a bridge linking the City of the Doges to the rest of Europe.;;;;;;;;;;;;x
+risanamento_VEN_title;Risanamento;;;;;;;;;;;;x
+risanamento_VEN_desc;Many urban centres underwent great transformations in the XIXth century to improve hygiena and salubrity along with building the necessary facilities for the modern life. Venice is in fact in dire needs of a great restoration, aimed at negating the problems of being an island city, surrounded by water and marshes. Some of our monuments could also be improved to reflect our international standing.;;;;;;;;;;;;x
+extand_the_arsenal_title;Improving the Arsenal;;;;;;;;;;;;x
+extand_the_arsenal_desc;The Arsenal of Venice was the biggest shipyard in Europe for centuries, helping Venice to secure the Mediterranean with its galleys. Nowadays the days of the galleys are over but we could change the Arsenal into a Modern Shipyard, helping us to secure the Mediterranean and our overseas possessions!;;;;;;;;;;;;x
+VEN1.T;Intervention in the Aegean ?;;;;;;;;;;;;x
+VEN1.D;Our intervention in Greece some years allowed us to secure mainland Greece, greatly enhancing our position among the Mediterranean powers. The Turkish Civil War is not yet over and the islands of the Aegean seem ripe for the conquest. The delicescent state of the Sultanate allows us such actions without actions from other powers and we have the support of some local Greek nationalist cells to help us. The most daring of our strateges have suggested that we could try to seize the port of Izmir which is populated by many Greek but such an action would certainly mean an Ottoman reaction;;;;;;;;;;;;x
+VEN2.T;Venetian Attack;;;;;;;;;;;;x
+VEN2.D;The Republic of Venice has decided to complete what they began years ago by seizing the islands of the Aegean we still controlled. It is now a 'fait accompli' and trying to reclaim them would bring on us the wrath of their allies...;;;;;;;;;;;;x
+VEN3.T;Ottoman response;;;;;;;;;;;;x
+VEN3.D;$FROMCOUNTRY$ has decided to attack us after our takeover.;;;;;;;;;;;;x
+VEN4.T;Venetian attack!;;;;;;;;;;;;x
+VEN4.D;The Republic of Venice, fostered by our current state has taken over the Aegean islands and even the port of Izmir! We can't let those pesky merchants have a march in the heart of Anatolia but we must be ready to face them and their allies ...;;;;;;;;;;;;x
+VEN5.T;Smyrna or Izmir ?;;;;;;;;;;;;x
+VEN5.D;Our hold on Izmir has allowed the local Greek movement to rise and the city is now seen as an integral part of a possible Greek state.;;;;;;;;;;;;x
+VEN6.T;The opening of the Biennale of Venice;;;;;;;;;;;;x
+VEN6.D;Following the great Restoration of the city of Venice it was decided that an international art exposition would be organized in the newly built Giardini. The exposition was such a success and attracted artists from all over the world that it was decided that it should be renewed every two years.;;;;;;;;;;;;x
+become_neu_kurland_title;Become Neu Kurland;;;;;;;;;;;;x
+become_neu_kurland_desc;Time to move to the New World instead of staying in this place!;;;;;;;;;;;;x
+become_neu_kurland_2_title;Becoming New-Kurland;;;;;;;;;;;;x
+become_neu_kurland_2_desc;We have been left with only the Neu Kurland islands, it's time to welcome our new destiny!;;;;;;;;;;;;x
+master_of_the_antilles_title;Master of the Antilles;;;;;;;;;;;;x
+master_of_the_antilles_desc;We have risen as a power in our own right and we can claim the entirety of the Little Antilles!;;;;;;;;;;;;x
+Purchase_of_St_Andrjew_title;Purchase of St-Andrjew;;;;;;;;;;;;x
+Purchase_of_St_Andrjew_desc;The Polish colony lies a few miles from our coast and is only a burden for Warsaw. We could propose them a hefty sum to buy the island.;;;;;;;;;;;;x
+Purchase_of_Spanish_antilles_title;Purchase the Spanish Antilles;;;;;;;;;;;;x
+Purchase_of_Spanish_antilles_desc;The Spanish once led claims to the whole Antilles but now they only control a few islands which serve nothing for them. With a good amount of money and persuasion we can make them integral parts of our principality;;;;;;;;;;;;x
+Purchase_of_Aragonese_antilles_title;Purchase of Sant Jordi;;;;;;;;;;;;x
+Purchase_of_Aragonese_antilles_desc;The Aragonese Crown possesses a few islands in the Caribbean but in exchange for some money it could easily be passed to us.;;;;;;;;;;;;x
+martinique_purchase_title;Buying the Martinique;;;;;;;;;;;;x 
+martinique_purchase_desc;The island of MArtinique is the last of the Lesser Antilles we don't possess, a situation we can change with diplomacy and payments...;;;;;;;;;;;;x 
+SCA_purchase_antilles_title;Purchase Gundershavn;;;;;;;;;;;;x 
+SCA_purchase_antilles_desc;Gundershavn and Larshavn were the jewel of the Scandinavian crown until the Sudurhafeyjar were colonized and now they serve nothing for their empire, but they are very valuable to the Curonian people.;;;;;;;;;;;;x 
+montserrat_purchase_title;The purchase of Montserrat;;;;;;;;;;;;x
+montserrat_purchase_desc;The island of Montserrat shares the same fate as Sant Jordi, that's why we must acquire it!;;;;;;;;;;;;x
+cristobal_purchase_title;The Cristobal Purchase;;;;;;;;;;;;x
+cristobal_purchase_desc;The Spanish Crown has no interest in keeping this little rock in their possession, we do.;;;;;;;;;;;;x 
+virgin_islands_title;Buying the Iles Vierges;;;;;;;;;;;;x
+virgin_islands_desc;The Dual-Monarchy colonized three little islands, commonly known as the Virgin islands as to have safe harbors between Amazonia and Plantagenia. With both colonies lost they have lost their purpose and lie in our sphere of interest.;;;;;;;;;;;;x
+NeuKur1.T;A Curonian proposal;;;;;;;;;;;;x
+NeuKur1.D;The Curonian government has approched us to buy the island of St-Andrew.;;;;;;;;;;;;x
+NeuKur2.T;$FROMCOUNTRY_ADJ$ accepted!;;;;;;;;;;;;x
+NeuKur2.D;We now own the island of St-Andrew!;;;;;;;;;;;;x
+NeuKur3.T$FROMCOUNTRY_ADJ$ refused....;;;;;;;;;;;;;x
+NeuKur3.D;It seems that our offer was not sufficient;;;;;;;;;;;;x
+NeuKur4.D;The Curonian government has approched us to purchase our possessions in the little Antilles;;;;;;;;;;;;x
+NeuKur5.D;We now own the Spanish Lesser Antilles!;;;;;;;;;;;;x
+NeuKur7.D;The Curonians want to buy the island of Sant Jordi.;;;;;;;;;;;;x
+NeuKur8.D;We now own the island of Sant Jordi!;;;;;;;;;;;;x
+NeuKur10.D;The Curonians want to buy the island of Martinique;;;;;;;;;;;;x
+NeuKur11.D;We now own the island of Martinique!;;;;;;;;;;;;x
+NeuKur13.D;The Curonians want to buy the islands of the Little Antilles we own.;;;;;;;;;;;;x
+NeuKur14.D;We own Gundershavn and Larshavn!;;;;;;;;;;;;x
+NeuKur16.D;The Curonians want to buy the island of Montserrat;;;;;;;;;;;;x
+NeuKur17.D;We now own Montserrat!;;;;;;;;;;;;x
+NeuKur18.D;The Curonians want to buy the island of Crystobal y Nieves.;;;;;;;;;;;;x
+NeuKur20.D;We own the island of Cristobal y Nieves!;;;;;;;;;;;;x
+NeuKur22.D;The Curonians want to buy the Virgin Islands;;;;;;;;;;;;x
+NeuKur23.D;We now own the Virgin Islands.;;;;;;;;;;;;x
+poni_subjugation_title;Subjugation of Po-Ni;;;;;;;;;;;;x
+poni_subjugation_desc;Lanfang occupies only a small part of the island of Po-Ni, also known as Borneo by the Westerners. It is our duty to civilize the whole island and its people so they don't end up under the boot of the imperialists!;;;;;;;;;;;;x
+dayak_integration_title;Integration of the Borneans;;;;;;;;;;;;x
+dayak_integration_desc;The native people of Po-Ni, the Dayaks have better life conditions under our rule than under the Malays or the Westerners but it doesn't mean that they are our equal. With the development of our state we could improve their conditions and officially make them citizens of Lanfang!;;;;;;;;;;;;x
+independent_equinoxia_title;Equinoxian independence;;;;;;;;;;;;x
+independent_equinoxia_desc;France Antarctique has failed to impose their will on our people. We ahve stood against their agressions and shall never be part of the same state as them!;;;;;;;;;;;;x
