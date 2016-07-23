@@ -7,6 +7,7 @@ province_event = {
 
 	trigger = {
 		year = 1836
+		NOT = { tag = CLM war = yes }
 		or = {
 			province_id = 1				# Sitka
 			province_id = 2				# Yakutat
