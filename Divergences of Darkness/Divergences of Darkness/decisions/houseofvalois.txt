@@ -172,6 +172,10 @@ political_decisions = {
 	change_tag = FRT 
 	FRA_428 = { add_core = THIS }
 	GNV = { all_core = { add_core = THIS } }
+	any_owned = { 
+	limit = { OR = { is_core = FRA is_core = OCC } } 
+	remove_core = ITA
+	}
 	country_event =  110620
 	prestige = 50 
 		}

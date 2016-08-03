@@ -1,5 +1,8 @@
 political_decisions = {
 	claim_old_england = {
+	
+		picture = England_NAN
+		
 			potential = {
 				tag = NAN
 				NOT = { has_country_flag = claim_old_england }  
@@ -33,6 +36,9 @@ political_decisions = {
 	}
 	
 	return_home_NAN = {
+	
+	picture = England_NAN
+	
 			potential = {
 				tag = NAN
 			}
@@ -57,6 +63,8 @@ political_decisions = {
 					remove_core = NAN
 				}
 				change_tag = ENL
+				primary_culture = english 
+				add_accepted_culture = beornian
 				add_accepted_culture = anglois
 				capital = 300
 			}

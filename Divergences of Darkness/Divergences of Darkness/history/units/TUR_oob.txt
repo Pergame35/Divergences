@@ -120,45 +120,6 @@ army = {
 
 }
 
-army = {
-	name = "Army of Greece"
-	location = 823
-	regiment = {
-		name= "1. Sipahis"
-		type = hussar
-		home = 834
-	}
-
-	regiment = {
-		name= "2. Sipahis"
-		type = hussar
-		home = 834
-	}
-
-	regiment = {
-		name= "3. Sipahis"
-		type = hussar
-		home = 834
-	}
-
-	regiment = {
-		name= "1. Piyade Tümeni"
-		type = regular
-		home = 809
-	}
-
-	regiment = {
-		name= "2. Piyade Tümeni"
-		type = regular
-		home = 810
-	}
-
-	regiment = {
-		name= "4. Piyade Tümeni"
-		type = artillery
-		home = 863
-	}
-}
 
 army = {
 	name = "Army of Anatolia"

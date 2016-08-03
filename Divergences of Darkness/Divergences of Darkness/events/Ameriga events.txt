@@ -1637,3 +1637,285 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 97090
+	title = "EVTNAME97090" #The Argentina-Chile Border Treaty
+	desc = "EVTDESC97090"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sign the treaty."
+		SA_6 = {
+			add_core = THIS
+		}
+		relation = {
+			who = FROM
+			value = 50
+		}
+		any_owned = {
+			limit = {
+				FROM = { tag = NAN }
+				is_core = NAN
+				is_core = ARU
+			}
+			secede_province = NAN
+		}
+		any_owned = {
+			limit = {
+				FROM = { tag = HBE }
+				is_core = HBE
+				is_core = ARU
+			}
+			secede_province = HBE
+		}
+		FROM = {
+			any_owned = {
+				limit = {
+					is_core = THIS
+				}
+				secede_province = THIS
+			}
+		}
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					relation = { who = FROM value = 0 }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					any_owned_province = { is_core = THIS }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				any_owned_province = { is_core = FROM }
+			}
+		}
+	}
+	
+	option = {
+		name = "There is no need for such an agreement."
+		SA_6 = {
+			add_core = THIS
+		}
+		SA_9 = {
+			add_core = THIS
+		}
+		random_owned = {
+			limit = {
+				FROM = { tag = NAN }
+			}
+			SA_9 = { add_core = NAN }
+		}
+		random_owned = {
+			limit = {
+				FROM = { tag = HBE }
+			}
+			SA_9 = { add_core = HBE add_core = NAN }
+		}
+		relation = {
+			who = FROM
+			value = -50
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					alliance_with = FROM
+					relation = { who = FROM value = 100 }
+				}
+			}
+			modifier = {
+				factor = 5
+				NOT = {
+					relation = { who = FROM value = 0 }
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = {
+					any_owned_province = { is_core = THIS }
+				}
+			}
+			modifier = {
+				factor = 2
+				any_owned_province = { is_core = FROM }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 97091
+	title = "EVTNAME97090" #The Argentina-Chile Border Treaty
+	desc = "EVTDESC97090"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sign the treaty."
+		relation = {
+			who = FROM
+			value = 50
+		}
+		any_owned = {
+			limit = {
+				FROM = { tag = NAN }
+				is_core = NAN
+				is_core = ARU
+			}
+			remove_core = INC
+			secede_province = NAN
+		}
+		any_owned = {
+			limit = {
+				FROM = { tag = HBE }
+				is_core = HBE
+				is_core = ARU
+			}
+			remove_core = INC
+			secede_province = HBE
+		}
+		FROM = {
+			any_owned = {
+				limit = {
+					is_core = THIS
+				}
+				secede_province = THIS
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					relation = { who = FROM value = 0 }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					any_owned_province = { is_core = THIS }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				any_owned_province = { is_core = FROM }
+			}
+		}
+	}
+	
+	option = {
+		name = "There is no need for such an agreement."
+		SA_6 = {
+			add_core = THIS
+		}
+		SA_9 = {
+			add_core = THIS
+		}
+		relation = {
+			who = FROM
+			value = -50
+		}
+	}
+}
+
+country_event = {
+	id = 97092
+	title = "EVTNAME97090" #The Argentina-Chile Border Treaty
+	desc = "EVTDESC97090"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sign the treaty."
+		relation = {
+			who = FROM
+			value = 50
+		}
+		any_owned = {
+			limit = {
+				is_core = INC
+				is_core = ARU
+			}
+			remove_core = NAN
+			secede_province = INC
+		}
+		any_owned = {
+			limit = {
+				FROM = { tag = INC }
+				is_core = HBE
+				is_core = ARU
+			}
+			remove_core = HBE
+			secede_province = INC
+		}
+		FROM = {
+			any_owned = {
+				limit = {
+					is_core = THIS
+				}
+				secede_province = THIS
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					relation = { who = FROM value = 0 }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					any_owned_province = { is_core = THIS }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				any_owned_province = { is_core = FROM }
+			}
+		}
+	}
+	
+	option = {
+		name = "There is no need for such an agreement."
+		SA_6 = {
+			add_core = THIS
+		}
+		SA_9 = {
+			add_core = THIS
+		}
+		relation = {
+			who = FROM
+			value = -50
+		}
+	}
+}

@@ -484,6 +484,9 @@ political_decisions = {
 	}
 	
 	buy_falklands = { 
+	
+		picture = "falkland"
+	
 		potential = { 
 		tag = NAN 
 		2131 = { owned_by = SCA }

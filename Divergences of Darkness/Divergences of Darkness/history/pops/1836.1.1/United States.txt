@@ -5,25 +5,25 @@
 	bureaucrats = {
 		culture = kaiganese
 		religion = shinto
-		size = 2
+		size = 50
 	}
 
 	clergymen = {
 		culture = kaiganese
 		religion = shinto
-		size = 13
+		size = 50
 	}
 
 	artisans = {
 		culture = kaiganese
 		religion = shinto
-		size = 28
+		size = 150
 	}
 
 	soldiers = {
 		culture = kaiganese
 		religion = shinto
-		size= 10
+		size= 1000
 
 	}
 
@@ -57,19 +57,31 @@
 		religion = animist
 		size = 1750
 	}
+	
+	farmers = {
+		culture = kaiganese
+		religion = shinto
+		size = 5000
+	}
 }
 #Yakutat (4000/1000 POPS)
 2 = {
 	aristocrats = {
-		culture = native_american_minor
-		religion = animist
+		culture = kaiganese
+		religion = shinto
 		size = 10
 	}
 
 	clergymen = {
-		culture = native_american_minor
-		religion = animist
+		culture = kaiganese
+		religion = shinto
 		size = 45
+	}
+	
+	artisans = {
+		culture = kaiganese
+		religion = shinto
+		size = 75
 	}
 
 	artisans = {
@@ -90,12 +102,18 @@
 		religion = animist
 		size = 900
 	}
+	
+	farmers = {
+		culture = kaiganese
+		religion = shinto
+		size = 1500
+	}
 }
 #Kenai (2400/600 POPS)
 3 = {
 	aristocrats = {
-		culture = native_american_minor
-		religion = animist
+		culture = kaiganese
+		religion = shinto
 		size = 5
 	}
 
@@ -105,6 +123,12 @@
 		size = 20
 	}
 
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 50
+	}
+	
 	artisans = {
 		culture = native_american_minor
 		religion = animist
@@ -122,6 +146,12 @@
 		culture = native_american_minor
 		religion = animist
 		size = 550
+	}
+	
+	farmers = {
+		culture = kaiganese
+		religion = shinto
+		size = 1250
 	}
 }
 #Dutch Harbor (2000/500 POPS)
@@ -155,6 +185,12 @@
 		culture = inuit
 		religion = animist
 		size = 450
+	}
+	
+	farmers = {
+		culture = kaiganese
+		religion = animist
+		size = 800
 	}
 }
 #Bethel (2000/500 POPS)
@@ -285,6 +321,12 @@
 		culture = native_american_minor
 		religion = animist
 		size = 360
+	}
+	
+	farmers = {
+		culture = kaiganese
+		religion = shinto
+		size = 600
 	}
 }
 #Unalakeet (3000/750 POPS)
@@ -6732,8 +6774,8 @@
 	}
 
 	slaves = {
-		culture = turkish
-		religion = sunni
+		culture = native_american_minor
+		religion = animist
 		size = 6100
 	}
 }
@@ -6788,8 +6830,8 @@
 	}
 
 	slaves = {
-		culture = turkish
-		religion = sunni
+		culture = native_american_minor
+		religion = animist
 		size = 2740
 	}
 }

@@ -1,4 +1,3 @@
-#Give sphere leaders military access to spherelings
 country_event = {
 	id = 800004
 	title = "Extend Military Access"
@@ -99,7 +98,6 @@ country_event = {
 		end_military_access = FROM
 	}
 }
-
 
 # Great Power Contention
 country_event = {

@@ -272,12 +272,12 @@ DUA_presidential_dictatorship;The United Republic;La RÅEpublique Unie;Die Verein
 DUA_proletarian_dictatorship;The United Popular Republic;RÅEpublique Populaire Unie;Vereinigte Volksrepublik;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ELS;San Salvador;San Salvador;San Salvador;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ENG;The British Commonwealth;Les Republiques Britanniques;The British Commonwealth;;;;;;;;;;;x;;;;;;;;;;;;;;;
-ENG_absolute_monarchy;Great Britain;Grande-Bretagne;Great Britain;;;;;;;;;;;x;;;;;;;;;;;;;;;
+ENG_absolute_monarchy;The United Kingdom;Grande-Bretagne;Great Britain;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ENG_ADJ;British;Britannique;Britannique;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ENG_fascist_dictatorship;Republic of Britannia;Republique de Britannia;Republik Britannien;;;;;;;;;;;x;;;;;;;;;;;;;;;
-ENG_hms_government;Great Britain;Great Britain;Great Britain;;;;;;;;;;;x;;;;;;;;;;;;;;;
+ENG_hms_government;The United Kingdom;Great Britain;Great Britain;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ENG_proletarian_dictatorship;Union of Britain;Union Britonne;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-ENG_prussian_constitutionalism;Great Britain;Grande-Bretagne;Grossbritannien;;;;;;;;;;;x;;;;;;;;;;;;;;;
+ENG_prussian_constitutionalism;The United Kingdom;Grande-Bretagne;Grossbritannien;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ENL;England;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ENL_ADJ;English;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 EQN;Equinoxea;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
@@ -364,7 +364,13 @@ ICL_ADJ;Icelandic;islandais;Islandisch;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ILO;Ilorin;Ilorin;Ilorin;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ILO_ADJ;Ilorini;Ilorin;Ilorin;;;;;;;;;;;x;;;;;;;;;;;;;;;
 INC;Tawantinsuyu;Inca;Inka;;;;;;;;;;;x;;;;;;;;;;;;;;;
+INC_democracy;The Andes Republic;;;;;;;;;;;;;x
+INC_bourgeois_dictatorship;The Andes Republic;;;;;;;;;;;x
+INC_proletarian_dictatorship;The Socialist Republic of the Andes;;;;;;;;;;;x
+INC_presidential_dictatorship;The Incan Regency;;;;;;;;;;;x
 INC_ADJ;Inca;Inca;Inka;;;;;;;;;;;x;;;;;;;;;;;;;;;
+INC_bourgeois_dictatorship_ADJ;Andine;;;;;;;;;;;x
+INC_proletarian_dictatorship_ADJ;Andine;;;;;;;;;;;x
 IND;Indonesia;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 IND_ADJ;Indonesian;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 IRO;Haudenosaunee;Haudenosaunee;Haudenosaunee;;;;;;;;;;;x;;;;;;;;;;;;;;;
@@ -477,6 +483,7 @@ MAT_ADJ;Matabele;Matabele;Matabele;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MCH;Manchukuo;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MCH_ADJ;Manchu;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MCK;The Qing Empire;Manchu;Mandschu;;;;;;;;;;;x;;;;;;;;;;;;;;;
+MCK_ADJ;Manchu;Manchou;Mandschu;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MDR;Madurai;Madurai;Madurai;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MDR_ADJ;Madurian;Madurien;Maduraisch;;;;;;;;;;;x;;;;;;;;;;;;;;;
 MGH;Maghreb;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
@@ -524,13 +531,13 @@ NAS;Nassau;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 NAS_ADJ;Nassauan;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 NAV;Navarra;Euskadi;Baskenland;;;;;;;;;;;x;;;;;;;;;;;;;;;
 NAV_ADJ;Basque;Basque;Baskisch;;;;;;;;;;;x;;;;;;;;;;;;;;;
-NBG;The Seven Republics;Les Sept RÅEpubliques;Die sieben Republiken;;;;;;;;;x;;;;;;;;;;;;;;;;;
-NBG_absolute_monarchy;The Seven Provinces;Les Sept Provinces;Die sieben Republiken;;;;;;;;;x;;;;;;;;;;;;;;;;;
+NBG;The Seven Republics;Les Sept Republiques;Die sieben Republiken;;;;;;;;;x;;;;;;;;;;;;;;;;;
+NBG_absolute_monarchy;New Burgundy;Nouvelle Bourgogne;Die sieben Republiken;;;;;;;;;x;;;;;;;;;;;;;;;;;
 NBG_ADJ;Septima;Septima;Septima;;;;;;;;;;;x;;;;;;;;;;;;;;;
-NBG_proletarian_dictatorship;The East Arcadian SFSR;;;;;;;;;;;;;x
+NBG_proletarian_dictatorship;The East Arcadian Socialist Republic;;;;;;;;;;;;;x
 NBG_fascist;The Phalanx;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-NBG_hms_government;The Seven Provinces;Les Sept Provinces;Die sieben Republiken;;;;;;;;;;;x;;;;;;;;;;;;;;;
-NBG_prussian_constitutionalism;The Seven Provinces;Les Sept Provinces;Die sieben Republiken;;;;;;;;;;;x;;;;;;;;;;;;;;;
+NBG_hms_government;New Burgundy;Nouvelle Bourgogne;Die sieben Republiken;;;;;;;;;;;x;;;;;;;;;;;;;;;
+NBG_prussian_constitutionalism;New Burgundy;Nouvelle Bourgogne;Die sieben Republiken;;;;;;;;;;;x;;;;;;;;;;;;;;;
 NEJ;Nejd;Nejd;Nejd;;;;;;;;;;;x;;;;;;;;;;;;;;;
 NEJ_ADJ;Nejdi;Arabe;Arabisch;;;;;;;;;;;x;;;;;;;;;;;;;;;
 NFL;Nuweflander;Nuweflander;Nuweflander;;;;;;;;;;;x;;;;;;;;;;;;;;;
@@ -833,14 +840,14 @@ YOL;Yolngu;Yolngu;Yolngu;;;;;;;;;;;x;;;;;;;;;;;;;;;
 YOL_ADJ;Yolngui;Yolngu;Yolngu;;;;;;;;;;;x;;;;;;;;;;;;;;;
 YUC;Mayapan;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 YUC_ADJ;Mayan;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-ZAP;Oaxaca;Zapotec;Zapotec;;;;;;;;;;;x ;;;;;;;;;;;;;;;
+ZAP;Oaxaca;Zapotec;Zapotec;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ZAP_ADJ;Zapoteca;Zapoteca;Zapoteca;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ZIM;Mutapa;Mutapa;Mutapa;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ZIM;Mutapa;Mutapa;Mutapa;Mutapa;;;;;;;;;;x;;;;;;;;;;;;;;;
 ZIM_ADJ;Mutapan;Mutapan;Mutapan;;;;;;;;;;;x;;;;;;;;;;;;;;;
 ZIM_ADJ;Mutapan;Mutapan;Mutapan;;Mutapan;;;;;;;;;x;;;;;;;;;;;;;;;
 ZND;Kerman;Kerman;Kerman;;;;;;;;;;;x;;;;;;;;;;;;;;;
-ZND;Zand Dynasty;Zand Dynasty;Zand Dynasty;;;;;;;;;;;x ;;;;;;;;;;;;;;;
-ZND_ADJ;Zandi;Zandi;Zandi;;;;;;;;;;;x ;;;;;;;;;;;;;;;
-ZND_ADJ;Zandi;Zandi;Zandi;;;;;;;;;;;x ;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;x ;;;;;;;;;;;;;;;
+ZND;Zand Dynasty;Zand Dynasty;Zand Dynasty;;;;;;;;;;;x;;;;;;;;;;;;;;;
+ZND_ADJ;Zandi;Zandi;Zandi;;;;;;;;;;;x;;;;;;;;;;;;;;;
+ZND_ADJ;Zandi;Zandi;Zandi;;;;;;;;;;;x;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;x

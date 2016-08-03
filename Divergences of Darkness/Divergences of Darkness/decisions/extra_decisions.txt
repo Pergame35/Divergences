@@ -1198,7 +1198,10 @@ political_decisions = {
 		tag = ZAP
 		tag = YUC 
 			}
-		
+		AND = { 
+		tag = CLM 
+		NOT = { has_global_flag = congress_of_panama_over }
+			}
 		}
 		OR = {
 			continent = north_america

@@ -689,3 +689,318 @@ country_event = {
 		years_of_research = 0.1
 	}
 }
+
+country_event = {
+
+	id =  232000000
+	title = "EVTNAME232000000"
+	desc = "EVTDESC232000000"
+	picture = "Nile"
+
+	
+	trigger = {
+		NOT = { has_global_flag = lake_victoria_discovered }
+		NOT = { has_country_flag = NoGoToNile }
+		OR = {
+			has_country_flag = YesGoToNileAgain
+			has_country_flag = YesGoToNile
+			has_country_flag = YesGoToNileThird
+			owns = 2044
+			owns = 2019
+			owns = 2023
+			owns = 2018
+		}
+		is_greater_power = yes # Nation is a great power
+		OR = {
+			is_culture_group = british
+			primary_culture = beornian
+			primary_culture = north_italian
+			primary_culture = south_italian
+			primary_culture = catalan
+			primary_culture = north_german
+			capital = 619
+			capital = 599
+			primary_culture = russian
+			primary_culture = spanish
+			primary_culture = french
+			primary_culture = turkish
+			primary_culture = burgundian
+			primary_culture = czech
+			primary_culture = scandinavian
+			primary_culture = anglois
+			primary_culture = japanese
+			is_culture_group = latin_american 
+			is_culture_group = arab
+			tag = HRE
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 300
+
+		modifier = {
+			factor = 0.6
+			year = 1860
+		}
+		modifier = {
+			factor = 0.6
+			year = 1862
+		}
+		modifier = {
+			factor = 0.6
+			year = 1864
+		}
+		
+		modifier = {
+			factor = 0.01
+			OR = {
+				owns = 2044
+				owns = 2019
+				owns = 2023
+				owns = 2018
+			}
+		}
+		
+		modifier = {
+			factor = 0.3
+			rank = 1
+			NOT = { rank = 2 }
+		}
+		
+		modifier = {
+			factor = 1.5
+			NOT = { capital_scope = { continent = europe } }
+		}
+	}
+
+		
+
+	option = {
+		name = "EVTOPTA232000000"
+		set_global_flag = lake_victoria_discovered
+		prestige = 40
+		random_owned = { limit = { owner = { OR = { is_culture_group = british primary_culture = beornian } } } 3102 = { change_province_name = "Lake Victoria" } }
+		random_owned = { limit = { owner = { primary_culture = north_german } } 3102 = { change_province_name = "Lake Wilhelm" } }
+		random_owned = { limit = { owner = { capital = 619 } } 3102 = { change_province_name = "Lake Franz" } }
+		random_owned = { limit = { owner = { OR = { primary_culture = north_italian primary_culture = south_italian }} } 3102 = { change_province_name = "Lake Vittorio" } }
+		random_owned = { limit = { owner = { primary_culture = russian } } 3102 = { change_province_name = "Lake Temryukov" } }
+		random_owned = { limit = { owner = { primary_culture = castilian } } 3102 = { change_province_name = "Lake Pedro" } }
+		random_owned = { limit = { owner = { primary_culture = french } } 3102 = { change_province_name = "Lake Valois" } }
+		random_owned = { limit = { owner = { primary_culture = turkish } } 3102 = { change_province_name = "Lake Osmanli" } }
+		random_owned = { limit = { owner = { primary_culture = burgundian } } 3102 = { change_province_name = "Lake Anne" } }
+		random_owned = { limit = { owner = { primary_culture = catalan } } 3102 = { change_province_name = "Lake Josep" } }
+		random_owned = { limit = { owner = { primary_culture = anglois } } 3102 = { change_province_name = "Lake Édouard" } }
+		random_owned = { limit = { owner = { primary_culture = scandinavian } } 3102 = { change_province_name = "Lake Christian" } }
+		random_owned = { limit = { owner = { is_culture_group = latin_american } } 3102 = { change_province_name = "Lake Bolivar" } }
+		random_owned = { limit = { owner = { OR = {  tag = HRE primary_culture = czech } } } 3102 = { change_province_name = "Lake Sigismund" } }
+		random_owned = { 
+			limit = { owner = { NOT = { capital = 1745 } is_culture_group = arab } }
+			3102 = { change_province_name = "Lake al-Idrisi" }
+		}
+		random_owned = { limit = { owner = { capital = 1745 } } 3102 = { change_province_name = "Lake Ali Pasha" } }
+		random_owned = { limit = { owner = { capital = 599 } } 3102 = { change_province_name = "Lake Franz" } }
+		random_owned = { limit = { owner = { primary_culture = japanese } } 3102 = { change_province_name = "Lake Oda" } }
+		ai_chance = { factor = 20 }
+	}
+		
+	option = {
+		name = "EVTOPTB232000000"
+		set_global_flag = lake_victoria_discovered
+		prestige = 40
+		random_owned = { limit = { owner = { OR = { is_culture_group = british primary_culture = beornian } } } 3102 = { change_province_name = "Lake Arthur" } }
+		random_owned = { limit = { owner = { primary_culture = north_german } } 3102 = { change_province_name = "Lake Bismarck" } }
+		random_owned = { limit = { owner = { capital = 619 } } 3102 = { change_province_name = "Lake Metternich" } }
+		random_owned = { limit = { owner = { OR = { primary_culture = north_italian primary_culture = south_italian } } } 3102 = { change_province_name = "Lake Buonaparte" } }
+		random_owned = { limit = { owner = { primary_culture = russian } } 3102 = { change_province_name = "Lake Mikhail" } }
+		random_owned = { limit = { owner = { primary_culture = castilian } } 3102 = { change_province_name = "Lake Isabella" } }
+		random_owned = { limit = { owner = { primary_culture = french } } 3102 = { change_province_name = "Lake Clovis" } }
+		random_owned = { limit = { owner = { primary_culture = turkish } } 3102 = { change_province_name = "Lake Mehmed" } }
+		random_owned = { limit = { owner = { primary_culture = burgundian } } 3102 = { change_province_name = "Lake Philippe" } }
+		random_owned = { limit = { owner = { primary_culture = catalan } } 3102 = { change_province_name = "Lake Marti" } }
+		random_owned = { limit = { owner = { is_culture_group = latin_american } } 3102 = { change_province_name = "Lake Miranda" } }
+		random_owned = { limit = { owner = { OR = {  tag = HRE primary_culture = czech } } } 3102 = { change_province_name = "Lake Wenceslas" } }
+		random_owned = { limit = { owner = { primary_culture = anglois } } 3102 = { change_province_name = "Lake Élisabeth" } }
+		random_owned = { limit = { owner = { primary_culture = scandinavian } } 3102 = { change_province_name = "Lake Stewart" } }
+		random_owned = { limit = { owner = { is_culture_group = arab } } 3102 = { change_province_name = "Lake al-Walid" } }
+		random_owned = { limit = { owner = { capital = 599 } } 3102 = { change_province_name = "Lake Wittelsbach" } }
+		random_owned = { limit = { owner = { primary_culture = japanese } } 3102 = { change_province_name = "Lake Komei" } }
+		ai_chance = { factor = 20 }
+	}
+		
+	option = {
+		name = "EVTOPTC232000000"
+		set_global_flag = lake_victoria_discovered
+		prestige = 40
+		random_owned = { limit = { owner = { OR = { is_culture_group = british primary_culture = beornian } } } 3102 = { change_province_name = "Lake Alfred" } }
+		random_owned = { limit = { owner = { primary_culture = north_german } } 3102 = { change_province_name = "Lake Von Moltke" } }
+		random_owned = { limit = { owner = { capital = 619 } } 3102 = { change_province_name = "Lake Habsburg" } }
+		random_owned = {
+			limit = { owner = { OR = { primary_culture = north_italian primary_culture = south_italian } } } 
+			3102 = { change_province_name = "Lake Dante" }
+		}
+		random_owned = { limit = { owner = { primary_culture = russian } } 3102 = { change_province_name = "Lake Pyotr" } }
+		random_owned = { limit = { owner = { primary_culture = castilian } } 3102 = { change_province_name = "Lake Castile" } }
+		random_owned = { limit = { owner = { primary_culture = french } } 3102 = { change_province_name = "Lake Vercingétorix" } }
+		random_owned = { limit = { owner = { primary_culture = turkish } } 3102 = { change_province_name = "Lake Arslan" } }
+		random_owned = { limit = { owner = { primary_culture = burgundian } } 3102 = { change_province_name = "Lake Lothaire" } }
+		random_owned = { limit = { owner = { primary_culture = catalan } } 3102 = { change_province_name = "Lake Serna" } }
+		random_owned = { limit = { owner = { is_culture_group = latin_american } } 3102 = { change_province_name = "Lake Santos" } }
+		random_owned = { limit = { owner = { primary_culture = scandinavian } } 3102 = { change_province_name = "Lake Knut" } }
+		random_owned = { limit = { owner = { primary_culture = anglois } } 3102 = { change_province_name = "Lake Plantagenêt" } }
+		random_owned = { limit = { owner = { OR = {  tag = HRE primary_culture = czech } } } 3102 = { change_province_name = "Lake Karl" } }
+		random_owned = { limit = { owner = { is_culture_group = arab } } 3102 = { change_province_name = "Lake Arabia" } }
+		random_owned = { limit = { owner = { capital = 599 } } 3102 = { change_province_name = "Lake Ludwig" } }
+		random_owned = { limit = { owner = { primary_culture = japanese } } 3102 = { change_province_name = "Lake Reigen" } }
+		ai_chance = { factor = 20 }
+	}
+		
+	option = {
+		name = "EVTOPTD232000000"
+		set_global_flag = lake_victoria_discovered
+		prestige = 40
+		random_owned = { limit = { owner = { OR = { is_culture_group = british primary_culture = beornian } } } 3102 = { change_province_name = "Lake Britannia" } }
+		random_owned = { limit = { owner = { primary_culture = north_german } } 3102 = { change_province_name = "Lake Germania" } }
+		random_owned = { limit = { owner = { capital = 619 } } 3102 = { change_province_name = "Lake Österreich" } }
+		random_owned = {
+			limit = { owner = { OR = { primary_culture = north_italian primary_culture = south_italian } } } 
+			3102 = { change_province_name = "Lake Italia" }
+		}
+		random_owned = { limit = { owner = { primary_culture = russian } } 3102 = { change_province_name = "Lake Russia" } }
+		random_owned = { limit = { owner = { primary_culture = castilian } } 3102 = { change_province_name = "Lake Hispania" } }
+		random_owned = { limit = { owner = { primary_culture = french } } 3102 = { change_province_name = "Lake Marianne" } }
+		random_owned = {
+			limit = { owner = { OR = { primary_culture = turkish is_culture_group = arab } } }
+			3102 = { change_province_name = "Lake Fatimah" }
+		}
+		random_owned = { limit = { owner = { primary_culture = burgundian } } 3102 = { change_province_name = "Lake Burgundy" } }
+		random_owned = { limit = { owner = { primary_culture = scandinavian } } 3102 = { change_province_name = "Lake Scandinavia" } }
+		random_owned = { limit = { owner = { primary_culture = anglois } } 3102 = { change_province_name = "Lake Richard" } }
+		random_owned = { limit = { owner = { is_culture_group = latin_american } } 3102 = { change_province_name = "Lake Colombia" } }
+		random_owned = { limit = { owner = { primary_culture = catalan } } 3102 = { change_province_name = "Lake Taracconensis" } }	
+		random_owned = { limit = { owner = { OR = { tag = HRE primary_culture = czech } } } 3102 = { change_province_name = "Lake Praha" } }
+		random_owned = { limit = { owner = { capital = 599 } } 3102 = { change_province_name = "Lake Bayern" } }		
+		random_owned = { limit = { owner = { primary_culture = japanese } } 3102 = { change_province_name = "Lake Yamato" } }
+		ai_chance = { factor = 20 }
+	}
+		
+	option = {
+		name = "EVTOPTE232000000"
+		set_global_flag = lake_victoria_discovered
+		prestige = 40
+		random_owned = { limit = { owner = { OR = { is_culture_group = british primary_culture = beornian } } }3102 = { change_province_name = "Lake Camelot" } }
+		random_owned = { limit = { owner = { primary_culture = north_german } } 3102 = { change_province_name = "Lake Berlin" } }
+		random_owned = { limit = { owner = { capital = 619 } } 3102 = { change_province_name = "Lake Vienna" } }
+		random_owned = {
+			limit = { owner = { OR = { primary_culture = north_italian primary_culture = south_italian } } } 
+			3102 = { change_province_name = "Lake Roma" }
+		}
+		random_owned = { limit = { owner = { primary_culture = russian } } 3102 = { change_province_name = "Lake Moscow" } }
+		random_owned = { limit = { owner = { primary_culture = castilian } } 3102 = { change_province_name = "Lake Madrid" } }
+		random_owned = { limit = { owner = { primary_culture = french } } 3102 = { change_province_name = "Lake Paris" } }
+		random_owned = { limit = { owner = { primary_culture = turkish } } 3102 = { change_province_name = "Lake Istanbul" } }
+		random_owned = { limit = { owner = { primary_culture = burgundian } } 3102 = { change_province_name = "Lake Anvers" } }
+		random_owned = { limit = { owner = { primary_culture = scandinavian } } 3102 = { change_province_name = "Lake København" } }
+		random_owned = { limit = { owner = { primary_culture = anglois } } 3102 = { change_province_name = "Lake Paris" } }
+		random_owned = { limit = { owner = { is_culture_group = latin_american } } 3102 = { change_province_name = "Lake Santa Anna" } }
+		random_owned = { limit = { owner = { OR = {  tag = HRE primary_culture = czech } } } 3102 = { change_province_name = "Lake Ottokar" } }
+		random_owned = { limit = { owner = { primary_culture = catalan } } 3102 = { change_province_name = "Lake Barcelona" } }
+		random_owned = { limit = { owner = { is_culture_group = arab } } 3102 = { change_province_name = "Lake Makkah" } }
+		random_owned = { limit = { owner = { capital = 599 } } 3102 = { change_province_name = "Lake München" } }
+		random_owned = { limit = { owner = { primary_culture = japanese } } 3102 = { change_province_name = "Lake Kyoto" } }
+		ai_chance = { factor = 20 }
+	}
+}
+	
+## Discovery of Lake Victoria - Generic
+country_event = {
+
+	id =  232000001
+	title = "EVTNAME232000000"
+	desc = "EVTDESC232000003"
+	picture = "Nile"
+
+	
+	trigger = {
+		NOT = { has_global_flag = lake_victoria_discovered }
+		NOT = { has_country_flag = NoGoToNile }
+		OR = {
+			has_country_flag = YesGoToNileAgain
+			has_country_flag = YesGoToNile
+			has_country_flag = YesGoToNileThird
+				owns = 2044
+				owns = 2019
+				owns = 2023
+				owns = 2018
+		}
+		is_greater_power = yes # Nation is a great power
+		NOT = {
+			is_culture_group = british
+			primary_culture = beornian
+			primary_culture = north_italian
+			primary_culture = south_italian
+			primary_culture = catalan
+			primary_culture = north_german
+			primary_culture = japanese
+			capital = 619
+			capital = 599
+			primary_culture = russian
+			primary_culture = spanish
+			primary_culture = french
+			primary_culture = turkish
+			primary_culture = burgundian
+			primary_culture = czech
+			primary_culture = scandinavian
+			primary_culture = anglois
+			is_culture_group = latin_american 
+			is_culture_group = arab
+			tag = HRE
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 500
+
+		modifier = {
+			factor = 0.9
+			year = 1860
+		}
+		modifier = {
+			factor = 0.9
+			year = 1862
+		}
+		modifier = {
+			factor = 0.9
+			year = 1864
+		}
+		
+		modifier = {
+			factor = 0.6
+			rank = 1
+			NOT = { rank = 2 }
+		}
+		
+		modifier = {
+			factor = 1.5
+			NOT = { capital_scope = { continent = europe } }
+		}
+		
+		modifier = {
+			factor = 0.01
+			OR = {
+				owns = 2044
+				owns = 2019
+				owns = 2023
+				owns = 2018
+			}
+		}
+	}
+
+		
+
+	option = {
+		name = "EVTOPTA232000003" # Name it ruler
+		set_global_flag = lake_victoria_discovered
+		prestige = 40
+		3102 = { change_province_name = "Lake Victoria" }
+		}
+	}

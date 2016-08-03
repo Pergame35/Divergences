@@ -102,3 +102,22 @@ country_event = {
   		}
 	}
 }
+
+country_event = { 
+	id = 46433 
+	title = "New Colombian Congress"
+	desc = "The Integration of the people of Colombia is merely beginning"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "We'll see then"
+	random_list = {
+		50 = { country_event = 46430 }
+		25 = { country_event = 46431 }
+		25 = { country_event = 46432 }
+				}
+	}
+	
+
+}

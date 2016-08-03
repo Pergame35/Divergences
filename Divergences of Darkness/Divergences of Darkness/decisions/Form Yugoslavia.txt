@@ -256,7 +256,7 @@ political_decisions = {
 			BOS = { all_core = { add_core = YUG } }
 			SLO = { all_core = { add_core = YUG } }
 			SLA = { all_core = { add_core = YUG } }
-			TUR_806 = { add_core = THIS }
+			TUR_806 = { add_core = YUG }
 			any_country = {
 				limit = {
 					OR = {
@@ -352,7 +352,7 @@ political_decisions = {
 						tag = AUS
 						tag = HUN
 						tag = TUR
-						}
+					}
 				}
 			}
 		}

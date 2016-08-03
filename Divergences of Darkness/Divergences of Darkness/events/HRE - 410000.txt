@@ -579,6 +579,7 @@ country_event = {
 		name = "Long live the unified Holy Roman Empire !"
 		any_country = {
         			limit = {
+						NOT = { tag = KRL }
         				OR = {
         					primary_culture = rheinish
         					primary_culture = north_german
@@ -588,6 +589,7 @@ country_event = {
         			}	
 				country_event = 11101
 			}
+		inherit = FRM
 		GER = {
 				all_core = {
 					add_core = HRE

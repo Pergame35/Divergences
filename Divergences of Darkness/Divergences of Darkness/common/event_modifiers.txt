@@ -1371,9 +1371,8 @@ usa_draft = {
 }
 
 the_statue_of_liberty = {
-	prestige = 0.02
-	global_immigrant_attract = 0.5	#200%
-	global_assimilation_rate = 0.5
+	prestige = 0.1
+	global_immigrant_attract = 0.05	#200%
 	icon = 15
 }
 

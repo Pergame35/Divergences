@@ -7,7 +7,6 @@ province_event = {
 
 	trigger = {
 		year = 1836
-		NOT = { tag = CLM war = yes }
 		or = {
 			province_id = 1				# Sitka
 			province_id = 2				# Yakutat
@@ -21,9 +20,6 @@ province_event = {
 			province_id = 1564			# Caozhou
 			province_id = 1884			# Freetown
 			province_id = 2094			# Kimberley
-			province_id = 2153			# Durango
-			province_id = 2157			# Culiacan
-			province_id = 2295			# Lima
 			province_id = 2323			# La Serena
 			province_id = 2500			# Kalgoorlie
 			province_id = 2503			# Wiluna
@@ -221,7 +217,6 @@ province_event = {
 	trigger = {
 		year = 1874
 		province_id = 122
-		owner = { has_country_flag = custers_expedition_sent }
 		not = { trade_goods = precious_metal } 
 	}
 	
@@ -1863,5 +1858,46 @@ province_event = {
 			duration = 1825
 		}
 		# life_rate = 5
+	}
+}
+
+
+#Colombian gold 
+
+province_event = {
+	
+	id = 46450
+
+	trigger = {
+		year = 1836 
+		OR = {
+		NOT = { owned_by = CLM } 
+		AND = { owned_by = CLM CLM = { has_global_flag = congress_of_panama_over } }
+		}
+		
+		or = {
+			province_id = 2153			# Durango
+			province_id = 2157			# Culiacan
+			province_id = 2295			# Lima
+		}
+		not = { trade_goods = precious_metal }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+	}
+
+	title = "EVTNAME1100"
+	desc = "EVTDESC1100"
+
+	option = {
+		name = "EVTOPTA1100"
+		trade_goods = precious_metal
+		life_rating = 5
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
 	}
 }

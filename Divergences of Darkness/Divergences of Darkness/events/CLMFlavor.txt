@@ -603,6 +603,7 @@ country_event = { ###### Partial peace ?
 	trigger = { 
 	tag = CLM 
 	NOT = { has_country_flag = panama_congress }
+	NOT = { year = 1850 }
 	war_with = SPA
 	has_country_flag = yucatan_con
 	has_country_flag = lusitania_con
