@@ -128,13 +128,15 @@ political_decisions = {
 	
 	venetians_culture = { 
 		potential = { 
-			OR = { tag = ITA
+			OR = { 
+				tag = ITA
 				AND = { 
-				has_country_flag = italian_integration
-				tag = ARI 
+					has_country_flag = italian_integration
+					tag = ARI 
 				}
 			}
-			NOT = { has_country_flag = venetian_culture }
+			NOT = { primary_culture = venetian }
+			NOT = { accepted_culture = venetian }
 		}
 
 		allow = { 
@@ -143,8 +145,7 @@ political_decisions = {
 		}
 
 		effect = { 
-		add_accepted_culture = venetian
-		set_country_flag = venetian_culture
+			add_accepted_culture = venetian
 		}
 
 		ai_will_do = {
