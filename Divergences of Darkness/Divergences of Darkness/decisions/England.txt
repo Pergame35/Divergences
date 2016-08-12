@@ -351,7 +351,7 @@ political_decisions = {
 		effect = {
 			clr_global_flag = IRE_loss
 			badboy = 20
-			SCO = { all_core = { add_core = DUA } }
+			SCO = { all_core = { add_core = SCA } }
 		}
 		
 		ai_will_do = {
@@ -415,6 +415,7 @@ political_decisions = {
 		288 = { change_province_name = "Nottingham" }
 		289 = { change_province_name = "Leicester" }
 		290 = { change_province_name = "Lincoln" }
+		304 = { change_province_name = "Isle of Man" }
 		set_global_flag = North_ENL_renamed
 		}
 	}
@@ -443,6 +444,7 @@ political_decisions = {
 		288 = { change_province_name = "Nottingville" }
 		289 = { change_province_name = "Leicestre" }
 		290 = { change_province_name = "Lindre" }
+		304 = { change_province_name = "Île de Man" }
 		clr_global_flag = North_ENL_renamed
 		}
 	}
@@ -465,7 +467,7 @@ political_decisions = {
 		299 = { change_province_name = "Plymouth" }
 		300 = { change_province_name = "London" }
 		301 = { change_province_name = "Canterbury" }
-		303 = { change_province_name = "Brighton"}
+		302 = { change_province_name = "Brighton"}
 		set_global_flag = South_ENL_renamed
 		}
 	}
@@ -488,7 +490,7 @@ political_decisions = {
 		299 = { change_province_name = "Plymouth" }
 		300 = { change_province_name = "Londres" }
 		301 = { change_province_name = "Cantorbéry" }
-		303 = { change_province_name = "Hantone"}
+		302 = { change_province_name = "Hantone"}
 		clr_global_flag = South_ENL_renamed
 		}
 	}

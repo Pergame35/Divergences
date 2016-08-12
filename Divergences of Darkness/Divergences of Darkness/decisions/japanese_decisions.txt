@@ -185,7 +185,7 @@ political_decisions = {
 			set_country_flag = high_castle
 			badboy = 20
       DNG = { country_event = 334302 }
-	  add_casus_belli = {
+	  casus_belli = {
 				target = DNG
 				type = conquest
 				months = 24
