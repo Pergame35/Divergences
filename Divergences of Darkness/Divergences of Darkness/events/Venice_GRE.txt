@@ -2123,7 +2123,7 @@ country_event = {
 }
 
 country_event = { 
-	id = 106072	#Abolishment of the Office of Doge
+	id = 106073	#Abolishment of the Office of Doge
 	title = "VEN14.T"
 	desc = "VEN14.D"
 	
@@ -2163,3 +2163,329 @@ country_event = {
 	set_global_flag = end_doge
 	}
 }
+
+country_event = { 
+	id = 106074	#1500th Anniversary of Venice
+	title = "VEN15.T"
+	desc = "VEN15.D"
+	
+	fire_only_once = yes 
+	
+	major = yes 
+	
+	trigger = { 
+	tag = VEN 
+	OR = { 
+	governement = merchant_republic 
+	governement = democracy
+		}
+	year = 1921
+	NOT = { year = 1922 }
+	}
+	
+	mean_time_to_happen = { 
+	months = 3 
+	}
+	
+	option = { 
+	name = "Our Republic is truly the Most Serene of all!"
+	prestige = 5 
+	any_pop = { 
+	limit = { has_pop_culture = venetian }
+	militancy = -2 
+		}
+	}
+	
+}
+
+country_event = { 
+	id = 106090
+	title = "GRE90.T"
+	desc = "GRE90.D"
+	
+	picture = "hagia_sophia"
+	
+	trigger = { 
+	tag = GRE 
+	has_country_flag = megali_idea
+	}
+	
+	fire_only_once = yes 
+	
+	option = { 
+	name = "May it never change!"
+	prestige = 5 
+	scaled_militancy = {
+		issue = moralism
+		factor = -5 
+		}
+	}
+}
+
+country_event = { 
+	id = 106091 
+	title = "GRE91.T"
+	desc = "GRE91.D"
+	
+	picture = "great_catastrophe"
+	
+	fire_only_once = yes 
+	
+	trigger = { 
+	tag = GRE 
+	owns = 860 
+	owns = 828 
+	has_country_flag = megali_idea 
+	owns = 862
+	}
+	
+	mean_time_to_happen = { 
+	months = 12
+	}
+	
+	option = { 
+	name = "Good for us I guess ?"
+	prestige = -20 
+	any_pop = {
+			limit = {
+				location = { province_id = 828 }
+				culture = turkish 
+			}
+			reduce_pop = 0.6
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 860 }
+				culture = turkish 
+			}
+			reduce_pop = 0.5
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 859 }
+				culture = turkish 
+			}
+			reduce_pop = 0.6
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 858 }
+				culture = turkish 
+			}
+			reduce_pop = 0.6
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 861 }
+				culture = turkish 
+			}
+			reduce_pop = 0.6
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 828 }
+				culture = greek 
+			}
+			reduce_pop = 1.1
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 860 }
+				culture = greek 
+			}
+			reduce_pop = 1.2
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 861 }
+				culture = greek 
+			}
+			reduce_pop = 1.1
+			militancy = 8 
+		}	
+	any_pop = {
+			limit = {
+				location = { province_id = 858 }
+				culture = greek 
+			}
+			reduce_pop = 1.1
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 859 }
+				culture = greek 
+			}
+			reduce_pop = 1.1
+			militancy = 8 
+		}
+	858 = {
+			add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+				}
+			}
+	859 = {
+			add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+				}
+			}
+	860 = {
+			add_province_modifier = {
+			name = thrace_boom
+			duration = -1
+				}
+			}
+	861 = {
+			add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+				}
+			}
+	828 = {
+			add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+				}
+		}
+	}
+}
+
+country_event = { 
+	id = 106092 
+	title = "GRE92.T"
+	desc = "GRE92.D"
+	
+	picture = "orthodox_revival"
+	
+	fire_only_once = yes 
+	
+	trigger = { 
+	OR = { 
+	tag = GRE 
+	AND = { tag = MAC has_country_flag = macedon_greece}
+	}
+	year = 1860
+	}
+	
+	option = { 
+	name = "The Holy Church should not intervene in those matters!"
+	any_pop = { 
+	limit = { has_pop_religion = orthodox } 
+	literacy = 0.15 
+		}
+	any_pop = {
+	limit = { culture = greek }
+			dominant_issue = {
+				factor = 0.01
+				value = moralism
+			}
+			scaled_consciousness = {
+				issue = moralism
+				factor = 5
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 106093
+	title = "GRE93.T"
+	desc = "GRE93.D"
+	
+	picture = "BUL_GRE_meeting"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "It might be better ..."
+	TUR_805 = { remove_core = BUL }
+	relation = { who = FROM value = 50 }
+	any_pop = {
+		limit = {
+			has_pop_culture = greek
+			}
+	reduce_pop = 0.6
+	consciousness = 2
+	militancy = -1
+	move_pop = 823
+		}
+	FROM = { country_event = 106094 }
+	}
+}
+	
+country_event = { 
+	id = 106094
+	title = "GRE94.T"
+	desc = "GRE94.D"
+	
+	picture = "BUL_GRE_meeting"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "It is settled!"
+	any_owned = { 
+	limit = { is_core = BUL }
+	secede_province = BUL
+		}
+	any_pop = {
+		limit = {
+			has_pop_culture = bulgarian
+			location = {
+				OR = {
+					province_id = 823
+					province_id = 829
+					province_id = 830
+					}
+				}
+			}
+	reduce_pop = 0.6
+	consciousness = 2
+	militancy = -1
+	move_pop = 816
+		}
+	any_pop = {
+		limit = {
+			has_pop_culture = bulgarian
+			location = {
+				OR = {
+					province_id = 828
+					province_id = 858
+					}
+				}
+			}
+	reduce_pop = 0.6
+	consciousness = 2
+	militancy = -1
+	move_pop = 817
+		}
+	823 = { 
+		add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+			}
+		} 
+	829 = { 
+		add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+			}
+		} 
+	830 = { 
+		add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+			}
+		}
+	}
+}
+

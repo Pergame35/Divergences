@@ -2466,3 +2466,19 @@ janissary_system = {
 	icon = 16
 }
 
+university_athens = {
+	research_points_modifier = 0.05
+	prestige = 0.02
+	icon = 5
+}
+
+thrace_boom = {
+	assimilation_rate = 0.05
+	population_growth = 0.0025
+	icon = 19
+}
+
+enosis_modifier = { 
+	assimilation_rate = 1
+	icon = 19
+}

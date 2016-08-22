@@ -1,0 +1,401 @@
+political_decisions = {	
+
+	build_museum = {
+		potential = {
+			OR = {
+				has_country_modifier = mycenaean_excavations
+				has_country_modifier = egyptian_excavations
+				has_country_modifier = inca_excavations
+				has_country_modifier = maya_excavations
+				has_country_modifier = mesopotamian_excavations
+				has_country_modifier = minoan_excavations
+				has_country_modifier = pompeji_excavations
+				has_country_flag = tocharians
+			}
+			NOT = { has_country_flag = museum_build }
+		}
+
+		allow = {
+			invention = early_archaeology
+			money = 50000
+		}
+		
+		effect = {
+			set_country_flag = museum_build
+			money = -50000
+			prestige = 5
+			plurality = 1
+			capital_scope = {
+				life_rating = 1
+			}
+		}
+	}
+	
+	egyptological_excavations = {
+		potential = {
+			civilized = yes
+			nationalism_n_imperialism = 1
+			NOT = {
+				owns = 1767
+				has_global_flag = tutankhamun_found
+				has_country_modifier = egyptian_excavations
+				has_country_flag = egypt_refused
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes
+		}
+		
+		effect = {		
+			1767 = {
+				owner = { country_event = 19040 }
+			}
+		}
+	}
+	
+	forced_egyptological_excavations = {
+		potential = {
+			OR = {
+				is_greater_power = yes
+				rank = 16 
+			}
+			nationalism_n_imperialism = 1
+			OR = {
+				owns = 1767
+				1767 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = tutankhamun_found
+				has_country_modifier = egyptian_excavations
+			}
+		}
+		
+		allow = {
+			OR = {
+				owns = 1767
+				1767 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = egyptian_excavations
+				duration = -1
+			}
+		}
+	}
+	
+	maya_excavations = {
+		potential = {
+			civilized = yes
+			nationalism_n_imperialism = 1
+			has_global_flag = maya_ruins
+			NOT = { 
+				owns = 2189
+				has_country_modifier = maya_excavations
+				has_country_flag = maya_refused
+				has_global_flag = mirador_found
+			}
+		}
+		
+		allow = {
+			OR = {
+				is_greater_power = yes
+				rank = 16
+			}
+			invention = vaccination
+			invention = prophylaxis_against_malaria
+			invention = early_archaeology
+		}
+		
+		effect = {		
+			2189 = {
+				owner = { country_event = 201004 }
+			}
+		}
+	}
+	
+	forced_maya_excavations = {
+		potential = {
+			OR = {
+				is_greater_power = yes
+				rank = 16
+			}
+			nationalism_n_imperialism = 1
+			has_global_flag = maya_ruins
+			OR = {
+				owns = 2189
+				2189 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			NOT = {
+				has_country_modifier = maya_excavations
+				has_global_flag = mirador_found
+			}
+		}
+		
+		allow = {
+			invention = vaccination
+			invention = prophylaxis_against_malaria
+			invention = early_archaeology
+			OR = {
+				owns = 2189
+				2189 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = maya_excavations
+				duration = -1
+			}
+		}
+	}
+	
+	pompeji_fiorelli = {
+		potential = {
+			civilized = yes
+			state_n_government = 1
+			owns = 754
+			NOT = { has_country_flag = fiorelli }
+		}
+
+		allow = {
+			empiricism = 1
+			invention = early_archaeology
+			money = 10000
+		}
+
+		effect = {
+			set_country_flag = fiorelli
+			money = -10000
+			prestige = 5
+			add_country_modifier = {
+				name = pompeji_excavations
+				duration = -1
+			}
+		}
+	}
+	
+	mycenaean_excavations = {
+		potential = {
+			civilized = yes
+			revolution_n_counterrevolution = 1
+			NOT = {
+				owns = 840
+				has_global_flag = agamemnon_found
+				has_country_modifier = mycenaean_excavations
+				has_country_flag = greece_refused
+			}
+		}
+		
+		allow = {
+			prestige = 100
+			functionalism = 1
+			invention = early_archaeology
+		}
+		
+		effect = {		
+			840 = {
+				owner = { country_event = 190401 }
+			}
+		}
+	}
+	
+	forced_mycenaean_excavations = {
+		picture = mycenaean_excavations
+		potential = {
+			OR = {
+				is_greater_power = yes
+				rank = 16
+			}
+			revolution_n_counterrevolution = 1
+			OR = {
+				owns = 840
+				840 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = agamemnon_found
+				has_country_modifier = mycenaean_excavations
+			}
+		}
+		
+		allow = {
+			functionalism = 1
+			invention = early_archaeology
+			OR = {
+				owns = 840
+				840 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = mycenaean_excavations
+				duration = -1
+			}
+		}
+	}
+
+	minoan_excavations = {
+		potential = {
+			civilized = yes
+			revolution_n_counterrevolution = 1
+			NOT = {
+				owns = 847
+				has_global_flag = minos_found
+				has_country_modifier = minoan_excavations
+				has_country_flag = crete_refused
+			}
+		}
+		
+		allow = {
+			prestige = 150
+			social_science = 1
+			invention = modern_archaeology
+		}
+		
+		effect = {
+			847 = {
+				owner = {
+					country_event = 1904012
+				}
+			}
+		}
+	}
+	
+	forced_minoan_excavations = {
+		picture = minoan_excavations
+		potential = {
+			OR = {
+				is_greater_power = yes
+				rank = 16
+			}
+			revolution_n_counterrevolution = 1
+			OR = {
+				owns = 847
+				847 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = minos_found
+				has_country_modifier = minoan_excavations
+			}
+		}
+		
+		allow = {
+			social_science = 1
+			invention = modern_archaeology
+			OR = {
+				owns = 847
+				847 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = minoan_excavations
+				duration = -1
+			}
+		}
+	}
+	
+	mesopotamian_excavations = {
+		potential = {
+			OR = {
+				is_greater_power = yes
+				rank = 16
+			}
+			revolution_n_counterrevolution = 1
+			has_country_flag = museum_build
+			NOT = { 
+				owns = 926
+				has_country_modifier = mesopotamian_excavations
+				has_country_flag = mesopotamian_refused
+				has_global_flag = tower_of_babel_found
+			}
+		}
+		
+		allow = {
+			prestige = 150
+			social_science = 1
+			invention = modern_archaeology
+		}
+		
+		effect = {		
+			926 = {
+				owner = { country_event = 201010 }
+			}
+		}
+	}
+	
+	forced_mesopotamian_excavations = {
+		potential = {
+			is_greater_power = yes
+			revolution_n_counterrevolution = 1
+			OR = {
+				owns = 926
+				926 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			NOT = {
+				has_country_modifier = mesopotamian_excavations
+				has_global_flag = tower_of_babel_found
+			}
+		}
+		
+		allow = {
+			social_science = 1
+			invention = modern_archaeology
+			OR = {
+				owns = 926
+				926 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = mesopotamian_excavations
+				duration = -1
+			}
+		}
+	}
+}

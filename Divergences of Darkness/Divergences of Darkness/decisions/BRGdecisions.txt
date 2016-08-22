@@ -459,4 +459,23 @@ political_decisions = {
 		}
 	
 	}
+	
+	accept_rhenish_BRG = { 
+		potential = { 
+			tag = BRG 
+			NOT = { has_country_flag = BRG_rhein }
+			NOT = { GER = { exists = yes } } 
+			}
+		
+		allow = { 
+			is_greater_power = yes 
+			all_core = { owned_by = THIS }
+			revolution_n_counterrevolution = 1 
+			}
+		
+		effect = { 
+			set_country_flag = BRG_rhein
+			add_accepted_culture = rheinish 
+		}
+	}
 }

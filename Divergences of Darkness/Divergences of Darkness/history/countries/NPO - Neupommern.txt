@@ -1,23 +1,25 @@
-capital = 423
-primary_culture = breton
-culture = anglois
-religion = catholic
-government = hms_government
-plurality = 5
-nationalvalue = nv_equality
-literacy = 0.6
+capital = 546
+primary_culture = north_german
+culture = vinlander
+religion = protestant
+government = democracy
+plurality = 0.0
+nationalvalue = nv_liberty
+literacy = 0.8
 civilized = yes
+prestige = 5
+
 
 # Political reforms
-slavery = yes_slavery
+slavery = no_slavery
 upper_house_composition = appointed
-vote_franschise = wealth_voting
+vote_franschise = none_voting
 public_meetings = yes_meeting
-press_rights = censored_press
+press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
-political_parties = non_secret_ballots
-minorities_reform = limited
+political_parties = underground_parties
+minorities_reform = oppression
 immigration_policy = quota_immigration
 conscription=two_year_draft
 pollution=no_controls
@@ -31,6 +33,17 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
+
+ruling_party = AAA_conservative_2
+upper_house = {
+	fascist = 0
+	liberal = 25
+	conservative = 65
+	reactionary = 10
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}
 
 # Technologies
 post_napoleonic_thought = 1
@@ -58,22 +71,10 @@ publishing_industry = 1
 mechanized_mining = 1
 basic_chemistry = 1
 
-# Inventions
-#corvettes = yes
-commerce_raiders = yes
+#Inventions
 
 # Starting Consciousness
 consciousness = 3
 nonstate_consciousness = 1
 
-ruling_party = BRT_conservative
-last_election = 1834.6.21
-upper_house = {
-	fascist = 0
-	liberal = 12
-	conservative = 70
-	reactionary = 18
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
-}
+oob = "POM_oob.txt"

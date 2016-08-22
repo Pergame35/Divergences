@@ -178,6 +178,9 @@ political_decisions = {
 			2057 = { owned_by = THIS } #Gundersborg
 			2061 = { owned_by = THIS } #Karlsten
 			2124 = { owned_by = THIS } #Mayotte
+			MAD = {
+				in_sphere = THIS
+				}
 			}
 		}
 		
@@ -295,6 +298,23 @@ political_decisions = {
 	TNT = { all_core = { add_core = THIS } }
 	UGH = { all_core = { add_core = THIS } }
 	KOK = { all_core = { add_core = THIS } }
+	any_country = {
+				limit = {
+					OR = { 
+					primary_culture = oirat
+					primary_culture = mongol
+					primary_culture = kazak 
+					primary_culture = uighur
+					primary_culture = uzbek 
+					primary_culture = kirgiz
+					}
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
 	}
 	
 	}
@@ -302,7 +322,7 @@ political_decisions = {
 	expanding_manchuria = { 
 	potential = { 
 	tag = TKS 
-	NOT = { has_country_flag = manchuria}
+	NOT = { has_country_flag = manchuria_TKS }
 		}
 		
 	allow = { 
@@ -314,6 +334,7 @@ political_decisions = {
 	CHI_1553 = { add_core = TKS }
 	CHI_5 = { add_core = TKS }
 	add_accepted_culture = manchu
+	set_country_flag = manchuria_TKS 
 	}
 	
 	}

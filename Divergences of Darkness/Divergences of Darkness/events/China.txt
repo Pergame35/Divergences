@@ -438,6 +438,7 @@ country_event = {
 	
 	option = { 
 	name = "Fight them all!"
+	set_country_flag = empire_dislocated
 	any_owned = { 
 	any_owned = { limit = { OR = { region = RUS_1184 region = RUS_1185} } secede_province = KZH }
 	remove_core = CHG
@@ -1036,6 +1037,8 @@ country_event = {
 
 	major = yes
 		
+	fire_only_once = yes 	
+		
 	trigger = { 
 	has_country_flag = tocharians
 	owns = 1594
@@ -1206,6 +1209,7 @@ country_event = {
 	CHG = { civilized = no }
 	NOT = { CHG = { has_country_flag = kawaguchi } }
 	NOT = { 1186 = { owned_by = CHG } 1465 = { owned_by = CHG }}
+	NOT = { relation = { who = CHG value = 100 } } 
 	}
 	
 	fire_only_once = yes 

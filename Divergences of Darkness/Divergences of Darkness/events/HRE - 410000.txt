@@ -2271,3 +2271,27 @@ country_event = {
 	prestige = 2
 	}
 }
+
+country_event = { 
+	id = 410071
+	title = "HRE71.T"
+	desc = "HRE71.D"
+	
+	major = yes 
+	
+	trigger = { 
+	tag = HRE 
+	year = 1900 
+	owns = 576 
+	NOT = { year = 1901 }
+	}
+	
+	mean_time_to_happen = { 
+	months = 8 
+	}
+	
+	option = { 
+	name = "May it live for a thousand year more!"
+	}
+	
+}

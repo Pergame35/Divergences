@@ -3541,6 +3541,42 @@ turkish_nationalism = {
 	}
 }
 
+panafricanism = { 
+	limit = {
+		continent = africa 
+		nationalism_n_imperialism = 1 
+		NOT = { 
+		is_culture_group = arab 
+		is_culture_group = boer_cultures
+		}
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 10
+			revolution_n_counterrevolution  = 1
+		}
+		modifier = {
+			factor = 3
+			any_greater_power = {
+				invention = indigenous_garrisoning
+			}
+		}
+		modifier = { 
+			factor = 2 
+			tag = GRI 
+		}
+		modifier = { 
+			factor = 5 
+			rank = 20 
+		}
+	}
+	effect = {
+		shared_prestige = 5 	
+	}
+
+}
+
 basic_training = {
 	limit = {
 		army_command_principle = 1

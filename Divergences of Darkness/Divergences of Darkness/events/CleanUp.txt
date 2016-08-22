@@ -546,7 +546,7 @@ country_event = {
 	picture = "communist_crowd"
 	
 	trigger = {
-		government = democracy
+		OR = { government = democracy government = merchant_republic }
 		vote_franschise = none_voting		
 		OR = {
 			ruling_party_ideology = conservative

@@ -1875,12 +1875,12 @@ province_event = {
 		AND = { owned_by = CLM CLM = { has_global_flag = congress_of_panama_over } }
 		}
 		
-		or = {
-			province_id = 2153			# Durango
-			province_id = 2157			# Culiacan
-			province_id = 2295			# Lima
+		OR = {
+			province_id = 2153	# Durango
+			province_id = 2157  # Culiacan
+			province_id = 2295	# Lima
 		}
-		not = { trade_goods = precious_metal }
+		NOT = { trade_goods = precious_metal }
 	}
 
 	mean_time_to_happen =  {

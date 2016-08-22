@@ -120,6 +120,13 @@ political_decisions = {
 				is_sphere_leader_of = MOL
 				is_sphere_leader_of = SIE
 			}	
+			NOT = { 
+				OR = { 
+				tag = HUN 
+				tag = BUL
+				tag = TUR 
+				}
+			}
 		}
 		allow = {
 			war = no

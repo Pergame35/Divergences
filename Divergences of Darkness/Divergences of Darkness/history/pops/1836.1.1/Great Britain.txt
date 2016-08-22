@@ -529,19 +529,19 @@
 #Cardiff (380000/95000 POPS)
 273 = {
 	aristocrats = {
-		culture = welsh
+		culture = anglois
 		religion = catholic
 		size = 500
 	}
 
 	capitalists = {
-		culture = welsh
+		culture = english
 		religion = catholic
 		size = 100
 	}
 
 	bureaucrats = {
-		culture = welsh
+		culture = anglois
 		religion = catholic
 		size = 1025
 	}
@@ -559,7 +559,7 @@
 	}
 
 	clerks = {
-		culture = welsh
+		culture = anglois
 		religion = catholic
 		size = 350
 	}
@@ -577,7 +577,7 @@
 	}
 
 	soldiers = {
-		culture = welsh
+		culture = anglois
 		religion = catholic
 		size = 3000
 	}
@@ -606,7 +606,7 @@
 		size = 200
 	}
 	
-	farmers = {
+	labourers = {
 		culture = anglois
 		religion = catholic
 		size = 8000
@@ -617,13 +617,13 @@
 	aristocrats = {
 		culture = welsh
 		religion = catholic
-		size = 550
+		size = 250
 	}
 
 	aristocrats = {
 		culture = anglois
 		religion = catholic
-		size = 300
+		size = 600
 	}
 	
 	clergymen = {
@@ -641,7 +641,13 @@
 	farmers = {
 		culture = welsh
 		religion = catholic
-		size = 38625
+		size = 30625
+	}
+	
+	farmers = {
+		culture = anglois
+		religion = catholic
+		size = 8000
 	}
 }
 #Llandrindod (182000/45500 POPS)

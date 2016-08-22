@@ -1151,7 +1151,13 @@
 	aristocrats = {
 		culture = breton
 		religion = catholic
-		size = 1350
+		size = 350
+	}
+	
+	aristocrats = {
+		culture = anglois
+		religion = catholic
+		size = 1000
 	}
 
 	officers = {
@@ -1175,13 +1181,13 @@
 	artisans = {
 		culture = breton
 		religion = catholic
-		size = 10000
+		size = 15000
 	}
 	
 	artisans = {
-		culture = breton
+		culture = anglois
 		religion = catholic
-		size = 6000
+		size = 1000
 	}
 
 	soldiers = {
@@ -1214,7 +1220,13 @@
 	artisans = {
 		culture = breton
 		religion = catholic
-		size = 7500
+		size = 6500
+	}
+	
+	artisans = {
+		culture = anglois
+		religion = catholic
+		size = 1000
 	}
 
 	soldiers = {
@@ -1247,7 +1259,13 @@
 	artisans = {
 		culture = breton
 		religion = catholic
-		size = 5400
+		size = 4400
+	}
+	
+	artisans = {
+		culture = anglois
+		religion = catholic
+		size = 1000
 	}
 
 	soldiers = {
@@ -1272,7 +1290,7 @@
 	}
 
 	clergymen = {
-		culture = breton
+		culture = anglois
 		religion = catholic
 		size = 1200
 	}
@@ -1284,7 +1302,7 @@
 	}
 	
 	artisans = {
-		culture = breton
+		culture = anglois
 		religion = catholic
 		size = 10000
 	}
@@ -1292,13 +1310,13 @@
 	labourers = {
 		culture = anglois
 		religion = catholic
-		size = 9000
+		size = 30000
 	}
 	
 	labourers = {
 		culture = breton
 		religion = catholic
-		size = 81900
+		size = 60900
 	}
 }
 #Rennes (548000/137000 POPS)
@@ -1331,7 +1349,13 @@
 	farmers = {
 		culture = breton
 		religion = catholic
-		size = 123850
+		size = 103850
+	}
+	
+	farmers = {
+		culture = anglois
+		religion = catholic
+		size = 20000
 	}
 
 }

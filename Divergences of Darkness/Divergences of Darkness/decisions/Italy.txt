@@ -510,4 +510,22 @@ political_decisions = {
 		}
 	
 	}
+	
+	dalmatia_VEN = { 
+		potential = { 
+		tag = VEN 
+		NOT = { has_country_flag = dalmatia_cores }
+		780 = { owned_by = THIS }
+		}
+		
+		allow = { 
+		state_n_government = 1 
+		NOT = { CRO = { rank = 16 } } 
+		}
+		
+		effect = { 
+		AUS_780 = { add_core = VEN }
+		set_country_flag = dalmatia_cores
+		}
+	}
 }

@@ -118,6 +118,48 @@ country_event = {
 		25 = { country_event = 46432 }
 				}
 	}
-	
-
 }
+	
+country_event = { 
+	id = 46434 
+	title = "Unification of Colombia"
+	desc = "Nationalism of the various provinces is disappearing"
+	
+	trigger = { 
+	tag = CLM 
+	year = 1870 
+	NOT = { 
+	LST = { exists = yes }
+	CUB = { exists = yes }
+	UCA = { exists = yes }
+	GRA = { exists = yes }
+	NIC = { exists = yes }
+	PNM = { exists = yes }
+	ELS = { exists = yes }
+	GUY = { exists = yes }
+	CAS = { exists = yes }
+	SAN = { exists = yes }
+	QUI = { exists = yes }
+	ARE = { exists = yes }
+	JLS = { exists = yes }
+		}
+	}
+	
+	mean_time_to_happen = { 
+	months = 15 
+	}
+	
+	option = { 
+	any_owned = { 
+	remove_core = NIC 
+	remove_core = PNM 
+	remove_core = ELS 
+	remove_core = JLS 
+	remove_core = CAS
+	remove_core = SAN
+	remove_core = QUI 
+	remove_core = ARE
+		}
+	}
+}
+

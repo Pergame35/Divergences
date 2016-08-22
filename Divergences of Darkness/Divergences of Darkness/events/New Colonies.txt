@@ -496,3 +496,234 @@ province_event = { ### Spread of Terra d'Oro cores
 		}
 	}
 }
+
+province_event = {
+	id = 971345
+	title = "$STATENAME$ Colonial Incorporation"
+	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Leonian colony"
+	
+	trigger = {
+		region = FRA_1880
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = SLE
+		}
+		owner = {
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1884 }
+				SLE = { exists = no }
+			}
+			SLE = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "EVT98800OPTA"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = SLE }
+				}
+				add_core = SLE
+				any_pop = { militancy = -3 }
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 971346
+	title = "$STATENAME$ Colonial Incorporation"
+	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Leonian colony"
+	
+	trigger = {
+		region = ENG_1887
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = SLE
+		}
+		owner = {
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1884 }
+				SLE = { exists = no }
+			}
+			SLE = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "EVT98800OPTA"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = SLE }
+				}
+				add_core = SLE
+				any_pop = { militancy = -3 }
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 971347
+	title = "$STATENAME$ Colonial Incorporation"
+	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Leonian colony"
+	
+	trigger = {
+		region = FRA_1884
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = SLE
+		}
+		owner = {
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1884 }
+				SLE = { exists = no }
+			}
+			SLE = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "EVT98800OPTA"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = SLE }
+				}
+				add_core = SLE
+				any_pop = { militancy = -3 }
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 971348
+	title = "$STATENAME$ Colonial Incorporation"
+	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Leonian colony"
+	
+	trigger = {
+		region = FRA_1879
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = SLE
+		}
+		owner = {
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1884 }
+				SLE = { exists = no }
+			}
+			SLE = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "EVT98800OPTA"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = SLE }
+				}
+				add_core = SLE
+				any_pop = { militancy = -3 }
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 971349
+	title = "$STATENAME$ Colonial Incorporation"
+	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Leonian colony"
+	
+	trigger = {
+		region = FRA_1892
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = SLE
+		}
+		owner = {
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1884 }
+				SLE = { exists = no }
+			}
+			SLE = {
+				vassal_of = THIS
+				is_culture_group = THIS
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "EVT98800OPTA"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = SLE }
+				}
+				add_core = SLE
+				any_pop = { militancy = -3 }
+				SLE = { add_accepted_culture = akan }
+			}
+		}
+	}
+}

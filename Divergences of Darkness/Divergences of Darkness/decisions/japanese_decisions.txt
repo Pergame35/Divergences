@@ -332,7 +332,7 @@ political_decisions = {
 	
 	organize_yakutia = { 
 	potential = {
-	NOT = { primary_culture = russian }
+	tag = JAP
 	owns = 2669 
 	civilized = yes
 	NOT = { YKT = { exists = yes } }

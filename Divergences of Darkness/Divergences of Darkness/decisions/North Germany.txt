@@ -180,17 +180,15 @@ political_decisions = {
 			war = no
 			is_greater_power = yes
 			prestige = 50
-			owns = 378 #Middelburg
-			owns = 409 #Strasbourg
 			RHI = { all_core = { owned_by = THIS } }
 		}
 
 		effect = {
 			add_accepted_culture = south_german
 			set_country_flag = greater_rhineland
-			NET_381 = { add_core = RHI }
-			NET_375 = { add_core = RHI }
-			FRA_412 = { add_core = RHI }
+			WUR_589 = { add_core = RHI }
+			2560 = { add_core = RHI }
+			HES_566 = { add_core = RHI }
 			BAD_586 = { add_core = RHI }
 		}
 		

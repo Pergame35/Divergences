@@ -241,6 +241,7 @@ country_event = {
 	desc = "The wastelands of Siberia could be better organised under an 'independent' Yakutian state."
 	
 	trigger = { 
+	tag = JAP 
 	year = 1915 
 	NOT = { YKT = { exists = yes } } 
 	YKT = { all_core = { owned_by = THIS } }
