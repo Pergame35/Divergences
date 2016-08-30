@@ -5,7 +5,7 @@ religion = animist
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.0006
+literacy = 0.001
 non_state_culture_literacy = 0
 
 # Political reforms
@@ -46,35 +46,6 @@ upper_house = {
 
 set_country_flag = existing_country
 
-diplomatic_reform = interactive
-
-# Technologies
-early_classical_theory_and_critique = 1
-
-# Inventions
-
-# Starting Consciousness
-consciousness = 0
-nonstate_consciousness = 0
-
-oob = "LOA_oob.txt"
-
-1836.1.1 = {
-	literacy = 0.001
-	
-	foreign_weapons = yes_foreign_weapons
-	diplomatic_reform = interactive
-	
-	# Technologies
-	flintlock_rifles = 1
-	early_classical_theory_and_critique = 1
-}
-
-1861.1.1 = {
-	oob = "/1861/LOA_oob.txt"
-}
-1861.1.1 = {
-
 foreign_weapons = yes_foreign_weapons
 diplomatic_reform = interactive
 
@@ -84,4 +55,8 @@ early_classical_theory_and_critique = 1
 
 # Inventions
 
-}
+# Starting Consciousness
+consciousness = 0
+nonstate_consciousness = 0
+
+oob = "LOA_oob.txt"
