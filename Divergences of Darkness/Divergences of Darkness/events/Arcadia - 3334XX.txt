@@ -1892,7 +1892,7 @@ country_event = {
 			target = FROM
 			attacker_goal = {
 				casus_belli = acquire_all_cores
-				country = DNG
+				country = THIS
 			}
 		}
 		any_pop = {
