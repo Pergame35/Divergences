@@ -1757,24 +1757,22 @@ country_event = {
 	trigger = { 
 	tag = HRE 
 	has_country_flag = locresults 
-	AND = { 
-		OR = {
-			has_country_flag = elbe_accepts
-			has_country_flag = elbe_negotiation 
-			has_country_flag = elbe_reb	
-			}
-		
-		OR = {
-			has_country_flag = rhine_accepts
-			has_country_flag = rhine_negotiation 
-			has_country_flag = rhine_reb	
-			}
-			
-		OR = {
-			has_country_flag = danube_accepts
-			has_country_flag = danube_negotiation 
-			has_country_flag = danube_reb	
-			}
+	OR = {
+		has_country_flag = elbe_accepts
+		has_country_flag = elbe_negotiation 
+		has_country_flag = elbe_reb
+		}
+	
+	OR = {
+		has_country_flag = rhine_accepts
+		has_country_flag = rhine_negotiation 
+		has_country_flag = rhine_reb
+		}
+	
+	OR = {
+		has_country_flag = danube_accepts
+		has_country_flag = danube_negotiation 
+		has_country_flag = danube_reb
 		}
 	}
 	

@@ -273,9 +273,7 @@ political_decisions = {
 	greek_epirus = {
 		potential = {
 			tag = GRE
-			OR = {
-				owns = 824 #Janina
-			}
+			owns = 824 #Janina
 			NOT = {
 				has_global_flag = greek_epirus
 			}
@@ -566,6 +564,7 @@ political_decisions = {
 		potential = {
 			tag = TUR
 			owns = 863 #Bursa
+			has_global_flag = greek_nicaea
 		}
 		
 		allow = {

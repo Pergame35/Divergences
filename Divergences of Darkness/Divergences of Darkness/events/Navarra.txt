@@ -139,10 +139,8 @@ country_event = { #Basque Proclamation of Independence : Aragon's reaction
 		modifier = { 
 		factor = 0.1 
 		DUA = { 
-			AND = { 
 				war_with = ENL 
 				has_country_flag = glorious_revolution
-					}
 				}
 			}
 		}
@@ -319,7 +317,7 @@ country_event = {
 	name = "The countess of St-Sebastian is the rightful queen ! "
 	set_global_flag = end_bourbon
 	ARA = { 
-	country_event = 9874
+	country_event = 987415
 	inherit = NAV 
 	}
 	ai_chance = { 
@@ -473,7 +471,7 @@ country_event = { #ARA notification
 	ESK_1 = {
 		add_core = DUA
 		}
-	DUA = { country_event = 987412 }
+	DUA = { country_event = 987416 }
 	}
 }
 
@@ -525,7 +523,7 @@ country_event = {
 		
 	option = { 
 	name = "Send an ultimatum to Paris !"
-	DUA = { country_event = 987414
+	DUA = { country_event = 987418
 			clr_country_flag = contest_NAV }
 		ai_chance = { 
 			factor = 100

@@ -46,9 +46,7 @@ country_event = {
 			}
 		any_owned = {
 			limit = {
-				OR = {
-					region = NA_16 #Athesia
-				}
+				region = NA_16 #Athesia
 			}
 			secede_province = FROM
 		}
@@ -133,9 +131,7 @@ country_event = {
 			}
 		any_owned = {
 			limit = {
-				OR = {
-					region = NA_16 #Athesia
-				}
+				region = NA_16 #Athesia
 			}
 			secede_province = FROM
 		}
@@ -160,7 +156,7 @@ country_event = {
 			factor = 50
 			modifier = { 
 				factor = 1.3 
-				THIS = { in_sphere = yes }
+				THIS = { part_of_sphere = yes }
 				}
 		}
 	}
@@ -234,9 +230,7 @@ country_event = {
 			}
 		any_owned = {
 			limit = {
-				OR = {
-					region = SPA_2209 #Habana
-				}
+				region = SPA_2209 #Habana
 			}
 			secede_province = FROM
 		}
@@ -245,10 +239,9 @@ country_event = {
 			factor = 85
 			modifier = { 
 			factor = 1.5
-			AND = { CLM = { exists = yes } 
-				NOT = { CLM = { is_vassal = THIS } }
-				}
-			}	
+			CLM = { exists = yes } 
+			NOT = { CLM = { vassal_of = THIS } }
+			}
 		}
 	}
 
@@ -319,9 +312,7 @@ country_event = {
 			}
 		any_owned = {
 			limit = {
-				OR = {
-					region = HAI_2213 #Habana
-				}
+				region = HAI_2213 #Habana
 			}
 			secede_province = FROM
 		}

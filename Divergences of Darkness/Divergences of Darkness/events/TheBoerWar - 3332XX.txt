@@ -486,43 +486,6 @@ country_event = {
 	}
 }
 
-#Witwatersrand Gold Rush
-province_event = {
-	id = 1139
-	
-	trigger = {
-		year = 1880
-		province_id = 2106
-		NOT = {
-			trade_goods = precious_metal
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 24
-	}
-	
-	title = "EVTNAME1139"
-	desc = "EVTDESC1139"
-	
-	option = {
-		name = "EVTOPTA1139"
-		trade_goods = precious_metal
-		add_province_modifier = {
-			name = gold_rush
-			duration = 5475
-		}
-		change_province_name = "Johannesburg"
-		owner = {
-			add_country_modifier = {
-				name = witwatersrand_gold_rush
-				duration = 1460
-			}
-		}
-		set_global_flag = witwatersrand_gold_rush
-	}
-}
-
 country_event = {
 	id = 333217
 	title = "SAF17.T"
@@ -797,7 +760,7 @@ country_event = {
 	option = {
 		name = "This can only be good for the empire."
 		clr_country_flag = SAF_independence_refused
-		SAF = { primary_culture = burgundian culture = boer}
+		SAF = { primary_culture = burgundian add_accepted_culture = boer}
 		prestige = -20
 		badboy = -5
 		any_pop = {
@@ -917,7 +880,7 @@ country_event = {
 	option = {
 		name = "Onwards to South Africa!"
 		clr_country_flag = SAF_independence_refused
-		SAF = { primary_culture = burgundian culture = boer}
+		SAF = { primary_culture = burgundian add_accepted_culture = boer}
 		prestige = -20
 		badboy = -5
 		any_pop = {

@@ -385,19 +385,6 @@
 #Aden (40000/10000 POPS)   
 1412 = {
 	aristocrats = {
-		culture = british
-		religion = protestant
-		size = 50
-	}
-	
-	soldiers = {
-		culture = british
-		religion = protestant
-		size= 150
-
-	}
-
-	aristocrats = {
 		culture = khaliji
 		religion = sunni
 		size = 150
@@ -462,7 +449,7 @@
 	aristocrats = {
 		culture = bedouin
 		religion = sunni
-		size = 50
+		size = 100
 	}
 
 	clergymen = {
@@ -480,7 +467,7 @@
 	soldiers = {
 		culture = bedouin
 		religion = sunni
-		size= 50
+		size= 200
 
 	}
 

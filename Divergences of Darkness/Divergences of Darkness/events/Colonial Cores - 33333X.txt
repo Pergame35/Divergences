@@ -143,7 +143,7 @@ country_event = {
 		name = "EVTOPTA333335"
 		
 		ENG_1956 = {
-			add_core = SDW
+			add_core = ADW
 		}
 
 		random_owned = {
@@ -156,7 +156,7 @@ country_event = {
 			}
 			owner = {		
 				FRA_1972 = {
-					add_core = SDW
+					add_core = ADW
 				}
 			}
 		}
@@ -172,7 +172,7 @@ country_event = {
 			}
 			owner = {		
 				FRA_1978 = {
-					add_core = SDW
+					add_core = ADW
 				}
 			}
 		}
@@ -180,14 +180,14 @@ country_event = {
 		any_country = {
 			limit = {
 				NOT = {
-					tag = SDW
+					tag = ADW
 				}
 			}
-			release = SDW
+			release = ADW
 		}
 
 		SAR = {
-			inherit = SDW
+			inherit = ADW
 			2238 = {
 				secede_province = THIS
 			}

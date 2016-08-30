@@ -445,7 +445,7 @@ country_event = {
                 }
                 OR = {
                                 AND = {
-                                        ruling_party_ideology = Liberal
+                                        ruling_party_ideology = liberal
                                         average_militancy = 6
                                 }
                                 AND = {
@@ -706,23 +706,6 @@ country_event = {
 				is_vassal = yes
 				sphere_owner = { is_our_vassal = THIS }
 			}
-		}
-		OR = {
-			sphere_owner = { ideological_thought = 1 }
-			NOT = { is_culture_group = american_cultures }
-		}
-		OR = {
-			NOT = { tag = BAN }
-			sphere_owner = { neighbour = THIS }
-		}
-		NOT = {
-			tag = KUK
-			tag = AUS
-			tag = DNB
-			tag = CSA
-			tag = FSA
-			tag = UIL
-			tag = UNB
 		}
 		NOT = { has_country_flag = post_colonial_country }
 	}

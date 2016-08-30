@@ -237,7 +237,7 @@ country_event = {
 		}
 		TUR = { country_event = 125104 }
 		casus_belli = {
-				target = FROM
+				target = TUR
 				type = acquire_state
 				months = 60
 			}
@@ -1539,7 +1539,7 @@ country_event = {
 	option = { 
 	name = "Long Live the Sultan !"
 	prestige = 10 
-	militancy = -5
+	any_pop = { militancy = -5 }
 	set_country_flag = end_janissary
 	add_country_modifier = {
 				name = CLM_fight

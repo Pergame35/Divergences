@@ -583,7 +583,7 @@ country_event = { ## Glorious Revolution
 	modifier = { 
 		factor = 0.3	
 		any_pop = {
-				is_core = ENL 
+				location = { is_core = ENL }
 				culture = english
 				OR = {
 					type = aristocrats
@@ -1141,10 +1141,8 @@ country_event = {
 		}
 	modifier = { 
 		factor = 0.5
-		AND = { 
 		owns = 267
 		owns = 269
-			}
 		}
 	modifier = { 
 		factor = 0.8
@@ -1562,7 +1560,7 @@ country_event = { #Saxon poetry
 	id = 650230
 	title = "DUA30.T"
 	desc = "DUA30.D"
-	picture = "saxon_poetry"
+	picture = "Saxon_romanticism"
 	
 	fire_only_once = yes 
 	
@@ -2415,7 +2413,10 @@ country_event = {
 			militancy = 2 
 		}
 	any_pop = { 
-	limit = { ideology = liberal } militancy = 5 
+		scaled_militancy = {
+			factor = 5
+			ideology = liberal
+		}
 	}
 	public_meetings = no_meeting 
 	RAP = {
@@ -3637,7 +3638,12 @@ country_event = { #Death of the Dauphin, Orléans
 	set_country_flag = death_dauphin
 	public_meetings = no_meeting 
 	prestige = -50 
-	any_pop = { limit = { ideology = liberal } militancy = 3 }
+	any_pop = { 
+		scaled_militancy = {
+			factor = 3
+			ideology = liberal
+		}
+	}
 	RAP = {
 			change_variable = {
 				which = OCC_revolt 
@@ -3683,7 +3689,12 @@ country_event = { #Death of the Dauphin, Liverpool
 	set_country_flag = death_dauphin
 	public_meetings = no_meeting 
 	prestige = -50 
-	any_pop = { limit = { ideology = liberal } militancy = 3 }
+	any_pop = { 
+		scaled_militancy = {
+			factor = 3
+			ideology = liberal
+		}
+	}
 	RAP = {
 			change_variable = {
 				which = OCC_revolt 
@@ -3855,7 +3866,7 @@ country_event = {
 	id = 650279
 	title = "DUA5.T"
 	desc = "DUA5.D"
-	Picture = "Henri"
+	picture = "Henri"
 	
 	is_triggered_only = yes
 	
@@ -3917,6 +3928,8 @@ country_event = { #Coronation of Henri XI
 	title = "DUA80.T"
 	desc = "DUA80.D"
 	picture = "Henri_XI"
+	
+	fire_only_once = yes 
 	
 	trigger = { 
 	tag = DUA 
@@ -4215,17 +4228,13 @@ country_event = { ##End of the Dual-Monarchy
 	any_country = { 
 			any_owned = { 
 				limit = {
-				OR = {
 					is_core = DUA
-					}
 				}
 				remove_core = DUA
 			}
 	any_owned = { 
 				limit = {
-				OR = {
 					is_core = DUA
-					}
 				}
 				remove_core = DUA
 			}

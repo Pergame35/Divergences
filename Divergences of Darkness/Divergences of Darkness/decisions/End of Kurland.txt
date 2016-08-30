@@ -105,7 +105,7 @@ become_neu_kurland = {
 			}
 		}
 	primary_culture = livlandian
-	remove_accepted_culture = elbian 
+	remove_accepted_culture = north_german
 	remove_accepted_culture = latvian
 	change_tag = UBD
 		}	
@@ -126,7 +126,7 @@ become_neu_kurland_2 = {
 	effect = { 
 	change_tag = UBD 
 	primary_culture = livlandian
-	remove_accepted_culture = elbian 
+	remove_accepted_culture = north_german
 	remove_accepted_culture = latvian
 	capital = 2229 
 		}	

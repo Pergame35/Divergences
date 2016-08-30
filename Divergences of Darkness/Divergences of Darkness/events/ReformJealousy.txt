@@ -3,7 +3,7 @@ country_event = {
 	id = 90100 
 
 	trigger = {
-			AI = no
+			ai = no
 			OR = {
 				press_rights = state_press
 				press_rights = censored_press
@@ -103,7 +103,7 @@ country_event = {
 	id = 90102 
 
 	trigger = {
-			AI = no
+			ai = no
 			public_meetings = no_meeting
 			consciousness = 5
 			literacy = 0.40
@@ -197,7 +197,7 @@ country_event = {
 	id = 90104
 
 	trigger = {
-			AI = no
+			ai = no
 			trade_unions = no_trade_unions
 			consciousness = 5
 			literacy = 0.40

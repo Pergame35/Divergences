@@ -407,13 +407,13 @@ country_event = {
 			secede_province = SCA
 		}
 		primary_culture = livlandian
-		remove_accepted_culture = elbian 
+		remove_accepted_culture = north_german 
 		remove_accepted_culture = latvian
 		change_tag = UBD
 		any_country = { 
 		any_owned = { 
 		limit = { is_core = KRL }
-		remove_core = UDB
+		remove_core = UBD
 			}
 		}
 		357 = {
@@ -810,7 +810,7 @@ country_event = {
 	name = "Over our dead bodies !"
 	FROM = { 
 	casus_belli = { 
-	name = demand_concession_casus_belli
+	type = demand_concession_casus_belli
 	target = BUR 
 	months = 60 
 		}

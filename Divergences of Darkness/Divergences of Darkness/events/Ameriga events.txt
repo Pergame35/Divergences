@@ -1,4 +1,4 @@
-﻿country_event = {
+country_event = {
 	
 	id = 775404
 	title = "LOTNANfriendshipsetup5name"
@@ -173,7 +173,7 @@ country_event = {
 			
 				prestige = 20
 				set_country_flag = lot_nan_friendship_end
-				create_alliance = { tag = NAN }
+				create_alliance = NAN
 			
 				
 		
@@ -443,6 +443,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "kingstatueevent2opt"
 		money = -20000
 		prestige = -5
 		clr_country_flag = kings_statue_vandalized
@@ -1197,12 +1198,10 @@ country_event = {
 		trigger = { 
 		tag = AMA 
 		CLM = { 
-		AND = { 
 		owns = 2414 
 		owns = 2415
 		owns = 2408
 		owns = 2412
-				}
 		war_with = SPA 
 			}
 		NOT = { has_global_flag = congress_of_panama }
@@ -1482,24 +1481,18 @@ country_event = {
 	factor = 30 
 		modifier = { 
 		factor = 3 
-		AND = { 
 		NAN = { government = democracy }  
 		AZL = { government = democracy } 
-				}
 			}
 		modifier = { 
 		factor = 3 
-		AND = { 
 		NAN = { government = hms_government }  
 		AZL = { government = hms_government }
-				}
 		}
 		modifier = { 
 		factor = 3 
-		AND = { 
 		NAN = { government = proletarian_dictatorship }
 		AZL = { government = proletarian_dictatorship }
-				}
 		}
 		modifier = { 
 		factor = 1.5 
@@ -1560,7 +1553,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "They thought that no was an answer ? Across la Rivière d'Argent gentlemen ! "
+	name = "They thought that no was an answer ? Across la Rivi�re d'Argent gentlemen ! "
 	NAN = { all_core = { add_core = AZL } }
 	badboy = 23 
 	casus_belli = {

@@ -980,7 +980,7 @@ country_event = { ######Sister Republics
 	any_owned = { 
 	remove_core = DUA
 			}
-	any_country = { limit = { is_core = DUA } any_owned = { remove_core = DUA } }
+	DUA = { all_core = { remove_core = DUA } }
 	release = ENL 
 	release = OCC
 	release = IRE
@@ -993,7 +993,7 @@ country_event = { ######Sister Republics
 	remove_accepted_culture = provencal
 	add_accepted_culture = french
 	OCC = { capital = 455 }
-	ENL = { capital = 300 add_accepted_culture = anglois has_country_flag = Anglois_accepted }
+	ENL = { capital = 300 add_accepted_culture = anglois set_country_flag = Anglois_accepted }
 	IRE = { capital = 263 }
 	change_tag = FRA
 	}
@@ -1028,7 +1028,7 @@ country_event = {
 	any_owned = { 
 	remove_core = DUA
 			}
-	any_country = { limit = { is_core = DUA } any_owned = { remove_core = DUA } }
+	DUA = { all_core = { remove_core = DUA } }
 	release = ENL 
 	release = OCC
 	release = IRE
@@ -1077,7 +1077,7 @@ country_event = {
 	any_owned = { 
 	remove_core = DUA
 			}
-	any_country = { limit = { is_core = DUA } any_owned = { remove_core = DUA } }
+	DUA = { all_core = { remove_core = DUA } }
 	release = FRA 
 	release = OCC
 	release = IRE

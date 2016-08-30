@@ -377,13 +377,13 @@ country_event = {
 	name = "That makes no difference in the end."
 	add_casus_belli = {
 				target = FROM
-				type = establish_protectorate
+				type = establish_protectorate_casus_belli
 				months = 24
 			}
 	war = {
 		target = FROM
 		attacker_goal = {
-				casus_belli = establish_protectorate
+				casus_belli = establish_protectorate_casus_belli
 			}
 		}
 	}	

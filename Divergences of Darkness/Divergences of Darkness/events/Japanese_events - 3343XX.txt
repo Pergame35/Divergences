@@ -354,7 +354,7 @@ country_event = {
 	6 = { owned_by = JAP }
 	5 = { owned_by = JAP }
 	NOT = { KKN = { exists = yes } }
-	DNG = { NOT = { is_vassal = THIS } }
+	DNG = { NOT = { vassal_of = THIS } }
 	DNG = { exists = yes }
 	NOT = { truce_with = DNG }
 	NOT = { has_country_flag = KKN_free }
@@ -462,7 +462,7 @@ country_event = {
 	option = {
 	name = "There is still loyalty in this world !"
 	prestige = 25 
-	any_pop = { limit = { is_core = KKN } militancy = -5 }
+	any_pop = { limit = { location = { is_core = KKN } } militancy = -5 }
 	}
 }
 
@@ -627,7 +627,7 @@ country_event = {
 	trigger = { 
 	tag = SCA 
 	owns = 1462
-	NOT = { war = TON}
+	NOT = { war_with = TON}
 	TON = { 
 	civilized = no 
 	owns = 1460 
@@ -657,9 +657,10 @@ country_event = {
 	factor = 90 
 	modifier = { 
 	factor = 0 
-	AND = { is_greater_power = no 1458 = { owned_by = JAP } }
-			}
+	is_greater_power = no
+	1458 = { owned_by = JAP }
 		}
+	}
 	}
 	
 	option = { 
@@ -679,7 +680,7 @@ country_event = {
 	trigger = { 
 	tag = JAP 
 	owns = 1458
-	NOT = { war = TON }
+	NOT = { war_with = TON }
 	TON = { 
 	civilized = no 
 	owns = 1460 

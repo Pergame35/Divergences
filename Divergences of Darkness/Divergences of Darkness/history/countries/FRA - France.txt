@@ -93,9 +93,6 @@ upper_house = {
 schools = culture_tech_school
 
 oob = "FRA_oob.txt"
-1850.1.1 = {
- decision = support_french_foreign_legion
-}
 1861.1.1 = {
 	oob = "/1861/FRA_oob.txt"
 	prestige = 140
@@ -126,7 +123,7 @@ political_parties = underground_parties
 # Social Reforms
 work_hours = twelve_hours
 
-ruling_party = FRA_conservative_2
+ruling_party = AAA_conservative_3
 government = absolute_monarchy
 upper_house = {
 	fascist = 0

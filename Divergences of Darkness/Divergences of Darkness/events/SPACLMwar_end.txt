@@ -22,7 +22,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB46450"
 		any_pop = { 
-		limit = { is_core = SPA }
+		limit = { location = { is_core = SPA } }
 		militancy = 2 
 		consciousness = 4 
 		}

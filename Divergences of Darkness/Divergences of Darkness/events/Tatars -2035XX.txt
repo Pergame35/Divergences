@@ -133,7 +133,7 @@ country_event = {
 	
 	option = { 
 	name = "We will do without them!"
-	break_alliance = SCA 
+	leave_alliance = SCA
 	relation = { who = SCA value = -100 }
 	war = {
 			target = MUS

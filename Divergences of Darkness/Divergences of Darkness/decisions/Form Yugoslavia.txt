@@ -342,16 +342,16 @@ political_decisions = {
 					value = -50
 				}
 			}
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
 				OR = {
-						tag = VEN
-						tag = AUS
-						tag = HUN
-						tag = TUR
-					}
+					tag = VEN
+					tag = AUS
+					tag = HUN
+					tag = TUR
 				}
 			}
 		}

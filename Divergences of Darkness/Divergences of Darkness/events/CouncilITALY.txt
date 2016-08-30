@@ -73,10 +73,10 @@ country_event = {
 		
 		ai_chance = {
 			factor = 50
-			modifier = {
-				factor = 0.5
-				rank = TUS
-			}
+			#modifier = {
+			#	factor = 0.5
+			#	rank = TUS
+			#}
 			modifier = { 
 			factor = 0 
 			in_sphere = ARA
@@ -85,10 +85,10 @@ country_event = {
 				factor = 1.5
 				TUS = { is_greater_power = yes }
 			}
-			modifier = {
-				factor = 1.1
-				NOT = { rank = TUS }
-			}
+			#modifier = {
+			#	factor = 1.1
+			#	NOT = { rank = TUS }
+			#}
 			modifier = {
 				factor = 0 
 				government = absolute_monarchy
@@ -146,10 +146,8 @@ country_event = {
 			}
 			modifier = { 
 			factor = 0 
-			AND = { 
 			tag = SAR 
 			NOT = { government = democracy } 
-				}
 			}
 		}
 	}
@@ -174,14 +172,14 @@ country_event = {
 			factor = 1.5 
 			DUA = { has_country_flag = meddle_in_italy }
 			}
-			modifier = {
-				factor = .5
-				NOT = { rank = TUS }
-			}
-			modifier = {
-				factor = 1.5
-				rank = TUS
-			}
+			#modifier = {
+			#	factor = 0.5
+			#	NOT = { rank = TUS }
+			#}
+			#modifier = {
+			#	factor = 1.5
+			#	rank = TUS
+			#}
 			modifier = { 
 			factor = 1.7
 			in_sphere = DUA
@@ -459,10 +457,10 @@ country_event = {
 				factor = 0
 				ruling_party_ideology = reactionary
 			}
-			modifier = {
-				factor = 0
-				rank = FROM
-			}
+			#modifier = {
+			#	factor = 0
+			#	rank = FROM
+			#}
 		}
 	}
 	
@@ -611,7 +609,7 @@ country_event = {
 				casus_belli = conquest
 			}
 		}
-	ITA = { country_event = 124217 }
+	ITA = { country_event = 124218 }
 	set_country_flag = conquest_ITA
 	ai_chance = { 
 	factor = 80 
@@ -866,7 +864,7 @@ country_event = {
 }
 
 country_event = { 
-	id = 124216
+	id = 124218
 	title = "Aragonese Attack"
 	desc = "The King of Aragon has attacked us wanting to destroy the Italian Republic"
 	

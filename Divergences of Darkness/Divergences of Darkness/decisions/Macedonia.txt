@@ -9,18 +9,16 @@ political_decisions = {
 			}
 		
 			allow = {
-			OR = {	AND = { 
-			NOT = { GRE = { exists = yes }
-				}
-				NOT = { is_vassal = yes }
-				NOT = { war = yes }
-				AND = { 
+				OR = {
+					AND = { 
+						NOT = { GRE = { exists = yes } }
+						NOT = { is_vassal = yes }
+						NOT = { war = yes }
 						834 = { owned_by = THIS }
 						832 = { owned_by = THIS }
 						839 = { owned_by = THIS }
 					}
-				}
-				has_country_flag = help_greece
+					has_country_flag = help_greece
 				}
 			}
 		

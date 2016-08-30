@@ -50,11 +50,9 @@ hre_unification2
 hre_unification
 china_acquire_state
 china_acquire_state_2
-colonial_reconquest_cb
 unification_casus_belli
 civil_war
 china_conquest
-china_conquest_2
 unification_annex_casus_belli
 annex_core_country
 unification_add_to_sphere
@@ -2169,11 +2167,9 @@ place_in_the_sun = {
 		OR = {
 			any_owned_province = {
 				NOT = {
-					any_core = {
-						OR = {
-							exists = yes
-							exists = no
-						}
+					OR = {
+						any_core = { exists = yes }
+						any_core = { exists = no }
 					}
 				}
 			}
@@ -2538,9 +2534,7 @@ china_conquest = {
 				NOT = { is_core = THIS }
 				is_core = CHI
 			}
-			AND = {
-				is_culture_group = chinese
-			}
+			is_culture_group = chinese
 		}
 		THIS = {
 			is_culture_group = chinese
@@ -2559,20 +2553,6 @@ china_conquest = {
 			}
 		}
 	}
-
-	badboy_factor = 2.2
-	prestige_factor = 5
-	peace_cost_factor = 1
-	penalty_factor = 1
-	
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
-	truce_months = 0
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
 	
 	on_add = {
 		move_issue_percentage = { 
@@ -3313,7 +3293,6 @@ annex_africa = {
 		NOT = { tag = ALD }
 		NOT = { tag = TRI }
 		NOT = { tag = EGY }
-		NOT = { tag = LIB }
 		civilized = no
 		is_vassal = no
 		capital_scope = { continent = africa }
@@ -3402,7 +3381,6 @@ annex_africa_full = {
 		NOT = { tag = ALD }
 		NOT = { tag = TRI }
 		NOT = { tag = EGY }
-		NOT = { tag = LIB }
 		civilized = no
 		is_vassal = no
 		capital_scope = { continent = africa }

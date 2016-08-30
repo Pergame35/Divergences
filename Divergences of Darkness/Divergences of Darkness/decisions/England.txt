@@ -58,10 +58,10 @@ political_decisions = {
 		
 		effect = {
 			prestige = 30
-			random_owned = { limit = { owner = { tag = ENL } } capital = 300 }
-			random_owned = { limit = { owner = { tag = WLS } } capital = 273 }
-			random_owned = { limit = { owner = { tag = IRE } } capital = 263 }
-			random_owned = { limit = { owner = { tag = SCO } } capital = 269 }
+			random_owned = { limit = { owner = { tag = ENL } } owner = { capital = 300 } }
+			random_owned = { limit = { owner = { tag = WLS } } owner = { capital = 273 } }
+			random_owned = { limit = { owner = { tag = IRE } } owner = { capital = 263 } }
+			random_owned = { limit = { owner = { tag = SCO } } owner = { capital = 269 } }
 			any_country = {
 				limit = {
 					OR = {

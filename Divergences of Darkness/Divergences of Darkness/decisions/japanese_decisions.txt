@@ -150,10 +150,12 @@ political_decisions = {
 			set_country_flag = ainuisjapanese
 			inherit = AIN
 			any_country = { 
-			OR = { 	
-					continent = asia
+			limit = {
+				OR = {
+					capital_scope = { continent = asia }
 					primary_culture = russian 
 				}
+			}
 			country_event = 334317
 			}
 		}
@@ -176,8 +178,8 @@ political_decisions = {
 		allow = {
 			NOT = { war = yes }
 			nationalism_n_imperialism = 1
-      great_power = yes
-      DNG = { great_power = no }
+      is_greater_power = yes
+      DNG = { is_greater_power = no }
 		}
 	
 		effect = {

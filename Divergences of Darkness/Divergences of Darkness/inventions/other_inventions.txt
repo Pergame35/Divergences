@@ -3546,7 +3546,7 @@ panafricanism = {
 		continent = africa 
 		nationalism_n_imperialism = 1 
 		NOT = { 
-		is_culture_group = arab 
+		is_culture_group = semitic 
 		is_culture_group = boer_cultures
 		}
 	}
@@ -3564,7 +3564,7 @@ panafricanism = {
 		}
 		modifier = { 
 			factor = 2 
-			tag = GRI 
+			tag = GRQ
 		}
 		modifier = { 
 			factor = 5 

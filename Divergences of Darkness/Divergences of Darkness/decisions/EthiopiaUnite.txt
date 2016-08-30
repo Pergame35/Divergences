@@ -27,7 +27,7 @@ political_decisions = {
 					}
 				remove_core = AMT
 			}
-			state_religion = coptic
+			religion = coptic
 			1864 = { secede_province = THIS }
 			add_accepted_culture = tigray
 			add_accepted_culture = amhara
@@ -82,10 +82,10 @@ political_decisions = {
 		}
 		
 		allow = {
-			AMT = { exists = mo }
+			AMT = { exists = no }
 			war = no
 			ETH = { all_core = { owned_by = THIS } }
-			ETH = { exists = mo }
+			ETH = { exists = no }
 		}
 		
 		effect = {
@@ -122,10 +122,10 @@ political_decisions = {
 		}
 		
 		allow = {
-			AMT = { exists = mo }
+			AMT = { exists = no }
 			war = no
 			ETH = { all_core = { owned_by = THIS } }
-			ETH = { exists = mo }
+			ETH = { exists = no }
 		}
 		
 		effect = {

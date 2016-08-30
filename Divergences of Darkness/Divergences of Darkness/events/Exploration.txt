@@ -721,7 +721,7 @@ country_event = {
 			capital = 619
 			capital = 599
 			primary_culture = russian
-			primary_culture = spanish
+			primary_culture = castilian
 			primary_culture = french
 			primary_culture = turkish
 			primary_culture = burgundian
@@ -730,7 +730,7 @@ country_event = {
 			primary_culture = anglois
 			primary_culture = japanese
 			is_culture_group = latin_american 
-			is_culture_group = arab
+			is_culture_group = semitic
 			tag = HRE
 		}
 	}
@@ -794,7 +794,7 @@ country_event = {
 		random_owned = { limit = { owner = { is_culture_group = latin_american } } 3102 = { change_province_name = "Lake Bolivar" } }
 		random_owned = { limit = { owner = { OR = {  tag = HRE primary_culture = czech } } } 3102 = { change_province_name = "Lake Sigismund" } }
 		random_owned = { 
-			limit = { owner = { NOT = { capital = 1745 } is_culture_group = arab } }
+			limit = { owner = { NOT = { capital = 1745 } is_culture_group = semitic } }
 			3102 = { change_province_name = "Lake al-Idrisi" }
 		}
 		random_owned = { limit = { owner = { capital = 1745 } } 3102 = { change_province_name = "Lake Ali Pasha" } }
@@ -821,7 +821,7 @@ country_event = {
 		random_owned = { limit = { owner = { OR = {  tag = HRE primary_culture = czech } } } 3102 = { change_province_name = "Lake Wenceslas" } }
 		random_owned = { limit = { owner = { primary_culture = anglois } } 3102 = { change_province_name = "Lake Élisabeth" } }
 		random_owned = { limit = { owner = { primary_culture = scandinavian } } 3102 = { change_province_name = "Lake Stewart" } }
-		random_owned = { limit = { owner = { is_culture_group = arab } } 3102 = { change_province_name = "Lake al-Walid" } }
+		random_owned = { limit = { owner = { is_culture_group = semitic } } 3102 = { change_province_name = "Lake al-Walid" } }
 		random_owned = { limit = { owner = { capital = 599 } } 3102 = { change_province_name = "Lake Wittelsbach" } }
 		random_owned = { limit = { owner = { primary_culture = japanese } } 3102 = { change_province_name = "Lake Komei" } }
 		ai_chance = { factor = 20 }
@@ -848,7 +848,7 @@ country_event = {
 		random_owned = { limit = { owner = { primary_culture = scandinavian } } 3102 = { change_province_name = "Lake Knut" } }
 		random_owned = { limit = { owner = { primary_culture = anglois } } 3102 = { change_province_name = "Lake Plantagenêt" } }
 		random_owned = { limit = { owner = { OR = {  tag = HRE primary_culture = czech } } } 3102 = { change_province_name = "Lake Karl" } }
-		random_owned = { limit = { owner = { is_culture_group = arab } } 3102 = { change_province_name = "Lake Arabia" } }
+		random_owned = { limit = { owner = { is_culture_group = semitic } } 3102 = { change_province_name = "Lake semiticia" } }
 		random_owned = { limit = { owner = { capital = 599 } } 3102 = { change_province_name = "Lake Ludwig" } }
 		random_owned = { limit = { owner = { primary_culture = japanese } } 3102 = { change_province_name = "Lake Reigen" } }
 		ai_chance = { factor = 20 }
@@ -869,7 +869,7 @@ country_event = {
 		random_owned = { limit = { owner = { primary_culture = castilian } } 3102 = { change_province_name = "Lake Hispania" } }
 		random_owned = { limit = { owner = { primary_culture = french } } 3102 = { change_province_name = "Lake Marianne" } }
 		random_owned = {
-			limit = { owner = { OR = { primary_culture = turkish is_culture_group = arab } } }
+			limit = { owner = { OR = { primary_culture = turkish is_culture_group = semitic } } }
 			3102 = { change_province_name = "Lake Fatimah" }
 		}
 		random_owned = { limit = { owner = { primary_culture = burgundian } } 3102 = { change_province_name = "Lake Burgundy" } }
@@ -904,7 +904,7 @@ country_event = {
 		random_owned = { limit = { owner = { is_culture_group = latin_american } } 3102 = { change_province_name = "Lake Santa Anna" } }
 		random_owned = { limit = { owner = { OR = {  tag = HRE primary_culture = czech } } } 3102 = { change_province_name = "Lake Ottokar" } }
 		random_owned = { limit = { owner = { primary_culture = catalan } } 3102 = { change_province_name = "Lake Barcelona" } }
-		random_owned = { limit = { owner = { is_culture_group = arab } } 3102 = { change_province_name = "Lake Makkah" } }
+		random_owned = { limit = { owner = { is_culture_group = semitic } } 3102 = { change_province_name = "Lake Makkah" } }
 		random_owned = { limit = { owner = { capital = 599 } } 3102 = { change_province_name = "Lake München" } }
 		random_owned = { limit = { owner = { primary_culture = japanese } } 3102 = { change_province_name = "Lake Kyoto" } }
 		ai_chance = { factor = 20 }
@@ -934,26 +934,28 @@ country_event = {
 		}
 		is_greater_power = yes # Nation is a great power
 		NOT = {
-			is_culture_group = british
-			primary_culture = beornian
-			primary_culture = north_italian
-			primary_culture = south_italian
-			primary_culture = catalan
-			primary_culture = north_german
-			primary_culture = japanese
-			capital = 619
-			capital = 599
-			primary_culture = russian
-			primary_culture = spanish
-			primary_culture = french
-			primary_culture = turkish
-			primary_culture = burgundian
-			primary_culture = czech
-			primary_culture = scandinavian
-			primary_culture = anglois
-			is_culture_group = latin_american 
-			is_culture_group = arab
-			tag = HRE
+			OR = {
+				is_culture_group = british
+				primary_culture = beornian
+				primary_culture = north_italian
+				primary_culture = south_italian
+				primary_culture = catalan
+				primary_culture = north_german
+				primary_culture = japanese
+				capital = 619
+				capital = 599
+				primary_culture = russian
+				primary_culture = castilian
+				primary_culture = french
+				primary_culture = turkish
+				primary_culture = burgundian
+				primary_culture = czech
+				primary_culture = scandinavian
+				primary_culture = anglois
+				is_culture_group = latin_american 
+				is_culture_group = semitic
+				tag = HRE
+			}
 		}
 	}
 

@@ -5,7 +5,7 @@ province_event = { #Spread of the Etrurian agitation
 
 	trigger = {
 		has_country_flag = liberal_revolution_in_progress
-		NOT = { government = democracy }
+		NOT = { owner = { government = democracy } }
 		NOT = { year = 1849 }
 		is_colonial = no
 		is_core = ITA
@@ -1440,12 +1440,16 @@ country_event = {
 	option = { 
 	name = "Well we should at least try."
 	DUA = { country_event = 123113 }
-	ai_chance = 50 
+	ai_chance = {
+		factor = 50
+	}
 	}
 	
 	option = { 
 	name = "We should not bother with such nonsense"
 	prestige = 5 
-	ai_chance = 50 
+	ai_chance = {
+		factor = 50
+	}
 	}
 }

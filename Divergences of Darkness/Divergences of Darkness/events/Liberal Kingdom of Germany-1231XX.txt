@@ -695,7 +695,7 @@ country_event = {
 				OR = {
 					is_core = BRN
 					is_core = SAX
-					is_core = MEI
+					#is_core = MEI
 					is_core = HEK
 					is_core = NAS
 					is_core = AUS
@@ -1216,8 +1216,8 @@ country_event = {
 	OR = { is_core = POM is_core = HOL is_core = BRN }
 			}
 	add_core = NGF 
-	NOT = { has_country_flag = german_unrest }
 		}
+	set_country_flag = german_unrest
 	}
 }
 
@@ -1269,53 +1269,39 @@ country_event = {
 			}
 	modifier = { 
 	factor = 2 
-	AND = { 
 	THIS = { government = democracy }	
 	FROM = { government = democracy }	
-				}
 			}
 	modifier = { 
 	factor = 2 
-	AND = {	
 	THIS = { OR = { government = absolute_monarchy government = prussian_constitutionalism government = hms_government } }
 	FROM = { OR = { government = absolute_monarchy government = prussian_constitutionalism government = hms_government } }	
-				}
 			}	
 	modifier = { 
 	factor = 0.5
-	AND = {	
 	THIS = { government = democracy }
 	FROM = { OR = { government = absolute_monarchy government = prussian_constitutionalism government = hms_government } }	
-				}
 			}
 	modifier = { 
 	factor = 0.5
-	AND = {	
 	FROM = { government = democracy }
 	THIS = { OR = { government = absolute_monarchy government = prussian_constitutionalism government = hms_government } }	
-				}
 			}
 	
 	modifier = { 
 	factor = 2
-	AND = {	
 	FROM = { government = proletarian_dictatorship }
 	THIS = { government = proletarian_dictatorship }	
-				}
 			}
 	modifier = { 
 	factor = 0
-	AND = {	
 	FROM = { government = proletarian_dictatorship }
 	THIS = { OR = { government = democracy government = absolute_monarchy government = prussian_constitutionalism government = hms_government }}	
-				}
 			}
 	modifier = { 
 	factor = 0
-	AND = {	
 	THIS = { government = proletarian_dictatorship }
 	FROM = { OR = { government = democracy government = absolute_monarchy government = prussian_constitutionalism government = hms_government }}
-				}
 			}
 		}
 	}

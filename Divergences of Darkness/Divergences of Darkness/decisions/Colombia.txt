@@ -87,36 +87,36 @@ political_decisions = {
 				MEX = {
 					all_core = {
 						OR = {
-						owned_by = THIS
-						in_sphere = THIS
-						vassal_of = THIS
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
 				JLS = {
 					all_core = {
 						OR = {
-						owned_by = THIS
-						in_sphere = THIS
-						vassal_of = THIS
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
 				UCA = {
 					all_core = {
 						OR = {
-						owned_by = THIS
-						in_sphere = THIS
-						vassal_of = THIS
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
 				LST = {
 					all_core = {
 						OR = {
-						owned_by = THIS
-						in_sphere = THIS
-						vassal_of = THIS
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
@@ -182,36 +182,36 @@ political_decisions = {
 				MEX = {
 					all_core = {
 						OR = {
-						owned_by = THIS
-						in_sphere = THIS
-						vassal_of = THIS
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
 				JLS = {
 					all_core = {
 						OR = {
-						owned_by = THIS
-						in_sphere = THIS
-						vassal_of = THIS
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
 				UCA = {
 					all_core = {
 						OR = {
-						owned_by = THIS
-						in_sphere = THIS
-						vassal_of = THIS
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
 				LST = {
 					all_core = {
 						OR = {
-						owned_by = THIS
-						in_sphere = THIS
-						vassal_of = THIS
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
@@ -273,18 +273,18 @@ political_decisions = {
 				MEX = {
 					all_core = {
 						OR = {
-						owned_by = THIS
-						in_sphere = THIS
-						vassal_of = THIS
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
 				UCA = {
 					all_core = {
 						OR = {
-						owned_by = THIS
-						in_sphere = THIS
-						vassal_of = THIS
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
@@ -416,10 +416,8 @@ political_decisions = {
 		has_global_flag = partial_peace 
 		war = no
 		LST = { exists = yes }
-		AND = { 
 		CLM = { NOT = { exists = yes } }
 		UCA = { NOT = { exists = yes } }
-			}
 		}
 		
 		allow = { 
@@ -449,11 +447,9 @@ political_decisions = {
 		tag = SPA 
 		has_global_flag = partial_peace 
 		war = no
-		AND = { 
 		CLM = { NOT = { exists = yes } }
 		LST = { NOT = { exists = yes } }
 		UCA = { NOT = { exists = yes } }
-			}
 		}
 		
 		allow = { 
@@ -503,10 +499,7 @@ political_decisions = {
 				limit = {
 					has_pop_culture = mexican
 						location = {
-							OR = {
-								province_id = 99
-
-							}
+							province_id = 99
 						}
 				}
 				consciousness = 2
@@ -517,9 +510,7 @@ political_decisions = {
 				limit = {
 					has_pop_culture = mexican
 						location = {
-							OR = {
-								province_id = 108
-							}
+							province_id = 108
 						}
 				}
 				consciousness = 2
@@ -530,9 +521,7 @@ political_decisions = {
 				limit = {
 					has_pop_culture = mexican
 						location = {
-							OR = {
-								province_id = 103
-							}
+							province_id = 103
 						}
 				}
 				consciousness = 2
@@ -543,9 +532,7 @@ political_decisions = {
 				limit = {
 					has_pop_culture = mexican
 						location = {
-							OR = {
-								province_id = 109
-							}
+							province_id = 109
 						}
 				}
 				consciousness = 2
@@ -655,8 +642,11 @@ political_decisions = {
 	}
 
 	effect = { 
-	any_country = { 
-	limit = { OR = { tag = LST tag = UCA } annex_to = THIS } 	
+	any_country = {
+		limit = {
+			OR = { tag = LST tag = UCA }
+		}
+		annex_to = THIS
 	}
 	government = absolute_monarchy 
 	LST = { all_core = { add_core = THIS } }
