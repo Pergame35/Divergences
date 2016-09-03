@@ -1,15 +1,65 @@
 political_decisions = {
-
-DUA_setup = {
+	setup_decision = {
 		potential = {
-			tag = DUA
 			always = no
 		}
+		
 		allow = {
-			year = 1821
+			always = no
 		}
+		
 		effect = {
-		diplomatic_influence = { who = NAV value = 200 }
+			any_country = {
+				limit = {
+					exists = yes
+				}
+				set_country_flag = existing_country
+			}
+			set_country_flag = existing_country
+			
+			any_country  = {
+				limit = {
+					publishing_industry = 1
+					civilized = no
+				}
+				set_country_flag = opened_society 
+			}
+			
+			any_country = {
+				limit = {
+					government = feudal_monarchy
+					NOT = { has_country_flag = feudal }
+				}
+				add_country_modifier = {
+					name = feudal
+					duration = -1
+				}
+				set_country_flag = feudal
+			}
+			add_country_modifier = {
+					name = feudal
+					duration = -1
+				}
+			set_country_flag = feudal
+			
+			any_country = {
+				limit = {
+					government = feudal_monarchy
+					civilized = yes
+				}
+				remove_country_modifier = feudal
+				clr_country_flag = feudal
+				political_reform = appointed
+				government = absolute_monarchy
+			}
+			
+			TUS = { country_event = 36720 }
+			
+			set_global_flag = setup_complete
+		}
+		
+		ai_will_do = {
+			factor = 0
 		}
 	}
-}	
+}

@@ -51,17 +51,6 @@ political_decisions = {
   				}
   				annex_to = THIS
   			}
-			any_country = {
-  				limit = {
-  					OR = {
-  						tag = DAX
-						tag = TAI
-						tag = SHU
-						tag = MIG
-  					}
-  				}
-  				clr_country_flag = unrecognized_state
-  			}
   			any_owned = {
   				limit = {
   					OR = {
@@ -202,17 +191,6 @@ political_decisions = {
   				}
   				annex_to = THIS
   			}
-			any_country = {
-  				limit = {
-  					OR = {
-  						tag = DAX
-						tag = TAI
-						tag = SHU
-						tag = MIG
-  					}
-  				}
-  				clr_country_flag = unrecognized_state
-  			}
   			any_owned = {
   				limit = {
   					OR = {
@@ -346,17 +324,6 @@ political_decisions = {
   				}
   				annex_to = THIS
   			}
-			any_country = {
-  				limit = {
-  					OR = {
-  						tag = DAX
-						tag = TAI
-						tag = SHU
-						tag = MIG
-  					}
-  				}
-  				clr_country_flag = unrecognized_state
-  			}
 			any_owned = {
 				limit = {
 					OR = {
@@ -471,7 +438,6 @@ political_decisions = {
   			prestige = 30
   			add_accepted_culture = beifaren
   			add_accepted_culture = nanfaren
-			clr_country_flag = unrecognized_state
 			remove_country_modifier = tungning_nerf
   			change_tag = CHI   
         1499 = { add_core = THIS }
@@ -490,17 +456,6 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
-			any_country = {
-  				limit = {
-  					OR = {
-  						tag = DAX
-						tag = TAI
-						tag = SHU
-						tag = MIG
-  					}
-  				}
-  				clr_country_flag = unrecognized_state
-  			}
 			any_owned = {
 				limit = {
 					OR = {
@@ -620,17 +575,6 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
-			any_country = {
-  				limit = {
-  					OR = {
-  						tag = DAX
-						tag = TAI
-						tag = SHU
-						tag = MIG
-  					}
-  				}
-  				clr_country_flag = unrecognized_state
-  			}
 			any_owned = {
 				limit = {
 					OR = {
@@ -755,17 +699,6 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
-			any_country = {
-  				limit = {
-  					OR = {
-  						tag = DAX
-						tag = TAI
-						tag = SHU
-						tag = MIG
-  					}
-  				}
-  				clr_country_flag = unrecognized_state
-  			}
 			any_owned = {
 				limit = {
 					OR = {

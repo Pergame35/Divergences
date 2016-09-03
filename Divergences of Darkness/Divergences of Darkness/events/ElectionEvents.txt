@@ -207,7 +207,7 @@ country_event = {
 			}
 		}
 		clergymen = {
-			reduce_pop = 0.95
+			reduce_pop = 0.998
 			consciousness = 5
 			militancy = 1
 		}
@@ -262,7 +262,7 @@ country_event = {
 			militancy = -1
 		}
 		clerks = { 
-			reduce_pop = 0.95
+			reduce_pop = 0.998
 			consciousness = 5
 			militancy = 1
 		}

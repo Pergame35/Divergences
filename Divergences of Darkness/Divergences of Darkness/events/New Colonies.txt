@@ -330,7 +330,7 @@ province_event = { ### Spread of Terra d'Oro cores
 	trigger = {
 		OR = {
 			region = FRA_1775 #Coastal Mauritania
-			region = FRA_1783 #GorÃ¨a
+			region = FRA_1783 #Gorèa
 			region = FRA_1780 #Inner Mautiania
 		}
 		owned_by = THIS

@@ -6,7 +6,7 @@ plurality = 0.0
 nationalvalue = nv_equality
 literacy = 0.46
 civilized = yes
-prestige = 5
+prestige = 15
 
 # Political reforms
 slavery = no_slavery
@@ -78,7 +78,6 @@ nonstate_consciousness = 1
 schools = army_tech_school
 
 decision = TUS_setup
-
-set_country_flag = existing_country
+event = 36720
 
 oob = "TUS_oob.txt"

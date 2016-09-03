@@ -3,7 +3,6 @@
 franz_boas = {
 	limit = {
 		social_science = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -23,7 +22,6 @@ franz_boas = {
 marcel_mauss = {
 	limit = {
 		social_alienation = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -43,7 +41,6 @@ marcel_mauss = {
 branislaw_malinowski = {
 	limit = {
 		social_alienation = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -63,7 +60,6 @@ branislaw_malinowski = {
 flinders_petrie = {
 	limit = {
 		social_science = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -85,7 +81,6 @@ flinders_petrie = {
 jg_taylor = {
 	limit = {
 		functionalism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -100,7 +95,6 @@ jg_taylor = {
 cl_wooley = {
 	limit = {
 		social_alienation = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -119,7 +113,6 @@ cl_wooley = {
 arthur_evans = {
 	limit = {
 		social_alienation = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -139,7 +132,6 @@ arthur_evans = {
 heinrich_schliemann = {
 	limit = {
 		functionalism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -158,7 +150,6 @@ heinrich_schliemann = {
 emile_dirkheim = {
 	limit = {
 		social_science = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -183,7 +174,6 @@ emile_dirkheim = {
 max_weber = {
 	limit = {
 		social_science = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -207,7 +197,6 @@ max_weber = {
 ferdinand_de_saussure = {
 	limit = {
 		social_science = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -227,7 +216,6 @@ ferdinand_de_saussure = {
 william_hamilton = {
 	limit = {
 		associationism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -242,7 +230,6 @@ william_hamilton = {
 soren_kierkegaard  = {
 	limit = {
 		associationism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -257,7 +244,6 @@ soren_kierkegaard  = {
 the_nancy_school = {
 	limit = {
 		experimental_psychology = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -273,7 +259,6 @@ the_nancy_school = {
 emile_coue = {
 	limit = {
 		behaviorism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -292,7 +277,6 @@ emile_coue = {
 neurology = {
 	limit = {
 		experimental_psychology = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -330,7 +314,6 @@ alfred_nobel = {
 archibald_scott_couper = {
 	limit = {
 		organic_chemistry = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -357,7 +340,6 @@ florence_nightingale = {
 dmitri_mendeleev = {
 	limit = {
 		inorganic_chemistry = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -376,7 +358,6 @@ the_periodic_table = {
 	limit = {
 		organic_chemistry = 1
 		empiricism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -405,7 +386,6 @@ lenin = {
 	limit = {
 		mass_politics = 1
 		not = { invention = mussolini }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -442,7 +422,6 @@ trotsky = {
 	limit = {
 		mass_politics = 1 
 		not = { invention = mussolini }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -475,7 +454,6 @@ mussolini = {
 	limit = {
 		mass_politics = 1
 		not = { invention = lenin }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -535,7 +513,6 @@ prophylactics = {
 joseph_lister = {
 	limit = {
 		inorganic_chemistry = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -562,7 +539,6 @@ louis_pasteur = {
 	limit = {
 		inorganic_chemistry = 1 
 		not = { invention = robert_koch }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -589,7 +565,6 @@ robert_koch = {
 	limit = {
 		organic_chemistry = 1	
 		not = { invention = louis_pasteur }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -616,7 +591,6 @@ cholera_vaccine = {
 	limit = {
 		organic_chemistry = 1	
 		empiricism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -639,7 +613,6 @@ cholera_vaccine = {
 anaesthesia = {
 	limit = {
 		medicine = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -659,7 +632,6 @@ antitoxins = {
 	limit = {
 		electricity = 1
 		analytic_philosophy = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -683,7 +655,6 @@ vitamins = {
 	limit = {
 		electricity = 1 
 		analytic_philosophy = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -722,7 +693,6 @@ sanitation = {
 thomas_robert_malthus ={
 	limit = {
 		malthusian_thought = 1 
-		has_country_flag = existing_country
 		not = { nationalvalue = nv_equality }
 	}
 	news = no

@@ -2,7 +2,6 @@
 romanticist_literature = {
 	limit = {
 		romanticism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -49,7 +48,6 @@ romanticist_literature = {
 romanticist_art = {
 	limit = {
 		romanticism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -80,7 +78,6 @@ romanticist_art = {
 romanticist_music = {
 	limit = {
 		romanticism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -112,7 +109,6 @@ romanticist_music = {
 realist_literature = {
 	limit = {
 		realism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -163,7 +159,6 @@ realist_literature = {
 realist_art = {
 	limit = {
 		realism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -194,7 +189,6 @@ realist_art = {
 realist_music = {
 	limit = {
 		realism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -226,7 +220,6 @@ realist_music = {
 impressionist_literature = {
 	limit = {
 		impressionism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -265,7 +258,6 @@ impressionist_literature = {
 impressionist_art = {
 	limit = {
 		impressionism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -296,7 +288,6 @@ impressionist_art = {
 impressionist_music = {
 	limit = {
 		impressionism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -328,7 +319,6 @@ impressionist_music = {
 expressionist_literature = {
 	limit = {
 		expressionism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -368,7 +358,6 @@ expressionist_literature = {
 expressionist_art = {
 	limit = {
 		expressionism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -399,7 +388,6 @@ expressionist_art = {
 expressionist_music = {
 	limit = {
 		expressionism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -431,7 +419,6 @@ expressionist_music = {
 avantgarde_literature = {
 	limit = {
 		mass_culture_n_the_avant_garde = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -470,7 +457,6 @@ avantgarde_literature = {
 avantgarde_art = {
 	limit = {
 		mass_culture_n_the_avant_garde = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -501,7 +487,6 @@ avantgarde_art = {
 avantgarde_music = {
 	limit = {
 		mass_culture_n_the_avant_garde = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -532,7 +517,6 @@ avantgarde_music = {
 surrealism = {
 	limit = {
 		mass_culture_n_the_avant_garde = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -560,7 +544,6 @@ surrealism = {
 modern_design = {
 	limit = {
 		mass_culture_n_the_avant_garde = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -588,7 +571,6 @@ modern_design = {
 jazz = {
 	limit = {
 		mass_culture_n_the_avant_garde = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -616,7 +598,6 @@ jazz = {
 socialist_realism = {
 	limit = {
 		mass_culture_n_the_avant_garde = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -866,7 +847,6 @@ hermeneutics = {
 existentialism = {
 	limit = {
 		anti__rationalism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -889,7 +869,6 @@ nihilism_and_the_will = {
 	limit = {
 		anti__rationalism = 1
 		expressionism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -916,7 +895,6 @@ futurism = {
 	limit = {
 		anti__rationalism = 1
 		expressionism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -962,7 +940,6 @@ quantum_theory = {
 darwinism = {
 	limit = {
 		biologism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1100,7 +1077,6 @@ social_anthropology = {
 the_revolt_of_the_masses = {
 	limit = {
 		social_alienation = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1253,7 +1229,6 @@ paternalism = {
 constitutionalism = {
 	limit = {
 		ideological_thought = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1279,7 +1254,6 @@ constitutionalism = {
 individualism = {
 	limit = {
 		phenomenalism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1311,7 +1285,6 @@ individualism = {
 rationalism = {
 	limit = {
 		phenomenalism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1335,7 +1308,6 @@ rationalism = {
 secularization = {
 	limit = {
 		ideological_thought = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1370,7 +1342,6 @@ secularization = {
 social_conscience = {
 	limit = {
 		biologism  = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1403,7 +1374,6 @@ social_conscience = {
 egalitarianism = {
 	limit = {
 		ideological_thought = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1442,7 +1412,6 @@ egalitarianism = {
 collectivism = {
 	limit = {
 		biologism  = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1474,7 +1443,6 @@ collectivism = {
 determinism = {
 	limit = {
 		experimental_psychology = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1502,7 +1470,6 @@ determinism = {
 atheism = {
 	limit = {
 		state_n_government = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1530,7 +1497,6 @@ atheism = {
 social_justice = {
 	limit = {
 		social_science = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1704,7 +1670,6 @@ meritocracy_vs._aristocracy = {
 national_fraternity = {
 	limit = {
 		nationalism_n_imperialism = 1
-		has_country_flag = existing_country
 	}
 	chance = {
 		base = 2
@@ -1770,7 +1735,6 @@ biased_multiculturalism = {
 manifest_destiny = {
 	limit = {
 		nationalism_n_imperialism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1815,7 +1779,6 @@ manifest_destiny = {
 expansionism = {
 	limit = {
 		nationalism_n_imperialism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1862,7 +1825,6 @@ mission_to_civilize = {
 separatism = {
 	limit = {
 		nationalism_n_imperialism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1908,7 +1870,6 @@ separatism = {
 dogma_of_violence = {
 	limit = {
 		revolution_n_counterrevolution = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1981,7 +1942,6 @@ dogma_of_mass_action = {
 terrorism = {
 	limit = {
 		revolution_n_counterrevolution = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -2220,7 +2180,6 @@ nostalgic_romanticism = {
 anti_egalitarianism = {
 	limit = {
 		revolution_n_counterrevolution = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -2365,7 +2324,6 @@ the_police_state = {
 mass_advertising = {
 	limit = {
 		behaviorism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -2446,7 +2404,6 @@ national_radio_networks = {
 the_talkies = {
 	limit = {
 		behaviorism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {

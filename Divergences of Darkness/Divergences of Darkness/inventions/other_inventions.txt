@@ -963,7 +963,6 @@ firepower_doctrine = {
 		modern_army_doctrine = 1
 		invention = firepower_vs_mobility
 		NOT = { invention = superior_mobility_doctrine }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -986,7 +985,6 @@ superior_mobility_doctrine = {
 		modern_army_doctrine = 1 
 		invention = firepower_vs_mobility
 		NOT = { invention = superior_firepower_doctrine }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1009,7 +1007,6 @@ Armoured_fist_doctrine = {
 	limit = { 
 		modern_army_doctrine = 1
 		invention = superior_mobility_doctrine
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1030,7 +1027,6 @@ motorised_infantry_doctrine = {
 	limit = {
 		modern_army_doctrine = 1
 		invention = superior_mobility_doctrine
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1050,7 +1046,6 @@ heavy_support_doctrine = {
 	limit = {
 		modern_army_doctrine = 1
 		invention = firepower_doctrine
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1070,7 +1065,6 @@ siege_doctrine = {
 	limit = {
 		modern_army_doctrine = 1 
 		invention = firepower_doctrine
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1092,7 +1086,6 @@ grand_battle_plan_doctrine = {
 		modern_army_doctrine = 1
 		invention = grand_battle_plan_vs_superior_firepower
 		NOT = { invention = superior_firepower_doctrine }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1111,7 +1104,6 @@ superior_firepower_doctrine = {
 		modern_army_doctrine = 1
 		invention = grand_battle_plan_vs_superior_firepower
 		NOT = { invention = grand_battle_plan_doctrine }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1130,7 +1122,6 @@ human_wave_doctrine = {
 		modern_army_doctrine = 1
 		invention = human_wave_vs_spearhead
 		NOT = { invention = grand_battle_plan_doctrine }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1151,7 +1142,6 @@ spearhead_doctrine = {
 		modern_army_doctrine = 1
 		invention = human_wave_vs_spearhead
 		NOT = { invention = human_wave_doctrine }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1444,7 +1434,6 @@ Populism = {
 		state_n_government = 1 
 		invention = populism_vs._establishment
 		NOT = { invention = Establishment }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1477,7 +1466,6 @@ Establishment = {
 		state_n_government = 1 
 		invention = populism_vs._establishment
 		NOT = { invention = Populism }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1510,7 +1498,6 @@ Clericalism = {
 		state_n_government = 1 
 		invention = clericalism_vs._anticlericalism
 		NOT = { invention = Anticlericalism }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1542,7 +1529,6 @@ Anticlericalism = {
 		state_n_government = 1 
 		invention = clericalism_vs._anticlericalism
 		NOT = { invention = Clericalism }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1573,7 +1559,6 @@ Bureaucracy = {
 		state_n_government = 1 
 		invention = bureaucracy_vs._nepotism
 		NOT = { invention = Nepotism }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1608,7 +1593,6 @@ Nepotism = {
 		state_n_government = 1 
 		invention = bureaucracy_vs._nepotism
 		NOT = { invention = Bureaucracy }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1643,7 +1627,6 @@ Aristocracy = {
 		state_n_government = 1 
 		invention = meritocracy_vs._aristocracy
 		NOT = { invention = Meritocracy }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1679,7 +1662,6 @@ Meritocracy = {
 		state_n_government = 1 
 		invention = meritocracy_vs._aristocracy
 		NOT = { invention = Aristocracy }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1742,7 +1724,6 @@ jominian_attitude = {
 	limit = {
 		military_plans = 1 
 		NOT = { invention = clausewitzian_theory }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1772,7 +1753,6 @@ clausewitzian_theory = {
 	limit = {
 		military_plans = 1 
 		NOT = { invention = jominian_attitude }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1865,7 +1845,6 @@ cinematographic_propaganda = {
 	limit = {
 		behaviorism = 1 
 		invention = the_talkies
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -2218,7 +2197,6 @@ initial_bolt_action_rifle_armament = {
 standard_bolt_action_rifle_armament = {
 	limit = {
 		bolt_action_rifles = 1
-		has_country_flag = existing_country
 	}
 	chance = {
 		base = 1
@@ -2269,7 +2247,6 @@ standard_bolt_action_rifle_armament = {
 machine_gun_deployment = {
 	limit = {
 		machine_guns = 1
-		has_country_flag = existing_country
 	}
 	chance = {
 		base = 1
@@ -2474,7 +2451,6 @@ luxury_focus = {
 		time_saving_measures = 1
 		not = { invention = necessity_focus }
 		not = { invention = high_tech_focus }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -2505,7 +2481,6 @@ necessity_focus = {
 		time_saving_measures = 1 
 		not = { invention = luxury_focus }
 		not = { invention = high_tech_focus }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -2551,7 +2526,6 @@ high_tech_focus = {
 		time_saving_measures = 1 
 		not = { invention = luxury_focus }
 		not = { invention = necessity_focus }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -3375,7 +3349,6 @@ candlestick_telephone = {
 
 the_white_mans_burden = {
 	limit = {
-		has_country_flag = existing_country
 		ideological_thought = 1
 		year = 1860
 	}
@@ -3411,7 +3384,6 @@ the_white_mans_burden = {
 
 indigenous_garrisoning = {
 	limit = {
-		has_country_flag = existing_country
 		breech_loaded_rifles = 1
 		year = 1880
 	}
@@ -3501,7 +3473,6 @@ power_of_tradition = {
 
 self_determination = {
 	limit = {
-		has_country_flag = existing_country
 		nationalism_n_imperialism = 1
 		is_vassal = yes
 	}
@@ -3626,7 +3597,6 @@ synthetic_cement = {
 
 the_dark_continent = {
 	limit = {
-		has_country_flag = existing_country
 		nationalism_n_imperialism  = 1
 		year = 1900
 	}
