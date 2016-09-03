@@ -60,7 +60,7 @@ political_decisions = {
 			NOT = { tag = ARA }
 			NOT = { tag = ARI }
 			civilized = yes
-			capital_scope = { continent = europe }
+			NOT = { capital_scope = { continent = africa } }
 			NOT = { has_global_flag = org_mor }
 			owns = 1680
 		}
@@ -88,7 +88,7 @@ political_decisions = {
 				add_core = MOR
 			}
 			MOR = {
-				add_accepted_culture = THIS
+				primary_culture = THIS
 			}
 		}
 	}
@@ -97,7 +97,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			NOT = { tag = SPA }
-			capital_scope = { continent = europe }
+			NOT = { capital_scope = { continent = africa } }
 			NOT = { has_global_flag = org_num }
 			owns = 1700
 		}
@@ -125,7 +125,7 @@ political_decisions = {
 				add_core = ALD
 			}
 			ALD = {
-				add_accepted_culture = THIS
+				primary_culture = THIS
 			}
 		}
 	}
@@ -133,7 +133,7 @@ political_decisions = {
 	organize_libia = {
 		potential = {
 			civilized = yes
-			capital_scope = { continent = europe }
+			NOT = { capital_scope = { continent = africa } }
 			NOT = { has_global_flag = org_lib }
 			owns = 1731
 		}
@@ -157,7 +157,7 @@ political_decisions = {
 				remove_core = TUN 
 			}
 			LBY = {
-				add_accepted_culture = THIS
+				primary_culture = THIS
 			}
 		}
 	}
