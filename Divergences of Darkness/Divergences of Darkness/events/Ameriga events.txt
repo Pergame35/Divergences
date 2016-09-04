@@ -1270,18 +1270,17 @@ country_event = { ### Annexation
 	tag = INC
 		}
 	SA_6 = { owned_by = THIS }
-	CHL_2327 = { owned_by = THIS }
 	}
 	
 	fire_only_once = yes 
 	
 	mean_time_to_happen = { 
-	days = 10  }
+		days = 10
+	}
 	
 	option = { 
 	name = "It's all ours !"
 	SA_6 = { add_core = THIS }
-	CHL_2327 = { add_core = THIS }
 	prestige = 5 
 	}
 }

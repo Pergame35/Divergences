@@ -3940,210 +3940,210 @@ country_event = {
 	}
 }
 	
-# Same-culture group countries that gain independence as allies
-country_event = {
-	
-	id = 96060
-	title = "$COUNTRY$ Granted Independence"
-	desc = "Freedom!"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "EVTOPTA96031" #Great
-		FROM = {
-			any_state = {
-				limit = {
-					any_owned_province = { is_core = THIS }
-					NOT = { any_owned_province = { is_capital = yes } }
-				}
-				any_owned = {
-					limit = { is_core = THIS }
-					secede_province = THIS
-				}
-			}
-		}
-		random_country = {
-			limit = {
-				is_greater_power = yes
-				OR = {
-					truce_with = FROM
-					AND = {
-						FROM = { has_country_modifier = international_pariah }
-						has_country_flag = coalition_member
-					}
-				}
-			}
-			create_alliance = THIS
-			diplomatic_influence = {
-				who = THIS
-				value = 50
-			}
-		}
-		any_country = {
-			limit = {
-				OR = {
-					truce_with = FROM
-					AND = {
-						FROM = { has_country_modifier = international_pariah }
-						has_country_flag = coalition_member
-					}
-				}
-				is_greater_power = yes
-			}
-			diplomatic_influence = {
-				who = THIS
-				value = 100
-			}
-			relation = {
-				who = THIS
-				value = 100
-			}
-		}
-		any_country = {
-			limit = {
-				OR = {
-					truce_with = FROM
-					AND = {
-						FROM = { has_country_modifier = international_pariah }
-						has_country_flag = coalition_member
-					}
-				}
-				is_greater_power = no
-			}
-			relation = {
-				who = THIS
-				value = 100
-			}
-		}
-		FROM = {
-			diplomatic_influence = {
-				who = THIS
-				value = -200
-			}
-			relation = {
-				who = THIS
-				value = -200
-			}
-		}
-	}
-}
-
-country_event = {
-	
-	id = 96061
-	title = "The $COUNTRY_ADJ$ Dominion"
-	desc = "We have been freed as a vassal."
-	picture = "administration"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA96031" #Great
-		set_country_flag = civilize_after_release
-		FROM = {
-			any_owned = {
-				limit = {
-					NOT = { province_id = 900 }
-					is_core = THIS
-				}
-				secede_province = THIS
-			}
-		}
-		random_country = {
-			limit = {
-				OR = {
-					truce_with = FROM
-					AND = {
-						FROM = { has_country_modifier = international_pariah }
-						has_country_flag = coalition_member
-					}
-				}
-				is_greater_power = yes
-				capital_scope = { continent = europe }
-			}
-			diplomatic_influence = {
-				who = THIS
-				value = 300
-			}
-			relation = {
-				who = THIS
-				value = 200
-			}
-			create_vassal = THIS
-		}
-		random_country = {
-			limit = {
-				OR = {
-					truce_with = FROM
-					AND = {
-						FROM = { has_country_modifier = international_pariah }
-						has_country_flag = coalition_member
-					}
-				}
-				is_greater_power = yes
-				NOT = { is_our_vassal = THIS }
-				THIS = { is_vassal = no }
-			}
-			diplomatic_influence = {
-				who = THIS
-				value = 100
-			}
-			relation = {
-				who = THIS
-				value = 100
-			}
-		}
-		any_country = {
-			limit = {
-				OR = {
-					truce_with = FROM
-					AND = {
-						FROM = { has_country_modifier = international_pariah }
-						has_country_flag = coalition_member
-					}
-				}
-				is_greater_power = yes
-				NOT = { is_our_vassal = THIS }
-			}
-			diplomatic_influence = {
-				who = THIS
-				value = 50
-			}
-			relation = {
-				who = THIS
-				value = 100
-			}
-		}
-		any_country = {
-			limit = {
-				OR = {
-					truce_with = FROM
-					AND = {
-						FROM = { has_country_modifier = international_pariah }
-						has_country_flag = coalition_member
-					}
-				}
-				is_greater_power = no
-			}
-			relation = {
-				who = THIS
-				value = 100
-			}
-		}
-		FROM = {
-			diplomatic_influence = {
-				who = THIS
-				value = -200
-			}
-			relation = {
-				who = THIS
-				value = -100
-			}
-		}
-		set_country_flag = newly_released_nation
-	}
-}
+## Same-culture group countries that gain independence as allies
+#country_event = {
+#	
+#	id = 96060
+#	title = "$COUNTRY$ Granted Independence"
+#	desc = "Freedom!"
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "EVTOPTA96031" #Great
+#		FROM = {
+#			any_state = {
+#				limit = {
+#					any_owned_province = { is_core = THIS }
+#					NOT = { any_owned_province = { is_capital = yes } }
+#				}
+#				any_owned = {
+#					limit = { is_core = THIS }
+#					secede_province = THIS
+#				}
+#			}
+#		}
+#		random_country = {
+#			limit = {
+#				is_greater_power = yes
+#				OR = {
+#					truce_with = FROM
+#					AND = {
+#						FROM = { has_country_modifier = international_pariah }
+#						has_country_flag = coalition_member
+#					}
+#				}
+#			}
+#			create_alliance = THIS
+#			diplomatic_influence = {
+#				who = THIS
+#				value = 50
+#			}
+#		}
+#		any_country = {
+#			limit = {
+#				OR = {
+#					truce_with = FROM
+#					AND = {
+#						FROM = { has_country_modifier = international_pariah }
+#						has_country_flag = coalition_member
+#					}
+#				}
+#				is_greater_power = yes
+#			}
+#			diplomatic_influence = {
+#				who = THIS
+#				value = 100
+#			}
+#			relation = {
+#				who = THIS
+#				value = 100
+#			}
+#		}
+#		any_country = {
+#			limit = {
+#				OR = {
+#					truce_with = FROM
+#					AND = {
+#						FROM = { has_country_modifier = international_pariah }
+#						has_country_flag = coalition_member
+#					}
+#				}
+#				is_greater_power = no
+#			}
+#			relation = {
+#				who = THIS
+#				value = 100
+#			}
+#		}
+#		FROM = {
+#			diplomatic_influence = {
+#				who = THIS
+#				value = -200
+#			}
+#			relation = {
+#				who = THIS
+#				value = -200
+#			}
+#		}
+#	}
+#}
+#
+#country_event = {
+#	
+#	id = 96061
+#	title = "The $COUNTRY_ADJ$ Dominion"
+#	desc = "We have been freed as a vassal."
+#	picture = "administration"
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "EVTOPTA96031" #Great
+#		set_country_flag = civilize_after_release
+#		FROM = {
+#			any_owned = {
+#				limit = {
+#					NOT = { province_id = 900 }
+#					is_core = THIS
+#				}
+#				secede_province = THIS
+#			}
+#		}
+#		random_country = {
+#			limit = {
+#				OR = {
+#					truce_with = FROM
+#					AND = {
+#						FROM = { has_country_modifier = international_pariah }
+#						has_country_flag = coalition_member
+#					}
+#				}
+#				is_greater_power = yes
+#				capital_scope = { continent = europe }
+#			}
+#			diplomatic_influence = {
+#				who = THIS
+#				value = 300
+#			}
+#			relation = {
+#				who = THIS
+#				value = 200
+#			}
+#			create_vassal = THIS
+#		}
+#		random_country = {
+#			limit = {
+#				OR = {
+#					truce_with = FROM
+#					AND = {
+#						FROM = { has_country_modifier = international_pariah }
+#						has_country_flag = coalition_member
+#					}
+#				}
+#				is_greater_power = yes
+#				NOT = { is_our_vassal = THIS }
+#				THIS = { is_vassal = no }
+#			}
+#			diplomatic_influence = {
+#				who = THIS
+#				value = 100
+#			}
+#			relation = {
+#				who = THIS
+#				value = 100
+#			}
+#		}
+#		any_country = {
+#			limit = {
+#				OR = {
+#					truce_with = FROM
+#					AND = {
+#						FROM = { has_country_modifier = international_pariah }
+#						has_country_flag = coalition_member
+#					}
+#				}
+#				is_greater_power = yes
+#				NOT = { is_our_vassal = THIS }
+#			}
+#			diplomatic_influence = {
+#				who = THIS
+#				value = 50
+#			}
+#			relation = {
+#				who = THIS
+#				value = 100
+#			}
+#		}
+#		any_country = {
+#			limit = {
+#				OR = {
+#					truce_with = FROM
+#					AND = {
+#						FROM = { has_country_modifier = international_pariah }
+#						has_country_flag = coalition_member
+#					}
+#				}
+#				is_greater_power = no
+#			}
+#			relation = {
+#				who = THIS
+#				value = 100
+#			}
+#		}
+#		FROM = {
+#			diplomatic_influence = {
+#				who = THIS
+#				value = -200
+#			}
+#			relation = {
+#				who = THIS
+#				value = -100
+#			}
+#		}
+#		set_country_flag = newly_released_nation
+#	}
+#}
 
 #################################################
 #												#

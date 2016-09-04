@@ -313,7 +313,7 @@ country_event = {
 				}
 				has_country_flag = accept_call_to_unite
 			}
-			country_event = 598008
+			country_event = 124207
 		}
 		any_country = {
 			clr_country_flag = accept_call_to_unite
@@ -366,6 +366,13 @@ country_event = {
 			}
 			clr_country_flag = accept_call_to_unite
 			country_event = 598008
+		}
+		any_country = {
+			limit = {
+				is_greater_power = yes
+				capital_scope = { continent = europe }
+			}
+			country_event = 124208
 		}
 	}
 }

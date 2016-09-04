@@ -49,8 +49,8 @@ country_event = {
 				part_of_sphere = yes
 				OR = { 
 					primary_culture = south_german
-					tag = FRM
 					tag = NAS
+					tag = FRM
 				}
 			}
 			country_event = 123102
@@ -66,6 +66,36 @@ country_event = {
 				}
 			}
 			country_event = 123108
+		}
+		any_country = { 
+			limit = {
+				exists = yes
+				part_of_sphere = yes
+				NOT = {
+					tag = NAS
+					tag = FRM
+				}
+				OR = { 
+					primary_culture = north_german
+					primary_culture = rheinish
+				}
+			}
+			country_event = 123107
+		}
+		any_country = { 
+			limit = {
+				exists = yes
+				NOT = { part_of_sphere = yes }
+				NOT = {
+					tag = NAS
+					tag = FRM
+				}
+				OR = { 
+					primary_culture = north_german
+					primary_culture = rheinish
+				}
+			}
+			country_event = 123109
 		}
 		set_global_flag = first_council_of_munich
 	}
@@ -1082,9 +1112,7 @@ country_event = {
 	PRU_581 = { add_core = NGF }	#Westphalia
 	HAN_534 = { add_core = NGF }	#East Frisia
 	HAM_528 = { add_core = NGF }	#Hanover
-	MEC_544 = { add_core = NGF }	#Mecklemburg
 	PRU_546 = { add_core = NGF remove_core = SCA}	#Pomerania
-	HEK_568 = { add_core = NGF }	#Brunswick
 	SAX_1 = { add_core = NGF }		#Thuringia
 	HOL_369 = { add_core = NGF }	#Holstein
 	PRU_553 = { add_core = NGF }	#Anhalt

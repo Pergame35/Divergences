@@ -73,7 +73,7 @@ country_event = { ######SPA reaction after Partial Peace
 		
 	trigger = { 
 	tag = SPA 
-	OR = { has_global_flag = partial_peace set_country_flag = spaCLM } 
+	OR = { has_global_flag = partial_peace has_country_flag = spaCLM } 
 	2414 = { owned_by = AMA }
 	NOT = { 
 		OR = { 
