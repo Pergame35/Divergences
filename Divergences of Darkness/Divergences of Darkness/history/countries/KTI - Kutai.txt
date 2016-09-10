@@ -16,7 +16,7 @@ press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = jefferson_method
 political_parties = underground_parties
-minorities_reform_reform = oppression
+minorities_reform = oppression
 immigration_policy = nobody_gets_out
 conscription = mandatory_service
 
@@ -43,8 +43,6 @@ upper_house = {
 	communist = 0
 }
 
-set_country_flag = existing_country
-
 foreign_weapons = yes_foreign_weapons
 academic_institutions = madrasahs
 diplomatic_reform = interactive
@@ -61,22 +59,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "KTI_oob.txt"
-1861.1.1 = {
-	oob = "/1861/KTI_oob.txt"
-}
-1861.1.1 = {
-
-foreign_weapons = yes_foreign_weapons
-academic_institutions = madrasahs
-taxation_reform = tax_farmers
-diplomatic_reform = interactive
-
-# Technologies
-flintlock_rifles = 1
-late_enlightenment_philosophy = 1
-private_banks = 1
-early_classical_theory_and_critique = 1
-
-# Inventions
-
-}

@@ -42,24 +42,11 @@ upper_house = {
 	communist = 0
 }
 
-set_country_flag = existing_country
-
-diplomatic_reform = interactive
-
-# Technologies
-early_classical_theory_and_critique = 1
-
-# Inventions
-
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
 oob = "BSH_oob.txt"
-1861.1.1 = {
-	oob = "/1861/BSH_oob.txt"
-}
-1861.1.1 = {
 
 foreign_weapons = yes_foreign_weapons
 diplomatic_reform = interactive
@@ -69,5 +56,3 @@ flintlock_rifles = 1
 early_classical_theory_and_critique = 1
 
 # Inventions
-
-}

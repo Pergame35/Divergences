@@ -168,31 +168,27 @@ political_decisions = {
 		}
 	}
 	
-	exploration_of_Amazonia_GRA = { 
+	exploration_of_Amazonia_GRA = {
 	picture = naturalist_decision
-	potential = { 
-	tag = GRA 
-	owns = 2412
-	NOT = { has_country_flag = exploration_of_Amazonia }
-	AND = {
-				2402 = { empty = yes }
-				2403 = { empty = yes }
-				2404 = { empty = yes }
-				2407 = { empty = yes }
-				2549 = { empty = yes }
-			}
-		}
+	potential = {
+		tag = GRA
+		owns = 2412
+		NOT = { has_country_flag = exploration_of_Amazonia }
+		2402 = { empty = yes }
+		2403 = { empty = yes }
+		2404 = { empty = yes }
+		2407 = { empty = yes }
+		2549 = { empty = yes }
+	}
 		
-	allow = { 
-	OR = { 
-	year = 1890 
-	is_greater_power = yes 
-	AND = { 
-		vassal_of = SPA 
-			AND = { 
-			nationalism_n_imperialism = 1
-			steamers = 1
-				}
+	allow = {
+		OR = {
+			year = 1890 
+			is_greater_power = yes 
+			AND = {
+				vassal_of = SPA 
+				nationalism_n_imperialism = 1
+				steamers = 1
 			}
 		}
 	}
@@ -208,28 +204,24 @@ political_decisions = {
 	exploration_of_Amazonia_GUY = { 
 	picture = naturalist_decision
 	potential = { 
-	tag = GUY 
-	owns = 2412
-	NOT = { has_country_flag = exploration_of_Amazonia }
-	AND = {
-				2402 = { empty = yes }
-				2403 = { empty = yes }
-				2404 = { empty = yes }
-				2407 = { empty = yes }
-				2549 = { empty = yes }
-			}
-		}
-		
-	allow = { 
-	OR = { 
-	year = 1870
-	is_greater_power = yes 
-	AND = { 
-		vassal_of = SPA 
-			AND = { 
-			ideological_thought = 1
-			steamers = 1
-				}
+		tag = GUY
+		owns = 2412
+		NOT = { has_country_flag = exploration_of_Amazonia }
+		2402 = { empty = yes }
+		2403 = { empty = yes }
+		2404 = { empty = yes }
+		2407 = { empty = yes }
+		2549 = { empty = yes }
+	}
+	
+	allow = {
+		OR = {
+			year = 1870
+			is_greater_power = yes
+			AND = {
+				vassal_of = SPA
+				ideological_thought = 1
+				steamers = 1
 			}
 		}
 	}
@@ -307,20 +299,18 @@ political_decisions = {
 		}
 	}
 	
-	Manifest_destiny_AMADEM = { 
-		
-		potential = { 
-			tag = AMA 
+	Manifest_destiny_AMADEM = {
+		potential = {
+			tag = AMA
 			NOT = { has_country_flag = AMALOT }
-			AND = {	
-			has_country_flag = ATL_recognized 
-			owns = 2447 
+			has_country_flag = ATL_recognized
+			owns = 2447
 			AMA = { government = democracy }
-			OR = { LOT = { government = presidential_dictatorship }
-					LOT = { government = proletarian_dictatorship  }
-					LOT = { government = fascist_dictatorship  } 
-					LOT = { government = absolute_monarchy  }
-					}
+			OR = {
+				LOT = { government = presidential_dictatorship }
+				LOT = { government = proletarian_dictatorship  }
+				LOT = { government = fascist_dictatorship  } 
+				LOT = { government = absolute_monarchy  }
 			}
 		}
 		
@@ -913,7 +903,7 @@ political_decisions = {
 	}
 	
 	liberty_enlightening_the_world_AZL = {
-		picture = statue_libertÃ©
+		picture = statue_liberté
 	
 		potential = {
 			NOT = {
@@ -1149,7 +1139,7 @@ political_decisions = {
 			NAN_5 = { add_core = THIS }
 			2324 = {
 				owner = {
-					country_event = 775420
+					country_event = 775422
 				}
 			}
 		}

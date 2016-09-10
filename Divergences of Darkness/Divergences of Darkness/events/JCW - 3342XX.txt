@@ -163,7 +163,9 @@ country_event = {
 		government = merchant_republic 
 		political_reform = landed_voting
 		any_pop = { militancy = 2 }
-		factor = 40
+		ai_chance = {
+			factor = 40
+		}
 	}
 	
 	option = { 
@@ -176,6 +178,8 @@ country_event = {
 	ruling_party_ideology = liberal
 	any_pop = { militancy = 1 }
 	years_of_research = 4
-	factor = 30 
+	ai_chance = {
+		factor = 30 
+	}
 	}
 }

@@ -16,7 +16,7 @@ press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = jefferson_method
 political_parties = underground_parties
-minorities_reform_reform = oppression
+minorities_reform = oppression
 immigration_policy = nobody_gets_out
 conscription = mandatory_service
 
@@ -44,11 +44,6 @@ upper_house = {
 }
 
 oob = "KLM_oob.txt"
-1861.1.1 = {
-	oob = "/1861/KLM_oob.txt"
-}
-
-set_country_flag = existing_country
 
 foreign_weapons = yes_foreign_weapons
 academic_institutions = madrasahs

@@ -16,18 +16,16 @@ political_decisions = {
 
 		allow = {
 			NOT = {
-				any_owned_province = { 
-					AND = {   
-						OR = {
+				any_owned_province = {
+					OR = {
 						is_core = MEX  
 						is_core = LST
 						is_core = UCA
-						}
-          controlled_by = SPA
-					}   
-				}	   
-			}	
-      }  
+					}
+					controlled_by = SPA
+				}
+			}
+		}
 
 
 		effect = {   

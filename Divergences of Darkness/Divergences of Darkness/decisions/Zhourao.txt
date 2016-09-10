@@ -139,9 +139,7 @@ political_decisions = {
 		set_country_flag = assimilate_tributaries 
 		any_owned = {
 				limit = {
-					OR = {
-						is_core = GAN
-					}
+					is_core = GAN
 				}
 				add_province_modifier = {
 					name = assimilate_tributaries_modif

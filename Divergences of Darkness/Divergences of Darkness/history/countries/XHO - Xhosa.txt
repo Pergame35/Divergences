@@ -4,7 +4,7 @@ religion = animist
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.002
+literacy = 0.003
 non_state_culture_literacy = 0
 
 
@@ -44,8 +44,6 @@ upper_house = {
 	communist = 0
 }
 
-set_country_flag = existing_country
-
 foreign_weapons = yes_foreign_weapons
 diplomatic_reform = interactive
 
@@ -60,31 +58,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "XHO_oob.txt"
-
-1836.1.1 = {
-literacy = 0.003
-non_state_culture_literacy = 0
-
-foreign_weapons = yes_foreign_weapons
-diplomatic_reform = interactive
-
-# Technologies
-flintlock_rifles = 1
-early_classical_theory_and_critique = 1
-}
-
-1861.1.1 = {
-	oob = "/1861/XHO_oob.txt"
-}
-1861.1.1 = {
-
-foreign_weapons = yes_foreign_weapons
-diplomatic_reform = interactive
-
-# Technologies
-flintlock_rifles = 1
-early_classical_theory_and_critique = 1
-
-# Inventions
-
-}

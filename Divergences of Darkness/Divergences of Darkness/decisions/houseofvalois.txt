@@ -94,9 +94,9 @@ political_decisions = {
 				}
 			}
 		set_country_flag = occitania_claimed
+		}
 		ai_will_do = {
 			factor = 1
-			}
 		}
 	}
 	
@@ -144,9 +144,9 @@ political_decisions = {
 				}
 			}
 		set_country_flag = renew_war 
+		}
 		ai_will_do = {
 			factor = 1
-			}
 		}
 	}
 	
@@ -324,7 +324,7 @@ political_decisions = {
 			prestige = 10
 			change_tag = FRA
 			set_country_flag = PRV_paris
-			any_province = { limit ={ is_core = OCC } remove_core = DUA }
+			OCC = { all_core = { remove_core = DUA } }
 			DUA = {
 				capital = 300
 				prestige = -250
@@ -395,11 +395,13 @@ political_decisions = {
 			}
 		}
 		
-	effect = { LUC = { country_event = 110603 } }
+	effect = {
+		LUC = { country_event = 110603 }
+		set_country_flag = lucca_submission
+	}
 	
 	ai_will_do = { 
 	factor = 1 
-	set_country_flag = lucca_submission
 	modifier = { 
 		factor = 0 
 		NOT = { year = 1848 }

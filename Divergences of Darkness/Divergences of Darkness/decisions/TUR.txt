@@ -496,19 +496,6 @@ political_decisions = {
 	
 	}
 
-	bosphorus_canal = {
-		potential = {
-			tag = TUR
-			always = no
-		}
-		allow = {
-			tag = TUR
-		}
-		effect = {
-			enable_canal = 4
-		}
-	}
-
 	move_capital_to_ankara = {
 		potential = {
 			tag = TUR

@@ -7,14 +7,14 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Claim the current Duchy´s borders!"
+		name = "Claim the current Duchy's borders!"
 		prestige = 20
 		badboy = 12
 		set_global_flag = big_lit
 	}
 
 	option = {
-		name = "Leave the Ruthenian land to the Commonwealth, we don´t need them"
+		name = "Leave the Ruthenian land to the Commonwealth, we don't need them"
 		prestige = 15
 		badboy = 8
 		set_global_flag = mid_lit
@@ -69,7 +69,7 @@ country_event = {
 	}
 
 	option = {
-		name = "I don´t trust them, they will undermine our independence!"
+		name = "I don't trust them, they will undermine our independence!"
 		relation = {
 			who = FROM
 			value = -100
@@ -114,7 +114,7 @@ country_event = {
 
 country_event = {
 	id = 22233
-	title = "Crimean land moved under Kiev´s control!"
+	title = "Crimean land moved under Kiev's control!"
 	desc = "To defend better these lands from any Turkish, Tatar or Russian invasion we have to give these new territories to the Hetmanate!"
 	picture = "greatpowers"
 

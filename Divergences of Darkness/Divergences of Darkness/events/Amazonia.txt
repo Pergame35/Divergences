@@ -1,4 +1,4 @@
-﻿country_event = { 
+country_event = { 
 
 		id = 98401
 		title = "AMA1.T"
@@ -7,12 +7,10 @@
 		trigger = { 
 		tag = AMA 
 		CLM = { 
-		AND = { 
 		owns = 2414 
 		owns = 2415
 		owns = 2408
 		owns = 2412
-				}
 		war_with = SPA 
 			}
 		NOT = { has_global_flag = congress_of_panama }
@@ -75,7 +73,7 @@ country_event = { ######SPA reaction after Partial Peace
 		
 	trigger = { 
 	tag = SPA 
-	OR = { has_global_flag = partial_peace set_country_flag = spaCLM } 
+	OR = { has_global_flag = partial_peace has_country_flag = spaCLM } 
 	2414 = { owned_by = AMA }
 	NOT = { 
 		OR = { 
@@ -464,7 +462,7 @@ country_event = {
 		
 		option = { 
 		name = "They want war ? They'll get war !"
-		add_core = CLM 
+		BRZ_2408 = { add_core = CLM }
 		CLM = { 
 			casus_belli = {
 				target = AMA
@@ -729,7 +727,7 @@ country_event = { ###### The Equinoxian Secession
 	}
 }
 
-country_event = { ########Equinoxian victory if Port-Liberté is held 
+country_event = { ########Equinoxian victory if Port-Libert� is held 
 	id = 98429 
 	title = "AMA29.T"
 	desc = "AMA29.D"

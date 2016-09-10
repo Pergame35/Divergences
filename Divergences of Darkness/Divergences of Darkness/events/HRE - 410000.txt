@@ -713,7 +713,7 @@ country_event = {
 		AUS_612 = {
 			add_core = SGF
 		}
-		SAX_1 = { add_core = SGF }
+		#SAX_1 = { add_core = SGF }
 		change_tag = SGF
 		HRE = { country_event = { id = 410014 days = 2 } } 
 	}
@@ -783,9 +783,7 @@ country_event = {
 		PRU_581 = { add_core = NGF }	#Westphalia
 		HAN_534 = { add_core = NGF }	#East Frisia
 		HAM_528 = { add_core = NGF }	#Hanover
-		MEC_544 = { add_core = NGF }	#Mecklemburg
 		PRU_546 = { add_core = NGF }	#Pomerania
-		HEK_568 = { add_core = NGF }	#Brunswick
 		SAX_1 = { add_core = NGF }		#Thuringia
 		HOL_369 = { add_core = NGF }	#Holstein
 		PRU_553 = { add_core = NGF }	#Anhalt
@@ -1383,9 +1381,7 @@ country_event = {
 	PRU_581 = { add_core = HRE }	#Westphalia
 	HAN_534 = { add_core = HRE }	#East Frisia
 	HAM_528 = { add_core = HRE }	#Hanover
-	MEC_544 = { add_core = HRE }	#Mecklemburg
 	PRU_546 = { add_core = HRE }	#Pomerania
-	HEK_568 = { add_core = HRE }	#Brunswick
 	SAX_1 = { add_core = HRE }		#Thuringia
 	HOL_369 = { add_core = HRE }	#Holstein
 	PRU_553 = { add_core = HRE }	#Anhalt
@@ -1501,7 +1497,6 @@ country_event = {
 	HAN_534 = { add_core = NGF }	#East Frisia
 	HAM_528 = { add_core = NGF }	#Hanover
 	PRU_546 = { add_core = NGF }	#Pomerania
-	HEK_568 = { add_core = NGF }	#Brunswick
 	SAX_1 = { add_core = NGF }		#Thuringia
 	HOL_369 = { add_core = NGF }	#Holstein
 	PRU_553 = { add_core = NGF }	#Anhalt
@@ -1724,7 +1719,7 @@ country_event = {
 		AUS_612 = {
 			add_core = SGF
 		}
-		SAX_1 = { add_core = SGF }
+		#SAX_1 = { add_core = SGF }
 	change_tag = SGF
 	FROM = { create_vassal = THIS }
 	FROM = { country_event = 410042 }
@@ -1757,24 +1752,22 @@ country_event = {
 	trigger = { 
 	tag = HRE 
 	has_country_flag = locresults 
-	AND = { 
-		OR = {
-			has_country_flag = elbe_accepts
-			has_country_flag = elbe_negotiation 
-			has_country_flag = elbe_reb	
-			}
-		
-		OR = {
-			has_country_flag = rhine_accepts
-			has_country_flag = rhine_negotiation 
-			has_country_flag = rhine_reb	
-			}
-			
-		OR = {
-			has_country_flag = danube_accepts
-			has_country_flag = danube_negotiation 
-			has_country_flag = danube_reb	
-			}
+	OR = {
+		has_country_flag = elbe_accepts
+		has_country_flag = elbe_negotiation 
+		has_country_flag = elbe_reb
+		}
+	
+	OR = {
+		has_country_flag = rhine_accepts
+		has_country_flag = rhine_negotiation 
+		has_country_flag = rhine_reb
+		}
+	
+	OR = {
+		has_country_flag = danube_accepts
+		has_country_flag = danube_negotiation 
+		has_country_flag = danube_reb
 		}
 	}
 	

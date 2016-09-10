@@ -672,8 +672,9 @@ country_event = {
 			limit = {
 				OR = {
 					tag = CHI
-					tag = KMT
-					tag = QNG
+					tag = MIG
+					tag = TNG
+					tag = MCK
 					tag = TPG
 				}
 				exists = yes

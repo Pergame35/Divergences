@@ -115,7 +115,6 @@ blue_water_school = {
 	limit = {
 		blue_and_brown_water_schools = 1 
 		NOT = { invention = brown_water_school }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -155,7 +154,6 @@ brown_water_school = {
 	limit = {
 		blue_and_brown_water_schools = 1 
 		NOT = { invention = blue_water_school }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -198,7 +196,6 @@ offensive_attitude = {
 	limit = {
 		high_sea_battle_fleet = 1
 		NOT = { invention = defensive_attitude }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -219,7 +216,6 @@ defensive_attitude = {
 	limit = {
 		high_sea_battle_fleet = 1 
 		NOT = { invention = offensive_attitude }
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -241,7 +237,6 @@ defensive_attitude = {
 decisive_firepower_doctrine = {
 	limit = {
 		modern_naval_doctrine = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -264,7 +259,6 @@ decisive_firepower_doctrine = {
 naval_firepower_doctrine = {
 	limit = {
 		modern_naval_doctrine = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -283,7 +277,6 @@ naval_firepower_doctrine = {
 fleet_auxiliary_cv_doctrine = {
 	limit = {
 		modern_naval_doctrine = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -300,7 +293,6 @@ fleet_auxiliary_cv_doctrine = {
 fleet_auxiliary_ss_doctrine = {
 	limit = {
 		modern_naval_doctrine = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -315,7 +307,6 @@ fleet_auxiliary_ss_doctrine = {
 convoy_sailing = {
 	limit = {
 		modern_naval_doctrine = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -331,7 +322,6 @@ convoy_sailing = {
 integrated_naval_doctrine = {
 	limit = {
 		modern_naval_doctrine = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -555,7 +545,6 @@ protected_cruisers = {
 destroyers = {
 	limit = {
 		steel_steamers = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -578,7 +567,6 @@ destroyers = {
 submarines = {
 	limit = {
 		steel_steamers = 1
-		has_country_flag = existing_country
 	}
 	chance = {
 		base = 5
@@ -595,7 +583,6 @@ pre_dreadnought = {
 	limit = {
 		steel_steamers = 1
 		high_n_low_pressure_steam_engines = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -623,7 +610,6 @@ dreadnoughts = {
 	limit = {
 		steam_turbine_ships = 1 
 		steam_turbine = 1
-		has_country_flag = existing_country
 	}
 	chance = {
 		base = 1
@@ -645,7 +631,6 @@ light_cruisers = {
 		steam_turbine_ships = 1 
 		NOT = { invention = battlecruisers }
 		invention = protected_cruisers 
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -668,7 +653,6 @@ battlecruisers = {
 		steam_turbine_ships = 1 
 		NOT = { invention = light_cruisers	}
 		invention = protected_cruisers 
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -692,7 +676,6 @@ ocean_going_submarines = {
 	limit = {
 		steam_turbine_ships = 1 
 		invention = submarines
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -715,7 +698,6 @@ ocean_going_submarines = {
 advanced_destroyers = {
 	limit = {
 		oil_driven_ships = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -738,7 +720,6 @@ advanced_destroyers = {
 modern_destroyers = {
 	limit = {
 		oil_driven_ships = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -763,7 +744,6 @@ advanced_cruisers = {
 		oil_driven_ships = 1 
 		steam_turbine = 1 
 		invention = large_hull_form
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -791,7 +771,6 @@ modern_cruisers = {
 		combustion_engine = 1 
 		NOT = { invention = battlecruisers }
 		invention =  15_inch_main_armament
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -819,7 +798,6 @@ advanced_battlecruisers = {
 		oil_driven_ships = 1 
 		NOT = { invention = light_cruisers }
 		invention = large_hull_form
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -842,7 +820,6 @@ advanced_battleships = {
 		oil_driven_ships = 1 
 		combustion_engine = 1
 		invention = large_hull_form
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -868,7 +845,6 @@ modern_battleships = {
 		oil_driven_ships = 1 
 		combustion_engine = 1 
 		invention =  15_inch_main_armament
-		has_country_flag = existing_country
 	}
 	chance = {
 		base = 5
@@ -920,7 +896,6 @@ advanced_submarines = {
 	limit = {
 		oil_driven_ships = 1 
 		invention = submarines
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -946,7 +921,6 @@ modern_battlecruisers = {
 			invention = light_cruisers 
 			invention =  15_inch_main_armament 
 		}
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1208,7 +1182,6 @@ heavy_caliber_guns = {
 on_board_recon_aircraft = {
 	limit = {
 		advanced_naval_design = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1235,7 +1208,6 @@ on_board_recon_aircraft = {
 gun_hydraulics = {
 	limit = {
 		advanced_naval_design = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1258,7 +1230,6 @@ gun_hydraulics = {
 heavy_armour_plates = {
 	limit = {
 		advanced_naval_design = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1277,7 +1248,6 @@ heavy_armour_plates = {
 large_hull_form = {
 	limit = {
 		advanced_naval_design = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1296,7 +1266,6 @@ large_hull_form = {
 wireless = {
 	limit = {
 		modern_naval_design = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1314,7 +1283,6 @@ wireless = {
 advanced_fire_control = {
 	limit = {
 		modern_naval_design = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1341,7 +1309,6 @@ advanced_fire_control = {
 15_inch_main_armament = {
 	limit = {
 		modern_naval_design = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1517,7 +1484,6 @@ radio_telegraphy = {
 political_lobbying = {
 	limit = {
 		naval_directionism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1536,7 +1502,6 @@ political_lobbying = {
 military_political_decision_making = {
 	limit = {
 		naval_directionism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1555,7 +1520,6 @@ military_political_decision_making = {
 local_military_government = {
 	limit = {
 		naval_directionism = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1575,7 +1539,6 @@ local_military_government = {
 war_gamming = {
 	limit = {
 		naval_integration = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1594,7 +1557,6 @@ war_gamming = {
 combined_arms_planning = {
 	limit = {
 		naval_integration = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1750,7 +1712,6 @@ n_saddle_orders = {
 literate_ncos = {
 	limit = {
 		naval_nco_training = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1772,7 +1733,6 @@ literate_ncos = {
 nco_combat_station_training = {
 	limit = {
 		naval_nco_training = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1794,7 +1754,6 @@ nco_combat_station_training = {
 nco_tactical_training = {
 	limit = {
 		naval_nco_training = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1813,7 +1772,6 @@ nco_tactical_training = {
 amphibious_warfare_training = {
 	limit = {
 		modern_naval_training = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1831,7 +1789,6 @@ amphibious_warfare_training = {
 naval_exercises = {
 	limit = {
 		modern_naval_training = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {

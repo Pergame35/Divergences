@@ -1,4 +1,4 @@
-﻿country_event = {
+country_event = {
 	
 	id = 775404
 	title = "LOTNANfriendshipsetup5name"
@@ -173,7 +173,7 @@ country_event = {
 			
 				prestige = 20
 				set_country_flag = lot_nan_friendship_end
-				create_alliance = { tag = NAN }
+				create_alliance = NAN
 			
 				
 		
@@ -443,6 +443,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "kingstatueevent2opt"
 		money = -20000
 		prestige = -5
 		clr_country_flag = kings_statue_vandalized
@@ -1187,190 +1188,7 @@ country_event = {
 	}
 }
 
-
-country_event = { 
-
-		id = 98401
-		title = "AMA1.T"
-		desc = "AMA1.D"
-		
-		trigger = { 
-		tag = AMA 
-		CLM = { 
-		AND = { 
-		owns = 2414 
-		owns = 2415
-		owns = 2408
-		owns = 2412
-				}
-		war_with = SPA 
-			}
-		NOT = { has_global_flag = congress_of_panama }
-		}
-		
-		mean_time_to_happen = { 
-		months = 2
-		}
-		
-		option = { 
-		name = "Take the opportunity while no one is watching"
-		CLM = { country_event = 98402 }
-		badboy = 5 
-		prestige = 3 
-		BRZ_2408 = { 
-		add_core = AMA
-		add_core = EQN
-				}
-		}
-		
-		option = { 
-		name = "It is not our territory, call them back !"
-		prestige = 5 
-		relation = { who = CLM value = 150 }
-		}
-}
-
-country_event = { 
-		
-		id = 98402 
-		title = "AMA2.T"
-		desc = "AMA2.D"
-		
-		is_triggered_only = yes
-		
-		option = {
-		name = "The bastards !"
-		BRZ_2408  = {
-		remove_core = CLM 
-		}
-		any_owned = { 
-		limit = { region = BRZ_2408}
-		secede_province = AMA
-		}
-	}
-}
-
 ##########Post-war reactions######### 
-
-country_event = { ######SPA reaction after Partial Peace
-	id = 98403 
-	title = "AMA3.T"
-	desc = "AMA3.D"
-		
-	trigger = { 
-	tag = SPA 
-	has_global_flag = partial_peace 
-	2414 = { owned_by = AMA }
-	NOT = { 
-		OR = { 
-	has_global_flag = paracash 
-	has_global_flag = paraclaim 
-	has_global_flag = paraabandon
-			}
-		}
-	}
-	
-	mean_time_to_happen = { 
-	days = 1 
-	}
-	
-	option = { 
-	name = "We will settle the matter if they pay us"
-	AMA = { country_event = 98404 }
-	prestige = -5 
-	ai_chance = { 
-	factor = 30
-		}
-	}
-	
-	option = { 
-	name = "Send this message : 'Para or War' "
-	AMA = { country_event = 98412 }
-	ai_chance = { 
-	factor = 60
-		}
-	}
-	
-	option = { 
-	name = "Why bother about some inhospitable jungle ?"
-	set_global_flag = paraabandon
-	AMA = { country_event = 97095 }
-	ai_chance = { 
-	factor = 10 
-		}
-	}
-}
-	
-country_event = { ######Money ? 
-		
-		id = 98404
-		title = "AMA4.T"
-		desc = "AMA4.D"
-		
-		is_triggered_only = yes
-		
-		option = {
-		name = "Just some money ? Take the chance while they are asking !"
-		money = -50000 
-		country_event = { id = 98407 days = 1095 }
-		SPA = { country_event = 98405 }
-		ai_chance = { 
-			factor = 100
-			}
-		}
-		
-		option = { 
-		name = "And what will they do if we don't ?"
-		prestige = 5 
-		SPA = { country_event = 98406 }
-		ai_chance = { 
-			factor = 0
-			}
-		}
-	}
-	
-country_event = { ######Money ? 
-		
-		id = 98405
-		title = "AMA5.T"
-		desc = "AMA5.D"
-		
-		is_triggered_only = yes
-		
-		option = { 
-		name = "I think we have made a great deal gentlemen"
-		money = 50000 
-		set_global_flag = paracash
-		}
-}
-	
-country_event = { 
-
-		id = 98406
-		title = "AMA6.T"
-		desc = "AMA6.D"
-		
-		is_triggered_only = yes
-		
-		option = { 
-		name = "They want war ? They'll get war !"
-		SPA = { 
-			casus_belli = {
-				target = AMA
-				type = acquire_state 
-				months = 60
-				}
-			}
-		war = {
-			target = AMA
-			attacker_goal = {
-				casus_belli = acquire_state
-				state_province_id = 2214
-				}
-			}
-		}
-}	
-
 country_event = { ### Annexation
 	id = 97096
 	title = "Ameriga10.T"
@@ -1452,18 +1270,17 @@ country_event = { ### Annexation
 	tag = INC
 		}
 	SA_6 = { owned_by = THIS }
-	CHL_2327 = { owned_by = THIS }
 	}
 	
 	fire_only_once = yes 
 	
 	mean_time_to_happen = { 
-	days = 10  }
+		days = 10
+	}
 	
 	option = { 
 	name = "It's all ours !"
 	SA_6 = { add_core = THIS }
-	CHL_2327 = { add_core = THIS }
 	prestige = 5 
 	}
 }
@@ -1482,24 +1299,18 @@ country_event = {
 	factor = 30 
 		modifier = { 
 		factor = 3 
-		AND = { 
 		NAN = { government = democracy }  
 		AZL = { government = democracy } 
-				}
 			}
 		modifier = { 
 		factor = 3 
-		AND = { 
 		NAN = { government = hms_government }  
 		AZL = { government = hms_government }
-				}
 		}
 		modifier = { 
 		factor = 3 
-		AND = { 
 		NAN = { government = proletarian_dictatorship }
 		AZL = { government = proletarian_dictatorship }
-				}
 		}
 		modifier = { 
 		factor = 1.5 
@@ -1560,7 +1371,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "They thought that no was an answer ? Across la Rivière d'Argent gentlemen ! "
+	name = "They thought that no was an answer ? Across la Rivi�re d'Argent gentlemen ! "
 	NAN = { all_core = { add_core = AZL } }
 	badboy = 23 
 	casus_belli = {

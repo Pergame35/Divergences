@@ -44,8 +44,6 @@ upper_house = {
 	communist = 0
 }
 
-set_country_flag = existing_country
-
 diplomatic_reform = interactive
 
 # Technologies
@@ -73,9 +71,6 @@ private_banks = 1
 early_classical_theory_and_critique = 1
 }
 
-1861.1.1 = {
-	oob = "/1861/KON_oob.txt"
-}
 1861.1.1 = {
 
 foreign_weapons = yes_foreign_weapons

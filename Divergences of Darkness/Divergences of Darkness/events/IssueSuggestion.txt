@@ -1628,18 +1628,14 @@ country_event = {
 		
 		modifier = {
 			factor = 0.9
-			AND = {
-				rich_strata_militancy = 6
-				poor_strata_militancy = 6
-			}
+			rich_strata_militancy = 6
+			poor_strata_militancy = 6
 		}
 		
 		modifier = {
 			factor = 1.5
-			AND = {
-				poor_strata_life_needs = 0.9
-				rich_strata_life_needs = 0.9
-			}
+			poor_strata_life_needs = 0.9
+			rich_strata_life_needs = 0.9
 		}
 	}
 	

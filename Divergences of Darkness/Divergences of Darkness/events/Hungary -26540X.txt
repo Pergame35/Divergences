@@ -273,6 +273,7 @@ country_event = {
 	major = yes
 	
 	option = { 
+	name = "To arms!"
 	HUN = { country_event = 265410 }
 	capital_scope = { 
 	any_pop = { militancy = 3 }

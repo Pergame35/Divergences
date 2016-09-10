@@ -15,7 +15,6 @@ province_event = {
 			region = ENG_2096
 			region = ENG_2087
 			region = ENG_2092
-			region = ENG_2096
 			region = ORA_2103
 			region = TRN_2108
 			region = ZUL_2113
@@ -135,123 +134,6 @@ province_event = {
 			}
 		}
 		IND = { add_accepted_culture = malay }
-	}
-}
-
-province_event = {
-	id = 97131
-	title = "$STATENAME$ Colonial Incorporation"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Indonesian colony"
-	
-	trigger = {
-		OR = {
-			region = BAL_1446 #Timor
-			region = NET_1449 #Moluccas
-			region = NET_1430 #Makassar
-			region = NET_1433 #Menado
-		}
-		owned_by = THIS
-		controlled_by = THIS
-		any_neighbor_province = {
-			is_core = IND
-		}
-		owner = {
-			civilized = yes
-			NOT = { is_culture_group = southeast_asian }
-		}
-		OR = {
-			AND = {
-				owner = { owns = 1413 }
-				IND = { exists = no }
-			}
-			IND = {
-				vassal_of = THIS
-				is_culture_group = THIS
-			}
-		}
-		NOT = {
-			is_core = IND
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 60
-	}
-	
-	option = {
-		name = "An excellent development!"
-		state_scope = {
-			any_owned = {
-				limit = {
-					NOT = { is_core = IND }
-				}
-				add_core = IND
-				any_pop = { militancy = -3 }
-				add_province_modifier = {
-					name = colonial_exploitation
-					duration = 1095
-				}
-			}
-		}
-		IND = { add_accepted_culture = moluccan }
-	}
-}
-
-province_event = {
-	id = 97132
-	title = "$STATENAME$ Colonial Incorporation"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Indonesian colony"
-	
-	trigger = {
-		OR = {
-			region = NET_1451 #West New Guinea
-			region = AST_2529 #Southeast New Guinea
-			region = GER_2531 #Northeast New Guinea
-		}
-		owned_by = THIS
-		controlled_by = THIS
-		any_neighbor_province = {
-			is_core = IND
-		}
-		owner = {
-			civilized = yes
-			NOT = { is_culture_group = southeast_asian }
-		}
-		OR = {
-			AND = {
-				owner = { owns = 1413 }
-				IND = { exists = no }
-			}
-			IND = {
-				vassal_of = THIS
-				is_culture_group = THIS
-			}
-		}
-		NOT = {
-			is_core = IND
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 60
-	}
-	
-	option = {
-		name = "An excellent development!"
-		state_scope = {
-			any_owned = {
-				limit = {
-					NOT = { is_core = IND }
-				}
-				add_core = IND
-				any_pop = { militancy = -3 }
-				add_province_modifier = {
-					name = colonial_exploitation
-					duration = 1095
-				}
-			}
-		}
-		IND = { add_accepted_culture = melanesian }
 	}
 }
 
@@ -448,7 +330,7 @@ province_event = { ### Spread of Terra d'Oro cores
 	trigger = {
 		OR = {
 			region = FRA_1775 #Coastal Mauritania
-			region = FRA_1783 #GorÃ¨a
+			region = FRA_1783 #Gorèa
 			region = FRA_1780 #Inner Mautiania
 		}
 		owned_by = THIS

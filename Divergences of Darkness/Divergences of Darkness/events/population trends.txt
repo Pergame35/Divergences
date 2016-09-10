@@ -586,10 +586,8 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.75
-			AND = {
-				NOT = { poor_strata_everyday_needs = 1 }
-				NOT = { poor_strata_luxury_needs = 0.01 }
-			}
+			NOT = { poor_strata_everyday_needs = 1 }
+			NOT = { poor_strata_luxury_needs = 0.01 }
 		}
 		modifier = {
 			factor = 0.75
@@ -597,8 +595,8 @@ country_event = {
 		}
 		modifier = {
 			factor = 2
-			not = { poor_strata_life_needs = 1 }
-			not = { poor_strata_everyday_needs = 0.01 }
+			NOT = { poor_strata_life_needs = 1 }
+			NOT = { poor_strata_everyday_needs = 0.01 }
 		}
 	}
 	

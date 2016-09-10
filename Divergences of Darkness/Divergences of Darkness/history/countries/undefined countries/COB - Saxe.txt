@@ -1,5 +1,6 @@
-capital = 563
+capital = 562
 primary_culture = north_german
+culture = south_german
 religion = protestant
 government = absolute_monarchy
 plurality = 0.0
@@ -33,7 +34,7 @@ child_labor = child_labor_restricted
 arts_endowment = no_endowment
 education = elite
 
-ruling_party = MEI_conservative_2
+ruling_party = COB_conservative_2
 upper_house = {
 	fascist = 0
 	liberal = 35
@@ -43,8 +44,6 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
-
-set_country_flag = existing_country
 
 # Technologies
 post_napoleonic_thought = 1
@@ -78,9 +77,9 @@ basic_chemistry = 1
 consciousness = 3
 nonstate_consciousness = 1
 
-oob = "MEI_oob.txt"
+oob = "COB_oob.txt"
 1861.1.1 = {
-	oob = "/1861/MEI_oob.txt"
+	oob = "/1861/COB_oob.txt"
 	plurality = 60
 	literacy = 0.90
 	non_state_culture_literacy = 0.45

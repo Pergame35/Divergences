@@ -158,7 +158,7 @@ political_decisions = {
 						tag = UKR
 						tag = PRU
 					}
-					is_substate_of = THIS
+					substate_of = THIS
 				}
 				annex_to = THIS
 			}
@@ -171,7 +171,7 @@ political_decisions = {
 				}
 				militancy = 6
 			}
-			relation = { who = MOS value = -200 }
+			relation = { who = MUS value = -200 }
 			relation = { who = RUS value = -200 }
 			relation = { who = SCA value = -200 }
 			relation = { who = BOH value = -200 }
@@ -221,9 +221,7 @@ political_decisions = {
 					ROM = { war = no exists = yes is_vassal = no}
 					MOL = { exists = no }
 				}
-				AND = {
-					MOL = { war = no exists = yes is_vassal = no}
-				}
+				MOL = { war = no exists = yes is_vassal = no}
 			}
 		}
 		
@@ -286,7 +284,7 @@ political_decisions = {
 	}
 	
 	treaty_hadiach = {
-		picture = "Hadiach_treaty"
+		picture = "treaty_hadiach"
 
 		potential = { 
 			tag = PLC 
@@ -295,7 +293,7 @@ political_decisions = {
 		}
 
 		allow = {
-			public_metting = yes_meeting
+			public_meetings = yes_meeting
 			OR = { 
 			vote_franschise = wealth_weighted_voting
 			vote_franschise = wealth_voting

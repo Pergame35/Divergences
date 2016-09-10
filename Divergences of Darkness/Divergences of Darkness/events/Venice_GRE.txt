@@ -686,11 +686,10 @@ country_event = { #Treaty of Corfu
 				}
 		secede_province = GRE
 		}
-		any_province = {
-				limit = {
-					is_core = GRE
-				}
-		remove_core = THIS
+		GRE = {
+			all_core = {
+				remove_core = THIS
+			}
 		}
 	}
 }
@@ -792,7 +791,7 @@ country_event = {
 	option = { 
 	name = "We will join back the fold..."
 	clr_country_flag = waiting_end_rebellion
-	GRE = { country_event = 100622 }
+	GRE = { country_event = 100624 }
 	}
 }
 
@@ -833,8 +832,8 @@ country_event = {
 
 country_event = { 
 	id = 100626
-	title = "GRE22.T"
-	desc = "GRE22.D"
+	title = "GRE26.T"
+	desc = "GRE26.D"
 	
 	is_triggered_only = yes 
 	
@@ -862,14 +861,14 @@ country_event = {
 	option = { 
 	name = "We will join back the fold..."
 	clr_country_flag = waiting_end_rebellion
-	GRE = { country_event = 100626 }
+	GRE = { country_event = 100628 }
 	}
 }
 
 country_event = { 
 	id = 100628
-	title = "GRE24.T"
-	desc = "GRE24.D"
+	title = "GRE28.T"
+	desc = "GRE28.D"
 	
 	is_triggered_only = yes 
 	
@@ -1138,9 +1137,7 @@ country_event = {
 	political_reform = free_press
 	any_owned = {
 			limit = {
-				OR = {
-					region = TUR_832 #Thessalia
-				}
+				region = TUR_832 #Thessalia
 			}
 			secede_province = MAC 
 		}
@@ -1172,9 +1169,7 @@ country_event = {
 	GRE = { 
 		any_owned = {
 				limit = {
-					OR = {
-						region = TUR_832 #Thessalia
-					}
+					region = TUR_832 #Thessalia
 				}
 				secede_province = MAC 
 			}
@@ -1246,7 +1241,7 @@ country_event = {
 			secede_province = GRE
 		}
 	GRE = {
-			governement = prussian_constitutionalism 
+			government = prussian_constitutionalism 
 			any_pop = {
 				limit = {
 					culture = greek
@@ -1631,11 +1626,11 @@ country_event = {
 				attacker_goal = {
 				casus_belli = acquire_core_state
 				state_province_id = 846
+				}
 				defender_goal = { 
 				casus_belli = status_quo
 				}
 			}
-		}
 		ai_chance = { factor = 30 }
 	}
 }
@@ -1766,7 +1761,7 @@ country_event = {
 	
 	trigger = { 
 	tag = VEN 
-	governement = merchant_republic	
+	government = merchant_republic	
 	year = 1847 
 	has_country_flag = doge_1 
 	NOT = { has_country_flag = doge_election_1 }
@@ -1795,7 +1790,7 @@ country_event = {
 	
 	trigger = { 
 	tag = VEN 
-	governement = merchant_republic
+	government = merchant_republic
 	has_country_flag = doge_election_1
 	}
 	
@@ -1831,7 +1826,7 @@ country_event = {
 			}
 	modifier = { 
 	factor = 1.3
-	ITA = { exists = yes governement = democracy } 
+	ITA = { exists = yes government = democracy } 
 			} 
 		}
 	}
@@ -1864,9 +1859,11 @@ country_event = {
 	factor = 1.2 
 	ideology = conservative 
 			}
+	modifier = {
 	factor = 1.4 
 	ideology = reactionary
 		}
+	}
 	}
 	
 	option = { 
@@ -1904,8 +1901,8 @@ country_event = {
 	trigger = { 
 	tag = VEN 
 	OR = { 
-	governement = merchant_republic 
-	governement = democracy
+	government = merchant_republic 
+	government = democracy
 		}
 	has_country_flag = daniele_manin_doge
 	year = 1886  
@@ -1932,8 +1929,8 @@ country_event = {
 	trigger = { 
 	tag = VEN 
 	OR = { 
-	governement = merchant_republic 
-	governement = democracy
+	government = merchant_republic 
+	government = democracy
 		}
 	has_country_flag = salviati_doge
 	year = 1889  
@@ -1960,8 +1957,8 @@ country_event = {
 	trigger = { 
 	tag = VEN 
 	OR = { 
-	governement = merchant_republic 
-	governement = democracy
+	government = merchant_republic 
+	government = democracy
 		}
 	has_country_flag = albrizzi_doge
 	year = 1888
@@ -1988,7 +1985,7 @@ country_event = {
 	
 	trigger = { 
 	tag = VEN 
-	OR = { governement = merchant_republic governement = democracy }
+	OR = { government = merchant_republic government = democracy }
 	has_country_flag = doge_election_2
 	}
 	
@@ -2032,7 +2029,7 @@ country_event = {
 			}
 	modifier = { 
 	factor = 1.1
-	ITA = { exists = yes governement = democracy } 
+	ITA = { exists = yes government = democracy } 
 			} 
 		}
 	}
@@ -2073,9 +2070,11 @@ country_event = {
 	factor = 1.2 
 	ideology = conservative 
 			}
+	modifier = {
 	factor = 1.4 
 	ideology = reactionary
 		}
+	}
 	}
 	
 	option = { 
@@ -2116,7 +2115,7 @@ country_event = {
 			}
 	modifier = { 
 	factor = 1.4
-	ITA = { exists = yes governement = democracy } 
+	ITA = { exists = yes government = democracy } 
 			} 
 		}
 	}
@@ -2132,14 +2131,14 @@ country_event = {
 	trigger = { 
 	tag = VEN 
 	OR = { 
-	governement = theocracy
-	governement = hms_government 
-	governement = absolute_monarchy
-	governement = fascist_dictatorship
-	governement = bourgeois_dictatorship
-	governement = presidential_dictatorship
-	governement = prussian_constitutionalism
-	governement = proletarian_dictatorship
+	government = theocracy
+	government = hms_government 
+	government = absolute_monarchy
+	government = fascist_dictatorship
+	government = bourgeois_dictatorship
+	government = presidential_dictatorship
+	government = prussian_constitutionalism
+	government = proletarian_dictatorship
 		} 
 	NOT = { has_global_flag = end_doge }
 	}
@@ -2176,8 +2175,8 @@ country_event = {
 	trigger = { 
 	tag = VEN 
 	OR = { 
-	governement = merchant_republic 
-	governement = democracy
+	government = merchant_republic 
+	government = democracy
 		}
 	year = 1921
 	NOT = { year = 1922 }

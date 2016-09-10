@@ -3074,11 +3074,9 @@ province_event = {
 		}
 		modifier = {
 			factor = 1.1
-			AND = {
-				NOT = {
-					average_militancy = 5
-					average_consciousness = 5
-				}
+			NOT = {
+				average_militancy = 5
+				average_consciousness = 5
 			}
 		}
 		modifier = {

@@ -6,7 +6,7 @@ plurality = 0.0
 nationalvalue = nv_equality
 literacy = 0.46
 civilized = yes
-prestige = 5
+prestige = 15
 
 # Political reforms
 slavery = no_slavery
@@ -20,10 +20,9 @@ political_parties = non_secret_ballots
 minorities_reform = protected
 conscription = two_year_draft
 immigration_policy = quota_immigration
-conscription=two_year_draft
-pollution=no_controls
+pollution = no_controls
 child_labor = child_labor_legal
-arts_endowment=no_endowment
+arts_endowment = no_endowment
 education = elite
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -77,9 +76,5 @@ consciousness = 3
 nonstate_consciousness = 1
 
 schools = army_tech_school
-
-decision = TUS_setup
-
-set_country_flag = existing_country
 
 oob = "TUS_oob.txt"

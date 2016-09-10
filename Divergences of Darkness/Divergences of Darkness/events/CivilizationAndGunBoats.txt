@@ -41,7 +41,7 @@ country_event = {
 				factor = 0
 				OR = {
 					is_culture_group = east_asian
-					is_culture_group = far_east_asian
+					is_culture_group = chinese
 				}
 			}
 			modifier = {
@@ -191,7 +191,7 @@ country_event = {
 			modifier = {
 				factor = 0
 				OR = {
-					is_culture_group = far_east_asian
+					is_culture_group = chinese
 					is_culture_group = east_asian
 				}
 			}
@@ -3667,46 +3667,6 @@ country_event = {
 	option = {
 		name = "EVTOPTB13290"
 		years_of_research = 0.2
-	}
-}
-
-### UNCIV FLAVOR ###
-# SIA -- An Elephant for America?
-country_event = {
-	id = 13350
-	title = "EVTNAME13350"
-	desc = "EVTDESC13350"
-	picture = "elephant"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA13350"
-		relation = {
-			who = FROM
-			value = 30
-		}
-	}
-}
-
-#CHI -- Torching of The Summer Palace
-country_event = {
-	id = 13355
-	title = "EVTNAME13355"
-	desc = "EVTDESC13355"
-	news = yes
-	news_desc_long = "EVTDESC13355_NEWS_LONG"
-	news_desc_medium = "EVTDESC13355_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC13355_NEWS_SHORT"
-	major = yes
-	picture = "cityfire"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA13355"
-		prestige = -25
-		war_exhaustion = 5
 	}
 }
 

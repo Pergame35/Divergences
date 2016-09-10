@@ -11,68 +11,60 @@ country_event = {
 		name = "Support the unification"
 		ARC = { country_event = 333441 }
 		ai_chance = { 
-		     factor = 100
-         modifier = { 
-			     factor = 0
-			     AND = {
-            ARC = { NOT = { government = democracy } }  
-            ARC = { NOT = { government = hms_government } }
-          }
-			  }
+			factor = 100
+			modifier = { 
+				factor = 0
+				ARC = { NOT = { government = democracy } }  
+				ARC = { NOT = { government = hms_government } }
+			}
 		}
 	}
 	
 	option = {
 		name = "Demand additional conditions"  
 		ARC = { country_event = 333442 }
-		ai_chance = { 
-			factor = 50      
-      modifier = { 
-			   factor = 1.5 
-			   ARC = { NOT = { political_reform = proportional_representation } }
-			  }    
-      modifier = { 
-			   factor = 1.5 
-			   ARC = { NOT = { political_reform = yes_meeting } }
-			  }  
-      modifier = { 
-			   factor = 1.5 
-			   ARC = { NOT = { political_reform = free_press } }
-			  }  
-      modifier = { 
-			   factor = 1.5 
-			   AND = {
-            ARC = { NOT = { political_reform = non_secret_ballots } }  
-            ARC = { NOT = { political_reform = secret_ballots } }
-         }   
-			  }
-      modifier = { 
-			   factor = 2 
-			   AND = {
-            ARC = { NOT = { political_reform = open_immigration } }  
-            ARC = { NOT = { political_reform = naturalization } }
-         }   
-			  }
-      modifier = { 
-			   factor = 4 
-			   ARC = { NOT = { political_reform = protected  } }
-			  }  
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { voting_system = proportional_representation } }
+			}
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { public_meetings = yes_meeting } }
+			}
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { press_rights = free_press } }
+			}
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { political_parties = non_secret_ballots } }
+				ARC = { NOT = { political_parties = secret_ballots } }
+			}
+			modifier = {
+				factor = 2
+				ARC = { NOT = { immigration_policy = open_immigration } }
+				ARC = { NOT = { immigration_policy = naturalization } }
+			}
+			modifier = {
+				factor = 4
+				ARC = { NOT = { minorities_reform = protected } }
 			}
 		}
+	}
     
 	option = {
-		name = "Oppose the idea of panarcadianism"		
+		name = "Oppose the idea of panarcadianism"
 		ARC = { country_event = 333443 }
-		ai_chance = { 
+		ai_chance = {
 			factor = 20
-      modifier = { 
-			     factor = 20
-			     AND = {
-            ARC = { NOT = { government = democracy } }  
-            ARC = { NOT = { government = hms_government } }
-          }
-			  }
-		} 
+			modifier = { 
+				factor = 20
+				ARC = { NOT = { government = democracy } }
+				ARC = { NOT = { government = hms_government } }
+			}
+		}
 	}
 }
 
@@ -343,68 +335,60 @@ country_event = {
 		name = "Support the unification"
 		ARC = { country_event = 333445 }
 		ai_chance = { 
-		     factor = 100
-         modifier = { 
-			     factor = 0
-			     AND = {
-            ARC = { NOT = { government = democracy } }  
-            ARC = { NOT = { government = hms_government } }
-          }
-			  }
+			factor = 100
+			modifier = { 
+				factor = 0
+				ARC = { NOT = { government = democracy } }  
+				ARC = { NOT = { government = hms_government } }
+			}
 		}
 	}
 	
 	option = {
 		name = "Demand additional conditions"  
 		ARC = { country_event = 333446 }
-		ai_chance = { 
-			factor = 50      
-      modifier = { 
-			   factor = 1.5 
-			   ARC = { NOT = { political_reform = proportional_representation } }
-			  }    
-      modifier = { 
-			   factor = 1.5 
-			   ARC = { NOT = { political_reform = yes_meeting } }
-			  }  
-      modifier = { 
-			   factor = 1.5 
-			   ARC = { NOT = { political_reform = free_press } }
-			  }  
-      modifier = { 
-			   factor = 1.5 
-			   AND = {
-            ARC = { NOT = { political_reform = non_secret_ballots } }  
-            ARC = { NOT = { political_reform = secret_ballots } }
-         }   
-			  }
-      modifier = { 
-			   factor = 2 
-			   AND = {
-            ARC = { NOT = { political_reform = open_immigration } }  
-            ARC = { NOT = { political_reform = naturalization } }
-         }   
-			  }
-      modifier = { 
-			   factor = 4 
-			   ARC = { NOT = { political_reform = protected  } }
-			  }  
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { voting_system = proportional_representation } }
+			}
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { public_meetings = yes_meeting } }
+			}
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { press_rights = free_press } }
+			}
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { political_parties = non_secret_ballots } }
+				ARC = { NOT = { political_parties = secret_ballots } }
+			}
+			modifier = {
+				factor = 2
+				ARC = { NOT = { immigration_policy = open_immigration } }
+				ARC = { NOT = { immigration_policy = naturalization } }
+			}
+			modifier = {
+				factor = 4
+				ARC = { NOT = { minorities_reform = protected } }
 			}
 		}
+	}
     
 	option = {
-		name = "Oppose the idea of panarcadianism"		
+		name = "Oppose the idea of panarcadianism"
 		ARC = { country_event = 333447 }
-		ai_chance = { 
+		ai_chance = {
 			factor = 20
-      modifier = { 
-			     factor = 20
-			     AND = {
-            ARC = { NOT = { government = democracy } }  
-            ARC = { NOT = { government = hms_government } }
-          }
-			  }
-		} 
+			modifier = { 
+				factor = 20
+				ARC = { NOT = { government = democracy } }
+				ARC = { NOT = { government = hms_government } }
+			}
+		}
 	}
 }
 
@@ -675,68 +659,60 @@ country_event = {
 		name = "Support the unification"
 		ARC = { country_event = 333449 }
 		ai_chance = { 
-		     factor = 100
-         modifier = { 
-			     factor = 0
-			     AND = {
-            ARC = { NOT = { government = democracy } }  
-            ARC = { NOT = { government = hms_government } }
-          }
-			  }
+			factor = 100
+			modifier = { 
+				factor = 0
+				ARC = { NOT = { government = democracy } }  
+				ARC = { NOT = { government = hms_government } }
+			}
 		}
 	}
 	
 	option = {
 		name = "Demand additional conditions"  
 		ARC = { country_event = 333450 }
-		ai_chance = { 
-			factor = 50      
-      modifier = { 
-			   factor = 1.5 
-			   ARC = { NOT = { political_reform = proportional_representation } }
-			  }    
-      modifier = { 
-			   factor = 1.5 
-			   ARC = { NOT = { political_reform = yes_meeting } }
-			  }  
-      modifier = { 
-			   factor = 1.5 
-			   ARC = { NOT = { political_reform = free_press } }
-			  }  
-      modifier = { 
-			   factor = 1.5 
-			   AND = {
-            ARC = { NOT = { political_reform = non_secret_ballots } }  
-            ARC = { NOT = { political_reform = secret_ballots } }
-         }   
-			  }
-      modifier = { 
-			   factor = 2 
-			   AND = {
-            ARC = { NOT = { political_reform = open_immigration } }  
-            ARC = { NOT = { political_reform = naturalization } }
-         }   
-			  }
-      modifier = { 
-			   factor = 4 
-			   ARC = { NOT = { political_reform = protected  } }
-			  }  
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { voting_system = proportional_representation } }
+			}
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { public_meetings = yes_meeting } }
+			}
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { press_rights = free_press } }
+			}
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { political_parties = non_secret_ballots } }
+				ARC = { NOT = { political_parties = secret_ballots } }
+			}
+			modifier = {
+				factor = 2
+				ARC = { NOT = { immigration_policy = open_immigration } }
+				ARC = { NOT = { immigration_policy = naturalization } }
+			}
+			modifier = {
+				factor = 4
+				ARC = { NOT = { minorities_reform = protected } }
 			}
 		}
+	}
     
 	option = {
 		name = "Oppose the idea of panarcadianism"		
 		ARC = { country_event = 333451 }
-		ai_chance = { 
+		ai_chance = {
 			factor = 20
-      modifier = { 
-			     factor = 20
-			     AND = {
-            ARC = { NOT = { government = democracy } }  
-            ARC = { NOT = { government = hms_government } }
-          }
-			  }
-		} 
+			modifier = { 
+				factor = 20
+				ARC = { NOT = { government = democracy } }
+				ARC = { NOT = { government = hms_government } }
+			}
+		}
 	}
 }
 
@@ -1480,68 +1456,60 @@ country_event = {
 		name = "Support the unification"
 		ARC = { country_event = 333460 }
 		ai_chance = { 
-		     factor = 100
-         modifier = { 
-			     factor = 0
-			     AND = {
-            ARC = { NOT = { government = democracy } }  
-            ARC = { NOT = { government = hms_government } }
-          }
-			  }
+			factor = 100
+			modifier = { 
+				factor = 0
+				ARC = { NOT = { government = democracy } }  
+				ARC = { NOT = { government = hms_government } }
+			}
 		}
 	}
 	
 	option = {
 		name = "Demand additional conditions"  
 		ARC = { country_event = 333461 }
-		ai_chance = { 
-			factor = 50      
-      modifier = { 
-			   factor = 1.5 
-			   ARC = { NOT = { political_reform = proportional_representation } }
-			  }    
-      modifier = { 
-			   factor = 1.5 
-			   ARC = { NOT = { political_reform = yes_meeting } }
-			  }  
-      modifier = { 
-			   factor = 1.5 
-			   ARC = { NOT = { political_reform = free_press } }
-			  }  
-      modifier = { 
-			   factor = 1.5 
-			   AND = {
-            ARC = { NOT = { political_reform = non_secret_ballots } }  
-            ARC = { NOT = { political_reform = secret_ballots } }
-         }   
-			  }
-      modifier = { 
-			   factor = 2 
-			   AND = {
-            ARC = { NOT = { political_reform = open_immigration } }  
-            ARC = { NOT = { political_reform = naturalization } }
-         }   
-			  }
-      modifier = { 
-			   factor = 4 
-			   ARC = { NOT = { political_reform = protected  } }
-			  }  
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { voting_system = proportional_representation } }
+			}
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { public_meetings = yes_meeting } }
+			}
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { press_rights = free_press } }
+			}
+			modifier = {
+				factor = 1.5
+				ARC = { NOT = { political_parties = non_secret_ballots } }
+				ARC = { NOT = { political_parties = secret_ballots } }
+			}
+			modifier = {
+				factor = 2
+				ARC = { NOT = { immigration_policy = open_immigration } }
+				ARC = { NOT = { immigration_policy = naturalization } }
+			}
+			modifier = {
+				factor = 4
+				ARC = { NOT = { minorities_reform = protected } }
 			}
 		}
+	}
     
 	option = {
 		name = "Oppose the idea of panarcadianism"		
 		ARC = { country_event = 333462 }
-		ai_chance = { 
+		ai_chance = {
 			factor = 20
-      modifier = { 
-			     factor = 20
-			     AND = {
-            ARC = { NOT = { government = democracy } }  
-            ARC = { NOT = { government = hms_government } }
-          }
-			  }
-		} 
+			modifier = { 
+				factor = 20
+				ARC = { NOT = { government = democracy } }
+				ARC = { NOT = { government = hms_government } }
+			}
+		}
 	}
 }
 
@@ -1962,10 +1930,10 @@ country_event = {
 	prestige = 25 
 	money = -1000000
 	random_owned = { 
-		owner = { 
-		has_country_flag = vinlandic_arcadia
-			}
-		country_event = 333474
+		limit = {
+			owner = { has_country_flag = vinlandic_arcadia }
+		}
+		owner = { country_event = 333474 }
 		}
 
 	}

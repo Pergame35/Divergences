@@ -92,7 +92,7 @@ jewish_cultures = {
 		Sassoon Sebag
 		}
 	}
-	union = ISR
+	#union = ISR
 }
 
 
@@ -1934,7 +1934,7 @@ chinese = {
 	}
 	hakka = {
 		color = {89 63 24}
-		first_names = { Hong Feng Shi Li Chen Liu Qiu Sun Soong Liao Chen Xue Zhang Xie Wu Shu Tsai Deng Zhen Huang Ye Yang
+		first_names = { Hong Feng Shi Li Chen Liu Qiu Sun Soong Liao Xue Zhang Xie Wu Shu Tsai Deng Zhen Huang Ye Yang
 		}
 		last_names = { Xiuquan Yunshan Xiuqing Dakai Yucheng Rengan Zicai Yongfu Fengjia Yatsen
 		}
@@ -2344,11 +2344,11 @@ scandinavian_american = {
 			Brunis Bruno Eduards Eliass Elmars Emils Evgenijs Filips Fricis Gustavs
 			Leo Mark Martins Mihails Mikelis Nikolajs Oskars Pauls Peteris Rihards
 			Roberts Romans Sandis Sergejs Valdemars Valerians Valter Vilis Vladimirs 
-			Adelbert Adolf Albrecht Alexander Alfred August Bernhard Burkhard Dieter
-			Eduard Edwin Erwin Erich Ernst Florian Franz Friedrich Fritz Georg Günther
-			Gustav Hasso Heinrich Helmuth Hermann Hugo Joachim Johann Jürgen Karl
+			Adelbert Adolf Albrecht Alexander Alfred Bernhard Burkhard Dieter
+			Edwin Erwin Erich Florian Franz Friedrich Fritz Günther
+			Hasso Heinrich Helmuth Hermann Joachim Johann Jürgen Karl
 			Konrad Leonhard Leopold Ludwig Lukas Manfred Maximilian Michael Nikolaus 
-			Pascal Paul Peter Reinhard Rudolf Ruprecht Stefan Theodor Wilhelm Wolfgang
+			Pascal Paul Peter Reinhard Ruprecht Stefan Theodor Wilhelm Wolfgang
 		}
 
 		last_names = {
@@ -2660,14 +2660,6 @@ west_african = {
 		}
 
 		last_names = { Sidibe Suso Jammeh Jaabi Keita Diawara Konneh Kanneh Conde
-		}
-	}
-	maures = {
-		color = {252 125 78}
-		first_names = { Abbas Malamah Abu "Ibn Muhammad" Tariq Farraj Galib Hajib Amira Asim Hasan Hayyan Jalaf Mansur Maymun Mujahid Mutarrif Nasr Tabit Tamim Ubada Ufayr Umar Wasil Yazid Yunus Zuhayr
-		}
-
-		last_names = { Ziyad al-Rahman Firnas al-Majriti al-Zahrawi al-Zarqali Bajjah Zuhr al-Idrisi Tufail Rushd al-Baitar Battuta Khaldon al-Qalasadi 
 		}
 	}
 	mossi = {
@@ -2994,14 +2986,6 @@ east_african = {
 		}
 
 		last_names = { Ibrahim Adeer Hassan  Gurey Hirsi Doreh Dekiye Afrah Mujahid Kenadid
-		}
-	}
-	sudanese = {
-		color = {241 241 78}
-		first_names = { Muhammad Abdullah Abbas said Ismail Mansur Rahman Abdallahi Hassan Malusi Tahir Wiraj Amsalu Nijam Bakri
-		}
-
-		last_names = { Ahmad Ali Zubayr Digna Azrak Hammuda al-Tasashi Nujumi
 		}
 	}
 	sukuma = {

@@ -6701,7 +6701,7 @@ BUILDING_DONE_LOG;$NAME$ has been built in $PROV$.;$NAME$ a ÈtÈ construit dans l
 BUILDING_DONE_BTN1;OK;OK;OK;Zbudowano $NAME$ w prowincji $PROV$.;Se ha construido $NAME$ en $PROV$.;$NAME$: costruito in $PROV$.;$NAME$ Èp¸lt $PROV$ nev˚ tartom·nyodban.;$NAME$ byla postavena v $PROV$.;;;;;;;x;;;;;;;;;;;;;;
 BUILDING_DONE_BTN2;OK;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
 BUILDING_DONE_BTN3;GOTO;ALLER ¿;Goto;OK;Aceptar;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
-BUILDING_DONE_MAP;$NAME$ has been built in $PROV$.;$NAME$ a ÈtÈ construit dans la province : $PROV$.;$NAME$ wurde in $PROV$ gebaut.;IDè DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
+BUILDING_DONE_MAP;$NAME$ has been built in $PROV$.;$NAME$ a ÈtÈ construit dans la province : $PROV$.;$NAME$ wurde in $PROV$ gebaut.;ID DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
 WE_NO_LONGER_GREAT_POWER_SETUP;When we are no longer a great power;Si nous ne sommes plus une grande puissance;Wir sind keine Groﬂmacht mehr.;Zbudowano $NAME$ w prowincji $PROV$.;Se ha construido $NAME$ en $PROV$.;$NAME$: costruito in $PROV$.;$NAME$ Èp¸lt $PROV$ nev˚ tartom·nyodban.;$NAME$ byla postavena v $PROV$.;;;;;;;x;;;;;;;;;;;;;;
 WE_NO_LONGER_GREAT_POWER_HEADER;$MESSENGER$;$MESSENGER$;$MESSENGER$;;;;;;;;;;;;x;;;;;;;;;;;;;;
 WE_NO_LONGER_GREAT_POWER_1;Our country has fallen in status;Notre pays a changÈ de statut;Unser Land hat an Status eingeb¸ﬂt;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -9762,7 +9762,7 @@ EVENTHAPPENOTHEROPTION_LOG;Event: '$OPTION$' in '$EVENT$' for $COUNTRY$.;…vÈneme
 EVENTHAPPENOTHEROPTION_BTN1;OK;OK;OK;$COUNTRY$. $EVENT$. $OPTION$;Suceso: '$OPTION$' en '$EVENT$' para $COUNTRY$.;Evento: $OPTION$ per $EVENT$ in $COUNTRY$.;EsemÈny: $COUNTRY$ nemzete a/az $OPTION$ lehetısÈget v·lasztotta erre az esemÈnyre v·laszolva: $EVENT$.;Ud·lost: $OPTION$ v $EVENT$ pro $COUNTRY$.;;;;;;;x;;;;;;;;;;;;;;
 EVENTHAPPENOTHEROPTION_BTN2;OK;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
 EVENTHAPPENOTHEROPTION_BTN3;GOTO;ALLER ¿;Goto;OK;Aceptar;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
-EVENTHAPPENOTHEROPTION_MAP;*;*;*;IDè DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
+EVENTHAPPENOTHEROPTION_MAP;*;*;*;ID DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
 EVENTHAPPENOTHER_SETUP;When a historical event with a single choice happens to another country.;Si un ÈvÈnement historique ‡ choix unique a lieu dans un autre pays.;Wenn sich in einem anderen Land etwas Historisches mit nur einer Auswahlmˆglichkeit ereignet Ö ;*;*;*;*;;;;;;;;x;;;;;;;;;;;;;;
 EVENTHAPPENOTHER_HEADER;The Foreign Minister reports;Le ministre des Affaires ÈtrangËres rapporte;:;Kiedy w innym kraju ma miejsce historyczne wydarzenie z jedynπ moøliwπ opcjπ wyboru;A otro paÌs le ocurre un suceso histÛrico con una ˙nica opciÛn.;Quando un evento storico a scelta singola si verifica in un altro paese.;Mikor egy tˆrtÈnelmi esemÈny kˆvetkezmÈnyekÈnt csak egy v·laszt·si lehetısÈge van egy m·sik orsz·gnak.;Kdyû v jinÈ zemi dojde k historickÈ ud·losti s jednou volbou.;;;;;;;x;;;;;;;;;;;;;;
 EVENTHAPPENOTHER_1;$COUNTRY$;$COUNTRY$;$COUNTRY$;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -9840,7 +9840,7 @@ WEDEFECT_LOG;$PROV$ defected to $COUNTRY$.;$PROV$ est passÈe ‡ $COUNTRY$.;$PROV$
 WEDEFECT_BTN1;OK;OK;OK;Prowincja $PROV$ przesz≥a na stronÍ paÒstwa $COUNTRY$.;$PROV$ se ha pasado al bando de $COUNTRY$.;$PROV$ Ë passata a: $COUNTRY$.;$PROV$ $COUNTRY$ nemzetÈhez p·rtolt.;$PROV$ p¯eöla k $COUNTRY$.;;;;;;;x;;;;;;;;;;;;;;
 WEDEFECT_BTN2;OK;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
 WEDEFECT_BTN3;GOTO;ALLER ¿;Goto;OK;Aceptar;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
-WEDEFECT_MAP;Defection!;DÈfection !;Sezession!;IDè DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
+WEDEFECT_MAP;Defection!;DÈfection !;Sezession!;ID DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
 THEYDEFECT_SETUP;When one of their provinces defect to us.;Si l'une de leurs provinces nous rejoint.;Wenn sich eine ihrer Provinzen uns anschlieﬂt.;Zdrada!;°TraiciÛn!;Defezione!;Elp·rtol·s!;Ztr·ta!;;;;;;;x;;;;;;;;;;;;;;
 THEYDEFECT_HEADER;A new province!;Nouvelle province !;Eine neue Provinz!;Kiedy jedna z obcych prowincji przechodzi na naszπ stronÍ;Cuando una de sus provincias se pasa a nuestro bando.;Quando una delle loro province passa a noi;Mikor az egyik tartom·nyunk hozz·nk p·rtol.;Kdyû jedna z jejich provinciÌ p¯ejde k n·m.;;;;;;;x;;;;;;;;;;;;;;
 THEYDEFECT_1;The province of;La province :;Die Provinz;Nowa prowincja!;°Una nueva provincia!;Una nuova provincia!;Egy ˙j tartom·ny!;Nov· provincie!;;;;;;;x;;;;;;;;;;;;;;
@@ -9853,7 +9853,7 @@ THEYDEFECT_LOG;$PROV$ defected to us.;$PROV$ nous a rejoint.;$PROV$ hat sich uns
 THEYDEFECT_BTN1;OK;OK;OK;Prowincja $PROV$ przesz≥a na naszπ stronÍ.;$PROV$ se ha pasado a nuestro bando.;$PROV$ Ë passata a noi.;$PROV$ mellÈnk p·rtolt.;$PROV$ p¯eöla k n·m.;;;;;;;x;;;;;;;;;;;;;;
 THEYDEFECT_BTN2;OK;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
 THEYDEFECT_BTN3;GOTO;ALLER ¿;Goto;OK;Aceptar;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
-THEYDEFECT_MAP;Defection!;DÈfection !;Sezession!;IDè DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
+THEYDEFECT_MAP;Defection!;DÈfection !;Sezession!;ID DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
 OTHERDEFECT_SETUP;When a province of one nation defects to another (neither is us).;Si l'une des provinces d'une nation passe ‡ une autre (exceptÈ ‡ la nÙtre).;Wenn sich eine Provinz eines Landes einem anderen anschlieﬂt (keines von beiden sind wir).;Zdrada!;°TraiciÛn!;Defezione!;Elp·rtol·s!;Ztr·ta!;;;;;;;x;;;;;;;;;;;;;;
 OTHERDEFECT_HEADER;Defection!;DÈfection !;Sezession!;Kiedy prowincja jednego z paÒstw przechodzi na stronÍ innego kraju (nie dotyczy naszego kraju);Una provincia de una naciÛn cambia al bando de otra (no nuestra).;Quando la provincia di una nazione passa a un'altra (e noi non siamo nessuna delle due);Mikor egy nemzet ˙gy dˆnt, hogy egy m·sik nemzethez p·rtol (de nem hozz·nk).;Kdyû provincie jednoho n·roda p¯ejde k jinÈmu n·rodu (nejedn· se o n·s).;;;;;;;x;;;;;;;;;;;;;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 OTHERDEFECT_1;The province of;La province :;Die Provinz;Zdrada!;°TraiciÛn!;Defezione!;Elp·rtol·s!;Ztr·ta!;;;;;;;x;;;;;;;;;;;;;;
@@ -9866,7 +9866,7 @@ OTHERDEFECT_LOG;$PROV$ defected to $COUNTRY$.;$PROV$ est passÈe ‡ $COUNTRY$.;$PR
 OTHERDEFECT_BTN1;OK;OK;OK;Prowincja $PROV$ przesz≥a na stronÍ paÒstwa $COUNTRY$.;$PROV$ se ha pasado al bando de $COUNTRY$.;$PROV$ Ë passata a: $COUNTRY$.;$PROV$ $COUNTRY$ nemzetÈhez p·rtolt.;$PROV$ p¯eöla k $COUNTRY$.;;;;;;;x;;;;;;;;;;;;;;
 OTHERDEFECT_BTN2;OK;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
 OTHERDEFECT_BTN3;GOTO;ALLER ¿;Goto;OK;Aceptar;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
-OTHERDEFECT_MAP;Defection!;DÈfection !;Sezession!;IDè DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
+OTHERDEFECT_MAP;Defection!;DÈfection !;Sezession!;ID DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
 MAJOREVENTHAPPENOTHEROPTION_SETUP;When a Major event with multiple choice happens to another country.;Si un ÈvÈnement ‡ choix multiple majeur se produit pour un autre pays.;Wenn ein wichtiges Ereignis mit mehreren Auswahlmˆglichkeiten f¸r ein anderes Land eintritt.;Zdrada!;°TraiciÛn!;Defezione!;Elp·rtol·s!;Ztr·ta!;;;;;;;x;;;;;;;;;;;;;;
 MAJOREVENTHAPPENOTHEROPTION_HEADER;The Foreign Ministry reports;Selon les rapports de $foreign_minister$ concernant;$Auﬂenminister$ berichtet:;;A otro paÌs le ocurre un suceso importante con m˙ltiples opciones.;;;;;;;;;;x;;;;;;;;;;;;;;
 MAJOREVENTHAPPENOTHEROPTION_1;$COUNTRY$;$COUNTRY$;$COUNTRY$;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -9879,7 +9879,7 @@ MAJOREVENTHAPPENOTHEROPTION_LOG;Major Event: $OPTION$ in $EVENT$ for $COUNTRY$.;
 MAJOREVENTHAPPENOTHEROPTION_BTN1;OK;OK;OK;$COUNTRY$. $EVENT$. $OPTION$;Suceso importante: $OPTION$ en $EVENT$ para $COUNTRY$.;Evento: $OPTION$ per $EVENT$ in $COUNTRY$.;EsemÈny: $COUNTRY$ nemzete a/az $OPTION$ lehetısÈget v·lasztotta erre az esemÈnyre v·laszolva: $EVENT$.;Ud·lost: $OPTION$ v $EVENT$ pro $COUNTRY$.;;;;;;;x;;;;;;;;;;;;;;
 MAJOREVENTHAPPENOTHEROPTION_BTN2;OK;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
 MAJOREVENTHAPPENOTHEROPTION_BTN3;GOTO;ALLER ¿;Goto;OK;Aceptar;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
-MAJOREVENTHAPPENOTHEROPTION_MAP;*;*;*;IDè DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
+MAJOREVENTHAPPENOTHEROPTION_MAP;*;*;*;ID DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
 MAJOREVENTHAPPENOTHER_SETUP;When a Major event with a single choice happens to another country.;Si un ÈvÈnement ‡ choix unique se produit pour un autre pays.;Wenn ein wichtiges Ereignis mit nur einer Auswahlmˆglichkeit f¸r ein anderes Land eintritt.;*;*;*;*;;;;;;;;x;;;;;;;;;;;;;;
 MAJOREVENTHAPPENOTHER_HEADER;The Foreign Ministry reports;Selon les rapports de $foreign_minister$ concernant;$Auﬂenminister$ berichtet:;;A otro paÌs le ocurre un suceso importante con una ˙nica opciÛn.;;;;;;;;;;x;;;;;;;;;;;;;;
 MAJOREVENTHAPPENOTHER_1;$COUNTRY$;$COUNTRY$;$COUNTRY$;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -15228,7 +15228,7 @@ UNITARRIVED_LOG;$NAME$ arrived in $PROV$;$NAME$ est arrivÈ dans la province $PRO
 UNITARRIVED_BTN1;OK;OK;OK;$NAME$ przyby≥ do prowincji $PROV$;$NAME$ llegÛ a $PROV$;;$NAME$ Ë arrivato in $PROV$Ë arrivato in;$NAME$ dorazil do $PROV$;;;;;;;x;;;;;;;;;;;;;;
 UNITARRIVED_BTN2;OK;OK;OK;OK;OK;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
 UNITARRIVED_BTN3;GOTO;ALLER ¿;Goto;OK;OK;OK;Rendben;OK;;;;;;;x;;;;;;;;;;;;;;
-UNITARRIVED_MAP;*;*;*;IDè DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
+UNITARRIVED_MAP;*;*;*;ID DO;Ir allÌ;ANDARE;Menj ide:;PÿEJÕT NA;;;;;;;x;;;;;;;;;;;;;;
 UNIT_ATTACK_INFO_NAVY;With a total of $CAP$ capital ships, $SCR$ screens & $TRA$ transports.;Avec un total de $CAP$ b‚timents de ligne, $SCR$ escortes et $TRA$ transporteurs.;Mit insgesamt $CAP$ Groﬂkampfschiffen, $SCR$ Vorhutschiffen & $TRA$ Transportschiffen.;*;*;*;*;*;;;;;;;x;;;;;;;;;;;;;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 UNIT_ATTACK_INFO_ARMY;With a total of $BRIG$ brigades, totalling $MEN$ effective soldiers.;Avec un total de $BRIG$ brigades pour un effectif de $MEN$ soldats.;Mit insgesamt $BRIG$ Brigaden, die $MEN$ kampfbereite Soldaten haben.;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ATTACKTHEM_SETUP;When one of our land units attacks the enemy ;Si l'une de nos unitÈs terrestres attaque l'ennemi. ;Wenn eine unserer Landeinheiten den Feind angreift;;;;;;;;;;;;x;;;;;;;;;;;;;;

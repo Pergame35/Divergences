@@ -211,7 +211,7 @@ political_decisions = {
 	set_country_flag = apache_culture 
 	add_accepted_culture = apache
 	DIN = { set_country_flag = civilize_after_release }
-	any_country = { limit = { tag = LST NOT = { has_accepted_culture = apache} } add_accepted_culture = apache }
+	any_country = { limit = { tag = LST NOT = { accepted_culture = apache} } add_accepted_culture = apache }
 	}
 	
 	}

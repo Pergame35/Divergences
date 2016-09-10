@@ -102,7 +102,7 @@ form_iberia = {
 			has_country_flag = iberian_union
 			NOT = { exists = CAT }
 			NOT = { has_country_flag = catalan_integration }
-			NOT = { culture = catalan }
+			NOT = { accepted_culture = catalan }
 		}
 		
 		allow = {
@@ -139,7 +139,7 @@ form_iberia = {
 	
 	emperor_of_india = { 
 	
-	picture = Imperio
+	picture = "emperor_of_india"
 	
 	potential = { 
 	tag = SPA  

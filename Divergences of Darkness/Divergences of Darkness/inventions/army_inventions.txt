@@ -204,7 +204,6 @@ gas_attack_capability = {
 	limit = {
 		deep_defense_system = 1 
 		organic_chemistry = 1
-		has_country_flag = existing_country
 	}
 	chance = {
 		base = 0
@@ -232,7 +231,6 @@ gas_defense_capability = {
 	limit = {
 		deep_defense_system = 1 
 		organic_chemistry = 1
-		has_country_flag = existing_country
 	}
 	chance = {
 		base = 0
@@ -341,7 +339,6 @@ stormtrooper_training = {
 	limit = {
 		infiltration = 1
 		bolt_action_rifles = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -374,7 +371,6 @@ tank_experiments = {
 	limit = {
 		infiltration = 1 
 		combustion_engine = 1
-		has_country_flag = existing_country
 	}
 	chance = {
 		base = 3
@@ -405,7 +401,6 @@ tank_exploits = {
 	limit = {
 		infiltration = 1 
 		invention = tank_experiments
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -487,7 +482,6 @@ human_wave_vs_spearhead = {
 interwar_infantry = {
 	limit = {
 		modern_divisional_structure = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -509,7 +503,6 @@ interwar_infantry = {
 interwar_cavalry = {
 	limit = {
 		modern_divisional_structure = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -547,7 +540,6 @@ tankette = {
 	limit = {
 		heavy_armament_dunno = 1 
 		invention = tank_experiments
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -576,7 +568,6 @@ light_tank = {
 	limit = {
 		heavy_armament_dunno = 1
 		invention = tank_experiments
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -605,7 +596,6 @@ armoured_cars = {
 	limit = {
 		heavy_armament_dunno = 1
 		combustion_engine = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1060,7 +1050,6 @@ early_interwar_fighters = {
 late_interwar_fighters = {
 	limit = {
 		aeronautics = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1101,7 +1090,6 @@ t_air_superiority = {
 flying_circus_doctrine = {
 	limit = {
 		aeronautics = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1127,7 +1115,6 @@ flying_circus_doctrine = {
 force_substitution_doctrine = {
 	limit = {
 		aeronautics = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1153,7 +1140,6 @@ force_substitution_doctrine = {
 battlefield_destruction_doctrine = {
 	limit = {
 		aeronautics = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1179,7 +1165,6 @@ battlefield_destruction_doctrine = {
 operational_destruction_doctrine = {
 	limit = {
 		aeronautics = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1205,7 +1190,6 @@ operational_destruction_doctrine = {
 strategic_destruction_doctrine = {
 	limit = {
 		aeronautics = 1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1412,7 +1396,6 @@ army_literate_ncos = {
 	limit = {
 		army_nco_training = 1
 		functionalism =  1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1436,7 +1419,6 @@ nco_field_training = {
 	limit = {
 		army_nco_training = 1 
 		functionalism =  1
-		has_country_flag = existing_country
 	}
 	news = no
 	chance = {

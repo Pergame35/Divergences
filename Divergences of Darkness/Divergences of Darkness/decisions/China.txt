@@ -9,7 +9,7 @@ political_decisions = {
   		}
   		
   		allow = {
-        	civilised = yes
+        	civilized = yes
   			NOT = { war = yes }
   			CHI = {
 				all_core = {
@@ -50,17 +50,6 @@ political_decisions = {
   					}
   				}
   				annex_to = THIS
-  			}
-			any_country = {
-  				limit = {
-  					OR = {
-  						tag = DAX
-						tag = TAI
-						tag = SHU
-						tag = MIG
-  					}
-  				}
-  				clr_country_flag = unrecognized_state
   			}
   			any_owned = {
   				limit = {
@@ -163,7 +152,7 @@ political_decisions = {
   		}
   		
   		allow = {
-        civilised = yes
+        civilized = yes
   			NOT = { war = yes }
   			CHI = {
   				all_core = {
@@ -201,17 +190,6 @@ political_decisions = {
   					}
   				}
   				annex_to = THIS
-  			}
-			any_country = {
-  				limit = {
-  					OR = {
-  						tag = DAX
-						tag = TAI
-						tag = SHU
-						tag = MIG
-  					}
-  				}
-  				clr_country_flag = unrecognized_state
   			}
   			any_owned = {
   				limit = {
@@ -303,7 +281,7 @@ political_decisions = {
   		}
   		
   		allow = { 
-        civilised = yes
+        civilized = yes
   			NOT = { war = yes }
   			CHI = {
   				all_core = {
@@ -345,17 +323,6 @@ political_decisions = {
   					}
   				}
   				annex_to = THIS
-  			}
-			any_country = {
-  				limit = {
-  					OR = {
-  						tag = DAX
-						tag = TAI
-						tag = SHU
-						tag = MIG
-  					}
-  				}
-  				clr_country_flag = unrecognized_state
   			}
 			any_owned = {
 				limit = {
@@ -447,7 +414,7 @@ political_decisions = {
   		}
   		
   		allow = { 
-        civilised = yes
+        civilized = yes
   			NOT = { war = yes }
   			CHI = {
 				all_core = {
@@ -471,7 +438,6 @@ political_decisions = {
   			prestige = 30
   			add_accepted_culture = beifaren
   			add_accepted_culture = nanfaren
-			clr_country_flag = unrecognized_state
 			remove_country_modifier = tungning_nerf
   			change_tag = CHI   
         1499 = { add_core = THIS }
@@ -490,17 +456,6 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
-			any_country = {
-  				limit = {
-  					OR = {
-  						tag = DAX
-						tag = TAI
-						tag = SHU
-						tag = MIG
-  					}
-  				}
-  				clr_country_flag = unrecognized_state
-  			}
 			any_owned = {
 				limit = {
 					OR = {
@@ -592,7 +547,7 @@ political_decisions = {
   		}
   		
   		allow = {  
-        civilised = yes
+		civilized = yes
   			NOT = { war = yes }
   			CHI = {
 				all_core = {
@@ -601,13 +556,6 @@ political_decisions = {
   						owner = {
   							in_sphere = THIS
   						}
-						province_id = 1498
-						province_id = 1538
-						province_id = 1566
-						province_id = 1481
-						province_id = 1569
-						province_id = 1606
-						province_id = 1496
 					}
 				}
 			}
@@ -626,25 +574,7 @@ political_decisions = {
 					}
 				}
 				annex_to = THIS
-				province_id = 1498
-				province_id = 1538
-				province_id = 1566
-				province_id = 1481
-				province_id = 1569
-				province_id = 1606
-				province_id = 1496
 			}
-			any_country = {
-  				limit = {
-  					OR = {
-  						tag = DAX
-						tag = TAI
-						tag = SHU
-						tag = MIG
-  					}
-  				}
-  				clr_country_flag = unrecognized_state
-  			}
 			any_owned = {
 				limit = {
 					OR = {
@@ -731,7 +661,7 @@ political_decisions = {
   		}
   		
   		allow = { 
-        civilised = yes
+        civilized = yes
   			NOT = { war = yes }
   			CHI = {
 				all_core = {
@@ -769,17 +699,6 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
-			any_country = {
-  				limit = {
-  					OR = {
-  						tag = DAX
-						tag = TAI
-						tag = SHU
-						tag = MIG
-  					}
-  				}
-  				clr_country_flag = unrecognized_state
-  			}
 			any_owned = {
 				limit = {
 					OR = {

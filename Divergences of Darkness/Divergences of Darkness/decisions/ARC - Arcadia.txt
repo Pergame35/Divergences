@@ -406,14 +406,14 @@ political_decisions = {
       war = no 
       money = 20000
       NOT = { average_militancy = 3 }
-		  political_reform = naturalization
-		  political_reform = universal_voting    
-		  political_reform = population_equal_weight
-		  political_reform = secret_ballots  
-		  political_reform = free_press    
-		  political_reform = yes_meeting   
-		  political_reform = proportional_representation
-      political_reform = protected           
+		  immigration_policy = naturalization
+		  vote_franschise = universal_voting    
+		  upper_house_composition = population_equal_weight
+		  political_parties = secret_ballots  
+		  press_rights = free_press    
+		  public_meetings = yes_meeting   
+		  voting_system = proportional_representation
+      minorities_reform = protected           
       ARC = {
 			all_core = {
 						owned_by = THIS
@@ -607,9 +607,9 @@ political_decisions = {
 			limit = {
 			2213 = { NOT = { is_core = THIS } } 
 			}
-			SFJ_2213 = { add_core = THIS }
-			}
+			HAI_2213 = { add_core = THIS }
 		}
+	}
 	}
 	
 	Western_border_treaty = { 

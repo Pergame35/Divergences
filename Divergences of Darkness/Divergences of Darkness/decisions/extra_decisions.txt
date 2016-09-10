@@ -11,7 +11,6 @@ political_decisions = {
 				government = prussian_constitutionalism
 				government = hms_government
 			}
-			has_global_flag = startup
 		}
 		
 		allow = {
@@ -102,7 +101,6 @@ political_decisions = {
 				has_country_modifier = futile
 			}
 			flintlock_rifles = 1
-			has_global_flag = startup
 		}
 		allow = {
 			is_vassal = no
@@ -765,7 +763,6 @@ political_decisions = {
 				has_country_modifier = parade
 			}
 			flintlock_rifles = 1
-			has_global_flag = startup
 		}
 		allow = {
 			is_vassal = no

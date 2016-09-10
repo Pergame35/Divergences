@@ -29,9 +29,7 @@ country_event = {
         }
         any_country = {
             limit = {
-                OR = {
-                    alliance_with = FROM
-                }
+                alliance_with = FROM
                 war_with = THIS
             }
             end_war = THIS

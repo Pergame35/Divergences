@@ -77,15 +77,15 @@ province_event = {
 		}
 		modifier = {
 			factor = 1.5
-			NOT = { social_reform_want = 0.05 }
+			owner = { NOT = { social_reform_want = 0.05 } }
 		}
 		modifier = {
 			factor = 0.9
-			social_reform_want = 0.05
+			owner = { social_reform_want = 0.05 }
 		}
 		modifier = {
 			factor = 0.9
-			social_reform_want = 0.1
+			owner = { social_reform_want = 0.1 }
 		}
 		modifier = {
 			factor = 0.9
@@ -467,15 +467,15 @@ province_event = {
 		}
 		modifier = {
 			factor = 1.5
-			NOT = { social_reform_want = 0.05 }
+			owner = { NOT = { social_reform_want = 0.05 } }
 		}
 		modifier = {
 			factor = 0.9
-			social_reform_want = 0.05
+			owner = { social_reform_want = 0.05 }
 		}
 		modifier = {
 			factor = 0.9
-			social_reform_want = 0.1
+			owner = { social_reform_want = 0.1 }
 		}
 		modifier = {
 			factor = 0.9
@@ -846,15 +846,15 @@ province_event = {
 		}
 		modifier = {
 			factor = 1.5
-			NOT = { social_reform_want = 0.05 }
+			owner = { NOT = { social_reform_want = 0.05 } }
 		}
 		modifier = {
 			factor = 0.9
-			social_reform_want = 0.05
+			owner = { social_reform_want = 0.05 }
 		}
 		modifier = {
 			factor = 0.9
-			social_reform_want = 0.1
+			owner = { social_reform_want = 0.1 }
 		}
 		modifier = {
 			factor = 0.9
@@ -4774,15 +4774,15 @@ province_event = {
 		}
 		modifier = {
 			factor = 2
-			NOT = { social_reform_want = 0.05 }
+			owner = { NOT = { social_reform_want = 0.05 } }
 		}
 		modifier = {
 			factor = 0.9
-			social_reform_want = 0.1
+			owner = { social_reform_want = 0.1 }
 		}
 		modifier = {
 			factor = 0.9
-			social_reform_want = 0.2
+			owner = { social_reform_want = 0.2 }
 		}
 		modifier = {
 			factor = 0.9

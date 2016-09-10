@@ -94,13 +94,13 @@ political_decisions = {
 				tag = RUS
 			}
 			allow = {
-				AND = {
 					NOT = { 
-						has_country_flag = baltic_focus
-						has_country_flag = panslavic_focus
-						has_country_flag = southern_focus
+						OR = {
+							has_country_flag = baltic_focus
+							has_country_flag = panslavic_focus
+							has_country_flag = southern_focus
+						}
 					}
-				}
 			}
 			effect = {
 				prestige = 10
@@ -122,16 +122,8 @@ political_decisions = {
 
 		#Must control all of Estonia and Karelia
 		allow = {
-			RUS_339 = {
-				all_core = {
-					owned_by = THIS
-				}
-			}			
-			RUS_349 = {
-				all_core = {
-					owned_by = THIS
-				}
-			}
+			RUS_339 = { owned_by = THIS }
+			RUS_349 = { owned_by = THIS }
 		}
 
 		effect = {
@@ -162,21 +154,9 @@ political_decisions = {
 
 		#Must control Crimea, Luhansk, and Rostov regions
 		allow = {
-			RUS_964 = {
-				all_core = {
-					owned_by = THIS
-				}
-			}			
-			RUS_1048 = {
-				all_core = {
-					owned_by = THIS
-				}
-			}			
-			RUS_980 = {
-				all_core = {
-					owned_by = THIS
-				}
-			}
+			RUS_964 = { owned_by = THIS }
+			RUS_980 = { owned_by = THIS }
+			RUS_1048 = { owned_by = THIS }
 		}
 		effect = {
 			prestige = 10
@@ -201,7 +181,7 @@ political_decisions = {
 			tag = RUS
 			has_country_flag = panslavic_focus
 			NOT = { has_country_flag = ruthenian_culture }
-			NOT = { has_accepted_culture = ruthenian}
+			NOT = { accepted_culture = ruthenian}
 		}
 		#Ruthenes have higher tech requirements and lower capitol movement requirements. 
 		allow = {
@@ -224,7 +204,7 @@ political_decisions = {
 			tag = RUS
 			has_country_flag = southern_focus
 			has_country_flag = RUS_moved_capital
-			NOT = { has_accepted_culture = tatar}
+			NOT = { accepted_culture = tatar}
 			NOT = { has_country_flag = tatar_culture }
 		}
 		#Ruthenes have higher tech requirements and lower capitol movement requirements. 
@@ -265,7 +245,7 @@ political_decisions = {
 			tag = RUS
 			has_country_flag = southern_focus
 			has_country_flag = RUS_moved_capital
-			NOT = { has_accepted_culture = georgian}
+			NOT = { accepted_culture = georgian}
 			NOT = { has_country_flag = georgian_culture }
 		}
 		#Georgians, being further away but Orthodox Christian, take a while.
@@ -288,7 +268,7 @@ political_decisions = {
 			tag = RUS
 			has_country_flag = baltic_focus
 			has_country_flag = RUS_moved_capital
-			NOT = { has_accepted_culture = estonian}
+			NOT = { accepted_culture = estonian}
 			NOT = { has_country_flag = estonian_culture }
 		}
 		allow = {

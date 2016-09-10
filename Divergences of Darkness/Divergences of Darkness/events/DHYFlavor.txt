@@ -146,7 +146,7 @@ country_event = {
 			militancy = -1
 			consciousness = -3
 		}
-		ai_chance = { factor 0 }
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -172,11 +172,11 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.8
-			civilization_progress = 30
+			civilization_progress = 0.3
 		}
 		modifier = {
 			factor = 0.8
-			civilization_progress = 40
+			civilization_progress = 0.4
 		}
 		modifier = {
 			factor = 0.8
@@ -256,11 +256,11 @@ country_event = {
 		}
 		modifier = {
 			factor = 1.2
-			unemployment = 5
+			unemployment = 0.05
 		}
 		modifier = {
 			factor = 1.2
-			unemployment = 10
+			unemployment = 0.1
 		}
 		modifier = {
 			factor = 1.2
@@ -338,7 +338,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			civilization_progress = 30
+			civilization_progress = 0.3
 		}
 		modifier = {
 			factor = 0.9
@@ -362,7 +362,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.8
-			literacy = 10
+			literacy = 0.1
 		}
 		modifier = {
 			factor = 0.8
@@ -385,7 +385,7 @@ country_event = {
 			factor = 30
 			modifier = {
 				factor = 0.3
-				NOT = { average_militancy = 2
+				NOT = { average_militancy = 2 }
 			}
 			modifier = {
 				factor = 1.5
@@ -394,7 +394,6 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				NOT = { prestige = 20 }
-				}
 			}
 		}
 	}
@@ -476,7 +475,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			civilization_progress = 30
+			civilization_progress = 0.3
 		}
 		modifier = {
 			factor = 1.5
@@ -492,7 +491,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { literacy = 8 }
+			NOT = { literacy = 0.08 }
 		}
 		modifier = {
 			factor = 0.8
@@ -529,11 +528,11 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 1.5
-				NOT = { literacy = 8 }
+				NOT = { literacy = 0.08 }
 			}
 			modifier = {
 				factor = 0.5
-				literacy = 12
+				literacy = 0.12
 			}
 		}
 	}
@@ -699,7 +698,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			military_policy = pacifism
+			war_policy = pacifism
 		}
 		modifier = {
 			factor = 0.9
@@ -799,7 +798,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 1.2
-			NOT = { literacy_rate = 20 }
+			NOT = { literacy = 0.2 }
 		}
 		modifier = {
 			factor = 1.1
@@ -850,6 +849,7 @@ country_event = {
 			modifier = {
 				factor = 1.1
 				NOT = { average_militancy = 1 }
+			}
 			modifier = {
 				factor = 0.9
 				average_militancy = 3
@@ -889,7 +889,6 @@ country_event = {
 		add_accepted_culture = akan
 		set_country_flag = embracing_minorities
 		ai_chance = { factor = 50 }
-		}
 	}
 }
 
@@ -1105,33 +1104,6 @@ country_event = {
 		}
 		add_accepted_culture = mossi
 		set_country_flag = embraced_mossi
-	}
-}
-
-country_event = {
-
-	id = 135101
-
-	trigger = {
-		tag = DHY
-		war = no
-		is_vassal = no
-		has_country_flag = oyo_started_war
-		NOT = { has_country_flag = stop_firing_damnit }
-	}
-
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	title = "EVTNAME135101"
-	desc = "EVTDESC135101"
-	picture = "elephant_flag"
-
-	option = {
-		name = "Dahomey, a tributary no more"
-		prestige = 2
-		set_country_flag = stop_firing_damnit
 	}
 }
 

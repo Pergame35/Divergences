@@ -49,7 +49,7 @@ country_event = {
 	SPA = { 
 			casus_belli = {
 				target = FROM 
-				type = demand_concession 
+				type = demand_concession_casus_belli 
 				months = 60
 			}
 		}
@@ -440,14 +440,14 @@ country_event = {
 	name = "Fight them all!"
 	set_country_flag = empire_dislocated
 	any_owned = { 
-	any_owned = { limit = { OR = { region = RUS_1184 region = RUS_1185} } secede_province = KZH }
+	limit = { OR = { region = RUS_1184 region = RUS_1185} } secede_province = KZH 
 	remove_core = CHG
 		}
 	release = TNT 
 	release = MGL 
 	release = TJK 
 	release = UGH 
-	any_owned = { limit = { region = RUS_1184 region = RUS_1185 } secede_province = KZH }
+	any_owned = { limit = { OR = { region = RUS_1184 region = RUS_1185 } } secede_province = KZH }
 	any_owned = { limit = { is_core = CHI } secede_province = MGL }
 	release = UZB 
 	release = KOK
@@ -743,7 +743,7 @@ country_event = {
 	duration = 9125
 		}
 	ai_chance = { 
-		
+		factor = 1
 		}
 	}
 	
@@ -1273,6 +1273,7 @@ country_event = {
 	option = { 
 	name = "We bow before our Japanese overlords..."
 	any_owned = { limit = { OR = { region = MON_1075 region = RUS_1469 } } secede_province = JAP }
+	JAP = { country_event = 48938 }
 	}
 }
 
@@ -1336,7 +1337,7 @@ country_event = {
 	
 	trigger = { 
 	tag = CHG 
-	civilization_progress = 50 
+	civilization_progress = 0.5
 	has_country_flag = europe_travel
 	}
 	

@@ -1,5 +1,5 @@
 country_event = {
-	id = 22240
+	id = 22239
 	title = "Unrest in the northern mountains!"
 	desc = "The various arab tribes are asking our help to overthrow the european oppressors!"
 	picture = "News"
@@ -106,7 +106,7 @@ province_event = {
 	picture = "boxers"
 
 	trigger = {
-		ai = yes
+		owner = { ai = yes }
 		owner = { tag = MGH }
 		is_core = MGH
 		OR = {
@@ -144,7 +144,7 @@ province_event = {
 	picture = "boxers"
 
 	trigger = {
-		ai = yes
+		owner = { ai = yes }
 		owner = { tag = MGH }
 		is_core = MGH
 		OR = {

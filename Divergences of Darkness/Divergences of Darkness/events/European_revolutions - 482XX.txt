@@ -7,29 +7,6 @@
 #Catalan union with Occitania 
 #################
 
-
-country_event = { ##Scotish agitator Walter Scott arrives in England
-
-	id = 48201
-	title = ""
-	desc = ""
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "It could serve our interests ..."
-	money = -50000 
-	relation = { who = SCA value = -150 }
-	set_global_flag = ENL_help_SCO 
-	}
-	
-	option = { 
-	name = "Scotland is only a source of problems for England..."
-	prestige = -15 
-	}
-	
-}
-
 country_event = { ##Scotish agitator Walter Scott arrives in England
 
 	id = 48202
@@ -80,7 +57,7 @@ country_event = { ##Young Scotland revolts
 	ENL = { country_event = 48204 }
 	
 	any_country = { 
-	limit = { AND = { government = democracy has_country_flag = Anschluss_DUA } } 
+	limit = { government = democracy has_country_flag = Anschluss_DUA } 
 	country_event = 48205
 		}
 	country_event = { id = 48206 days = 6 }
@@ -224,18 +201,12 @@ country_event = {
 	title = "TUS_setupT"
 	desc = "TUS_setupD"
 	
-	trigger = { 
-	tag = TUS 
-	NOT = { has_country_flag = Tus_setup } 
-	}
-	
-	mean_time_to_happen = { 
-	days = 1
-	}
+	is_triggered_only = yes
+	fire_only_once = yes
 	
 	option = { 
 	name = "Unione, Forza e Liberta!"
-	set_country_flag = Tus_setup
+	
 	744 = {
 			add_province_modifier = {
 					name = liberal_stronghold

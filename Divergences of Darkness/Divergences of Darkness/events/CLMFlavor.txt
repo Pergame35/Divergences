@@ -399,11 +399,11 @@ country_event = {
 	political_reform = underground_parties 
 	ruling_party_ideology = reactionary
 	any_pop = { 
-		limit = {
-				ideology = liberal 
-			}
-		militancy = 2 
+		scaled_militancy = {
+			ideology = liberal
+			factor = 2
 		}
+	}
 	}
 }
 
@@ -470,7 +470,6 @@ country_event = { #########Lusitania expedition expelled
 	tag = CLM 
 	NOT = { has_country_flag = panama_congress }
 	war_with = SPA
-	AND = { 
 	controls = 132
 	controls = 133
 	controls = 134
@@ -478,7 +477,6 @@ country_event = { #########Lusitania expedition expelled
 	controls = 138
 	controls = 136
 	controls = 135
-		}
 	}
 	
 	mean_time_to_happen = { 
@@ -505,7 +503,6 @@ country_event = { ###### Yucatan expedition expelled
 	tag = CLM 
 	NOT = { has_country_flag = panama_congress }
 	war_with = SPA
-	AND = { 
 	controls = 2183
 	controls = 2185
 	controls = 2184
@@ -513,7 +510,6 @@ country_event = { ###### Yucatan expedition expelled
 	controls = 2181
 	controls = 2189
 	controls = 2190
-		}
 	}
 	
 	mean_time_to_happen = { 
@@ -540,13 +536,11 @@ country_event = { ###### Cartagena retaken
 	tag = SPA
 	NOT = { has_country_flag = spaCLM }
 	war_with = CLM
-	AND = { 
 	controls = 2251
 	controls = 2252
 	controls = 2253
 	controls = 2254
 	controls = 2255
-		}
 	}
 	
 	mean_time_to_happen = { 
@@ -573,12 +567,10 @@ country_event = { ###### Cuzco retaken
 	tag = SPA
 	NOT = { has_country_flag = spaCLM }
 	war_with = CLM
-	AND = { 
 	controls = 2301
 	controls = 2302
 	controls = 2304
 	controls = 2303
-		}
 	}
 	
 	mean_time_to_happen = { 
@@ -1122,7 +1114,7 @@ country_event = { ######### The Monclova Incident -MEX
 	option = {
 	name = "Madeira will learn his place !"
 	release_vassal = LST 
-	break_alliance = LST
+	leave_alliance = LST
 	war = {
 			target = LST
 			attacker_goal = {
@@ -1152,7 +1144,7 @@ country_event = { ########## Morazan rebels
 	option = { 
 	name = "Morazan too ? He will be crushed as well !"
 	release_vassal = UCA 
-	break_alliance = UCA 
+	leave_alliance = UCA 
 	UCA = { end_war = LST }
 	war = {
 			target = UCA
@@ -1168,7 +1160,7 @@ country_event = { ########## Morazan rebels
 	option = { 
 	name = "Leave him be, Madeira is more dangerous "
 	release_vassal = UCA 
-	break_alliance = UCA 
+	leave_alliance = UCA 
 	UCA = { end_war = LST }
 	country_event = 46478
 	ai_chance = { 
@@ -1305,14 +1297,14 @@ country_event = { ## Liberals ? (Mexican liberals take control of Jalisco and de
 	option = { 
 	name = "Damned Liberals !"
 	set_country_flag = LiberalREB 
-	release = JAL
-	JAL = { country_event = 46483 }
+	release = JLS
+	JLS = { country_event = 46483 }
 	war = {
-			target = JAL
+			target = JLS
 			attacker_goal = {
 				casus_belli = annex_core_country
 			}
-			defenser_goal = {
+			defender_goal = {
 				casus_belli = annex_core_country
 			}
 		}
@@ -1561,7 +1553,7 @@ country_event = {
 		FROM = {
 			country_event = 46490
 		}
-		any_owned_province = { 
+		any_owned = { 
 		limit = { 
 			is_core = LST 
 				}
@@ -1712,10 +1704,10 @@ country_event = {
 	any_owned = { limit = { region = ENG_2224 } add_core = CUB }
 	release = CUB 
 	CUB = { government = democracy }
-	break_alliance = UCA 
-	break_alliance = LST 
-	break_alliance = MEX 
-	break_alliance = GRA
+	leave_alliance = UCA 
+	leave_alliance = LST 
+	leave_alliance = MEX 
+	leave_alliance = GRA
 		FROM = { 
 	diplomatic_influence = { who = LST value = 300 } 
 	diplomatic_influence = { who = MEX value = 300 } 
@@ -1753,7 +1745,6 @@ country_event = {
 	release_vassal = JLS
 	release_vassal = GUY
 	release_vassal = CAS
-	release_vassal = SAN
 	any_owned = { limit = { province_id = 1723 } secede_province = FROM }
 	any_owned = { limit = { province_id = 2285 } secede_province = FROM }
 	any_owned = { limit = { province_id = 2237 } secede_province = FROM }
@@ -1761,15 +1752,14 @@ country_event = {
 	any_owned = { limit = { region = ENG_2224 } add_core = CUB }
 	release = CUB 
 	CUB = { government = democracy }
-	break_alliance = LST 
-	break_alliance = MEX 
-	break_alliance = SAN
-	break_alliance = UCA 
-	break_alliance = QUI 
-	break_alliance = JLS
-	break_alliance = GUY
-	break_alliance = CAS
-	break_alliance = SAN
+	leave_alliance = LST 
+	leave_alliance = MEX 
+	leave_alliance = SAN
+	leave_alliance = UCA 
+	leave_alliance = QUI 
+	leave_alliance = JLS
+	leave_alliance = GUY
+	leave_alliance = CAS
 		FROM = { 
 	diplomatic_influence = { who = LST value = 300 } 
 	diplomatic_influence = { who = MEX value = 300 } 
@@ -1814,7 +1804,6 @@ country_event = {
 	release = JLS
 	release = GUY
 	release = CAS
-	release = SAN
 	any_owned = { limit = { province_id = 1723 } secede_province = FROM }
 	any_owned = { limit = { province_id = 2285 } secede_province = FROM }
 	any_owned = { limit = { province_id = 2237 } secede_province = FROM }
@@ -1943,7 +1932,7 @@ country_event = { ####For the proletariat !
 	tag = SPA 
 	has_country_flag = Colombian_loss 
 	is_ideology_enabled = communist 
-	OR = { government = presidential_dictatorship government = republic government = absolute_monarchy government = prussian_constitutionalism government = hms_government}
+	OR = { government = presidential_dictatorship government = democracy government = absolute_monarchy government = prussian_constitutionalism government = hms_government}
 	}
 	
 	mean_time_to_happen = { 
@@ -1986,7 +1975,7 @@ country_event = { ####Stabilization
 	tag = SPA 
 	has_country_flag = Colombian_loss 
 	NOT = { is_ideology_enabled = communist }
-	OR = { government = republic government = hms_government }
+	OR = { government = democracy government = hms_government }
 	}
 	
 	mean_time_to_happen = { 
