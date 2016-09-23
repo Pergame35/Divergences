@@ -524,6 +524,46 @@ political_decisions = {
 		}
 	}
 
-
+	meddle_with_cossacks = { 
+	
+		potential = { 
+		OR = { tag = RUS }
+		is_greater_power = yes 
+		UKR = { substate_of = PLC }
+		963 = { owned_by = UKR }
+		}
+		
+		allow = { 
+		UKR = { in_sphere = THIS }
+		NOT = { PLC = { rank = 12 } } 
+		}
+		
+		effect = { 
+		badboy = 3 
+		prestige = 2 
+		UKR = { country_event = 22234 }
+		set_global_flag = messed_with_cossacks
+		}
+	}
+	
+	annex_ruthenia = { 
+		
+		potential = { 
+		tag = RUS 
+		RUT = { exists = yes }
+		}
+		
+		allow = { 
+		RUT = {	in_sphere = THIS }
+		revolution_n_counterrevolution = 1 
+		war = no 
+		}
+		
+		effect = { 
+		inherit = RUT 
+		badboy = 6 
+		}
+		
+	}
 
 }	

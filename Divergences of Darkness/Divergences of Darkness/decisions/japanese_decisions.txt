@@ -326,7 +326,7 @@ political_decisions = {
 	set_country_flag = Manchukuo
 	CHI_1553 = { add_core = MCH }
 	CHI_5 = { add_core = MCH }
-	1481 = { remove_core = MCH add_core = JAP}
+	1481 = { remove_core = MCH add_core = THIS }
 	MCH = { set_country_flag = civilize_after_release }
 	}
 	
