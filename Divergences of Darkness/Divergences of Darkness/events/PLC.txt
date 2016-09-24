@@ -223,13 +223,13 @@ country_event = {
 	prestige_factor = -0.5
 	militancy = 3 
 	consciousness = 5 
-	UKR = { country_event = 22241 }
+	UKR = { country_event = 22236 }
 	}
 
 }
 
 country_event = { 
-	id = 22241
+	id = 22236
 	title = "RUT.T"
 	desc = "RUT.D"
 	
@@ -237,12 +237,12 @@ country_event = {
 	
 	option = { 
 	name = "We'll negotiate with the Byelorussians."
-	BLR = { country_event = 22242 }
+	BLR = { country_event = 22237 }
 	}
 }
 
 country_event = { 
-	id = 22242 
+	id = 22237 
 	title = "RUT2.T"
 	desc = "RUT2.D"
 	
@@ -250,7 +250,7 @@ country_event = {
 	
 	option = { 
 	name = "We need to unify with the Cossacks!"
-	FROM = { country_event = 22243 }
+	FROM = { country_event = 22238 }
 	ai_chance = { 
 	factor = 90  
 		} 
@@ -265,7 +265,7 @@ country_event = {
 }
 
 country_event = { 
-	id = 22243 
+	id = 22238 
 	title = "RUT3.T"
 	desc = "RUT3.D"
 	
@@ -274,7 +274,6 @@ country_event = {
 	option = { 
 	name = "We stand strong against Polish ambitions!"
 	change_tag = RUT 
-	POL = { country_event = 22244 }
 	}
 }
 	
