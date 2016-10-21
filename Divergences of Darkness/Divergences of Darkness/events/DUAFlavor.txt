@@ -4222,6 +4222,7 @@ country_event = { ##End of the Dual-Monarchy
 			}
 		}
 	change_tag = FRA 
+	set_global_flag = fall_DUA
 	remove_accepted_culture = english 
 	remove_accepted_culture = welsh 
 	remove_accepted_culture = irish 

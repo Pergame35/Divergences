@@ -92,15 +92,17 @@ political_decisions = {
 	set_expansion_focus = {
 			potential = {
 				tag = RUS
-			}
-			allow = {
-					NOT = { 
+				NOT = { 
 						OR = {
 							has_country_flag = baltic_focus
 							has_country_flag = panslavic_focus
 							has_country_flag = southern_focus
-						}
 					}
+				}
+			}
+			allow = {
+			is_greater_power = yes 
+			
 			}
 			effect = {
 				prestige = 10

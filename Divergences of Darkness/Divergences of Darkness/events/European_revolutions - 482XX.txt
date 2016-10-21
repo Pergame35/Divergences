@@ -321,3 +321,396 @@ country_event = { ##Carbonari activate
 	set_country_flag = carbonari_activity 
 	}
 }	
+
+country_event = { #Congress because of HRE formed
+	id = 48251
+	title = "CONGR1.T"
+	desc = "CONGR1.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	has_global_flag = hre_formed
+	NOT = { tag = HRE }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = { #Danubian Federation
+	id = 48252
+	title = "CONGR1.T"
+	desc = "CONGR2.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	SGF = { exists = yes }
+	NOT = { tag = SGF tag = BOH  }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = { #Confederation at the Elbe
+	id = 48253
+	title = "CONGR1.T"
+	desc = "CONGR3.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	CAE = { exists = yes }
+	NOT = { tag = CAE }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = { #Aragon-Italy forming
+	id = 48254
+	title = "CONGR1.T"
+	desc = "CONGR4.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	ARI = { exists = yes }
+	NOT = { tag = ARI }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = { #Revitalized PLC
+	id = 48255
+	title = "CONGR1.T"
+	desc = "CONGR5.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	PLC = { has_country_flag = lublin_new }
+	NOT = { tag = PLC }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = { #Russian Bear
+	id = 48256
+	title = "CONGR1.T"
+	desc = "CONGR6.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	RUS = { exists = yes is_greater_power = yes }
+	NOT = { tag = RUS }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = { #Iberian Union
+	id = 48257
+	title = "CONGR1.T"
+	desc = "CONGR7.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	SPA = { has_country_flag = iberian_union }
+	NOT = { tag = SPA }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = {
+	id = 48258
+	title = "CONGR1.T"
+	desc = "CONGR8.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	SCA = { has_country_flag = nordtyskland }
+	NOT = { tag = SCA }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = { #Valois in Italy
+	id = 48259
+	title = "CONGR1.T"
+	desc = "CONGR9.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	ITA = { exists = yes has_country_flag = valois_italy }
+	NOT = { tag = ITA }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = { #Valois in France
+	id = 48260
+	title = "CONGR1.T"
+	desc = "CONGR10.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	FRA = { exists = yes has_country_flag = valois_rulez }
+	NOT = { tag = FRA }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = { #Etrurian Italy
+	id = 48261
+	title = "CONGR1.T"
+	desc = "CONGR11.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	ITA = { exists = yes has_country_flag = quick_unification  }
+	NOT = { tag = ITA }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = { #Anglois acceptance 
+	id = 48262
+	title = "CONGR1.T"
+	desc = "CONGR12.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	DUA = { has_country_flag = Anglois_accepted }
+	NOT = { tag = DUA }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = { #Success Glorious Revolution
+	id = 48263
+	title = "CONGR1.T"
+	desc = "CONGR13.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	has_global_flag = glorious_revolution
+	ENL = { exists = yes war = no }
+	NOT = { tag = DUA tag = ENL }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
+
+country_event = { #Success Total Revolution
+	id = 48264
+	title = "CONGR1.T"
+	desc = "CONGR14.D"
+	
+	major = yes 
+	
+	
+	trigger = { 
+	NOT = { has_global_flag = DVG_infamy }
+	has_global_flag = fall_DUA
+	NOT = { tag = FRA tag = ENL }
+	is_greater_power = yes 
+	continent = europe 
+	}
+	
+	mean_time_to_happen = { 
+	days = 30 
+	}
+	
+	option = { 
+	name = "A new era of diplomacy begins."
+	set_global_flag = DVG_infamy 
+	badboy = -3 
+	prestige = 10 
+	}
+}
