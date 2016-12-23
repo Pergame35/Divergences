@@ -135,6 +135,7 @@ political_decisions = {
 				remove_core = BRG
 			}
 			any_owned = { 
+			limit = { is_core = GNV }
 			secede_province = GNV
 			remove_core = BRG
 				}
