@@ -240,6 +240,7 @@ political_decisions = {
 		potential = {
 			tag = IRE
 			NOT = { has_country_flag = IRE_recognized }
+			NOT = { has_global_flag = wait_DUA }
 			all_core = { owned_by = THIS }
 		}
 		

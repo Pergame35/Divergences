@@ -412,6 +412,10 @@ political_decisions = {
 			OR = { 
 			owns = 2220
 			owns = 2212
+			AND = { 
+			tag = AZL 
+			owns = 2264 
+					}
 				}
 			NOT = { tag = SPA }
 			2213 = {
@@ -449,7 +453,13 @@ political_decisions = {
 	jamaica_purchase = {
 		picture = map_caribbean
 		potential = {
+			OR = { 
 			owns = 2212
+			AND = { 
+			tag = AZL 
+			owns = 2264 
+					}
+				}
 			NOT = { tag = SPA }
 			2217 = {
 				NOT = { owned_by = THIS }
@@ -600,15 +610,21 @@ political_decisions = {
 	picture = Great_North 
 	
 	potential = { 
-	OR = { tag = JAP tag = KKN }
+	OR = { 
+		tag = KKN 
+		AND = { 
+			is_greater_power = yes 
+			tag = JAP 
+		}
+	}
 	NOT = { 9 = { empty = yes } 2629 = { empty = yes } }
 	2598 = { empty = yes }
 	8 = { empty = yes }
 	10 = { empty = yes}
+	owns = 3 
 	}
 	
 	allow = { 
-	is_greater_power = yes 
 	nationalism_n_imperialism = 1 
 	}
 	

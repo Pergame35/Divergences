@@ -184,7 +184,8 @@ country_event = { #claim of the old duke of Montenegro
 	
 	option = { 
 	name = "Send him across the border"
-	MON = { country_event = 1400108 }
+	MON = { country_event = 1400108 } 
+	set_country_flag = simic 
 	prestige = 5 
 	ai_chance = { 
 	factor = 100 
@@ -194,6 +195,7 @@ country_event = { #claim of the old duke of Montenegro
 	option = { 
 	name = "Imprison him"
 	prestige = -20 
+	set_country_flag = simic 
 	}
 }
 

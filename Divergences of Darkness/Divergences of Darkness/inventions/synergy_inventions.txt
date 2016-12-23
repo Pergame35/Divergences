@@ -1,0 +1,557 @@
+army_1 = {
+	limit = { 
+		post_napoleonic_thought = 1 
+		flintlock_rifles = 1 
+		bronze_muzzle_loaded_artillery = 1 
+		military_staff_system = 1 
+		army_command_principle = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		army_base = {
+			default_organisation = 5
+			supply_consumption = -0.1
+		} 
+	}
+}
+
+army_2 = {
+	limit = { 
+		strategic_mobility = 1 
+		muzzle_loaded_rifles = 1 
+		iron_muzzle_loaded_artillery = 1 
+		military_plans = 1 
+		army_professionalism = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		mobilisation_size = 0.01
+		morale = 0.10
+	}
+}
+
+army_3 = {
+	limit = { 
+		point_defense_system = 1 
+		breech_loaded_rifles = 1 
+		iron_breech_loaded_artillery = 1 
+		military_statistics = 1 
+		army_decision_making = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		military_tactics = 0.25
+		soldier_to_pop_loss = 0.01
+	}
+}
+
+army_4 = {
+	limit = { 
+		deep_defense_system = 1 
+		bolt_action_rifles = 1 
+		steel_breech_loaded_artillery = 1 
+		military_logistics = 1 
+		army_risk_management = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		army_base = {
+			default_organisation = 5
+		}
+		morale = 0.25
+	}
+}
+
+army_5 = {
+	limit = { 
+		infiltration = 1 
+		machine_guns = 1 
+		indirect_artillery_fire = 1 
+		military_directionism = 1 
+		army_nco_training = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		army_base = {
+			discipline = 0.05
+			supply_consumption = -0.15
+		}
+	}
+}
+
+army_6 = {
+	limit = { 
+		modern_army_doctrine = 1 
+		modern_divisional_structure = 1 
+		heavy_armament_dunno = 1 
+		aeronautics = 1 
+		great_war_experience = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		military_tactics = 0.25
+		soldier_to_pop_loss = 0.01
+	}
+}
+
+navy_1 = {
+	limit = { 
+		post_nelsonian_thought = 1 
+		clipper_design = 1 
+		naval_design_bureaus = 1 
+		alphabetic_flag_signaling = 1 
+		the_command_principle = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 10
+			supply_consumption = -0.1
+		}
+	}
+}
+
+navy_2 = {
+	limit = { 
+		battleship_column_doctrine = 1 
+		steamers = 1 
+		fire_control_systems = 1 
+		naval_plans = 1 
+		naval_professionalism = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 5
+		}
+		supply_range = 0.25
+	}
+}
+
+navy_3 = {
+	limit = { 
+		raider_group_doctrine = 1 
+		iron_steamers = 1 
+		weapon_platforms = 1 
+		naval_statistics = 1 
+		naval_decision_making = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 5
+		}
+		colonial_points = 100
+	}
+}
+
+navy_4 = {
+	limit = { 
+		blue_and_brown_water_schools = 1 
+		steel_steamers = 1 
+		main_armament = 1 
+		naval_logistics = 1 
+		naval_risk_management = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 5
+		}
+		influence = 0.25
+	}
+}
+
+navy_5 = {
+	limit = { 
+		high_sea_battle_fleet = 1 
+		steam_turbine_ships = 1 
+		advanced_naval_design = 1 
+		naval_directionism = 1 
+		naval_nco_training = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 5
+			supply_consumption = -0.15
+		}
+	}
+}
+
+navy_6 = {
+	limit = { 
+		modern_naval_doctrine = 1 
+		oil_driven_ships = 1 
+		modern_naval_design = 1 
+		naval_integration = 1 
+		modern_naval_training = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		influence = 1
+	}
+}
+
+commerce_1 = {
+	limit = { 
+		private_banks = 1 
+		no_standard = 1 
+		early_classical_theory_and_critique = 1 
+		freedom_of_trade = 1 
+		guild_based_production = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		tax_eff = 2.5
+		administrative_efficiency = 0.025
+	}
+}
+
+commerce_2 = {
+	limit = { 
+		stock_exchange = 1 
+		ad_hoc_money_bill_printing = 1 
+		late_classical_theory = 1 
+		market_structure = 1 
+		organized_factories = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		factory_input = -0.01
+		factory_cost = -0.1
+	}
+}
+
+commerce_3 = {
+	limit = { 
+		business_banks = 1 
+		private_bank_money_bill_printing = 1 
+		collectivist_theory = 1 
+		business_regulations = 1 
+		scientific_management = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		factory_output = 0.01
+		tax_eff = 2.5
+		loan_interest = -0.01
+	}
+}
+
+commerce_4 = {
+	limit = { 
+		investment_banks = 1 
+		central_bank_money_bill_printing = 1 
+		the_historical_theory = 1 
+		market_regulations = 1 
+		time_saving_measures = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		factory_input = -0.01
+		factory_throughput = 0.05
+	}
+}
+
+commerce_5 = {
+	limit = { 
+		bank_inspection_board = 1 
+		modern_central_bank_system = 1 
+		neoclassical_theory = 1 
+		economic_responsibility = 1 
+		management_strategy = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		factory_output = 0.01
+		influence = 0.25
+	}
+}
+
+commerce_6 = {
+	limit = { 
+		mutual_funds = 1 
+		market_determined_exchange_rates = 1 
+		keynesian_economics = 1 
+		government_interventionism = 1 
+		organizational_development = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		factory_output = 0.01
+		factory_input = -0.01
+		factory_throughput = 0.05
+	}
+}
+
+culture_1 = {
+	limit = { 
+		classicism_n_early_romanticism = 1 
+		late_enlightenment_philosophy = 1 
+		malthusian_thought = 1 
+		enlightenment_thought = 1 
+		introspectionism = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		permanent_prestige = 2
+		increase_research = 0.25
+	}
+}
+
+culture_2 = {
+	limit = { 
+		romanticism = 1 
+		idealism = 1 
+		positivism = 1 
+		ideological_thought = 1 
+		associationism = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		permanent_prestige = 5
+		education_efficiency = 0.10
+	}
+}
+
+culture_3 = {
+	limit = { 
+		realism = 1 
+		empiricism = 1 
+		functionalism = 1 
+		state_n_government = 1 
+		phenomenalism = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		permanent_prestige = 10
+		colonial_points = 50
+	}
+}
+
+culture_4 = {
+	limit = { 
+		impressionism = 1 
+		analytic_philosophy = 1 
+		biologism = 1 
+		nationalism_n_imperialism = 1 
+		experimental_psychology = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		permanent_prestige = 15
+		influence = 0.25
+	}
+}
+
+culture_5 = {
+	limit = { 
+		expressionism = 1 
+		phenomenology_n_hermeneutic = 1 
+		social_science = 1 
+		revolution_n_counterrevolution = 1 
+		psychoanalysis = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		permanent_prestige = 20
+		prestige = 0.1
+	}
+}
+
+culture_6 = {
+	limit = { 
+		mass_culture_n_the_avant_garde = 1 
+		anti__rationalism = 1 
+		social_alienation = 1 
+		mass_politics = 1 
+		behaviorism = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		permanent_prestige = 50
+		max_national_focus = 1
+	}
+}
+
+industry_1 = {
+	limit = { 
+		water_wheel_power = 1 
+		publishing_industry = 1 
+		mechanized_mining = 1 
+		experimental_railroad = 1 
+		basic_chemistry = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		rgo_throughput = 0.025
+		pop_growth = 0.0001
+	}
+}
+
+industry_2 = {
+	limit = { 
+		practical_steam_engine = 1 
+		mechanical_production = 1 
+		clean_coal = 1 
+		early_railroad = 1 
+		medicine = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		rgo_throughput = 0.05
+		factory_cost = -0.1
+	}
+}
+
+industry_3 = {
+	limit = { 
+		high_n_low_pressure_steam_engines = 1 
+		interchangeable_parts = 1 
+		cheap_iron = 1 
+		iron_railroad = 1 
+		inorganic_chemistry = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		factory_throughput = 0.05
+		factory_output = 0.01
+	}
+}
+
+industry_4 = {
+	limit = { 
+		steam_turbine = 1 
+		semi_automatization = 1 
+		cheap_steel = 1 
+		steel_railroad = 1 
+		organic_chemistry = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		rgo_throughput = 0.05
+		factory_output = 0.01
+	}
+}
+
+industry_5 = {
+	limit = { 
+		combustion_engine = 1 
+		assembly_line = 1 
+		advanced_metallurgy = 1 
+		integral_rail_system = 1 
+		electricity = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		factory_throughput = 0.05
+		supply_limit = 0.25	
+	}
+}
+
+industry_6 = {
+	limit = { 
+		electrical_power_generation = 1 
+		shift_work = 1 
+		electric_furnace = 1 
+		limited_access_roads = 1 
+		synthetic_polymers = 1 
+	}
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+		rgo_throughput = 0.05
+		mobilisation_size = 0.01
+		max_railroad = 1
+	}
+}

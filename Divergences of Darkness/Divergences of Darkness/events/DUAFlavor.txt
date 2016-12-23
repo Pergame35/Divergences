@@ -3995,6 +3995,12 @@ country_event = {
 		}
 	any_owned = {
 			limit = {
+				is_core = GNV 
+			}
+			secede_province = GNV
+		}
+	any_owned = {
+			limit = {
 				is_core = NAV 
 			}
 			secede_province = NAV

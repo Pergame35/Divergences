@@ -1,5 +1,5 @@
 #####################
-#Scotland insurrection following English independence 
+#Scotland insurrection following English independence (48201-48206)
 #Irish insurrection following English independence 
 #Dutch insurrection following French independence 
 #Portuguese/Spanish insurrection following Occitania independence/France which absorbed Occitania
@@ -150,6 +150,349 @@ country_event = { ##The Scandinavian Reaction
 	ai_chance = { 
 	factor = 50 
 		}
+	}
+}
+
+
+country_event = { ##Birth of Irish nationalism -violent path
+
+	id = 48210
+	title = "EUR10.T"
+	desc = "EUR10.D"
+	
+	picture = "IRE_army"
+	
+	trigger = { 
+	tag = DUA 
+	IRE = { exists = no }
+	has_global_flag = glorious_revolution 
+	NOT = { government = democracy }
+	ENL = { exists = yes }
+	NOT = { has_global_flag = irish_brotherhood }
+	}
+	
+	mean_time_to_happen = { 
+	months = 15 
+	}
+	
+	option = { 
+	name = "A worrying development..."
+	set_global_flag = irish_brotherhood
+	prestige = -15 
+	}
+
+}
+
+country_event = { ##Creation of the Irish Brotherhood -possible negotiation 
+
+	id = 48211
+	title = "EUR11.T"
+	desc = "EUR11.D"
+	
+	picture = "IRE_IB"
+	
+	trigger = { 
+	tag = DUA 
+	IRE = { exists = no }
+	has_global_flag = french_int 
+	NOT = { government = democracy }
+	year = 1860 
+	NOT = { has_country_flag = irish_claims }
+	}
+	
+	mean_time_to_happen = { 
+	months = 15 
+	}
+	
+	option = { 
+	name = "A worrying development..."
+	set_country_flag = irish_claims
+	prestige = -15 
+	}
+
+}
+
+country_event = { ##Dominion of Ireland 
+
+	id = 48212
+	title = "EUR12.T"
+	desc = "EUR12.D"
+	
+	picture = "IRE_IB"
+	
+	trigger = { 
+	tag = DUA
+	IRE = { exists = no }
+	has_country_flag = irish_claims 
+	war = no 
+	NOT = { has_global_flag = irish_brotherhood }
+	}
+	
+	mean_time_to_happen = { 
+	months = 1000
+	modifier = { 
+	factor = 1.5
+	rank = 2 
+		}
+	modifier = { 
+	factor = 0.6 
+	war_exhaustion = 50 
+		}
+	modifier = { 
+	factor = 0.8
+	any_owned_province = {
+			is_core = IRE
+			any_pop = {
+				culture = irish
+				militancy = 2
+				}
+			}
+		}
+	modifier = { 
+	factor = 0.8
+	any_owned_province = {
+			is_core = IRE
+			any_pop = {
+				culture = irish
+				consciousness = 6
+				}
+			}
+		}
+	modifier = { 
+	factor = 0.7
+	any_owned_province = {
+			is_core = IRE
+			any_pop = {
+				culture = irish
+				militancy = 4
+				}
+			}
+		}
+	modifier = { 
+	factor = 0.5 
+	any_owned_province = {
+			is_core = IRE
+			any_pop = {
+				culture = irish
+				militancy = 6
+				}
+			}
+		}
+	}
+
+	option = { 
+	name = "Home-rule is the solution to Irish demands."
+	release_vassal = IRE
+	prestige = -40 
+	any_pop = { 
+	scaled_militancy = { 
+		factor = 1 
+		ideology = conservative
+		}
+	scaled_militancy = { 
+		factor = 5
+		ideology = reactionary		
+		}
+	scaled_consciousness = { 
+		factor = 3 
+		ideology = conservative 
+			}
+		}
+	}
+	
+	option = { 
+	name = "Ireland has been a part of the realm for hundreds of years and will stay so."
+	set_global_flag = irish_brotherhood
+	any_pop = { 
+	limit = { 
+		culture = irish 
+			}
+		militancy = 1 
+		consciousness = 4 
+		scaled_militancy = { 
+		factor = 1 
+		ideology = liberal
+			}
+		scaled_militancy = { 
+		factor = 1 
+		ideology = socialist 
+			}
+		}
+	}
+}
+
+country_event = { ##Irish Rising
+
+	id = 48213
+	title = "EUR13.T"
+	desc = "EUR13.D"
+	
+	picture = "IRE_army"
+	
+	trigger = { 
+	IRE = { exists = no }
+	DUA = { owns = 263 }
+	NOT = { OR = { 
+		government = absolute_monarchy 
+		government = fascist_dictatorship 
+		}
+	}
+	has_global_flag = irish_brotherhood
+	NOT = { has_country_flag = refused_IRE_help }
+	war = no 
+	is_greater_power = yes 
+	continent = europe
+	NOT = { relation = { who = DUA value = -50 } } 
+	NOT = { truce_with = DUA }
+	}
+	
+	mean_time_to_happen = { 
+	months = 120 
+	}
+	
+	option = { 
+	name = "Smuggle weapons and money to the insurgents!"
+	money = -100000
+	ammunition = -1000
+	small_arms = -1000
+	artillery = -1000
+	canned_food = -1000
+	regular_clothes = -1000
+	clr_global_flag = irish_brotherhood
+	random_list = {
+			40 = { DUA = { country_event = 48214 } }
+			60 = { DUA = { country_event = 48216 } } 
+		}
+	}
+	
+	option = { 
+	name = "We can't commit to such a thing..."
+	prestige = -15 
+	set_country_flag = refused_IRE_help
+	}
+	
+}
+
+country_event = { ##Irish Rising
+
+	id = 48214
+	title = "EUR14.T"
+	desc = "EUR14.D"
+	
+	is_triggered_only = yes 
+	
+	major = yes 
+	
+	option = { 
+	name = "Damn the Irish and the $FROM_ADJ$ !"
+	any_owned = { 
+	limit = { is_core = IRE } 
+	secede_province = IRE 
+		}
+	IRE = { 
+	capital = 263 
+	government = democracy 
+	money = 100000
+	ammunition = 1000
+	small_arms = 1000
+	artillery = 1000
+	canned_food = 1000
+	regular_clothes = 1000
+	}
+	diplomatic_influence = { who = IRE value = 300 }
+	FROM = { relation = { who = IRE value = 150 } create_alliance = IRE }
+	DUA = { country_event = { id = 48215 days = 20 } }
+	set_global_flag = wait_DUA
+	}
+}
+
+country_event = { 
+	id = 48215
+	title = "EUR15.T"
+	desc = "EUR15.D"
+	
+	is_triggered_only = yes	
+	
+	
+	option = { 
+	name = "The Irish will be taught the true power of the Dual-Monarchy !"
+	diplomatic_influence = { who = IRE value = -300 }
+	clr_global_flag = wait_DUA
+	war = { 
+	target = IRE 
+	attacker_goal = {
+				casus_belli = annex_core_country
+			}
+		}
+	ai_chance = { 
+	factor = 70 
+		}
+	}
+	
+	option = { 
+	name = "Let the Gaels on their own ..."
+	prestige = -50 
+	clr_global_flag = wait_DUA
+	diplomatic_influence = { who = IRE value = -200 }
+	relation = { who = IRE value = 75 }
+	ai_chance = { 
+	factor = 30 
+		}
+	}
+}
+
+country_event = { 
+	id = 48216 
+	title = "EUR16.T" #The ship is captured
+	desc = "EUR16.D"
+	
+	major = yes 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "They want war, they'll get it!"
+	prestige = 20 
+	scaled_militancy = { 
+		factor = -1 
+		ideology = conservative 
+			}
+	casus_belli = {
+				target = FROM
+				type = cut_down_to_size
+				months = 60
+			}
+	war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+		call_ally = yes
+		}
+	FROM = { country_event = 48217 }
+	ai_chance = { 
+	factor = 70 
+		}
+	}
+	
+	option = { 
+	name = "They aren't worth such a thing!"
+	prestige = -20 
+	ai_chance = { 
+	factor = 30 
+		}
+	}
+}
+
+country_event = { 
+	id = 48217
+	title = "Declaration of War"
+	desc = "Following the seizure of our ship helping the Irish Insurgents, $FROM$ declared war on us!"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "It wasn't supposed to end like this!"
 	}
 }
 	
