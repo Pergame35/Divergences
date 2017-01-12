@@ -125,6 +125,7 @@ political_decisions = {
 	}
 	
 	forced_maya_excavations = {
+		picture = maya_excavations
 		potential = {
 			OR = {
 				is_greater_power = yes
@@ -361,6 +362,7 @@ political_decisions = {
 	}
 	
 	forced_mesopotamian_excavations = {
+		picture = mesopotamian_excavations
 		potential = {
 			is_greater_power = yes
 			revolution_n_counterrevolution = 1

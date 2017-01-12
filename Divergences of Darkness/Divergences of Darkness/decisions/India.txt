@@ -180,16 +180,8 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 40
-			DRA = {
-				all_core = { 
-					add_core = BHA
-					}
-				}
-			HND = {
-				all_core = { 
-					add_core = BHA
-					}
-				}
+			DRA = { all_core = {  add_core = BHA } }
+			HND = { all_core = { add_core = BHA } }
 			change_tag = BHA
 			add_accepted_culture = tamil
 			add_accepted_culture = malayalam
@@ -211,55 +203,16 @@ political_decisions = {
 			add_accepted_culture = pashtun
 			add_accepted_culture = nepali
 			add_accepted_culture = assamese
-			1329 = { add_core = BHA }
-			1328 = { add_core = BHA }
-			1326 = { add_core = BHA }
-			1327 = { add_core = BHA }
-			1322 = { add_core = BHA }
-			1323 = { add_core = BHA }
-			1325 = { add_core = BHA }
-			1324 = { add_core = BHA }
-			1321 = { add_core = BHA }
+			AFG_1214 = { add_core = BHA }
+			AFG_1217 = { add_core = BHA }
+			KAL_1221 = { add_core = BHA }
+			PAN_1224 = { add_core = BHA }
+			ENG_1321 = { add_core = BHA }
+			NEP_1327 = { add_core = BHA }
+			BUR_1330 = { add_core = BHA }
+			BUR_1334 = { add_core = BHA }
+			BUR_1339 = { add_core = BHA }
 			2128 = { add_core = BHA }
-			1341 = { add_core = BHA }
-			1342 = { add_core = BHA }
-			1334 = { add_core = BHA }
-			1339 = { add_core = BHA }
-			1340 = { add_core = BHA }
-			1338 = { add_core = BHA }
-			1336 = { add_core = BHA }
-			1335 = { add_core = BHA }
-			1337 = { add_core = BHA }
-			1333 = { add_core = BHA }
-			1332 = { add_core = BHA }
-			1345 = { add_core = BHA }
-			1331 = { add_core = BHA }
-			1330 = { add_core = BHA }
-			1320 = { add_core = BHA }
-			1222 = { add_core = BHA }
-			1221 = { add_core = BHA }
-			1220 = { add_core = BHA }
-			1219 = { add_core = BHA }
-			1217 = { add_core = BHA }
-			1209 = { add_core = BHA }
-			1216 = { add_core = BHA }
-			1210 = { add_core = BHA }
-			1212 = { add_core = BHA }
-			1214 = { add_core = BHA }
-			1215 = { add_core = BHA }
-			1213 = { add_core = BHA }
-			1211 = { add_core = BHA }
-			1218 = { add_core = BHA }
-			1223 = { add_core = BHA }
-			any_owned = {
-				limit = {
-					OR = {
-						is_core = DRA
-						is_core = HND
-					}
-				}
-				add_core = BHA
-			}
 			any_country = {
 				limit = {
 					NOT = {
