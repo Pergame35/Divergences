@@ -1,0 +1,608 @@
+abolitionist_society = {
+	pop_militancy_modifier = 0.01
+	pop_consciousness_modifier = 0.05
+	icon = 8
+}
+
+am_everywhere = {
+	prestige = 0.01
+	icon = 16
+}
+
+anaconda_plan = {
+	war_exhaustion = 0.25
+	icon = 18
+}
+
+ansei_purge = {
+	prestige = 0.02
+	global_pop_consciousness_modifier = 0.1
+	global_pop_militancy_modifier = 0.05
+	icon = 16
+}
+
+anti_manchu_sentiment = {
+	pop_consciousness_modifier = 0.1
+	pop_militancy_modifier = 0.2
+	icon = 18
+}
+
+begin_disunited_states = {
+	core_pop_consciousness_modifier = 0.1
+	political_reform_desire = 0.1
+	icon = 20
+}
+
+begin_revolution = {
+	global_pop_militancy_modifier = 0.05
+	global_pop_consciousness_modifier = 0.05
+	mobilisation_size = 0.02
+	war_exhaustion = -0.25
+	icon = 15
+}
+
+bleeding = {
+	pop_militancy_modifier = 0.05
+	pop_consciousness_modifier = 0.05
+	icon = 16
+}
+
+boer_exodus = {
+	icon = 20
+}
+
+boer_republic = {
+	core_pop_militancy_modifier = -0.1
+	assimilation_rate = 2
+	supply_consumption = -0.2
+	poor_everyday_needs = -0.2
+	middle_everyday_needs = -0.2
+	rich_everyday_needs = -0.2
+	icon = 17
+}
+
+border_incident = {
+	war_exhaustion = -0.01
+	prestige = -0.01
+	icon = 16
+}
+
+boxer_agitation = {
+	pop_militancy_modifier = 0.2
+	local_RGO_throughput = -0.25
+	immigrant_attract = -0.25
+	immigrant_push = 0.5
+	population_growth = -0.002
+	icon = 4
+}
+
+boxer_presence = {
+	pop_militancy_modifier = -0.2
+	local_RGO_throughput = -0.25
+	immigrant_attract = -0.25
+	immigrant_push = 0.5
+	population_growth = -0.002
+	icon = 4
+}
+
+chinese_floods = {
+	pop_militancy_modifier = 0.1
+	local_RGO_throughput = -0.50
+	immigrant_attract = -0.25
+	immigrant_push = 0.75
+	life_rating = -5
+	icon = 4
+}
+
+cholera = { 
+	population_growth = -0.002
+	icon = 18
+}
+
+christian_pamphlets = {
+	pop_consciousness_modifier = 0.2
+	pop_militancy_modifier = 0.1
+	icon = 20
+}
+
+christian_repression = {
+	pop_consciousness_modifier = -0.1
+	pop_militancy_modifier = 0.2
+	icon = 20
+}
+
+corn_laws_repealed = {
+	max_tariff = -0.05
+	global_pop_militancy_modifier = -0.02
+	global_pop_consciousness_modifier = 0.05
+	icon = 1
+}
+
+csa_draft = {
+	pop_militancy_modifier = 0.01
+	mobilisation_size = 0.15
+	prestige = -0.02
+	war_exhaustion = -0.03
+	icon = 15
+}
+
+customs_union = {
+	RGO_throughput = 0.05
+	icon = 7
+}
+
+dar_al_funun = {
+	research_points_modifier = 0.1
+	icon = 3
+}
+
+dissatisfied_workers = {
+	local_RGO_throughput = -0.2
+	pop_militancy_modifier = 0.05
+	icon = 20
+}
+
+drive_to_reunify = {
+	prestige = -0.02
+	mobilisation_size = 0.02
+	war_exhaustion = -0.03
+	global_pop_militancy_modifier = -0.2
+	icon = 15
+}
+
+famine = {
+	population_growth = -0.01
+	icon = 18
+}
+
+folkis_educates = {
+	research_points_modifier = 0.05
+	icon = 5
+}
+
+force_publique = {
+	local_RGO_throughput = 0.15
+	icon = 1
+}
+
+french_cultural_unity = {
+	assimilation_rate = 2
+	icon = 19
+}
+
+french_growth_nerf = {
+	global_population_growth = -0.01
+	icon = 18
+}
+
+fukoku_kyohei = {
+	prestige = 0.01
+	research_points = 1
+	core_pop_consciousness_modifier = 0.05
+	core_pop_militancy_modifier = -0.05
+	icon = 3
+}
+
+gateway_to_america = {
+	immigrant_attract = 1
+	population_growth = 0.002
+	icon = 19
+}
+
+germania_werft = {
+	local_repair = 0.5
+	local_ship_build = -0.05
+	icon = 17
+}
+
+holy_city = {
+	immigrant_attract = 0.5
+	pop_militancy_modifier = -0.02
+	prestige = 0.05
+	icon = 15
+}
+
+home_of_the_mormons = {
+	population_growth = 0.005
+	icon = 15
+}
+
+inca_excavations = {
+	prestige = 0.02
+	icon = 5
+}
+
+inca_excavations_interrupted = {
+	prestige = -0.01
+	icon = 6
+}
+
+international_negotiations = {
+	badboy = 0.01
+	icon = 17
+}
+
+irish_integration  = {
+	assimilation_rate = 0.2
+	icon = 19
+}
+
+irish_oppression = {
+	immigrant_attract = -0.5
+	immigrant_push = 0.1
+	pop_consciousness_modifier = 0.1
+	local_factory_throughput = -0.5
+	local_RGO_throughput = -0.25
+	icon = 8
+}
+
+irish_potato_blight = {
+	local_RGO_output = -0.9
+	pop_militancy_modifier = 0.3
+	pop_consciousness_modifier = 0.3
+	immigrant_push = 1.25
+	local_factory_output = -0.25
+	icon = 4
+}
+
+irish_republicans = {
+	pop_militancy_modifier = 0.1
+	pop_consciousness_modifier = 0.1
+	icon = 18
+}
+
+irish_unionists = {
+	pop_militancy_modifier = 0.1
+	pop_consciousness_modifier = 0.1
+	icon = 18
+}
+
+JCW_fight = { 
+	core_pop_militancy_modifier = -0.90
+	core_pop_consciousness_modifier = -0.90
+	war_exhaustion = -5
+	icon = 8 
+}
+
+jim_crow = {
+	assimilation_rate = -0.75
+	immigrant_attract = -0.1
+	pop_militancy_modifier = -0.02
+	icon = 2
+}
+
+kobu_gattai = {
+	prestige = -0.01
+	global_pop_consciousness_modifier = -0.1
+	global_pop_militancy_modifier = -0.05
+	icon = 3
+}
+
+la_guardia_civil = {
+	core_pop_militancy_modifier = -0.02
+	icon = 1
+}
+
+leader_of_kalmar = {
+	prestige = 0.02
+	icon = 7
+}
+
+line_of_advantage = {
+	org_regain = 0.25
+	leadership_modifier = 0.2
+	land_organisation = 0.1
+	naval_organisation = 0.1
+	cb_generation_speed_modifier = 0.2
+	icon = 15
+}
+
+local_excavations = {
+	icon = 5
+}
+
+loosee = {
+	global_pop_militancy_modifier = 0.05
+	prestige = -0.01
+	war_exhaustion = 0.2
+	icon = 15
+}
+
+louis_napoleon_iii = {
+	prestige = 0.05
+	ruling_party_support = 1.0
+	core_pop_militancy_modifier = -0.05
+	core_pop_consciousness_modifier = -0.02
+	land_organisation = -0.05
+	icon = 17
+}
+
+meiji_restoration_boost = {
+	research_points_modifier = 0.1
+	icon = 3
+}
+
+miskatonic_campus = {
+	research_points_modifier = 0.1
+	pop_consciousness_modifier = 0.01
+	icon = 5
+}
+
+motala_verkstad = {
+	factory_throughput = 0.02
+	icon = 13
+}
+
+muhammad_alis_reforms = {
+	research_points_modifier = -0.6
+	org_regain = 0.2
+	land_organisation = 0.2
+	mobilisation_size = 0.04
+	war_exhaustion = -0.2
+	tax_efficiency = 0.05
+	mobilisation_economy_impact = -0.25
+	global_pop_consciousness_modifier = 0.1
+	global_pop_militancy_modifier = 0.05
+	icon = 5
+}
+
+national_workshops = {
+	local_RGO_throughput = -0.02
+	prestige = 0.02
+	icon = 13
+}
+
+neutrality = {
+	max_military_spending = -0.40
+	leadership_modifier = -0.75
+	prestige = -0.05
+	icon = 7
+}
+
+no_line_of_advantage = {
+	research_points_modifier = 0.1
+	political_reform_desire = 0.1
+	cb_generation_speed_modifier = -0.2
+	rgo_output = 0.05
+	icon = 15
+}
+
+otto_von_bismarck = {
+	prestige = 0.05
+	core_pop_militancy_modifier = -0.05
+	diplomatic_points_modifier = 0.25
+	ruling_party_support = 0.5
+	badboy = -0.05
+	icon = 17
+}
+
+ottoman_islamic_rule = {
+	suppression_points_modifier = 0.2
+	core_pop_consciousness_modifier = -0.05
+	core_pop_militancy_modifier = -0.05
+	icon = 5
+}
+
+ottomanism_reform = {
+	prestige = 0.02
+	non_accepted_pop_militancy_modifier = -0.05
+	core_pop_consciousness_modifier = 0.05
+	research_points_modifier = 0.05
+	icon = 5
+}
+
+population_trend = {
+	icon = 7
+}
+
+protector_of_eastern_christendom = {
+	prestige = 0.05
+	icon = 7
+}
+
+prussian_general_staff = {
+	org_regain = 0.25
+	land_organisation = 0.1
+	land_unit_start_experience = 0.5
+	supply_consumption = -0.05
+	leadership_modifier = 0.2
+	mobilisation_size = 0.02
+	icon = 15
+}
+
+rangaku = {
+	research_points_modifier = 0.2
+	global_pop_militancy_modifier = -0.05
+	global_pop_consciousness_modifier = 0.05
+	icon = 5
+}
+
+ravaged_by_disease = {
+	immigrant_push = 0.5
+	pop_militancy_modifier = -0.05
+	icon = 18
+}
+
+rcmp = {
+	core_pop_militancy_modifier = -0.02
+	icon = 1
+}
+
+rebel_cell_discovered = {
+	prestige = 0.01
+	icon = 15
+}
+
+recent_safari = {
+	prestige = 0.001
+}
+
+recent_safari2 = {
+	prestige = 0.001
+}
+ 
+republican_reforms = {
+	research_points_modifier = 0.10
+	core_pop_militancy_modifier = -0.10
+	icon = 5
+}
+
+ruhr_boom = {
+	factory_owner_cost = -0.5
+	global_population_growth = 0.002
+	factory_output = 0.05
+	icon = 11
+}
+
+sakoku = {
+	research_points_modifier = -0.05
+	global_pop_militancy_modifier = -0.05
+	global_pop_consciousness_modifier = -0.05
+	war_exhaustion = -0.1
+	icon = 5
+}
+
+self_strengthening_movement = {
+	prestige = 0.02
+	research_points = 1
+	global_pop_consciousness_modifier = 0.2	
+	global_pop_militancy_modifier = 0.02
+	icon = 5
+}
+
+shastar_vidya = {
+	org_regain = 0.5
+	land_organisation = 0.5
+	land_unit_start_experience = 3
+	mobilisation_size = 0.02
+	icon = 15
+}
+
+signed_the_geneva_convention = {
+	war_exhaustion = -0.01
+	prestige = 0.05
+	org_regain = 0.025
+	max_military_spending = -0.1
+	icon = 7
+}
+
+small_country_draft = {
+	pop_militancy_modifier = 0.01
+	mobilisation_size = 0.25
+	prestige = -0.02
+	war_exhaustion = -0.03
+	icon = 15
+}
+
+social_reform_movement = {
+	social_reform_desire = 0.4
+	global_pop_consciousness_modifier = 0.02
+	issue_change_speed = 0.05
+	icon = 7
+}
+
+sons_of_liberty = {
+	pop_consciousness_modifier = 0.1
+	pop_militancy_modifier = 0.1
+	icon = 18
+}
+
+spanish_restoration = {
+	RGO_throughput = 0.02
+	research_points_modifier = 0.01
+	core_pop_militancy_modifier = -0.1
+	icon = 5
+}
+
+tanzimat_era = {
+	research_points_modifier = 0.1
+	global_pop_consciousness_modifier = 0.1
+	icon = 7
+}
+
+the_bonnie_blue_flag = {
+	leadership = 2
+	mobilisation_economy_impact = -0.25
+	mobilisation_size = 0.1
+	icon = 15
+}
+
+the_congo_reform_association = {
+	badboy = 0.2
+	icon = 17
+}
+
+the_dragon_wakes = {
+	global_pop_militancy_modifier = 0.05
+	global_pop_consciousness_modifier = 0.02
+	prestige = 0.05
+	research_points_modifier = 0.1
+	icon = 13
+}
+
+the_eiffel_tower = {
+	prestige = 0.05
+	icon = 13
+}
+
+the_female_shortage = {
+	global_pop_consciousness_modifier = 0.2
+	global_pop_militancy_modifier = 0.05
+	global_population_growth = -0.003
+	icon = 14
+}
+
+the_french_foreign_legion = {
+	prestige = 0.01
+	global_immigrant_attract = 0.1	#1%..
+	icon = 17
+}
+
+the_ikhwan = {
+	mobilisation_size = 0.25
+	mobilisation_economy_impact = -0.25
+	core_pop_militancy_modifier = -0.1
+	war_exhaustion = -0.03
+	icon = 15
+}
+
+the_walhalla = {
+	prestige = 0.02
+	icon = 13
+}
+
+the_yard = {
+	core_pop_militancy_modifier = -0.02
+	icon = 1
+}
+
+treaties_of_velasco = {
+	icon = 5
+}
+
+tungning_nerf = {
+	mobilisation_size = -0.10
+	icon = 18
+}
+
+usa_draft = {
+	pop_militancy_modifier = 0.02
+	mobilisation_size = 0.05
+	war_exhaustion = -0.03
+	prestige = -0.02
+	icon = 15
+}
+
+worker_revolt = {
+	local_RGO_throughput = -0.2
+	poor_everyday_needs = -0.1
+	icon = 20
+}
+
+zemene_mesafint = {
+	mobilisation_size = 0.12
+	mobilisation_economy_impact = -0.3
+	supply_consumption = -0.3
+	war_exhaustion = -0.5
+	icon = 16
+}

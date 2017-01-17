@@ -1603,7 +1603,7 @@ country_event = { ##The Anglois Path
 	option = {
 	name = "We will endure as we always have"
 	add_country_modifier = { 
-	name = Anglois_dilemma
+	name = anglois_dilemma
 	duration = 15000
 	}
 	RAP = {	
@@ -2116,7 +2116,7 @@ country_event = { ##The Anglois success
 	option = { 
 	name = "Eventually we prevail !"
 	set_country_flag = Anglois_accepted 
-	remove_country_modifier = Anglois_dilemma
+	remove_country_modifier = anglois_dilemma
 	prestige = 100 
 	add_accepted_culture = french 
 	add_accepted_culture = english 

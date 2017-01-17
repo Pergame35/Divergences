@@ -592,7 +592,10 @@ country_event = {
 		name = "Let us reconcile with the Boers."
 		prestige = -50
 		BTV = {
-			all_core = { remove_core = THIS }
+			all_core = {
+				limit = { continent = africa }
+				remove_core = THIS
+			}
 		}
 		random_country = {
 			limit = {
@@ -651,7 +654,10 @@ country_event = {
 		prestige = 25
 		FROM = {
 			any_owned = {
-				limit = { is_core = BTV }
+				limit = {
+					continent = africa
+					is_core = BTV
+				}
 				secede_province = THIS
 			}
 			relation = { who = THIS value = 200 }
@@ -680,7 +686,10 @@ country_event = {
 		prestige = 25
 		FROM = {
 			any_owned = {
-				limit = { is_core = BTV }
+				limit = {
+					continent = africa
+					is_core = BTV
+				}
 				secede_province = THIS
 			}
 			casus_belli = {
