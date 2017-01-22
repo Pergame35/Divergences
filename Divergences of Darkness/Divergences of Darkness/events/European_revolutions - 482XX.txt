@@ -676,7 +676,7 @@ country_event = { #Congress because of HRE formed
 	trigger = { 
 	NOT = { has_global_flag = DVG_infamy }
 	has_global_flag = hre_formed
-	NOT = { tag = HRE }
+	NOT = { tag = HLR }
 	is_greater_power = yes 
 	continent = europe 
 	}

@@ -4,7 +4,7 @@ political_decisions = {
 		potential = {
 			is_culture_group = germanic
 			NOT = {
-				tag = HRE
+				tag = HLR
 				exists = GER
 			}
 		}
@@ -91,7 +91,7 @@ political_decisions = {
 	effect = { 
 	set_global_flag = hre_formed
 	prestige = 50 
-	change_tag = HRE 
+	change_tag = HLR 
 	country_event = 410009
 		}
 	}
@@ -99,7 +99,7 @@ political_decisions = {
 	move_to_frankfurt = { 
 	
 	potential = { 
-	tag = HRE 
+	tag = HLR 
 	NOT = { has_country_flag = frankfurt_unify }
 	NOT = { NGF = { exists = yes } }
 	NOT = { SGF = { exists = yes } }
@@ -114,7 +114,7 @@ political_decisions = {
 	effect = { 
 		GER = {
 				all_core = {
-					add_core = HRE
+					add_core = HLR
 				}
 			}
 		primary_culture = rheinish 
@@ -345,7 +345,7 @@ political_decisions = {
 	integrate_prussia = { 
 		
 	potential = { 
-	OR = { tag = HRE tag = CAE } 
+	OR = { tag = HLR tag = CAE } 
 	690 = { owned_by = THIS }
 	698 = { owned_by = THIS }
 	NOT = { has_country_flag = integrate_prussia }
@@ -368,7 +368,7 @@ political_decisions = {
 	integrate_elsass = { 
 		
 	potential = { 
-	tag = HRE 
+	tag = HLR 
 	409 = { owned_by = THIS }
 	410 = { owned_by = THIS }
 	NOT = { has_country_flag = integrate_elsass	}

@@ -94,11 +94,11 @@ country_event = {
 				}
 			modifier = { 
 				factor = 1.2
-				alliance_with = HRE
+				alliance_with = HLR
 				}
 			modifier = {
 				factor = 1.2
-				relation = { who = HRE value = 100 }
+				relation = { who = HLR value = 100 }
 				}
 			modifier = { 
 				factor = 1.5 
@@ -128,7 +128,7 @@ country_event = {
 					}
 			modifier = {
 				factor = 1.2
-				relation = { who = HRE value = 50 }
+				relation = { who = HLR value = 50 }
 				}
 			modifier = { 
 				factor = 1.4
@@ -235,11 +235,11 @@ country_event = {
 				}
 			modifier = { 
 				factor = 1.2
-				alliance_with = HRE
+				alliance_with = HLR
 				}
 			modifier = {
 				factor = 1.2
-				relation = { who = HRE value = 100 }
+				relation = { who = HLR value = 100 }
 				}
 			modifier = { 
 				factor = 1.5 
@@ -269,7 +269,7 @@ country_event = {
 					}
 			modifier = {
 				factor = 1.2
-				relation = { who = HRE value = 50 }
+				relation = { who = HLR value = 50 }
 				}
 			modifier = { 
 				factor = 1.4
@@ -373,11 +373,11 @@ country_event = {
 				}
 			modifier = { 
 				factor = 1.2
-				alliance_with = HRE
+				alliance_with = HLR
 				}
 			modifier = {
 				factor = 1.2
-				relation = { who = HRE value = 100 }
+				relation = { who = HLR value = 100 }
 				}
 			modifier = { 
 				factor = 1.5 
@@ -407,7 +407,7 @@ country_event = {
 					}
 			modifier = {
 				factor = 1.2
-				relation = { who = HRE value = 50 }
+				relation = { who = HLR value = 50 }
 				}
 			modifier = { 
 				factor = 1.4
@@ -534,7 +534,7 @@ country_event = {
 		fire_only_once = yes 
 
 		trigger = { 
-		tag = HRE 
+		tag = HLR 
 		has_country_flag = prag_p
 		}
 		
@@ -562,7 +562,7 @@ country_event = {
 		desc = "HRE11.D"	
 		
 		trigger = { 
-		tag = HRE 
+		tag = HLR 
 		has_country_flag = results 
 		RAP = { check_variable = {
 				which = unified_HRE
@@ -592,7 +592,7 @@ country_event = {
 		inherit = FRM
 		GER = {
 				all_core = {
-					add_core = HRE
+					add_core = HLR
 				}
 			}
 		primary_culture = rheinish 
@@ -615,7 +615,7 @@ country_event = { ###Total refusal
 		desc = "HRE12.D"	
 		
 		trigger = { 
-		tag = HRE 
+		tag = HLR 
 		has_country_flag = results 
 		RAP = { check_variable = {
 				which = Refusal_HRE
@@ -715,7 +715,7 @@ country_event = {
 		}
 		#SAX_1 = { add_core = SGF }
 		change_tag = SGF
-		HRE = { country_event = { id = 410014 days = 2 } } 
+		HLR = { country_event = { id = 410014 days = 2 } } 
 	}
 }
 	
@@ -730,7 +730,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = danube_reb
 	SGF = { exists = yes }
 	}
@@ -790,7 +790,7 @@ country_event = {
 		PRU_549 = { add_core = NGF }	#Brandenburg
 		SAX_558 = { add_core = NGF }	#Saxony
 		change_tag = NGF
-		HRE = { country_event = { id = 410015 days = 2 } } 
+		HLR = { country_event = { id = 410015 days = 2 } } 
 	}
 }
 	
@@ -801,7 +801,7 @@ country_event = {
 	desc = "HRE14.D"
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = elbe_reb
 	NGF = { exists = yes }
 	}
@@ -945,7 +945,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = rhine_reb
 	RHI = { exists = yes }
 	}
@@ -981,8 +981,8 @@ country_event = {
 	desc = "HRE19.D"
 	
 	trigger = { 
-	tag = HRE 
-	NOT = { 549 = { owned_by = HRE } }	
+	tag = HLR 
+	NOT = { 549 = { owned_by = HLR } }	
 	NOT = { BOH = { exists = yes } }
 	war = no 
 	}
@@ -995,8 +995,8 @@ country_event = {
 	change_tag = BOH 
 	any_country = {
 				any_owned = {
-						limit = { is_core = HRE } 
-	remove_core = HRE 
+						limit = { is_core = HLR } 
+	remove_core = HLR 
 			}
 		}
 	}
@@ -1009,7 +1009,7 @@ country_event = {
 	desc = "HRE20.D"
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = results 
 	NOT = {
 		RAP = {
@@ -1050,7 +1050,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	RAP = { check_variable = { 
 	which = Rhenish_acceptance
@@ -1081,7 +1081,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 	BEG = {
@@ -1089,7 +1089,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		MNR = {
@@ -1097,7 +1097,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		NAS = {
@@ -1105,7 +1105,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		FRM = {
@@ -1113,7 +1113,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		HEK = {
@@ -1121,7 +1121,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		HES = {
@@ -1129,7 +1129,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		WES = {
@@ -1137,7 +1137,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 	}
@@ -1152,7 +1152,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	RAP = {
 	check_variable = { 
@@ -1187,7 +1187,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	NOT = {
 		RAP = {
@@ -1334,7 +1334,7 @@ country_event = {
 	
 	option = { 
 	name = "We will watch them ..."
-	HRE = {
+	HLR = {
 			create_vassal = RHI
 				}
 	}
@@ -1351,7 +1351,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	RAP = { check_variable = { 
 	which = Elbian_accep
@@ -1378,15 +1378,15 @@ country_event = {
 				}
 				annex_to = THIS
 			}
-	PRU_581 = { add_core = HRE }	#Westphalia
-	HAN_534 = { add_core = HRE }	#East Frisia
-	HAM_528 = { add_core = HRE }	#Hanover
-	PRU_546 = { add_core = HRE }	#Pomerania
-	SAX_1 = { add_core = HRE }		#Thuringia
-	HOL_369 = { add_core = HRE }	#Holstein
-	PRU_553 = { add_core = HRE }	#Anhalt
-	PRU_549 = { add_core = HRE }	#Brandenburg
-	SAX_558	 = { add_core = HRE }	#Saxony
+	PRU_581 = { add_core = HLR }	#Westphalia
+	HAN_534 = { add_core = HLR }	#East Frisia
+	HAM_528 = { add_core = HLR }	#Hanover
+	PRU_546 = { add_core = HLR }	#Pomerania
+	SAX_1 = { add_core = HLR }		#Thuringia
+	HOL_369 = { add_core = HLR }	#Holstein
+	PRU_553 = { add_core = HLR }	#Anhalt
+	PRU_549 = { add_core = HLR }	#Brandenburg
+	SAX_558	 = { add_core = HLR }	#Saxony
 	}
 }
 
@@ -1399,7 +1399,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	RAP = {
 	check_variable = { 
@@ -1434,7 +1434,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	NOT = {
 	RAP = {
@@ -1519,7 +1519,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	RAP = {
 	check_variable = { 
@@ -1549,38 +1549,38 @@ country_event = {
 	#Austria
 		AUS = {
 			all_core = {
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		#Bavaria
 		BAV = {
 			all_core = {
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		#Wurtemberg
 		WUR = {
 			all_core = {
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		#Baden
 		BAD = {
 			all_core = {
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		#Swiss
 		SWI = {
 			all_core = {
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		#Tirol
 		AUS_612 = {
-			add_core = HRE
+			add_core = HLR
 		}
-		SAX_1 = { add_core = HRE }
+		SAX_1 = { add_core = HLR }
 	}
 }
 
@@ -1593,7 +1593,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	RAP = {
 	check_variable = { 
@@ -1628,7 +1628,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	NOT = {
 	RAP = {
@@ -1750,7 +1750,7 @@ country_event = {
 	desc = "HRE7.D"
 
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	OR = {
 		has_country_flag = elbe_accepts
@@ -1789,7 +1789,7 @@ country_event = {
 	desc = "HRE35.D"
 
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = negotiations
 	}
 	
@@ -1934,7 +1934,7 @@ country_event = {
 	
 	option = { 
 	name = "We will watch them ..."
-	HRE = {
+	HLR = {
 			create_vassal = SGF
 				}
 	}
@@ -1950,7 +1950,7 @@ country_event = {
 	
 	option = { 
 	name = "We will watch them ..."
-	HRE = {
+	HLR = {
 			create_vassal = NGF
 				}
 	}
@@ -1966,7 +1966,7 @@ country_event = {
 	picture = "Bohemian_Nationalism"
 
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = frankfurt_unify 
 	NOT = { BOH = { exists = yes } }
 	NOT = { has_country_flag = Czechia }
@@ -1992,7 +1992,7 @@ country_event = {
 	picture = "Barricades_BOH"
 
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	NOT = { BOH = { exists = yes } }
 	has_country_flag = Czechia
 	NOT = { has_global_flag = BOH_civil_war }
@@ -2036,7 +2036,7 @@ country_event = {
 	major = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	NOT = { BOH = { exists = yes } }
 	has_global_flag = Prague_waiting
 	NOT = { has_global_flag = BOH_civil_war }
@@ -2097,7 +2097,7 @@ country_event = {
 		tag = BRG 
 		}
 	has_global_flag = BOH_civil_war 
-	NOT = { truce_with = HRE }
+	NOT = { truce_with = HLR }
 	}
 	
 	mean_time_to_happen = { 
@@ -2107,12 +2107,12 @@ country_event = {
 	option = { 
 	name = "We will 'support' the Bohemians !"
 	casus_belli = {
-			target = HRE
+			target = HLR
 			type = cut_down_to_size
 			months = 60
 		}
 	war = {
-			target = HRE 
+			target = HLR 
 			attacker_goal = {
 				casus_belli = cut_down_to_size
 			}
@@ -2139,9 +2139,9 @@ country_event = {
 	name = "We have vainquished the Emperor !"
 	clr_global_flag = BOH_civil_war
 	set_global_flag = BOH_civil_war_ended
-	any_owned = { remove_core = HRE }
+	any_owned = { remove_core = HLR }
 	prestige = 50 
-	HRE = { country_event = 410058 }
+	HLR = { country_event = 410058 }
 	country_event = 410060
 	}
 	
@@ -2193,7 +2193,7 @@ country_event = {
 	desc = "HRE59.D"
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_global_flag = BOH_civil_war
 	owns = 625
 	war = no 
@@ -2252,7 +2252,7 @@ country_event = {
 	picture = "rhapsody"
 	
 	trigger = { 
-	OR = { tag = HRE tag = BOH}
+	OR = { tag = HLR tag = BOH}
 	owns = 625 
 	romanticism = 1 
 	}
@@ -2273,7 +2273,7 @@ country_event = {
 	major = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	year = 1900 
 	owns = 576 
 	NOT = { year = 1901 }
