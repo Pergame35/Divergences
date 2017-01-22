@@ -1,12 +1,9 @@
-;;;;;;;;;;;;;;x                                          
 reclaim_occitania_title;Free Occitania;;;;;;;;;;;;;x         
 reclaim_occitania_desc;Even now that we are king of Italy we can't forget our claims in France. Our state is the reunion of many cultures, the French and Occitan having the same rights than the Italians we have united. We can't establish a Dual-Monarchy of France-Italy for now but we could claim the Mediterranean provinces of the usurpers.;;;;;;;;;;;;;x    
 venetians_culture_title;Integration of the Venetians;;;;;;;;;;;;;x       
 venetians_culture_desc;The people under the government of the Serenissima have distinguished themselves from their Italians brothers because of their ties with the East. But now that Venice is in the hands of the Italian Nation, it is our duty to fully integrate them into our national fabric;;;;;;;;;;;;;x  
 dominium_maris_baltici_title; Dominium Maris Baltici;;;;;;;;;;;;;x    
 dominium_maris_baltici_desc; The greatest aspiration of the Kalmar Union has always been the complete control of the Baltic Sea. While the Scandinavians gained several holdings in the region, they still miss Prussia and the Lithuanian coast. Let us claim these areas for the glory of the Union ! ;;;;;;;;;;;;;x 
-claim_livonia_title; Claiming Livonia;;;;;;;;;;;;;x  
-claim_livonia_desc; Scandinavia has been our rival for centuries in the Baltic. To take the advantage on them we must claim the duchy of Livonia!;;;;;;;;;;;;;x  
 kurland_annexation_title; The annexation of Kurland;;;;;;;;;;;;;x  
 kurland_annexation_desc; The last obstacle to our complete domination of the Baltic sea is the small state of Kourland. For too long, we have let them pursue a semi-independent policy and it is now time to reclaim their full integration in the kingdom;;;;;;;;;;;;;x  
 treaty_of_Corfu_title; Treaty of Corfu;;;;;;;;;;;;;x  
@@ -692,8 +689,6 @@ restore_lusitania_title;Claim Lusitania;;;;;;;;;;;;x
 restore_lusitania_desc;Before taking Mexico we should secure the Lusitanian lands, then we can march on Mexico;;;;;;;;;;;;x
 restore_mexico_title;Claim Mexico;;;;;;;;;;;;x
 restore_mexico_desc;It is time to take back Mexico City to end once and for all the ideas of an independent Latin America !;;;;;;;;;;;;x 
-CLM1.T;Administration of Gran Colombia;;;;;;;;;;;;x
-CLM1.D;We have reconquered Gran Colombia but now we have to administrate it. We could keep the rebellious colonies under our direct control but it has proved to be inefficient and one of the causes of the rebellion. We could then allow some home-rule with a direct administrator from Spain to rule over the colonies. The question is then how to divide the area : along the old vice-royalties or on a smaller basis ?;;;;;;;;;;;;x
 CLMcusco.T;The question of Cuzco;;;;;;;;;;;;x 
 CLMcusco.D;The old imperial city of the Incan Empire is in our hands since the end of the rebellion. Cuzco has been under our control since 1575 but the area is still predominantly inhabited by Quechua people and few have adopted our customs. Some in our government have suggested to give the territories depending of the Arequipa Capitancy to the Incan Empire to thank them for their intervention during the war. Although they were forced to surrender, the Incans decided the issue of the war by killing the Rebel leader Bolivar. Ceding Cuzco would surely assure us a period of peace in Colombia and ease the tensions that have accumulated over the years.;;;;;;;;;;;;x 
 CLM_lib1.T;The end of the rebellion;;;;;;;;;;;;x 
@@ -917,7 +912,7 @@ SAF1.D;The Leuwin state was constituted by the infamous brother of the Duke and 
 SAF2.T;Burgundian Ultimatum;;;;;;;;;;;;;x 
 SAF2.D;Our former Burgundian overlords are trying to exert their influence over all Boer States. We can bow or we can fight !;;;;;;;;;;;;;x 
 SAF3.T;Negative answer;;;;;;;;;;;;;x 
-SAF3.T;The $FROMCOUNTRY_ADJ$ bastards have refused to acknowledge our rule. There can be only one solution, war !;;;;;;;;;;;;;x 
+SAF3.D;The $FROMCOUNTRY_ADJ$ bastards have refused to acknowledge our rule. There can be only one solution, war !;;;;;;;;;;;;;x 
 SAF4.T;Annexation of Leuwin;;;;;;;;;;;;;x 
 SAF4.D;We have strengthened our rule on our old colony and it is time to integrate the state of Leuwin directly into the Cape Colony !;;;;;;;;;;;;;x 
 SAF5.T;The Xhosa tribes;;;;;;;;;;;;;x 
@@ -953,7 +948,7 @@ freeSER_desc;Serbia is under our control. We have captured the forts along the D
 1TUR.T;Illyrian vultures;;;;;;;;;;;;;x 
 1TUR.D;The king of Illyria has decided to take advantage of the void in Serbia and attacked us for the control of the province. We could buy peace easily by ceding it to them.;;;;;;;;;;;;;x 
 6TUR.T;Illyrian victory;;;;;;;;;;;;;x 
-6TUR;D;We are forced to cede Southern Serbia to the Illyrians...;;;;;;;;;;;;;x 
+6TUR.D;We are forced to cede Southern Serbia to the Illyrians...;;;;;;;;;;;;;x 
 7TUR.T;Hungarian Victory;;;;;;;;;;;;;x 
 7TUR.D;We are forced to cede Northern Serbia to the Magyars;;;;;;;;;;;;;x 
 8TUR.T;Safavid victory;;;;;;;;;;;;;x 
@@ -1014,8 +1009,6 @@ claim_the_west_desert_title;The Western Sahara;;;;;;;;;;;;;x
 claim_the_west_desert_desc;With our control of Morocco complete we should claim the western Sahara lands before any imperialists try to take control of these lands !;;;;;;;;;;;;;x
 claim_tripoli_title;Claim Tripolitania;;;;;;;;;;;;;x
 claim_tripoli_desc;With Maghreb under our control, we have to take control of Tripolitania to protect our brothers from the Imperialists !;;;;;;;;;;;;;x
-organize_mauretania_title;Organize Mauretania;;;;;;;;;;;;;x
-organize_mauretania_desc;Now that the Magrebi tribes were defeated we should reorganize our Moroccan territories in a new colony. We must create the proper structures, so that it stands on par with our other national states.;;;;;;;;;;;;;x
 organize_numidia_title;Organize Numidia;;;;;;;;;;;;;x
 organize_numidia_desc;Now that the Magrebi tribes were defeated we should reorganize our Maghrebi territories in a new colony. We must create the proper structures, so that it stands on par with our other national states.;;;;;;;;;;;;;x
 organize_libia_title;Organize Libya;;;;;;;;;;;;;x
@@ -1116,8 +1109,6 @@ pas_de_calais_title;Le Pas de Calais;;;;;;;;;;;;;x
 pas_de_calais_desc;Calais and the surrounding plains of Picardie were important places during the Hundred Years War. Sadly this territory was lost with Calais being surrendered to the Burgundian king during the Anglo-French wars of Religion. But with our troops having recaptured the closest land to England we could make the International Concert recognize our claim !;;;;;;;;;;;;;x 
 puppet_Manchuria_title;Organizing Manchukuo;;;;;;;;;;;;;x 
 puppet_Manchuria_desc;Our expansion has given us the rich lands of Manchuria. Their goods will be very important for our industry but the numerous local population could resist us. Let us establish a puppet state under the rule of a Manchu prince which will allow us to better control the local population.;;;;;;;;;;;;;x  
-EVTNAME21520;Sanbao Earthquake!;;;;;;;;;;;;;x 
-EVTDESC21520;A major earthquake has struck Sanbao, Qingqiu, today, causing widespread devastation and the loss of thousands of lives. Tremors have been reported as far away inland as Yicheng, and the fire that erupted as a result of the earthquake has left the city more or less leveled. Army units are hard at work bringing in supplies to the survivors, and we can rest assured that the quake will leave its mark on public memory for generations to come.;;;;;;;;;;;;;x 
 organize_yakutia_title;Organizing Yakutia;;;;;;;;;;;;;x 
 organize_yakutia_desc;The frozen Seihoku lands would be interesting to exploit but the lack of population and the unwilligness from our citizens to move there does not allow us to benefit fully from it, worse, these lands cost us much. We could create another Co-prosperity sphere member by 'civilizing' the Yakut tribes and then grant us sovereignity over all the inland Seihoku lands we possess.;;;;;;;;;;;;;x 
 Kita1.T;The Kaiganese Independence Committee;;;;;;;;;;;;;x  
@@ -1210,8 +1201,8 @@ sons_of_harold;The Sons of Harold;;;;;;;;;;;;;x,,,,,,,,,,,,,
 sons_of_harold_desc;Firebrands are arguing the cause of English nationalism;;;;;;;;;;;;;x,,,,,,,,,,,,, 
 sons_of_louis;The Sons of St-Louis;;;;;;;;;;;;;x,,,,,,,,,,,,, 
 sons_of_louis_desc;Firebrands are arguing the cause of French nationalism;;;;;;;;;;;;;x,,,,,,,,,,,,, 
-french_cultural_unity;Anglois Cultural Unity;;;;;;;;;;;;x,,,,,,,,,,,,,
-french_cultural_unity_desc;New schooling policies are slowly assimilating patois-speaking Anglois.;;;;;;;;;;;;x,,,,,,,,,,,,,
+anglois_cultural_unity;Anglois Cultural Unity;;;;;;;;;;;;x,,,,,,,,,,,,,
+anglois_cultural_unity_desc;New schooling policies are slowly assimilating patois-speaking Anglois.;;;;;;;;;;;;x,,,,,,,,,,,,,
 anglois_dilemma;The Anglois Dilemma.;;;;;;;;;;;;x,,,,,,,,,,,,,
 anglois_dilemma_desc;Our policies of integration are provoking troubles across the country.;;;;;;;;;;;;x,,,,,,,,,,,,,
 revolution_aftermath;Aftermath of the Revolution;;;;;;;;;;;;x,,,,,,,,,,,,,
@@ -1662,8 +1653,8 @@ DUAendEnl.T;End of the Anglois Dream;;;;;;;;;;;;x
 DUAendEnl.D;Our claims to rule over both France and England have been shaterred by $FROMCOUNTRY$ which is now the new Power to be reckoned in the British Islands. At least we still control France, and this where our new destiny lies...;;;;;;;;;;;;x
 English_north_ENL_title;Speak English!;;;;;;;;;;;;x
 English_north_ENL_desc;With an English government in control of Northern England we can change the names of the streets and cities to proper English;;;;;;;;;;;;x
-English_north_ENL_title;Speak Anglois!;;;;;;;;;;;;x
-English_north_ENL_desc;With the Northern provinces brought into the fold we can rename the streets and cities to their proper names!;;;;;;;;;;;;x
+English_north_DUA_title;Speak Anglois!;;;;;;;;;;;;x
+English_north_DUA_desc;With the Northern provinces brought into the fold we can rename the streets and cities to their proper names!;;;;;;;;;;;;x
 English_south_ENL_title;London not LONDRES!;;;;;;;;;;;;x
 English_south_ENL_desc;With the whole island controlled by England we can end the Anglois names on the island.;;;;;;;;;;;;x
 English_south_DUA_title;Londres not LONDON!;;;;;;;;;;;;x
@@ -1712,7 +1703,7 @@ NeuKur1.T;A Curonian proposal;;;;;;;;;;;;x
 NeuKur1.D;The Curonian government has approched us to buy the island of St-Andrew.;;;;;;;;;;;;x
 NeuKur2.T;$FROMCOUNTRY_ADJ$ accepted!;;;;;;;;;;;;x
 NeuKur2.D;We now own the island of St-Andrew!;;;;;;;;;;;;x
-NeuKur3.T$FROMCOUNTRY_ADJ$ refused....;;;;;;;;;;;;;x
+NeuKur3.T;$FROMCOUNTRY_ADJ$ refused....;;;;;;;;;;;;;x
 NeuKur3.D;It seems that our offer was not sufficient;;;;;;;;;;;;x
 NeuKur4.D;The Curonian government has approched us to purchase our possessions in the little Antilles;;;;;;;;;;;;x
 NeuKur5.D;We now own the Spanish Lesser Antilles!;;;;;;;;;;;;x

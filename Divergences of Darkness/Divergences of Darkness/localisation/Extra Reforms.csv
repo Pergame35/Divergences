@@ -1,55 +1,3 @@
-modern_weapons;Modern weapons;;;;;;;;;;;;;x,,,,,
-modern_weapons_desc;The best weapons foreign nations have to offer;;;;;;;;;;;;;x,,,,,
-naval_architecture;Naval architecture;;;;;;;;;;;;;x,,,,,
-naval_architecture_l;Naval architecture;;;;;;;;;;;;;x,,,,,
-traditional;Traditional;;;;;;;;;;;;;x,,,,,
-traditional_desc;Simple ship design;;;;;;;;;;;;;x,,,,,
-scientific;Scientific;;;;;;;;;;;;;x,,,,,
-scientific_desc;Advanced ship design;;;;;;;;;;;;;x,,,,,
-naval_facilities;Naval facilities;;;;;;;;;;;;;x,,,,,
-naval_facilities_l;Naval facilities;;;;;;;;;;;;;x,,,,,
-no_naval_bases;Non-existent;;;;;;;;;;;;;x,,,,,
-no_naval_bases_desc;Primitive port capabilities;;;;;;;;;;;;;x,,,,,
-yes_naval_bases;Naval bases;;;;;;;;;;;;;x,,,,,
-yes_naval_bases_desc;Able to build military ports;;;;;;;;;;;;;x,,,,,
-advanced_foreign_navies;Advanced foreign navies;;;;;;;;;;;;;x,,,,,
-advanced_foreign_navies_desc;The best ships that we can purchase;;;;;;;;;;;;;x,,,,,
-academic_institutions;Academic institutions;;;;;;;;;;;;;x,,,,,
-academic_institutions_l;Academic institutions;;;;;;;;;;;;;x,,,,,
-nonexistent;None;;;;;;;;;;;;;x,,,,,
-nonexistent_desc;Traditional education methods only;;;;;;;;;;;;;x,,,,,
-madrasahs;Madrasahs;;;;;;;;;;;;;x,,,,,
-madrasahs_desc;Simple schooling institutions;;;;;;;;;;;;;x,,,,,
-universities;Universities;;;;;;;;;;;;;x,,,,,
-universities_desc;Advanced centers of learning;;;;;;;;;;;;;x,,,,,
-medicine_reform;Medical reform;;;;;;;;;;;;;x,,,,,
-medicine_reform_l;Medical reform;;;;;;;;;;;;;x,,,,,
-herbalism;Herbalism;;;;;;;;;;;;;x,,,,,
-herbalism_desc;Only traditional medicines allowed;;;;;;;;;;;;;x,,,,,
-alchemy;Imported medicines;;;;;;;;;;;;;x,,,,,
-alchemy_desc;Foreign pharmaceuticals are permitted;;;;;;;;;;;;;x,,,,,
-foreign_surgeons;Foreign surgeons;;;;;;;;;;;;;x,,,,,
-foreign_surgeons_desc;Foreign doctors are permitted to practice;;;;;;;;;;;;;x,,,,,
-taxation_reform;Taxation reform;;;;;;;;;;;;;x,,,,,
-taxation_reform_l;Taxation reform;;;;;;;;;;;;;x,,,,,
-tribute;Tribute;;;;;;;;;;;;;x,,,,,
-tribute_desc;Collected through traditional means;;;;;;;;;;;;;x,,,,,
-tax_farmers;Taxed goods;;;;;;;;;;;;;x,,,,,
-tax_farmers_desc;Organized system to tax farmers;;;;;;;;;;;;;x,,,,,
-tax_inspectors;Tax inspectors;;;;;;;;;;;;;x,,,,,
-tax_inspectors_desc;Modern taxation system;;;;;;;;;;;;;x,,,,,
-diplomatic_reform;Diplomatic reform;;;;;;;;;;;;;x,,,,,
-diplomatic_reform_l;Diplomatic reform;;;;;;;;;;;;;x,,,,,
-isolationism;Isolationism;;;;;;;;;;;;;x,,,,,
-isolationism_desc;We shall interact with no other nations;;;;;;;;;;;;;x,,,,,
-interactive;Interactive;;;;;;;;;;;;;x,,,,,
-interactive_desc;We can ignore the rest of the world no longer;;;;;;;;;;;;;x,,,,,
-disciplinary_reform;Disciplinary reform;;;;;;;;;;;;;x,,,,,
-disciplinary_reform_l;Disciplinary reform;;;;;;;;;;;;;x,,,,,
-punishment;Retribution;;;;;;;;;;;;;x,,,,,
-punishment_desc;An eye for an eye, no less;;;;;;;;;;;;;x,,,,
-rehabilitation;Rehabilitation;;;;;;;;;;;;;x,,,,,
-rehabilitation_desc;The concepts of mercy and parole;;;;;;;;;;;;;x,,,,,
 professional_officers;Professional officers;;;;;;;;;;;;x,,
 professional_officers_l;Professional officers;;;;;;;;;;;;x,,
 professional_officers_desc;Our troops AND officers are the finest in the world. For real this time.;;;;;;;;;;;;x,,
@@ -215,45 +163,15 @@ EVTNAME201020;A hidden chamber;;;;;;;;;;;;x;
 EVTDESC201020;Our archaeologists in Egypt have found a tomb, which seemed plundered by tomb raiders. But when they made further investigations, they found a chamber behind a false wall - full with ancient artefacts.;;;;;;;;;;;;x;
 EVTNAME201003;Archaeological expedition;;;;;;;;;;;;x;
 EVTDESC201003;A foreign power has asked for access to the jungle region of Yucatan. An expedition of archaeologists was send, lead by representative of the National $FROMCOUNTRY_ADJ$ Museum. They are willing to pay and are also willing to share some of their newly made discoveries.;;;;;;;;;;;;x;
-EVTNAME201004;$FROMCOUNTRY$ gives access;;;;;;;;;;;;x;
-EVTDESC201004;The government of $FROMCOUNTRY$ has decided to give full access regarding our expedition in the jungle of Yucatan. Our researches can begin.;;;;;;;;;;;;x;
-EVTNAME201005;$FROMCOUNTRY$ denies access;;;;;;;;;;;;x;
-EVTDESC201005;Unfortunately, $FROMCOUNTRY$ has refused to give us access to the jungle of Yucatan. That was an official statement of the $FROMCOUNTRY_ADJ$ Minister of foreign affairs. Nevertheless, there may be still a chance to get a permission. Our diplomats were able to talk with some deputies, who would talk with the $FROMCOUNTRY_ADJ$ head of state. But without bribing and a share of our research findings, it will be impossible to convince him. And if we succeed, we will be viewed as dishonest in the archaeological and international scene.;;;;;;;;;;;;x;
-EVTNAME201006;Presents from $FROMCOUNTRY$;;;;;;;;;;;;x;
-EVTDESC201006;$FROMCOUNTRY_ADJ$ diplomats made an offer that we can refuse. They are willing to pay the fivefold price, and will us give even more access to their examination. However, we will be seen as a corrupt country in the archaeological scene.;;;;;;;;;;;;x;
-EVTNAME201007;Archaeological expedition;;;;;;;;;;;;x;
-EVTDESC201007;A foreign power has asked for access to the Andes Mountains. An expedition of archaeologists was send, lead by representative of the National $FROMCOUNTRY_ADJ$ Museum. They are willing to pay and are also willing to share some of their newly made discoveries.;;;;;;;;;;;;x;
-EVTNAME201008;$FROMCOUNTRY$ gives access;;;;;;;;;;;;x;
-EVTDESC201008;The government of $FROMCOUNTRY$ has decided to give full access regarding our expedition. Our researches can begin.;;;;;;;;;;;;x;
-EVTNAME201009;$FROMCOUNTRY$ denies access;;;;;;;;;;;;x;
-EVTDESC201009;Unfortunately, $FROMCOUNTRY$ has refused to give us access to the Andes.;;;;;;;;;;;;x;
-EVTNAME201010;Archaeological expedition;;;;;;;;;;;;x;
-EVTDESC201010;A foreign power has asked for access to the old ruins of Mesopotamia. An expedition of archaeologists was send, lead by representative of the National $FROMCOUNTRY_ADJ$ Museum. They are willing to pay and are also willing to share some of their newly made discoveries.;;;;;;;;;;;;x;
-EVTNAME201011;$FROMCOUNTRY$ gives access;;;;;;;;;;;;x;
-EVTDESC201011;The government of $FROMCOUNTRY$ has decided to give full access regarding our expedition in the region of Mesopotamia. Our researches can begin.;;;;;;;;;;;;x;
-EVTNAME201012;$FROMCOUNTRY$ denies access;;;;;;;;;;;;x;
-EVTDESC201012;The evil $FROMCOUNTRY_ADJ$ are not willing to give us access. In fact, they have denied us every right to visit their lands for now and forever!;;;;;;;;;;;;x;
-EVTNAME201013;Archaeological exhibition;;;;;;;;;;;;x;
-EVTDESC201013;$COUNTRY$ has become a leading nation in the field of Archaeology. Excavations are held in many exotic places, and our National Museum in $CAPITAL$ has become a major place of archaeological artefacts. A high regarded exhibition is held this week, to celebrate our newly made researchs in Africa, Asia and Southern America.  In fact, $COUNTRY_ADJ$ archaeologists are highly regarded in the world. Precious artefacts, amazing sarcophagues and ancient steles or sculptures are exposed by them on this occasion. People of our nation, neighbours, and even other great powers are guests. Our efforts cause recognition, pride and envy.;;;;;;;;;;;;x;
 EVTNAME201014;Archaeological exhibition;;;;;;;;;;;;x;
 EVTDESC201014;In $FROMCOUNTRY$, a major archaeological exhibition is held. Finest artefacts and spectacular items are exposed, and it seems, that it becomes a worldwide event. Our own scientists are ashamed.;;;;;;;;;;;;x;
 EVTNAME201015;$COUNTRY$, a backward country?;;;;;;;;;;;;x;
 EVTDESC201015;The last archaeological exhibition was not without it side effects. We were mocked as 'backward scientists'. Without excavations and expeditions, our prestige has suffered in the international scene. To make things worse: we lack even the basics of archaeological science. If we want to catch up, we must better our methods and educate a new generation of scientists. But without practice, we won't get further. As we can't get access to the exotic places of this world, a commission has proposed to gain experience in a local excavation. If we have an organized and professional troop of archaeologists, we may have more chances in the future.;;;;;;;;;;;;x;
 EVTNAME201017;Local excavation;;;;;;;;;;;;x;
 EVTDESC201017;It seems, that after years of practising and studying, our scientists have found an interesting place, which was mostly neglected in the past. After weeks of work, we have managed to find old tombs of a prehistoric times. Our archaeologists have gained experience and are looking forward. It seems, that we have started our own archaeological project.;;;;;;;;;;;;x;
-EVTNAME201018;Archaeological society;;;;;;;;;;;;x;
-EVTDESC201018;Modern science is on the rise. $COUNTRY$, a high regarded nation of historians, philologues and archaeologists, is well-known for its researches. The $COUNTRY_ADJ$ Archaeological Institute was founded today as an association of these groups to make our efforts even more effective.;;;;;;;;;;;;x;
-EVTNAME201019;A famous Archaeologist;;;;;;;;;;;;x;
-EVTDESC201019;A member of our Archaeological society has become a leading expert with worldwide reputation and many successful excavations all around the world. He introduced new methods and wrote a guide for future generations. He is seen as the most talented man in this field, and $COUNTRY$ is proud of his famous son.;;;;;;;;;;;;x;
-EVTNAME201021;An old stele;;;;;;;;;;;;x;
-EVTDESC201021;Deep in the jungle, our archaeologists have found an old stele of the classical period. This artefact is not only a wonderful piece of art, but will give us new insight in the ancient world of the Mayas.;;;;;;;;;;;;x;
-EVTNAME201022;Mysterious Maya Pyramid;;;;;;;;;;;;x;
-EVTDESC201022;Haze lays above the forests and hills of Yucatan. The mist clears up, as our expedition keeps going through the wild and awkward jungle. Jaguars and other ferocious beasts are living in this unspoiled nature. Savages has hunted a group of our team and injured many. They were doomed. Others were infected by Malaria, victims of the feared and bloodthirsty Mosquitos. Only a little grouplet of three persons has survived the exertions. The leader, a man with three-day stubble and a bull-whip in his hand, gives a sign to rest for a while. Steles and rocks with engravings. The whole territory is marked by them. The archaeologist's eyes flit over stairs, destroyed and mossy. The ancient ruin of a Maya pyramid. He pricks up his ears, as one of the heavers raises his hand and shouts: 'Hombre, I think I found the entrance!';;;;;;;;;;;;x;
 EVTDESC201023;Our expedition has found an ancient Maya Pyramid in the middle of the jungle of Yucatan. And even more, our chief-archaeologist, René Emile Belloq, was able to get a holy idol, which was coincidentally in the hand of a fedora-wearing american archaeologist. Unfortunately, this poor man was slained by savages of the local Hovito tribe, as Belloq affirms. Now, this wonderful idol will be our new tourist attraction in the Mesoamerican section of the Louvre!;;;;;;;;;;;;x;
 EVTNAME201025;Expedition members eaten by Dinosaurs?;;;;;;;;;;;;x;
 EVTDESC201025;The members of our last expedition in the unexplored jungles of Yucatan have returned without success. The survivors, emaciated, pale and littered with scars, have lost even their equipment and are happy that they were able to return. But the director of the Archaeological Museum rose his eyebrows, when they were forced to tell, what happened to the other team members, the heavers and the equipment. The leading archaeologists shouted like a maniac, made wild gesticulations and told, that they were lost in a hidden valley, in the middle of the jungle, unknown to anyone. In this valley, prehistoric animals like dinosaurs and other extinct creatures lived and attacked the expedition. He continued his fantastic story, becoming even more exaggerated, and was finally brought in a sanatory. We don't know what happened, but this man has clearly lost his mind. Now we must start from the scratch. ;;;;;;;;;;;;x;
-EVTNAME201026;El Mirador discovered;;;;;;;;;;;;x;
-EVTDESC201026;Ruins in the jungle as far as the eye can reach. These remains are old - very old, as our archaeologists affirm. This huge city is one of the biggest places ever found in Yucatan, and it dates back to pre-classical times. El Mirador, one of the oldest and greatest settlements of the Mayan culture, was rediscovered by $COUNTRY_ADJ$ archaeologists.;;;;;;;;;;;;x;
 EVTNAME201027;A Mayan Riddle;;;;;;;;;;;;x;
 EVTDESC201027;Footsteps resound in the hall. Light is rare, only a torch illuminates engraved walls. Silence. You go farther, through a corridor. Observing the plates on the ground, the roots of enormous trees, which break through the collapsed ceiling. An amazing place. You take a breath. A breath of history, which floatens this atmosphere. Then, after minutes of walking through mossy corridors, you find a monumental gate, decorated with faces and hieroglyphs. A short view in your book later, you are able to read what the Mayas wrote centuries ago on this wall. It's a riddle: 'The farmer needs it/ the capitalist loves it/ and builds even factories/ but you hate it./ If you stockpile the/ most useless good in/ the world you will/ uncover the truth.';;;;;;;;;;;;x;
 EVTNAME201028;The Idol;;;;;;;;;;;;x;
@@ -265,14 +183,8 @@ EVTNAME201031;An evil Frenchman;;;;;;;;;;;;x;
 EVTDESC201031;With a last jump you are able to reach the exit of the pyramid, landing in the grass of the jungle - and cornered by mesoamerican Indios. A voice with a soft french accent sounds in the near. A man in white clothes looks at you, amused by your escape. 'It is nice to meet you. But I think, this artefact should be in better hands than yours.' You are forced to surrender, as the heavers were killed by the tribe. 'Too bad the Hovitos don't know you the way I do' is your only response. Your are able to flee - but without the idol.;;;;;;;;;;;;x;
 EVTNAME201032;Leaving the Pyramid;;;;;;;;;;;;x;
 EVTDESC201032;On your way out of the pyramid, you clatch at a root in the ceiling. The idol in the left, the root in the right, the stoneball rolls under your shoes, through the corridor, and crushs in the jungle. You slump down, following the devastation. As you reach the exit, you see smashed bodies of Indios, scattered spears and weapons. It seems, that someone prepared an ambush, which was dissolved by the huge ball. Not sure, what happened here, but now, that the expedition was a full success, it is time to return to $CAPITAL$!;;;;;;;;;;;;x;
-EVTNAME201033;An archive of cuneiform tablets;;;;;;;;;;;;x;
-EVTDESC201033;Clay tablets were used as writing medium in the ancient middle east. Imprinted cuneiform characters can give us a whole new viewing of the old times of Babylonia. Satisfyingly, our archaeologists have found a whole archive of old tablets on their last expedition. They believe, that this archive was part of a large palace of an unknown ruler.;;;;;;;;;;;;x;
-EVTNAME201034;Sumerian palace found;;;;;;;;;;;;x;
-EVTDESC201034;Today is an exceptional day for the $COUNTRY_ADJ$ archaeology. After months of researchs and excavations, our team has found an old palace, dating back to sumerian times. Our archaeologists estimate, that this structures are over 5000 years old!;;;;;;;;;;;;x;
 EVTNAME201035;Mesopotamian expedition failed;;;;;;;;;;;;x;
 EVTDESC201035;The archaeological team in Mesopotamia is in a bad crisis. It seems, that the place of research was miscalculated by the chief-archaeologists. In fact, they have searched for month at the false place, finding nothing and remaining only with dirt in their hands. That is a heavy setback for the $COUNTRY_ADJ$ archaeology.;;;;;;;;;;;;x;
-EVTNAME201036;The Tower of Babel;;;;;;;;;;;;x;
-EVTDESC201036;Scientific research and aerial photos leave no doubt: Babylon, once a myth and known in the west only as a decadent city mentioned in the bible, is now a well known place of modern archaeology. The Hanging Gardens of Semiramis and a large palace were found and carefully examined. Archivs full of clay tablets were translated. But the most prestigious trove was the discovery by an $COUNTRY_ADJ$ archaeologist, who confirmed that even the legendary Tower of Babel is not a fable, but has historical roots. A large building was found, believed as the example for the story in the bible. ;;;;;;;;;;;;x;
 inca_excavations_interrupted;Contact to expedition lost;;;;;;;;;;;;x;
 inca_excavations_interrupted_desc;The communication between our expedition in Peru and our archaeological society is interupted. Until the war goes on, our enemies will try to disturb every information exchange.;;;;;;;;;;;;x;
 EVTNAME201040;Preparations;;;;;;;;;;;;x;

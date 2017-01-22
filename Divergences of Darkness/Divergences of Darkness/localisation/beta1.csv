@@ -1,4 +1,3 @@
-#;;;;;;;;;;;;;;x
 UNIT_BUILD_TIME_IW;$VAL$ days.;$VAL$ jours.;$VAL$ Tage.;;;;;;;;;;;x
 SUPPLY_OWNER;Owner:;Possesseur :;Besitzer:;W³aœciciel:;Infantería de testuz y cuernos;Possessore:;Tulajdonos:;Vlastník:;;;;;;x
 SUPPLY_ALLIED;Allied:;Allié :;Verbündet:;Sojusze:;Cuanta más población haya, mayores serán la producción y los ingresos por impuestos.;Alleato:;Szövetségben:;Spojenecký:;;;;;;x
@@ -58,7 +57,6 @@ total_blockaded;Blockaded Home Ports;Ports nationaux sous blocus;Blockierte Heim
 PW_SLAVE_STATE;Slave State;État esclavagiste;Sklavenstaat;;;;;;;;;;;x
 CURR_REL_TT;Our current relations.;Nos relations actuelles.;Unsere aktuellen Beziehungen.;;;;;;;;;;;x
 great_power;Great Power;Grande puissance;Großmacht;;;;;;;;;;;x
-second_power;Secondary Power;Puissance de second rang;Großmacht zweiten Ranges;;;;;;;;;;;x
 civ_nation;Civilized Nation;Nation civilisée;Zivilisierte Nation;;;;;;;;;;;x
 unciv_nation;Uncivilized Nation;Nation non civilisée;Unzivilisierte Nation;;;;;;;;;;;x
 REB_TYPE_SIZE;§YRebel Support§W;§YSoutien rebelle§W;§YRebellenunterstützung§W;;;;;;;;;;;x
@@ -161,14 +159,12 @@ COLONY_FAIL_LOG;$OTHER$ managed to to colonize $TARGET$ before us.;$OTHER$ a réu
 american_cultures;American Cultures;Cultures américaines;Amerikanische Kulturen;;;;;;;;;;;x
 CANT_USE_LAST_WAR_GOALS;Selecting this war goal would end the war and can only be done in a peace deal with the war leader;La sélection de cet objectif de guerre mettra fin à la guerre, mais nécessite un accord de paix avec le leader.;Die Auswahl dieses Kriegsziels würde den Krieg beenden. Dies ist nur in einem Friedensvertrag mit dem Kriegsführer möglich.;;;;;;;;;;;x
 tut_6a_13;To improve Belgium's industrial production we need more industrial workers, click the craftsmen icon to set this focus.;Pour améliorer la production industrielle de la Belgique, il vous faut davantage d'ouvriers. Cliquez sur l'icône des travailleurs pour définir cette cause.;Zur Verbesserung von Belgiens Industrieproduktion benötigen wir mehr Industriearbeiter. Klicken Sie auf das Facharbeitersymbol, um einen Fokus darauf zu legen.;;;;;;;;;;;x
-DEN_251;Iceland & Greenland;Islande et Groenland;Island & Grönland;;;;;;;;;;;x
 CANCELALLIANCE_THEY_ACCEPT_BTN2;OK;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
 CANCELALLIANCE_THEY_ACCEPT_BTN3;Go to;Aller à;Go to;IdŸ do;Ir allí;Andare;Menj ide:;Pøejít na;;;;;;x
 tut_1b_19;For now we are manually going to assign our General, go ahead and select your division in Spa.;Pour le moment, vous allez affecter votre général manuellement. Allez-y, sélectionnez la division présente à Spa.;Für Erste werden wir unseren General manuell zuteilen. Wählen Sie dazu Ihre Division in Spa aus.;;;;;;;;;;;x
 TOPBAR_DEC_SPEED;Decrease Speed;Ralentir;Geschwindigkeit reduzieren;;;;;;;;;;;x
 fort;Fort;Fort;Fort;;;;;;;;;;;x
 fort_short;Fort;fort;Fort;;;;;;;;;;;x
-TOPBAR_DEC_SPEED;Decrease Speed;Ralentir;Geschwindigkeit reduzieren;;;;;;;;;;;x
 IS_GREAT_NATION;Is Great Power;Est une grande puissance;Ist Großmacht;;;;;;;;;;;x
 NO_DEMOTION;There will be no demotions this month.;Il n'y aura aucune rétrogradation ce mois-ci.;Diesen Monat gibt es keine Degradierungen.;;;;;;;;;;;x
 NO_PROMOTION;There will be no promotions this month.;Il n'y aura aucune promotion ce mois-ci.;Diesen Monat gibt es keine Beförderungen.;;;;;;;;;;;x
@@ -235,7 +231,6 @@ TOPBAR_DIPLOPOINTS_GAIN;We gain §Y$VALUE$§W diplomatic points each month;Nous ga
 TOPBAR_DIPLOPOINTS_BASEGAIN;Base gain: §Y$VALUE$§W diplomatic points;Gain de base : §Y$VALUE$§W points diplomatiques;Basis-Zugewinn: §Y$VALUE$§W Diplomatiepunkte.;;;;;;;;;;;x
 MOBILISE;Mobilize;Mobiliser;Mobilisieren;;;;;;;;;;;x
 DEMOBILISE;Demobilize;Démobiliser;Demobilisieren;;;;;;;;;;;x
-BE_INVENT;Inventions:;Inventions :;Erfindungen:;;;;;;;;;;;x
 THE_WORLD_IN;The World in $YEAR$;Le monde en $YEAR$;Die Welt des Jahres $YEAR$;;;;;;;;;;;x
 TECHNOLOGY_ACTIVATION_YEAR;Activation year:;Année d'activation :;Aktivierungsjahr:;;;;;;;;;;;x
 TECHNOLOGY_RESEARCH_POINTS;Research points:;Points de recherche :;Forschungspunkte:;;;;;;;;;;;x
@@ -265,7 +260,6 @@ EVTNAME15060;First Farmer's Bank;Première banque agricole;Erste Bauernbank;;;;;;
 POLITICS_REFORMS;Reforms;Réformes;Reformen;;;;;;;;;;;x
 POLITICS_RELEASE_NATIONS;Release Nations;Nations libérées;Nationen entlassen;;;;;;;;;;;x
 MILITARY_LEADER_NAME_TOOLTIP;§Y$NAME$§W is in command of §Y$ARMY$§W in §Y$LOCATION$§W;§Y$NAME$§W est aux commandes de §Y$ARMY$§W en §Y$LOCATION$§W.;§Y$NAME$§W befehligt §Y$ARMY$§W in §Y$LOCATION$§W;;;;;;;;;;;x
-hms_government;HM's Government;Gouvernement de sa Majesté;Ihrer Majestät Regierung;;;;;;;;;;;x
 EVTNAME19310;The Mandate of Heaven;Le Mandat céleste;Das Mandat des Himmels;;;;;;;;;;;x
 EVTDESC19310;The 'Mandate of Heaven' is a concept in Chinese philosophy, similar to the western concept of the divine right of Kings, which has historically been used to both justify and motivate monarchical power. With our recent ascension to Great Power status our subjects have again become convinced that our government enjoys the The Mandate of Heaven.;"Le ""Mandat céleste"" est un concept philosophique chinois, semblable au concept occidental du droit divin des rois, utilisé au cours de l'histoire pour justifier et motiver le pouvoir monarchique. Grâce à notre récent accès au statut de grande puissance, nos sujets sont de nouveau convaincus du bien-fondé du Mandat céleste pour notre gouvernement.";Das 'Mandat des Himmels' ist ein Konzept der chinesischen Philosophie, das dem westlichen Konzept des Gottesgnadentums entspricht, und in der Geschichte zur Rechtfertigung und Veranlassung monarchischer Macht benutzt wurde. Nach unserem kürzlichen Aufstieg zur Großmacht sind unsere Untertanen wieder davon überzeugt, dass wir das Mandat des Himmels haben.;;;;;;;;;;;x
 EVTOPTA19310;Excellent!;Excellent !;Hervorragend!;;;;;;;;;;;x
@@ -304,7 +298,6 @@ MODIFIER_GLOBAL_POP_CONSCIOUSNESS_MODIFIER;Pop Consciousness;Conscience national
 global_liberal_agitation;Liberal Agitation;Agitation libérale;Liberale Agitation;;;;;;;;;;;x
 desc_global_liberal_agitation;Firebrands are arguing the cause of liberalism and revolution.;Des exaltés soutiennent le libéralisme et la révolution.;Aufwiegler in diesen Provinzen fordern die liberale Revolution.;;;;;;;;;;;x
 EDU_DESC;The educational budget is used to pay the clergy and to produce research points.;Le budget de l'enseignement permet de payer le clergé et de produire des points de recherche.;Aus dem Bildungshaushalt werden der Klerus und die Produktion von Forschungspunkten bezahlt.;;;;;;;;;;;x
-ADM_DESC;Spending on administration allows your bureaucrats to run and maintain a healthy bureaucracy, increasing your tax efficiency.;Le budget alloué à l'administration assure le bon fonctionnement de la bureaucratie et renforce votre efficacité fiscale.;Verwaltungsausgaben ermöglichen Ihren Bürokraten die Beibehaltung einer reibungslosen Demokratie und die Erhöhung Ihrer Steuereffizienz.;;;;;;;;;;;x
 COMBATEND_INITIAL;Initial;Initialement;Anfänglich;;;;;;;;;;;x
 COMBATEND_CASUALTIES;Casualties;Victimes;Verluste;;;;;;;;;;;x
 COMBATEND_SURVIVORS;Survivors;Survivants;Überlebende;;;;;;;;;;;x
@@ -390,16 +383,7 @@ PO_PD_NEG_25;The enemy has won, and we should consider offering the fulfillment 
 PO_PD_NEG_60;The enemy has won a total victory, and we should consider offering them the fulfillment of at least one of their major war goals.;L'ennemi a remporté une victoire totale. Nous devons donc envisager de lui concéder au moins un de ses principaux objectifs de guerre.;Der Feind hat einen totalen Sieg erzielt, und wir sollten mit dem Gedanken spielen, im Gegenzug für den Frieden die Erfüllung mindestens eines großen Kriegsziels anzubieten.;;;;;;;;;;;x
 PO_PD_NEG_99;The enemy has won a devastating victory, and we can expect them to demand the fulfillment of several war goals in the peace negotiations.;L'ennemi a remporté une victoire écrasante. Il risque de nous demander de concéder plusieurs objectifs de guerre lors des négociations de paix.;Der Feind hat einen verheerenden Sieg erzielt, und wir können damit rechnen, dass sie in den Friedensverhandlungen die Erfüllung mehrerer Kriegsziele verlangen werden.;;;;;;;;;;;x
 TOPBAR_AT_WAR_WITH;At war with §Y$COUNTRY$§W;En guerre contre §Y$COUNTRY$§W;Im Krieg mit §Y$COUNTRY$§W;;;;;;;;;;;x
-tut_2b_15;How factories are built depends on political system. In a Laissez Fair for example all your factories are built by your capitalist population, in the current Belgian system however both the players and the capitalists can build a factory. Building more factories are a goods way to boost our economy, Go ahead and click the Build Factory button for Belgian Wallonie.;La construction des usines dépend du système politique. En cas de Laissez-faire, par exemple, toutes vos usines sont construites par votre population capitaliste. Dans le système belge actuel, les usines peuvent être construites aussi bien par les joueurs que par les capitalistes. La construction de nouvelles usines permet de relancer votre économie. Cliquez sur le bouton Construire une usine pour la Wallonie belge.;Wie Fabriken gebaut werden, hängt vom politischen System ab. Bei Laissez Faire werden alle Ihre Fabriken beispielsweise von Ihren Kapitalisten gebaut. Das aktuelle System Belgiens gestattet aber den Fabrikbau durch den Spieler und die Kapitalisten. Der Bau weiterer Fabriken ist eine gute Idee zur Ankurblung unserer Wirtschaft. Klicken Sie nun für die belgische Wallonie auf die Schaltfläche Fabrik bauen.;;;;;;;;;;;x
 tut_7a_8a;Notice the icon with the text BUY under it, and the slider next to it. This means that if you pull the slider to a certain stockpile value, the game will attempt to buy the the trade goods until you have that amount.;Notez l'icône sous laquelle apparaissent le texte VENDRE et le curseur qui l'accompagne. Le jeu achète la quantité de marchandises correspondant à la valeur désignée par le curseur.;Beachten Sie das Symbol, unter dem VERKAUFEN steht, und den Schieberegler daneben. Wenn Sie diesen Schieberegler auf einen bestimmten Vorratswert ziehen, versucht die KI, das betreffende Handelsgut so lange einzukaufen, bis der vorgegebene Wert erreicht ist.;;;;;;;;;;;x
 REMOVE_tut_7b_8;The government (the player or the AI) can buy and sell on the market in two ways, either by setting trade orders or by automatic trades generated through other actions in the game. The arrow next to the price indicates whether prices are rising (green), remaining steady (yellow) or falling (red). Click the Icon for Clipper Convoys to see an automatic Trade.;Le gouvernement (le joueur ou l'IA) peut acheter et vendre sur le marché de deux façons : en passant des commandes ou en générant des transactions automatiques via d'autres actions du jeu. La flèche située près du prix indique s'il monte (vert), s'il est stable (jaune) ou s'il baisse (rouge). Cliquez sur l'icône des convois de clippers pour assister à une transaction automatique.;Die Regierung (der Spieler oder die KI) kann auf dem Markt auf zweierlei Art kaufen und verkaufen: Entweder durch Erteilung von Handelsaufträgen oder durch automatische Handelsgeschäfte, die durch andere Spielaktionen erzeugt werden. Der Pfeil neben dem Preis zeigt an, ob er steigt (grün), gleich bleibt (gelb) oder fällt (rot). Klicken Sie nun auf das Klipper-Konvoi-Symbol, um sich ein automatisiertes Handelsgeschäft anzusehen.;;;;;;;;;;;x
 EVTOPTA17000;There will be no suffrage at this junction;Il n'y aura aucun vote à cette jonction.;Vorerst wird es kein Wahlrecht geben.;;;;;;;;;;;x
 EVTOPTB17000;If only there were popular support for this idea...;Si seulement cette idée bénéficiait d'un soutien populaire...;Wenn die Bevölkerung nur hinter dieser Idee stehen würde ...;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
