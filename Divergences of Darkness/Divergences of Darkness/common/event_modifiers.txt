@@ -681,6 +681,13 @@ Bull_market = {
 	icon = 9
 }
 
+neutrality = {
+	max_military_spending = -0.40
+	leadership_modifier = -0.75
+	prestige = -0.05
+	icon = 7
+}
+
 #### Suez Canal ####
 building_suez_canal = {
 	prestige = 0.03
@@ -1158,17 +1165,6 @@ land_of_opportunity = {
 	global_population_growth = 0.002
 	global_immigrant_attract = 0.3
 	icon = 13
-}
-
-### Archaeology ###
-mycenaean_excavations = {
-	prestige = 0.01
-	icon = 3
-}
-
-minoan_excavations = {
-	prestige = 0.01
-	icon = 3
 }
 
 ### Taiping & China ###

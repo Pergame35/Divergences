@@ -94,7 +94,7 @@ political_decisions = {
 		}
 	}
 	
-	maya_excavations = {
+	maya_excavations_decision = {
 		potential = {
 			civilized = yes
 			nationalism_n_imperialism = 1
@@ -194,7 +194,7 @@ political_decisions = {
 		}
 	}
 	
-	mycenaean_excavations = {
+	mycenaean_excavations_decision = {
 		potential = {
 			civilized = yes
 			revolution_n_counterrevolution = 1
@@ -262,7 +262,7 @@ political_decisions = {
 		}
 	}
 
-	minoan_excavations = {
+	minoan_excavations_decision = {
 		potential = {
 			civilized = yes
 			revolution_n_counterrevolution = 1
@@ -332,7 +332,7 @@ political_decisions = {
 		}
 	}
 	
-	mesopotamian_excavations = {
+	mesopotamian_excavations_decision = {
 		potential = {
 			OR = {
 				is_greater_power = yes
