@@ -144,6 +144,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
+	name = "22234.A"
 	any_owned = { 
 	limit = { is_core = RUS }
 	secede_province = FROM 
@@ -162,6 +163,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
+	name = "22235.A"
 	relation = { who = RUS value = -150 }
 	casus_belli = {
 			target = RUS
@@ -221,8 +223,10 @@ country_event = {
 	release_vassal = LIT 
 	change_tag_no_core_switch = POL 
 	prestige_factor = -0.5
-	militancy = 3 
-	consciousness = 5 
+	any_pop = {
+		militancy = 3 
+		consciousness = 5
+	}
 	UKR = { country_event = 22236 }
 	}
 

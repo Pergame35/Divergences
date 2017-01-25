@@ -1036,7 +1036,7 @@ DZG40.T;Emissary from Urumqi;;;;;;;;;;;;;
 DZG40.D;A delegation coming from the isolated khanate of Urumqi has entered our Indian colonies. They ask to be brought to Europe to learn of our ways. What do we say to our colonial adviser ?;;;;;;;;;;;;;
 48940.A;Bring them to Europe and show them our power!;;;;;;;;;;;;;
 48940.B;Make them return to their steppes!;;;;;;;;;;;;;
-DZG41.T;Return from $FROMCOUNTRY_CAPITAL$$;;;;;;;;;;;;;
+DZG41.T;Return from $FROMCOUNTRY_CAPITAL$;;;;;;;;;;;;;
 DZG41.D;Our delegation has finally made its way back to Urumqi! They have spent many months in $FROMCOUNTRY$, attending to universities and military schools. They seem to have been quite the attraction in Europe from what they say and we are now known to European courts as an effect.;;;;;;;;;;;;;
 48941.A;At last they come back!;;;;;;;;;;;;;
 DZG42.T;'Travels to Europe';;;;;;;;;;;;;
@@ -4958,8 +4958,10 @@ EVTDESC96215;Nationalists have succeedeed in taking over $COUNTRY_ADJ$ colonies 
 22233.A;Seems legit;;;;;;;;;;;;;
 22234.T;Russian demands;;;;;;;;;;;;;
 22234.D;Russia has been influencing the Cossack host and now demands the lands east of the Dniepr!;;;;;;;;;;;;;
+22234.A;If only the Commonwealth could defend us...;;;;;;;;;;;;;
 22235.T;Russian moves in Ukraine!;;;;;;;;;;;;;
 22235.D;Russia has used their influence amongst the Cossacks to take the Eastern bank of the Dniepr!;;;;;;;;;;;;;
+22235.A;Damn them!;;;;;;;;;;;;;
 POL10.T;Dissolution of the Commonwealth;;;;;;;;;;;;;
 POL10.D;The incapacity of the Commonwealth to reform has provoked the rise of nationalist movements. Already Lithuanian, Cossacks and Ruthenians have formed their own government. The Commonwealth is dead !;;;;;;;;;;;;;
 22250.A;Why does this happen to Poland ...;;;;;;;;;;;;;
@@ -5996,7 +5998,7 @@ EVTDESC80115;$COUNTRY$ is a nation hovering between two powers that could crush 
 80116.T;$FROMCOUNTRY$ Has Refused;;;;;;;;;;;;;
 80116.D;$FROMCOUNTRY$ has foolishly refused kind offer of protection.;;;;;;;;;;;;;
 80116.A;So be it.;;;;;;;;;;;;;
-RUS_EXP_202201_t;Russian Ambitions In The West$;;;;;;;;;;;;;
+RUS_EXP_202201_t;Russian Ambitions In The West;;;;;;;;;;;;;
 RUS_EXP_202201_d;Now that we've united the Russian people, there is some debate about how to handle the various states on our western border. As we see it, there are two major options. First, we could attempt to project sea power by seizing ports and territory along either the Baltic or Black seas, both of which would ease diplomacy and military coordination with the states of Western Europe. Expanding to the north gives us opportunities to weaken our enemies, while a southern strategy would be easier to implement due to the decline of the steppe khanates. Alternatively, we could focus on liberating the Ruthenian people to our west. Since they are so culturally similar to us, it would be easier to incorporate them into our state.;;;;;;;;;;;;;
 202201.A;Focus on gaining access to the Baltic Sea.;;;;;;;;;;;;;
 202201.B;Subjugate the steppes and expand towards the Black Sea.;;;;;;;;;;;;;

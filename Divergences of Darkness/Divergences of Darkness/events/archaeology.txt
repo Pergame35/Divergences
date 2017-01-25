@@ -246,10 +246,10 @@ country_event = {
 			factor = 0.9
 			has_country_modifier = mesopotamian_excavations
 		}
-		modifier = {
-			factor = 0.9
-			has_country_modifier = inca_excavations
-		}
+		#modifier = {
+		#	factor = 0.9
+		#	has_country_modifier = inca_excavations
+		#}
 		modifier = {
 			factor = 0.9
 			has_country_modifier = maya_excavations
@@ -551,10 +551,10 @@ country_event = {
 			factor = 0.9
 			has_country_modifier = mesopotamian_excavations
 		}
-		modifier = {
-			factor = 0.9
-			has_country_modifier = inca_excavations
-		}
+		#modifier = {
+		#	factor = 0.9
+		#	has_country_modifier = inca_excavations
+		#}
 		modifier = {
 			factor = 0.9
 			has_country_flag = had_arch_exhibition
@@ -782,10 +782,10 @@ country_event = {
 			factor = 0.9
 			has_country_modifier = mesopotamian_excavations
 		}
-		modifier = {
-			factor = 0.9
-			has_country_modifier = inca_excavations
-		}
+		#modifier = {
+		#	factor = 0.9
+		#	has_country_modifier = inca_excavations
+		#}
 		modifier = {
 			factor = 0.9
 			has_country_flag = had_arch_exhibition
@@ -1191,7 +1191,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_country_modifier = mesopotamian_excavations
-			has_country_modifier = inca_excavations
+			#has_country_modifier = inca_excavations
 			has_country_modifier = maya_excavations
 			has_country_modifier = egyptian_excavations
 			has_country_modifier = mycenaean_excavations
@@ -1215,10 +1215,10 @@ country_event = {
 			factor = 0.8
 			has_country_modifier = mesopotamian_excavations
 		}
-		modifier = {
-			factor = 0.8
-			has_country_modifier = inca_excavations
-		}
+		#modifier = {
+		#	factor = 0.8
+		#	has_country_modifier = inca_excavations
+		#}
 		modifier = {
 			factor = 0.8
 			has_country_modifier = maya_excavations 
@@ -1260,7 +1260,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_country_modifier = mesopotamian_excavations
-			has_country_modifier = inca_excavations
+			#has_country_modifier = inca_excavations
 			has_country_modifier = maya_excavations
 			has_country_modifier = egyptian_excavations
 			has_country_modifier = mycenaean_excavations
@@ -1282,10 +1282,10 @@ country_event = {
 			factor = 0.9
 			has_country_modifier = mesopotamian_excavations
 		}
-		modifier = {
-			factor = 0.9
-			has_country_modifier = inca_excavations
-		}
+		#modifier = {
+		#	factor = 0.9
+		#	has_country_modifier = inca_excavations
+		#}
 		modifier = {
 			factor = 0.9
 			is_greater_power = yes
@@ -1310,7 +1310,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_country_modifier = mesopotamian_excavations
-			has_country_modifier = inca_excavations
+			#has_country_modifier = inca_excavations
 			has_country_modifier = maya_excavations
 			has_country_modifier = egyptian_excavations
 			has_country_modifier = mycenaean_excavations
@@ -1329,10 +1329,10 @@ country_event = {
 			factor = 0.9
 			has_country_modifier = mesopotamian_excavations
 		}
-		modifier = {
-			factor = 0.9
-			has_country_modifier = inca_excavations
-		}
+		#modifier = {
+		#	factor = 0.9
+		#	has_country_modifier = inca_excavations
+		#}
 		modifier = {
 			factor = 0.9
 			has_country_flag = had_arch_exhibition
@@ -1468,10 +1468,10 @@ country_event = {
 			factor = 0.9
 			has_country_modifier = mesopotamian_excavations
 		}
-		modifier = {
-			factor = 0.9
-			has_country_modifier = inca_excavations
-		}
+		#modifier = {
+		#	factor = 0.9
+		#	has_country_modifier = inca_excavations
+		#}
 		modifier = {
 			factor = 0.9
 			has_country_modifier = mycenaean_excavations
@@ -1596,10 +1596,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 1000
-		modifier = {
-			factor = 0.9
-			has_country_modifier = inca_excavations
-		}
+		#modifier = {
+		#	factor = 0.9
+		#	has_country_modifier = inca_excavations
+		#}
 		modifier = {
 			factor = 0.9
 			has_country_flag = had_arch_exhibition
@@ -1633,122 +1633,122 @@ country_event = {
 ####################
 # INCA EXCAVATIONS #
 ####################
-
+#
 #Cache of golden figurines found
-country_event = {
-	id = 201070
-	title = "EVTNAME201070"
-	desc = "EVTDESC201070"
-	picture = "hidden_chamber"
-
-	trigger = {
-		has_country_modifier = inca_excavations
-	}
-
-	mean_time_to_happen = {
-		months = 300
-		modifier = {
-			factor = 0.95
-			has_country_flag = museum_build
-		}
-		modifier = {
-			factor = 0.9
-			has_country_flag = archaeological_society
-		}
-		modifier = {
-			factor = 0.9
-			has_country_flag = famous_archaeologist
-		}
-	}
-
-	option = {
-		name = "201070.A"
-		years_of_research = 0.05
-	}
-}
-
+#country_event = {
+#	id = 201070
+#	title = "EVTNAME201070"
+#	desc = "EVTDESC201070"
+#	picture = "hidden_chamber"
+#
+#	trigger = {
+#		has_country_modifier = inca_excavations
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 300
+#		modifier = {
+#			factor = 0.95
+#			has_country_flag = museum_build
+#		}
+#		modifier = {
+#			factor = 0.9
+#			has_country_flag = archaeological_society
+#		}
+#		modifier = {
+#			factor = 0.9
+#			has_country_flag = famous_archaeologist
+#		}
+#	}
+#
+#	option = {
+#		name = "201070.A"
+#		years_of_research = 0.05
+#	}
+#}
+#
 #Temple Found
-country_event = {
-	id = 201071
-	title = "EVTNAME201071"
-	desc = "EVTDESC201071"
-	picture = "Inca_temple"
-
-	trigger = {
-		has_country_modifier = inca_excavations
-	}
-
-	mean_time_to_happen = {
-		months = 500
-		modifier = {
-			factor = 0.95
-			has_country_flag = museum_build
-		}
-		modifier = {
-			factor = 0.9
-			has_country_flag = archaeological_society
-		}
-		modifier = {
-			factor = 0.9
-			has_country_flag = famous_archaeologist
-		}
-	}
-
-	option = {
-		name = "201071.A"
-		prestige = 5
-		years_of_research = 0.1
-	}
-}
-
+#country_event = {
+#	id = 201071
+#	title = "EVTNAME201071"
+#	desc = "EVTDESC201071"
+#	picture = "Inca_temple"
+#
+#	trigger = {
+#		has_country_modifier = inca_excavations
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 500
+#		modifier = {
+#			factor = 0.95
+#			has_country_flag = museum_build
+#		}
+#		modifier = {
+#			factor = 0.9
+#			has_country_flag = archaeological_society
+#		}
+#		modifier = {
+#			factor = 0.9
+#			has_country_flag = famous_archaeologist
+#		}
+#	}
+#
+#	option = {
+#		name = "201071.A"
+#		prestige = 5
+#		years_of_research = 0.1
+#	}
+#}
+#
 #Golden Raft
-country_event = {
-	id = 201072
-	title = "EVTNAME201072"
-	desc = "EVTDESC201072"
-	picture = "Inca_temple"
-	major = yes
-
-	trigger = {
-		has_country_modifier = inca_excavations
-		NOT = { has_global_flag = andean_gold_found }
-	}
-
-	mean_time_to_happen = {
-		months = 1000
-		modifier = {
-			factor = 0.9
-			has_country_modifier = mesopotamian_excavations
-		}
-		modifier = {
-			factor = 0.9
-			has_country_flag = had_arch_exhibition
-		}
-		modifier = {
-			factor = 0.95
-			has_country_flag = museum_build
-		}
-		modifier = {
-			factor = 0.9
-			has_country_flag = archaeological_society
-		}
-		modifier = {
-			factor = 0.9
-			has_country_flag = famous_archaeologist
-		}
-	}
-
-	option = {
-		name = "201072.A"
-		set_global_flag = andean_gold_found
-		prestige = 30
-		years_of_research = 0.5
-		any_country = {
-			remove_country_modifier = inca_excavations
-		}
-		remove_country_modifier = inca_excavations
-	}
-}
+#country_event = {
+#	id = 201072
+#	title = "EVTNAME201072"
+#	desc = "EVTDESC201072"
+#	picture = "Inca_temple"
+#	major = yes
+#
+#	trigger = {
+#		has_country_modifier = inca_excavations
+#		NOT = { has_global_flag = andean_gold_found }
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 1000
+#		modifier = {
+#			factor = 0.9
+#			has_country_modifier = mesopotamian_excavations
+#		}
+#		modifier = {
+#			factor = 0.9
+#			has_country_flag = had_arch_exhibition
+#		}
+#		modifier = {
+#			factor = 0.95
+#			has_country_flag = museum_build
+#		}
+#		modifier = {
+#			factor = 0.9
+#			has_country_flag = archaeological_society
+#		}
+#		modifier = {
+#			factor = 0.9
+#			has_country_flag = famous_archaeologist
+#		}
+#	}
+#
+#	option = {
+#		name = "201072.A"
+#		set_global_flag = andean_gold_found
+#		prestige = 30
+#		years_of_research = 0.5
+#		any_country = {
+#			remove_country_modifier = inca_excavations
+#		}
+#		remove_country_modifier = inca_excavations
+#	}
+#}
 
 country_event = {
 	id = 201075

@@ -2010,7 +2010,7 @@ general_strikes = {
 	
 }
 
-secret_police = {
+secret_police_invent = {
 	limit = { revolution_n_counterrevolution = 1 }
 	news = no
 	chance = {
