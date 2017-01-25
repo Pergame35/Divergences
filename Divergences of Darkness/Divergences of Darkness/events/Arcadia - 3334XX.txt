@@ -8,7 +8,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Support the unification"
+		name = "333440.A"
 		ARC = { country_event = 333441 }
 		ai_chance = { 
 			factor = 100
@@ -21,7 +21,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Demand additional conditions"  
+		name = "333440.B"  
 		ARC = { country_event = 333442 }
 		ai_chance = {
 			factor = 50
@@ -55,7 +55,7 @@ country_event = {
 	}
     
 	option = {
-		name = "Oppose the idea of panarcadianism"
+		name = "333440.C"
 		ARC = { country_event = 333443 }
 		ai_chance = {
 			factor = 20
@@ -78,7 +78,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Hurray for Vinland"
+		name = "333441.A"
     prestige = 10
     add_accepted_culture = vinlander
     VIN = { all_core = { remove_core = VIN	} }
@@ -144,7 +144,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Bow to their demands"
+		name = "333442.A"
     prestige = -20
     add_accepted_culture = vinlander
     set_country_flag = vinlandic_arcadia  
@@ -207,7 +207,7 @@ country_event = {
 		}
 	}
   	option = {
-    name = "Turn them down"
+    name = "333442.B"
     prestige = -10
     political_reform = limited
 		any_pop = {
@@ -270,7 +270,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-    name = "Curse the Northerners!"
+    name = "333443.A"
     prestige = -20
     set_country_flag = vinlandic_refusal  
 		any_pop = {
@@ -332,7 +332,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Support the unification"
+		name = "333444.A"
 		ARC = { country_event = 333445 }
 		ai_chance = { 
 			factor = 100
@@ -345,7 +345,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Demand additional conditions"  
+		name = "333444.B"  
 		ARC = { country_event = 333446 }
 		ai_chance = {
 			factor = 50
@@ -379,7 +379,7 @@ country_event = {
 	}
     
 	option = {
-		name = "Oppose the idea of panarcadianism"
+		name = "333444.C"
 		ARC = { country_event = 333447 }
 		ai_chance = {
 			factor = 20
@@ -402,7 +402,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Hurray for New Burgundy"
+		name = "333445.A"
     prestige = 10
     add_accepted_culture = septiman
     NBG = { all_core = { remove_core = NBG	} }
@@ -468,7 +468,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Bow to their demands"
+		name = "333446.A"
     prestige = -20
     add_accepted_culture = septiman
     set_country_flag = septiman_arcadia
@@ -531,7 +531,7 @@ country_event = {
 		}
 	}
   	option = {
-    name = "Turn them down"
+    name = "333446.B"
     prestige = -10
     political_reform = limited
 		any_pop = {
@@ -594,7 +594,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-    name = "Curse the Septimans!" 
+    name = "333447.A" 
     set_country_flag = septiman_refusal 
     prestige = -20
 		any_pop = {
@@ -656,7 +656,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Support the unification"
+		name = "333448.A"
 		ARC = { country_event = 333449 }
 		ai_chance = { 
 			factor = 100
@@ -669,7 +669,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Demand additional conditions"  
+		name = "333448.B"  
 		ARC = { country_event = 333450 }
 		ai_chance = {
 			factor = 50
@@ -703,7 +703,7 @@ country_event = {
 	}
     
 	option = {
-		name = "Oppose the idea of panarcadianism"		
+		name = "333448.C"		
 		ARC = { country_event = 333451 }
 		ai_chance = {
 			factor = 20
@@ -726,7 +726,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Hurray for Plantagenia"
+		name = "333449.A"
     prestige = 10
     add_accepted_culture = plantagenian
     PLA = { all_core = { remove_core = PLA	} }
@@ -792,7 +792,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Bow to their demands"
+		name = "333450.A"
     prestige = -20
     add_accepted_culture = plantagenian
     set_country_flag = plantagenian_arcadia 
@@ -855,7 +855,7 @@ country_event = {
 		}
 	}
   	option = {
-    name = "Turn them down"
+    name = "333450.B"
     prestige = -10
     political_reform = limited
 		any_pop = {
@@ -918,7 +918,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-    name = "Curse the Southerners!"
+    name = "333451.A"
     set_country_flag = plantagenian_refusal 
     prestige = -20
 		any_pop = {
@@ -985,7 +985,7 @@ country_event = {
 	
 
 	option = {  
-      name = "A new star arises!"
+      name = "333452.A"
 		  prestige = 5
 	}
 }
@@ -1003,7 +1003,7 @@ country_event = {
 	
 
 	option = {        
-      name = "Cap Valois is the perfect spot"
+      name = "333453.A"
       treasury = -50000
 		capital_scope = {
       any_pop = {
@@ -1046,7 +1046,7 @@ country_event = {
 		    }          
 	}
   option = {        
-      name = "The capital shall be the heart of the country"
+      name = "333453.B"
             treasury = -50000
 		capital_scope = {
       any_pop = {
@@ -1086,7 +1086,7 @@ country_event = {
 		    }           
 	}
   option = {        
-      name = "We already have a capital..."
+      name = "333453.C"
      capital_scope = {
       any_pop = {
 			 militancy = -2
@@ -1176,7 +1176,7 @@ country_event = {
 	
 
 	option = {
-		name = "The future is in their hands"
+		name = "333454.A"
 		money = -20000
     set_country_flag = arc_continental_congress_2	
 	}
@@ -1201,7 +1201,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Fingers crossed!"
+		name = "333455.A"
     clr_country_flag = arc_continental_congress_2
 		random_list = {
 			75 = { country_event = 333456 }
@@ -1221,7 +1221,7 @@ country_event = {
 	major = yes
 
 	option = {
-		name = "The dream lives on!"
+		name = "333456.A"
     prestige = 25
       set_country_flag = plantagenian_arcadia
       set_country_flag = septiman_arcadia
@@ -1260,7 +1260,7 @@ country_event = {
 	major = yes
 
 	option = {
-		name = "Well...damn."
+		name = "333457.A"
     prestige = -25
 		any_pop = {
 			limit = {
@@ -1453,7 +1453,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Support the unification"
+		name = "333459.A"
 		ARC = { country_event = 333460 }
 		ai_chance = { 
 			factor = 100
@@ -1466,7 +1466,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Demand additional conditions"  
+		name = "333459.B"  
 		ARC = { country_event = 333461 }
 		ai_chance = {
 			factor = 50
@@ -1500,7 +1500,7 @@ country_event = {
 	}
     
 	option = {
-		name = "Oppose the idea of panarcadianism"		
+		name = "333459.C"		
 		ARC = { country_event = 333462 }
 		ai_chance = {
 			factor = 20
@@ -1523,7 +1523,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Hurray for Lusitania"
+		name = "333460.A"
     prestige = 10
     add_accepted_culture = lusitanian
     LST = { all_core = { remove_core = LST	} }
@@ -1589,7 +1589,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Bow to their demands"
+		name = "333461.A"
     prestige = -20
     add_accepted_culture = lusitanian
     set_country_flag = lusitanian_arcadia 
@@ -1652,7 +1652,7 @@ country_event = {
 		}
 	}
   	option = {
-    name = "Turn them down"
+    name = "333461.B"
     prestige = -10
     political_reform = limited
 		any_pop = {
@@ -1715,7 +1715,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-    name = "Curse the Lusitanians!"
+    name = "333462.A"
     set_country_flag = lusitanian_refusal 
     prestige = -20
 		any_pop = {
@@ -1777,7 +1777,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Our claims are clearly defined, now it is their turn"
+	name = "333470.A"
 	NA_30 = { add_core = THIS }
 	NA_15 = { add_core = THIS }
 	NA_14 = { add_core = THIS }
@@ -1797,7 +1797,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We will sign it, better to gain a hefty sum of money from this loss..."
+	name = "333471.A"
 	any_owned = { 
 	limit = { is_core = ARC }
 	remove_core = DNG 
@@ -1868,7 +1868,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We won't be manipulated like that!"
+	name = "333471.B"
 	prestige = 15 
 	FROM = { country_event = 333472 }
 	}
@@ -1883,7 +1883,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Our military could use the target practice."
+		name = "333472.A"
 		war_exhaustion = -20
 		relation = { who = FROM value = -200 }
 		diplomatic_influence = { who = FROM value = -200 }
@@ -1905,7 +1905,7 @@ country_event = {
 	}
 
 	option = {
-	name = "We don't need this to come to a war yet."
+	name = "333472.B"
 		prestige_factor = -0.2
 		any_pop = {
 			consciousness = 1
@@ -1926,7 +1926,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "Excellent, one step closer towards Arcadian domination of the (New) World!"
+	name = "333473.A"
 	prestige = 25 
 	money = -1000000
 	random_owned = { 
@@ -1948,7 +1948,7 @@ country_event = {
 	is_triggered_only = yes 
 
 	option = { 
-	name = "They'll integrate eventually..."
+	name = "333474.A"
 	any_pop = { limit = { culture = qingqiuan } consciousness = 7 militancy = 3 }
 	DNG_4 = { add_core = DNG }
 	DNG_5 = { add_core = DNG }
@@ -1974,7 +1974,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Well at least it's selling abroad"
+	name = "333500.A"
 	prestige = 2 
 	any_pop = {
 			consciousness = 2
@@ -2003,6 +2003,6 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Long live the Seven Republics then!"
+	name = "333501.A"
 	}
 }

@@ -4203,7 +4203,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Crack down on this menace."
+		name = "17710.A"
 		random_owned = {
 			limit = {
 				is_colonial = no
@@ -4253,7 +4253,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Let them talk."
+		name = "800121.A"
 		random_owned = {
 			limit = {
 				is_colonial = no
@@ -4437,7 +4437,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Crack down on these radicals."
+		name = "17715.A"
 		random_owned = {
 			limit = {
 				is_colonial = no
@@ -4462,7 +4462,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Keep the problem localized."
+		name = "17715.B"
 		random_owned = {
 			limit = {
 				is_colonial = no
@@ -4640,7 +4640,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We cannot allow this talk to spread."
+		name = "17720.A"
 		random_owned = {
 			limit = {
 				is_colonial = no
@@ -4667,7 +4667,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This must not come to violence."
+		name = "17720.B"
 		random_owned = {
 			limit = {
 				is_colonial = no
@@ -4874,7 +4874,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Crack down on the communists."
+		name = "17730.A"
 		random_pop = {
 			limit = {
 				strata = poor
@@ -4908,7 +4908,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Let them demonstrate."
+		name = "17730.B"
 		state_scope = {
 			any_pop = {
 				limit = {

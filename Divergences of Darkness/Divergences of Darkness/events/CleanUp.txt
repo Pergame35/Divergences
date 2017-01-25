@@ -1,6 +1,6 @@
 country_event = {
 	id = 60000
-	title = "Communists Seize Power"
+	title = "60000.T"
 	desc = "EVTDESC60000"
 	news = yes
 	news_title = "EVTNAME60000_NEWS_TITLE"
@@ -78,7 +78,7 @@ country_event = {
 
 country_event = {
 	id = 60010
-	title = "Military Coup d'Etat"
+	title = "60010.T"
 	desc = "EVTDESC60010"
 	news = yes
 	news_title = "EVTNAME60010_NEWS_TITLE"
@@ -135,7 +135,7 @@ country_event = {
 	}
 	major = yes
 	option = {
-		name = "This is only temporary until the crisis passes"
+		name = "60010.A"
 		government = presidential_dictatorship
 		political_reform = none_voting
 		political_reform = party_appointed
@@ -185,7 +185,7 @@ country_event = {
 
 country_event = {
 	id = 60020
-	title = "Anarcho-Liberals Seize Power"
+	title = "60020.T"
 	desc = "EVTDESC60020"
 	news = yes
 	news_title = "EVTNAME60020_NEWS_TITLE"
@@ -256,7 +256,7 @@ country_event = {
 
 country_event = {
 	id = 60030
-	title = "Fascist Coup D'Etat"
+	title = "60030.T"
 	desc = "EVTDESC60030"
 	news = yes
 	news_title = "EVTNAME60030_NEWS_TITLE"
@@ -302,7 +302,7 @@ country_event = {
 	}
 	major = yes
 	option = {
-		name = "Our destiny awaits."
+		name = "60030.A"
 		government = fascist_dictatorship
 		political_reform = none_voting
 		political_reform = party_appointed
@@ -536,7 +536,7 @@ country_event = {
 
 country_event = {
 	id = 60080
-	title = "Voting Rights Rescinded"
+	title = "60080.T"
 	desc = "EVTDESC60080"
 	news = yes
 	news_title = "EVTNAME60080_NEWS_TITLE"
@@ -562,7 +562,7 @@ country_event = {
 	}
 	major = yes
 	option = {
-		name = "Long Live the President!"
+		name = "60080.A"
 		government = presidential_dictatorship
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
@@ -577,7 +577,7 @@ country_event = {
 
 country_event = {
 	id = 60090
-	title = "Voting Rights Rescinded"
+	title = "60090.T"
 	desc = "EVTDESC60080"
 	news = yes
 	news_title = "EVTNAME60080_NEWS_TITLE"
@@ -598,7 +598,7 @@ country_event = {
 	}
 	major = yes
 	option = {
-		name = "Long Live the Bourgeois!"
+		name = "60090.A"
 		government = bourgeois_dictatorship
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
@@ -613,7 +613,7 @@ country_event = {
 
 country_event = {
 	id = 60100
-	title = "Voting Rights Rescinded"
+	title = "60100.T"
 	desc = "EVTDESC60080"
 	news = yes
 	news_title = "EVTNAME60080_NEWS_TITLE"
@@ -634,7 +634,7 @@ country_event = {
 	}
 	major = yes
 	option = {
-		name = "The Workers have prevailed!"
+		name = "60100.A"
 		government = proletarian_dictatorship
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
@@ -649,7 +649,7 @@ country_event = {
 
 country_event = {
 	id = 60110
-	title = "Voting Rights Rescinded"
+	title = "60110.T"
 	desc = "EVTDESC60080"
 	news = yes
 	news_title = "EVTNAME60080_NEWS_TITLE"
@@ -670,7 +670,7 @@ country_event = {
 	}
 	major = yes
 	option = {
-		name = "The $COUNTRY_ADJ$ Destiny!"
+		name = "60110.A"
 		government = fascist_dictatorship
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
@@ -843,7 +843,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Hurrah for $COUNTRY$!"
+		name = "60160.A"
 		set_country_flag = existing_country
 		any_pop = {
 			limit = { is_primary_culture = yes }
@@ -1062,7 +1062,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Long live the people's republic!"
+		name = "60095.A"
 		government = democracy
 	}
 }

@@ -58,7 +58,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "An excellent development!"
+		name = "22248.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -74,8 +74,8 @@ province_event = {
 ## Indonesian colony spread
 province_event = {
 	id = 97130
-	title = "$STATENAME$ Colonial Incorporation"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Indonesian colony"
+	title = "97130.T"
+	desc = "97130.D"
 	
 	trigger = {
 		OR = {
@@ -119,7 +119,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "An excellent development!"
+		name = "22249.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -142,8 +142,8 @@ province_event = {
 ## Indonesian colony spread
 province_event = {
 	id = 97135
-	title = "$STATENAME$ Colonial Incorporation"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Christiania colony"
+	title = "97135.T"
+	desc = "97135.D"
 	
 	trigger = {
 		OR = {
@@ -187,7 +187,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "An excellent development!"
+		name = "22251.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -246,7 +246,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "An excellent development!"
+		name = "44345.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -304,7 +304,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "An excellent development!"
+		name = "98900.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -324,8 +324,8 @@ province_event = {
 
 province_event = { ### Spread of Terra d'Oro cores 
 	id = 971341
-	title = "$STATENAME$ Colonial Incorporation"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Aurean colony"
+	title = "971341.T"
+	desc = "971341.D"
 	
 	trigger = {
 		OR = {
@@ -362,7 +362,7 @@ province_event = { ### Spread of Terra d'Oro cores
 	}
 	
 	option = {
-		name = "An excellent development!"
+		name = "97130.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -381,8 +381,8 @@ province_event = { ### Spread of Terra d'Oro cores
 
 province_event = {
 	id = 971345
-	title = "$STATENAME$ Colonial Incorporation"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Leonian colony"
+	title = "971345.T"
+	desc = "971345.D"
 	
 	trigger = {
 		region = FRA_1880
@@ -427,8 +427,8 @@ province_event = {
 
 province_event = {
 	id = 971346
-	title = "$STATENAME$ Colonial Incorporation"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Leonian colony"
+	title = "971346.T"
+	desc = "971346.D"
 	
 	trigger = {
 		region = ENG_1887
@@ -473,8 +473,8 @@ province_event = {
 
 province_event = {
 	id = 971347
-	title = "$STATENAME$ Colonial Incorporation"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Leonian colony"
+	title = "971347.T"
+	desc = "971347.D"
 	
 	trigger = {
 		region = FRA_1884
@@ -519,8 +519,8 @@ province_event = {
 
 province_event = {
 	id = 971348
-	title = "$STATENAME$ Colonial Incorporation"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Leonian colony"
+	title = "971348.T"
+	desc = "971348.D"
 	
 	trigger = {
 		region = FRA_1879
@@ -565,8 +565,8 @@ province_event = {
 
 province_event = {
 	id = 971349
-	title = "$STATENAME$ Colonial Incorporation"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Leonian colony"
+	title = "971349.T"
+	desc = "971349.D"
 	
 	trigger = {
 		region = FRA_1892

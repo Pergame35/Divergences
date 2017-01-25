@@ -4108,7 +4108,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This dissension cannot be permitted."
+		name = "4435.A"
 		any_pop = {
 			ideology = {
 				value = liberal
@@ -4122,7 +4122,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will consider the idea."
+		name = "4435.B"
 		upper_house = {
 			ideology = liberal
 			value = 0.2
@@ -4189,7 +4189,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The quotas exist for a reason."
+		name = "4436.A"
 		any_pop = {
 			ideology = {
 				value = liberal
@@ -4203,7 +4203,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Re-examine the quota limits."
+		name = "4436.B"
 		upper_house = {
 			ideology = liberal
 			value = 0.2
@@ -4266,7 +4266,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This is not the time."
+		name = "4437.A"
 		any_pop = {
 			ideology = {
 				value = liberal
@@ -4280,7 +4280,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall consider changing the policy."
+		name = "4437.B"
 		upper_house = {
 			ideology = liberal
 			value = 0.2
@@ -4339,7 +4339,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "All similar folk should aspire to do likewise."
+		name = "4438.A"
 		any_pop = {
 			limit = {
 				is_primary_culture = no
@@ -4351,7 +4351,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Use this story to promote further reforms."
+		name = "4438.B"
 		upper_house = {
 			ideology = liberal
 			value = 0.2
@@ -4424,7 +4424,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Support them."
+		name = "4439.A"
 		upper_house = {
 			ideology = reactionary
 			value = 0.2
@@ -4479,7 +4479,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Refuse them."
+		name = "4439.B"
 		any_pop = {
 			limit = { is_primary_culture = yes }
 			scaled_militancy = {

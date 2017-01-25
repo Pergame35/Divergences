@@ -339,14 +339,14 @@ country_event = {
 #Greek Excavations
 country_event = {
 	id = 190401
-	title = "Mycenaean Excavations"
-	desc = "A great power has come to us asking to excavate local ruins."
+	title = "190401.T"
+	desc = "190401.D"
 	picture = "Mykene"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Certainly."
+		name = "190401.A"
 		set_global_flag = greek_excavation_rights
 		FROM = {
 			country_event = 190411
@@ -357,7 +357,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Never!"
+		name = "190401.B"
 		FROM = {
 			country_event = 190421
 		}
@@ -367,14 +367,14 @@ country_event = {
 #Greece Allows
 country_event = {
 	id = 190411
-	title = "Greece Permits!"
-	desc = "The Greeks have agreed that we may excavate at Mycenae"
+	title = "190411.T"
+	desc = "190411.D"
 	picture = "Mykene"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Hurrah!"
+		name = "190411.A"
 		add_country_modifier = {
 			name = mycenaean_excavations
 			duration = -1
@@ -391,14 +391,14 @@ country_event = {
 #Greece Refuses
 country_event = {
 	id = 190421
-	title = "Greece Refuses!"
-	desc = "The foolish Greeks have refused our antiquarians access!"
+	title = "190421.T"
+	desc = "190421.D"
 	picture = "Mykene"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Damnation!"
+		name = "190421.A"
 		relation = {
 			who = FROM
 			value = -20
@@ -411,8 +411,8 @@ country_event = {
 # Excavation team gets into trouble
 country_event = {
 	id = 190431
-	title = "Legal Issues"
-	desc = "There's been some unfortunate allegations in Greece..."
+	title = "190431.T"
+	desc = "190431.D"
 	picture = "Mykene"
 	
 	trigger = {
@@ -427,7 +427,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "A little money may help?"
+		name = "190431.A"
 		treasury = -20000
 		ai_chance = {
 			factor = 50
@@ -439,7 +439,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Bring them home"
+		name = "190431.B"
 		840 = {
 			owner = {
 				relation = { who = THIS value = -20 }
@@ -455,8 +455,8 @@ country_event = {
 # Tomb Found
 country_event = {
 	id = 190441
-	title = "Greek Tomb discovered!"
-	desc = "A royal tomb has been found in Greece."
+	title = "190441.T"
+	desc = "190441.D"
 	picture = "Loewentor"
 	
 	trigger = {
@@ -484,7 +484,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Excellent."
+		name = "190441.A"
 		prestige = 5
 		years_of_research = 0.1
 	}
@@ -492,8 +492,8 @@ country_event = {
 
 country_event = {
 	id = 190451
-	title = "Accusations of Fraud"
-	desc = "Some of the jewelery our excavators have found is of questionable validity..."
+	title = "190451.T"
+	desc = "190451.D"
 	picture = "Mykene"
 		
 	trigger = {
@@ -517,15 +517,15 @@ country_event = {
 	}
 	
 	option = {
-		name = "Blast!"
+		name = "190451.A"
 		prestige = -5
 	}
 }
 
 country_event = {
 	id = 190461
-	title = "The Face of Agamemnon"
-	desc = "And as we pulled the mask from the body, I gazed into the face of Agamemnon."
+	title = "190461.T"
+	desc = "190461.D"
 	news = yes
 	news_desc_long = "EVTDESC190461_NEWS_LONG"
 	news_desc_medium = "EVTDESC190461_NEWS_MEDIUM"
@@ -574,7 +574,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Overwhelming..."
+		name = "190461.A"
 		prestige = 30
 		years_of_research = 0.5
 		set_global_flag = agamemnon_found
@@ -588,14 +588,14 @@ country_event = {
 
 country_event = {
 	id = 1904012
-	title = "Minoan Excavations"
-	desc = "A great power has come to us asking to excavate local ruins."
+	title = "1904012.T"
+	desc = "1904012.D"
 	picture = "Knossos"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Certainly."
+		name = "1904012.A"
 		set_global_flag = crete_excavation_rights
 		FROM = {
 			country_event = 1904112
@@ -606,7 +606,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Never!"
+		name = "1904012.B"
 		FROM = {
 			country_event = 1904212
 		}
@@ -616,14 +616,14 @@ country_event = {
 #Crete Allows
 country_event = {
 	id = 1904112
-	title = "Crete permits!"
-	desc = "The Cretans have agreed that we may excavate at Knossos."
+	title = "1904112.T"
+	desc = "1904112.D"
 	picture = "Knossos"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Hurrah!"
+		name = "1904112.A"
 		add_country_modifier = {
 			name = minoan_excavations
 			duration = -1
@@ -640,14 +640,14 @@ country_event = {
 #Crete Refuses
 country_event = {
 	id = 1904212
-	title = "Crete refuses!"
-	desc = "The foolish Cretans have refused our antiquarians access!"
+	title = "1904212.T"
+	desc = "1904212.D"
 	picture = "Knossos"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Damnation!"
+		name = "1904212.A"
 		relation = {
 			who = FROM
 			value = -20
@@ -660,8 +660,8 @@ country_event = {
 #Excavation team gets into trouble
 country_event = {
 	id = 1904312
-	title = "Legal Issues"
-	desc = "There's been some unfortunate allegations in Crete..."
+	title = "1904312.T"
+	desc = "1904312.D"
 	picture = "Knossos"
 	
 	trigger = {
@@ -688,7 +688,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "A little money may help?"
+		name = "1904312.A"
 		treasury = -20000
 		ai_chance = {
 			factor = 50
@@ -700,7 +700,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Bring them home."
+		name = "1904312.B"
 		847 = {
 			owner = {
 				relation = { who = THIS value = -20 }
@@ -716,8 +716,8 @@ country_event = {
 #Knossos Palace Found
 country_event = {
 	id = 1904412
-	title = "Great Palace discovered!"
-	desc = "A great palace has been found in Knossos!"
+	title = "1904412.T"
+	desc = "1904412.D"
 	picture = "Knossos_palace"
 	
 	trigger = {
@@ -745,7 +745,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Intriguing..."
+		name = "1904412.A"
 		prestige = 5
 		years_of_research = 0.1
 	}
@@ -754,7 +754,7 @@ country_event = {
 #The Labyrinth
 country_event = {
 	id = 1904612
-	title = "The Labyrinth"
+	title = "1904612.T"
 	desc = "EVTDESC1904612_NEWS_LONG"
 	news = yes
 	news_title = "EVTNAME1904612_NEWS_TITLE"
@@ -805,7 +805,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Magnificent!"
+		name = "1904612.A"
 		prestige = 30
 		years_of_research = 0.5
 		set_global_flag = minos_found
@@ -819,7 +819,7 @@ country_event = {
 
 country_event = {
 	id = 1905101
-	title = "Homo Neanderthalensis discovered!"
+	title = "1905101.T"
 	desc = "EVTDESC1905101_NEWS_LONG"
 	news = yes
 	news_title = "EVTNAME1905101_NEWS_TITLE"
@@ -849,7 +849,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Marvellous!"
+		name = "1905101.A"
 		set_global_flag = neanderthal
 		prestige = 10
 		years_of_research = 0.5
@@ -858,7 +858,7 @@ country_event = {
 
 country_event = {
 	id = 1905201
-	title = "Homo Erectus discovered!"
+	title = "1905201.T"
 	desc = "EVTDESC1905201_NEWS_LONG"
 	news = yes
 	news_title = "EVTNAME1905201_NEWS_TITLE"
@@ -890,7 +890,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Marvellous!"
+		name = "1905201.A"
 		set_global_flag = erectus
 		prestige = 10
 		years_of_research = 0.5
@@ -899,7 +899,7 @@ country_event = {
 
 country_event = {
 	id = 1905301
-	title = "Australopithecus africanus discovered!"
+	title = "1905301.T"
 	desc = "EVTDESC1905301_NEWS_LONG"
 	news = yes
 	news_title = "EVTNAME1905301_NEWS_TITLE"
@@ -932,7 +932,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Marvellous!"
+		name = "1905301.A"
 		set_global_flag = africanus
 		prestige = 10
 		years_of_research = 0.5
@@ -956,7 +956,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Marcus, give me my bullwhip!" 
+		name = "201000.A" 
 		set_global_flag = maya_ruins
 		any_country = {
 			limit = {
@@ -983,7 +983,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Marcus, give me my bullwhip!"
+		name = "201001.A"
 	}
 }
 
@@ -1006,7 +1006,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "It's time to fetch my fedora again!"
+		name = "201002.A"
 		set_global_flag = machupicchu
 		any_country = {
 			limit = {
@@ -1033,7 +1033,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "It's time to fetch my fedora again!"
+		name = "201003.A"
 	}
 }
 
@@ -1047,7 +1047,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Odd people. What is so interesting about some stones in the jungle?"
+		name = "201004.A"
 		plurality = 1
 		money = 10000
 		FROM = {
@@ -1059,7 +1059,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "No! That's our jungle!"
+		name = "201004.B"
 		prestige = 2
 		FROM = {
 			country_event = 201006
@@ -1077,7 +1077,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Where is my fedora?"
+		name = "201005.A"
 		money = -10000
 		add_country_modifier = {
 			name = maya_excavations
@@ -1101,7 +1101,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "But I've already bought this handsome leather jacket!"
+		name = "201006.A"
 		relation = { who = FROM value = -10 }
 		prestige = -5
 		set_country_flag = maya_refused
@@ -1121,7 +1121,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "If they want to dig in the desert, they're welcome to it."
+		name = "201010.A"
 		plurality = 1
 		money = 10000
 		set_global_flag = mesopotamian_excavation_rights
@@ -1134,7 +1134,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We refuse out of sheer spite."
+		name = "201010.B"
 		prestige = 1
 		FROM = {
 			country_event = 201012
@@ -1152,7 +1152,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We knew they would cooperate."
+		name = "201011.A"
 		money = -10000
 		add_country_modifier = {
 			name = mesopotamian_excavations
@@ -1174,7 +1174,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "This is... unexpected."
+		name = "201012.A"
 		relation = { who = FROM value = -20 }
 		prestige = -5
 		set_country_flag = mesopotamian_refused
@@ -1242,7 +1242,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Archaeology is truly a fascinating science."
+		name = "201013.A"
 		plurality = 1
 		prestige = 10
 		years_of_research = 0.12
@@ -1293,7 +1293,7 @@ country_event = {
 	}
 
 	option = {
-		name = "I should subscribe to their Journal..."
+		name = "201018.A"
 		set_country_flag = archaeological_society
 		prestige = 10
 		years_of_research = 0.05
@@ -1344,7 +1344,7 @@ country_event = {
 	}
 
 	option = {
-		name = "He should serve as an example for our scientific community." 
+		name = "201019.A" 
 		years_of_research = 0.05
 		set_country_flag = famous_archaeologist
 		ai_chance = {
@@ -1357,7 +1357,7 @@ country_event = {
 	}
 
 	option = {
-		name = "He should serve as an example for our nation." 
+		name = "201019.B" 
 		prestige = 5
 		set_country_flag = famous_archaeologist
 		ai_chance = {
@@ -1402,7 +1402,7 @@ country_event = {
 	}
 
 	option = {
-		name = "That belongs in a museum!"
+		name = "201021.A"
 		years_of_research = 0.05
 	}
 }
@@ -1439,7 +1439,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Something in there is... slithering..."
+		name = "201022.A"
 		prestige = 5
 		years_of_research = 0.1
 	}
@@ -1499,7 +1499,7 @@ country_event = {
 	}
 
 	option = {
-		name = "To think that these ruins waited all this time for us!"
+		name = "201026.A"
 		prestige = 30
 		years_of_research = 0.5
 		set_global_flag = mirador_found
@@ -1542,7 +1542,7 @@ country_event = {
 	}
 
 	option = {
-		name = "That belongs in a museum!"
+		name = "201033.A"
 		years_of_research = 0.05
 	}
 }
@@ -1575,7 +1575,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Incredible!"
+		name = "201034.A"
 		prestige = 5
 		years_of_research = 0.1
 	}
@@ -1619,7 +1619,7 @@ country_event = {
 	}
 
 	option = {
-		name = "And I thought it was only a legend."
+		name = "201036.A"
 		set_global_flag = tower_of_babel_found
 		prestige = 30
 		years_of_research = 0.5
@@ -1662,7 +1662,7 @@ country_event = {
 	}
 
 	option = {
-		name = "That belongs in a museum!"
+		name = "201070.A"
 		years_of_research = 0.05
 	}
 }
@@ -1695,7 +1695,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Stunning!"
+		name = "201071.A"
 		prestige = 5
 		years_of_research = 0.1
 	}
@@ -1739,7 +1739,7 @@ country_event = {
 	}
 
 	option = {
-		name = "You mean El Dorado isn't real...?"
+		name = "201072.A"
 		set_global_flag = andean_gold_found
 		prestige = 30
 		years_of_research = 0.5
@@ -1769,14 +1769,14 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Open it to archaeologists from the whole world!"
+	name = "201075.A"
 	set_global_flag = machupicchu_2 
 	years_of_research = 0.8 
 	set_country_flag = INC_museum
 	}
 	
 	option = { 
-	name = "Rebuild a Great Palace for the Inca!"
+	name = "201075.B"
 	set_global_flag = machupicchu_2 
 	prestige = 5 
 	capital_scope = { 
@@ -1785,7 +1785,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Dedicate the mountain to Inti!"
+	name = "201075.C"
 	set_global_flag = machupicchu_2 
 	prestige = 15 
 	any_pop = { 

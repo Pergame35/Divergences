@@ -8,7 +8,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "The holy Crusade does not need strangers !"
+	name = "44201.A"
 	relation = { who = FROM value = -200 }
 	SPA = { country_event = 44202 }
 	ai_chance = { 
@@ -17,7 +17,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Give them an island in exchange for some help "
+	name = "44201.B"
 	1498 = { secede_province = SPA }
 	SPA = { country_event = 44203 }
 	ai_chance = { 
@@ -26,7 +26,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We fully accept the treaty !"
+	name = "44201.C"
 	1498 = { secede_province = SPA }
 	1496 = { secede_province = SPA }	
 	SPA = { country_event = 44204 }
@@ -45,7 +45,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We'll consider other means to benefit from South China ...."
+	name = "44202.A"
 	SPA = { 
 			casus_belli = {
 				target = FROM 
@@ -68,7 +68,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We'll use Macao for the time being"
+	name = "44203.A"
 	prestige = 5
 	diplomatic_influence = { who = TAI value = 50 }
 	}
@@ -84,7 +84,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Excellent"
+	name = "333033.A"
 	prestige = 15
 	diplomatic_influence = { who = TAI value = 150 }
 	}
@@ -101,7 +101,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Give them what they want."
+		name = "1316082.A"
 		FROM = { country_event = 1316083 }
 		prestige = -5
 		treasury = -200000
@@ -152,7 +152,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Never! We shall not submit!"
+		name = "1316082.B"
 		FROM = { country_event = 1316084 }
 		prestige = 5
 		ai_chance = {
@@ -175,7 +175,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Excellent!"
+		name = "97086.A"
 		clr_country_flag = negotiate_unequal_treaty
 		FROM = {
 			clr_country_flag = negotiate_unequal_treaty
@@ -308,7 +308,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "An unfortunate choice."
+		name = "1316084.A"
 		FROM = { clr_country_flag = negotiate_unequal_treaty }
 		casus_belli = {
 			target = FROM
@@ -338,7 +338,7 @@ country_event = {
 	days = 1 }
 	
 	option = {
-	name = "We will lead the Steppes peoples to greatness !"
+	name = "48901.A"
 	set_country_flag = turania_presentation 
 	}
 }
@@ -372,7 +372,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will strengthen the Oirat and let the others do as they please!"
+	name = "48902.A"
 	set_country_flag = empire_dislocated
 	any_owned = { 
 	limit = { OR = { is_core = KZH is_core = TNT is_core = MGL is_core = UGH is_core = UZB is_core = TJK is_core = KOK } }
@@ -401,7 +401,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The Mongols, Kazaks and Uzbeks can go but we will fight for Kashgar and Tannu!"
+	name = "48902.B"
 	set_country_flag = empire_dislocated
 	any_owned = { 
 	limit = { OR = { is_core = KZH is_core = MGL is_core = UZB is_core = TJK is_core = KOK } }
@@ -437,7 +437,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Fight them all!"
+	name = "48902.C"
 	set_country_flag = empire_dislocated
 	any_owned = { 
 	limit = { OR = { region = RUS_1184 region = RUS_1185} } secede_province = KZH 
@@ -518,7 +518,7 @@ country_event = {
 	mean_time_to_happen = { months = 35 }
 	
 	option = { 
-	name = "We will crush them!"
+	name = "48903.A"
 	set_country_flag = kashgar
 	badboy = 12
 	casus_belli = {
@@ -555,7 +555,7 @@ country_event = {
 	mean_time_to_happen = { months = 48 }
 	
 	option = { 
-	name = "We will see them driven before us !"
+	name = "48904.A"
 	badboy = 12
 	set_country_flag = urga
 	casus_belli = {
@@ -592,7 +592,7 @@ country_event = {
 	mean_time_to_happen = { months = 47 }
 	
 	option = { 
-	name = "Let us hear the lamentations of their women!"
+	name = "48905.A"
 	badboy = 15
 	casus_belli = {
 			target = KZH
@@ -627,7 +627,7 @@ country_event = {
 	mean_time_to_happen = { months = 50 }
 	
 	option = { 
-	name = "Tuvan independence, what nonsense..."
+	name = "48906.A"
 	badboy = 5
 	casus_belli = {
 			target = TNT
@@ -644,7 +644,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It's better to leave them be"
+	name = "48906.B"
 	ai_chance = { factor = 5 }
 	}
 }
@@ -666,7 +666,7 @@ country_event = {
 	mean_time_to_happen = { months = 8 }
 	
 	option = { 
-	name = "To the West through the Tatar Lands."
+	name = "48907.A"
 	set_country_flag = modernization_CHG
 	country_event = { id = 48908 days = 487 }
 	ai_chance = { 
@@ -675,7 +675,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "To the East through China."
+	name = "48907.B"
 	set_country_flag = modernization_CHG
 	JAP = { country_event = { id = 48930 days = 50 } }
 	ai_chance = { 
@@ -684,7 +684,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "To the South through India."
+	name = "48907.C"
 	set_country_flag = modernization_CHG
 	random_country = { limit = { continent = europe any_owned_province = { OR = { is_core = HND is_core = DRA } } } country_event = { id = 48940 days = 275 } }
 	ai_chance = { 
@@ -711,7 +711,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Make him 'minister'."
+	name = "48909.A"
 	remove_country_modifier = expert_diplomat
 	remove_country_modifier = successful_industrialist
 	remove_country_modifier = ivory_tower_intellectual
@@ -748,7 +748,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Make him lead our armies!"
+	name = "48909.B"
 	prestige = -2
 	define_general = {
 		name = "Roman Stroganov-Romanov"
@@ -758,7 +758,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "He is no true Steppeman!"
+	name = "48909.C"
 	set_country_flag = steppe_madness
 	prestige = 3 
 	}
@@ -782,7 +782,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { 
-	name = "Invade Tibet once more!"
+	name = "48910.A"
 	war = {
 			target = TIB
 			attacker_goal = {
@@ -792,7 +792,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We don't want to anger the Buddhists."
+	name = "48910.B"
 	relation = { who = TIB value = 100 }
 	}
 }
@@ -814,7 +814,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We don't have much choice"
+	name = "48911.A"
 	any_owned = { limit = { is_core = XBI } secede_province = CHG }
 	CHG = { country_event =  48912 }
 	}
@@ -829,7 +829,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Excellent."
+	name = "190441.A"
 	}
 }
 
@@ -850,7 +850,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Create the Asiatic Legions!"
+	name = "48913.A"
 	random_owned = { limit = { owner = { army_schools = no_army_schools } } owner = { military_reform = yes_army_schools   activate_technology = bronze_muzzle_loaded_artillery  }  }
 	random_owned = { limit = { owner = { army_schools = yes_army_schools } } owner = { military_reform = army_academies   activate_technology = iron_muzzle_loaded_artillery }  }
 	random_owned = { limit = { owner = { foreign_training = no_foreign_training  } } owner = { military_reform = yes_foreign_training  activate_technology = military_staff_system  }  }
@@ -878,7 +878,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It's probably better to leave it as it is..."
+	name = "48913.B"
 	prestige = -5
 	}
 }
@@ -898,7 +898,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { 
-	name = "Stroganov-Romanov takes control of Mongolia!"
+	name = "48914.A"
 	war = {
 			target = CHG
 			attacker_goal = {
@@ -912,7 +912,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Stroganov-Romanov is defeated."
+	name = "48914.B"
 	ai_chance = { 
 	factor = 0	
 		}
@@ -928,7 +928,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Damn!"
+	name = "97430.A"
 	}
 }
 
@@ -949,14 +949,14 @@ country_event = {
 	}
 	
 	option = { 
-	name = "He is on his own!"
+	name = "48920.A"
 	ai_chance = { 
 	factor = 20 
 		}
 	}
 	
 	option = { 
-	name = "Expand the library but do not go further."
+	name = "48920.B"
 	set_country_flag = script_question
 	money = -100000
 	any_pop = { literacy = 0.05 }
@@ -972,7 +972,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Create the Genghis Khan University!"
+	name = "48920.C"
 	set_country_flag = university_urumqi
 	set_country_flag = script_question
 	money = -1000000
@@ -1011,14 +1011,14 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We don't care"
+	name = "48921.A"
 	ai_chance = { 
 	factor = 25 
 		}
 	}
 	
 	option = { 
-	name = "Publicly support the expedition and 'protect' the European envoys"
+	name = "48921.B"
 	money = -10000
 	set_country_flag = tocharians
 	ai_chance = { 
@@ -1049,7 +1049,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Good for our international standing"
+	name = "48922.A"
 	prestige = 40 
 	}
 	
@@ -1071,7 +1071,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The old Mongol alphabet will be fit for the Modern Age!"
+	name = "48923.A"
 	clr_country_flag = script_question
 	any_pop = { literacy = 0.01 }
 	ai_chance = { 
@@ -1080,7 +1080,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Latin alphabet for the future!"
+	name = "48923.B"
 	clr_country_flag = script_question
 	any_pop = { literacy = 0.01  }
 	ai_chance = { 
@@ -1089,7 +1089,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Arabic it is!"
+	name = "48923.C"
 	any_pop = { literacy = 0.01  }
 	clr_country_flag = script_question 
 	ai_chance = { 
@@ -1107,7 +1107,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Interesting. Maybe we could take advantage of this ..."
+	name = "48930.A"
 	diplomatic_influence = { who = CHG value = 150 }
 	relation = { who = CHG value = 150 }
 	CHG = { country_event = 48931 }
@@ -1123,7 +1123,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "Excellent!"
+	name = "97391.A"
 	research_points = 11000
 	set_country_flag = kawaguchi
 	}
@@ -1148,7 +1148,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Let him go to Tibet unharmed" 
+	name = "48932.A" 
 	TIB = { country_event = 48933 }
 	relation = { who = TIB value = 200 }
 	relation = { who = JAP value = 50 }
@@ -1158,7 +1158,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Forbid him access through our passes!"
+	name = "48932.B"
 	clr_country_flag = kawaguchi
 	relation = { who = JAP value = -50 }
 	relation = { who = TIB value = -50 }
@@ -1177,7 +1177,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "An interesting man"
+	name = "48933.A"
 	JAP = { country_event = 48934 }
 	relation = { who = JAP value = 50 }
 	}
@@ -1192,7 +1192,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Another exploit for Japan!"
+	name = "48934.A"
 	prestige = 4 
 	}
 }
@@ -1215,7 +1215,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { 
-	name = "The Steppes will be brought under our control!" 
+	name = "48935.A" 
 	CHG = { country_event = 48936 }
 	war = {
 			target = CHG
@@ -1227,7 +1227,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Who brought such an idea to the court ?"
+	name = "48935.B"
 	prestige = 2 
 	ai_chance = { 
 	factor = 20 
@@ -1251,7 +1251,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Damn!"
+	name = "48915.A"
 	}
 }
 
@@ -1271,7 +1271,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We bow before our Japanese overlords..."
+	name = "48937.A"
 	any_owned = { limit = { OR = { region = MON_1075 region = RUS_1469 } } secede_province = JAP }
 	JAP = { country_event = 48938 }
 	}
@@ -1286,7 +1286,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Good"
+	name = "97087.A"
 	}
 }
 
@@ -1299,7 +1299,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Bring them to Europe and show them our power!"
+	name = "48940.A"
 	CHG = { country_event = { id = 48941 days = 150 } }
 	ai_chance = { 
 	factor = 70 
@@ -1307,7 +1307,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Make them return to their steppes!"
+	name = "48940.B"
 	ai_chance = { 
 	factor = 30 
 		}
@@ -1323,7 +1323,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "At last they come back!"
+	name = "48941.A"
 	research_points = 15000
 	set_country_flag = europe_travel
 	}
@@ -1342,7 +1342,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Interesting"
+	name = "48942.A"
 	any_pop = { 
 	literacy = 0.01 
 	ideology = {
@@ -1362,7 +1362,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Welcome back!"
+	name = "48908.A"
 	research_points = 8000 
 	set_country_flag = foreign_adviser
 	set_country_flag = mad_baron

@@ -20,7 +20,7 @@ country_event = { # Venice becomes Greece if they have lost their Italian holdin
 	}
 	
 	option = {
-		name = "We are true Hellens now"
+		name = "222120.A"
 		prestige = -10
 		release = ATS
 		primary_culture = greek
@@ -68,7 +68,7 @@ country_event = { ## Greek Demands ?
 		}
 		
 	option = { 
-	name = "Let them host their little council, what could possibly go wrong ?"
+	name = "100601.A"
 	set_country_flag = VEN_accepts 
 	ai_chance = { 
 		factor = 75
@@ -84,7 +84,7 @@ country_event = { ## Greek Demands ?
 	}
 	
 	option = { 
-	name = "We will not accept it. Greece is Venice's demesne"
+	name = "100601.B"
 	set_country_flag = no_council 
 	prestige = 5 
 		}
@@ -111,7 +111,7 @@ country_event = { ## The council of Athens
 		}
 	
 	option = { 
-	name = "Let it begin" 
+	name = "100602.A" 
 	clr_country_flag = VEN_accepts 
 	set_country_flag = council_opened 
 	}
@@ -137,7 +137,7 @@ country_event = { ## The council of Athens : the vote
 		} 
 		
 	option = { 
-	name = "Let us hear the results of the council"
+	name = "100603.A"
 	clr_country_flag = council_opened 
 	random_list = { 
 			25 = { country_event = 100604 }
@@ -160,7 +160,7 @@ country_event = { ## The council of Athens : Secession
 	is_triggered_only = yes
 	
 	option = { 
-	name = "Secession is not an option !" 
+	name = "100604.A" 
 	set_country_flag = greek_rebellion
 	any_owned = {
 			limit = {
@@ -228,7 +228,7 @@ country_event = { ## The council of Athens : Autonomy
 	is_triggered_only = yes
 	
 	option = {
-	name = "We will give them Home Rule" 
+	name = "100605.A" 
 	any_owned = {
 			limit = {
 				OR = {
@@ -247,7 +247,7 @@ country_event = { ## The council of Athens : Autonomy
 	}
 	
 	option = { 
-	name = "Autonomy is not an option" 
+	name = "100605.B" 
 	prestige = 10
 	country_event = 100606
 	}
@@ -264,7 +264,7 @@ country_event = { ## Failure of Home Rule
 	is_triggered_only = yes
 		
 	option = { 
-	name = "Secession is not an option !" 
+	name = "100606.A" 
 	set_country_flag = greek_rebellion
 	any_owned = {
 			limit = {
@@ -331,7 +331,7 @@ country_event = { ## Result : Integration
 	is_triggered_only = yes
 	
 	option = {
-	name = "Venice will reform itself"
+	name = "100607.A"
 	prestige = -10 
 	add_accepted_culture = greek
 	government = democracy 
@@ -352,7 +352,7 @@ country_event = { ## Result : Integration
 	}
 	
 	option = { 
-	name = "Political rights for Greeks ? What is this madness ?"
+	name = "100607.B"
 	country_event = 100608
 	prestige = 5
 	}
@@ -368,7 +368,7 @@ country_event = { ## Failure of the Pireans
 	is_triggered_only = yes
 	
 	option = { 
-	name = "Secession is not an option !" 
+	name = "100608.A" 
 	set_country_flag = greek_rebellion
 	any_owned = {
 			limit = {
@@ -437,7 +437,7 @@ country_event = { ## No majority
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We will crush Zmisceses !"
+	name = "100609.A"
 	set_country_flag = greek_rebellion
 	any_owned = {
 			limit = {
@@ -499,7 +499,7 @@ country_event = { # Mobilization of ressources
 	fire_only_once = yes
 	
 	option = {
-		name = "Greece will be free !"
+		name = "100610.A"
 		define_general = {
 		name = "Konstantinos Zimisces"
 		personality = charismatic
@@ -533,7 +533,7 @@ country_event = { # Question of Crete
 		} 
 		
 	option = { 
-	name = "How will it evolve ?" 
+	name = "100611.A" 
 	random_list = { 
 		45 = { country_event = 100612 }
 		35 = { country_event = 100613 }
@@ -550,7 +550,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "They have made the wise choice" 
+	name = "100612.A" 
 	prestige = 5 
 	}
 }
@@ -563,7 +563,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "At least, they did not join Zimisces ..." 
+	name = "100613.A" 
 	prestige = -5 
 	release = CRE
 	CRE = { 
@@ -580,7 +580,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "We shall overcome anyway !" 
+	name = "100614.A" 
 	any_owned = {
 			limit = {
 				is_core = CRE
@@ -607,7 +607,7 @@ country_event = { # Question of Cyprus
 		} 
 		
 	option = { 
-	name = "How will it evolve ?" 
+	name = "100615.A" 
 	random_list = { 
 		20 = { country_event = 100631 }
 		55 = { country_event = 100616 }
@@ -624,7 +624,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "They have made the wise choice" 
+	name = "100631.A" 
 	prestige = 5 
 	}
 }
@@ -637,7 +637,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "At least, they did not join Zimisces ..." 
+	name = "100616.A" 
 	prestige = -5 
 	release = CYP
 	CYP = { 
@@ -654,7 +654,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "We shall overcome anyway !" 
+	name = "100617.A" 
 	any_owned = {
 			limit = {
 				is_core = CYP
@@ -674,7 +674,7 @@ country_event = { #Treaty of Corfu
 	is_triggered_only = yes
 	
 	option = {
-		name = "For the good of $COUNTRY$, we must retreat."
+		name = "100618.A"
 		prestige_factor = -0.50
 		GRE = { country_event = 100619 }
 		clr_country_flag = greek_rebellion
@@ -702,7 +702,7 @@ country_event = { #Organisation of a Delphian Congress
 	is_triggered_only = yes
 	
 	option = { 
-	name = "A second council will be organised soon to decide of Greece's future"
+	name = "100619.A"
 	set_country_flag = greece_victorious 
 	set_country_flag = delphes_coming
 	}
@@ -731,7 +731,7 @@ country_event = {
 		}
 	
 	option = {
-	name = "Venice is here for a long time !"
+	name = "100620.A"
 	prestige = 20 
 	clr_country_flag = greek_rebellion 
 	set_country_flag = Venice_victorious 
@@ -754,7 +754,7 @@ country_event = {
 		}
 	
 	option = { 
-	name = "We will join back the fold..."
+	name = "100621.A"
 	clr_country_flag = waiting_end_rebellion
 	VEN = { country_event = 100622 }
 	}
@@ -768,7 +768,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "At last !"
+	name = "100622.A"
 	inherit = CRE
 	}
 }
@@ -789,7 +789,7 @@ country_event = {
 		}
 	
 	option = { 
-	name = "We will join back the fold..."
+	name = "100623.A"
 	clr_country_flag = waiting_end_rebellion
 	GRE = { country_event = 100624 }
 	}
@@ -803,7 +803,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "At last !"
+	name = "100624.A"
 	inherit = CRE
 	}
 }
@@ -824,7 +824,7 @@ country_event = {
 		}
 	
 	option = { 
-	name = "We will join back the fold..."
+	name = "100625.A"
 	clr_country_flag = waiting_end_rebellion
 	VEN = { country_event = 100626 }
 	}
@@ -838,7 +838,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "At last !"
+	name = "100626.A"
 	inherit = CYP
 	}
 }
@@ -859,7 +859,7 @@ country_event = {
 		}
 	
 	option = { 
-	name = "We will join back the fold..."
+	name = "100627.A"
 	clr_country_flag = waiting_end_rebellion
 	GRE = { country_event = 100628 }
 	}
@@ -873,7 +873,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "At last !"
+	name = "100628.A"
 	inherit = CYP
 	}
 }
@@ -894,7 +894,7 @@ country_event = { #Organisation of a Delphian Congress
 		}
 	
 	option = { 
-	name = "A second council will be organised soon to decide of Greece's future"
+	name = "100629.A"
 	set_country_flag = greece_victorious 
 	set_country_flag = delphes_coming
 	}
@@ -920,7 +920,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will crush Zmisceses !"
+	name = "100630.A"
 	set_country_flag = greek_rebellion
 	any_owned = {
 			limit = {
@@ -1000,7 +1000,7 @@ country_event = {
 		}
 	
 	option = { 
-	name = "Let us begin this second council"
+	name = "106040.A"
 	clr_country_flag = delphes_coming 
 	set_country_flag = delphes_happening
 	}
@@ -1025,7 +1025,7 @@ country_event = {
 		}
 	
 	option = { 
-	name = "What will be the result ?"
+	name = "106041.A"
 	clr_country_flag = delphes_happening 
 	random_list = { 
 		35 = { country_event = 106042 }
@@ -1046,7 +1046,7 @@ country_event = {
 	major = yes 
 	
 	option = { 
-	name = "Long Live Konstantinos Zimisces, king of the Hellens !"
+	name = "106042.A"
 	government = prussian_constitutionalism 
 	political_reform = wealth_voting
 	political_reform = population_equal_weight
@@ -1066,7 +1066,7 @@ country_event = {
 	major = yes 
 	
 	option = { 
-	name = "We will call the king of Macedonia to be crowned !"
+	name = "106043.A"
 	MAC = { country_event = 106044 }
 	ai_chance = { 
 		factor = 95 
@@ -1074,7 +1074,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Zimisces seizes the power for himself" 
+	name = "106043.B" 
 	government = absolute_monarchy
 	MAC = { country_event = 106046 }
 	}
@@ -1089,7 +1089,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We will not accept the crown of the gutter ! We will have Greece by conquest !"
+	name = "106044.A"
 	set_country_flag = new_alexandros
 	GRE = { country_event = 106045 } 
 	war = {
@@ -1101,7 +1101,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We are a Greek state now !" 
+	name = "106044.B" 
 	inherit = GRE 
 	GRE = {
 			all_core = {
@@ -1129,7 +1129,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We will crush the Macedonians ! All hail Zimisces !" 
+	name = "106045.A" 
 	government = prussian_constitutionalism 
 	political_reform = wealth_voting
 	political_reform = population_equal_weight
@@ -1154,7 +1154,7 @@ country_event = {
 
 	
 	option = { 
-	name = "We will take what is ours !" 
+	name = "106046.A" 
 	set_country_flag = new_alexandros
 	prestige = 10 
 	war = {
@@ -1196,7 +1196,7 @@ country_event = {
 		}
 	
 	option = { 
-	name = "Greece is ours !"
+	name = "106047.A"
 	clr_country_flag = new_alexandros 
 	prestige = 15
 	end_war = GRE 
@@ -1228,7 +1228,7 @@ country_event = {
 		}
 	
 	option = { 
-	name = "We will crush Zimisces !" 
+	name = "106048.A" 
 	clr_country_flag = zimisces_plot 
 	any_owned = {
 			limit = {
@@ -1305,7 +1305,7 @@ country_event = {
 		}
 		
 	option = { 
-	name = "Greece is united under Zimisces !"
+	name = "106049.A"
 	end_war = MAC 
 	inherit = MAC
 	prestige = 15 
@@ -1322,7 +1322,7 @@ country_event = {
 	major = yes 
 	
 	option = { 
-	name = "Long Live the new Hellen Republic !"
+	name = "106050.A"
 	government = democracy
 	ruling_party_ideology = liberal
 	political_reform = universal_voting
@@ -1353,7 +1353,7 @@ country_event = {
 		}
 	
 	option = { 
-	name = "Zimisces plot fails and the Republic lives on !" 
+	name = "106051.A" 
 	prestige = 5 
 	clr_country_flag = zimisces_plot 
 	any_pop = {
@@ -1399,7 +1399,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Zimisces succeeds in his plot and he is proclaimed king of Hellas"
+	name = "106051.B"
 	government = absolute_monarchy 
 	clr_country_flag = zimisces_plot 
 	ruling_party_ideology = conservative
@@ -1461,7 +1461,7 @@ country_event = {
 	major = yes 
 	
 	option = { 
-	name = "Long Live Konstantinos Zimisces, king of the Hellens !"
+	name = "106052.A"
 	prestige = 5 
 	MAC = { country_event = 106046 }
 	government = absolute_monarchy  
@@ -1527,7 +1527,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { 
-	name = "We will protect the Greeks!"
+	name = "106053.A"
 	set_country_flag = help_greece
 	prestige = 15 
 	relation = { who = VEN value = -200 }
@@ -1535,7 +1535,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Venice is powerful and Greece is not our primary interest."
+	name = "106053.B"
 	relation = { who = VEN value = 50 }
 	ai_chance = { factor = 25 }
 	}
@@ -1543,13 +1543,13 @@ country_event = {
 
 country_event = { 
 	id = 106054
-	title = "Macedonian Attack"
-	desc = "The traitorous Macedonians have launched a campaign to end our state!"
+	title = "106054.T"
+	desc = "106054.D"
 	
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "The time of Philip and Alexander is over!"
+	name = "106054.A"
 	}
 }
 
@@ -1572,7 +1572,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Seize the Egean Islands!"
+	name = "106060.A"
 	set_country_flag = ottoman_weakness 
 	843 = { secede_province = THIS }
 	846 = { secede_province = THIS }
@@ -1583,7 +1583,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Smyrna is a worthy target ..."
+	name = "106060.B"
 	set_country_flag = ottoman_weakness 
 	843 = { secede_province = THIS }
 	846 = { secede_province = THIS }
@@ -1595,7 +1595,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Our Greek holdings are enough to manage"
+	name = "106060.C"
 	badboy = -2
 	relation = { who = TUR value = 75 }
 	set_country_flag = ottoman_weakness 
@@ -1613,13 +1613,13 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We have enough problems as it stands, leave them be!"
+	name = "106061.A"
 	prestige = -5 
 	ai_chance = { factor = 70 }
 	}
 	
 	option = { 
-	name = "The vultures will be punished!"
+	name = "106061.B"
 	FROM = { country_event = 106062 }
 	war = {
 			target = VEN
@@ -1645,7 +1645,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Then it is truly war!"
+	name = "106062.A"
 	}
 }
 
@@ -1659,13 +1659,13 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We have enough problems as it stands, leave them be!"
+	name = "106063.A"
 	prestige = -5 
 	ai_chance = { factor = 20 }
 	}
 	
 	option = { 
-	name = "The vultures will be punished!"
+	name = "106063.B"
 	FROM = { country_event = 106062 }
 	war = {
 			target = VEN
@@ -1704,7 +1704,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Smyrna, Izmir, it's all the same for me!"
+	name = "106064.A"
 	869 = { add_core = GRE }
 	}
 }
@@ -1729,7 +1729,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Who got the big prize ?"
+	name = "106065.A"
 	prestige = 25 
 	}
 	
@@ -1749,7 +1749,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { 
-	name = "Tradition is good"
+	name = "106066.A"
 	set_country_flag = doge_1
 	}
 }
@@ -1774,7 +1774,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "He will be missed."
+	name = "106067.A"
 	set_country_flag = doge_election_1
 	any_pop = { 
 	limit = { culture = venetian }
@@ -1803,7 +1803,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Daniele Manin will be Doge"
+	name = "106068.A"
 	set_country_flag = daniele_manin_doge
 	any_pop = { 
 	limit = { culture = venetian }
@@ -1834,7 +1834,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Antonio Salviati is the new Doge"
+	name = "106068.B"
 	set_country_flag = salviati_doge
 	any_pop = { 
 	limit = { culture = venetian }
@@ -1869,7 +1869,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Giovanni Battista Giuseppe Albrizzi seems the best choice."
+	name = "106068.C"
 	set_country_flag = albrizzi_doge
 	any_pop = {  
 	limit = { culture = greek }
@@ -1916,7 +1916,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "He will be missed"
+	name = "106069.A"
 	set_country_flag = doge_election_2 
 	}
 }
@@ -1944,7 +1944,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "He will be missed"
+	name = "106070.A"
 	set_country_flag = doge_election_2 
 	}
 }
@@ -1972,7 +1972,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "He will be missed"
+	name = "106071.A"
 	prestige = 5 
 	set_country_flag = doge_election_2 
 	}
@@ -1998,7 +1998,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { 
-	name = "Alessandro Guiccioli will be Doge"
+	name = "106072.A"
 	set_country_flag = guiccioli_doge
 	any_pop = { 
 	limit = { culture = venetian }
@@ -2037,7 +2037,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Filipo Bertolini is the new Doge"
+	name = "106072.B"
 	set_country_flag = bertoloni_doge
 	any_pop = { 
 	limit = { culture = venetian }
@@ -2080,7 +2080,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Pietro Grimani seems the best choice."
+	name = "106072.C"
 	set_country_flag = grimalni_doge
 	any_pop = { 
 	limit = { culture = venetian }
@@ -2150,7 +2150,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Gone is this relic of the past!"
+	name = "106073.A"
 	prestige = -5
 	clr_country_flag = doge_1
 	clr_country_flag = doge_election_1
@@ -2189,7 +2189,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Our Republic is truly the Most Serene of all!"
+	name = "106074.A"
 	prestige = 5 
 	any_pop = { 
 	limit = { has_pop_culture = venetian }
@@ -2214,7 +2214,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { 
-	name = "May it never change!"
+	name = "106090.A"
 	prestige = 5 
 	scaled_militancy = {
 		issue = moralism
@@ -2245,7 +2245,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Good for us I guess ?"
+	name = "106091.A"
 	prestige = -20 
 	any_pop = {
 			limit = {
@@ -2378,7 +2378,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The Holy Church should not intervene in those matters!"
+	name = "106092.A"
 	any_pop = { 
 	limit = { has_pop_religion = orthodox } 
 	literacy = 0.15 
@@ -2407,7 +2407,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "It might be better ..."
+	name = "106093.A"
 	TUR_805 = { remove_core = BUL }
 	relation = { who = FROM value = 50 }
 	any_pop = {
@@ -2433,7 +2433,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "It is settled!"
+	name = "106094.A"
 	any_owned = { 
 	limit = { is_core = BUL }
 	secede_province = BUL

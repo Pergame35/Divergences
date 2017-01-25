@@ -14,7 +14,7 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = "A great humiliation for Burgundy!"
+        name = "98250.A"
         prestige = -50
         JAV = {
             all_core = { remove_core = THIS }
@@ -46,7 +46,7 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = "We will not bow to foreigners."
+        name = "98251.A"
         prestige = 25
         FROM = {
             any_owned = {

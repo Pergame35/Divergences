@@ -138,7 +138,7 @@ country_event = {
 	desc = "LOTNANfriendshipsetup2desc"
 		
 		option = {
-			name = "YES!"
+			name = "775401.A"
 			
 			
 				prestige = 20
@@ -168,7 +168,7 @@ country_event = {
 	desc = "LOTNANfriendshipsetup3desc"
 		
 		option = {
-			name = "Well, damn."
+			name = "775402.A"
 			
 			
 				prestige = 20
@@ -191,7 +191,7 @@ country_event = {
 	desc = "LOTNANfriendshipsetup4desc"
 		
 		option = {
-			name = "So much potential wasted."
+			name = "775403.A"
 			prestige = -10
 			set_country_flag = lot_nan_friendship_end
 				
@@ -504,7 +504,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "For the glory of the Inca!"
+		name = "97080.A"
 		prestige = 1
 		random_owned = {
 			limit = {
@@ -718,7 +718,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "For the glory of Beornia!"
+		name = "97085.A"
 		prestige = 1
 		random_owned = {
 			limit = {
@@ -904,7 +904,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Excellent!"
+		name = "97086.A"
 		life_rating = 10
 		any_pop = {
 			limit = { has_pop_culture = patagonian }
@@ -952,7 +952,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Good"
+	name = "97087.A"
 	random_owned = {
 			limit = {
 				2404 = { owned_by = THIS }
@@ -998,7 +998,7 @@ country_event = {
 	major = yes 
 	
 	option = { 
-	name = "We will only take the states along our border"
+	name = "97090.A"
 	badboy = 8 
 	LOT_2446 = { add_core = AMA }
 	LOT_2 = { add_core = AMA }
@@ -1006,7 +1006,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will free the Guaranis" 
+	name = "97090.B" 
 	LOT_2446 = { add_core = AMA }
 	LOT_2 = { add_core = AMA }
 	LOT_2458 = { add_core = AMA }
@@ -1018,7 +1018,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will create a greater Amerigan Federation"
+	name = "97090.C"
 	badboy = 30
 	set_global_flag = Amerigue
 	LOT = {
@@ -1038,7 +1038,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "What will they decide"
+		name = "97091.A"
 		random_list = {
 			50 = { 
 				add_accepted_culture = lotharian
@@ -1067,7 +1067,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "What will they decide ? "
+		name = "97092.A"
 		random_list = {
 			70 = { 
 				add_accepted_culture = lotharian
@@ -1096,7 +1096,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "What will they decide ?"
+		name = "97093.A"
 		random_list = {
 			95 = { 
 				add_accepted_culture = lotharian
@@ -1136,7 +1136,7 @@ country_event = { ######## The Constitution
 	}
 	
 	option = { 
-	name = "Denis d'Aigle will continue to lead us as he always did !"
+	name = "97094.A"
 	prestige = 10 
 	any_pop = { 
 		limit = { 
@@ -1150,7 +1150,7 @@ country_event = { ######## The Constitution
 	}
 	
 	option = { 
-	name = "Denis d'Aigle will call new elections"
+	name = "97094.B"
 	government = democracy 
 	political_reform = universal_voting
 	political_reform = population_equal_weight
@@ -1162,7 +1162,7 @@ country_event = { ######## The Constitution
 	}
 	
 	option = { 
-	name = "What Lotharingia needs is a strong monarch. D'Aigle will be crowned Denis Ier"
+	name = "97094.C"
 	government = absolute_monarchy 
 	ai_chance = { 
 		factor = 20 
@@ -1183,7 +1183,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "I knew invading this jungle would not give trouble to the Federation !"
+		name = "97095.A"
 		prestige = 5
 	}
 }
@@ -1198,7 +1198,7 @@ country_event = { ### Annexation
 	is_triggered_only = yes
 	
 	option = {
-		name = "We will integrate the Federation"
+		name = "97096.A"
 		FROM = { inherit = THIS }
 		ai_chance = { 
 		factor = 100 
@@ -1226,7 +1226,7 @@ country_event = { ### Annexation
 	days = 10  }
 	
 	option = { 
-	name = "It's all ours !"
+	name = "97097.A"
 	NAN_5 = { add_core = THIS }
 	prestige = 10 
 	}
@@ -1252,7 +1252,7 @@ country_event = { ### Annexation
 	days = 10  }
 	
 	option = { 
-	name = "It's all ours !"
+	name = "97098.A"
 	SA_9 = { add_core = THIS }
 	prestige = 15 
 	}
@@ -1279,7 +1279,7 @@ country_event = { ### Annexation
 	}
 	
 	option = { 
-	name = "It's all ours !"
+	name = "97099.A"
 	SA_6 = { add_core = THIS }
 	prestige = 5 
 	}
@@ -1293,7 +1293,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We will join the Federation ! "
+	name = "775411.A"
 	AZL = { country_event = 775412 }
 	ai_chance = { 
 	factor = 30 
@@ -1320,7 +1320,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "They can go to hell with their Federation !"
+	name = "775411.B"
 	prestige = 25 
 	AZL = { country_event = 775413 }
 	ai_chance = { 
@@ -1349,7 +1349,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "From the Jungles, to the Pampas, Long Live Ameriga !"
+	name = "775412.A"
 	inherit = FROM 
 	NAN = { all_core = { add_core = AZL } }
 	add_accepted_culture = beornian 
@@ -1365,13 +1365,13 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "Well we'll let them in their backwater pampas !"
+	name = "775413.A"
 	badboy = -10
 	relation = { who = NAN value = -150 }
 	}
 	
 	option = { 
-	name = "They thought that no was an answer ? Across la Rivière d'Argent gentlemen ! "
+	name = "775413.B"
 	NAN = { all_core = { add_core = AZL } }
 	badboy = 23 
 	casus_belli = {
@@ -1398,7 +1398,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "What will they decide ? "
+		name = "775414.A"
 		random_list = {
 			75 = { 
 				add_accepted_culture = beornian
@@ -1428,7 +1428,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "What will they decide ? "
+		name = "775415.A"
 		random_list = {
 			50 = { 
 				add_accepted_culture = granadan
@@ -1458,7 +1458,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Sign the treaty."
+		name = "775420.A"
 		SA_6 = {
 			add_core = THIS
 		}
@@ -1516,7 +1516,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "There is no need for such an agreement."
+		name = "775420.B"
 		SA_6 = {
 			add_core = THIS
 		}
@@ -1581,7 +1581,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Sign the treaty."
+		name = "775421.A"
 		relation = {
 			who = FROM
 			value = 50
@@ -1638,7 +1638,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "There is no need for such an agreement."
+		name = "775421.B"
 		SA_6 = {
 			add_core = THIS
 		}
@@ -1661,7 +1661,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Sign the treaty."
+		name = "775422.A"
 		relation = {
 			who = FROM
 			value = 50
@@ -1717,7 +1717,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "There is no need for such an agreement."
+		name = "775422.B"
 		SA_6 = {
 			add_core = THIS
 		}

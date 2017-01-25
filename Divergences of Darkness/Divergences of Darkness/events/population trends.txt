@@ -6,8 +6,8 @@
 
 country_event = {
 	id = 2260601
-	title = "Birth Rate Tumbles!"
-	desc = "Our population appear to have lost interest in raising families."
+	title = "2260601.T"
+	desc = "2260601.D"
 	picture = "administration"
 	
 	trigger = {
@@ -115,7 +115,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Then every child is precious."
+		name = "2260601.A"
 		remove_country_modifier = point_five_children 
 		remove_country_modifier = one_child
 		remove_country_modifier = one_point_five_children
@@ -131,8 +131,8 @@ country_event = {
 }
 country_event = {
 	id = 2260602
-	title = "Birth Rate Very Low!"
-	desc = "Our population seem to be breeding less."
+	title = "2260602.T"
+	desc = "2260602.D"
 	picture = "administration"
 	
 	trigger = {
@@ -236,7 +236,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Then every child is precious."
+		name = "2260602.A"
 		remove_country_modifier = point_five_children 
 		remove_country_modifier = one_child
 		remove_country_modifier = one_point_five_children
@@ -253,8 +253,8 @@ country_event = {
 
 country_event = {
 	id = 2260603
-	title = "Birth Rate Low!"
-	desc = "Our population is no longer increasing."
+	title = "2260603.T"
+	desc = "2260603.D"
 	picture = "administration"
 	
 	trigger = {
@@ -358,7 +358,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Then every child is precious."
+		name = "2260603.A"
 		remove_country_modifier = point_five_children 
 		remove_country_modifier = one_child
 		remove_country_modifier = one_point_five_children
@@ -375,8 +375,8 @@ country_event = {
 
 country_event = {
 	id = 2260604
-	title = "Birth Rate Stable!"
-	desc = "Our population appears to be stablizing."
+	title = "2260604.T"
+	desc = "2260604.D"
 	picture = "administration"
 	
 	trigger = {
@@ -481,7 +481,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This is good news."
+		name = "2260604.A"
 		remove_country_modifier = point_five_children 
 		remove_country_modifier = one_child
 		remove_country_modifier = one_point_five_children
@@ -498,8 +498,8 @@ country_event = {
 
 country_event = {
 	id = 2260605
-	title = "Birth Rate High!"
-	desc = "Our population appears to be increasing."
+	title = "2260605.T"
+	desc = "2260605.D"
 	picture = "administration"
 	
 	trigger = {
@@ -601,7 +601,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This is good news."
+		name = "2260605.A"
 		remove_country_modifier = point_five_children 
 		remove_country_modifier = one_child
 		remove_country_modifier = one_point_five_children
@@ -618,8 +618,8 @@ country_event = {
 
 country_event = {
 	id = 2260606
-	title = "Birth Rate Very High!"
-	desc = "Our population appears to be increasing rapidly."
+	title = "2260606.T"
+	desc = "2260606.D"
 	picture = "administration"
 	
 	trigger = {
@@ -724,7 +724,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This is good news."
+		name = "2260606.A"
 		remove_country_modifier = point_five_children 
 		remove_country_modifier = one_child
 		remove_country_modifier = one_point_five_children
@@ -741,8 +741,8 @@ country_event = {
 
 country_event = {
 	id = 2260607
-	title = "Birth Rate Exploding!"
-	desc = "Our population appears to be breeding like rabbits!"
+	title = "2260607.T"
+	desc = "2260607.D"
 	picture = "administration"
 	
 	trigger = {
@@ -847,7 +847,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Must be something in the water."
+		name = "2260607.A"
 		remove_country_modifier = point_five_children 
 		remove_country_modifier = one_child
 		remove_country_modifier = one_point_five_children

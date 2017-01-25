@@ -40,7 +40,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We must civilize all of Africa"
+		name = "95500.A"
 		set_global_flag = berlin_conference
 		prestige = 25
 	}
@@ -73,7 +73,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This bodes ill for $COUNTRY$."
+		name = "95502.A"
 		set_country_flag = reaction_to_berlin_conference
 		any_country = {
 			limit = {
@@ -128,7 +128,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "$COUNTRY$ shall endure."
+		name = "95503.A"
 		set_country_flag = africa_in_the_modern_age
 		any_country = {
 			limit = { 
@@ -201,7 +201,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "For the glory of Allah!"
+		name = "95504.A"
 		any_pop = {
 			limit = { has_pop_religion = sunni }
 			militancy = -3
@@ -291,7 +291,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We have no choice but to submit."
+		name = "95505.A"
 		sphere_owner = { country_event = 95506 }
 		ai_chance = {
 			factor = 50
@@ -315,7 +315,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Throw the Europeans out!"
+		name = "95505.B"
 		prestige = 10
 		any_greater_power = {
 			limit = {
@@ -364,7 +364,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We will not force ourselves upon $FROMCOUNTRY$."
+		name = "95506.A"
 		FROM = { set_country_flag = refused_protectorate }
 		badboy = -2
 		relation = { who = FROM value = 50 }
@@ -378,7 +378,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Let us establish a protectorate."
+		name = "95506.B"
 		badboy = 2
 		prestige = 5
 		inherit = FROM
@@ -407,7 +407,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "How unwise of them."
+		name = "95507.A"
 		relation = { who = FROM value = -200 }
 		random_owned = {
 			limit = {
@@ -455,7 +455,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will not force ourselves upon $FROMCOUNTRY$."
+		name = "95507.B"
 		prestige = -25
 		relation = { who = FROM value = 50 }
 		ai_chance = {
@@ -535,7 +535,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Push for direct control."
+		name = "95508.A"
 		badboy = 2
 		1851 = {
 			owner = { country_event = 95509 }
@@ -559,7 +559,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We have no interest in Assab."
+		name = "95508.B"
 		badboy = -1
 		1851 = {
 			owner = {
@@ -590,7 +590,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Assab belongs to $COUNTRY$!"
+		name = "95509.A"
 		set_global_flag = assab_sold
 		relation = { who = FROM value = -50 }
 		leave_alliance = FROM
@@ -615,8 +615,8 @@ country_event = {
 
 country_event = {
 	id = 95511
-	title = "Colonial Ambition"
-	desc = "We must take our place among the colonial powers of Africa."
+	title = "95511.T"
+	desc = "95511.D"
 	picture = "scramble_for_africa"
 	
 	trigger = {
@@ -663,7 +663,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We must act at once!"
+		name = "95511.A"
 		random_country = {
 			limit = {
 				ai = yes
@@ -709,14 +709,14 @@ country_event = {
 
 country_event = {
 	id = 95515
-	title = "The $FROMCOUNTRY$ Imperialists"
-	desc = "They are coming!"
+	title = "95515.T"
+	desc = "95515.D"
 	picture = "scramble_for_africa"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Oh no!"
+		name = "17515.A"
 		FROM = {
 			relation = { who = THIS value = -200 }
 			war = {
@@ -731,14 +731,14 @@ country_event = {
 
 country_event = {
 	id = 95513
-	title = "$FROMCOUNTRY$ Attacks!"
-	desc = "The Zemene Mesafint-- the 'Age of Princes'-- has come to $COUNTRY$ once more. $FROMCOUNTRY$ has declared war!"
+	title = "95513.T"
+	desc = "95513.D"
 	picture = "arab_revolt"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "They shall pay!"
+		name = "95513.A"
 		war_exhaustion = -20
 		any_pop = {
 			limit = { is_primary_culture = yes }
@@ -787,7 +787,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "So must it be!"
+		name = "95514.A"
 		years_of_research = 0.25
 		random_owned = {
 			limit = {

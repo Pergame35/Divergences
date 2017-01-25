@@ -20,7 +20,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The Boers will bow before the king !"
+	name = "333201.A"
 	set_country_flag = Leuwin_puppet
 	badboy = 2 
 	LWE = { country_event = 333202 }
@@ -36,7 +36,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We won't surrender our freedom ! "
+	name = "333202.A"
 	FROM = { country_event = 333203 }
 	ai_chance = { 
 	factor = 80 
@@ -44,7 +44,7 @@ country_event = {
 	}
 
 	option = { 
-	name = "Do we really have another choice ?"
+	name = "333202.B"
 	FROM = { create_vassal = THIS }
 	ai_chance = { 
 	factor = 20
@@ -68,7 +68,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "Then it is war !"
+	name = "333203.A"
 	casus_belli = {
 				target = FROM
 				type = make_puppet
@@ -105,7 +105,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Time to rule directly over them"
+	name = "333204.A"
 	inherit = LWE
 	badboy = 2 
 	}
@@ -134,7 +134,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Annex the Xhosa lands !"
+	name = "333205.A"
 	set_country_flag = Xhosa
 	badboy = 2 
 	casus_belli = {
@@ -174,7 +174,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Annex the Zulu lands !"
+	name = "333206.A"
 	set_country_flag = zulus
 	badboy = 2 
 	casus_belli = {
@@ -212,7 +212,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Send a message to Pretoria. We can't allow our homeland to fall !"
+	name = "333207.A"
 	TRN = { country_event = 333208 }
 	}
 
@@ -227,7 +227,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We will join back Neuw Vlanderen"
+	name = "333208.A"
 	FROM = { inherit = THIS }
 	NFL = { prestige = 10
 	change_tag = BTV }
@@ -238,7 +238,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We won't ever join the traitors !"
+	name = "333208.B"
 	NFL = { prestige = -10 }
 	ai_chance = { 
 	factor = 50 
@@ -267,7 +267,7 @@ country_event = {
 	}
 
 	option = { 
-	name = "We can't allow such a state to exist."
+	name = "333209.A"
 	BTV = { country_event = 333210 }
 	casus_belli = {
 				target = BTV
@@ -292,7 +292,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = {
-	name = "We shall forever be free !"
+	name = "333210.A"
 	treasury = 10000
 	ammunition = 1000
 	small_arms = 1000
@@ -332,7 +332,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The Neo-Flemish will bow too !"
+	name = "333211.A"
 	set_country_flag = Neuw_puppet
 	badboy = 2 
 	NFL = { country_event = 333202 }
@@ -359,7 +359,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Time to rule directly over them"
+	name = "333212.A"
 	inherit = NFL
 	badboy = 2 
 	}
@@ -388,7 +388,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The last Boer state will bow too !"
+	name = "333213.A"
 	set_country_flag = Trans_puppet
 	badboy = 2 
 	TRN = { country_event = 333202 }
@@ -416,7 +416,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Time to rule directly over them"
+	name = "333214.A"
 	inherit = TRN
 	badboy = 2 
 	}
@@ -445,7 +445,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Vryland will accept our rule !"
+	name = "333215.A"
 	set_country_flag = Trans_puppet
 	badboy = 2 
 	GRQ = { country_event = 333202 }
@@ -475,13 +475,13 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Time to rule directly over them"
+	name = "333216.A"
 	inherit = GRQ
 	badboy = 2 
 	}
 	
 	option = { 
-	name = "We can give them a special status"
+	name = "333216.B"
 	set_country_flag = GRQ_dominion
 	}
 }
@@ -504,7 +504,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Crown Aloysuis king of the United Boers !"
+	name = "333217.A"
 	government = absolute_monarchy 
 	set_country_flag = aloysuis
 	ai_chance = { 
@@ -513,7 +513,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The fight for freedom must continue !"
+	name = "333217.B"
 	set_country_flag = aloysuis
 	government = democracy
 	political_reform = state_equal_weight
@@ -531,8 +531,8 @@ country_event = {
 
 country_event = {
 	id = 333218
-	title = "The trekkers"
-	desc = "Following the Burgundian conquest of Kaapstat some Boers instead of fleeing to Leuuwin or staying under Burgundian domination decided to create their own communities in the North. They have agreeed to integrate our growing state now that Burgundy has fled."
+	title = "333218.T"
+	desc = "333218.D"
 	picture = "boer_war"
 	
 	trigger = { 
@@ -547,7 +547,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Excellent!"
+	name = "97086.A"
 	2088 = { secede_province = THIS }
 	2093 = { secede_province = THIS }
 	}
@@ -555,8 +555,8 @@ country_event = {
 
 country_event = {
 	id = 333219
-	title = "The future of South Africa"
-	desc = "South Africa is attracting colonists from Europe after promises of empty land and peace have been heard."
+	title = "333219.T"
+	desc = "333219.D"
 
 	trigger = { 
 	tag = SAF 
@@ -567,7 +567,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { 
-	name = "May it last!" 
+	name = "333219.A" 
 	add_country_modifier = { 
 	name = trek_boers
 	duration = 10000
@@ -589,7 +589,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Let us reconcile with the Boers."
+		name = "98247.A"
 		prestige = -50
 		BTV = {
 			all_core = {
@@ -618,7 +618,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Never! There will be a reckoning."
+		name = "98247.B"
 		prestige = -25
 		random_country = {
 			limit = {
@@ -650,7 +650,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "That's good to hear."
+		name = "98248.A"
 		prestige = 25
 		FROM = {
 			any_owned = {
@@ -682,7 +682,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We shall accept their surrender nevertheless."
+		name = "98249.A"
 		prestige = 25
 		FROM = {
 			any_owned = {
@@ -723,8 +723,8 @@ country_event = {
 
 	id = 44334
 
-	title = "The South African Dominion"
-	desc = "The duke of the Cape has asked to be granted a special status as an autonomous dominion within the empire."
+	title = "44334.T"
+	desc = "44334.D"
 	picture = "danishgovernment"
 
 	major = yes
@@ -767,7 +767,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This can only be good for the empire."
+		name = "22260.A"
 		clr_country_flag = SAF_independence_refused
 		SAF = { primary_culture = burgundian add_accepted_culture = boer}
 		prestige = -20
@@ -842,7 +842,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "No, they shall remain under our direct control"
+		name = "22260.B"
 		set_country_flag = SAF_independence_refused
 		any_owned = {
 			limit = { is_core = SAF }
@@ -887,7 +887,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Onwards to South Africa!"
+		name = "44334.C"
 		clr_country_flag = SAF_independence_refused
 		SAF = { primary_culture = burgundian add_accepted_culture = boer}
 		prestige = -20
@@ -924,8 +924,8 @@ country_event = {
 
 country_event = {
 	id = 44335
-	title = "$COUNTRY_ADJ$ Territories"
-	desc = "Our overlords are in control of territory that rightfully belongs to $COUNTRY$. Perhaps we should request to have it returned?"
+	title = "44335.T"
+	desc = "44335.D"
 	picture = "deliberation"
 	
 	trigger = {
@@ -951,13 +951,13 @@ country_event = {
 	}
 	
 	option = {
-		name = "Make the request."
+		name = "44335.A"
 		overlord = { country_event = 44336 }
 		ai_chance = { factor = 100 }
 	}
 	
 	option = {
-		name = "No. They won't return them anyhow."
+		name = "44335.B"
 		set_country_flag = no_more_asking_for_cores
 		ai_chance = { factor = 0 }
 	}
@@ -965,14 +965,14 @@ country_event = {
 
 country_event = {
 	id = 44336
-	title = "$FROMCOUNTRY_ADJ$ Territories"
-	desc = "We hold land overseas that rightfully belongs to our $FROMCOUNTRY_ADJ$ dominion. Perhaps it would be prudent to hand it over to them?"
+	title = "44336.T"
+	desc = "44336.D"
 	picture = "deliberation"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Yes. They will make for a stronger ally."
+		name = "44336.A"
 		any_owned = {
 			limit = {
 				is_core = FROM
@@ -986,7 +986,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "No. $FROMCOUNTRY$ has all the land it needs."
+		name = "44336.B"
 		FROM = {
 			set_country_flag = no_more_asking_for_cores
 			country_event = 44338
@@ -997,14 +997,14 @@ country_event = {
 
 country_event = {
 	id = 44337
-	title = "$FROMCOUNTRY$ Has Agreed"
-	desc = "The $FROMCOUNTRY_ADJ$ government has agreed to the return of $COUNTRY_ADJ$ lands."
+	title = "44337.T"
+	desc = "44337.D"
 	picture = "unite"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Hurrah!"
+		name = "190411.A"
 		prestige_factor = -0.1
 		relation = { who = FROM value = 50 }
 		FROM = {
@@ -1021,14 +1021,14 @@ country_event = {
 
 country_event = {
 	id = 44338
-	title = "$FROMCOUNTRY$ Has Refused"
-	desc = "The $FROMCOUNTRY_ADJ$ government has refused to return $COUNTRY_ADJ$ lands. They have made it clear that we should not ask again."
+	title = "97392.T"
+	desc = "44338.D"
 	picture = "deliberation"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Bastards!"
+		name = "44338.A"
 		relation = { who = FROM value = -100 }
 		leave_alliance = FROM
 		casus_belli = {

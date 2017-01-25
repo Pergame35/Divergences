@@ -825,8 +825,8 @@ country_event = {
 # Dealing with vassals
 country_event = {
 	id = 2560
-	title = "The Buffer State"
-	desc = "This so-called 'buffer state' will not stop us."
+	title = "2560.T"
+	desc = "2560.D"
 	picture = "administration"
 	
 	trigger = {
@@ -861,7 +861,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Enough is enough."
+		name = "2560.A"
 		any_neighbor_country = {
 			limit = {
 				is_vassal = yes
@@ -1078,7 +1078,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "We should begin integrating $STATENAME$."
+		name = "2600.A"
 		owner = { badboy = 2 }
 		state_scope = {
 			any_owned = {
@@ -1132,7 +1132,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Let $STATENAME$ remain separate, for now."
+		name = "2600.B"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -1183,8 +1183,8 @@ province_event = {
 
 province_event = {
 	id = 2601
-	title = "Integration Cancelled in $STATENAME$"
-	desc = "There is no longer a need to justify a claim in $STATENAME$, since it already exists."
+	title = "2601.T"
+	desc = "2601.D"
 	
 	trigger = {
 		has_province_modifier = core_integration
@@ -1196,7 +1196,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "So be it."
+		name = "97310.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -1264,7 +1264,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Long live $COUNTRY$!"
+		name = "2605.A"
 		owner = { prestige = 2 }
 		remove_province_modifier = core_integration
 		add_core = THIS
@@ -1351,7 +1351,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Begin assimilating $STATENAME$."
+		name = "2610.A"
 		owner = { badboy = 2 }
 		state_scope = {
 			any_owned = {
@@ -1422,7 +1422,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "This will only cause more conflict."
+		name = "2610.B"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -1502,7 +1502,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "So be it!"
+		name = "2611.A"
 		any_owned = {
 			limit = { has_province_modifier = national_assimilation }
 			remove_province_modifier = national_assimilation
@@ -1542,8 +1542,8 @@ country_event = {
 
 province_event = {
 	id = 2612
-	title = "Assimilation Canceled in $STATENAME$"
-	desc = "There is no longer a need for the assimilation policies currently underway in $STATENAME$."
+	title = "2612.T"
+	desc = "2612.D"
 	
 	trigger = {
 		has_province_modifier = national_assimilation
@@ -1563,7 +1563,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "It was worth the effort."
+		name = "2612.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -1684,7 +1684,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "The assimilation must continue!"
+		name = "2615.A"
 		remove_province_modifier = national_assimilation_acceptance
 		add_province_modifier = {
 			name = national_assimilation_rejection
@@ -1727,7 +1727,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Abandon assimilation in $STATENAME$."
+		name = "2615.B"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -1856,7 +1856,7 @@ province_event = {
 	}
 
 	option = {
-		name = "Unfortunate."
+		name = "2616.A"
 		add_province_modifier = {
 			name = nationalist_agitation
 			duration = 1095
@@ -1970,7 +1970,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Well done, $PROVINCENAME$!"
+		name = "2620.A"
 		remove_province_modifier = national_assimilation_rejection
 		add_province_modifier = {
 			name = national_assimilation_acceptance
@@ -2066,7 +2066,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Long live $COUNTRY$!"
+		name = "2625.A"
 		owner = {
 			badboy = 2
 			prestige = 5
@@ -2105,7 +2105,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "There is nothing we can do."
+		name = "2626.A"
 		prestige = -5
 		FROM = {
 			random_owned = {
@@ -2142,7 +2142,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will not stand for this!"
+		name = "2626.B"
 		relation = { who = FROM value = -50 }
 		random_owned = {
 			limit = {
@@ -2218,7 +2218,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Damn."
+		name = "2650.A"
 		FROM = {
 			country_event = 2660
 		}
@@ -2234,7 +2234,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Damn."
+		name = "2651.A"
 		any_country = {
 			limit = {
 				NOT = { tag = THIS }
@@ -2269,7 +2269,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Only keep territories with our cores. Return the rest."
+		name = "2660.A"
 		any_owned = {
 			limit = {
 				is_core = FROM
@@ -2292,7 +2292,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will keep everything we've gained."
+		name = "2660.B"
 		ai_chance = { factor = 0 }
 	}
 }	

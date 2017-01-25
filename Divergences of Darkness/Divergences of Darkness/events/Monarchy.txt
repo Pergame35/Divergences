@@ -64,7 +64,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Make it so!"
+		name = "800110.A"
 		random_country = {
 			limit = {
 				war = no
@@ -117,7 +117,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "A member of the local nobility would be more suitable."
+		name = "800110.B"
 		set_country_flag = royal_wedding
 		aristocrats = {
 			limit = { is_primary_culture = yes }
@@ -210,7 +210,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "The dynasty shall continue."
+		name = "800111.A"
 		set_country_flag = royal_wedding
 		aristocrats = {
 			limit = { is_primary_culture = yes }
@@ -261,7 +261,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Rejoice!"
+		name = "800112.A"
 		aristocrats = {
 			limit = { is_primary_culture = yes }
 			consciousness = -2
@@ -299,7 +299,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We are very proud."
+		name = "800113.A"
 		aristocrats = {
 			limit = { is_primary_culture = yes }
 			ideology = {
@@ -350,7 +350,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We are very proud."
+		name = "800114.A"
 		aristocrats = {
 			limit = { is_primary_culture = yes }
 			ideology = {
@@ -454,7 +454,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Crack down immediately."
+		name = "800115.A"
 		set_country_flag = monarchy_revolution_initialised
 		set_country_flag = monarchy_agitation
 		upper_house = {
@@ -488,7 +488,7 @@ country_event = {
 
 	}
 	option = {
-		name = "It is only talk."
+		name = "800115.B"
 		set_country_flag = monarchy_revolution_initialised
 		set_country_flag = monarchy_agitation
 		aristocrats = {
@@ -595,7 +595,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Let it be."
+		name = "800116.A"
 		remove_country_modifier = freedom_talks
 		add_country_modifier = {
 			name = freedom_talks
@@ -660,7 +660,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Shut it down."
+		name = "800116.B"
 		upper_house = {
 			ideology = reactionary
 			value = 0.1
@@ -767,7 +767,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Let it be."
+		name = "8001160.A"
 		add_country_modifier = {
 			name = freedom_talks
 			duration = 365
@@ -826,7 +826,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Censor the press and end this nonsense."
+		name = "8001160.B"
 		political_reform = censored_press
 		upper_house = {
 			ideology = reactionary
@@ -941,7 +941,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Make promises of reform."
+		name = "10216.B"
 		prestige = -5
 		remove_country_modifier = freedom_talks
 		add_country_modifier = {
@@ -1003,7 +1003,7 @@ country_event = {
 		}
 	}			
 	option = {
-		name = "Send in the military. Deal with this however we must."
+		name = "800117.B"
 		upper_house = {
 			ideology = reactionary
 			value = 0.3
@@ -1130,7 +1130,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "They will be dealt with."
+		name = "800118.A"
 		upper_house = {
 			ideology = conservative
 			value = 0.3
@@ -1153,7 +1153,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Do whatever is necessary to hunt them down."
+		name = "800118.B"
 		set_country_flag = monarchy_secret_police_activity
 		upper_house = {
 			ideology = reactionary
@@ -1245,7 +1245,7 @@ country_event = {
 	}
 
 	option = {
-		name = "One less problem to deal with."
+		name = "800119.A"
 		remove_country_modifier = revolutionary_society
 		clr_country_flag = monarchy_secret_police_activity
 		clr_country_flag = overthrow_the_monarch
@@ -1282,7 +1282,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We quite agree."
+		name = "800120.A"
 		clr_country_flag = monarchy_agitation
 		clr_country_flag = monarchy_revolution_initialised
 		clr_country_flag = overthrow_the_monarch
@@ -1346,7 +1346,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Let them talk."
+		name = "800121.A"
 		any_pop = {
 			limit = {
 				OR = {
@@ -1378,7 +1378,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This dissent is unhealthy."
+		name = "800121.B"
 		upper_house = {
 			ideology = reactionary
 			value = 0.2
@@ -1466,7 +1466,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Let them talk."
+		name = "800122.A"
 		any_pop = {
 			limit = {
 				OR = {
@@ -1498,7 +1498,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This dissent is unhealthy."
+		name = "800122.B"
 		upper_house = {
 			ideology = reactionary
 			value = 0.2
@@ -1624,7 +1624,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We support their efforts."
+		name = "800123.A"
 		upper_house = {
 			ideology = reactionary
 			value = 0.2
@@ -1669,7 +1669,7 @@ country_event = {
 		}			
 	}
 	option = {
-		name = "Let them be."
+		name = "800123.B"
 		rich_strata = {
 			limit = { is_primary_culture = yes }
 			ideology = {
@@ -1702,7 +1702,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "They need to be stopped."
+		name = "800123.C"
 		rich_strata = {
 			limit = { is_primary_culture = yes }
 			scaled_militancy = {

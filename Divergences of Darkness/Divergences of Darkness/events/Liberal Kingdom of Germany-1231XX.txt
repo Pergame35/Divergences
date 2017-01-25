@@ -709,7 +709,7 @@ country_event = {
 	major = yes
 	
 	option = {
-		name = "Great!"
+		name = "123110.A"
 		
 		BOH = {
 			prestige = -50
@@ -759,26 +759,26 @@ country_event = {
 	major = yes
 	
 	option = {
-	name = "We want to reconcile with Prague"
+	name = "1231110.A"
 	relation = { who = BOH value = 200 }
 	badboy = -5 
 	}
 	
 	option = { 
-	name = "We'll claim Lower Silesia"
+	name = "1231110.B"
 	badboy = 5 
 	682 = { add_core = THIS  }
 	683 = { add_core = THIS  }
 	}
 	
 	option = { 
-	name = "We'll claim all of Silesia"
+	name = "1231110.C"
 	badboy = 12
 	SIL = { all_core = { add_core = THIS }}
 	}
 	
 	option = { 
-	name = "Prague will bow under the German heel!"
+	name = "1231110.E"
 	badboy = 26 
 	BOH = { all_core = { add_core = THIS }}
 	}
@@ -809,7 +809,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We will not get a better chance to reaffirm our claims!"
+	name = "123113.A"
 	set_country_flag = secret_pact_ITA
 	FROM = { country_event = 123114 }
 	ai_chance = { 
@@ -818,7 +818,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will leave them taking care of that problem alone."
+	name = "123113.B"
 	FROM = { country_event = 123115 }
 	ai_chance = { 
 	factor = 30
@@ -842,7 +842,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "Good, at least we can handle Burgundy!"
+	name = "123114.A"
 	relation = { who = DUA value = 75 }
 	}
 }
@@ -855,7 +855,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We can manage alone!"
+	name = "123115.A"
 	relation = { who = DUA value = -75 }
 	set_country_flag = never_forget_DUA
 	}
@@ -871,7 +871,7 @@ country_event = {
 	major = yes 
 	
 	option = { 
-	name = "Again Germany is in flames !"
+	name = "123116.A"
 	government = democracy 
 	ruling_party_ideology = liberal
 	political_reform = universal_voting
@@ -948,13 +948,13 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We will join the Republic!"
+	name = "123117.A"
 	FROM = { inherit = THIS }
 	ai_chance = { factor = 100 }
 	}
 	
 	option = { 
-	name = "I AM THE REPUBLIC!"
+	name = "123117.B"
 	change_tag_no_core_switch = LST
 	SGF = { inherit = THIS }
 	}
@@ -968,7 +968,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We will join the Republic!"
+	name = "123118.A"
 	FROM = { inherit = THIS }
 	ai_chance = { factor = 35 
 	modifier = {
@@ -991,7 +991,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "No thank you..."
+	name = "123118.B"
 	relation = { who = FROM value = -100}
 	ai_chance = {
 			factor = 65
@@ -1028,7 +1028,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Onwards to Dijon gentlemen !"
+	name = "123119.A"
 	clr_country_flag = secret_pact_ITA
 	end_war = SGF
 	end_war = ITA
@@ -1051,7 +1051,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We won't do it after all..."
+	name = "123119.B"
 	clr_country_flag = secret_pact_ITA
 	relation = { who = ITA value = -150 }
 	relation = { who = SGF value = -150 }
@@ -1069,7 +1069,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Damn the Plantagenets!"
+	name = "123120.A"
 	}
 }
 
@@ -1097,7 +1097,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "They will pay for that!"
+	name = "123131.A"
 	set_country_flag = berlin_commune
 	any_owned = { 
 	limit = {
@@ -1153,7 +1153,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We will join the Republic!"
+	name = "123132.A"
 	NGF = { inherit = THIS }
 	ai_chance = { factor = 35 
 	modifier = {
@@ -1184,7 +1184,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "No thank you..."
+	name = "123132.B"
 	relation = { who = FROM value = -100}
 	ai_chance = {
 			factor = 65
@@ -1211,7 +1211,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "They will bow!"
+	name = "123133.A"
 	war = {
 			target = NGF
 			attacker_goal = {
@@ -1238,7 +1238,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Worrying"
+	name = "123134.A"
 	any_owned = { 
 	limit = {
 	OR = { is_core = POM is_core = HOL is_core = BRN }
@@ -1265,14 +1265,14 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Send them the proposal!"
+	name = "123135.A"
 	NGF = { country_event = 123136 }
 	set_country_flag = berlin_compromise
 	ai_chance = { factor = 100 }
 	}
 	
 	option = { 
-	name = "I don't think it's good for us ..."
+	name = "123135.B"
 	set_country_flag = berlin_compromise
 	ai_chance = { factor = 0 }
 	}
@@ -1286,7 +1286,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Fur die Deutsche Einheit!"
+	name = "123136.A"
 	SGF = { inherit = NGF add_accepted_culture = north_german }
 	FROM = { country_event = 123137 }
 	ai_chance = { 
@@ -1335,12 +1335,12 @@ country_event = {
 	}
 	
 	option = { 
-	name = "There are too much differences between us to consider unification..."
+	name = "123136.B"
 	ai_chance = { factor = 25 }
 	}
 	
 	option = { 
-	name = "WE WILL UNIFY GERMANY!"
+	name = "123136.C"
 	NGF = { inherit = SGF add_accepted_culture = south_german add_accepted_culture = rheinish}
 	country_event = 123137
 	ai_chance = { factor = 0 }
@@ -1355,7 +1355,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Deutschland von Tyrol zum Belt!"
+	name = "123137.A"
 	}
 }
 
@@ -1381,7 +1381,7 @@ country_event = {
 	mean_time_to_happen =  { months = 12 }
 	
 	option = { 
-	name = "Deutschland uber alles!"
+	name = "123138.A"
 	prestige = 2 
 	set_country_flag = cleanupSGF
 	any_owned = { 

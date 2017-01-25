@@ -1895,7 +1895,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Long live $CULTURE_GROUP_UNION$!"
+		name = "10155.A"
 		random_state = {
 			limit = {
 				is_colonial = no
@@ -2772,7 +2772,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Punish the liberals."
+		name = "10205.A"
 		random_owned = {
 			limit = {
 				controlled_by = THIS
@@ -2805,7 +2805,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Punish the reactionaries."
+		name = "10205.B"
 		random_owned = {
 			limit = {
 				controlled_by = THIS
@@ -2838,7 +2838,7 @@ country_event = {
 	}
 
 	option = {
-		name = "The fighting simply has to stop."
+		name = "10205.C"
 		random_owned = {
 			limit = {
 				controlled_by = THIS
@@ -3059,7 +3059,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Revolution is like the plague."
+		name = "10215.A"
 		random_state = {
 			limit = {
 				any_owned_province = {
@@ -3210,7 +3210,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = "Crush them."
+		name = "10216.A"
 		state_scope = {
 			any_pop = {
 				limit = {
@@ -3269,7 +3269,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = "Make promises of reform."
+		name = "10216.B"
 		state_scope = {
 			any_pop = {
 				limit = {
@@ -3544,7 +3544,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Implement the People's Charter."
+		name = "10221.A"
 		prestige = 5
 		political_reform = universal_voting
 		political_reform = secret_ballots
@@ -3593,7 +3593,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Shut them down."
+		name = "10221.B"
 		political_reform = no_meeting
 		random_owned = {
 			limit = {
@@ -3667,7 +3667,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We will restore order!"
+		name = "10225.A"
 		any_owned = {
 			limit = { region = AUS_771 }
 			remove_core = HUN
@@ -3733,7 +3733,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We have no choice but to let them go."
+		name = "10225.B"
 		set_country_flag = austria_let_hungary_go
 		any_owned = {
 			limit = {
@@ -3807,7 +3807,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Throw off Hapsburg rule!"
+		name = "10225.C"
 		any_owned = {
 			limit = {
 				is_core = HUN
@@ -3893,7 +3893,7 @@ country_event = {
 	}
 
 	option = {
-		name = "A new age has begun!"
+		name = "10226.A"
 		AUS_771 = { add_core = HUN }
 		prestige = 10
 		AUS = { country_event = 10227 }
@@ -3938,7 +3938,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Hungary belongs to Austria."
+		name = "10227.A"
 		diplomatic_influence = {
 			who = HUN
 			value = -100
@@ -3967,7 +3967,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We must pursue reconciliation."
+		name = "10227.B"
 		set_country_flag = austria_let_hungary_go
 		prestige = -25
 		badboy = -2
@@ -4055,7 +4055,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We have little choice."
+		name = "10228.A"
 		prestige = -10
 		random_owned = {
 			limit = {
@@ -4103,7 +4103,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Some limited freedoms are acceptable, but no more."
+		name = "10228.B"
 		prestige = -5
 		ruling_party_ideology = liberal
 		political_reform = yes_meeting
@@ -4136,7 +4136,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Never! Shut the liberals down!"
+		name = "10228.C"
 		prestige = 5
 		random_owned = {
 			limit = {
@@ -4207,7 +4207,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Give them limited reforms, if it pleases them."
+		name = "10229.A"
 		set_country_flag = march_revolution
 		prestige = -10
 		upper_house = {
@@ -4276,7 +4276,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Make promises, but work to undermine them."
+		name = "10229.B"
 		set_country_flag = march_revolution
 		political_reform = no_meeting
 		upper_house = {

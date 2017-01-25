@@ -399,7 +399,7 @@ country_event = {
 	}
 	
 	option = { 
-		name = "Go into exile in Neu Kurland"
+		name = "333016.C"
 		prestige = 5 
 		capital = 2229 
 		any_owned = { 
@@ -783,7 +783,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Excellent"
+	name = "333033.A"
 	prestige = 25
 	money = -100000
 	}
@@ -799,7 +799,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "We will give them the coastline ..."
+	name = "333040.A"
 	any_owned = { limit = { region = BUR_1330 } secede_province = FROM}
 	ai_chance = { 
 	factor = 90 
@@ -807,7 +807,7 @@ country_event = {
 	}
 	
 	option = {
-	name = "Over our dead bodies !"
+	name = "333040.B"
 	FROM = { 
 	casus_belli = { 
 	type = demand_concession_casus_belli

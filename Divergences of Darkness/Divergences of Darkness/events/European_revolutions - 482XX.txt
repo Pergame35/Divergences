@@ -16,14 +16,14 @@ country_event = { ##Scotish agitator Walter Scott arrives in England
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "It could serve our interests ..."
+	name = "48202.A"
 	money = -50000 
 	relation = { who = SCA value = -150 }
 	set_global_flag = ENL_help_SCO 
 	}
 	
 	option = { 
-	name = "Scotland is only a source of problems for England..."
+	name = "48202.B"
 	prestige = -15 
 	}
 	
@@ -48,7 +48,7 @@ country_event = { ##Young Scotland revolts
 	}
 	
 	option = { 
-	name = "How dare they ?!"
+	name = "48203.A"
 	any_owned = { 
 	limit = { is_core = SCO } 
 	secede_province = SCO 
@@ -73,7 +73,7 @@ country_event = { ##Young Scotland revolts -ENL
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Scotland will be free from the Northmen !"
+	name = "48204.A"
 	create_alliance = SCO 
 	relation = { who = SCO value = 200 }
 	diplomatic_influence = { who = SCO value = 50 }
@@ -83,7 +83,7 @@ country_event = { ##Young Scotland revolts -ENL
 	}
 	
 	option = { 
-	name = "They are alone on this..."
+	name = "48204.B"
 	}
 }
 	
@@ -96,7 +96,7 @@ country_event = { ##Standard event for the 'Sister Republics' to join a pending 
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We will join the fight for Freedom !"
+	name = "48205.A"
 	create_alliance = SCO
 	ai_chance = { 
 	factor = 80 
@@ -104,7 +104,7 @@ country_event = { ##Standard event for the 'Sister Republics' to join a pending 
 	}
 	
 	option = { 
-	name = "We have other matters to attend ..."
+	name = "48205.B"
 	ai_chance = { 
 	factor = 20 
 	modifier = { 
@@ -124,7 +124,7 @@ country_event = { ##The Scandinavian Reaction
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Scandinavia stands alone !"
+	name = "48206.A"
 	prestige = 25 
 	war = {
 			target = SCO
@@ -138,7 +138,7 @@ country_event = { ##The Scandinavian Reaction
 	}
 	
 	option = { 
-	name = "The Stuarts will reconquer their throne with the help of their allies !"
+	name = "48206.B"
 	prestige = -25 
 	war = {
 			target = SCO
@@ -176,7 +176,7 @@ country_event = { ##Birth of Irish nationalism -violent path
 	}
 	
 	option = { 
-	name = "A worrying development..."
+	name = "48210.A"
 	set_global_flag = irish_brotherhood
 	prestige = -15 
 	}
@@ -205,7 +205,7 @@ country_event = { ##Creation of the Irish Brotherhood -possible negotiation
 	}
 	
 	option = { 
-	name = "A worrying development..."
+	name = "48211.A"
 	set_country_flag = irish_claims
 	prestige = -15 
 	}
@@ -281,7 +281,7 @@ country_event = { ##Dominion of Ireland
 	}
 
 	option = { 
-	name = "Home-rule is the solution to Irish demands."
+	name = "48212.A"
 	release_vassal = IRE
 	prestige = -40 
 	any_pop = { 
@@ -301,7 +301,7 @@ country_event = { ##Dominion of Ireland
 	}
 	
 	option = { 
-	name = "Ireland has been a part of the realm for hundreds of years and will stay so."
+	name = "48212.B"
 	set_global_flag = irish_brotherhood
 	any_pop = { 
 	limit = { 
@@ -351,7 +351,7 @@ country_event = { ##Irish Rising
 	}
 	
 	option = { 
-	name = "Smuggle weapons and money to the insurgents!"
+	name = "48213.A"
 	money = -100000
 	ammunition = -1000
 	small_arms = -1000
@@ -366,7 +366,7 @@ country_event = { ##Irish Rising
 	}
 	
 	option = { 
-	name = "We can't commit to such a thing..."
+	name = "48213.B"
 	prestige = -15 
 	set_country_flag = refused_IRE_help
 	}
@@ -384,7 +384,7 @@ country_event = { ##Irish Rising
 	major = yes 
 	
 	option = { 
-	name = "Damn the Irish and the $FROM_ADJ$ !"
+	name = "48214.A"
 	any_owned = { 
 	limit = { is_core = IRE } 
 	secede_province = IRE 
@@ -415,7 +415,7 @@ country_event = {
 	
 	
 	option = { 
-	name = "The Irish will be taught the true power of the Dual-Monarchy !"
+	name = "48215.A"
 	diplomatic_influence = { who = IRE value = -300 }
 	clr_global_flag = wait_DUA
 	war = { 
@@ -430,7 +430,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Let the Gaels on their own ..."
+	name = "48215.B"
 	prestige = -50 
 	clr_global_flag = wait_DUA
 	diplomatic_influence = { who = IRE value = -200 }
@@ -451,7 +451,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "They want war, they'll get it!"
+	name = "48216.A"
 	prestige = 20 
 	scaled_militancy = { 
 		factor = -1 
@@ -476,7 +476,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "They aren't worth such a thing!"
+	name = "48216.B"
 	prestige = -20 
 	ai_chance = { 
 	factor = 30 
@@ -486,13 +486,13 @@ country_event = {
 
 country_event = { 
 	id = 48217
-	title = "Declaration of War"
-	desc = "Following the seizure of our ship helping the Irish Insurgents, $FROM$ declared war on us!"
+	title = "48217.T"
+	desc = "48217.D"
 	
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "It wasn't supposed to end like this!"
+	name = "48217.A"
 	}
 }
 	
@@ -519,14 +519,14 @@ country_event = { ##Scotish agitator Walter Scott and Scandinavian reaction
 	}
 	
 	option = { 
-	name = "Banish Scott and his supporters, we don't need such agitators."
+	name = "48201.A"
 	set_country_flag = WScott
 	ENL = { country_event = 48202 }
 	prestige = 15 
 	}
 	
 	option = { 
-	name = "Well let them agitate, it's not like an independent Scotland is possible."
+	name = "48201.B"
 	set_country_flag = WScott
 	prestige = -20 
 	any_pop = { limit = { culture = scottish } militancy = 4 consciousness = 5 }
@@ -548,7 +548,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = { 
-	name = "Unione, Forza e Liberta!"
+	name = "36720.A"
 	
 	744 = {
 			add_province_modifier = {
@@ -582,7 +582,7 @@ country_event = { ##Using the Carbonari ?
 	}
 	
 	option = { 
-	name = "Activate our cells in Italy!"
+	name = "36731.A"
 	set_country_flag = carbonari
 	set_global_flag = TUS_carbonari
 	any_country = { 
@@ -615,7 +615,7 @@ country_event = { ##Using the Carbonari ?
 	}
 	
 	option = { 
-	name = "It is too dangerous!"
+	name = "36731.B"
 	set_country_flag = carbonari
 	ai_chance = { 
 	factor = 35 	
@@ -636,7 +636,7 @@ country_event = { ##Carbonari activate
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "The Revolution has failed and will fail again !"
+	name = "36732.A"
 	any_owned = {
 	limit = { is_core = ITA }
 	any_pop = { 
@@ -686,7 +686,7 @@ country_event = { #Congress because of HRE formed
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48251.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -714,7 +714,7 @@ country_event = { #Danubian Federation
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48252.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -742,7 +742,7 @@ country_event = { #Confederation at the Elbe
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48253.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -770,7 +770,7 @@ country_event = { #Aragon-Italy forming
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48254.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -798,7 +798,7 @@ country_event = { #Revitalized PLC
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48255.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -826,7 +826,7 @@ country_event = { #Russian Bear
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48256.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -854,7 +854,7 @@ country_event = { #Iberian Union
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48257.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -882,7 +882,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48258.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -910,7 +910,7 @@ country_event = { #Valois in Italy
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48259.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -938,7 +938,7 @@ country_event = { #Valois in France
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48260.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -966,7 +966,7 @@ country_event = { #Etrurian Italy
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48261.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -994,7 +994,7 @@ country_event = { #Anglois acceptance
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48262.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -1023,7 +1023,7 @@ country_event = { #Success Glorious Revolution
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48263.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 
@@ -1051,7 +1051,7 @@ country_event = { #Success Total Revolution
 	}
 	
 	option = { 
-	name = "A new era of diplomacy begins."
+	name = "48264.A"
 	set_global_flag = DVG_infamy 
 	badboy = -3 
 	prestige = 10 

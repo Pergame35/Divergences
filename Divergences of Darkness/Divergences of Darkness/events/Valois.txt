@@ -24,7 +24,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Nous reprendrons nos droits!"
+		name = "110601.A"
 		badboy = 10
 		relation = { who = ARA value = -150 }
 		TUS = { country_event = 36756 }
@@ -43,7 +43,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Le risque est trop grand..."
+		name = "110601.B"
 		prestige = -5
 		relation = { who = ARA value = 100 }
 	}
@@ -58,7 +58,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Feudality is over! We will not submit!"
+		name = "110603.A"
 		any_country = {
 			limit = {
 				exists = yes
@@ -81,7 +81,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We welcome our Provençaux overlords"
+		name = "110603.B"
 		PRV = { country_event = 110608 }
 		ai_chance = {
 			factor = 10
@@ -97,7 +97,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We will help our Italian brothers against the Valois!"
+		name = "110604.A"
 		set_country_flag = alliance_valois
 		ai_chance = {
 			factor = 90
@@ -109,7 +109,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Helping Lucca is not in our interest"
+		name = "110604.B"
 		prestige = -5
 		relation = { who = LUC value = -150 }
 		relation = { who = PRV value = 100 }
@@ -127,7 +127,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We will help our Italian brothers against the Valois!"
+		name = "110605.A"
 		set_country_flag = alliance_valois
 		ai_chance = {
 			factor = 65
@@ -139,7 +139,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Helping Lucca is not in our interest"
+		name = "110605.B"
 		prestige = -5
 		relation = { who = LUC value = -150 }
 		relation = { who = PRV value = 50 }
@@ -157,7 +157,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We will help Lucca against the heretics!"
+		name = "110606.A"
 		set_country_flag = alliance_valois_p
 		ai_chance = {
 			factor = 100
@@ -169,7 +169,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Helping Lucca is not in our interest"
+		name = "110606.B"
 		prestige = -5
 		relation = { who = LUC value = -150 }
 		relation = { who = PRV value = 200 }
@@ -187,7 +187,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We will subdue all of them!"
+		name = "110607.A"
 		badboy = 10
 		ARA = {
 			diplomatic_influence = { who = PRV value = -100 }
@@ -217,7 +217,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Well, Lucca can keep its independence after all..."
+		name = "110607.B"
 		prestige = -20
 	}
 }
@@ -230,7 +230,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "One step further in our ambitions"
+		name = "110608.A"
 		prestige = 10
 		create_vassal = LUC
 	}
@@ -244,7 +244,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "The Valois will leave Italy!"
+		name = "110609.A"
 		PRV = {
 			casus_belli = {
 				target = THIS
@@ -279,7 +279,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Let them come!"
+		name = "800102.A"
 		PRV = {
 			casus_belli = {
 				target = THIS
@@ -325,7 +325,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Make peace. Italy is freed from the kings in France."
+		name = "110611.A"
 		clr_country_flag = alliance_valois
 		prestige = 5
 		end_war = PRV
@@ -342,7 +342,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Worrisome..."
+		name = "110612.A"
 		set_global_flag = Italian_war
 		ARA = {
 			diplomatic_influence = { who = FRR value = -100 }
@@ -372,7 +372,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We won't allow an independant Italy!"
+		name = "110613.A"
 		casus_belli = {
 			target = ITA
 			type = conquest
@@ -402,7 +402,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Risorgimento!"
+		name = "36753.T"
 	}
 }
 
@@ -429,7 +429,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We will free Tuscany!"
+		name = "110615.A"
 		war = {
 			target = PRV
 			attacker_goal = {
@@ -445,7 +445,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We will not intervene"
+		name = "110615.B"
 		prestige = -5
 		ai_chance = {
 			factor = 0
@@ -462,7 +462,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We shall overcome"
+		name = "110616.A"
 		casus_belli = {
 			target = SAR
 			type = make_puppet
@@ -499,7 +499,7 @@ country_event = {
 	}
 
 	option = {
-		name = "It is the end for the Valois!"
+		name = "110617.A"
 		badboy = 5
 		casus_belli = {
 			target = PRV
@@ -535,7 +535,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Of course we'll annex them"
+		name = "110618.A"
 		inherit = PRV
 		badboy = 5
 	}
@@ -552,7 +552,7 @@ country_event = {
 
 	option = {
 		end_war = FROM
-		name = "London is a fine place I think..."
+		name = "110619.A"
 		capital = 300
 		prestige = -300
 		any_owned = {
@@ -572,21 +572,21 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Roma is eternal..."
+		name = "110620.A"
 		capital = 749
 		primary_culture = south_italian
 		add_accepted_culture = provencal
 	}
 
 	option = {
-		name = "Paris is the true capital!"
+		name = "110620.B"
 		capital = 425
 		primary_culture = french
 		add_accepted_culture = provencal
 	}
 
 	option = {
-		name = "Compromise: Toulon it is"
+		name = "110620.C"
 		capital = 470
 	}
 }
@@ -602,7 +602,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We don't have much choice"
+		name = "48911.A"
 		change_tag = OCC
 		government = democracy
 		vote_franschise = universal_voting
@@ -624,7 +624,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Good thing"
+		name = "110631.A"
 		create_vassal = FROM
 		country_event = 110632
 	}
@@ -641,7 +641,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Execute him after a 'fair trial' on the Piazza dei Priori"
+		name = "110632.A"
 		prestige = 5
 		any_country = {
 			limit = {
@@ -657,7 +657,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Let him go..."
+		name = "110632.B"
 		prestige = -2
 	}
 }
@@ -681,7 +681,7 @@ country_event = {
 	}
 
 	option = {
-		name = "It was bound to arrive..."
+		name = "110633.A"
 		set_global_flag = occ_riot
 		TUS = { country_event = 110634 }
 		any_pop = {
@@ -701,12 +701,12 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We'll keep the current situation as it is!"
+		name = "110634.A"
 		prestige = 5
 	}
 
 	option = {
-		name = "It might be better to let them go free"
+		name = "110634.B"
 		release_vassal = FROM
 		badboy = -5
 	}
@@ -732,7 +732,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We should not involve ourselves in Mediteranean problems..."
+		name = "110635.A"
 		clr_global_flag = occ_riot
 		ai_chance = {
 			factor = 10
@@ -744,7 +744,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We could negotiate with Etruria..."
+		name = "110635.B"
 		TUS = { country_event = 110636 }
 		clr_global_flag = occ_riot
 		ai_chance = {
@@ -757,7 +757,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Threaten the Republic with force, they should understand that!"
+		name = "110635.C"
 		TUS = { country_event = 110641 }
 		clr_global_flag = occ_riot
 		ai_chance = {
@@ -779,7 +779,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Demand their non intervention in case of Italian unification and that's a deal!"
+		name = "110636.A"
 		FROM = { country_event = 110637 }
 		badboy = 2
 		ai_chance = {
@@ -788,7 +788,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We won't betray the Occitan republicans!"
+		name = "110636.B"
 		FROM = { country_event = 110638 }
 		ai_chance = {
 			factor = 1
@@ -805,14 +805,14 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Sign it, it's not like Etruria can unify Italy."
+		name = "110637.A"
 		set_global_flag = lyon_accord
 		FROM = { country_event = 110638 }
 		OCC = { country_event = 110639 }
 	}
 
 	option = {
-		name = "Absolutely unacceptable!"
+		name = "110637.B"
 		ai_chance = {
 			factor = 0
 		}
@@ -828,7 +828,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Such things are common in times of need..."
+		name = "110638.A"
 		prestige = -5
 		release_vassal = OCC
 		leave_alliance = OCC
@@ -844,7 +844,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Even betrayed we won't surrender!"
+		name = "110639.A"
 		FROM = { country_event = 110640 }
 		ai_chance = {
 			factor = 40
@@ -852,7 +852,7 @@ country_event = {
 	}
 
 	option = {
-		name = "There is no point fighting alone..."
+		name = "110639.B"
 		FROM = { inherit = THIS }
 		ai_chance = {
 			factor = 60
@@ -868,7 +868,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Well, we'll just erase them from the map!"
+		name = "110640.A"
 		war = {
 			target = OCC
 			attacker_goal = {
@@ -887,7 +887,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Backdown from Provence, we can't win against Paris!"
+		name = "110641.A"
 		release_vassal = OCC
 		leave_alliance = OCC
 		OCC = { country_event = 110639 }
@@ -897,7 +897,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We fight with them!"
+		name = "110641.B"
 		FROM = { country_event = 110640 }
 		ai_chance = {
 			factor = 15
@@ -937,7 +937,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We never hoped that!"
+		name = "37230.A"
 		prestige = 5
 		badboy = 2
 		treasury = -1000
@@ -949,7 +949,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We have no interest in the Pacific."
+		name = "37230.B"
 		prestige = -5
 		badboy = -2
 		ai_chance = { factor = 5 }

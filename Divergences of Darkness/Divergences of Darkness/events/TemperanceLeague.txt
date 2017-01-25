@@ -651,7 +651,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Support the movement."
+		name = "185.A"
 		any_pop = {
 			dominant_issue = {
 				value = moralism
@@ -675,7 +675,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Nonsense. They take this too far."
+		name = "185.B"
 		random_state = {
 			limit = { is_colonial = no }
 			any_pop = {
@@ -748,7 +748,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "There is no need for such action."
+		name = "186.A"
 		any_pop = {
 			limit = {
 				location = { is_colonial = no }
@@ -765,7 +765,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Some restraint is best."
+		name = "186.B"
 		remove_country_modifier = libertine_culture
 		any_pop = {
 			limit = {

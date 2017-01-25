@@ -1,7 +1,7 @@
 country_event = {
 	id = 135601
-	title = "Crusade for the Promised Land"
-	desc = "AI only - setting colonisation flag"
+	title = "135601.T"
+	desc = "135601.D"
 	picture = "asian_ruler"
 	
 	trigger = {
@@ -22,7 +22,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Yes"
+		name = "135601.A"
 		set_country_flag = colonise_tech
 	}
 }
@@ -37,7 +37,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We gladly accept."
+		name = "135602.A"
 		money = 10000
 		ATS = {
 			all_core = {
@@ -65,7 +65,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We refuse."
+		name = "135602.B"
 		FROM = { country_event = 135604 }
 		ai_chance = {
 			factor = 15
@@ -83,7 +83,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Excellent."
+		name = "190441.A"
 		prestige = 5
 		money = -100000
 		ATS = {
@@ -106,7 +106,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We will consult with Parliament on what to do"
+		name = "135604.A"
 		relation = { who = FROM value = -100 }
 		set_country_flag = refused_ATS
 	}
@@ -122,7 +122,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We have no choice"
+		name = "135605.A"
 		money = 10000
 		ATS = {
 			all_core = {
@@ -150,7 +150,7 @@ country_event = {
 	}
 
 	option = {
-		name = "They can take it from our cold dead hands!"
+		name = "135605.B"
 		FROM = { country_event = 135607 }
 		ai_chance = {
 			factor = 50
@@ -172,7 +172,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "They should have accepted the first time"
+		name = "135606.A"
 		prestige = 10
 		ATS = {
 			all_core = {
@@ -194,7 +194,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Then we'll take it from them!"
+		name = "135607.A"
 		relation = { who = FROM value = -100 }
 		casus_belli = {
 				target = FROM
@@ -221,7 +221,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We shall accept the offer."
+		name = "135610.A"
 		money = 500000
 		CUB = {
 			all_core = {
@@ -246,7 +246,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We must respectfully decline."
+		name = "135610.B"
 		FROM = { country_event = 135612 }
 		ai_chance = {
 			factor = 15
@@ -264,7 +264,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Excellent."
+		name = "97205.A"
 		prestige = 5
 		money = -500000
 		CUB = {
@@ -287,7 +287,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "This is rather unfortunate."
+		name = "135612.A"
 		relation = { who = FROM value = -100 }
 		set_country_flag = refused_CUB
 	}
@@ -303,7 +303,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We gladly accept."
+		name = "135620.A"
 		money = 250000
 		SFJ = {
 			all_core = {
@@ -323,7 +323,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We refuse."
+		name = "135620.B"
 		FROM = { country_event = 135622 }
 		ai_chance = {
 			factor = 25
@@ -341,7 +341,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Excellent."
+		name = "97255.A"
 		prestige = 5
 		money = -250000
 		SFJ = {
@@ -364,7 +364,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Hm, I see."
+		name = "135622.A"
 		relation = { who = FROM value = -100 }
 		set_country_flag = refused_SFJ
 	}
@@ -380,7 +380,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We gladly accept."
+		name = "135630.A"
 		money = 250000
 		JAM = {
 			all_core = {
@@ -403,7 +403,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We refuse."
+		name = "135630.B"
 		FROM = { country_event = 135632 }
 		ai_chance = {
 			factor = 25
@@ -421,7 +421,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Our Nation will be Glorious!"
+		name = "135631.A"
 		prestige = 5
 		money = -250000
 		JAM = {
@@ -449,7 +449,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Hm, I see."
+		name = "135632.A"
 		relation = { who = FROM value = -100 }
 		set_country_flag = refused_JAM
 	}
@@ -464,7 +464,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We gladly accept."
+		name = "135623.A"
 		money = 200000
 		2131 = {
 			secede_province = FROM
@@ -476,7 +476,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We refuse."
+		name = "135623.B"
 		FROM = { country_event = 135625 }
 		ai_chance = {
 			factor = 25
@@ -494,7 +494,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Excellent."
+		name = "97355.A"
 		prestige = 5
 		money = -200000
 		relation = { who = FROM value = 50 }
@@ -512,7 +512,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Hm, I see."
+		name = "135625.A"
 		relation = { who = FROM value = -100 }
 		set_country_flag = refused_NAN
 	}
@@ -536,7 +536,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Rename these islands !"
+		name = "135626.A"
 		treasury = -10000
 		set_country_flag = falklands 
 		2131 = {
@@ -566,7 +566,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We must claim South Georgia."
+		name = "135627.A"
 		treasury = -10000
 		2133 = {
 			add_core = THIS

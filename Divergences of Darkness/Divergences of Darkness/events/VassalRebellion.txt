@@ -97,7 +97,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will make the request."
+		name = "98600.A"
 		random_country = {
 			limit = { is_our_vassal = THIS }
 			country_event = 98605
@@ -108,7 +108,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "There is no point."
+		name = "98600.B"
 		prestige = -5
 		any_pop = {
 			limit = { is_primary_culture = yes }
@@ -140,7 +140,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Grant $FROMCOUNTRY$ its freedom."
+		name = "98605.A"
 		random_owned = {
 			limit = {
 				owner = { is_greater_power = yes }
@@ -214,7 +214,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Refuse them."
+		name = "4439.B"
 		random_owned = {
 			limit = {
 				owner = { is_greater_power = yes }
@@ -286,7 +286,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "How unfortunate."
+		name = "98606.A"
 		set_country_flag = refused_independence_request
 		prestige = -10
 		relation = { who = FROM value = -100 }
@@ -316,7 +316,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We are most fortunate."
+		name = "98607.A"
 		any_pop = {
 			limit = { is_primary_culture = yes }
 			consciousness = -3
@@ -329,7 +329,7 @@ country_event = {
 country_event = {
 	id = 98608
 	title = "EVTNAME98607"
-	desc = "It appears the threat of a war of independence was enough to secure $COUNTRY$'s freedom. Crowds have gathered in $CAPITAL$ to cheer on our Independence Day!"
+	desc = "98608.D"
 	news = yes
 	news_desc_long = "EVTDESC98608_NEWS_LONG"
 	news_desc_medium = "EVTDESC98608_NEWS_MEDIUM"
@@ -340,7 +340,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We are most fortunate."
+		name = "98608.A"
 		relation = { who = FROM value = -100 }
 		leave_alliance = FROM
 		any_pop = {
@@ -361,7 +361,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Then it is war!"
+		name = "98610.A"
 		FROM = {
 			war = {
 				target = THIS
@@ -416,7 +416,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall let them go. For now."
+		name = "98610.B"
 		release_vassal = FROM
 		casus_belli = {
 			target = FROM
@@ -563,7 +563,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Attempt to find allies... quietly."
+		name = "98611.A"
 		set_country_flag = sought_independence_allies
 		badboy = 3
 		any_greater_power = {
@@ -584,7 +584,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "There is no need for this."
+		name = "98611.B"
 		set_country_flag = sought_independence_allies
 		ai_chance = { factor = 0 }
 	}
@@ -599,7 +599,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Agree to the alliance."
+		name = "98612.A"
 		prestige = 10
 		diplomatic_influence = { who = FROM value = 100 }
 		FROM = {
@@ -717,7 +717,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "No, this is too risky."
+		name = "98612.B"
 		prestige = -10
 		relation = { who = FROM value = -25 }
 		diplomatic_influence = { who = FROM value = -100 }
@@ -824,8 +824,8 @@ country_event = {
 
 country_event = {
 	id = 98613
-	title = "$FROMCOUNTRY$ Has Agreed"
-	desc = "$FROMCOUNTRY$ has agreed to our secret alliance. Whether they will indeed help once the war begins remains to be seen."
+	title = "44337.T"
+	desc = "98613.D"
 	news = yes
 	news_title = "EVTNAME98613_NEWS_TITLE"
 	news_desc_long = "EVTDESC98613_NEWS_LONG"
@@ -836,19 +836,19 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "It gives us hope."
+		name = "98613.A"
 	}
 }
 
 country_event = {
 	id = 98614
-	title = "$FROMCOUNTRY$ Has Refused"
-	desc = "$FROMCOUNTRY$ has refused our request. Hopefully they don't inform our overlords of our intent."
+	title = "97392.T"
+	desc = "98614.D"
 	picture = "administration"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Bah!"
+		name = "98614.A"
 	}
 }

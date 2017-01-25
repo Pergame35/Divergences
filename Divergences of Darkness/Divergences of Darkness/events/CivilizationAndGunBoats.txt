@@ -299,7 +299,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Ignore it."
+		name = "13015.A"
 		random_owned = {
 			limit = {
 				OR = {
@@ -326,7 +326,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Shut it down and confiscate the contraband."
+		name = "13015.B"
 		treasury = 5000
 		random_owned = {
 			limit = {
@@ -380,7 +380,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Shut down the ring immediately."
+		name = "13016.A"
 		random_owned = {
 			limit = {
 				has_province_modifier = foreign_smugglers
@@ -399,7 +399,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Do whatever it takes to eliminate this menace."
+		name = "13016.B"
 		prestige = -3
 		random_owned = {
 			limit = {
@@ -502,7 +502,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Ignore them."
+		name = "13020.A"
 		random_owned = {
 			limit = {
 				OR = {
@@ -530,7 +530,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Round them up and execute them."
+		name = "13020.B"
 		random_country = {
 			limit = {
 				capital_scope = { continent = europe }
@@ -592,7 +592,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "This cannot be permitted."
+		name = "13021.A"
 		relation = { who = FROM value = -25 }
 		leave_alliance = FROM
 		random_country = {
@@ -627,7 +627,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "There is nothing we can do."
+		name = "2626.A"
 		random_owned = {
 			limit = {
 				owner = {
@@ -727,7 +727,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "They are welcome to stay."
+		name = "13030.A"
 		random_owned = {
 			limit = {
 				is_capital = yes
@@ -776,7 +776,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Send them home."
+		name = "13030.B"
 		random_country = {
 			limit = {
 				OR = {
@@ -846,7 +846,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Force of arms must be considered."
+		name = "13031.A"
 		casus_belli = {
 			target = FROM
 			type = cut_down_to_size
@@ -895,7 +895,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We must respect and tolerate the differences between our respective cultures."
+		name = "13031.B"
 		relation = {
 			who = FROM
 			value = 20
@@ -1253,7 +1253,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Ignore them."
+		name = "13051.A"
 		random_owned = {
 			limit = {
 				port = yes
@@ -1280,7 +1280,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Do whatever it takes to uproot them."
+		name = "13051.B"
 		prestige = -3
 		random_owned = {
 			limit = {
@@ -2632,7 +2632,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Attend the function."
+		name = "13185.A"
 		years_of_research = 0.1
 		random_country = {
 			limit = {
@@ -2670,7 +2670,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Refuse. We don't need their methods."
+		name = "13185.B"
 		prestige = -3
 		years_of_research = -0.1
 		ai_chance = {
@@ -2688,7 +2688,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We'll gladly support this initiative."
+		name = "13186.A"
 		treasury = -25000
 		diplomatic_influence = { who = FROM value = 50 }
 		relation = { who = FROM value = 50 }
@@ -2702,7 +2702,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "They have our permission to continue, but we can offer no support."
+		name = "13186.B"
 		diplomatic_influence = { who = FROM value = 20 }
 		relation = { who = FROM value = 20 }
 		ai_chance = {
@@ -2711,7 +2711,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This is not in our best interest."
+		name = "13186.C"
 		prestige = -3
 		ai_chance = {
 			factor = 0
@@ -2983,7 +2983,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We will defend our interests."
+		name = "13202.A"
 		badboy = 2
 		leave_alliance = FROM
 		random_country = {
@@ -3063,7 +3063,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will not go to war over this."
+		name = "13202.B"
 		diplomatic_influence = {
 			who = FROM
 			value = -200

@@ -101,7 +101,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."	
+		name = "880010.A"	
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -148,7 +148,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Unfortunate for them."
+		name = "880011.A"
 		owner = {
 			any_owned = {
 				limit = {
@@ -231,7 +231,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."	
+		name = "880012.A"	
 		any_pop = {
 			ideology = {
 				value = reactionary
@@ -332,7 +332,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."	
+		name = "880020.A"	
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -383,7 +383,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Unfortunate for them."
+		name = "880021.A"
 		owner = {
 			any_owned = {
 				limit = {
@@ -466,7 +466,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."	
+		name = "880022.A"	
 		any_pop = {
 			ideology = {
 				value = conservative
@@ -570,7 +570,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."	
+		name = "880030.A"	
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -617,7 +617,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Unfortunate for them."
+		name = "880031.A"
 		owner = {
 			any_owned = {
 				limit = {
@@ -699,7 +699,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."
+		name = "880032.A"
 		any_pop = {
 			ideology = {
 				value = liberal
@@ -795,7 +795,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."
+		name = "880040.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -849,7 +849,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "How unfortunate for them."
+		name = "880041.A"
 		owner = {
 			any_owned = {
 				limit = {
@@ -925,7 +925,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."	
+		name = "880042.A"	
 		any_pop = {
 			limit = {
 				NOT = { type = aristocrats }
@@ -1025,7 +1025,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."	
+		name = "880050.A"	
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -1075,7 +1075,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "How unfortunate for them."
+		name = "880051.A"
 		owner = {
 			any_owned = {
 				limit = {
@@ -1151,7 +1151,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."	
+		name = "880052.A"	
 		any_pop = {
 			limit = {
 				NOT = { strata = rich }
@@ -1250,7 +1250,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."	
+		name = "880060.A"	
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -1300,7 +1300,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "How unfortunate for them."
+		name = "880061.A"
 		owner = {
 			any_owned = {
 				limit = {
@@ -1376,7 +1376,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."	
+		name = "880062.A"	
 		any_pop = {
 			limit = {
 				NOT = { strata = rich }
@@ -1476,7 +1476,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."	
+		name = "880070.A"	
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -1524,7 +1524,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "How unfortunate for them."
+		name = "880071.A"
 		owner = {
 			any_owned = {
 				limit = {
@@ -1601,7 +1601,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They had best not cause trouble."
+		name = "880072.A"
 		any_pop = {
 			limit = { is_primary_culture = yes }
 			ideology = {

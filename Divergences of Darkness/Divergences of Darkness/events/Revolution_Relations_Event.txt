@@ -48,7 +48,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This is for the best."
+		name = "800066.A"
 		random_country = {
 			limit = {
 				is_greater_power = no
@@ -69,7 +69,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This is unnecessary."
+		name = "800066.B"
 		ai_chance = {
 			factor = 5
 		}
@@ -86,7 +86,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We accept $FROMCOUNTRY$'s proposal."
+		name = "800067.A"
 		FROM = { prestige = 5 }
 		relation = { who = FROM value = 100 }
 		create_alliance = FROM
@@ -134,7 +134,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "We are not interested."
+		name = "800067.B"
 		relation = {
 			who = FROM
 			value = -25
@@ -212,7 +212,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This is for the best."
+		name = "800068.A"
 		random_country = {
 			limit = {
 				neighbour = THIS
@@ -240,7 +240,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This is unnecessary."
+		name = "800068.B"
 		ai_chance = {
 			factor = 5
 		}
@@ -293,7 +293,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This is for the best."
+		name = "800069.A"
 		random_country = {
 			limit = {
 				is_greater_power = no
@@ -319,7 +319,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This is unnecessary."
+		name = "800069.B"
 		ai_chance = {
 			factor = 5
 		}
@@ -371,7 +371,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This is for the best."
+		name = "800070.A"
 		random_country = {
 			limit = {
 				neighbour = THIS
@@ -402,7 +402,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This is unnecessary."
+		name = "800070.B"
 		ai_chance = {
 			factor = 5
 		}
@@ -455,7 +455,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This is for the best."
+		name = "800071.A"
 		random_country = {
 			limit = {
 				is_greater_power = no
@@ -481,7 +481,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This is unnecessary."
+		name = "800071.B"
 		ai_chance = {
 			factor = 5
 		}
@@ -533,7 +533,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This is for the best."
+		name = "800072.A"
 		random_country = {
 			limit = {
 				neighbour = THIS
@@ -564,7 +564,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This is unnecessary."
+		name = "800072.B"
 		ai_chance = {
 			factor = 5
 		}
@@ -663,7 +663,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This is for the best."
+		name = "800073.A"
 		random_country = {
 			limit = {
 				is_greater_power = no
@@ -698,7 +698,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This is unnecessary."
+		name = "800073.B"
 		ai_chance = {
 			factor = 5
 		}
@@ -795,7 +795,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This is for the best."
+		name = "800074.A"
 		random_country = {
 			limit = {
 				neighbour = THIS
@@ -832,7 +832,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This is unnecessary."
+		name = "800074.B"
 		ai_chance = {
 			factor = 5
 		}
@@ -890,7 +890,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Call for the summit."
+		name = "800075.A"
 		random_country = {
 			limit = {
 				is_greater_power = yes
@@ -914,7 +914,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This is unnecessary."
+		name = "800075.B"
 		prestige = -5
 		ai_chance = {
 			factor = 5
@@ -933,7 +933,7 @@ country_event = {
 
 
 	option = {
-		name = "We are eager to attend the summit."
+		name = "800076.A"
 		FROM = { country_event = 800077 }
 		ai_chance = {
 			factor = 50
@@ -961,7 +961,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "We will go, but we promise nothing."
+		name = "800076.B"
 		FROM = { country_event = 800078 }
 		ai_chance = {
 			factor = 30
@@ -989,7 +989,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "We're not interested right now."
+		name = "800076.C"
 		prestige = -5
 		FROM = { country_event = 800080 }
 		ai_chance = {
@@ -1051,7 +1051,7 @@ country_event = {
 	major = yes
 
 	option = {
-		name = "Wonderful news!"
+		name = "800077.A"
 		prestige = 20
 		create_alliance = FROM
 		relation = {
@@ -1077,7 +1077,7 @@ country_event = {
 	major = yes
 
 	option = {
-		name = "Maybe next time."
+		name = "800078.A"
 		prestige = 5
 		relation = {
 			who = FROM
@@ -1096,7 +1096,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "An insult?"
+		name = "800080.A"
 		prestige = -5
 		relation = {
 			who = FROM
@@ -1149,7 +1149,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Call for the summit."
+		name = "800081.A"
 		random_country = {
 			limit = {
 				is_greater_power = yes
@@ -1173,7 +1173,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This is unnecessary."
+		name = "800081.B"
 		prestige = -5
 		ai_chance = {
 			factor = 5
@@ -1225,7 +1225,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Call for the summit."
+		name = "800082.A"
 		random_country = {
 			limit = {
 				is_greater_power = yes
@@ -1249,7 +1249,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This is unnecessary."
+		name = "800082.B"
 		prestige = -5
 		ai_chance = {
 			factor = 5
@@ -1362,7 +1362,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Call for the summit."
+		name = "800083.A"
 		random_country = {
 			limit = {
 				is_greater_power = yes
@@ -1392,7 +1392,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This is unnecessary."
+		name = "800083.B"
 		prestige = -5
 		ai_chance = {
 			factor = 5
@@ -1461,7 +1461,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This was not our intent."
+		name = "800084.A"
 		prestige = -10
 		any_pop = {
 			scaled_militancy = {
@@ -1516,7 +1516,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "They have only themselves to blame."
+		name = "800084.B"
 		prestige = 10
 		any_pop = {
 			scaled_militancy = {
@@ -1624,7 +1624,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This was not our intent."
+		name = "800085.A"
 		prestige = -10
 		any_pop = {
 			scaled_militancy = {
@@ -1677,7 +1677,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "They have only themselves to blame."
+		name = "800085.B"
 		prestige = 10
 		any_pop = {
 			scaled_militancy = {
@@ -1788,7 +1788,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This was not our intent."
+		name = "800086.A"
 		prestige = -10
 		any_pop = {
 			scaled_militancy = {
@@ -1843,7 +1843,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "They have only themselves to blame."
+		name = "800086.B"
 		prestige = 10
 		any_pop = {
 			scaled_militancy = {
@@ -1963,7 +1963,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This was not our intent."
+		name = "800087.A"
 		prestige = -10
 		any_pop = {
 			scaled_militancy = {
@@ -2018,7 +2018,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "They have only themselves to blame."
+		name = "800087.B"
 		prestige = 10
 		any_pop = {
 			scaled_militancy = {
@@ -2084,7 +2084,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Not good enough!"
+		name = "800088.A"
 		prestige = 10
 		badboy = 2
 		any_pop = {
@@ -2203,7 +2203,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "That will have to do."
+		name = "800088.B"
 		any_pop = {
 			scaled_militancy = {
 				issue = jingoism
@@ -2267,7 +2267,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "They will learn their error."
+		name = "800089.A"
 		prestige = 10
 		any_pop = {
 			scaled_militancy = {
@@ -2385,7 +2385,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "We will not be provoked."
+		name = "800089.B"
 		prestige = -10
 		any_pop = {
 			scaled_militancy = {
@@ -2456,7 +2456,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We shall see."
+		name = "98302.A"
 	}
 }
 
@@ -2475,7 +2475,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Good."
+		name = "800091.A"
 	}
 }
 
@@ -2493,7 +2493,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Let them come!"
+		name = "800102.A"
 	}
 }
 
@@ -2511,7 +2511,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Too bad."
+		name = "800093.A"
 	}
 }
 
@@ -2577,7 +2577,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This could be trouble."
+		name = "800094.A"
 		prestige = -5
 		random_country = {
 			limit = {
@@ -2660,7 +2660,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This could be trouble."
+		name = "800095.A"
 		prestige = -5
 		random_country = {
 			limit = {
@@ -2743,7 +2743,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This could be trouble."
+		name = "800096.A"
 		prestige = -5
 		random_country = {
 			limit = {
@@ -2835,7 +2835,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "This could be trouble."
+		name = "800097.A"
 		prestige = -5
 		random_country = {
 			limit = {
@@ -2868,7 +2868,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "An outrage!"
+		name = "800098.A"
 		prestige = 5
 		badboy = 2
 		any_pop = {
@@ -2993,7 +2993,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "It's unfortunate."
+		name = "800098.B"
 		any_pop = {
 			scaled_militancy = {
 				issue = jingoism

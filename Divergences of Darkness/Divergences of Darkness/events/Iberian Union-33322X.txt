@@ -45,13 +45,13 @@ country_event = { #### Rif and Mauretania
 	}
 	
 	option = { 
-	name = "We need both banks of the strait"
+	name = "333221.A"
 	MOR_1688 = { remove_core = MOR remove_core = MGH }
 	set_country_flag = rif_resolved
 	}
 	
 	option = { 
-	name = "It is not Spanish land"
+	name = "333221.B"
 	set_country_flag = rif_resolved
 	}
 }
@@ -64,7 +64,7 @@ country_event = { #### Mancomunnidad
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Viva la Mancomunnidad de las Naciones Columbianas"
+	name = "333222.A"
 	government = hms_government
 	political_reform = state_equal_weight
 	political_reform = universal_weighted_voting
@@ -80,8 +80,8 @@ country_event = {
 
 	id = 333223
 
-	title = "The Cuban Dominion"
-	desc = "The Cubans have asked to be granted the same status as their Colombian brothers."
+	title = "333223.T"
+	desc = "333223.D"
 	picture = "danishgovernment"
 
 	major = yes
@@ -125,7 +125,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This can only be good for the empire."
+		name = "22260.A"
 		clr_country_flag = CUB_independence_refused
 		prestige = -20
 		badboy = -5
@@ -198,7 +198,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "No, they shall remain under our direct control"
+		name = "22260.B"
 		set_country_flag = CUB_independence_refused
 		any_owned = {
 			limit = { is_core = CUB }

@@ -38,8 +38,8 @@ country_event = {
 
 country_event = { 
 	id = 32417
-	title = "Russian Unity"
-	desc = "Novgorod and Muscovy have at last united and shall never be separated again!"
+	title = "32417.T"
+	desc = "32417.D"
 	
 	trigger = { 
 	tag = RUS 
@@ -55,7 +55,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "One and Indivisible!"
+	name = "32417.A"
 	any_owned = { 
 	remove_core = MUS 
 	remove_core = NOV 
@@ -73,8 +73,8 @@ country_event = {
 
 country_event = { 
 	id = 32418
-	title = "The Don and the Volga"
-	desc = "The banks of the Southern Rivers have been secured and are no longer Tatar"
+	title = "32418.T"
+	desc = "32418.D"
 	
 	trigger = { 
 	tag = RUS 
@@ -93,7 +93,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "One and Indivisible!"
+	name = "32418.A"
 	RUS_1034 = { remove_core = CRI remove_core = ASK remove_core = NOG remove_core = SIB remove_core = TAR }
 	RUS_979 = { remove_core = CRI remove_core = ASK remove_core = NOG remove_core = SIB remove_core = TAR }
 	RUS_980 = { remove_core = CRI remove_core = ASK remove_core = NOG remove_core = SIB remove_core = TAR }

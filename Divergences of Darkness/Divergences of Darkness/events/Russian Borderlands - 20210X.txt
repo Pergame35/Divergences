@@ -656,7 +656,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We accept their offer."
+		name = "80115.A"
 		prestige = -5
 		any_owned = {
 			limit = { region = MON_1075 }
@@ -692,7 +692,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "$COUNTRY$ shall not submit!"
+		name = "80115.B"
 		prestige = 5
 		any_pop = { militancy = -3 }
 		FROM = { country_event = 80116 }
@@ -708,14 +708,14 @@ country_event = {
 
 country_event = {
 	id = 80116
-	title = "$FROMCOUNTRY$ Has Refused"
-	desc = "$FROMCOUNTRY$ has foolishly refused kind offer of protection."
+	title = "97392.T"
+	desc = "80116.D"
 	picture = "asian_administration"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "So be it."
+		name = "97310.A"
 		prestige = -5
 		leave_alliance = FROM
 		relation = { who = FROM value = -100 }

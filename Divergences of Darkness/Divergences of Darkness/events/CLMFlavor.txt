@@ -1,8 +1,8 @@
 country_event = { 
 	
 	id = 46445
-	title = "Fight for Freedom !"
-	desc = "The different republics are united against the Spanish oppressor. However it is not assured to stay like this forever..."
+	title = "46445.T"
+	desc = "46445.D"
 	fire_only_once = yes
 
 	trigger = { 
@@ -15,7 +15,7 @@ country_event = {
 	}
 
 	option = { 
-	name = "Viva la Revolucion !"
+	name = "46445.A"
 	clipper_convoy = 150
 	add_country_modifier = {
 				name = CLM_fight
@@ -27,8 +27,8 @@ country_event = {
 country_event = { 
 
 	id = 46446
-	title = "End of the colonial war" 
-	desc = "We have vainquished the revolutionnaries and taken back our colonies ! Long live Espana !"
+	title = "46446.T" 
+	desc = "46446.D"
 
 	major = yes
 	fire_only_once = yes
@@ -43,7 +43,7 @@ country_event = {
 	}
 
 	option = { 
-	name = "All hail Espana!"
+	name = "46446.A"
 	prestige = 100 
 	money = 1000000
 	set_country_flag = spaCLM
@@ -89,7 +89,7 @@ country_event = { ### Administration of the reconquered colonies
 	}
 	
 	option = { 
-	name = "Keeping them under our surveillance is the best thing to do"
+	name = "46447.A"
 	clr_country_flag = spaCLM
 	set_global_flag = spaCLM.Occupation 
 	prestige = 15 
@@ -99,7 +99,7 @@ country_event = { ### Administration of the reconquered colonies
 	}
 	
 	option = { 
-	name = "Restore the vice-royalties"
+	name = "46447.B"
 	clr_country_flag = spaCLM
 	set_global_flag = spaCLM_Vice_royalties
 	release_vassal = LST 
@@ -118,7 +118,7 @@ country_event = { ### Administration of the reconquered colonies
 	}
 	
 	option = { 
-	name = "Divide the old vice-royalties"
+	name = "46447.C"
 	clr_country_flag = spaCLM
 	set_global_flag = spaCLM_divided
 	release_vassal = LST 
@@ -174,7 +174,7 @@ country_event = { ### Administration of the reconquered colonies
 	}
 	
 	option = { 
-	name = "We'll keep it of course"
+	name = "46448.A"
 	set_country_flag = cuzco
 	relation = { who = INC value = -100 }
 	prestige = 15 
@@ -190,7 +190,7 @@ country_event = { ### Administration of the reconquered colonies
 	}
 	
 	option = { 
-	name = "We'll give it to them as a payment for their help"
+	name = "46448.B"
 	relation = { who = INC value = 200 }
 	diplomatic_influence = { who = INC value = 200 }
 	any_owned = {
@@ -230,7 +230,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Absolutism will keep our empire strong "
+	name = "46449.A"
 	set_country_flag = lib_CLM
 	set_country_flag = governors
 	prestige = 10 
@@ -259,7 +259,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Homerule for the colonies but absolutism at home"
+	name = "46449.B"
 	set_country_flag = lib_CLM
 	any_country = { 
 	limit = { 
@@ -290,7 +290,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The war proved the necessity of reforms here and there"
+	name = "46449.C"
 	set_country_flag = lib_CLM
 	government = prussian_constitutionalism
 	political_reform = appointed
@@ -322,7 +322,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "All hail the King ..."
+	name = "46450.A"
 	government = absolute_monarchy
 	political_reform = none_voting
 	political_reform = party_appointed
@@ -357,7 +357,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "All hail the King !"
+	name = "46451.A"
 	clr_country_flag = no_reform
 	government = prussian_constitutionalism
 	political_reform = appointed
@@ -388,7 +388,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The governor knows what is best "
+	name = "46453.A"
 	government = absolute_monarchy
 	political_reform = none_voting
 	political_reform = party_appointed
@@ -423,7 +423,7 @@ country_event = {
 	mean_time_to_happen = { months = 100 }
 	
 	option = { 
-	name = "We will allow the colonies to have partial home-rule"
+	name = "46454.A"
 	clr_country_flag = governors
 	any_country = { 
 	limit = { 
@@ -450,7 +450,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It is not the right time"
+	name = "46454.B"
 	ai_chance = { 
 	factor = 25
 		}
@@ -484,7 +484,7 @@ country_event = { #########Lusitania expedition expelled
 	}
 	
 	option = { 
-	name = "Onward to victory !"
+	name = "46460.A"
 	money = 50000
 	war_exhaustion = -15
 	prestige = 5
@@ -517,7 +517,7 @@ country_event = { ###### Yucatan expedition expelled
 	}
 	
 	option = { 
-	name = "Onward to victory !"
+	name = "46461.A"
 	money = 50000
 	war_exhaustion = -15
 	prestige = 5
@@ -548,7 +548,7 @@ country_event = { ###### Cartagena retaken
 	}
 	
 	option = { 
-	name = "Onward to victory !"
+	name = "46462.A"
 	money = 50000
 	war_exhaustion = -15
 	prestige = 5
@@ -578,7 +578,7 @@ country_event = { ###### Cuzco retaken
 	}
 	
 	option = { 
-	name = "Onward to victory !"
+	name = "46463.A"
 	money = 50000
 	war_exhaustion = -15
 	prestige = 5
@@ -602,7 +602,7 @@ country_event = { ###### Partial peace ?
 	}
 	
 	option = { 
-	name = "All of Colombia will be free or none will"
+	name = "46464.A"
 	prestige = 5 
 	war_exhaustion = -15 
 	ai_chance = { 
@@ -611,7 +611,7 @@ country_event = { ###### Partial peace ?
 	}
 	
 	option = { 
-	name = "Try to make the deal ..."
+	name = "46464.B"
 	SPA = { country_event = { id = 46465 days = 15 } } 
 	ai_chance = { 
 	factor = 50 
@@ -627,7 +627,7 @@ country_event = { ###### Partial peace ? SPA
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Take Granada and Andagoya"
+	name = "46465.A"
 	CLM = { country_event = 46466 }
 	prestige = -15
 	ai_chance = { 
@@ -636,7 +636,7 @@ country_event = { ###### Partial peace ? SPA
 	}
 	
 	option = { 
-	name = "We won't be satisfied with only Granada. Onwards to Mexico !"
+	name = "46465.B"
 	prestige = 10 
 	ai_chance = { 
 	factor = 50 
@@ -653,7 +653,7 @@ country_event = { ########Treaty of Cartagena
 	major = yes 
 	
 	option = { 
-	name = "At least Central America will be free ..."
+	name = "46466.A"
 	end_war = SPA
 	set_global_flag = partial_peace 
 	remove_country_modifier = CLM_fight
@@ -691,7 +691,7 @@ country_event = { ####### partial peace : administration of Granada
 	}
 	
 	option = { 
-	name = "Keep them under our direct administration "
+	name = "46467.A"
 	prestige = 15 
 	ai_chance = { 
 	factor = 10 
@@ -699,7 +699,7 @@ country_event = { ####### partial peace : administration of Granada
 	}
 	
 	option = { 
-	name = "Reestablish a Granadan vice-royalty to govern these territories "
+	name = "46467.B"
 	CLM_1723 = { 
 	add_core = GRA 
 		}
@@ -712,7 +712,7 @@ country_event = { ####### partial peace : administration of Granada
 	}
 	
 	option = { 
-	name = "Divide the old vice-royalty"
+	name = "46467.C"
 	release = PNM 
 	create_vassal = PNM
 	diplomatic_influence = { who = PNM value = 300 }
@@ -759,7 +759,7 @@ country_event = { ###### Growing unrest in Gran Columbia
 	}
 	
 	option = { 
-	name = "Call a Congress in two months, we stand true to democratic ideas"
+	name = "46468.A"
 	country_event = { id = 46469 days = 60 }
 	set_country_flag = congress_mexico
 	ai_chance = { 
@@ -768,7 +768,7 @@ country_event = { ###### Growing unrest in Gran Columbia
 	}
 	
 	option = { 
-	name = "We can't afford division while the king holds Andagoya ! "
+	name = "46468.B"
 	government = presidential_dictatorship
 	set_country_flag = dictatorshipCLM
 	ruling_party_ideology = conservative
@@ -830,7 +830,7 @@ country_event = {
 	is_triggered_only = yes 
 
 	option = {
-		name = "Let the debate take place"
+		name = "46469.A"
 		country_event = { id = 46470 days = 100 }
 		any_pop = {
     			consciousness = 1
@@ -848,7 +848,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = {
-		name = "What awaits the Federation ?"
+		name = "46470.A"
 		random_list = {
 			15 = { country_event = 46471 }
 			65 = { country_event = 46472 }
@@ -868,7 +868,7 @@ country_event = { ######Federation is legitime
 	major = yes
 
 	option = {
-		name = "Now we have to save Granadans ..."
+		name = "46471.A"
 		any_pop = {
 			limit = {
 				OR = { 
@@ -897,7 +897,7 @@ country_event = { ###### division between the three Spanish states
 	major = yes
 
 	option = {
-	name = "It is the end of the Federation..."
+	name = "46472.A"
 	any_owned = {
 			limit = { 
 			OR = { 
@@ -946,7 +946,7 @@ country_event = { ###### natives divide Mexico between themselves
 	major = yes
 	
 	option = {
-		name = "How did we fall so low ?"
+		name = "46473.A"
 		
 		release = LST 
 		release = UCA
@@ -1049,7 +1049,7 @@ country_event = { ###### The Veracruz Plan
 	}
 	
 	option = { 
-	name = "It is not like we have another choice"
+	name = "46474.A"
 	set_country_flag = calm_before_tempest 
 	release = LST 
 	release = UCA 
@@ -1060,7 +1060,7 @@ country_event = { ###### The Veracruz Plan
 	}
 	
 	option = { 
-	name = "Lusitania is a fine place to rule ..."
+	name = "46474.B"
 	set_country_flag = calm_before_tempest 
 	any_owned = { 
 			limit = { 
@@ -1097,7 +1097,7 @@ country_event = { ######### The Monclova Incident (or Tejas incident in which Lu
 	}
 	
 	option = { 
-	name = "It is time to end Santa Anna's rule ! Lusitania shall be free !"
+	name = "46475.A"
 	CLM = { country_event = 46476 }
 	}
 }
@@ -1112,7 +1112,7 @@ country_event = { ######### The Monclova Incident -MEX
 	is_triggered_only = yes 
 	
 	option = {
-	name = "Madeira will learn his place !"
+	name = "46476.A"
 	release_vassal = LST 
 	leave_alliance = LST
 	war = {
@@ -1142,7 +1142,7 @@ country_event = { ########## Morazan rebels
 	}
 	
 	option = { 
-	name = "Morazan too ? He will be crushed as well !"
+	name = "46477.A"
 	release_vassal = UCA 
 	leave_alliance = UCA 
 	UCA = { end_war = LST }
@@ -1158,7 +1158,7 @@ country_event = { ########## Morazan rebels
 	}
 	
 	option = { 
-	name = "Leave him be, Madeira is more dangerous "
+	name = "46477.B"
 	release_vassal = UCA 
 	leave_alliance = UCA 
 	UCA = { end_war = LST }
@@ -1196,7 +1196,7 @@ country_event = { ## Failure of Veracruz Plan ; end of GC
 	days = 2 }
 	
 	option = { 
-	name = "We will reforge Gran Colombia by iron and blood !"
+	name = "46478.A"
 	change_tag = MEX
 	clr_country_flag = calm_before_tempest 
 	set_country_flag = into_the_tempest
@@ -1227,7 +1227,7 @@ country_event = { ## Purepecha (just discovered they are the Tarascans )
 	}
 	
 	option = { 
-	name = "The Tarascans will learn how we treat the rebels in Mexico !"
+	name = "46479.A"
 	set_country_flag = MoreliaREB 
 	release = PUR 
 		war = {
@@ -1261,7 +1261,7 @@ country_event = { ## Zapotecs
 	}
 	
 	option = { 
-	name = "What are the Zapotecs thinking ?"
+	name = "46481.A"
 	set_country_flag = OaxacaREB 
 	release = ZAP
 		war = {
@@ -1295,7 +1295,7 @@ country_event = { ## Liberals ? (Mexican liberals take control of Jalisco and de
 	}
 	
 	option = { 
-	name = "Damned Liberals !"
+	name = "46482.A"
 	set_country_flag = LiberalREB 
 	release = JLS
 	JLS = { country_event = 46483 }
@@ -1320,7 +1320,7 @@ country_event = { ######### Jalisco constitution (just to assure they are democr
 	is_triggered_only = yes 	
 	
 	option = { 
-	name = "For the People !" 
+	name = "46483.A" 
 	government = democracy
 	ruling_party_ideology = liberal
 	political_reform = universal_voting
@@ -1339,7 +1339,7 @@ country_event = {
 	
 	
 	option = {
-		name = "We will not bow!"
+		name = "46484.A"
 		prestige = 5
 		relation = {
 			who = FROM
@@ -1382,7 +1382,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We have no alternative."
+		name = "46484.B"
 		FROM = {
 			country_event = 46486
 		}
@@ -1434,7 +1434,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "They will regret this..."
+		name = "46485.A"
 		war = { 
 			target = FROM
 			attacker_goal = {
@@ -1460,7 +1460,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "They had no choice."
+		name = "46486.A"
 		prestige = 5
 	}
 }
@@ -1485,13 +1485,13 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Ask them to give Lusitania back or we will go to war for it"
+	name = "46487.A"
 	PLA = { country_event = 46488 }
 	ai_chance = { factor = 100 }
 	}
 	
 	option = { 
-	name = "They can keep it"
+	name = "46487.B"
 	prestige = -10 
 	badboy = -5 
 	}	
@@ -1506,7 +1506,7 @@ country_event = {
 	
 	
 	option = {
-		name = "We will not bow!"
+		name = "46488.A"
 		prestige = 5
 		relation = {
 			who = FROM
@@ -1549,7 +1549,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We have no alternative."
+		name = "46488.B"
 		FROM = {
 			country_event = 46490
 		}
@@ -1602,7 +1602,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "They will regret this..."
+		name = "46489.A"
 		war = { 
 			target = FROM
 			attacker_goal = {
@@ -1629,7 +1629,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "They had no choice."
+		name = "46490.A"
 		prestige = 5
 	}
 }
@@ -1654,7 +1654,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Keeping them under our surveillance is the best thing to do"
+	name = "46491.A"
 	set_country_flag = OccupationMex
 	prestige = 15 
 	ai_chance = { 
@@ -1664,7 +1664,7 @@ country_event = {
 	
 	option = { 
 	set_country_flag = partial_peace_MEX
-	name = "Restore the vice-royalties"
+	name = "46491.B"
 	release = LST 
 	create_vassal = LST 
 	diplomatic_influence = { who = LST value = 300 }
@@ -1690,7 +1690,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We have no other choice but to sign it ..."
+	name = "46500.A"
 	set_country_flag = Colombian_loss
 	clr_global_flag = spaCLM_Vice_royalties
 	release_vassal = LST 
@@ -1734,7 +1734,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We have no other choice but to sign it ..."
+	name = "46501.A"
 	set_country_flag = Colombian_loss
 	clr_global_flag = spaCLM_divided
 	release_vassal = LST 
@@ -1793,7 +1793,7 @@ country_event = {
 	major = yes
 	
 	option = { 
-	name = "We have no other choice but to sign it ..."
+	name = "46502.A"
 	clr_global_flag = spaCLM.Occupation
 	set_country_flag = Colombian_loss
 	release = LST 
@@ -1852,7 +1852,7 @@ country_event = { ####The Spanish Republic
 	}
 	
 	option = { 
-	name = "The Republic will stop our decay !"
+	name = "46503.A"
 	clr_country_flag = Colombian_loss
 	government = democracy 
 	vote_franschise = universal_voting
@@ -1879,7 +1879,7 @@ country_event = { ####The Military coup d'etat
 	}
 	
 	option = { 
-	name = "Generals know best !"
+	name = "46504.A"
 	clr_country_flag = Colombian_loss
 	government = presidential_dictatorship
 	political_reform = none_voting
@@ -1912,7 +1912,7 @@ country_event = { ####The Spanish Republic
 	}
 	
 	option = { 
-	name = "The Republic will stop our decay !"
+	name = "46505.A"
 	clr_country_flag = Colombian_loss
 	government = democracy 
 	vote_franschise = universal_voting
@@ -1940,7 +1940,7 @@ country_event = { ####For the proletariat !
 	}
 	
 	option = { 
-	name = "For the Proletariat!"
+	name = "46506.A"
 	clr_country_flag = Colombian_loss
 	government = proletarian_dictatorship
 		political_reform = none_voting
@@ -1983,7 +1983,7 @@ country_event = { ####Stabilization
 	}
 	
 	option = { 
-	name = "The Regime will endure with the will of the people !"
+	name = "46507.A"
 	clr_country_flag = Colombian_loss
 	}
 }

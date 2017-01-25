@@ -508,7 +508,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It's democracy I guess ... "
+	name = "650300.A"
 	clr_country_flag = french_integration
 	set_country_flag = Paris_congress
 	random_list = { 
@@ -528,7 +528,7 @@ country_event = { ######All cultures accepted
 	major = yes 
 	
 	option = { 
-	name = "We don't need no monarch to be united ! Long Live the United Republic !"
+	name = "650301.A"
 	any_owned = { remove_core = FRA remove_core = ENL }
 	any_country = { any_owned = { remove_core = FRA remove_core = ENL } }
 	any_pop = { militancy = -3 }
@@ -548,7 +548,7 @@ country_event = { ###Irish and English puppets
 	major = yes 
 	
 	option = { 
-	name = "England and Ireland deserve a special treatment after what they have suffered"
+	name = "650302.A"
 	ENG_273 = { remove_core = ENL }
 	ENG_300 = { remove_core = ENL }
 	ENG_296 = { remove_core = ENL }
@@ -576,7 +576,7 @@ country_event = { ###Irish and English leave
 	major = yes 
 	
 	option = { 
-	name = "It was good while it lasted ..."
+	name = "650303.A"
 	any_country = { 
 	any_owned = { 
 	limit = { OR = { is_core = ENL is_core = IRE } }
@@ -619,7 +619,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It's fair I guess ..."
+	name = "650304.A"
 	set_country_flag = Paris_congress
 	any_country = { 
 	any_owned = { 
@@ -672,7 +672,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It's democracy I guess ... "
+	name = "650310.A"
 	clr_country_flag = english_integration
 	set_country_flag = Paris_congress
 	random_list = { 
@@ -691,7 +691,7 @@ country_event = { ######All cultures accepted
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We don't need no monarch to be united ! Long Live the United Republic !"
+	name = "650311.A"
 	any_owned = { remove_core = FRA remove_core = ENL }
 	any_country = { any_owned = { remove_core = FRA remove_core = ENL } }
 	any_pop = { militancy = -3 }
@@ -710,7 +710,7 @@ country_event = { ###Occitan and French puppets
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "France and Occitania deserve a special treatment after what they have suffered"
+	name = "650312.A"
 	FRA_420 = { remove_core = FRA }
 	FRA_425 = { remove_core = FRA }
 	FRA_435 = { remove_core = FRA }
@@ -748,7 +748,7 @@ country_event = { ###France and Occitania leave
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "It was good while it lasted ..."
+	name = "650313.A"
 	any_country = { 
 	any_owned = { 
 	remove_core = DUA
@@ -791,7 +791,7 @@ country_event = {
 	
 	option = { 
 	capital = 300
-	name = "It's fair I guess ..."
+	name = "650314.A"
 	any_country = { 
 	any_owned = { 
 	remove_core = DUA
@@ -841,7 +841,7 @@ country_event = {
 	
 	option = { 
 	capital = 300
-	name = "It's fair I guess ..."
+	name = "650315.A"
 	set_country_flag = Paris_congress
 	any_country = { 
 	any_owned = { 
@@ -889,7 +889,7 @@ country_event = {
 	
 	option = { 
 	capital = 300
-	name = "It's fair I guess ..."
+	name = "650316.A"
 	set_country_flag = Paris_congress
 	any_country = { 
 	any_owned = { 
@@ -938,7 +938,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It's democracy I guess ... "
+	name = "650320.A"
 	clr_country_flag = dual_integration
 	set_country_flag = Paris_congress
 	random_list = { 
@@ -956,7 +956,7 @@ country_event = { ######All cultures accepted
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We don't need no monarch to be united ! Long Live the United Republic !"
+	name = "650321.A"
 	any_owned = { remove_core = FRA remove_core = ENL }
 	any_country = { any_owned = { remove_core = FRA remove_core = ENL } }
 	any_pop = { militancy = -3 }
@@ -975,7 +975,7 @@ country_event = { ######Sister Republics
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We did not revolt to stay together !"
+	name = "650322.A"
 	any_pop = { militancy = -3 }
 	any_owned = { 
 	remove_core = DUA
@@ -1022,7 +1022,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It's democracy I guess ... "
+	name = "650323.A"
 	clr_country_flag = dual_integration
 	set_country_flag = Paris_congress
 	any_owned = { 
@@ -1070,7 +1070,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It's democracy I guess ... "
+	name = "650324.A"
 	clr_country_flag = dual_integration
 	set_country_flag = Paris_congress
 	capital = 300 
@@ -1106,13 +1106,13 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = {
-	name = "Our country is strong because of its variety !"
+	name = "650330.A"
 	prestige = 25 
 	ai_chance = { factor = 50 }
 	}
 	
 	option = {
-	name = "One country, one people !"
+	name = "650330.B"
 	set_country_flag = DUA_schooling
 	remove_accepted_culture = breton 
 	remove_accepted_culture = welsh 

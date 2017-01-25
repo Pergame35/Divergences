@@ -1,7 +1,7 @@
 country_event = {
 	id = 800004
-	title = "Extend Military Access"
-	desc = "We are under the influence of a Great Power, and as such we must permit them to station troops in our territory."
+	title = "800004.T"
+	desc = "800004.D"
 	picture = "boer_war"
 	
 	trigger = {
@@ -16,7 +16,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Let us hope they don't cause trouble"
+		name = "800004.A"
 		set_country_flag = military_access_granted
 		any_country = {
 			limit = {
@@ -36,22 +36,22 @@ country_event = {
 
 country_event = {
 	id = 800005
-	title = "Friendly Government Grants Access"
-	desc = "Our growing influence in a foreign government allows us to station troops in their territory."
+	title = "800005.T"
+	desc = "800005.D"
 	picture = "boer_war"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Excellent!"
+		name = "97086.A"
 		military_access = FROM
 	}
 }
 
 country_event = {
 	id = 800006
-	title = "Rescind Military Access"
-	desc = "With our country no longer dominated by our former protector, we needn't tolerate their troops in our territory."
+	title = "800006.T"
+	desc = "800006.D"
 	picture = "boer_war"
 	
 	trigger = {
@@ -73,7 +73,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Good riddance!"
+		name = "800006.A"
 		clr_country_flag = military_access_granted
 		any_country = {
 			limit = {
@@ -87,14 +87,14 @@ country_event = {
 
 country_event = {
 	id = 800007
-	title = "Military Access Rescinded"
-	desc = "Our waning influence in a foreign government means that we may no longer station troops within their borders."
+	title = "800007.T"
+	desc = "800007.D"
 	picture = "boer_war"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Blast!"
+		name = "190451.A"
 		end_military_access = FROM
 	}
 }
@@ -331,8 +331,8 @@ country_event = {
 #AI Event for Low-Relation Allies
 country_event = {
 	id = 19015
-	title = "Allies or Enemies?"
-	desc = "Relations with one of our allies have cooled. Perhaps we should reconsider our alliance?"
+	title = "19015.T"
+	desc = "19015.D"
 	
 	trigger = {
 		ai = yes
@@ -366,7 +366,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Definitely."
+		name = "19015.A"
 		random_country = {
 			limit = {
 				alliance_with = THIS
@@ -400,7 +400,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Not yet."
+		name = "19015.B"
 		ai_chance = {
 			factor = 50
 		}
@@ -409,8 +409,8 @@ country_event = {
 
 country_event = {
 	id = 19016
-	title = "The Great Game"
-	desc = "We are under the influence of a Great Power. Or we should be."
+	title = "19016.T"
+	desc = "19016.D"
 
 	trigger = {
 		ai = yes
@@ -432,7 +432,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We welcome our new allies."
+		name = "19016.A"
 		random_country = {
 			limit = {
 				is_greater_power = yes
@@ -453,8 +453,8 @@ country_event = {
 
 country_event = {
 	id = 19017
-	title = "Questioning Our Alliance"
-	desc = "We have begun to question our alliance to a great power that is clearly not our true protector."
+	title = "19017.T"
+	desc = "19017.D"
 	
 	trigger = {
 		war = no
@@ -472,7 +472,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Let us change this arrangement."
+		name = "19017.A"
 		random_country = {
 			limit = {
 				is_greater_power = yes
@@ -914,7 +914,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will approach our protector."
+		name = "19365.A"
 		set_country_flag = asked_for_restoration
 		sphere_owner = { country_event = 19366 }
 		any_pop = {
@@ -938,7 +938,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will leave the matter alone for now."
+		name = "19365.B"
 		random_country = {
 			limit = {
 				neighbour = THIS
@@ -987,7 +987,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Tell them we shall consider it."
+		name = "19366.A"
 		diplomatic_influence = { who = FROM value = 50 }
 		military_access = FROM
 		FROM = { country_event = 19367 }
@@ -1037,7 +1037,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We cannot afford such a conflict."
+		name = "19366.B"
 		prestige = -10
 		diplomatic_influence = { who = FROM value = -25 }
 		FROM = { country_event = 19368 }
@@ -1068,7 +1068,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Then there is hope."
+		name = "19367.A"
 		badboy = 3
 		relation = { who = FROM value = 50 }
 	}
@@ -1083,7 +1083,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "$FROMCOUNTRY_ADJ$ cowards!"
+		name = "19368.A"
 		prestige = -5
 		relation = { who = FROM value = -25 }
 		random_country = {
@@ -1121,7 +1121,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "A sad day for $COUNTRY$."
+		name = "19370.A"
 		FROM = { create_vassal = THIS }
 		random_owned = {
 			limit = {
