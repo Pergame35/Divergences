@@ -105,13 +105,13 @@ country_event = {
 
 country_event = { 
 	id = 46433 
-	title = "New Colombian Congress"
-	desc = "The Integration of the people of Colombia is merely beginning"
+	title = "46433.T"
+	desc = "46433.D"
 	
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We'll see then"
+	name = "46433.A"
 	random_list = {
 		50 = { country_event = 46430 }
 		25 = { country_event = 46431 }
@@ -122,8 +122,8 @@ country_event = {
 	
 country_event = { 
 	id = 46434 
-	title = "Unification of Colombia"
-	desc = "Nationalism of the various provinces is disappearing"
+	title = "46434.T"
+	desc = "46434.D"
 	
 	trigger = { 
 	tag = CLM 
@@ -150,7 +150,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Excellent!"
+	name = "97086.A"
 	any_owned = { 
 	remove_core = NIC 
 	remove_core = PNM 

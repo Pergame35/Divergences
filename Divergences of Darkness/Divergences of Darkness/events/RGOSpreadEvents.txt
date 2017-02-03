@@ -1024,8 +1024,8 @@ province_event = {
 #Shaft mines
 province_event = {
 	id = 299051
-	title = "Shaft Mining in $STATENAME$"
-	desc = "Deep shaft mining has been adopted throughout $STATENAME$."
+	title = "299051.T"
+	desc = "299051.D"
 	
 	trigger = {
 		NOT = { has_province_modifier = shaft_mine }
@@ -1176,7 +1176,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Excellent"
+		name = "333033.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -1195,8 +1195,8 @@ province_event = {
 
 province_event = {
 	id = 299052
-	title = "Pit Mining in $STATENAME$"
-	desc = "Pit mining has been adopted throughout $STATENAME$."
+	title = "299052.T"
+	desc = "299052.D"
 	
 	trigger = {
 		has_province_modifier = shaft_mine
@@ -1348,7 +1348,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Excellent"
+		name = "44204.A"
 		state_scope = {
 			any_owned = {
 				limit = { has_province_modifier = shaft_mine }
@@ -1370,8 +1370,8 @@ province_event = {
 
 province_event = {
 	id = 299053
-	title = "Strip Mining in $STATENAME$"
-	desc = "Strip mining has been adopted throughout $STATENAME$."
+	title = "299053.T"
+	desc = "299053.D"
 	
 	trigger = {
 		has_province_modifier = pit_mine
@@ -1519,7 +1519,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Excellent"
+		name = "265407.A"
 		state_scope = {
 			any_owned = {
 				limit = { has_province_modifier = shaft_mine }
@@ -1550,8 +1550,8 @@ province_event = {
 
 province_event = {
 	id = 29907
-	title = "Crop Rotation in $STATENAME$"
-	desc = "Crop rotation has been adopted throughout $STATENAME$."
+	title = "29907.T"
+	desc = "29907.D"
 	
 	trigger = {
 		NOT = { has_province_modifier = crop_rotation }
@@ -1695,7 +1695,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Wonderful"
+		name = "29909.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -1714,8 +1714,8 @@ province_event = {
 
 province_event = {
 	id = 29906
-	title = "Phosphates in $STATENAME$"
-	desc = "Phosphate fertilizers have been adopted throughout $STATENAME$."
+	title = "29906.T"
+	desc = "29906.D"
 	
 	trigger = {
 		has_province_modifier = crop_rotation
@@ -1867,7 +1867,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Excellent"
+		name = "299051.A"
 		state_scope = {
 			any_owned = {
 				limit = { has_province_modifier = crop_rotation }
@@ -1889,8 +1889,8 @@ province_event = {
 
 province_event = {
 	id = 29905
-	title = "Nitrates in $STATENAME$"
-	desc = "Nitrate fertilizers have been adopted throughout $STATENAME$."
+	title = "29905.T"
+	desc = "29905.D"
 	
 	trigger = {
 		has_province_modifier = phosphates

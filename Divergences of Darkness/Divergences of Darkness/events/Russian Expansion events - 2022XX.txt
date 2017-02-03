@@ -10,7 +10,7 @@ country_event = {
 
     #Baltic focus - cores on Livonia and Finland
     option = {
-        name = "Focus on gaining access to the Baltic Sea."
+        name = "202201.A"
         set_country_flag = baltic_focus
         #Estonia, Latvia
         RUS_354 = { add_core = RUS }
@@ -63,7 +63,7 @@ country_event = {
     }
     #Steppe/Caucasus focus
     option = {
-        name = "Subjugate the steppes and expand towards the Black Sea."
+        name = "202201.B"
         set_country_flag = southern_focus
         RUS_964 = { add_core = RUS } #Crimea
         RUS_965 = { add_core = RUS } #Cherson
@@ -80,7 +80,7 @@ country_event = {
 
     #Pan-slavic focus
     option = {
-        name = "Why bother with foreigners? We must embrace Pan-slavism!"
+        name = "202201.C"
         set_country_flag = panslavic_focus
         RUS_947 = { add_core = RUS } #Orsha
         RUS_977 = { add_core = RUS } #Kursk

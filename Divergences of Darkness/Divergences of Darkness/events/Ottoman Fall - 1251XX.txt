@@ -7,7 +7,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Let them take it ..."
+	name = "125104.A"
 	any_owned = { 
 		limit = { region = TUR_803 }
 		secede_province = FROM
@@ -15,7 +15,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Who do they think they are ?!"
+		name = "125104.B"
 		set_country_flag = CROwar 
 		prestige = 1 
 		ai_chance = {
@@ -39,7 +39,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Give them what they want...."
+	name = "125106.A"
 	any_owned = { 
 		limit = { region = TUR_803 }
 		secede_province = CRO
@@ -58,7 +58,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Give them what they want...."
+	name = "125107.A"
 	any_owned = { 
 		limit = { region = SER_794 }
 		secede_province = HUN
@@ -77,7 +77,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Give them what they want...."
+	name = "125108.A"
 	any_owned = { 
 		limit = { region = TUR_884 }
 		secede_province = AZB 
@@ -96,7 +96,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Give them what they want...."
+	name = "125109.A"
 	any_owned = { 
 		limit = { is_core = SER }
 		secede_province = CRO 
@@ -591,7 +591,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "It's just swamps after all"
+	name = "125118.A"
 	prestige = -10
 	any_owned = { 
 		limit = { region = TUR_674 }
@@ -601,7 +601,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Who do they think they are ?!"
+		name = "125118.B"
 		set_country_flag = MOLwar 
 		casus_belli = {
 				target = FROM
@@ -1248,8 +1248,8 @@ country_event = {
 country_event = {
 	
 	id = 125134
-	title = "Peace with Egypt"
-	desc = "With Syria independent we can no longer fight the Zahiris"
+	title = "125134.T"
+	desc = "125134.D"
 	picture = "Ottoman"
 	
 	trigger = {
@@ -1537,7 +1537,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Long Live the Sultan !"
+	name = "125136.A"
 	prestige = 10 
 	any_pop = { militancy = -5 }
 	set_country_flag = end_janissary
@@ -1586,7 +1586,7 @@ country_event = {
 	}
 	
 	option = {
-	name = "I knew it !"
+	name = "125150.A"
 	prestige = 20 
 	military_reform = yes_foreign_weapons 
 	military_reform = yes_military_constructions 
@@ -1616,7 +1616,7 @@ country_event = {
 	}
 	
 	option = {
-	name = "I knew it !"
+	name = "125151.A"
 	prestige = 50 
 	military_reform = yes_foreign_weapons 
 	economic_reform = yes_land_reform
@@ -1652,7 +1652,7 @@ country_event = {
 	mean_time_to_happen = { months = 5 }
 	
 	option = { 
-	name = "Propose the union to the Wallachians"
+	name = "125156.A"
 	WAL = { country_event = 125157 }
 	}
 }
@@ -1666,7 +1666,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Sounds like a good idea"
+	name = "125157.A"
 	FROM = { country_event = 125158 }
 	ai_chance = { 
 	factor = 75 
@@ -1686,7 +1686,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Elect somebody else, unification is nothing but a dream ..."
+	name = "125157.B"
 	FROM = { country_event = 125159 }
 	ai_chance = { 
 	factor = 25 
@@ -1703,7 +1703,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "All hail the domnitor !"
+	name = "125158.A"
 	THIS = { inherit = FROM }
 	prestige = 25 
 	}
@@ -1718,7 +1718,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = {
-	name = "The bastards..."
+	name = "125159.A"
 	}
 }
 	
@@ -1738,7 +1738,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Give them Cyrenaica, the Ottomans are our primary opponent ..."
+	name = "125160.A"
 	any_owned = { 
 		limit = { region = EGY_1754 }
 		secede_province = TUN

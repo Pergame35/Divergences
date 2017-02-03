@@ -17,7 +17,7 @@ country_event = {
 	picture = "Danishgovernment"
 
 	option = {
-		name = "Long live the true $COUNTRY$!"
+		name = "800050.A"
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
@@ -147,7 +147,7 @@ country_event = {
 	picture = "Fascist"
 
 	option = {
-		name = "The $COUNTRY_ADJ$ destiny awaits!"
+		name = "800051.A"
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = paramilitaries_outlawed
@@ -400,7 +400,7 @@ country_event = {
 	picture = "Celebration"
 
 	option = {
-		name = "The proletariat has prevailed!"
+		name = "800052.A"
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
@@ -595,7 +595,7 @@ country_event = {
 	picture = "Revolution"
 
 	option = {
-		name = "Long live the bourgeois!"
+		name = "800053.A"
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
@@ -799,7 +799,7 @@ country_event = {
 	picture = "Prosper"
 
 	option = {
-		name = "Freedom has prevailed!"
+		name = "800054.A"
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = liberal_revolution_fired
@@ -1093,7 +1093,7 @@ country_event = {
 	picture = "unite"
 	
 	option = {
-		name = "A new future for $COUNTRY$!"
+		name = "810055.A"
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
@@ -1162,7 +1162,7 @@ country_event = {
 	picture = "Prosper"
 
 	option = {
-		name = "The working class is triumphant!"
+		name = "810056.A"
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
@@ -1393,17 +1393,17 @@ country_event = {
 	picture = "unite"
 	
 	option = {
-		name = "A new future for $COUNTRY$!"
+		name = "810057.A"
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
 		clr_country_flag = post_colonial_country
-		random_owned = {
-			limit = {
-				owner = { tag = BMK }
-			}
-			owner = { primary_culture = songhai }
-		}
+		#random_owned = {
+		#	limit = {
+		#		owner = { tag = BMK }
+		#	}
+		#	owner = { primary_culture = songhai }
+		#}
 		random_owned = {
 			limit = {
 				owner = { tag = BUG }
@@ -1414,7 +1414,7 @@ country_event = {
 			limit = {
 				owner = {
 					OR = {
-						tag = CGO
+						#tag = CGO
 						tag = CNG
 						tag = ANG
 					}
@@ -1422,70 +1422,70 @@ country_event = {
 			}
 			owner = { primary_culture = bakongo }
 		}
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						tag = CHD
-						tag = CAR
-					}
-				}
-			}
-			owner = { primary_culture = sara }
-		}
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						tag = CMR
-						tag = GAB
-					}
-				}
-			}
-			owner = { primary_culture = fang }
-		}
+		#random_owned = {
+		#	limit = {
+		#		owner = {
+		#			OR = {
+		#				tag = CHD
+		#				tag = CAR
+		#			}
+		#		}
+		#	}
+		#	owner = { primary_culture = sara }
+		#}
+		#random_owned = {
+		#	limit = {
+		#		owner = {
+		#			OR = {
+		#				tag = CMR
+		#				tag = GAB
+		#			}
+		#		}
+		#	}
+		#	owner = { primary_culture = fang }
+		#}
 		random_owned = {
 			limit = {
 				owner = { tag = INO }
 			}
 			owner = { primary_culture = javan }
 		}
-		random_owned = {
-			limit = {
-				owner = { tag = IVC }
-			}
-			owner = { primary_culture = akan }
-		}
-		random_owned = {
-			limit = {
-				owner = { tag = KNY }
-			}
-			owner = { primary_culture = swahili }
-		}
+		#random_owned = {
+		#	limit = {
+		#		owner = { tag = IVC }
+		#	}
+		#	owner = { primary_culture = akan }
+		#}
+		#random_owned = {
+		#	limit = {
+		#		owner = { tag = KNY }
+		#	}
+		#	owner = { primary_culture = swahili }
+		#}
 		random_owned = {
 			limit = {
 				owner = { tag = LBY }
 			}
 			owner = { primary_culture = maghrebi }
 		}
-		random_owned = {
-			limit = {
-				owner = { tag = MOZ }
-			}
-			owner = { primary_culture = nguni }
-		}
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						tag = NGR
-						tag = NIG
-						tag = GNE
-					}
-				}
-			}
-			owner = { primary_culture = fulbe }
-		}
+		#random_owned = {
+		#	limit = {
+		#		owner = { tag = MOZ }
+		#	}
+		#	owner = { primary_culture = nguni }
+		#}
+		#random_owned = {
+		#	limit = {
+		#		owner = {
+		#			OR = {
+		#				tag = NGR
+		#				tag = NIG
+		#				tag = GNE
+		#			}
+		#		}
+		#	}
+		#	owner = { primary_culture = fulbe }
+		#}
 		random_owned = {
 			limit = {
 				owner = { tag = NZL }
@@ -1496,17 +1496,17 @@ country_event = {
 				primary_culture = maori
 				add_accepted_culture = british
 				relation = { who = ENG value = -200 }
-				relation = { who = AST value = -200 }
+				#relation = { who = AST value = -200 }
 				add_casus_belli = {
 					target = ENG
 					type = free_peoples
 					months = 250
 				}
-				add_casus_belli = {
-					target = AST
-					type = free_peoples
-					months = 250
-				}
+				#add_casus_belli = {
+				#	target = AST
+				#	type = free_peoples
+				#	months = 250
+				#}
 			}
 			ENG_2513 = {
 				remove_core = NZL
@@ -1530,42 +1530,42 @@ country_event = {
 				owner = {
 					OR = {
 						tag = SLE
-						tag = GMB
+						#tag = GMB
 					}
 				}
 			}
 			owner = { primary_culture = mande }
 		}
-		random_owned = {
-			limit = {
-				owner = { tag = SNG }
-			}
-			owner = { primary_culture = wolof }
-		}
-		random_owned = {
-			limit = {
-				owner = { tag = TNZ }
-			}
-			owner = { primary_culture = unyamwezi }
-		}
-		random_owned = {
-			limit = {
-				owner = { tag = TOG }
-			}
-			owner = { primary_culture = ewe }
-		}
+		#random_owned = {
+		#	limit = {
+		#		owner = { tag = SNG }
+		#	}
+		#	owner = { primary_culture = wolof }
+		#}
+		#random_owned = {
+		#	limit = {
+		#		owner = { tag = TNZ }
+		#	}
+		#	owner = { primary_culture = unyamwezi }
+		#}
+		#random_owned = {
+		#	limit = {
+		#		owner = { tag = TOG }
+		#	}
+		#	owner = { primary_culture = ewe }
+		#}
 		random_owned = {
 			limit = {
 				owner = { tag = TSW }
 			}
 			owner = { primary_culture = tswana }
 		}
-		random_owned = {
-			limit = {
-				owner = { tag = ZAM }
-			}
-			owner = { primary_culture = lunda }
-		}
+		#random_owned = {
+		#	limit = {
+		#		owner = { tag = ZAM }
+		#	}
+		#	owner = { primary_culture = lunda }
+		#}
 		any_pop = {
 			militancy = -6
 		}
@@ -1646,7 +1646,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We have no choice but to comply."
+		name = "800147.A"
 		prestige_factor = -0.25
 		set_global_flag = british_dismantled
 		any_pop = {
@@ -1688,7 +1688,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We never liked $FROMCOUNTRY$ anyhow."
+		name = "800148.A"
 		any_pop = {
 			militancy = -4
 		}
@@ -1738,7 +1738,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We have no choice but to comply."
+		name = "800149.A"
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		set_country_flag = angry_rioters_victorious
@@ -1900,7 +1900,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We welcome their return."
+		name = "97700.A"
 		random_country = {
 			limit = {
 				tag = FROM
@@ -1968,7 +1968,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "It is too risky."
+		name = "97700.B"
 		any_pop = {
 			limit = { is_primary_culture = yes }
 			militancy = 3
@@ -2032,7 +2032,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We welcome their return."
+		name = "800151.A"
 		random_country = {
 			limit = {
 				neighbour = THIS
@@ -2143,7 +2143,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "It is too risky."
+		name = "800151.B"
 		any_pop = {
 			limit = { is_primary_culture = yes }
 			militancy = 3
@@ -2237,7 +2237,7 @@ country_event = {
 	}
 
 	option = {
-		name = "That is a relief."
+		name = "800152.A"
 		any_owned = {
 			limit = {
 				controlled_by = THIS
@@ -2259,7 +2259,7 @@ country_event = {
 	picture = "Unite"
 
 	option = {
-		name = "Let them go."
+		name = "800055.A"
 		badboy = -1
 		any_pop = {
 			scaled_militancy = {
@@ -2340,7 +2340,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We will salvage what influence we can."
+		name = "800055.B"
 		clr_country_flag = former_overlord		
 		relation = {
 			who = FROM
@@ -2396,7 +2396,7 @@ country_event = {
 			
 	}
 	option = {
-		name = "We will restore order in our vassal!" 
+		name = "800055.C" 
 		clr_country_flag = former_overlord
 		badboy = 2
 		any_pop = {
@@ -2527,7 +2527,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "They're not worth it."
+		name = "800056.A"
 		clr_country_flag = former_sphere_leader
 		prestige = -5
 		any_pop = {
@@ -2619,7 +2619,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "We will press our claim."
+		name = "800056.B"
 		clr_country_flag = former_sphere_leader
 		badboy = 1
 		any_pop = {
@@ -2781,7 +2781,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We have little choice."
+		name = "10228.A"
 		prestige = -25
 		random_country = {
 			limit = { 
@@ -2807,8 +2807,8 @@ country_event = {
 #Notifying a sphere-owner if rebels are going to win
 country_event = {
 	id = 97565
-	title = "Call For Help!"
-	desc = "The rebels are gaining too much ground! We must call for help from our protectors!"
+	title = "97565.T"
+	desc = "97565.D"
 	
 	trigger = {
 		ai = yes
@@ -2837,7 +2837,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Oh no!"
+		name = "17515.A"
 		set_country_flag = called_for_help
 		any_country = {
 			limit = {
@@ -2858,7 +2858,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We will do what we can."
+		name = "97566.A"
 		create_alliance = FROM
 		military_access = FROM
 		relation = { who = FROM value = 25 }
@@ -2868,7 +2868,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "They must stand on their own."
+		name = "97566.B"
 		relation = { who = FROM value = -50 }
 		ai_chance = {
 			factor = 0
@@ -2878,8 +2878,8 @@ country_event = {
 
 country_event = {
 	id = 97567
-	title = "Danger Passed"
-	desc = "The danger of imminent overthrow has passed."
+	title = "97567.T"
+	desc = "97567.D"
 	
 	trigger = {
 		ai = yes
@@ -2898,7 +2898,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Whew!"
+		name = "800023.A"
 		clr_country_flag = called_for_help
 	}
 }
@@ -2963,7 +2963,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "They are $COUNTRY_ADJ$ citizens, not 'foreigners'."
+		name = "97570.A"
 		add_province_modifier = {
 			name = peasant_revolt
 			duration = 730

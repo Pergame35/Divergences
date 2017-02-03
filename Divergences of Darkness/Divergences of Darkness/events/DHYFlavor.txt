@@ -9,7 +9,7 @@ country_event = {
 	picture = "maghreb_war"
 
 	option = {
-		name = "We cannot accept this"
+		name = "135100.A"
 		prestige = 2
 		money = -10000
 		war = {
@@ -45,7 +45,7 @@ country_event = {
 	picture = "elephant_flag"
 
 	option = {
-		name = "Dahomey, a tributary no more"
+		name = "135101.A"
 		prestige = 2
 		set_country_flag = stop_firing_damnit
 	}
@@ -73,7 +73,7 @@ country_event = {
 	picture = "dying_elephant"
 
 	option = {
-		name = "We have failed our people"
+		name = "135102.A"
 		prestige = -5
 		money = -10000
 		OYO = { money = 10000 }
@@ -111,7 +111,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Summon the daughters of every family for military training!"
+		name = "135103.A"
 		prestige = 3
 		any_pop = {
 			militancy = 1
@@ -139,7 +139,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Keep them ceremonial and let them help the economy when we're at peace"
+		name = "135103.B"
 		prestige = 2
 		money = 30000
 		any_pop = {
@@ -193,7 +193,7 @@ country_event = {
 	picture = "african_king"
 
 	option = {
-		name = "We must implement these ideas immediately"
+		name = "135104.A"
 		prestige = 5
 		any_pop = {
 			militancy = 1
@@ -217,7 +217,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We can't break this age old tradition"
+		name = "135104.B"
 		prestige = 2
 		any_pop = { consciousness = -3 }
 		aristocrats = { militancy = -3 }
@@ -277,7 +277,7 @@ country_event = {
 	picture = "slavery"
 
 	option = {
-		name = "I suppose it's a bit outdated"
+		name = "135105.A"
 		prestige = 2
 		any_pop = {
 			militancy = 2
@@ -306,7 +306,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Loosening the restrictions should help"
+		name = "135105.B"
 		slaves = {
 			militancy = 8
 			consciousness = 8
@@ -375,7 +375,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Embrace our own great and beautiful culture"
+		name = "135106.A"
 		prestige_factor = 0.6
 		any_pop = {
 			militancy = -1
@@ -399,7 +399,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Embrace some of the western beliefs"
+		name = "135106.B"
 		prestige_factor = 0.1
 		years_of_research = 2.5
 		set_country_flag = embraced_western_culture
@@ -436,7 +436,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Integrate some of the islamic culture into our society"
+		name = "135106.C"
 		prestige_factor = 0.4
 		years_of_research = 1
 		any_pop = {
@@ -516,7 +516,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We must educate our people, it is a human right!"
+		name = "135107.A"
 		prestige = 2
 		set_country_flag = favoured_schools
 		any_pop = {
@@ -538,7 +538,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We should focus on further educating our already intelligent"
+		name = "135107.B"
 		prestige = 2
 		set_country_flag = favoured_universities
 		years_of_research = 1
@@ -707,7 +707,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This is intolerable!"
+		name = "135108.A"
 		prestige = -6
 		set_country_flag = raided
 		1914 = {
@@ -807,7 +807,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Our capital will be the envy of Africa!"
+		name = "135109.A"
 		prestige = 15
 		money = -300000
 		any_pop = {
@@ -870,7 +870,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We should embrace and help our minorities."
+		name = "135109.B"
 		prestige = 2
 		any_pop = {
 			limit = { is_accepted_culture = no }
@@ -918,7 +918,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Embrace them as our own"
+		name = "135110.A"
 		prestige = 2
 		any_pop = {
 			limit = { is_accepted_culture = yes }
@@ -960,7 +960,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Embrace them as our own"
+		name = "135111.A"
 		prestige = 2
 		any_pop = {
 			limit = { is_accepted_culture = yes }
@@ -1002,7 +1002,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Embrace them as our own"
+		name = "135112.A"
 		prestige = 2
 		any_pop = {
 			limit = { is_accepted_culture = yes }
@@ -1049,7 +1049,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Embrace them as our own"
+		name = "135113.A"
 		prestige = 2
 		any_pop = {
 			limit = { is_accepted_culture = yes }
@@ -1091,7 +1091,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Embrace them as our own"
+		name = "135114.A"
 		prestige = 2
 		any_pop = {
 			limit = { is_accepted_culture = yes }

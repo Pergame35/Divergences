@@ -1,7 +1,7 @@
 country_event = {
 	id = 124200
-	title = "Beginning of the Council of Italy." #Beginning of the Council of Italy 
-	desc = "Italian representatives have gathered in Florence to discuss unification."
+	title = "124200.T" #Beginning of the Council of Italy 
+	desc = "124200.D"
 	picture = "greatpowers"
 
 	trigger = {
@@ -15,7 +15,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We will await the will of the Italian people"
+		name = "124200.A"
 		prestige = 5
 		set_country_flag = hosting_council_ITA
 		RAP = {
@@ -58,7 +58,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Push for unification"
+		name = "124201.A"
 		set_country_flag = accept_call_to_unite
 		relation = {
 			who = TUS
@@ -153,7 +153,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Resist unification"
+		name = "124201.B"
 		set_country_flag = refuse_call_to_unite
 		relation = {
 			who = TUS
@@ -255,7 +255,7 @@ country_event = {
 		}
 	
 	option = {
-		name = "The fools"
+		name = "124202.A"
 		prestige = -20
 		set_country_flag = failed_unification 
 		clr_country_flag = hosting_council_ITA
@@ -300,7 +300,7 @@ country_event = {
 		}
 	
 	option = {
-		name = "Better than nothing"
+		name = "97445.A"
 		prestige = 5
 		set_country_flag = failed_unification 
 		clr_global_flag = council_of_italy
@@ -351,7 +351,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Avanti Italia!"
+		name = "124204.A"
 		set_country_flag = quick_unification 
 		prestige = 20
 		change_tag = ITA
@@ -379,8 +379,8 @@ country_event = {
 
 country_event = { 
 	id = 124205 # Emilia controlled by Tuscany
-	title = "Supports in Emilia"
-	desc = "With the Etrurian Republic in control of the former Emilian duchies we appear stronger in the current negotiations!"
+	title = "124205.T"
+	desc = "124205.D"
 	picture = "risorgimento"
 	
 	trigger = { 
@@ -400,7 +400,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Our cause is strenghtened!"
+	name = "124205.A"
 	prestige = 1
 	RAP = {
 			change_variable = {
@@ -413,8 +413,8 @@ country_event = {
 
 country_event = { 
 	id = 124206 # Romagna controlled by Tuscany
-	title = "Supports in Romagna"
-	desc = "With the Etrurian Republic in control of the former duchy of Ferrara we appear stronger in the current negotiations!"
+	title = "124206.T"
+	desc = "124206.D"
 	picture = "risorgimento"
 	
 	trigger = { 
@@ -432,7 +432,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Our cause is strenghtened!"
+	name = "124206.A"
 	prestige = 1
 	RAP = {
 			change_variable = {
@@ -452,7 +452,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Join Italy"
+		name = "124207.A"
 		FROM = {
 			inherit = THIS
 			prestige = 2
@@ -472,7 +472,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Refuse offer"
+		name = "124207.B"
 		relation = {
 			who = FROM
 			value = -50
@@ -514,7 +514,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Friendship"
+		name = "124208.A"
 		relation = {
 			who = FROM
 			value = 100
@@ -546,7 +546,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Enmity"
+		name = "124208.B"
 		relation = {
 			who = FROM
 			value = -100
@@ -596,7 +596,7 @@ country_event = {
 	major = yes 
 	
 	option = {
-		name = "They must be stopped"
+		name = "124209.A"
 		relation = {
 			who = ITA
 			value = -400
@@ -624,7 +624,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Italy is too dangerous..."
+	name = "124209.B"
 	set_country_flag = conquest_ITA
 	ai_chance = { 
 	factor = 20 
@@ -638,8 +638,8 @@ country_event = {
 
 country_event = {
 	id = 124210 # Cleanup
-	title = "Council of Italy Cleanup"
-	desc = "Italy has been formed in the middle of the Council of Italy event series."
+	title = "124210.T"
+	desc = "124210.D"
 	picture = "?"
 	
 	trigger = {
@@ -654,7 +654,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Clear Council of Italy flags"
+		name = "124210.A"
 		clr_global_flag = council_of_italy
 		any_country = {
 			clr_country_flag = accept_call_to_unite
@@ -682,7 +682,7 @@ country_event = { #Monarchists dominate the debates
 	days = 20 }
 	
 	option = { 
-	name = "We will do without them..."
+	name = "124211.A"
 	set_country_flag = debate
 	RAP = {
 			change_variable = {
@@ -712,7 +712,7 @@ country_event = { #Republicans dominate the debates
 	days = 20 }
 	
 	option = { 
-	name = "Magnifico!"
+	name = "124212.A"
 	set_country_flag = debate
 	RAP = {
 			change_variable = {
@@ -742,7 +742,7 @@ country_event = { #Papal Sanction to Unification
 	days = 30 }
 	
 	option = { 
-	name = "Magnifico!"
+	name = "124213.A"
 	set_country_flag = pope
 	RAP = {
 			change_variable = {
@@ -772,7 +772,7 @@ country_event = { #Papal Hostility to Unification
 	days = 30 }
 	
 	option = { 
-	name = "Curse him!"
+	name = "124214.A"
 	set_country_flag = pope
 	RAP = {
 			change_variable = {
@@ -803,7 +803,7 @@ country_event = {
 	mean_time_to_happen = { days = 30 }
 	
 	option = { 
-	name = "We are the only chance Italy has!"
+	name = "124217.A"
 	RAP = {
 			change_variable = {
 				which = unification_ITA
@@ -831,7 +831,7 @@ country_event = {
 	mean_time_to_happen = { days = 30 }
 	
 	option = { 
-	name = "It isn't that important, no ?"
+	name = "124215.A"
 	RAP = {
 			change_variable = {
 				which = unification_ITA
@@ -860,7 +860,7 @@ country_event = {
 	mean_time_to_happen = { days = 30 }
 	
 	option = { 
-	name = "Damn the Anglois!"
+	name = "124216.A"
 	RAP = {
 			change_variable = {
 				which = unification_ITA
@@ -872,13 +872,13 @@ country_event = {
 
 country_event = { 
 	id = 124218
-	title = "Aragonese Attack"
-	desc = "The King of Aragon has attacked us wanting to destroy the Italian Republic"
+	title = "124218.T"
+	desc = "124218.D"
 	
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We will win in the end"
+	name = "124218.A"
 	}
 }
 

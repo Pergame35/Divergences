@@ -1080,7 +1080,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Let the bill pass."
+		name = "18210.A"
 		set_country_flag = reactionary_UH_1
 		upper_house = {
 			ideology = conservative
@@ -1204,7 +1204,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "That will cause too many problems."
+		name = "18210.B"
 		set_country_flag = reactionary_UH_1
 		upper_house = {
 			ideology = reactionary
@@ -1326,7 +1326,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Don't bring this up again."
+		name = "18210.C"
 		set_country_flag = cutoff_reactionary_UH_1
 		upper_house = {
 			ideology = reactionary
@@ -1536,7 +1536,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We must have unity in the government."
+		name = "18215.A"
 		set_country_flag = reactionary_UH_2
 		upper_house = {
 			ideology = conservative
@@ -1614,7 +1614,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "No. Let the government rule as it desires."
+		name = "18215.B"
 		set_country_flag = reactionary_UH_2
 		set_country_flag = no_party_appointed_rollback
 		upper_house = {
@@ -1810,7 +1810,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Let the bill pass."
+		name = "18220.A"
 		set_country_flag = reactionary_UH_3
 		upper_house = {
 			ideology = conservative
@@ -1861,7 +1861,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "That will cause too many problems."
+		name = "18220.B"
 		set_country_flag = reactionary_UH_3
 		upper_house = {
 			ideology = reactionary
@@ -1932,7 +1932,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Don't bring this up again."
+		name = "18220.C"
 		set_country_flag = cutoff_reactionary_UH_3
 		upper_house = {
 			ideology = reactionary
@@ -2124,7 +2124,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "They are right. We cannot abide this sort of rabble-rousing."
+		name = "18225.A"
 		set_country_flag = reactionary_UH_4
 		upper_house = {
 			ideology = conservative
@@ -2160,7 +2160,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "No, the rules shall stay as they are."
+		name = "18225.B"
 		set_country_flag = reactionary_UH_4
 		upper_house = {
 			ideology = reactionary
@@ -2364,7 +2364,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Let the bill pass."
+		name = "18230.A"
 		set_country_flag = reactionary_UH_5
 		upper_house = {
 			ideology = conservative
@@ -2431,7 +2431,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "That will cause too many problems."
+		name = "18230.B"
 		set_country_flag = reactionary_UH_5
 		upper_house = {
 			ideology = reactionary
@@ -2553,7 +2553,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Don't bring this up again."
+		name = "18230.C"
 		set_country_flag = cutoff_reactionary_UH_5
 		upper_house = {
 			ideology = reactionary

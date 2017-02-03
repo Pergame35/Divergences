@@ -527,7 +527,7 @@ unification_casus_belli = {
 		is_vassal = no
 		NOT = { is_our_vassal = THIS }
 		THIS = {
-			NOT = { tag = HRE }
+			NOT = { tag = HLR }
 			culture_has_union_tag = yes
 			state_n_government = 1
 			is_greater_power = yes

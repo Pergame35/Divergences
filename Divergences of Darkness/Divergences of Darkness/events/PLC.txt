@@ -1,27 +1,27 @@
 country_event = {
 	id = 22240
-	title = "An independent Lithuanian Duchy?"
-	desc = "Our position and power brings us the possibility to claim to be the liberator of the Lithuanians, however the land we can claim is not yet decided."
+	title = "22240.T"
+	desc = "22240.D"
 	picture = "greatpowers"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "Claim the current Duchy's borders!"
+		name = "22240.A"
 		prestige = 20
 		badboy = 12
 		set_global_flag = big_lit
 	}
 
 	option = {
-		name = "Leave the Ruthenian land to the Commonwealth, we don't need them"
+		name = "22240.B"
 		prestige = 15
 		badboy = 8
 		set_global_flag = mid_lit
 	}
 
 	option = {
-		name = "Claim pure Lithuanian speaking areas only!"
+		name = "22240.C"
 		prestige = 10
 		badboy = 5
 		set_global_flag = lite_lit
@@ -30,14 +30,14 @@ country_event = {
 
 country_event = {
 	id = 22230
-	title = "Polish-Romanian alliance?"
-	desc = "The Commonwealth offered us the Transnistria province in exchange of an alliance and economic union!"
+	title = "22230.T"
+	desc = "22230.D"
 	picture = "greatpowers"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "Of course we accept!"
+		name = "22230.A"
 		prestige = 5
 		military_access = FROM
 		968 = { secede_province = THIS }
@@ -69,7 +69,7 @@ country_event = {
 	}
 
 	option = {
-		name = "I don't trust them, they will undermine our independence!"
+		name = "22230.B"
 		relation = {
 			who = FROM
 			value = -100
@@ -86,36 +86,36 @@ country_event = {
 
 country_event = {
 	id = 22231
-	title = "Offer accepted!"
-	desc = "The Romanians accepted our offer!"
+	title = "22231.T"
+	desc = "22231.D"
 	picture = "greatpowers"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "Yes!"
+		name = "22231.A"
 		prestige = 20
 	}
 }
 
 country_event = {
 	id = 22232
-	title = "Offer refused!"
-	desc = "The paranoid Romanians refused our offer!"
+	title = "22232.T"
+	desc = "22232.D"
 	picture = "greatpowers"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "Well, they will regret this"
+		name = "22232.A"
 		prestige = -5
 	}
 }
 
 country_event = {
 	id = 22233
-	title = "Crimean land moved under Kiev's control!"
-	desc = "To defend better these lands from any Turkish, Tatar or Russian invasion we have to give these new territories to the Hetmanate!"
+	title = "22233.T"
+	desc = "22233.D"
 	picture = "greatpowers"
 
 	trigger = {
@@ -130,7 +130,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Seems legit"
+		name = "22233.A"
 		prestige = 5
 		RUS_965 = { secede_province = UKR }
 	}
@@ -138,12 +138,13 @@ country_event = {
 
 country_event = { 
 	id = 22234
-	title = "Russian demands"
-	desc = "Russia has been influencing the Cossack host and now demands the lands east of the Dniepr!"
+	title = "22234.T"
+	desc = "22234.D"
 	
 	is_triggered_only = yes 
 	
 	option = { 
+	name = "22234.A"
 	any_owned = { 
 	limit = { is_core = RUS }
 	secede_province = FROM 
@@ -156,12 +157,13 @@ country_event = {
 
 country_event = { 
 	id = 22235
-	title = "Russian moves in Ukraine!"
-	desc = "Russia has used their influence amongst the Cossacks to take the Eastern bank of the Dniepr!"
+	title = "22235.T"
+	desc = "22235.D"
 	
 	is_triggered_only = yes 
 	
 	option = { 
+	name = "22235.A"
 	relation = { who = RUS value = -150 }
 	casus_belli = {
 			target = RUS
@@ -172,7 +174,7 @@ country_event = {
 }
 
 country_event = { 
-	id = 22240
+	id = 22250
 	title = "POL10.T"
 	desc = "POL10.D"
 	
@@ -215,14 +217,16 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Why does this happen to Poland ..."
+	name = "22250.A"
 	release_vassal = UKR 
 	release_vassal = BLR 
 	release_vassal = LIT 
 	change_tag_no_core_switch = POL 
 	prestige_factor = -0.5
-	militancy = 3 
-	consciousness = 5 
+	any_pop = {
+		militancy = 3 
+		consciousness = 5
+	}
 	UKR = { country_event = 22236 }
 	}
 
@@ -236,7 +240,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We'll negotiate with the Byelorussians."
+	name = "22236.A"
 	BLR = { country_event = 22237 }
 	}
 }
@@ -249,7 +253,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We need to unify with the Cossacks!"
+	name = "22237.A"
 	FROM = { country_event = 22238 }
 	ai_chance = { 
 	factor = 90  
@@ -257,7 +261,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We are better on our own!"
+	name = "22237.B"
 	ai_chance = { 
 	factor = 10  
 		} 
@@ -272,7 +276,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We stand strong against Polish ambitions!"
+	name = "22238.A"
 	change_tag = RUT 
 	}
 }

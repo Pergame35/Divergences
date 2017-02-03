@@ -1,7 +1,7 @@
 country_event = {
 	id = 22239
-	title = "Unrest in the northern mountains!"
-	desc = "The various arab tribes are asking our help to overthrow the european oppressors!"
+	title = "22239.T"
+	desc = "22239.D"
 	picture = "News"
 	
 	trigger = {
@@ -16,7 +16,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will fight against the oppressors!"
+		name = "22239.A"
 		prestige = 20
 		set_global_flag = reb_in_mag
 		any_country = {
@@ -35,7 +35,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will not risk our precarious independence"
+		name = "22239.B"
 		set_global_flag = reb_in_mag
 		prestige = -10
 		any_pop = {
@@ -49,14 +49,14 @@ country_event = {
 
 country_event = {
 	id = 22241
-	title = "The Arab tribes invaded our colony!"
-	desc = "The arabs rebelled against our control and now are pushing us out of Maghreb!"
+	title = "22241.T"
+	desc = "22241.D"
 	picture = "maghreb_war"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "We will fight against the heathens!"
+		name = "22241.A"
 		prestige = 5
 		badboy = 3
 		war = {
@@ -81,7 +81,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We can´t fight them now"
+		name = "22241.B"
 		set_country_flag = end_of_mag
 		prestige = -20
 		any_owned = {
@@ -101,8 +101,8 @@ province_event = {
 
 	id = 22242
 
-	title = "We lost control of Province"
-	desc = "The infidels are pushing us back!"
+	title = "22242.T"
+	desc = "22242.D"
 	picture = "boxers"
 
 	trigger = {
@@ -127,7 +127,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Damn"
+		name = "22242.A"
 		controller = {
 			prestige = 1
 			country_event = 22244		
@@ -139,8 +139,8 @@ province_event = {
 
 	id = 22243
 
-	title = "We lost control of Province"
-	desc = "The infidels are pushing us back!"
+	title = "22243.T"
+	desc = "22243.D"
 	picture = "boxers"
 
 	trigger = {
@@ -166,7 +166,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Damn"
+		name = "22243.A"
 		controller = {
 			prestige = 1
 			country_event = 22245		
@@ -176,14 +176,14 @@ province_event = {
 
 country_event = {
 	id = 22244
-	title = "We gained new land!"
-	desc = "The arabs are retreating!"
+	title = "22244.T"
+	desc = "22244.D"
 	picture = "maghreb_war"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Lol easy!"
+		name = "22244.A"
 		MGH = {
 			any_owned = {
 				limit = {
@@ -218,14 +218,14 @@ country_event = {
 
 country_event = {
 	id = 22245
-	title = "We gained new land!"
-	desc = "The arabs are retreating!"
+	title = "22245.T"
+	desc = "22245.D"
 	picture = "maghreb_war"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Lol easy!"
+		name = "22245.A"
 		MGH = {
 			any_owned = {
 				limit = {
@@ -262,8 +262,8 @@ country_event = {
 
 country_event = {
 	id = 22246
-	title = "Division of Maghreb"
-	desc = "We should divide the new territories beetwen us!"
+	title = "22246.T"
+	desc = "22246.D"
 	picture = "News"
 	
 	trigger = {
@@ -310,7 +310,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Ok"
+		name = "22246.A"
 		prestige = 1
 		set_country_flag = division_mg
 		any_owned = {
@@ -355,7 +355,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Why?"
+		name = "22246.B"
 		badboy = 5
 		prestige = -5
 		set_global_flag = no_division
@@ -367,8 +367,8 @@ country_event = {
 
 country_event = {
 	id = 22247
-	title = "The end of Maghreb Kaliffates!"
-	desc = "The arabs in Maghreb are now defeated and now we can officially proclaim that the end of the Reconquista!"
+	title = "22247.T"
+	desc = "22247.D"
 	picture = "News"
 	
 	trigger = {
@@ -397,7 +397,7 @@ country_event = {
 	}
 
 	option = {
-		name = "What? Constantinople is still turk, pls fix!"
+		name = "22247.A"
 		prestige = 30
 		any_country = {
 			set_country_flag = end_of_mag
@@ -411,8 +411,8 @@ country_event = {
 
 province_event = {
 	id = 22248
-	title = "Region integrated in Mauretania!"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Yakutian colony"
+	title = "22248.T"
+	desc = "22248.D"
 	
 	trigger = {
 		OR = {
@@ -454,7 +454,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "An excellent development!"
+		name = "22248.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -468,8 +468,8 @@ province_event = {
 
 province_event = {
 	id = 22249
-	title = "Region integrated in Numidia!"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Numidian colony"
+	title = "22249.T"
+	desc = "22249.D"
 	
 	trigger = {
 		OR = {
@@ -512,7 +512,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "An excellent development!"
+		name = "22249.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -526,8 +526,8 @@ province_event = {
 
 province_event = {
 	id = 22251
-	title = "Region integrated in Libya!"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Libyan colony."
+	title = "22251.T"
+	desc = "22251.D"
 	
 	trigger = {
 		OR = {
@@ -564,7 +564,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "An excellent development!"
+		name = "22251.A"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -581,8 +581,8 @@ country_event = {
 
 	id = 22260
 
-	title = "The Mauretanian Dominion"
-	desc = "The Mauretanians have asked to be granted a special status as an autonomous dominion within the empire."
+	title = "22260.T"
+	desc = "22260.D"
 	picture = "danishgovernment"
 
 	major = yes
@@ -625,7 +625,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This can only be good for the empire."
+		name = "22260.A"
 		clr_country_flag = MOR_independence_refused
 		MOR = { primary_culture = castilian add_accepted_culture = berber }
 		prestige = -20
@@ -700,7 +700,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "No, they shall remain under our direct control"
+		name = "22260.B"
 		set_country_flag = MOR_independence_refused
 		any_owned = {
 			limit = { is_core = MOR }
@@ -745,7 +745,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Onwards to Mauretania!"
+		name = "22260.C"
 		clr_country_flag = MOR_independence_refused
 		MOR = { primary_culture = castilian add_accepted_culture = berber }
 		prestige = -20
@@ -784,8 +784,8 @@ country_event = {
 
 	id = 22261
 
-	title = "The Numidian Dominion"
-	desc = "The Numidians have asked to be granted a special status as an autonomous dominion within the empire."
+	title = "22261.T"
+	desc = "22261.D"
 	picture = "danishgovernment"
 
 	major = yes
@@ -829,7 +829,7 @@ country_event = {
 	}
 
 	option = {
-		name = "This can only be good for the empire."
+		name = "22261.A"
 		clr_country_flag = ALD_independence_refused
 		ALD = { primary_culture = catalan add_accepted_culture = berber  }
 		prestige = -20
@@ -904,7 +904,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "No, they shall remain under our direct control"
+		name = "22261.B"
 		set_country_flag = ALD_independence_refused
 		any_owned = {
 			limit = { is_core = ALD }
@@ -949,7 +949,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Onwards to Numidia!"
+		name = "22261.C"
 		clr_country_flag = ALD_independence_refused
 		ALD = { primary_culture = catalan add_accepted_culture = berber }
 		prestige = -20
@@ -985,8 +985,8 @@ country_event = {
 }
 province_event = {
 	id = 44345
-	title = "Region integrated in Yakutia!"
-	desc = "With the arrival of the $COUNTRY_ADJ$ colonial governor into $PROVINCENAME$, an effort has begun to incorporate $COUNTRY_ADJ$ $STATENAME$ into the larger Yakutian colony"
+	title = "44345.T"
+	desc = "44345.D"
 	
 	trigger = {
 		OR = {
@@ -1026,7 +1026,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "An excellent development!"
+		name = "44345.A"
 		state_scope = {
 			any_owned = {
 				limit = {

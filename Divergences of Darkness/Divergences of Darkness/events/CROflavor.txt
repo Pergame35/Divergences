@@ -16,7 +16,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will free Serbia from the Ottomans !"
+	name = "1400101.A"
 	set_country_flag = CROintervention 
 	set_country_flag = SER_rebellion 
 	badboy = 10
@@ -41,7 +41,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It is not the right time ..."
+	name = "1400101.B"
 	set_country_flag = CROintervention
 	any_pop = { 
 	militancy = 3
@@ -62,7 +62,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Our brothers need to be protected"
+	name = "1400102.A"
 	release_vassal = SER
 	}
 }
@@ -84,7 +84,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Send the message to Belgrade"
+	name = "1400103.A"
 	SER = { country_event = 1400104 }
 	}
 }
@@ -97,7 +97,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Long Live the Illyro-Serb Union !"
+	name = "1400104.A"
 	FROM = { country_event = 1400105 }
 	ai_chance = { 
 	factor = 75 
@@ -105,7 +105,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Serbia will be independent !"
+	name = "1400104.B"
 	FROM = { country_event = 1400106 }
 	add_country_modifier = {
 				name = taiping_draft
@@ -126,7 +126,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Good"
+	name = "97087.A"
 	inherit = SER 
 	SER = { all_core = { add_core = CRO } }
 	add_accepted_culture = serb 
@@ -143,7 +143,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Damn Serbs !"
+	name = "1400106.A"
 	prestige = 5 
 	release_vassal = FROM 
 	leave_alliance = FROM
@@ -183,7 +183,7 @@ country_event = { #claim of the old duke of Montenegro
 	}
 	
 	option = { 
-	name = "Send him across the border"
+	name = "1400107.A"
 	MON = { country_event = 1400108 } 
 	set_country_flag = simic 
 	prestige = 5 
@@ -193,7 +193,7 @@ country_event = { #claim of the old duke of Montenegro
 	}
 	
 	option = { 
-	name = "Imprison him"
+	name = "1400107.B"
 	prestige = -20 
 	set_country_flag = simic 
 	}
@@ -208,7 +208,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "The Metropolitan will step down and accept the claim of Simic ..."
+	name = "1400108.A"
 	FROM = { country_event = 1400109 }
 	ai_chance = { 
 	factor = 30 
@@ -216,7 +216,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Contact Venice we need help to defend ourselves ..."
+	name = "1400108.B"
 	VEN = { country_event = 1400110 }
 	ai_chance = { 
 		factor = 40 
@@ -228,7 +228,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Contact Aragon we need help to defend ourselves ..."
+	name = "1400108.C"
 	ARA = { country_event = 1400110 }
 	ai_chance = { 
 		factor = 20 
@@ -244,7 +244,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Contact Italy we need help to defend ourselves ..."
+	name = "1400108.E"
 	ITA = { country_event = 1400110 }
 	ai_chance = { 
 		factor = 20 
@@ -274,7 +274,7 @@ country_event = {
 	is_triggered_only = yes 	
 	
 	option = { 
-	name = "That was a good idea to send him "
+	name = "1400109.A"
 	inherit = FROM 
 	prestige = 10 
 	}
@@ -289,7 +289,7 @@ country_event = {
 	is_triggered_only = yes 	
 	
 	option = { 
-	name = "We will help Montenegro !"
+	name = "1400110.A"
 	set_country_flag = help_montenegro
 	THIS = { create_alliance = MON }
 	prestige = 5 
@@ -297,7 +297,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It is not in our interest"
+	name = "1400110.B"
 	CRO = { country_event = 1400112 }
 	}
 }
@@ -311,7 +311,7 @@ country_event = { ###Montenegro got allies
 	is_triggered_only = yes 	
 	
 	option = { 
-	name = "We will let them alone ... for now"
+	name = "1400111.A"
 	prestige = -15 
 	any_pop = { 
 		militancy = 3
@@ -334,7 +334,7 @@ country_event = { ###Montenegro got allies
 	}
 	
 	option = { 
-	name = "We will take Montenegro by force then. Nothing stops the Yugoslavs !"
+	name = "1400111.B"
 	badboy = 10 
 	casus_belli = {
 				target = MON
@@ -362,7 +362,7 @@ country_event = { ###Montenegro got no allies
 	is_triggered_only = yes
 
 	option = { 
-	name = "We will take Montenegro by force then. Nothing stops the Yugoslavs !"
+	name = "1400112.A"
 	badboy = 10 
 	casus_belli = {
 				target = MON
@@ -397,7 +397,7 @@ country_event = {
 	}
 	
 	option =  { 
-	name = "Send an ultimatum to Budapest"
+	name = "1400113.A"
 	prestige = 10 
 	HUN = { country_event = 1400114 }
 	}
@@ -412,7 +412,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We'll retreat from Serbia ..."
+	name = "1400114.A"
 	badboy = -5 
 	prestige = -10
 	any_owned = { 
@@ -429,7 +429,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Like we would give up Belgrade" 
+	name = "1400114.B" 
 	FROM = { country_event = 1400115 }
 	SER_794 = { add_core = HUN } 
 	badboy = 7
@@ -451,7 +451,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We have no other choices then !"
+	name = "1400115.A"
 	war = {
 			target = FROM
 			attacker_goal = {

@@ -60,7 +60,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "God, that's so depressing."
+		name = "22510.A"
 		remove_country_modifier = economic_trend
 		add_country_modifier = {
 			name = economic_trend
@@ -95,7 +95,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "God, that's so depressing"
+		name = "22515.A"
 		remove_country_modifier = Bull_market
 		remove_country_modifier = recession
 		remove_country_modifier = economic_boom
@@ -235,7 +235,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "It's about time!"
+		name = "22516.A"
 		remove_country_modifier = economic_trend
 		add_country_modifier = {
 			name = economic_trend
@@ -734,7 +734,7 @@ country_event = {
 	}
 
 	option = {
-		name = "An excellent sign!"
+		name = "22590.A"
 		remove_country_modifier = economic_trend
 		add_country_modifier = {
 			name = economic_trend
@@ -886,7 +886,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "So be it."
+		name = "97310.A"
 		remove_country_modifier = economic_trend
 		add_country_modifier = {
 			name = economic_trend
@@ -1059,7 +1059,7 @@ country_event = {
 	}
 
 	option = {
-		name = "It seems there are harder times ahead."
+		name = "22595.A"
 		remove_country_modifier = economic_trend
 		add_country_modifier = {
 			name = economic_trend
@@ -1200,7 +1200,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Excellent news!"
+		name = "22596.A"
 		remove_country_modifier = economic_trend
 		add_country_modifier = {
 			name = economic_trend
@@ -1358,7 +1358,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Hurrah!"
+		name = "190411.A"
 		remove_country_modifier = economic_trend
 		add_country_modifier = {
 			name = economic_trend
@@ -1695,7 +1695,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Excellent news!"
+		name = "22606.A"
 		remove_country_modifier = economic_trend
 		add_country_modifier = {
 			name = economic_trend
@@ -1729,7 +1729,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "What a marvellous way to make some money!"
+		name = "22610.A"
 		remove_country_modifier = economic_trend
 		add_country_modifier = {
 			name = economic_trend
@@ -1749,8 +1749,8 @@ country_event = {
 
 country_event = {
 	id = 22615
-	title = "Out With the Financiers!"
-	desc = "Our glorious proletarian dictatorship has done away with the corrupt fat cats in the stock market. They shall dictate to our government no more!"
+	title = "22615.T"
+	desc = "22615.D"
 	picture = "communist_crowd"
 	
 	trigger = {
@@ -1764,7 +1764,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Down with the capitalist pig-dogs!"
+		name = "22615.A"
 		set_country_flag = pig_dogs
 		remove_country_modifier = recession
 		remove_country_modifier = stock_market_crash
@@ -1777,8 +1777,8 @@ country_event = {
 
 country_event = {
 	id = 22616
-	title = "$COUNTRY_ADJ$ Markets Liberated!"
-	desc = "The fall of $COUNTRY$'s hated communist dicatorship has led to a return of investment and capital markets."
+	title = "22616.T"
+	desc = "22616.D"
 	picture = "Merchants"
 	
 	trigger = {
@@ -1791,7 +1791,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "What a marvellous way to make some money!"
+		name = "22616.A"
 		remove_country_modifier = economic_trend
 		add_country_modifier = {
 			name = economic_trend

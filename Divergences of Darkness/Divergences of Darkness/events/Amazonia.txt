@@ -21,7 +21,7 @@ country_event = {
 		}
 		
 		option = { 
-		name = "Take the opportunity while no one is watching"
+		name = "98401.A"
 		CLM = { country_event = 98402 }
 		badboy = 5 
 		prestige = 3 
@@ -35,7 +35,7 @@ country_event = {
 		}
 		
 		option = { 
-		name = "It is not our territory, call them back !"
+		name = "98401.B"
 		prestige = 5 
 		relation = { who = CLM value = 150 }
 		ai_chance = { 
@@ -53,7 +53,7 @@ country_event = {
 		is_triggered_only = yes
 		
 		option = {
-		name = "The bastards !"
+		name = "98402.A"
 		BRZ_2408  = {
 		remove_core = CLM 
 		}
@@ -89,7 +89,7 @@ country_event = { ######SPA reaction after Partial Peace
 	}
 	
 	option = { 
-	name = "We will settle the matter if they pay us"
+	name = "98403.A"
 	set_global_flag = paracash 
 	AMA = { country_event = 98404 }
 	prestige = -5 
@@ -99,7 +99,7 @@ country_event = { ######SPA reaction after Partial Peace
 	}
 	
 	option = { 
-	name = "Send this message : 'Para or War' "
+	name = "98403.B"
 	set_global_flag = paraclaim 
 	AMA = { country_event = 98412 }
 	ai_chance = { 
@@ -108,7 +108,7 @@ country_event = { ######SPA reaction after Partial Peace
 	}
 	
 	option = { 
-	name = "Why bother about some inhospitable jungle ?"
+	name = "98403.C"
 	set_global_flag = paraabandon
 	AMA = { country_event = 97095 }
 	ai_chance = { 
@@ -126,7 +126,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = {
-		name = "Just some money ? Take the chance while they are asking !"
+		name = "98404.A"
 		money = -50000 
 		country_event = { id = 98407 days = 1095 }
 		SPA = { country_event = 98405 }
@@ -136,7 +136,7 @@ country_event = { ######Money ?
 		}
 		
 		option = { 
-		name = "And what will they do if we don't ?"
+		name = "98404.B"
 		prestige = 5 
 		SPA = { country_event = 98406 }
 		ai_chance = { 
@@ -154,7 +154,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = { 
-		name = "I think we have made a great deal gentlemen"
+		name = "98405.A"
 		money = 50000 
 		set_global_flag = paracash
 		}
@@ -169,7 +169,7 @@ country_event = {
 		is_triggered_only = yes
 		
 		option = { 
-		name = "They want war ? They'll get war !"
+		name = "98406.A"
 		SPA = { 
 			casus_belli = {
 				target = AMA
@@ -196,7 +196,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = {
-		name = "Send the money"
+		name = "98407.A"
 		money = -50000 
 		country_event = { id = 98409 days = 1095 }
 		SPA = { country_event = 98408 }
@@ -212,7 +212,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = { 
-		name = "Always a pleasure ..."
+		name = "98408.A"
 		money = 50000 
 		}
 	}
@@ -226,7 +226,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = {
-		name = "Send the money"
+		name = "98409.A"
 		money = -50000 
 		country_event = { id = 98410 days = 1095 }
 		SPA = { country_event = 98408 }
@@ -242,7 +242,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = {
-		name = "At last"
+		name = "98410.A"
 		money = -50000 
 		SPA = { country_event = 98411 }
 		}
@@ -257,7 +257,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = {
-		name = "It was good while it lasted"
+		name = "98411.A"
 		money = 50000
 		}
 	}
@@ -271,7 +271,7 @@ country_event = { ######AMA reaction
 		is_triggered_only = yes
 		
 		option = {
-		name = "We don't have a lot of choices ..."
+		name = "98412.A"
 		any_owned = { 
 		limit = { region = BRZ_2408}
 		secede_province = SPA
@@ -283,7 +283,7 @@ country_event = { ######AMA reaction
 		}
 		
 		option = { 
-		name = "Let them come !"
+		name = "98412.B"
 		prestige = 5 
 		SPA = { country_event = 98406 }
 		ai_chance = { 
@@ -301,7 +301,7 @@ country_event = { ######Notice for SPA
 		is_triggered_only = yes
 		
 		option = {
-		name = "Glory to Espana !"
+		name = "98413.A"
 		prestige = 10
 		}
 	}
@@ -329,7 +329,7 @@ country_event = { ######SPA reaction after Complete Victory
 	}
 	
 	option = { 
-	name = "We will settle the matter if they pay us"
+	name = "98414.A"
 	AMA = { country_event = 98404 }
 	set_global_flag = paracash
 	prestige = -5 
@@ -339,7 +339,7 @@ country_event = { ######SPA reaction after Complete Victory
 	}
 	
 	option = { 
-	name = "Send this message : 'Para or War' "
+	name = "98414.B"
 	set_global_flag = paraclaim
 	AMA = { country_event = 98412 }
 	ai_chance = { 
@@ -348,7 +348,7 @@ country_event = { ######SPA reaction after Complete Victory
 	}
 	
 	option = { 
-	name = "Why bother about some inhospitable jungle ?"
+	name = "98414.C"
 	set_global_flag = paraabandon
 	AMA = { country_event = 97095 }
 	ai_chance = { 
@@ -381,7 +381,7 @@ country_event = { ######CLM united reaction
 	}
 	
 	option = { 
-	name = "We will settle the matter if they pay us"
+	name = "98415.A"
 	AMA = { country_event = 98416 }
 	set_global_flag = paracash
 	prestige = -5 
@@ -391,7 +391,7 @@ country_event = { ######CLM united reaction
 	}
 	
 	option = { 
-	name = "Send this message : 'Para or War' "
+	name = "98415.B"
 	AMA = { country_event = 98424 }
 	set_global_flag = paraclaim 
 	ai_chance = { 
@@ -400,7 +400,7 @@ country_event = { ######CLM united reaction
 	}
 	
 	option = { 
-	name = "Why bother about some inhospitable jungle ?"
+	name = "98415.C"
 	AMA = { country_event = 97095 }
 	set_global_flag = paraabandon
 	ai_chance = { 
@@ -418,7 +418,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = {
-		name = "Just some money ? Take the chance while they are asking !"
+		name = "98416.A"
 		money = -50000 
 		country_event = { id = 98419 days = 1095 }
 		CLM = { country_event = 98417 }
@@ -428,7 +428,7 @@ country_event = { ######Money ?
 		}
 		
 		option = { 
-		name = "And what will they do if we don't ?"
+		name = "98416.B"
 		prestige = 5 
 		CLM = { country_event = 98418 }
 		ai_chance = { 
@@ -446,7 +446,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = { 
-		name = "I think we have made a great deal gentlemen"
+		name = "98417.A"
 		money = 50000 
 		set_global_flag = paracash
 		}
@@ -461,7 +461,7 @@ country_event = {
 		is_triggered_only = yes
 		
 		option = { 
-		name = "They want war ? They'll get war !"
+		name = "98418.A"
 		BRZ_2408 = { add_core = CLM }
 		CLM = { 
 			casus_belli = {
@@ -489,7 +489,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = {
-		name = "Send the money"
+		name = "98419.A"
 		money = -50000 
 		country_event = { id = 98421 days = 1095 }
 		CLM = { country_event = 98420 }
@@ -505,7 +505,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = { 
-		name = "Always a pleasure ..."
+		name = "98420.A"
 		money = 50000 
 		}
 	}
@@ -519,7 +519,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = {
-		name = "Send the money"
+		name = "98421.A"
 		money = -50000 
 		country_event = { id = 98422 days = 1095 }
 		CLM = { country_event = 98420 }
@@ -535,7 +535,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = {
-		name = "At last"
+		name = "98422.A"
 		money = -50000 
 		CLM = { country_event = 98423 }
 		}
@@ -550,7 +550,7 @@ country_event = { ######Money ?
 		is_triggered_only = yes
 		
 		option = {
-		name = "It was good while it lasted"
+		name = "98423.A"
 		money = 50000
 		}
 	}
@@ -564,7 +564,7 @@ country_event = { ######AMA reaction
 		is_triggered_only = yes
 		
 		option = {
-		name = "We don't have a lot of choices ..."
+		name = "98424.A"
 		any_owned = { 
 		limit = { region = BRZ_2408}
 		add_core = CLM
@@ -577,7 +577,7 @@ country_event = { ######AMA reaction
 		}
 		
 		option = { 
-		name = "Let them come !"
+		name = "98424.B"
 		prestige = 5 
 		CLM = { country_event = 98418 }
 		ai_chance = { 
@@ -595,7 +595,7 @@ country_event = { ######Notice for CLM
 		is_triggered_only = yes
 		
 		option = {
-		name = "Glory to Gran Columbia !"
+		name = "98425.A"
 		prestige = 10
 		}
 	}
@@ -621,7 +621,7 @@ country_event = { ######Possibilty of a military dictatorship if Atlantia is los
 		}
 		
 		option = { 
-		name = "The military take control of the Parliament"
+		name = "98426.A"
 		set_country_flag = military_takeover
 		government = presidential_dictatorship
 		ruling_party_ideology = conservative
@@ -642,7 +642,7 @@ country_event = { ######Possibilty of a military dictatorship if Atlantia is los
 		}
 		
 		option = { 
-		name = "The government vanquishes the high-command" 
+		name = "98426.B" 
 		leadership = -100 
 		set_country_flag = military_failure
 		ai_chance = { 
@@ -666,7 +666,7 @@ country_event = { #####Talks of secession in Equinoxia
 	fire_only_once = yes 
 	
 	option = { 
-	name = "We'll have to watch them closely ... "
+	name = "98427.A"
 	AMA_2410 = { add_core = EQN }
 	
 	any_owned = {
@@ -711,7 +711,7 @@ country_event = { ###### The Equinoxian Secession
 	}
 	
 	option = { 
-	name = "We will crush them !"
+	name = "98428.A"
 	set_country_flag = AMACivilwar 
 	release = EQN
 		war = {
@@ -742,7 +742,7 @@ country_event = { ########Equinoxian victory if Port-Liberté is held
 	days = 1 }
 	
 	option = { 
-	name = "We shall reestablish democracy in Amazonia ! "
+	name = "98429.A"
 	end_war = AMA 
 	inherit = AMA 
 	change_tag = AMA 
@@ -776,7 +776,7 @@ country_event = { #### End of the Civil War
 	}
 	
 	option = { 
-	name = "We are united once again ! "
+	name = "98430.A"
 	set_country_flag = newgov  
 	prestige = 5 
 	}
@@ -801,7 +801,7 @@ country_event = { #### Monarchy ?
 	}
 	
 	option = { 
-	name = "It is time for the return of the king. "
+	name = "98431.A"
 	clr_country_flag = newgov 
 	country_event = 98432
 	ai_chance = { 
@@ -809,7 +809,7 @@ country_event = { #### Monarchy ?
 	}
 	
 	option = { 
-	name = "We are fine as we are thanks "
+	name = "98431.B"
 	any_pop = { 
 		limit = { 
 		culture = amazonian  
@@ -828,7 +828,7 @@ country_event = { #### Homeland or Plantagenia ?
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "The duke of Brittany will become king "
+	name = "98432.A"
 	government = absolute_monarchy 
 	relation = { who = DUA value = 200 }
 	DUA = { diplomatic_influence = { who = AMA value = 150 } }
@@ -838,7 +838,7 @@ country_event = { #### Homeland or Plantagenia ?
 	}
 	
 	option = { 
-	name = "The duke of Leonie will become king"
+	name = "98432.B"
 	government = absolute_monarchy 
 	relation = { who = PLA value = 200 }
 	country_event = 98433
@@ -856,7 +856,7 @@ country_event = { #### Choice of government
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "The military knows best how to rule this country"
+	name = "98433.A"
 	government = absolute_monarchy 
 	political_reform = none_voting
 	political_reform = no_meeting
@@ -870,7 +870,7 @@ country_event = { #### Choice of government
 	}
 	
 	option = { 
-	name = "Some reforms are needed"
+	name = "98433.B"
 	government = prussian_constitutionalism
 	political_reform = appointed
 	political_reform = wealth_voting
@@ -884,7 +884,7 @@ country_event = { #### Choice of government
 	}
 	
 	option = { 
-	name = "The king reigns but does not rule"
+	name = "98433.C"
 	government = hms_government
 	political_reform = state_equal_weight
 	political_reform = universal_weighted_voting

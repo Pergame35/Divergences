@@ -115,7 +115,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Outrageous!"
+		name = "96215.A"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = reactionary }
@@ -267,7 +267,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Outrageous!"
+		name = "880130.A"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = conservative }
@@ -414,7 +414,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Outrageous!"
+		name = "880140.A"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = liberal }
@@ -562,7 +562,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Outrageous!"
+		name = "880150.A"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = anarcho_liberal }
@@ -710,7 +710,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Outrageous!"
+		name = "880160.A"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = socialist }
@@ -859,7 +859,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Outrageous!"
+		name = "880170.A"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = communist }
@@ -1008,7 +1008,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Outrageous!"
+		name = "880180.A"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = fascist }
@@ -1104,7 +1104,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "A bad way to start an election."
+		name = "880200.A"
 		random_owned = {
 			limit = {
 				owner = {
@@ -1148,8 +1148,6 @@ country_event = {
 		remove_country_modifier = pig_headed_isolationist
 		remove_country_modifier = ambitious_union_boss
 		remove_country_modifier = dour_economist
-		remove_country_modifier = otto_von_bismarck
-		remove_country_modifier = louis_napoleon_iii
 		election = yes
 	}
 }
@@ -1211,7 +1209,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Things do not bode well."
+		name = "880210.A"
 		remove_country_modifier = ruling_party_scandal
 		add_country_modifier = {
 			name = party_scandal_evidence

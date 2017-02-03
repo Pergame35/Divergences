@@ -105,7 +105,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We must free our brethren."
+		name = "800100.A"
 		treasury = -50000
 		random_country = {
 			limit = {
@@ -167,7 +167,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "It's too risky."
+		name = "800100.B"
 		any_pop = {
 			limit = { is_primary_culture = yes }
 			scaled_militancy = {
@@ -214,7 +214,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We will not tolerate this."
+		name = "800101.A"
 		relation = {
 			who = FROM
 			value = -50
@@ -282,7 +282,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Let it slide."
+		name = "800101.B"
 		prestige = -5
 		any_pop = {
 			limit = { is_primary_culture = yes }		
@@ -331,7 +331,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Let them come!"
+		name = "800102.A"
 		badboy = 2
 		random_owned = {
 			limit = {
@@ -392,7 +392,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed."
+		name = "97175.A"
 		owner = { prestige = -10 }
 		state_scope = {
 			any_owned = {
@@ -451,7 +451,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We will assume control."
+		name = "97180.A"
 		random_country = {
 			limit = {
 				neighbour = THIS
@@ -530,7 +530,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "It is too risky."
+		name = "97700.B"
 		any_pop = {
 			limit = { is_primary_culture = yes }
 			militancy = 3
@@ -643,7 +643,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "We'll be back."
+		name = "97181.A"
 		owner = { prestige = -20 }
 		state_scope = {
 			any_owned = {
@@ -678,13 +678,13 @@ province_event = {
 
 country_event = {
 	id = 97182
-	title = "Free of Colonial Control!"
-	desc = "We are free!"
+	title = "97182.T"
+	desc = "97182.D"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Free!"
+		name = "97182.A"
 		FROM = {
 			any_owned = {
 				limit = {
@@ -856,8 +856,8 @@ country_event = {
 
 province_event = {
 	id = 97185
-	title = "Order Restored in $STATENAME$"
-	desc = "We have restored order to our colony in $STATENAME$... at least for the moment."
+	title = "97185.T"
+	desc = "97185.D"
 	
 	trigger = {
 		OR = {
@@ -880,7 +880,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "About time!"
+		name = "97185.A"
 		state_scope = {
 			any_owned = {
 				limit = {

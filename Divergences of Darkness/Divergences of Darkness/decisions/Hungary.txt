@@ -5,7 +5,7 @@ political_decisions = {
 	
 	potential = { 
 	NOT = { has_country_flag = HUN_asked }
-	NOT = { exists = HRE }
+	NOT = { exists = HLR }
 	tag = HUN
 	}
 	

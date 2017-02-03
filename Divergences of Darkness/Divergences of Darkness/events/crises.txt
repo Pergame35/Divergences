@@ -388,7 +388,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Silence the troublemakers. Immediately."
+		name = "20110.A"
 		owner = {
 			badboy = 2
 			plurality = -2
@@ -412,7 +412,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Work with these people to solve their issues."
+		name = "20110.B"
 		owner = {
 			prestige_factor = -0.1
 			plurality = 1
@@ -502,7 +502,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Good. We need no interference in $STATENAME$."
+		name = "20111.A"
 		state_scope = {
 			flashpoint_tension = -50
 			any_pop = {
@@ -548,7 +548,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "This? Again?"
+		name = "20112.A"
 		state_scope = {
 			flashpoint_tension = -50
 			any_pop = {
@@ -628,7 +628,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Let the world think what it likes."
+		name = "20115.A"
 		owner = { prestige = -5 }
 		state_scope = {
 			flashpoint_tension = 20
@@ -651,7 +651,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Supress this. Now."
+		name = "20115.B"
 		add_crime = terrorist_cells
 		state_scope = {
 			any_pop = {

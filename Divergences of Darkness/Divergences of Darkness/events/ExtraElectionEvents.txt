@@ -75,7 +75,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We must maintain stability even in a time of war."
+		name = "98300.A"
 		set_country_flag = election_initialized
 		plurality = -1
 		add_country_modifier = {
@@ -254,7 +254,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This is unfortunate."
+		name = "98301.A"
 		set_country_flag = election_initialized
 		random_owned = {
 			limit = {
@@ -386,7 +386,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall see."
+		name = "98302.A"
 		set_country_flag = election_initialized
 		add_country_modifier = {
 			name = election_cooldown
@@ -496,7 +496,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall see."
+		name = "98303.A"
 		set_country_flag = election_initialized
 		add_country_modifier = {
 			name = election_cooldown
@@ -665,7 +665,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall see."
+		name = "98304.A"
 		set_country_flag = election_initialized
 		add_country_modifier = {
 			name = election_cooldown
@@ -804,7 +804,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall see."
+		name = "98305.A"
 		set_country_flag = election_initialized
 		add_country_modifier = {
 			name = election_cooldown
@@ -843,7 +843,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The $COUNTRY_ADJ$ people have spoken."
+		name = "98310.A"
 		clr_country_flag = election_initialized
 		clr_country_flag = parties_campaign
 		clr_country_flag = election_riots
@@ -1029,7 +1029,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The $COUNTRY_ADJ$ people have spoken."
+		name = "98311.A"
 		clr_country_flag = election_initialized
 		clr_country_flag = parties_campaign
 		clr_country_flag = election_riots
@@ -1087,8 +1087,6 @@ country_event = {
 				remove_country_modifier = pig_headed_isolationist
 				remove_country_modifier = ambitious_union_boss
 				remove_country_modifier = dour_economist
-				remove_country_modifier = otto_von_bismarck
-				remove_country_modifier = louis_napoleon_iii
 			}
 		}
 		random_owned = {
@@ -1217,7 +1215,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The $COUNTRY_ADJ$ people have spoken."
+		name = "98312.A"
 		clr_country_flag = election_initialized
 		clr_country_flag = parties_campaign
 		clr_country_flag = election_riots
@@ -1275,7 +1273,6 @@ country_event = {
 				remove_country_modifier = pig_headed_isolationist
 				remove_country_modifier = ambitious_union_boss
 				remove_country_modifier = dour_economist
-				remove_country_modifier = louis_napoleon_iii
 			}
 		}
 		random_owned = {
@@ -1408,7 +1405,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The $COUNTRY_ADJ$ people have spoken."
+		name = "98313.A"
 		clr_country_flag = election_initialized
 		clr_country_flag = parties_campaign
 		clr_country_flag = election_riots
@@ -1466,8 +1463,6 @@ country_event = {
 				remove_country_modifier = pig_headed_isolationist
 				remove_country_modifier = ambitious_union_boss
 				remove_country_modifier = dour_economist
-				remove_country_modifier = otto_von_bismarck
-				remove_country_modifier = louis_napoleon_iii
 			}
 		}
 		random_owned = {
@@ -1599,7 +1594,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The $COUNTRY_ADJ$ people have spoken."
+		name = "98314.A"
 		clr_country_flag = election_initialized
 		clr_country_flag = parties_campaign
 		clr_country_flag = election_riots
@@ -1657,8 +1652,6 @@ country_event = {
 				remove_country_modifier = pig_headed_isolationist
 				remove_country_modifier = ambitious_union_boss
 				remove_country_modifier = dour_economist
-				remove_country_modifier = otto_von_bismarck
-				remove_country_modifier = louis_napoleon_iii
 			}
 		}
 		random_owned = {
@@ -1778,7 +1771,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The $COUNTRY_ADJ$ people have spoken."
+		name = "98315.A"
 		clr_country_flag = election_initialized
 		clr_country_flag = parties_campaign
 		clr_country_flag = election_riots
@@ -1836,7 +1829,6 @@ country_event = {
 				remove_country_modifier = pig_headed_isolationist
 				remove_country_modifier = ambitious_union_boss
 				remove_country_modifier = dour_economist
-				remove_country_modifier = louis_napoleon_iii
 			}
 		}
 		random_owned = {
@@ -1969,7 +1961,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The $COUNTRY_ADJ$ people have spoken."
+		name = "98316.A"
 		clr_country_flag = election_initialized
 		clr_country_flag = parties_campaign
 		clr_country_flag = election_riots
@@ -2027,8 +2019,6 @@ country_event = {
 				remove_country_modifier = pig_headed_isolationist
 				remove_country_modifier = ambitious_union_boss
 				remove_country_modifier = dour_economist
-				remove_country_modifier = otto_von_bismarck
-				remove_country_modifier = louis_napoleon_iii
 			}
 		}
 		random_owned = {
@@ -2157,7 +2147,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The $COUNTRY_ADJ$ people have spoken."
+		name = "98317.A"
 		clr_country_flag = election_initialized
 		clr_country_flag = parties_campaign
 		clr_country_flag = election_riots
@@ -2215,7 +2205,6 @@ country_event = {
 				remove_country_modifier = pig_headed_isolationist
 				remove_country_modifier = ambitious_union_boss
 				remove_country_modifier = dour_economist
-				remove_country_modifier = louis_napoleon_iii
 			}
 		}
 		random_owned = {
@@ -2400,7 +2389,7 @@ country_event = {
 	}
 	
 	option = {	#Added by GAGA
-		name = "Counter him with a Pro-War campaign."
+		name = "140001.E"
 		random_list = {
 			50 = {
 				any_pop = {
@@ -2467,7 +2456,7 @@ country_event = {
 	}
 		
 	option = {	#Added by GAGA
-		name = "Counter him with an Anti-War campaign."
+		name = "140101.B"
 		soldiers = {
 			militancy = 1
 		}
@@ -2515,7 +2504,7 @@ country_event = {
 	}
 
 	option = {	#Added by GAGA
-		name = "Help him to help the military."
+		name = "140101.C"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.025
@@ -2596,7 +2585,7 @@ country_event = {
 	}
 	
 	option = { #Added by GAGA
-		name = "Let us try to weasel our way out of this."
+		name = "140201.C"
 		random_list = {
 			25 = {
 				any_pop = {
@@ -2649,7 +2638,7 @@ country_event = {
 	}
 	
 	option = { #Added by GAGA
-		name = "Put the other low-class workers on trial instead."
+		name = "140201.E"
 		any_pop = {
 			scaled_militancy = {
 				issue = jingoism
@@ -2732,7 +2721,7 @@ country_event = {
 	}
 
 	option = { #Added by GAGA
-		name = "Just move our cattle to another barracks."
+		name = "140301.C"
 		rich_strata = {
 			militancy = -0.1
 		}
@@ -2746,7 +2735,7 @@ country_event = {
 	}
 	
 	option = { #Added by GAGA
-		name = "Put the responsible fat-cats on trial."
+		name = "140301.E"
 		rich_strata = {
 			militancy = 0.2
 		}
@@ -2792,7 +2781,7 @@ country_event = {
 	}
 	
 	option = { #Added by GAGA
-		name = "Ignore the issue."
+		name = "140401.A"
 		labourers = {
 			militancy = 0.2
 			consciousness = 0.2
@@ -2865,7 +2854,7 @@ country_event = {
 	}
 	
 	option = { #Added by GAGA
-		name = "Use blackmail to silence him."
+		name = "140501.B"
 		clergymen = {
 			militancy = 0.1
 			consciousness = 0.2
@@ -2960,7 +2949,7 @@ country_event = {
 	}
 
 	option = { #Added by GAGA
-		name = "Just fire him for causing trouble." 
+		name = "140601.B" 
 		capitalists = {
 			militancy = -0.1
 		}
@@ -3000,7 +2989,7 @@ country_event = {
 	}
 	
 	option = { #Added by GAGA
-		name = "Back him up to get support for our own economic plans."
+		name = "140601.E"
 		capitalists = {
 			militancy = 0.2
 		}
@@ -3055,7 +3044,7 @@ country_event = {
 		}
 	}
 	option = { #Added by GAGA
-		name = "We could use this to lobby for the separation of state and church."
+		name = "140701.B"
 		clergymen = {
 			militancy = 0.4
 			ideology = {
@@ -3071,7 +3060,7 @@ country_event = {
 		}
 	}
 	option = { #Added by GAGA
-		name = "Let us conduct an investigation before jumping to conclusions."
+		name = "140701.C"
 		any_pop = {
 			consciousness = 0.1
 		}
@@ -3194,7 +3183,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "We should try to find a compromise."
+		name = "140801.B"
 		any_pop = { 
 			limit = {
 				is_state_religion = no
@@ -3232,7 +3221,7 @@ country_event = {
 	}
 	
 	option = { #Added by GAGA
-		name = "An excellent chance to provoke some violence."
+		name = "140801.E"
 		any_pop = {
 			scaled_militancy = {
 				issue = moralism
@@ -3271,7 +3260,7 @@ country_event = {
 	}
 	
 	option = { #Added by GAGA
-		name = "We do not want to get involved. Let the locals decide."
+		name = "140901.A"
 		any_pop = {
 			consciousness = 0.2
 		}
@@ -3341,7 +3330,7 @@ country_event = {
 		}
 	}
 	option = { #Added by GAGA
-		name = "Heretics and heathens have no place in the courthouse."
+		name = "140901.E"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.02
@@ -3440,7 +3429,7 @@ country_event = {
 		}
 	}
 	option = { #Added by GAGA
-		name = "We will uncover the truth and act accordingly."
+		name = "141001.E"
 		
 		any_pop = {
 			consciousness = 0.1
@@ -3528,7 +3517,7 @@ country_event = {
 	}
 	
 	option = { #Added by GAGA
-		name = "These shameful laws have to be abolished."
+		name = "141101.A"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.03
@@ -3566,7 +3555,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "We all know they are savages who would rather live in caves."
+		name = "141101.C"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.03
@@ -3686,7 +3675,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Only organize some minor incidents."
+		name = "141201.B"
 		any_pop = {
 			limit = {
 				is_primary_culture = no
@@ -3732,7 +3721,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "We should rather use legislation to keep them at bay."
+		name = "141201.C"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.03
@@ -3804,7 +3793,7 @@ country_event = {
 		}
 	}
 	option = { #Added by GAGA
-		name = "We understand their concerns, but times are changing and we will have to adapt."
+		name = "141301.B"
 		artisans = {
 			militancy = 0.1
 			consciousness = 0.2
@@ -3826,7 +3815,7 @@ country_event = {
 		}
 	}
 	option = { #Added by GAGA
-		name = "Support the campaign wholeheartedly."
+		name = "141301.E"
 		capitalists = {
 			consciousness = 0.2
 		}
@@ -3885,7 +3874,7 @@ country_event = {
 		}
 	}
 	option = { #Added by GAGA
-		name = "Our people are probably not ready for this."
+		name = "141401.B"
 		capitalists = {
 			consciousness = 0.1
 		}
@@ -3912,7 +3901,7 @@ country_event = {
 		}
 	}
 	option = { #Added by GAGA
-		name = "Support the campaign wholeheartedly."
+		name = "141401.E"
 		artisans = {
 			militancy = 0.1
 		}
@@ -3951,7 +3940,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Decisive pro-slavery arguments."
+		name = "142501.A"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.03
@@ -3970,7 +3959,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Decisive anti-slavery arguments."
+		name = "142501.B"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.03
@@ -3989,7 +3978,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Stay out of the debate."
+		name = "142501.C"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.01
@@ -4017,7 +4006,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Arrest the pro-slavery delegation."
+		name = "142601.A"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.01
@@ -4032,7 +4021,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Arrest the Abolitionists."
+		name = "142601.B"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.01
@@ -4047,7 +4036,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Let the courts handle it."
+		name = "142601.C"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.005
@@ -7834,7 +7823,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We need less controls over industry, not more."
+		name = "999055.A"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -7868,7 +7857,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "They are correct. Child labor should be reformed."
+		name = "999055.B"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -8031,7 +8020,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "They should be grateful for what they have."
+		name = "999056.A"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -8100,7 +8089,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We should embrace our minority cultures."
+		name = "999056.B"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -8267,7 +8256,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "There will be no reforms to immigration laws."
+		name = "999057.A"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -8307,7 +8296,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Reforming immigration should be a priority, no matter the opposition."
+		name = "999057.B"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -8455,7 +8444,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will encourage the jingoists."
+		name = "999060.A"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -8474,7 +8463,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We've no reason to get involved."
+		name = "999060.B"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -8492,7 +8481,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "That's enough of this rabble-rousing."
+		name = "999060.C"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -8569,7 +8558,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will encourage the jingoists."
+		name = "999061.A"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -8608,7 +8597,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "That's enough of this rabble-rousing."
+		name = "999061.B"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -8721,7 +8710,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Support the Abolitionists."
+		name = "999065.A"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -8753,7 +8742,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Let the debate take its course."
+		name = "999065.B"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 
@@ -8793,7 +8782,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will not reform the slavery laws."
+		name = "999065.C"
 		add_country_modifier = {
 			name = election_cooldown
 			duration = 30 

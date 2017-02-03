@@ -7,7 +7,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We lost ..." 
+	name = "410001.A" 
 	any_country = {
         			limit = {
 					NOT = { tag = KRL }
@@ -33,13 +33,13 @@ country_event = {
 
 country_event = {
         	id = 410002
-        	title = "Bohemia can into us!"
-        	desc = "Three hurray for Bohemia!"
+        	title = "410002.T"
+        	desc = "410002.D"
 
         	is_triggered_only = yes
 
         	option = {
-        		name = "I don't know what is going to happen"
+        		name = "410002.A"
         		FROM = { diplomatic_influence = { who = THIS value = -200 } }
         		BOH = { diplomatic_influence = { who = THIS value = 200 } }
         	}
@@ -60,7 +60,7 @@ country_event = {
 		}
 		
 		option = { 
-		name = "Gott erhalte den Kaiser !"
+		name = "410003.A"
 		clr_country_flag = prague_proclamation
 		set_country_flag = wants_annex
 		RAP = {
@@ -94,11 +94,11 @@ country_event = {
 				}
 			modifier = { 
 				factor = 1.2
-				alliance_with = HRE
+				alliance_with = HLR
 				}
 			modifier = {
 				factor = 1.2
-				relation = { who = HRE value = 100 }
+				relation = { who = HLR value = 100 }
 				}
 			modifier = { 
 				factor = 1.5 
@@ -108,7 +108,7 @@ country_event = {
 		}
 		
 		option = { 
-		name = "We need to negotiate."
+		name = "410003.B"
 		clr_country_flag = prague_proclamation
 		RAP = {
 			change_variable = {
@@ -128,7 +128,7 @@ country_event = {
 					}
 			modifier = {
 				factor = 1.2
-				relation = { who = HRE value = 50 }
+				relation = { who = HLR value = 50 }
 				}
 			modifier = { 
 				factor = 1.4
@@ -138,7 +138,7 @@ country_event = {
 			}
 		
 		option = { 
-		name = "To hell with the centralization."
+		name = "410003.C"
 		clr_country_flag = prague_proclamation
 		RAP = {
 			change_variable = {
@@ -201,7 +201,7 @@ country_event = {
 		}
 		
 		option = { 
-		name = "Gott erhalte den Kaiser !"
+		name = "410004.A"
 		clr_country_flag = prague_proclamation 
 		set_country_flag = wants_annex
 		RAP = {
@@ -235,11 +235,11 @@ country_event = {
 				}
 			modifier = { 
 				factor = 1.2
-				alliance_with = HRE
+				alliance_with = HLR
 				}
 			modifier = {
 				factor = 1.2
-				relation = { who = HRE value = 100 }
+				relation = { who = HLR value = 100 }
 				}
 			modifier = { 
 				factor = 1.5 
@@ -249,7 +249,7 @@ country_event = {
 		}
 		
 		option = { 
-		name = "We need to negotiate."
+		name = "410004.B"
 		clr_country_flag = prague_proclamation
 		RAP = {
 			change_variable = {
@@ -269,7 +269,7 @@ country_event = {
 					}
 			modifier = {
 				factor = 1.2
-				relation = { who = HRE value = 50 }
+				relation = { who = HLR value = 50 }
 				}
 			modifier = { 
 				factor = 1.4
@@ -279,7 +279,7 @@ country_event = {
 				}
 		
 		option = { 
-		name = "To hell with the centralization."
+		name = "410004.C"
 		clr_country_flag = prague_proclamation
 		RAP = {
 			change_variable = {
@@ -340,7 +340,7 @@ country_event = {
 		}
 		
 		option = { 
-		name = "Gott erhalte den Kaiser !"
+		name = "410005.A"
 		clr_country_flag = prague_proclamation
 		set_country_flag = wants_annex
 		RAP = {
@@ -373,11 +373,11 @@ country_event = {
 				}
 			modifier = { 
 				factor = 1.2
-				alliance_with = HRE
+				alliance_with = HLR
 				}
 			modifier = {
 				factor = 1.2
-				relation = { who = HRE value = 100 }
+				relation = { who = HLR value = 100 }
 				}
 			modifier = { 
 				factor = 1.5 
@@ -387,7 +387,7 @@ country_event = {
 		}
 		
 		option = { 
-		name = "We need to negotiate."
+		name = "410005.B"
 		clr_country_flag = prague_proclamation
 		RAP = {
 			change_variable = {
@@ -407,7 +407,7 @@ country_event = {
 					}
 			modifier = {
 				factor = 1.2
-				relation = { who = HRE value = 50 }
+				relation = { who = HLR value = 50 }
 				}
 			modifier = { 
 				factor = 1.4
@@ -417,7 +417,7 @@ country_event = {
 			}
 		
 		option = { 
-		name = "To hell with the centralization."
+		name = "410005.C"
 		clr_country_flag = prague_proclamation
 		RAP = {
 			change_variable = {
@@ -473,7 +473,7 @@ country_event = {
 		major = yes 
 		
 	option = { 
-		name = "Send the Proclamation !"
+		name = "410009.A"
 		set_country_flag = prag_p
 		RAP = {	set_variable = {
 				which = unified_HRE
@@ -534,7 +534,7 @@ country_event = {
 		fire_only_once = yes 
 
 		trigger = { 
-		tag = HRE 
+		tag = HLR 
 		has_country_flag = prag_p
 		}
 		
@@ -543,7 +543,7 @@ country_event = {
 		}
 		
 		option = { 
-		name = "How did we fare ?"
+		name = "410010.A"
 		any_pop = { 
 		limit = { culture = czech }
 		consciousness = 1 
@@ -562,7 +562,7 @@ country_event = {
 		desc = "HRE11.D"	
 		
 		trigger = { 
-		tag = HRE 
+		tag = HLR 
 		has_country_flag = results 
 		RAP = { check_variable = {
 				which = unified_HRE
@@ -576,7 +576,7 @@ country_event = {
 		}
 		
 		option = { 
-		name = "Long live the unified Holy Roman Empire !"
+		name = "410011.A"
 		any_country = {
         			limit = {
 						NOT = { tag = KRL }
@@ -592,7 +592,7 @@ country_event = {
 		inherit = FRM
 		GER = {
 				all_core = {
-					add_core = HRE
+					add_core = HLR
 				}
 			}
 		primary_culture = rheinish 
@@ -615,7 +615,7 @@ country_event = { ###Total refusal
 		desc = "HRE12.D"	
 		
 		trigger = { 
-		tag = HRE 
+		tag = HLR 
 		has_country_flag = results 
 		RAP = { check_variable = {
 				which = Refusal_HRE
@@ -629,7 +629,7 @@ country_event = { ###Total refusal
 		}
 		
 		option = { 
-		name = "Well we'll just do it without their consent !"
+		name = "410012.A"
 		set_country_flag = rhine_reb
 		set_country_flag = elbe_reb 
 		set_country_flag = danube_reb 
@@ -667,7 +667,7 @@ country_event = {
 	desc = "HRE13.D"
 
 	option = { #Accept
-		name = "Time to push back the Bohemians ! We will show the worth of the true Germans !" 
+		name = "410013.A" 
 		prestige = 10
 
 		any_country = {
@@ -715,7 +715,7 @@ country_event = {
 		}
 		#SAX_1 = { add_core = SGF }
 		change_tag = SGF
-		HRE = { country_event = { id = 410014 days = 2 } } 
+		HLR = { country_event = { id = 410014 days = 2 } } 
 	}
 }
 	
@@ -730,7 +730,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = danube_reb
 	SGF = { exists = yes }
 	}
@@ -740,7 +740,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The bastards. Time to push them back !"
+	name = "410014.A"
 	any_owned = { 
 	limit = { is_core = SGF }
 	secede_province = SGF
@@ -768,7 +768,7 @@ country_event = {
 	desc = "HRE13.D"
 
 	option = { #Accept
-		name = "Time to push back the Bohemians ! We will show the worth of the true Germans !" 
+		name = "410018.A" 
 		prestige = 10
 		any_country = {
 				limit = {
@@ -790,7 +790,7 @@ country_event = {
 		PRU_549 = { add_core = NGF }	#Brandenburg
 		SAX_558 = { add_core = NGF }	#Saxony
 		change_tag = NGF
-		HRE = { country_event = { id = 410015 days = 2 } } 
+		HLR = { country_event = { id = 410015 days = 2 } } 
 	}
 }
 	
@@ -801,7 +801,7 @@ country_event = {
 	desc = "HRE14.D"
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = elbe_reb
 	NGF = { exists = yes }
 	}
@@ -814,7 +814,7 @@ country_event = {
 	
 	
 	option = { 
-	name = "The bastards. Time to push them back !"
+	name = "410015.A"
 	any_owned = { 
 	limit = { 
 	is_core = NGF
@@ -845,7 +845,7 @@ country_event = {
 	desc = "HRE13.T"
 
 	option = { #Accept
-		name = "Time to push back the Bohemians ! We will show the worth of the true Germans !" 
+		name = "410016.A" 
 		prestige = 10
 		any_country = {
 				limit = {
@@ -945,7 +945,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = rhine_reb
 	RHI = { exists = yes }
 	}
@@ -955,7 +955,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The bastards. Time to push them back !"
+	name = "410017.A"
 	any_owned = { 
 	limit = { is_core = RHI }
 	secede_province = RHI
@@ -981,8 +981,8 @@ country_event = {
 	desc = "HRE19.D"
 	
 	trigger = { 
-	tag = HRE 
-	NOT = { 549 = { owned_by = HRE } }	
+	tag = HLR 
+	NOT = { 549 = { owned_by = HLR } }	
 	NOT = { BOH = { exists = yes } }
 	war = no 
 	}
@@ -991,12 +991,12 @@ country_event = {
 	days = 5 }
 	
 	option = { 
-	name = "That was a good dream ..." 
+	name = "410019.A" 
 	change_tag = BOH 
 	any_country = {
 				any_owned = {
-						limit = { is_core = HRE } 
-	remove_core = HRE 
+						limit = { is_core = HLR } 
+	remove_core = HLR 
 			}
 		}
 	}
@@ -1009,7 +1009,7 @@ country_event = {
 	desc = "HRE20.D"
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = results 
 	NOT = {
 		RAP = {
@@ -1033,7 +1033,7 @@ country_event = {
 	days = 2 }
 	
 	option = { 
-	name = "It could be better but ... it could be much worse"
+	name = "410020.A"
 	clr_country_flag = results 
 	set_country_flag = locresults 
 	}
@@ -1050,7 +1050,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	RAP = { check_variable = { 
 	which = Rhenish_acceptance
@@ -1064,7 +1064,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Excellent !"
+	name = "410021.A"
 	add_accepted_culture = rheinish 
 	set_country_flag = rhine_accepts
 	any_country = {
@@ -1081,7 +1081,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 	BEG = {
@@ -1089,7 +1089,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		MNR = {
@@ -1097,7 +1097,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		NAS = {
@@ -1105,7 +1105,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		FRM = {
@@ -1113,7 +1113,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		HEK = {
@@ -1121,7 +1121,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		HES = {
@@ -1129,7 +1129,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		WES = {
@@ -1137,7 +1137,7 @@ country_event = {
 				limit = {
 					is_core = GER
 				}
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 	}
@@ -1152,7 +1152,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	RAP = {
 	check_variable = { 
@@ -1167,7 +1167,7 @@ country_event = {
 	}	
 	
 	option = { 
-	name = "The Rhenish bastards !"
+	name = "410022.A"
 	set_country_flag = rhine_reb 
 	random_country = { 
 	limit = {
@@ -1187,7 +1187,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	NOT = {
 		RAP = {
@@ -1212,7 +1212,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will negotiate" 
+	name = "410023.A" 
 	set_country_flag = rhine_negotiation
 	random_country = { 
 	limit = {
@@ -1226,14 +1226,14 @@ country_event = {
 country_event = { 
 
 	id = 410024 #Rhineland mixed 2/3
-	title = "Rhineland negotiations"
-	desc = "Rhenish assemble for your rights ! "
+	title = "410024.T"
+	desc = "410024.D"
 	
 	is_triggered_only = yes
 	fire_only_once = yes 
 	
 	option = { #Accept
-	name = "Time to push back the Bohemians ! We will show the worth of the true Germans !" 
+	name = "410024.A" 
 	prestige = 10
 	any_country = {
 				limit = {
@@ -1333,8 +1333,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We will watch them ..."
-	HRE = {
+	name = "410025.A"
+	HLR = {
 			create_vassal = RHI
 				}
 	}
@@ -1351,7 +1351,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	RAP = { check_variable = { 
 	which = Elbian_accep
@@ -1365,7 +1365,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Excellent !"
+	name = "410026.A"
 	add_accepted_culture = north_german 
 	set_country_flag = elbe_accepts
 	any_country = {
@@ -1378,15 +1378,15 @@ country_event = {
 				}
 				annex_to = THIS
 			}
-	PRU_581 = { add_core = HRE }	#Westphalia
-	HAN_534 = { add_core = HRE }	#East Frisia
-	HAM_528 = { add_core = HRE }	#Hanover
-	PRU_546 = { add_core = HRE }	#Pomerania
-	SAX_1 = { add_core = HRE }		#Thuringia
-	HOL_369 = { add_core = HRE }	#Holstein
-	PRU_553 = { add_core = HRE }	#Anhalt
-	PRU_549 = { add_core = HRE }	#Brandenburg
-	SAX_558	 = { add_core = HRE }	#Saxony
+	PRU_581 = { add_core = HLR }	#Westphalia
+	HAN_534 = { add_core = HLR }	#East Frisia
+	HAM_528 = { add_core = HLR }	#Hanover
+	PRU_546 = { add_core = HLR }	#Pomerania
+	SAX_1 = { add_core = HLR }		#Thuringia
+	HOL_369 = { add_core = HLR }	#Holstein
+	PRU_553 = { add_core = HLR }	#Anhalt
+	PRU_549 = { add_core = HLR }	#Brandenburg
+	SAX_558	 = { add_core = HLR }	#Saxony
 	}
 }
 
@@ -1399,7 +1399,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	RAP = {
 	check_variable = { 
@@ -1414,7 +1414,7 @@ country_event = {
 	}	
 	
 	option = { 
-	name = "The Elbian bastards !"
+	name = "410027.A"
 	set_country_flag = elbe_reb 
 	random_country = { 
 	limit = {
@@ -1434,7 +1434,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	NOT = {
 	RAP = {
@@ -1459,7 +1459,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will negotiate" 
+	name = "410028.A" 
 	set_country_flag = elbe_negotiation
 	random_country = { 
 	limit = {
@@ -1481,7 +1481,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { #Accept
-	name = "Time to push back the Bohemians ! We will show the worth of the true Germans !" 
+	name = "410029.A" 
 	prestige = 10
 	any_country = {
 				limit = {
@@ -1519,7 +1519,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	RAP = {
 	check_variable = { 
@@ -1534,7 +1534,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Excellent !"
+	name = "410030.A"
 	add_accepted_culture = south_german 
 	set_country_flag = danube_accepts
 	any_country = {
@@ -1549,38 +1549,38 @@ country_event = {
 	#Austria
 		AUS = {
 			all_core = {
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		#Bavaria
 		BAV = {
 			all_core = {
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		#Wurtemberg
 		WUR = {
 			all_core = {
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		#Baden
 		BAD = {
 			all_core = {
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		#Swiss
 		SWI = {
 			all_core = {
-				add_core = HRE
+				add_core = HLR
 			}
 		}
 		#Tirol
 		AUS_612 = {
-			add_core = HRE
+			add_core = HLR
 		}
-		SAX_1 = { add_core = HRE }
+		SAX_1 = { add_core = HLR }
 	}
 }
 
@@ -1593,7 +1593,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	RAP = {
 	check_variable = { 
@@ -1608,7 +1608,7 @@ country_event = {
 	}	
 	
 	option = { 
-	name = "The Danubian bastards !"
+	name = "410031.A"
 	set_country_flag = danube_reb 
 	random_country = { 
 	limit = {
@@ -1628,7 +1628,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	NOT = {
 	RAP = {
@@ -1653,7 +1653,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will negotiate" 
+	name = "410032.A" 
 	set_country_flag = danube_negotiation
 	random_country = { 
 	limit = {
@@ -1674,7 +1674,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { #Accept
-	name = "Time to push back the Bohemians ! We will show the worth of the true Germans !" 
+	name = "410033.A" 
 	prestige = 10
 	any_country = {
 				limit = {
@@ -1729,14 +1729,14 @@ country_event = {
 country_event = { 
 
 	id = 410034 #Annexation
-	title = "Anschluss Time"
-	desc = "We are happy to integrate the Holy Roman Empire"
+	title = "410034.T"
+	desc = "410034.D"
 	
 	is_triggered_only = yes
 	fire_only_once = yes 
 	
 	option = { 
-	name = "Bohemia can into us !"
+	name = "410034.A"
 	FROM = {
 			inherit = THIS
 		}
@@ -1750,7 +1750,7 @@ country_event = {
 	desc = "HRE7.D"
 
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = locresults 
 	OR = {
 		has_country_flag = elbe_accepts
@@ -1776,7 +1776,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We'll await the end of negotiations then"
+	name = "410007.A"
 	set_country_flag = negotiations
 	clr_country_flag = locresults 
 	}
@@ -1789,7 +1789,7 @@ country_event = {
 	desc = "HRE35.D"
 
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = negotiations
 	}
 	
@@ -1798,7 +1798,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Submission or Conquest, that's their only choice now"
+	name = "410035.A"
 	clr_country_flag = negotiations 
 	set_country_flag = unification
 	SGF = { country_event = 410036 }
@@ -1810,13 +1810,13 @@ country_event = {
 country_event = { 
 
 	id = 410036 
-	title = "Nobody should see this one"
-	desc = "Nobody should see this one"
+	title = "410036.T"
+	desc = "410036.D"
 	
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "To war then !"
+	name = "410036.A"
 	FROM = { country_event = 410037 }
 	}
 	
@@ -1830,7 +1830,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "It can't be avoided then. Onwards ! "
+	name = "410037.A"
 	release_vassal = FROM
 	casus_belli = {
 				target = SGF
@@ -1849,13 +1849,13 @@ country_event = {
 country_event = { 
 
 	id = 410038 
-	title = "Nobody should see this one"
-	desc = "Nobody should see this one"
+	title = "410038.T"
+	desc = "410038.D"
 	
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "To war then !"
+	name = "410038.A"
 	FROM = { country_event = 410039 }
 	}
 	
@@ -1869,7 +1869,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "It can't be avoided then. Onwards ! "
+	name = "410039.A"
 	release_vassal = FROM
 	casus_belli = {
 				target = NGF
@@ -1888,13 +1888,13 @@ country_event = {
 country_event = { 
 
 	id = 410040
-	title = "Nobody should see this one"
-	desc = "Nobody should see this one"
+	title = "410040.T"
+	desc = "410040.D"
 	
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "To war then !"
+	name = "410040.A"
 	FROM = { country_event = 410041 }
 	}
 	
@@ -1908,7 +1908,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "It can't be avoided then. Onwards ! "
+	name = "410041.A"
 	release_vassal = FROM
 	casus_belli = {
 				target = RHI
@@ -1933,8 +1933,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We will watch them ..."
-	HRE = {
+	name = "410042.A"
+	HLR = {
 			create_vassal = SGF
 				}
 	}
@@ -1949,8 +1949,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We will watch them ..."
-	HRE = {
+	name = "410043.A"
+	HLR = {
 			create_vassal = NGF
 				}
 	}
@@ -1966,7 +1966,7 @@ country_event = {
 	picture = "Bohemian_Nationalism"
 
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_country_flag = frankfurt_unify 
 	NOT = { BOH = { exists = yes } }
 	NOT = { has_country_flag = Czechia }
@@ -1978,7 +1978,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "I fear we have awaken something ..."
+	name = "410050.A"
 	set_country_flag = Czechia 
 	}
 	
@@ -1992,7 +1992,7 @@ country_event = {
 	picture = "Barricades_BOH"
 
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	NOT = { BOH = { exists = yes } }
 	has_country_flag = Czechia
 	NOT = { has_global_flag = BOH_civil_war }
@@ -2004,7 +2004,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "They can complain, it's not like they'll get any results"
+	name = "410051.A"
 	set_global_flag = Prague_waiting
 	any_pop = {
 			limit = {
@@ -2036,7 +2036,7 @@ country_event = {
 	major = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	NOT = { BOH = { exists = yes } }
 	has_global_flag = Prague_waiting
 	NOT = { has_global_flag = BOH_civil_war }
@@ -2048,7 +2048,7 @@ country_event = {
 	}	
 	
 	option = { 
-	name = "When one attacks the Empire, the Empire strikes back !"
+	name = "410054.A"
 	set_country_flag = civil_war_happened 
 	clr_global_flag = Prague_waiting 
 	set_global_flag = BOH_civil_war 
@@ -2097,7 +2097,7 @@ country_event = {
 		tag = BRG 
 		}
 	has_global_flag = BOH_civil_war 
-	NOT = { truce_with = HRE }
+	NOT = { truce_with = HLR }
 	}
 	
 	mean_time_to_happen = { 
@@ -2105,14 +2105,14 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will 'support' the Bohemians !"
+	name = "410055.A"
 	casus_belli = {
-			target = HRE
+			target = HLR
 			type = cut_down_to_size
 			months = 60
 		}
 	war = {
-			target = HRE 
+			target = HLR 
 			attacker_goal = {
 				casus_belli = cut_down_to_size
 			}
@@ -2136,12 +2136,12 @@ country_event = {
 	days = 1 }	
 	
 	option = { 
-	name = "We have vainquished the Emperor !"
+	name = "410056.A"
 	clr_global_flag = BOH_civil_war
 	set_global_flag = BOH_civil_war_ended
-	any_owned = { remove_core = HRE }
+	any_owned = { remove_core = HLR }
 	prestige = 50 
-	HRE = { country_event = 410058 }
+	HLR = { country_event = 410058 }
 	country_event = 410060
 	}
 	
@@ -2156,7 +2156,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "We shall be free from the Emperor's yoke !"
+	name = "410057.A"
 	treasury = 10000
 	ammunition = 1000
 	small_arms = 1000
@@ -2179,7 +2179,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Bohemia is lost"
+	name = "410058.A"
 	remove_accepted_culture = czech 
 	prestige = -40
 	}
@@ -2193,7 +2193,7 @@ country_event = {
 	desc = "HRE59.D"
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	has_global_flag = BOH_civil_war
 	owns = 625
 	war = no 
@@ -2203,7 +2203,7 @@ country_event = {
 	days = 1 }	
 	
 	option = { 
-	name = "The Revolution was crushed !"
+	name = "410059.A"
 	prestige = 50 
 	clr_global_flag = BOH_civil_war
 	set_global_flag = BOH_civil_war_ended
@@ -2218,7 +2218,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "For the people ?"
+	name = "410060.A"
 				government = democracy
 				political_reform = state_equal_weight
 				political_reform = wealth_voting
@@ -2231,7 +2231,7 @@ country_event = {
 			factor = 50 }
 		}
 	option = { 
-	name = "For the King !"
+	name = "410060.B"
 				government = prussian_constitutionalism
 				political_reform = appointed
 				political_reform = wealth_voting
@@ -2252,7 +2252,7 @@ country_event = {
 	picture = "rhapsody"
 	
 	trigger = { 
-	OR = { tag = HRE tag = BOH}
+	OR = { tag = HLR tag = BOH}
 	owns = 625 
 	romanticism = 1 
 	}
@@ -2260,7 +2260,7 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { 
-	name = "I heard that you could hear that even in Zanzibar!"
+	name = "410070.A"
 	prestige = 2
 	}
 }
@@ -2273,7 +2273,7 @@ country_event = {
 	major = yes 
 	
 	trigger = { 
-	tag = HRE 
+	tag = HLR 
 	year = 1900 
 	owns = 576 
 	NOT = { year = 1901 }
@@ -2284,7 +2284,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "May it live for a thousand year more!"
+	name = "410071.A"
 	}
 	
 }

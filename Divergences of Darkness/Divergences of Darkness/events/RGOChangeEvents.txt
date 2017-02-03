@@ -61,7 +61,7 @@ province_event = {
 	}
 
 	option = {
-		name = "Blast!"
+		name = "190451.A"
 		trade_goods = grain
 	}
 }
@@ -123,7 +123,7 @@ province_event = {
 	}
 
 	option = {
-		name = "Blast!"
+		name = "97260.A"
 		trade_goods = cattle
 	}
 }
@@ -199,7 +199,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199005.A"
 		trade_goods = coal
 		add_province_modifier = {
 			name = switched_production
@@ -209,7 +209,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199005.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -279,7 +279,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199006.A"
 		trade_goods = copper
 		add_province_modifier = {
 			name = switched_production
@@ -289,7 +289,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199006.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -359,7 +359,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199007.A"
 		trade_goods = iron
 		add_province_modifier = {
 			name = switched_production
@@ -369,7 +369,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199007.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -439,7 +439,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199008.A"
 		trade_goods = lead
 		add_province_modifier = {
 			name = switched_production
@@ -449,7 +449,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199008.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -519,7 +519,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199009.A"
 		trade_goods = sulphur
 		add_province_modifier = {
 			name = switched_production
@@ -529,7 +529,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199009.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -587,7 +587,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199015.A"
 		trade_goods = cotton
 		add_province_modifier = {
 			name = switched_production
@@ -597,7 +597,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199015.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -650,7 +650,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199016.A"
 		trade_goods = tea
 		add_province_modifier = {
 			name = switched_production
@@ -660,7 +660,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199016.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -717,7 +717,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199017.A"
 		trade_goods = spices
 		add_province_modifier = {
 			name = switched_production
@@ -727,7 +727,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199017.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -782,7 +782,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199018.A"
 		trade_goods = wool
 		add_province_modifier = {
 			name = switched_production
@@ -792,7 +792,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199018.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -844,7 +844,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199019.A"
 		trade_goods = fruit
 		add_province_modifier = {
 			name = switched_production
@@ -854,7 +854,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199019.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -910,7 +910,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199020.A"
 		trade_goods = tobacco
 		add_province_modifier = {
 			name = switched_production
@@ -920,7 +920,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199020.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -977,7 +977,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199021.A"
 		trade_goods = coffee
 		add_province_modifier = {
 			name = switched_production
@@ -987,7 +987,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199021.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1044,7 +1044,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199022.A"
 		trade_goods = silk
 		add_province_modifier = {
 			name = switched_production
@@ -1054,7 +1054,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199022.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1107,7 +1107,7 @@ province_event = {
 	}
 
 	option = {
-		name = "They should get to work immediately."
+		name = "199023.A"
 		trade_goods = sugar
 		add_province_modifier = {
 			name = switched_production
@@ -1117,7 +1117,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199023.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1168,7 +1168,7 @@ province_event = {
 	}
 
 	option = {
-		name = "We will encourage the fisheries."
+		name = "199030.A"
 		trade_goods = fish
 		add_province_modifier = {
 			name = switched_production
@@ -1178,7 +1178,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199030.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1235,7 +1235,7 @@ province_event = {
 	}
 
 	option = {
-		name = "We will encourage the lumberyards."
+		name = "199031.A"
 		trade_goods = timber
 		add_province_modifier = {
 			name = switched_production
@@ -1245,7 +1245,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199031.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1294,7 +1294,7 @@ province_event = {
 	}
 
 	option = {
-		name = "We will encourage the tropical lumberyards."
+		name = "199032.A"
 		trade_goods = tropical_wood
 		add_province_modifier = {
 			name = switched_production
@@ -1304,7 +1304,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199032.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1360,7 +1360,7 @@ province_event = {
 	}
 
 	option = {
-		name = "We will encourage the ranches."
+		name = "199033.A"
 		trade_goods = cattle
 		add_province_modifier = {
 			name = switched_production
@@ -1370,7 +1370,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199033.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1429,7 +1429,7 @@ province_event = {
 	}
 
 	option = {
-		name = "We will encourage the grain farms."
+		name = "199034.A"
 		trade_goods = grain
 		add_province_modifier = {
 			name = switched_production
@@ -1439,7 +1439,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		name = "199034.B"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1492,7 +1492,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Plant it with sugar."
+		name = "199040.A"
 		trade_goods = sugar
 		add_province_modifier = {
 			name = new_production
@@ -1500,7 +1500,7 @@ province_event = {
 		}			
 	}	
 	option = {
-		name = "Plant it with coffee."
+		name = "199040.B"
 		trade_goods = coffee
 		add_province_modifier = {
 			name = new_production
@@ -1508,7 +1508,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = "Plant it with cotton."
+		name = "199040.C"
 		trade_goods = cotton
 		add_province_modifier = {
 			name = new_production
@@ -1516,7 +1516,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = "Plant it with spices."
+		name = "199040.E"
 		trade_goods = spices
 		add_province_modifier = {
 			name = new_production
@@ -1524,7 +1524,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = "Plant it with tobacco."
+		name = "199040.F"
 		trade_goods = tobacco
 		add_province_modifier = {
 			name = new_production
@@ -1532,7 +1532,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = "Intensify the existing operation."
+		name = "199040.G"
 		add_province_modifier = {
 			name = intense_farming
 			duration = 730
@@ -1571,7 +1571,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "This is unwise."
+		name = "199041.A"
 		state_scope = {
 			rich_strata = {
 				consciousness = 3
@@ -1583,7 +1583,7 @@ province_event = {
 	}	
 
 	option = {
-		name = "Allow the intensive farming to proceed."
+		name = "199041.B"
 		state_scope = {
 			any_owned = {
 				limit = {
@@ -1617,7 +1617,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Blast!"
+		name = "97360.A"
 		remove_province_modifier = intense_farming
 		add_province_modifier = {
 			name = exhausted_land

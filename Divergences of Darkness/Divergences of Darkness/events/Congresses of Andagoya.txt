@@ -83,7 +83,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Miranda and the Colombians take the stage"
+	name = "46408.A"
 	RAP = {
 			change_variable = {
 				which = colombian_unity
@@ -96,7 +96,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The Granadan independentists secure the first debates"
+	name = "46408.B"
 	RAP = {
 			change_variable = {
 				which = granadan_separatists
@@ -109,7 +109,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The Federalistas critics convince the assembly"
+	name = "46408.C"
 	RAP = {
 			change_variable = {
 				which = dismantlement_clm
@@ -143,7 +143,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The Granadans are to blame here obviously ..."
+	name = "46401.A"
 	set_country_flag = trouble_streets
 	RAP = {
 			change_variable = {
@@ -159,7 +159,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Salvadorians should have behave!"
+	name = "46401.B"
 	set_country_flag = trouble_streets
 	RAP = {
 			change_variable = {
@@ -196,7 +196,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "God wills it!"
+	name = "46402.A"
 	set_country_flag = priests_CLM 
 	RAP = {
 			change_variable = {
@@ -227,7 +227,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "God wills it!"
+	name = "46403.A"
 	set_country_flag = priests_CLM 
 	RAP = {
 			change_variable = {
@@ -258,7 +258,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "God wills it!"
+	name = "46404.A"
 	set_country_flag = priests_CLM 
 	RAP = {
 			change_variable = {
@@ -287,7 +287,7 @@ country_event = {
 	mean_time_to_happen = { days = 10 }
 	
 	option = { 
-	name = "The Army was fundamental in liberating the New World and shall keep certain priviliges"
+	name = "46405.A"
 	any_pop = { limit = { OR = { type = officers type = soldiers } } militancy = -3 }
 	set_country_flag = caudillos 
 	RAP = {
@@ -306,7 +306,7 @@ country_event = {
 	}
 	
 	option = {
-	name = "Our new state should avoid giving too much power to the military"
+	name = "46405.B"
 	any_pop = { limit = { OR = { type = officers type = soldiers } } militancy = 3 }
 	set_country_flag = caudillos
 	RAP = {
@@ -342,7 +342,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We are Gran Colombia, a Hispanic country!"
+	name = "46406.A"
 	any_pop = { limit = { OR = { culture = zapotec culture = nahua culture = quechua culture = tarascan  culture = mayan } } militancy = 4 }
 	set_country_flag = castas
 	RAP = {
@@ -357,7 +357,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We could maybe grant them some concessions. "
+	name = "46406.B"
 	any_pop = { limit = { OR = { culture = mexican culture = lusitanian culture = granadan culture = central_american } } militancy = 2 }
 	set_country_flag = castas
 	RAP = {
@@ -392,7 +392,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We should not anger the local hacendados..."
+	name = "46407.A"
 	any_pop = { limit = { type = aristocrats } militancy = -2 }
 	set_country_flag = slavery
 	RAP = {
@@ -407,7 +407,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will abolish this inhumane practise!"
+	name = "46407.B"
 	any_pop = { limit = { type = aristocrats } militancy = 5 }
 	set_country_flag = slavery
 	political_reform = no_slavery

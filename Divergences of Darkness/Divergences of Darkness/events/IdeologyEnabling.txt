@@ -326,8 +326,8 @@ country_event = {
 
 country_event = {
 	id = 1004
-	title = "Social Liberalism"
-	desc = "An intiguing challenge to the Classic Liberalism has emerged."
+	title = "1004.T"
+	desc = "1004.D"
 	picture = "AnarchoLiberals"
 	
 	trigger = {
@@ -350,7 +350,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We will observe this with great interest."
+		name = "1004.A"
 		enable_ideology = social_liberal
 	}
 }

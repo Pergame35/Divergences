@@ -8,8 +8,8 @@
 # Pluto
 country_event = {
 	id = 810022
-	title = "Pluto Discovered!"
-	desc = "We have discovered the Ninth Planet! Surely it will be recognized as such for eternity"
+	title = "810022.T"
+	desc = "810022.D"
 	fire_only_once = yes
 	major = yes
 	
@@ -33,7 +33,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "A bit small, isn't it?"
+		name = "810022.A"
 		prestige = 20
 		set_global_flag = pluto
 	}
@@ -41,8 +41,8 @@ country_event = {
 
 country_event = {
 	id = 810025
-	title = "Neptune Discovered!"
-	desc = "We have discovered the eigth Planet! "
+	title = "810025.T"
+	desc = "810025.D"
 	fire_only_once = yes
 	major = yes
 	
@@ -66,7 +66,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "I said there was something massive exterior to Uranus."
+		name = "810025.A"
 		prestige = 10
 		set_global_flag = neptune
 	}
@@ -81,8 +81,8 @@ country_event = {
 country_event = {
 	
 	id = 1100130
-	title = "End of the Recruitment Drive"
-	desc = "Our recruitment drive has been a success and our efforts to recruit new soldiers is ending."
+	title = "1100130.T"
+	desc = "1100130.D"
 	picture = "greatwar"
 
 	trigger = {
@@ -112,7 +112,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Excellent!"
+		name = "97086.A"
 		clr_country_flag = recruitment_drive
 		remove_country_modifier = recruitment_drive
 	}
@@ -121,8 +121,8 @@ country_event = {
 country_event = {
 	
 	id = 1100131
-	title = "The Recruitment Drive Continues"
-	desc = "Our recruitment drive has been ongoing, yet still we aren't at the levels of potential recruits that we need."
+	title = "1100131.T"
+	desc = "1100131.D"
 	picture = "greatwar"
 
 	trigger = {
@@ -153,7 +153,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The recruitment must contiue."
+		name = "1100131.A"
 		add_country_modifier = {
 			name = recruitment_drive
 			duration = 1825
@@ -170,8 +170,8 @@ country_event = {
 country_event = {
 	
 	id = 1100145
-	title = "Army Recruitment Drive"
-	desc = "Our levels of soldier recruitment are perilously low. Perhaps a concerted effort to bring recruits to the army is required?"
+	title = "1100145.T"
+	desc = "1100145.D"
 	picture = "greatwar"
 	
 	trigger = {
@@ -211,7 +211,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Begin the recruitment!"
+		name = "1100145.A"
 		set_country_flag = recruitment_drive
 		add_country_modifier = {
 			name = recruitment_drive
@@ -235,8 +235,8 @@ country_event = {
 # Alliance Breaker
 country_event = {
 	id = 81002211
-	title = "Alliance Broken!"
-	desc = "A series of diplomatic blunders have broken our alliance!"
+	title = "81002211.T"
+	desc = "81002211.D"
 	picture = "treaty"
 	
 	trigger = {
@@ -262,7 +262,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Ah, blast."
+		name = "81002211.A"
 		prestige = -10
 		random_country = {
 			limit = {
@@ -280,8 +280,8 @@ country_event = {
 
 country_event = {
 	id = 81002212
-	title = "Alliance Broken!"
-	desc = "A series of diplomatic blunders have broken our alliance!"
+	title = "81002212.T"
+	desc = "81002212.D"
 	picture = "treaty"
 	
 	trigger = {
@@ -305,7 +305,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Ah, blast."
+		name = "81002212.A"
 		random_country = {
 			limit = {
 				is_greater_power = yes
@@ -320,7 +320,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "But we really need that alliance!"
+		name = "81002212.B"
 		prestige = -10
 		random_country = {
 			limit = {
@@ -337,8 +337,8 @@ country_event = {
 
 country_event = {
 	id = 81002213
-	title = "$COUNTRY_ADJ$ Neutrality"
-	desc = "We have been pulled into an outside war, despite our dedication to neutrality."
+	title = "81002213.T"
+	desc = "81002213.D"
 	picture = "deliberation"
 	
 	trigger = {
@@ -357,7 +357,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We must remain Neutral!"
+		name = "81002213.A"
 		any_country = {
 			limit = { war_with = THIS }
 			end_war = THIS
@@ -372,7 +372,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We must discard our Neutrality."
+		name = "81002213.B"
 		set_country_flag = abandoned_neutrality
 		prestige = -20
 		remove_country_modifier = neutrality
@@ -391,8 +391,8 @@ country_event = {
 country_event = {
 
 	id = 1100132
-	title = "Workshop of the World!"
-	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
+	title = "1100132.T"
+	desc = "1100132.D"
 	picture = "unite"
 	fire_only_once = yes
 	major = yes
@@ -406,7 +406,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100132.A"
 		add_country_modifier = {
 			name = workshop_of_the_world
 			duration = -1
@@ -423,8 +423,8 @@ country_event = {
 country_event = {
 
 	id = 1100133
-	title = "Workshop of the World!"
-	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
+	title = "1100133.T"
+	desc = "1100133.D"
 	picture = "unite"
 	fire_only_once = yes
 	major = yes
@@ -437,7 +437,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100133.A"
 		add_country_modifier = {
 			name = workshop_of_the_world
 			duration = -1
@@ -454,8 +454,8 @@ country_event = {
 country_event = {
 
 	id = 1100134
-	title = "Workshop of the World!"
-	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
+	title = "1100134.T"
+	desc = "1100134.D"
 	picture = "unite"
 	fire_only_once = yes
 	major = yes
@@ -468,7 +468,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100134.A"
 		add_country_modifier = {
 			name = workshop_of_the_world
 			duration = -1
@@ -485,8 +485,8 @@ country_event = {
 country_event = {
 
 	id = 1100135
-	title = "Workshop of the World!"
-	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
+	title = "1100135.T"
+	desc = "1100135.D"
 	picture = "unite"
 	fire_only_once = yes
 	major = yes
@@ -499,7 +499,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100135.A"
 		add_country_modifier = {
 			name = workshop_of_the_world
 			duration = -1
@@ -516,8 +516,8 @@ country_event = {
 country_event = {
 
 	id = 1100136
-	title = "Workshop of the World!"
-	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
+	title = "1100136.T"
+	desc = "1100136.D"
 	picture = "unite"
 	fire_only_once = yes
 	major = yes
@@ -530,7 +530,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100136.A"
 		add_country_modifier = {
 			name = workshop_of_the_world
 			duration = -1
@@ -547,8 +547,8 @@ country_event = {
 country_event = {
 
 	id = 1100137
-	title = "Workshop of the World!"
-	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
+	title = "1100137.T"
+	desc = "1100137.D"
 	picture = "unite"
 	fire_only_once = yes
 	major = yes
@@ -561,7 +561,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100137.A"
 		add_country_modifier = {
 			name = workshop_of_the_world
 			duration = -1
@@ -578,8 +578,8 @@ country_event = {
 country_event = {
 
 	id = 1100138
-	title = "Workshop of the World!"
-	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
+	title = "1100138.T"
+	desc = "1100138.D"
 	picture = "unite"
 	fire_only_once = yes
 	major = yes
@@ -592,7 +592,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100138.A"
 		add_country_modifier = {
 			name = workshop_of_the_world
 			duration = -1
@@ -609,8 +609,8 @@ country_event = {
 country_event = {
 
 	id = 1100139
-	title = "Workshop of the World!"
-	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
+	title = "1100139.T"
+	desc = "1100139.D"
 	picture = "unite"
 	fire_only_once = yes
 	major = yes
@@ -623,7 +623,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100139.A"
 		add_country_modifier = {
 			name = workshop_of_the_world
 			duration = -1
@@ -640,8 +640,8 @@ country_event = {
 country_event = {
 
 	id = 1100140
-	title = "Workshop of the World!"
-	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
+	title = "1100140.T"
+	desc = "1100140.D"
 	picture = "unite"
 	fire_only_once = yes
 	major = yes
@@ -654,7 +654,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100140.A"
 		add_country_modifier = {
 			name = workshop_of_the_world
 			duration = -1
@@ -671,8 +671,8 @@ country_event = {
 country_event = {
 
 	id = 1100141
-	title = "Workshop of the World!"
-	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
+	title = "1100141.T"
+	desc = "1100141.D"
 	picture = "unite"
 	fire_only_once = yes
 	major = yes
@@ -685,7 +685,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100141.A"
 		add_country_modifier = {
 			name = workshop_of_the_world
 			duration = -1
@@ -702,8 +702,8 @@ country_event = {
 country_event = {
 
 	id = 1100142
-	title = "Workshop of the World!"
-	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
+	title = "1100142.T"
+	desc = "1100142.D"
 	picture = "unite"
 	fire_only_once = yes
 	major = yes
@@ -716,7 +716,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100142.A"
 		add_country_modifier = {
 			name = workshop_of_the_world
 			duration = -1
@@ -733,8 +733,8 @@ country_event = {
 country_event = {
 
 	id = 1100143
-	title = "Workshop of the World!"
-	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
+	title = "1100143.T"
+	desc = "1100143.D"
 	picture = "unite"
 	fire_only_once = yes
 	major = yes
@@ -747,7 +747,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100143.A"
 		add_country_modifier = {
 			name = workshop_of_the_world
 			duration = -1
@@ -764,14 +764,14 @@ country_event = {
 country_event = {
 
 	id = 1100144
-	title = "No longer Workshop of the World!"
-	desc = "Sire, our industries have fallen behind our rivals!"
+	title = "1100144.T"
+	desc = "1100144.D"
 	picture = "unite"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "We must redouble our efforts!"
+		name = "1100144.A"
 		remove_country_modifier = workshop_of_the_world
 	}
 }
@@ -814,7 +814,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Liberals shall rule instead."
+		name = "11380019.A"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = liberal
@@ -854,7 +854,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Conservatives shall rule instead."
+		name = "11380019.B"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = conservative
@@ -894,7 +894,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Reactionaries shall rule instead."
+		name = "11380019.C"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = reactionary
@@ -926,7 +926,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The people have spoken. It is time for the monarchy to end."
+		name = "11380019.E"
 		clr_country_flag = political_showdown
 		clr_country_flag = election_overridden
 		prestige = -25
@@ -988,7 +988,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Liberals shall rule instead."
+		name = "11380020.A"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = liberal
@@ -1030,7 +1030,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Conservatives shall rule instead."
+		name = "11380020.B"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = conservative
@@ -1072,7 +1072,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Socialists shall rule instead."
+		name = "11380020.C"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = socialist
@@ -1111,7 +1111,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The people have spoken. It is time for the monarchy to end."
+		name = "11380020.E"
 		clr_country_flag = political_showdown
 		clr_country_flag = election_overridden
 		prestige = -25
@@ -1168,7 +1168,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Liberals shall rule instead."
+		name = "11380021.A"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = liberal
@@ -1207,7 +1207,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Conservatives shall rule instead."
+		name = "11380021.B"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = conservative
@@ -1249,7 +1249,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The people have spoken. It is time for the monarchy to end."
+		name = "11380021.C"
 		clr_country_flag = political_showdown
 		clr_country_flag = election_overridden
 		prestige = -25
@@ -1311,7 +1311,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Liberals shall rule instead."
+		name = "11380022.A"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = liberal
@@ -1353,7 +1353,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Conservatives shall rule instead."
+		name = "11380022.B"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = conservative
@@ -1395,7 +1395,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Socialists shall rule instead."
+		name = "11380022.C"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = socialist
@@ -1434,7 +1434,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Enough is enough. The people clearly cannot be trusted to do what is best for $COUNTRY$."
+		name = "11380022.E"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		prestige = -10
@@ -1567,7 +1567,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Liberals shall rule instead."
+		name = "11380023.A"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = liberal
@@ -1620,7 +1620,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This cannot be allowed. The Conservatives shall rule instead."
+		name = "11380023.B"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		ruling_party_ideology = conservative
@@ -1676,7 +1676,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Enough is enough. The people clearly cannot be trusted to do what is best for $COUNTRY$."
+		name = "11380023.C"
 		clr_country_flag = political_showdown
 		set_country_flag = election_overridden
 		prestige = -10
@@ -1781,8 +1781,8 @@ country_event = {
 
 country_event = {
 	id = 99380015
-	title = "Assassination Attempt!"
-	desc = "An assassin has struck at our monarch while he was on his whistle-stop tour!"
+	title = "99380015.T"
+	desc = "99380015.D"
 	picture = "ferdinand"
 	
 	trigger = {
@@ -1832,7 +1832,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Ye Gads!"
+		name = "99380015.A"
 		random_owned = {
 			limit = {
 				owner = {
@@ -1864,8 +1864,8 @@ country_event = {
 #By jingo
 country_event = {
 	id = 176605647
-	title = "Surge of Patriotism"
-	desc = "Our people have been overcome with belligerence for the hated enemy."
+	title = "176605647.T"
+	desc = "176605647.D"
 	picture = "Riot"
 	
 	trigger = {
@@ -1956,7 +1956,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Capital!"
+		name = "176605647.A"
 		random_state = {
 			any_pop = {
 				dominant_issue = {
@@ -1974,8 +1974,8 @@ country_event = {
 
 province_event = {
 	id = 29909
-	title = "Irrigation Networks"
-	desc = "The deserts in $PROVINCENAME$ shall bloom with our new irrigartion network!"
+	title = "29909.T"
+	desc = "29909.D"
 	
 	trigger = {
 		NOT = {
@@ -2051,7 +2051,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Wonderful"
+		name = "29909.A"
 		add_province_modifier = {
 			name = irrigration_network
 			duration = -1
@@ -2097,7 +2097,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This could mean trouble down the line."
+		name = "152009872.A"
 		add_country_modifier = {
 			name = coup_risk
 			duration = 1095
@@ -2243,7 +2243,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The army shall rule $COUNTRY$ for now."
+		name = "152009873.A"
 		remove_country_modifier = coup_risk
 		any_pop = {
 			limit = {
@@ -2318,7 +2318,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will not stand for military rule in $COUNTRY$!"
+		name = "152009873.B"
 		prestige = -10
 		remove_country_modifier = coup_risk
 		add_country_modifier = {
@@ -2375,8 +2375,8 @@ country_event = {
 
 country_event = {
 	id = 152219872
-	title = "Down with the Secret Police!"
-	desc = "With the end of the dictatorship, the secret police service must be disbanded."
+	title = "152219872.T"
+	desc = "152219872.D"
 	picture = "Policeaction"
 	
 	trigger = {
@@ -2394,14 +2394,14 @@ country_event = {
 	}
 	
 	option = {
-		name = "A blanket amnesty seems the fairest way"
+		name = "152219872.A"
 		remove_country_modifier = secret_police
 		any_pop = {
 			militancy = 1
 		}
 	}
 	option = {
-		name = "An amnesty for the military seems the fairest way"
+		name = "152219872.B"
 		remove_country_modifier = secret_police
 		soldiers = {
 			militancy = -3
@@ -2421,7 +2421,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "An amnesty for the administration seems the fairest way"
+		name = "152219872.C"
 		remove_country_modifier = secret_police
 		soldiers = {
 			militancy = 2
@@ -2441,7 +2441,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "No amnesty for the enemies of the people!"
+		name = "152219872.E"
 		remove_country_modifier = secret_police
 		any_pop = {
 			limit = {
@@ -2468,8 +2468,8 @@ country_event = {
 # Migration bonuses
 country_event = {
 	id = 810029
-	title = "Immigrant Surge!"
-	desc = "A sudden surge in immigration to $COUNTRY$ has occurred."
+	title = "810029.T"
+	desc = "810029.D"
 	picture = "emigration"
 	
 	fire_only_once = yes
@@ -2489,7 +2489,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "A great day!"
+		name = "810029.A"
 		set_country_flag = immigration_surge
 		prestige = 2
 		add_country_modifier = {
@@ -2502,8 +2502,8 @@ country_event = {
 country_event = {
 
 	id = 1100149
-	title = "Tax Reform!"
-	desc = "A series of reforms to the $COUNTRY_ADJ$ tax laws have given a boost to our revenues."
+	title = "1100149.T"
+	desc = "1100149.D"
 	picture = "deliberation"
 
 	trigger = {
@@ -2517,7 +2517,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Raise the $COUNTRY_ADJ$ flag!"
+		name = "1100149.A"
 		add_country_modifier = {
 			name = tax_reforms
 			duration = 1800
@@ -2527,8 +2527,8 @@ country_event = {
 
 country_event = {
 	id = 17515
-	title = "General Strike!"
-	desc = "Our industry has been crippled by a general strike!"
+	title = "17515.T"
+	desc = "17515.D"
 	picture = "Revolution"
 	
 	trigger = {
@@ -2637,7 +2637,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Oh no!"
+		name = "17515.A"
 		add_country_modifier = {
 			name = general_strike
 			duration = 14

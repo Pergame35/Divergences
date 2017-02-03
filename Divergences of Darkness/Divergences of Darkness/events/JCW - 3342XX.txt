@@ -58,14 +58,14 @@ country_event = {   #Japan is informed of the end of the war
 
 	id = 334202
 
-	title = "Enforced Peace"
+	title = "334202.T"
 	desc = "EVTDESC334202"
 	picture = "boxers"
 	
 	is_triggered_only = yes
 
 	option = {
-		name = "Damn the Joseons!"
+		name = "334202.A"
     prestige = -15
 	relation = { who = KOR value = -200 }
     any_pop = {
@@ -149,7 +149,7 @@ country_event = {
 		days = 10
 	}	
 	option = {
-		name = "The Song dynasty arises!"
+		name = "334205.A"
 		government = absolute_monarchy 
 		any_pop = { militancy = 1 }
 		years_of_research = 2
@@ -159,7 +159,7 @@ country_event = {
 	}
 	
 	option = { 
-		name = "The Regency will endure."
+		name = "334205.B"
 		government = merchant_republic 
 		political_reform = landed_voting
 		any_pop = { militancy = 2 }
@@ -169,7 +169,7 @@ country_event = {
 	}
 	
 	option = { 
-		name = "The First Chinese Republic is created in Nanjing!"
+		name = "334205.C"
 		government = democracy 
 	political_reform = wealth_voting
 	political_reform = state_equal_weight

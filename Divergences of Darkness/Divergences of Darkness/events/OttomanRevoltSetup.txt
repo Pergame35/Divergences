@@ -1,7 +1,7 @@
 country_event = {
 	id = 999996
-	title = "Rebellion against the Ottomans"
-	desc = "This is just to help the rebels..."
+	title = "999996.T"
+	desc = "999996.D"
 	picture = "Orthodox"
 	
 	trigger = {
@@ -16,7 +16,7 @@ country_event = {
 		months = 1
 	}	
 	option = {
-		name = "We shall be free from the Sultan's yoke!"
+		name = "999996.A"
 		any_pop = {
 			militancy = -3
 		}

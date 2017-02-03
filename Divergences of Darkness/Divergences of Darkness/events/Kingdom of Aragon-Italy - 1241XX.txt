@@ -312,14 +312,14 @@ country_event = {
 	mean_time_to_happen = { months = 20 }
 	
 	option = { 
-	name = "Time to finish what we started and end the Hafsids!"
+	name = "124110.A"
 	badboy = 5 
 	TUN = { country_event = 124111 }
 	ai_chance = { factor = 70 }
 	}
 
 	option = { 
-	name = "We have better things to do..."
+	name = "124110.B"
 	ai_chance = { factor = 30 }
 	}
 }
@@ -333,7 +333,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Give up, we can't fight them ..."
+	name = "124111.A"
 	FROM = { country_event = 124112 }
 	ai_chance = { 
 		factor = 30 
@@ -345,7 +345,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We shall not surrender our independence!"
+	name = "124111.B"
 	FROM = { country_event = 124113 }
 	}
 }
@@ -359,7 +359,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "They made the wise choice."
+	name = "124112.A"
 	inherit = FROM
 	}
 }
@@ -373,7 +373,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "That makes no difference in the end."
+	name = "124113.A"
 	add_casus_belli = {
 				target = FROM
 				type = establish_protectorate_casus_belli

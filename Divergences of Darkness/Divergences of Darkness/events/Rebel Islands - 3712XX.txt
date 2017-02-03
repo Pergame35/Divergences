@@ -1294,7 +1294,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = {
-	name = "We gladly accept."
+	name = "135602.A"
 		money = 100000
 		2233 = { remove_core = THIS }
 		FROM = { country_event = 371262 }
@@ -1312,7 +1312,7 @@ country_event = {
 	}
 
 	option = {
-	name = "We refuse."
+	name = "135602.B"
 	FROM = { country_event = 371263 }
 		ai_chance = {
 			factor = 25
@@ -1328,7 +1328,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Excellent."
+	name = "190441.A"
 	prestige = 5
 	money = -100000
 	2233 = { secede_province = THIS }
@@ -1345,20 +1345,20 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Hm, I see."
+	name = "135622.A"
 	relation = { who = FROM value = -100 }
 	}
 }
 
 country_event = {
 	id = 371264
-	title = "NeuKur1.T"
+	title = "NeuKur4.T"
 	desc = "NeuKur4.D"
 	
 	is_triggered_only = yes 
 	
 	option = {
-	name = "We gladly accept."
+	name = "135620.A"
 		money = 150000
 		any_owned = { 
 		ENG_2228 = { remove_core = THIS secede_province = FROM }
@@ -1378,7 +1378,7 @@ country_event = {
 	}
 
 	option = {
-	name = "We refuse."
+	name = "135620.B"
 	FROM = { country_event = 371266 }
 		ai_chance = {
 			factor = 25
@@ -1394,7 +1394,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Excellent."
+	name = "97205.A"
 	prestige = 5
 	money = -150000
 	relation = { who = FROM value = 50 }
@@ -1410,20 +1410,20 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Hm, I see."
+	name = "135632.A"
 	relation = { who = FROM value = -100 }
 	}
 }
 
 country_event = {
 	id = 371267
-	title = "NeuKur1.T"
+	title = "NeuKur7.T"
 	desc = "NeuKur7.D"
 	
 	is_triggered_only = yes 
 	
 	option = {
-	name = "We gladly accept."
+	name = "135630.A"
 		money = 100000
 		2231 = { remove_core = THIS}
 		FROM = { country_event = 371268 }
@@ -1441,7 +1441,7 @@ country_event = {
 	}
 
 	option = {
-	name = "We refuse."
+	name = "135630.B"
 	FROM = { country_event = 371269 }
 		ai_chance = {
 			factor = 25
@@ -1457,7 +1457,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Excellent."
+	name = "97255.A"
 	prestige = 5
 	money = -100000
 	2231 = { secede_province = THIS }
@@ -1474,19 +1474,19 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Hm, I see."
+	name = "135625.A"
 	relation = { who = FROM value = -100 }
 	}
 }
 country_event = {
 	id = 371270
-	title = "NeuKur1.T"
+	title = "NeuKur10.T"
 	desc = "NeuKur10.D"
 	
 	is_triggered_only = yes 
 	
 	option = {
-	name = "We gladly accept."
+	name = "135623.A"
 		money = 150000
 		any_owned = { 
 		2228 = { remove_core = THIS secede_province = FROM }
@@ -1506,7 +1506,7 @@ country_event = {
 	}
 
 	option = {
-	name = "We refuse."
+	name = "135623.B"
 	FROM = { country_event = 371272 }
 		ai_chance = {
 			factor = 25
@@ -1522,7 +1522,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Excellent."
+	name = "97355.A"
 	prestige = 5
 	money = -150000
 	relation = { who = FROM value = 50 }
@@ -1538,7 +1538,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Hm, I see."
+	name = "371263.A"
 	relation = { who = FROM value = -100 }
 	}
 }
@@ -1551,7 +1551,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = {
-	name = "We gladly accept."
+	name = "371261.A"
 		money = 150000
 		any_owned = { 
 		ENG_2224 = { remove_core = THIS secede_province = FROM }
@@ -1571,7 +1571,7 @@ country_event = {
 	}
 
 	option = {
-	name = "We refuse."
+	name = "371261.B"
 	FROM = { country_event = 371275 }
 		ai_chance = {
 			factor = 25
@@ -1587,7 +1587,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Excellent."
+	name = "48912.A"
 	prestige = 5
 	money = -150000
 	relation = { who = FROM value = 50 }
@@ -1603,20 +1603,20 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Hm, I see."
+	name = "371266.A"
 	relation = { who = FROM value = -100 }
 	}
 }
 
 country_event = {
 	id = 371276
-	title = "NeuKur1.T"
+	title = "NeuKur16.T"
 	desc = "NeuKur16.D"
 	
 	is_triggered_only = yes 
 	
 	option = {
-	name = "We gladly accept."
+	name = "371264.A"
 		money = 50000
 		any_owned = { 
 		ENG_2224 = { remove_core = THIS secede_province = FROM }
@@ -1636,7 +1636,7 @@ country_event = {
 	}
 
 	option = {
-	name = "We refuse."
+	name = "371264.B"
 	FROM = { country_event = 371278 }
 		ai_chance = {
 			factor = 25
@@ -1652,7 +1652,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Excellent."
+	name = "135603.A"
 	prestige = 5
 	money = -50000
 	relation = { who = FROM value = 50 }
@@ -1668,20 +1668,20 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Hm, I see."
+	name = "371269.A"
 	relation = { who = FROM value = -100 }
 	}
 }
 
 country_event = {
 	id = 371279
-	title = "NeuKur1.T"
+	title = "NeuKur19.T"
 	desc = "NeuKur19.D"
 	
 	is_triggered_only = yes 
 	
 	option = {
-	name = "We gladly accept."
+	name = "371267.A"
 	money = 50000
 	any_owned = { 
 		ENG_2224 = { remove_core = THIS secede_province = FROM }
@@ -1701,7 +1701,7 @@ country_event = {
 	}
 
 	option = {
-	name = "We refuse."
+	name = "371267.B"
 	FROM = { country_event = 371281 }
 		ai_chance = {
 			factor = 25
@@ -1717,7 +1717,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Excellent."
+	name = "135611.A"
 	prestige = 5
 	money = -50000
 	relation = { who = FROM value = 50 }
@@ -1733,20 +1733,20 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Hm, I see."
+	name = "371272.A"
 	relation = { who = FROM value = -100 }
 	}
 }
 
 country_event = {
 	id = 371282
-	title = "NeuKur1.T"
+	title = "NeuKur22.T"
 	desc = "NeuKur22.D"
 	
 	is_triggered_only = yes 
 	
 	option = {
-	name = "We gladly accept."
+	name = "371270.A"
 	money = 75000
 	2223 = { secede_province = FROM }
 	2226 = { secede_province = FROM }
@@ -1766,7 +1766,7 @@ country_event = {
 	}
 
 	option = {
-	name = "We refuse."
+	name = "371270.B"
 	FROM = { country_event = 371284 }
 		ai_chance = {
 			factor = 25
@@ -1782,7 +1782,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Excellent."
+	name = "135621.A"
 	prestige = 5
 	money = -75000
 	relation = { who = FROM value = 50 }
@@ -1798,7 +1798,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Hm, I see."
+	name = "371275.A"
 	relation = { who = FROM value = -100 }
 	}
 }

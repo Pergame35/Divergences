@@ -64,7 +64,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "I always knew this to be true."
+		name = "18501.A"
 		random_owned = {
 			limit = {
 				is_colonial = no
@@ -226,7 +226,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "I always knew this to be true."
+		name = "18506.A"
 		random_owned = {
 			limit = {
 				is_colonial = no
@@ -293,13 +293,13 @@ country_event = {
 	}
 	
 	option = {
-		name = "These demonstrations cannot be allowed."
+		name = "18507.A"
 		any_pop = { consciousness = 2 }
 		prestige = -5
 	}
 	
 	option = {
-		name = "Leave them alone... for now."
+		name = "18507.B"
 		random_state = {
 			limit = { is_colonial = no }
 			any_pop = {
@@ -344,7 +344,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Let our neighbours fear our might!"
+		name = "18510.A"
 		prestige = 8
 		any_neighbor_country = {
 			limit = {
@@ -355,7 +355,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Let the people witness our strength!"
+		name = "18510.B"
 		prestige = 3
 		any_pop = {
 			militancy = 1
@@ -379,7 +379,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "I always knew this to be true."
+		name = "18511.A"
 		random_owned = {
 			limit = {
 				is_colonial = no
@@ -485,7 +485,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We must send in the army, no matter the cost."
+		name = "18515.A"
 		any_pop = {
 			militancy = -2
 			consciousness = 1
@@ -494,14 +494,14 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will restrain ourselves. For now."
+		name = "18515.B"
 		prestige = 3
 	}
 }
 
 country_event = {
 	id = 18516
-	title = "Police Parade in $CAPITAL$" #Parade in the Capital
+	title = "18516.T" #Parade in the Capital
 	desc = "EVTDESC18500"
 	picture = "Parade"
 	
@@ -547,7 +547,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "I always knew this to be true."
+		name = "18517.A"
 		random_owned = {
 			limit = {
 				is_colonial = no
@@ -583,7 +583,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We should be thankful for our blessings."
+		name = "18520.A"
 		prestige = 10
 		any_neighbor_country = {
 			relation = { who = THIS value = 25 }
@@ -607,7 +607,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We should be thankful for our blessings."
+		name = "18525.A"
 		prestige = 10
 		any_pop = { militancy = -2 }
 	}
@@ -637,7 +637,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall see how this plays out."
+		name = "18530.A"
 		prestige = 5
 		any_pop = { consciousness = -2 }
 		random_country = {
@@ -674,7 +674,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We should be thankful for our blessings."
+		name = "18535.A"
 		years_of_research = 0.4
 		random_owned = {
 			limit = {
@@ -793,7 +793,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall embrace the ideal of Equality."
+		name = "18540.A"
 		remove_country_modifier = national_confusion
 		prestige = 5
 		nationalvalue = nv_equality
@@ -832,7 +832,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall embrace the ideal of Liberty."
+		name = "18540.B"
 		remove_country_modifier = national_confusion
 		prestige = 5
 		nationalvalue = nv_liberty
@@ -890,7 +890,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall embrace the ideal of Liberty."
+		name = "18541.A"
 		remove_country_modifier = national_confusion
 		prestige = 5
 		nationalvalue = nv_liberty
@@ -929,7 +929,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall embrace the ideal of Order."
+		name = "18541.B"
 		remove_country_modifier = national_confusion
 		prestige = 5
 		nationalvalue = nv_order
@@ -987,7 +987,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall embrace the ideal of Order."
+		name = "18542.A"
 		remove_country_modifier = national_confusion
 		prestige = 5
 		nationalvalue = nv_order
@@ -1036,7 +1036,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall embrace the ideal of Might."
+		name = "18542.B"
 		remove_country_modifier = national_confusion
 		prestige = 5
 		nationalvalue = nv_might
@@ -1131,7 +1131,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall embrace our traditions once again."
+		name = "18550.A"
 		set_country_flag = can_switch_to_tradition
 		clr_country_flag = angry_rioters_victorious
 		random_owned = {
@@ -1158,7 +1158,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Westernization is the correct path."
+		name = "18550.B"
 		set_country_flag = can_switch_to_enlightenment
 		clr_country_flag = angry_rioters_victorious
 		random_owned = {
@@ -1238,7 +1238,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The traditional $COUNTRY_ADJ$ path is best."
+		name = "18551.A"
 		set_country_flag = can_switch_to_tradition
 		random_owned = {
 			limit = {
@@ -1264,7 +1264,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall embrace enlightenment."
+		name = "18551.B"
 		set_country_flag = can_switch_to_enlightenment
 		random_owned = {
 			limit = {
@@ -1338,7 +1338,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "An unfortunate incident."
+		name = "18555.A"
 		random_owned = {
 			limit = {
 				is_capital = yes
@@ -1401,7 +1401,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We must strive to advance, no matter the cost."
+		name = "18556.A"
 		years_of_research = 0.2
 		aristocrats = {
 			ideology = {
@@ -1416,7 +1416,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Reject their ideas, for now."
+		name = "18556.B"
 		years_of_research = -0.2
 		any_pop = { militancy = -4 }
 		ai_chance = {
@@ -1495,7 +1495,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "They must remember their place."
+		name = "18560.A"
 		any_pop = {
 			limit = {
 				OR = {
@@ -1574,7 +1574,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Appease the masses."
+		name = "18561.A"
 		prestige = 2
 		any_pop = {
 			militancy = -2
@@ -1606,7 +1606,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Let the world see our greatness."
+		name = "18561.B"
 		prestige = 6
 		ai_chance = {
 			factor = 50
@@ -1712,7 +1712,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Arrest the agitators. We cannot slow progress."
+		name = "18562.A"
 		add_country_modifier = {
 			name = nothing_stops_progress
 			duration = 1825
@@ -1757,7 +1757,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Ignore them. They can do no harm."
+		name = "18562.B"
 		random_owned = {
 			limit = {
 				is_primary_culture = yes
@@ -1798,7 +1798,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will slow down progress, for the good of $COUNTRY$."
+		name = "18562.C"
 		add_country_modifier = {
 			name = slow_down_progress
 			duration = 1825
@@ -1857,7 +1857,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Open the borders."
+		name = "18565.A"
 		remove_country_modifier = uncivilized_isolationism
 		add_country_modifier = {
 			name = "western_influences"
@@ -1876,7 +1876,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Leave the borders closed for now."
+		name = "18565.B"
 		any_pop = {
 			consciousness = 1
 			militancy = -2
@@ -1902,7 +1902,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Close the borders."
+		name = "18570.A"
 		remove_country_modifier = western_influences
 		add_country_modifier = {
 			name = "uncivilized_isolationism"
@@ -1915,7 +1915,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Leave the borders open for now."
+		name = "18570.B"
 		random_owned = {
 			limit = { is_capital = yes }
 			state_scope = {

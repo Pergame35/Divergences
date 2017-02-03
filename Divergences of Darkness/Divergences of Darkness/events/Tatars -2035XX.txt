@@ -18,7 +18,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 	
 	option = { 
-	name = "They won't get the Steppe so easily!"
+	name = "203500.A"
 	set_country_flag = mobilization_TAR
 	add_country_modifier = {
 				name = taiping_draft
@@ -49,7 +49,7 @@ country_event = {
 	days = 16 }
 	
 	option = { 
-	name = "Let us try our chance!"
+	name = "203501.A"
 	SCA = { country_event = 203502 }
 	ai_chance = { 
 	factor = 80 
@@ -57,7 +57,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We should not attempt this ..."
+	name = "203501.B"
 	prestige = -5 
 	ai_chance = { 
 	factor = 20
@@ -74,7 +74,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "It is in our interest to weaken Moscow!"
+	name = "203502.A"
 	FROM = { country_event = 203503 }
 	ai_chance = { 
 	factor = 90 
@@ -86,7 +86,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Nay, let Moscow civilize the steppe for what we care..."
+	name = "203502.B"
 	FROM = { country_event = 203504 }
 	}
 }
@@ -100,7 +100,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Copenhagen has always been there for us!"
+	name = "203503.A"
 	create_alliance = SCA 
 	relation = { who = SCA value = 200 }
 	war = {
@@ -123,7 +123,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Well we don't have much choice here ..."
+	name = "203504.A"
 	prestige = -10 
 	relation = { who = SCA value = 50 }
 	ai_chance = { 
@@ -132,7 +132,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will do without them!"
+	name = "203504.B"
 	leave_alliance = SCA
 	relation = { who = SCA value = -100 }
 	war = {
@@ -167,7 +167,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Selim's plot succeeds and Murad is executed"
+	name = "203510.A"
 	set_country_flag = succession_CRI
 	any_pop = { 
 	scaled_militancy = {
@@ -185,7 +185,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Selim's plot backfires and Murad becomes heir"
+	name = "203510.B"
 	set_country_flag = succession_CRI
 	set_country_flag = murad
 	any_pop = { 
@@ -220,7 +220,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "A new era for Crimea!"
+	name = "203511.A"
 	prestige = 5 
 	clr_country_flag = murad 
 	set_country_flag = murad_khan
@@ -243,7 +243,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "How do you read this ?"
+	name = "203512.A"
 	any_pop = {
 			literacy = 0.1
 		}
@@ -267,7 +267,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "With that we should secure our borders in the West!"
+	name = "203513.A"
 	any_pop = { 
 		limit = { type = soldiers }
 		militancy = 2 
@@ -298,7 +298,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Time to unify the Tatars!"
+	name = "203514.A"
 	badboy = 10 
 	casus_belli = {
 				target = ASK
@@ -317,7 +317,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It's not the right time ..."
+	name = "203514.B"
 	ai_chance = { 
 	factor = 50 
 		}
@@ -345,7 +345,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will finish what we have begun"
+	name = "203515.A"
 	badboy = 7 
 	casus_belli = {
 				target = NOG
@@ -364,7 +364,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "It's not the right time ..."
+	name = "203515.B"
 	ai_chance = { 
 	factor = 0 
 		}

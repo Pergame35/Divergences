@@ -101,7 +101,7 @@ country_event = {
 		}
 		any_owned_province = {
 			port = yes
-			NOT = { has_province_modifier = boxer_presence }
+			#NOT = { has_province_modifier = boxer_presence }
 			NOT = { has_province_modifier = western_presence }
 		}
 	}
@@ -202,7 +202,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				port = yes
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 				NOT = { has_province_modifier = western_presence }
 			}
 			add_province_modifier = {
@@ -246,7 +246,7 @@ country_event = {
 				any_neighbor_province = { has_province_modifier = foreign_smugglers }
 			}
 			NOT = { has_province_modifier = foreign_smugglers }
-			NOT = { has_province_modifier = boxer_presence }
+			#NOT = { has_province_modifier = boxer_presence }
 		}
 	}
 	
@@ -299,7 +299,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Ignore it."
+		name = "13015.A"
 		random_owned = {
 			limit = {
 				OR = {
@@ -308,7 +308,7 @@ country_event = {
 					any_neighbor_province = { has_province_modifier = foreign_smugglers }
 				}
 				NOT = { has_province_modifier = foreign_smugglers }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			add_province_modifier = {
 				name = "foreign_smugglers"
@@ -326,7 +326,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Shut it down and confiscate the contraband."
+		name = "13015.B"
 		treasury = 5000
 		random_owned = {
 			limit = {
@@ -336,7 +336,7 @@ country_event = {
 					any_neighbor_province = { has_province_modifier = foreign_smugglers }
 				}
 				NOT = { has_province_modifier = foreign_smugglers }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			state_scope = {
 				any_pop = {
@@ -360,7 +360,7 @@ country_event = {
 		any_owned_province = {
 			has_province_modifier = foreign_smugglers
 			NOT = { has_province_modifier = local_opium_habit }
-			NOT = { has_province_modifier = boxer_presence }
+			#NOT = { has_province_modifier = boxer_presence }
 		}
 	}
 	
@@ -380,12 +380,12 @@ country_event = {
 	}
 	
 	option = {
-		name = "Shut down the ring immediately."
+		name = "13016.A"
 		random_owned = {
 			limit = {
 				has_province_modifier = foreign_smugglers
 				NOT = { has_province_modifier = local_opium_habit }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			remove_province_modifier = foreign_smugglers
 			add_province_modifier = {
@@ -399,13 +399,13 @@ country_event = {
 	}
 
 	option = {
-		name = "Do whatever it takes to eliminate this menace."
+		name = "13016.B"
 		prestige = -3
 		random_owned = {
 			limit = {
 				has_province_modifier = foreign_smugglers
 				NOT = { has_province_modifier = local_opium_habit }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			remove_province_modifier = foreign_smugglers
 			any_pop = {
@@ -449,7 +449,7 @@ country_event = {
 				any_neighbor_province = { has_province_modifier = western_presence }
 			}
 			NOT = { has_province_modifier = western_presence }
-			NOT = { has_province_modifier = boxer_presence }
+			#NOT = { has_province_modifier = boxer_presence }
 		}
 	}
 	
@@ -502,7 +502,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Ignore them."
+		name = "13020.A"
 		random_owned = {
 			limit = {
 				OR = {
@@ -511,7 +511,7 @@ country_event = {
 					any_neighbor_province = { has_province_modifier = western_presence }
 				}
 				NOT = { has_province_modifier = western_presence }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			add_province_modifier = {
 				name = "western_presence"
@@ -530,7 +530,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Round them up and execute them."
+		name = "13020.B"
 		random_country = {
 			limit = {
 				capital_scope = { continent = europe }
@@ -592,7 +592,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "This cannot be permitted."
+		name = "13021.A"
 		relation = { who = FROM value = -25 }
 		leave_alliance = FROM
 		random_country = {
@@ -627,7 +627,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "There is nothing we can do."
+		name = "2626.A"
 		random_owned = {
 			limit = {
 				owner = {
@@ -682,7 +682,7 @@ country_event = {
 				any_neighbor_province = { has_province_modifier = western_presence }
 			}
 			NOT = { has_province_modifier = western_presence }
-			NOT = { has_province_modifier = boxer_presence }
+			#NOT = { has_province_modifier = boxer_presence }
 		}
 	}
 	
@@ -727,12 +727,12 @@ country_event = {
 	}
 	
 	option = {
-		name = "They are welcome to stay."
+		name = "13030.A"
 		random_owned = {
 			limit = {
 				is_capital = yes
 				NOT = { has_province_modifier = western_presence }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			add_province_modifier = {
 				name = "western_presence"
@@ -753,7 +753,7 @@ country_event = {
 					any_neighbor_province = { has_province_modifier = western_presence }
 				}
 				NOT = { has_province_modifier = western_presence }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 				owner = { capital_scope = { has_province_modifier = western_presence } }
 			}
 			add_province_modifier = {
@@ -776,7 +776,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Send them home."
+		name = "13030.B"
 		random_country = {
 			limit = {
 				OR = {
@@ -846,7 +846,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Force of arms must be considered."
+		name = "13031.A"
 		casus_belli = {
 			target = FROM
 			type = cut_down_to_size
@@ -895,7 +895,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We must respect and tolerate the differences between our respective cultures."
+		name = "13031.B"
 		relation = {
 			who = FROM
 			value = 20
@@ -957,7 +957,7 @@ country_event = {
 		any_owned_province = {
 			port = yes
 			NOT = { has_province_modifier = foreign_trading_post }
-			NOT = { has_province_modifier = boxer_presence }
+			#NOT = { has_province_modifier = boxer_presence }
 		}
 		civilized = no
 		has_country_modifier = western_influences
@@ -1015,7 +1015,7 @@ country_event = {
 			limit = {
 				port = yes
 				NOT = { has_province_modifier = foreign_trading_post }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			add_province_modifier = {
 				name = foreign_trading_post
@@ -1039,7 +1039,7 @@ country_event = {
 			limit = {
 				port = yes
 				NOT = { has_province_modifier = foreign_trading_post }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			any_pop = {
 				consciousness = -3
@@ -1064,7 +1064,7 @@ country_event = {
 		any_owned_province = {
 			has_province_modifier = foreign_trading_post
 			NOT = { has_province_modifier = local_opium_habit }
-			NOT = { has_province_modifier = boxer_presence }
+			#NOT = { has_province_modifier = boxer_presence }
 		}
 	}
 	
@@ -1096,7 +1096,7 @@ country_event = {
 			limit = {
 				has_province_modifier = foreign_trading_post
 				NOT = { has_province_modifier = local_opium_habit }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			add_province_modifier = {
 				name = "local_opium_habit"
@@ -1132,7 +1132,7 @@ country_event = {
 			limit = {
 				has_province_modifier = foreign_trading_post
 				NOT = { has_province_modifier = local_opium_habit }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			remove_province_modifier = foreign_trading_post
 			any_pop = { militancy = 2 }
@@ -1200,7 +1200,7 @@ country_event = {
 			port = yes
 			NOT = { has_province_modifier = foreign_smugglers }
 			NOT = { has_province_modifier = local_opium_habit }
-			NOT = { has_province_modifier = boxer_presence }
+			#NOT = { has_province_modifier = boxer_presence }
 		}
 	}
 	
@@ -1253,13 +1253,13 @@ country_event = {
 	}
 	
 	option = {
-		name = "Ignore them."
+		name = "13051.A"
 		random_owned = {
 			limit = {
 				port = yes
 				NOT = { has_province_modifier = foreign_smugglers }
 				NOT = { has_province_modifier = local_opium_habit }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			add_province_modifier = {
 				name = "foreign_smugglers"
@@ -1280,14 +1280,14 @@ country_event = {
 	}
 	
 	option = {
-		name = "Do whatever it takes to uproot them."
+		name = "13051.B"
 		prestige = -3
 		random_owned = {
 			limit = {
 				port = yes
 				NOT = { has_province_modifier = foreign_smugglers }
 				NOT = { has_province_modifier = local_opium_habit }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			any_pop = {
 				reduce_pop = 0.98
@@ -1324,7 +1324,7 @@ province_event = {
 			has_province_modifier = local_opium_habit
 		}
 		NOT = { has_province_modifier = local_opium_habit }
-		NOT = { has_province_modifier = boxer_presence }
+		#NOT = { has_province_modifier = boxer_presence }
 	}
 	
 	mean_time_to_happen = {
@@ -1422,7 +1422,7 @@ province_event = {
 			has_province_modifier = local_opium_habit
 		}
 		NOT = { has_province_modifier = local_opium_habit }
-		NOT = { has_province_modifier = boxer_presence }
+		#NOT = { has_province_modifier = boxer_presence }
 	}
 	
 	mean_time_to_happen = {
@@ -1523,7 +1523,7 @@ province_event = {
 			has_province_modifier = local_opium_habit
 		}
 		NOT = { has_province_modifier = local_opium_habit }
-		NOT = { has_province_modifier = boxer_presence }
+		#NOT = { has_province_modifier = boxer_presence }
 	}
 	
 	mean_time_to_happen = {
@@ -2094,7 +2094,7 @@ country_event = {
 		has_country_modifier = western_influences
 		any_owned_province = {
 			NOT = { has_province_modifier = european_military_mission }
-			NOT = { has_province_modifier = boxer_presence }
+			#NOT = { has_province_modifier = boxer_presence }
 		}
 	}
 	
@@ -2136,7 +2136,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				NOT = { has_province_modifier = european_military_mission }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			add_province_modifier = {
 				name = european_military_mission
@@ -2632,7 +2632,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Attend the function."
+		name = "13185.A"
 		years_of_research = 0.1
 		random_country = {
 			limit = {
@@ -2670,7 +2670,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Refuse. We don't need their methods."
+		name = "13185.B"
 		prestige = -3
 		years_of_research = -0.1
 		ai_chance = {
@@ -2688,7 +2688,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We'll gladly support this initiative."
+		name = "13186.A"
 		treasury = -25000
 		diplomatic_influence = { who = FROM value = 50 }
 		relation = { who = FROM value = 50 }
@@ -2702,7 +2702,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "They have our permission to continue, but we can offer no support."
+		name = "13186.B"
 		diplomatic_influence = { who = FROM value = 20 }
 		relation = { who = FROM value = 20 }
 		ai_chance = {
@@ -2711,7 +2711,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This is not in our best interest."
+		name = "13186.C"
 		prestige = -3
 		ai_chance = {
 			factor = 0
@@ -2983,7 +2983,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We will defend our interests."
+		name = "13202.A"
 		badboy = 2
 		leave_alliance = FROM
 		random_country = {
@@ -3063,7 +3063,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will not go to war over this."
+		name = "13202.B"
 		diplomatic_influence = {
 			who = FROM
 			value = -200
@@ -3147,7 +3147,7 @@ country_event = {
 		any_owned_province = {
 			is_capital = yes
 			NOT = { has_province_modifier = legation_quarter }
-			NOT = { has_province_modifier = boxer_presence }
+			#NOT = { has_province_modifier = boxer_presence }
 		}
 		has_country_modifier = western_influences
 		is_vassal = no
@@ -3432,7 +3432,7 @@ country_event = {
 		any_owned_province = {
 			port = yes
 			NOT = { has_province_modifier = local_opium_habit }
-			NOT = { has_province_modifier = boxer_presence }
+			#NOT = { has_province_modifier = boxer_presence }
 		}
 		has_country_modifier = trade_restrictions
 	}
@@ -3488,7 +3488,7 @@ country_event = {
 			limit = {
 				port = yes
 				NOT = { has_province_modifier = local_opium_habit }
-				NOT = { has_province_modifier = boxer_presence }
+				#NOT = { has_province_modifier = boxer_presence }
 			}
 			add_province_modifier = {
 				name = local_opium_habit
@@ -3695,7 +3695,6 @@ country_event = {
 		remove_country_modifier = uncivilized_isolationism
 		remove_country_modifier = trade_restrictions
 		remove_country_modifier = sayings_of_the_dutch
-		remove_country_modifier = meiji_restoration_boost
 		any_owned = {
 			remove_province_modifier = western_presence
 			remove_province_modifier = foreign_smugglers
@@ -3705,8 +3704,8 @@ country_event = {
 			remove_province_modifier = legation_quarter
 			remove_province_modifier = kettler_denkmal
 			remove_province_modifier = extraterritoriality_granted
-			remove_province_modifier = boxer_presence
-			remove_province_modifier = boxer_agitation
+			#remove_province_modifier = boxer_presence
+			#remove_province_modifier = boxer_agitation
 		}		
 	}
 }
@@ -3721,10 +3720,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		#
-	}
-
 	option = {				
 		name = "EVTOPTA90950"
 		casus_belli = {

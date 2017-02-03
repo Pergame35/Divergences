@@ -152,7 +152,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Horrible!"
+		name = "880270.A"
 		add_country_modifier = {
 			name = national_tragedy
 			duration = 730
@@ -272,7 +272,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Tell the truth."	
+		name = "880280.A"	
 		add_country_modifier = {
 			name = national_tragedy
 			duration = 730
@@ -334,7 +334,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Blame the enemy."
+		name = "880280.B"
 		prestige = -5		
 		add_country_modifier = {
 			name = national_tragedy
@@ -401,7 +401,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will consider it."	
+		name = "880290.A"	
 		add_country_modifier = {
 			name = national_tragedy
 			duration = 730
@@ -497,7 +497,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Oh the humanity!"
+		name = "880300.A"
 		prestige = -5	
 		add_country_modifier = {
 			name = national_tragedy

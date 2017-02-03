@@ -6,7 +6,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Give the Crown to him, we want a good neighbour in Hungary"
+	name = "265401.A"
 	clr_global_flag = crown_stefen
 	relation = { who = HUN value = 200 }
 	diplomatic_influence = { who = HUN value = 50 }
@@ -34,7 +34,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Ask him to bow in Prague, before Us"
+	name = "265401.B"
 	FROM = { country_event = 265403 }
 	ai_chance = { 
 	factor = 50
@@ -58,7 +58,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Ask him to relinquish Nitra as a March between our Kingdoms"
+	name = "265401.C"
 	FROM = { country_event = 265406 }
 	ai_chance = { 
 	factor = 30
@@ -82,7 +82,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The Crown is ours!"
+	name = "265401.E"
 	FROM = { country_event = 265408 }
 	ai_chance = { 
 	factor = 10
@@ -117,7 +117,7 @@ country_event = {
 	prestige = 5 
 	clr_global_flag = crown_stefen
 	set_country_flag = holy_crown
-	name = "Excellent!"
+	name = "97086.A"
 	relation = { who = FROM value = 200 }
 	any_pop = { 
 	limit = { culture = hungarian } militancy = -6 
@@ -133,7 +133,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Accept for the good of Hungary..."
+	name = "265403.A"
 	prestige_factor = -0.5
 	FROM = { country_event = 265404 }
 	ai_chance = { 
@@ -142,7 +142,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Try to recover it by 'other means'..."
+	name = "265403.B"
 	FROM = { country_event = 265405 }
 	FROM = { country_event = { id = 265409 days = 97 } }
 	ai_chance = { 
@@ -151,7 +151,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We don't need it after all!"
+	name = "265403.C"
 	prestige = 15
 	FROM = { country_event = 265405 }
 	any_pop = { 
@@ -172,7 +172,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "All is well."
+	name = "265404.A"
 	prestige = 25
 	diplomatic_influence = { who = HUN value = 250 }	
 	relation = { who = HUN value = -300 }
@@ -188,7 +188,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "The Crown is ours then."
+	name = "265405.A"
 	}
 }
 
@@ -200,7 +200,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Give in to their demands..."
+	name = "265406.A"
 	release_vassal = SLV 
 	FROM = { country_event = 265407 } 
 	ai_chance = { 
@@ -209,7 +209,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We'll find 'another way'."
+	name = "265406.B"
 	FROM = { country_event = 265405 }
 	FROM = { country_event = { id = 265409 days = 97 } }
 	ai_chance = { 
@@ -218,7 +218,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We don't need it after all!"
+	name = "265406.C"
 	prestige = 15
 	FROM = { country_event = 265405 }
 	any_pop = { 
@@ -238,7 +238,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Excellent"
+	name = "333033.A"
 	diplomatic_influence = { who = SLV value = 300}
 	FROM = { country_event = 265411 } 
 	}
@@ -252,12 +252,12 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Try to recover it at all costs!"
+	name = "265408.A"
 	FROM = { country_event = { id = 265409 days = 97 } }
 	}
 	
 	option = { 
-	name = "It's hopeless..."
+	name = "265408.B"
 	any_pop = { 
 	limit = { culture = hungarian } militancy = 6 
 		}
@@ -273,7 +273,7 @@ country_event = {
 	major = yes
 	
 	option = { 
-	name = "To arms!"
+	name = "265409.A"
 	HUN = { country_event = 265410 }
 	capital_scope = { 
 	any_pop = { militancy = 3 }
@@ -298,7 +298,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "And they said it could not backfire...."
+	name = "265410.A"
 	}
 }
 
@@ -311,7 +311,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Hungary is whole once more!"
+	name = "265411.A"
 	clr_global_flag = crown_stefen
 	set_country_flag = holy_crown
 	}
@@ -325,7 +325,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Damn the Hungarians!"
+	name = "265412.A"
 	prestige_factor = -0.5
 	end_war = HUN
 	}
@@ -339,7 +339,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Hungary can only decay now..."
+	name = "265413.A"
 	any_pop = { militancy = 6 }
 	prestige_factor = -0.5
 	FROM = { diplomatic_influence = { who = THIS value = 300 } }
@@ -357,7 +357,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Recreate Nitra !"
+	name = "265414.A"
 	release_vassal = SLV 
 	prestige = 25 
 	}

@@ -27,13 +27,13 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will claim Savoy !"
+	name = "101105.A"
 	SAR = { country_event = 101106 }
 	badboy = 7
 	} 
 	
 	option = { 
-	name = "It is too risky" 
+	name = "101105.B" 
 	prestige = -10 
 	relation = { who = DUA value = 100 }
 	}
@@ -47,7 +47,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We will not risk a war against Burgundy ..." 
+	name = "101106.A" 
 	prestige = -20
 	any_owned = { limit = { region = SAR_466 } secede_province = BRG}
 	ai_chance = { 
@@ -56,7 +56,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We will not surrender our ancestral lands !"
+	name = "101106.B"
 	prestige = 10
 	BRG = { country_event = 101107 }
 		ai_chance = { 
@@ -73,7 +73,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = {
-	name = "We will take it then !"
+	name = "101107.A"
 	casus_belli = {
 				target = SAR
 				type = acquire_state
@@ -111,7 +111,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Lean toward the French"
+		name = "650201.A"
 		set_country_flag = french_integration
 		set_country_flag = choice_pokemon
 		ai_chance = { 
@@ -120,7 +120,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Lean toward the English"
+		name = "650201.B"
 		set_country_flag = english_integration
 		set_country_flag = choice_pokemon
 		ai_chance = { 
@@ -128,7 +128,7 @@ country_event = {
 			}
 		}
 	option = {
-		name = "We are kings of France AND England "
+		name = "650201.C"
 		set_country_flag = dual_integration
 		set_country_flag = choice_pokemon
 		country_event = 650240 
@@ -167,7 +167,7 @@ country_event = {
 		}
 
 	option = { 
-	name = "Who will succeed on the throne ?" 
+	name = "650202.A" 
 	random_list = { 
 	45 = { country_event = 650203 } 
 	30 = { country_event = 650204 }
@@ -186,7 +186,7 @@ country_event = {
 	major = yes 
 	
 	option = {
-	name = "Long live Elisabeth I !"
+	name = "650203.A"
 	set_country_flag = elisabeth
 	any_pop = {
 			limit = {
@@ -228,7 +228,7 @@ country_event = {
 	major = yes 
 	
 	option = {
-	name = "Long live Edward X !"
+	name = "650204.A"
 	set_country_flag = edward_york
 	any_pop = {
 			limit = {
@@ -270,7 +270,7 @@ country_event = {
 	major = yes 
 	
 	option = {
-	name = "Long live Henry XI !"
+	name = "650205.A"
 	set_country_flag = henry_gascony
 	any_pop = {
 			limit = {
@@ -311,7 +311,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We will crown a noble king of England"
+	name = "650206.A"
 	government = hms_government
 	political_reform = state_equal_weight
 	political_reform = universal_weighted_voting
@@ -328,7 +328,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We need no King !"
+	name = "650206.B"
 	government = democracy
 	ruling_party_ideology = liberal
 	political_reform = universal_voting
@@ -352,7 +352,7 @@ country_event = { ######Foreign support ?
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We'll try to ally Scandinavia"
+	name = "650207.A"
 	SCA = { country_event = 650208 }
 	ai_chance = {
 	factor = 30 
@@ -364,7 +364,7 @@ country_event = { ######Foreign support ?
 	}
 	
 	option = { 
-	name = "We'll try to ally Burgundy"
+	name = "650207.B"
 	BRG = { country_event = 650208 }
 	ai_chance = {
 	factor = 50 
@@ -376,7 +376,7 @@ country_event = { ######Foreign support ?
 	}
 	
 	option = { 
-	name = "We'll try to ally Aragon"
+	name = "650207.C"
 	ARA = { country_event = 650208 }
 	ai_chance = {
 	factor = 20 
@@ -397,11 +397,11 @@ country_event = { ######Foreign support ?
 	is_triggered_only = yes	
 	
 	option = { 
-	name = "It is not in our interest ... "
+	name = "650208.A"
 	}
 	
 	option = { 
-	name = "Everything to weaken the Plantagenets !"
+	name = "650208.B"
 	create_alliance = FROM 
 	ai_chance = { 
 	factor = 100
@@ -426,7 +426,7 @@ country_event = { ######War with England
 	is_triggered_only = yes	
 	
 	option = { 
-	name = "The English will be taught the true power of the Dual-Monarchy !"
+	name = "650209.A"
 	clr_global_flag = wait_DUA
 	diplomatic_influence = { who = ENL value = -300}
 	war = { 
@@ -497,7 +497,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Dieu sauve le roi !"
+	name = "650210.A"
 	prestige = 20
 	set_global_flag = french_int
 	add_accepted_culture = french
@@ -595,7 +595,7 @@ country_event = { ## Glorious Revolution
 	}
 	
 	option = { 
-	name = "We will crush these revolutionaries!"
+	name = "650211.A"
 	set_global_flag = wait_DUA
 	set_country_flag = ENL_revolted	
 	set_global_flag = glorious_revolution
@@ -641,7 +641,7 @@ country_event = { #St Louis Speech
 	}
 	
 	option = { 
-	name = "Je vous ai compris !"
+	name = "650212.A"
 	set_country_flag = st_louis_speech 
 	any_pop = {
 			limit = {
@@ -687,7 +687,7 @@ country_event = { #The great travel
 	}
 	
 	option = { 
-	name = "Les Plantagenets sont veritablement les rois des Français !"
+	name = "650213.A"
 	set_country_flag = great_travel_FRA
 	}
 }
@@ -716,7 +716,7 @@ country_event = { #Sons of Harold
 	}
 	
 	option = { 
-	name = "We shall watch these Englishmen ...."
+	name = "650214.A"
 	set_country_flag = sons_of_harold
 	any_pop = {
 			limit = {
@@ -838,7 +838,7 @@ province_event = { #Spread of the Sons of Harold
 		}
 	}
 	option = {
-		name = "Worrisome"
+		name = "650215.A"
 		state_scope = {
 			any_owned = {
 				limit = { liberal = 20 }
@@ -873,7 +873,7 @@ country_event = { #Sorbonne
 	}
 	
 	option = { 
-	name = "Some noises made by peasants aren't a language !"
+	name = "650216.A"
 	prestige = -10 
 	set_country_flag = sorbonne_french 
 	any_pop = {
@@ -891,7 +891,7 @@ country_event = { #Sorbonne
 	}
 
 	option = { 
-	name = "English is as good as French"
+	name = "650216.B"
 	prestige = -10 
 	set_country_flag = sorbonne_english 
 	any_pop = {
@@ -909,7 +909,7 @@ country_event = { #Sorbonne
 	}
 	
 	option = { 
-	name = "Do not take part in philological debates" 
+	name = "650216.C" 
 	prestige = 10 
 	ai_chance = {
 		factor = 40
@@ -944,7 +944,7 @@ country_event = { #the Minister choice
 	}		
 	
 	option = { 
-	name = "Richelieu shall be Prime Minister"
+	name = "650217.A"
 	set_country_flag = richelieu_minister
 	ai_chance = {
 		factor = 34
@@ -952,7 +952,7 @@ country_event = { #the Minister choice
 	}
 	
 	option = { 
-	name = "Rohan shall be Prime Minister" 
+	name = "650217.B" 
 	set_country_flag = rohan_minister 
 	ai_chance = {
 		factor = 33
@@ -960,7 +960,7 @@ country_event = { #the Minister choice
 	}
 	
 	option = { 
-	name = "Devonshire shall be Prime Minister"
+	name = "650217.C"
 	set_country_flag = devonshire_minister 
 	ai_chance = {
 		factor = 33
@@ -994,7 +994,7 @@ country_event = { #the Shakespeare festival
 		}
 	
 	option = { 
-	name = "Let them have their festival, what could possibly happen ?"
+	name = "650218.A"
 	set_country_flag = shakespeare_full 
 	prestige = -15 
 	any_pop = {
@@ -1012,7 +1012,7 @@ country_event = { #the Shakespeare festival
 	}
 	
 	option = { 
-	name = "Watch it and place it under heavy guard" 
+	name = "650218.B" 
 	set_country_flag = shakespeare_guard
 	any_pop = {
 			limit = {
@@ -1030,7 +1030,7 @@ country_event = { #the Shakespeare festival
 	}
 	
 	option = { 
-	name = "Forbid it !" 
+	name = "650218.C" 
 	set_country_flag = shakespeare_no
 	prestige = 10
 	any_pop = {
@@ -1075,7 +1075,7 @@ country_event = { #the infernal machine -Liverpool
 		}
 		
 	option = { 
-	name = "Shut this terrorist organisation down !" 
+	name = "650219.A" 
 	set_country_flag = interdiction_harold
 	set_country_flag = death_prince_ENL
 	any_owned = {
@@ -1095,7 +1095,7 @@ country_event = { #the infernal machine -Liverpool
 	}
 	
 	option = { 
-	name = "They are not responsible" 
+	name = "650219.B" 
 	prestige = -10 
 	any_pop = {
 			limit = {
@@ -1167,7 +1167,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "God save our King !"
+	name = "650221.A"
 	prestige = 20
 	set_global_flag = english_int
 	add_accepted_culture = english
@@ -1245,7 +1245,7 @@ country_event = { ## Midi Revolution
 	}
 	
 	option = { 
-	name = "What is happening ?!"
+	name = "650222.A"
 	set_global_flag = wait_DUA
 	set_global_flag = glorious_revolution
 	set_country_flag = OCC_revolted	
@@ -1268,7 +1268,7 @@ country_event = { ## Midi Revolution : Occitan choices
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "We welcome the true kings of France !"
+	name = "650223.A"
 	PRV = { country_event = 650224 }
 	ai_chance = { 
 	factor = 75 
@@ -1280,7 +1280,7 @@ country_event = { ## Midi Revolution : Occitan choices
 	}
 	
 	option = { 
-	name = "We don't need petty kings !"
+	name = "650223.B"
 	DUA = { country_event = { id = 650226 days = 30 } }
 	government = democracy
 	country_event = 650207
@@ -1300,7 +1300,7 @@ country_event = { ## Midi Revolution : PRV inherits OCC
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "The usurpers will be driven out !"
+	name = "650224.A"
 	set_country_flag = motherland_liberation
 	THIS = { inherit = FROM }
 	prestige = 30 
@@ -1320,7 +1320,7 @@ country_event = { ## Midi Revolution : DUA fights back the pretenders
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "It is the last time the Valois deny our rights !"
+	name = "650225.A"
 	clr_global_flag = wait_DUA
 	diplomatic_influence = { who = PRV value = -300 }
 	war = {
@@ -1343,7 +1343,7 @@ country_event = { ## Midi Revolution : DUA fights back the pretenders
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "It is the last time the Occitan rebel !"
+	name = "650226.A"
 	clr_global_flag = wait_DUA
 	diplomatic_influence = { who = OCC value = -300 }
 	war = {
@@ -1383,7 +1383,7 @@ country_event = { #Sons of St-Louis
 	}
 	
 	option = { 
-	name = "We shall watch these 'patriots' ...."
+	name = "650227.A"
 	set_country_flag = sons_of_louis
 	any_pop = {
 			limit = {
@@ -1514,7 +1514,7 @@ province_event = { #Spread of the Sons of St-Louis
 		}
 	}
 	option = {
-		name = "Worrisome"
+		name = "650228.A"
 		state_scope = {
 			any_owned = {
 				limit = { liberal = 20 }
@@ -1551,7 +1551,7 @@ country_event = { #The great travel
 	}
 	
 	option = { 
-	name = "The Plantegenets are truly the Kings of England !"
+	name = "650229.A"
 	set_country_flag = great_travel_ENL
 	}
 }
@@ -1580,13 +1580,13 @@ country_event = { #Saxon poetry
 	}
 	
 	option = { 
-	name = "Support the movement!"
+	name = "650230.A"
 	prestige = -15
 	set_country_flag = romanticism_ENL 
 	}
 	
 	option = { 
-	name = "Classic Poetry is best!"
+	name = "650230.B"
 	prestige = 15 
 	set_country_flag = romanticism_FRA
 	}
@@ -1601,9 +1601,9 @@ country_event = { ##The Anglois Path
 	is_triggered_only = yes 
 	
 	option = {
-	name = "We will endure as we always have"
+	name = "650240.A"
 	add_country_modifier = { 
-	name = Anglois_dilemma
+	name = anglois_dilemma
 	duration = 15000
 	}
 	RAP = {	
@@ -1658,7 +1658,7 @@ country_event = { ##The Glorious Revolution
 	}
 	
 	option = { 
-	name = "English will be taught how to behave !"
+	name = "650241.A"
 	ENL = { 
 	country_event = 650206
 	add_country_modifier = {
@@ -1699,7 +1699,7 @@ country_event = { ##The Glorious Revolution -reconquest
 	mean_time_to_happen = { months = 1 }
 	
 	option = { 
-	name = "Pesky little English ..."
+	name = "650242.A"
 	set_country_flag = ENL_revolt_end
 	ENG_273 = { remove_core = ENL }
 	ENG_296 = { remove_core = ENL }
@@ -1786,7 +1786,7 @@ country_event = { ##The Glorious Revolution -fail
 	}
 	
 	option = { 
-	name = "It is but a flesh wound !"
+	name = "650243.A"
 	set_country_flag = ENL_revolt_win
 	RAP = { 
 	change_variable = {
@@ -1814,7 +1814,7 @@ country_event = { ##The Midi Revolution -reconquest
 	mean_time_to_happen = { months = 1 }
 	
 	option = { 
-	name = "Pesky little Occitans ..."
+	name = "650244.A"
 	set_country_flag = OCC_revolt_end
 	any_owned = { limit = { is_core = OCC } add_province_modifier = {
 				name = revolution_aftermath
@@ -1872,7 +1872,7 @@ country_event = { ##The Midi Revolution -fail
 	}
 	
 	option = { 
-	name = "It is but a flesh wound !"
+	name = "650245.A"
 	set_country_flag = OCC_revolt_win
 	RAP = { 
 	change_variable = {
@@ -1886,7 +1886,7 @@ country_event = { ##The Midi Revolution -fail
 country_event = { ##The Midi Revolution
 	id = 650246
 	title = "DUA46.T"
-	desc = "DUA4.D"
+	desc = "DUA46.D"
 	
 	trigger = { 
 	tag = DUA 
@@ -1918,7 +1918,7 @@ country_event = { ##The Midi Revolution
 	}
 
 	option = { 
-	name = "The Provencaux will regret this !"
+	name = "650246.A"
 	set_country_flag = OCC_revolted
 	set_global_flag = glorious_revolution
 	any_owned = {
@@ -1966,7 +1966,7 @@ country_event = { ##The Total Revolution
 	}
 
 	option = { 
-	name = "All is crumbling !"
+	name = "650247.A"
 	set_country_flag = global_revolt
 	set_global_flag = glorious_revolution
 	any_owned = {
@@ -2114,9 +2114,9 @@ country_event = { ##The Anglois success
 	}
 	
 	option = { 
-	name = "Eventually we prevail !"
+	name = "650248.A"
 	set_country_flag = Anglois_accepted 
-	remove_country_modifier = Anglois_dilemma
+	remove_country_modifier = anglois_dilemma
 	prestige = 100 
 	add_accepted_culture = french 
 	add_accepted_culture = english 
@@ -2177,7 +2177,7 @@ country_event = {
 	mean_time_to_happen = { months = 3 }
 	
 	option = { 
-	name = "St-Louis is worthy of our recognition"
+	name = "650250.A"
 	any_pop = { 
 	limit = { culture = provencal }
 	militancy = -1 
@@ -2216,7 +2216,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Alfred the Great is worthy of our recognition"
+	name = "650250.B"
 	any_pop = { 
 	limit = { culture = english }
 	militancy = -1 
@@ -2255,7 +2255,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Edouard IV is worthy of our recognition"
+	name = "650250.C"
 	any_pop = { 
 	limit = { culture = english }
 	militancy = 2
@@ -2323,7 +2323,7 @@ country_event = {
 	mean_time_to_happen = { months = 7 }
 	
 	option = { 
-	name = "These organisations must be watched closely"
+	name = "650251.A"
 	set_country_flag = liberals_org
 	set_country_flag = sons_of_harold
 	set_country_flag = sons_of_louis
@@ -2379,7 +2379,7 @@ country_event = {
 	}
 
 	option = { 
-	name = "Ban both of them !"
+	name = "650251.B"
 	set_country_flag = liberals_org
 	set_country_flag = banned_org
 	any_pop = {
@@ -2460,7 +2460,7 @@ country_event = { #Publication of "Histoire de la France depuis ses origines"
 	mean_time_to_happen = { months = 10 }
 	
 	option = { 
-	name = "He makes some interesting points ..."
+	name = "650252.A"
 	any_pop = {
 			limit = {
 				culture = english
@@ -2486,7 +2486,7 @@ country_event = { #Publication of "Histoire de la France depuis ses origines"
 	}
 	
 	option = { 
-	name = "And he calls his book historic ?"
+	name = "650252.B"
 	any_pop = {
 			limit = {
 				culture = french
@@ -2546,7 +2546,7 @@ country_event = { #Publication of "Saxon Poetry"
 	mean_time_to_happen = { months = 15 }
 	
 	option = { 
-	name = "A truly wonderful piece of art !"
+	name = "650253.A"
 	set_country_flag = saxon_poetry
 	RAP = {
 			change_variable = {
@@ -2561,7 +2561,7 @@ country_event = { #Publication of "Saxon Poetry"
 	}
 	
 	option = { 
-	name = "As I said before, English is not fit for poetry ..."
+	name = "650253.B"
 	set_country_flag = saxon_poetry
 	RAP = {
 			change_variable = {
@@ -2599,7 +2599,7 @@ country_event = { #The Great Travel of the Dauphin
 	mean_time_to_happen = { months = 15 }
 	
 	option = { 
-	name = "Henri will travel through France !"
+	name = "650254.A"
 	set_country_flag = travel_dauphin
 	set_country_flag = travel_FRA
 	RAP = {
@@ -2615,7 +2615,7 @@ country_event = { #The Great Travel of the Dauphin
 	}
 	
 	option = { 
-	name = "It has been a long time since a Royal went in North of England ..."
+	name = "650254.B"
 	set_country_flag = travel_dauphin
 	set_country_flag = travel_ENL
 	RAP = {
@@ -2631,7 +2631,7 @@ country_event = { #The Great Travel of the Dauphin
 	}
 	
 	option = { 
-	name = "The Anglois heartlands are more safe"
+	name = "650254.C"
 	set_country_flag = travel_dauphin
 	RAP = {
 			change_variable = {
@@ -2674,7 +2674,7 @@ country_event = { #Theatre
 	mean_time_to_happen = { months = 3 }
 	
 	option = { 
-	name = "I heard that Shakespeare author was quite entertaining ..."
+	name = "650255.A"
 	any_pop = {
 			limit = {
 				culture = english
@@ -2715,7 +2715,7 @@ country_event = { #Theatre
 	}
 	
 	option = { 
-	name = "A Moliere comedy will be best !"
+	name = "650255.B"
 	any_pop = {
 			limit = {
 				culture = english
@@ -2756,7 +2756,7 @@ country_event = { #Theatre
 	}
 	
 	option = { 
-	name = "'Joan the Mad' from Racine will make us remember our glorious history."
+	name = "650255.C"
 	any_pop = {
 			limit = {
 				culture = english
@@ -2822,7 +2822,7 @@ country_event = { #The 'Immortals'
 	mean_time_to_happen = { months = 15 }
 	
 	option = { 
-	name = "I guess Tolsmith could give us another perspective ..."
+	name = "650256.A"
 	set_country_flag = academy
 	RAP = {
 			change_variable = {
@@ -2837,7 +2837,7 @@ country_event = { #The 'Immortals'
 	}
 	
 	option = { 
-	name = "The Occitan poet Jasmin will remind us from the sunny Midi !"
+	name = "650256.B"
 	set_country_flag = academy
 	RAP = {
 			change_variable = {
@@ -2852,7 +2852,7 @@ country_event = { #The 'Immortals'
 	}
 	
 	option = { 
-	name = "Nominate the proud Anglois grammarian Morel"
+	name = "650256.C"
 	set_country_flag = academy
 	RAP = {
 			change_variable = {
@@ -2896,7 +2896,7 @@ country_event = { #Celebration of the German Revolution
 	mean_time_to_happen = { months = 2 }
 	
 	option = { 
-	name = "If it can please these liberals ..."
+	name = "650257.A"
 	set_country_flag = celebration
 	relation = { who = BOH value = -100 }
 	RAP = {
@@ -2912,7 +2912,7 @@ country_event = { #Celebration of the German Revolution
 	}
 	
 	option = { 
-	name = "We won't associate with these monsters !"
+	name = "650257.B"
 	set_country_flag = celebration
 	relation = { who = BOH value = 50 }
 	RAP = {
@@ -2957,7 +2957,7 @@ country_event = { #Springtime of Nations
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "The Revolution will not anihilate our efforts !"
+	name = "650258.A"
 	set_country_flag = springtime_DUA
 	any_pop = { 
 	limit = { OR = { culture = english culture = french culture = provencal } }
@@ -3002,7 +3002,7 @@ country_event = { #Springtime of Nations
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "We won't be stopped by this !"
+	name = "650259.A"
 	set_country_flag = springtime_DUA_end
 	RAP = {
 			change_variable = {
@@ -3043,7 +3043,7 @@ country_event = { #Anglois resilience -1855
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "The country stands united !"
+	name = "650260.A"
 	set_country_flag = DUA_1855
 	RAP = {
 			change_variable = {
@@ -3084,7 +3084,7 @@ country_event = { #Anglois resilience -1860
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "The country stands united !"
+	name = "650261.A"
 	set_country_flag = DUA_1860
 	RAP = {
 			change_variable = {
@@ -3121,7 +3121,7 @@ country_event = { #Conquest of Provence
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "The Hundred Years war is over !"
+	name = "650262.A"
 	set_country_flag = PRV_conquest
 	RAP = {
 			change_variable = {
@@ -3157,7 +3157,7 @@ country_event = { #Conquest of Bourgogne
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "The country stands united !"
+	name = "650263.A"
 	set_country_flag = BRG_conquest
 	RAP = {
 			change_variable = {
@@ -3193,7 +3193,7 @@ country_event = { #Conquest of Calais
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "One day maybe both of our lands will be linked !"
+	name = "650264.A"
 	set_country_flag = Calais_conquest
 	RAP = {
 			change_variable = {
@@ -3243,7 +3243,7 @@ country_event = { #Northern Border secured
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "Take that Copenhagen !"
+	name = "650265.A"
 	set_country_flag = noerth_border
 	RAP = {
 			change_variable = {
@@ -3284,7 +3284,7 @@ country_event = { #Anglois failure -1855
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "We must reestablish the normal situation as soon as possible !"
+	name = "650266.A"
 	set_country_flag = DUA_1855
 	RAP = {
 			change_variable = {
@@ -3330,7 +3330,7 @@ country_event = { #Anglois failure -1860
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "We must reestablish the normal situation as soon as possible !"
+	name = "650267.A"
 	set_country_flag = DUA_1860
 	RAP = {
 			change_variable = {
@@ -3384,7 +3384,7 @@ country_event = { #Scottish subversion
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "Scotland should be in our sphere to avoid further problems!"
+	name = "650268.A"
 	set_country_flag = scottish_subversion
 	RAP = {
 			change_variable = {
@@ -3424,7 +3424,7 @@ country_event = { #Anglois failure -1865
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "We must reestablish the normal situation as soon as possible !"
+	name = "650270.A"
 	set_country_flag = DUA_1865
 	RAP = {
 			change_variable = {
@@ -3469,7 +3469,7 @@ country_event = { #Anglois failure -1870
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "We must reestablish the normal situation as soon as possible !"
+	name = "650271.A"
 	set_country_flag = DUA_1870
 	RAP = {
 			change_variable = {
@@ -3512,7 +3512,7 @@ country_event = { #Valois subversion
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "We must put an end to the Valois problem..."
+	name = "650269.A"
 	set_country_flag = valois_subversion
 	RAP = {
 			change_variable = {
@@ -3553,7 +3553,7 @@ country_event = { #Anglois resilience -1865
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "The country stands united !"
+	name = "650272.A"
 	set_country_flag = DUA_1865
 	RAP = {
 			change_variable = {
@@ -3593,7 +3593,7 @@ country_event = { #Anglois resilience -1870
 	mean_time_to_happen = { days = 2 }
 	
 	option = { 
-	name = "The country stands united !"
+	name = "650273.A"
 	set_country_flag = DUA_1870
 	RAP = {
 			change_variable = {
@@ -3633,7 +3633,7 @@ country_event = { #Death of the Dauphin, Orléans
 	mean_time_to_happen = { months = 5 }
 	
 	option = { 
-	name = "A sad day for the dual-kingdoms..."
+	name = "650274.A"
 	clr_country_flag = travel_FRA 
 	set_country_flag = death_dauphin
 	public_meetings = no_meeting 
@@ -3684,7 +3684,7 @@ country_event = { #Death of the Dauphin, Liverpool
 	mean_time_to_happen = { months = 5 }
 	
 	option = { 
-	name = "A sad day for the dual-kingdoms..."
+	name = "650275.A"
 	clr_country_flag = travel_ENL 
 	set_country_flag = death_dauphin
 	public_meetings = no_meeting 
@@ -3735,7 +3735,7 @@ country_event = {
 		}
 
 	option = { 
-	name = "Who will succeed on the throne ?" 
+	name = "650276.A" 
 	random_list = { 
 	45 = { country_event = 650277 } 
 	30 = { country_event = 650278 }
@@ -3754,7 +3754,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Long live Elisabeth I !"
+	name = "650277.A"
 	set_country_flag = elisabeth
 	any_pop = {
 			limit = {
@@ -3810,7 +3810,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Long live Edward X !"
+	name = "650278.A"
 	set_country_flag = edward_york
 	any_pop = {
 			limit = {
@@ -3871,7 +3871,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "Long live Henry XI !"
+	name = "650279.A"
 	set_country_flag = henry_gascony
 	any_pop = {
 			limit = {
@@ -3937,14 +3937,12 @@ country_event = { #Coronation of Henri XI
 	has_country_flag = travel_dauphin
 	}
 	
-	fire_only_once = yes 
-	
 	mean_time_to_happen = { 
 	months = 12 
 	}
 	
 	option = { 
-	name = "Long Live the King!"
+	name = "650280.A"
 	prestige = 2 
 	any_pop = { 
 	limit = { has_pop_culture = anglois }
@@ -3964,7 +3962,7 @@ country_event = {
 	major = yes
 	
 	option = { 
-	name = "The end of an era ..." 
+	name = "650290.A" 
 	any_country = { limit = { has_country_flag = anschluss_DUA } end_war = DUA }
 	ENG_273 = { add_core = ENL }
 	ENG_296 = { add_core = ENL }
@@ -4090,7 +4088,7 @@ country_event = { ##The Glorious Revolution -reconquest
 	mean_time_to_happen = { months = 1 }
 	
 	option = { 
-	name = "Pesky little English ..."
+	name = "650291.A"
 	set_country_flag = ENL_revolt_end
 	ENG_273 = { remove_core = ENL }
 	ENG_296 = { remove_core = ENL }
@@ -4170,7 +4168,7 @@ country_event = { ##The Midi Revolution -reconquest
 	mean_time_to_happen = { months = 1 }
 	
 	option = { 
-	name = "Pesky little Occitans ..."
+	name = "650292.A"
 	set_country_flag = OCC_revolt_end
 	any_owned = { limit = { is_core = OCC } add_province_modifier = {
 				name = revolution_aftermath
@@ -4212,7 +4210,7 @@ country_event = { ##End of the Dual-Monarchy
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "The utter end of an era"
+	name = "650295.A"
 	prestige = -100
 	any_country = { 
 			any_owned = { 

@@ -57,7 +57,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Spread the word!"
+		name = "800060.A"
 		money = -10000
 		random_owned = {
 			limit = {
@@ -122,7 +122,7 @@ country_event = {
 		}		
 	}
 	option = {
-		name = "It's too risky."
+		name = "800100.B"
 		prestige = -5
 		ai_chance = { 
 			factor = 25
@@ -189,7 +189,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Spread the word!"
+		name = "800061.A"
 		money = -10000
 		random_owned = {
 			limit = {
@@ -256,7 +256,7 @@ country_event = {
 		}		
 	}
 	option = {
-		name = "It's too risky."
+		name = "800060.B"
 		prestige = -5
 		ai_chance = { 
 			factor = 25
@@ -325,7 +325,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Spread the word!"
+		name = "800062.A"
 		money = -10000
 		random_owned = {
 			limit = {
@@ -402,7 +402,7 @@ country_event = {
 		}		
 	}
 	option = {
-		name = "It's too risky."
+		name = "800061.B"
 		prestige = -5
 		ai_chance = { 
 			factor = 25
@@ -507,7 +507,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Spread the word!"
+		name = "800063.A"
 		money = -10000
 		random_owned = {
 			limit = {
@@ -598,7 +598,7 @@ country_event = {
 		}		
 	}
 	option = {
-		name = "It's too risky."
+		name = "800062.B"
 		prestige = -5
 		ai_chance = { 
 			factor = 50
@@ -640,7 +640,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We shall see if this leads to anything."
+		name = "800064.A"
 	}
 }
 
@@ -658,7 +658,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "There will be consequences!"
+		name = "800065.A"
 		relation = {
 			who = FROM
 			value = -100
@@ -695,7 +695,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "We protest this outrage!"
+		name = "800065.B"
 		leave_alliance = FROM
 		relation = {
 			who = FROM
@@ -719,7 +719,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "It's only propaganda."
+		name = "800065.C"
 		prestige = -5
 		relation = {
 			who = FROM

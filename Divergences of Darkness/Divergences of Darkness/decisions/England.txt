@@ -332,10 +332,10 @@ political_decisions = {
 		}
 	}
 	
-	SCA_claim = {
+	SCO_claim = {
 		potential = {
 			tag = SCA
-			has_global_flag = IRE_loss 
+			has_global_flag = SCO_loss 
 			is_greater_power = yes 
 			NOT = { ENG = { exists = yes } }
 			
@@ -350,7 +350,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			clr_global_flag = IRE_loss
+			clr_global_flag = SCO_loss
 			badboy = 20
 			SCO = { all_core = { add_core = SCA } }
 		}

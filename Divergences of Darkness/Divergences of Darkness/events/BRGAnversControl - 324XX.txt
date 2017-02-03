@@ -20,12 +20,12 @@ country_event = {
 		days = 15
 	}
 
-	title = "Anvers Lost!"
-	desc = "Our capital is now very isolated. We need to reconsider it."
+	title = "32402.T"
+	desc = "32402.D"
 	picture = "?"
 		
 	option = {
-		name = "We are maritime power, after all"
+		name = "32402.A"
 		prestige = -20
 		war_exhaustion = 20
 		any_pop = {
@@ -71,12 +71,12 @@ country_event = {
 	}
 
 
-	title = "Anvers Reconquered"
-	desc = "We can rebuild the capital palace in Anvers right away!"
+	title = "32403.T"
+	desc = "32403.D"
 	picture = "?"
 		
 	option = {
-		name = "At last" # At last
+		name = "98410.A" # At last
 		prestige = 5
 		any_pop = {
 			militancy = -1

@@ -1,6 +1,6 @@
 country_event = {
 	id = 200000
-	title = "Our Policy towards the Natives"
+	title = "200000.T"
 	desc = "EVTDESC200000"
 
 	major = yes
@@ -24,7 +24,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Encourage them to adopt our ways"
+		name = "200000.A"
 		set_country_flag = native_assimilation
 		add_country_modifier = {
 			name = native_assimilation
@@ -32,7 +32,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Confine them to reservations"
+		name = "200000.B"
 		set_country_flag = native_reservation
 		any_owned = {
 			limit = {
@@ -90,7 +90,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Integrate them into our social fabric"
+		name = "200000.C"
 		set_country_flag = native_integration
 		add_country_modifier = {
 			name = native_integration
@@ -101,7 +101,7 @@ country_event = {
 
 country_event = {
 	id = 200001
-	title = "The Iroquois Exodus"
+	title = "200001.T"
 	desc = "EVTDESC200001"
 
 	major = yes
@@ -119,7 +119,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Whoever wishes to go may leave."
+		name = "200001.A"
 		set_country_flag = iroquois_exodus
 		any_owned = {
 			limit = { is_core = IRO }
@@ -150,7 +150,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Give them incentives to stay."
+		name = "200001.B"
 		set_country_flag = iroquois_exodus
 		treasury = -200000
 		any_pop = {
@@ -178,7 +178,7 @@ country_event = {
 }	
 country_event = {
 	id = 200002
-	title = "A Successful Integration Policy"
+	title = "200002.T"
 	desc = "EVTDESC200000"
 	picture = "colonial_factory"
 	
@@ -210,7 +210,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Success!"
+		name = "200002.A"
 		remove_country_modifier = native_integration
 		add_accepted_culture = native_american_minor
 		random_owned = {

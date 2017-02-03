@@ -31,7 +31,7 @@ country_event = { #Navarran Independance
 	}
 	
 	option = { 
-	name = "We will contact the Anglo-French for help !" 
+	name = "987401.A" 
 	set_country_flag = independence_NAV
 	DUA = { country_event = 987402 } 
 	ai_chance = { 
@@ -40,7 +40,7 @@ country_event = { #Navarran Independance
 	}
 	
 	option = { 
-	name = "We are no vultures. Aragon has our loyalty !"
+	name = "987401.B"
 	set_country_flag = independence_NAV
 	DUA = { 
 		diplomatic_influence = { who = NAV value = -100 }
@@ -61,7 +61,7 @@ country_event = { #Dual-Monarchy's answer
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Of course we will help Navarre" 
+	name = "987402.A" 
 	NAV = { country_event = 987403 }
 		diplomatic_influence = { who = NAV value = 100 }
 		relation = { who = NAV value = 50 }
@@ -71,7 +71,7 @@ country_event = { #Dual-Monarchy's answer
 	}
 	
 	option = { 
-	name = "He must know what his place is, and it is under the Aragonese yoke !"
+	name = "987402.B"
 	diplomatic_influence = { who = NAV value = -100 }
 	relation = { who = NAV value = -50 }
 	relation = { who = ARA value = 50 }
@@ -92,7 +92,7 @@ country_event = { #Basque Proclamation of Independence (DUA support)
 	major = yes
 	
 	option = { 
-	name = "Let them come !"
+	name = "98412.B"
 	ARA = { 
 		release_vassal = NAV
 		leave_alliance = NAV
@@ -110,7 +110,7 @@ country_event = { #Basque Proclamation of Independence : Aragon's reaction
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We will recognize the independence of Navarre...."
+	name = "987404.A"
 	prestige_factor = -0.20
 	relation = { who = NAV value = 50 }
 	relation = { who = DUA value = 50 }
@@ -120,7 +120,7 @@ country_event = { #Basque Proclamation of Independence : Aragon's reaction
 	}
 	
 	option = { 
-	name = "Declare war ! We will remove Navarre from the maps !"
+	name = "987404.B"
 	badboy = 5 
 	casus_belli = {
 				target = NAV
@@ -156,7 +156,7 @@ country_event = { #Basque re-evaluate the situation after DUA refusal
 	is_triggered_only = yes	
 	
 	option = { 
-	name = "Call the Spanish king !"
+	name = "987405.A"
 	SPA = { country_event = 987406 }
 	ai_chance = { 
 		factor =  75
@@ -164,7 +164,7 @@ country_event = { #Basque re-evaluate the situation after DUA refusal
 	} 
 	
 	option = { 
-	name = "Well, it may be time to give up this folly ...."
+	name = "987405.B"
 	prestige = -5
 	ai_chance = { 
 		factor =  25
@@ -181,7 +181,7 @@ country_event = { #Spanish answer
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "Of course, we will help Navarre !" 
+	name = "987406.A" 
 	NAV = { country_event = 987407 }
 	prestige = 5 
 	SPA = { 
@@ -194,7 +194,7 @@ country_event = { #Spanish answer
 	}
 	
 	option = { 
-	name = "It is Aragon demesne ...." 
+	name = "987406.B" 
 	relation = { who = ARA value = 50 }
 	relation = { who = NAV value = -50 }
 	ai_chance = { 
@@ -213,7 +213,7 @@ country_event = { #Basque Proclamation of Independence (SPA support)
 	major = yes
 	
 	option = { 
-	name = "Let them come !"
+	name = "98424.B"
 	ARA = { 
 		release_vassal = NAV
 		country_event = 987408
@@ -230,7 +230,7 @@ country_event = { #Basque Proclamation of Independence : Aragon's reaction
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We will recognize the independence of Navarre...."
+	name = "987408.A"
 	prestige_factor = -0.20
 	relation = { who = NAV value = 50 }
 	relation = { who = SPA value = 50 }
@@ -240,7 +240,7 @@ country_event = { #Basque Proclamation of Independence : Aragon's reaction
 	}
 	
 	option = { 
-	name = "Declare war ! We will remove Navarre from the maps !"
+	name = "987408.B"
 	badboy = 5 
 	casus_belli = {
 				target = NAV
@@ -302,7 +302,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The infante of Bilbao is the rightful queen !" 
+	name = "987410.A" 
 	set_global_flag = end_bourbon
 	DUA = { 
 	country_event = 987411
@@ -314,7 +314,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "The countess of St-Sebastian is the rightful queen ! "
+	name = "987410.B"
 	set_global_flag = end_bourbon
 	ARA = { 
 	country_event = 987415
@@ -326,7 +326,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "We don't need any monarchs !"
+	name = "987410.C"
 	set_global_flag = end_bourbon 
 	government = democracy
 	ai_chance = { 
@@ -344,7 +344,7 @@ country_event = { #DUA notification
 	is_triggered_only = yes
 	
 	option = { 
-	name = "We will be soon kings of France, England and Navarre"
+	name = "987411.A"
 	prestige = 10
 	ESK_1 = {
 		add_core = DUA
@@ -362,7 +362,7 @@ country_event = { #Aragon's reaction
 	is_triggered_only = yes
 	
 	option = { 
-	name = "Crown her queen of Navarra !"
+	name = "987412.A"
 	ESK_1 = {
 		add_core = ARA
 		}
@@ -373,7 +373,7 @@ country_event = { #Aragon's reaction
 	}
 	
 	option = { 
-	name = "Acknowledge the infante of Bilbao..."
+	name = "987412.B"
 	prestige = -10 
 	relation = { who = DUA value = 100 }
 	ai_chance = { 
@@ -400,7 +400,7 @@ country_event = {
 		}
 		
 	option = { 
-	name = "Send an ultimatum to Barcelona !"
+	name = "987413.A"
 	ARA = { country_event = 987414
 			clr_country_flag = contest_NAV }
 		ai_chance = { 
@@ -409,7 +409,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Who cares of Aragon ?"
+	name = "987413.B"
 	ARA = { clr_country_flag = contest_NAV }
 	ai_chance = { 
 			factor = 0
@@ -426,7 +426,7 @@ country_event = { #Aragon's reaction
 	is_triggered_only = yes
 	
 	option = { 
-	name = "Navarre is rightfully ours !"
+	name = "987414.A"
 	DUA = { 
 		casus_belli = {
 				target = ARA
@@ -449,7 +449,7 @@ country_event = { #Aragon's reaction
 	}
 	
 	option = { 
-	name  = "We will surrender our claims ..." 
+	name = "987414.B" 
 	prestige = -25
 	ESK_1 = { 
 		remove_core = ARA
@@ -466,7 +466,7 @@ country_event = { #ARA notification
 	is_triggered_only = yes
 	
 	option = { 
-	name = "Navarre has always been ours"
+	name = "987415.A"
 	prestige = 10
 	ESK_1 = {
 		add_core = DUA
@@ -484,7 +484,7 @@ country_event = { #Anglois reaction
 	is_triggered_only = yes
 	
 	option = { 
-	name = "Crown her queen of Navarra !"
+	name = "987416.A"
 	ESK_1 = {
 		add_core = DUA
 		}
@@ -495,7 +495,7 @@ country_event = { #Anglois reaction
 	}
 	
 	option = { 
-	name = "Acknowledge the countess of St-Sebastian..."
+	name = "987416.B"
 	prestige = -10 
 	relation = { who = ARA value = 100 }
 	ai_chance = { 
@@ -522,7 +522,7 @@ country_event = {
 		}
 		
 	option = { 
-	name = "Send an ultimatum to Paris !"
+	name = "987417.A"
 	DUA = { country_event = 987418
 			clr_country_flag = contest_NAV }
 		ai_chance = { 
@@ -531,7 +531,7 @@ country_event = {
 	}
 	
 	option = { 
-	name = "Who cares of the claims of the Anglo-French ?"
+	name = "987417.B"
 	DUA = { clr_country_flag = contest_NAV }
 	ai_chance = { 
 			factor = 0
@@ -548,7 +548,7 @@ country_event = { #Paris reaction
 	is_triggered_only = yes
 	
 	option = { 
-	name = "Navarre is rightfully ours !"
+	name = "987418.A"
 	ARA = { 
 		casus_belli = {
 				target = DUA

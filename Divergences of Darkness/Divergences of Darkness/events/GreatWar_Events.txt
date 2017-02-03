@@ -83,8 +83,8 @@ country_event = {
 #AI Countries involved in a Great War will call in their allies
 country_event = {
 	id = 96001
-	title = "Call Allies"
-	desc = "This should call any allies into the Great War."
+	title = "96001.T"
+	desc = "96001.D"
 
 	trigger = {
 		ai = yes
@@ -122,7 +122,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Let's make sure we have everyone."
+		name = "96001.A"
 		set_country_flag = calling_all_allies
 		random_country = {
 			limit = {
@@ -143,8 +143,8 @@ country_event = {
 
 country_event = {
 	id = 96002
-	title = "Call Allies Cleanup"
-	desc = "This removes the flag once peace is achieved."
+	title = "96002.T"
+	desc = "96002.D"
 
 	trigger = {
 		ai = yes
@@ -157,15 +157,15 @@ country_event = {
 	}
 
 	option = {
-		name = "Let's keep this clean."
+		name = "96002.A"
 		clr_country_flag = calling_all_allies
 	}
 }
 
 country_event = {
 	id = 96003
-	title = "Call Allies Refresh"
-	desc = "Gives the AI the chance to call new allies into the war."
+	title = "96003.T"
+	desc = "96003.D"
 
 	trigger = {
 		ai = yes
@@ -178,7 +178,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Is anyone out there?"
+		name = "96003.A"
 		clr_country_flag = calling_all_allies
 		clr_country_flag = enemy_of_my_enemy
 		random_country = {
@@ -841,8 +841,8 @@ country_event = {
 country_event = {
 	
 	id = 96012
-	title = "$COUNTRY$ Granted Independence"
-	desc = "Freedom!"
+	title = "96012.T"
+	desc = "96012.D"
 
 	is_triggered_only = yes
 
@@ -1388,8 +1388,8 @@ country_event = {
 country_event = {
 	
 	id = 96018
-	title = "$COUNTRY$ Granted Independence"
-	desc = "Freedom!"
+	title = "96018.T"
+	desc = "96018.D"
 
 	is_triggered_only = yes
 
@@ -1508,14 +1508,14 @@ country_event = {
 country_event = {
 
 	id = 96019
-	title = "The $COUNTRY_ADJ$ Colonies"
-	desc = "We are in the process of negotiating the disbursement of our colonies and overseas territories."
+	title = "96019.T"
+	desc = "96019.D"
 	picture = "treaty"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "If we must."
+		name = "96019.A"
 		any_country = {
 			limit = {
 				ai = yes
@@ -4940,8 +4940,6 @@ country_event = {
 		remove_country_modifier = pig_headed_isolationist
 		remove_country_modifier = ambitious_union_boss
 		remove_country_modifier = dour_economist
-		remove_country_modifier = otto_von_bismarck
-		remove_country_modifier = louis_napoleon_iii
 		random_country = {
 			limit = {
 				is_sphere_leader_of = THIS
@@ -5042,8 +5040,6 @@ country_event = {
 		remove_country_modifier = pig_headed_isolationist
 		remove_country_modifier = ambitious_union_boss
 		remove_country_modifier = dour_economist
-		remove_country_modifier = otto_von_bismarck
-		remove_country_modifier = louis_napoleon_iii
 		random_country = {
 			limit = {
 				is_sphere_leader_of = THIS
@@ -5172,8 +5168,6 @@ country_event = {
 		remove_country_modifier = pig_headed_isolationist
 		remove_country_modifier = ambitious_union_boss
 		remove_country_modifier = dour_economist
-		remove_country_modifier = otto_von_bismarck
-		remove_country_modifier = louis_napoleon_iii
 		random_country = {
 			limit = {
 				is_sphere_leader_of = THIS
@@ -5260,7 +5254,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The monarchy will go into exile."
+		name = "96090.A"
 		set_country_flag = end_of_monarchy
 		prestige_factor = -0.2
 		random_owned = {
@@ -5309,7 +5303,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Never! The monarchy will remain."
+		name = "96090.B"
 		set_country_flag = end_of_monarchy
 		random_owned = {
 			limit = {
