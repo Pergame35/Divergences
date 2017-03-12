@@ -37,7 +37,7 @@ guiTypes = {
 			{
 				name ="frontend_backdrop"
 				spriteType = "GFX_frontend_main_bg"
-				position = { x= -800 y = -326 }
+				position = { x= -960 y = -326 }
 				Orientation = "CENTER"
 			}
 		iconType =
@@ -393,8 +393,8 @@ guiTypes = {
 			}
 			guiButtonType = {
 				name = "exit_button"
-				position = { x =  1096 y = 455 }
-				quadTextureSprite ="GFX_frontend_button_196"	
+				position = { x =  1074 y = 455 }
+				quadTextureSprite ="GFX_frontend_button_236"	
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
