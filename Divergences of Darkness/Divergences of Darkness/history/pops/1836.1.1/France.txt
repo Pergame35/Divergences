@@ -1377,13 +1377,25 @@
 	bureaucrats = {
 		culture = anglois
 		religion = catholic
-		size = 1500
+		size = 1400
+	}
+	
+	bureaucrats = {
+		culture = french
+		religion = catholic
+		size = 100
 	}
 
 	clergymen = {
 		culture = anglois
 		religion = catholic
-		size = 4000
+		size = 3500
+	}
+	
+	clergymen = {
+		culture = french
+		religion = catholic
+		size = 500
 	}
 
 	capitalists = {
@@ -1395,13 +1407,25 @@
 	clerks = {
 		culture = anglois
 		religion = catholic
-		size = 7500
+		size = 7200
+	}
+	
+	clerks = {
+		culture = french
+		religion = catholic
+		size = 300
 	}
 
 	craftsmen = {
 		culture = anglois
 		religion = catholic
-		size = 107500
+		size = 100000
+	}
+	
+	craftsmen = {
+		culture = french
+		religion = catholic
+		size = 7500
 	}
 
 	artisans = {
@@ -1471,13 +1495,13 @@
 	}
 	
 	artisans = {
-		culture = anglois
+		culture = french
 		religion = catholic
 		size = 10000
 	}
 	
 	artisans = {
-		culture = anglois
+		culture = french
 		religion = catholic
 		size = 400
 	}
@@ -1519,15 +1543,21 @@
 	}
 	
 	soldiers = {
-		culture = anglois
+		culture = french
 		religion = catholic
-		size = 3000
+		size = 2400
 	}
 	
 	farmers = {
 		culture = anglois
 		religion = catholic
-		size = 172200
+		size = 160000
+	}
+	
+	farmers = {
+		culture = anglois
+		religion = catholic
+		size = 12200
 	}
 
 	clergymen = {

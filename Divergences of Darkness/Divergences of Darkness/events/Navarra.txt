@@ -288,13 +288,14 @@ country_event = {
 			}
 		}
 		DUA = { 
+			exists = yes 
 			OR = { 
 			government = absolute_monarchy
 			government = prussian_constitutionalism
 			government = hms_government
 			}
 		}
-		NOT = { has_global_flag = end_bourbon  }
+		NOT = { has_global_flag = end_bourbon }
 		}
 
 	mean_time_to_happen = { 

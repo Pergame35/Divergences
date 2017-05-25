@@ -106,14 +106,14 @@ country_event = {
 		modifier = {
 			factor = 0.8
 			any_state = {
-				any_owned_province = { is_core = MOR }
+				any_owned_province = { is_core = CUB }
 				average_militancy = 3
 			}
 		}
 		modifier = {
 			factor = 0.8
 			any_state = {
-				any_owned_province = { is_core = MOR }
+				any_owned_province = { is_core = CUB }
 				average_militancy = 4
 			}
 		}
@@ -141,11 +141,11 @@ country_event = {
 			prestige = -80
 		}
 		relation = {
-			who = MOR
+			who = CUB
 			value = 100
 		}
 		diplomatic_influence = {
-			who = MOR
+			who = CUB
 			value = 200
 		}
 		any_pop = {

@@ -598,9 +598,9 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 20
 		modifier = {
-			factor = 10
+			factor = 20
 			has_country_flag = MOR_independence_refused
 		}
 		modifier = {
@@ -654,7 +654,7 @@ country_event = {
 			consciousness = 1
 		}
 		ai_chance = {
-			factor = 80
+			factor = 20
 			modifier = {
 				factor = 0
 				OR = {
@@ -709,7 +709,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 20
+			factor = 80
 			modifier = {
 				factor = 1.75
 				government = absolute_monarchy
@@ -802,7 +802,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 20
 		modifier = {
 			factor = 10
 			has_country_flag = ALD_independence_refused
@@ -858,7 +858,7 @@ country_event = {
 			consciousness = 1
 		}
 		ai_chance = {
-			factor = 80
+			factor = 20
 			modifier = {
 				factor = 0
 				OR = {
@@ -913,7 +913,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 20
+			factor = 80
 			modifier = {
 				factor = 1.75
 				government = absolute_monarchy
