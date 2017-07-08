@@ -978,6 +978,10 @@ country_event = {
 	id = 333452
 	title = "ARC12.T"
 	desc = "ARC12.D"   
+	news = yes
+	news_desc_long = "ARC12_NEWS_LONG"
+	news_desc_medium = "ARC12_NEWS_MEDIUM"
+	news_desc_short = "ARC12_NEWS_SHORT"
 
 	is_triggered_only = yes
 	
@@ -1988,21 +1992,86 @@ country_event = {
 
 country_event = { 
 	id = 333501
-	title = "BELG.T"
-	desc = "BELG.D"
+	title = "333501.T"
+	desc = "333501.D"
 	
 	trigger = { 
 	tag = NBG 
-	ai = no 
+	ai = yes 
+	is_greater_power = yes 
+	has_country_flag = nbg_manifest_destiny
+	NOT = { PLA = { rank = 12 } }
+    NOT = { VIN = { rank = 12 } }
+	war = no 
 	}
 	
 	fire_only_once = yes 
 	
 	mean_time_to_happen = { 
-	days = 1 
+	months = 1 
 	}
 	
 	option = { 
+	inherit = PLA 
+	inherit = VIN
+	name = "333501.A"
+	}
+}
+
+country_event = { 
+	id = 333502
+	title = "333501.T"
+	desc = "333502.D"
+	
+	trigger = { 
+	tag = VIN 
+	ai = yes 
+	is_greater_power = yes 
+	has_country_flag = vin_manifest_destiny
+	NOT = { PLA = { rank = 12 } }
+	NOT = { NBG = { rank = 12 } }
+	war = no 
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = { 
+	months = 1 
+	}
+	
+	option = { 
+	inherit = PLA 
+	inherit = NBG
+	name = "333501.A"
+	}
+}
+
+country_event = { 
+	id = 333503
+	title = "333501.T"
+	desc = "333503.D"
+	
+	trigger = { 
+	tag = PLA 
+	ai = yes 
+	is_greater_power = yes 
+	has_country_flag = pla_manifest_destiny
+	NOT = { VIN = { rank = 12 } }
+	NOT = { NBG = { rank = 12 } }
+	NOT = { LST = { rank = 12 } }
+	war = no 
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = { 
+	months = 1 
+	}
+	
+	option = { 
+	inherit = PLA 
+	inherit = NBG
+	inherit = LST
 	name = "333501.A"
 	}
 }

@@ -61,6 +61,10 @@ country_event = {   #Japan is informed of the end of the war
 	title = "334202.T"
 	desc = "EVTDESC334202"
 	picture = "boxers"
+	news = yes 
+	news_desc_long = "334202_NEWS_LONG"
+	news_desc_medium = "334202_NEWS_MEDIUM"
+	news_desc_short = "334202_NEWS_SHORT"
 	
 	is_triggered_only = yes
 

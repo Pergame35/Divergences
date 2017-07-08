@@ -1,0 +1,46 @@
+political_decisions = { 
+
+	bring_it_on = { 
+	alert = no    
+	picture = exhibition
+	
+	potential = { 
+	ai = no 
+  NOT = { has_global_flag = bring_it_on }
+		}
+	
+	allow = { 
+	ai = no
+		}
+		
+	effect = { 
+	set_global_flag = bring_it_on
+		}
+	ai_will_do = {
+				factor = 0
+		}
+		
+	}     
+  
+	bring_it_off = { 
+	alert = no
+	picture = exhibition 
+	
+	potential = { 
+	ai = no 
+  has_global_flag = bring_it_on
+		}
+	
+	allow = { 
+	ai = no
+		}
+		
+	effect = { 
+	clr_global_flag = bring_it_on
+		}
+	ai_will_do = {
+				factor = 0
+		}
+		
+	}
+}  

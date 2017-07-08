@@ -91,6 +91,8 @@ conquest
 conquest_any
 annex_africa
 annex_africa_full
+annex_india_AI
+annex_india_full_AI
 establish_protectorate_BC_casus_belli
 establish_protectorate_NI_casus_belli
 establish_protectorate_casus_belli
@@ -4746,6 +4748,233 @@ hre_unification2 = {
 	
 	war_name = UNIFICATION_HUMILIATE_NAME
 	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+}
+
+# Selon Treaty AI
+annex_india_AI = {
+	sprite_index = 7
+	is_triggered_only = yes
+	months = 0
+	crisis = no
+	
+	construction_speed = 1.5
+	
+	badboy_factor = 0
+	prestige_factor = 0.5
+	peace_cost_factor = 0.6
+	penalty_factor = 2
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 12
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+	
+	always = yes
+	
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		number_of_states = 2
+		THIS = {
+      ai = yes			
+			capital_scope = { continent = europe }
+			OR = {
+				NOT = { tag = RUS }
+				ai = no
+			}
+			NOT = { tag = TUR }
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		  NOT = { has_country_modifier = neutrality }
+      NOT = { has_global_flag = DVG_infamy }
+			civilized = yes
+			has_global_flag = selon_treaty
+		}
+		OR = {
+     tag = MDR
+     tag = VIJ
+     tag = TRA
+     tag = BER
+     tag = HYD
+     tag = NAG
+     tag = JAI
+     tag = JAS
+     tag = JOD
+     tag = MEW
+     tag = SIN
+     tag = MUG
+     tag = BIK
+     tag = BEN
+     tag = BUR
+     tag = CAM
+     tag = DAI
+     tag = JAV
+     tag = BRU
+     tag = BAL
+     tag = ATJ
+     tag = PLM
+     tag = CHP
+     tag = LFG
+     tag = MKS
+     tag = SIA
+     tag = PAT
+     tag = KLM
+     tag = KTI
+     tag = SUL 
+    }
+		civilized = no
+		is_vassal = no
+		ai = yes
+		OR = {
+			war_with = THIS
+			THIS = {
+				NOT = { has_country_modifier = punitive_effects }
+			}
+		}
+	}
+	
+	allowed_states = {
+		any_owned_province = { is_colonial = no }
+		NOT = { any_owned_province = { is_capital = yes } }
+		OR = {
+			THIS = { ai = no }
+			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+			AND = {
+				any_owned_province = { port = yes }
+				THIS = {
+					any_owned_province = { port = yes }
+				}
+			}
+		}
+	}
+	
+	po_demand_state = yes
+	
+	war_name = WAR_CONCESSION_NAME
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+}
+
+annex_india_full_AI = {
+	sprite_index = 7
+	is_triggered_only = yes
+	months = 0
+	crisis = no
+	
+	construction_speed = 1.5
+	
+	badboy_factor = 0
+	prestige_factor = 0.5
+	peace_cost_factor = 0.6
+	penalty_factor = 2
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 12
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+	
+	always = yes
+	
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		NOT = { number_of_states = 2 }
+		THIS = {			
+			capital_scope = { continent = europe }
+			OR = {
+				NOT = { tag = RUS }
+				ai = no
+			}
+			NOT = { tag = TUR }
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		  NOT = { has_country_modifier = neutrality }
+      NOT = { has_global_flag = DVG_infamy }
+			civilized = yes
+			has_global_flag = selon_treaty
+      ai = yes
+		}
+		OR = {
+     tag = MDR
+     tag = VIJ
+     tag = TRA
+     tag = BER
+     tag = HYD
+     tag = NAG
+     tag = JAI
+     tag = JAS
+     tag = JOD
+     tag = MEW
+     tag = SIN
+     tag = MUG
+     tag = BIK
+     tag = BEN
+     tag = BUR
+     tag = CAM
+     tag = DAI
+     tag = JAV
+     tag = BRU
+     tag = BAL
+     tag = ATJ
+     tag = PLM
+     tag = CHP
+     tag = LFG
+     tag = MKS
+     tag = SIA
+     tag = PAT
+     tag = KLM
+     tag = KTI
+     tag = SUL 
+    }
+		civilized = no
+		is_vassal = no
+		ai = yes
+		OR = {
+			war_with = THIS
+			THIS = {
+				NOT = { has_country_modifier = punitive_effects }
+			}
+		}
+
+		OR = {
+			THIS = { ai = no }
+			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+			AND = {
+				any_owned_province = { port = yes }
+				THIS = {
+					any_owned_province = { port = yes }
+				}
+			}
+		}
+	}
+	
+	po_annex = yes
+	
+	war_name = WAR_PROTECTORATE_NAME
+
 	on_add = {
 		move_issue_percentage = { 
 			from = jingoism 

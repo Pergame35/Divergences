@@ -610,7 +610,8 @@ political_decisions = {
 		}
 		
 		allow = {
-			owns = 860 #Istanbul
+			owns = 880 #Kastamonu
+			owns = 882 #Trabzon
 			war = no
 		}
 		
@@ -638,12 +639,14 @@ political_decisions = {
 	restore_pontus = {
 		potential = {
 			tag = TUR
-			has_global_flag = greek_constantinople
-			owns = 860 #Istanbul
+			has_global_flag = greek_pontus
+			owns = 880 #Kastamonu
+			owns = 882 #Trabzon
 		}
 		
 		allow = {
-			owns = 860 #Istanbul
+			owns = 880 #Kastamonu
+			owns = 882 #Trabzon
 			war = no
 		}
 		

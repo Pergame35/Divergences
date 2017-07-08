@@ -1,0 +1,15 @@
+country_event = {
+	
+	id = 95600
+	title = "EVTNAME95600" #The Selon Treaty
+	desc = "EVTDESC95600"
+	picture = "explorers"
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We must civilize all of India"
+		prestige = 25
+	}
+}

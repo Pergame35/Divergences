@@ -523,6 +523,10 @@ country_event = { ## Glorious Revolution
 	id = 650211
 	title = "DUA11.T"
 	desc = "DUA11.D"
+	news = yes 
+	news_desc_long = "650211_NEWS_LONG"
+	news_desc_medium = "650211_NEWS_MEDIUM"
+	news_desc_short = "650211_NEWS_SHORT"
 	
 	major = yes
 	fire_only_once = yes 
@@ -697,6 +701,10 @@ country_event = { #Sons of Harold
 	title = "DUA14.T"
 	desc = "DUA14.D"
 	picture = "liberals_org"
+	news = yes 
+	news_desc_long = "650214_NEWS_LONG"
+	news_desc_medium = "650214_NEWS_MEDIUM"
+	news_desc_short = "650214_NEWS_SHORT"
 	
 	fire_only_once = yes 
 	
@@ -1053,6 +1061,10 @@ country_event = { #the infernal machine -Liverpool
 	id = 650219
 	title = "DUA19.T"
 	desc = "DUA19.D" 
+	news = yes 
+	news_desc_long = "650219_NEWS_LONG"
+	news_desc_medium = "650219_NEWS_MEDIUM"
+	news_desc_short = "650219_NEWS_SHORT"
 	
 	major = yes
 	fire_only_once = yes
@@ -1190,6 +1202,10 @@ country_event = { ## Midi Revolution
 	id = 650222
 	title = "DUA22.T"
 	desc = "DUA22.D"
+	news = yes 
+	news_desc_long = "650222_NEWS_LONG"
+	news_desc_medium = "650222_NEWS_MEDIUM"
+	news_desc_short = "650222_NEWS_SHORT"
 	
 	major = yes
 	fire_only_once = yes 
@@ -1363,6 +1379,10 @@ country_event = { #Sons of St-Louis
 	title = "DUA27.T"
 	desc = "DUA27.D"
 	picture = "liberals_org"
+	news = yes 
+	news_desc_long = "650227_NEWS_LONG"
+	news_desc_medium = "650227_NEWS_MEDIUM"
+	news_desc_short = "650227_NEWS_SHORT"
 	
 	fire_only_once = yes 
 	
@@ -1936,6 +1956,10 @@ country_event = { ##The Total Revolution
 	id = 650247
 	title = "DUA47.T"
 	desc = "DUA47.D"
+	news = yes 
+	news_desc_long = "650247_NEWS_LONG"
+	news_desc_medium = "650247_NEWS_MEDIUM"
+	news_desc_short = "650247_NEWS_SHORT"
 	
 	major = yes 
 	
@@ -2655,6 +2679,10 @@ country_event = { #Theatre
 	title = "DUA55.T"
 	desc = "DUA55.D"
 	picture = "theatre"
+	news = yes
+	news_desc_long = "650255_NEWS_LONG"
+	news_desc_medium = "650255_NEWS_MEDIUM"
+	news_desc_short = "650255_NEWS_SHORT"
 	
 	trigger = { 
 	tag = DUA 
@@ -3662,6 +3690,10 @@ country_event = { #Death of the Dauphin, Liverpool
 	title = "DUA75.T"
 	desc = "DUA75.D"
 	picture = "assassination_dauphin"
+	news = yes
+	news_desc_long = "650219_NEWS_LONG"
+	news_desc_medium = "650219_NEWS_LONG"
+	news_desc_short = "650219_NEWS_LONG"
 	
 	major = yes 
 	
@@ -3956,6 +3988,10 @@ country_event = {
 	id = 650290
 	title = "DUA90.T"
 	desc = "DUA90.D"
+	news = yes
+	news_desc_long = "650290_NEWS_LONG"
+	news_desc_medium = "650290_NEWS_LONG"
+	news_desc_short = "650290_NEWS_LONG"
 	
 	is_triggered_only = yes 
 	

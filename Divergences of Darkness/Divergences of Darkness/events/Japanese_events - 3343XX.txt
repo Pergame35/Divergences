@@ -99,42 +99,27 @@ country_event = {   #Qinqiu is informed of the invasion
 country_event = {
 
 	id = 334303
-	title = "EVTNAME334303" #The Hawaiian Islands Purchase
+	title = "EVTNAME334303" #Japan won against Korea
 	desc = "EVTDESC334303"
-	picture = "treaty"
+	picture = "japanese_power"
+	news = yes 
+	news_desc_long = "334303_NEWS_LONG"
+	news_desc_medium = "334303_NEWS_MEDIUM"
+	news_desc_short = "334303_NEWS_SHORT"
 	
-	is_triggered_only = yes
+	trigger = { 
+	has_country_flag = koreaisjapanese
+	}
+	
+	fire_only_once = yes
 	
 	option = {
 		name = "334303.A"
-		FROM = { country_event = 334305 }
-		ai_chance = {
-			factor = 75
-			modifier = {
-				factor = 0.5
-				truce_with = FROM
-			}
+		prestige = 10 
+		any_pop = { 
+		limit = { primary_culture = japanese }
+		militancy = -1
 		}
-	}
-	option = {
-		name = "190401.B"
-		FROM = { country_event = 334304 }
-		relation = {
-			who = FROM
-			value = -50
-		}
-		leave_alliance = FROM 
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0.75
-				relation = { who = FROM value = 100 }
-			}
-			modifier = {
-				factor = 0.5
-				alliance_with = FROM
-			}
-		}		
 	}
 }
 
@@ -706,6 +691,12 @@ country_event = {
 	badboy = -7 
 	ai_chance = { factor = 90 }
 	}
+	
+	option = { 
+	name = "334323.B"
+	prestige = -5 
+	ai_chance = { factor = 10 }
+	}
 }
 	
 country_event = { 
@@ -729,5 +720,992 @@ country_event = {
 	name = "334324.A"
 	random_owned = { 2525 = { secede_province = THIS } }
 	random_owned = { 2524 = { secede_province = THIS } }
+	}
+}
+
+#Europeans interested in China
+
+country_event = {
+	id = 334330
+	title = "334330.T" #The Kowloon incident
+	desc = "334330.D"
+	picture = "Opiumwar"
+
+	trigger = {
+		tag = TNG
+		war = no 
+		part_of_sphere = no
+		MIG = { exists = yes }
+		owns = 1496
+		NOT = { has_global_flag = kowloon_incident }
+		BRG = {
+			NOT = { war_with = THIS truce_with = THIS }
+			exists = yes
+			is_greater_power = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 7
+		modifier = {
+			factor = 0.8
+			year = 1838
+		}
+		modifier = {
+			factor = 0.8
+			year = 1839
+		}
+		modifier = {
+			factor = 0.5
+			year = 1840
+		}
+	}
+
+	immediate = {
+		set_global_flag = kowloon_incident
+	}
+	
+	option = {
+		name = "334330.A"
+		BRG = { country_event = 334331 }
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = "334330.B"
+		1496 = { secede_province = BRG }
+		BRG = { country_event = 334332 }
+		BRG = { relation = { who = THIS value = 100 } }
+		any_pop = {
+			limit = { is_primary_culture = no }
+			militancy = 3
+		}
+		ai_chance = { factor = 50 }
+	}
+}
+country_event = {
+	id = 334331
+	title = "334331.T" #Response from Burgundy
+	desc = "334331.D"
+	news = yes
+	news_desc_long = "334331_NEWS_LONG"
+	news_desc_medium = "334331_NEWS_MEDIUM"
+	news_desc_short = "334331_NEWS_SHORT"
+	picture = "Opiumwar"
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "334331.A"
+		leave_alliance = FROM
+		end_military_access = FROM
+		war = {
+			target = FROM
+			attacker_goal = { 
+				casus_belli = humiliate
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = no
+		}
+		ai_chance = { factor = 99 }
+	}
+
+	option = {
+		name = "334331.B"
+		prestige = -10
+		relation = {
+			who = FROM
+			value = -50
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 30
+				any_greater_power = { war_with = THIS }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 334332
+	title = "334332.T" #Hong Kong acquired in peace
+	desc = "334332.D"
+	news = yes
+	news_desc_long = "334332_NEWS_LONG"
+	news_desc_medium = "334332_NEWS_MEDIUM"
+	news_desc_short = "334332_NEWS_SHORT"
+	picture = "Unequal_Treaty_CHI"
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+	name = "334332.A"
+	prestige = 5
+	}
+}	
+
+country_event = {
+	id = 334333
+	title = "334333.T" #Getting Kwangchowan 
+	desc = "334333.D"
+	picture = "Opiumwar"
+
+	trigger = {
+		tag = SCA
+		war = no 
+		TAI = { owns = 2674 }
+		has_global_flag = kowloon_incident
+		NOT = { has_country_flag = southern_concession }
+		1496 = { owned_by = BRG }
+		is_greater_power = yes
+		NOT = { war_with = TAI truce_with = TAI }
+	}
+	
+	mean_time_to_happen = {
+		months = 70
+		modifier = {
+			factor = 0.8
+			year = 1850
+		}
+		modifier = {
+			factor = 0.8
+			year = 1855
+		}
+		modifier = {
+			factor = 0.5
+			year = 1860
+		}
+	}
+
+	immediate = {
+		set_country_flag = southern_concession
+	}
+	
+	option = {
+		name = "334333.A"
+		TAI = { country_event = 334334 }
+		ai_chance = { factor = 99 }
+	}
+	option = {
+		name = "334333.B"
+		ai_chance = { factor = 1 }
+	}
+}
+country_event = {
+	id = 334334
+	title = "334334.T" #Taiping weights its options
+	desc = "334334.D"
+	picture = "Opiumwar"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "334334.A"
+		prestige = -5 
+		1496 = { secede_province = FROM }
+		FROM = { country_event = 334335 }
+		FROM = { relation = { who = THIS value = 100 } }
+		money = 100000
+		any_pop = {
+			limit = { is_primary_culture = no }
+			militancy = 3
+		}
+		ai_chance = { factor = 70 }
+	}
+
+	option = {
+		name = "334334.B"
+		FROM = { country_event = 334336 }
+		relation = {
+			who = FROM
+			value = -50
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+country_event = {
+	id = 334335
+	title = "334335.T" #Kwangchowan acquired in peace
+	desc = "334335.D"
+	news = yes
+	news_desc_long = "334335_NEWS_LONG"
+	news_desc_medium = "334335_NEWS_MEDIUM"
+	news_desc_short = "334335_NEWS_SHORT"
+	picture = "Unequal_Treaty_CHI"
+
+	is_triggered_only = yes
+	
+	option = { 
+	name = "334335.A"
+	prestige = 5
+	money = -100000
+	}
+}
+
+country_event = {
+	id = 334336
+	title = "334336.T" #Response from Scandinavia
+	desc = "334336.D"
+	news = yes
+	news_desc_long = "334336_NEWS_LONG"
+	news_desc_medium = "334336_NEWS_MEDIUM"
+	news_desc_short = "334336_NEWS_SHORT"
+	picture = "Opiumwar"
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "334336.A"
+		leave_alliance = FROM
+		end_military_access = FROM
+		war = {
+			target = FROM
+			attacker_goal = { 
+				casus_belli = humiliate
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = no
+		}
+		ai_chance = { factor = 99 }
+	}
+
+	option = {
+		name = "334336.B"
+		prestige = -10
+		relation = {
+			who = FROM
+			value = -50
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 30
+				any_greater_power = { war_with = THIS }
+			}
+		}
+	}
+}	
+
+#Shanghai Crisis 
+
+country_event = { 
+	id = 334337 
+	name = "334337.T" #DUA seeks a port
+	desc = "334337.D"
+	
+	trigger = { 
+	tag = DUA 
+	has_global_flag = kowloon_incident 
+	1496 = { owned_by = BRG }
+	NOT = { has_country_flag = seeking_port_china }
+	NOT = { any_owned_province = { is_core = CHI } } 
+	}
+	
+	mean_time_to_happen = {
+		months = 80
+		modifier = {
+			factor = 0.8
+			year = 1850
+		}
+		modifier = {
+			factor = 0.8
+			year = 1855
+		}
+		modifier = {
+			factor = 0.5
+			year = 1860
+		}
+	}
+	
+	fire_only_once = yes 
+	
+	option = { 
+	name = "334337.A" 
+	set_country_flag = seeking_port_china
+	badboy = 1 
+	ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = { 
+	name = "334337.B"
+	prestige = -2
+	ai_chance = {
+		factor = 20
+		}
+	}
+}
+
+country_event = { 
+	id = 334338 
+	name = "334338.T" #DUA seeks Shanghai -JAP not Great Power
+	desc = "334338.D"
+	
+	trigger = { 
+	tag = MIG 
+	civilized = no 
+	DUA = { exists = yes has_country_flag = seeking_port_china }
+	owns = 1538 
+	owns = 1606 
+	war = no
+	OR = { 
+	JAP = { is_greater_power = no }
+	1624 = { NOT = { owned_by = JAP } } 
+		}
+	}
+	
+	mean_time_to_happen = { 
+	months = 12 
+	}
+	
+	immediate = { 
+	clr_country_flag = seeking_port_china
+	}
+	
+	option = { 
+	name = "334338.A"
+	prestige = -5 
+	1538 = { secede_province = DUA }
+	DUA = { country_event = 334339 }
+	DUA = { relation = { who = THIS value = 100 } }
+	money = 100000
+	any_pop = {
+		limit = { is_primary_culture = yes }
+		militancy = 3
+		}
+	ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = { 
+	name = "334338.B"
+	DUA = { country_event = 334340 }
+	relation = {
+		who = DUA
+		value = -50
+	}
+	ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = { 
+	id = 334339 
+	name = "334339.T" #DUA obtains Shanghai
+	desc = "334339.D" 
+	news = yes 
+	news_desc_long = "334339_NEWS_LONG"
+	news_desc_medium = "334339_NEWS_MEDIUM"
+	news_desc_short = "334339_NEWS_SHORT"
+	picture = "Unequal_Treaty_CHI"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "334339.T"
+	prestige = 5 
+	money = -100000
+	}
+} 
+
+country_event = {
+	id = 334340
+	title = "334340.T" #Response from DUA
+	desc = "334340.D"
+	news = yes
+	news_desc_long = "334340_NEWS_LONG"
+	news_desc_medium = "334340_NEWS_MEDIUM"
+	news_desc_short = "334340_NEWS_SHORT"
+	picture = "Opiumwar"
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "334340.A"
+		leave_alliance = FROM
+		end_military_access = FROM
+		war = {
+			target = FROM
+			attacker_goal = { 
+				casus_belli = humiliate
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = no
+		}
+		ai_chance = { factor = 99 }
+	}
+
+	option = {
+		name = "334340.B"
+		prestige = -10
+		relation = {
+			who = FROM
+			value = -50
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 30
+				any_greater_power = { war_with = THIS }
+			}
+		}
+	}
+}	
+
+
+country_event = { 
+	id = 334341 
+	name = "334341.T" #DUA seeks Shanghai -JAP is GP
+	desc = "334341.D"
+	picture = "Japanese_CHI"
+	
+	trigger = { 
+	tag = JAP 
+	MIG = { civilized = no exists = yes war = no }
+	DUA = { exists = yes has_country_flag = seeking_port_china }
+	1538 = { owned_by = MIG }
+	1606 = { owned_by = MIG }
+	war = no
+	OR = { 
+	is_greater_power = yes
+	1624 = { owned_by = JAP } 
+		}
+	}
+	
+	mean_time_to_happen = { 
+	months = 12 
+	}
+	
+	immediate = { 
+	clr_country_flag = seeking_port_china
+	}
+	
+	option = { 
+	name = "334341.A" #Protect MIG
+	prestige = 5
+	create_alliance = MIG 
+	relation = { who = MIG value = 100 }
+	DUA = { country_event = 334342 }
+	ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = { 
+	name = "334341.B" #Offer to carve MIG 
+	DUA = { country_event = 334345 }
+	ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = { 
+	name = "334341.C" #Leave MIG alone
+	MIG = { country_event = 334351 }
+	prestige = -5
+	ai_chance = {
+		factor = 10
+		modifier = {
+			factor = 30
+			any_greater_power = { war_with = THIS }
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 334342 
+	name = "334342.T" #JAP protects MIG
+	desc = "334342.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "334342.A" #DUA goes anyway 
+	leave_alliance = FROM
+	end_military_access = FROM
+	war = {
+			target = MIG
+			attacker_goal = { 
+				casus_belli = humiliate
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = no
+		}
+	MIG = { country_event = 334343 }
+	ai_chance = { 
+	factor = 80 	
+		}
+	}
+	
+	option = { 
+	name = "334342.B"
+	JAP = { country_event = 334344 }
+	prestige = -5 
+	ai_chance = { 
+	factor = 20 	
+		}
+	}
+	
+}
+
+country_event = { 
+	id = 334343 
+	name = "334343.T" #MIG informed of war by DUA
+	desc = "334343.D"
+	picture = "Opiumwar"
+	news = yes 
+	news_desc_long = "334343_NEWS_LONG"
+	news_desc_medium = "334343_NEWS_MEDIUM"
+	news_desc_short = "334343_NEWS_SHORT"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "334343.A"
+	}
+}
+
+country_event = { 
+	id = 334344 
+	name = "334344.T" #JAP learns that DUA backs down
+	desc = "334344.D"
+	picture = "Japanese_CHI"
+	news = yes 
+	news_desc_long = "334344_NEWS_LONG"
+	news_desc_medium = "334344_NEWS_MEDIUM"
+	news_desc_short = "334344_NEWS_SHORT"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "334344.A"
+	prestige = 20
+	}
+}
+
+country_event = { 
+	id = 334345
+	name = "334345.T" #CO-sovereignity in the East
+	desc = "334345.D"
+	picture = "Unequal_Treaty_CHI"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "334345.A" #Accept the Treaty
+	relation = { who = JAP value = 100 }
+	prestige = 3
+	MIG = { country_event = 334346 }
+	ai_chance = { 
+	factor = 60
+	modifier = { 
+		factor = 1.3
+		relation = { who = JAP value = 100 }
+			}
+	modifier = { 
+		factor = 0.7
+		NOT = { relation = { who = JAP value = 0 } }
+			}
+	modifier = { 
+		factor = 1.5
+		JAP = { rank = 4 }
+			}
+		}
+	}
+	
+	option = { 
+	name = "334345.B" #War for Shanghai
+	relation = { who = FROM value = -150}
+	eave_alliance = FROM
+	end_military_access = FROM
+	war = {
+			target = MIG
+			attacker_goal = { 
+				casus_belli = humiliate
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = no
+		}
+	MIG = { country_event = 334343 }
+	JAP = { country_event = 334352 }
+	ai_chance = { 
+	factor = 40
+		}
+	}
+}
+
+country_event = { 
+	id = 334346
+	name = "334346.T" #CO-sovereignity in the East
+	desc = "334346.D"
+	picture = "Unequal_Treaty_CHI"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "334346.A"
+	1538 = { secede_province = JAP }
+	1606 = { secede_province = DUA }
+	prestige = -5 
+	any_pop = { 
+	militancy = 4 
+		}
+	JAP = { country_event = 334347 }
+	DUA = { country_event = 334348 }
+	ai_chance = { 
+	factor = 99
+		}
+	}
+	
+	option = { 
+	name = "334346.B"
+	JAP = { country_event = 334349 }
+	DUA = { country_event = 334350 }
+	ai_chance = { 
+	factor = 1
+		}
+	}
+}
+
+country_event = { 
+	id = 334347
+	name = "334347.T" #Shanghai is JAP
+	desc = "334347.D"
+	picture = "Japanese_CHI"
+	news = yes 
+	news_desc_long = "334347_NEWS_LONG"
+	news_desc_medium = "334347_NEWS_MEDIUM"
+	news_desc_short = "334347_NEWS_SHORT"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "334347.A"
+	prestige = 5 
+	}
+	
+}
+
+country_event = { 
+	id = 334348
+	name = "334348.T" #Jiaxing is DUA
+	desc = "334348.D"
+	picture = "Unequal_Treaty_CHI"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "334348.A"
+	prestige = 5 
+	}	
+}
+
+country_event = {
+	id = 334349
+	title = "334349.T" #Response from JAP
+	desc = "334349.D"
+	picture = "Opiumwar"
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "334349.A"
+		leave_alliance = FROM
+		end_military_access = FROM
+		war = {
+			target = FROM
+			attacker_goal = { 
+				casus_belli = humiliate
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = no
+		}
+		ai_chance = { factor = 99 }
+	}
+
+	option = {
+		name = "334349.B"
+		prestige = -10
+		relation = {
+			who = FROM
+			value = -50
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 30
+				any_greater_power = { war_with = THIS }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 334350
+	title = "334350.T" #Response from DUA
+	desc = "334350.D"
+	picture = "Opiumwar"
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "334350.A"
+		leave_alliance = FROM
+		end_military_access = FROM
+		war = {
+			target = FROM
+			attacker_goal = { 
+				casus_belli = humiliate
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = no
+		}
+		ai_chance = { factor = 99 }
+	}
+
+	option = {
+		name = "334350.B"
+		prestige = -10
+		relation = {
+			who = FROM
+			value = -50
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 30
+				any_greater_power = { war_with = THIS }
+			}
+		}
+	}
+}	
+
+
+country_event = { 
+	id = 334351
+	name = "334338.T" #DUA seeks Shanghai -JAP not Great Power
+	desc = "334338.D"
+	
+	is_triggered_only = yes 
+	
+	mean_time_to_happen = { 
+	months = 12 
+	}
+	
+	immediate = { 
+	clr_country_flag = seeking_port_china
+	}
+	
+	option = { 
+	name = "334338.A"
+	prestige = -5 
+	1538 = { secede_province = DUA }
+	DUA = { country_event = 334339 }
+	DUA = { relation = { who = THIS value = 100 } }
+	money = 100000
+	any_pop = {
+		limit = { is_primary_culture = yes }
+		militancy = 3
+		}
+	ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = { 
+	name = "334338.B"
+	DUA = { country_event = 334340 }
+	relation = {
+		who = DUA
+		value = -50
+	}
+	ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+	id = 334352
+	title = "334352.T" #Response from JAP
+	desc = "334352.D"
+	picture = "Opiumwar"
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "334352.A"
+		leave_alliance = MIG
+		end_military_access = MIG
+		war = {
+			target = MIG
+			attacker_goal = { 
+				casus_belli = humiliate
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = no
+		}
+		ai_chance = { factor = 99 }
+	}
+
+	option = {
+		name = "334352.B"
+		prestige = -10
+		relation = {
+			who = FROM
+			value = -50
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 30
+				any_greater_power = { war_with = THIS }
+			}
+		}
+	}
+}	
+
+#Spanish islands
+
+country_event = {
+	id = 33025
+	title = "EVTNAME33025" #The Spanish Pacific
+	desc = "EVTDESC33025"
+	picture = "deliberation"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT33025OPTA"
+		treasury = 50000
+		relation = { who = FROM value = 100 }
+		FROM = { country_event = 33026 }
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.5
+				NOT = {
+					relation = { who = FROM value = 0 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT33025OPTB"
+		relation = { who = FROM value = -50 }
+		FROM = { country_event = 33027 }
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				in_sphere = FROM
+			}
+			modifier = {
+				factor = 0.5
+				alliance_with = FROM
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					relation = { who = FROM value = 0 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 33026
+	title = "EVTNAME33026"
+	desc = "EVTDESC33026"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT33026OPTA"
+		treasury = -50000
+		diplomatic_influence = { who = FROM value = 50 }
+		FROM = {
+			any_owned = {
+				limit = {
+					OR = {
+						region = AST_2527 
+						region = SPA_2517
+					}
+				}
+				secede_province = THIS
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 33027
+	title = "EVTNAME33027"
+	desc = "EVTDESC33027"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT33027OPTA"
+		prestige = -10
+		relation = { who = FROM value = -100 }
+		diplomatic_influence = { who = FROM value = -200 }
+		casus_belli = {
+			target = FROM
+			type = place_in_the_sun
+			months = 24
+		}
+		casus_belli = {
+			target = FROM
+			type = humiliate
+			months = 24
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "EVT33027OPTB"
+		badboy = -1
+		prestige = -20
+		relation = { who = FROM value = -25 }
+		ai_chance = {
+			factor = 20
+		}
 	}
 }

@@ -110246,12 +110246,54 @@
 } # Essey
 
 2674 = {
-    text_position = {
-        x = 4407.000000
-        y = 2087.000000
-    }
+    text_position = { 
+        x = 4526.550000
+        y = 1103.150000
+    } 
 
-    text_scale = 4.999998
+    text_rotation = 0.749952
+    text_scale = 1.000000
+    unit = { 
+        x = 4529.600000
+        y = 1106.150000
+    } 
+
+    factory = { 
+        x = 4530.600000
+        y = 1104.950000
+    } 
+
+    building_construction = { 
+        x = 4528.150000
+        y = 1106.200000
+    } 
+
+    military_construction = { 
+        x = 4526.050000
+        y = 1104.400000
+    } 
+
+    building_position = { 
+        fort = { 
+            x = 4531.250000
+            y = 1104.150000
+        } 
+
+        railroad = { 
+            x = 4524.400000
+            y = 1101.650000
+        } 
+
+        naval_base = { 
+            x = 4531.500000
+            y = 1099.850000
+        } 
+
+    } 
+
+    building_rotation = { 
+        naval_base = 4.177115
+    } 
 } # Yekonda
 
 2675 = {

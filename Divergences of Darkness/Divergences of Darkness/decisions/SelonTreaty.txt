@@ -1,0 +1,31 @@
+political_decisions = {
+
+	selon_treaty = { 
+	picture = borneo_map
+	potential = {
+      ai = yes
+      OR = {       
+			     tag = BRG
+           tag = DUA
+      }
+			NOT = {
+				has_global_flag = selon_treaty
+			}     
+			NOT = {
+				has_global_flag = DVG_infamy
+			}
+		}	
+		allow = {
+			is_greater_power = yes
+			NOT = { war = yes }
+			SPA = { is_greater_power = no }
+		}
+		
+		effect = {
+			set_global_flag = selon_treaty
+			country_event = 95600
+      SPA = { prestige = -10 }
+		}
+	
+	}
+}

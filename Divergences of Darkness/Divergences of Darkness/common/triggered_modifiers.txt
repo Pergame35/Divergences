@@ -359,3 +359,44 @@ powerful_HRE = {
 	}
 	prestige = -0.50 
 }
+
+##############################
+
+ uncivmobil_0m = {
+	trigger = {
+    NOT = {
+			total_pops = 250000
+ 		}
+    civilized = no
+	}
+	mobilization_impact = 4
+}
+
+uncivmobil_1m = {
+	trigger = {       
+		total_pops = 250000
+    NOT = {
+			total_pops = 500000
+ 		}
+    civilized = no
+	}
+	mobilization_impact = 2
+}        		 	
+
+uncivmobil_2m = {
+	trigger = {       
+		total_pops = 500000
+    civilized = no
+	}
+	mobilization_impact = 1
+}
+        		
+loss_of_efficiency = { 
+	trigger = {
+		has_global_flag = bring_it_on
+		ai = no
+	}
+	tax_efficiency = -0.40 
+	icon = 1
+}	
+		

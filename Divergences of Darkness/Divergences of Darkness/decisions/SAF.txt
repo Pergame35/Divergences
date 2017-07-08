@@ -136,4 +136,59 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	Baastards_SAF = { 
+		potential = { 
+			tag = SAF 
+			NOT = { has_country_flag = baastards_SAF }
+			owns = 892 
+			owns = 923
+		}
+		
+		allow = { 
+			OR = { 
+			citizenship_policy = full_citizenship
+			citizenship_policy = limited_citizenship
+			}
+			slavery = no_slavery 
+			OR = {
+				upper_house = {
+					ideology = socialist
+					value = 0.4
+				}
+				upper_house = {
+					ideology = liberal
+					value = 0.4
+				}
+				AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.25
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.25
+					}
+				}
+			}
+		}
+		
+		effect = { 
+			prestige = -15
+			set_country_flag = baastards_SAF 
+			add_accepted_culture = afro_south_african  
+			any_pop = { 
+				limit = { is_primary_culture = boer }
+				militancy = 2 
+				scaled_militancy = {
+				factor = 3
+				ideology = reactionary
+				}
+				scaled_militancy = {
+				factor = 2
+				ideology = conservative
+				}
+			}
+		}
+	}
 }

@@ -758,4 +758,33 @@ political_decisions = {
 			}
 		}
 	}
+	
+	CLM_control = {
+	potential = { 
+	tag = SPA
+    year = 1840 
+    war_with = CLM
+    CLM = { ai = yes } 
+    CLM = { exists = yes }
+    ai = yes 
+	NOT = { 
+			OR = { 
+					CLM = { has_country_flag = enforced_peace_clm }
+					has_global_flag = partial_peace 
+					has_global_flag = congress_of_panama
+					has_global_flag = spanish_vic
+				} 
+			}
+	}
+	
+	allow = { 	
+	2172 = { controlled_by = THIS }
+	2254 = { controlled_by = THIS }
+	}
+	
+	effect = {
+	end_war = CLM
+    inherit = CLM
+		}
+	}
 }
