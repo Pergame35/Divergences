@@ -74,6 +74,7 @@ country_event = {
 				NOT = {
 					tag = NAS
 					tag = FRM
+					tag = KRL
 				}
 				OR = { 
 					primary_culture = north_german
@@ -930,7 +931,7 @@ country_event = {
 	change_tag = SGF
 	any_country = { limit = { primary_culture = south_german } country_event = 123117 } 
 	any_country = { limit = { primary_culture = rheinish } country_event = 123118 } 
-	any_country = { limit = { has_country_flag = anschluss_DUA} create_alliance = THIS }
+	any_country = { limit = { has_country_flag = anschluss_DUA } create_alliance = THIS }
 	BOH = { 
 			country_event = { id = 123104 days = 30 }
 		}
@@ -955,8 +956,6 @@ country_event = {
 	
 	option = { 
 	name = "123117.B"
-	change_tag_no_core_switch = LST
-	SGF = { inherit = THIS }
 	}
 }
 
@@ -1394,4 +1393,112 @@ country_event = {
 	remove_core = SWI
 		}
 	}
+}
+
+country_event = { 
+	id = 123139 
+	title = "GER29.T"
+	desc = "GER29.D"
+	
+	major = yes 
+	
+	trigger = { 
+	OR = { 
+	primary_culture = south_german
+	primary_culture = rheinish 
+	primary_culture = north_german 
+		}
+	year = 1900 
+	is_greater_power = yes 
+	NOT = { tag = KRL }
+	NOT = { GER = { exists = yes } }
+	NOT = { CAE = { exists = yes } } 
+	NOT = { HLR = { exists = yes } }
+	NOT = { BRG = { rank = 4 } }
+	NOT = { BOH = { rank = 4 } }
+	NOT = { SCA = { rank = 4 } }
+	NOT = { has_country_flag = german_crown }
+	}
+	
+	mean_time_to_happen = ( 
+	months = 300
+	modifier = { 
+	factor = 0.7 
+	tag = NGF 
+		}
+	modifier = { 
+	factor = 0.7
+	tag = SGF 
+		}
+	modifier = { 
+	factor = 0.5 
+	is_greater_power = yes 
+		}
+	modifier = { 
+	factor = 0.5 
+	rank = 4 
+		}
+	)
+	
+	immediate = { 
+	set_country_flag = german_crown
+	}
+	
+	option = { 
+	name = "GER29.A"
+	change_tag = GER 
+	prestige = 20
+	add_accepted_culture = rheinish 
+	add_accepted_culture = south_german 
+	add_accepted_culture = north_german
+	any_country = { 
+	limit = { is_greater_power = yes continent = europe NOT = { alliance_with = THIS } } 
+	relation = { who = THIS value = -150 }
+		}
+	any_country = { 
+	limit = { 
+		in_sphere = THIS 
+		OR = { 
+			primary_culture = south_german
+			primary_culture = rheinish 
+			primary_culture = north_german 
+				}		
+			}
+	annex_to = THIS
+		}
+	any_country = { 
+	limit = { 
+		OR = { 
+			primary_culture = south_german
+			primary_culture = rheinish 
+			primary_culture = north_german 
+			is_greater_power = no 
+				}		
+			}
+	event = 11106
+		}
+	any_country = {
+				limit = {
+					is_culture_group = germanic
+					exists = no
+					NOT = { has_country_flag = post_colonial_country }
+					OR = {
+						all_core = { owned_by = THIS }
+						tag = NGF
+						tag = SGF
+					}
+				}
+			country_event = 11105
+		}
+	ai_chance = { 
+	factor = 100
+		}
+	}
+	
+	option = { 
+	name = "GER29.B"
+	prestige = -5 
+	militancy = 5 
+	}
+	
 }

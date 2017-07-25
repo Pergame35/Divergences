@@ -449,6 +449,7 @@ political_decisions = {
 		has_global_flag = AMAguarani
 		has_global_flag = Amerigue
 		has_global_flag = borderAMA 
+		LOT = { government = democracy }
 			}
 		}
 		
@@ -971,6 +972,7 @@ political_decisions = {
 				tag = HBE
 			}
 			has_country_flag = conquest_of_the_desert
+			NOT = { has_country_flag = NAN_cone }
 			NOT = { is_greater_power = yes }
 			2324 = {
 				owner = {
@@ -1031,6 +1033,7 @@ political_decisions = {
 				tag = NAN
 				tag = HBE
 			}
+			NOT = { has_country_flag = NAN_cone }
 			has_country_flag = conquest_of_the_desert
 			is_greater_power = yes
 			2324 = {
@@ -1097,6 +1100,7 @@ political_decisions = {
 			2348 = {
 				owner = {
 					has_country_flag = occupation_of_araucania
+					NOT = { has_country_flag = NAN_cone }
 					NOT = { is_greater_power = yes }
 				}
 			}
@@ -1137,7 +1141,7 @@ political_decisions = {
 			SA_6 = { add_core = THIS }
 			SA_9 = { add_core = THIS }
 			NAN_5 = { add_core = THIS }
-			2324 = {
+			2348 = {
 				owner = {
 					country_event = 775422
 				}
@@ -1147,6 +1151,39 @@ political_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+	}
+	
+	Beornian_Cone = { 
+	
+		picture = "NAN_Andes"
+	
+		potential = { 
+		OR = { 
+		tag = NAN 
+		tag = HBE 
+			}
+		rank = 16 
+		NOT = { has_country_flag = NAN_cone }
+		}
+		
+		allow = { 
+		INC = { is_greater_power = no }
+		rank = 12
+		war_policy = jingoism
+		}
+		
+		effect = { 
+		set_country_flag = NAN_cone 
+		badboy = 12
+		SA_6 = { add_core = THIS add_core = NAN }
+		SA_9 = { add_core = THIS add_core = NAN }
+		NAN_5 = { add_core = THIS }
+		CHL_2322 = { add_core = THIS }
+		INC_2389 = { add_core = THIS }
+		ARG_2387 = { add_core = THIS }
+		relation = { who = INC value = -150 }
+		}
+	
 	}
 	
 }

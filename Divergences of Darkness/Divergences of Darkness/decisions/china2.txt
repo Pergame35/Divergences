@@ -50,6 +50,7 @@ jiangsu_control = {
 			any_owned_province = { continent = asia }
 			NOT = { has_country_flag = intervened_boxer_war }
 			is_greater_power = yes
+			year = 1840
 			NOT = {
 				has_country_flag = negotiate_unequal_treaty
 				is_culture_group = chinese

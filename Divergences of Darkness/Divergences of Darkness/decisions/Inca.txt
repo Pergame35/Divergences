@@ -5,6 +5,7 @@ political_decisions = {
 			potential = {
 				tag = INC
 				NOT = { capital = 2302 }
+				NOT = { has_global_flag = Hispanic_Andes }
 			}
 			allow = {
 				NOT = { war = yes }
@@ -53,6 +54,7 @@ political_decisions = {
 				tag = INC
 				capital = 2302
 				NOT = { has_country_flag = empire_del_inca }
+				NOT = { has_global_flag = Hispanic_Andes }
 			}
 			allow = {
 				NOT = { war = yes }
@@ -123,6 +125,7 @@ political_decisions = {
 				capital = 2302
 				has_country_flag = empire_del_inca
 				NOT = { has_country_flag = empire_del_inca_2 }
+				NOT = { has_global_flag = Hispanic_Andes }
 			}
 			allow = {
 				NOT = { war = yes }

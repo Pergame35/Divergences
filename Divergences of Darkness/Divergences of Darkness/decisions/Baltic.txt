@@ -185,65 +185,25 @@ political_decisions = {
 		}
 	}
 	
-	moldavia_commonwealth_friends_forever = {
-
-		potential = {
-			tag = PLC
-			OR = {
-				MOL = { exists = yes }
-				ROM = { exists = yes }
+	romanian_cherson = { 
+		potential = { 
+		tag = ROM 
+		NOT = { has_country_flag = ROM_cherson }
 			}
-			NOT = {
-				968 = { owned_by = ROM }
-				968 = { owned_by = MOL }
+			
+		allow = { 
+		nationalism_n_imperialism = 1 
+		rank = 16 
+		OR = { 
+		all_core = { owned_by = THIS }
+		war_policy = jingoism
 			}
-			NOT = { has_country_flag = best_f }
-		}
-
-		allow = {
-			war = no
-			968 = {
-				OR = {
-					owned_by = THIS
-					owner = {
-						in_sphere = THIS
-					}
-					owner = {
-						vassal_of = THIS
-					}
-					owner = {
-						substate_of = THIS
-					}
-				}
-			}
-			OR = {
-				AND = {
-					ROM = { war = no exists = yes is_vassal = no}
-					MOL = { exists = no }
-				}
-				MOL = { war = no exists = yes is_vassal = no}
-			}
-		}
+		}	
 		
-		effect = {
-			prestige = 10
-			set_country_flag = best_f
-			any_country = {
-				limit = {
-					OR = {
-						AND = {
-							tag = ROM
-							exists = yes
-							MOL = { exists = no }
-						}
-						AND = {
-							tag = MOL
-							exists = yes
-						}
-					}
-				}
-				country_event = 22230
-			}
+		effect = { 
+		set country_flag = ROM_cherson
+		badboy = 5 
+		RUS_965 = { add_core = ROM }
 		}
 	}
 

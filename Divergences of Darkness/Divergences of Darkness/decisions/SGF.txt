@@ -63,10 +63,12 @@ political_decisions = {
 					OR = { 
 						primary_culture = south_german
 						primary_culture = north_german
+						primary_culture = rheinish
 					}
 					in_sphere = THIS
 					NOT = {
 						tag = THIS
+						tag = KRL
 					}
 				}
 				annex_to = THIS
@@ -76,10 +78,12 @@ political_decisions = {
 					OR = { 
 						primary_culture = south_german
 						primary_culture = north_german
+						primary_culture = rheinish
 					}
 					vassal_of = THIS
 					NOT = {
 						tag = THIS
+						tag = KRL
 					}
 				}
 				annex_to = THIS

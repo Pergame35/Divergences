@@ -1672,7 +1672,7 @@ recent_crisis = {
 CLM_fight = { 
 	core_pop_militancy_modifier = -0.90
 	core_pop_consciousness_modifier = -0.90
-	war_exhaustion = -2
+	war_exhaustion = -3.5
 	immigrant_attract = -10
 	icon = 8 
 }
@@ -1853,4 +1853,9 @@ thrace_boom = {
 enosis_modifier = { 
 	assimilation_rate = 1
 	icon = 19
+}
+
+federales_CLM = {
+	core_pop_militancy_modifier = -0.02
+	icon = 1
 }

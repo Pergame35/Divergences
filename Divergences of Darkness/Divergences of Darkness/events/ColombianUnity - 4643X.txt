@@ -142,6 +142,7 @@ country_event = {
 	QUI = { exists = yes }
 	ARE = { exists = yes }
 	JLS = { exists = yes }
+	has_country_flag = CLM_unity
 		}
 	}
 	
@@ -151,6 +152,7 @@ country_event = {
 	
 	option = { 
 	name = "97086.A"
+	set_country_flag = CLM_unity
 	any_owned = { 
 	remove_core = NIC 
 	remove_core = PNM 

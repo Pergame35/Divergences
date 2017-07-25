@@ -284,3 +284,170 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 11105
+	title = "EVTNAME11105"
+	desc = "EVTDESC11105"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVT11105OPTA"
+		all_core = { remove_core = THIS }
+	}
+}
+
+country_event = {
+	id = 11106
+	title = "EVTNAME11106"
+	desc = "EVTDESC11106"
+	picture = "threehurrahs"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA11101"
+		set_country_flag = wants_to_unify
+		random_country = {
+			limit = {
+				primary_culture = north_german
+				OR = {
+					tag = FROM
+					tag = NGF
+				}
+			}
+			THIS = { all_core = { add_core = NGF } }
+		}
+		random_country = {
+			limit = {
+				primary_culture = south_german
+				OR = {
+				tag = FROM
+				tag = SGF
+				}
+			}
+			THIS = {
+				all_core = { add_core = SGF }
+			}
+		}
+		random_country = {
+			limit = {
+				primary_culture = rheinish
+				OR = {
+				tag = FROM
+				tag = RHI
+				}
+			}
+			THIS = {
+				all_core = { add_core = RHI }
+			}
+		}
+		any_country = {
+			limit = {
+				OR = {
+					is_sphere_leader_of = THIS
+					is_our_vassal = THIS
+				}
+				NOT = { tag = FROM }
+			}
+			relation = {
+				who = FROM
+				value = -25
+			}
+			casus_belli = {
+				target = FROM
+				type = free_peoples
+				months = 12
+			}
+			casus_belli = {
+				target = FROM
+				type = humiliate
+				months = 12
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = THIS
+				is_greater_power = yes
+				NOT = { tag = FROM }
+			}
+			casus_belli = {
+				target = FROM
+				type = free_peoples
+				months = 36
+			}
+		}
+		any_owned = {
+				secede_province = FROM
+		}
+		FROM = { inherit = THIS }
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.8
+				NOT = {
+					relation = { who = FROM value = 50 }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					relation = { who = FROM value = 0 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11101"
+		clr_country_flag = wants_to_unify
+		prestige = 1
+		relation = {
+			who = FROM
+			value = -200
+		}
+		FROM = {
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+		}
+		leave_alliance = FROM
+		any_pop = {
+			militancy = 3
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_country_flag = wants_to_unify
+			}
+			modifier = {
+				factor = 0
+				vassal_of = FROM
+			}
+			modifier = {
+				factor = 0
+				in_sphere = FROM
+				FROM = { NOT = { has_country_flag = secondary_union_formation } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { in_sphere = FROM }
+				FROM = { has_country_flag = secondary_union_formation }
+			}
+			modifier = {
+				factor = 0
+				FROM = { tag = NGF }
+				NOT = {
+					OR = {
+						any_owned_province = { port = yes }
+						any_neighbor_country = { primary_culture = south_german }
+					}
+				}
+			}
+		}
+	}
+}

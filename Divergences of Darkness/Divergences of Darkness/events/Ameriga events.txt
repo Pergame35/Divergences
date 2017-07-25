@@ -682,7 +682,9 @@ country_event = {
 	picture = "administration"
 	
 	trigger = {
+		OR = { 
 		tag = NAN
+		tag = HBE } 
 		exists = yes
 		OR = {
 			2332 = { empty = yes }
@@ -1729,4 +1731,174 @@ country_event = {
 			value = -50
 		}
 	}
+}
+
+country_event = { 
+	id = 775423
+	title = "775423.T"
+	desc = "775423.D"
+	picture = "English_resistance"
+	
+	trigger = { 
+	tag = NAN 
+	ENL = { exists = yes war_with = DUA }
+	NOT = { has_country_flag = saxon_help }
+	}
+	
+	mean_time_to_happen = {
+	months = 1
+	}
+	
+	immediate = { 
+	set_country_flag = saxon_help
+	}
+	
+	option = { 
+	name = "775423.A"
+	money = -50000
+	ammunition = -1000
+	small_arms = -1000
+	artillery = -100
+	canned_food = -1000
+	regular_clothes = -1000
+	prestige = 2 
+	ENL = { country_event = { id = 775424 days = 30 } } 
+	prestige = 5 
+	relation = { who = DUA value = -100 }
+	ai_chance = { 
+	factor = 60 
+	modifier = { 
+	factor = 0.7 
+	government = absolute_monarchy
+			}
+	modifier = { 
+	factor = 1.2 
+	rank = 16 
+			}
+		}
+	modifier = { 
+	factor = 0.8 
+	ENL = { government = democracy }
+		}
+	}
+	
+	option = { 
+	name = "775423.B"
+	prestige = -5
+	relation = { who = ENL value = -50 }
+	ai_chance = { 
+	factor = 40
+		}
+	}
+}
+
+country_event = { 
+	id = 775424 
+	title = "775424.T"
+	desc = "775424.D"
+	picture = "English_resistance"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "775424.A"
+	relation = { who = NAN value = 200 }
+	277 = { 
+	sub_unit = { type = frigate value = current } 
+	sub_unit = { type = frigate value = current }
+	sub_unit = { type = frigate value = current }
+	sub_unit = { type = frigate value = current }
+	sub_unit = { type = clipper_transport value = current }
+	sub_unit = { type = clipper_transport value = current }
+	sub_unit = { type = clipper_transport value = current }
+	sub_unit = { type = clipper_transport value = current }
+	sub_unit = { type = artillery value = current }
+	sub_unit = { type = dragoon value = current }
+	sub_unit = { type = regular value = current }
+	sub_unit = { type = regular value = current }
+	sub_unit = { type = regular value = current }
+	}
+	ammunition = 500
+	small_arms = 500
+	artillery = 10
+	canned_food = 500
+	regular_clothes = 600
+	war_exhaustion = -5 
+	}
+}
+
+country_event = { 
+	id = 775425
+	title = "775425.T"
+	desc = "775425.D"
+	picture = "English_resistance"
+	
+	mean_time_to_happen = { 
+	days = 15 
+	}
+	
+	trigger = { 
+	tag = NAN 
+	ENL = { exists = yes war = no }
+	has_country_flag = saxon_help
+	NOT = { has_country_flag = saxon_help_end }
+	}
+	
+	immediate = { 
+	set_country_flag = saxon_help_end
+	}
+	
+	option = { 
+	name = "775425.A"
+	relation = { who = ENL value = 100 }
+	years_of_research = 0.5  
+	prestige = 4 
+	any_pop = { 
+	limit = { culture = beornian }
+	ideology = {
+		value = liberal
+		factor = 0.05
+			} 
+	consciousness = 3 
+		}
+	}
+
+}
+country_event = { 
+	id = 775426
+	title = "775426.T"
+	desc = "775426.D"
+	picture = "English_resistance"
+	
+	trigger = { 
+	tag = NAN 
+	ENL = { exists = no }
+	277 = { owned_by = DUA } 
+	has_country_flag = saxon_help
+	NOT = { has_country_flag = saxon_help_end }
+	}
+	
+	mean_time_to_happen = { 
+	days = 15 
+	}
+	
+	immediate = { 
+	set_country_flag = saxon_help_end
+	}
+	
+	option = { 
+	name = "775426.T"
+	relation = { who = DUA value = -100 }
+	years_of_research = 0.1  
+	prestige = -2 
+	any_pop = { 
+	limit = { culture = beornian }
+	ideology = {
+		value = liberal
+		factor = 0.05
+			} 
+	consciousness = 3 
+		}
+	}
+
 }

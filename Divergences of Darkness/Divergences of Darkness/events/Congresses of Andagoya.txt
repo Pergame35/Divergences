@@ -5,6 +5,10 @@ country_event = {
 	title = "EVTNAME46411"
 	desc = "EVTDESC46411"
 	picture = "Administration"
+	news = yes 
+	news_desc_long = "46411_NEWS_LONG"
+	news_desc_medium = "46411_NEWS_LONG"
+	news_desc_short = "46411_NEWS_LONG"
 	
 	major = yes
 
@@ -434,6 +438,10 @@ country_event = {
 	title = "EVTNAME46409"
 	desc = "EVTDESC46409"
 	picture = "Administration"
+	news = yes 
+	news_desc_long = "46409_NEWS_LONG"
+	news_desc_medium = "46409_NEWS_MEDIUM"
+	news_desc_short = "46409_NEWS_SHORT"
 		
 	major = yes	
 		
@@ -582,6 +590,7 @@ country_event = {
 		add_accepted_culture = central_american
 		set_global_flag = congress_of_panama_over
 		set_global_flag = columbian_unity
+		set_country_flag = GRA_not_federation
 		ai_chance = {
 			factor = 80
 		}

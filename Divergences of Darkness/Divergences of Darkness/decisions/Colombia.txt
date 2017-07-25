@@ -12,7 +12,7 @@ political_decisions = {
 				NOT = { has_global_flag = fall_of_all_the_colombia }
 			}
 			allow = {
-				is_greater_power = yes
+				rank = 16
 				NOT = { war = yes }
 				CLM = {
 					all_core = {

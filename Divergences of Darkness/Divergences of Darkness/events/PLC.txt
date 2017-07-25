@@ -29,76 +29,6 @@ country_event = {
 }
 
 country_event = {
-	id = 22230
-	title = "22230.T"
-	desc = "22230.D"
-	picture = "greatpowers"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "22230.A"
-		prestige = 5
-		military_access = FROM
-		968 = { secede_province = THIS }
-		969 = { secede_province = THIS }
-		FROM = {
-			country_event = 22231
-			any_owned = {
-				limit = {
-					OR = {
-						is_core = ROM
-						is_core = MOL
-					}
-				}
-				remove_core = THIS
-				remove_core = POL
-				secede_province = THIS
-			}
-			relation = {
-				who = THIS
-				value = 1000
-			}
-			diplomatic_influence = {
-				who = THIS
-				value = 1000
-			}
-			create_alliance = THIS
-			military_access = THIS
-		}
-	}
-
-	option = {
-		name = "22230.B"
-		relation = {
-			who = FROM
-			value = -100
-		}
-		FROM =  {
-			country_event = 22232
-			diplomatic_influence = {
-				who = THIS
-				value = -100
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 22231
-	title = "22231.T"
-	desc = "22231.D"
-	picture = "greatpowers"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "22231.A"
-		prestige = 20
-	}
-}
-
-country_event = {
 	id = 22232
 	title = "22232.T"
 	desc = "22232.D"
@@ -189,7 +119,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = { 
-	months = 400 
+	months = 600 
 	modifier = { 
 	factor = 1.4 
 	rank = 12 
