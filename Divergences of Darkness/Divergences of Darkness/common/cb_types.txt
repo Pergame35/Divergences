@@ -2462,7 +2462,10 @@ china_acquire_state = {
 			is_culture_group = chinese
 		}
 		THIS = {
-			is_culture_group = chinese
+			OR = {
+				is_culture_group = chinese
+				is_culture_group = oversea_chinese
+			}
 			NOT = {
 				has_country_modifier = neutrality
 				war_policy = pacifism
@@ -2719,15 +2722,47 @@ demand_concession_casus_belli = {
 	
 	allowed_states = {
 		any_owned_province = { is_colonial = no }
+		
+		#Restrictions to Chinese State conquering
+		OR = {
+			NOT = { owner = { is_culture_group = east_asian } }
+			NOT = { total_pops = 700000 }
+			NOT = { any_owned_province = { is_core = CHI } }
+			AND = {
+				THIS = { ai = no naval_directionism = 1 machine_guns = 1 NOT = { capital_scope = { continent = asia } } }
+				any_owned_province = { any_neighbor_province = { OR = { NOT = { owned_by = THIS } is_overseas = yes } } }
+				any_owned_province = { port = yes }
+			}
+			AND = {
+				THIS = { capital_scope = { continent = asia } ai = no naval_logistics = 1 num_of_ports = 1 }
+				NOT = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
+				any_owned_province = { port = yes }
+			}
+			AND = {
+				THIS = {
+					integral_rail_system = 1
+					military_logistics = 1
+					machine_guns = 1
+					ai = no
+					NOT = { capital_scope = { continent = asia } }
+				}
+				NOT = { total_pops = 2000000 }
+				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
+			}
+			AND = {
+				THIS = { steel_railroad = 1 military_logistics = 1 machine_guns = 1 ai = no capital_scope = { continent = asia } }
+				NOT = { total_pops = 2000000 }
+				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
+			}
+		}
+		
 		NOT = { any_owned_province = { is_capital = yes } }
 		OR = {
-			THIS = { ai = no }
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+			THIS = { ai = no war_with = THIS }
 			AND = {
 				any_owned_province = { port = yes }
-				THIS = {
-					any_owned_province = { port = yes }
-				}
+				THIS = { any_owned_province = { port = yes } }
 			}
 		}
 		OR = {
