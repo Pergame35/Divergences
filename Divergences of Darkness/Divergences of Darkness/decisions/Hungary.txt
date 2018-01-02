@@ -79,7 +79,14 @@ political_decisions = {
 		}
 		
 		effect = { 
-		badboy = 15
+		badboy = 12.5
+		any_owned = { 
+			limit = { 
+			is_core = CRO 
+			NOT = { is_core = SLO }
+				}
+			add_core = THIS 
+				}
 		any_country = { 
 		any_owned = { 
 			limit = { 
@@ -87,9 +94,9 @@ political_decisions = {
 			NOT = { is_core = SLO }
 				}
 			add_core = THIS 
+				}
 			}
 		set_country_flag = Hungarian_CRO
-			}
 		}
 	
 	}

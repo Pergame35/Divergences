@@ -42,7 +42,7 @@ province_event = {
 	desc = "EVTDESC20100"
 	picture = "crisis"
 	trigger = {
-		has_global_flag = crisis_begin_researched
+		has_global_flag = revolution_n_counter_researched
 		owner = { is_greater_power = yes }
 		state_scope = {
 			has_flashpoint = yes
@@ -96,8 +96,9 @@ province_event = {
 	title = "EVTNAME20101" #Flashpoint event for others
 	desc = "EVTDESC20101"
 	picture = "crisis"
+	
 	trigger = {
-		has_global_flag = crisis_begin_researched
+		has_global_flag = revolution_n_counter_researched
 		owner = { is_greater_power = no }
 		state_scope = {
 			has_flashpoint = yes
@@ -301,6 +302,7 @@ country_event = {
 	title = "EVTNAME20105" #Liberation Crisis non GP
 	desc = "EVTDESC20105"
 	picture = "crisis"
+	
 	trigger = {
 		crisis_exist = yes
 		involved_in_crisis = yes
@@ -363,6 +365,7 @@ province_event = {
 			crisis_exist = no
 			NOT = { is_culture_group = native_american }
 			NOT = { year = 1900 }
+			has_global_flag = revolution_n_counter_researched
 		}
 		any_core = {
 			is_culture_group = native_american
@@ -469,7 +472,10 @@ province_event = {
 	desc = "EVTDESC20111"
 	
 	trigger = {
-		owner = { crisis_exist = no }
+		owner = {
+			crisis_exist = no
+			has_global_flag = revolution_n_counter_researched
+		}
 		state_scope = {
 			has_flashpoint = yes
 			flashpoint_tension = 50
@@ -523,7 +529,10 @@ province_event = {
 	desc = "EVTDESC20112"
 	
 	trigger = {
-		owner = { crisis_exist = no }
+		owner = {
+			crisis_exist = no
+			has_global_flag = revolution_n_counter_researched
+		}
 		state_scope = {
 			has_flashpoint = yes
 			flashpoint_tension = 50
@@ -578,6 +587,7 @@ province_event = {
 			civilized = yes
 			crisis_exist = no
 			badboy = 0.6
+			has_global_flag = revolution_n_counter_researched
 		}
 		state_scope = {
 			has_flashpoint = yes
@@ -669,82 +679,5 @@ province_event = {
 				}
 			}
 		}
-	}
-}
-
-#Event to clean tension until revolution and counter revolution is researched
-province_event = {
-	id = 60168
-	title = "EVTNAME60168"
-	desc = "EVTDESC60168"
-	
-	allow_multiple_instances = no
-	
-	trigger = {
-		NOT = { has_global_flag = revolution_n_counter_researched }
-		NOT = { province_id = 608 }
-		is_colonial = no
-		OR = {
-			state_scope = {
-				flashpoint_tension = 30
-				has_flashpoint = yes
-			}
-			AND = {
-				country = { ai = yes }
-				any_neighbor_province = { owner = { ai = no } state_scope = { flashpoint_tension = 25 has_flashpoint = yes } }
-				}
-			}
-		}
-	
-	mean_time_to_happen = { 
-		days = 10 
-		modifier = {
-			factor = 0.01
-			country = { ai = yes  }
-			} 
-		}
-	
-	option = {
-		name = "EVT60168OPTA"
-		any_country = {
-			limit = { NOT = { tag = NCT } }
-			any_state  = {
-				limit = {
-					has_flashpoint = yes
-					is_colonial = no
-					}
-				flashpoint_tension = -90
-				}
-			}
-		}
-	}
-	
-country_event = {
-	id = 60169
-	title = "EVTNAME60169"
-	desc = "EVTDESC60169"
-	major = yes
-	picture = "crisis_revolution_enabled"
-	
-	allow_multiple_instances = no
-	
-	trigger = {
-		NOT = { has_global_flag = revolution_n_counter_researched }
-		revolution_n_counterrevolution = 1
-	}
-	
-	fire_only_once = yes
-	
-	mean_time_to_happen = { 
-		months = 24
-			modifier = {
-			factor = 0.1
-			ai = yes
-		}
-	}
-	
-	option = {
-		name = "EVT60169OPTA"
-		set_global_flag = revolution_n_counter_researched
 	}
 }

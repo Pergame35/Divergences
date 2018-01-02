@@ -937,6 +937,57 @@ political_decisions = {
 		}
 	}
 	
+	AZL_annexation_INC = { 
+	
+	potential = { 
+	has_country_flag = ameriga_united
+	is_greater_power = yes 
+	INC = { exists = yes }
+	NOT = { 
+	AND = { 
+	government = democracy 
+	OR = { 
+	INC = { government = democracy }
+	INC = { government = hms_government }
+				}
+			}
+		}
+	}
+	
+	allow = { 
+	war = no 
+	NOT = { truce_with = INC }
+	NOT = { alliance_with = INC }
+	OR = { 
+	war_policy = jingoism
+	AND = { 
+	war_policy = pro_military 
+	OR = { 
+	government = proletarian_dictatorship
+	government = presidential_dictatorship
+				}
+			}
+		}
+	NOT = { INC = { is_greater_power = yes } }
+	}
+	
+	effect = { 
+	badboy = 24.5 
+	add_casus_belli = {
+				target = INC
+				type = conquest
+				months = 24
+			}
+	war = {
+			target = INC
+			attacker_goal = {
+					casus_belli = conquest
+				}
+			}
+	}
+	
+	}
+	
 	camelot_renovation = { 
 	
 		picture = new_camelot

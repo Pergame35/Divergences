@@ -1067,29 +1067,3 @@ country_event = {
 		government = democracy
 	}
 }
-
-country_event = {
-	id = 6016807
-	title = "EVTNAME6016807"
-	desc = "EVTDESC6016807"
-	picture = "abraham_speech"
-		
-	trigger = {
-		ai = no
-		NOT = { has_global_flag = crisis_set_up }
-	}
-	
-	fire_only_once = yes
-	mean_time_to_happen = { days = 1 }
-	
-	option = {
-		name = "EVT6016807PTA"
-		set_global_flag = crisis_set_up
-	}
-	
-	option = {
-		name = "EVT6016807PTB"
-		set_global_flag = revolution_n_counter_researched
-		set_global_flag = crisis_set_up
-	}
-}

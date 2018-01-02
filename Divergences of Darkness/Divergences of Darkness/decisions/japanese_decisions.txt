@@ -86,10 +86,16 @@ political_decisions = {
 				type = conquest
 				months = 24
 			}
-		}
+		war = {
+				target = KOR
+				attacker_goal = {
+					casus_belli = conquest
+					}
+				}
+			}
 		ai_will_do = {
 			factor = 1  
-      modifier = {
+		modifier = {
 				factor = 0
 				badboy = 20
 			} 

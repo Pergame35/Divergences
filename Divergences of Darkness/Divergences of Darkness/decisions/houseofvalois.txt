@@ -130,19 +130,14 @@ political_decisions = {
 				}
 				add_core = THIS
 			}
-			any_country = {
-				any_owned = {
-						limit = {
-							is_core = DUA
-							NOT = { is_core = ENL }
-							NOT = { is_core = WLS }
-							NOT = { is_core = SCO }
-							NOT = { is_core = IRE }
-							continent = europe
-					}
-					add_core = THIS
-				}
-			}
+		FRA_445 = { add_core = THIS }
+		FRA_442 = { add_core = THIS }
+		FRA_420 = { add_core = THIS }
+		FRA_435 = { add_core = THIS }
+		FRA_418 = { add_core = THIS }
+		FRA_438 = { add_core = THIS }
+		FRA_425 = { add_core = THIS }
+		FRA_404 = { add_core = THIS }
 		set_country_flag = renew_war 
 		}
 		ai_will_do = {
@@ -289,19 +284,14 @@ political_decisions = {
 				}
 				add_core = THIS
 			}
-			any_country = {
-				any_owned = {
-						limit = {
-							is_core = DUA
-							NOT = { is_core = ENL }
-							NOT = { is_core = WLS }
-							NOT = { is_core = SCO }
-							NOT = { is_core = IRE }
-							continent = europe
-					}
-					add_core = THIS
-				}
-			}
+			FRA_445 = { add_core = THIS }
+			FRA_442 = { add_core = THIS }
+			FRA_420 = { add_core = THIS }
+			FRA_435 = { add_core = THIS }
+			FRA_418 = { add_core = THIS }
+			FRA_438 = { add_core = THIS }
+			FRA_425 = { add_core = THIS }
+			FRA_404 = { add_core = THIS }
 			set_country_flag = valois_rulez
 		}
 		ai_will_do = {

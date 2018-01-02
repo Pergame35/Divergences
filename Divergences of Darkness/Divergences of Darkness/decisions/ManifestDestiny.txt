@@ -673,7 +673,8 @@ political_decisions = {
 	
 	allow = { 
 	is_greater_power = yes 
-	KKN = { in_sphere = THIS }
+	KKN = { in_sphere = THIS war = no }
+	war = no 
 	}
 	
 	effect = { 

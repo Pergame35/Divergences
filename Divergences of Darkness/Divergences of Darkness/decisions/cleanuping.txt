@@ -45,4 +45,100 @@ political_decisions = {
 			factor = 1
 		}
 	}	
+	
+	enabling_crisis = {
+		potential = {
+			ai = yes
+			exists = yes
+			NOT = { has_global_flag = revolution_n_counter_researched }
+			OR = {
+				revolution_n_counterrevolution = 1
+				any_neighbor_country = { revolution_n_counterrevolution = 1 }
+				any_greater_power = { revolution_n_counterrevolution = 1 }
+				has_global_flag = DVG_infamy
+			}
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_global_flag = revolution_n_counter_researched
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	clean_up_crisis_tension = {
+		potential = {
+			ai = yes
+			exists = yes
+			OR = {
+				NOT = { has_global_flag = revolution_n_counter_researched }
+				is_vassal = yes
+			}
+			OR = {
+				any_owned_province = {
+					is_colonial = no
+					state_scope = { flashpoint_tension = 25 has_flashpoint = yes }
+					owner = {
+						OR = {
+							NOT = { has_global_flag = revolution_n_counter_researched }
+							is_vassal = yes
+						}
+					}
+				}
+				any_greater_power = {
+					ai = no
+					NOT = { has_global_flag = revolution_n_counter_researched }
+					any_owned_province = {
+						is_colonial = no
+						state_scope = { flashpoint_tension = 25 has_flashpoint = yes }
+					}
+				}
+				any_neighbor_country = {
+					ai = no
+					OR = {
+						NOT = { has_global_flag = revolution_n_counter_researched }
+						is_vassal = yes
+					}
+					any_owned_province = {
+						is_colonial = no
+						state_scope = { flashpoint_tension = 25 has_flashpoint = yes }
+					}
+				}
+			}
+		}
+		allow = { }
+		
+		effect = {
+			any_country = {
+				limit = {
+					OR = {
+						NOT = { has_global_flag = revolution_n_counter_researched }
+						is_vassal = yes
+					}
+				}
+				any_state  = {
+					limit = { has_flashpoint = yes is_colonial = no }
+					flashpoint_tension = -90
+				}
+			}
+			any_owned = {
+				limit = {
+					owner = {
+						OR = {
+							NOT = { has_global_flag = revolution_n_counter_researched }
+							is_vassal = yes
+						}
+					}
+				}
+				owner = {
+					any_state  = {
+						limit = { has_flashpoint = yes is_colonial = no }
+						flashpoint_tension = -90
+					}
+				}
+			}
+		}
+	}
 }
