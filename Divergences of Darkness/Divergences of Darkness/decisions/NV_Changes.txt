@@ -1,24 +1,72 @@
 political_decisions = {
-	
-	switch_to_enlightenment = {
+
+	change_national_value_on = {
+		alert = yes
+		picture = national_value
+		potential = {
+			nationalvalue = nv_tradition
+			NOT = {	has_country_flag = nv_change }
+			civilized = no
+		}
+		
+		allow = {
+			civilization_progress = 0.5
+			NOT = {	has_country_modifier = national_confusion }
+			war = no
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = { set_country_flag = nv_change }
+		
+		ai_will_do = { 
+			factor = 1 
+			
+			modifier = {
+				factor = 0
+				OR = {
+					is_culture_group = east_asian
+					substate_of = QNG
+				}
+			}
+		}
+	}
+
+	change_national_value_off = {
+		alert = no
+		picture = national_value
+		potential = {
+			has_country_flag = nv_change
+		}
+		
+		allow = { }
+		
+		effect = { clr_country_flag = nv_change }
+		
+		ai_will_do = { factor = 0 }
+	}
+
+	switch_to_order = {
+		picture = switch_to_order
 		potential = {
 			civilized = no
 			nationalvalue = nv_tradition
-			has_country_flag = can_switch_to_enlightenment
+			NOT = { has_country_flag = switched_nv }
+			has_country_flag = nv_change
 		}
 		
 		allow = {
 			war = no
 			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
 		}
 		
 		effect = {
-			clr_country_flag = can_switch_to_enlightenment
-			prestige = 5
-			nationalvalue = nv_enlightenment
+			clr_country_flag = nv_change
+			set_country_flag = switched_nv
+			nationalvalue = nv_order
 			add_country_modifier = {
-				name = nv_enlightenment_modifier
-				duration = 1
+				name = national_confusion
+				duration = 3650
 			}
 			any_pop = {
 				scaled_militancy = {
@@ -26,810 +74,183 @@ political_decisions = {
 					factor = 8
 				}
 				scaled_militancy = {
-					ideology = liberal
-					factor = -4
-				}
-			}
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}			
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	switch_to_tradition = {
-		potential = {
-			civilized = no
-			nationalvalue = nv_enlightenment
-			has_country_flag = can_switch_to_tradition
-		}
-		
-		allow = {
-			war = no
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			clr_country_flag = can_switch_to_tradition
-			add_country_modifier = {
-				name = nv_tradition_modifier
-				duration = 1
-			}	
-			prestige = -5
-			nationalvalue = nv_tradition
-			any_pop = {
-				scaled_militancy = {
-					ideology = reactionary
-					factor = -4
+					ideology = conservative
+					factor = 2
 				}
 				scaled_militancy = {
 					ideology = liberal
-					factor = 8
+					factor = -2
 				}
 			}
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}			
 		}
 		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
-	switch_to_progress = {
-		potential = {
-			civilized = no
-			nationalvalue = nv_enlightenment
-		}
-		
-		allow = {
-			war = no
-			prestige = 10
-			OR = {
-				liberal = 5
-				ruling_party_ideology = liberal
-			}
-			civilization_progress = 0.5
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_progress_modifier
-				duration = 1
-			}	
-			prestige = 5
-			nationalvalue = nv_progress
-			any_pop = {
-				scaled_militancy = {
-					ideology = reactionary
-					factor = 4
-				}
-				scaled_militancy = {
-					ideology = liberal
-					factor = -4
-				}
-			}
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}			
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				is_culture_group = chinese
-			}
-		}
-	}
-	
-	switch_to_independence = {
+	switch_to_production = {
+		picture = switch_to_productivity
 		potential = {
 			civilized = no
 			nationalvalue = nv_tradition
+			NOT = { has_country_flag = switched_nv }
+			has_country_flag = nv_change
 		}
 		
 		allow = {
 			war = no
-			military_score = 10
-			OR = {
-				reactionary = 20
-				ruling_party_ideology = reactionary
-				any_core = {
-					owner = { civilized = yes }
-				}
-			}
-			civilization_progress = 0.5
 			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = nv_independence_modifier
-				duration = 1
-			}
-			prestige = 5
-			nationalvalue = nv_independence
-			any_pop = {
-				scaled_militancy = {
-					ideology = reactionary
-					factor = -4
-				}
-				scaled_militancy = {
-					ideology = liberal
-					factor = 4
-				}
-			}
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}			
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	switch_to_loyalty = {
-		potential = {
-			civilized = no
-			OR = {
-				nationalvalue = nv_enlightenment
-				nationalvalue = nv_tradition
-			}
-		}
-		
-		allow = {
-			war = no
-			prestige = 10
-			civilization_progress = 0.5
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_loyalty_modifier
-				duration = 1
-			}	
-			prestige = 5
-			nationalvalue = nv_loyalty
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}			
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				tag = MCK
-			}
-			modifier = {
-				factor = 0
-				is_culture_group = chinese 
-			}
-		}
-	}
-	
-	switch_to_unity_equality = {
-		picture = switch_to_unity
-		potential = {
-			OR = {
-				ai = yes
-				has_country_flag = nv_change
-			}
-			civilized = yes
-			nationalvalue = nv_equality
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			OR = {
-				ruling_party_ideology = reactionary
-				ruling_party_ideology = conservative
-				conservative = 40
-			}
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_unity_modifier
-				duration = 1
-			}
-			prestige = 20
-			nationalvalue = nv_unity
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	switch_to_unity_order = {
-		picture = switch_to_unity
-		potential = {
-			OR = {
-				ai = yes
-				has_country_flag = nv_change
-			}
-			civilized = yes
-			nationalvalue = nv_order
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			OR = {
-				ruling_party_ideology = socialist
-				ruling_party_ideology = communist
-				socialist = 40
-			}
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_unity_modifier
-				duration = 1
-			}	
-			prestige = 20
-			nationalvalue = nv_unity
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	switch_to_prosperity_equality = {
-		picture = switch_to_prosperity
-		potential = {
-			OR = {
-				ai = yes
-				has_country_flag = nv_change
-			}
-			civilized = yes
-			nationalvalue = nv_equality
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			OR = {
-				ruling_party_ideology = liberal
-				ruling_party_ideology = anarcho_liberal
-				liberal = 40
-			}
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_prosperity_modifier
-				duration = 1
-			}
-			prestige = 20
-			nationalvalue = nv_prosperity
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	switch_to_prosperity_liberty = {
-		picture = switch_to_prosperity
-		potential = {
-			OR = {
-				ai = yes
-				has_country_flag = nv_change
-			}
-			civilized = yes
-			nationalvalue = nv_liberty
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			OR = {
-				ruling_party_ideology = socialist
-				ruling_party_ideology = communist
-				socialist = 40
-			}
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_prosperity_modifier
-				duration = 1
-			}
-			prestige = 20
-			nationalvalue = nv_prosperity
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	switch_to_glory_liberty = {
-		picture = switch_to_glory
-		potential = {
-			OR = {
-				ai = yes
-				has_country_flag = nv_change
-			}
-			civilized = yes
-			nationalvalue = nv_liberty
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			OR = {
-				government = proletarian_dictatorship
-				government = fascist_dictatorship
-				government = presidential_dictatorship
-				government = bourgeois_dictatorship
-				jingoism = 15
-			}
-			OR = {
-				jingoism = 15
-				military_score = 100
-			}
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_glory_modifier
-				duration = 1
-			}
-			prestige = 20
-			nationalvalue = nv_glory
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	switch_to_glory_might = {
-		picture = switch_to_glory
-		potential = {
-			OR = {
-				ai = yes
-				has_country_flag = nv_change
-			}
-			civilized = yes
-			nationalvalue = nv_might
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			OR = {
-				ruling_party_ideology = liberal
-				ruling_party_ideology = anarcho_liberal
-				liberal = 40
-			}
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_glory_modifier
-				duration = 1
-			}
-			prestige = 20
-			nationalvalue = nv_glory
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	switch_to_dominion_might = {
-		picture = switch_to_dominion
-		potential = {
-			OR = {
-				ai = yes
-				has_country_flag = nv_change
-			}
-			civilized = yes
-			nationalvalue = nv_might
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			OR = {
-				ruling_party_ideology = conservative
-				ruling_party_ideology = reactionary
-				conservative = 40
-			}
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_dominion_modifier
-				duration = 1
-			}
-			prestige = 20
-			nationalvalue = nv_dominion
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}	
-
-	switch_to_dominion_order = {
-		picture = switch_to_dominion
-		potential = {
-			OR = {
-				ai = yes
-				has_country_flag = nv_change
-			}
-			civilized = yes
-			nationalvalue = nv_order
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			OR = {
-				government = proletarian_dictatorship
-				government = fascist_dictatorship
-				government = presidential_dictatorship
-				government = bourgeois_dictatorship
-				jingoism = 15
-			}
-			OR = {
-				jingoism = 15
-				military_score = 100
-			}
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_dominion_modifier
-				duration = 1
-			}
-			prestige = 20
-			nationalvalue = nv_dominion
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	switch_to_fraternity = {
-		potential = {
-			OR = {
-				ai = yes
-				has_country_flag = nv_change
-			}
-			civilized = yes
-			nationalvalue = nv_equality
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_fraternity_modifier
-				duration = 1
-			}
-			prestige = 20
-			nationalvalue = nv_fraternity
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	switch_to_freedom = {
-		potential = {
-			OR = {
-				ai = yes
-				has_country_flag = nv_change
-			}
-			civilized = yes
-			nationalvalue = nv_liberty
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_freedom_modifier
-				duration = 1
-			}
-			prestige = 20
-			nationalvalue = nv_freedom
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	switch_to_supremacy = {
-		potential = {
-			OR = {
-				ai = yes
-				has_country_flag = nv_change
-			}
-			civilized = yes
-			nationalvalue = nv_might
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_supremacy_modifier
-				duration = 1
-			}
-			prestige = 20
-			nationalvalue = nv_supremacy
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	switch_to_productivity = {
-		potential = {
-			OR = {
-				ai = yes
-				has_country_flag = nv_change
-			}
-			civilized = yes
-			nationalvalue = nv_order
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_productivity_modifier
-				duration = 1
-			}
-			prestige = 20
+			clr_country_flag = nv_change
+			set_country_flag = switched_nv
 			nationalvalue = nv_productivity
 			add_country_modifier = {
 				name = national_confusion
 				duration = 3650
 			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 8
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
 		}
 		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 0.25 }
 	}
 	
-	switch_to_equality = {
+	switch_to_autocracy = {
+		picture = switch_to_autocracy
 		potential = {
-			ai = no
+			civilized = no
+			nationalvalue = nv_tradition
+			NOT = { has_country_flag = switched_nv }
 			has_country_flag = nv_change
-			civilized = yes
-			OR = {
-				nationalvalue = nv_unity
-				nationalvalue = nv_prosperity
-				nationalvalue = nv_fraternity
-			}
 		}
 		
 		allow = {
 			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
 			NOT = { has_country_modifier = national_confusion }
 		}
 		
 		effect = {
+			clr_country_flag = nv_change
+			set_country_flag = switched_nv
+			nationalvalue = nv_autocracy
 			add_country_modifier = {
-				name = nv_equality_modifier
-				duration = 1
+				name = national_confusion
+				duration = 3650
 			}
-			prestige = -20
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 8
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 0.75 }
+	}
+	
+	switch_to_equality = {
+		picture = switch_to_equality
+		potential = {
+			civilized = no
+			nationalvalue = nv_tradition
+			NOT = { has_country_flag = switched_nv }
+			has_country_flag = nv_change
+		}
+		
+		allow = {
+			war = no
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			clr_country_flag = nv_change
+			set_country_flag = switched_nv
 			nationalvalue = nv_equality
 			add_country_modifier = {
 				name = national_confusion
 				duration = 3650
 			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 8
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
 		}
+		
+		ai_will_do = { factor = 0 }
 	}
 	
 	switch_to_liberty = {
+		picture = switch_to_liberty
 		potential = {
-			ai = no
+			civilized = no
+			nationalvalue = nv_tradition
+			NOT = { has_country_flag = switched_nv }
 			has_country_flag = nv_change
-			civilized = yes
-			OR = {
-				nationalvalue = nv_glory
-				nationalvalue = nv_prosperity
-				nationalvalue = nv_freedom
-			}
 		}
 		
 		allow = {
 			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
 			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = nv_liberty_modifier
-				duration = 1
-			}
-			prestige = -20
+			clr_country_flag = nv_change
+			set_country_flag = switched_nv
 			nationalvalue = nv_liberty
 			add_country_modifier = {
 				name = national_confusion
 				duration = 3650
 			}
-		}
-	}
-	
-	switch_to_might = {
-		potential = {
-			ai = no
-			has_country_flag = nv_change
-			civilized = yes
-			OR = {
-				nationalvalue = nv_glory
-				nationalvalue = nv_dominion
-				nationalvalue = nv_supremacy
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 8
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
 			}
 		}
 		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_might_modifier
-				duration = 1
-			}
-			prestige = -20
-			nationalvalue = nv_might
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
-	}
-	
-	switch_to_order = {
-		potential = {
-			ai = no
-			has_country_flag = nv_change
-			civilized = yes
-			OR = {
-				nationalvalue = nv_unity
-				nationalvalue = nv_dominion
-				nationalvalue = nv_productivity
-			}
-		}
-		
-		allow = {
-			war = no
-			prestige = 100
-			revolution_n_counterrevolution = 1
-			NOT = { has_country_modifier = national_confusion }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = nv_order_modifier
-				duration = 1
-			}
-			prestige = -20
-			nationalvalue = nv_order
-			add_country_modifier = {
-				name = national_confusion
-				duration = 3650
-			}
-		}
+		ai_will_do = { factor = 0 }
 	}
 }

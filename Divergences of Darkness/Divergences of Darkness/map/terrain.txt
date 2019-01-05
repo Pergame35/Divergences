@@ -5,755 +5,415 @@ categories =  {
 	ocean = {
 		movement_cost = 1.0
 		is_water = yes
-		supply_limit = 2
 		color = { 0 0 255 }
 	}
 
-	arctic = {
-		movement_cost = 2.0
-		attrition = 2
-		color = { 235 235 235 }
+	urban = {
+		movement_cost = 1.0
+		defence = 2
+		color = { 140 150 130 }
 		farm_rgo_size = -0.5
-		farm_rgo_eff = -0.5
-		mine_rgo_size = -0.25
-		mine_rgo_eff = -0.25
-		supply_limit = 1
-		min_build_railroad = 3
-	}
-
-	farmlands = {
-		movement_cost = 1
-		color = { 137 104 165  }
-		farm_rgo_size = 0.25
 		farm_rgo_eff = 0.25
-		mine_rgo_size = -0.0
-		mine_rgo_eff = -0.25
-		supply_limit = 5
+		mine_rgo_size = -0.5
+		mine_rgo_eff = 0.25
+		supply_limit = 10
+	}
+	
+	arctic = {
+		movement_cost = 1.1
+		color = { 235 235 235 }
+		farm_rgo_size = -0.8
+		farm_rgo_eff = -0.4
+		mine_rgo_size = 0.0
+		mine_rgo_eff = -0.2
+		min_build_naval_base = 4
+		min_build_railroad = 4
+		min_build_fort = 1
+		attrition = 2
+	}
+	
+	plains = {
+		movement_cost = 1.0
+		color = { 241 221 184 }
+		farm_rgo_size = 0.0
+		farm_rgo_eff = 0.0
+		mine_rgo_size = 0.0
+		mine_rgo_eff = 0.0
+		supply_limit = 10
+
+	}	
+	
+	steppe = {
+		movement_cost = 1.0
+		color = { 211 201 184 }
+		farm_rgo_size = 0.0
+		farm_rgo_eff = -0.1
+		mine_rgo_size = 0.0
+		mine_rgo_eff = 0.0
+		supply_limit = 4
+
 	}
 
+	savanna = {
+		movement_cost = 1.0
+		color = { 220 201 199 }
+		farm_rgo_size = 0.0
+		farm_rgo_eff = -0.15
+		mine_rgo_size = 0.0
+		mine_rgo_eff = 0.0
+		supply_limit = 4
+
+	}
+	
 	forest = {
 		movement_cost = 1.2
-		defence = 0.1
+		defence = 1
 		color = { 91 123 45 }
 		farm_rgo_size = 0.0
 		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 3
+		supply_limit = 6
 		combat_width = -0.20
 	}
-
-	woods = {
-		movement_cost = 1.1
-		defence = 0.1
-		color = { 165 205 108 }
-		farm_rgo_size = 0.0
-		farm_rgo_eff = 0.0
+	
+	jungle = {
+		movement_cost = 1.3
+		attrition = 1.5
+		defence = 2
+		
+		color = { 32 151 0 }
+		farm_rgo_size = -0.25
+		farm_rgo_eff = -0.3
 		mine_rgo_size = 0.0
-		mine_rgo_eff = 0.0
-		supply_limit = 3
-	}
-
-	steppe = {
-		movement_cost = 1.0
-		color = { 211 201 184 }
-		farm_rgo_size = 0.05
-		farm_rgo_eff = 0.05
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.1
-		supply_limit = 4
-
-	}
-
-	plains = {
-		movement_cost = 1.0
-		color = { 241 221 184 }
-		farm_rgo_size = 0.1
-		farm_rgo_eff = 0.1
-		mine_rgo_size = -0.0
-		mine_rgo_eff = -0.1
-		supply_limit = 5
-
-	}
-
-	coastal_desert = {
-		movement_cost = 1.0
-		attrition = 2
-		color = { 208 155 0 }
-		farm_rgo_size = 0.0
-		farm_rgo_eff = 0.0
-		mine_rgo_size = 0.0
-		mine_rgo_eff = 0.0
-		supply_limit = 2
-	}
-
-	good_farmland = {
-		movement_cost = 1.1
-		defence = 0.1
-		attrition = 0
-		color = { 0 255 0 }
-		farm_rgo_size = 0.2
-		farm_rgo_eff = 0.2
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.1
-		supply_limit = 6
-		min_build_railroad = 0
-	}
-
-	floodplain_farmland = {
-		movement_cost = 1.05
-		defence = 0.05
-		attrition = 0.5
-		color = { 0 255 0 }
-		farm_rgo_size = 0.33
-		farm_rgo_eff = 0.33
-		mine_rgo_size = -0.25
-		mine_rgo_eff = -0.5
-		supply_limit = 6
-		min_build_railroad = 0
-	}
-
-	marginal_farmland = {
-		movement_cost = 1.1
-		defence = 0.1
-		attrition = 0
-		color = { 179 255 179 }
-		farm_rgo_size = 0.1
-		farm_rgo_eff = 0.1
-		mine_rgo_size = -0.05
-		mine_rgo_eff = -0.05
-		supply_limit = 5
-		min_build_railroad = 0
-	}
-
-	hilly_farmland = {
-		movement_cost = 1.6
-		defence = 0.25
-		attrition = 0
-		color = { 126 155 123 }
-		farm_rgo_size = 0.0
-		farm_rgo_eff = 0.0
-		mine_rgo_size = 0.1
-		mine_rgo_eff = 0.1
-		supply_limit = 3.5
-		min_build_railroad = 0
-
-		combat_width = -0.30
-	}
-
-	mountain_farmland = {
-		movement_cost = 2.0
-		defence = 0.45
-		attrition = 1
-		color = { 81 104 79 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.1
-		mine_rgo_size = 0.2
-		mine_rgo_eff = 0.2
-		supply_limit = 3
-		min_build_railroad = 1
-
-		combat_width = -0.50
-	}
-
-	forested_farmland = {
-		movement_cost = 1.4
-		defence = 0.15
-		attrition = 0
-		color = { 86 71 146 }
-		farm_rgo_size = 0.05
-		farm_rgo_eff = 0.05
-		mine_rgo_size = -0.05
-		mine_rgo_eff = -0.05
-		supply_limit = 4.5
-		min_build_railroad = 0
-		combat_width = -0.20
-	}
-
-	jungle_farmland = {
-		movement_cost = 1.8
-		defence = 0.2
-		attrition = 0.8
-		color = { 88 122 37 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.2
-		mine_rgo_size = -0.1
 		mine_rgo_eff = -0.2
-		supply_limit = 3
-		min_build_railroad = 2
-
-		combat_width = -0.30
+		
+		supply_limit = 1
+		min_build_railroad = 3
+		min_build_fort = 1
+		combat_width = -0.25
 	}
-
-	temperate_grassland = {
-		movement_cost = 1.0
-		defence = 0
-		attrition = 0
-		color = { 188 255 121 }
-		farm_rgo_size = 0.0
-		farm_rgo_eff = 0.0
-		mine_rgo_size = 0.0
-		mine_rgo_eff = 0.0
-		supply_limit = 4
-		min_build_railroad = 0
+	
+	boreal = {
+		movement_cost = 1.3
+		defence = 1
+		attrition = 1
+		
+		color = { 110 150 110 }
+		farm_rgo_size = -0.7
+		farm_rgo_eff = -0.3
+		mine_rgo_size = -0.0
+		mine_rgo_eff = -0.2
+		
+		min_build_naval_base = 4
+		min_build_railroad = 4
+		min_build_fort = 1
+		combat_width = -0.20
 	}
 
 	hills = {
-		movement_cost = 1.6
-		defence = 0.2
-		attrition = 0
-		color = { 118 96 65 }
-		farm_rgo_size = -0.05
+		movement_cost = 1.2
+		defence = 1
+		color = { 135 70 0 }
+		
+		farm_rgo_size = 0.0
+		farm_rgo_eff = 0.0
+		mine_rgo_size = 0.0
+		mine_rgo_eff = 0.0
+		
+		supply_limit = 6
+		min_build_railroad = 1
+		combat_width = -0.33
+	}
+	
+	dryhills = {
+		movement_cost = 1.2
+		defence = 1
+		color = { 70 135 0 }
+
+		farm_rgo_size = 0.0
 		farm_rgo_eff = -0.15
-		mine_rgo_size = 0.1
-		mine_rgo_eff = 0.1
-		supply_limit = 3
-		min_build_railroad = 0
-	}
-
-	mountain = {
-		movement_cost = 2.0
-		defence = 0.4
-		attrition = 2
-		color = { 68 55 38 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.30
-		mine_rgo_size = 0.25
-		mine_rgo_eff = 0.25
-		supply_limit = 2
-		min_build_railroad = 2
-
-		combat_width = -0.50
-	}
-
-	dry_grassland = {
-		movement_cost = 1.0
-		defence = 0
-		attrition = 0.5
-		color = { 255 147 0 }
-		farm_rgo_size = -0.05
-		farm_rgo_eff = -0.05
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
+
 		supply_limit = 3
 		min_build_railroad = 1
+		combat_width = -0.33
 	}
-
-	hilly_grassland = {
-		movement_cost = 1.6
-		defence = 0.2
-		attrition = 0.6
-		color = { 183 105 0 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.18
-		mine_rgo_size = 0.15
-		mine_rgo_eff = 0.15
-		supply_limit = 2.8
-		min_build_railroad = 1
-
-		combat_width = -0.30
-	}
-
-	mountain_grassland = {
-		movement_cost = 2.0
-		defence = 0.4
-		attrition = 2.2
-		color = { 121 70 0 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.35
-		mine_rgo_size = 0.25
-		mine_rgo_eff = 0.25
-		supply_limit = 1.8
-		min_build_railroad = 2
-
-		combat_width = -0.50
-	}
-
-	semi_desert = {
-		movement_cost = 1.25
-		defence = 0.0
-		attrition = 1.5
-		color = { 224 199 18 }
-		farm_rgo_size = -0.1
+	
+	marsh = {
+		movement_cost = 1.4
+		attrition = 1
+		defence = 1
+		color = { 76 112 105 }
+		farm_rgo_size = -0.25
 		farm_rgo_eff = -0.3
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.15
-		supply_limit = 2
+		mine_rgo_size = -0.25
+		mine_rgo_eff = -0.3
+		supply_limit = 3
 		min_build_railroad = 2
+		combat_width = -0.25
 	}
-
-	semi_desert_hills = {
-		movement_cost = 1.8
-		defence = 0.2
-		attrition = 1.4
-		color = { 187 166 15 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.25
+	
+	farmlands = {
+		movement_cost = 1.0
+		color = { 137 104 165 }
+		farm_rgo_size = 0.2
+		farm_rgo_eff = 0.00
 		mine_rgo_size = 0.0
 		mine_rgo_eff = 0.0
-		supply_limit = 2.1
-		min_build_railroad = 2
-
-		combat_width = -0.20
+		supply_limit = 10
 	}
-
-	semi_desert_mountains = {
-		movement_cost = 2.3
-		defence = 0.4
-		attrition = 2.4
-		color = { 92 82 7 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.4
+	
+	mountain = {
+		movement_cost = 1.4
+		defence = 3
+		color = { 117 108 119 }
+		farm_rgo_size = -0.2
+		farm_rgo_eff = 0.0
 		mine_rgo_size = 0.1
-		mine_rgo_eff = 0.1
-		supply_limit = 1.6
+		mine_rgo_eff = 0.0
+		supply_limit = 2
+		
+		combat_width = -0.6
+		
 		min_build_railroad = 3
-
-		combat_width = -0.40
 	}
-
+	
+	montane_tundra = {
+		movement_cost = 1.4
+		defence = 3
+		color = { 117 108 120 }
+		
+		farm_rgo_size = -0.8
+		farm_rgo_eff = -0.5
+		mine_rgo_size = 0.0
+		mine_rgo_eff = 0.0
+		
+		min_build_naval_base = 4
+		min_build_railroad = 4
+		min_build_fort = 1
+		
+		combat_width = -0.6
+		attrition = 2
+	}
+	
+	montane_forest = {
+		movement_cost = 1.5
+		defence = 3
+		color = { 117 108 121 }
+		
+		farm_rgo_size = -0.4
+		farm_rgo_eff = -0.2
+		mine_rgo_size = 0.0
+		mine_rgo_eff = 0.0
+		
+		supply_limit = 2
+		
+		combat_width = -0.70
+		
+		min_build_railroad = 3
+	}
+	
 	desert = {
 		movement_cost = 1.5
-		defence = 0.0
-		attrition = 2.5
-		color = { 241 234 188 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.6
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.3
-		supply_limit = 1
-		min_build_railroad = 3
-	}
-
-	desert_hills = {
-		movement_cost = 2.1
-		defence = 0.2
-		attrition = 2
-		color = { 173 146 107 }
-		farm_rgo_size = -0.1
+		color = { 218 195 0 }
+	
+		farm_rgo_size = -0.8
 		farm_rgo_eff = -0.5
-		mine_rgo_size = -0.05
-		mine_rgo_eff = -0.15
-		supply_limit = 1.5
-		min_build_railroad = 3
-
-		combat_width = -0.20
+		mine_rgo_size = -0.8
+		mine_rgo_eff = -0.5
+		min_build_railroad = 6
+		min_build_fort = 1
+		attrition = 2
 	}
-
-	desert_mountains = {
-		movement_cost = 2.5
-		defence = 0.4
-		attrition = 2.6
-		color = { 47 38 26 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.55
-		mine_rgo_size = -0.05
-		mine_rgo_eff = -0.05
-		supply_limit = 1.25
-		min_build_railroad = 4
-
-		combat_width = -0.40
+	
+	semidesert = {
+		movement_cost = 1.2
+		color = { 208 155 0 }
+		farm_rgo_size = -0.3
+		farm_rgo_eff = -0.3
+		mine_rgo_size = -0.1
+		mine_rgo_eff = -0.1
+		supply_limit = 2
+		min_build_railroad = 2
+		attrition = 1
 	}
-
-	dry_forest = {
-		movement_cost = 1.3
-		defence = 0.05
-		attrition = 0.25
-		color = { 238 108 70 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.1
-		mine_rgo_size = 0.0
-		mine_rgo_eff = 0.0
-		supply_limit = 3
-		min_build_railroad = 1
-
-		combat_width = -0.20
-	}
-
-	dry_forest_hills = {
-		movement_cost = 1.9
-		defence = 0.25
-		attrition = 0.3
-		color = { 119 35 11 }
-		farm_rgo_size = -0.1
+	
+	
+	coastal_desert = {
+		movement_cost = 1.2
+		color = { 208 156 0 }
+		farm_rgo_size = -0.4
 		farm_rgo_eff = -0.2
-		mine_rgo_size = 0.13
-		mine_rgo_eff = 0.13
-		supply_limit = 3
-		min_build_railroad = 1
-
-		combat_width = -0.60
-	}
-
-	dry_forest_mountains = {
-		movement_cost = 2.3
-		defence = 0.45
-		attrition = 2.1
-		color = { 68 20 6 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.32
-		mine_rgo_size = 0.23
-		mine_rgo_eff = 0.23
-		supply_limit = 2
-		min_build_railroad = 2
-
-		combat_width = -0.75
-	}
-
-	deciduous_forest = {
-		movement_cost = 1.5
-		defence = 0.1
-		attrition = 0
-		color = { 0 117 0 }
-		farm_rgo_size = -0.05
-		farm_rgo_eff = -0.05
 		mine_rgo_size = 0.0
-		mine_rgo_eff = 0.0
-		supply_limit = 4
-		min_build_railroad = 1
-
-		combat_width = -0.20
-	}
-
-	deciduous_forest_hills = {
-		movement_cost = 2.1
-		defence = 0.3
-		attrition = 0
-		color = { 0 85 0 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.12
-		mine_rgo_size = 0.15
-		mine_rgo_eff = 0.15
-		supply_limit = 3
-		min_build_railroad = 1
-
-		combat_width = -0.40
-	}
-
-	deciduous_forest_mountains = {
-		movement_cost = 2.5
-		defence = 0.5
-		attrition = 1.5
-		color = { 0 68 0 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.27
-		mine_rgo_size = 0.25
-		mine_rgo_eff = 0.25
-		supply_limit = 2.4
-		min_build_railroad = 2
-
-		combat_width = -0.70
-	}
-
-	conifer_forest = {
-		movement_cost = 1.8
-		defence = 0.12
-		attrition = 0
-		color = { 4 79 49 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.15
-		mine_rgo_size = 0.0
-		mine_rgo_eff = 0.0
-		supply_limit = 3
-		min_build_railroad = 2
-
-		combat_width = -0.20
-	}
-
-	conifer_forest_hills = {
-		movement_cost = 2.4
-		defence = 0.32
-		attrition = 0
-		color = { 55 74 55 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.20
-		mine_rgo_size = 0.15
-		mine_rgo_eff = 0.15
-		supply_limit = 2.8
-		min_build_railroad = 2
-
-		combat_width = -0.40
-	}
-
-	conifer_forest_mountains = {
-		movement_cost = 2.8
-		defence = 0.52
-		attrition = 1.9
-		color = { 40 53 40 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.3
-		mine_rgo_size = 0.25
-		mine_rgo_eff = 0.25
-		supply_limit = 2.1
-		min_build_railroad = 3
-
-		combat_width = -0.70
-	}
-
-	boreal_forest = {
-		movement_cost = 2.0
-		defence = 0.15
-		attrition = 0.5
-		color = { 107 158 139 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.25
-		mine_rgo_size = -0.1
 		mine_rgo_eff = -0.1
 		supply_limit = 2
 		min_build_railroad = 3
-
-		combat_width = -0.20
+		attrition = 1
 	}
+	
+	small_island = {
+		movement_cost = 1.0
+		attrition = 1
+		color = { 210 155 10 }
 
-	boreal_forest_hills = {
-		movement_cost = 2.6
-		defence = 0.35
-		attrition = 0.6
-		color = { 84 129 111 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.30
-		mine_rgo_size = 0.05
-		mine_rgo_eff = 0.05
+		farm_rgo_size = -0.5
+		farm_rgo_eff = 0.0
+		mine_rgo_size = -0.5
+		mine_rgo_eff = 0.0
 		supply_limit = 2
-		min_build_railroad = 3
-
-		combat_width = -0.40
+		combat_width = -0.3
 	}
-
-	boreal_forest_mountains = {
-		movement_cost = 3.0
-		defence = 0.55
-		attrition = 2.5
-		color = { 67 103 89 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.40
-		mine_rgo_size = 0.1
-		mine_rgo_eff = 0.1
-		supply_limit = 1.8
-		min_build_railroad = 4
-
-		combat_width = -0.70
-	}
-
-	jungle = {
-		movement_cost = 2.2
-		defence = 0.2
+	
+	coral_island = {
+		movement_cost = 1.0
 		attrition = 2
-		color = { 0 47 0 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.4
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.25
-		supply_limit = 2
-		min_build_railroad = 3
-
-		combat_width = -0.20
+		color = { 210 155 11 }
+	
+		farm_rgo_size = -0.95
+		farm_rgo_eff = 0.0
+		mine_rgo_size = -0.95
+		mine_rgo_eff = 0.0
+		min_build_railroad = 6
+		min_build_fort = 2
 	}
-
-	jungle_hills = {
-		movement_cost = 2.8
-		defence = 0.4
-		attrition = 2.2
-		color = { 0 32 0 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.45
-		mine_rgo_size = -0.05
-		mine_rgo_eff = -0.1
-		supply_limit = 2
-		min_build_railroad = 3
-
-		combat_width = -0.50
-	}
-
-	jungle_mountains = {
-		movement_cost = 3.5
-		defence = 0.6
-		attrition = 3
-		color = { 0 25 0 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.5
-		mine_rgo_size = -0.05
-		mine_rgo_eff = -0.05
-		supply_limit = 1.4
-		min_build_railroad = 4
-
-		combat_width = -0.80
-	}
-
-	seasonal_jungle = {
-		movement_cost = 1.8
-		defence = 0.15
-		attrition = 1.5
-		color = { 55 95 46 }
-		farm_rgo_size = -0.1
+	
+	new_world_boreal = {
+		movement_cost = 1.3
+		defence = 1
+		attrition = 1
+		
+		color = { 210 155 17 }
+		farm_rgo_size = -10.7
 		farm_rgo_eff = -0.3
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.18
-		supply_limit = 2
-		min_build_railroad = 2
-
-		combat_width = -0.20
-	}
-
-	seasonal_jungle_hills = {
-		movement_cost = 2.4
-		defence = 0.35
-		attrition = 1.6
-		color = { 90 103 56 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.35
-		mine_rgo_size = -0.03
-		mine_rgo_eff = -0.03
-		supply_limit = 2
-		min_build_railroad = 2
-
-		combat_width = -0.50
-	}
-
-	seasonal_jungle_mountains = {
-		movement_cost = 3
-		defence = 0.55
-		attrition = 2.4
-		color = { 56 63 35 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.4
-		mine_rgo_size = 0.07
-		mine_rgo_eff = 0.07
-		supply_limit = 1.7
-		min_build_railroad = 3
-
-		combat_width = -0.80
-	}
-
-	cold_desert = {
-		movement_cost = 1.6
-		defence = 0.0
-		attrition = 2.7
-		color = { 196 247 255 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.7
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.35
-		supply_limit = 1
-		min_build_railroad = 3
-	}
-
-	cold_desert_hills = {
-		movement_cost = 2.2
-		defence = 0.2
-		attrition = 2.9
-		color = { 0 153 174 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.75
-		mine_rgo_size = -0.1
+		mine_rgo_size = -10.0
 		mine_rgo_eff = -0.2
-		supply_limit = 1.1
-		min_build_railroad = 3
-
-		combat_width = -0.30
-	}
-
-	cold_desert_mountains = {
-		movement_cost = 2.6
-		defence = 0.4
-		attrition = 2.8
-		color = { 0 54 62 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.8
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.1
-		supply_limit = 1
+		
+		immigrant_attract = -0.6
+		min_build_naval_base = 4
 		min_build_railroad = 4
-
-		combat_width = -0.60
+		min_build_fort = 1
+		combat_width = -0.20
 	}
 
-	tundra = {
-		movement_cost = 2.0
-		defence = 0.0
-		attrition = 3
-		color = { 206 206 206 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.75
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.5
-		supply_limit = 0.5
+	new_world_montane_tundra = {
+		movement_cost = 1.4
+		defence = 3
+		color = { 210 155 16 }
+		
+		farm_rgo_size = -10.8
+		farm_rgo_eff = -0.5
+		mine_rgo_size = -10.0
+		mine_rgo_eff = 0.0
+		
+		min_build_naval_base = 4
 		min_build_railroad = 4
+		min_build_fort = 1
+		immigrant_attract = -0.9
+		combat_width = -0.6
+		attrition = 2
 	}
 
-	tundra_hills = {
-		movement_cost = 2.6
-		defence = 0.2
-		attrition = 3
-		color = { 148 148 148 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.8
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.4
-		supply_limit = 0.5
-		min_build_railroad = 4
-
-		combat_width = -0.30
-	}
-
-	tundra_mountains = {
-		movement_cost = 4.0
-		defence = 0.4
-		attrition = 3.5
-		color = { 88 88 88 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.85
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.3
-		supply_limit = 0.25
-		min_build_railroad = 5
-
-		combat_width = -0.60
-	}
-
-	marsh = {
-		movement_cost = 1.8
-		defence = 0.12
-		attrition = 1.5
-		color = { 87 128 189 }
-		farm_rgo_size = -0.1
+	new_world_arctic = {
+		movement_cost = 1.1
+		color = { 210 155 15 }
+		farm_rgo_size = -10.8
 		farm_rgo_eff = -0.4
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.4
+		mine_rgo_size = -10.0
+		mine_rgo_eff = -0.2
+		min_build_naval_base = 4
+		min_build_railroad = 4
+		min_build_fort = 1
+		attrition = 2
+		immigrant_attract = -0.9
+	}
+
+	new_world_mountain = {
+		movement_cost = 1.4
+		defence = 3
+		color = { 210 155 14 }
+		farm_rgo_size = -10.2
+		farm_rgo_eff = 0.0
+		mine_rgo_size = -10
+		mine_rgo_eff = 0.0
+		supply_limit = 2
+		combat_width = -0.6
+		min_build_railroad = 3
+		immigrant_attract = -0.4
+	}
+
+	new_world_jungle = {
+		movement_cost = 1.3
+		attrition = 1.5
+		defence = 2
+		
+		color = { 210 155 13 }
+		farm_rgo_size = -10.25
+		farm_rgo_eff = -0.3
+		mine_rgo_size = -10.0
+		mine_rgo_eff = -0.2
+		
+		supply_limit = 1
+		min_build_railroad = 3
+		min_build_fort = 1
+		combat_width = -0.25
+		immigrant_attract = -0.4
+	}
+
+	new_world_plains = {
+		movement_cost = 1.0
+		attrition = 1
+		color = { 210 155 12 }
+
+		farm_rgo_size = -10.0
+		farm_rgo_eff = 0.0
+		mine_rgo_size = -10.0
+		mine_rgo_eff = 0.0
+		supply_limit = 10
+	}
+
+	new_world_small_island = {
+		movement_cost = 1.0
+		attrition = 1
+		color = { 210 155 11 }
+
+		farm_rgo_size = -10.5
+		farm_rgo_eff = 0.0
+		mine_rgo_size = -10.5
+		mine_rgo_eff = 0.0
+		supply_limit = 2
+		combat_width = -0.3
+		assimilation_rate = -0.5
+		immigrant_attract = -0.75
+	}
+	
+	new_world_desert = {
+		movement_cost = 1.5
+		color = { 210 155 30 }
+	
+		farm_rgo_size = -9.0
+		farm_rgo_eff = -0.5
+		mine_rgo_size = -9.0
+		mine_rgo_eff = -0.5
+		min_build_railroad = 4
+		min_build_fort = 1
+		attrition = 2
+		immigrant_attract = -0.5
+	}
+	
+	new_world_semidesert = {
+		movement_cost = 1.2
+		color = { 210 155 31 }
+	
+		farm_rgo_size = -7.0
+		farm_rgo_eff = -0.3
+		mine_rgo_size = -7.0
+		mine_rgo_eff = -0.1
 		supply_limit = 2
 		min_build_railroad = 2
-
-		combat_width = -0.30
-	}
-
-	boreal_marsh = {
-		movement_cost = 2.8
-		defence = 0.3
-		attrition = 2
-		color = { 176 139 197 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.5
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.5
-		supply_limit = 1.8
-		min_build_railroad = 4
-
-		combat_width = -0.50
-	}
-
-	swamp_jungle = {
-		movement_cost = 3.0
-		defence = 0.35
-		attrition = 2.5
-		color = { 100 66 91 }
-		farm_rgo_size = -0.1
-		farm_rgo_eff = -0.55
-		mine_rgo_size = -0.1
-		mine_rgo_eff = -0.55
-		supply_limit = 1.6
-		min_build_railroad = 4
-
-		combat_width = -0.80
+		immigrant_attract = -0.25
+		attrition = 1
 	}
 }
 
@@ -774,15 +434,16 @@ ocean1 = {
 
 
 
-text_0	= { type = boreal_forest color = { 	0	 } priority = 	0	 }
-text_1	= { type = boreal_forest color = { 	1	 } priority = 	1	 }
-text_2	= { type = boreal_forest color = { 	2	 } priority = 	2	 }
-text_3	= { type = boreal_forest color = { 	3	 } priority = 	3	 }
+text_0	= { type = arctic color = { 	0	 } priority = 	0	 }
+text_1	= { type = arctic color = { 	1	 } priority = 	1	 }
+text_2	= { type = arctic color = { 	2	 } priority = 	2	 }
+text_3	= { type = arctic color = { 	3	 } priority = 	3	 }
 
+#unused, marked as arctic for now
 text_4	= { type = arctic color = { 	4	 } priority = 	4	 }
-text_5	= { type = semi_desert color = { 	5	 } priority = 	5	 }
-text_6	= { type = semi_desert color = { 	6	 } priority = 	6	 }
-text_7	= { type = semi_desert color = { 	7	 } priority = 	7	 }
+text_5	= { type = plains color = { 	5	 } priority = 	5	 }
+text_6	= { type = plains color = { 	6	 } priority = 	6	 }
+text_7	= { type = plains color = { 	7	 } priority = 	7	 }
 
 text_8	= { type = farmlands color = { 	8	 } priority = 	8	 }
 text_9	= { type = farmlands color = { 	9	 } priority = 	9	 }
@@ -799,10 +460,10 @@ text_17	= { type = hills color = { 	17	 } priority = 	17	 }
 text_18	= { type = hills color = { 	18	 } priority = 	18	 }
 text_19	= { type = hills color = { 	19	 } priority = 	19	 }
 
-text_20	= { type = woods color = { 	20	 } priority = 	20	 }
-text_21	= { type = woods color = { 	21	 } priority = 	21	 }
-text_22	= { type = woods color = { 	22	 } priority = 	22	 }
-text_23	= { type = woods color = { 	23	 } priority = 	23	 }
+text_20	= { type = forest color = { 	20	 } priority = 	20	 }
+text_21	= { type = forest color = { 	21	 } priority = 	21	 }
+text_22	= { type = forest color = { 	22	 } priority = 	22	 }
+text_23	= { type = forest color = { 	23	 } priority = 	23	 }
 
 text_24	= { type = mountain color = { 	24	 } priority = 	24	 }
 text_25	= { type = mountain color = { 	25	 } priority = 	25	 }
@@ -843,11 +504,12 @@ text_53	= { type = coastal_desert color = { 	53	 } priority = 	53	 }
 text_54	= { type = coastal_desert color = { 	54	 } priority = 	54	 }
 text_55	= { type = coastal_desert color = { 	55	 } priority = 	55	 }
 
-text_56	= { type = hilly_grassland color = { 	56	 } priority = 	56	 }
-text_57	= { type = hilly_grassland color = { 	57	 } priority = 	57	 }
-text_58	= { type = hilly_grassland color = { 	58	 } priority = 	58	 }
-text_59	= { type = hilly_grassland color = { 	59	 } priority = 	59	 }
 
+#UNUSED for now...
+text_56	= { type = mountain color = { 	56	 } priority = 	56	 }
+text_57	= { type = mountain color = { 	57	 } priority = 	57	 }
+text_58	= { type = mountain color = { 	58	 } priority = 	58	 }
+text_59	= { type = mountain color = { 	59	 } priority = 	59	 }
 text_60	= { type = mountain color = { 	60	 } priority = 	60	 }
 text_61	= { type = mountain color = { 	61	 } priority = 	61	 }
 text_62	= { type = mountain color = { 	62	 } priority = 	62	 }

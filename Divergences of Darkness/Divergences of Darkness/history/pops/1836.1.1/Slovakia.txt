@@ -1,6 +1,6 @@
 #Slovakia Region (1588000) 
 #under the rule of Austria in 1836  
-#Bratislava (784000/196000 POPS)
+#Bratislava (691060/172765 POPS)
 633 = {
 	bureaucrats = {
 		culture = slovak
@@ -186,8 +186,14 @@
 		religion = catholic
 		size = 13000  
 	}
+	
+	serfs = {
+		culture = gypsy
+		religion = catholic
+		size = 2000
+	}
 }
-#Trencin (228000/57000 POPS)
+#Trencin (342540/85635 POPS)
 634 = {
 	clergymen = {
 		culture = slovak
@@ -270,7 +276,7 @@
 		size = 2450 
 	}
 }
-#Nitra (352000/88000 POPS)
+#Nitra (3279752/819938 POPS)
 635 = {
 	clergymen = {
 		culture = slovak
@@ -402,8 +408,14 @@
 		religion = catholic
 		size = 2750  
 	}
+	
+	serfs = {
+		culture = gypsy
+		religion = catholic
+		size = 3000
+	}
 }
-#Banska Bystrica (224000/56000 POPS)
+#Banska Bystrica (340000/85000 POPS)
 636 = {
 	clergymen = {
 		culture = slovak
@@ -457,7 +469,7 @@
 }
 #Felvidek Region (860000) #see Hungary.txt and Ukraine.txt for balance of Region
 #under the rule of Austria in 1836  
-#Kosice (712000/178000POPS)
+#Kosice (497628/124407POPS)
 637 = {
 	bureaucrats = {
 		culture = slovak
@@ -676,7 +688,7 @@
 		size = 900 
 	}
 }
-#Roznava (148000/37000 POPS)
+#Roznava (160400/40100 POPS)
 638 = {
 	clergymen = {
 		culture = slovak

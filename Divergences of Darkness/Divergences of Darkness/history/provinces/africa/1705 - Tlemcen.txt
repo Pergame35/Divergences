@@ -2,6 +2,10 @@ owner = ARA
 controller = ARA
 add_core = MGH
 add_core = ARA
-trade_goods = iron
+trade_goods = fruit
 life_rating = 35
-terrain = hilly_grassland
+1861.1.1 = {
+	owner = FRA
+	controller = FRA
+	colonial = 2
+}

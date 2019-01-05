@@ -2,13 +2,19 @@ owner = SPA
 controller = SPA
 add_core = POR
 add_core = SPA
-trade_goods = dye
+trade_goods = fruit
 life_rating = 35
-terrain = good_farmland
 naval_base = 1
-
 state_building = {
 	level = 2
-	building = regular_clothes_factory
+	building = winery
 	upgrade = yes
 }
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+}
+1861.1.1 = { naval_base = 2 }

@@ -220,8 +220,8 @@ political_decisions = {
 			war = no
 			government = hms_government
 			OR = {
-				minorities_reform = limited
-				minorities_reform = protected
+				citizens_rights = culture_voting_only
+				citizens_rights = all_voting_pops
 			}
 			OR = {
 				vote_franschise = universal_weighted_voting

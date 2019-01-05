@@ -2,7 +2,11 @@ owner = JAP
 controller = JAP 
 add_core = JAP
 add_core = AIN
-
 trade_goods = coal
 life_rating = 15
-terrain = conifer_forest_mountains
+terrain = arctic
+1861.1.1 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+}

@@ -4,4 +4,10 @@ add_core = XHO
 add_core = BTV
 trade_goods = grain
 life_rating = 35
-terrain = dry_forest_hills
+1861.1.1 = {
+	owner = ENG
+	controller = ENG
+	add_core = SAF
+	add_core = ENG
+	colonial = 2
+}

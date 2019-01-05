@@ -16,7 +16,7 @@ country_event = {
 		is_vassal = yes
 		civilized = yes
 		OR = {
-			state_n_government = 1
+			nationalism_n_imperialism = 1
 			year = 1900
 		}
 		has_global_flag = liberal_revolution_should_now_fire
@@ -97,7 +97,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "98600.A"
+		name = "EVT98600OPTA"
 		random_country = {
 			limit = { is_our_vassal = THIS }
 			country_event = 98605
@@ -108,7 +108,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "98600.B"
+		name = "EVT98600OPTB"
 		prestige = -5
 		any_pop = {
 			limit = { is_primary_culture = yes }
@@ -140,7 +140,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "98605.A"
+		name = "EVT98605OPTA"
 		random_owned = {
 			limit = {
 				owner = { is_greater_power = yes }
@@ -214,7 +214,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "4439.B"
+		name = "EVT98605OPTB"
 		random_owned = {
 			limit = {
 				owner = { is_greater_power = yes }
@@ -286,7 +286,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "98606.A"
+		name = "EVT98606OPTA"
 		set_country_flag = refused_independence_request
 		prestige = -10
 		relation = { who = FROM value = -100 }
@@ -316,7 +316,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "98607.A"
+		name = "EVT98607OPTA"
 		any_pop = {
 			limit = { is_primary_culture = yes }
 			consciousness = -3
@@ -329,7 +329,7 @@ country_event = {
 country_event = {
 	id = 98608
 	title = "EVTNAME98607"
-	desc = "98608.D"
+	desc = "EVTDESC98608"
 	news = yes
 	news_desc_long = "EVTDESC98608_NEWS_LONG"
 	news_desc_medium = "EVTDESC98608_NEWS_MEDIUM"
@@ -340,7 +340,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "98608.A"
+		name = "EVT98607OPTA"
 		relation = { who = FROM value = -100 }
 		leave_alliance = FROM
 		any_pop = {
@@ -361,7 +361,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "98610.A"
+		name = "EVT98610OPTA"
 		FROM = {
 			war = {
 				target = THIS
@@ -416,7 +416,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "98610.B"
+		name = "EVT98610OPTB"
 		release_vassal = FROM
 		casus_belli = {
 			target = FROM
@@ -563,7 +563,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "98611.A"
+		name = "EVT98611OPTA"
 		set_country_flag = sought_independence_allies
 		badboy = 3
 		any_greater_power = {
@@ -584,7 +584,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "98611.B"
+		name = "EVT98611OPTB"
 		set_country_flag = sought_independence_allies
 		ai_chance = { factor = 0 }
 	}
@@ -599,7 +599,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "98612.A"
+		name = "EVT98612OPTA"
 		prestige = 10
 		diplomatic_influence = { who = FROM value = 100 }
 		FROM = {
@@ -717,7 +717,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "98612.B"
+		name = "EVT98612OPTB"
 		prestige = -10
 		relation = { who = FROM value = -25 }
 		diplomatic_influence = { who = FROM value = -100 }
@@ -824,8 +824,8 @@ country_event = {
 
 country_event = {
 	id = 98613
-	title = "44337.T"
-	desc = "98613.D"
+	title = "EVTNAME98613"
+	desc = "EVTDESC98613"
 	news = yes
 	news_title = "EVTNAME98613_NEWS_TITLE"
 	news_desc_long = "EVTDESC98613_NEWS_LONG"
@@ -836,19 +836,19 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "98613.A"
+		name = "EVT98613OPTA"
 	}
 }
 
 country_event = {
 	id = 98614
-	title = "97392.T"
-	desc = "98614.D"
+	title = "EVTNAME98614"
+	desc = "EVTDESC98614"
 	picture = "administration"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "98614.A"
+		name = "EVT98614OPTA"
 	}
 }

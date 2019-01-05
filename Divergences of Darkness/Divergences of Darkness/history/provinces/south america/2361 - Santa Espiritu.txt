@@ -1,7 +1,11 @@
 owner = NAN
 controller = NAN
 add_core = NAN
-
 trade_goods = grain
 life_rating = 35
-terrain = temperate_grassland
+1861.1.1 = { 
+	owner = ARG
+	controller = ARG
+	add_core = ARG
+	remove_core = ARC
+	}

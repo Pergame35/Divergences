@@ -2,6 +2,12 @@ owner = FJA
 controller = FJA
 add_core = FJA
 trade_goods = grain
-life_rating = 30
-terrain = dry_grassland
+terrain = semidesert
+life_rating = 35
 naval_base = 1
+1861.1.1 = {
+	owner = FRA
+	controller = FRA
+	colonial = 2
+	naval_base = 1
+}

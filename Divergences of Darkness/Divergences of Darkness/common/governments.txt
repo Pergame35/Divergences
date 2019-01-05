@@ -12,51 +12,40 @@ proletarian_dictatorship = {
 	flagType = communist
 }
 
-presidential_dictatorship =
-{
+presidential_dictatorship = {
 	#which ideology of parties.
-	socialist = yes
-	conservative = yes
 	reactionary = yes
+	fascist = yes
+	conservative = yes
 	
 	election = no
-	appoint_ruling_party = no
+	appoint_ruling_party = yes
 	flagType = republic
 }
  
-bourgeois_dictatorship =
-{
+bourgeois_dictatorship = {
 	#which ideology of parties.
 	anarcho_liberal = yes
-
+	
 	election = no
 	appoint_ruling_party = yes
 	flagType = republic
 }
 
-fascist_dictatorship =
-{
+fascist_dictatorship = {
 	#which ideology of parties.
-	fascist = yes	
+	fascist = yes
+	
 	election = no
 	appoint_ruling_party = yes
 	flagType = fascist
 }
  
-feudal_monarchy = {
-	conservative = yes
-	reactionary = yes
-	
-	election = no
-	appoint_ruling_party = yes
-	flagType = monarchy
-}
-
 absolute_monarchy = {
 	liberal = yes
 	conservative = yes
 	reactionary = yes
-
+	
 	
 	election = no
 	appoint_ruling_party = yes
@@ -68,10 +57,10 @@ prussian_constitutionalism = {
 	socialist = yes
 	conservative = yes
 	reactionary = yes
-	fascist = yes
-
+	
+	
 	election = yes
-	duration = 60
+	duration = 48
 	appoint_ruling_party = yes
 	flagType = monarchy
 }
@@ -81,10 +70,14 @@ hms_government = {
 	socialist = yes
 	conservative = yes
 	reactionary = yes
-
+	communist = yes
+	anarcho_liberal = yes
+	fascist = yes
+	
+	
 	election = yes
 	duration = 48
-	appoint_ruling_party = no
+	appoint_ruling_party = yes
 	flagType = monarchy
 }
 
@@ -96,7 +89,7 @@ democracy = {
 	communist = yes
 	anarcho_liberal = yes
 	fascist = yes
-
+	
 	
 	election = yes
 	duration = 48
@@ -105,15 +98,14 @@ democracy = {
 }
 
 theocracy = {
-	liberal = yes
-	socialist = yes
-	conservative = yes
+	#which ideology of parties.
 	reactionary = yes
-
+	conservative = yes
+	
+	election = no
 	appoint_ruling_party = yes
-	flagType = monarchy
 }
-
+ 
 merchant_republic = {
 	liberal = yes
 	socialist = yes
@@ -124,4 +116,13 @@ merchant_republic = {
 	duration = 48
 	appoint_ruling_party = no
 	flagType = republic
+}
+
+feudal_monarchy = {
+	conservative = yes
+	reactionary = yes
+	
+	election = no
+	appoint_ruling_party = yes
+	flagType = monarchy
 }

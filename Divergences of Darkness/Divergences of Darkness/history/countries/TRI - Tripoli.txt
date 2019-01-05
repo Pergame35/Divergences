@@ -1,19 +1,15 @@
 capital = 1741
 primary_culture = maghrebi
+culture = berber
 culture = bedouin
 culture = tuareg
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.03
-minorities_reform = oppression
-immigration_policy = nobody_gets_out
-conscription=mandatory_service
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 # Political reforms
 slavery = yes_slavery
 upper_house_composition = appointed
@@ -31,6 +27,14 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
+school_reforms = no_schools
+
+# New Reforms
+conscription = no_draft
+debt_law = peonage
+penal_system = capital_punishment
+child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
 
 ruling_party = AAA_conservative_5
 upper_house = {
@@ -43,20 +47,13 @@ upper_house = {
 	communist = 0
 }
 
-# Level_2
+set_country_flag = sunni_country
+foreign_weapons = yes_foreign_weapons
+
 # Technologies
-early_classical_theory_and_critique = 1
-late_enlightenment_philosophy = 1
-enlightenment_thought = 1
-private_banks = 1
+flintlock_rifles = 1
 
 # Inventions
-
-# Unciv Reforms
-diplomatic_reform = interactive
-academic_institutions = madrasahs
-admin_reform = yes_admin_reform
-taxation_reform = tax_farmers
 
 # Starting Consciousness
 consciousness = 0

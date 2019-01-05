@@ -3,12 +3,10 @@ primary_culture = venetian
 religion = catholic
 government = merchant_republic
 plurality = 0.1
-nationalvalue = nv_order
-literacy = 0.49
+nationalvalue = nv_productivity
+literacy = 0.4
 civilized = yes
 
-#GreaterPowers = prestige
-prestige = 15
 
 # Political reforms
 slavery = yes_slavery
@@ -19,20 +17,24 @@ press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = non_secret_ballots
-minorities_reform = limited
-immigration_policy = quota_immigration
-conscription=two_year_draft
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions
+pensions = no_pensions 
+school_reforms = no_schools
+
+#New Reforms
+conscription = two_year_draft
+debt_law = debtors_prisons
+penal_system = capital_punishment
+child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 ruling_party = VEN_conservative_1
 upper_house = {
@@ -66,8 +68,7 @@ no_standard = 1
 early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
-water_wheel_power = 1
-publishing_industry = 1
+piston_steam_engine = 1
 mechanized_mining = 1
 basic_chemistry = 1
 
@@ -80,3 +81,9 @@ nonstate_consciousness = 1
 schools = commerce_tech_school
 
 oob = "VEN_oob.txt"
+
+1861.1.1 = {
+# Technologies
+
+#Inventions
+}

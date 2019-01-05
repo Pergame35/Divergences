@@ -1,8 +1,10 @@
 owner = INC
 controller = INC
 add_core = INC
-
-
-trade_goods = sugar
+trade_goods = fruit
+terrain = farmlands
 life_rating = 35
-terrain = good_farmland
+1861.1.1 = { 
+	railroad = 1
+	naval_base = 1
+}

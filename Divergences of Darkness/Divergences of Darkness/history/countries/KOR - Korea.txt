@@ -3,7 +3,7 @@ primary_culture = korean
 religion = mahayana
 government = absolute_monarchy
 plurality = 0.0
-nationalvalue = nv_order
+nationalvalue = nv_tradition
 literacy = 0.38
 civilized = yes
 prestige = 5
@@ -17,33 +17,43 @@ press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = underground_parties
-minorities_reform = oppression
-immigration_policy = nobody_gets_out
-conscription=two_year_draft
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions
+pensions = no_pensions 
+school_reforms = no_schools
+
+# New Reforms
+conscription = two_year_draft
+debt_law = debtors_prisons
+penal_system = capital_punishment
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
+border_policy = closed_borders
+
+set_country_flag = mahayana_country
 
 ruling_party = AAA_conservative_3
 upper_house = {
 	fascist = 0
-	liberal = 33
-	conservative = 34
-	reactionary = 33
+	liberal = 18
+	conservative = 21
+	reactionary = 61
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
 
-# Level_4
+govt_flag = {
+	government = absolute_monarchy
+	flag = theocracy
+}
+
+
 # Technologies
 early_classical_theory_and_critique = 1
 late_enlightenment_philosophy = 1
@@ -60,26 +70,27 @@ malthusian_thought = 1
 basic_chemistry = 1
 freedom_of_trade = 1
 
-# Inventions
-
-# Unciv Reforms
-diplomatic_reform = interactive
-academic_institutions = madrasahs
-admin_reform = yes_admin_reform
-taxation_reform = tax_farmers
-army_schools = yes_army_schools
-foreign_weapons = yes_foreign_weapons
-finance_reform = yes_finance_reform
-foreign_training = yes_foreign_training
-military_constructions = yes_military_constructions
-disciplinary_reform = rehabilitation
-foreign_officers = yes_foreign_officers
-education_reform = yes_education_reform
-medicine_reform = alchemy
-land_reform = yes_land_reform
-
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
+# Inventions
+#bottling_process = yes
+modern_winemaking = yes
+
 oob = "KOR_oob.txt"
+1861.1.1 = {
+	oob = "/1861/KOR_oob.txt"
+	literacy = 0.09
+	non_state_culture_literacy = 0.05
+
+	foreign_weapons = yes_foreign_weapons
+	foreign_officers = yes_foreign_officers
+	admin_reform = yes_admin_reform
+	land_reform = yes_land_reform
+
+	# Technologies
+	flintlock_rifles = 1
+	military_staff_system = 1
+}
+

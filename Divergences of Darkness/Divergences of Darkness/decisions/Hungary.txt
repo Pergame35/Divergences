@@ -134,9 +134,9 @@ political_decisions = {
 			add_accepted_culture = croat
 			random_owned = {
 				limit = {
-					owner = { minorities_reform = oppression }
+					owner = { minorities_reform = primary_culture_only }
 				}
-				owner = { political_reform = limited }
+				owner = { political_reform = culture_voting_only }
 			}
 			any_pop = {
 				limit = {
@@ -226,7 +226,7 @@ political_decisions = {
 		
 		effect = { 
 		set_country_flag = accepted_slovenians
-		add_accepted_culture = slovenian
+		add_accepted_culture = slovene
 		}
 	
 	}

@@ -1,10 +1,8 @@
-### Events 800060-800065
-
-#################################################################################################################
-#														#
-#      		 These events deal with ideologies spreading to neighboring countries				#
-#														#
-#################################################################################################################
+#################################################################################
+#																				#
+#   These events deal with ideologies spreading to neighboring countries		#
+#																				#
+#################################################################################
 
 country_event = {
 	
@@ -57,7 +55,7 @@ country_event = {
 	}
 
 	option = {
-		name = "800060.A"
+		name = "EVT800060OPTA"
 		money = -10000
 		random_owned = {
 			limit = {
@@ -122,7 +120,7 @@ country_event = {
 		}		
 	}
 	option = {
-		name = "800100.B"
+		name = "EVT800060OPTB"
 		prestige = -5
 		ai_chance = { 
 			factor = 25
@@ -189,7 +187,7 @@ country_event = {
 	}
 
 	option = {
-		name = "800061.A"
+		name = "EVT800060OPTA"
 		money = -10000
 		random_owned = {
 			limit = {
@@ -256,7 +254,7 @@ country_event = {
 		}		
 	}
 	option = {
-		name = "800060.B"
+		name = "EVT800060OPTB"
 		prestige = -5
 		ai_chance = { 
 			factor = 25
@@ -325,7 +323,7 @@ country_event = {
 	}
 
 	option = {
-		name = "800062.A"
+		name = "EVT800060OPTA"
 		money = -10000
 		random_owned = {
 			limit = {
@@ -402,7 +400,7 @@ country_event = {
 		}		
 	}
 	option = {
-		name = "800061.B"
+		name = "EVT800060OPTB"
 		prestige = -5
 		ai_chance = { 
 			factor = 25
@@ -448,16 +446,8 @@ country_event = {
 			government = democracy
 			government = hms_government
 		}
-		OR = {
-			check_variable = {
-				which = successful_communist_rebellions
-				value = 3
-			}
-			check_variable = {
-				which = successful_fascist_rebellions
-				value = 3
-			}
-		}
+		is_ideology_enabled = fascist
+		is_ideology_enabled = communist
 		any_neighbor_country = {
 			NOT = { 
 				OR = {
@@ -507,7 +497,7 @@ country_event = {
 	}
 
 	option = {
-		name = "800063.A"
+		name = "EVT800060OPTA"
 		money = -10000
 		random_owned = {
 			limit = {
@@ -598,7 +588,7 @@ country_event = {
 		}		
 	}
 	option = {
-		name = "800062.B"
+		name = "EVT800060OPTB"
 		prestige = -5
 		ai_chance = { 
 			factor = 50
@@ -640,7 +630,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "800064.A"
+		name = "EVT800064OPTA"
 	}
 }
 
@@ -658,7 +648,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "800065.A"
+		name = "EVT800065OPTA"
 		relation = {
 			who = FROM
 			value = -100
@@ -695,7 +685,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "800065.B"
+		name = "EVT800065OPTB"
 		leave_alliance = FROM
 		relation = {
 			who = FROM
@@ -719,7 +709,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "800065.C"
+		name = "EVT800065OPTC"
 		prestige = -5
 		relation = {
 			who = FROM

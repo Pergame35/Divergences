@@ -1,6 +1,9 @@
 capital = 2019
 primary_culture = baganda
-culture = african_minor
+culture = luo
+culture = lacustrine_bantu
+culture = nilotic
+culture = ruanda
 religion = animist
 government = absolute_monarchy
 plurality = 0.0
@@ -15,11 +18,8 @@ vote_franschise = none_voting
 public_meetings = no_meeting
 press_rights = state_press
 trade_unions = no_trade_unions
-voting_system = jefferson_method
+voting_system = first_past_the_post
 political_parties = underground_parties
-minorities_reform = oppression
-immigration_policy = nobody_gets_out
-conscription = mandatory_service
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -28,10 +28,16 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
-pollution = no_controls
-child_labor = child_labor_legal
-arts_endowment = no_endowment
-education = elite
+school_reforms = no_schools
+
+#New Reforms
+conscription = no_draft
+debt_law = serfdom
+penal_system = capital_punishment
+child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = animist_country
 
 ruling_party = BUG_conservative
 upper_house = {
@@ -44,17 +50,13 @@ upper_house = {
 	communist = 0
 }
 
-# Starting Consciousness
+set_country_flag = post_colonial_country
+
+#Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
 oob = "BUG_oob.txt"
-
-foreign_weapons = yes_foreign_weapons
-diplomatic_reform = interactive
-
-# Technologies
-flintlock_rifles = 1
-early_classical_theory_and_critique = 1
-
-# Inventions
+1861.1.1 = {
+	oob = "/1861/BUG_oob.txt"
+}

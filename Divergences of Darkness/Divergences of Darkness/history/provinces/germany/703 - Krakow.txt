@@ -3,9 +3,12 @@ controller = PLC
 add_core = PLC
 add_core = POL
 trade_goods = coal
-life_rating = 35
-terrain = good_farmland 
-    
+life_rating = 40
+1861.1.1 = {
+	owner = AUS
+	controller = AUS
+}
+1861.1.1 = { railroad = 3 }
 state_building = {
 	level = 2 
 	building = glass_factory

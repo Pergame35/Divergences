@@ -1,14 +1,17 @@
 owner = TUR
 controller = TUR
 add_core = TUR
-trade_goods = tobacco
+trade_goods = grain
 life_rating = 35
-terrain = dry_forest_hills
 #state_building = {
 #	level = 1
 #	building = glass_factory
 #	upgrade = yes
 #}
+1861.1.1 = {
+	naval_base = 1
+}
+
 revolt = {
 	type = reactionary_rebels
 	controller = yes

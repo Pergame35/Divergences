@@ -44,12 +44,11 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				ARC = { NOT = { immigration_policy = open_immigration } }
-				ARC = { NOT = { immigration_policy = naturalization } }
+				ARC = { NOT = { border_policy = open_borders } }
 			}
 			modifier = {
 				factor = 4
-				ARC = { NOT = { minorities_reform = protected } }
+				ARC = { NOT = { citizens_rights = all_voting_pops } }
 			}
 		}
 	}
@@ -149,14 +148,14 @@ country_event = {
     add_accepted_culture = vinlander
     set_country_flag = vinlandic_arcadia  
     clr_country_flag = vinlandic_arcadia_trial
-		political_reform = naturalization
+		political_reform = open_borders
 		political_reform = universal_voting    
 		political_reform = population_equal_weight
 		political_reform = secret_ballots  
 		political_reform = free_press    
 		political_reform = yes_meeting   
 		political_reform = proportional_representation
-    political_reform = protected
+    political_reform = all_voting_pops
 		any_pop = {
 			limit = {
 				culture = vinlander
@@ -209,7 +208,7 @@ country_event = {
   	option = {
     name = "333442.B"
     prestige = -10
-    political_reform = limited
+    political_reform = culture_voting_only
 		any_pop = {
 			limit = {
 				culture = vinlander
@@ -368,12 +367,11 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				ARC = { NOT = { immigration_policy = open_immigration } }
-				ARC = { NOT = { immigration_policy = naturalization } }
+				ARC = { NOT = { border_policy = open_borders } }
 			}
 			modifier = {
 				factor = 4
-				ARC = { NOT = { minorities_reform = protected } }
+				ARC = { NOT = { citizens_rights = all_voting_pops } }
 			}
 		}
 	}
@@ -473,14 +471,14 @@ country_event = {
     add_accepted_culture = septiman
     set_country_flag = septiman_arcadia
     clr_country_flag = septiman_arcadia_trial
-		political_reform = naturalization
+		political_reform = open_borders
 		political_reform = universal_voting    
 		political_reform = population_equal_weight
 		political_reform = secret_ballots  
 		political_reform = free_press    
 		political_reform = yes_meeting   
 		political_reform = proportional_representation
-    political_reform = protected
+    political_reform = all_voting_pops
 		any_pop = {
 			limit = {
 				culture = septiman
@@ -533,7 +531,7 @@ country_event = {
   	option = {
     name = "333446.B"
     prestige = -10
-    political_reform = limited
+    political_reform = culture_voting_only
 		any_pop = {
 			limit = {
 				culture = septiman
@@ -692,12 +690,11 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				ARC = { NOT = { immigration_policy = open_immigration } }
-				ARC = { NOT = { immigration_policy = naturalization } }
+				ARC = { NOT = { border_policy = open_borders } }
 			}
 			modifier = {
 				factor = 4
-				ARC = { NOT = { minorities_reform = protected } }
+				ARC = { NOT = { citizens_rights = all_voting_pops } }
 			}
 		}
 	}
@@ -797,14 +794,13 @@ country_event = {
     add_accepted_culture = plantagenian
     set_country_flag = plantagenian_arcadia 
     clr_country_flag = plantagenian_arcadia_trial
-		political_reform = naturalization
 		political_reform = universal_voting    
 		political_reform = population_equal_weight
 		political_reform = secret_ballots  
 		political_reform = free_press    
 		political_reform = yes_meeting   
 		political_reform = proportional_representation
-    political_reform = protected
+    political_reform = all_voting_pops
 		any_pop = {
 			limit = {
 				culture = plantagenian
@@ -857,7 +853,7 @@ country_event = {
   	option = {
     name = "333450.B"
     prestige = -10
-    political_reform = limited
+    political_reform = culture_voting_only
 		any_pop = {
 			limit = {
 				culture = plantagenian
@@ -1493,12 +1489,11 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				ARC = { NOT = { immigration_policy = open_immigration } }
-				ARC = { NOT = { immigration_policy = naturalization } }
+				ARC = { NOT = { border_policy = open_borders } }
 			}
 			modifier = {
 				factor = 4
-				ARC = { NOT = { minorities_reform = protected } }
+				ARC = { NOT = { citizens_rights = all_voting_pops } }
 			}
 		}
 	}
@@ -1598,14 +1593,14 @@ country_event = {
     add_accepted_culture = lusitanian
     set_country_flag = lusitanian_arcadia 
     clr_country_flag = lusitanian_arcadia_trial
-		political_reform = naturalization
+		political_reform = open_borders
 		political_reform = universal_voting    
 		political_reform = population_equal_weight
 		political_reform = secret_ballots  
 		political_reform = free_press    
 		political_reform = yes_meeting   
 		political_reform = proportional_representation
-    political_reform = protected
+    political_reform = all_voting_pops
 		any_pop = {
 			limit = {
 				culture = lusitanian
@@ -1658,7 +1653,7 @@ country_event = {
   	option = {
     name = "333461.B"
     prestige = -10
-    political_reform = limited
+    political_reform = culture_voting_only
 		any_pop = {
 			limit = {
 				culture = lusitanian

@@ -23,35 +23,35 @@ leader = {
 }
 
 army = {
-	name = "Army Corps of the regular"
+	name = "Army Corps of the infantry"
 	location = 1008
 	regiment = {
 		name= "1.1-ya Gvardeiskaya Pekhotnaya Diviziya"
-		type = regular
+		type = infantry
 		home = 943
 	}
 
 	regiment = {
 		name= "2.1-ya Gvardeiskaya Pekhotnaya Diviziya"
-		type = regular
+		type = infantry
 		home = 1008
 	}
 
 	regiment = {
 		name= "3.1-ya Gvardeiskaya Pekhotnaya Diviziya"
-		type = regular
+		type = infantry
 		home = 1008
 	}
 
 	regiment = {
 		name= "1.2-ya Gvardeiskaya Pekhotnaya Diviziya"
-		type = regular
+		type = infantry
 		home = 1008
 	}
 
 	regiment = {
 		name= "2.2-ya Gvardeiskaya Pekhotnaya Diviziya"
-		type = regular
+		type = infantry
 		home = 1008
 	}
 
@@ -64,7 +64,7 @@ army = {
 }
 
 army = {
-	name = "regulars hussar Corps"
+	name = "infantrys hussar Corps"
 	location = 1010
 	regiment = {
 		name= "1.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
@@ -114,13 +114,13 @@ army = {
 	location = 1011
 	regiment = {
 		name= "1.1-ya Grenaderskaya Diviziya"
-		type = regular
+		type = infantry
 		home = 1037
 	}
 
 	regiment = {
 		name= "2.1-ya Grenaderskaya Diviziya"
-		type = regular
+		type = infantry
 		home = 1034
 	}
 
@@ -132,19 +132,19 @@ army = {
 
 	regiment = {
 		name= "1.2-ya Grenaderskaya Diviziya"
-		type = regular
+		type = infantry
 		home = 1020
 	}
 
 	regiment = {
 		name= "2.2-ya Grenaderskaya Diviziya"
-		type = regular
+		type = infantry
 		home = 1020
 	}
 
 	regiment = {
 		name= "3.2-ya Grenaderskaya Diviziya"
-		type = regular
+		type = infantry
 		home = 1039
 	}
 

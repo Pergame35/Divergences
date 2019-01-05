@@ -1,7 +1,11 @@
 owner = INC
 controller = INC
 add_core = INC
-
 trade_goods = wool
 life_rating = 35
-terrain = semi_desert_mountains
+1861.1.1 = { 
+	owner = ARG
+	controller = ARG
+	add_core = ARG
+	remove_core = ARC
+	}

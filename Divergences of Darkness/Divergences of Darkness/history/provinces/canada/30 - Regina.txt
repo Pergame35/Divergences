@@ -1,7 +1,7 @@
 owner = HHR
 controller = HHR
 add_core = HHR
-
 trade_goods = grain
-life_rating = 35
-terrain = temperate_grassland
+terrain = steppe
+life_rating = 30
+1861.1.1 = { add_core = MTC }

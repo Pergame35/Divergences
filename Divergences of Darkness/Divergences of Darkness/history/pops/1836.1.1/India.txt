@@ -1,3 +1,7 @@
+#New provinces for HPM
+#Tranquebar - former Holsteinborg in Greenland (20k in 1810 / 5K POPS - assuming 3% average growth, 1836 should be 35.6K / 8.9K)
+#(Area include more than Tranquebar so pops should be higher. Religion is 95% Hindu, 4% Muslims and 1% Protestant
+#Data based on "A geographical, statistical, and historical description of Hindostan and the adjacent countries". Walter Hamilton. 1820. pp458.
 #India.txt includes modern India, Pakistan and Bangladesh
 #Northwest Frontier Region (1076000)
 #Under the Rule of Panjab 1836
@@ -153,7 +157,6 @@
 		religion = animist
 		size = 65985
 	}
-
 }
 #Under the Rule of Kalat 1836
 #Quetta (124000/31000 POPS)
@@ -440,6 +443,11 @@
 		religion = sunni
 		size = 26525
 	}
+	slaves = {
+		culture = kilombero #african_minor
+		religion = animist
+		size = 4000
+	}
 }
 #Under the Rule of Makran 1836
 #Bela (124000/31000 POPS)
@@ -503,6 +511,11 @@
 		culture = baluchi
 		religion = sunni
 		size = 5160
+	}
+	slaves = {
+		culture = kilombero #african_minor
+		religion = animist
+		size = 5000
 	}
 }
 #Kashmir Region (1208000)
@@ -3851,7 +3864,6 @@
 		religion = jain
 		size = 3400
 	}
-
 }
 #Assam Region : 2676000
 #under rule of Britain 1836
@@ -4154,7 +4166,6 @@
 		religion = sunni
 		size = 51125
 	}
-
 }
 #Orissa Region  (1588000)
 #Ruled by Britain 1836 (944000)
@@ -4374,8 +4385,8 @@
 		religion = jain
 		size = 21225
 	}
-
 }
+
 #Rajputana Region (4616000)
 #Under rule of Britain 1836 (200000)
 #Ajmer (200000/50000 POPS)
@@ -4878,7 +4889,6 @@
 		religion = sunni
 		size = 900
 	}
-
 }
 #Central Provinces Region (8044000) 
 #Under rule of Gwalior 1836
@@ -5109,7 +5119,7 @@
 	}
 }
 #Under Native Rule 1836
-#Chatarpur (632000/158000 POPS)
+#Chhatarpur (632000/158000 POPS)
 1273 = {
 	aristocrats = {
 		culture = kanauji
@@ -5621,7 +5631,7 @@
 		size = 114225
 	}
 }
-#Bilsapur (672000/168000 POPS)
+#Bilaspur (672000/168000 POPS)
 1281 = {
 	aristocrats = {
 		culture = marathi
@@ -6858,7 +6868,7 @@
 		size = 850
 	}
 }
-#Beroda (1580000/395000 POPS)
+#Baroda (1580000/395000 POPS)
 1295 = {
 	aristocrats = {
 		culture = gujarati
@@ -8250,18 +8260,18 @@
 
 	}
 }
-#Tanjore (1448000/362000 POPS)
+#Tanjore (1448000/362000 POPS) Already edited
 1309 = {
 	aristocrats = {
 		culture = tamil
 		religion = hindu
-		size = 3500
+		size = 3520
 	}
 
 	clergymen = {
 		culture = tamil
 		religion = hindu
-		size = 3750
+		size = 3850
 	}
 
 	artisans = {
@@ -8273,27 +8283,25 @@
 	artisans = {
 		culture = tamil
 		religion = hindu
+		size = 3455
+	}
+
+	soldiers = {
+		culture = tamil
+		religion = hindu
 		size = 3000
 	}
 
 	soldiers = {
 		culture = tamil
 		religion = hindu
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = tamil
-		religion = hindu
-		size= 500
-
+		size = 600
 	}
 
 	farmers = {
 		culture = tamil
 		religion = hindu
-		size = 323250
+		size = 322350
 	}
 
 	aristocrats = {
@@ -8317,16 +8325,16 @@
 	soldiers = {
 		culture = tamil
 		religion = sunni
-		size= 250
-
+		size = 250
 	}
 
 	farmers = {
 		culture = tamil
 		religion = sunni
-		size = 9475
+		size = 9920
 	}
 }
+
 #Madurai (1720000/430000 POPS)
 1310 = {
 	aristocrats = {
@@ -9304,7 +9312,8 @@
 }
 #Himalaya Region (56000) #see Nepal.txt and Bhutan.txt for balance of region
 #under the rule of Sikkim in 1836  
-#Gangtok (56000/14000 POPS)  #now part of India 
+#Tumlong (56000/14000 POPS)  #now part of India 
+#Animist - Lepcha Mun
 1328 = {
 	aristocrats = {
 		culture = nepali

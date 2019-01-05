@@ -3,6 +3,10 @@ controller = MDR
 add_core = MDR
 #add_core = TRA
 add_core = DRA
-trade_goods = sugar
+trade_goods = cotton
 life_rating = 32
-terrain = hilly_farmland
+fort = 1
+naval_base = 1
+1861.1.1 = { 
+	naval_base = 2 
+}

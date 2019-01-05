@@ -127,19 +127,19 @@ army = {
 	location = 528
 	regiment = {
 		name= "1.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 367
 	}
 
 	regiment = {
 		name= "2.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 367
 	}
 
 	regiment = {
 		name= "3.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 367
 	}
 
@@ -151,13 +151,13 @@ army = {
 
 	regiment = {
 		name= "1.2. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 372
 	}
 
 	regiment = {
 		name= "2.2. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 372
 	}
 
@@ -187,19 +187,19 @@ army = {
 	location = 546
 	regiment = {
 		name= "1.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 372
 	}
 
 	regiment = {
 		name= "2.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 372
 	}
 
 	regiment = {
 		name= "3.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 372
 	}
 
@@ -211,13 +211,13 @@ army = {
 
 	regiment = {
 		name= "1.2. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 330
 	}
 
 	regiment = {
 		name= "2.2. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 322
 	}
 
@@ -245,19 +245,19 @@ army = {
 	location = 354
 	regiment = {
 		name= "1.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 322
 	}
 
 	regiment = {
 		name= "2.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 313
 	}
 
 	regiment = {
 		name= "3.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 309
 	}
 
@@ -269,7 +269,7 @@ army = {
 
 	regiment = {
 		name= "1.2. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 308
 	}
 
@@ -317,51 +317,51 @@ army = {
 }
 
 army = {
-	name = "Finnish regular"
+	name = "Finnish infantry"
 	location = 343
 	regiment = {
 		name= "1.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 318
 	}
 
 	regiment = {
 		name= "2.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 343
 	}
 
 	regiment = {
 		name= "3.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 271
 	}
 }
 
 army = {
-	name = "Scottish regular"
+	name = "Scottish infantry"
 	location = 269
 	regiment = {
 		name= "1.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 322
 	}
 
 	regiment = {
 		name= "2.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 271
 	}
 
 	regiment = {
 		name= "3.1. Infanteridivision"
-		type = regular
+		type = infantry
 		home = 372
 	}
 }
 
 army = {
-	name = "Ayitian regular"
+	name = "Ayitian infantry"
 	location = 2215
 	regiment = {
 		name= "1.1. Infanteridivision"

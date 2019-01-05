@@ -5,13 +5,7 @@ government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_enlightenment
 literacy = 0.02
-minorities_reform = oppression
-immigration_policy = nobody_gets_out
-conscription=mandatory_service
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+
 # Political reforms
 slavery = yes_slavery
 upper_house_composition = party_appointed
@@ -29,6 +23,17 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
+school_reforms = no_schools
+
+# New Reforms
+conscription = no_draft
+debt_law = serfdom
+penal_system = capital_punishment
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
+border_policy = closed_borders
+
+set_country_flag = hindu_country
 
 ruling_party = AAA_conservative_3
 upper_house = {
@@ -43,18 +48,12 @@ upper_house = {
 
 # Level_2
 # Technologies
-early_classical_theory_and_critique = 1
-late_enlightenment_philosophy = 1
-enlightenment_thought = 1
-private_banks = 1
 
 # Inventions
 
 # Unciv Reforms
-diplomatic_reform = interactive
-academic_institutions = madrasahs
 admin_reform = yes_admin_reform
-taxation_reform = tax_farmers
+
 
 # Starting Consciousness
 consciousness = 0

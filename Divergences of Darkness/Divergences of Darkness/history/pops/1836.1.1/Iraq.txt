@@ -1,4 +1,4 @@
-#Mosul Region (492000) #mashriqi-assyrian = assyrian  
+#Mosul Region (492000) #mashriqi-catholic = assyrian  
 #under the rule of Ottoman Empire in 1836  
 #Mosul (228000/57000 POPS)
 923 = {
@@ -41,9 +41,15 @@
 	farmers = {
 		culture = mashriqi
 		religion = sunni
-		size = 12500
+		size = 12000
 	}
-
+	
+	farmers = {
+		culture = kurdish
+		religion = yazidi
+		size = 8000
+	}
+	
 	aristocrats = {
 		culture = turkish
 		religion = sunni
@@ -92,7 +98,6 @@
 		size = 200
 	}
 
-
 	clergymen = {
 		culture = kurdish
 		religion = sunni
@@ -109,9 +114,8 @@
 		culture = kurdish
 		religion = sunni
 		size= 1500
-
 	}
-
+	
 	farmers = {
 		culture = kurdish
 		religion = sunni
@@ -134,6 +138,30 @@
 		culture = assyrian
 		religion = assyrian
 		size = 26025
+	}
+	
+	aristocrats = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}
+	
+	officers = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}
+	
+	soldiers = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}
+
+	slaves = {
+		culture = azerbaijani
+		religion = assyrian
+		size = 500
 	}
 }
 #Arbil (104000/26000 POPS)
@@ -225,7 +253,7 @@
 	farmers = {
 		culture = kurdish
 		religion = sunni
-		size = 18775
+		size = 17450
 	}
 
 	clergymen = {
@@ -245,7 +273,20 @@
 		religion = assyrian
 		size = 14875
 	}
+	
+	farmers = {
+		culture = kurdish
+		religion = yazidi
+		size = 1325
+	}
+	
+	soldiers = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}
 }
+
 #Kirkuk (160000/40000 POPS)
 925 = {
 	aristocrats = {
@@ -355,7 +396,14 @@
 		religion = assyrian
 		size = 13875
 	}
+	
+	soldiers = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}
 }
+
 #Iraq Region (644000)
 #under the rule of Ottoman Empire in 1836
 #Baghdad (268000/67000 POPS)
@@ -399,7 +447,7 @@
 	farmers = {
 		culture = mashriqi
 		religion = sunni
-		size = 37450
+		size = 36450
 	}
 
 	aristocrats = {
@@ -571,6 +619,12 @@
 		religion = orthodox
 		size= 3000
 
+	}
+	
+	slaves = {
+		culture = forest_bantu #african_minor
+		religion = animist
+		size = 1000
 	}
 }
 #Samarra (92000/23000 POPS)
@@ -745,7 +799,14 @@
 		religion = assyrian
 		size = 2305
 	}
+	
+	soldiers = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}
 }
+
 #Karbala (100000/25000 POPS)
 929 = {
 	aristocrats = {

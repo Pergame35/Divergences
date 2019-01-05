@@ -1,4 +1,13 @@
+add_core = BTV
+add_core = LWE
+
+add_core = SAF
+
 trade_goods = grain
 life_rating = 25
-terrain = desert_hills
-add_core = BTV
+terrain = semidesert
+1861.1.1 = {
+	owner = ENG
+	controller = ENG
+	add_core = SAF
+}

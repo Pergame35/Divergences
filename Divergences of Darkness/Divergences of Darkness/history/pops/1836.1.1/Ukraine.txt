@@ -161,6 +161,12 @@
 #under the rule of Russia in 1836 
 #Ismail (332000/83000 POPS)  
 678 = {
+	farmers = {
+		culture = gypsy
+		religion = orthodox
+		size = 100
+	}
+	
 	aristocrats = {
 		culture = romanian
 		religion = orthodox
@@ -585,6 +591,12 @@
 		religion = catholic
 		size = 1825
 	}
+	
+	serfs = {
+		culture = gypsy
+		religion = orthodox
+		size = 1000
+	}
 }
 #Stryi (404000/101000 POPS) #now part of Ukraine  
 951 = {
@@ -894,6 +906,12 @@
 		culture = south_german
 		religion = catholic
 		size = 920
+	}
+	
+	serfs = {
+		culture = gypsy
+		religion = orthodox
+		size = 1000
 	}
 }
 #Volhynia-Podolia Region (1892000)
@@ -1428,7 +1446,6 @@
 		culture = russian
 		religion = orthodox
 		size= 100
-
 	}
 }
 #Korosten (448000/112000 POPS)

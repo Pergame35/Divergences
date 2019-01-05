@@ -1,7 +1,10 @@
 owner = SCA
 controller = SCA
 add_core = SFJ
-trade_goods = tobacco
-life_rating = 35
-terrain = seasonal_jungle_mountains
 colonial = 2
+trade_goods = coffee
+life_rating = 35
+1861.1.1 = {
+owner = DOM
+controller = DOM
+}

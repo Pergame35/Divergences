@@ -715,36 +715,41 @@
 }
 #Bozen (92000/23000 POPS) #now part of Italy
 735 = {
-	aristocrats = {
-		culture = south_german
-		religion = catholic
-		size = 250 
-	}
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 150
+    }
 
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size =  200
-	}
+    artisans = {
+        culture = south_german
+        religion = catholic
+        size = 1500
+    }
 
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 2000
-	}
+    farmers = {
+        culture = south_german
+        religion = catholic
+        size = 14950
+    }
 
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size= 200
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 50
+    }
 
-	}
+    artisans = {
+        culture = south_german
+        religion = catholic
+        size = 500
+    }
 
-	farmers = {
-		culture = south_german
-		religion = catholic
-		size = 20350
-	}
+    farmers = {
+        culture = south_german
+        religion = catholic
+        size = 5400
+    }
 }
 #Friuli-Istria Region (292000) #see Croatia.txt for balance of region 
 #under the rule of Austria in 1836
@@ -1473,8 +1478,7 @@
 	soldiers = {
 		culture = south_italian
 		religion = catholic
-		size= 1100
-
+		size = 1100
 	}
 
 	farmers = {
@@ -1801,11 +1805,15 @@
 		religion = catholic
 		size = 107800
 	}
-	
+	farmers = {
+		culture = albanian
+		religion = catholic
+		size = 4000
+	}	
 	farmers = {
 		culture = catalan
 		religion = catholic
-		size = 20000
+		size = 16000
 	}
 }
 #Foggia (572000/143000 POPS)
@@ -1863,13 +1871,19 @@
 	farmers = {
 		culture = south_italian
 		religion = catholic
-		size = 53000
+		size = 49000
 	}
 	
 	farmers = {
 		culture = catalan
 		religion = catholic
 		size = 10000
+	}
+	
+	farmers = {
+		culture = albanian
+		religion = catholic
+		size = 4000
 	}
 }
 #Calabria-Basilicata Region (1488000)
@@ -1916,13 +1930,25 @@
 	farmers = {
 		culture = south_italian
 		religion = catholic
-		size = 107700
+		size = 100700
 	}
 	
 	farmers = {
 		culture = catalan
 		religion = catholic
-		size = 20000
+		size = 19000
+	}
+	
+	farmers = {
+		culture = albanian
+		religion = orthodox
+		size = 6000
+	}
+	
+	farmers = {
+		culture = greek
+		religion = orthodox
+		size = 2000
 	}
 }
 #Catanzaro (344000/86000 POPS)
@@ -1955,13 +1981,19 @@
 	farmers = {
 		culture = south_italian
 		religion = catholic
-		size = 67675
+		size = 64125
 	}
 	
 	farmers = {
 		culture = catalan
 		religion = catholic
 		size = 12000
+	}
+	
+	farmers = {
+		culture = albanian
+		religion = orthodox
+		size = 3550
 	}
 }
 #Potenza (572000/143000 POPS)
@@ -2070,7 +2102,13 @@
 	farmers = {
 		culture = catalan
 		religion = catholic
-		size = 43000
+		size = 38550
+	}
+	
+	farmers = {
+		culture = albanian
+		religion = orthodox
+		size = 4450
 	}
 }
 #Messina (352000/88000 POPS)
@@ -2102,8 +2140,15 @@
 	farmers = {
 		culture = south_italian
 		religion = catholic
-		size = 55150
+		size = 53150
 	}
+	
+	farmers = {
+		culture = albanian
+		religion = orthodox
+		size = 2000
+	}
+	
 }
 #Catania (720000/180000 POPS)
 764 = {
@@ -2134,7 +2179,13 @@
 	farmers = {
 		culture = south_italian
 		religion = catholic
-		size = 109000
+		size = 108000
+	}
+	
+	farmers = {
+		culture = greek
+		religion = orthodox
+		size = 1000
 	}
 }
 #Sardinia Region (524000)
@@ -2244,4 +2295,101 @@
 		religion = catholic
 		size = 22000
 	}
+
 }
+
+#Pescara - Former Inuvik (4000/1000 POPS) -- Replaced croats with catalans
+10 = {
+	clergymen = {
+		culture = south_italian
+		religion = catholic
+		size = 600
+	}
+
+	artisans = {
+		culture = south_italian
+		religion = catholic
+		size = 3125
+	}
+
+	soldiers = {
+		culture = south_italian
+		religion = catholic
+		size = 1000
+	}
+
+	farmers = {
+		culture = south_italian
+		religion = catholic
+		size = 60000
+	}
+
+	farmers = {
+		culture = catalan
+		religion = catholic
+		size = 3000
+	}
+}
+
+#Belluno - Former Ross River (4000/1000 POPS)
+8 = {
+	clergymen = {
+		culture = venetian
+		religion = catholic
+		size = 100
+	}
+
+	artisans = {
+		culture = venetian
+		religion = catholic
+		size = 500
+	}
+
+	soldiers = {
+		culture = venetian
+		religion = catholic
+		size = 300
+	}
+
+	farmers = {
+		culture = venetian
+		religion = catholic
+		size = 17600
+	}
+
+	farmers = {
+		culture = south_german
+		religion = catholic
+		size = 1000
+	}
+
+}
+
+#Sondrio - former Amga (6000/1500 POPS)
+2669 = {
+	clergymen = {
+		culture = north_italian
+		religion = catholic
+		size = 100
+	}
+
+	artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 500
+	}
+
+	soldiers = {
+		culture = north_italian
+		religion = catholic
+		size = 300
+	}
+
+	farmers = {
+		culture = north_italian
+		religion = catholic
+		size = 30000
+	}
+
+}
+

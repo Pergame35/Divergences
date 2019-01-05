@@ -18,20 +18,20 @@ army = {
 	name = "Joseon Army"
 	location = 1624
 	regiment = {
-		name= "1.Royal regular"
-		type = regular
+		name= "1.Royal infantry"
+		type = infantry
 		home = 1624
 	}
 
 	regiment = {
-		name= "2. Royal regular"
-		type = regular
+		name= "2. Royal infantry"
+		type = infantry
 		home = 1624
 	}
 
 	regiment = {
-		name= "3. Royal regular"
-		type = regular
+		name= "3. Royal infantry"
+		type = infantry
 		home = 1635
 	}
   
@@ -49,17 +49,17 @@ army = {
   
 	regiment = {
 		name= "1. infantry"
-		type = regular
+		type = infantry
 		home = 1635
 	}   
 	regiment = {
 		name= "2. infantry"
-		type = regular
+		type = infantry
 		home = 1620
 	}
 	regiment = {
 		name= "3. infantry"
-		type = regular
+		type = infantry
 		home = 1620
 	}
 

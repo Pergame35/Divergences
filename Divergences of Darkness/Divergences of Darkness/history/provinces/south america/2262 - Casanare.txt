@@ -4,13 +4,10 @@ add_core = CLM
 add_core = CAS
 add_core = SAN
 add_core = GRA
-add_core = TAP 
-trade_goods = tropical_wood
-life_rating = 25
-terrain = marsh
-
-
-
+add_core = TAP
+trade_goods = cattle
+terrain = savanna
+life_rating = 35
 1835.1.1 = {
 	controller = SPA
 } 

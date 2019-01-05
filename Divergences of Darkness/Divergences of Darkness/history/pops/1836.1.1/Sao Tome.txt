@@ -2,75 +2,64 @@
 #Under Portuguese Rule 1836
 #Sao Tome (16000/4000 POPS)
 1954 = {
-    aristocrats = {
-        culture = castilian
-        religion = catholic
-        size = 20
-    }
+	aristocrats = {
+		culture = castillian
+		religion = catholic
+		size = 20
+	}
 
-    officers = {
-        culture = castilian
-        religion = catholic
-        size = 1
-    }
+	clergymen = {
+		culture = castillian
+		religion = catholic
+		size = 5
+	}
 
-    clergymen = {
-        culture = castilian
-        religion = catholic
-        size = 5
-    }
+	bureaucrats = {
+		culture = castillian
+		religion = catholic
+		size = 5
+	}
 
-    bureaucrats = {
-        culture = castilian
-        religion = catholic
-        size = 5
-    }
+	artisans = {
+		culture = castillian
+		religion = catholic
+		size = 5
+	}
 
-    officers = {
-        culture = castilian
-        religion = catholic
-        size = 12
-    }
+	soldiers = {
+		culture = castillian
+		religion = catholic
+		size = 5
+	}
 
-    artisans = {
-        culture = castilian
-        religion = catholic
-        size = 5
-    }
+	clergymen = {
+		culture = kreol
+		religion = catholic
+		size = 50
+	}
 
-    soldiers = {
-        culture = castilian
-        religion = catholic
-        size = 5
-    }
+	artisans = {
+		culture = kreol
+		religion = catholic
+		size = 200
+	}
 
-    clergymen = {
-        culture = african_minor
-        religion = catholic
-        size = 50
-    }
+	soldiers = {
+		culture = kreol
+		religion = catholic
+		size = 100
+	}
 
-    artisans = {
-        culture = african_minor
-        religion = catholic
-        size = 200
-    }
+	farmers = {
+		culture = kreol
+		religion = catholic
+		size = 550
+	}
 
-    soldiers = {
-        culture = african_minor
-        religion = catholic
-        size = 100
-    }
+	slaves = {
+		culture = forest_bantu
+		religion = animist
+		size = 3450
+	}
 
-    farmers = {
-        culture = african_minor
-        religion = catholic
-        size = 550
-    }
-
-    slaves = {
-        culture = african_minor
-        religion = catholic
-        size = 3450
-    }
 }

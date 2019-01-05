@@ -61,7 +61,7 @@
 	farmers = {
 		culture = bedouin
 		religion = sunni
-		size = 1675
+		size = 1575
 	}
 
 	clergymen = {
@@ -75,6 +75,13 @@
 		religion = druze
 		size = 1000
 	}
+
+	farmers = {
+		culture = circassian
+		religion = sunni
+		size = 100
+	}
+	
 }
 #Jerash (16000/4000 POPS) #now part of Jordan
 909 = {
@@ -141,7 +148,7 @@
 }
 #Badiyat al-Sham Region (40000)  #see Syria.txt, Iraq.txt & Saudi Arabia.txt for balance of region
 #under the "rule" of Egypt in 1836  
-#Ruwayshid (12000/3000 POPS) #now part of Jordan 
+#Azraq (12000/3000 POPS) #now part of Jordan 
 910 = {
 	aristocrats = {
 		culture = bedouin
@@ -173,7 +180,7 @@
 		size = 2725
 	}
 }
-#Maan (12000/3000 POPS) #now part of Jordan
+#Maan (28000/7000 POPS) #now part of Jordan
 911 = {
 
 	aristocrats = {
@@ -266,5 +273,4 @@
 		religion = sunni
 		size = 2775
 	}
-
 }

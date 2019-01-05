@@ -7,6 +7,7 @@ nationalvalue = nv_order
 literacy = 0.55
 civilized = yes
 
+
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
@@ -16,9 +17,6 @@ press_rights = censored_press
 trade_unions = non_socialist
 voting_system = first_past_the_post
 political_parties = non_secret_ballots
-minorities_reform = limited
-immigration_policy = open_immigration
-conscription = no_draft
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -27,10 +25,16 @@ safety_regulations = trinket_safety
 health_care = trinket_health_care
 unemployment_subsidies = trinket_subsidies
 pensions = no_pensions
-pollution = no_controls
-child_labor = child_labor_restricted
-arts_endowment = no_endowment
-education = elite
+school_reforms = no_schools
+
+# New Reforms
+conscription = two_year_draft
+debt_law = peonage
+penal_system = capital_punishment
+child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 ruling_party = AAA_liberal_2
 last_election = 1835.2.6
@@ -43,4 +47,10 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+govt_flag = {
+	government = absolute_monarchy
+	flag = theocracy
+}
+
 

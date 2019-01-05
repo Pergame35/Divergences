@@ -1,6 +1,12 @@
-
-add_core = KKN
-trade_goods = fish
-life_rating = 10
-terrain = tundra_hills
-colonial = 1 
+owner = ARA
+controller = ARA
+add_core = ARA
+add_core = ITA
+add_core = SIC
+trade_goods = timber
+life_rating = 35
+1861.1.1 = {
+	controller = ITA
+	owner = ITA
+	add_core = ITA
+}

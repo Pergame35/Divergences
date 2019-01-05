@@ -27,19 +27,19 @@ army = {
 	location = 720
 	regiment = {
 		name= "1.Carabinieri"
-		type = regular
+		type = infantry
 		home = 720
 	}
 
 	regiment = {
 		name= "2.Carabinieri"
-		type = regular
+		type = infantry
 		home = 720
 	}
 
 	regiment = {
 		name= "3.Carabinieri"
-		type = regular
+		type = infantry
 		home = 720
 	}
 
@@ -61,13 +61,13 @@ army = {
 	location = 721
 	regiment = {
 		name= "1.Bersaglieri"
-		type = regular
+		type = infantry
 		home = 465
 	}
 
 	regiment = {
 		name = "2.Bersaglieri"
-		type = regular
+		type = infantry
 		home = 465
 	}
 

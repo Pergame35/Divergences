@@ -9,7 +9,7 @@ civilized = yes
 prestige = 15
 
 # Political reforms
-slavery = yes_slavery
+slavery = no_slavery
 upper_house_composition = state_equal_weight
 vote_franschise = universal_weighted_voting
 public_meetings = yes_meeting
@@ -17,20 +17,25 @@ press_rights = free_press
 trade_unions = all_trade_unions
 voting_system = first_past_the_post
 political_parties = gerrymandering
-minorities_reform = limited
-immigration_policy = open_immigration
-conscription=no_draft
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+
 # Social Reforms
 wage_reform = no_minimum_wage
-work_hours = ten_hours
+work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions
+pensions = no_pensions 
+school_reforms = no_schools
+
+# New Reforms
+conscription = no_draft
+debt_law = debtors_prisons
+penal_system = capital_punishment
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 ruling_party = AAA_conservative_4
 last_election = 1828.12.3
@@ -67,21 +72,14 @@ freedom_of_trade = 1
 stock_exchange = 1
 ad_hoc_money_bill_printing = 1
 guild_based_production = 1
-water_wheel_power = 1
-publishing_industry = 1
+piston_steam_engine = 1
 mechanized_mining = 1
 basic_chemistry = 1
-practical_steam_engine = 1
+high_pressure_steam_engine = 1
 experimental_railroad = 1
 
 #Inventions
 #corvettes = yes
-authoritarianism = yes
-hierarchical_order = yes
-traditionalism = yes
-political_religion = yes
-paternalism = yes
-
 
 # Starting Consciousness
 consciousness = 2

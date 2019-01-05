@@ -1,6 +1,9 @@
 owner = CHP
 controller = CHP
 add_core = CHP
-trade_goods = fish
-life_rating = 30
-terrain = good_farmland
+trade_goods = grain
+life_rating = 40
+naval_base = 1
+1861.1.1 = {
+	controller = FRA
+}

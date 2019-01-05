@@ -2,8 +2,10 @@ owner = SPA
 controller = SPA
 add_core = SPA
 add_core = GAL
+naval_base = 1
 trade_goods = fish
 life_rating = 35
-terrain = forested_farmland
-naval_base = 1
-
+1861.1.1 = { 
+	railroad = 3 
+	naval_base = 1
+}

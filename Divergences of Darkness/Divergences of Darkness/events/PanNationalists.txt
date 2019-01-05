@@ -14,7 +14,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "96200.A"
+		name = "EVT96200OPTA"
 		set_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		capital_scope = {
@@ -149,7 +149,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "96205.A"
+		name = "EVT96200OPTA"
 		set_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		capital_scope = {
@@ -180,6 +180,7 @@ country_event = {
 			limit = {
 				is_culture_group = italian
 				NOT = { exists = ITA }
+				NOT = { government = theocracy }
 				OR = {
 					has_country_flag = made_the_call_to_union
 					is_greater_power = yes
@@ -269,7 +270,7 @@ country_event = {
 					factor = 5
 				}
 			}
-		}			
+		}
 	}
 }
 
@@ -283,7 +284,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "96210.A"
+		name = "EVT96200OPTA"
 		set_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		capital_scope = {
@@ -801,7 +802,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "96215.A"
+		name = "EVT96215OPTA"
 		any_pop = {
 			limit = { is_culture_group = south_asian }
 			militancy = -6
@@ -856,24 +857,24 @@ country_event = {
 					OR = {
 						AND = {
 							tag = DRA
-							HDU = { exists = no }
-							MRT = { exists = no }
+							#HDU = { exists = no }
+							#MRT = { exists = no }
 							NOT = { any_greater_power = { is_culture_group = south_asian } }
 						}
-						AND = {
-							tag = HDU
-							NOT = { any_greater_power = { is_culture_group = south_asian } }
-						}
-						AND = {
-							tag = MRT
-							HDU = { exists = no }
-							NOT = { any_greater_power = { is_culture_group = south_asian } }
-						}
+						#AND = {
+						#	tag = HDU
+						#	NOT = { any_greater_power = { is_culture_group = south_asian } }
+						#}
+						#AND = {
+						#	tag = MRT
+						#	HDU = { exists = no }
+						#	NOT = { any_greater_power = { is_culture_group = south_asian } }
+						#}
 						AND = {
 							is_secondary_power = yes
 							DRA = { exists = no }
-							HDU = { exists = no }
-							MRT = { exists = no }
+							#HDU = { exists = no }
+							#MRT = { exists = no }
 							NOT = { any_greater_power = { is_culture_group = south_asian } }
 						}
 						is_greater_power = yes
@@ -929,7 +930,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "96216.A"
+		name = "EVT96216OPTA"
 		set_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		random_owned = {
@@ -984,19 +985,19 @@ country_event = {
 					OR = {
 						AND = {
 							tag = DRA
-							HDU = { exists = no }
-							MRT = { exists = no }
+							#HDU = { exists = no }
+							#MRT = { exists = no }
 							NOT = { any_greater_power = { is_culture_group = south_asian } }
 						}
-						AND = {
-							tag = MRT
-							HDU = { exists = no }
-							NOT = { any_greater_power = { is_culture_group = south_asian } }
-						}
-						AND = {
-							tag = HDU
-							NOT = { any_greater_power = { is_culture_group = south_asian } }
-						}
+						#AND = {
+						#	tag = MRT
+						#	HDU = { exists = no }
+						#	NOT = { any_greater_power = { is_culture_group = south_asian } }
+						#}
+						#AND = {
+						#	tag = HDU
+						#	NOT = { any_greater_power = { is_culture_group = south_asian } }
+						#}
 						is_greater_power = yes
 					}
 				}
@@ -1011,19 +1012,19 @@ country_event = {
 				OR = {
 					AND = {
 						tag = DRA
-						HDU = { exists = no }
-						MRT = { exists = no }
+						#HDU = { exists = no }
+						#MRT = { exists = no }
 						NOT = { any_greater_power = { is_culture_group = south_asian } }
 					}
-					AND = {
-						tag = MRT
-						HDU = { exists = no }
-						NOT = { any_greater_power = { is_culture_group = south_asian } }
-					}
-					AND = {
-						tag = HDU
-						NOT = { any_greater_power = { is_culture_group = south_asian } }
-					}
+					#AND = {
+					#	tag = MRT
+					#	HDU = { exists = no }
+					#	NOT = { any_greater_power = { is_culture_group = south_asian } }
+					#}
+					#AND = {
+					#	tag = HDU
+					#	NOT = { any_greater_power = { is_culture_group = south_asian } }
+					#}
 					is_greater_power = yes
 				}
 				HND = { exists = no }
@@ -1065,8 +1066,8 @@ country_event = {
 				NOT = {
 					any_greater_power = { is_culture_group = south_asian }
 					exists = DRA
-					exists = HDU
-					exists = MRT
+					#exists = HDU
+					#exists = MRT
 					exists = HND
 				}
 			}
@@ -1094,8 +1095,8 @@ country_event = {
 				NOT = {
 					any_greater_power = { is_culture_group = south_asian }
 					exists = DRA
-					exists = HDU
-					exists = MRT
+					#exists = HDU
+					#exists = MRT
 					exists = HND
 				}
 			}
@@ -1131,8 +1132,8 @@ country_event = {
 				NOT = {
 					any_greater_power = { is_culture_group = south_asian }
 					exists = DRA
-					exists = HDU
-					exists = MRT
+					#exists = HDU
+					#exists = MRT
 					exists = HND
 				}
 			}
@@ -1161,8 +1162,8 @@ country_event = {
 				NOT = {
 					any_greater_power = { is_culture_group = south_asian }
 					exists = DRA
-					exists = HDU
-					exists = MRT
+					#exists = HDU
+					#exists = MRT
 					exists = HND
 				}
 			}
@@ -1239,7 +1240,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "96217.A"
+		name = "EVT96200OPTA"
 		set_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = refused_kalmar_union
@@ -1421,7 +1422,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "96220.A"
+		name = "EVT96200OPTA"
 		set_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		capital_scope = {

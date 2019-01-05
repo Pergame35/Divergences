@@ -3,9 +3,8 @@ controller = BOH
 add_core = BOH
 add_core = BRN
 add_core = GER
-trade_goods = timber
-life_rating = 39
-terrain = forested_farmland
+trade_goods = fruit
+life_rating = 40
 state_building = {
 	level = 2
 	building = steel_factory
@@ -16,6 +15,3 @@ state_building = {
 	building = luxury_clothes_factory
 	upgrade = yes
 }
-
-
-

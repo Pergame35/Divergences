@@ -1,6 +1,13 @@
 owner = VIN
 controller = VIN
 add_core = VIN
-trade_goods = timber
+trade_goods = grain
 life_rating = 35
-terrain = conifer_forest_hills
+1861.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	remove_core = MRU
+	remove_core = NEN
+	colonial = 0
+}

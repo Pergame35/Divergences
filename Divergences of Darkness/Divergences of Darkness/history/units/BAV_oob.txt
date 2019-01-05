@@ -19,19 +19,19 @@ army = {
 	location = 599
 	regiment = {
 		name= "1. Kgl. Bayer. Infanteriebrigade"
-		type = regular
+		type = infantry
 		home = 595
 	}
 
 	regiment = {
 		name= "2. Kgl. Bayer. Infanteriebrigade"
-		type = regular
+		type = infantry
 		home = 595
 	}
 
 	regiment = {
 		name= "3. Kgl. Bayer. Infanteriebrigade"
-		type = regular
+		type = infantry
 		home = 595
 	}
 
@@ -48,13 +48,13 @@ army = {
 	location = 595
 	regiment = {
 		name= "5. Kgl. Bayer. Infanteriebrigade"
-		type = regular
+		type = infantry
 		home = 599
 	}
 
 	regiment = {
 		name= "6. Kgl. Bayer. Infanteriebrigade"
-		type = regular
+		type = infantry
 		home = 599
 	}
 }

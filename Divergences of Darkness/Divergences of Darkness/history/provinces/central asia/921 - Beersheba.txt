@@ -5,5 +5,9 @@ add_core = TUR
 add_core = PLS
 add_core = SYR
 trade_goods = grain
-life_rating = 35
-terrain = desert_hills
+life_rating = 10
+terrain = desert
+1861.1.1 = {
+	controller = TUR 
+	owner = TUR
+}

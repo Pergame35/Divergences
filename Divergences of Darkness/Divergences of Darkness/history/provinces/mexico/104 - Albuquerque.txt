@@ -3,8 +3,12 @@ controller = CLM
 add_core = CLM
 add_core = LST
 add_core = DIN
-
-
-trade_goods = cattle
+trade_goods = fruit
 life_rating = 35
-terrain = hilly_grassland
+1861.1.1 = {
+	controller = USA
+	owner = USA
+	add_core = USA
+	remove_core = MEX
+	colonial = 0
+}

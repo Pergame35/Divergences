@@ -3,6 +3,12 @@ controller = TRN
 add_core = TRN
 add_core = BSH
 add_core = BTV
-trade_goods = grain
+trade_goods = coal
 life_rating = 15
-terrain = hilly_grassland
+1861.1.1 = {
+	owner = TRN
+	controller = TRN
+	add_core = SAF
+	remove_core = BSH
+	life_rating = 35
+}

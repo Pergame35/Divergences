@@ -8,28 +8,30 @@ literacy = 0.15
 civilized = yes
 
 # Political reforms
-slavery = no_slavery
+slavery = yes_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting
-public_meetings = no_meeting
-press_rights = censored_press
+public_meetings = yes_meeting
+press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = underground_parties
-minorities_reform = oppression
-immigration_policy = quota_immigration
-conscription=four_year_draft
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions
+pensions = no_pensions 
+school_reforms = no_schools
+
+#New Reforms
+conscription = four_year_draft
+debt_law = peonage
+penal_system = capital_punishment
+child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = AAA_conservative_2
 upper_house = {
@@ -42,8 +44,9 @@ upper_house = {
 	communist = 0
 }
 
-oob = "ALB_oob.txt"
+set_country_flag = sunni_country
 
+oob = "ALB_oob.txt"
 
 post_napoleonic_thought = 1
 flintlock_rifles = 1
@@ -53,4 +56,4 @@ no_standard = 1
 guild_based_production = 1
 classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
-water_wheel_power = 1
+piston_steam_engine = 1

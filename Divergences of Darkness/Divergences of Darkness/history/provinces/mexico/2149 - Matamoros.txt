@@ -1,11 +1,8 @@
 owner = CLM
-
 controller = CLM
 add_core = CLM
 add_core = AZT
 add_core = MEX
-
-
+terrain = new_world_semidesert
 trade_goods = cattle
-life_rating = 35
-terrain = dry_grassland
+life_rating = 30

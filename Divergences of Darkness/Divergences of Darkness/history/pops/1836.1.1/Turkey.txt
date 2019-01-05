@@ -52,12 +52,6 @@
 		size = 8000
 	}
 
-	farmers = {
-		culture = greek
-		religion = orthodox
-		size = 4825
-	}
-
 	clergymen = {
 		culture = bulgarian
 		religion = orthodox
@@ -105,6 +99,18 @@
 		religion = jewish
 		size = 2450
 	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 500
+	}
+
+	farmers = {
+		culture = greek
+		religion = orthodox
+		size = 11525
+	}
 }
 #Kirklareli (112000/28000 POPS)
 858 = {
@@ -151,12 +157,6 @@
 		size = 550
 	}
 
-	farmers = {
-		culture = greek
-		religion = orthodox
-		size = 7100
-	}
-
 	clergymen = {
 		culture = bulgarian
 		religion = orthodox
@@ -192,6 +192,18 @@
 		religion = jewish
 		size = 445
 	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
+
+	farmers = {
+		culture = greek
+		religion = orthodox
+		size = 17100
+	}
 }
 #Gelibolu (80000/20000 POPS)
 859 = {
@@ -226,22 +238,10 @@
 		size = 8975
 	}
 
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 75
-	}
-
 	artisans = {
 		culture = greek
 		religion = orthodox
 		size = 450
-	}
-
-	farmers = {
-		culture = greek
-		religion = orthodox
-		size = 8225
 	}
 
 	bureaucrats = {
@@ -260,6 +260,24 @@
 		culture = sephardic
 		religion = jewish
 		size = 445
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 300
+	}
+	
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 150
+	}
+
+	farmers = {
+		culture = greek
+		religion = orthodox
+		size = 18225
 	}
 }
 #Istanbul Region (1268000)
@@ -445,6 +463,42 @@
 		religion = catholic
 		size = 3675
 	}
+	
+	aristocrats = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	officers = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 300
+	}
+
+	slaves = {
+		culture = greek
+		religion = orthodox
+		size = 500
+	}
+
+	slaves = {
+		culture = circassian
+		religion = orthodox
+		size = 500
+	}
+
+	slaves = {
+		culture = forest_bantu #african_minor
+		religion = animist
+		size = 3500
+	}
 }
 #Uskudar (188000/47000 POPS)
 861 = {
@@ -514,6 +568,12 @@
 		religion = coptic
 		size = 3450
 	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 125
+	}
 }
 #Izmit (316000/79000 POPS)
 862 = {
@@ -582,6 +642,18 @@
 		culture = armenian
 		religion = coptic
 		size = 13375
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+
+	slaves = {
+		culture = forest_bantu #african_minor
+		religion = animist
+		size = 500
 	}
 }
 #Hudavendigar Region (736000)
@@ -684,6 +756,30 @@
 		religion = jewish
 		size = 1350
 	}
+	
+	aristocrats = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	officers = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 300
+	}
+
+	slaves = {
+		culture = armenian
+		religion = orthodox
+		size = 1000
+	}
 }
 #Balikesir (204000/51000 POPS)
 864 = {
@@ -718,12 +814,6 @@
 		size = 38325
 	}
 
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 100
-	}
-
 	artisans = {
 		culture = greek
 		religion = orthodox
@@ -734,6 +824,18 @@
 		culture = greek
 		religion = orthodox
 		size = 12475
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 150
+	}
+
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 120
 	}
 }
 #Chanakkale (132000/33000 POPS)
@@ -769,12 +871,6 @@
 		size = 25600
 	}
 
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 100
-	}
-
 	artisans = {
 		culture = greek
 		religion = orthodox
@@ -785,6 +881,18 @@
 		culture = greek
 		religion = orthodox
 		size = 11800
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 120
 	}
 }
 #Karahisar Region (336000)
@@ -822,12 +930,6 @@
 		size = 17400
 	}
 
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 40
-	}
-
 	artisans = {
 		culture = greek
 		religion = orthodox
@@ -856,6 +958,18 @@
 		culture = armenian
 		religion = coptic
 		size = 2100
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
+
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 120
 	}
 }
 #Kutahya (112000/28000 POPS)
@@ -900,12 +1014,6 @@
         rebel_type = reactionary_rebels
 	}
 
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 65
-	}
-
 	artisans = {
 		culture = greek
 		religion = orthodox
@@ -916,6 +1024,18 @@
 		culture = greek
 		religion = orthodox
 		size = 5930
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 120
 	}
 }
 #Eskisehir (140000/35000 POPS)
@@ -1010,6 +1130,12 @@
 		culture = armenian
 		religion = coptic
 		size = 2010
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
 	}
 }
 #Aydin Region (988000)
@@ -1131,6 +1257,24 @@
 		religion = jewish
 		size = 5250
 	}
+
+	aristocrats = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	officers = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
 }
 #Manisa (244000/61000 POPS)
 870 = {
@@ -1165,12 +1309,6 @@
 		size = 46200
 	}
 
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 100
-	}
-
 	artisans = {
 		culture = greek
 		religion = orthodox
@@ -1181,6 +1319,18 @@
 		culture = greek
 		religion = orthodox
 		size = 4450
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
+
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 120
 	}
 }
 #Denizli (308000/77000 POPS)
@@ -1209,12 +1359,6 @@
 		size = 67750
 	}
 
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 105
-	}
-
 	artisans = {
 		culture = greek
 		religion = orthodox
@@ -1225,6 +1369,18 @@
 		culture = greek
 		religion = orthodox
 		size = 5725
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
+
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 120
 	}
 }
 #Mugla (96000/24000 POPS)
@@ -1260,12 +1416,6 @@
 		size = 20175
 	}
 
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 45
-	}
-
 	artisans = {
 		culture = greek
 		religion = orthodox
@@ -1276,6 +1426,18 @@
 		culture = greek
 		religion = orthodox
 		size = 3875
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
+
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 120
 	}
 }
 #Karaman Region (820000)
@@ -1360,6 +1522,30 @@
 		religion = coptic
 		size = 1930
 	}
+
+	aristocrats = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	officers = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
+	
+	slaves = {
+		culture = forest_bantu #african_minor
+		religion = animist
+		size = 2000
+	}
 }
 #Burdur (200000/50000 POPS)
 874 = {
@@ -1394,12 +1580,6 @@
 		size = 43025
 	}
 
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 90
-	}
-
 	artisans = {
 		culture = greek
 		religion = orthodox
@@ -1428,6 +1608,18 @@
 		culture = armenian
 		religion = coptic
 		size = 1530
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
+
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 120
 	}
 }
 #Antalya (204000/51000 POPS)
@@ -1472,13 +1664,6 @@
         rebel_type = reactionary_rebels
 	}
 
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 85
-		
-	}
-
 	artisans = {
 		culture = greek
 		religion = orthodox
@@ -1489,6 +1674,18 @@
 		culture = greek
 		religion = orthodox
 		size = 6800
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
+
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 120
 	}
 }
 #Central Anatolia Region (692000)
@@ -1586,6 +1783,24 @@
 		religion = coptic
 		size = 6700
 	}
+	
+	aristocrats = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	officers = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
 }
 #Amasya (132000/33000 POPS)
 877 = {
@@ -1655,6 +1870,12 @@
 		religion = coptic
 		size = 3875
 	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
 }
 #Kayseri (96000/24000 POPS)
 878 = {
@@ -1723,6 +1944,18 @@
 		culture = armenian
 		religion = coptic
 		size = 20575
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
+
+	slaves = {
+		culture = north_caucasian
+		religion = orthodox
+		size = 1000
 	}
 }
 #Sivas (224000/56000 POPS)
@@ -1802,6 +2035,12 @@
 		religion = coptic
 		size = 12475
 	}
+
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
 }
 #Kastamonu Region (392000)
 #under the rule of Ottoman Empire in 1836
@@ -1880,6 +2119,24 @@
 		religion = orthodox
 		size = 5925
 	}
+	
+	aristocrats = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	officers = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
 }
 #Bolu (96000/24000 POPS)
 881 = {
@@ -1930,6 +2187,12 @@
 		culture = greek
 		religion = orthodox
 		size = 5925
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
 	}
 }
 #Trebizonde Region (540000)
@@ -2031,6 +2294,24 @@
 		religion = sunni
 		size = 4650
 	}
+	
+	aristocrats = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	officers = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
+	}
 }
 #Sinop (192000/48000 POPS)
 883 = {
@@ -2087,6 +2368,12 @@
 		culture = north_caucasian
 		religion = sunni
 		size = 2500
+	}
+
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
 	}
 }
 #Giresun (140000/35000 POPS)
@@ -2162,6 +2449,12 @@
 		culture = north_caucasian
 		religion = sunni
 		size = 2200
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 110
 	}
 }
 #Kars Region (856000) #see Georgia.txt for balance of region 
@@ -2270,6 +2563,42 @@
 		culture = kurdish
 		religion = sunni
 		size = 32950
+	}
+	
+	aristocrats = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	officers = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	artisans = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	farmers = {
+		culture = greek
+		religion = orthodox
+		size = 3000
 	}
 }
 #Ardahan (448000/112000 POPS)
@@ -2382,6 +2711,36 @@
 		culture = north_caucasian
 		religion = sunni
 		size = 800
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 150
+	}
+	
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	artisans = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+
+	farmers = {
+		culture = greek
+		religion = orthodox
+		size = 5000
+	}
+	
+	slaves = {
+		culture = georgian
+		religion = orthodox
+		size = 1500
 	}
 }
 #Eastern Anatolia Region (676000)
@@ -2626,19 +2985,19 @@
 
 	clergymen = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 175
 	}
 
 	artisans = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 555
 	}
 
 	farmers = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 7975
 	}
 
@@ -2680,6 +3039,12 @@
 		size = 25875
 		 militancy = 8
         rebel_type = nationalist_rebels
+	}
+	
+	soldiers = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
 	}
 }
 #Kurdistan Region (720000)
@@ -2747,21 +3112,39 @@
 		size = 23875
 	}
 
+	aristocrats = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}
+	
+	officers = {
+		culture = assyrian
+		religion = assyrian
+		size = 50
+	}
+	
+	soldiers = {
+		culture = assyrian
+		religion = assyrian
+		size = 200
+	}	
+	
 	clergymen = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 110
 	}
 
 	artisans = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 465
 	}
 
 	farmers = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 8950
 	}
 
@@ -2821,7 +3204,6 @@
         rebel_type = nationalist_rebels
 	}
 }
-
 #Bitlis (76000/19000 POPS)
 891 = {
 	aristocrats = {
@@ -2873,21 +3255,27 @@
 		size = 10600
 	}
 
+	soldiers = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}	
+	
 	clergymen = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 70
 	}
 
 	artisans = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 290
 	}
 
 	farmers = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 6475
 	}
 
@@ -2973,21 +3361,27 @@
 		size = 10600
 	}
 
+	soldiers = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}	
+	
 	clergymen = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 280
 	}
 
 	artisans = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 1105
 	}
 
 	farmers = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 18175
 	}
 
@@ -3072,21 +3466,39 @@
 		size = 30750
 	}
 
+	aristocrats = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}
+	
+	officers = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}
+	
+	soldiers = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}	
+	
 	clergymen = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 140
 	}
 
 	artisans = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 620
 	}
 
 	farmers = {
 		culture = assyrian
-		religion = catholic
+		religion = assyrian
 		size = 11125
 	}
 
@@ -3119,6 +3531,147 @@
 		culture = kurdish
 		religion = sunni
 		size = 38600
+	}
+}
+
+#Jezira/Cizre (92000/23000 POPS)
+2414 = {
+	aristocrats = {
+		culture = turkish
+		religion = sunni
+		size = 50
+	}
+
+	clergymen = {
+		culture = turkish
+		religion = sunni
+		size = 75
+	}
+
+	artisans = {
+		culture = turkish
+		religion = sunni
+		size = 150
+	}
+
+	soldiers = {
+		culture = turkish
+		religion = sunni
+		size = 675
+	}
+
+	farmers = {
+		culture = turkish
+		religion = sunni
+		size = 2050
+	}
+	
+	soldiers = {
+		culture = armenian
+		religion = orthodox
+		size = 200
+	}
+
+	clergymen = {
+		culture = armenian
+		religion = orthodox
+		size = 100
+	}
+
+	artisans = {
+		culture = armenian
+		religion = orthodox
+		size = 350
+	}
+
+	farmers = {
+		culture = armenian
+		religion = orthodox
+		size = 4400
+	}
+	
+	soldiers = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}
+
+	clergymen = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}
+
+	artisans = {
+		culture = assyrian
+		religion = assyrian
+		size = 100
+	}
+
+	farmers = {
+		culture = assyrian
+		religion = assyrian
+		size = 1575
+	}
+
+	aristocrats = {
+		culture = kurdish
+		religion = sunni
+		size = 150
+	}
+
+	clergymen = {
+		culture = kurdish
+		religion = sunni
+		size = 100
+	}
+
+	artisans = {
+		culture = kurdish
+		religion = sunni
+		size = 250
+	}
+	
+	soldiers = {
+		culture = kurdish
+		religion = sunni
+		size = 100
+	}
+
+	farmers = {
+		culture = kurdish
+		religion = sunni
+		size = 1025
+	}
+	
+	aristocrats = {
+		culture = kurdish
+		religion = yazidi
+		size = 150
+	}
+
+	clergymen = {
+		culture = kurdish
+		religion = yazidi
+		size = 100
+	}
+
+	artisans = {
+		culture = kurdish
+		religion = yazidi
+		size = 550
+	}
+
+	soldiers = {
+		culture = kurdish
+		religion = yazidi
+		size = 1175
+	}
+
+	farmers = {
+		culture = kurdish
+		religion = yazidi
+		size = 7025
 	}
 }
 #Cilicia Region (540000)
@@ -3168,6 +3721,12 @@
 		size = 44375
 	}
 
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}	
+	
 	clergymen = {
 		culture = greek
 		religion = orthodox
@@ -3237,6 +3796,24 @@
 		size = 20175
 	}
 
+	aristocrats = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	officers = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 150
+	}
+	
 	clergymen = {
 		culture = greek
 		religion = orthodox
@@ -3524,6 +4101,12 @@
 		culture = armenian
 		religion = coptic
 		size = 9600
+	}
+
+	slaves = {
+		culture = armenian
+		religion = orthodox
+		size = 1000
 	}
 }
 #Antioch (160000/40000 POPS)

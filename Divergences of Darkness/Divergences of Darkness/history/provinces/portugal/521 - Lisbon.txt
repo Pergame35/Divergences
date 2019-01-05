@@ -4,8 +4,8 @@ add_core = POR
 add_core = SPA
 trade_goods = grain
 life_rating = 35
-terrain = good_farmland
 naval_base = 2
+fort = 1
 state_building = {
 	level = 1
 	building = clipper_shipyard
@@ -13,6 +13,10 @@ state_building = {
 }     
 state_building = {
 	level = 3
-	building = fish_cannery
+	building = canned_food_factory
   upgrade = yes
+}
+1861.1.1 = { 
+	railroad = 1 
+	naval_base = 2
 }

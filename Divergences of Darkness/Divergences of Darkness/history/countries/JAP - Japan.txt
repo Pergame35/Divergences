@@ -4,7 +4,7 @@ culture = ainu
 religion = shinto
 government = prussian_constitutionalism
 plurality = 0.0
-nationalvalue = nv_order
+nationalvalue = nv_tradition
 literacy = 0.43
 civilized = yes
 prestige = 15
@@ -18,13 +18,7 @@ press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = non_secret_ballots
-minorities_reform = limited
-immigration_policy = nobody_gets_out
-conscription=two_year_draft
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
@@ -32,17 +26,26 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
+school_reforms = no_schools
+
+# New Reforms
+conscription = two_year_draft
+debt_law = peonage
+penal_system = capital_punishment
+child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = closed_borders
 
 ruling_party = AAA_liberal_3
 upper_house = {
 	fascist = 0
-	liberal = 35
+	liberal = 17
 	conservative = 35
-	reactionary = 30
+	reactionary = 48
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
+
 
 # Technologies
 post_napoleonic_thought = 1
@@ -59,8 +62,7 @@ guild_based_production = 1
 classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
 enlightenment_thought = 1
-water_wheel_power = 1
-publishing_industry = 1
+piston_steam_engine = 1
 
 # Inventions
 
@@ -72,3 +74,27 @@ nonstate_consciousness = 0
 schools = naval_tech_school
 
 oob = "JAP_oob.txt"
+
+oob = "JAP_oob.txt"
+1861.1.1 = {
+	oob = "/1861/JAP_oob.txt"
+}
+1861.1.1 = {
+
+foreign_weapons = yes_foreign_weapons
+army_schools = yes_army_schools
+foreign_training = yes_foreign_training
+foreign_navies = yes_foreign_navies
+land_reform = yes_land_reform
+education_reform = yes_education_reform
+finance_reform = finance_reform_two
+
+# Technologies
+flintlock_rifles = 1
+post_nelsonian_thought = 1
+
+# Inventions
+#bottling_process = yes
+modern_winemaking = yes
+
+}

@@ -1,123 +1,254 @@
-political_decisions = {	
-
-	build_kiel_canal_mod = {
+political_decisions = {
+	build_kiel_canal = {
 		picture = build_kiel_canal
+		news = yes
+		news_desc_long = "kiel_canal_NEWS_LONG"
+		news_desc_medium = "kiel_canal_NEWS_MEDIUM"
+		news_desc_short = "kiel_canal_NEWS_SHORT"
+		
 		potential = {
+			NOT = { has_global_flag = kiel_under_construction }
 			NOT = { is_canal_enabled = 1 }
-			is_greater_power = yes
-			NOT = { has_global_flag = kiel_canal_global }
-		}
-		allow = {
 			owns = 369
-			steam_turbine = 1
-			money = 50000
+			is_greater_power = yes
+			interchangeable_parts = 1
 		}
-		effect = {
-			treasury = -50000	
-			set_global_flag = kiel_canal_global
-			set_global_flag = building_kiel_canal_phase0
-			add_country_modifier = {
-				name = building_kiel_canal
-				duration = -1
+		
+		allow = {
+			invention = machine_tools
+			invention = nitroglycerin
+			iron_steamers = 1
+			OR = {
+				money = 50000
+				ai = yes
 			}
 		}
+		effect = {
+			set_global_flag = kiel_under_construction
+			369 = { secede_province = THIS }
+			country_event = 36976
+		}
+		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
 		}
 	}
-
-	build_suez_canal_mod = {
+	
+	build_suez_canal = {
+		news = yes
+		news_desc_long = "suez_canal_NEWS_LONG"
+		news_desc_medium = "suez_canal_NEWS_MEDIUM"
+		news_desc_short = "suez_canal_NEWS_SHORT"
+		
 		picture = suezcanal
 		potential = {
 			NOT = { is_canal_enabled = 2 }
-			OR = {
-				is_greater_power = yes
-				AND = {
-					is_secondary_power = yes
-					owns = 1755
-				}
-			}
-			NOT = { has_global_flag = suez_canal_global }
+			NOT = { has_global_flag = suez_canal_built }
+			is_greater_power = yes
+			interchangeable_parts = 1
 		}
+		
 		allow = {
 			OR = {
 				1755 = { owner = { in_sphere = THIS } }
 				owns = 1755
-			}	
-			steam_turbine = 1
-			money = 25000
-		}
-		effect = {
-			treasury = -25000	
-			set_global_flag = suez_canal_global
-			set_global_flag = building_suez_canal_phase0
-			add_country_modifier = {
-				name = building_suez_canal
-				duration = -1
 			}
+			invention = machine_tools
+			invention = nitroglycerin		
+			iron_steamers = 1
+			OR = {
+				money = 100000
+				ai = yes
+			}
+		}
+		
+		effect = {
+			set_global_flag = suez_canal_built
 			random_country = {
 				limit = {
-					owns = 1755
 					NOT = { tag = THIS }
+					owns = 1755
 				}
-				THIS = { treasury = -300000 }
-				country_event = 97300
+				treasury = 30000
 			}
+			1755 = { secede_province = THIS add_core = THIS }
+			country_event = 36970
 		}
+		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
 		}
 	}
 	
-	build_panama_canal_mod = {
-		picture = build_panama_canal
+	found_suez_canal_company = {
+		picture = suezcanalcompany
 		potential = {
-			NOT = { is_canal_enabled = 3 }
-			OR = {
-				is_greater_power = yes
-				AND = {
-					is_secondary_power = yes
-					owns = 1723
+			NOT = { is_canal_enabled = 2 }
+			NOT = { has_global_flag = suez_canal_built }
+			NOT = { has_global_flag = suez_canal_company_founded }
+			is_greater_power = yes
+			interchangeable_parts = 1
+			1755 = {
+				owner = {
+					OR = {
+						AND = {
+							part_of_sphere = no
+							capital_scope = { continent = europe }
+						}
+						in_sphere = THIS
+					}
 				}
 			}
-			NOT = { has_global_flag = panama_canal_global }
-			NOT = { has_country_modifier = building_panama_canal_scandal }
+		}
+		
+		allow = {
+			invention = machine_tools
+			invention = nitroglycerin		
+			iron_steamers = 1
+			business_banks = 1
+			1755 = { owner = { NOT = { truce_with = THIS war_with = THIS is_greater_power = yes } } }
+			OR = {
+				money = 20000
+				ai = yes
+			}
+		}
+		
+		effect = {
+			set_global_flag = suez_canal_company_founded
+			prestige = 5
+			treasury = -20000
+			1755 = { owner = { relation = { who = THIS value = 75 } country_event = 36981 } }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	seize_the_suez_canal = {
+		picture = suezcanalcompany
+		
+		potential = {
+			is_canal_enabled = 2
+			NOT = { owns = 1755 }
+			is_greater_power = yes
+			1755 = { owner = { in_default = THIS } }
+			any_owned_province = { has_building = naval_base }
+			NOT = { has_country_modifier = in_bankrupcy }
+		}
+		
+		allow = {
+			war = no
+			1755 = { owner = { NOT = { truce_with = THIS } war = no in_default = THIS } }
+			raider_group_doctrine = 1
+			invention = ironclads
+			total_num_of_ports = 50
+			total_amount_of_ships = 50
+			NOT = { 1755 = { owner = { military_score = THIS } } }
+			OR = {
+				AND = {
+					money = 50000
+					1755 = { owner = { NOT = { part_of_sphere = yes } } }
+				}
+				1755 = { owner = { in_sphere = THIS } }
+			}
+		}
+		effect = {
+			random_country = { limit = { owns = 1755 NOT = { in_sphere = THIS } } THIS = { treasury = -50000 } }
+			1755 = { owner = { country_event = 36980 } }
+			1755 = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	build_panama_canal = {
+		picture = build_panama_canal
+		news = yes
+		news_desc_long = "panama_canal_NEWS_LONG"
+		news_desc_medium = "panama_canal_NEWS_MEDIUM"
+		news_desc_short = "panama_canal_NEWS_SHORT"
+		potential = {
+			NOT = { has_global_flag = panama_under_construction }
+			NOT = { is_canal_enabled = 3 }
+			is_greater_power = yes
+			interchangeable_parts = 1
 		}
 		allow = {
 			OR = {
 				1723 = { owner = { in_sphere = THIS } }
 				owns = 1723
-			}	
-			inorganic_chemistry = 1
-			steam_turbine = 1
-			money = 100000
+			}
+			invention = machine_tools
+			invention = nitroglycerin
+			iron_steamers = 1
+			invention = prophylaxis_against_malaria
+			OR = {
+				money = 200000
+				ai = yes
+			}
 		}
 		effect = {
-			treasury = -100000	
-			set_global_flag = panama_canal_global
-			add_country_modifier = {
-				name = building_panama_canal
-				duration = -1
-			}
 			random_country = {
 				limit = {
-					NOT = { tag = PNM }
 					NOT = { tag = THIS }
 					owns = 1723
 				}
-				country_event = 97390
+				treasury = 50000
 			}
-			random_country = {
-				limit = {
-					tag = PNM
-					NOT = { tag = THIS }
-					owns = 1723
-				}
-				country_event = 97394
-			}
+			1723 = { secede_province = THIS add_core = THIS }
+			country_event = 36978
+			set_global_flag = panama_under_construction
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
 		}
-	}	
+	}
+	
+	seize_the_panama_canal = {
+		picture = build_panama_canal
+		
+		potential = {
+			is_canal_enabled = 3
+			NOT = { owns = 1723 }
+			is_greater_power = yes
+			1723 = { owner = { in_default = THIS } }
+			any_owned_province = { has_building = naval_base }
+			NOT = { has_country_modifier = in_bankrupcy }
+		}
+		
+		allow = {
+			war = no
+			1723 = { owner = { NOT = { truce_with = THIS } war = no in_default = THIS } }
+			raider_group_doctrine = 1
+			invention = ironclads
+			total_num_of_ports = 50
+			total_amount_of_ships = 50
+			NOT = { 1723 = { owner = { military_score = THIS } } }
+			OR = {
+				AND = {
+					money = 50000
+					1723 = { owner = { NOT = { part_of_sphere = yes } } }
+				}
+				1723 = { owner = { in_sphere = THIS } }
+			}
+		}
+		
+		effect = {
+			random_country = { limit = { owns = 1723 NOT = { in_sphere = THIS } } THIS = { treasury = -50000 } }
+			1723 = { owner = { country_event = 36980 } }
+			1723 = { secede_province = THIS }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 }

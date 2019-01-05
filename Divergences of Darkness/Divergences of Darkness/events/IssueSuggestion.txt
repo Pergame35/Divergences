@@ -17,14 +17,12 @@ country_event = {
 	trigger = {
 		civilized = yes
 		health_care = no_health_care
+		NOT = { poor_strata_life_needs = 0.9 }
 		is_ideology_enabled = socialist
-		NOT = {
-			poor_strata_life_needs = 0.9
-		}
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 500
 		
 		modifier = {
 			factor = 0.9
@@ -44,24 +42,22 @@ country_event = {
 		}
 		modifier = {
 			factor = 1.5
-			NOT = {
-				average_consciousness = 3
-			}	
+			NOT = { average_consciousness = 3 }	
 		}
 	}
 	
 	option = {
 		name = "EVTOPTA3000"
 		upper_house = {
-			ideology = socialist
-			value = 0.15
+			ideology = liberal
+			value = 0.05
 		}
 		random_state = {
 			limit = {
 				is_colonial = no
 			}
 			any_pop = {
-				consciousness = 1
+				consciousness = 2
 			}
 		}
 	}
@@ -77,7 +73,7 @@ country_event = {
 					value = trinket_health_care
 					factor = 0.3
 				}
-				consciousness = 2
+				consciousness = 1
 			}
 		}
 	}
@@ -89,19 +85,7 @@ country_event = {
 				is_colonial = no
 			}
 			any_pop = {
-				ideology = {
-					value = socialist
-					factor = -0.10
-				}
-			}
-		}
-		any_pop = {
-			limit = {
-				location = { is_colonial = no }
-			}
-			scaled_militancy = {
-				ideology = socialist
-				factor = 1
+				militancy = 2
 			}
 		}
 	}
@@ -117,12 +101,11 @@ country_event = {
 	trigger = {
 		civilized = yes
 		health_care = acceptable_health_care
-		is_ideology_enabled = socialist
 		conservative = 0.2
 	}
 	
 	mean_time_to_happen = {
-		months = 300 
+		months = 800 
 		modifier = {
 			factor = 0.9
 			conservative = 0.3
@@ -137,50 +120,33 @@ country_event = {
 	option = {
 		name = "EVTOPTA3001"
 		social_reform = low_health_care
-		any_pop = {
-			limit = {
-				location = { is_colonial = no }
-			}
-			scaled_consciousness = {
-				ideology = conservative
-				factor = -3
-			}
-		}
 		poor_strata = {
-			scaled_militancy = {
-				ideology = socialist
-				factor = 3
-			}
+			militancy = 3
 		}
 		middle_strata = {
-			scaled_militancy = {
-				ideology = socialist
-				factor = 2
-			}
+			militancy = 2
 		}
+		ai_chance = {
+			factor = 0
+		}	
 	}
 	
 	option = {
 		name = "EVTOPTB3001"
 		upper_house = {
 			ideology = conservative
-			value = 0.25
+			value = 0.1
 		}
 		poor_strata = {
-			scaled_militancy = {
-				ideology = socialist
-				factor = 2
-			}
+			militancy = 1
 		}
 	}
 	
 	option = {
 		name = "EVTOPTC3001"
-		any_pop = {
-			scaled_militancy = {
-				ideology = conservative
-				factor = 2
-			}
+		scaled_militancy = {
+			ideology = conservative
+			factor = 2
 		}
 	}
 }
@@ -195,11 +161,10 @@ country_event = {
 	trigger = {
 		civilized = yes
 		health_care = low_health_care
-		is_ideology_enabled = socialist
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 		
 		modifier = {
 			factor = 0.9
@@ -214,7 +179,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3002"
 		random_state = {
-			limit = { is_colonial = no }
 			middle_strata = {
 				militancy = -2
 				consciousness = -1
@@ -233,14 +197,11 @@ country_event = {
 	trigger = {
 		civilized = yes
 		health_care = trinket_health_care
-		is_ideology_enabled = socialist
-		NOT = {
-			poor_strata_life_needs = 0.95
-		}
+		NOT = { poor_strata_life_needs = 0.95 }
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 800
 		
 		modifier = {
 			factor = 0.9
@@ -256,7 +217,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3003"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				ideology = {
 					value = conservative
@@ -273,25 +233,23 @@ country_event = {
 	option = {
 		name = "EVTOPTB3003"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				ideology = {
-					value = socialist
+					value = liberal
 					factor = 0.3
 				}
 			}
 			rich_strata = {
-				militancy = 2
-				consciousness = 1
+				militancy = 1
+				consciousness = 2
 			}
 		}
 	}
 	
 	option = {
 		name = "EVTOPTC3003"
-		poor_strata = {
-			militancy = 1
-		}
+		poor_strata = { militancy = 1 }
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -305,14 +263,12 @@ country_event = {
 	trigger = {
 		civilized = yes
 		health_care = low_health_care
+		NOT = { social_reform_want = 0.2 }
 		is_ideology_enabled = socialist
-		NOT = {
-			social_reform_want = 0.2
-		}
 	}
 	
 	mean_time_to_happen = {
-		months = 400 # Common
+		months = 800 # Common
 		modifier = {
 			factor = 0.9
 			NOT = {
@@ -329,9 +285,8 @@ country_event = {
 	option = {
 		name = "EVTOPTA3004"
 		random_state = {
-			limit = { is_colonial = no }
 			poor_strata = {
-				militancy = -2
+				militancy = -1
 			}
 		}
 	}
@@ -339,9 +294,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB3004"
 		random_state = {
-			limit = { is_colonial = no }
-			poor_strata = {
-				consciousness = 1
+			any_pop = {
 				dominant_issue = {
 					value = acceptable_health_care
 					factor = 0.3
@@ -354,18 +307,8 @@ country_event = {
 		name = "EVTOPTC3004"
 		prestige = 4
 		random_state = {
-			limit = { is_colonial = no }
-			middle_strata = {
-				ideology = {
-					value = socialist
-					factor = -0.2
-				}
-			}
-			rich_strata = {
-				ideology = {
-					value = socialist
-					factor = -0.2
-				}
+			poor_strata = {
+				consciousness = 1
 			}
 		}
 	}
@@ -380,12 +323,11 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		health_care = acceptable_health_care
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 800
 		
 		modifier = {
 			factor = 0.9
@@ -400,21 +342,16 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA3005"
-		random_owned = {
-			limit = {
-				is_colonial = no
-				NOT = { has_province_modifier = government_sanitarium }
+		random_owned = { limit = { owner = { ai = no } } treasury = -10000 }
+		random_state = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = 4
 			}
-			add_province_modifier = {
-				name = government_sanitarium
-				duration = -1
-			}
-			state_scope = {
-				any_pop = {
-					scaled_militancy = {
-						ideology = conservative
-						factor = 4
-					}
+			random_province = {
+				add_province_modifier = {
+					name = government_sanitarium
+					duration = 3650
 				}
 			}
 		}
@@ -423,7 +360,6 @@ country_event = {
 	option = {
 		name = "EVTOPTB3005"
 		random_state = {
-			limit = { is_colonial = no }
 			scaled_militancy = {
 				ideology = conservative
 				factor = -2
@@ -433,18 +369,14 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTC3005"
-		random_owned = {
-			limit = {
-				is_colonial = no
-				NOT = { has_province_modifier = government_sanitarium }
+		random_list = {
+			50 = {
+			random_state = {
+				rich_strata = { militancy = 4 money = -10 }
+				random_province = { add_province_modifier = { name = government_sanitarium duration = 3650 } }
+				}
 			}
-			add_province_modifier = {
-				name = government_sanitarium
-				duration = 3650
-			}
-			state_scope = {
-				rich_strata = { militancy = -1 }
-			}
+			50 = { }
 		}
 	}
 }
@@ -457,16 +389,13 @@ country_event = {
 	picture = "Dental"
 	
 	trigger = {
-		health_care = acceptable_health_care
-		is_ideology_enabled = socialist
+		health_care = good_health_care
 		civilized = yes
-		NOT = {
-			ruling_party_ideology = conservative
-		}
+		NOT = { ruling_party_ideology = conservative }
 	}
 	
 	mean_time_to_happen = {
-		months = 500 # Common
+		months = 800 # Common
 		
 		modifier = {
 			factor = 0.9
@@ -486,32 +415,25 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA3006"
-		any_pop = {
-			scaled_consciousness = {
-				ideology = socialist
-				factor = 3
-			}
-			scaled_militancy = {
-				ideology = conservative
-				factor = -3
-			}
+		social_reform = acceptable_health_care
+		poor_strata = {
+			consciousness = 1
+			militancy = 1
 		}
 		rich_strata = {
 			militancy = -2
+			consciousness = 1
 		}
+		ai_chance = { factor = 0 }
 	}
 	
 	option = {
 		name = "EVTOPTB3006"
-		social_reform = acceptable_health_care
 		any_pop = {
 			scaled_consciousness = {
 				ideology = conservative
 				factor = 3
 			}
-		}
-		rich_strata = {
-			militancy = 2
 		}
 	}
 }
@@ -531,7 +453,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 800
 		
 		modifier = {
 			factor = 0.8
@@ -565,7 +487,7 @@ country_event = {
 			}
 			scaled_militancy = {
 				ideology = conservative
-				factor = 2
+				factor = 1
 			}
 		}
 	}
@@ -573,17 +495,13 @@ country_event = {
 	option = {
 		name = "EVTOPTB3300"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
-				consciousness = 2
 				dominant_issue = {
 					value = trinket_pensions
 					factor = 0.2
 				}
 			}
-			farmers = {
-				militancy = -1
-			}
+			farmers = { militancy = -1 }
 		}
 	}
 	
@@ -605,21 +523,15 @@ country_event = {
 	trigger = {
 		pensions = trinket_pensions
 		civilized = yes
-		is_ideology_enabled = socialist
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 	}
 	
 	option = {
 		name = "EVTOPTA3301"
-		upper_house = {
-			ideology = socialist
-			value = 0.15
-		}
 		any_pop = {
-			consciousness = 2
 			dominant_issue = {
 				value = low_pensions
 				factor = 0.1
@@ -633,16 +545,12 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTB3302"
-		upper_house = {
-			ideology = conservative
-			value = 0.15
-		}
 		any_pop = {
-			consciousness = -2
 			scaled_militancy = {
-				ideology = conservative
-				factor = -3
+				ideology = liberal
+				factor = 3
 			}
+			consciousness = -2
 		}
 	}
 	
@@ -650,10 +558,8 @@ country_event = {
 		name = "EVTOPTC3302"
 		social_reform = no_pensions
 		any_pop = {
-			scaled_militancy = {
-				ideology = socialist
-				factor = 3
-			}
+			militancy = 3
+			consciousness = 1
 		}
 	}
 }
@@ -673,7 +579,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 800
 	}
 	
 	option = {
@@ -703,8 +609,8 @@ country_event = {
 		name = "EVTOPTC3302"
 		social_reform = trinket_pensions
 		scaled_militancy = {
-			ideology = socialist
-			factor = 3
+			issue = acceptable_pensions
+			factor = 5
 		}
 	}
 }
@@ -723,7 +629,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 1600
 		modifier = {
 			factor = 0.9
 			good_pensions = 20
@@ -743,9 +649,7 @@ country_event = {
 	option = {	
 		name = "EVTOPTA3303"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
-				consciousness = 2
 				dominant_issue = {
 					value = good_pensions
 					factor = 0.2
@@ -766,12 +670,7 @@ country_event = {
 	option = {
 		name = "EVTOPTC3303"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
-				ideology = {
-					value = socialist
-					factor = -0.10
-				}
 				militancy = -2
 			}
 		}
@@ -788,13 +687,12 @@ country_event = {
 	trigger = {
 		civilized = yes
 		pensions = good_pensions
-		is_ideology_enabled = socialist
 		conservative = 0.2
 		liberal = 0.2
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 400 # Common
 		
 		modifier = {
 			factor = 0.9
@@ -819,10 +717,10 @@ country_event = {
 		name = "EVTOPTA3304"
 		social_reform = acceptable_pensions
 		any_pop = {
-			scaled_militancy = {
-				ideology = socialist
-				factor = 4
+			limit = {
+				consciousness = 5
 			}
+			militancy = 4
 		}
 	}
 	
@@ -845,8 +743,7 @@ country_event = {
 	trigger = {
 		civilized = yes
 		social_reform_want = 0.05
-		is_ideology_enabled = socialist
-		socialist = 0.1
+		liberal = 0.1
 		conservative = 0.1
 		NOT = {
 			pensions = acceptable_pensions
@@ -859,7 +756,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 800
 		
 		modifier = {
 			factor = 1.3
@@ -903,33 +800,10 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA3305"
-		random_owned = {
-			limit = {
-				owner = { pensions = low_pensions }
-			}
-			owner = {
-				social_reform = acceptable_pensions
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = { pensions = trinket_pensions }
-			}
-			owner = {
-				social_reform = low_pensions
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = { pensions = no_pensions }
-			}
-			owner = {
-				social_reform = trinket_pensions
-			}
-		}
+		social_reform = acceptable_pensions
 		middle_strata = {
 			scaled_consciousness = {
-				ideology = socialist
+				ideology = liberal
 				factor = 4
 			}
 		}
@@ -937,30 +811,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTB3305"
-		random_owned = {
-			limit = {
-				owner = { wage_reform = low_minimum_wage }
-			}
-			owner = {
-				social_reform = acceptable_minimum_wage
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = { wage_reform = trinket_wage }
-			}
-			owner = {
-				social_reform = low_minimum_wage
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = { wage_reform = no_minimum_wage }
-			}
-			owner = {
-				social_reform = trinket_wage
-			}
-		}
+		social_reform = acceptable_minimum_wage
 		rich_strata = {
 			scaled_consciousness = {
 				ideology = conservative
@@ -987,20 +838,18 @@ country_event = {
 	
 	trigger = {
 		pensions = no_pensions
-		is_ideology_enabled = socialist
 		civilized = yes
 		OR = {
 			war_policy = jingoism
 			war_policy = pro_military
 		}
 		war = yes
-		war_exhaustion = 5
+		war_exhaustion = 6
 		social_reform_want = 0.1
-		NOT = { has_country_flag = promised_post_war_pensions }
 	}
 	
 	mean_time_to_happen = {
-		months = 100 # Common
+		months = 800 # Common
 		
 		modifier = {
 			factor = 0.8
@@ -1023,21 +872,21 @@ country_event = {
 	option = {
 		name = "EVTOPTA3306"
 		set_country_flag = promised_post_war_pensions
-		war_exhaustion = -5
+		war_exhaustion = -4
 		any_pop = {
 			militancy = -1
 			consciousness = -1
 			dominant_issue = {
 				value = jingoism
-				factor = 0.2
+				factor = 0.1
 			}
 		}
 	}
 	
 	option = {
 		name = "EVTOPTB3306"
-		war_exhaustion = 3
-		prestige = 3
+		war_exhaustion = 1
+		prestige = 5
 	}
 }
 
@@ -1050,7 +899,6 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = promised_post_war_pensions
-		is_ideology_enabled = socialist
 		war = no
 	}
 	
@@ -1061,8 +909,8 @@ country_event = {
 	option = {
 		name = "EVTOPTA3307"
 		social_reform = trinket_pensions
-		war_exhaustion = -5
-		soldiers = {
+		war_exhaustion = -1
+		any_pop = {
 			militancy = -1
 		}
 		clr_country_flag = promised_post_war_pensions
@@ -1071,24 +919,18 @@ country_event = {
 	option = {
 		name = "EVTOPTB3307"
 		social_reform = low_pensions
-		war_exhaustion = -10
-		soldiers = {
-			militancy = -3
-		}
+		war_exhaustion = -2
 		any_pop = {
-			scaled_militancy = {
-				ideology = conservative
-				factor = 2
-			}
+			militancy = -1
 		}
 		clr_country_flag = promised_post_war_pensions
 	}
 	
 	option = {
 		name = "EVTOPTC3307"
-		war_exhaustion = 5
-		soldiers = {
-			militancy = 3
+		war_exhaustion = 2
+		any_pop = {
+			militancy = -1
 		}
 		clr_country_flag = promised_post_war_pensions
 	}
@@ -1109,7 +951,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 400 # Common
 		
 		modifier = {
 			factor = 0.5
@@ -1129,7 +971,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3400"
 		random_state = {
-			limit = { is_colonial = no }
 			poor_strata = {
 				scaled_militancy = {
 					factor = 7
@@ -1142,7 +983,6 @@ country_event = {
 	option = {	
 		name = "EVTOPTB3400"
 		random_state = {
-			limit = { is_colonial = no }
 			poor_strata = {
 				scaled_consciousness = {
 					factor = 7
@@ -1155,7 +995,6 @@ country_event = {
 	option = {
 		name = "EVTOPTC3400"
 		random_state = {
-			limit = { is_colonial = no }
 			poor_strata = {
 				dominant_issue = {
 					value = low_subsidies
@@ -1178,16 +1017,15 @@ country_event = {
 		civilized = yes
 		unemployment = 0.05
 		unemployment_subsidies = low_subsidies
-		is_ideology_enabled = socialist
 		conservative = 0.1
-		socialist = 0.1
+		liberal = 0.1
 		NOT = {
 			economic_policy = laissez_faire
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 600 # Common
 		
 		modifier = {
 			factor = 0.7
@@ -1207,7 +1045,7 @@ country_event = {
 		social_reform = no_subsidies
 		any_pop = {
 			scaled_militancy = {
-				ideology = socialist
+				ideology = liberal
 				factor = 5
 			}
 		}
@@ -1242,18 +1080,17 @@ country_event = {
 	trigger = {
 		civilized = yes
 		unemployment_subsidies = acceptable_subsidies
-		is_ideology_enabled = socialist
 		unemployment = 0.05
+		is_ideology_enabled = socialist
 	}
 	
 	mean_time_to_happen = {
-		months = 100 # Common
+		months = 400 # Common
 	}
 	
 	option = {
 		name = "EVTOPTA3402"
 		random_state = {
-			limit = { is_colonial = no }
 			rich_strata = {
 				consciousness = 3
 				militancy = 3
@@ -1265,12 +1102,12 @@ country_event = {
 		name = "EVTOPTB3402"
 		social_reform = low_subsidies
 		rich_strata = {
-			consciousness = -2
-			militancy = -2
+			consciousness = -1
+			militancy = -1
 		}
 		middle_strata = {
-			militancy = -1
-			consciousness = -1
+			militancy = -2
+			consciousness = -2
 		}
 		poor_strata = {
 			militancy = 3
@@ -1281,12 +1118,11 @@ country_event = {
 	option = {
 		name = "EVTOPTC3402"
 		any_pop = {
-			limit = { unemployment = 0.05 }
 			dominant_issue = {
 				value = good_subsidies
-				factor = 0.2
+				factor = 0.3
 			}
-			consciousness = 2
+			militancy = 1
 		}	
 	}
 }
@@ -1301,26 +1137,24 @@ country_event = {
 	trigger = {
 		civilized = yes
 		unemployment_subsidies = low_subsidies
-		is_ideology_enabled = socialist
 		wage_reform = low_minimum_wage
-		NOT = {
-			trade_unions = no_trade_unions
-		}
-		poor_strata_militancy = 3
+		NOT = { trade_unions = no_trade_unions }
+		poor_strata_militancy = 5
+		is_ideology_enabled = socialist
 	}
 	
 	mean_time_to_happen = {
-		months = 100 # Common
+		months = 400 # Common
 		
 		modifier = {
 			factor = 0.5
-			average_militancy = 5
+			average_militancy = 6
 		}
 		
 		modifier = {
 			factor = 1.5
 			NOT = {
-				average_consciousness = 5
+				average_consciousness = 6
 			}
 		}
 	}
@@ -1328,7 +1162,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3403"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				dominant_issue = {
 					factor = 0.4
@@ -1345,7 +1178,6 @@ country_event = {
 	option = {
 		name = "EVTOPTB3403"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				dominant_issue = {
 					factor = 0.4
@@ -1362,7 +1194,6 @@ country_event = {
 	option = {
 		name = "EVTOPTC3403"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				militancy = 2
 			}
@@ -1379,11 +1210,9 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		unemployment_subsidies = acceptable_subsidies
-		NOT = {
-			trade_unions = no_trade_unions
-		}
+		NOT = { trade_unions = no_trade_unions }
+		is_ideology_enabled = socialist
 	}
 	
 	mean_time_to_happen = {
@@ -1403,7 +1232,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3404"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				dominant_issue = {
 					value = good_subsidies
@@ -1417,7 +1245,6 @@ country_event = {
 	option = {
 		name = "EVTOPTB3404"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				militancy = 2
 			}
@@ -1436,12 +1263,12 @@ country_event = {
 	trigger = {
 		civilized = yes
 		safety_regulations = no_safety
+		industrial_score = 1
 		is_ideology_enabled = socialist
-		trinket_safety = 0.05
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 400 # Common
 		
 		modifier = {
 			factor = 0.5
@@ -1457,7 +1284,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3600"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				scaled_militancy = {
 					factor = 4
@@ -1470,7 +1296,6 @@ country_event = {
 	option = {	
 		name = "EVTOPTB3600"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				scaled_consciousness = {
 					factor = 4
@@ -1491,12 +1316,13 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		safety_regulations = trinket_safety
+		industrial_score = 1
+		is_ideology_enabled = socialist
 	}
 	
 	mean_time_to_happen = {
-		months = 100 # Common
+		months = 400 # Common
 		
 		modifier = {
 			factor = 0.8
@@ -1512,7 +1338,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3601"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				scaled_militancy = {
 					factor = 4
@@ -1525,7 +1350,6 @@ country_event = {
 	option = {	
 		name = "EVTOPTB3601"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				dominant_issue = {
 					factor = 0.4
@@ -1545,13 +1369,14 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		safety_regulations = low_safety
 		social_reform_want = 0.2
+		industrial_score = 1
+		is_ideology_enabled = socialist
 	}
 	
 	mean_time_to_happen = {
-		months = 100 # Common
+		months = 400 # Common
 		
 		modifier = {
 			factor = 0.5
@@ -1569,7 +1394,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3602"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				scaled_militancy = {
 					factor = 5
@@ -1582,7 +1406,6 @@ country_event = {
 	option = {	
 		name = "EVTOPTB3602"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				scaled_consciousness = {
 					factor = 4
@@ -1595,7 +1418,6 @@ country_event = {
 	option = {
 		name = "EVTOPTC3602"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				scaled_militancy = {
 					factor = 2
@@ -1619,12 +1441,13 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		safety_regulations = acceptable_safety
+		industrial_score = 1
+		is_ideology_enabled = socialist
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 400 # Common
 		
 		modifier = {
 			factor = 0.9
@@ -1642,7 +1465,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3603"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				consciousness = 1
 			}
@@ -1653,7 +1475,6 @@ country_event = {
 		name = "EVTOPTB3603"
 		social_reform = low_safety
 		random_state = {
-			limit = { is_colonial = no }
 			poor_strata = {
 				consciousness = 4
 			}
@@ -1664,7 +1485,6 @@ country_event = {
 		name = "EVTOPTC3603"
 		social_reform = good_safety
 		random_state = {
-			limit = { is_colonial = no }
 			rich_strata = {
 				consciousness = 4
 			}
@@ -1681,13 +1501,8 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
-		NOT = {
-			trade_unions = all_trade_unions
-		}
-		NOT = {
-			safety_regulations = good_safety
-		}
+		NOT = { trade_unions = all_trade_unions }
+		NOT = { safety_regulations = good_safety }
 	}
 	
 	mean_time_to_happen = {
@@ -1709,7 +1524,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3604"
 		random_state = {
-			limit = { is_colonial = no }
 			poor_strata = {
 				militancy = -3
 			}
@@ -1719,7 +1533,6 @@ country_event = {
 	option = {
 		name = "EVTOPTB3604"
 		random_state = {
-			limit = { is_colonial = no }
 			poor_strata = {
 				consciousness = -3
 			}
@@ -1736,9 +1549,9 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		safety_regulations = low_safety
 		health_care = low_health_care
+		is_ideology_enabled = socialist
 	}
 	
 	mean_time_to_happen = {
@@ -1758,7 +1571,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3605"
 		random_state = {
-			limit = { is_colonial = no }
 			bureaucrats = {
 				militancy = 3
 				consciousness = -1
@@ -1769,7 +1581,6 @@ country_event = {
 	option = {
 		name = "EVTOPTB3605"
 		random_state = {
-			limit = { is_colonial = no }
 			bureaucrats = {
 				militancy = -4
 			}
@@ -1797,10 +1608,10 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		safety_regulations = acceptable_safety
 		health_care = acceptable_health_care
 		basic_chemistry = 1
+		is_ideology_enabled = socialist
 	}
 	
 	mean_time_to_happen = {
@@ -1820,7 +1631,6 @@ country_event = {
 	option = {	
 		name = "EVTOPTA3606"
 		random_state = {
-			limit = { is_colonial = no }
 			poor_strata = {
 				militancy = 1
 			}
@@ -1830,7 +1640,6 @@ country_event = {
 	option = {
 		name = "EVTOPTB3606"
 		random_state = {
-			limit = { is_colonial = no }
 			poor_strata = {
 				dominant_issue = {
 					value = good_safety
@@ -1850,13 +1659,12 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		safety_regulations = good_safety
 		health_care = good_health_care
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 800 # Common
 		
 		modifier = {
 			factor = 0.9
@@ -1874,7 +1682,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3607"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				militancy = -2
 			}
@@ -1883,11 +1690,11 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTB3607"
-		prestige = 3
+		prestige = 5
 	}
 }
 
-##### WORK HOURS #####
+##### Children Labor #####
 
 #Chimney Sweeps
 country_event = {
@@ -1898,12 +1705,12 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
+		child_labor = child_labor_legal
 		is_ideology_enabled = socialist
-		work_hours = no_work_hour_limit
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 400 # Common
 		
 		modifier = {
 			factor = 0.8
@@ -1921,13 +1728,12 @@ country_event = {
 	option = {
 		name = "EVTOPTA3700"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				dominant_issue = {
-					value = fourteen_hours
-					factor = 0.3
+					value = child_labor_restricted
+					factor = 0.4
 				}
-				consciousness = 2
+				militancy = 1
 			}
 		}
 	}
@@ -1935,7 +1741,60 @@ country_event = {
 	option = {	
 		name = "EVTOPTB3700"
 		random_state = {
-			limit = { is_colonial = no }
+			poor_strata = {
+				militancy = 3
+			}
+		}
+	}
+}
+
+##################Work Hours####################
+
+#long work hours
+country_event = {
+	id = 370000002
+	title = "EVTNAME370000002"
+	desc = "EVTDESC370000002"
+	picture = "Childlabor2"
+	
+	trigger = {
+		civilized = yes
+		work_hours = no_work_hour_limit
+		is_ideology_enabled = socialist
+	}
+	
+	mean_time_to_happen = {
+		months = 400 # Common
+		
+		modifier = {
+			factor = 0.8
+			average_consciousness = 6
+		}
+		
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_consciousness = 6
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA370000002"
+		random_state = {
+			any_pop = {
+				dominant_issue = {
+					value = fourteen_hours
+					factor = 0.4
+				}
+				militancy = 1
+			}
+		}
+	}
+	
+	option = {	
+		name = "EVTOPTB370000002"
+		random_state = {
 			poor_strata = {
 				militancy = 3
 			}
@@ -1952,12 +1811,11 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		work_hours = fourteen_hours
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 800 # Common
 		
 		modifier = {
 			factor = 0.8
@@ -1973,37 +1831,31 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTB3701"
-		social_reform = twelve_hours
-		poor_strata = {
-			consciousness = -2
-		}
-		middle_strata = {
-			consciousness = -1
-		}
+		name = "EVTOPTA3701"
 		rich_strata = {
-			consciousness = 4
+			militancy = -2
 		}
 	}
 	
 	option = {	
-		name = "EVTOPTA3701"
+		name = "EVTOPTB3701"
+		social_reform = twelve_hours
 		poor_strata = {
 			militancy = -1
+		}
+		rich_strata = {
+			militancy = 2
 		}
 	}
 	
 	option = {
 		name = "EVTOPTC3701"
 		social_reform = no_work_hour_limit
-		rich_strata = {
-			consciousness = -4
+		poor_strata = {
+			militancy = 3
 		}
 		middle_strata = {
-			consciousness = 2
-		}
-		poor_strata = {
-			consciousness = 3
+			militancy = 2
 		}
 	}
 }
@@ -2017,7 +1869,6 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		work_hours = twelve_hours
 		NOT = {
 			trade_unions = no_trade_unions
@@ -2026,7 +1877,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 400 # Common
 		
 		modifier = {
 			factor = 0.8
@@ -2048,7 +1899,9 @@ country_event = {
 		middle_strata = {
 			militancy = 2
 		}
-		
+		ai_chance = {
+			factor = 0
+		}
 	}
 	
 	option = {	
@@ -2057,6 +1910,9 @@ country_event = {
 			any_pop = {
 				militancy = -2
 			}
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 	
@@ -2081,26 +1937,13 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
-		OR = {
-			work_hours = ten_hours
-			work_hours = eight_hours
-		}
-		conservative = 0.2
+		work_hours = ten_hours
+		conservative = 0.3
 	}
 	
 	mean_time_to_happen = {
-		months = 100 # Common
+		months = 400 # Common
 		
-		modifier = {
-			factor = 0.8
-			work_hours = eight_hours
-		}
-		
-		modifier = {
-			factor = 1.3
-			work_hours = ten_hours
-		}
 	}
 	
 	option = {
@@ -2110,32 +1953,32 @@ country_event = {
 			militancy = 3
 			consciousness = 2
 		}
+		ai_chance = {
+			factor = 0
+		}
 	}
 	
 	option = {
 		name = "EVTOPTB3703"
-		random_state = {
-			limit = { is_colonial = no }
-			any_pop = {
-				militancy = 1
-			}
+		rich_strata = {
+			consciousness = 1
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 	
 	option = {
 		name = "EVTOPTC3703"
-		random_owned = {
-			limit = {
-				owner = { work_hours = ten_hours }
-			}
-			owner = {
-				social_reform = eight_hours
-			}
-		}
+		social_reform = eight_hours
 		rich_strata = {
 			militancy = 5
 			consciousness = 5
 		}
+		ai_chance = {
+			factor = 0
+		}
+		
 	}
 }
 
@@ -2150,13 +1993,13 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		wage_reform = no_minimum_wage
 		social_reform_want = 0.1
+		is_ideology_enabled = socialist
 	}
 	
 	mean_time_to_happen = {
-		months = 100 # Common
+		months = 400 # Common
 		
 		modifier = {
 			factor = 0.7
@@ -2181,7 +2024,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3800"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				dominant_issue = {
 					value = trinket_wage
@@ -2195,7 +2037,6 @@ country_event = {
 	option = {	
 		name = "EVTOPTB3800"
 		random_state = {
-			limit = { is_colonial = no }
 			rich_strata = {
 				militancy = -2
 			}
@@ -2224,7 +2065,6 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		wage_reform = trinket_wage
 		NOT = {
 			government = proletarian_dictatorship
@@ -2232,7 +2072,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100 # Common
+		months = 800 # Common
 		
 		modifier = {
 			factor = 0.8
@@ -2290,14 +2130,13 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		wage_reform = low_minimum_wage
 		average_consciousness = 5
 		social_reform_want = 0.1
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 400 # Common
 		
 		modifier = {
 			factor = 0.8
@@ -2365,55 +2204,30 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
-		OR = {
-			wage_reform = acceptable_minimum_wage
-			wage_reform = good_minimum_wage
-		}
+		wage_reform = good_minimum_wage
+		has_pop_type = capitalists
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 800 # Common
 		
-		modifier = {
-			factor = 0.5
-			wage_reform = good_minimum_wage
-		}
-		
-		modifier = {
-			factor = 1.5
-			wage_reform = acceptable_minimum_wage
-		}
 	}
 	
 	option = {
 		name = "EVTOPTA3803"
-		social_reform = low_minimum_wage
+		social_reform = acceptable_minimum_wage
 		poor_strata = {
 			militancy = 2
 			consciousness = -1
 		}
 	}
-	
-	option = {
-		name = "EVTOPTB3803"
-		random_state = {
-			limit = { has_pop_type = capitalists }
-			capitalists = {
-				militancy = -2
-			}
-			poor_strata = {
-				militancy = 1
-			}
-		}
-	}
+
 	
 	option = {
 		name = "EVTOPTC3803"
 		random_state = {
-			limit = { has_pop_type = capitalists }
 			rich_strata = {
-				militancy = 2
+				militancy = 1
 			}
 		}
 	}
@@ -2430,13 +2244,12 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		trade_unions = no_trade_unions
-		state_controlled = 0.05
+		state_controlled = 10
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 600 # Common
 		
 		modifier = {
 			factor = 0.5
@@ -2464,7 +2277,6 @@ country_event = {
 	option = {	
 		name = "EVTOPTB3900"
 		random_state = {
-			limit = { is_colonial = no }
 			any_pop = {
 				dominant_issue = {
 					value = state_controlled
@@ -2477,9 +2289,15 @@ country_event = {
 	option = {
 		name = "EVTOPTC3900"
 		political_reform = state_controlled
-		any_pop = {
+		rich_strata = {
 			scaled_militancy = {
 				ideology = conservative
+				factor = 3
+			}
+		}
+		middle_strata = {
+			scaled_militancy = {
+				ideology = liberal
 				factor = 3
 			}
 		}
@@ -2495,7 +2313,6 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		trade_unions = state_controlled
 		OR = {
 			socialist = 0.1
@@ -2505,7 +2322,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 800 # Common
 		
 		modifier = {
 			factor = 0.5
@@ -2573,7 +2390,6 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		is_ideology_enabled = socialist
 		trade_unions = non_socialist
 	}
 	
@@ -2594,7 +2410,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA3902"
 		random_state = {
-			limit = { is_colonial = no }
 			poor_strata = {
 				consciousness = 1
 				militancy = 2
@@ -2605,7 +2420,6 @@ country_event = {
 	option = {	
 		name = "EVTOPTB3902"
 		random_state = {
-			limit = { is_colonial = no }
 			poor_strata = {
 				consciousness = 2
 				militancy = -2
@@ -2633,7 +2447,6 @@ country_event = {
 	trigger = {
 		trade_unions = all_trade_unions
 		civilized = yes
-		is_ideology_enabled = socialist
 		NOT = {
 			ruling_party_ideology = socialist
 			ruling_party_ideology = communist
@@ -2641,7 +2454,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 800 # Common
 		
 		modifier = {
 			factor = 0.9
@@ -2704,15 +2517,13 @@ country_event = {
 	picture = "Slaves"
 	
 	trigger = {
-		slavery = yes_slavery
+		slavery = freedom_of_womb
 		civilized = yes
-		any_state = {
-			no_slavery = 10
-		}
+		no_slavery = 10
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 800 # Common
 		
 		modifier = {
 			factor = 0.5
@@ -2734,7 +2545,7 @@ country_event = {
 			any_pop = {
 				scaled_consciousness = {
 					issue = no_slavery
-					factor = 3
+					factor = 1
 				}
 			}
 		}
@@ -2749,7 +2560,7 @@ country_event = {
 			any_pop = {
 				dominant_issue = {
 					value = no_slavery
-					factor = 0.3
+					factor = 0.4
 				}
 			}
 		}
@@ -2764,7 +2575,80 @@ country_event = {
 			any_pop = {
 				scaled_militancy = {
 					issue = no_slavery
-					factor = 3
+					factor = 2
+				}
+			}
+		}
+	}
+}
+
+#Abolitionism
+country_event = {
+	id = 56132561
+	title = "EVTNAME4000"
+	desc = "EVTDESC4000"
+	picture = "Slaves"
+	
+	trigger = {
+		slavery = yes_slavery
+		civilized = yes
+		freedom_of_womb = 10
+	}
+	
+	mean_time_to_happen = {
+		months = 800 # Common
+		
+		modifier = {
+			factor = 0.5
+			militancy = 0.2
+		}
+		
+		modifier = {
+			factor = 1.5
+			consciousness = 0.2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA4000"
+		random_state = {
+			limit = {
+				freedom_of_womb = 10
+			}
+			any_pop = {
+				scaled_consciousness = {
+					issue = freedom_of_womb
+					factor = 1
+				}
+			}
+		}
+	}
+	
+	option = {	
+		name = "EVTOPTB4000"
+		random_state = {
+			limit = {
+				freedom_of_womb = 10
+			}
+			any_pop = {
+				dominant_issue = {
+					value = freedom_of_womb
+					factor = 0.4
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC4000"
+		random_state = {
+			limit = {
+				freedom_of_womb = 10
+			}
+			any_pop = {
+				scaled_militancy = {
+					issue = freedom_of_womb
+					factor = 2
 				}
 			}
 		}
@@ -2791,7 +2675,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200 # Common
+		months = 800 # Common
 		
 		modifier = {
 			factor = 0.8
@@ -2821,7 +2705,22 @@ country_event = {
 		random_country = {
 			limit = {
 				slavery = yes_slavery
-				neighbour = THIS
+			}
+			any_pop = {
+				dominant_issue = {
+					value = freedom_of_womb
+					factor = 0.02
+				}
+			}
+			relation = {
+				who = THIS
+				value = -50
+			}
+		}
+		
+		random_country = {
+			limit = {
+				slavery = freedom_of_womb
 			}
 			any_pop = {
 				dominant_issue = {

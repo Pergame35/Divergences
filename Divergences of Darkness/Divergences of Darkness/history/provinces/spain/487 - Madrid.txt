@@ -3,14 +3,15 @@ controller = SPA
 add_core = SPA
 trade_goods = cattle
 life_rating = 40
-terrain = hilly_farmland
+fort = 1
 state_building = {
-	level = 2 
-	building = glass_factory
+	level = 2
+	building = ammunition_factory
 	upgrade = yes
 }
 state_building = {
-	level = 2 
-	building = steel_factory
+	level = 2
+	building = small_arms_factory
 	upgrade = yes
 }
+1861.1.1 = { railroad = 2 }

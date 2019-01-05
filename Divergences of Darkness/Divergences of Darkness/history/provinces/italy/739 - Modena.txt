@@ -5,9 +5,14 @@ add_core = ITA
 add_core = TUS
 trade_goods = iron
 life_rating = 35
-terrain = forested_farmland
 #state_building = {
 #	level = 1
 #	building = canned_food_factory
 #	upgrade = yes
 #}
+1861.1.1 = {
+	controller = ITA
+	owner = ITA
+	add_core = ITA
+}
+1861.1.1 = { railroad = 3 }

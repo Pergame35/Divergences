@@ -406,14 +406,14 @@ political_decisions = {
       war = no 
       money = 20000
       NOT = { average_militancy = 3 }
-		  immigration_policy = naturalization
+		  border_policy = open_borders
 		  vote_franschise = universal_voting    
 		  upper_house_composition = population_equal_weight
 		  political_parties = secret_ballots  
 		  press_rights = free_press    
 		  public_meetings = yes_meeting   
 		  voting_system = proportional_representation
-      minorities_reform = protected           
+      citizens_rights = all_voting_pops           
       ARC = {
 			all_core = {
 						owned_by = THIS

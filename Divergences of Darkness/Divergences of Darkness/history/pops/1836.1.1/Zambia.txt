@@ -1,680 +1,633 @@
-#Bangwelu Region (308000)
+#Bangwelu Region (308000)  
 #uncolonized in 1836/ruled by Kazembe in 1836
-#Kitwe (44000/11000 POPS)
+#Kitwe (88000/22000 POPS) 
 790 = {
-    clergymen = {
-        culture = lunda
-        religion = animist
-        size = 213
-    }
+	aristocrats = {
+		culture = lunda
+		religion = animist
+		size = 250
+	}
 
-    artisans = {
-        culture = lunda
-        religion = animist
-        size = 800
-    }
+	clergymen = {
+		culture = lunda
+		religion = animist
+		size = 150
+	}
 
-    aristocrats = {
-        culture = lunda
-        religion = animist
-        size = 404
-    }
+	artisans = {
+		culture = lunda
+		religion = animist
+		size = 650
+	}
 
-    officers = {
-        culture = lunda
-        religion = animist
-        size = 8
-    }
+	soldiers = {
+		culture = lunda
+		religion = animist
+		size = 200
+	}
 
-    soldiers = {
-        culture = lunda
-        religion = animist
-        size = 764
-    }
+	farmers = {
+		culture = lunda
+		religion = animist
+		size = 12750
+	}
 
-    bureaucrats = {
-        culture = lunda
-        religion = animist
-        size = 23
-    }
+	aristocrats = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 100
+	}
 
-    farmers = {
-        culture = lunda
-        religion = animist
-        size = 14725
-    }
+	clergymen = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 150
+	}
 
-    clergymen = {
-        culture = african_minor
-        religion = animist
-        size = 38
-    }
+	artisans = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 300
+	}
 
-    artisans = {
-        culture = african_minor
-        religion = animist
-        size = 67
-    }
+	soldiers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 50
+	}
 
-    farmers = {
-        culture = african_minor
-        religion = animist
-        size = 1275
-    }
+	farmers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 5400
+	}
 
-    slaves = {
-        culture = african_minor
-        religion = animist
-        size = 500
-    }
-
-    slaves = {
-        culture = lunda
-        religion = animist
-        size = 1000
-    }
-
-    clergymen = {
-        culture = luba
-        religion = animist
-        size = 39
-    }
-
-    artisans = {
-        culture = luba
-        religion = animist
-        size = 68
-    }
-
-    farmers = {
-        culture = luba
-        religion = animist
-        size = 1275
-    }
-
-    slaves = {
-        culture = luba
-        religion = animist
-        size = 550
-    }
+	slaves = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 2000
+	}
 }
-#Kazembe (84000/21000 POPS)
+#Kazembe (168000/42000 POPS)
 2016 = {
-    aristocrats = {
-        culture = lunda
-        religion = animist
-        size = 4293
-    }
+	aristocrats = {
+		culture = lunda
+		religion = animist
+		size = 450
+	}
 
-    bureaucrats = {
-        culture = lunda
-        religion = animist
-        size = 55
-    }
+	bureaucrats = {
+		culture = lunda
+		religion = animist
+		size = 30
+	}
 
-    officers = {
-        culture = lunda
-        religion = animist
-        size = 120
-    }
+	officers = {
+		culture = lunda
+		religion = animist
+		size = 120
+	}
 
-    clergymen = {
-        culture = lunda
-        religion = animist
-        size = 275
-    }
+	clergymen = {
+		culture = lunda
+		religion = animist
+		size = 250
+	}
 
-    artisans = {
-        culture = lunda
-        religion = animist
-        size = 1425
-    }
+	artisans = {
+		culture = lunda
+		religion = animist
+		size = 1100
+	}
 
-    soldiers = {
-        culture = lunda
-        religion = animist
-        size = 6540
-    }
+	soldiers = {
+		culture = lunda
+		religion = animist
+		size = 1150
+	}
 
-    farmers = {
-        culture = lunda
-        religion = animist
-        size = 22050
-    }
+	farmers = {
+		culture = lunda
+		religion = animist
+		size = 15000
+	}
 
-    aristocrats = {
-        culture = african_minor
-        religion = animist
-        size = 308
-    }
+	aristocrats = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 300
+	}
 
-    clergymen = {
-        culture = african_minor
-        religion = animist
-        size = 50
-    }
+	clergymen = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 200
+	}
 
-    artisans = {
-        culture = african_minor
-        religion = animist
-        size = 222
-    }
+	artisans = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 900
+	}
 
-    soldiers = {
-        culture = african_minor
-        religion = animist
-        size = 514
-    }
+	soldiers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 200
+	}
 
-    farmers = {
-        culture = african_minor
-        religion = animist
-        size = 4050
-    }
+	farmers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 16400
+	}
 
-    slaves = {
-        culture = african_minor
-        religion = animist
-        size = 1550
-    }
-
-    aristocrats = {
-        culture = chewa
-        religion = animist
-        size = 700
-    }
-
-    aristocrats = {
-        culture = nguni
-        religion = animist
-        size = 150
-    }
-
-    aristocrats = {
-        culture = sena
-        religion = animist
-        size = 100
-    }
-
-    soldiers = {
-        culture = chewa
-        religion = animist
-        size = 1000
-    }
-
-    soldiers = {
-        culture = nguni
-        religion = animist
-        size = 250
-    }
-
-    soldiers = {
-        culture = sena
-        religion = animist
-        size = 250
-    }
-
-    slaves = {
-        culture = lunda
-        religion = animist
-        size = 3000
-    }
-
-    aristocrats = {
-        culture = luba
-        religion = animist
-        size = 309
-    }
-
-    clergymen = {
-        culture = luba
-        religion = animist
-        size = 50
-    }
-
-    artisans = {
-        culture = luba
-        religion = animist
-        size = 222
-    }
-
-    soldiers = {
-        culture = luba
-        religion = animist
-        size = 520
-    }
-
-    farmers = {
-        culture = luba
-        religion = animist
-        size = 4050
-    }
-
-    slaves = {
-        culture = luba
-        religion = animist
-        size = 1450
-    }
+	slaves = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 6000
+	}
 }
-#Kasema (68000/17000 POPS)
+#Kasema (136000/34000 POPS) 
 2017 = {
-    clergymen = {
-        culture = lunda
-        religion = animist
-        size = 200
-    }
+	aristocrats = {
+		culture = lunda
+		religion = animist
+		size = 200
+	}
 
-    artisans = {
-        culture = lunda
-        religion = animist
-        size = 1025
-    }
+	clergymen = {
+		culture = lunda
+		religion = animist
+		size = 100
+	}
 
-    farmers = {
-        culture = lunda
-        religion = animist
-        size = 12538
-    }
+	artisans = {
+		culture = lunda
+		religion = animist
+		size = 500
+	}
 
-    clergymen = {
-        culture = african_minor
-        religion = animist
-        size = 50
-    }
+	soldiers = {
+		culture = lunda
+		religion = animist
+		size = 150
+	}
 
-    artisans = {
-        culture = african_minor
-        religion = animist
-        size = 237
-    }
+	farmers = {
+		culture = lunda
+		religion = animist
+		size = 3050
+	}
 
-    farmers = {
-        culture = african_minor
-        religion = animist
-        size = 4006
-    }
+	aristocrats = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 400
+	}
 
-    slaves = {
-        culture = african_minor
-        religion = animist
-        size = 2000
-    }
+	clergymen = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 200
+	}
 
-    slaves = {
-        culture = lunda
-        religion = animist
-        size = 4000
-    }
+	artisans = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 1100
+	}
 
-    clergymen = {
-        culture = luba
-        religion = animist
-        size = 45
-    }
+	soldiers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 250
+	}
 
-    artisans = {
-        culture = luba
-        religion = animist
-        size = 238
-    }
+	farmers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 20050
+	}
 
-    farmers = {
-        culture = luba
-        religion = animist
-        size = 4506
-    }
-
-    slaves = {
-        culture = luba
-        religion = animist
-        size = 2000
-    }
+	slaves = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 8000
+	}
 }
-#Chipata (112000/23000 POPS)
+#Chipata (112000/23000 POPS) 
 2018 = {
-    clergymen = {
-        culture = lunda
-        religion = animist
-        size = 88
-    }
+	aristocrats = {
+		culture = lunda
+		religion = animist
+		size = 100
+	}
 
-    artisans = {
-        culture = lunda
-        religion = animist
-        size = 450
-    }
+	clergymen = {
+		culture = lunda
+		religion = animist
+		size = 50
+	}
 
-    farmers = {
-        culture = lunda
-        religion = animist
-        size = 7175
-    }
+	artisans = {
+		culture = lunda
+		religion = animist
+		size = 250
+	}
 
-    clergymen = {
-        culture = african_minor
-        religion = animist
-        size = 18
-    }
+	soldiers = {
+		culture = lunda
+		religion = animist
+		size = 75
+	}
 
-    artisans = {
-        culture = african_minor
-        religion = animist
-        size = 100
-    }
+	farmers = {
+		culture = lunda
+		religion = animist
+		size = 3525
+	}
 
-    farmers = {
-        culture = african_minor
-        religion = animist
-        size = 1825
-    }
+	aristocrats = {
+		culture = nyasa
+		religion = animist
+		size = 150
+	}
 
-    slaves = {
-        culture = african_minor
-        religion = animist
-        size = 500
-    }
+	clergymen = {
+		culture = nyasa
+		religion = animist
+		size = 75
+	}
 
-    clergymen = {
-        culture = nguni
-        religion = animist
-        size = 50
-    }
+	artisans = {
+		culture = nyasa
+		religion = animist
+		size = 400
+	}
 
-    artisans = {
-        culture = nguni
-        religion = animist
-        size = 250
-    }
+	soldiers = {
+		culture = nyasa
+		religion = animist
+		size = 75
+	}
 
-    farmers = {
-        culture = nguni
-        religion = animist
-        size = 4575
-    }
+	farmers = {
+		culture = nyasa
+		religion = animist
+		size = 7300
+	}
 
-    clergymen = {
-        culture = sena
-        religion = animist
-        size = 50
-    }
+	slaves = {
+		culture = nyasa
+		religion = animist
+		size = 2000
+	}
 
-    artisans = {
-        culture = sena
-        religion = animist
-        size = 200
-    }
+	aristocrats = {
+		culture = nguni
+		religion = animist
+		size = 100
+	}
 
-    farmers = {
-        culture = sena
-        religion = animist
-        size = 3650
-    }
+	clergymen = {
+		culture = nguni
+		religion = animist
+		size = 100
+	}
 
-    slaves = {
-        culture = lunda
-        religion = animist
-        size = 1000
-    }
+	artisans = {
+		culture = nguni
+		religion = animist
+		size = 250
+	}
 
-    clergymen = {
-        culture = luba
-        religion = animist
-        size = 19
-    }
+	soldiers = {
+		culture = nguni
+		religion = animist
+		size = 100
+	}
 
-    artisans = {
-        culture = luba
-        religion = animist
-        size = 100
-    }
+	farmers = {
+		culture = nguni
+		religion = animist
+		size = 4575
+	}
 
-    farmers = {
-        culture = luba
-        religion = animist
-        size = 1825
-    }
+	aristocrats = {
+		culture = sena
+		religion = animist
+		size = 100
+	}
 
-    slaves = {
-        culture = luba
-        religion = animist
-        size = 500
-    }
+	clergymen = {
+		culture = sena
+		religion = animist
+		size = 100
+	}
+
+	artisans = {
+		culture = sena
+		religion = animist
+		size = 200
+	}
+
+	soldiers = {
+		culture = sena
+		religion = animist
+		size = 100
+	}
+
+	farmers = {
+		culture = sena
+		religion = animist
+		size = 3650
+	}
 }
-#Kafue Region (228000) #see Namibia.txt for balance of region
+#Kafue Region (228000) #see Namibia.txt for balance of region 
 #uncolonized in 1836/ruled by Lozi in 1836
-#Kabwe (28000/7000 POPS)
+#Kabwe (28000/7000 POPS) 
 2012 = {
-    clergymen = {
-        culture = lunda
-        religion = animist
-        size = 50
-    }
+	aristocrats = {
+		culture = lunda
+		religion = animist
+		size = 75
+	}
 
-    artisans = {
-        culture = lunda
-        religion = animist
-        size = 200
-    }
+	clergymen = {
+		culture = lunda
+		religion = animist
+		size = 50
+	}
 
-    farmers = {
-        culture = lunda
-        religion = animist
-        size = 1575
-    }
+	artisans = {
+		culture = lunda
+		religion = animist
+		size = 200
+	}
 
-    aristocrats = {
-        culture = lunda
-        religion = animist
-        size = 350
-    }
+	soldiers = {
+		culture = lunda
+		religion = animist
+		size = 50
+	}
 
-    bureaucrats = {
-        culture = lunda
-        religion = animist
-        size = 15
-    }
+	farmers = {
+		culture = lunda
+		religion = animist
+		size = 1575
+	}
 
-    soldiers = {
-        culture = lunda
-        religion = animist
-        size = 1500
-    }
+	aristocrats = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 25
+	}
 
-    officers = {
-        culture = lunda
-        religion = animist
-        size = 10
-    }
+	clergymen = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 50
+	}
 
-    clergymen = {
-        culture = african_minor
-        religion = animist
-        size = 50
-    }
+	artisans = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 100
+	}
 
-    artisans = {
-        culture = african_minor
-        religion = animist
-        size = 100
-    }
+	soldiers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 25
+	}
 
-    farmers = {
-        culture = african_minor
-        religion = animist
-        size = 1800
-    }
+	farmers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 1800
+	}
 
-    slaves = {
-        culture = african_minor
-        religion = animist
-        size = 3000
-    }
+	slaves = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 3000
+	}
 }
-#Senanga (52000/13000 POPS)
+#Senanga (52000/13000 POPS) 
 2013 = {
-    officers = {
-        culture = lunda
-        religion = animist
-        size = 65
-    }
+	aristocrats = {
+		culture = lunda
+		religion = animist
+		size = 225
+	}
 
-    clergymen = {
-        culture = lunda
-        religion = animist
-        size = 125
-    }
+	bureaucrats = {
+		culture = lunda
+		religion = animist
+		size = 10
+	}
 
-    artisans = {
-        culture = lunda
-        religion = animist
-        size = 500
-    }
+	officers = {
+		culture = lunda
+		religion = animist
+		size = 65
+	}
 
-    farmers = {
-        culture = lunda
-        religion = animist
-        size = 8950
-    }
+	clergymen = {
+		culture = lunda
+		religion = animist
+		size = 125
+	}
 
-    clergymen = {
-        culture = african_minor
-        religion = animist
-        size = 25
-    }
+	artisans = {
+		culture = lunda
+		religion = animist
+		size = 500
+	}
 
-    artisans = {
-        culture = african_minor
-        religion = animist
-        size = 50
-    }
+	soldiers = {
+		culture = lunda
+		religion = animist
+		size = 125
+	}
 
-    farmers = {
-        culture = african_minor
-        religion = animist
-        size = 900
-    }
+	farmers = {
+		culture = lunda
+		religion = animist
+		size = 8950
+	}
 
-    slaves = {
-        culture = african_minor
-        religion = animist
-        size = 2000
-    }
+	aristocrats = {
+		culture = kavango
+		religion = animist
+		size = 10
+	}
+
+	clergymen = {
+		culture = kavango
+		religion = animist
+		size = 25
+	}
+
+	artisans = {
+		culture = kavango
+		religion = animist
+		size = 50
+	}
+
+	soldiers = {
+		culture = kavango
+		religion = animist
+		size = 15
+	}
+
+	farmers = {
+		culture = kavango
+		religion = animist
+		size = 900
+	}
+
+	slaves = {
+		culture = kavango
+		religion = animist
+		size = 2000
+	}
 }
-#Kasempa (40000/10000 POPS)
+#Kasempa (40000/10000 POPS) 
 2014 = {
-    clergymen = {
-        culture = lunda
-        religion = animist
-        size = 100
-    }
+	aristocrats = {
+		culture = lunda
+		religion = animist
+		size = 150
+	}
 
-    artisans = {
-        culture = lunda
-        religion = animist
-        size = 375
-    }
+	clergymen = {
+		culture = lunda
+		religion = animist
+		size = 75
+	}
 
-    farmers = {
-        culture = lunda
-        religion = animist
-        size = 5250
-    }
+	artisans = {
+		culture = lunda
+		religion = animist
+		size = 325
+	}
 
-    clergymen = {
-        culture = african_minor
-        religion = animist
-        size = 12
-    }
+	soldiers = {
+		culture = lunda
+		religion = animist
+		size = 100
+	}
 
-    artisans = {
-        culture = african_minor
-        religion = animist
-        size = 25
-    }
+	farmers = {
+		culture = lunda
+		religion = animist
+		size = 4350
+	}
 
-    farmers = {
-        culture = african_minor
-        religion = animist
-        size = 450
-    }
+	aristocrats = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 25
+	}
 
-    slaves = {
-        culture = african_minor
-        religion = animist
-        size = 750
-    }
+	clergymen = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 50
+	}
 
-    slaves = {
-        culture = lunda
-        religion = animist
-        size = 1500
-    }
+	artisans = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 100
+	}
 
-    clergymen = {
-        culture = luba
-        religion = animist
-        size = 13
-    }
+	soldiers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 25
+	}
 
-    artisans = {
-        culture = luba
-        religion = animist
-        size = 25
-    }
+	farmers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 1800
+	}
 
-    farmers = {
-        culture = luba
-        religion = animist
-        size = 450
-    }
-
-    slaves = {
-        culture = luba
-        religion = animist
-        size = 750
-    }
+	slaves = {
+		culture = kavango
+		religion = animist
+		size = 3000
+	}
 }
-#Monzo (108000/27000 POPS)
+#Monzo (108000/27000 POPS) 
 2015 = {
-    clergymen = {
-        culture = lunda
-        religion = animist
-        size = 250
-    }
+	aristocrats = {
+		culture = lunda
+		religion = animist
+		size = 475
+	}
 
-    artisans = {
-        culture = lunda
-        religion = animist
-        size = 1000
-    }
+	clergymen = {
+		culture = lunda
+		religion = animist
+		size = 250
+	}
 
-    farmers = {
-        culture = lunda
-        religion = animist
-        size = 20025
-    }
+	artisans = {
+		culture = lunda
+		religion = animist
+		size = 1100
+	}
 
-    clergymen = {
-        culture = african_minor
-        religion = animist
-        size = 50
-    }
+	soldiers = {
+		culture = lunda
+		religion = animist
+		size = 250
+	}
 
-    artisans = {
-        culture = african_minor
-        religion = animist
-        size = 100
-    }
+	farmers = {
+		culture = lunda
+		religion = animist
+		size = 20025
+	}
 
-    farmers = {
-        culture = african_minor
-        religion = animist
-        size = 1800
-    }
+	aristocrats = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 25
+	}
 
-    slaves = {
-        culture = african_minor
-        religion = animist
-        size = 3000
-    }
+	clergymen = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 50
+	}
+
+	artisans = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 100
+	}
+
+	soldiers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 25
+	}
+
+	farmers = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 1800
+	}
+
+	slaves = {
+		culture = south_forest_bantu
+		religion = animist
+		size = 3000
+	}
+
 }

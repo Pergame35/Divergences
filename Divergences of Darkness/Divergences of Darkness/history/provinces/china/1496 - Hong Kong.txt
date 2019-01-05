@@ -3,6 +3,13 @@ controller = TNG
 add_core = TNG
 add_core = TAI 
 add_core = CHI
-trade_goods = fish
-life_rating = 40
-terrain = seasonal_jungle_hills
+trade_goods = tea
+life_rating = 35
+1861.1.1 = {
+	owner = ENG
+	controller = ENG
+	add_core = ENG
+	fort = 1
+	naval_base = 1
+	colonial = 2
+}

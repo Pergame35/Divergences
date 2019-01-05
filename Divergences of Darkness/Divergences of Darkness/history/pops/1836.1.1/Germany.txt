@@ -185,7 +185,7 @@
 }
 #Lower Elbe Region (557600)
 #Under rule of Hamburg 1836
-#Hamburg (160000/40000 POPS)
+#Hamburg (150000/37500 POPS)
 528 = {
 	aristocrats = {
 		culture = north_german
@@ -403,6 +403,7 @@
 	}
 }
 
+#Under rule of Britain 1836
 #Heligoland (1600/400 POPS)
 533 = {
 	farmers = {
@@ -414,7 +415,7 @@
 }
 #Mecklenburg Region (614000)
 #under the Rule of Lubeck 1836 
-#Lubeck (40000/10000 POPS)
+#Lubeck (46503/11626 POPS)
 530 = {
 	aristocrats = {
 		culture = north_german
@@ -923,7 +924,7 @@
 }
 #East Frisia Region (496000)
 #under the rule of Bremen 1836
-#Bremen (64000/16000 POPS)
+#Bremen (52000/13000 POPS)
 539 = {
 	aristocrats = {
 		culture = north_german
@@ -2444,7 +2445,7 @@
 }
 #Hesse Region (1719600) 
 #under the rule of Frankfurt 1836  
-#Frankfurt-am-Main (64000/16000 POPS)
+#Frankfurt-am-Main (44000/16000 POPS)
 564 = {
 	aristocrats = {
 		culture = rheinish
@@ -5397,4 +5398,56 @@
 		religion = protestant
 		size = 3800 
 	}
+}
+
+#Former Ghat - Now Nordhorn(16000/4000 POPS)
+1743 = {
+	officers = {
+		culture = rheinish
+		religion = protestant
+		size = 25
+	}
+
+	clergymen = {
+		culture = rheinish
+		religion = protestant
+		size = 15 
+	}
+
+	artisans = {
+		culture = rheinish
+		religion = protestant
+		size = 400
+	}
+
+	soldiers = {
+		culture = rheinish
+		religion = protestant
+		size = 88 
+	}
+
+	farmers = {
+		culture = rheinish
+		religion = protestant
+		size = 985
+	}
+	
+	farmers = {
+		culture = rheinish
+		size = 500
+		religion = catholic
+	}
+
+	clergymen = {
+		culture = dutch
+		religion = protestant
+		size = 75 
+	}
+
+	farmers = {
+		culture = dutch
+		religion = protestant
+		size = 8075 
+	}
+
 }

@@ -1,6 +1,6 @@
 #Sonora Region (140000)
 #ruled by Mexico 1836
-#Hermosillo / Belo Horizonte (76000/19000 POPS)
+#Hermosillo (76000/19000 POPS)
 2137 = {
 	aristocrats = {
 		culture = lusitanian
@@ -88,7 +88,7 @@
 		size = 6210
 	}
 }
-#Nogales / Nogales (12000/3000 POPS)
+#Nogales (12000/3000 POPS)
 2140 = {
 	aristocrats = {
 		culture = lusitanian
@@ -165,7 +165,7 @@
 		size = 7450
 	}
 }
-#Guaymas / Guaymas (52000/13000 POPS)
+#Guaymas (52000/13000 POPS)
 2141 = {
 	aristocrats = {
 		culture = lusitanian
@@ -254,7 +254,7 @@
 }
 #Baja California Region (20000)
 #ruled by Mexico 1836
-#Loreto / Sao Paolo (4000/1000 POPS)
+#Loreto (4000/1000 POPS)
 2138 = {
 	aristocrats = {
 		culture = lusitanian
@@ -311,7 +311,7 @@
 		size = 6100
 	}
 }
-#Rosarito / Rosarito (16000/4000 POPS)
+#Rosarito (16000/4000 POPS)
 2139 = {
 	aristocrats = {
 		culture = lusitanian
@@ -384,7 +384,7 @@
 }
 #Chihuahua Region (136000)
 #ruled by Mexico 1836
-#Chihuahua / Chihuaha (100000/25000 POPS)
+#Chihuahua (100000/25000 POPS)
 2142 = {
 	aristocrats = {
 		culture = lusitanian
@@ -548,7 +548,7 @@
 		size = 6570
 	}
 }
-#Delicias / Delicias (8000/2000 POPS)
+#Delicias (8000/2000 POPS)
 2144 = {
 	aristocrats = {
 		culture = lusitanian
@@ -624,7 +624,7 @@
 		size = 3400
 	}
 }
-#Parral / Parral (16000/4000 POPS)
+#Parral (16000/4000 POPS)
 2145 = {
 	aristocrats = {
 		culture = lusitanian
@@ -718,7 +718,7 @@
 }
 #Coahuila Region (160000)
 #ruled by Mexico 1836
-#Morelos / Rio de Janeiro (12000/3000 POPS)
+#Morelos (12000/3000 POPS)
 2147 = {
 	aristocrats = {
 		culture = lusitanian
@@ -798,7 +798,7 @@
 		size = 5500
 	}
 }
-#Saltillo / Saltillo (44000/11000 POPS)
+#Saltillo (44000/11000 POPS)
 2151 = {
 	aristocrats = {
 		culture = mexican
@@ -868,7 +868,7 @@
 		size = 4140
 	}
 }
-#Monclova / Monclova (48000/12000 POPS)
+#Monclova (48000/12000 POPS)
 2152 = {
 	aristocrats = {
 		culture = lusitanian
@@ -943,7 +943,7 @@
 		size = 6500
 	}
 }
-#Torreon / Torreon (56000/14000 POPS)
+#Torreon (56000/14000 POPS)
 2155 = {
 	aristocrats = {
 		culture = mexican
@@ -999,11 +999,54 @@
 		size = 5500
 	}
 }
-#Nuevo Leon-Tamaulipas Region (172000)
+#Nuevo Leon-Tamaulipas Region (172000) -- Combined with original PROV2146 pops
 #ruled by Mexico 1836
-#Monterrey / Monterrey (104000/26000 POPS)
-2146 = {
+#Reynosa (16000/4000 POPS)
+2148 = {
 	aristocrats = {
+		culture = mexican
+		religion = catholic
+		size = 100
+	}
+
+	clergymen = {
+		culture = mexican
+		religion = catholic
+		size = 75
+	}
+
+	artisans = {
+		culture = mexican
+		religion = catholic
+		size = 200
+	}
+
+	soldiers = {
+		culture = mexican
+		religion = catholic
+		size= 250
+
+	}
+
+	farmers = {
+		culture = mexican
+		religion = catholic
+		size = 4575
+	}
+
+	clergymen = {
+		culture = afro_latino
+		religion = catholic
+		size = 10
+	}
+
+	farmers = {
+		culture = afro_latino
+		religion = catholic
+		size = 300
+	}
+
+		aristocrats = {
 		culture = mexican
 		religion = catholic
 		size = 350
@@ -1073,65 +1116,14 @@
 		size = 500
 		militancy = 9
 	}
-
+	
 	slaves = {
 		culture = afro_latino
 		religion = catholic
-		size = 7680
+		size = 11130
 	}
 }
-#Reynosa / Reynosa (16000/4000 POPS)
-2148 = {
-	aristocrats = {
-		culture = mexican
-		religion = catholic
-		size = 100
-	}
-
-	clergymen = {
-		culture = mexican
-		religion = catholic
-		size = 75
-	}
-
-	artisans = {
-		culture = mexican
-		religion = catholic
-		size = 200
-	}
-
-	soldiers = {
-		culture = mexican
-		religion = catholic
-		size= 250
-
-	}
-
-	farmers = {
-		culture = mexican
-		religion = catholic
-		size = 4575
-	}
-
-	clergymen = {
-		culture = afro_latino
-		religion = catholic
-		size = 10
-	}
-
-	farmers = {
-		culture = afro_latino
-		religion = catholic
-		size = 300
-	}
-
-	slaves = {
-		culture = afro_latino
-		religion = catholic
-		size = 3450
-	}
-}
-#Matamoros / Matamoros (28000/7000 POPS)
+#Matamoros (28000/7000 POPS)
 2149 = {
 	aristocrats = {
 		culture = mexican
@@ -1182,7 +1174,7 @@
 		size = 4200
 	}
 }
-#Ciudad Victoria / Ciudad Victoria (24000/6000 POPS)
+#Ciudad Victoria (24000/6000 POPS)
 2150 = {
 	aristocrats = {
 		culture = mexican
@@ -1235,7 +1227,7 @@
 }
 #Durango-Sinaloa Region (252000)
 #ruled by Mexico 1836
-#Durango / Durango (64000/16000 POPS)
+#Durango (64000/16000 POPS)
 2153 = {
 	aristocrats = {
 		culture = mexican
@@ -1292,7 +1284,7 @@
 		size = 6400
 	}
 }
-#Santa Maria del Oro / Santa Maria del Oro (44000/11000 POPS)
+#Santa Maria del Oro (44000/11000 POPS)
 2154 = {
 	aristocrats = {
 		culture = mexican
@@ -1349,7 +1341,7 @@
 		size = 6250
 	}
 }
-#Mazatlan / Mazatlan (116000/29000 POPS)
+#Mazatlan (116000/29000 POPS)
 2156 = {
 	aristocrats = {
 		culture = mexican
@@ -1412,7 +1404,7 @@
 		size = 11300
 	}
 }
-#Culiacan / Culiacan (28000/7000 POPS)
+#Culiacan (28000/7000 POPS)
 2157 = {
 	aristocrats = {
 		culture = mexican
@@ -1465,7 +1457,7 @@
 }
 #Zacatecas-Aguascalientes Region (568000)
 #ruled by Mexico 1836
-#Zacatecas / Zacatecas (340000/85000 POPS)
+#Zacatecas (340000/85000 POPS)
 2158 = {
 	aristocrats = {
 		culture = mexican
@@ -1582,7 +1574,7 @@
 		size = 12350
 	}
 }
-#Aguascalientes / Aguascalientes (152000/38000 POPS)
+#Aguascalientes (152000/38000 POPS)
 2160 = {
 	aristocrats = {
 		culture = mexican
@@ -1669,7 +1661,7 @@
 		size = 9870
 	}	
 }
-#Tepic / Tepic (76000/19000 POPS)
+#Tepic (76000/19000 POPS)
 2161 = {
 	aristocrats = {
 		culture = mexican
@@ -1752,7 +1744,7 @@
 }
 #Potosi-Guanajuato Region (1356000)
 #ruled by Mexico 1836
-#San Luis Potosi / San Luis Potosi (324000/81000 POPS)
+#San Luis Potosi (324000/81000 POPS)
 2159 = {
 	aristocrats = {
 		culture = mexican
@@ -1848,7 +1840,7 @@
 		size = 9550
 	}
 }
-#Guanajuato / Guanajunto (672000/168000 POPS)
+#Guanajuato (672000/168000 POPS)
 2167 = {
 	aristocrats = {
 		culture = mexican
@@ -1958,7 +1950,7 @@
 		size = 13890
 	}
 }
-#Queretaro / Queretaro (360000/90000 POPS)
+#Queretaro (360000/90000 POPS)
 2173 = {
 	aristocrats = {
 		culture = mexican
@@ -2053,7 +2045,7 @@
 }
 #Veracruz-Tabasco Region (328000)
 #ruled by Mexico 1836
-#Veracruz / Veracruz (140000/70000 POPS)
+#Veracruz (140000/70000 POPS)
 2162 = {
 	aristocrats = {
 		culture = mexican
@@ -2158,7 +2150,7 @@
 		size = 9870
 	}
 }
-#Tampico / Tampico (80000/20000 POPS)
+#Tampico (80000/20000 POPS)
 2163 = {
 	aristocrats = {
 		culture = mexican

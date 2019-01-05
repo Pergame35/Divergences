@@ -24,8 +24,14 @@
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 15850
+		size = 9510
 	}
+	
+	serfs = {
+		culture = serb
+		religion = orthodox
+		size = 6340
+	}	
 
 	clergymen = {
 		culture = croat
@@ -49,8 +55,14 @@
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 3675  
+		size = 2205  
 	}
+	
+	serfs = {
+		culture = croat
+		religion = catholic
+		size = 1470  
+	}	
 
 	aristocrats = {
 		culture = south_german
@@ -80,7 +92,13 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 5225  
+		size = 3315  
+	}
+	
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 2210  
 	}
 }
 #Pancevo (268000/67000 POPS) #part of Serbia today
@@ -107,8 +125,14 @@
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 24325
+		size = 14595
 	}
+	
+	serfs = {
+		culture = serb
+		religion = orthodox
+		size = 9730
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -138,8 +162,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 8700 
+		size = 5220 
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 3480 
+	}	
 
 	aristocrats = {
 		culture = south_german
@@ -169,8 +199,14 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 17600  
+		size = 11264  
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 6336  
+	}	
 
 	clergymen = {
 		culture = romanian
@@ -194,8 +230,14 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 10300 
+		size = 6592 
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 3708 
+	}	
 }
 #Novi Sad (384000/96000 POPS) #part of Serbia today
 2538 = {
@@ -227,8 +269,14 @@
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 26175 
+		size = 15705 
 	}
+	
+	serfs = {
+		culture = serb
+		religion = orthodox
+		size = 10470 
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -258,8 +306,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 26500 
+		size = 15900 
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 10600 
+	}	
 
 	clergymen = {
 		culture = croat
@@ -283,8 +337,14 @@
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 4625  
+		size = 2775  
 	}
+	
+	serfs = {
+		culture = croat
+		religion = catholic
+		size = 1850  
+	}	
 
 	clergymen = {
 		culture = slovak
@@ -308,8 +368,14 @@
 	farmers = {
 		culture = slovak
 		religion = catholic
-		size = 9375 
+		size = 5625 
 	}
+	
+	serfs = {
+		culture = slovak
+		religion = catholic
+		size = 3750 
+	}	
 
 	aristocrats = {
 		culture = south_german
@@ -339,10 +405,16 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 20375 
+		size = 12225 
 	}
+
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 8150 
+	}	
 }
-#Serbia Region (1288000)
+#Serbia Region (180310) - 721.240 people
 #under the rule of Serbia in 1836
 #Belgrade (328000/82000 POPS)
 794 = {
@@ -386,10 +458,16 @@
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 75625
+		size = 71125
+	}
+	
+	farmers = {
+		culture = gypsy
+		religion = orthodox
+		size = 4500
 	}
 }
-#Bor (220000/55000 POPS)
+#Bor (220400/55000 POPS)
 795 = {
 	aristocrats = {
 		culture = serb
@@ -791,7 +869,7 @@
 	farmers = {
 		culture = turkish
 		religion = sunni
-		size = 5150
+		size = 4550
 	}
 
 	clergymen = {
@@ -836,6 +914,13 @@
 		religion = orthodox
 		size = 1825
 	}
+	
+	farmers = {
+		culture = gypsy
+		religion = sunni
+		size = 600
+	}
+
 }
 #Novi Pazar (72000/18000 POPS)
 804 = {

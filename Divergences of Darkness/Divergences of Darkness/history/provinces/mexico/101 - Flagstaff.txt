@@ -3,7 +3,12 @@ controller = CLM
 add_core = CLM
 add_core = LST
 add_core = DIN
-
-trade_goods = coal
+trade_goods = iron
 life_rating = 35
-terrain = semi_desert_mountains
+1861.1.1 = {
+	controller = USA
+	owner = USA
+	add_core = USA
+	add_core = CSA
+	remove_core = MEX
+}

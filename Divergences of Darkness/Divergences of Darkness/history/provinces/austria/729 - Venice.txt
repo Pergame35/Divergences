@@ -2,9 +2,9 @@ owner = VEN
 controller = VEN
 add_core = VEN
 trade_goods = fish
-life_rating = 32
+life_rating = 40
 naval_base = 2
-terrain = good_farmland
+
 state_building = {
 	level = 2
 	building = clipper_shipyard
@@ -14,4 +14,17 @@ state_building = {
 	level = 2
 	building = ammunition_factory
 	upgrade = yes
+}
+
+state_building = {
+	level = 1
+	building = glass_factory
+	upgrade = yes
+}
+1861.1.1 = {
+	state_building = {
+	level = 1
+	building = glass_factory
+	upgrade = yes
+	}
 }

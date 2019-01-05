@@ -43,7 +43,6 @@ objectTypes = {
 	}
 
 
-
 	progressbar3dType = {
 		name = "construction_bar"
 		color = { 0.0 0.8 0.0 }
@@ -76,23 +75,23 @@ objectTypes = {
 	
 	billboardType = {
 		name = "tradegoods"
-		texturefile = "gfx\\interface\\resources_big_solo_pdm.tga"
-		noOfFrames = 65
+		texturefile = "gfx\\interface\\resources.dds"
+		noOfFrames = 50
 		scale = 2.5
 	}
 	
 	billboardType = {
 		name = "crimes"
 		texturefile = "gfx\\interface\\crime_strip.dds"
-		noOfFrames = 9
+		noOfFrames = 12
 		scale = 2.5
 	}
 	
 	billboardType = {
 		name = "tradegoods_small"
-		texturefile = "gfx\\interface\\resources_solo_pdm.tga"
-		noOfFrames = 65
-		scale = 1.0
+		texturefile = "gfx\\interface\\resources.dds"
+		noOfFrames = 50
+		scale = 1
 	}
 	
 	billboardType = {
@@ -119,6 +118,7 @@ objectTypes = {
 		font = "Arial_17_black"
 	}
 	
+
 	billboardType = {
 		name = "capital"
 		textureFile = "gfx\\mapitems\\building_capital.dds"
@@ -129,7 +129,7 @@ objectTypes = {
 		name = "national_focus"
 		textureFile = "gfx\\interface\\province_natfocus_strip.dds"
 		scale = 1.5
-		noOfFrames = 43
+		noOfFrames = 32
 	}	
 		
 	billboardType = {

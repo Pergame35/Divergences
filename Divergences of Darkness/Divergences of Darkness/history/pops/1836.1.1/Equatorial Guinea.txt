@@ -32,30 +32,82 @@
 		size= 5
 
 	}
+	aristocrats = {
+		culture = forest_bantu
+		religion = animist
+		size = 10
+	}
+	
+	officers = {
+		culture = forest_bantu
+		religion = animist
+		size = 20
+	}
+
+	clergymen = {
+		culture = forest_bantu
+		religion = animist
+		size = 20
+	}
 
 	artisans = {
-		culture = fang
-		religion = catholic
+		culture = forest_bantu
+		religion = animist
 		size = 120
 	}
 
 	soldiers = {
-		culture = fang
-		religion = catholic
-		size= 50
-
+		culture = forest_bantu
+		religion = animist
+		size = 50
 	}
 
 	farmers = {
-		culture = fang
-		religion = catholic
-		size = 1530
+		culture = forest_bantu
+		religion = animist
+		size = 530
+	}
+	
+	aristocrats = {
+		culture = ibo
+		religion = animist
+		size = 10
+	}
+	
+	officers = {
+		culture = ibo
+		religion = animist
+		size = 20
+	}
+
+	clergymen = {
+		culture = ibo
+		religion = animist
+		size = 20
+	}
+
+	artisans = {
+		culture = ibo
+		religion = animist
+		size = 120
+	}
+
+	soldiers = {
+		culture = ibo
+		religion = animist
+		size = 50
+	}
+
+	farmers = {
+		culture = ibo
+		religion = animist
+		size = 700
 	}
 
 	slaves = {
-		culture = fang
+		culture = kru
 		religion = animist
-		size = 1100
+		size = 630
 	}
 }
 #uncolonized in 1836
@@ -82,8 +134,7 @@
 	soldiers = {
 		culture = fang
 		religion = animist
-		size= 350
-
+		size = 350
 	}
 
 	farmers = {
@@ -91,5 +142,40 @@
 		religion = animist
 		size = 31500
 	}
+	
+	aristocrats = {
+		culture = forest_bantu
+		religion = animist
+		size = 100
+	}
 
+	clergymen = {
+		culture = forest_bantu
+		religion = animist
+		size = 100
+	}
+
+	artisans = {
+		culture = forest_bantu
+		religion = animist
+		size = 100
+	}
+
+	soldiers = {
+		culture = forest_bantu
+		religion = animist
+		size = 100
+	}
+
+	farmers = {
+		culture = forest_bantu
+		religion = animist
+		size = 1000
+	}
+	
+	slaves = {
+		culture = ibo
+		religion = animist
+		size = 500
+	}
 }

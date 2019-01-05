@@ -1,728 +1,329 @@
 #financial_institutions
 private_banks = {
 	area = financial_institutions
-	year = 1821
-	cost = 4600
-	administrative_efficiency = 0.025
-	factory_output = 0.01
+	year = 1836
+	cost = 3600
+
+	activate_building = cement_factory 
+	tax_eff = 3
 	
 	ai_chance = {
-		factor = 50
+		factor = 4
 		modifier = {
-			factor = 1.5
-			year = 1856
+			factor = 3.5
+			rank = 16
 		}
 		modifier = {
-			factor = 1.5
-			year = 1876
+			factor = 8
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 0.5
-			NOT = { literacy = 0.2 }
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 0.8
-			literacy = 0.2
-			NOT = { literacy = 0.5 }
+			factor = 1.1
+			literacy = 0.3 
 		}
 		modifier = {
-			factor = 1.5
-			literacy = 0.5
-			NOT = { literacy = 0.7 }
-		}
-		modifier = {
-			factor = 2
-			literacy = 0.7
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 1.1
+			literacy = 0.6
 		}
 	}
 }
-
 stock_exchange = {
 	area = financial_institutions
-	year = 1825
-	cost = 7750
-	administrative_efficiency = 0.025
-	factory_output = 0.01
+	year = 1836
+	cost = 7200
+
+	tax_eff = 5
 	
 	ai_chance = {
-		factor = 25
+		factor = 2
 		modifier = {
-			factor = 1.5
-			year = 1856
+			factor = 3.5
+			rank = 16
 		}
 		modifier = {
-			factor = 1.5
-			year = 1876
+			factor = 8
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 0.5
-			NOT = { literacy = 0.2 }
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 0.8
-			literacy = 0.2
-			NOT = { literacy = 0.5 }
+			factor = 1.15
+			literacy = 0.3 
 		}
 		modifier = {
-			factor = 1.5
-			literacy = 0.5
-			NOT = { literacy = 0.7 }
-		}
-		modifier = {
-			factor = 2
-			literacy = 0.7
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 1.15
+			literacy = 0.6
 		}
 	}
 }
-
 business_banks = {
 	area = financial_institutions
 	year = 1850
-	cost = 10200
-	administrative_efficiency = 0.025
-	factory_output = 0.01
-	factory_goods_throughput = {
-		shares = 0.02
-	}
+	cost = 10800
+
+	tax_eff = 5
 	
 	ai_chance = {
-		factor = 10
+		factor = 2
 		modifier = {
-			factor = 5
-			OR = {
-				big_producer = shares
-				big_producer = financial_services
-			}
+			factor = 4
+			rank = 16
 		}
 		modifier = {
-			factor = 0.1
-			NOT = { literacy = 0.2 }
+			factor = 8
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 0.5
-			literacy = 0.2
-			NOT = { literacy = 0.5 }
-		}
-		modifier = {
-			factor = 1.2
-			literacy = 0.5
-			NOT = { literacy = 0.7 }
+			factor = 2
+			tech_school = commerce_tech_school
 		}
 		modifier = {
 			factor = 1.5
-			literacy = 0.7
+			literacy = 0.3 
 		}
 		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 1.5
+			literacy = 0.6
 		}
 	}
 }
-
 investment_banks = {
 	area = financial_institutions
 	year = 1870
-	cost = 12750
-	administrative_efficiency = 0.025
-	factory_output = 0.01
-	factory_goods_throughput = {
-		shares = 0.02
-	}
-	factory_goods_throughput = {
-		financial_services = 0.02
-	}
-	
+	cost = 14400
+
+	tax_eff = 5
 	ai_chance = {
-		factor = 5
+		factor = 1.5
 		modifier = {
-			factor = 2
-			OR = {
-				big_producer = shares
-				big_producer = financial_services
-			}
+			factor = 3.5
+			rank = 16
 		}
 		modifier = {
-			factor = 0.2
-			NOT = { literacy = 0.2 }
+			factor = 8
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 0.5
-			literacy = 0.2
-			NOT = { literacy = 0.5 }
+			factor = 3
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 1.2
-			literacy = 0.5
-			NOT = { literacy = 0.7 }
+			factor = 1.15
+			literacy = 0.3 
 		}
 		modifier = {
-			factor = 1.5
-			literacy = 0.7
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 1.15
+			literacy = 0.6
 		}
 	}
 }
-
 bank_inspection_board = {
 	area = financial_institutions
-	year = 1890
-	cost = 20400
-	administrative_efficiency = 0.05
-	factory_output = 0.01
-	factory_goods_throughput = {
-		shares = 0.02
-	}
-	factory_goods_throughput = {
-		financial_services = 0.02
-	}
-	
+	year = 1900
+	cost = 18000
+
+	tax_eff = 5
 	ai_chance = {
-		factor = 1
-		modifier = {
-			factor = 5
-			OR = {
-				big_producer = shares
-				big_producer = financial_services
-				big_producer = paper
-			}
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { literacy = 0.5 }
-		}
-		modifier = {
-			factor = 1.2
-			literacy = 0.5
-			NOT = { literacy = 0.7 }
-		}
+		factor = 1.5
 		modifier = {
 			factor = 1.5
-			literacy = 0.7
+			rank = 16
 		}
 		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
+			factor = 8
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
+			factor = 3
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
+			factor = 1.05
+			literacy = 0.3 
 		}
 		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
+			factor = 1.05
+			literacy = 0.6
+		}	
+	}
+}
+mutual_funds = {
+	area = financial_institutions
+	year = 1919
+	cost = 21600
+
+	tax_eff = 5
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 1.5
+			rank = 16
 		}
 		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 8
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 	}
 }
 
-mutual_funds = {
-	area = financial_institutions
-	year = 1900
-	cost = 30000
-	administrative_efficiency = 0.05
-	factory_output = 0.02
-	factory_goods_throughput = {
-		financial_services = 0.05
-	}
-	factory_goods_throughput = {
-		shares = 0.05
-	}
-	
-	ai_chance = {
-		factor = 1
-		modifier = {
-			factor = 5
-			OR = {
-				big_producer = shares
-				big_producer = financial_services
-			}
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { literacy = 0.5 }
-		}
-		modifier = {
-			factor = 1.2
-			literacy = 0.5
-			NOT = { literacy = 0.7 }
-		}
-		modifier = {
-			factor = 1.5
-			literacy = 0.7
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
-		}
-	}
-}
 
 #monetary_system
 no_standard = {
 	area = monetary_system
-	year = 1821
-	cost = 4600
-	tax_eff = 5
-	administrative_efficiency = 0.025
-	
+	year = 1836
+	cost = 3600
+
+	administrative_efficiency = 0.05
 	ai_chance = {
-		factor = 100
+		factor = 2
 		modifier = {
-			factor = 1.5
-			year = 1840
+			factor = 1.1
+			rank = 16
 		}
 		modifier = {
-			factor = 1.5
-			year = 1860
-		}
-		modifier = {
-			factor = 1.2
-			big_producer = financial_services
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				NOT = { money = 10200 }
-				produces = precious_metal
-			}
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 	}
 }
-
 ad_hoc_money_bill_printing = {
 	area = monetary_system
-	year = 1830
-	cost = 7750
-	tax_eff = 5
-	administrative_efficiency = 0.025
+	year = 1836
+	cost = 7200
 	
+	administrative_efficiency = 0.05
 	ai_chance = {
-		factor = 50
+		factor = 2
 		modifier = {
-			factor = 1.5
-			year = 1850
-		}
-		modifier = {
-			factor = 1.5
-			year = 1870
-		}
-		modifier = {
-			factor = 1.2
-			big_producer = financial_services
+			factor = 1.25 #1.1
+			rank = 16
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				NOT = { money = 10200 }
-				produces = precious_metal
-			}
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
+			factor = 1.05
+			literacy = 0.3 
 		}
 		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
+			factor = 1.05
+			literacy = 0.6
 		}
 		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 	}
-}
-
+}  
 private_bank_money_bill_printing = {
 	area = monetary_system
-	year = 1850
-	cost = 10200
-	tax_eff = 5
-	administrative_efficiency = 0.025
-	
+	year = 1836
+	cost = 10800
+
+	administrative_efficiency = 0.05
 	ai_chance = {
-		factor = 25
+		factor = 1.5
 		modifier = {
-			factor = 1.5
-			year = 1870
+			factor = 5
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 1.5
-			year = 1890
+			factor = 1.25 #1.1
+			rank = 16
 		}
 		modifier = {
-			factor = 1.2
-			big_producer = financial_services
-		}
-		modifier = {
-			factor = 4
-			OR = {
-				NOT = { money = 10200 }
-				produces = precious_metal
-			}
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 	}
 }
-
 central_bank_money_bill_printing = {
 	area = monetary_system
-	year = 1870
-	cost = 12750
-	tax_eff = 5
-	administrative_efficiency = 0.025
-	
+	year = 1850
+	cost = 14400
+
+	administrative_efficiency = 0.05
 	ai_chance = {
-		factor = 10
+		factor = 1.5
 		modifier = {
-			factor = 1.5
-			year = 1890
-		}
-		modifier = {
-			factor = 1.5
-			year = 1910
-		}
-		modifier = {
-			factor = 1.2
-			big_producer = financial_services
+			factor = 1.1
+			rank = 16
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				NOT = { money = 10200 }
-				produces = precious_metal
-			}
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 	}
 }
-
 modern_central_bank_system = {
 	area = monetary_system
-	year = 1880
-	cost = 20400
-	tax_eff = 5
+	year = 1870
+	cost = 18000
+
 	administrative_efficiency = 0.05
-	
 	ai_chance = {
-		factor = 5
+		factor = 1.5
 		modifier = {
-			factor = 1.5
-			year = 1900
-		}
-		modifier = {
-			factor = 1.5
-			year = 1920
-		}
-		modifier = {
-			factor = 1.2
-			big_producer = financial_services
+			factor = 1.1
+			rank = 16
 		}
 		modifier = {
 			factor = 5
-			NOT = { money = 10200 }
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
+			factor = 1.05
+			literacy = 0.3 
 		}
 		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
+			factor = 1.05
+			literacy = 0.6
 		}
 		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 3
+			tech_school = commerce_tech_school
 		}
 	}
 }
-
 market_determined_exchange_rates = {
 	area = monetary_system
 	year = 1900
-	cost = 30000
-	tax_eff = 5
+	cost = 21600
+
+
 	administrative_efficiency = 0.05
-	factory_goods_throughput = {
-		financial_services = 0.05
-	}
-	
 	ai_chance = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			year = 1920
-		}
-		modifier = {
-			factor = 1.2
-			big_producer = financial_services
-		}
+		factor = 1.2
 		modifier = {
 			factor = 5
-			NOT = { money = 10200 }
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
+			factor = 1.1
+			rank = 16
 		}
 		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
+			factor = 3
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
 }
@@ -731,1115 +332,728 @@ market_determined_exchange_rates = {
 #economic_thought_and_critique
 early_classical_theory_and_critique = {
 	area = economic_thought_and_critique
-	year = 1821
-	cost = 4600
-	factory_input = -0.01
-	increase_research = 0.1
+	year = 1836
+	cost = 3600
 	
-	ai_chance = {
-		factor = 100
-		modifier = {
-			factor = 1.5
-			year = 1856
-		}
-		modifier = {
-			factor = 1.5
-			year = 1876
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
-		}
-	}
-}
-
-late_classical_theory = {
-	area = economic_thought_and_critique
-	year = 1840
-	cost = 7750
+	activate_building = lumber_mill
 	factory_input = -0.01
-	factory_cost = -0.02
-	increase_research = 0.1
-	
-	ai_chance = {
-		factor = 50
-		modifier = {
-			factor = 1.5
-			year = 1860
-		}
-		modifier = {
-			factor = 1.5
-			year = 1880
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { industrial_score = 10 }
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 50
-			NOT = { industrial_score = 100 }
-		}
-		modifier = {
-			factor = 1.5
-			industrial_score = 100
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
-		}
-	}
-}
-
-collectivist_theory = {
-	area = economic_thought_and_critique
-	year = 1850
-	cost = 10200
-	factory_input = -0.01
-	factory_cost = -0.02
-	increase_research = 0.1
-	
-	ai_chance = {
-		factor = 25
-		modifier = {
-			factor = 1.5
-			year = 1870
-		}
-		modifier = {
-			factor = 1.5
-			year = 1890
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { industrial_score = 10 }
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 50
-			NOT = { industrial_score = 100 }
-		}
-		modifier = {
-			factor = 1.5
-			industrial_score = 100
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
-		}
-	}
-}
-
-the_historical_theory = {
-	area = economic_thought_and_critique
-	year = 1860
-	cost = 12750
-	factory_input = -0.01
-	factory_cost = -0.02
-	increase_research = 0.1
-	
-	ai_chance = {
-		factor = 10
-		modifier = {
-			factor = 1.5
-			year = 1880
-		}
-		modifier = {
-			factor = 1.5
-			year = 1900
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { industrial_score = 10 }
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 50
-			NOT = { industrial_score = 100 }
-		}
-		modifier = {
-			factor = 1.5
-			industrial_score = 100
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
-		}		
-	}
-}
-
-neoclassical_theory = {
-	area = economic_thought_and_critique
-	year = 1890
-	cost = 20400
-	factory_input = -0.01
-	factory_cost = -0.02
-	increase_research = 0.1
-	
-	ai_chance = {
-		factor = 5
-		modifier = {
-			factor = 1.5
-			year = 1910
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { industrial_score = 10 }
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 50
-			NOT = { industrial_score = 100 }
-		}
-		modifier = {
-			factor = 1.5
-			industrial_score = 100
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
-		}		
-	}
-}
-
-keynesian_economics = {
-	area = economic_thought_and_critique
-	year = 1900
-	cost = 30000
-	factory_input = -0.01
-	factory_cost = -0.02
-	increase_research = 0.1
-	
 	ai_chance = {
 		factor = 1
 		modifier = {
-			factor = 0.5
-			NOT = { industrial_score = 10 }
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}
+}
+late_classical_theory = {
+	area = economic_thought_and_critique
+	year = 1836
+	cost = 7200
+
+	factory_input = -0.01
+	rgo_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			industrial_score = 20 #10
 		}
 		modifier = {
 			factor = 1.2
-			industrial_score = 50
-			NOT = { industrial_score = 100 }
+			industrial_score = 100 #50
+		}
+		
+		modifier = {
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
+		}		
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
 		}
 		modifier = {
-			factor = 1.5
-			industrial_score = 100
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}
+}
+collectivist_theory = {
+	area = economic_thought_and_critique
+	year = 1836
+	cost = 10800
+
+	factory_input = -0.01
+	rgo_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			industrial_score = 150 #100
 		}
 		modifier = {
 			factor = 1.2
-			nationalvalue = nv_equality
+			industrial_score = 200 #150
 		}
 		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
 		}
 		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
+			factor = 1.05
+			literacy = 0.3 
 		}
 		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}		
 	}
 }
+the_historical_theory = {
+	area = economic_thought_and_critique
+	year = 1850
+	cost = 14400
+
+	factory_input = -0.01
+	rgo_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.1
+			industrial_score = 250 #200
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 300 #250
+		}
+		modifier = {
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}		
+	}
+}
+neoclassical_theory = {
+	area = economic_thought_and_critique
+	year = 1870
+	cost = 18000
+
+	factory_input = -0.01
+	rgo_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 1.1
+			industrial_score = 500 #400
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 600 #500
+		}
+		modifier = {
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
+		}
+		modifier = {
+			factor = 2
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}
+}
+keynesian_economics = {
+	area = economic_thought_and_critique
+	year = 1900
+	cost = 21600
+
+	factory_input = -0.01
+	rgo_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500 #1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 2000 #1500
+		}
+		modifier = {
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
+		}
+		modifier = {
+			factor = 3
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}
+}
+
 
 #market_functionality
 freedom_of_trade = {
 	area = market_functionality
-	year = 1821
-	cost = 4600
-	education_efficiency = 0.25
-	rgo_throughput = 0.1
+	year = 1836
+	cost = 3600
+
+
+	activate_building = luxury_clothes_factory  
+
+	influence = 0.1
+	farm_rgo_eff = 0.1
+	rgo_goods_output = { coal = 0.1 }
+	rgo_goods_output = { iron = 0.1 }
+	rgo_goods_output = { oil = 0.1 }
+	rgo_goods_output = { precious_metal = 0.1 }
+	rgo_goods_output = { sulphur = 0.1 }
 	
 	ai_chance = {
-		factor = 250
-		modifier = {
-			factor = 1.2
-			year = 1856
-		}
-		modifier = {
-			factor = 1.2
-			year = 1876
-		}
+		factor = 11
 		modifier = {
 			factor = 1.5
-			NOT = { literacy = 0.2 }
+			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.05
+			literacy = 0.1 
+		}
+		modifier = {
+			factor = 1.05
 			literacy = 0.2
-			NOT = { literacy = 0.5 }
 		}
 		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
+		}		
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
 }
-
 market_structure = {
 	area = market_functionality
-	year = 1845
-	cost = 7750
-	education_efficiency = 0.25
+	year = 1836
+	cost = 7200
+
 	influence = 0.1
+	farm_rgo_eff = 0.1
+	rgo_goods_output = { coal = 0.1 }
+	rgo_goods_output = { iron = 0.1 }
+	rgo_goods_output = { oil = 0.1 }
+	rgo_goods_output = { precious_metal = 0.1 }
+	rgo_goods_output = { sulphur = 0.1 }
 	
 	ai_chance = {
-		factor = 50
-		modifier = {
-			factor = 1.2
-			year = 1865
-		}
-		modifier = {
-			factor = 1.2
-			year = 1885
-		}
-		modifier = {
-			factor = 2
-			colonial_nation = yes
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				big_producer = shares
-				big_producer = financial_services
-			}
-		}
-		modifier = {
-			factor = 1.5
-			NOT = { literacy = 0.2 }
-		}
-		modifier = {
-			factor = 1.2
-			literacy = 0.2
-			NOT = { literacy = 0.5 }
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
-		}
-	}
-}
+		factor = 1.05
 
+		modifier = {
+			factor = 50
+			OR = {
+				tag = NGF
+				tag = GER
+				tag = PRU
+			}
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 10
+		}
+		modifier = {
+			factor = 2
+			year = 1850
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 50
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}	
+
+}
 business_regulations = {
 	area = market_functionality
-	year = 1860
-	cost = 10200
-	education_efficiency = 0.25
-	influence = 0.1
+	year = 1836
+	cost = 10800
+
+	influence = 0.2
+	farm_rgo_eff = 0.1
+	rgo_goods_output = { coal = 0.1 }
+	rgo_goods_output = { iron = 0.1 }
+	rgo_goods_output = { oil = 0.1 }
+	rgo_goods_output = { precious_metal = 0.1 }
+	rgo_goods_output = { sulphur = 0.1 }
 	
 	ai_chance = {
-		factor = 25
+		factor = 1.05
 		modifier = {
 			factor = 1.2
-			year = 1880
-		}
-		modifier = {
-			factor = 1.2
-			year = 1900
-		}
-		modifier = {
-			factor = 2
-			colonial_nation = yes
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				big_producer = shares
-				big_producer = financial_services
-			}
-		}
-		modifier = {
-			factor = 1.5
-			NOT = { literacy = 0.2 }
+			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.2
-			literacy = 0.2
-			NOT = { literacy = 0.5 }
+			industrial_score = 100
 		}
 		modifier = {
 			factor = 1.2
-			nationalvalue = nv_equality
+			industrial_score = 150
 		}
 		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
-		}
-	}
+	}	
+	
 }
-
 market_regulations = {
 	area = market_functionality
-	year = 1870
-	cost = 12750
-	education_efficiency = 0.25
-	influence = 0.1
-	administrative_efficiency = 0.025
-	
-	ai_chance = {
-		factor = 10
-		modifier = {
-			factor = 1.2
-			year = 1890
-		}
-		modifier = {
-			factor = 1.2
-			year = 1910
-		}
-		modifier = {
-			factor = 2
-			colonial_nation = yes
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				big_producer = shares
-				big_producer = financial_services
-			}
-		}
-		modifier = {
-			factor = 2
-			NOT = { literacy = 0.2 }
-		}
-		modifier = {
-			factor = 1.5
-			literacy = 0.2
-			NOT = { literacy = 0.5 }
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
-		}
-	}
-}
+	year = 1850
+	cost = 14400
 
+	influence = 0.2
+	rgo_goods_output = { precious_goods = 0.1 }
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 200
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 250
+		}
+		modifier = {
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}	
+	
+}
 economic_responsibility = {
 	area = market_functionality
-	year = 1890
-	cost = 20400
-	education_efficiency = 0.25
-	influence = 0.1
-	administrative_efficiency = 0.05
-	
+	year = 1870
+	cost = 18000
+
+	influence = 0.2
+	rgo_goods_output = { precious_goods = 0.20 }
 	ai_chance = {
-		factor = 5
+		factor = 1.05
 		modifier = {
 			factor = 1.2
-			year = 1910
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 400
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+		modifier = {
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				big_producer = shares
-				big_producer = financial_services
-			}
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 2
-			NOT = { literacy = 0.2 }
-		}
-		modifier = {
-			factor = 1.5
-			literacy = 0.2
-			NOT = { literacy = 0.5 }
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
+	
 }
-
 government_interventionism = {
 	area = market_functionality
 	year = 1900
-	cost = 30000
-	education_efficiency = 0.25
-	influence = 0.1
-	administrative_efficiency = 0.05
-	
+	cost = 21600
+
+	influence = 0.2
+	rgo_goods_output = { precious_goods = 0.20 }
 	ai_chance = {
-		factor = 1
+		factor = 1.01
 		modifier = {
 			factor = 1.2
-			year = 1865
-		}
-		modifier = {
-			factor = 1.2
-			year = 1885
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				big_producer = shares
-				big_producer = financial_services
-			}
-		}
-		modifier = {
-			factor = 5
-			NOT = { literacy = 0.2 }
-		}
-		modifier = {
-			factor = 2
-			literacy = 0.2
-			NOT = { literacy = 0.5 }
+			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
+			industrial_score = 1000
 		}
 		modifier = {
 			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
+		}
+		modifier = {
+			factor = 3
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
+	
 }
+
 
 #tech_organization
 guild_based_production = {
 	area = tech_organization
-	year = 1821
-	cost = 4600
+	year = 1836
+	cost = 3600
+	activate_building = canned_food_factory 
 	factory_output = 0.01
-	
 	ai_chance = {
-		factor = 100
+		factor = 1.03
 		modifier = {
-			factor = 0.5
-			NOT = { industrial_score = 10 }
+			factor = 1.2
+			is_greater_power = yes
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.2
 			industrial_score = 10
-			NOT = { industrial_score = 50 }
 		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 50
+		}
+		modifier = {
+			factor = 1.25
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.5
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}
+}
+organized_factories = {
+	area = tech_organization
+	year = 1836
+	cost = 7200
+
+	factory_output = 0.01
+	rgo_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
+		ai_chance = {
+		factor = 1.03
+		modifier = {
+			factor = 50
+			OR = {
+				tag = NGF
+				tag = GER
+				tag = PRU
+			}
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.25
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.25
+			literacy = 0.6
+		}		
 		modifier = {
 			factor = 1.2
 			industrial_score = 100
-			NOT = { industrial_score = 250 }
-		}
-		modifier = {
-			factor = 1.5
-			industrial_score = 250
 		}
 		modifier = {
 			factor = 1.2
-			OR = {
-				big_producer = cigarettes
-				big_producer = cigars
-			}
+			industrial_score = 150
 		}
 		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
-		}
-	}
-}
-
-organized_factories = {
-	area = tech_organization
-	year = 1845
-	cost = 7750
-	factory_output = 0.01
-	
-	ai_chance = {
-		factor = 50
-		modifier = {
-			factor = 0.1
-			NOT = { industrial_score = 1 }
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 		modifier = {
 			factor = 0.25
-			NOT = { industrial_score = 50 }
-		}
-		modifier = {
-			factor = 0.8
-			industrial_score = 50
-			NOT = { industrial_score = 100 }
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 250
-			NOT = { industrial_score = 500 }
-		}
-		modifier = {
-			factor = 1.5
-			industrial_score = 500
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				big_producer = cigarettes
-				big_producer = cigars
-			}
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			NOT = { literacy = 0.4 }
 		}
 	}
 }
-
 scientific_management = {
 	area = tech_organization
-	year = 1860
-	cost = 10200
+	year = 1836
+	cost = 10800
+
 	factory_output = 0.01
-	
+	rgo_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
-		factor = 25
+		factor = 1.03
 		modifier = {
-			factor = 0.1
-			NOT = { industrial_score = 1 }
+			factor = 1.2
+			is_greater_power = yes
 		}
 		modifier = {
-			factor = 0.25
-			NOT = { industrial_score = 50 }
+			factor = 1.5
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 0.8
-			industrial_score = 50
-			NOT = { industrial_score = 100 }
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 1.2
+			industrial_score = 200
 		}
 		modifier = {
 			factor = 1.2
 			industrial_score = 250
-			NOT = { industrial_score = 500 }
 		}
 		modifier = {
-			factor = 1.5
-			industrial_score = 500
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}
+}
+time_saving_measures = {
+	area = tech_organization
+	year = 1850
+	cost = 14400
+
+	factory_output = 0.01
+	rgo_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
+	ai_chance = {
+		factor = 1.03
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.2
-			OR = {
-				big_producer = cigarettes
-				big_producer = cigars
-			}
+			industrial_score = 300
+		}
+		modifier = {
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
 		}
 		modifier = {
 			factor = 1.2
-			nationalvalue = nv_equality
+			industrial_score = 400
 		}
 		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}	
 }
-
-time_saving_measures = {
-	area = tech_organization
-	year = 1870
-	cost = 12750
-	factory_output = 0.01
-	
-	ai_chance = {
-		factor = 10
-		modifier = {
-			factor = 0.1
-			NOT = { industrial_score = 1 }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { industrial_score = 50 }
-		}
-		modifier = {
-			factor = 0.8
-			industrial_score = 50
-			NOT = { industrial_score = 100 }
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 250
-			NOT = { industrial_score = 500 }
-		}
-		modifier = {
-			factor = 1.5
-			industrial_score = 500
-			NOT = { industrial_score = 1000 }
-		}
-		modifier = {
-			factor = 2
-			industrial_score = 1000
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				big_producer = cigarettes
-				big_producer = cigars
-			}
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
-		}
-	}
-}
-
 management_strategy = {
 	area = tech_organization
-	year = 1880
-	cost = 20400
+	year = 1870
+	cost = 18000
+
 	factory_output = 0.01
-	
+	rgo_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
-		factor = 5
+		factor = 1.03
 		modifier = {
-			factor = 0.1
-			NOT = { industrial_score = 1 }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { industrial_score = 100 }
-		}
-		modifier = {
-			factor = 0.8
-			industrial_score = 100
-			NOT = { industrial_score = 500 }
+			factor = 1.2
+			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.2
 			industrial_score = 500
-			NOT = { industrial_score = 1000 }
 		}
 		modifier = {
-			factor = 1.5
-			industrial_score = 1000
-			NOT = { industrial_score = 1500 }
+			factor = 1.2
+			industrial_score = 750
+		}
+		modifier = {
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
 		}
 		modifier = {
 			factor = 2
-			industrial_score = 1500
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 1.2
-			OR = {
-				big_producer = cigarettes
-				big_producer = cigars
-			}
-		}
-		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
-		}
-		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
 }
-
 organizational_development = {
 	area = tech_organization
 	year = 1900
-	cost = 30000
+	cost = 21600
+
 	factory_output = 0.01
-	
+	rgo_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
-		factor = 1
+		factor = 1.03
 		modifier = {
-			factor = 0.1
-			NOT = { industrial_score = 100 }
+			factor = 1.2
+			is_greater_power = yes
 		}
 		modifier = {
-			factor = 0.5
-			industrial_score = 100
-			NOT = { industrial_score = 500 }
-		}
-		modifier = {
-			factor = 1.5
-			industrial_score = 500
-			NOT = { industrial_score = 1000 }
-		}
-		modifier = {
-			factor = 2
+			factor = 1.2
 			industrial_score = 1000
-			NOT = { industrial_score = 1500 }
 		}
 		modifier = {
-			factor = 5
+			factor = 1.2
 			industrial_score = 1500
 		}
 		modifier = {
-			factor = 1.2
-			OR = {
-				big_producer = cigarettes
-				big_producer = cigars
-			}
+			factor = 1.04
+			any_owned_province = { trade_goods = precious_goods }
 		}
 		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
+			factor = 3
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				tech_school = culture_tech_school
-				tech_school = russian_tech_school
-			}
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
 }
+
+

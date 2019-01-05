@@ -2,9 +2,8 @@ owner = BRG
 controller = BRG
 add_core = BRG
 add_core = FRA
-trade_goods = copper
-life_rating = 35
-terrain = marginal_farmland
+trade_goods = coal
+life_rating = 31
 #state_building = {
 #	level = 1
 #	building = explosives_factory
@@ -12,6 +11,19 @@ terrain = marginal_farmland
 #}
 #state_building = {
 #	level = 1
-#	building = bronze_artillery_factory
+#	building = artillery_factory
 #	upgrade = yes
 #}
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = paper_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 3 }

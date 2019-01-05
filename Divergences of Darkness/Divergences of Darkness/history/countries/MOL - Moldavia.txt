@@ -2,11 +2,12 @@ capital = 670
 primary_culture = romanian
 religion = orthodox
 government = absolute_monarchy
-plurality = 0.0
-nationalvalue = nv_might
+plurality = 25.0
+nationalvalue = nv_autocracy
 literacy = 0.11
+non_state_culture_literacy = 0.01
 civilized = yes
-prestige = 5
+prestige = 4
 
 # Political reforms
 slavery = no_slavery
@@ -17,20 +18,24 @@ press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = underground_parties
-minorities_reform = oppression
-immigration_policy = quota_immigration
-conscription=two_year_draft
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions
+pensions = no_pensions 
+school_reforms = no_schools
+
+# New Reforms
+conscription = two_year_draft
+debt_law = peonage
+penal_system = capital_punishment
+child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = quota_immigration
+
+set_country_flag = orthodox_country
 
 ruling_party = AAA_reactionary_2
 upper_house = {
@@ -43,27 +48,22 @@ upper_house = {
 	communist = 0
 }
 
+
 # Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
-military_staff_system = 1
 army_command_principle = 1
 post_nelsonian_thought = 1
-clipper_design = 1
-naval_design_bureaus = 1
-alphabetic_flag_signaling = 1
 the_command_principle = 1
+private_banks = 1
+no_standard = 1
+guild_based_production = 1
 classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
-malthusian_thought = 1
-introspectionism = 1
-no_standard = 1
-early_classical_theory_and_critique = 1
-guild_based_production = 1
-water_wheel_power = 1
-mechanized_mining = 1
-basic_chemistry = 1
+enlightenment_thought = 1
+piston_steam_engine = 1
+mechanical_production = 1
 
 # Inventions
 
@@ -72,3 +72,30 @@ consciousness = 2
 nonstate_consciousness = 0
 
 oob = "MOL_oob.txt"
+
+1861.1.1 = {
+# Technologies
+	post_napoleonic_thought = 1
+	flintlock_rifles = 1
+	bronze_muzzle_loaded_artillery = 1
+	military_staff_system = 1
+	army_command_principle = 1
+	private_banks = 1
+	no_standard = 1
+	freedom_of_trade = 1
+	guild_based_production = 1
+	organized_factories = 1
+	classicism_n_early_romanticism = 1
+	late_enlightenment_philosophy = 1
+	idealism = 1
+	enlightenment_thought = 1
+	piston_steam_engine = 1
+	mechanical_production = 1
+	interchangeable_parts = 1
+	semi_automatization = 1
+	experimental_railroad = 1
+	post_nelsonian_thought = 1
+	the_command_principle = 1
+
+#Inventions
+}

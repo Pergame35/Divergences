@@ -1,8 +1,11 @@
 owner = SPA
 controller = SPA
 add_core = ZAN
-trade_goods = grain
-life_rating = 35
-terrain = jungle
 colonial = 1
 naval_base = 1
+trade_goods = precious_goods
+life_rating = 40
+1861.1.1 = {
+	owner = ZAN
+	controller = ZAN
+}

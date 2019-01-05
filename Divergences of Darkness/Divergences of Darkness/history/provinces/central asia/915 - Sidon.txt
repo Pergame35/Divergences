@@ -1,8 +1,13 @@
 owner = TUR
 controller = TUR
-
 add_core = TUR
 add_core = SYR
+add_core = LBN
 trade_goods = fruit
 life_rating = 35
-terrain = dry_forest_hills
+
+1861.1.1 = {
+	controller = TUR 
+	owner = TUR
+	colonial = 0
+}

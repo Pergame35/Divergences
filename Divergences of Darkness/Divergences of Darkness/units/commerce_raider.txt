@@ -1,43 +1,49 @@
 commerce_raider = {
 	icon = 8
-	naval_icon = 5	
+	naval_icon = 5
+	
 	type = naval
 	sprite = Raider
 	active = no
 	unit_type = light_ship
 	move_sound = steam_move
 	select_sound = steam_selected
-	floating_flag = yes	
+	floating_flag = yes
+	colonial_points = 8
+	
 	#Core Abilities
 	priority = 15
 	max_strength = 100
-	default_organisation = 5
-	maximum_speed = 7
+	default_organisation = 30
+	maximum_speed = 10
 	weighted_value = 5.0
+	can_build_overseas = yes
+
 
 	#Building Costs
-	build_time = 365
+	build_time = 360
 	build_cost = {
-		steamer_convoy = 0.5
-		artillery = 0.2
+		steamer_convoy = 10
+		artillery = 5
+		canned_food = 2
+		regular_clothes = 5
 	}
+	min_port_level = 1
+	limit_per_port = -1
+	supply_consumption_score = 3
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		steamer_convoy = 0.05
-		gunpowder = 0.05
-		coal = 0.5
+		steamer_convoy = 0.16
+		artillery = 0.1
+		canned_food = 0.16
 	}
 	
-
 	#Naval Abilties
-	hull = 5
+	hull = 6
 	gun_power = 5
-	can_build_overseas = yes
-	fire_range = 0.4
-	evasion = 0.75
-	min_port_level = 1
-	limit_per_port = -1
-	supply_consumption_score = 1
+	fire_range = 0.6
+	evasion = 0.25
+	torpedo_attack = 0
 }
 

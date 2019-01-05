@@ -1,443 +1,89 @@
-#############################################
-#											#
-#			National Values Events			#
-#											#
-#############################################
-
 country_event = {
 	id = 18500
-	title = "EVTNAME18570" #Work and Progress
-	desc = "EVTDESC18570"
-	picture = "Finepeople"
+	title = "EVTNAME18500"
+	desc = "EVTDESC18500"
+	picture = "Parade"
 	
 	trigger = {
+		civilized = yes
 		OR = {
-			nationalvalue = nv_equality
-			nationalvalue = nv_unity
-			nationalvalue = nv_prosperity
-			nationalvalue = nv_fraternity
+			nationalvalue = nv_order
+			nationalvalue = nv_autocracy
 		}
+		average_militancy = 7
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 300
 	}
 	
 	option = {
-		name = "EVTOPTA18570"
-		prestige = 5
-		any_pop = { militancy = -1 }
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 1.5
-				average_militancy = 2
-			}
-		}
-	}
-	
-	option = {
-		name = "EVTOPTB18570"
-		years_of_research = 0.2
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 1.5
-				NOT = { average_militancy = 2 }
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 18501
-	title = "EVTNAME18501" #The $COUNTRY_ADJ$ Way - Equality
-	desc = "EVTDESC18501"
-	picture = "news"
-	
-	trigger = {
-		nationalvalue = nv_equality
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-	option = {
-		name = "18501.A"
-		random_owned = {
-			limit = {
-				is_colonial = no
-				is_core = THIS
-				is_ideology_enabled = socialist
-			}
-			state_scope = {
-				any_pop = {
-					ideology = {
-						value = socialist
-						factor = 0.10
-					}
-					militancy = -3
-				}
-				
-			}
-		}
-		random_owned = {
-			limit = {
-				is_colonial = no
-				is_core = THIS
-				NOT = { is_ideology_enabled = socialist }
-			}
-			state_scope = {
-				any_pop = {
-					consciousness = -3
-					militancy = -3
-				}
-				
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 18502
-	title = "EVTNAME18580" #Bread & Peace
-	desc = "EVTDESC18580"
-	picture = "Demonstration"
-	
-	trigger = {
-		OR = {
-			nationalvalue = nv_equality
-			nationalvalue = nv_unity
-			nationalvalue = nv_prosperity
-			nationalvalue = nv_fraternity
-		}
-		war = yes
-		war_exhaustion = 4
-	}
-	
-	mean_time_to_happen = {
-		months = 36
-		modifier = {
-			factor = 0.8
-			war_exhaustion = 10
-		}
-		modifier = {
-			factor = 0.8
-			war_exhaustion = 20
-		}
-		modifier = {
-			factor = 0.8
-			war_exhaustion = 30
-		}
-		modifier = {
-			factor = 0.8
-			national_provinces_occupied = .01
-		}
-	}
-	
-	option = {
-		name = "EVTOPTA18580"
+		name = "EVTOPTA18500"
 		any_pop = {
-			dominant_issue = {
-				value = pacifism
-				factor = 0.1
-			}
+			militancy = -1
 		}
-		war_exhaustion = 2
-			
 	}
 	
 	option = {
-		name = "EVTOPTB18580"
+		name = "EVTOPTB18500"
 		any_pop = {
-			dominant_issue = {
-				value = pacifism
-				factor = 0.05
-			}
+			consciousness = -1
 		}
-		war_exhaustion = 4
-	}
-}
-
-country_event = {
-	id = 18505
-	title = "EVTNAME18505" #COUNTRY_ADJ Ingenuity
-	desc = "EVTDESC18530"
-	picture = "Invention"
-	
-	trigger = {
-		OR = {
-			nationalvalue = nv_liberty
-			nationalvalue = nv_prosperity
-			nationalvalue = nv_glory
-			nationalvalue = nv_freedom
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-		modifier = {
-			factor = 0.9
-			empiricism = 1
-		}
-		modifier = {
-			factor = 0.9
-			realism = 1
-		}
-		modifier = {
-			factor = 0.9
-			functionalism = 1
-		}
-		modifier = {
-			factor = 0.9
-			phenomenalism = 1
-		}
-		modifier = {
-			factor = 1.2
-			NOT = { nationalvalue = nv_liberty }
-		}
-	}
-	
-	option = {
-		name = "EVTOPTA18530"
-		years_of_research = 0.4
-	}
-	
-	option = {
-		name = "EVTOPTB18530"
-		years_of_research = 0.2
 		prestige = 5
-	}
-}
-	
-country_event = {
-	id = 18506
-	title = "EVTNAME18501" #The $COUNTRY_ADJ$ Way - Liberty
-	desc = "EVTDESC18506"
-	picture = "news"
-	
-	trigger = {
-		nationalvalue = nv_liberty
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-	option = {
-		name = "18506.A"
-		random_owned = {
-			limit = {
-				is_colonial = no
-				is_core = THIS
-			}
-			state_scope = {
-				any_pop = {
-					ideology = {
-						value = liberal
-						factor = 0.10
-					}
-					militancy = -3
-				}
-				
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 18507
-	title = "EVTNAME18507" #The Price of Freedom
-	desc = "EVTDESC18507"
-	picture = "Demonstration"
-	
-	trigger = {
-		OR = {
-			nationalvalue = nv_liberty
-			nationalvalue = nv_prosperity
-			nationalvalue = nv_glory
-			nationalvalue = nv_freedom
-		}
-		OR = {
-			government = presidential_dictatorship
-			government = fascist_dictatorship
-			government = proletarian_dictatorship
-			government = bourgeois_dictatorship
-			government = absolute_monarchy
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 100
-		modifier = {
-			factor = 0.9
-			average_consciousness = 5
-		}
-		modifier = {
-			factor = 0.9
-			average_consciousness = 6
-		}
-		modifier = {
-			factor = 0.9
-			average_consciousness = 7
-		}
-		modifier = {
-			factor = 0.9
-			average_consciousness = 8
-		}
-		modifier = {
-			factor = 0.9
-			average_consciousness = 9
-		}
-	}
-	
-	option = {
-		name = "18507.A"
-		any_pop = { consciousness = 2 }
-		prestige = -5
-	}
-	
-	option = {
-		name = "18507.B"
-		random_state = {
-			limit = { is_colonial = no }
-			any_pop = {
-				limit = {
-					OR = {
-						is_primary_culture = yes
-						is_accepted_culture = yes
-					}
-				}
-				militancy = 2
-			}
-			any_pop = {
-				limit = {
-					is_primary_culture = no
-					is_accepted_culture = no
-				}
-				militancy = 4
-			}
-		}
 	}
 }
 
 country_event = {
 	id = 18510
-	title = "EVTNAME18510" #Military Parade
+	title = "EVTNAME18510"
 	desc = "EVTDESC18510"
-
 	picture = "Parade"
 	
 	trigger = {
+		civilized = yes
+		is_vassal = no
 		OR = {
-			nationalvalue = nv_might
-			nationalvalue = nv_dominion
-			nationalvalue = nv_glory
-			nationalvalue = nv_supremacy
+			nationalvalue = nv_order
+			nationalvalue = nv_autocracy
 		}
-		war = no
+		NOT = { prestige = 10 }
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 100
 	}
 	
 	option = {
-		name = "18510.A"
-		prestige = 8
-		any_neighbor_country = {
-			limit = {
-				NOT = { alliance_with = THIS }
-			}
-			relation = { who = THIS value = -20 }
-		}
-	}
-	
-	option = {
-		name = "18510.B"
+		name = "EVTOPTA18510"
 		prestige = 3
+	}
+	
+	option = {
+		name = "EVTOPTB18510"
+		prestige = 8
 		any_pop = {
 			militancy = 1
-			consciousness = -1
 		}
 	}
 }
 
 country_event = {
-	id = 18511
-	title = "EVTNAME18501" #The $COUNTRY_ADJ$ Way - Might
-	desc = "EVTDESC18511"
-	picture = "news"
-	
-	trigger = {
-		nationalvalue = nv_might
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-	option = {
-		name = "18511.A"
-		random_owned = {
-			limit = {
-				is_colonial = no
-				is_core = THIS
-			}
-			state_scope = {
-				any_pop = {
-					dominant_issue = {
-						value = jingoism
-						factor = 0.20
-					}
-					consciousness = -3
-				}
-				
-			}
-		}
-		random_country = {
-			limit = {
-				neighbour = THIS
-				NOT = { alliance_with = THIS }
-			}
-			relation = { who = THIS value = -10 }
-		}
-	}
-}
-
-country_event = {
-	id = 18512
-	title = "EVTNAME18520" #Blood and Roses
+	id = 18520
+	title = "EVTNAME18520"
 	desc = "EVTDESC18520"
 	picture = "Parade"
 	
 	trigger = {
 		OR = {
-			nationalvalue = nv_might
-			nationalvalue = nv_dominion
-			nationalvalue = nv_glory
-			nationalvalue = nv_supremacy
+			nationalvalue = nv_order
+			nationalvalue = nv_autocracy
 		}
 		war = yes
-		NOT = { war_exhaustion = 20 }
-		NOT = { national_provinces_occupied = .10 }
+		NOT = { war_exhaustion = 8 }
 	}
 	
 	mean_time_to_happen = {
-		months = 14
-		modifier = {
-			factor = 1.5
-			war_exhaustion = 5
-		}
-		modifier = {
-			factor = 1.5
-			war_exhaustion = 10
-		}
-		modifier = {
-			factor = 1.5
-			war_exhaustion = 15
-		}
+		months = 400
 	}
 	
 	option = {
@@ -448,7 +94,7 @@ country_event = {
 				factor = 0.05
 			}
 		}
-		war_exhaustion = -5
+		war_exhaustion = -2
 	}
 	
 	option = {
@@ -463,198 +109,158 @@ country_event = {
 }
 
 country_event = {
-	id = 18515
-	title = "EVTNAME18515" #Send in the Troops
-	desc = "EVTDESC18515"
+	id = 18530
+	title = "EVTNAME18530"
+	desc = "EVTDESC18530"
+	picture = "Invention"
+	
+	trigger = {
+		nationalvalue = nv_liberty
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+	}
+	
+	option = {
+		name = "EVTOPTA18530"
+		years_of_research = 0.4
+	}
+	
+	option = {
+		name = "EVTOPTB18530"
+		years_of_research = 0.2
+		prestige = 5
+	}
+}
+
+country_event = {
+	id = 18540
+	title = "EVTNAME18540"
+	desc = "EVTDESC18540"
+	picture = "Expansion"
+	
+	trigger = {
+		nationalvalue = nv_liberty
+		badboy = 0.7
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+	}
+	
+	option = {
+		name = "EVTOPTA18540"
+		badboy = -2
+		prestige = 5
+		
+	}
+	
+	option = {
+		name = "EVTOPTB18540"
+		badboy = -3
+	}
+}
+
+country_event = {
+	id = 18550
+	title = "EVTNAME18550"
+	desc = "EVTDESC18550"
 	picture = "Demonstration"
 	
 	trigger = {
-		OR = {
-			nationalvalue = nv_order
-			nationalvalue = nv_unity
-			nationalvalue = nv_dominion
-			nationalvalue = nv_productivity
-		}
-		war = no
-		average_militancy = 3
-		NOT = { num_of_revolts = 1 }
+		average_militancy = 8
+		nationalvalue = nv_liberty
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 200
 	}
 	
 	option = {
-		name = "18515.A"
+		name = "EVTOPTA18550"
 		any_pop = {
-			militancy = -2
-			consciousness = 1
+			militancy = 1
 		}
-		prestige = -3
 	}
 	
 	option = {
-		name = "18515.B"
-		prestige = 3
+		name = "EVTOPTB18550"
+		any_pop = {
+			militancy = 2
+		}
+		prestige = 10
 	}
 }
 
 country_event = {
-	id = 18516
-	title = "18516.T" #Parade in the Capital
-	desc = "EVTDESC18500"
-	picture = "Parade"
+	id = 18570
+	title = "EVTNAME18570"
+	desc = "EVTDESC18570"
+	picture = "Finepeople"
 	
 	trigger = {
 		OR = {
-			nationalvalue = nv_order
-			nationalvalue = nv_unity
-			nationalvalue = nv_dominion
+			nationalvalue = nv_equality
 			nationalvalue = nv_productivity
 		}
-		NOT = { militancy = 3 }
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 800
 	}
 	
 	option = {
-		name = "EVTOPTA18500"
+		name = "EVTOPTA18570"
+		prestige = 10
 		any_pop = {
-			consciousness = -2
+			militancy = -1
 		}
 	}
 	
 	option = {
-		name = "EVTOPTB18500"
-		prestige = 5
+		name = "EVTOPTB18570"
+		years_of_research = 0.2
 	}
 }
 
 country_event = {
-	id = 18517
-	title = "EVTNAME18501" #The $COUNTRY_ADJ$ Way - Order
-	desc = "EVTDESC18517"
-	picture = "news"
+	id = 18580
+	title = "EVTNAME18580"
+	desc = "EVTDESC18580"
+	picture = "Demonstration"
 	
 	trigger = {
-		nationalvalue = nv_order
+		nationalvalue = nv_equality
+		war = yes
+		war_exhaustion = 4
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 200
 	}
 	
 	option = {
-		name = "18517.A"
-		random_owned = {
-			limit = {
-				is_colonial = no
-				is_core = THIS
-			}
-			state_scope = {
-				any_pop = {
-					ideology = {
-						value = conservative
-						factor = 0.10
-					}
-					consciousness = -3
-				}
-				
+		name = "EVTOPTA18580"
+		any_pop = {
+			dominant_issue = {
+				value = pacifism
+				factor = 0.2
 			}
 		}
-	}
-}
-
-country_event = {
-	id = 18520
-	title = "EVTNAME18521" #Brotherhood of Man
-	desc = "EVTDESC18521"
-	picture = "Anti-Jacobin"
-	
-	trigger = {
-		nationalvalue = nv_fraternity
-		war = no
-	}
-	
-	mean_time_to_happen = {
-		months = 120
+		war_exhaustion = 1
+			
 	}
 	
 	option = {
-		name = "18520.A"
-		prestige = 10
-		any_neighbor_country = {
-			relation = { who = THIS value = 25 }
-		}
-	}
-}
-
-country_event = {
-	id = 18525
-	title = "EVTNAME18525" #Liberty Shines
-	desc = "EVTDESC18525"
-	picture = "Anti-Jacobin"
-	
-	trigger = {
-		nationalvalue = nv_freedom
-		war = no
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-	option = {
-		name = "18525.A"
-		prestige = 10
-		any_pop = { militancy = -2 }
-	}
-}
-
-country_event = {
-	id = 18530
-	title = "EVTNAME18530" #The $COUNTRY_ADJ$ Destiny
-	desc = "EVTDESC18531"
-	picture = "Anti-Jacobin"
-	
-	trigger = {
-		nationalvalue = nv_supremacy
-		war = no
-		any_neighbor_country = {
-			civilized = yes
-			NOT = {
-				alliance_with = THIS
-				truce_with = THIS
-				relation = { who = THIS value = 75 }
+		name = "EVTOPTB18580"
+		any_pop = {
+			dominant_issue = {
+				value = pacifism
+				factor = 0.1
 			}
 		}
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-	option = {
-		name = "18530.A"
-		prestige = 5
-		any_pop = { consciousness = -2 }
-		random_country = {
-			limit = {
-				neighbour = THIS
-				NOT = {
-					alliance_with = THIS
-					truce_with = THIS
-					relation = { who = THIS value = 75 }
-				}
-			}
-			add_casus_belli = {
-				target = THIS
-				type = humiliate
-				months = 24
-			}
-		}
+		war_exhaustion = 2
 	}
 }
 
@@ -670,11 +276,11 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 1600
 	}
 	
 	option = {
-		name = "18535.A"
+		name = "EVT18535OPTA"
 		years_of_research = 0.4
 		random_owned = {
 			limit = {
@@ -778,724 +384,27 @@ country_event = {
 }
 
 country_event = {
-	id = 18540
-	title = "EVTNAME18540" #Post-civilizing event to choose NV
-	desc = "EVTDESC18540"
-	major = yes
+	id = 185600
+	title = "EVTNAME185600" #Annals of the Past
+	desc = "EVTDESC185600"
+	picture = "autocracy"
 	
 	trigger = {
-		nationalvalue = nv_progress
 		civilized = yes
-	}
-	
-	mean_time_to_happen = {
-		days = 10
-	}
-	
-	option = {
-		name = "18540.A"
-		remove_country_modifier = national_confusion
-		prestige = 5
-		nationalvalue = nv_equality
-		remove_country_modifier = educational_reform
-		remove_country_modifier = military_reform
-		remove_country_modifier = western_influences
-		remove_country_modifier = uncivilized_isolationism
-		remove_country_modifier = trade_restrictions
-		remove_country_modifier = sayings_of_the_dutch
-		remove_country_modifier = extraterritoriality_granted
-		remove_country_modifier = nothing_stops_progress
-		remove_country_modifier = slow_down_progress
-		remove_country_modifier = shastar_vidya
-		remove_country_modifier = muhammad_alis_reforms
-		any_owned = {
-			remove_province_modifier = western_presence
-			remove_province_modifier = foreign_smugglers
-			remove_province_modifier = foreign_trading_post
-			remove_province_modifier = local_opium_habit
-			remove_province_modifier = european_military_mission
-			remove_province_modifier = legation_quarter
-			remove_province_modifier = kettler_denkmal
-		}
-		add_country_modifier = {
-			name = just_civilized
-			duration = 365
-		}
-		add_country_modifier = {
-			name = national_confusion
-			duration = 1825
-		}
-		any_pop = {
-			militancy = -5
-		}
-		ai_chance = { factor = 25 }
-	}
-	
-	option = {
-		name = "18540.B"
-		remove_country_modifier = national_confusion
-		prestige = 5
-		nationalvalue = nv_liberty
-		remove_country_modifier = educational_reform
-		remove_country_modifier = military_reform
-		remove_country_modifier = western_influences
-		remove_country_modifier = uncivilized_isolationism
-		remove_country_modifier = trade_restrictions
-		remove_country_modifier = sayings_of_the_dutch
-		remove_country_modifier = extraterritoriality_granted
-		remove_country_modifier = nothing_stops_progress
-		remove_country_modifier = slow_down_progress
-		remove_country_modifier = shastar_vidya
-		remove_country_modifier = muhammad_alis_reforms
-		any_owned = {
-			remove_province_modifier = western_presence
-			remove_province_modifier = foreign_smugglers
-			remove_province_modifier = foreign_trading_post
-			remove_province_modifier = local_opium_habit
-			remove_province_modifier = european_military_mission
-			remove_province_modifier = legation_quarter
-			remove_province_modifier = kettler_denkmal
-		}
-		add_country_modifier = {
-			name = just_civilized
-			duration = 365
-		}
-		add_country_modifier = {
-			name = national_confusion
-			duration = 1825
-		}
-		any_pop = {
-			militancy = -5
-		}
-		ai_chance = { factor = 75 }
-	}
-}
-
-country_event = {
-	id = 18541
-	title = "EVTNAME18540" #Post-civilizing event to choose NV
-	desc = "EVTDESC18540"
-	major = yes
-	
-	trigger = {
-		OR = {
-			nationalvalue = nv_loyalty
-			nationalvalue = nv_enlightenment
-		}
-		civilized = yes
-	}
-	
-	mean_time_to_happen = {
-		days = 10
-	}
-	
-	option = {
-		name = "18541.A"
-		remove_country_modifier = national_confusion
-		prestige = 5
-		nationalvalue = nv_liberty
-		remove_country_modifier = educational_reform
-		remove_country_modifier = military_reform
-		remove_country_modifier = western_influences
-		remove_country_modifier = uncivilized_isolationism
-		remove_country_modifier = trade_restrictions
-		remove_country_modifier = sayings_of_the_dutch
-		remove_country_modifier = extraterritoriality_granted
-		remove_country_modifier = nothing_stops_progress
-		remove_country_modifier = slow_down_progress
-		remove_country_modifier = shastar_vidya
-		remove_country_modifier = muhammad_alis_reforms
-		any_owned = {
-			remove_province_modifier = western_presence
-			remove_province_modifier = foreign_smugglers
-			remove_province_modifier = foreign_trading_post
-			remove_province_modifier = local_opium_habit
-			remove_province_modifier = european_military_mission
-			remove_province_modifier = legation_quarter
-			remove_province_modifier = kettler_denkmal
-		}
-		add_country_modifier = {
-			name = just_civilized
-			duration = 365
-		}
-		add_country_modifier = {
-			name = national_confusion
-			duration = 1825
-		}
-		any_pop = {
-			militancy = -5
-		}
-		ai_chance = { factor = 25 }
-	}
-	
-	option = {
-		name = "18541.B"
-		remove_country_modifier = national_confusion
-		prestige = 5
-		nationalvalue = nv_order
-		remove_country_modifier = educational_reform
-		remove_country_modifier = military_reform
-		remove_country_modifier = western_influences
-		remove_country_modifier = uncivilized_isolationism
-		remove_country_modifier = trade_restrictions
-		remove_country_modifier = sayings_of_the_dutch
-		remove_country_modifier = extraterritoriality_granted
-		remove_country_modifier = nothing_stops_progress
-		remove_country_modifier = slow_down_progress
-		remove_country_modifier = shastar_vidya
-		remove_country_modifier = muhammad_alis_reforms
-		any_owned = {
-			remove_province_modifier = western_presence
-			remove_province_modifier = foreign_smugglers
-			remove_province_modifier = foreign_trading_post
-			remove_province_modifier = local_opium_habit
-			remove_province_modifier = european_military_mission
-			remove_province_modifier = legation_quarter
-			remove_province_modifier = kettler_denkmal
-		}
-		add_country_modifier = {
-			name = just_civilized
-			duration = 365
-		}
-		add_country_modifier = {
-			name = national_confusion
-			duration = 1825
-		}
-		any_pop = {
-			militancy = -5
-		}
-		ai_chance = { factor = 75 }
-	}
-}
-
-country_event = {
-	id = 18542
-	title = "EVTNAME18540" #Post-civilizing event to choose NV
-	desc = "EVTDESC18540"
-	major = yes
-	
-	trigger = {
-		OR = {
-			nationalvalue = nv_independence
-			nationalvalue = nv_tradition
-		}
-		civilized = yes
-	}
-	
-	mean_time_to_happen = {
-		days = 10
-	}
-	
-	option = {
-		name = "18542.A"
-		remove_country_modifier = national_confusion
-		prestige = 5
-		nationalvalue = nv_order
-		remove_country_modifier = educational_reform
-		remove_country_modifier = military_reform
-		remove_country_modifier = western_influences
-		remove_country_modifier = uncivilized_isolationism
-		remove_country_modifier = trade_restrictions
-		remove_country_modifier = sayings_of_the_dutch
-		remove_country_modifier = extraterritoriality_granted
-		remove_country_modifier = nothing_stops_progress
-		remove_country_modifier = slow_down_progress
-		remove_country_modifier = shastar_vidya
-		remove_country_modifier = muhammad_alis_reforms
-		any_owned = {
-			remove_province_modifier = western_presence
-			remove_province_modifier = foreign_smugglers
-			remove_province_modifier = foreign_trading_post
-			remove_province_modifier = local_opium_habit
-			remove_province_modifier = european_military_mission
-			remove_province_modifier = legation_quarter
-			remove_province_modifier = kettler_denkmal
-		}
-		add_country_modifier = {
-			name = just_civilized
-			duration = 365
-		}
-		add_country_modifier = {
-			name = national_confusion
-			duration = 1825
-		}
-		any_pop = {
-			militancy = -5
-		}
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				is_culture_group = far_east_asian
-			}
-			modifier = {
-				factor = 0.5
-				is_culture_group = east_asian
-			}
-		}
-	}
-	
-	option = {
-		name = "18542.B"
-		remove_country_modifier = national_confusion
-		prestige = 5
-		nationalvalue = nv_might
-		remove_country_modifier = educational_reform
-		remove_country_modifier = military_reform
-		remove_country_modifier = western_influences
-		remove_country_modifier = uncivilized_isolationism
-		remove_country_modifier = trade_restrictions
-		remove_country_modifier = sayings_of_the_dutch
-		remove_country_modifier = extraterritoriality_granted
-		remove_country_modifier = nothing_stops_progress
-		remove_country_modifier = slow_down_progress
-		remove_country_modifier = shastar_vidya
-		remove_country_modifier = muhammad_alis_reforms
-		any_owned = {
-			remove_province_modifier = western_presence
-			remove_province_modifier = foreign_smugglers
-			remove_province_modifier = foreign_trading_post
-			remove_province_modifier = local_opium_habit
-			remove_province_modifier = european_military_mission
-			remove_province_modifier = legation_quarter
-			remove_province_modifier = kettler_denkmal
-		}
-		add_country_modifier = {
-			name = just_civilized
-			duration = 365
-		}
-		add_country_modifier = {
-			name = national_confusion
-			duration = 1825
-		}
-		any_pop = {
-			militancy = -5
-		}
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 1.5
-				is_culture_group = east_asian
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 18550
-	title = "EVTNAME18550" #Rejecting Westernization
-	desc = "EVTDESC18550"
-	picture = "india"
-	
-	trigger = {
-		war = no
-		civilized = no
-		nationalvalue = nv_enlightenment
-		diplomatic_reform = interactive
-		NOT = {
-			has_country_flag = can_switch_to_tradition
-			has_country_flag = can_switch_to_enlightenment
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 500
-		modifier = {
-			factor = 0.05
-			has_country_flag = angry_rioters_victorious
-		}
-		modifier = {
-			factor = 0.8
-			num_of_revolts = 1
-		}
-		modifier = {
-			factor = 0.8
-			num_of_revolts = 5
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 3
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 4
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 5
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 6
-		}
-	}
-	
-	option = {
-		name = "18550.A"
-		set_country_flag = can_switch_to_tradition
-		clr_country_flag = angry_rioters_victorious
-		random_owned = {
-			limit = {
-				owner = { has_country_modifier = western_influences }
-			}
-			owner = {
-				remove_country_modifier = western_influences
-				add_country_modifier = {
-					name = uncivilized_isolationism
-					duration = -1
-				}
-			}
-		}
-		any_pop = {
-			scaled_militancy = {
-				ideology = liberal
-				factor = 4
-			}
-		}
-		ai_chance = {
-			factor = 75
-		}
-	}
-	
-	option = {
-		name = "18550.B"
-		set_country_flag = can_switch_to_enlightenment
-		clr_country_flag = angry_rioters_victorious
-		random_owned = {
-			limit = {
-				owner = { has_country_modifier = uncivilized_isolationism }
-			}
-			owner = {
-				remove_country_modifier = uncivilized_isolationism
-				add_country_modifier = {
-					name = western_influences
-					duration = -1
-				}
-			}
-		}
-		any_pop = {
-			scaled_militancy = {
-				ideology = reactionary
-				factor = 4
-			}
-		}
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				OR = {
-					is_culture_group = east_asian
-					is_culture_group = far_east_asian
-				}
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 18551
-	title = "EVTNAME18551" #Embracing Westernization
-	desc = "EVTDESC18551"
-	picture = "india"
-	
-	trigger = {
-		war = no
-		civilized = no
-		nationalvalue = nv_tradition
-		diplomatic_reform = interactive
-		NOT = {
-			has_country_flag = can_switch_to_tradition
-			has_country_flag = can_switch_to_enlightenment
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 500
-		modifier = {
-			factor = 0.8
-			num_of_revolts = 1
-		}
-		modifier = {
-			factor = 0.8
-			num_of_revolts = 5
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 3
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 4
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 5
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 6
-		}
-	}
-	
-	option = {
-		name = "18551.A"
-		set_country_flag = can_switch_to_tradition
-		random_owned = {
-			limit = {
-				owner = { has_country_modifier = western_influences }
-			}
-			owner = {
-				remove_country_modifier = western_influences
-				add_country_modifier = {
-					name = uncivilized_isolationism
-					duration = -1
-				}
-			}
-		}
-		any_pop = {
-			scaled_militancy = {
-				ideology = liberal
-				factor = 4
-			}
-		}
-		ai_chance = {
-			factor = 50
-		}
-	}
-	
-	option = {
-		name = "18551.B"
-		set_country_flag = can_switch_to_enlightenment
-		random_owned = {
-			limit = {
-				owner = { has_country_modifier = uncivilized_isolationism }
-			}
-			owner = {
-				remove_country_modifier = uncivilized_isolationism
-				add_country_modifier = {
-					name = western_influences
-					duration = -1
-				}
-			}
-		}
-		any_pop = {
-			scaled_militancy = {
-				ideology = reactionary
-				factor = 4
-			}
-		}
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				OR = {
-					is_culture_group = east_asian
-					is_culture_group = far_east_asian
-				}
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 18555
-	title = "EVTNAME18555" #Clash of Ideals
-	desc = "EVTDESC18555"
-	picture = "streetriot"
-	
-	trigger = {
-		civilized = no
-		OR = {
-			nationalvalue = nv_enlightenment
-			nationalvalue = nv_progress
-			nationalvalue = nv_loyalty
-		}
-		average_consciousness = 3
-	}
-	
-	mean_time_to_happen = {
-		months = 80
-		modifier = {
-			factor = 0.8
-			civilization_progress = 0.5
-		}
-		modifier = {
-			factor = 0.8
-			civilization_progress = 0.75
-		}
-		modifier = {
-			factor = 0.9
-			average_consciousness = 4
-		}
-		modifier = {
-			factor = 0.9
-			average_consciousness = 5
-		}
-		modifier = {
-			factor = 0.9
-			average_consciousness = 6
-		}
-	}
-	
-	option = {
-		name = "18555.A"
-		random_owned = {
-			limit = {
-				is_capital = yes
-			}
-			state_scope = {
-				any_pop = {
-					ideology = {
-						value = liberal
-						factor = 0.05
-					}
-					militancy = 2
-				}
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 18556
-	title = "EVTNAME18556" #New Ideas
-	desc = "EVTDESC18556"
-	picture = "india"
-	
-	trigger = {
-		civilized = no
-		civilization_progress = 0.2
-		OR = {
-			nationalvalue = nv_enlightenment
-			nationalvalue = nv_progress
-			nationalvalue = nv_loyalty
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 80
-		modifier = {
-			factor = 0.8
-			publishing_industry = 1
-		}
-		modifier = {
-			factor = 0.8
-			average_militancy = 3
-		}
-		modifier = {
-			factor = 0.8
-			average_militancy = 4
-		}
-		modifier = {
-			factor = 0.8
-			average_militancy = 5
-		}
-		modifier = {
-			factor = 0.8
-			average_militancy = 6
-		}
-		modifier = {
-			factor = 0.8
-			num_of_revolts = 1
-		}
-	}
-	
-	option = {
-		name = "18556.A"
-		years_of_research = 0.2
-		aristocrats = {
-			ideology = {
-				value = reactionary
-				factor = 0.10
-			}
-			militancy = 2
-		}
-		ai_chance = {
-			factor = 50
-		}
-	}
-	
-	option = {
-		name = "18556.B"
-		years_of_research = -0.2
-		any_pop = { militancy = -4 }
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				NOT = { average_militancy = 2 }
-			}
-			modifier = {
-				factor = 1.5
-				average_militancy = 4
-			}
-			modifier = {
-				factor = 1.5
-				average_militancy = 6
-			}
-			modifier = {
-				factor = 1.5
-				average_militancy = 8
-			}
-			modifier = {
-				factor = 1.5
-				num_of_revolts = 1
-			}
-		}
-	}
-}
-
-country_event = {
-	id = 18560
-	title = "EVTNAME18560" #Annals of the Past
-	desc = "EVTDESC18560"
-	picture = "asian_ruler"
-	
-	trigger = {
-		civilized = no
 		OR = {
 			nationalvalue = nv_tradition
-			nationalvalue = nv_loyalty
-			nationalvalue = nv_independence
+			nationalvalue = nv_autocracy
 		}
+		NOT = { government = democracy }
 		militancy = 3
-		NOT = { civilization_progress = 0.75 }
 	}
 	
 	mean_time_to_happen = {
-		months = 80
-		modifier = {
-			factor = 1.25
-			civilization_progress = 0.5
-		}
-		modifier = {
-			factor = 1.25
-			civilization_progress = 0.6
-		}
-		modifier = {
-			factor = 1.25
-			civilization_progress = 0.7
-		}
-		modifier = {
-			factor = 0.8
-			average_militancy = 3
-		}
-		modifier = {
-			factor = 0.8
-			average_militancy = 4
-		}
-		modifier = {
-			factor = 0.8
-			average_militancy = 5
-		}
-		modifier = {
-			factor = 0.8
-			average_militancy = 6
-		}
+		months = 300
 	}
 	
 	option = {
-		name = "18560.A"
+		name = "EVT185600OPTA"
 		any_pop = {
 			limit = {
 				OR = {
@@ -1518,39 +427,127 @@ country_event = {
 }
 
 country_event = {
+	id = 18507
+	title = "EVTNAME18507" #The Price of Freedom
+	desc = "EVTDESC18507"
+	picture = "Demonstration"
+	
+	trigger = {
+		nationalvalue = nv_liberty
+		OR = {
+			government = presidential_dictatorship
+			government = fascist_dictatorship
+			government = proletarian_dictatorship
+			government = bourgeois_dictatorship
+			government = absolute_monarchy
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 6
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 7
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 8
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 9
+		}
+	}
+	
+	option = {
+		name = "EVT18507OPTA"
+		any_pop = { consciousness = 2 }
+		prestige = -5
+	}
+	
+	option = {
+		name = "EVT18507OPTB"
+		random_state = {
+			limit = { is_colonial = no }
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				militancy = 2
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				militancy = 4
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 185100
+	title = "EVTNAME185100" #Military Parade
+	desc = "EVTDESC185100"
+
+	picture = "big_parade"
+	
+	trigger = {
+		nationalvalue = nv_order
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+	}
+	
+	option = {
+		name = "EVT185100OPTA"
+		prestige = 8
+		any_neighbor_country = {
+			limit = {
+				NOT = { alliance_with = THIS }
+			}
+			relation = { who = THIS value = -20 }
+		}
+	}
+	
+	option = {
+		name = "EVT185100OPTB"
+		prestige = 3
+		any_pop = {
+			militancy = 1
+			consciousness = -1
+		}
+	}
+}
+
+country_event = {
 	id = 18561
 	title = "EVTNAME18561" #Celebration in $CAPITAL$
 	desc = "EVTDESC18561"
 	picture = "unite"
 	
 	trigger = {
-		civilized = no
-		OR = {
-			nationalvalue = nv_tradition
-			nationalvalue = nv_loyalty
-			nationalvalue = nv_independence
-		}
+		nationalvalue = nv_tradition
 		war = no
+		civilized = yes
 	}
 	
 	mean_time_to_happen = {
-		months = 120
-		modifier = {
-			factor = 0.9
-			civilization_progress = 0.2
-		}
-		modifier = {
-			factor = 0.9
-			civilization_progress = 0.4
-		}
-		modifier = {
-			factor = 0.9
-			civilization_progress = 0.6
-		}
-		modifier = {
-			factor = 0.9
-			civilization_progress = 0.8
-		}
+		months = 600
 		modifier = {
 			factor = 0.8
 			average_militancy = 3
@@ -1574,7 +571,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18561.A"
+		name = "EVT18561OPTA"
 		prestige = 2
 		any_pop = {
 			militancy = -2
@@ -1606,332 +603,10 @@ country_event = {
 	}
 	
 	option = {
-		name = "18561.B"
+		name = "EVT18561OPTB"
 		prestige = 6
 		ai_chance = {
 			factor = 50
 		}
-	}
-}
-
-country_event = {
-	id = 18562
-	title = "EVTNAME18562" #The Fight Against Progress
-	desc = "EVTDESC18562"
-	picture = "india"
-	
-	trigger = {
-		war = no
-		civilized = no
-		civilization_progress = 0.5
-		NOT = {
-			has_country_modifier = nothing_stops_progress
-			has_country_modifier = slow_down_progress
-		}
-		any_owned_province = {
-			is_core = THIS
-			is_primary_culture = yes
-			NOT = { controlled_by = REB }
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 240
-		modifier = {
-			factor = 0.8
-			civilization_progress = 0.6
-		}
-		modifier = {
-			factor = 0.8
-			civilization_progress = 0.7
-		}
-		modifier = {
-			factor = 0.8
-			civilization_progress = 0.8
-		}
-		modifier = {
-			factor = 0.8
-			civilization_progress = 0.9
-		}
-		modifier = {
-			factor = 1.25
-			nationalvalue = nv_tradition
-		}
-		modifier = {
-			factor = 0.8
-			nationalvalue = nv_independence
-		}
-		modifier = {
-			factor = 0.8
-			nationalvalue = nv_enlightenment
-		}
-		modifier = {
-			factor = 0.9
-			reactionary = 10
-		}
-		modifier = {
-			factor = 0.9
-			reactionary = 15
-		}
-		modifier = {
-			factor = 0.9
-			reactionary = 20
-		}
-		modifier = {
-			factor = 1.1
-			liberal = 10
-		}
-		modifier = {
-			factor = 1.1
-			liberal = 15
-		}
-		modifier = {
-			factor = 1.1
-			liberal = 20
-		}
-		modifier = {
-			factor = 0.8
-			has_recently_lost_war = yes
-		}
-		modifier = {
-			factor = 0.8
-			number_of_states = 8
-		}
-		modifier = {
-			factor = 0.8
-			number_of_states = 12
-		}
-		modifier = {
-			factor = 0.8
-			number_of_states = 16
-		}
-		modifier = {
-			factor = 0.8
-			number_of_states = 20
-		}
-	}
-	
-	option = {
-		name = "18562.A"
-		add_country_modifier = {
-			name = nothing_stops_progress
-			duration = 1825
-		}
-		random_owned = {
-			limit = {
-				is_primary_culture = yes
-				is_core = THIS
-			}
-			add_province_modifier = {
-				name = peasant_revolt
-				duration = 365
-			}
-			any_pop = {
-				limit = { is_primary_culture = yes }
-				ideology = {
-					value = reactionary
-					factor = 0.20
-				}
-				scaled_militancy = {
-					ideology = reactionary
-					factor = 6
-				}
-			}
-			state_scope = {
-				any_pop = {
-					limit = { is_primary_culture = yes }
-					ideology = {
-						value = reactionary
-						factor = 0.10
-					}
-					scaled_militancy = {
-						ideology = reactionary
-						factor = 4
-					}
-				}
-			}
-		}
-		ai_chance = {
-			factor = 40
-		}
-	}
-	
-	option = {
-		name = "18562.B"
-		random_owned = {
-			limit = {
-				is_primary_culture = yes
-				is_core = THIS
-			}
-			add_province_modifier = {
-				name = peasant_revolt
-				duration = 730
-			}
-			any_pop = {
-				limit = { is_primary_culture = yes }
-				ideology = {
-					value = reactionary
-					factor = 0.10
-				}
-				scaled_militancy = {
-					ideology = reactionary
-					factor = 3
-				}
-			}
-			state_scope = {
-				any_pop = {
-					limit = { is_primary_culture = yes }
-					ideology = {
-						value = reactionary
-						factor = 0.05
-					}
-					scaled_militancy = {
-						ideology = reactionary
-						factor = 2
-					}
-				}
-			}
-		}
-		ai_chance = {
-			factor = 40
-		}
-	}
-	
-	option = {
-		name = "18562.C"
-		add_country_modifier = {
-			name = slow_down_progress
-			duration = 1825
-		}
-		random_owned = {
-			limit = {
-				is_primary_culture = yes
-				is_core = THIS
-			}
-			any_pop = {
-				limit = { is_primary_culture = yes }
-				ideology = {
-					value = reactionary
-					factor = 0.10
-				}
-				scaled_consciousness = {
-					ideology = reactionary
-					factor = 3
-				}
-			}
-			state_scope = {
-				any_pop = {
-					limit = { is_primary_culture = yes }
-					ideology = {
-						value = reactionary
-						factor = 0.05
-					}
-					scaled_consciousness = {
-						ideology = reactionary
-						factor = 2
-					}
-				}
-			}
-		}
-		ai_chance = {
-			factor = 20
-		}
-	}
-}
-
-country_event = {
-	id = 18565
-	title = "EVTNAME18565" #A Return to Western Influence?
-	desc = "EVTDESC18565"
-	picture = "asian_ruler"
-	
-	trigger = {
-		civilized = no
-		war = no
-		nationalvalue = nv_progress
-		has_country_modifier = uncivilized_isolationism
-	}
-	
-	mean_time_to_happen = {
-		months = 60
-	}
-	
-	option = {
-		name = "18565.A"
-		remove_country_modifier = uncivilized_isolationism
-		add_country_modifier = {
-			name = "western_influences"
-			duration = -1
-		}
-		any_pop = {
-			ideology = {
-				value = reactionary
-				factor = 0.05
-			}
-			scaled_militancy = {
-				ideology = reactionary
-				factor = 3
-			}
-		}
-	}
-	
-	option = {
-		name = "18565.B"
-		any_pop = {
-			consciousness = 1
-			militancy = -2
-		}
-	}
-}
-
-country_event = {
-	id = 18570
-	title = "EVTNAME18571" #Rejecting the West?
-	desc = "EVTDESC18571"
-	picture = "asian_ruler"
-	
-	trigger = {
-		civilized = no
-		war = no
-		nationalvalue = nv_independence
-		has_country_modifier = western_influences
-	}
-
-	mean_time_to_happen = {
-		months = 60
-	}
-
-	option = {
-		name = "18570.A"
-		remove_country_modifier = western_influences
-		add_country_modifier = {
-			name = "uncivilized_isolationism"
-			duration = -1
-		}
-		any_pop = { militancy = -3 }
-		any_greater_power = {
-			relation = { who = THIS value = -40 }
-		}
-	}
-	
-	option = {
-		name = "18570.B"
-		random_owned = {
-			limit = { is_capital = yes }
-			state_scope = {
-				any_pop = {
-					ideology = {
-						value = liberal
-						factor = 0.05
-					}
-				}
-			}
-		}
-		any_pop = {
-			scaled_militancy = {
-				ideology = reactionary
-				factor = 3
-			}
-		}		
 	}
 }

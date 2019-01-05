@@ -16,12 +16,12 @@ army = {
 	}
 	regiment = {
 		name = "1. Infanterie-Regiment Königin Olga" #Anachronistic by 30 years
-		type = regular
+		type = infantry
 		home = 589
 	}
 	regiment = {
 		name = "2. Infanterie-Regiment"
-		type = regular
+		type = infantry
 		home = 589
 	}
 }
@@ -31,7 +31,7 @@ army = {
 	location = 593
 	regiment = {
 		name = "7. Infanterie-Regiment"
-		type = regular
+		type = infantry
 		home = 593
 	}
 	regiment = {

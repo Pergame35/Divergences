@@ -16,7 +16,7 @@ cavalry_move = {
 }
 
 cavalry_selected = {
-	file = "UI_CavalrySelected.wav"
+	file = "UI_CavalrySelect.wav"
 }
 
 navy_move = {
@@ -142,7 +142,7 @@ new_fort = {
 }
 
 new_infrastructure = {
-	file = "Misc_Infrastructure.wav"
+	file = "Misc_Fortification.wav"
 	volume = 0.5
 }
 

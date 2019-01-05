@@ -1,13 +1,12 @@
 owner = AMA
 controller = AMA
 add_core = AMA
-trade_goods = sugar
+trade_goods = cotton
+terrain = savanna
 life_rating = 35
-terrain = forested_farmland      
- 
 state_building = {
 	level = 2 
-	building = rum_distillery
+	building = liquor_distillery
 	upgrade = yes
 }             
  

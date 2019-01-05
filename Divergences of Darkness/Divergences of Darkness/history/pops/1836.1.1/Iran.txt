@@ -1,3 +1,4 @@
+#Slaves in Iran source http://m-hosseini.ir/safavid/articles-1/49.pdf
 #Southern Azerbaijan Region (1648000)
 #under the rule of Persia in 1836
 #Tabriz (808000/202000 POPS)
@@ -48,7 +49,7 @@
 	farmers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 50850
+		size = 37850
 	}
 
 	aristocrats = {
@@ -104,6 +105,18 @@
 		culture = armenian
 		religion = coptic
 		size = 7175
+	}
+	
+	slaves = {
+		culture = georgian
+		religion = orthodox
+		size = 8000
+	}
+
+	slaves = {
+		culture = armenian
+		religion = coptic
+		size = 5000
 	}
 }
 #Khvoy (168000/42000 POPS)
@@ -165,7 +178,7 @@
 	farmers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 18875
+		size = 13875
 	}
 
 	aristocrats = {
@@ -226,7 +239,19 @@
 	farmers = {
 		culture = kurdish
 		religion = sunni
-		size = 16925
+		size = 15925
+	}
+	
+	farmers = {
+		culture = assyrian
+		religion = assyrian
+		size = 1000
+	}
+	
+	slaves = {
+		culture = armenian
+		religion = coptic
+		size = 5000
 	}
 }
 #Urumia (192000/48000 POPS)
@@ -258,7 +283,7 @@
 	farmers = {
 		culture = azerbaijani
 		religion = shiite
-		size = 20350
+		size = 19350
 	}
 
 	aristocrats = {
@@ -349,6 +374,12 @@
 		culture = kurdish
 		religion = sunni
 		size = 12725
+	}
+	
+	farmers = {
+		culture = assyrian
+		religion = assyrian
+		size = 1000
 	}
 }
 #Mahabad (200000/50000 POPS)
@@ -475,7 +506,7 @@
 	farmers = {
 		culture = azerbaijani
 		religion = sunni
-		size = 27125
+		size = 22125
 	}
 
 	aristocrats = {
@@ -543,6 +574,11 @@
 		culture = armenian
 		religion = coptic
 		size = 4175
+	}	
+	slaves = {
+		culture = astrakhani
+		religion = coptic
+		size = 5000
 	}
 }
 #Gilan-Maznadaran Region (448000)
@@ -589,7 +625,7 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 41950
+		size = 39950
 	}
 
 	aristocrats = {
@@ -632,6 +668,12 @@
 		culture = armenian
 		religion = coptic
 		size = 3475
+	}
+	
+	slaves = {
+		culture = armenian
+		religion = coptic
+		size = 2000
 	}
 }
 #Noshehr (88000/22000 POPS)
@@ -901,7 +943,7 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 35450
+		size = 31450
 	}
 
 	clergymen = {
@@ -976,6 +1018,11 @@
 		culture = kurdish
 		religion = sunni
 		size = 14750
+	}	
+	slaves = {
+		culture = georgian
+		religion = orthodox
+		size = 4000
 	}
 }
 #Sanandaj (92000/23000 POPS)
@@ -1208,7 +1255,7 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 120025
+		size = 112025
 	}
 
 	clergymen = {
@@ -1281,6 +1328,18 @@
 		culture = parsi
 		religion = zoroastrian
 		size = 1835
+	}
+	
+	slaves = {
+		culture = forest_bantu #african_minor
+		religion = animist
+		size = 6000
+	}
+	
+	slaves = {
+		culture = georgian
+		religion = orthodox
+		size = 2000
 	}
 }
 #Hamadan (118000/29500 POPS)
@@ -1574,7 +1633,7 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 102950
+		size = 88950
 	}
 
 	clergymen = {
@@ -1611,6 +1670,18 @@
 		culture = kurdish
 		religion = shiite
 		size = 3450
+	}
+	
+	slaves = {
+		culture = forest_bantu #african_minor
+		religion = animist
+		size = 9000
+	}
+
+	slaves = {
+		culture = marathi
+		religion = hindu
+		size = 6000
 	}
 }
 #Arak (60000/15000 POPS)
@@ -1690,7 +1761,6 @@
 		religion = jewish
 		size = 1090
 	}
-
 }
 #Yazd (140000/35000 POPS)
 1130 = {
@@ -2061,7 +2131,7 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 24325
+		size = 19325
 	}
 
 	aristocrats = {
@@ -2122,6 +2192,18 @@
 		culture = armenian
 		religion = coptic
 		size = 1560
+	}
+
+	slaves = {
+		culture = forest_bantu #african_minor
+		religion = animist
+		size = 3000
+	}
+
+	slaves = {
+		culture = panjabi
+		religion = sikh
+		size = 2000
 	}
 }
 #Bushehr (100000/25000 POPS)
@@ -2363,7 +2445,6 @@
 		religion = jewish
 		size = 1095
 	}
-
 }
 #Lengeh (76000/19000 POPS)
 1141 = {
@@ -2501,7 +2582,19 @@
 	farmers = {
 		culture = mashriqi
 		religion = shiite
-		size = 8905
+		size = 5405
+	}
+
+	slaves = {
+		culture = forest_bantu #african_minor
+		religion = animist
+		size = 2500
+	}
+
+	slaves = {
+		culture = pashtun
+		religion = shiite
+		size = 1000
 	}
 }
 #Bam (80000/20000 POPS)
@@ -2765,7 +2858,19 @@
 	farmers = {
 		culture = baluchi
 		religion = sunni
-		size = 20875
+		size = 14875
+	}
+
+	slaves = {
+		culture = forest_bantu #african_minor
+		religion = animist
+		size = 2000
+	}
+
+	slaves = {
+		culture = panjabi
+		religion = hindu
+		size = 4000
 	}
 }
 #Khurasan Region (600000)
@@ -2817,7 +2922,7 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 75850
+		size = 63850
 	}
 
 	aristocrats = {
@@ -2874,6 +2979,19 @@
 		religion = coptic
 		size = 5575
 	}
+
+	slaves = {
+		culture = forest_bantu #african_minor
+		religion = animist
+		size = 8000
+	}
+
+	slaves = {
+		culture = pashtun
+		religion = shiite
+		size = 4000
+	}
+
 }
 #Birjand (92000/23000 POPS)
 1148 = {
@@ -3015,4 +3133,37 @@
 		size = 15025
 	}
 
+}
+
+#Bytantaysk (2000/500 POPS)
+1071 = {
+	clergymen = {
+		culture = persian
+		religion = shiite
+		size = 10
+	}
+
+	artisans = {
+		culture = persian
+		religion = shiite
+		size = 25
+	}
+
+	soldiers = {
+		culture = persian
+		religion = shiite
+		size = 100
+	}
+
+	farmers = {
+		culture = persian
+		religion = shiite
+		size = 1025
+	}
+	
+	farmers = {
+		culture = bedouin
+		religion = sunni
+		size = 225
+	}
 }

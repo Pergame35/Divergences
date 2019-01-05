@@ -1,5 +1,6 @@
 capital = 1550
-primary_culture = beifaren
+primary_culture = nanfaren
+culture = beifaren
 culture = yue 
 culture = hakka
 culture = zhuang 
@@ -8,15 +9,9 @@ government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
 literacy = 0.045
-minorities_reform = oppression
-immigration_policy = nobody_gets_out
-conscription=mandatory_service
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+
 # Political reforms
-slavery = no_slavery
+slavery = yes_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting
 public_meetings = yes_meeting
@@ -31,7 +26,16 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions
+pensions = no_pensions 
+school_reforms = no_schools
+
+# New Reforms
+conscription = mandatory_service
+debt_law = serfdom
+penal_system = capital_punishment
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
+border_policy = closed_borders
 
 ruling_party = TAI_reactionary
 upper_house = {
@@ -54,10 +58,7 @@ private_banks = 1
 # Inventions
 
 # Unciv Reforms
-diplomatic_reform = interactive
-academic_institutions = madrasahs
 admin_reform = yes_admin_reform
-taxation_reform = tax_farmers
 
 # Starting Consciousness
 consciousness = 0

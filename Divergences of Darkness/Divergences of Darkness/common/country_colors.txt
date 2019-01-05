@@ -1,9 +1,32 @@
 # Country unit colors.
+
+# Sweden
+SWE = {
+    color1= { 62 122 189  }
+    color2= { 255 255 255  }
+    color3= { 193 26 14  }
+}
+
+# Denmark FIXED (dark-blue coats, blue trousers and hats)
+DEN = {
+color1= { 69 80 169 }
+color2= { 69 157 208 }
+color3= { 137 183 124 }
+}
+
+
 # Finland
 FIN = {
     color1= { 182 134 100  }
     color2= { 39 108 140  }
     color3= { 112 150 105  }
+}
+
+# Norway
+NOR = {
+    color1= { 117 165 188  }
+    color2= { 202 112 85  }
+    color3= { 104 137 140  }
 }
 
 # Albania
@@ -19,6 +42,14 @@ AWA = {
     color2= { 255 216 85  }
     color3= { 117 127 174  }
 }
+
+# Belgium FIXED
+BEL	 = {
+    color1= { 244 56 49  }
+    color2= { 248 199 67  }
+    color3= { 107 170 77  }
+}
+
 
 # Bosnia
 BOS = {
@@ -105,6 +136,7 @@ TUR = {
     color3= { 135 104 85  }
 }
 
+
 # United Kingdom
 ENG = {
     color1= { 193 26 14  }
@@ -119,6 +151,13 @@ IRE = {
     color3= { 117 127 174  }
 }
 
+# Ionian Islands FIXED
+ION = {
+    color1= { 69 80 169  }
+    color2= { 248 199 67  }
+    color3= { 131 101 85  }
+}
+
 # Scotland
 SCO = {
     color1= { 199 175 12  }
@@ -126,6 +165,70 @@ SCO = {
     color3= { 104 137 140  }
 }
 
+# Brazil
+BRZ = {
+    color1= { 50 85 47  }
+    color2= { 162 145 29  }
+    color3= { 183 176 194  }
+}
+
+# Bolivia
+BOL = {
+    color1= { 66 133 63  }
+    color2= { 151 41 43  }
+    color3= { 183 176 194  }
+}
+
+# Canada
+CAN = {
+    color1= { 94 117 55  }
+    color2= { 255 87 127  }
+    color3= { 99 137 153  }
+}
+
+# Chile
+CHL = {
+    color1= { 143 42 39  }
+    color2= { 66 66 121  }
+    color3= { 80 79 88  }
+}
+
+# Paraguay
+PRG = {
+    color1= { 146 58 35  }
+    color2= { 66 66 121  }
+    color3= { 80 79 88  }
+}
+
+
+# Argentina
+ARG = {
+	color1= { 112 145 181  }
+    color2= { 255 255 255  }
+    color3= { 80 79 88  }
+}	
+	
+# Uruguay
+URU = {
+    color1= { 68 79 141  }
+    color2= { 167 157 94  }
+    color3= { 80 79 88  }
+}	
+	
+# Venezuela
+VNZ = {
+    color1= { 162 145 29  }
+    color2= { 66 66 121  }
+    color3= { 197 92 106  }
+}	
+	
+# Ecuador
+ECU = {
+    color1= { 97 144 157  }
+    color2= { 255 255 255  }
+    color3= { 197 92 106  }
+}		
+	
 # Colombia
 CLM = {
     color1= { 143 42 39  }
@@ -147,9 +250,37 @@ MEW = {
     color3= { 69 157 208  }
 }
 
+# Peru
+PEU = {
+    color1= { 124 140 162  }
+    color2= { 144 52 53  }
+    color3= { 184 193 89  }
+}
+
+# Quebec
+QUE = {
+    color1= { 194 140 86  }
+    color2= { 219 124 139  }
+    color3= { 17 16 203  }
+}
+
+# USA
+USA = {
+    color1= { 69 157 208  }
+    color2= { 124 140 162  }
+    color3= { 137 183 124  }
+}
+
 # Lithuania
 LIT = {
     color1= { 154 69 116  }
+    color2= { 255 255 255  }
+    color3= { 210 106 47  }
+}
+
+# Liberia
+LIB = {
+    color1= { 36 84 245  }
     color2= { 255 255 255  }
     color3= { 210 106 47  }
 }
@@ -173,6 +304,13 @@ FRA = {
     color1= { 63 125 214  }
     color2= { 129 177 125  }
     color3= { 121 162 109  }
+}
+
+# Anhalt FIXED
+ANH = {
+    color1= { 134 224 126  }
+    color2= { 244 56 49  }
+    color3= { 134 166 117  }
 }
  
 #  Baden FIXED
@@ -224,6 +362,13 @@ AUS = {
     color3= { 17 16 203  }
 }
 
+# Hamburg FIXED
+HAM = {
+    color1= { 244 56 49  }
+    color2= { 87 187 128  }
+    color3= { 69 157 208  }
+}
+
 # Hannover FIXED
 HAN = {
     color1= { 248 199 67  }
@@ -245,6 +390,20 @@ HEK = {
     color3= { 195 149 155  }
 }
 
+# Mecklenburg FIXED
+MEC = {
+    color1= { 248 199 67  }
+    color2= { 244 56 49  }
+    color3= { 112 150 105  }
+}
+
+# Saxe-Meiningen FIXED
+MEI = {
+    color1= { 134 224 126  }
+    color2= { 255 255 255  }
+    color3= { 112 150 105  }
+}
+
 # Oldenburg FIXED
 OLD = {
     color1= { 244 56 49  }
@@ -256,6 +415,20 @@ OLD = {
 SAX = {
     color1= { 255 255 255  }
     color2= { 134 224 126  }
+    color3= { 117 127 174  }
+}
+
+# Saxe-Weimar FIXED
+WEI = {
+    color1= { 134 224 126  }
+    color2= { 100 100 100  }
+    color3= { 117 127 174  }
+}
+
+# Saxe-Coburg-Gotha FIXED
+COB = {
+    color1= { 134 224 126  }
+    color2= { 248 199 67  }
     color3= { 117 127 174  }
 }
 
@@ -308,6 +481,13 @@ ITA = {
     color2= { 152 85 92  }
     color3= { 80 79 88  }
 }
+
+# Manhattan Commune
+#MAN = {
+#    color1= { 191 83 101  }
+#    color2= { 126 203 120  }
+#    color3= { 99 137 153  }
+#}
 
 # Modena
 MOD = {
@@ -372,6 +552,13 @@ FLA = {
     color3= { 134 166 117  }
 }
 
+# Haiti
+HAI = {
+    color1= { 43 42 130  }
+    color2= { 99 137 153  }
+    color3= { 187 79 86  }
+}
+
 # Holstein FIXED
 HOL = {
     color1= { 69 80 169  }
@@ -384,6 +571,20 @@ LIP = {
     color1= { 248 199 67  }
     color2= { 244 56 49  }	
     color3= { 255 255 255  }
+}
+
+# Luxembourg FIXED
+LUX = {
+    color1= { 122 182 242 }
+    color2= { 255 255 255  }
+    color3= { 132 11 11  }
+}
+
+# Lubeck FIXED
+LUB = {
+    color1= { 255 255 255  }
+    color2= { 244 56 49  }
+    color3= { 195 149 155  }
 }
 
 # Netherlands FIXED
@@ -407,6 +608,13 @@ ARM = {
     color1= { 128 170 63  }
     color2= { 166 72 57  }
     color3= { 17 16 203  }
+}
+
+# Australia
+AST = {
+    color1= { 26 27 154  }
+    color2= { 161 126 128  }
+    color3= { 69 157 208  }
 }
 
 # Crimea
@@ -458,6 +666,20 @@ HDJ = {
     color3= { 69 157 208  }
 }
 
+# Krakow FIXED
+KRA = {
+    color1= { 255 255 255  }
+    color2= { 128 146 202  }
+    color3= { 255 255 255  }
+}
+
+# Trieste
+TRE = {
+    color1= { 40 164 157  }
+    color2= { 161 126 128  }
+    color3= { 80 79 88  }
+}
+
 # Burma FIXED
 BUR = {
     color1= { 255 255 255  }
@@ -503,6 +725,13 @@ TUN = {
 # Sokoto FIXED
 SOK = {
     color1= { 49 244 76  }
+    color2= { 94 117 55  }
+    color3= { 112 150 105  }
+}
+
+# Oranje
+ORA = {
+    color1= { 255 154 82  }
     color2= { 94 117 55  }
     color3= { 112 150 105  }
 }
@@ -626,11 +855,25 @@ LUA = {
     color3= { 48 164 51  }
 }
 
+# Panjab
+PNJ = {
+    color1= { 229 165 69  }
+    color2= { 100 100 100  }
+    color3= { 166 189 199  }
+}
+
 # Tibet FIXED
 TIB = {
     color1= { 255 255 255  }
     color2= { 248 199 67  }
     color3= { 122 179 97  }
+}
+
+# Bastar FIXED (not confirmed)
+BAS = {
+    color1= { 103 123 204  }
+    color2= { 255 255 255  }
+    color3= { 195 149 155  }
 }
 
 # Beroda FIXED
@@ -771,6 +1014,20 @@ JOD = {
 KAL = {
     color1= { 90 164 107  }
     color2= { 244 56 49  }
+    color3= { 99 137 153  }
+}
+
+# Kutch FIXED
+KUT = {
+    color1= { 244 56 49  }
+    color2= { 255 255 255  }
+    color3= { 69 157 208  }
+}
+
+# Makran
+MAK = {
+    color1= { 90 164 107  }
+    color2= { 69 80 169  }
     color3= { 99 137 153  }
 }
 

@@ -3,5 +3,12 @@ controller = VEN
 add_core = GRE
 add_core = TUR
 trade_goods = fish
-life_rating = 35
-terrain = hilly_grassland
+life_rating = 30
+terrain = small_island
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = steamer_shipyard
+		upgrade = yes
+	}
+}

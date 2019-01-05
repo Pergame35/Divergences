@@ -11,6 +11,7 @@ generator_selector =
 		{
 			OR = 
 			{ 
+				strings_eq = { 0 1 indian_sepoys }
 				strings_eq = { 0 1 nationalist_rebels }
 				strings_eq = { 0 1 separatist_rebels }
 				# add more if rebels DB change

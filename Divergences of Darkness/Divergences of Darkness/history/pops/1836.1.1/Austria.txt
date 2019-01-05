@@ -1,5 +1,5 @@
 #Tirol Region (556000) #see Italy.txt for balance of Region
-#under the rule of Austria in 1836
+#under the rule of Austria in 1836  
 #Innsbruck (236000/59000 POPS)
 612 = {
     aristocrats = {
@@ -60,44 +60,6 @@
         culture = south_german
         religion = catholic
         size = 53325
-    }
-}
-#Bozen (92000/23000 POPS) #now part of Italy
-735 = {
-    clergymen = {
-        culture = south_german
-        religion = catholic
-        size = 150
-    }
-
-    artisans = {
-        culture = south_german
-        religion = catholic
-        size = 1500
-    }
-
-    farmers = {
-        culture = south_german
-        religion = catholic
-        size = 14950
-    }
-
-    clergymen = {
-        culture = south_german
-        religion = catholic
-        size = 50
-    }
-
-    artisans = {
-        culture = south_german
-        religion = catholic
-        size = 500
-    }
-
-    farmers = {
-        culture = south_german
-        religion = catholic
-        size = 5400
     }
 }
 #Salzburg (136000/34000 POPS)
@@ -239,7 +201,7 @@
     }
 }
 #Carinthia-Styria Region (736000) #see Slovenia.txt for balance of Region
-#under the rule of Austria in 1836
+#under the rule of Austria in 1836  
 #Graz (380000/95000 POPS)
 616 = {
     aristocrats = {
@@ -372,8 +334,8 @@
         size = 16675
     }
 }
-#Austria Region (2000000)
-#under the rule of Austria in 1836
+#Austria Region (2000000) 
+#under the rule of Austria in 1836  
 #Vienna (1084000/271000 POPS)
 619 = {
     aristocrats = {

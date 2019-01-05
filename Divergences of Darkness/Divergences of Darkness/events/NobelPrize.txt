@@ -5,20 +5,19 @@
 # Establishment of the Nobel Prizes
 country_event = {
 
-	id = 23450 
+	id = 23450
 	news = yes
 	news_desc_long = "EVTDESC23450_NEWS_LONG"
 	news_desc_medium = "EVTDESC23450_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC23450_NEWS_SHORT"
-	
+
 	trigger = {
-		tag = SCA
+		owns = 322
 		year = 1898
 		not = {
 			year = 1905
 			has_global_flag = NobelPhysics
 		}
-		war = no 
 	}
  
 	mean_time_to_happen =  {
@@ -29,7 +28,7 @@ country_event = {
 			year = 1899
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.5
 			year = 1900
 		}
 	}
@@ -40,7 +39,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23401"
-		prestige = 25
+		prestige = 50
 		set_global_flag = NobelPhysics
 		set_global_flag = NobelChemistry
 		set_global_flag = NobelMedicine
@@ -53,28 +52,91 @@ country_event = {
 country_event = {
 
 	id = 23451 
-
+	title = "EVTNAME23451"
+	desc = "EVTDESC23451"
+	picture = "xrays_discovered"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		year = 1901
-		electricity = 1
-		not = {
-			year = 1906
+		invention = x_rays
+		literacy = 0.6
+		NOT = {
+			year = 1905
 			has_global_flag = 1NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
  
 	mean_time_to_happen =  {
 		months = 12
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
 
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1902
@@ -85,36 +147,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 1NobelPhysics
+		set_country_flag = 1stNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23452 
-
+	title = "EVTNAME23452"
+	desc = "EVTDESC23452"
+	picture = "zeeman_effect"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 1NobelPhysics
 		year = 1902
+		literacy = 0.6
 		electricity = 1
-		not = {
+		NOT = {
 			year = 1907
 			has_global_flag = 2NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -122,6 +189,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1903
@@ -132,36 +254,43 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 2NobelPhysics
+		set_country_flag = 2ndNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23453 
-
+	title = "EVTNAME23453"
+	desc = "EVTDESC23453"
+	picture = "radioactivity"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 2NobelPhysics
 		year = 1903
-		electricity = 1
-		not = {
+		invention = x_rays
+		literacy = 0.6
+		
+		NOT = {
 			year = 1908
 			has_global_flag = 3NobelPhysics
 		}
-		or = { 
+		
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -169,6 +298,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1904
@@ -179,36 +363,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 3NobelPhysics
+		set_country_flag = 3rdNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23454 
-
+	title = "EVTNAME23454"
+	desc = "EVTDESC23454"
+	picture = "argon_discovery"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 3NobelPhysics
 		year = 1904
 		electricity = 1
-		not = {
+		literacy = 0.6
+		NOT = {
 			year = 1909
 			has_global_flag = 4NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -216,6 +405,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1905
@@ -226,36 +470,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 4NobelPhysics
+		set_country_flag = 4thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23455 
-
+	title = "EVTNAME23455"
+	desc = "EVTDESC23455"
+	picture = "cathode_rays"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 4NobelPhysics
 		year = 1905
 		electricity = 1
+		literacy = 0.6
 		not = {
 			year = 1908
 			has_global_flag = 5NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -263,6 +512,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1906
@@ -273,36 +577,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 5NobelPhysics
+		set_country_flag = 5thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23456 
-
+	title = "EVTNAME23456"
+	desc = "EVTDESC23456"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 5NobelPhysics
 		year = 1906
 		electricity = 1
+		literacy = 0.6
 		not = {
 			year = 1909
 			has_global_flag = 6NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -310,6 +619,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1907
@@ -320,36 +684,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 6NobelPhysics
+		set_country_flag = 6thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
-	id = 23457 
+	id = 23457
+	title = "EVTNAME23457"
+	desc = "EVTDESC23457"
+	picture = "interferometer"
 
 	trigger = {
 		has_global_flag = NobelPhysics
-		has_global_flag = 8NobelPhysics
+		has_global_flag = 6NobelPhysics
 		year = 1907
 		electricity = 1
+		literacy = 0.6
 		not = {
 			year = 1910
 			has_global_flag = 7NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -357,6 +726,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1908
@@ -367,43 +791,103 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 7NobelPhysics
+		set_country_flag = 7thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23458 
-
+	title = "EVTNAME23458"
+	desc = "EVTDESC23458"
+	picture = "lippmann_photography"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 7NobelPhysics
 		year = 1908
 		electricity = 1
+		literacy = 0.6
 		not = {
 			year = 1911
 			has_global_flag = 8NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
  
 	mean_time_to_happen =  {
 		months = 12
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
 
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1909
@@ -414,43 +898,103 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 8NobelPhysics
+		set_country_flag = 8thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23459 
-
+	title = "EVTNAME23459"
+	desc = "EVTDESC23459"
+	picture = "wireless_telegraphy"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 8NobelPhysics
 		year = 1909
 		electricity = 1
+		literacy = 0.6
 		not = {
 			year = 1912
 			has_global_flag = 9NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
  
 	mean_time_to_happen =  {
 		months = 12
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
 
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1910
@@ -461,36 +1005,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
-		name = "EVTOPTA23451"  
-		prestige = 25
+		name = "EVTOPTA23451"
+		prestige = 10
 		set_global_flag = 9NobelPhysics
+		set_country_flag = 9thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23460
-
+	title = "EVTNAME23460"
+	desc = "EVTDESC23460"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 9NobelPhysics
 		year = 1910
 		electricity = 1
+		literacy = 0.6
 		not = {
 			year = 1913
 			has_global_flag = 10NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -498,6 +1047,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1911
@@ -508,36 +1112,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 10NobelPhysics
+		set_country_flag = 10thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23461
-
+	title = "EVTNAME23461"
+	desc = "EVTDESC23461"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 10NobelPhysics
 		year = 1911
-		electricity = 1
+		invention = quantum_theory
+		literacy = 0.6
 		not = {
 			year = 1914
 			has_global_flag = 11NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -545,6 +1154,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1912
@@ -555,36 +1219,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 11NobelPhysics
+		set_country_flag = 10thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23462
-
+	title = "EVTNAME23462"
+	desc = "EVTDESC23462"
+	picture = "aga_lighthouse"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 11NobelPhysics
 		year = 1912
 		electricity = 1
+		literacy = 0.6
 		not = {
 			year = 1915
 			has_global_flag = 12NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -592,6 +1261,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1913
@@ -602,43 +1326,103 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 12NobelPhysics
+		set_country_flag = 12thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23463
-
+	title = "EVTNAME23463"
+	desc = "EVTDESC23463"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 12NobelPhysics
 		year = 1913
 		electricity = 1
+		literacy = 0.6
 		not = {
 			year = 1916
 			has_global_flag = 13NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
  
 	mean_time_to_happen =  {
 		months = 12
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
 
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1914
@@ -649,43 +1433,103 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 13NobelPhysics
+		set_country_flag = 13thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23464
-
+	title = "EVTNAME23464"
+	desc = "EVTDESC23464"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 13NobelPhysics
 		year = 1914
-		electricity = 1
+		invention = x_rays
+		literacy = 0.6
 		not = {
 			year = 1917
 			has_global_flag = 14NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
  
 	mean_time_to_happen =  {
 		months = 12
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
 
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1915
@@ -696,36 +1540,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 14NobelPhysics
+		set_country_flag = 14thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23465
-
+	title = "EVTNAME23465"
+	desc = "EVTDESC23465"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 14NobelPhysics
 		year = 1915
-		electricity = 1
+		invention = x_rays
+		literacy = 0.6
 		not = {
 			year = 1918
 			has_global_flag = 15NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -733,6 +1582,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1916
@@ -743,42 +1647,47 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 15NobelPhysics
+		set_country_flag = 15thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23466
-
+	title = "EVTNAME23466"
+	desc = "EVTDESC23466"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 15NobelPhysics
 		year = 1916
 		electricity = 1
+		literacy = 0.6
 		not = {
 			year = 1919
 			has_global_flag = 16NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
  
 	mean_time_to_happen =  {
-		months = 12
+		months = 6
 
 		modifier = {
 			factor = 0.95
@@ -790,13 +1699,8 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
-		name = "EVTOPTA23451"  
-		prestige = 25
+		name = "EVTOPTA23466"  
 		set_global_flag = 16NobelPhysics
 	}
 }
@@ -804,29 +1708,92 @@ country_event = {
 country_event = {
 
 	id = 23467
-
+	title = "EVTNAME23467"
+	desc = "EVTDESC23467"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 16NobelPhysics
 		year = 1917
-		electricity = 1
+		invention = x_rays
+		literacy = 0.6
 		not = {
 			year = 1920
 			has_global_flag = 17NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
  
 	mean_time_to_happen =  {
 		months = 12
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
 
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1918
@@ -837,36 +1804,42 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 17NobelPhysics
+		set_country_flag = 17thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23468
-
+	title = "EVTNAME23468"
+	desc = "EVTDESC23468"
+	picture = "Nobel_Physics"
+	
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 17NobelPhysics
 		year = 1918
-		electricity = 1
+		invention = quantum_theory
+		literacy = 0.6
 		not = {
 			year = 1921
 			has_global_flag = 18NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -874,6 +1847,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1919
@@ -884,43 +1912,103 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 18NobelPhysics
+		set_country_flag = 18thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23469
-
+	title = "EVTNAME23469"
+	desc = "EVTDESC23469"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 18NobelPhysics
 		year = 1919
 		electricity = 1
+		literacy = 0.6
 		not = {
 			year = 1922
 			has_global_flag = 19NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
  
 	mean_time_to_happen =  {
 		months = 12
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
 
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1920
@@ -931,36 +2019,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 19NobelPhysics
+		set_country_flag = 19thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23470
-
+	title = "EVTNAME23470"
+	desc = "EVTDESC23470"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 19NobelPhysics
 		year = 1920
 		electricity = 1
+		literacy = 0.6
 		not = {
 			year = 1923
 			has_global_flag = 20NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -968,6 +2061,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1921
@@ -978,36 +2126,42 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 20NobelPhysics
+		set_country_flag = 20thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23471
-
+	title = "EVTNAME23471"
+	desc = "EVTDESC23471"
+	picture = "einstein_lectures"
+	
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 20NobelPhysics
 		year = 1921
 		electricity = 1
+		literacy = 0.7
 		not = {
 			year = 1924
 			has_global_flag = 21NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -1015,6 +2169,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1922
@@ -1025,36 +2234,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 21NobelPhysics
+		set_country_flag = 21thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23472
-
+	title = "EVTNAME23472"
+	desc = "EVTDESC23472"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 21NobelPhysics
 		year = 1922
-		electricity = 1
+		invention = quantum_theory
+		literacy = 0.6
 		not = {
 			year = 1925
 			has_global_flag = 22NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -1062,6 +2276,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1923
@@ -1072,36 +2341,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 22NobelPhysics
+		set_country_flag = 22thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23473
-
+	title = "EVTNAME23473"
+	desc = "EVTDESC23473"
+	picture = "oil_drop_experiment"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 22NobelPhysics
 		year = 1923
 		electricity = 1
+		literacy = 0.6
 		not = {
 			year = 1926
 			has_global_flag = 23NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -1109,6 +2383,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1924
@@ -1119,36 +2448,42 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 23NobelPhysics
+		set_country_flag = 23thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23474
-
+	title = "EVTNAME23474"
+	desc = "EVTDESC23474"
+	picture = "Nobel_Physics"
+	
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 23NobelPhysics
 		year = 1924
-		electricity = 1
+		invention = x_rays
+		literacy = 0.6
 		not = {
 			year = 1927
 			has_global_flag = 24NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -1156,6 +2491,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1925
@@ -1166,43 +2556,103 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 24NobelPhysics
+		set_country_flag = 24thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23475
-
+	title = "EVTNAME23475"
+	desc = "EVTDESC23475"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 24NobelPhysics
 		year = 1925
-		electricity = 1
+		invention = vacuum_tube
+		literacy = 0.6
 		not = {
 			year = 1928
 			has_global_flag = 25NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
  
 	mean_time_to_happen =  {
 		months = 12
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
 
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1926
@@ -1213,36 +2663,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 25NobelPhysics
+		set_country_flag = 25thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23476
-
+	title = "EVTNAME23476"
+	desc = "EVTDESC23476"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 25NobelPhysics
 		year = 1926
-		electricity = 1
+		invention = quantum_theory
+		literacy = 0.6
 		not = {
 			year = 1929
 			has_global_flag = 26NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -1250,6 +2705,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1927
@@ -1260,36 +2770,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 26NobelPhysics
+		set_country_flag = 26thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23477
-
+	title = "EVTNAME23477"
+	desc = "EVTDESC23477"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 26NobelPhysics
 		year = 1927
-		electricity = 1
+		synthetic_polymers = 1
+		literacy = 0.6
 		not = {
 			year = 1930
 			has_global_flag = 27NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -1297,6 +2812,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1928
@@ -1307,36 +2877,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 27NobelPhysics
+		set_country_flag = 27thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23478
-
+	title = "EVTNAME23478"
+	desc = "EVTDESC23478"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 27NobelPhysics
 		year = 1928
-		electricity = 1
+		synthetic_polymers = 1
+		literacy = 0.6
 		not = {
 			year = 1931
 			has_global_flag = 28NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -1344,6 +2919,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1929
@@ -1354,36 +2984,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 28NobelPhysics
+		set_country_flag = 28thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23479
-
+	title = "EVTNAME23479"
+	desc = "EVTDESC23479"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 28NobelPhysics
 		year = 1929
-		electricity = 1
+		synthetic_polymers = 1
+		literacy = 0.6
 		not = {
 			year = 1932
 			has_global_flag = 29NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -1391,6 +3026,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1930
@@ -1401,36 +3091,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 29NobelPhysics
+		set_country_flag = 29thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23480
-
+	title = "EVTNAME23480"
+	desc = "EVTDESC23480"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 29NobelPhysics
 		year = 1930
-		electricity = 1
+		synthetic_polymers = 1
+		literacy = 0.6
 		not = {
 			year = 1933
 			has_global_flag = 30NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -1438,6 +3133,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1930
@@ -1448,43 +3198,103 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 30NobelPhysics
+		set_country_flag = 30thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23481
-
+	title = "EVTNAME23466"
+	desc = "EVTDESC23466"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 30NobelPhysics
 		year = 1931
-		electricity = 1
+		synthetic_polymers = 1
+		literacy = 0.6
 		not = {
 			year = 1934
 			has_global_flag = 31NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
 				prestige = 25
+				literacy = 0.6
 			}
 		}
 	}
  
 	mean_time_to_happen =  {
 		months = 12
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
 
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1932
@@ -1495,13 +3305,8 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
-		name = "EVTOPTA23451"  
-		prestige = 25
+		name = "EVTOPTA23466"  
 		set_global_flag = 31NobelPhysics
 	}
 }
@@ -1509,29 +3314,92 @@ country_event = {
 country_event = {
 
 	id = 23482
-
+	title = "EVTNAME23482"
+	desc = "EVTDESC23482"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 31NobelPhysics
 		year = 1932
-		electricity = 1
+		invention = quantum_theory
+		literacy = 0.6
 		not = {
 			year = 1935
 			has_global_flag = 32NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
  
 	mean_time_to_happen =  {
 		months = 12
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
 
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1933
@@ -1542,36 +3410,41 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 32NobelPhysics
+		set_country_flag = 32thNobelPhysicsReceived
 	}
 }
 
 country_event = {
 
 	id = 23483
+	title = "EVTNAME23483"
+	desc = "EVTDESC23483"
+	picture = "Nobel_Physics"
 
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 32NobelPhysics
 		year = 1933
-		electricity = 1
+		invention = quantum_theory
+		literacy = 0.6
 		not = {
 			year = 1936
 			has_global_flag = 33NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -1579,6 +3452,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.85
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1934
@@ -1589,14 +3517,11 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 33NobelPhysics
+		set_country_flag = 33thNobelPhysicsReceived
 	}
 }
 
@@ -1636,13 +3561,12 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
+	title = "EVTNAME23466"
+	desc = "EVTDESC23466"
 	picture = "Nobel_Physics"
 
 	option = {
-		name = "EVTOPTA23451"  
-		prestige = 25
+		name = "EVTOPTA23466"  
 		set_global_flag = 34NobelPhysics
 	}
 }
@@ -1650,22 +3574,30 @@ country_event = {
 country_event = {
 
 	id = 23485
-
+	title = "EVTNAME23485"
+	desc = "EVTDESC23485"
+	picture = "Nobel_Physics"
+	
 	trigger = {
 		has_global_flag = NobelPhysics
 		has_global_flag = 34NobelPhysics
 		year = 1935
-		electricity = 1
+		synthetic_polymers = 1
+		literacy = 0.6
 		not = {
 			year = 1938
-			has_global_flag = 34NobelPhysics
+			has_global_flag = 35NobelPhysics
 		}
-		or = { 
+		OR = {
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
-			and = {
+			AND = {
+				prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
+				literacy = 0.7
+			}
+			AND = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 70
+				literacy = 0.6
 			}
 		}
 	}
@@ -1673,6 +3605,61 @@ country_event = {
 	mean_time_to_happen =  {
 		months = 12
 
+		modifier = {
+			factor = 0.95
+			literacy = 0.9
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+			NOT = { rank = 3 }
+		}
+
+		modifier = {
+			factor = 0.98
+			literacy = 0.9
+			total_pops = 1000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.97
+			literacy = 0.95
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 0.95
+			literacy = 0.97
+			total_pops = 7000000
+			capital_scope = { continent = europe }
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				public_meetings = no_meeting
+				NOT = { plurality = 75 }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+			}
+		}
+		
+		modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
+		
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
 		modifier = {
 			factor = 0.95
 			year = 1936
@@ -1683,14 +3670,11 @@ country_event = {
 		}
 	}
 
-	title = "EVTNAME23451"
-	desc = "EVTDESC23451"
-	picture = "Nobel_Physics"
-
 	option = {
 		name = "EVTOPTA23451"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 35NobelPhysics
+		set_country_flag = 35thNobelPhysicsReceived
 	}
 }
 
@@ -1709,10 +3693,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -1736,7 +3720,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 1NobelChemistry
 	}
 }
@@ -1756,10 +3740,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -1783,7 +3767,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 2NobelChemistry
 	}
 }
@@ -1803,10 +3787,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -1830,7 +3814,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 3NobelChemistry
 	}
 }
@@ -1850,10 +3834,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -1877,7 +3861,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 4NobelChemistry
 	}
 }
@@ -1897,10 +3881,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -1924,7 +3908,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 5NobelChemistry
 	}
 }
@@ -1943,10 +3927,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -1970,7 +3954,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 6NobelChemistry
 	}
 }
@@ -1981,7 +3965,7 @@ country_event = {
 
 	trigger = {
 		has_global_flag = NobelChemistry
-		has_global_flag = 8NobelChemistry
+		has_global_flag = 6NobelChemistry
 		year = 1907
 		electricity = 1
 		not = {
@@ -1990,10 +3974,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2017,7 +4001,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 7NobelChemistry
 	}
 }
@@ -2037,10 +4021,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2064,7 +4048,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 8NobelChemistry
 	}
 }
@@ -2084,10 +4068,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2111,7 +4095,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 9NobelChemistry
 	}
 }
@@ -2131,10 +4115,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2158,7 +4142,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 10NobelChemistry
 	}
 }
@@ -2178,10 +4162,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2205,7 +4189,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 11NobelChemistry
 	}
 }
@@ -2225,10 +4209,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2252,7 +4236,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 12NobelChemistry
 	}
 }
@@ -2272,10 +4256,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2299,7 +4283,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 13NobelChemistry
 	}
 }
@@ -2319,10 +4303,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2346,7 +4330,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 14NobelChemistry
 	}
 }
@@ -2366,10 +4350,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2393,7 +4377,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 15NobelChemistry
 	}
 }
@@ -2413,10 +4397,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2440,7 +4424,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 16NobelChemistry
 	}
 }
@@ -2460,10 +4444,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2487,7 +4471,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 17NobelChemistry
 	}
 }
@@ -2507,10 +4491,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2534,7 +4518,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 18NobelChemistry
 	}
 }
@@ -2554,10 +4538,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2581,7 +4565,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 19NobelChemistry
 	}
 }
@@ -2601,10 +4585,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -2628,7 +4612,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 20NobelChemistry
 	}
 }
@@ -2675,7 +4659,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 21NobelChemistry
 	}
 }
@@ -2722,7 +4706,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 22NobelChemistry
 	}
 }
@@ -2769,7 +4753,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 23NobelChemistry
 	}
 }
@@ -2816,7 +4800,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 24NobelChemistry
 	}
 }
@@ -2863,7 +4847,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 25NobelChemistry
 	}
 }
@@ -2910,7 +4894,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 26NobelChemistry
 	}
 }
@@ -2957,7 +4941,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 27NobelChemistry
 	}
 }
@@ -3004,7 +4988,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 28NobelChemistry
 	}
 }
@@ -3051,7 +5035,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 29NobelChemistry
 	}
 }
@@ -3098,7 +5082,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 30NobelChemistry
 	}
 }
@@ -3145,7 +5129,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 31NobelChemistry
 	}
 }
@@ -3192,7 +5176,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 32NobelChemistry
 	}
 }
@@ -3239,7 +5223,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 33NobelChemistry
 	}
 }
@@ -3286,7 +5270,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 34NobelChemistry
 	}
 }
@@ -3302,7 +5286,7 @@ country_event = {
 		electricity = 1
 		not = {
 			year = 1938
-			has_global_flag = 34NobelChemistry
+			has_global_flag = 35NobelChemistry
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
@@ -3333,7 +5317,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23491"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 35NobelChemistry
 	}
 }
@@ -3353,10 +5337,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3380,7 +5364,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 1NobelMedicine
 	}
 }
@@ -3400,10 +5384,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3427,7 +5411,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 2NobelMedicine
 	}
 }
@@ -3447,10 +5431,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3474,7 +5458,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 3NobelMedicine
 	}
 }
@@ -3494,10 +5478,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3521,7 +5505,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 4NobelMedicine
 	}
 }
@@ -3541,10 +5525,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3568,7 +5552,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 5NobelMedicine
 	}
 }
@@ -3588,10 +5572,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3615,7 +5599,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 6NobelMedicine
 	}
 }
@@ -3626,7 +5610,7 @@ country_event = {
 
 	trigger = {
 		has_global_flag = NobelMedicine
-		has_global_flag = 8NobelMedicine
+		has_global_flag = 6NobelMedicine
 		year = 1907
 		organic_chemistry = 1
 		not = {
@@ -3635,10 +5619,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3662,7 +5646,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 7NobelMedicine
 	}
 }
@@ -3682,10 +5666,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3709,7 +5693,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 8NobelMedicine
 	}
 }
@@ -3729,10 +5713,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3756,7 +5740,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 9NobelMedicine
 	}
 }
@@ -3776,10 +5760,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3803,7 +5787,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 10NobelMedicine
 	}
 }
@@ -3823,10 +5807,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3850,7 +5834,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 11NobelMedicine
 	}
 }
@@ -3870,10 +5854,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3897,7 +5881,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 12NobelMedicine
 	}
 }
@@ -3917,10 +5901,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3944,7 +5928,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 13NobelMedicine
 	}
 }
@@ -3964,10 +5948,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -3991,7 +5975,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 14NobelMedicine
 	}
 }
@@ -4011,10 +5995,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -4038,7 +6022,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 15NobelMedicine
 	}
 }
@@ -4058,10 +6042,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -4085,7 +6069,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 16NobelMedicine
 	}
 }
@@ -4105,10 +6089,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -4132,7 +6116,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 17NobelMedicine
 	}
 }
@@ -4152,10 +6136,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -4179,7 +6163,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 18NobelMedicine
 	}
 }
@@ -4199,10 +6183,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -4226,7 +6210,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 19NobelMedicine
 	}
 }
@@ -4246,10 +6230,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -4273,7 +6257,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 20NobelMedicine
 	}
 }
@@ -4320,7 +6304,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 21NobelMedicine
 	}
 }
@@ -4367,7 +6351,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 22NobelMedicine
 	}
 }
@@ -4414,7 +6398,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 23NobelMedicine
 	}
 }
@@ -4461,7 +6445,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 24NobelMedicine
 	}
 }
@@ -4508,7 +6492,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 25NobelMedicine
 	}
 }
@@ -4555,7 +6539,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 26NobelMedicine
 	}
 }
@@ -4602,7 +6586,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 27NobelMedicine
 	}
 }
@@ -4649,7 +6633,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 28NobelMedicine
 	}
 }
@@ -4696,7 +6680,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 29NobelMedicine
 	}
 }
@@ -4743,7 +6727,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 30NobelMedicine
 	}
 }
@@ -4790,7 +6774,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 31NobelMedicine
 	}
 }
@@ -4837,7 +6821,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 32NobelMedicine
 	}
 }
@@ -4884,7 +6868,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 33NobelMedicine
 	}
 }
@@ -4931,7 +6915,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 34NobelMedicine
 	}
 }
@@ -4947,7 +6931,7 @@ country_event = {
 		organic_chemistry = 1
 		not = {
 			year = 1938
-			has_global_flag = 34NobelMedicine
+			has_global_flag = 35NobelMedicine
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
@@ -4978,7 +6962,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23531"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 35NobelMedicine
 	}
 }
@@ -4998,10 +6982,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5025,7 +7009,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 1NobelLiterature
 	}
 }
@@ -5045,10 +7029,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5072,7 +7056,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 2NobelLiterature
 	}
 }
@@ -5092,10 +7076,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5119,7 +7103,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 3NobelLiterature
 	}
 }
@@ -5139,10 +7123,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5166,7 +7150,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 4NobelLiterature
 	}
 }
@@ -5186,10 +7170,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5213,7 +7197,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 5NobelLiterature
 	}
 }
@@ -5233,10 +7217,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5260,7 +7244,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 6NobelLiterature
 	}
 }
@@ -5271,7 +7255,7 @@ country_event = {
 
 	trigger = {
 		has_global_flag = NobelLiterature
-		has_global_flag = 8NobelLiterature
+		has_global_flag = 6NobelLiterature
 		year = 1907
 		impressionism = 1
 		not = {
@@ -5280,10 +7264,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5307,7 +7291,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 7NobelLiterature
 	}
 }
@@ -5327,10 +7311,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5354,7 +7338,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 8NobelLiterature
 	}
 }
@@ -5374,10 +7358,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5401,7 +7385,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 9NobelLiterature
 	}
 }
@@ -5421,10 +7405,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5448,7 +7432,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 10NobelLiterature
 	}
 }
@@ -5468,10 +7452,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5495,7 +7479,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 11NobelLiterature
 	}
 }
@@ -5515,10 +7499,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5542,7 +7526,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 12NobelLiterature
 	}
 }
@@ -5562,10 +7546,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5589,7 +7573,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 13NobelLiterature
 	}
 }
@@ -5609,10 +7593,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5636,7 +7620,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 14NobelLiterature
 	}
 }
@@ -5656,10 +7640,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5683,7 +7667,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 15NobelLiterature
 	}
 }
@@ -5703,10 +7687,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5730,7 +7714,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 16NobelLiterature
 	}
 }
@@ -5750,10 +7734,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5777,7 +7761,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 17NobelLiterature
 	}
 }
@@ -5797,10 +7781,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5824,7 +7808,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 18NobelLiterature
 	}
 }
@@ -5844,10 +7828,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5871,7 +7855,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 19NobelLiterature
 	}
 }
@@ -5891,10 +7875,10 @@ country_event = {
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -5918,7 +7902,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 20NobelLiterature
 	}
 }
@@ -5965,7 +7949,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 21NobelLiterature
 	}
 }
@@ -6012,7 +7996,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 22NobelLiterature
 	}
 }
@@ -6059,7 +8043,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 23NobelLiterature
 	}
 }
@@ -6106,7 +8090,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 24NobelLiterature
 	}
 }
@@ -6153,7 +8137,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 25NobelLiterature
 	}
 }
@@ -6200,7 +8184,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 26NobelLiterature
 	}
 }
@@ -6247,7 +8231,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 27NobelLiterature
 	}
 }
@@ -6294,7 +8278,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 28NobelLiterature
 	}
 }
@@ -6341,7 +8325,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 29NobelLiterature
 	}
 }
@@ -6388,7 +8372,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 30NobelLiterature
 	}
 }
@@ -6435,7 +8419,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 31NobelLiterature
 	}
 }
@@ -6482,7 +8466,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 32NobelLiterature
 	}
 }
@@ -6529,7 +8513,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 33NobelLiterature
 	}
 }
@@ -6576,7 +8560,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 34NobelLiterature
 	}
 }
@@ -6592,7 +8576,7 @@ country_event = {
 		impressionism = 1
 		not = {
 			year = 1938
-			has_global_flag = 34NobelLiterature
+			has_global_flag = 35NobelLiterature
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
@@ -6623,7 +8607,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23571"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 35NobelLiterature
 	}
 }
@@ -6637,16 +8621,18 @@ country_event = {
 		has_global_flag = NobelPeace
 		year = 1901
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1906
 			has_global_flag = 1NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -6670,7 +8656,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 1NobelPeace
 	}
 }
@@ -6684,16 +8670,18 @@ country_event = {
 		has_global_flag = 1NobelPeace
 		year = 1902
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1907
 			has_global_flag = 2NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -6717,7 +8705,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 2NobelPeace
 	}
 }
@@ -6731,16 +8719,18 @@ country_event = {
 		has_global_flag = 2NobelPeace
 		year = 1903
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1908
 			has_global_flag = 3NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -6764,7 +8754,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 3NobelPeace
 	}
 }
@@ -6778,16 +8768,18 @@ country_event = {
 		has_global_flag = 3NobelPeace
 		year = 1904
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1909
 			has_global_flag = 4NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -6811,7 +8803,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 4NobelPeace
 	}
 }
@@ -6825,16 +8817,18 @@ country_event = {
 		has_global_flag = 4NobelPeace
 		year = 1905
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1908
 			has_global_flag = 5NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -6858,7 +8852,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 5NobelPeace
 	}
 }
@@ -6872,16 +8866,18 @@ country_event = {
 		has_global_flag = 5NobelPeace
 		year = 1906
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1909
 			has_global_flag = 6NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -6905,7 +8901,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 6NobelPeace
 	}
 }
@@ -6916,19 +8912,21 @@ country_event = {
 
 	trigger = {
 		has_global_flag = NobelPeace
-		has_global_flag = 8NobelPeace
+		has_global_flag = 6NobelPeace
 		year = 1907
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1910
 			has_global_flag = 7NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -6952,7 +8950,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 7NobelPeace
 	}
 }
@@ -6966,16 +8964,18 @@ country_event = {
 		has_global_flag = 7NobelPeace
 		year = 1908
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1911
 			has_global_flag = 8NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -6999,7 +8999,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 8NobelPeace
 	}
 }
@@ -7013,16 +9013,18 @@ country_event = {
 		has_global_flag = 8NobelPeace
 		year = 1909
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1912
 			has_global_flag = 9NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -7046,7 +9048,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 9NobelPeace
 	}
 }
@@ -7060,16 +9062,18 @@ country_event = {
 		has_global_flag = 9NobelPeace
 		year = 1910
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1913
 			has_global_flag = 10NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -7094,7 +9098,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 10NobelPeace
 	}
 }
@@ -7108,16 +9112,18 @@ country_event = {
 		has_global_flag = 10NobelPeace
 		year = 1911
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1914
 			has_global_flag = 11NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -7141,7 +9147,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 11NobelPeace
 	}
 }
@@ -7155,16 +9161,18 @@ country_event = {
 		has_global_flag = 11NobelPeace
 		year = 1912
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1915
 			has_global_flag = 12NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -7188,7 +9196,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 12NobelPeace
 	}
 }
@@ -7202,16 +9210,18 @@ country_event = {
 		has_global_flag = 12NobelPeace
 		year = 1913
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1916
 			has_global_flag = 13NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -7235,7 +9245,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 13NobelPeace
 	}
 }
@@ -7249,16 +9259,18 @@ country_event = {
 		has_global_flag = 13NobelPeace
 		year = 1914
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1917
 			has_global_flag = 14NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -7282,7 +9294,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 14NobelPeace
 	}
 }
@@ -7296,16 +9308,18 @@ country_event = {
 		has_global_flag = 14NobelPeace
 		year = 1915
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1918
 			has_global_flag = 15NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -7329,7 +9343,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 15NobelPeace
 	}
 }
@@ -7343,16 +9357,18 @@ country_event = {
 		has_global_flag = 15NobelPeace
 		year = 1916
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1919
 			has_global_flag = 16NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -7376,7 +9392,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 16NobelPeace
 	}
 }
@@ -7390,16 +9406,18 @@ country_event = {
 		has_global_flag = 16NobelPeace
 		year = 1917
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1920
 			has_global_flag = 17NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -7423,7 +9441,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 17NobelPeace
 	}
 }
@@ -7437,16 +9455,18 @@ country_event = {
 		has_global_flag = 17NobelPeace
 		year = 1918
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1921
 			has_global_flag = 18NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -7470,7 +9490,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 18NobelPeace
 	}
 }
@@ -7484,16 +9504,18 @@ country_event = {
 		has_global_flag = 18NobelPeace
 		year = 1919
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1922
 			has_global_flag = 19NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -7517,7 +9539,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 19NobelPeace
 	}
 }
@@ -7531,16 +9553,18 @@ country_event = {
 		has_global_flag = 19NobelPeace
 		year = 1920
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1923
 			has_global_flag = 20NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
-			prestige = 250 # non-Euro/non GP need to be high prestige to get invite in this era
+			prestige = 500 # non-Euro/non GP need to be high prestige to get invite in this era
 			and = {
 				capital_scope = { continent = europe } # European nation with >50 prestige
-				prestige = 25
+				prestige = 50
 			}
 		}
 	}
@@ -7564,7 +9588,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 20NobelPeace
 	}
 }
@@ -7578,6 +9602,8 @@ country_event = {
 		has_global_flag = 20NobelPeace
 		year = 1921
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1924
 			has_global_flag = 21NobelPeace
@@ -7611,7 +9637,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 21NobelPeace
 	}
 }
@@ -7625,6 +9651,8 @@ country_event = {
 		has_global_flag = 21NobelPeace
 		year = 1922
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1925
 			has_global_flag = 22NobelPeace
@@ -7658,7 +9686,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 22NobelPeace
 	}
 }
@@ -7672,6 +9700,8 @@ country_event = {
 		has_global_flag = 22NobelPeace
 		year = 1923
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1926
 			has_global_flag = 23NobelPeace
@@ -7705,7 +9735,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 23NobelPeace
 	}
 }
@@ -7719,6 +9749,8 @@ country_event = {
 		has_global_flag = 23NobelPeace
 		year = 1924
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1927
 			has_global_flag = 24NobelPeace
@@ -7752,7 +9784,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 24NobelPeace
 	}
 }
@@ -7766,6 +9798,8 @@ country_event = {
 		has_global_flag = 24NobelPeace
 		year = 1925
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1928
 			has_global_flag = 25NobelPeace
@@ -7799,7 +9833,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 25NobelPeace
 	}
 }
@@ -7813,6 +9847,8 @@ country_event = {
 		has_global_flag = 25NobelPeace
 		year = 1926
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1929
 			has_global_flag = 26NobelPeace
@@ -7846,7 +9882,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 26NobelPeace
 	}
 }
@@ -7860,6 +9896,8 @@ country_event = {
 		has_global_flag = 26NobelPeace
 		year = 1927
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1930
 			has_global_flag = 27NobelPeace
@@ -7893,7 +9931,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 27NobelPeace
 	}
 }
@@ -7907,6 +9945,8 @@ country_event = {
 		has_global_flag = 27NobelPeace
 		year = 1928
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1931
 			has_global_flag = 28NobelPeace
@@ -7940,7 +9980,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 28NobelPeace
 	}
 }
@@ -7954,6 +9994,8 @@ country_event = {
 		has_global_flag = 28NobelPeace
 		year = 1929
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1932
 			has_global_flag = 29NobelPeace
@@ -7987,7 +10029,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 29NobelPeace
 	}
 }
@@ -8001,6 +10043,8 @@ country_event = {
 		has_global_flag = 29NobelPeace
 		year = 1930
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1933
 			has_global_flag = 30NobelPeace
@@ -8034,7 +10078,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 30NobelPeace
 	}
 }
@@ -8048,6 +10092,8 @@ country_event = {
 		has_global_flag = 30NobelPeace
 		year = 1931
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1934
 			has_global_flag = 31NobelPeace
@@ -8081,7 +10127,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 31NobelPeace
 	}
 }
@@ -8095,6 +10141,8 @@ country_event = {
 		has_global_flag = 31NobelPeace
 		year = 1932
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1935
 			has_global_flag = 32NobelPeace
@@ -8128,7 +10176,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 32NobelPeace
 	}
 }
@@ -8142,6 +10190,8 @@ country_event = {
 		has_global_flag = 32NobelPeace
 		year = 1933
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1936
 			has_global_flag = 33NobelPeace
@@ -8175,7 +10225,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 33NobelPeace
 	}
 }
@@ -8189,6 +10239,8 @@ country_event = {
 		has_global_flag = 33NobelPeace
 		year = 1934
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1937
 			has_global_flag = 34NobelPeace
@@ -8222,7 +10274,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 34NobelPeace
 	}
 }
@@ -8236,9 +10288,11 @@ country_event = {
 		has_global_flag = 34NobelPeace
 		year = 1935
 		idealism = 1
+		NOT = { badboy = 0.5 }
+		war = no
 		not = {
 			year = 1938
-			has_global_flag = 34NobelPeace
+			has_global_flag = 35NobelPeace
 		}
 		or = { 
 			is_greater_power = yes # nation is a great power
@@ -8269,7 +10323,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA23611"  
-		prestige = 25
+		prestige = 10
 		set_global_flag = 35NobelPeace
 	}
 }

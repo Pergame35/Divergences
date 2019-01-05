@@ -1,8 +1,6 @@
 #romanticism
 romanticist_literature = {
-	limit = {
-		romanticism = 1
-	}
+	limit = { romanticism = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -12,26 +10,10 @@ romanticist_literature = {
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				nationalvalue = nv_order
-				nationalvalue = nv_dominion
-				nationalvalue = nv_unity
-			}
+			nationalvalue = nv_order
 		}
 		modifier = {
-			factor = 3
-			nationalvalue = nv_productivity
-		}
-		modifier = {
-			factor = 1
-			literacy = 0.4
-		}
-		modifier = {
-			factor = -1
-			not = { literacy = 0.4 }
-		}
-		modifier = {
-			factor = -4
+			factor = -2
 			OR = {
 				invention = romanticist_art
 				invention = romanticist_music
@@ -41,14 +23,9 @@ romanticist_literature = {
 	effect = {
 		shared_prestige = 5 
 	}
-	
-	
-	
 }
 romanticist_art = {
-	limit = {
-		romanticism = 1
-	}
+	limit = { romanticism = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -61,7 +38,7 @@ romanticist_art = {
 			prestige = 30
 		}
 		modifier = {
-			factor = -4
+			factor = -2
 			OR = {
 				invention = romanticist_literature
 				invention = romanticist_music
@@ -71,27 +48,22 @@ romanticist_art = {
 	effect = {
 		shared_prestige = 5  
 	}
-	
-	
-	
 }
 romanticist_music = {
-	limit = {
-		romanticism = 1
-	}
+	limit = { romanticism = 1 }
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 3
-			is_greater_power = yes
+			is_greater_power = no
 		}
 		modifier = {
 			factor = 2
 			plurality = 5
 		}
 		modifier = {
-			factor = -4
+			factor = -2
 			OR = {
 				invention = romanticist_art
 				invention = romanticist_literature
@@ -101,48 +73,23 @@ romanticist_music = {
 	effect = {
 		shared_prestige = 5 
 	}
-	
-	
-	
 }
 #realism
 realist_literature = {
-	limit = {
-		realism = 1
-	}
+	limit = { realism = 1 }
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 3
-			is_greater_power = yes
+			is_greater_power = no
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				nationalvalue = nv_equality
-				nationalvalue = nv_unity
-				nationalvalue = nv_prosperity
-			}
-		}
-		modifier = {
-			factor = 3
-			nationalvalue = nv_fraternity
-		}
-		modifier = {
-			factor = 1
-			literacy = 0.4
+			nationalvalue = nv_equality
 		}
 		modifier = {
 			factor = -1
-			not = { literacy = 0.4 }
-		}
-		modifier = {
-			factor = 3
-			average_consciousness = 4
-		}
-		modifier = {
-			factor = -4
 			OR = {
 				invention = realist_art
 				invention = realist_music
@@ -152,27 +99,22 @@ realist_literature = {
 	effect = {
 		shared_prestige = 10 
 	}
-	
-	
-	
 }
 realist_art = {
-	limit = {
-		realism = 1
-	}
+	limit = { realism = 1 }
 	news = no
 	chance = {
 		base = 2
 		modifier = {
-			factor = 4
-			average_consciousness = 4
+			factor = 2
+			average_consciousness = 3
 		}
 		modifier = {
 			factor = 3
 			plurality = 5
 		}
 		modifier = {
-			factor = -4
+			factor = -2
 			OR = {
 				invention = realist_literature
 				invention = realist_music
@@ -180,29 +122,20 @@ realist_art = {
 		}
 	}
 	effect = {
-		shared_prestige = 10
+		shared_prestige = 10 
 	}
-	
-	
-	
 }
 realist_music = {
-	limit = {
-		realism = 1
-	}
+	limit = { realism = 1 }
 	news = no
 	chance = {
 		base = 2
 		modifier = {
-			factor = -4
+			factor = -2
 			OR = {
 				invention = realist_art
 				invention = realist_literature
 			}
-		}
-		modifier = {
-			factor = 3
-			average_consciousness = 4
 		}
 		modifier = {
 			factor = 2
@@ -212,15 +145,10 @@ realist_music = {
 	effect = {
 		shared_prestige = 10 
 	}
-	
-	
-	
 }
 #impressionism
 impressionist_literature = {
-	limit = {
-		impressionism = 1
-	}
+	limit = { impressionism = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -230,18 +158,6 @@ impressionist_literature = {
 				invention = impressionist_art
 				invention = impressionist_music
 			}
-		}
-		modifier = {
-			factor = 1
-			literacy = 0.4
-		}
-		modifier = {
-			factor = -1
-			not = { literacy = 0.4 }
-		}
-		modifier = {
-			factor = 3
-			average_consciousness = 5
 		}
 		modifier = {
 			factor = 2
@@ -251,14 +167,9 @@ impressionist_literature = {
 	effect = {
 		shared_prestige = 15 
 	}
-	
-	
-	
 }
 impressionist_art = {
-	limit = {
-		impressionism = 1
-	}
+	limit = { impressionism = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -270,25 +181,16 @@ impressionist_art = {
 			}
 		}
 		modifier = {
-			factor = 3
-			average_consciousness = 5
-		}
-		modifier = {
 			factor = 2
 			ideological_thought = 1
 		}
 	}
 	effect = {
-		shared_prestige = 15 
+		shared_prestige = 15
 	}
-	
-	
-	
 }
 impressionist_music = {
-	limit = {
-		impressionism = 1
-	}
+	limit = { impressionism = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -300,10 +202,6 @@ impressionist_music = {
 			}
 		}
 		modifier = {
-			factor = 3
-			average_consciousness = 5
-		}
-		modifier = {
 			factor = 2
 			empiricism = 1
 		}
@@ -311,15 +209,10 @@ impressionist_music = {
 	effect = {
 		shared_prestige = 15 
 	}
-	
-	
-	
 }
 #expressionism
 expressionist_literature = {
-	limit = {
-		expressionism = 1
-	}
+	limit = { expressionism = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -329,18 +222,6 @@ expressionist_literature = {
 				invention = expressionist_art
 				invention = expressionist_music
 			}
-		}
-		modifier = {
-			factor = 1
-			literacy = 0.4
-		}
-		modifier = {
-			factor = -1
-			not = { literacy = 0.4 }
-		}
-		modifier = {
-			factor = 3
-			average_consciousness = 6
 		}
 		modifier = {
 			factor = 2
@@ -351,14 +232,9 @@ expressionist_literature = {
 	effect = {
 		shared_prestige = 20 
 	}
-	
-	
-	
 }
 expressionist_art = {
-	limit = {
-		expressionism = 1
-	}
+	limit = { expressionism = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -370,10 +246,6 @@ expressionist_art = {
 			}
 		}
 		modifier = {
-			factor = 3
-			average_consciousness = 6
-		}
-		modifier = {
 			factor = 2
 			nationalism_n_imperialism = 1
 		}
@@ -381,14 +253,9 @@ expressionist_art = {
 	effect = {
 		shared_prestige = 20 
 	}
-	
-	
-	
 }
 expressionist_music = {
-	limit = {
-		expressionism = 1
-	}
+	limit = { expressionism = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -400,10 +267,6 @@ expressionist_music = {
 			}
 		}
 		modifier = {
-			factor = 3
-			average_consciousness = 6
-		}
-		modifier = {
 			factor = 2
 			phenomenology_n_hermeneutic = 1
 		}
@@ -411,15 +274,10 @@ expressionist_music = {
 	effect = {
 		shared_prestige = 20 
 	}
-	
-	
-	
 }
 #mass_culture_n_the_avant_garde
 avantgarde_literature = {
-	limit = {
-		mass_culture_n_the_avant_garde = 1
-	}
+	limit = { mass_culture_n_the_avant_garde = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -429,18 +287,6 @@ avantgarde_literature = {
 				invention = avantgarde_art
 				invention = avantgarde_music
 			}
-		}
-		modifier = {
-			factor = 3
-			average_consciousness = 7
-		}
-		modifier = {
-			factor = 1
-			literacy = 0.4
-		}
-		modifier = {
-			factor = -1
-			not = { literacy = 0.4 }
 		}
 		modifier = {
 			factor = 2
@@ -450,14 +296,9 @@ avantgarde_literature = {
 	effect = {
 		shared_prestige = 25 
 	}
-	
-	
-	
 }
 avantgarde_art = {
-	limit = {
-		mass_culture_n_the_avant_garde = 1
-	}
+	limit = { mass_culture_n_the_avant_garde = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -469,25 +310,16 @@ avantgarde_art = {
 			}
 		}
 		modifier = {
-			factor = 3
-			average_consciousness = 7
-		}
-		modifier = {
 			factor = 2
 			social_alienation = 1
 		}
 	}
 	effect = {
-		shared_prestige = 25 
+		shared_prestige = 25
 	}
-	
-	
-	
 }
 avantgarde_music = {
-	limit = {
-		mass_culture_n_the_avant_garde = 1
-	}
+	limit = { mass_culture_n_the_avant_garde = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -497,10 +329,6 @@ avantgarde_music = {
 				invention = avantgarde_art
 				invention = avantgarde_literature
 			}
-		}
-		modifier = {
-			factor = 3
-			average_consciousness = 7
 		}
 		modifier = {
 			factor = 2
@@ -510,24 +338,15 @@ avantgarde_music = {
 	effect = {
 		shared_prestige = 25 
 	}
-	
-	
-	
 }
 surrealism = {
-	limit = {
-		mass_culture_n_the_avant_garde = 1
-	}
+	limit = { mass_culture_n_the_avant_garde = 1 }
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
 			anti__rationalism = 1
-		}
-		modifier = {
-			factor = 3
-			average_consciousness = 7
 		}
 		modifier = {
 			factor = 2
@@ -537,24 +356,15 @@ surrealism = {
 	effect = {
 		shared_prestige = 25 
 	}
-	
-	
-	
 }
 modern_design = {
-	limit = {
-		mass_culture_n_the_avant_garde = 1
-	}
+	limit = { mass_culture_n_the_avant_garde = 1 }
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
 			social_science = 1
-		}
-		modifier = {
-			factor = 3
-			average_consciousness = 7
 		}
 		modifier = {
 			factor = 2
@@ -564,24 +374,15 @@ modern_design = {
 	effect = {
 		shared_prestige = 25 
 	}
-	
-	
-	
 }
 jazz = {
-	limit = {
-		mass_culture_n_the_avant_garde = 1
-	}
+	limit = { mass_culture_n_the_avant_garde = 1 }
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
 			great_war_experience = 1
-		}
-		modifier = {
-			factor = 3
-			average_consciousness = 7
 		}
 		modifier = {
 			factor = 2
@@ -591,14 +392,9 @@ jazz = {
 	effect = {
 		shared_prestige = 25 
 	}
-	
-	
-	
 }
 socialist_realism = {
-	limit = {
-		mass_culture_n_the_avant_garde = 1
-	}
+	limit = { mass_culture_n_the_avant_garde = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -611,10 +407,6 @@ socialist_realism = {
 			ruling_party_ideology = socialist
 		}
 		modifier = {
-			factor = 3
-			average_consciousness = 7
-		}
-		modifier = {
 			factor = 2
 			invention = dogma_of_mass_action
 		}
@@ -622,9 +414,6 @@ socialist_realism = {
 	effect = {
 		shared_prestige = 25 
 	}
-	
-	
-	
 }
 #idealism
 neokantian_idealism = {
@@ -642,10 +431,9 @@ neokantian_idealism = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		shared_prestige = 5 
 	}
 }
-
 hegelian_idealism = {
 	limit = { idealism = 1 }
 	news = no
@@ -661,10 +449,9 @@ hegelian_idealism = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		shared_prestige = 5 
 	}
 }
-
 proto_existentialism = {
 	limit = { idealism = 1 }
 	news = no
@@ -680,10 +467,9 @@ proto_existentialism = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		shared_prestige = 5 
 	}
 }
-
 #empiricism
 pragmatism = {
 	limit = { empiricism = 1 }
@@ -700,10 +486,9 @@ pragmatism = {
 		}
 	}
 	effect = {
-		increase_research = 0.25
+		shared_prestige = 10 
 	}
 }
-
 i_empiricism = {
 	limit = { empiricism = 1 }
 	news = no
@@ -719,10 +504,9 @@ i_empiricism = {
 		}
 	}
 	effect = {
-		increase_research = 0.25
+		shared_prestige = 10 
 	}
 }
-
 #analytic_philosophy
 i_analytic_philosophy = {
 	limit = { analytic_philosophy = 1 }
@@ -743,10 +527,9 @@ i_analytic_philosophy = {
 		}
 	}
 	effect = {
-		increase_research = 0.15
+		shared_prestige = 15 
 	}
 }
-
 modern_logics = {
 	limit = { analytic_philosophy = 1 }
 	news = no
@@ -762,10 +545,9 @@ modern_logics = {
 		}
 	}
 	effect = {
-		increase_research = 0.15
+		shared_prestige = 15 
 	}
 }
-
 logical_positivism = {
 	limit = { analytic_philosophy = 1 }
 	news = no
@@ -781,10 +563,9 @@ logical_positivism = {
 		}
 	}
 	effect = {
-		increase_research = 0.15
+		shared_prestige = 15 
 	}
 }
-
 philosophy_of_language = {
 	limit = { analytic_philosophy = 1 }
 	news = no
@@ -800,10 +581,9 @@ philosophy_of_language = {
 		}
 	}
 	effect = {
-		increase_research = 0.15
+		shared_prestige = 15
 	}
 }
-
 #phenomenology_n_hermeneutic
 phenomenology = {
 	limit = { phenomenology_n_hermeneutic = 1 }
@@ -820,10 +600,9 @@ phenomenology = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		shared_prestige = 20 
 	}
 }
-
 hermeneutics = {
 	limit = { phenomenology_n_hermeneutic = 1 }
 	news = no
@@ -839,20 +618,17 @@ hermeneutics = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		shared_prestige = 20 
 	}
 }
-
-#anti_rationalism
+#anti__rationalism
 existentialism = {
-	limit = {
-		anti__rationalism = 1
-	}
+	limit = { anti__rationalism = 1 }
 	news = no
 	chance = {
-		base = 0
+		base = 2
 		modifier = {
-			factor = 4
+			factor = 2
 			invention = expressionist_literature
 		}
 		modifier = {
@@ -861,22 +637,14 @@ existentialism = {
 		}
 	}
 	effect = {
-		shared_prestige = 15 
+		shared_prestige = 25 
 	}
 }
-
 nihilism_and_the_will = {
-	limit = {
-		anti__rationalism = 1
-		expressionism = 1
-	}
+	limit = { anti__rationalism = 1 }
 	news = no
 	chance = {
 		base = 2
-		modifier = {
-			factor = -2
-			NOT = { mass_culture_n_the_avant_garde = 1 }
-		}
 		modifier = {
 			factor = 2
 			invention = national_fraternity
@@ -887,22 +655,14 @@ nihilism_and_the_will = {
 		}
 	}
 	effect = {
-		shared_prestige = 15 
+		shared_prestige = 25 
 	}
 }
-
 futurism = {
-	limit = {
-		anti__rationalism = 1
-		expressionism = 1
-	}
+	limit = { anti__rationalism = 1 }
 	news = no
 	chance = {
 		base = 2
-		modifier = {
-			factor = -2
-			NOT = { mass_culture_n_the_avant_garde = 1 }
-		}
 		modifier = {
 			factor = 2
 			invention = stainless_steel
@@ -913,10 +673,9 @@ futurism = {
 		}
 	}
 	effect = {
-		shared_prestige = 15 
+		shared_prestige = 25 
 	}
 }
-
 quantum_theory = {
 	limit = { anti__rationalism = 1 }
 	news = no
@@ -932,15 +691,12 @@ quantum_theory = {
 		}
 	}
 	effect = {
-		increase_research = 0.3
+		shared_prestige = 25
 	}
 }
-
 #biologism
 darwinism = {
-	limit = {
-		biologism = 1
-	}
+	limit = { biologism = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -958,11 +714,8 @@ darwinism = {
 		}
 	}
 	effect = {
-		education_efficiency = 1
+		education_efficiency = 0.50
 	}
-	
-	
-	
 }
 social_darwinism = {
 	limit = { biologism = 1 }
@@ -979,13 +732,8 @@ social_darwinism = {
 		}
 	}
 	effect = {
-		colonial_prestige = 2
 		war_exhaustion = -0.05
-		colonial_points = 100
 	}
-	
-	
-	
 }
 #social_science
 sociology = {
@@ -1002,10 +750,7 @@ sociology = {
 			scientific_management = 1
 		}
 	}
-	core_pop_consciousness_modifier = 0.03
-	
-	
-	
+	core_pop_consciousness_modifier = 0.01
 }
 social_psychology = {
 	limit = { social_science = 1 }
@@ -1021,11 +766,7 @@ social_psychology = {
 			behaviorism = 1
 		}
 	}
-	core_pop_consciousness_modifier = 0.03
-	social_reform_desire = 0.05
-	
-	
-	
+	core_pop_consciousness_modifier = 0.01
 }
 political_science = {
 	limit = { social_science = 1 }
@@ -1045,14 +786,10 @@ political_science = {
 			naval_directionism = 1
 		}
 	}
-	core_pop_consciousness_modifier = 0.03
-	political_reform_desire = 0.1
-	
-	
-	
+	core_pop_consciousness_modifier = 0.01
 }
 social_anthropology = {
-	limit = { biologism = 1 }
+	limit = { social_science = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -1066,18 +803,12 @@ social_anthropology = {
 		}
 	}
 	effect = {
-		colonial_prestige = 1 
-		colonial_points = 100
+		colonial_prestige = 0.1 
 	}
-	
-	
-	
 }
 #social_alienation
 the_revolt_of_the_masses = {
-	limit = {
-		social_alienation = 1
-	}
+	limit = { social_alienation = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -1091,12 +822,9 @@ the_revolt_of_the_masses = {
 		}
 	}
 	effect = {
-		plurality = 0.050
+		plurality = 0.10
 		war_exhaustion = -0.25
 	}
-	
-	
-	
 }
 the_decline_of_the_west_and_the_lost_generation = {
 	limit = { social_alienation = 1 }
@@ -1113,52 +841,183 @@ the_decline_of_the_west_and_the_lost_generation = {
 		}
 	}
 	core_pop_consciousness_modifier = 0.05
-	
-	
-	
 }
-#ideological_thought
-authoritarianism = {
-	limit = { associationism = 1 }
+#the rights of man - called enlightenment_thought in files...
+paternalism = {
+	limit = { state_n_government = 1 }
 	news = no
 	chance = {
-		base = 0
+		base = 1
 		modifier = {
-			factor = 5
-			ruling_party_ideology = reactionary
+			factor = 2
+			NOT = { average_consciousness = 3.0 }
+		}
+		modifier = {
+			factor = 2
+			vote_franschise = landed_voting
 		}
 	}
-	core_pop_consciousness_modifier = -0.01
-	
-	
-	
+	org_regain = 0.05
+	effect = {
+		plurality = -0.05
+		}
 }
-hierarchical_order = {
-	limit = { associationism = 1 }
+constitutionalism = {
+	limit = {
+		state_n_government = 1
+		has_country_flag = existing_country
+	}
 	news = no
 	chance = {
-		base = 0
+		base = 3
 		modifier = {
-			factor = 5
-			government = absolute_monarchy
-		}
-		modifier = {
-			factor = 3
-			government = prussian_constitutionalism
+			factor = 2
+			government = hms_government
 		}
 		modifier = {
 			factor = 1
+			NOT = { political_parties = underground_parties }
+		}
+		
+
+	}
+	effect = {
+		plurality = 0.05
+		suppression_points_modifier = -0.05
+	}
+}
+atheism = {
+	limit = {
+		ideological_thought = 1
+		has_country_flag = existing_country
+	}
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 1
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1
+			ruling_party_ideology = socialist
+		}
+		modifier = {
+			factor = 2
+			pro_atheism = 20
+		}
+	}
+	effect = {
+		plurality = 0.05
+	}
+}
+egalitarianism = {
+	limit = {
+		ideological_thought = 1
+		has_country_flag = existing_country
+	}
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 3
+			nationalvalue = nv_equality
+		}
+		modifier = {
+			factor = 2
+			government = democracy
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				ruling_party_ideology = reactionary
+				ruling_party_ideology = conservative
+			}
+		}		
+	}
+	effect = {
+		plurality = 0.05
+	}
+}
+rationalism = {
+	limit = {
+		ideological_thought = 1
+		has_country_flag = existing_country
+	}
+	news = no
+	chance = {
+		base = 3
+		modifier = {
+			factor = 2
+			literacy = 0.5
+		}
+		modifier = {
+			factor = 2
+			average_consciousness = 1
+		}
+	}
+	effect = {
+		plurality = 0.05
+	}
+}
+#ideological_thought
+authoritarianism = {
+	limit = {
+		ideological_thought = 1
+		has_country_flag = existing_country
+	}
+	news = no
+	chance = {
+		base = 0
+		modifier = {
+			factor = 5
+			OR = {
+				ruling_party_ideology = reactionary
+				AND = {
+					government = absolute_monarchy
+					ruling_party_ideology = conservative
+					}
+				}
+		}
+	}
+	core_pop_consciousness_modifier = -0.02
+	effect = {
+		plurality = -0.05
+	}
+}
+hierarchical_order = {
+	news = no
+	limit = {
+		has_country_flag = existing_country
+		state_n_government = 1 
+		OR = { 
 			government = hms_government
+			government = prussian_constitutionalism
+			government = absolute_monarchy
+		}			
+	}
+	chance = {
+		base = 1
+		modifier = {
+			factor = 3
+			government = absolute_monarchy
+		}
+		modifier = {
+			factor = 2
+			government = prussian_constitutionalism
 		}
 	}
 	core_pop_militancy_modifier = -0.01
-	core_pop_consciousness_modifier = -0.005
-	
-	
-	
+	core_pop_consciousness_modifier = 0.01
+	effect = {
+		plurality = -0.05
+	}
 }
 traditionalism = {
-	limit = { positivism = 1 }
+	limit = {
+		ideological_thought = 1
+		has_country_flag = existing_country
+	}
 	news = no
 	chance = {
 		base = 0
@@ -1179,10 +1038,10 @@ traditionalism = {
 			government = prussian_constitutionalism
 		}
 	}
-	core_pop_consciousness_modifier = -0.005
-	
-	
-	
+	core_pop_consciousness_modifier = -0.01
+	effect = {
+		plurality = -0.05
+	}
 }
 political_religion = {
 	limit = { ideological_thought = 1 }
@@ -1203,72 +1062,18 @@ political_religion = {
 		}
 	}
 	political_reform_desire = 0.1
-	
-	
-	
-}
-paternalism = {
-	limit = { positivism = 1 }
-	news = no
-	chance = {
-		base = 1
-		modifier = {
-			factor = 2
-			NOT = { average_consciousness = 3.0 }
-		}
-		modifier = {
-			factor = 2
-			vote_franschise = landed_voting
-		}
-	}
-	org_regain = 0.05
-	core_pop_consciousness_modifier = -0.01	
-	
-	
-}
-constitutionalism = {
-	limit = {
-		ideological_thought = 1
-	}
-	news = no
-	chance = {
-		base = 3
-		modifier = {
-			factor = 2
-			government = hms_government
-		}
-		modifier = {
-			factor = 1
-			NOT = { political_parties = underground_parties }
-		}
-		
-
-	}
-	effect = {
-		plurality = 0.02
-	}
-	
-	
-	
 }
 individualism = {
 	limit = {
-		phenomenalism = 1
+		ideological_thought = 1
+		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 3
-			OR = {
-				nationalvalue = nv_liberty
-				nationalvalue = nv_prosperity
-				nationalvalue = nv_glory
-			}
-		}
-		modifier = {
-			factor = 6
-			nationalvalue = nv_freedom
+			nationalvalue = nv_liberty
 		}
 		modifier = {
 			factor = 1
@@ -1276,53 +1081,21 @@ individualism = {
 		}
 	}
 	effect = {
-		plurality = 0.02
+		plurality = 0.05
+		suppression_points_modifier = -0.05
 	}
-	core_pop_consciousness_modifier = 0.01	
-	
-	
-}
-rationalism = {
-	limit = {
-		phenomenalism = 1
-	}
-	news = no
-	chance = {
-		base = 3
-		modifier = {
-			factor = 2
-			literacy = 0.5
-		}
-		modifier = {
-			factor = 2
-			average_consciousness = 1
-		}
-	}
-	effect = {
-		plurality = 0.02
-	}
-	core_pop_consciousness_modifier = 0.02	
-	
-	
 }
 secularization = {
 	limit = {
 		ideological_thought = 1
+		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
 		base = 1
 		modifier = {
 			factor = 3
-			OR = {
-				nationalvalue = nv_equality
-				nationalvalue = nv_unity
-				nationalvalue = nv_prosperity
-			}
-		}
-		modifier = {
-			factor = 4
-			nationalvalue = nv_fraternity
+			nationalvalue = nv_equality
 		}
 		modifier = {
 			factor = 1
@@ -1333,100 +1106,42 @@ secularization = {
 		}
 	}
 	effect = {
-		plurality = 0.02
+		plurality = 0.05
 	}
-	core_pop_consciousness_modifier = 0.01	
-	
-	
 }
 social_conscience = {
 	limit = {
-		biologism  = 1
+		ideological_thought = 1
+		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 3
-			OR = {
-				nationalvalue = nv_equality
-				nationalvalue = nv_unity
-				nationalvalue = nv_prosperity
-			}
-		}
-		modifier = {
-			factor = 4
-			nationalvalue = nv_fraternity
+			nationalvalue = nv_equality
 		}
 		modifier = {
 			factor = 3
 			average_consciousness = 2
 		}
 	}
-	social_reform_desire = 0.05
 	effect = {
-		plurality = 0.02
-		}
-	
-	
-	
-}
-egalitarianism = {
-	limit = {
-		ideological_thought = 1
+		plurality = 0.05
+		suppression_points_modifier = -0.05
 	}
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 3
-			OR = {
-				nationalvalue = nv_equality
-				nationalvalue = nv_unity
-				nationalvalue = nv_prosperity
-			}
-		}
-		modifier = {
-			factor = 4
-			nationalvalue = nv_fraternity
-		}
-		modifier = {
-			factor = 2
-			government = democracy
-		}
-		modifier = {
-			factor = 1
-			NOT = {
-				ruling_party_ideology = reactionary
-				ruling_party_ideology = conservative
-			}
-		}		
-	}
-	effect = {
-		plurality = 0.02
-	}
-	core_pop_consciousness_modifier = 0.01	
-	
-	
 }
 collectivism = {
 	limit = {
-		biologism  = 1
+		ideological_thought = 1
+		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
-			OR = {
-				nationalvalue = nv_equality
-				nationalvalue = nv_unity
-				nationalvalue = nv_prosperity
-			}
-		}
-		modifier = {
-			factor = 3
-			nationalvalue = nv_fraternity
+			nationalvalue = nv_equality
 		}
 		modifier = {
 			factor = 1
@@ -1434,15 +1149,13 @@ collectivism = {
 		}
 	}
 	effect = {
-		plurality = 0.02
+		plurality = 0.05
 	}
-	core_pop_consciousness_modifier = -0.01	
-	
-	
 }
 determinism = {
 	limit = {
-		experimental_psychology = 1
+		ideological_thought = 1
+		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1461,57 +1174,21 @@ determinism = {
 		}
 	}
 	effect = {
-		plurality = 0.02
+		plurality = 0.05
 	}
-	
-	
-	
 }
-atheism = {
-	limit = {
-		state_n_government = 1
-	}
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 1
-			tech_school = culture_tech_school
-		}
-		modifier = {
-			factor = 1
-			ruling_party_ideology = socialist
-		}
-		modifier = {
-			factor = 2
-			pro_atheism = 20
-		}
-	}
-	effect = {
-		plurality = 0.02
-	}
-	core_pop_consciousness_modifier = 0.03	
-	
-	
-}
+
 social_justice = {
 	limit = {
-		social_science = 1
+		ideological_thought = 1
+		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
-			OR = {
-				nationalvalue = nv_equality
-				nationalvalue = nv_unity
-				nationalvalue = nv_prosperity
-			}
-		}
-		modifier = {
-			factor = 3
-			nationalvalue = nv_fraternity
+			nationalvalue = nv_equality
 		}
 		modifier = {
 			factor = 1
@@ -1522,13 +1199,8 @@ social_justice = {
 		}
 	}
 	effect = {
-		plurality = 0.02
-		}
-		social_reform_desire = 0.05
-		core_pop_militancy_modifier = 0.01
-	
-	
-	
+		plurality = 0.05
+	}
 }
 #state_n_government
 populism_vs._establishment = {
@@ -1542,32 +1214,17 @@ populism_vs._establishment = {
 		}
 		modifier = {
 			factor = 1
-			OR = {
-				nationalvalue = nv_order
-				nationalvalue = nv_dominion
-				nationalvalue = nv_unity
-			}
-		}
-		modifier = {
-			factor = 2
-			nationalvalue = nv_productivity
-		}
-		modifier = {
-			factor = 3
-			invention = constitutionalism
-		}
-		modifier = {
-			factor = 3
-			invention = paternalism
+			nationalvalue = nv_order
 		}
 	}
-	core_pop_consciousness_modifier = 0.01
-	
-	
-	
+	political_reform_desire = 0.05
+
 }
 clericalism_vs._anticlericalism = {
-	limit = { state_n_government = 1 }
+	limit = {
+		state_n_government = 1
+		has_country_flag = existing_country
+	}
 	news = no
 	chance = {
 		base = 2
@@ -1581,19 +1238,10 @@ clericalism_vs._anticlericalism = {
 			factor = 1
 			average_militancy = 3
 		}
-		modifier = {
-			factor = 3
-			invention = atheism
-		}
-		modifier = {
-			factor = 3
-			invention = political_religion
-		}
 	}
-	core_pop_consciousness_modifier = 0.01
-	
-	
-	
+	effect = {
+		plurality = 0.05
+	}
 }
 bureaucracy_vs._nepotism = {
 	limit = { state_n_government = 1 }
@@ -1602,37 +1250,21 @@ bureaucracy_vs._nepotism = {
 		base = 2
 		modifier = {
 			factor = 2
-			OR = {
-				nationalvalue = nv_order
-				nationalvalue = nv_dominion
-				nationalvalue = nv_unity
-			}
-		}
-		modifier = {
-			factor = 3
-			nationalvalue = nv_productivity
+			nationalvalue = nv_order
 		}
 		modifier = {
 			factor = 1
 			average_consciousness = 2
 		}
-		modifier = {
-			factor = 3
-			invention = authoritarianism
-		}
-		modifier = {
-			factor = 3
-			invention = egalitarianism
-		}
 	}
 
-	core_pop_consciousness_modifier = 0.01
-	
-	
-	
+	social_reform_desire = 0.05
 }
 meritocracy_vs._aristocracy = {
-	limit = { state_n_government = 1 }
+	limit = {
+		state_n_government = 1
+		has_country_flag = existing_country
+	}
 	news = no
 	chance = {
 		base = 2
@@ -1642,35 +1274,20 @@ meritocracy_vs._aristocracy = {
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				nationalvalue = nv_liberty
-				nationalvalue = nv_prosperity
-				nationalvalue = nv_glory
-			}
-		}
-		modifier = {
-			factor = 3
-			nationalvalue = nv_freedom
-		}
-		modifier = {
-			factor = 3
-			invention = social_justice
-		}
-		modifier = {
-			factor = 3
-			invention = hierarchical_order
+			nationalvalue = nv_liberty
 		}
 	}
-		core_pop_consciousness_modifier = 0.01
-	
-	
-	
+	effect = {
+		plurality = 0.05 
+	}
 }
 #nationalism_n_imperialism
 national_fraternity = {
 	limit = {
 		nationalism_n_imperialism = 1
+		has_country_flag = existing_country
 	}
+	news = no
 	chance = {
 		base = 2
 		modifier = {
@@ -1679,25 +1296,13 @@ national_fraternity = {
 		}
 		modifier = {
 			factor = 2
-			prestige = 50
+			prestige = 200
 		}
 	}
 	effect = {
 		war_exhaustion = -0.05
-		plurality = 0.02
-		rebel_org_gain = {
-			faction = separatist_rebels
-			value = 0.50
-		}
-		rebel_org_gain = {
-			faction = pan_nationalist_rebels
-			value = 0.50
-		}
-
+		plurality = 0.05
 	}
-
-
-	
 }
 biased_multiculturalism = {
 	limit = { nationalism_n_imperialism = 1 }
@@ -1714,54 +1319,28 @@ biased_multiculturalism = {
 		}
 		modifier = {
 			factor = 1
-			OR = {
-				nationalvalue = nv_order
-				nationalvalue = nv_dominion
-				nationalvalue = nv_unity
-			}
-		}
-		modifier = {
-			factor = 2
-			nationalvalue = nv_productivity
+			nationalvalue = nv_order
 		}
 	}
 	effect = {
 		colonial_migration = 0.05
 	}
-	
-	
-	
 }
 manifest_destiny = {
 	limit = {
 		nationalism_n_imperialism = 1
+		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 3
-			OR = {
-				nationalvalue = nv_liberty
-				nationalvalue = nv_prosperity
-				nationalvalue = nv_glory
-			}
-		}
-		modifier = {
-			factor = 4
-			nationalvalue = nv_freedom
+			nationalvalue = nv_liberty
 		}
 		modifier = {
 			factor = -1
-			OR = {
-				nationalvalue = nv_order
-				nationalvalue = nv_dominion
-				nationalvalue = nv_unity
-			}
-		}
-		modifier = {
-			factor = -2
-			nationalvalue = nv_productivity
+			nationalvalue = nv_order
 		}
 		modifier = {
 			factor = 2
@@ -1772,13 +1351,11 @@ manifest_destiny = {
 		war_exhaustion = -0.05
 		morale = 0.1
 	}
-	
-	
-	
 }
 expansionism = {
 	limit = {
 		nationalism_n_imperialism = 1
+		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1789,42 +1366,62 @@ expansionism = {
 		}
 		modifier = {
 			factor = 2
-			badboy = 5
+			badboy = 1
 		}
 	}
 	effect = {
 		war_exhaustion = -0.05
 		plurality = -0.05
 	}
-	
-	
-	
 }
 mission_to_civilize = {
-	limit = { nationalism_n_imperialism = 1 }
+	limit = { 
+		year = 1860 
+		state_n_government = 1
+		has_country_flag = existing_country
+	}
 	news = no
 	chance = {
-		base = 2
+		base = 0
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = -75
+			NOT = { year = 1860 }
 		}
 		modifier = {
-			factor = 4
-			colonial_nation = yes
+			factor = 25
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 25
+			market_regulations = 1
+		}
+		modifier = {
+			factor = 25
+			naval_statistics = 1
+		}
+		modifier = {
+			factor = 10
+			any_greater_power = {
+				invention = mission_to_civilize
+			}
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				invention = mission_to_civilize
+			}
 		}
 	}
 	effect = {
 		colonial_prestige = 0.1
 		diplomatic_points = 0.2
+		colonial_life_rating = -10 
 	}
-	
-	
-	
 }
 separatism = {
 	limit = {
 		nationalism_n_imperialism = 1
+		has_country_flag = existing_country
 	}
 	news = no
 	chance = {
@@ -1842,35 +1439,14 @@ separatism = {
 		seperatism = 0.5
 		rebel_org_gain = {
 			faction = nationalist_rebels 
-			value = 0.50
+			value = 0.33
 		}
 	}
-	
-	
-	
 }
-#national_trauma = {
-#	limit = { nationalism_n_imperialism = 1 }
-#	chance = {
-#		base = 5
-#	}
-#	effect = {
-#		plularity = 
-#	}
-#}
-#revanchism = {
-#	limit = { nationalism_n_imperialism = 1 }
-#	chance = {
-#		base = 5
-#	}
-#	effect = { 
-#	}
-#}
+
 #revolution_n_counterrevolution
 dogma_of_violence = {
-	limit = {
-		revolution_n_counterrevolution = 1
-	}
+	limit = { revolution_n_counterrevolution = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -1880,32 +1456,12 @@ dogma_of_violence = {
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				nationalvalue = nv_might
-				nationalvalue = nv_dominion
-				nationalvalue = nv_glory
-			}
-		}
-		modifier = {
-			factor = 3
-			nationalvalue = nv_supremacy
+			nationalvalue = nv_order
 		}
 	}
 	effect = {
 		enable_crime = anarchic_bomb_throwers
-		seperatism = 0.5
-		rebel_org_gain = {
-			faction = separatist_rebels
-			value = 0.25
-		}
-		rebel_org_gain = {
-			faction = nationalist_rebels
-			value = 0.25
-		}
 	}
-	
-	
-	
 }
 dogma_of_mass_action = {
 	limit = { revolution_n_counterrevolution = 1 }
@@ -1914,15 +1470,7 @@ dogma_of_mass_action = {
 		base = 2
 		modifier = {
 			factor = 2
-			OR = {
-				nationalvalue = nv_equality
-				nationalvalue = nv_unity
-				nationalvalue = nv_prosperity
-			}
-		}
-		modifier = {
-			factor = 3
-			nationalvalue = nv_fraternity
+			nationalvalue = nv_equality
 		}
 		modifier = {
 			factor = 3
@@ -1932,17 +1480,12 @@ dogma_of_mass_action = {
 	effect = {
 		rebel_org_gain = {
 			faction = communist_rebels
-			value = 0.50
+			value = 0.25
 		}
 	}
-	
-	
-	
 }
 terrorism = {
-	limit = {
-		revolution_n_counterrevolution = 1
-	}
+	limit = { revolution_n_counterrevolution = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -1959,60 +1502,25 @@ terrorism = {
 		}
 		modifier = {
 			factor = -1
-			OR = {
-				nationalvalue = nv_liberty
-				nationalvalue = nv_prosperity
-				nationalvalue = nv_glory
-			}
-		}
-		modifier = {
-			factor = -2
-			nationalvalue = nv_freedom
-		}
-		modifier = {
-			factor = 1
-			OR = {
-				nationalvalue = nv_might
-				nationalvalue = nv_dominion
-				nationalvalue = nv_glory
-			}
-		}
-		modifier = {
-			factor = 2
-			nationalvalue = nv_supremacy
+			nationalvalue = nv_liberty
 		}
 	}
 	effect = {
-		enable_crime = terrorist_cells
-		seperatism = 0.5
-		rebel_org_gain = {
-			faction = separatist_rebels
-			value = 0.25
-		}
-		rebel_org_gain = {
-			faction = nationalist_rebels
-			value = 0.25
-		}
+		enable_crime = terrorist_cells 
 	}
-	
-	
-	
 }
-general_strikes = {
-	limit = { revolution_n_counterrevolution = 1 }
+#general_strikes = {
+#	limit = { revolution_n_counterrevolution = 1 }
+#	news = no
+#	chance = {
+#		base = 5
+#	}
+#	effect = { 
+#	}
+#}
+secret_police = {
 	news = no
-	chance = {
-		base = 5
-	}
-	social_reform_desire = 0.05
-	
-	
-	
-}
-
-secret_police_invent = {
 	limit = { revolution_n_counterrevolution = 1 }
-	news = no
 	chance = {
 		base = 2
 		modifier = {
@@ -2024,60 +1532,23 @@ secret_police_invent = {
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				nationalvalue = nv_might
-				nationalvalue = nv_dominion
-				nationalvalue = nv_glory
-			}
-		}
-		modifier = {
-			factor = 3
-			nationalvalue = nv_supremacy
-		}
-		modifier = {
-			factor = 1
-			OR = {
-				nationalvalue = nv_order
-				nationalvalue = nv_dominion
-				nationalvalue = nv_unity
-			}
-		}
-		modifier = {
-			factor = 2
-			nationalvalue = nv_productivity
+			nationalvalue = nv_order
 		}
 	}
 	effect = {
 		rebel_org_gain = {
 			faction = all
-			value = -0.50
+			value = -0.25
 		}
+		
+		suppression_points_modifier = 0.25
 	}
-	core_pop_consciousness_modifier = -0.03	
-	
-	
 }
 womens_suffrage_movement = {
 	limit = { revolution_n_counterrevolution = 1 }
+	news = no
 	chance = {
 		base = 3
-		modifier = {
-			factor = -20
-			vote_franschise = none_voting
-		}
-		modifier = {
-			factor = -5
-			NOT = { literacy = 0.3 }
-		}
-		modifier = {
-			factor = 3
-			literacy = 0.5
-			NOT = { literacy = 0.7 }
-		}
-		modifier = {
-			factor = 5
-			literacy = 0.7
-		}
 		modifier = {
 			factor = 2
 			OR = {
@@ -2087,34 +1558,12 @@ womens_suffrage_movement = {
 		}
 		modifier = {
 			factor = 3
-			OR = {
-				nationalvalue = nv_prosperity
-				nationalvalue = nv_glory
-				nationalvalue = nv_unity
-			}
-		}
-		modifier = {
-			factor = 4
-			OR = {
-				nationalvalue = nv_freedom
-				nationalvalue = nv_fraternity
-			}
-		}
-		modifier = {
-			factor = 3
 			ruling_party_ideology = liberal
-		}
-		modifier = {
-			factor = 5
-			any_neighbor_country = { invention = womens_suffrage_movement }
 		}
 	}
 	effect = {
 		mobilisation_economy_impact = -0.2
 	}
-	
-	
-	
 }
 rhetoric_of_hate = {
 	limit = { revolution_n_counterrevolution = 1 }
@@ -2134,23 +1583,13 @@ rhetoric_of_hate = {
 		}
 		modifier = {
 			factor = -1
-			OR = {
-				nationalvalue = nv_liberty
-				nationalvalue = nv_prosperity
-				nationalvalue = nv_glory
-			}
-		}
-		modifier = {
-			factor = -2
-			nationalvalue = nv_freedom
+			nationalvalue = nv_liberty
 		}
 	}
 	effect = {
 		war_exhaustion = -0.05
+		soldier_to_pop_loss = 0.01
 	}
-	core_pop_consciousness_modifier = -0.03	
-	
-	
 }
 nostalgic_romanticism = {
 	limit = { revolution_n_counterrevolution = 1 }
@@ -2170,31 +1609,18 @@ nostalgic_romanticism = {
 		war_exhaustion = -0.05
 		rebel_org_gain = {
 			faction = reactionary_rebels
-			value = 1.00
+			value = 0.50
 		}
 	}
-	core_pop_consciousness_modifier = -0.03	
-	
-	
 }
 anti_egalitarianism = {
-	limit = {
-		revolution_n_counterrevolution = 1
-	}
+	limit = { revolution_n_counterrevolution = 1 }
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
-			OR = {
-				nationalvalue = nv_order
-				nationalvalue = nv_dominion
-				nationalvalue = nv_unity
-			}
-		}
-		modifier = {
-			factor = 3
-			nationalvalue = nv_productivity
+			nationalvalue = nv_order
 		}
 		modifier = {
 			factor = 3
@@ -2204,14 +1630,7 @@ anti_egalitarianism = {
 	effect = {
 		war_exhaustion = -0.05
 		enable_crime = citizen_guard
-		rebel_org_gain = {
-			faction = liberal_rebels
-			value = -0.50
-		}
 	}
-	core_pop_consciousness_modifier = -0.03	
-	
-	
 }
 vangaurd_party = {
 	limit = { revolution_n_counterrevolution = 1 }
@@ -2230,35 +1649,63 @@ vangaurd_party = {
 	effect = {
 		rebel_org_gain = {
 			faction = communist_rebels
-			value = 0.50
+			value = 0.75
 		}
 	}
-	
-	
-	
 }
 #mass_politics
 the_doctrine_of_fascism = {
 	limit = { mass_politics = 1 }
 	news = no
 	chance = {
-		base = 2
+		base = -4
+		
+		modifier = {
+			factor = 2
+			anti__rationalism = 1
+		}
+		modifier = {
+			factor = 5
+			mass_culture_n_the_avant_garde = 1
+		}
+		modifier = {
+			factor = 1
+			invention = nihilism_and_the_will
+		}
+		modifier = {
+			factor = 1
+			invention = futurism
+		}
+		modifier = {
+			factor = 1
+			invention = existentialism
+		}
+		modifier = {
+			factor = 2
+			invention = rhetoric_of_hate
+		}
+		modifier = {
+			factor = 2
+			invention = dogma_of_violence
+		}
+		modifier = {
+			factor = 2
+			invention = dogma_of_mass_action
+		}
 		modifier = {
 			factor = 2
 			ruling_party_ideology = fascist
 		}
 		modifier = {
 			factor = 1
-			OR = {
-				nationalvalue = nv_might
-				nationalvalue = nv_dominion
-				nationalvalue = nv_glory
-			}
+			nationalvalue = nv_order
 		}
+		
 		modifier = {
 			factor = 2
-			nationalvalue = nv_supremacy
+			invention = paramilitary_groups
 		}
+		
 		modifier = {
 			factor = 3
 			average_militancy = 4
@@ -2267,12 +1714,9 @@ the_doctrine_of_fascism = {
 	effect = {
 		rebel_org_gain = {
 			faction = fascist_rebels
-			value = 0.50
+			value = 0.75
 		}
 	}
-	
-	
-	
 }
 paramilitary_groups = {
 	limit = { mass_politics = 1 }
@@ -2291,54 +1735,45 @@ paramilitary_groups = {
 	effect = {
 		rebel_org_gain = {
 			faction = fascist_rebels
-			value = 0.50
+			value = 0.25
 		} 
 	}
-	
-	
-	
 }
 the_police_state = {
 	limit = { mass_politics = 1 }
 	news = no
 	chance = {
-		base = 0
+		base = 2
 		modifier = {
-			factor = 5
+			factor = 3
 			OR = {
 				ruling_party_ideology = fascist
 				ruling_party_ideology = communist
 			}
 		}
+		modifier = {
+			factor = 2
+			nationalvalue = nv_order
+		}
 	}
 	effect = {
 		rebel_org_gain = {
 			faction = all
-			value = -0.75
+			value = -0.25
 		}
+		
+		suppression_points_modifier = 0.25
 	}
-	core_pop_consciousness_modifier = -0.05
-	core_pop_militancy_modifier = -0.05	
 }
 #behaviorism
 mass_advertising = {
-	limit = {
-		behaviorism = 1
-	}
+	limit = { behaviorism = 1 }
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 7
-			OR = {
-				nationalvalue = nv_liberty
-				nationalvalue = nv_prosperity
-				nationalvalue = nv_glory
-			}
-		}
-		modifier = {
-			factor = 10
-			nationalvalue = nv_freedom
+			nationalvalue = nv_liberty
 		}
 		modifier = {
 			factor = 2
@@ -2348,77 +1783,45 @@ mass_advertising = {
 			factor = 1
 			government = hms_government
 		}
-		modifier = {
-			factor = -2
-			NOT = {
-				press_rights = free_press
-			}
-		}
 	}
 	effect = {
 		education_efficiency = 0.25
+		suppression_points_modifier = -0.05
 	}
-	core_pop_consciousness_modifier = -0.03
-	core_pop_militancy_modifier = -0.01
-	
-	
-	
+	core_pop_consciousness_modifier = 0.01
 }
 national_radio_networks = {
-	limit = { assembly_line = 1 }
+	limit = { behaviorism = 1 }
 	news = no
 	chance = {
-		base = 1
+		base = 3
 		modifier = {
-			factor = 2
-			year = 1900
+			factor = 5
+			year = 1920
 		}
 		modifier = {
 			factor = -1
-			not = { year = 1885 }
+			NOT = { press_rights = free_press }
 		}
 		modifier = {
-			factor = -1
-			not = { year = 1895 }
-		}
-		modifier = {
-			factor = 1
-			government = democracy
-		}
-		modifier = {
-			factor = -1
-			NOT = {
-				press_rights = free_press
-			}
+			factor = -3
+			NOT = { invention = vacuum_tube }
 		}
 	}
 	effect = { 
 		activate_building = radio_factory 
+		suppression_points_modifier = -0.05
 	}
-	core_pop_consciousness_modifier = 0.03
-	core_pop_militancy_modifier = -0.01
-	
-	
-	
+	core_pop_consciousness_modifier = 0.01
 }
 the_talkies = {
-	limit = {
-		behaviorism = 1
-	}
+	limit = { behaviorism = 1 }
 	news = no
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
-			OR = {
-				nationalvalue = nv_liberty
-				nationalvalue = nv_prosperity
-				nationalvalue = nv_glory
-			}
-		}
-		modifier = {
-			factor = 4
-			nationalvalue = nv_freedom
+			nationalvalue = nv_liberty
 		}
 		modifier = {
 			factor = 2
@@ -2426,11 +1829,8 @@ the_talkies = {
 		}
 	}
 	effect = {
-		shared_prestige = 25 
+		shared_prestige = 20
+		suppression_points_modifier = -0.05
 	}
-	core_pop_consciousness_modifier = 0.03
-	core_pop_militancy_modifier = -0.05
-	
-	
-	
+	core_pop_consciousness_modifier = 0.01
 }

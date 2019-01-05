@@ -7,11 +7,11 @@ leader = {
 }
 
 army = {
-	name = "Nitran regular"
+	name = "Nitran infantry"
 	location = 633
 	regiment = {
 		name= "1.1st Division"
-		type = regular
+		type = infantry
 		home = 633
 	}
 }

@@ -2,5 +2,8 @@ owner = INC
 controller = INC
 add_core = INC
 trade_goods = fruit
-life_rating = 30
-terrain = seasonal_jungle_mountains
+life_rating = 35
+1860.1.1 = {
+	owner = BOL
+	controller = BOL
+}

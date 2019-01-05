@@ -2,6 +2,12 @@ owner = PLC
 controller = PLC
 add_core = PLC
 add_core = POL
-trade_goods = cattle
-life_rating = 35
-terrain = marginal_farmland
+trade_goods = grain
+life_rating = 40
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = fertilizer_factory
+		upgrade = yes
+	}
+}

@@ -1,6 +1,6 @@
 #Alaska Region (25000)
 #ruled by Russia 1836
-#Sitka (8000/2000 POPS)
+#Sitka/New Arkhangelsk (8000/2000 POPS)
 1 = {
 	bureaucrats = {
 		culture = kaiganese
@@ -64,7 +64,7 @@
 		size = 5000
 	}
 }
-#Yakutat (4000/1000 POPS)
+#Juneau / Saint Dionysius (4000/1000 POPS)
 2 = {
 	aristocrats = {
 		culture = kaiganese
@@ -109,7 +109,7 @@
 		size = 1500
 	}
 }
-#Kenai (2400/600 POPS)
+#Kenai/Kasilof (2400/600 POPS)
 3 = {
 	aristocrats = {
 		culture = kaiganese
@@ -154,7 +154,7 @@
 		size = 1250
 	}
 }
-#Dutch Harbor (2000/500 POPS)
+#Cordova (2000/500 POPS)
 4 = {
 	aristocrats = {
 		culture = inuit
@@ -193,7 +193,7 @@
 		size = 800
 	}
 }
-#Bethel (2000/500 POPS)
+#Dutch Harbor/Unalaska (2000/500 POPS)
 5 = {
 	aristocrats = {
 		culture = inuit
@@ -395,7 +395,7 @@
 }
 #Washington Region (20000)
 #claims by Britain and USA in 1836, de facto Native American rule
-#Seattle / Xiaosu (12000/3000 POPS)
+#Seattle (12000/3000 POPS)
 78 = {
 	aristocrats = {
 		culture = qingqiuan
@@ -428,7 +428,7 @@
 		size = 42700
 	}
 }
-#Spokane / Huazhong (4000/1000 POPS)
+#Spokane (4000/1000 POPS)
 79 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -503,7 +503,7 @@
 		size = 1000
 	}
 }
-#Walla Walla / Walla Walla(4000/1000 POPS)
+#Walla Walla (4000/1000 POPS)
 80 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -574,7 +574,7 @@
 }
 #Oregon Region (20000)
 #claims by Britain and USA in 1836, de facto Native American rule
-#Portland / Qizhou(12000/3000 POPS)
+#Portland (12000/3000 POPS)
 81 = {
 	aristocrats = {
 		culture = qingqiuan
@@ -600,7 +600,7 @@
 		size = 42700
 	}
 }
-#Baker City / Ruilin (4000/1000 POPS)
+#Baker City (4000/1000 POPS)
 82 = {
 	aristocrats = {
 		culture = qingqiuan
@@ -650,7 +650,7 @@
 		size = 500
 	}
 }
-#Klamath Falls / Rui'an (4000/1000 POPS)
+#Klamath Falls (4000/1000 POPS)
 83 = {
 	aristocrats = {
 		culture = qingqiuan
@@ -703,7 +703,7 @@
 }
 #California Region (64000)
 #ruled by Mexico 1836
-#San Francisco / Sanbao (9600/2400 POPS)
+#Sacramento (9600/2400 POPS)
 84 = {
 	aristocrats = {
 		culture = qingqiuan
@@ -771,7 +771,7 @@
 		size = 47550
 	}
 }
-#Eureka / Xingye (4000/1000 POPS)
+#Eureka (4000/1000 POPS)
 85 = {
 	aristocrats = {
 		culture = qingqiuan
@@ -873,7 +873,7 @@
 		size = 2400
 	}
 }
-#Monterey / Donghai (6400/1600 POPS)
+#Monterey (6400/1600 POPS)
 87 = {
 	aristocrats = {
 		culture = qingqiuan
@@ -905,7 +905,7 @@
 		size = 34200
 	}
 }
-#Mariposa / Jilinyutian Shan (8000/2000 POPS)
+#Mariposa (8000/2000 POPS)
 88 = {
 	aristocrats = {
 		culture = qingqiuan
@@ -979,7 +979,7 @@
 		size = 3240
 	}
 }
-#Los Angeles / Yongle (12000/3000 POPS)
+#Los Angeles (12000/3000 POPS)
 89 = {
 	aristocrats = {
 		culture = qingqiuan
@@ -1024,7 +1024,7 @@
 		size = 43900
 	}
 }
-#San Diego / Porto Novo(12000/3000 POPS)
+#San Diego (12000/3000 POPS)
 90 = {
 	aristocrats = {
 		culture = lusitanian
@@ -1149,7 +1149,7 @@
 }
 #Idaho Region (24000)
 #claims by Britain and USA in 1836, de facto Native American rule
-#Boise / Menzhou (8000/2000 POPS)
+#Boise (8000/2000 POPS)
 91 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -1200,7 +1200,7 @@
 		size = 5670
 	}
 }
-#Coeur d'Alene / Yingjiang (4000/1000 POPS)
+#Coeur d'Alene (4000/1000 POPS)
 92 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -1245,7 +1245,7 @@
 		size = 4500
 	}
 }
-#Pocatello / Xinzhou (12000/3000 POPS)
+#Pocatello (12000/3000 POPS)
 93 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -1274,7 +1274,7 @@
 }
 #Nevada Region (12000)
 #"ruled" by Mexico 1836/de facto under Native Control
-#Carson City / Zhendongfu (4000/1000 POPS)
+#Carson City (4000/1000 POPS)
 94 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -1338,7 +1338,7 @@
 	}
 
 }
-#Elko / Dahuang(4000/1000 POPS)
+#Elko (4000/1000 POPS)
 95 = {
 	aristocrats = {
 		culture = pueblo
@@ -1388,7 +1388,7 @@
 		size = 5200
 	}
 }
-#Las Vegas / Qingma (4000/1000 POPS)
+#Las Vegas (4000/1000 POPS)
 96 = {
 	aristocrats = {
 		culture = pueblo
@@ -1435,7 +1435,7 @@
 }
 #Utah Region (16000)
 #"ruled" by Mexico 1836/de facto under Native Control
-#Salt Lake City / Jianshe (8000/2000 POPS)
+#Salt Lake City (8000/2000 POPS)
 97 = {
 	aristocrats = {
 		culture = pueblo
@@ -1468,7 +1468,7 @@
 		size = 1800
 	}
 }
-#Loa / Yicheng (4000/1000 POPS)
+#Loa (4000/1000 POPS)
 98 = {
 	aristocrats = {
 		culture = pueblo
@@ -1495,7 +1495,7 @@
 		size = 900
 	}
 }
-#Moab / Xinhe(4000/1000 POPS)
+#Moab (4000/1000 POPS)
 99 = {
 	aristocrats = {
 		culture = pueblo
@@ -1524,7 +1524,7 @@
 }
 #Arizona Region (37000)
 #"ruled" by Mexico 1836/de facto under Native Control
-#Phoenix / San Jose Ixtapa (12000/3000 POPS)
+#Phoenix (12000/3000 POPS)
 100 = {
 	aristocrats = {
 		culture = apache
@@ -1611,7 +1611,7 @@
 		size = 500
 	}
 }
-#Flagstaff / Aguililla (12000/3000 POPS)
+#Flagstaff (12000/3000 POPS)
 101 = {
 
 	aristocrats = {
@@ -1724,7 +1724,7 @@
 
 }
 #ruled by Mexico 1836
-#Tucson / San Nicolas (13000/3250 POPS)
+#Tucson (13000/3250 POPS)
 102 = {
 
 	aristocrats = {
@@ -1802,7 +1802,7 @@
 }
 #New Mexico Region (56000)
 #ruled by Mexico 1836
-#Santa Fe / Daguan (32000/8000 POPS)
+#Santa Fe (32000/8000 POPS)
 103 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -1835,7 +1835,7 @@
 		size = 2700
 	}
 }
-#Albuquerque / La Rinconada(20000/5000 POPS)
+#Albuquerque (20000/5000 POPS)
 104 = {
 	aristocrats = {
 		culture = apache
@@ -1922,10 +1922,8 @@
 		religion = catholic
 		size = 600
 	}
-
-
 }
-#Las Cruces / Las Cruces (4000/1000 POPS)
+#Las Cruces (4000/1000 POPS)
 105 = {
 	aristocrats = {
 		culture = apache
@@ -2002,7 +2000,7 @@
 }
 #Colorado Region (20000)
 #claimed by both Mexico and the USA/de facto under Native Control
-#Denver / Yulin (8000/2000 POPS)
+#Denver (8000/2000 POPS)
 106 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2035,7 +2033,7 @@
 		size = 1800
 	}
 }
-#Grand Junction / Dekuan (4000/1000 POPS)
+#Grand Junction (4000/1000 POPS)
 107 = {
 	aristocrats = {
 		culture = pueblo
@@ -2062,7 +2060,7 @@
 		size = 900
 	}
 }
-#Alamosa / Longshiqiao (4000/1000 POPS)
+#Alamosa (4000/1000 POPS)
 108 = {
 	aristocrats = {
 		culture = pueblo
@@ -2089,7 +2087,7 @@
 		size = 900
 	}
 }
-#Pueblo / Laofeng (4000/1000 POPS)
+#Pueblo (4000/1000 POPS)
 109 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2124,7 +2122,7 @@
 }
 #Wyoming Region (28000)
 #"ruled" by the USA/de facto under Native Control
-#Cheyenne / Longshan (8000/2000 POPS)
+#Cheyenne (8000/2000 POPS)
 110 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2157,7 +2155,7 @@
 		size = 1800
 	}
 }
-#Cody / Changfeng (12000/3000 POPS)
+#Cody (12000/3000 POPS)
 111 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2190,7 +2188,7 @@
 		size = 2700
 	}
 }
-#Casper / Jixuan (8000/2000 POPS)
+#Casper (8000/2000 POPS)
 112 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2225,7 +2223,7 @@
 }
 #Montana Region (32000)
 #"ruled" by the USA/de facto under Native Control
-#Bozeman / Huaxiang (8000/2000 POPS)
+#Bozeman (8000/2000 POPS)
 113 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2258,7 +2256,7 @@
 		size = 1800
 	}
 }
-#Missoula / Haikou (4000/1000 POPS)
+#Missoula (4000/1000 POPS)
 114 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2291,7 +2289,7 @@
 		size = 900
 	}
 }
-#Great Falls / Linghu (8000/2000 POPS)
+#Great Falls (8000/2000 POPS)
 115 = {
 	artisans = {
 		culture = sioux
@@ -2323,7 +2321,7 @@
 		size = 1800
 	}
 }
-#Billings / Shihua (12000/3000 POPS)
+#Billings (12000/3000 POPS)
 116 = {
 	aristocrats = {
 		culture = sioux
@@ -2358,7 +2356,7 @@
 }
 #North Dakota Region (24000)
 #"ruled" by the USA/de facto under Native Control
-#Bismarck / Slottsholme(8000/2000 POPS)
+#Bismarck (8000/2000 POPS)
 117 = {
 	aristocrats = {
 		culture = sioux
@@ -2391,7 +2389,7 @@
 		size = 1800
 	}
 }
-#Minot / Kvarneby (8000/2000 POPS)
+#Minot (8000/2000 POPS)
 118 = {
 	aristocrats = {
 		culture = sioux
@@ -2423,7 +2421,7 @@
 		size = 1800
 	}
 }
-#Dickinson / Drosund (8000/2000 POPS)
+#Dickinson (8000/2000 POPS)
 119 = {
 	aristocrats = {
 		culture = sioux
@@ -2458,7 +2456,7 @@
 }
 #South Dakota Region (24000)
 #"ruled" by the USA/de facto under Native Control
-#Sioux Falls / Chutes-Sioux (8000/2000 POPS)
+#Sioux Falls (8000/2000 POPS)
 120 = {
 	aristocrats = {
 		culture = sioux
@@ -2491,7 +2489,7 @@
 		size = 1800
 	}
 }
-#Dupree / Collines Noires (8000/2000 POPS)
+#Dupree (8000/2000 POPS)
 121 = {
 	aristocrats = {
 		culture = sioux
@@ -2524,7 +2522,7 @@
 		size = 1800
 	}
 }
-#Rapid City / Grandes Plaines (8000/2000 POPS)
+#Rapid City (8000/2000 POPS)
 122 = {
 	aristocrats = {
 		culture = sioux
@@ -2559,7 +2557,7 @@
 }
 #Nebraska Region (20000)
 #"ruled" by the USA/de facto under Native Control
-#Omaha / Omaha (8000/2000 POPS)
+#Omaha (8000/2000 POPS)
 123 = {
 	aristocrats = {
 		culture = sioux
@@ -2592,7 +2590,7 @@
 		size = 1800
 	}
 }
-#Alliance / Panimaha (4000/1000 POPS)
+#Alliance (4000/1000 POPS)
 124 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2625,7 +2623,7 @@
 		size = 900
 	}
 }
-#North Platte / Sauque (8000/2000 POPS)
+#North Platte (8000/2000 POPS)
 125 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2660,7 +2658,7 @@
 }
 #Kansas Region (24000)
 #"ruled" by the USA/de facto under Native Control
-#Topeka / Topequa (8000/2000 POPS)
+#Topeka (8000/2000 POPS)
 126 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2693,7 +2691,7 @@
 		size = 1800
 	}
 }
-#Goodland / Mission St. Francois (8000/2000 POPS)
+#Goodland (8000/2000 POPS)
 127 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2717,7 +2715,6 @@
 		culture = native_american_minor
 		religion = animist
 		size= 25
-
 	}
 
 	farmers = {
@@ -2726,7 +2723,7 @@
 		size = 1800
 	}
 }
-#Wichita / Wichita (8000/2000 POPS)
+#Wichita (8000/2000 POPS)
 128 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2761,7 +2758,7 @@
 }
 #Oklahoma Region (32000)
 #"ruled" by the USA/de facto under Native Control
-#Oklahoma City / Ouaco (12000/3000 POPS)
+#Oklahoma City (12000/3000 POPS)
 129 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2794,7 +2791,7 @@
 		size = 1800
 	}
 }
-#Tahlequah / Tahlecua (12000/3000 POPS)
+#Tahlequah (12000/3000 POPS)
 130 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2827,7 +2824,7 @@
 		size = 900
 	}
 }
-#Okmulgee / Ocmoulji (8000/2000 POPS)
+#Okmulgee (8000/2000 POPS)
 131 = {
 	aristocrats = {
 		culture = native_american_minor
@@ -2862,7 +2859,7 @@
 }
 #Texas Region (67400)
 #ruled by Texas in 1836
-#Houston / Santa Pola (16000/4000 POPS)
+#Houston (16000/4000 POPS)
 132 = {
 	bureaucrats = {
 		culture = lusitanian
@@ -2919,8 +2916,42 @@
 		size = 4300
 	}
 }
+
+#Arviat/Clarksville/Dallas (3200/800 POPS) -- Replaced with original pops
+43 = {
+	aristocrats = {
+		culture = inuit
+		religion = animist
+		size = 10
+	}
+
+	clergymen = {
+		culture = inuit
+		religion = animist
+		size = 15
+	}
+
+	artisans = {
+		culture = inuit
+		religion = animist
+		size = 40
+	}
+
+	soldiers = {
+		culture = inuit
+		religion = animist
+		size= 10
+
+	}
+
+	farmers = {
+		culture = inuit
+		religion = animist
+		size = 725
+	}
+}
 133 = {
-#Austin / Benalmadena (14000/3500 POPS)
+#Austin (14000/3500 POPS)
 	aristocrats = {
 		culture = lusitanian
 		religion = catholic
@@ -2995,7 +3026,7 @@
 	}
 }
 
-#San Antonio / Nova Lisboa (10000/2500 POPS)
+#San Antonio (10000/2500 POPS)
 137 = {
 	aristocrats = {
 		culture = lusitanian
@@ -3068,7 +3099,7 @@
 		size = 7000
 	}
 }
-#Laredo / Laredo (6000/1500 POPS)
+#Laredo (6000/1500 POPS)
 138 = {
 	aristocrats = {
 		culture = lusitanian
@@ -3136,7 +3167,7 @@
 	}
 }
 #"ruled" by Texas/de facto under Native Control
-#Dallas / Joquicingo (4400/1100 POPS)
+#Fort Parker, Former Dallas (4400/1100 POPS)
 134 = {
 
 	aristocrats = {
@@ -3206,7 +3237,7 @@
 		size = 2900
 	}
 }
-#Lubbock / Apaseo el Grande (8000/2000 POPS)
+#Lubbock (8000/2000 POPS)
 135 = {
 	aristocrats ={
 		culture = lusitanian
@@ -3244,7 +3275,7 @@
 		size = 14530
 	}
 }
-#El Paso / El Paso (9000/2250 POPS)
+#El Paso (9000/2250 POPS)
 136 = {
 	aristocrats = {
 		culture = apache
@@ -3315,7 +3346,7 @@
 }
 #Louisiana Region (280000)
 #ruled by USA in 1836
-#New Orleans / Nouvelle Orleans(128000/32000 POPS)
+#New Orleans (128000/32000 POPS)
 139 = {
 	aristocrats = {
 		culture = plantagenian
@@ -3420,7 +3451,7 @@
 		size = 30000
 	}
 }
-#Baton Rouge / Baton Rouge (72000/18000 POPS)
+#Baton Rouge (72000/18000 POPS)
 140 = {
 	aristocrats = {
 		culture = plantagenian
@@ -3488,7 +3519,7 @@
 		size = 14875
 	}
 }
-#Lake Charles / Lac Richard (36000/9000 POPS)
+#Lake Charles (36000/9000 POPS)
 141 = {
 	aristocrats = {
 		culture = plantagenian
@@ -3556,7 +3587,7 @@
 		size = 9200
 	}
 }
-#Shreveport / Brucourt (44000/11000 POPS)
+#Shreveport (44000/11000 POPS)
 142 = {
 	aristocrats = {
 		culture = plantagenian
@@ -3615,7 +3646,7 @@
 }
 #Arkansas Region (88000)
 #ruled by USA in 1836
-#Little Rock / Aux Arcs (56000/14000 POPS)
+#Little Rock (56000/14000 POPS)
 143 = {
 	aristocrats = {
 		culture = plantagenian
@@ -3683,7 +3714,7 @@
 		size = 8800
 	}
 }
-#Hot Springs / Sources Chaudes (16000/4000 POPS)
+#Hot Springs (16000/4000 POPS)
 144 = {
 	clergymen = {
 		culture = plantagenian
@@ -3716,7 +3747,7 @@
 		size = 6400
 	}
 }
-#Fayetteville / Lipan (16000/4000 POPS)
+#Fayetteville (16000/4000 POPS)
 145 = {
 	clergymen = {
 		culture = native_american_minor
@@ -3745,7 +3776,7 @@
 }
 #Missouri Region (365000)
 #ruled by USA in 1836
-#Saint Louis / Fort Saints Georges (188000/47000 POPS)
+#Saint Louis (188000/47000 POPS)
 146 = {
 	clergymen = {
 		culture = native_american_minor
@@ -3772,7 +3803,7 @@
 		size = 1650
 	}
 }
-#Joplin / Laneau (25000/5000 POPS)
+#Joplin (25000/5000 POPS)
 147 = {
 	clergymen = {
 		culture = native_american_minor
@@ -3799,7 +3830,7 @@
 		size = 1625
 	}
 }
-#Malden / Ussy (40000/10000 POPS)
+#Malden (40000/10000 POPS)
 148 = {
 	aristocrats = {
 		culture = plantagenian
@@ -3856,7 +3887,7 @@
 		size = 3250
 	}
 }
-#Jefferson City / Trois Rivieres (56000/14000 POPS)
+#Jefferson City (56000/14000 POPS)
 149 = {
 	clergymen = {
 		culture = native_american_minor
@@ -3883,7 +3914,7 @@
 		size = 1430
 	}
 }
-#Kansas City / Ouachita (56000/14000 POPS)
+#Kansas City (56000/14000 POPS)
 150 = {
 	clergymen = {
 		culture = native_american_minor
@@ -3912,7 +3943,7 @@
 }
 #Iowa Region (44000)
 #ruled by the USA/parts de facto under Native Control
-#Des Moines / Sabine (12000/3000 POPS)
+#Des Moines (12000/3000 POPS)
 151 = {
 	aristocrats = {
 		culture = sioux
@@ -3945,7 +3976,7 @@
 		size = 1800
 	}
 }
-#Oskaloosa / Oscaluca (8000/2000 POPS)
+#Oskaloosa (8000/2000 POPS)
 152 = {
 	clergymen = {
 		culture = sioux
@@ -3972,7 +4003,7 @@
 		size = 1850
 	}
 }
-#Cedar Rapids / Cicapou (16000/4000 POPS)
+#Cedar Rapids (16000/4000 POPS)
 153 = {
 	aristocrats = {
 		culture = sioux
@@ -4005,7 +4036,7 @@
 		size = 900
 	}
 }
-#Sioux City / Fauxe (8000/2000 POPS)
+#Sioux City (8000/2000 POPS)
 154 = {
 	aristocrats = {
 		culture = sioux
@@ -4040,7 +4071,7 @@
 }
 #Minnesota Region (32000)
 #"ruled" by the USA/de facto under Native Control
-#Minneapolis / Holarborgh (8000/2000 POPS)
+#Minneapolis (8000/2000 POPS)
 155 = {
 	aristocrats = {
 		culture = sioux
@@ -4073,7 +4104,7 @@
 		size = 1800
 	}
 }
-#Granite Falls / Sauque (8000/2000 POPS)
+#Granite Falls (8000/2000 POPS)
 156 = {
 	aristocrats = {
 		culture = sioux
@@ -4106,7 +4137,7 @@
 		size = 1800
 	}
 }
-#Moorhead / Askjavidroijfjord (8000/2000 POPS)
+#Moorhead (8000/2000 POPS)
 157 = {
 	aristocrats = {
 		culture = sioux
@@ -4138,7 +4169,7 @@
 		size = 1800
 	}
 }
-#Duluth / Jernberg (8000/2000 POPS)
+#Duluth (8000/2000 POPS)
 158 = {
 	aristocrats = {
 		culture = sioux
@@ -4173,7 +4204,7 @@
 }
 #Wisconsin Region (36000)
 #ruled by the USA/parts under de facto under Native Control
-#Milwaukee / Milwaukee (16000/4000 POPS)
+#Milwaukee (16000/4000 POPS)
 159 = {
 	clergymen = {
 		culture = algonquin
@@ -4200,7 +4231,7 @@
 		size = 3700
 	}
 }
-#Eau Claire / Asgardsala (4000/1000 POPS)
+#Eau Claire (4000/1000 POPS)
 160 = {
 	aristocrats = {
 		culture = algonquin
@@ -4263,7 +4294,7 @@
 		size = 900
 	}
 }
-#Green Bay / Varaldskogen(8000/2000 POPS)
+#Green Bay (8000/2000 POPS)
 161 = {
 	aristocrats = {
 		culture = algonquin
@@ -4295,7 +4326,7 @@
 		size = 900
 	}
 }
-#Madison / Ramsoya (8000/2000 POPS)
+#Madison (8000/2000 POPS)
 162 = {
 	clergymen = {
 		culture = algonquin
@@ -4348,7 +4379,7 @@
 }
 #Illinois Region (452000)
 #ruled by the USA
-#Chicago / Tobol (172000/43000 POPS)
+#Chicago (172000/43000 POPS)
 163 = {
 	clergymen = {
 		culture = iroquois
@@ -4375,7 +4406,7 @@
 		size = 925
 	}
 }
-#Rockford / Rabbkjolgrenda (44000/11000 POPS)
+#Rockford (44000/11000 POPS)
 164 = {
 	clergymen = {
 		culture = iroquois
@@ -4402,7 +4433,7 @@
 		size = 1250
 	}
 }
-#Champaign / Telneset (36000/9000 POPS)
+#Champaign (36000/9000 POPS)
 165 = {
 	clergymen = {
 		culture = iroquois
@@ -4429,7 +4460,7 @@
 		size = 1400
 	}
 }
-#Peoria / Peoria (100000/25000 POPS)
+#Peoria (100000/25000 POPS)
 166 = {
 	aristocrats = {
 		culture = plantagenian
@@ -4474,7 +4505,7 @@
 		size = 3200
 	}
 }
-#Springfield / Bretteville (36000/9000 POPS)
+#Springfield (36000/9000 POPS)
 167 = {
 	clergymen = {
 		culture = plantagenian
@@ -4513,7 +4544,7 @@
 		size = 2900
 	}
 }
-#Carbondale / Vaux-sur-Mississippi (68000/17000 POPS)
+#Carbondale (68000/17000 POPS)
 168 = {
 	clergymen = {
 		culture = plantagenian
@@ -4566,7 +4597,7 @@
 }
 #Indiana Region (644000)
 #ruled by the USA
-#Indianapolis / Vermundsjoen (276000/69000 POPS)
+#Indianapolis (276000/69000 POPS)
 169 = {
 	aristocrats = {
 		culture = iroquois
@@ -4635,7 +4666,7 @@
 		size = 800
 	}
 }
-#Evansville / Cantebrigge (196000/49000 POPS)
+#Evansville (196000/49000 POPS)
 170 = {
 	clergymen = {
 		culture = plantagenian
@@ -4704,7 +4735,7 @@
 		size = 600
 	}
 }
-#South Bend / Asmarka (44000/11000 POPS)
+#South Bend (44000/11000 POPS)
 171 = {
 	clergymen = {
 		culture = iroquois
@@ -4755,7 +4786,7 @@
 		size = 450
 	}
 }
-#Fort Wayne / Trautskogen (128000/32000 POPS)
+#Fort Wayne (128000/32000 POPS)
 172 = {
 	aristocrats = {
 		culture = iroquois
@@ -4820,7 +4851,7 @@
 }
 #Michigan Region (148000)
 #ruled by the USA/parts under defacto native Control
-#Detroit /Lonasmoen (POPS)
+#Detroit (POPS)
 173 = {
 	officers = {
 		culture = iroquois
@@ -4890,7 +4921,7 @@
 		size = 1040
 	}
 }
-#Grand Rapids / Osmoen (POPS)
+#Grand Rapids (POPS)
 174 = {
 	clergymen = {
 		culture = iroquois
@@ -4941,7 +4972,7 @@
 		size = 500
 	}
 }
-#Saginaw / Saginaw (POPS)
+#Saginaw (POPS)
 175 = {
 	clergymen = {
 		culture = iroquois
@@ -4992,7 +5023,7 @@
 		size = 560
 	}
 }
-#Traverse City / Odals Verk (POPS)
+#Traverse City (POPS)
 176 = {
 	clergymen = {
 		culture = vinlander
@@ -5062,7 +5093,7 @@
 		size = 456
 	}
 }
-#Marquette / Ottestad(POPS)
+#Marquette (POPS)
 177 = {
 	aristocrats = {
 		culture = algonquin
@@ -5097,7 +5128,7 @@
 }
 #Ohio Region (1344000)
 #ruled by the USA
-#Cleveland / Nye Nidaros (208000/52000 POPS)
+#Cleveland (208000/52000 POPS)
 178 = {
 	clergymen = {
 		culture = iroquois
@@ -5154,7 +5185,7 @@
 		size = 1200
 	}
 }
-#Columbus / Skivik (268000/67000 POPS)
+#Columbus (268000/67000 POPS)
 179 = {
 	officers = {
 		culture = iroquois
@@ -5223,7 +5254,7 @@
 		size = 2425
 	}
 }
-#Sandusky / Skjoldby (188000/47000 POPS)
+#Sandusky (188000/47000 POPS)
 180 = {
 	clergymen = {
 		culture = iroquois
@@ -5280,7 +5311,7 @@
 		size = 2450
 	}
 }
-#Dayton / Stromberg (224000/56000 POPS)
+#Dayton (224000/56000 POPS)
 181 = {
 	clergymen = {
 		culture = iroquois
@@ -5337,7 +5368,7 @@
 		size = 1200
 	}
 }
-#Cincinnati / Lakkness (296000/74000 POPS)
+#Cincinnati (296000/74000 POPS)
 182 = {
 	clergymen = {
 		culture = iroquois
@@ -5394,7 +5425,7 @@
 		size = 2200
 	}
 }
-#Marietta / La Biche (160000/40000 POPS)
+#Marietta (160000/40000 POPS)
 183 = {
 	clergymen = {
 		culture = iroquois
@@ -5471,7 +5502,7 @@
 }
 #Kentucky Region (740000)
 #ruled by the USA
-#Louisville / Cantorbery (156000/39000 POPS)
+#Louisville (156000/39000 POPS)
 184 = {
 	clergymen = {
 		culture = cherokee
@@ -5552,7 +5583,7 @@
 		size = 3500
 	}
 }
-#Lexington / Colbert (332000/83000 POPS)
+#Lexington (332000/83000 POPS)
 185 = {
 	officers = {
 		culture = cherokee
@@ -5652,7 +5683,7 @@
 		size = 6250
 	}
 }
-#Bowling Green / Fort Dagobert (144000/36000 POPS)
+#Bowling Green (144000/36000 POPS)
 186 = {
 	clergymen = {
 		culture = cherokee
@@ -5734,7 +5765,7 @@
 		size = 5500
 	}
 }
-#Paducah / Paducha (108000/27000 POPS)
+#Paducah (108000/27000 POPS)
 187 = {
 	clergymen = {
 		culture = plantagenian
@@ -5818,7 +5849,7 @@
 }
 #Tennessee Region (772000)
 #ruled by the USA
-#Nashville / Arlette (396000/99000 POPS)
+#Nashville (396000/99000 POPS)
 188 = {
 	aristocrats = {
 		culture = plantagenian
@@ -5930,7 +5961,7 @@
 		size = 9700
 	}
 }
-#Memphis / Richelieu (128000/32000 POPS)
+#Memphis (128000/32000 POPS)
 189 = {
 	clergymen = {
 		culture = plantagenian
@@ -6018,7 +6049,7 @@
 		size = 7500
 	}
 }
-#Knoxville / Bois Rouvray (116000/29000 POPS)
+#Knoxville (116000/29000 POPS)
 190 = {
 	clergymen = {
 		culture = plantagenian
@@ -6099,7 +6130,7 @@
 		size = 6075
 	}
 }
-#Chattanooga / Chatanouga (132000/33000 POPS)
+#Chattanooga (132000/33000 POPS)
 191 = {
 	clergymen = {
 		culture = plantagenian
@@ -6188,7 +6219,7 @@
 }
 #Mississippi Region (340000)
 #ruled by the USA
-#Jackson / Fort Bilocci (164000/41000 POPS)
+#Jackson (164000/41000 POPS)
 192 = {
 	aristocrats = {
 		culture = plantagenian
@@ -6257,7 +6288,7 @@
 		size = 17650
 	}
 }
-#Vicksburg / Branville (100000/25000 POPS)
+#Vicksburg (100000/25000 POPS)
 193 = {
 	aristocrats = {
 		culture = plantagenian
@@ -6332,7 +6363,7 @@
 		size = 4500
 	}
 }
-#Biloxi / Saint Francois (76000/19000 POPS)
+#Biloxi (76000/19000 POPS)
 194 = {
 	aristocrats = {
 		culture = plantagenian
@@ -6391,7 +6422,7 @@
 }
 #Alabama Region (576000)
 #ruled by the USA
-#Montgomery / Blois (268000/67000 POPS)
+#Montgomery (268000/67000 POPS)
 195 = {
 	aristocrats = {
 		culture = plantagenian
@@ -6460,7 +6491,7 @@
 		size = 13500
 	}
 }
-#Tuscaloosa / Tuscalousa (168000/42000 POPS)
+#Tuscaloosa (168000/42000 POPS)
 196 = {
 	aristocrats = {
 		culture = plantagenian
@@ -6535,7 +6566,7 @@
 		size = 4640
 	}
 }
-#Mobile / Mobile (140000/35000 POPS)
+#Mobile (140000/35000 POPS)
 197 = {
 	aristocrats = {
 		culture = plantagenian
@@ -6612,7 +6643,7 @@
 }
 #Florida Region (88000)
 #ruled by the USA
-#Tallahassee / Talahasi (32000/8000 POPS)
+#Tallahassee (32000/8000 POPS)
 198 = {
 	aristocrats = {
 		culture = plantagenian
@@ -6681,7 +6712,7 @@
 		size = 3900
 	}
 }
-#St Augustine / San Marco (48000/12000 POPS)
+#St Augustine (48000/12000 POPS)
 199 = {
 	aristocrats = {
 		culture = athesian
@@ -6837,7 +6868,7 @@
 }
 #Georgia Region (628000)
 #ruled by the USA
-#Atlanta / Fort de Toulouse (244000/61000 POPS)
+#Atlanta (244000/61000 POPS)
 201 = {
 	aristocrats = {
 		culture = plantagenian
@@ -6937,7 +6968,7 @@
 		size = 13775
 	}
 }
-#Valdosta / Crevecoeur (44000/11000 POPS)
+#Valdosta (44000/11000 POPS)
 202 = {
 	aristocrats = {
 		culture = plantagenian
@@ -6994,7 +7025,7 @@
 		size = 8900
 	}
 }
-#Savannah / Port Louis (200000/50000 POPS)
+#Savannah (200000/50000 POPS)
 204 = {
 	aristocrats = {
 		culture = plantagenian
@@ -7051,7 +7082,7 @@
 		size = 10475
 	}
 }
-#Augusta / Gueron (140000/35000 POPS)
+#Augusta (140000/35000 POPS)
 2555 = {
 	aristocrats = {
 		culture = plantagenian
@@ -7110,7 +7141,7 @@
 }
 #South Carolina Region (588000)
 #ruled by the USA
-#Charleston / Amiral St Clair (248000/61000 POPS)
+#Charleston (248000/61000 POPS)
 205 = {
 	aristocrats = {
 		culture = plantagenian
@@ -7203,7 +7234,7 @@
 		size = 15300
 	}
 }
-#Columbia / Resurrection (340000/85000 POPS)
+#Columbia (340000/85000 POPS)
 206 = {
 	aristocrats = {
 		culture = plantagenian
@@ -7274,7 +7305,7 @@
 }
 #North Carolina Region (736000)
 #ruled by the USA
-#Greenville / Saint Raphael (96000/27000 POPS)
+#Greenville (96000/27000 POPS)
 207 = {
 	aristocrats = {
 		culture = plantagenian
@@ -7373,7 +7404,7 @@
 		size = 4750
 	}
 }
-#Raleigh / Julie (156000/39000 POPS)
+#Raleigh (156000/39000 POPS)
 208 = {
 	aristocrats = {
 		culture = plantagenian
@@ -7460,7 +7491,7 @@
 		size = 3020
 	}
 }
-#Charlotte / Richardville (136000/34000 POPS)
+#Charlotte (136000/34000 POPS)
 209 = {
 	aristocrats = {
 		culture = plantagenian
@@ -7517,7 +7548,7 @@
 		size = 8400
 	}
 }
-#Wilmington / Bourg-du-Roi(188000/47000 POPS)
+#Wilmington (188000/47000 POPS)
 210 = {
 	aristocrats = {
 		culture = plantagenian
@@ -7574,7 +7605,7 @@
 		size = 13450
 	}
 }
-#Asheville / Madeleine (148000/37000 POPS)
+#Asheville (148000/37000 POPS)
 2556 = {
 	aristocrats = {
 		culture = cherokee
@@ -7663,7 +7694,41 @@
 }
 #Virginia Region (1016000)
 #ruled by the USA
-#Richmond / Villefranche (340000/85000 POPS)
+
+#Richmond - Formerly Fort Rupert (2400/600 POPS) -- Replaced with original pops
+60 = {
+	aristocrats = {
+		culture = algonquin
+		religion = animist
+		size = 15
+	}
+
+	clergymen = {
+		culture = algonquin
+		religion = animist
+		size = 25
+	}
+
+	artisans = {
+		culture = algonquin
+		religion = animist
+		size = 30
+	}
+
+	soldiers = {
+		culture = algonquin
+		religion = animist
+		size= 10
+
+	}
+
+	farmers = {
+		culture = algonquin
+		religion = animist
+		size = 520
+	}
+}
+#Blackstone (340000/85000 POPS)
 211 = {
 	aristocrats = {
 		culture = septiman
@@ -7756,7 +7821,7 @@
 		size = 4560
 	}
 }
-#Manassas / Pont Vedrin (68000/17000 POPS)
+#Manassas (68000/17000 POPS)
 212 = {
 	aristocrats = {
 		culture = septiman
@@ -7813,7 +7878,7 @@
 		size = 9750
 	}
 }
-#Fredericksburg / Cap Morlanwelz (116000/29000 POPS)
+#Fredericksburg (116000/29000 POPS)
 213 = {
 	aristocrats = {
 		culture = septiman
@@ -7888,7 +7953,7 @@
 		size = 16875
 	}
 }
-#Norfolk / Vierset (108000/27000 POPS)
+#Norfolk (108000/27000 POPS)
 214 = {
 	aristocrats = {
 		culture = septiman
@@ -7976,7 +8041,7 @@
 		size = 14225
 	}
 }
-#Staunton / Mont Mouscron (60000/15000 POPS)
+#Staunton (60000/15000 POPS)
 215 = {
 	aristocrats = {
 		culture = septiman
@@ -8033,7 +8098,7 @@
 		size = 8400
 	}
 }
-#Roanoke / Roanoque (120000/30000 POPS)
+#Roanoke (120000/30000 POPS)
 216 = {
 	aristocrats = {
 		culture = cherokee
@@ -8132,7 +8197,6 @@
 		size = 3280
 	}
 }
-#became West Virginia in 1863
 #Wheeling / Metz (104000/26000 POPS)
 217 = {
 	aristocrats = {
@@ -8190,7 +8254,7 @@
 		size = 11000
 	}
 }
-#Huntington / Les Minieres (100000/25000 POPS)
+#Huntington (100000/25000 POPS)
 218 = {
 	aristocrats = {
 		culture = plantagenian
@@ -8267,7 +8331,7 @@
 }
 #Maryland Region (452000)
 #ruled by the USA
-#Baltimore / Cap Valois (212000/53000 POPS)
+#Baltimore (212000/53000 POPS)
 219 = {
 	aristocrats = {
 		culture = septiman
@@ -8348,7 +8412,7 @@
 		size = 24600
 	}
 }
-#Washington / Bruxelles-Atlantique (184000/46000 POPS)
+#Annapolis (184000/46000 POPS)
 220 = {
 	aristocrats = {
 		culture = septiman
@@ -8405,7 +8469,7 @@
 		size = 19000
 	}
 }
-#Hagerstown / Alzing (56000/14000 POPS)
+#Hagerstown (56000/14000 POPS)
 221 = {
 	aristocrats = {
 		culture = septiman
@@ -8464,7 +8528,7 @@
 }
 #Delaware Region (76000)  
 #ruled by the USA
-#Dover / Bourg-Leblois (76000/19000 POPS)
+#Dover (76000/19000 POPS)
 222 = {
 	aristocrats = {
 		culture = septiman
@@ -8535,7 +8599,7 @@
 }
 #Pennsylvania Region (1536000)  
 #ruled by the USA
-#Philadelphia / Bourg-George (468000/117000 POPS)
+#Philadelphia (468000/117000 POPS)
 223 = {
 	aristocrats = {
 		culture = septiman
@@ -8640,7 +8704,71 @@
 		size = 490
 	}
 }
-#Scranton / Nouvelle Anvers (164000/41000 POPS)
+#Coudersport - Formerly Fort Chimo (2400/600 POPS) -- Replaced with original pops
+2627 = {
+	aristocrats = {
+		culture = inuit
+		religion = animist
+		size = 5
+	}
+
+	clergymen = {
+		culture = inuit
+		religion = animist
+		size = 10
+	}
+
+	artisans = {
+		culture = inuit
+		religion = animist
+		size = 20
+	}
+
+	soldiers = {
+		culture = inuit
+		religion = animist
+		size= 5
+
+	}
+
+	farmers = {
+		culture = inuit
+		religion = animist
+		size = 360
+	}
+
+	aristocrats = {
+		culture = algonquin
+		religion = animist
+		size = 2
+	}
+
+	clergymen = {
+		culture = algonquin
+		religion = animist
+		size = 3
+	}
+
+	artisans = {
+		culture = algonquin
+		religion = animist
+		size = 10
+	}
+
+	soldiers = {
+		culture = algonquin
+		religion = animist
+		size= 5
+
+	}
+
+	farmers = {
+		culture = algonquin
+		religion = animist
+		size = 180
+	}
+}
+#Scranton (164000/41000 POPS)
 224 = {
 	clergymen = {
 		culture = septiman
@@ -8667,7 +8795,7 @@
 		size = 19225
 	}
 }
-#Williamsport / Sinai (172000/43000 POPS)
+#Williamsport (172000/43000 POPS)
 225 = {
 	clergymen = {
 		culture = septiman
@@ -8694,7 +8822,7 @@
 		size = 20100
 	}
 }
-#Harrisburg / Waldwisse (292000/73000 POPS)
+#Harrisburg (292000/73000 POPS)
 226 = {
 	clergymen = {
 		culture = septiman
@@ -8733,7 +8861,7 @@
 		size = 12340
 	}
 }
-#Pittsburgh / Haselbourg (332000/83000 POPS)
+#Pittsburgh (332000/83000 POPS)
 227 = {
 	aristocrats = {
 		culture = septiman
@@ -8790,7 +8918,7 @@
 		size = 13450
 	}
 }
-#Erie / Port Laurent (108000/27000 POPS)
+#Erie (108000/27000 POPS)
 228 = {
 	aristocrats = {
 		culture = iroquois
@@ -8843,7 +8971,7 @@
 }
 #New Jersey Region (340000)  
 #ruled by the USA
-#Newark / Maline (156000/39000 POPS)
+#Newark (156000/39000 POPS)
 229 = {
 	clergymen = {
 		culture = septiman
@@ -8888,7 +9016,7 @@
 		size = 3750
 	}
 }
-#Trenton / Luther (96000/24000 POPS)
+#Trenton (96000/24000 POPS)
 230 = {
 	bureaucrats = {
 		culture = septiman
@@ -8927,7 +9055,7 @@
 		size = 21105
 	}
 }
-#Atlantic City / Port Clair (88000/22000 POPS)
+#Atlantic City (88000/22000 POPS)
 231 = {
 	clergymen = {
 		culture = septiman
@@ -8968,7 +9096,7 @@
 }
 #New York Region (2140000)  
 #ruled by the USA
-#New York / Port Valois (440000/110000 POPS)
+#New York (440000/110000 POPS)
 232 = {
 	capitalists = {
 		culture = septiman
@@ -9043,7 +9171,7 @@
 		size = 490
 	}
 }
-#Islip / Nouvelle Bruges (100000/25000 POPS)
+#Islip (100000/25000 POPS)
 233 = {
 	aristocrats = {
 		culture = septiman
@@ -9100,7 +9228,7 @@
 		size = 83325
 	}
 }
-#Albany / Deux-Sources (332000/83000 POPS)
+#Albany (332000/83000 POPS)
 234 = {
 	bureaucrats = {
 		culture = septiman
@@ -9139,7 +9267,7 @@
 		size = 30775
 	}
 }
-#Binghamton / Blegny (352000/88000 POPS)
+#Binghamton (352000/88000 POPS)
 235 = {
 	clergymen = {
 		culture = septiman
@@ -9166,7 +9294,7 @@
 		size = 30975
 	}
 }
-#Buffalo / Roi-Charles (244000/61000 POPS)
+#Buffalo (244000/61000 POPS)
 236 = {
 	clergymen = {
 		culture = iroquois
@@ -9193,7 +9321,7 @@
 		size = 26875
 	}
 }
-#Rochester / Rosseau (176000/44000 POPS)
+#Rochester (176000/44000 POPS)
 237 = {
 	clergymen = {
 		culture = iroquois
@@ -9220,7 +9348,7 @@
 		size = 21025
 	}
 }
-#Syracuse / Njiverdal (304000/76000 POPS)
+#Syracuse (304000/76000 POPS)
 238 = {
 	clergymen = {
 		culture = iroquois
@@ -9247,7 +9375,7 @@
 		size = 49675
 	}
 }
-#Watertown / Rochefort-en-Terre (116000/29000 POPS)
+#Watertown (116000/29000 POPS)
 239 = {
 	clergymen = {
 		culture = iroquois
@@ -9274,7 +9402,7 @@
 		size = 27025
 	}
 }
-#Plattsburgh / Geneve (76000/19000 POPS)
+#Plattsburgh (76000/19000 POPS)
 240 = {
 	clergymen = {
 		culture = iroquois
@@ -9303,7 +9431,7 @@
 }
 #Connecticut Region (304000)  
 #ruled by the USA
-#Hartford / Esperance (304000/76000 POPS)
+#Hartford (304000/76000 POPS)
 241 = {
 	bureaucrats = {
 		culture = septiman
@@ -9380,7 +9508,7 @@
 }
 #Rhode Island Region (104000)  
 #ruled by the USA
-#Providence / Vise (104000/26000 POPS)
+#Providence (104000/26000 POPS)
 242 = {
 	bureaucrats = {
 		culture = septiman
@@ -9457,7 +9585,7 @@
 }
 #Massachusetts Region (660000)  
 #ruled by the USA
-#Boston / Philippa (444000/111000 POPS)
+#Boston (444000/111000 POPS)
 243 = {
 	bureaucrats = {
 		culture = septiman
@@ -9538,7 +9666,7 @@
 		size = 22145
 	}
 }
-#New Bedford / Cap Bon (132000/33000 POPS)
+#New Bedford (132000/33000 POPS)
 244 = {
 	clergymen = {
 		culture = septiman
@@ -9577,7 +9705,7 @@
 		size = 27025
 	}
 }
-#Pittsfield / Ville Louis (84000/21000 POPS)
+#Pittsfield (84000/21000 POPS)
 245 = {
 	clergymen = {
 		culture = septiman
@@ -9606,7 +9734,7 @@
 }
 #Vermont Region (284000)  
 #ruled by the USA
-#Montpelier / Mont Rouge (284000/71000 POPS)
+#Montpelier (284000/71000 POPS)
 246 = {
 	bureaucrats = {
 		culture = septiman
@@ -9647,7 +9775,7 @@
 }
 #New Hampshire Region (276000)  
 #ruled by the USA
-#Concord / Binche (POPS)
+#Concord (POPS)
 247 = {
 	bureaucrats = {
 		culture = septiman
@@ -9705,7 +9833,7 @@
 }
 #Maine Region (432000)  
 #ruled by the USA
-#Lewiston / Hamina (240000/60000 POPS)
+#Lewiston (240000/60000 POPS)
 248 = {
 	bureaucrats = {
 		culture = vinlander
@@ -9744,7 +9872,7 @@
 		size = 55675
 	}
 }
-#Bangor / Vaestersund (156000/44000 POPS)
+#Bangor (156000/44000 POPS)
 249 = {
 	clergymen = {
 		culture = vinlander
@@ -9772,7 +9900,7 @@
 	}
 }
 #ruled by the UK
-#Caribou / Markby (36000/9000 POPS)
+#Caribou (36000/9000 POPS)
 250 = {
 	clergymen = {
 		culture = vinlander

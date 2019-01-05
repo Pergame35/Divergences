@@ -308,9 +308,9 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = luo
 		religion = animist
-		size = 7850
+		size = 5600
 	}
 }
 #Debre Markos (1100000/275000 POPS)
@@ -488,7 +488,12 @@
 	slaves = {
 		culture = oromo
 		religion = coptic
-		size = 2340
+		size = 940
+	}
+	slaves = {
+		culture = nilotic
+		religion = animist
+		size = 1400
 	}
 }
 #Antalo (180000/45000 POPS)
@@ -591,9 +596,8 @@
 		religion = sunni
 		size = 18935
 	}
-
 	slaves = {
-		culture = african_minor
+		culture = cushitic
 		religion = animist
 		size = 4570
 	}
@@ -738,7 +742,7 @@
 		religion = coptic
 		size = 71210
 	}
-}
+}	
 #Awasa (448000/115000 POPS)
 1860 = {
 	aristocrats = {
@@ -916,7 +920,7 @@
 	}
 
 	slaves = {
-		culture = wolayta
+		culture = kefficho
 		religion = animist
 		size = 31750
 	}
@@ -1096,7 +1100,7 @@
 	}
 
 	slaves = {
-		culture = wolayta
+		culture = cushitic
 		religion = animist
 		size = 36700
 	}
@@ -1215,6 +1219,7 @@
 		size = 19100
 	}
 }
+
 #uncolonized in 1836
 #Goba (296000/74000 POPS)
 1866 = {

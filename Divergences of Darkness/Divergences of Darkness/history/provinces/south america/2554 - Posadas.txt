@@ -3,5 +3,9 @@ controller = LOT
 add_core = LOT
 add_core = AVA
 trade_goods = cattle
-life_rating = 30
-terrain = jungle
+life_rating = 31
+1861.1.1 = { 
+	owner = PRG
+	controller = PRG
+	add_core = PRG
+}

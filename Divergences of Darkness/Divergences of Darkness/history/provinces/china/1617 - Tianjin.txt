@@ -3,5 +3,8 @@ controller = MCK
 add_core = CHI
 add_core = MCK
 trade_goods = silk
-life_rating = 35
-terrain = marginal_farmland
+life_rating = 32
+
+1861.1.1 = {
+	fort = 1
+}

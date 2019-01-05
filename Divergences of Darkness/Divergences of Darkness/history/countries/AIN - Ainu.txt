@@ -29,6 +29,13 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
+# New Reforms
+conscription = no_draft
+debt_law = serfdom
+penal_system = capital_punishment
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = AAA_reactionary_1
 upper_house = {
@@ -44,17 +51,13 @@ upper_house = {
 # Level_2
 # Technologies
 early_classical_theory_and_critique = 1
-late_enlightenment_philosophy = 1
-enlightenment_thought = 1
 private_banks = 1
 
 # Inventions
 
 # Unciv Reforms
-diplomatic_reform = interactive
-academic_institutions = madrasahs
-admin_reform = yes_admin_reform
-taxation_reform = tax_farmers
+foreign_training = yes_foreing_training
+foreign_officers = yes_foreign_officers
 
 # Starting Consciousness
 consciousness = 0

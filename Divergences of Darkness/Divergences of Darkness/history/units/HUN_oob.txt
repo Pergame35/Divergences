@@ -41,19 +41,19 @@ army = {
 
 	regiment = {
 		name= "1.3. infantry"
-		type = regular
+		type = infantry
 		home = 779
 	}
 
 	regiment = {
 		name= "2.3. infantry"
-		type = regular
+		type = infantry
 		home = 647
 	}
 
 	regiment = {
 		name= "3.3. infantry"
-		type = regular
+		type = infantry
 		home = 641
 	}
 }
@@ -63,13 +63,13 @@ army = {
 	location = 657
 	regiment = {
 		name= "1.1. infantry"
-		type = regular
+		type = infantry
 		home = 623
 	}
 
 	regiment = {
 		name= "2.1. infantry"
-		type = regular
+		type = infantry
 		home = 623
 	}
 

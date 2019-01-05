@@ -3,35 +3,42 @@ controller = DUA
 add_core = DUA
 add_core = FRA
 trade_goods = grain
-life_rating = 45
-terrain = good_farmland
+life_rating = 35
 state_building = {
-level = 2
-building = furniture_factory
-upgrade = yes
+	level = 1
+	building = luxury_furniture_factory
+	upgrade = yes
 }
 state_building = {
-level = 2
-building = ammunition_factory
-upgrade = yes
+	level = 1
+	building = paper_mill
+	upgrade = yes
 }
 state_building = {
-level = 1
-building = winery
-upgrade = yes
+	level = 1
+	building = liquor_distillery
+	upgrade = yes
 }
-state_building = {
-level = 3
-building = regular_clothes_factory
-upgrade = yes
+1861.1.1 = {
+	state_building = {
+		level = 2
+		building = luxury_furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = paper_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = machine_parts_factory
+		upgrade = yes
+	}
 }
-state_building = {
-level = 2
-building = fruit_cannery
-upgrade = yes
-}
-state_building = {
-level = 1
-building = bank
-upgrade = yes
-}
+1861.1.1 = { railroad = 3 }

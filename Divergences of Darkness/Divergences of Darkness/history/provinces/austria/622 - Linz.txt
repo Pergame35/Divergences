@@ -3,8 +3,8 @@ controller = AUS
 add_core = AUS
 add_core = GER
 trade_goods = sulphur
-life_rating = 30
-terrain = hilly_farmland
+life_rating = 35
+1861.1.1 = { railroad = 3 }
 
 state_building = {
 	level = 2
@@ -13,16 +13,11 @@ state_building = {
 }
 state_building = {
 	level = 2 
-	building = bronze_factory
+	building = explosives_factory
 	upgrade = yes
 }
 state_building = {
 	level = 2 
-	building = bronze_artillery_factory
-	upgrade = yes
-}
-state_building = {
-	level = 2
-	building = bakery
+	building = artillery_factory
 	upgrade = yes
 }

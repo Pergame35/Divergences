@@ -42,9 +42,15 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 6600 
+		size = 4686 
 	}
 
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 1914 
+	}	
+	
 	aristocrats = {
 		culture = hungarian
 		religion = catholic
@@ -85,8 +91,15 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 10125 
+		size = 7290 
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 2835 
+	}
+	
 
 	clergymen = {
 		culture = hungarian
@@ -149,8 +162,14 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 27450 
+		size = 16744 
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 10706 
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -201,8 +220,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 105750
+		size = 64507
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 41243
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -232,8 +257,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 29075  
+		size = 17735  
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 11340  
+	}	
 
 	clergymen = {
 		culture = hungarian
@@ -282,8 +313,14 @@
 	farmers = {
 		culture = slovene
 		religion = catholic
-		size = 13950 
+		size = 8510 
 	}
+	
+	serfs = {
+		culture = slovene
+		religion = catholic
+		size = 5440 
+	}	
 
 	clergymen = {
 		culture = croat
@@ -307,8 +344,14 @@
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 6525 
+		size = 3980 
 	}
+	
+	serfs = {
+		culture = croat
+		religion = catholic
+		size = 2545 
+	}	
 }
 #Baranya Region (232000) #see Croatia.txt for balance of Region
 #under the rule of Austria in 1836  
@@ -354,8 +397,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 21670
+		size = 13435
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 8235
+	}	
 
 	clergymen = {
 		culture = hungarian
@@ -422,8 +471,14 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 18545
+		size = 11498
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 7047
+	}	
 
 	officers = {
 		culture = croat
@@ -453,8 +508,15 @@
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 7435 
+		size = 4461 
 	}
+	
+	serfs = {
+		culture = croat
+		religion = catholic
+		size = 2974 
+	}
+	
 }
 #Dunautul Region (1892000)  
 #under the rule of Austria in 1836  
@@ -506,8 +568,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 60500
+		size = 36300
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 24200
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -537,8 +605,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size =  38050    
+		size =  22830    
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size =  15220    
+	}	
 
 	clergymen = {
 		culture = hungarian
@@ -605,8 +679,14 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 15500
+		size = 9300
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 6200
+	}	
 }
 #Gyor (384000/96000 POPS) 
 642 = {
@@ -645,8 +725,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 45425
+		size = 27709
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 17716
+	}	
 
 	clergymen = {
 		culture = hungarian
@@ -670,8 +756,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size =  4525   
+		size =  2760   
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size =  1765   
+	}	
 
 	clergymen = {
 		culture = hungarian
@@ -695,8 +787,14 @@
 	farmers = {
 		culture = hungarian
 		religion = jewish
-		size = 825     
+		size = 495     
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = jewish
+		size = 330     
+	}	
 
 	clergymen = {
 		culture = south_german
@@ -720,8 +818,14 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 1800 
+		size = 1098 
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 702 
+	}	
 
 	clergymen = {
 		culture = slovak
@@ -745,8 +849,14 @@
 	farmers = {
 		culture = slovak
 		religion = catholic
-		size = 29925 
+		size = 18255 
 	}
+	
+	serfs = {
+		culture = slovak
+		religion = catholic
+		size = 11670 
+	}	
 }
 #Szekesfehervar (364000/91000 POPS) 
 643 = {
@@ -778,8 +888,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size =  41000
+		size =  25420
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size =  15580
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -809,8 +925,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 16275    
+		size = 10578    
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 5697    
+	}	
 
 	aristocrats = {
 		culture = south_german
@@ -840,8 +962,15 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 23900
+		size = 15535
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 8365
+	}
+	
 }
 #Kaposvar (392000/98000 POPS) 
 644 = {
@@ -873,8 +1002,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 66550
+		size = 41926
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 24624
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -904,8 +1039,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 13525     
+		size = 8521     
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 5004     
+	}	
 
 	clergymen = {
 		culture = hungarian
@@ -954,8 +1095,15 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 6525
+		size = 4111
 	}
+
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 2414
+	}	
+	
 }
 #Kecskemet (108000/27000 POPS) 
 645 = {
@@ -987,8 +1135,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 9125 
+		size = 5474 
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 3650 
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1018,8 +1172,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 5550     
+		size = 3330     
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 2220     
+	}	
 
 	clergymen = {
 		culture = hungarian
@@ -1109,8 +1269,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 36625 
+		size = 21975 
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 14650 
+	}	
 
 	clergymen = {
 		culture = hungarian
@@ -1136,6 +1302,12 @@
 		religion = protestant
 		size = 24125   
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 9650   
+	}	
 
 	clergymen = {
 		culture = hungarian
@@ -1159,9 +1331,15 @@
 	farmers = {
 		culture = hungarian
 		religion = jewish
-		size = 1325    
+		size = 795    
 	}
 
+	serfs = {
+		culture = hungarian
+		religion = jewish
+		size = 530    
+	}	
+	
 	clergymen = {
 		culture = slovak
 		religion = catholic
@@ -1184,8 +1362,15 @@
 	farmers = {
 		culture = slovak
 		religion = catholic
-		size = 6600 
+		size = 3960 
 	}
+
+	serfs = {
+		culture = slovak
+		religion = catholic
+		size = 2640 
+	}	
+	
 }
 #Partium Region (1112000) #See Romania.txt for balance of region 
 #under the rule of Austria in 1836  
@@ -1225,8 +1410,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 18725
+		size = 11984
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 6741
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1256,7 +1447,13 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 8975    
+		size = 5420    
+	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 3555    
 	}
 
 	clergymen = {
@@ -1345,8 +1542,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 54375 
+		size = 32625 
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 21750 
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1376,8 +1579,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 80850    
+		size = 48510    
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 32340    
+	}	
 
 	clergymen = {
 		culture = hungarian
@@ -1401,8 +1610,14 @@
 	farmers = {
 		culture = hungarian
 		religion = jewish
-		size = 825     
+		size = 495     
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = jewish
+		size = 330     
+	}	
 
 	clergymen = {
 		culture = south_german
@@ -1426,8 +1641,15 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 5375  
+		size = 3225  
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 2150  
+	}
+	
 }
 #Bekescsab (328000/82000 POPS) 
 650 = {
@@ -1465,8 +1687,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 27375
+		size = 17520
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 9855
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1496,8 +1724,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 42925    
+		size = 27472    
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 15453    
+	}	
 
 	clergymen = {
 		culture = hungarian
@@ -1546,6 +1780,13 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 1675  
+		size = 1072  
 	}
+
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 603  
+	}	
+	
 }

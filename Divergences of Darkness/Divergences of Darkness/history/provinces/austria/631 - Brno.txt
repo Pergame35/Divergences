@@ -1,10 +1,17 @@
 owner = BOH
 controller = BOH
 add_core = BOH
-
 trade_goods = coal
-life_rating = 32
-terrain = hilly_farmland
+life_rating = 35
+1861.1.1 = { railroad = 3 }
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+}
+
 state_building = {
 	level = 2 
 	building = steel_factory
@@ -18,5 +25,15 @@ state_building = {
 state_building = {
 	level = 2 
 	building = luxury_furniture_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = cement_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2 
+	building = glass_factory
 	upgrade = yes
 }

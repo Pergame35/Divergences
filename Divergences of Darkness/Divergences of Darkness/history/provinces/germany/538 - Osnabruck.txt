@@ -4,11 +4,10 @@ add_core = FRI
 add_core = GER
 add_core = LIP
 trade_goods = grain
-life_rating = 32
-terrain = marginal_farmland
+life_rating = 40
+1861.1.1 = { railroad = 3 }
 state_building = {
 	level = 2 
 	building = clipper_shipyard
 	upgrade = yes
 }
-

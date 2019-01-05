@@ -1,3 +1,9 @@
-trade_goods = tobacco
-life_rating = 15
-terrain = seasonal_jungle_mountains
+trade_goods = grain
+life_rating = 30
+colonial = 2
+terrain = small_island
+1861.1.1 = {
+	owner = FRA
+	controller = FRA
+	naval_base = 1
+}

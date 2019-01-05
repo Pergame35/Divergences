@@ -4,7 +4,7 @@ culture = afro_latino
 religion = catholic
 government = democracy
 plurality = 0.0
-nationalvalue = nv_liberty
+nationalvalue = nv_order
 literacy = 0.12
 civilized = yes
 
@@ -17,13 +17,7 @@ press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = jefferson_method
 political_parties = non_secret_ballots
-minorities_reform = limited
-immigration_policy = open_immigration
-conscription=two_year_draft
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
@@ -31,30 +25,27 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
+school_reforms = no_schools
+
+# New Reforms
+conscription = two_year_draft
+debt_law = peonage
+penal_system = capital_punishment
+child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
+
+set_country_flag = new_world_nation
 
 ruling_party = AAA_liberal_5
-last_election = 1832.3.10
+last_election = 1835.1.1
 upper_house = {
 	fascist = 0
-	liberal = 52
-	conservative = 31
-	reactionary = 17
+	liberal = 25
+	conservative = 60
+	reactionary = 15
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
-
-post_napoleonic_thought = 1
-flintlock_rifles = 1
-bronze_muzzle_loaded_artillery = 1
-army_command_principle = 1
-post_nelsonian_thought = 1
-the_command_principle = 1
-private_banks = 1
-no_standard = 1
-guild_based_production = 1
-classicism_n_early_romanticism = 1
-late_enlightenment_philosophy = 1
-enlightenment_thought = 1
-water_wheel_power = 1
-publishing_industry = 1

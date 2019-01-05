@@ -82,19 +82,19 @@ army = {
 	location = 487
 	regiment = {
 		name= "1. Granaderos del Rey"
-		type = regular
+		type = infantry
 		home = 474
 	}
 
 	regiment = {
 		name= "2. Granaderos del Rey"
-		type = regular
+		type = infantry
 		home = 474
 	}     
 	
 	regiment = {
 		name= "6. Brigada de Infantería 'La Granja'"
-		type = regular
+		type = infantry
 		home = 487
 	}
   
@@ -111,13 +111,13 @@ army = {
 
 	regiment = {
 		name= "1. Brigada de Infantería 'El Ramillete'"
-		type = regular
+		type = infantry
 		home = 477
 	}
 
 	regiment = {
 		name= "2. Brigada de Infantería"
-		type = regular
+		type = infantry
 		home = 477
 	}
 
@@ -128,8 +128,8 @@ army = {
 	}        
 
 	regiment = {
-		name= "3. Regularia Real"
-		type = regular
+		name= "3. infantryia Real"
+		type = infantry
 		home = 474
 	}   
 
@@ -152,19 +152,19 @@ army = {
 	
 	regiment = {
 		name= "4. Brigada de Infantería 'San Jorge'"
-		type = regular
+		type = infantry
 		home = 487
 	}
 
 	regiment = {
 		name= "1. Brigada de Artillería"
-		type = regular
+		type = infantry
 		home = 487
 	}
 	
 	regiment = {
 		name= "5. Brigada de Infantería"
-		type = regular
+		type = infantry
 		home = 487
 	}
   
@@ -181,31 +181,31 @@ army = {
 	location = 2270
 	regiment = {
 		name= "1. Granaderos del Rey"
-		type = regular
+		type = infantry
 		home = 525
 	}
 
 	regiment = {
 		name= "2. Granaderos del Rey"
-		type = regular
+		type = infantry
 		home = 525
 	}
 
 	regiment = {
-		name= "3. regularia Real"
-		type = regular
+		name= "3. infantryia Real"
+		type = infantry
 		home = 484
 	}
 
 	regiment = {
 		name= "1. Brigada de Infantería 'El Ramillete'"
-		type = regular
+		type = infantry
 		home = 484
 	}
 
 	regiment = {
 		name= "2. Brigada de Infantería"
-		type = regular
+		type = infantry
 		home = 512
 	}
 
@@ -243,13 +243,13 @@ army = {
 
 	regiment = {
 		name= "1. Brigada de Infantería"
-		type = regular
+		type = infantry
 		home = 521
 	}
 
 		regiment = {
 		name= "2. Brigada de Infantería"
-		type = regular
+		type = infantry
 		home = 521
 	}
 }

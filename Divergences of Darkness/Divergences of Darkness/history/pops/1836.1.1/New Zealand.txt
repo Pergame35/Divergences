@@ -51,6 +51,7 @@
         size = 6
     }
 }
+
 #New Plymouth (8000/2000 POPS)
 2510 = {
     clergymen = {
@@ -131,6 +132,35 @@
         size = 8025
     }
 }
+
+#Kirikiriroa or Hamilton - Former Wake
+2524 = {
+
+	clergymen = {
+		culture = maori
+		religion = animist
+		size = 50
+	}
+
+	artisans = {
+		culture = maori
+		religion = animist
+		size = 50
+	}
+
+	soldiers = {
+		culture = maori
+		religion = animist
+		size = 75
+	}
+	
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 1488
+	}
+}
+
 #South Island Region (24000)
 #Dunedin (4000/1000 POPS)
 2513 = {
@@ -163,7 +193,7 @@
         religion = animist
         size = 900
     }
-}
+}	
 #Hokitikia (4000/1000 POPS)
 2514 = {
     clergymen = {

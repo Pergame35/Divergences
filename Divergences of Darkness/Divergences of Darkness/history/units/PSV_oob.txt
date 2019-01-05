@@ -7,23 +7,23 @@ leader = {
 }
 
 army = {
-	name = "Pskovian regular"
+	name = "Pskovian infantry"
 	location = 1006
 	regiment = {
 		name= "1. Pskovian Brigade"
-		type = regular
+		type = infantry
 		home = 994
 	}
 
 	regiment = {
 		name= "2. Pskovian Brigade"
-		type = regular
+		type = infantry
 		home = 994
 	}
 
 	regiment = {
 		name= "3. Pskovian Brigade"
-		type = regular
+		type = infantry
 		home = 994
 	}
 }

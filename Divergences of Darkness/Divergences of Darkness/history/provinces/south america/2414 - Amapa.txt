@@ -1,19 +1,10 @@
-owner = CLM
-controller = CLM
-add_core = CLM
-add_core = GUY
-add_core = CAS
-add_core = GRA
-add_core = TAP 
-trade_goods = tropical_wood
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = KUR
+trade_goods = grain
 life_rating = 35
-terrain = seasonal_jungle
-           
-
-1835.1.1 = {
-	controller = SPA
-} 
-
-1837.1.1 = {
-	controller = CLM
+1861.1.1 = {
+	owner = TUR
+	controller = TUR
 }

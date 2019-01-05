@@ -1,41 +1,98 @@
+# Stock Market Crash
+country_event = {
+	id = 22500
+	title = "EVTNAME22500"
+	desc = "EVTDESC22500"
+	news = yes
+	news_desc_long = "EVTDESC22500_NEWS_LONG"
+	news_desc_medium = "EVTDESC22500_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC22500_NEWS_SHORT"
+	picture = "Bankruptcy"
+	
+	trigger = {
+		NOT = { government = proletarian_dictatorship }
+		government_interventionism = 1
+		NOT = { has_country_modifier = stock_market_crash }
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.9
+			unemployment = 0.1
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			keynesian_economics = 1
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_country = { has_country_modifier = stock_market_crash }
+		}
+		modifier = {
+			factor = 1.1
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.5
+			invention = ludwig_von_mises
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA22500"
+		add_country_modifier = {
+			name = stock_market_crash
+			duration = 730
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB22500"
+		any_pop = {
+			militancy = 1
+		}
+		add_country_modifier = {
+			name = stock_market_crash
+			duration = 365
+		}
+	}
+}
+
 # Great Depression
 country_event = {
 	id = 22510
 	title = "EVTNAME22510"
 	desc = "EVTDESC22510"
+	major = yes
 	news = yes
 	news_desc_long = "EVTDESC22510_NEWS_LONG"
 	news_desc_medium = "EVTDESC22510_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC22510_NEWS_SHORT"
-	major = yes
-	picture = "Bankruptcy"
 	
 	trigger = {
-		NOT = { has_global_flag = great_depression_happened }
 		has_country_modifier = stock_market_crash
 		is_greater_power = yes
-		any_neighbor_country = {
-			has_country_modifier = stock_market_crash
-		}
+		any_neighbor_country = { has_country_modifier = stock_market_crash }
 	}
 	
 	mean_time_to_happen = {
 		months = 6
 		modifier = {
-			factor = 0.5
-			unemployment = 0.15
+			factor = 0.9
+			unemployment = 0.05
 		}
 		modifier = {
-			factor = 10
+			factor = 0.9
 			keynesian_economics = 1
 		}
 		modifier = {
-			factor = 100
-			NOT = { year = 1900 }
-		}
-		modifier = {
-			factor = 0.7
-			war_exhaustion = 10
+			factor = 0.9
+			war_exhaustion = 4
 		}
 		modifier = {
 			factor = 0.9
@@ -46,205 +103,23 @@ country_event = {
 			average_consciousness = 5
 		}
 		modifier = {
-			factor = 0.6
+			factor = 1.5
 			economic_policy = laissez_faire
-		}
-		modifier = {
-			factor = 2
-			economic_policy = interventionism
-		}
-		modifier = {
-			factor = 3
-			economic_policy = state_capitalism
 		}
 	}
 	
 	option = {
-		name = "22510.A"
-		remove_country_modifier = economic_trend
-		add_country_modifier = {
-			name = economic_trend
-			duration = 365
-		}
-		set_global_flag = great_depression_happened
-		remove_country_modifier = Bull_market
-		remove_country_modifier = recession
-		remove_country_modifier = economic_boom
-		remove_country_modifier = stock_market_crash
-		add_country_modifier = {
-			name = great_depression
-			duration = 3650
-		}
+		name = "EVTOPTA22510"
 		any_country = {
 			limit = {
 				civilized = yes
-				NOT = { government = proletarian_dictatorship }
+				NOT = { government =  proletarian_dictatorship }
 			}
-			country_event = 22515
-		}
-	}
-}
-
-# Great Depression
-country_event = {
-	id = 22515
-	title = "EVTNAME22510"
-	desc = "EVTDESC22510"
-	picture = "food_shortage"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "22515.A"
-		remove_country_modifier = Bull_market
-		remove_country_modifier = recession
-		remove_country_modifier = economic_boom
-		remove_country_modifier = stock_market_crash
-		remove_country_modifier = economic_trend
-		add_country_modifier = {
-			name = great_depression
-			duration = 3650
-		}
-		add_country_modifier = {
-			name = economic_trend
-			duration = 365
-		}
-	}
-}
-
-#Signs of Relief
-country_event = {
-	id = 22516
-	title = "EVTNAME22516"
-	desc = "EVTDESC22516"
-	picture = "food_shortage"
-	
-	trigger = {
-		has_country_modifier = great_depression
-		NOT = {
-			government = proletarian_dictatorship
-			has_country_modifier = economic_trend
-			has_country_modifier = in_bankrupcy
-			has_country_modifier = generalised_debt_default
-			unemployment = 0.4
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 50
-		modifier = {
-			factor = 0.5
-			war = yes
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.1
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.2
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.3
-		}
-		modifier = {
-			factor = 0.8
-			business_regulations = 1
-		}
-		modifier = {
-			factor = 0.8
-			market_regulations = 1
-		}
-		modifier = {
-			factor = 0.9
-			invention = private_bank_monitoring
-		}
-		modifier = {
-			factor = 0.9
-			economic_responsibility = 1
-		}
-		modifier = {
-			factor = 0.9
-			central_bank_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 1.2
-			invention = hyperinflation
-		}
-		modifier = {
-			factor = 1.1
-			invention = capital_for_investors
-		}
-		modifier = {
-			factor = 1.1
-			market_determined_exchange_rates = 1
-		}
-		modifier = {
-			factor = 1.1
-			ad_hoc_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 0.8
-			keynesian_economics = 1
-		}
-		modifier = {
-			factor = 1.1
-			investment_banks = 1
-		}
-		modifier = {
-			factor = 1.1
-			mutual_funds = 1
-		}
-		modifier = {
-			factor = 0.9
-			any_neighbor_country = {
-				civilized = yes
-				NOT = { has_country_modifier = great_depression }
-				NOT = { government = proletarian_dictatorship }
+			remove_country_modifier = stock_market_crash
+			add_country_modifier = {
+				name = great_depression
+				duration = 730
 			}
-		}
-		modifier = {
-			factor = 0.8
-			any_neighbor_country = {
-				has_country_modifier = Bull_market
-			}
-		}
-		modifier = {
-			factor = 0.6
-			any_neighbor_country = {
-				has_country_modifier = economic_boom
-			}
-		}
-		modifier = {
-			factor = 2
-			economic_policy = laissez_faire
-		}
-		modifier = {
-			factor = 1.25
-			economic_policy = interventionism
-		}
-		modifier = {
-			factor = 0.75
-			economic_policy = state_capitalism
-		}
-		modifier = {
-			factor = 0.5
-			economic_policy = planned_economy
-		}
-	}
-	
-	option = {
-		name = "22516.A"
-		remove_country_modifier = economic_trend
-		add_country_modifier = {
-			name = economic_trend
-			duration = 365
-		}
-		remove_country_modifier = great_depression
-		add_country_modifier = {
-			name = stock_market_crash
-			duration = 1825
 		}
 	}
 }
@@ -259,27 +134,23 @@ country_event = {
 	trigger = {
 		economic_policy = laissez_faire
 		private_bank_money_bill_printing = 1
-		NOT = {
-			has_country_modifier = central_bank_established
-		}
+		NOT = { has_country_modifier = central_bank_established }
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 		modifier = {
 			factor = 0.9
-			NOT = {
-				average_militancy = 4
-			}
+			NOT = { average_militancy = 4 }
 		}
 		modifier = {
 			factor = 0.9
 			average_consciousness = 4
 		}
 		modifier = {
-			factor = 0.5
+			factor = 1.5
 			government_interventionism = 1
-		}
+		}	
 	}
 	
 	option = {
@@ -287,37 +158,25 @@ country_event = {
 		random_list = {
 			10 = {
 				random_state = {
-					limit = {
-						is_colonial = no
-					}
-					any_pop = {
-						militancy = 1
-					}
+					limit = { is_colonial = no }
+					any_pop = { militancy = 1 }
 				}
 			}
 			
 			10 = {
 				random_state = {
-					limit = {
-						is_colonial = no
-					}
-					any_pop = {
-						militancy = -3
-					}
+					limit = { is_colonial = no }
+					any_pop = { militancy = -3 }
 				}
 			}
-		}		
+		}
 	}
 	
 	option = {
 		name = "EVTOPTB22520"
 		random_state = {
-			limit = {
-				is_colonial = no
-			}
-			any_pop = {
-				consciousness = -1
-			}
+			limit = { is_colonial = no }
+			any_pop = { consciousness = -1 }
 		}
 	}
 }
@@ -332,13 +191,14 @@ country_event = {
 	trigger = {
 		early_railroad = 1
 		stock_exchange = 1
+		economic_policy = laissez_faire
 		NOT = { government = proletarian_dictatorship }
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 		modifier = {
-			factor = 0.5
+			factor = 1.1
 			economic_policy = laissez_faire
 		}
 		modifier = {
@@ -353,7 +213,9 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA22530"
+		treasury = -10000
 		random_state = {
+			limit = { is_colonial = no }
 			any_owned = {
 				limit = { 
 					can_build_in_province = {
@@ -364,14 +226,13 @@ country_event = {
 				infrastructure = 1
 			}
 		}
+		ai_chance = { factor = 100 modifier = { factor = 0 NOT = { money = 10000 } } }
 	}
 	
 	option = {
 		name = "EVTOPTB22530"
 		random_state = {
-			any_pop = {
-				militancy = -1
-			}
+			any_pop = { militancy = -1 }
 		}
 	}
 }
@@ -385,13 +246,12 @@ country_event = {
 	
 	trigger = {
 		stock_exchange = 1
-		NOT = {
-			government = proletarian_dictatorship
-		}
+		NOT = { government = proletarian_dictatorship }
+		any_owned_province = { is_state_capital = yes NOT = { has_province_modifier = local_stock_exchange } }
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 0.9
 			economic_policy = laissez_faire
@@ -412,14 +272,9 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA22540"
-		random_province = {
-			limit = {
-				is_colonial = no
-			}
-			add_province_modifier = {
-				name = local_stock_exchange
-				duration = -1
-			}
+		random_state = {
+			limit = { is_colonial = no }
+			any_owned = { limit = { is_state_capital = yes } add_province_modifier = { name = local_stock_exchange duration = -1 } }
 		}
 	}
 }
@@ -441,7 +296,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 1000
 		modifier = {
 			factor = 0.9
 			average_consciousness = 4
@@ -451,7 +306,7 @@ country_event = {
 			average_militancy = 4
 		}
 		modifier = {
-			factor = 10
+			factor = 1.5
 			modern_central_bank_system = 1
 		}
 	}
@@ -460,7 +315,7 @@ country_event = {
 		name = "EVTOPTA22550"
 		random_state = {
 			any_pop = {
-				money = -50
+				money = -20
 				militancy = 5
 				consciousness = 5
 			}
@@ -473,6 +328,55 @@ country_event = {
 			militancy = 1
 			consciousness = 1
 		}
+	}
+}
+
+# Economic Boom
+country_event = {
+	id = 22560
+	title = "EVTNAME22560"
+	desc = "EVTDESC22560"
+	picture = "greatpowers"
+	
+	trigger = {
+		business_banks = 1
+		poor_strata_everyday_needs = 0.5
+		NOT = { unemployment = 0.2 }
+		NOT = { has_country_modifier = economic_boom }
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.9
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { unemployment = 0.05 }
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 1.2
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 2
+			unemployment = 0.1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA22560"
+		add_country_modifier = { name = economic_boom duration = 365 }
+	}
+	
+	option = {
+		name = "EVTOPTB22560"
+		any_pop = { militancy = -1 consciousness = -1 }
 	}
 }
 
@@ -491,45 +395,29 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 800
 		modifier = {
 			factor = 0.9
-			NOT = {
-				economic_policy = laissez_faire
-			}
+			NOT = { economic_policy = laissez_faire }
 		}
 		modifier = {	
 			factor = 0.9
-			NOT = {
-				poor_strata_everyday_needs = 0.5
-			}
+			NOT = { poor_strata_everyday_needs = 0.5 }
 		}
 		modifier = {
 			factor = 1.5
-			NOT = {
-				unemployment = 0.1
-			}
+			NOT = { unemployment = 0.1 }
 		}	
 	}
 	
 	option = {
 		name = "EVTOPTB22570"
-		random_state = {
-			any_owned = {
-				add_province_modifier = {
-					name = local_economic_downturn
-					duration = 730
-				}
-			}
-		}
+		random_state = { any_owned = { add_province_modifier = { name = local_economic_downturn duration = 730 } } }
 	}
 	
 	option = {
 		name = "EVTOPTA22570"
-		capitalists = {
-			militancy = 1
-			consciousness = 1
-		}
+		capitalists = { militancy = 1 consciousness = 1 }
 	}
 }
 
@@ -541,14 +429,13 @@ country_event = {
 	picture = "railway_company"
 	
 	trigger = {
-		NOT = {
-			economic_policy = planned_economy
-		}
+		NOT = { economic_policy = planned_economy }
 		market_regulations = 1
+		any_owned_province = { is_colonial = no has_building = railroad }
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 800
 		modifier = {
 			factor = 0.9
 			bank_inspection_board = 1
@@ -572,1238 +459,752 @@ country_event = {
 		random_state = {
 			limit = {
 				is_colonial = no
+				any_owned_province = { has_building = railroad }
 			}
-			any_owned = {
-				infrastructure = -1
-			}
+			any_owned = { infrastructure = -1 }
 		}
 	}
 	
 	option = {
 		name = "EVTOPTB22580"
-		poor_strata = {
-			consciousness = 1
-			militancy = 1
-		}
+		poor_strata = { consciousness = 1 militancy = 1 }
 	}
 }
 
-
-#################################################################################################################
-#																												#
-#                       						New Economic Events												#
-#																												#
-#################################################################################################################
-
-#Bull Market
+# Choosing an economic policy - Mercantilism/No Policy
 country_event = {
-	id = 22590
-	title = "EVTNAME22590"
-	desc = "EVTDESC22590"
-	picture = "Merchants"
+	id = 22581
+	title = "EVTNAME22581"
+	desc = "EVTDESC22581"
+	picture = "private_banks"
 	
-	trigger = {
-		stock_exchange = 1
-		civilized = yes
-		NOT = {
-			government = proletarian_dictatorship
-			has_country_modifier = Bull_market
-			has_country_modifier = great_depression
-			has_country_modifier = stock_market_crash
-			has_country_modifier = economic_boom
-			has_country_modifier = economic_trend
-			has_country_modifier = in_bankrupcy
-			has_country_modifier = generalised_debt_default
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 100
-		modifier = {
-			factor = 0.8
-			war = yes
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.1
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.2
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.3
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.4
-		}
-		modifier = {
-			factor = 1.2
-			business_regulations = 1
-		}
-		modifier = {
-			factor = 1.2
-			market_regulations = 1
-		}
-		modifier = {
-			factor = 1.1
-			invention = private_bank_monitoring
-		}
-		modifier = {
-			factor = 1.1
-			economic_responsibility = 1
-		}
-		modifier = {
-			factor = 1.1
-			central_bank_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 0.8
-			invention = hyperinflation
-		}
-		modifier = {
-			factor = 0.9
-			invention = capital_for_investors
-		}
-		modifier = {
-			factor = 0.9
-			market_determined_exchange_rates = 1
-		}
-		modifier = {
-			factor = 0.9
-			ad_hoc_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 0.9
-			keynesian_economics = 1
-		}
-		modifier = {
-			factor = 0.9
-			investment_banks = 1
-		}
-		modifier = {
-			factor = 0.9
-			mutual_funds = 1
-		}
-		modifier = {
-			factor = 2
-			any_neighbor_country = {
-				has_country_modifier = great_depression
-			}
-		}
-		modifier = {
-			factor = 1.5
-			any_neighbor_country = {
-				has_country_modifier = stock_market_crash
-			}
-		}
-		modifier = {
-			factor = 0.9
-			any_neighbor_country = {
-				has_country_modifier = Bull_market
-			}
-		}
-		modifier = {
-			factor = 0.7
-			any_neighbor_country = {
-				has_country_modifier = economic_boom
-			}
-		}
-		modifier = {
-			factor = 0.9
-			has_country_modifier = recession
-		}
-		modifier = {
-			factor = 0.8
-			economic_policy = laissez_faire
-		}
-		modifier = {
-			factor = 1.2
-			economic_policy = interventionism
-		}
-		modifier = {
-			factor = 1.5
-			economic_policy = state_capitalism
-		}
-		modifier = {
-			factor = 2
-			economic_policy = planned_economy
-		}
-	}
-
-	option = {
-		name = "22590.A"
-		remove_country_modifier = economic_trend
-		add_country_modifier = {
-			name = economic_trend
-			duration = 365
-		}
-		remove_country_modifier = recession
-		add_country_modifier = {
-			name = Bull_market
-			duration = 1825
-		}
-	}
-}
-
-#Economy Cools
-country_event = {
-	id = 22591
-	title = "EVTNAME22591"
-	desc = "EVTDESC22591"
-	picture = "Bankruptcy"
-	
-	trigger = {
-		OR = {
-			has_country_modifier = Bull_market
-			has_country_modifier = economic_boom
-		}
-		NOT = {
-			government = proletarian_dictatorship
-			has_country_modifier = economic_trend
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 36
-		modifier = {
-			factor = 1.5
-			war = yes
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				has_country_modifier = in_bankrupcy
-				has_country_modifier = generalised_debt_default
-			}
-		}
-		modifier = {
-			factor = 0.9
-			unemployment = 0.1
-		}
-		modifier = {
-			factor = 0.9
-			unemployment = 0.2
-		}
-		modifier = {
-			factor = 0.9
-			unemployment = 0.3
-		}
-		modifier = {
-			factor = 0.9
-			unemployment = 0.4
-		}
-		modifier = {
-			factor = 0.8
-			business_regulations = 1
-		}
-		modifier = {
-			factor = 0.8
-			market_regulations = 1
-		}
-		modifier = {
-			factor = 0.9
-			invention = private_bank_monitoring
-		}
-		modifier = {
-			factor = 0.9
-			economic_responsibility = 1
-		}
-		modifier = {
-			factor = 0.9
-			central_bank_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 1.2
-			invention = hyperinflation
-		}
-		modifier = {
-			factor = 1.1
-			invention = capital_for_investors
-		}
-		modifier = {
-			factor = 1.1
-			market_determined_exchange_rates = 1
-		}
-		modifier = {
-			factor = 1.1
-			ad_hoc_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 0.8
-			keynesian_economics = 1
-		}
-		modifier = {
-			factor = 1.1
-			investment_banks = 1
-		}
-		modifier = {
-			factor = 1.1
-			mutual_funds = 1
-		}
-		modifier = {
-			factor = 0.5
-			any_neighbor_country = {
-				has_country_modifier = great_depression
-			}
-		}
-		modifier = {
-			factor = 0.75
-			any_neighbor_country = {
-				has_country_modifier = stock_market_crash
-			}
-		}
-		modifier = {
-			factor = 1.1
-			any_neighbor_country = {
-				has_country_modifier = Bull_market
-			}
-		}
-		modifier = {
-			factor = 1.2
-			any_neighbor_country = {
-				has_country_modifier = economic_boom
-			}
-		}
-		modifier = {
-			factor = 2
-			economic_policy = laissez_faire
-		}
-		modifier = {
-			factor = 1.25
-			economic_policy = interventionism
-		}
-		modifier = {
-			factor = 0.75
-			economic_policy = state_capitalism
-		}
-		modifier = {
-			factor = 0.5
-			economic_policy = planned_economy
-		}
-	}
+	is_triggered_only = yes
 	
 	option = {
-		name = "97310.A"
-		remove_country_modifier = economic_trend
-		add_country_modifier = {
-			name = economic_trend
-			duration = 365
-		}
-		random_owned = {
-			limit = {
-				owner = { has_country_modifier = Bull_market }
-			}
-			owner = {
-				remove_country_modifier = Bull_market
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = { has_country_modifier = economic_boom }
-			}
-			owner = {
-				remove_country_modifier = economic_boom
-				add_country_modifier = {
-					name = Bull_market
-					duration = 1825
+		name = "EVTOPTA22581" #Mercantilism
+		add_country_modifier = { name = mercantilism duration = 3650 }
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 2
+				NOT = { money = 50000 }
+				OR = {
+					tag = AUS
+					tag = KUK
+					tag = DNB
+					tag = TUR
+					tag = RUS
 				}
 			}
-		}
-	}
-}
-
-#Recession
-country_event = {
-	id = 22595
-	title = "EVTNAME22595"
-	desc = "EVTDESC22595"
-	picture = "Bankruptcy"
-	
-	trigger = {
-		stock_exchange = 1
-		civilized = yes
-		NOT = {
-			government = proletarian_dictatorship
-			has_country_modifier = recession
-			has_country_modifier = great_depression
-			has_country_modifier = stock_market_crash
-			has_country_modifier = economic_boom
-			has_country_modifier = economic_trend
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 100
-		modifier = {
-			factor = 1.2
-			war = yes
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				has_country_modifier = in_bankrupcy
-				has_country_modifier = generalised_debt_default
+			modifier = {
+				factor = 2
+				NOT = { money = 5000 }
 			}
-		}
-		modifier = {
-			factor = 0.9
-			unemployment = 0.1
-		}
-		modifier = {
-			factor = 0.9
-			unemployment = 0.2
-		}
-		modifier = {
-			factor = 0.9
-			unemployment = 0.3
-		}
-		modifier = {
-			factor = 0.9
-			unemployment = 0.4
-		}
-		modifier = {
-			factor = 1.2
-			business_regulations = 1
-		}
-		modifier = {
-			factor = 1.2
-			market_regulations = 1
-		}
-		modifier = {
-			factor = 1.1
-			invention = private_bank_monitoring
-		}
-		modifier = {
-			factor = 1.1
-			economic_responsibility = 1
-		}
-		modifier = {
-			factor = 1.1
-			central_bank_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 0.8
-			invention = hyperinflation
-		}
-		modifier = {
-			factor = 0.9
-			invention = capital_for_investors
-		}
-		modifier = {
-			factor = 0.9
-			market_determined_exchange_rates = 1
-		}
-		modifier = {
-			factor = 0.9
-			ad_hoc_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 1.2
-			keynesian_economics = 1
-		}
-		modifier = {
-			factor = 0.9
-			investment_banks = 1
-		}
-		modifier = {
-			factor = 0.9
-			mutual_funds = 1
-		}
-		modifier = {
-			factor = 0.5
-			any_neighbor_country = {
-				has_country_modifier = great_depression
+			modifier = {
+				factor = 1.2
+				NOT = { money = 20000 }
 			}
-		}
-		modifier = {
-			factor = 0.75
-			any_neighbor_country = {
-				has_country_modifier = stock_market_crash
+			modifier = {
+				factor = 1.3
+				NOT = { money = 50000 }
 			}
-		}
-		modifier = {
-			factor = 1.1
-			any_neighbor_country = {
-				has_country_modifier = Bull_market
+			modifier = {
+				factor = 1.1
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+				}
 			}
-		}
-		modifier = {
-			factor = 1.2
-			any_neighbor_country = {
-				has_country_modifier = economic_boom
+			modifier = {
+				factor = 1.2
+				vote_franschise = none_voting
 			}
-		}
-		modifier = {
-			factor = 0.9
-			has_country_modifier = Bull_market
-		}
-		modifier = {
-			factor = 0.8
-			economic_policy = laissez_faire
-		}
-		modifier = {
-			factor = 1.2
-			economic_policy = interventionism
-		}
-		modifier = {
-			factor = 1.5
-			economic_policy = state_capitalism
-		}
-		modifier = {
-			factor = 2
-			economic_policy = planned_economy
-		}
-	}
-
-	option = {
-		name = "22595.A"
-		remove_country_modifier = economic_trend
-		add_country_modifier = {
-			name = economic_trend
-			duration = 365
-		}
-		remove_country_modifier = Bull_market
-		add_country_modifier = {
-			name = recession
-			duration = 1825
-		}
-	}
-}
-
-#Economy Stabilizes
-country_event = {
-	id = 22596
-	title = "EVTNAME22596"
-	desc = "EVTDESC22596"
-	picture = "Merchants"
-	
-	trigger = {
-		has_country_modifier = recession
-		NOT = {
-			government = proletarian_dictatorship
-			has_country_modifier = economic_trend
-			has_country_modifier = in_bankrupcy
-			has_country_modifier = generalised_debt_default
-			unemployment = 0.4
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 50
-		modifier = {
-			factor = 0.5
-			war = yes
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.1
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.2
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.3
-		}
-		modifier = {
-			factor = 0.8
-			business_regulations = 1
-		}
-		modifier = {
-			factor = 0.8
-			market_regulations = 1
-		}
-		modifier = {
-			factor = 0.9
-			invention = private_bank_monitoring
-		}
-		modifier = {
-			factor = 0.9
-			economic_responsibility = 1
-		}
-		modifier = {
-			factor = 0.9
-			central_bank_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 1.2
-			invention = hyperinflation
-		}
-		modifier = {
-			factor = 1.1
-			invention = capital_for_investors
-		}
-		modifier = {
-			factor = 1.1
-			market_determined_exchange_rates = 1
-		}
-		modifier = {
-			factor = 1.1
-			ad_hoc_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 0.8
-			keynesian_economics = 1
-		}
-		modifier = {
-			factor = 1.1
-			investment_banks = 1
-		}
-		modifier = {
-			factor = 1.1
-			mutual_funds = 1
-		}
-		modifier = {
-			factor = 1.5
-			any_neighbor_country = {
-				has_country_modifier = great_depression
+			modifier = {
+				factor = 1.1
+				colonial_nation  = yes
 			}
-		}
-		modifier = {
-			factor = 1.25
-			any_neighbor_country = {
-				has_country_modifier = stock_market_crash
+			modifier = {
+				factor = 1.1
+				NOT = { literacy = 0.5 }
 			}
-		}
-		modifier = {
-			factor = 0.9
-			any_neighbor_country = {
-				has_country_modifier = Bull_market
+			modifier = {
+				factor = 1.2
+				NOT = { literacy = 0.3 }
 			}
-		}
-		modifier = {
-			factor = 0.8
-			any_neighbor_country = {
-				has_country_modifier = economic_boom
+			modifier = {
+				factor = 1.5
+				ruling_party_ideology = reactionary
 			}
-		}
-		modifier = {
-			factor = 2
-			economic_policy = laissez_faire
-		}
-		modifier = {
-			factor = 1.25
-			economic_policy = interventionism
-		}
-		modifier = {
-			factor = 0.75
-			economic_policy = state_capitalism
-		}
-		modifier = {
-			factor = 0.5
-			economic_policy = planned_economy
+			modifier = {
+				factor = 2
+				OR = {
+					ruling_party_ideology = fascist
+					ruling_party_ideology = communist
+				}
+			}
+			modifier = {
+				factor = 1.1
+				nationalvalue = nv_order
+			}
+			modifier = {
+				factor = 1.2
+				OR = {
+					nationalvalue = nv_autocracy
+					nationalvalue = nv_tradition
+				}
+			}
+			modifier = {
+				factor = 1.25
+				sphere_owner = { trade_policy = protectionism }
+			}
+			modifier = {
+				factor = 1.5
+				overlord = { trade_policy = protectionism }
+			}
 		}
 	}
 	
 	option = {
-		name = "22596.A"
-		remove_country_modifier = economic_trend
-		add_country_modifier = {
-			name = economic_trend
-			duration = 365
+		name = "EVTOPTB22581" #No policy
+		add_country_modifier = { name = no_trade_policy_set duration = 3650 }
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 1.1
+				nationalvalue = nv_productivity
+			}
+			modifier = {
+				factor = 1.2
+				nationalvalue = nv_liberty
+			}
+			modifier = {
+				factor = 2
+				sphere_owner = { trade_policy = free_trade }
+			}
+			modifier = {
+				factor = 3
+				overlord = { trade_policy = free_trade }
+			}
+			modifier = {
+				factor = 1.1
+				money = 100000
+			}
+			modifier = {
+				factor = 1.1
+				money = 200000
+			}
+			modifier = {
+				factor = 1.1
+				money = 400000
+			}
+			modifier = {
+				factor = 1.1
+				money = 800000
+			}
+			modifier = {
+				factor = 1.25
+				money = 1000000
+			}
+			modifier = {
+				factor = 1.1
+				industrial_score = 100
+			}
+			modifier = {
+				factor = 1.1
+				industrial_score = 200
+			}
+			modifier = {
+				factor = 1.1
+				industrial_score = 400
+			}
+			modifier = {
+				factor = 1.1
+				industrial_score = 800
+			}
+			modifier = {
+				factor = 1.25
+				industrial_score = 1000
+			}
 		}
-		remove_country_modifier = recession
+	}
+
+	option = {
+		name = "EVTOPTD22581" #Disable it
+		set_country_flag = trade_policy_choosing_disabled
+		ai_chance = { factor = 0 }
 	}
 }
 
-# Economic Boom
+# Choosing an economic policy - Mercantilism/No Policy/Economic Nationalism
 country_event = {
-	id = 22600
-	title = "EVTNAME22560"
-	desc = "EVTDESC22560"
-	picture = "banquet"
+	id = 22582
+	title = "EVTNAME22581"
+	desc = "EVTDESC22582"
+	picture = "private_banks"
 	
-	trigger = {
-		invention = stock_exchanges
-		civilized = yes
-		NOT = {
-			government = proletarian_dictatorship
-			economic_policy = planned_economy
-			has_country_modifier = stock_market_crash
-			has_country_modifier = great_depression
-			has_country_modifier = economic_boom
-			has_country_modifier = economic_trend
-			has_country_modifier = in_bankrupcy
-			has_country_modifier = generalised_debt_default
-			unemployment = 0.4
-		}
-		OR = {
-			has_country_modifier = Bull_market
-			AND = {
-				NOT = { unemployment = 0.2 }
-				poor_strata_everyday_needs = 0.5
-				rich_strata_everyday_needs = 0.8
+	is_triggered_only = yes
+	
+	#Economic Nationalism
+	option = {
+		name = "EVTOPTC22581"
+		add_country_modifier = { name = economic_nationalism duration = 3650 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.2
+				OR = {
+					nationalvalue = nv_autocracy
+					nationalvalue = nv_tradition
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { money = 200000 }
+				OR = {
+					tag = AUS
+					tag = KUK
+					tag = DNB
+					tag = TUR
+					tag = RUS
+					tag = USA
+				}
+			}
+			modifier = {
+				factor = 1.5
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					ruling_party_ideology = fascist
+					ruling_party_ideology = communist
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = { money = 5000 }
+			}
+			modifier = {
+				factor = 1.2
+				NOT = { money = 20000 }
+			}
+			modifier = {
+				factor = 1.3
+				NOT = { money = 50000 }
+			}
+			modifier = {
+				factor = 1.1
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { literacy = 0.6 }
+			}
+			modifier = {
+				factor = 1.1
+				is_greater_power = yes
+				NOT = { industrial_score = 50 }
+			}
+			modifier = {
+				factor = 1.1
+				is_greater_power = yes
+				NOT = { industrial_score = 100 }
+			}
+			modifier = {
+				factor = 1.1
+				is_greater_power = yes
+				NOT = { industrial_score = 200 }
+			}
+			modifier = {
+				factor = 1.1
+				colonial_nation  = yes
 			}
 		}
 	}
 	
-	mean_time_to_happen = {
-		months = 200
-		modifier = {
-			factor = 0.8
-			war = yes
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.1
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.2
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.3
-		}
-		modifier = {
-			factor = 1.1
-			unemployment = 0.4
-		}
-		modifier = {
-			factor = 1.2
-			business_regulations = 1
-		}
-		modifier = {
-			factor = 1.2
-			market_regulations = 1
-		}
-		modifier = {
-			factor = 1.1
-			invention = private_bank_monitoring
-		}
-		modifier = {
-			factor = 1.1
-			economic_responsibility = 1
-		}
-		modifier = {
-			factor = 1.1
-			central_bank_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 0.8
-			invention = hyperinflation
-		}
-		modifier = {
-			factor = 0.9
-			invention = capital_for_investors
-		}
-		modifier = {
-			factor = 0.9
-			market_determined_exchange_rates = 1
-		}
-		modifier = {
-			factor = 0.9
-			ad_hoc_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 0.9
-			keynesian_economics = 1
-		}
-		modifier = {
-			factor = 0.9
-			investment_banks = 1
-		}
-		modifier = {
-			factor = 0.9
-			mutual_funds = 1
-		}
-		modifier = {
-			factor = 2
-			any_neighbor_country = {
-				has_country_modifier = great_depression
+	#Mercantilism
+	option = {
+		name = "EVTOPTA22581"
+		add_country_modifier = { name = mercantilism duration = 3650 }
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 1.1
+				nationalvalue = nv_order
+			}
+			modifier = {
+				factor = 1.1
+				ruling_party_ideology = conservative
+			}
+			modifier = {
+				factor = 1.1
+				is_secondary_power = yes
+			}
+			modifier = {
+				factor = 1.1
+				colonial_nation  = yes
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { literacy = 0.5 }
+			}
+			modifier = {
+				factor = 1.2
+				NOT = { money = 20000 }
+			}
+			modifier = {
+				factor = 1.3
+				NOT = { money = 50000 }
+			}
+			modifier = {
+				factor = 1.25
+				sphere_owner = { trade_policy = protectionism }
+			}
+			modifier = {
+				factor = 1.5
+				overlord = { trade_policy = protectionism }
 			}
 		}
-		modifier = {
-			factor = 1.5
-			any_neighbor_country = {
-				has_country_modifier = stock_market_crash
+	}
+	
+	#No policy
+	option = {
+		name = "EVTOPTB22581"
+		add_country_modifier = { name = no_trade_policy_set duration = 3650 }
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0.9
+				vote_franschise = none_voting
+			}
+			modifier = {
+				factor = 1.1
+				nationalvalue = nv_productivity
+			}
+			modifier = {
+				factor = 1.2
+				nationalvalue = nv_liberty
+			}
+			modifier = {
+				factor = 2
+				sphere_owner = { trade_policy = free_trade }
+			}
+			modifier = {
+				factor = 3
+				overlord = { trade_policy = free_trade }
+			}
+			modifier = {
+				factor = 1.1
+				money = 100000
+			}
+			modifier = {
+				factor = 1.1
+				money = 200000
+			}
+			modifier = {
+				factor = 1.1
+				money = 400000
+			}
+			modifier = {
+				factor = 1.1
+				money = 800000
+			}
+			modifier = {
+				factor = 1.25
+				money = 1000000
+			}
+			modifier = {
+				factor = 1.2
+				industrial_score = 100
+			}
+			modifier = {
+				factor = 1.3
+				industrial_score = 200
+			}
+			modifier = {
+				factor = 1.4
+				industrial_score = 400
+			}
+			modifier = {
+				factor = 1.5
+				industrial_score = 800
+			}
+			modifier = {
+				factor = 1.8
+				industrial_score = 1000
 			}
 		}
-		modifier = {
-			factor = 0.9
-			any_neighbor_country = {
-				has_country_modifier = Bull_market
+	}
+
+	option = {
+		name = "EVTOPTD22581" #Disable it
+		set_country_flag = trade_policy_choosing_disabled
+		ai_chance = { factor = 0 }
+	}	
+}
+
+# Choosing an economic policy - Smithianism/No Policy
+country_event = {
+	id = 22584
+	title = "EVTNAME22581"
+	desc = "EVTDESC22584"
+	picture = "private_banks"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA22584" #Free Trade
+		add_country_modifier = { name = smithian_school duration = 3650 }
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 1.1
+				nationalvalue = nv_productivity
 			}
-		}
-		modifier = {
-			factor = 0.7
-			any_neighbor_country = {
-				has_country_modifier = economic_boom
+			modifier = {
+				factor = 1.2
+				nationalvalue = nv_liberty
 			}
-		}
-		modifier = {
-			factor = 0.5
-			has_country_modifier = Bull_market
-		}
-		modifier = {
-			factor = 0.8
-			economic_policy = laissez_faire
-		}
-		modifier = {
-			factor = 1.2
-			economic_policy = interventionism
-		}
-		modifier = {
-			factor = 1.5
-			economic_policy = state_capitalism
-		}
-		modifier = {
-			factor = 2
-			economic_policy = planned_economy
+			modifier = {
+				factor = 1.3
+				sphere_owner = { trade_policy = free_trade }
+			}
+			modifier = {
+				factor = 1.8
+				overlord = { trade_policy = free_trade }
+			}
+			modifier = {
+				factor = 1.1
+				money = 100000
+			}
+			modifier = {
+				factor = 1.1
+				money = 200000
+			}
+			modifier = {
+				factor = 1.1
+				money = 400000
+			}
+			modifier = {
+				factor = 1.1
+				money = 800000
+			}
+			modifier = {
+				factor = 1.25
+				money = 1000000
+			}
+			modifier = {
+				factor = 1.1
+				industrial_score = 100
+			}
+			modifier = {
+				factor = 1.1
+				industrial_score = 200
+			}
+			modifier = {
+				factor = 1.1
+				industrial_score = 400
+			}
+			modifier = {
+				factor = 1.1
+				industrial_score = 800
+			}
+			modifier = {
+				factor = 1.25
+				industrial_score = 1000
+			}
 		}
 	}
 	
 	option = {
-		name = "190411.A"
-		remove_country_modifier = economic_trend
-		add_country_modifier = {
-			name = economic_trend
-			duration = 365
+		name = "EVTOPTB22581" #No policy
+		add_country_modifier = { name = no_trade_policy_set duration = 3650 }
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 2
+				NOT = { ruling_party_ideology = liberal }
+			}
+			modifier = {
+				factor = 2
+				NOT = { money = 50000 }
+				OR = {
+					tag = AUS
+					tag = KUK
+					tag = DNB
+					tag = TUR
+					tag = RUS
+					tag = USA
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = { money = 5000 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { money = 20000 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { money = 50000 }
+			}
+			modifier = {
+				factor = 1.1
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+				}
+			}
+			modifier = {
+				factor = 1.2
+				vote_franschise = none_voting
+			}
+			modifier = {
+				factor = 1.1
+				colonial_nation  = yes
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { literacy = 0.5 }
+			}
+			modifier = {
+				factor = 1.2
+				NOT = { literacy = 0.3 }
+			}
+			modifier = {
+				factor = 1.5
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					ruling_party_ideology = fascist
+					ruling_party_ideology = communist
+				}
+			}
+			modifier = {
+				factor = 1.1
+				nationalvalue = nv_order
+			}
+			modifier = {
+				factor = 1.2
+				OR = {
+					nationalvalue = nv_autocracy
+					nationalvalue = nv_tradition
+				}
+			}
+			modifier = {
+				factor = 1.25
+				sphere_owner = { trade_policy = protectionism }
+			}
+			modifier = {
+				factor = 1.5
+				overlord = { trade_policy = protectionism }
+			}
 		}
-		remove_country_modifier = Bull_market
-		remove_country_modifier = recession
-		add_country_modifier = {
-			name = economic_boom
-			duration = 1095
-		}
+	}
+
+	option = {
+		name = "EVTOPTD22581" #Disable it
+		set_country_flag = trade_policy_choosing_disabled
+		ai_chance = { factor = 0 }
 	}
 }
 
-# Stock Market Crash
+# Choosing an economic policy - Smithianism/French School/No Policy
 country_event = {
-	id = 22605
-	title = "EVTNAME22500"
-	desc = "EVTDESC22500"
-	picture = "Bankruptcy"
+	id = 22585
+	title = "EVTNAME22581"
+	desc = "EVTDESC22585"
+	picture = "private_banks"
 	
-	trigger = {
-		invention = stock_exchanges
-		civilized = yes
-		NOT = {
-			government = proletarian_dictatorship
-			economic_policy = planned_economy
-			has_country_modifier = stock_market_crash
-			has_country_modifier = great_depression
-			has_country_modifier = recession
-			has_country_modifier = economic_trend
-		}
-		OR = {
-			has_country_modifier = economic_boom
-			has_country_modifier = Bull_market
-			has_country_modifier = in_bankrupcy
-			has_country_modifier = generalised_debt_default
-			any_neighbor_country = {
-				has_country_modifier = great_depression
-			}
-			any_neighbor_country = {
-				has_country_modifier = stock_market_crash
-			}
-			AND = {
-				NOT = { unemployment = 0.1 }
-				poor_strata_everyday_needs = 0.7
-				rich_strata_everyday_needs = 0.9
-			}
-		}
-	}
+	is_triggered_only = yes
 	
-	mean_time_to_happen = {
-		months = 400
-		modifier = {
-			factor = 0.5
-			year = 1880
-		}
-		modifier = {
-			factor = 0.5
-			year = 1900
-		}		
-		modifier = {
-			factor = 1.2
-			war = yes
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				has_country_modifier = in_bankrupcy
-				has_country_modifier = generalised_debt_default
+	option = {
+		name = "EVTOPTC22584" #Even more free trade - 0 tariffs max
+		add_country_modifier = { name = french_liberal_school duration = 3650 }
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.1
+				nationalvalue = nv_liberty
 			}
-		}
-		modifier = {
-			factor = 0.8
-			unemployment = 0.1
-		}
-		modifier = {
-			factor = 0.8
-			unemployment = 0.2
-		}
-		modifier = {
-			factor = 0.8
-			unemployment = 0.3
-		}
-		modifier = {
-			factor = 0.8
-			unemployment = 0.4
-		}
-		modifier = {
-			factor = 1.5
-			business_regulations = 1
-		}
-		modifier = {
-			factor = 1.5
-			market_regulations = 1
-		}
-		modifier = {
-			factor = 2
-			has_country_modifier = central_bank_established
-		}
-		modifier = {
-			factor = 1.1
-			invention = private_bank_monitoring
-		}
-		modifier = {
-			factor = 1.1
-			economic_responsibility = 1
-		}
-		modifier = {
-			factor = 1.1
-			central_bank_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 0.8
-			invention = hyperinflation
-		}
-		modifier = {
-			factor = 0.9
-			invention = capital_for_investors
-		}
-		modifier = {
-			factor = 0.9
-			market_determined_exchange_rates = 1
-		}
-		modifier = {
-			factor = 0.9
-			ad_hoc_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 1.5
-			keynesian_economics = 1
-		}
-		modifier = {
-			factor = 0.9
-			investment_banks = 1
-		}
-		modifier = {
-			factor = 0.9
-			mutual_funds = 1
-		}
-		modifier = {
-			factor = 0.25
-			any_neighbor_country = {
-				has_country_modifier = great_depression
+			modifier = {
+				factor = 1.1
+				money = 1000000
 			}
-		}
-		modifier = {
-			factor = 0.5
-			any_neighbor_country = {
-				has_country_modifier = stock_market_crash
+			modifier = {
+				factor = 1.25
+				industrial_score = 1000
 			}
-		}
-		modifier = {
-			factor = 1.1
-			any_neighbor_country = {
-				has_country_modifier = Bull_market
-			}
-		}
-		modifier = {
-			factor = 1.2
-			any_neighbor_country = {
-				has_country_modifier = economic_boom
-			}
-		}
-		modifier = {
-			factor = 0.7
-			has_country_modifier = economic_boom
-		}
-		modifier = {
-			factor = 0.9
-			has_country_modifier = Bull_market
-		}
-		modifier = {
-			factor = 0.8
-			economic_policy = laissez_faire
-		}
-		modifier = {
-			factor = 1.2
-			economic_policy = interventionism
-		}
-		modifier = {
-			factor = 1.5
-			economic_policy = state_capitalism
-		}
-		modifier = {
-			factor = 1.5
-			invention = ludwig_von_mises
 		}
 	}
 	
 	option = {
-		name = "EVTOPTA22500"
-		remove_country_modifier = economic_trend
-		add_country_modifier = {
-			name = economic_trend
-			duration = 365
-		}
-		remove_country_modifier = economic_boom
-		remove_country_modifier = Bull_market
-		any_pop = {
-			militancy = 1
-		}
-		add_country_modifier = {
-			name = stock_market_crash
-			duration = 1825
-		}
-	}
-}
-
-#Stock Market Recovers
-country_event = {
-	id = 22606
-	title = "EVTNAME22606"
-	desc = "EVTDESC22606"
-	picture = "Merchants"
-	
-	trigger = {
-		has_country_modifier = stock_market_crash
-		NOT = {
-			government = proletarian_dictatorship
-			has_country_modifier = economic_trend
-			has_country_modifier = in_bankrupcy
-			has_country_modifier = generalised_debt_default
-			unemployment = 0.4
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 36
-		modifier = {
-			factor = 0.5
-			war = yes
-		}
-		modifier = {
-			factor = 1.2
-			unemployment = 0.1
-		}
-		modifier = {
-			factor = 1.2
-			unemployment = 0.2
-		}
-		modifier = {
-			factor = 1.2
-			unemployment = 0.3
-		}
-		modifier = {
-			factor = 0.8
-			business_regulations = 1
-		}
-		modifier = {
-			factor = 0.8
-			market_regulations = 1
-		}
-		modifier = {
-			factor = 0.9
-			invention = private_bank_monitoring
-		}
-		modifier = {
-			factor = 0.9
-			economic_responsibility = 1
-		}
-		modifier = {
-			factor = 0.9
-			central_bank_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 1.2
-			invention = hyperinflation
-		}
-		modifier = {
-			factor = 1.1
-			invention = capital_for_investors
-		}
-		modifier = {
-			factor = 1.1
-			market_determined_exchange_rates = 1
-		}
-		modifier = {
-			factor = 1.1
-			ad_hoc_money_bill_printing = 1
-		}
-		modifier = {
-			factor = 0.8
-			keynesian_economics = 1
-		}
-		modifier = {
-			factor = 1.1
-			investment_banks = 1
-		}
-		modifier = {
-			factor = 1.1
-			mutual_funds = 1
-		}
-		modifier = {
-			factor = 1.5
-			any_neighbor_country = {
-				has_country_modifier = great_depression
+		name = "EVTOPTA22584" #Free Trade
+		add_country_modifier = { name = smithian_school duration = 3650 }
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 1.1
+				nationalvalue = nv_productivity
 			}
-		}
-		modifier = {
-			factor = 1.25
-			any_neighbor_country = {
-				has_country_modifier = stock_market_crash
+			modifier = {
+				factor = 1.2
+				nationalvalue = nv_liberty
 			}
-		}
-		modifier = {
-			factor = 0.9
-			any_neighbor_country = {
-				has_country_modifier = Bull_market
+			modifier = {
+				factor = 1.3
+				sphere_owner = { trade_policy = free_trade }
 			}
-		}
-		modifier = {
-			factor = 0.8
-			any_neighbor_country = {
-				has_country_modifier = economic_boom
+			modifier = {
+				factor = 1.8
+				overlord = { trade_policy = free_trade }
 			}
-		}
-		modifier = {
-			factor = 2
-			economic_policy = laissez_faire
-		}
-		modifier = {
-			factor = 1.25
-			economic_policy = interventionism
-		}
-		modifier = {
-			factor = 0.75
-			economic_policy = state_capitalism
-		}
-		modifier = {
-			factor = 0.5
-			economic_policy = planned_economy
+			modifier = {
+				factor = 1.1
+				money = 100000
+			}
+			modifier = {
+				factor = 1.1
+				money = 200000
+			}
+			modifier = {
+				factor = 1.1
+				money = 400000
+			}
+			modifier = {
+				factor = 1.1
+				money = 800000
+			}
+			modifier = {
+				factor = 1.25
+				money = 1000000
+			}
+			modifier = {
+				factor = 1.1
+				industrial_score = 100
+			}
+			modifier = {
+				factor = 1.1
+				industrial_score = 200
+			}
+			modifier = {
+				factor = 1.1
+				industrial_score = 400
+			}
+			modifier = {
+				factor = 1.1
+				industrial_score = 800
+			}
+			modifier = {
+				factor = 1.25
+				industrial_score = 1000
+			}
 		}
 	}
 	
 	option = {
-		name = "22606.A"
-		remove_country_modifier = economic_trend
-		add_country_modifier = {
-			name = economic_trend
-			duration = 365
-		}
-		remove_country_modifier = stock_market_crash
-		add_country_modifier = {
-			name = recession
-			duration = 1825
+		name = "EVTOPTB22581" #No policy
+		add_country_modifier = { name = no_trade_policy_set duration = 3650 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				NOT = { ruling_party_ideology = liberal }
+			}
+			modifier = {
+				factor = 2
+				NOT = { money = 100000 }
+				OR = {
+					tag = AUS
+					tag = KUK
+					tag = DNB
+					tag = TUR
+					tag = RUS
+					tag = USA
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = { money = 5000 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { money = 20000 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { money = 50000 }
+			}
+			modifier = {
+				factor = 1.1
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+				}
+			}
+			modifier = {
+				factor = 1.2
+				vote_franschise = none_voting
+			}
+			modifier = {
+				factor = 1.1
+				colonial_nation  = yes
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { literacy = 0.5 }
+			}
+			modifier = {
+				factor = 1.2
+				NOT = { literacy = 0.3 }
+			}
+			modifier = {
+				factor = 1.5
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					ruling_party_ideology = fascist
+					ruling_party_ideology = communist
+				}
+			}
+			modifier = {
+				factor = 1.1
+				nationalvalue = nv_order
+			}
+			modifier = {
+				factor = 1.2
+				OR = {
+					nationalvalue = nv_autocracy
+					nationalvalue = nv_tradition
+				}
+			}
+			modifier = {
+				factor = 1.25
+				sphere_owner = { trade_policy = protectionism }
+			}
+			modifier = {
+				factor = 1.5
+				overlord = { trade_policy = protectionism }
+			}
 		}
 	}
-}
 
-#Public Listed Companies
-country_event = {
-	id = 22610
-	title = "EVTNAME22610"
-	desc = "EVTDESC22610"
-	picture = "Merchants"
-	
-	trigger = {
-		stock_exchange = 1
-		NOT = {
-			has_country_flag = consumer_confidence
-			government = proletarian_dictatorship
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 1
-	}
-	
 	option = {
-		name = "22610.A"
-		remove_country_modifier = economic_trend
-		add_country_modifier = {
-			name = economic_trend
-			duration = 365
-		}
-		set_country_flag = consumer_confidence
-		remove_country_modifier = recession
-		remove_country_modifier = stock_market_crash
-		remove_country_modifier = great_depression
-		remove_country_modifier = economic_boom
-		add_country_modifier = {
-			name = Bull_market
-			duration = 1825
-		}
-	}
-}
-
-country_event = {
-	id = 22615
-	title = "22615.T"
-	desc = "22615.D"
-	picture = "communist_crowd"
-	
-	trigger = {
-		has_country_flag = consumer_confidence
-		government = proletarian_dictatorship
-		NOT = { has_country_flag = pig_dogs }
-	}
-
-	mean_time_to_happen = {
-		days = 5
-	}
-	
-	option = {
-		name = "22615.A"
-		set_country_flag = pig_dogs
-		remove_country_modifier = recession
-		remove_country_modifier = stock_market_crash
-		remove_country_modifier = great_depression
-		remove_country_modifier = economic_boom
-		remove_country_modifier = Bull_market
-		remove_country_modifier = economic_trend
-	}
-}
-
-country_event = {
-	id = 22616
-	title = "22616.T"
-	desc = "22616.D"
-	picture = "Merchants"
-	
-	trigger = {
-		has_country_flag = pig_dogs
-		NOT = { government = proletarian_dictatorship }
-		NOT = { has_country_modifier = great_depression }
-	}
-	mean_time_to_happen = {
-		days = 5
-	}
-	
-	option = {
-		name = "22616.A"
-		remove_country_modifier = economic_trend
-		add_country_modifier = {
-			name = economic_trend
-			duration = 365
-		}
-		clr_country_flag = pig_dogs
-		remove_country_modifier = recession
-		remove_country_modifier = stock_market_crash
-		remove_country_modifier = economic_boom
-		add_country_modifier = {
-			name = Bull_market
-			duration = 1825
-		}
+		name = "EVTOPTD22581" #Disable it
+		set_country_flag = trade_policy_choosing_disabled
+		ai_chance = { factor = 0 }
 	}
 }

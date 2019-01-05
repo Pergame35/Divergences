@@ -3,6 +3,8 @@ controller = DUA
 add_core = DUA
 add_core = FRA
 add_core = BRT
-trade_goods = fish
-life_rating = 36
-terrain = good_farmland
+trade_goods = grain
+
+life_rating = 31
+
+1861.1.1 = { railroad = 3 }

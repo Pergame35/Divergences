@@ -2,6 +2,18 @@ owner = DUA
 controller = DUA
 add_core = DUA
 add_core = OCC
-trade_goods = copper
-life_rating = 34
-terrain = deciduous_forest_hills
+trade_goods = coal
+life_rating = 31
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = lumber_mill
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 2 }

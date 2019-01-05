@@ -1,6 +1,10 @@
 owner = MGH
 controller = MGH
 add_core = MGH
-trade_goods = lead
-life_rating = 35
-terrain = semi_desert_hills
+trade_goods = wool
+life_rating = 10
+1861.1.1 = {
+	owner = FRA
+	controller = FRA
+	colonial = 2
+}

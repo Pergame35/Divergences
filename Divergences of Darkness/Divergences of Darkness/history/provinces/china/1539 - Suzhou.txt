@@ -4,5 +4,9 @@ add_core = MIG
 add_core = TNG
 add_core = CHI
 trade_goods = silk
-life_rating = 35
-terrain = floodplain_farmland
+life_rating = 32
+1861.1.1 = {
+	owner = TPG
+	controller = TPG
+	add_core = TPG
+}

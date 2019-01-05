@@ -2,13 +2,18 @@ owner = PRV
 controller = PRV
 add_core = PRV
 add_core = OCC
-trade_goods = fish
-life_rating = 36
-terrain = marginal_farmland
-naval_base = 1
+trade_goods = fruit
+life_rating = 32
 state_building = {
-	level = 4 
+	level = 1
 	building = clipper_shipyard
 	upgrade = yes
 }
-
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = clipper_shipyard
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 3 }

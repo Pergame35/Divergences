@@ -128,25 +128,25 @@ army = {
 	location = 425
 	regiment = {
 		name= "1.Garde Royale"
-		type = regular
+		type = infantry
 		home = 467
 	}
 
 	regiment = {
 		name= "2.Garde Royale"
-		type = regular
+		type = infantry
 		home = 461
 	}
 
 	regiment = {
 		name= "3.Garde Royale"
-		type = regular
+		type = infantry
 		home = 455
 	}
 
 	regiment = {
 		name= "4.Garde Royale"
-		type = regular
+		type = infantry
 		home = 458
 	}
 }
@@ -156,55 +156,55 @@ army = {
 	location = 438
 	regiment = {
 		name= "1.1ère Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 461
 	}
 
 	regiment = {
 		name= "2.1ère Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 455
 	}
 
 	regiment = {
 		name= "3.1ère Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 458
 	}
 
 	regiment = {
 		name= "1.2ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 451
 	}
 
 	regiment = {
 		name= "2.2ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 445
 	}
 
 	regiment = {
 		name= "3.2ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 445
 	}
 
 	regiment = {
 		name= "1.3ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 442
 	}
 
 	regiment = {
 		name= "2.3ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 435
 	}
 
 	regiment = {
 		name= "3.3ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 435
 	}
 }
@@ -214,13 +214,13 @@ army = {
 	location = 402
 	regiment = {
 		name= "1.1ère Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 420
 	}
 
 	regiment = {
 		name= "2.1ère Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 418
 	}
 
@@ -232,13 +232,13 @@ army = {
 
 	regiment = {
 		name= "1.2ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 438
 	}
 
 	regiment = {
 		name= "2.2ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 418
 	}
 
@@ -334,19 +334,19 @@ army = {
 
 	regiment = {
 		name= "1.1st Division"
-		type = regular
+		type = infantry
 		home = 403
 	}
 
 	regiment = {
 		name= "2.1st Division"
-		type = regular
+		type = infantry
 		home = 425
 	}
 
 	regiment = {
 		name= "3.1st Division"
-		type = regular
+		type = infantry
 		home = 425
 	}
 
@@ -357,37 +357,37 @@ army = {
 	location = 458
 	regiment = {
 		name= "1.8ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 425
 	}
 
 	regiment = {
 		name= "2.8ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 296
 	}
 
 	regiment = {
 		name= "3.8ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 300
 	}
 
 	regiment = {
 		name= "1.9ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 300
 	}
 
 	regiment = {
 		name= "2.9ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 300
 	}
 
 	regiment = {
 		name= "3.9ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 434
 	}
 
@@ -416,19 +416,19 @@ army = {
 	location = 263
 	regiment = {
 		name= "1.10ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 300
 	}
 
 	regiment = {
 		name= "2.10ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 291
 	}
 
 	regiment = {
 		name= "3.10ème Division d'Infanterie"
-		type = regular
+		type = infantry
 		home = 284
 	}
 
@@ -971,7 +971,7 @@ navy = {
 	}
 
 	ship = {
-		name= "HMS Vanregular"
+		name= "HMS Vaninfantry"
 		type = manowar
 	}
 

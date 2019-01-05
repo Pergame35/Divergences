@@ -4,15 +4,14 @@ add_core = BOH
 add_core = SIL
 trade_goods = grain
 life_rating = 40
-terrain = good_farmland
 state_building = {
-	level = 2 
+	level = 2
 	building = explosives_factory
 	upgrade = yes
 }
 state_building = {
-	level = 2 
-	building = iron_machine_parts_factory
+	level = 2
+	building = artillery_factory
 	upgrade = yes
 }
 state_building = {
@@ -25,5 +24,26 @@ state_building = {
 	building = small_arms_factory
 	upgrade = yes
 }
-
-
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = artillery_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 3 }

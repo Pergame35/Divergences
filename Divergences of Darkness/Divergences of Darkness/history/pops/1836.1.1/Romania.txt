@@ -30,8 +30,14 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 126900   
+		size = 76140   
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 50760   
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -73,8 +79,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 22250 
+		size = 13350 
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 8900 
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -110,9 +122,15 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 33775   
+		size = 20265   
 	}
 
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 13510   
+	}	
+	
 	clergymen = {
 		culture = hungarian
 		religion = jewish
@@ -160,8 +178,15 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 5425  
+		size = 3255  
 	}
+
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 2170  
+	}	
+	
 }
 #Szatmare (444000/111000 POPS) #part of Romania today 
 651 = {
@@ -187,8 +212,14 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 50450  
+		size = 30270  
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 20180  
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -218,8 +249,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 15475 
+		size = 9285 
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 6190 
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -249,8 +286,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 21725     
+		size = 13035     
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 8690     
+	}	
 
 	clergymen = {
 		culture = hungarian
@@ -299,8 +342,14 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 6425
+		size = 3855
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 2570
+	}	
 
 	clergymen = {
 		culture = ashkenazi
@@ -324,8 +373,14 @@
 	farmers = {
 		culture = ashkenazi
 		religion = jewish
-		size = 4150     
+		size = 2490     
 	}
+	
+	serfs = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1660     
+	}	
 }
 #Banat-Bacska Region (1240000) #See Serbia.txt and Croatia.txt for balance of region 
 #under the rule of Austria in 1836  
@@ -353,8 +408,14 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 29025 
+		size = 18576 
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 10449 
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -396,8 +457,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 12500  
+		size = 8000  
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 4500  
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -427,8 +494,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 21275     
+		size = 13616     
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 7659     
+	}	
 
 	aristocrats = {
 		culture = south_german
@@ -470,8 +543,14 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 75025  
+		size = 48016  
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 27009  
+	}	
 
 	clergymen = {
 		culture = croat
@@ -495,9 +574,15 @@
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 18800 
+		size = 12032 
 	}
 
+	serfs = {
+		culture = croat
+		religion = catholic
+		size = 6768 
+	}	
+	
 	clergymen = {
 		culture = serb
 		religion = orthodox
@@ -520,8 +605,14 @@
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 60700
+		size = 38848
 	}
+	
+	serfs = {
+		culture = serb
+		religion = orthodox
+		size = 21852
+	}	
 }
 #Orsova (376000/94000 POPS) #part of Romania today
 653 = {
@@ -547,8 +638,14 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 63600 
+		size = 39432 
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 24168 
+	}	
 
 	clergymen = {
 		culture = serb
@@ -572,8 +669,14 @@
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 16150 
+		size = 10013 
 	}
+	
+	serfs = {
+		culture = serb
+		religion = orthodox
+		size = 6137 
+	}	
 
 	aristocrats = {
 		culture = south_german
@@ -603,8 +706,14 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 12900 
+		size = 8256 
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = catholic
+		size = 4644 
+	}	
 }
 #Transylvania Region (2060000) 
 #under the rule of Austria in 1836  
@@ -638,8 +747,14 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 22325 
+		size = 13395 
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 8930 
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -681,8 +796,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 2375  
+		size = 1425  
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 950  
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -724,8 +845,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 6300      
+		size = 3780      
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 2520      
+	}	
 
 	aristocrats = {
 		culture = south_german
@@ -767,8 +894,14 @@
 	farmers = {
 		culture = south_german
 		religion = protestant
-		size = 3320   
+		size = 1992   
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = protestant
+		size = 1328   
+	}	
 
 	clergymen = {
 		culture = ashkenazi
@@ -792,8 +925,14 @@
 	farmers = {
 		culture = ashkenazi
 		religion = jewish
-		size = 1175     
+		size = 705     
 	}
+	
+	serfs = {
+		culture = ashkenazi
+		religion = jewish
+		size = 470     
+	}	
 }
 #Gyulafehervar/Alba Iulia (316000/79000 POPS)  
 655 = {
@@ -819,8 +958,15 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 52125 
+		size = 33360 
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 18765 
+	}
+	
 
 	aristocrats = {
 		culture = hungarian
@@ -850,7 +996,13 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 3100   
+		size = 1984   
+	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 1116
 	}
 
 	aristocrats = {
@@ -881,8 +1033,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 8475       
+		size = 5424       
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 3051       
+	}	
 
 	aristocrats = {
 		culture = south_german
@@ -912,8 +1070,14 @@
 	farmers = {
 		culture = south_german
 		religion = protestant
-		size = 6175   
+		size = 3952   
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = protestant
+		size = 2223   
+	}	
 
 	clergymen = {
 		culture = ashkenazi
@@ -964,8 +1128,14 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 46575 
+		size = 27945 
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 18630 
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -995,9 +1165,15 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 2175 
+		size = 1305 
 	}
 
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 870 
+	}	
+	
 	aristocrats = {
 		culture = hungarian
 		religion = protestant
@@ -1026,8 +1202,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 4900      
+		size = 2940      
 	}
+	
+	farmers = {
+		culture = hungarian
+		religion = protestant
+		size = 1960      
+	}	
 
 	clergymen = {
 		culture = south_german
@@ -1109,8 +1291,14 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 33500
+		size = 20100
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 13400
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1140,8 +1328,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 2100   
+		size = 1260   
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 840   
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1171,8 +1365,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 3775      
+		size = 2265      
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 1510      
+	}	
 
 	aristocrats = {
 		culture = south_german
@@ -1202,8 +1402,14 @@
 	farmers = {
 		culture = south_german
 		religion = protestant
-		size = 21325
+		size = 12795
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = protestant
+		size = 8530
+	}	
 
 	clergymen = {
 		culture = ashkenazi
@@ -1254,8 +1460,14 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 23275
+		size = 13965
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 9310
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1285,8 +1497,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 1325    
+		size = 795    
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 530    
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1316,9 +1534,15 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 2825      
+		size = 1695      
 	}
 
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 1130      
+	}	
+	
 	aristocrats = {
 		culture = south_german
 		religion = protestant
@@ -1347,8 +1571,14 @@
 	farmers = {
 		culture = south_german
 		religion = protestant
-		size = 6075   
+		size = 3645   
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = protestant
+		size = 2430   
+	}	
 
 	clergymen = {
 		culture = ashkenazi
@@ -1372,8 +1602,15 @@
 	farmers = {
 		culture = ashkenazi
 		religion = jewish
-		size = 1175     
+		size = 705     
 	}
+
+	serfs = {
+		culture = ashkenazi
+		religion = jewish
+		size = 470     
+	}	
+	
 }
 #Udvarhely (228000/57000 POPS)  
 660 = {
@@ -1399,8 +1636,14 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 7450
+		size = 4768
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 2682
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1430,8 +1673,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 13650   
+		size = 8736   
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 4914   
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1461,8 +1710,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 28250      
+		size = 18080      
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 10170      
+	}	
 
 	clergymen = {
 		culture = south_german
@@ -1486,8 +1741,14 @@
 	farmers = {
 		culture = south_german
 		religion = protestant
-		size = 1775    
+		size = 1136    
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = protestant
+		size = 639    
+	}	
 
 	clergymen = {
 		culture = ashkenazi
@@ -1538,8 +1799,14 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 49500 
+		size = 29700 
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 19800 
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1569,8 +1836,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 3350   
+		size = 2010   
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 1340   
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1600,8 +1873,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 6850      
+		size = 4110      
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 2740      
+	}	
 
 	aristocrats = {
 		culture = south_german
@@ -1631,8 +1910,14 @@
 	farmers = {
 		culture = south_german
 		religion = protestant
-		size = 7025  
+		size = 4215  
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = protestant
+		size = 2810  
+	}	
 
 	clergymen = {
 		culture = ashkenazi
@@ -1683,8 +1968,14 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 26150 
+		size = 16736 
 	}
+	
+	serfs = {
+		culture = romanian
+		religion = orthodox
+		size = 9414
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1714,8 +2005,14 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 14175   
+		size = 9702   
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = catholic
+		size = 5103   
+	}	
 
 	aristocrats = {
 		culture = hungarian
@@ -1745,8 +2042,14 @@
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size = 28875      
+		size = 18480      
 	}
+	
+	serfs = {
+		culture = hungarian
+		religion = protestant
+		size = 10395      
+	}	
 
 	aristocrats = {
 		culture = south_german
@@ -1776,8 +2079,14 @@
 	farmers = {
 		culture = south_german
 		religion = protestant
-		size = 5350   
+		size = 3424   
 	}
+	
+	serfs = {
+		culture = south_german
+		religion = protestant
+		size = 1926   
+	}	
 
 	clergymen = {
 		culture = ashkenazi
@@ -2249,6 +2558,12 @@
 	slaves = {
 		culture = romanian
 		religion = orthodox
+		size = 4750
+	}
+
+	slaves = {
+		culture = gypsy
+		religion = orthodox
 		size = 10000
 	}
 }
@@ -2286,7 +2601,7 @@
 	}
 	
 	slaves = {
-		culture = romanian
+		culture = gypsy
 		religion = orthodox
 		size = 4000
 	}
@@ -2325,7 +2640,7 @@
 	}
 	
 	slaves = {
-		culture = romanian
+		culture = gypsy
 		religion = orthodox
 		size = 10000
 	}
@@ -2364,7 +2679,7 @@
 	}
 	
 	slaves = {
-		culture = romanian
+		culture = gypsy
 		religion = orthodox
 		size = 6000
 	}
@@ -2463,6 +2778,12 @@
 		religion = sunni
 		size = 4165
 	}
+	
+	slaves = {
+		culture = crimean
+		religion = orthodox
+		size = 2000
+	}
 }
 #Tulcea (40000/10000 POPS)  
 675 = {
@@ -2538,4 +2859,11 @@
 		religion = orthodox
 		size = 2825
 	}
+	
+	slaves = {
+		culture = crimean
+		religion = orthodox
+		size = 1100
+	}
+
 }

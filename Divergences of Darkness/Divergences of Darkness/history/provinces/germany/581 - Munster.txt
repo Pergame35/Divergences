@@ -2,11 +2,23 @@ owner = MNR
 controller = MNR
 add_core = MNR
 add_core = GER
-trade_goods = copper
-life_rating = 34
-terrain = marginal_farmland
-#state_building = {
-#	level = 4
-#	building = regular_clothes_factory
-#	upgrade = yes
-#}
+trade_goods = coal
+life_rating = 40
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = ammunition_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 3 }

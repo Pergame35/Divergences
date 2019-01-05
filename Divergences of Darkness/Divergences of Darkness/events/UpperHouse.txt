@@ -223,6 +223,7 @@ country_event = {
 	trigger = {
 		civilized = yes
 		political_reform_want = 0.1
+		NOT = { upper_house_composition = party_appointed }
 		NOT = {
 			press_rights = free_press
 			upper_house = {
@@ -346,9 +347,7 @@ country_event = {
 	trigger = {
 		civilized = yes
 		social_reform_want = 0.2
-		NOT = {
-			wage_reform = good_minimum_wage
-		}
+		NOT = { wage_reform = good_minimum_wage }
 		upper_house = {
 			ideology = socialist
 			value = 0.2
@@ -422,9 +421,16 @@ country_event = {
 		is_greater_power = yes
 		social_reform_want = 0.15
 		health_care = no_health_care
-		upper_house = {
-			ideology = liberal
-			value = 0.3
+		has_country_flag = medicine_invented
+		NOT = { average_militancy = 5 }
+		war = no
+		OR = {
+			literacy = 0.3
+			average_consciousness = 5
+		}
+		OR = {
+			upper_house = { ideology = liberal value = 0.3 }
+			upper_house = { ideology = socialist value = 0.2 }
 		}
 	}
 	
@@ -441,7 +447,9 @@ country_event = {
 			}
 			militancy = 1
 		}
+		ai_chance = { factor = 25 }
 	}
+	
 	option = {
 		name = "EVTOPTB18100"
 		social_reform = trinket_health_care
@@ -453,7 +461,7 @@ country_event = {
 			ideology = liberal
 			factor = 3
 		}
-			
+		ai_chance = { factor = 75 }
 	}
 }
 
@@ -906,6 +914,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_country_flag = cutoff_reactionary_UH_1 }
+		NOT = { election = yes }
 		civilized = yes
 		war = no
 		OR = {
@@ -1080,7 +1089,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18210.A"
+		name = "EVT18210OPTA"
 		set_country_flag = reactionary_UH_1
 		upper_house = {
 			ideology = conservative
@@ -1204,7 +1213,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18210.B"
+		name = "EVT18210OPTB"
 		set_country_flag = reactionary_UH_1
 		upper_house = {
 			ideology = reactionary
@@ -1326,7 +1335,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18210.C"
+		name = "EVT18210OPTC"
 		set_country_flag = cutoff_reactionary_UH_1
 		upper_house = {
 			ideology = reactionary
@@ -1377,6 +1386,7 @@ country_event = {
 	trigger = {
 		civilized = yes
 		upper_house_composition = appointed
+		NOT = { election = yes }
 		NOT = { has_country_flag = no_party_appointed_rollback }
 		OR = {
 			ruling_party_ideology = reactionary
@@ -1536,7 +1546,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18215.A"
+		name = "EVT18215OPTA"
 		set_country_flag = reactionary_UH_2
 		upper_house = {
 			ideology = conservative
@@ -1614,7 +1624,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18215.B"
+		name = "EVT18215OPTB"
 		set_country_flag = reactionary_UH_2
 		set_country_flag = no_party_appointed_rollback
 		upper_house = {
@@ -1810,7 +1820,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18220.A"
+		name = "EVT18210OPTA"
 		set_country_flag = reactionary_UH_3
 		upper_house = {
 			ideology = conservative
@@ -1861,7 +1871,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18220.B"
+		name = "EVT18210OPTB"
 		set_country_flag = reactionary_UH_3
 		upper_house = {
 			ideology = reactionary
@@ -1932,7 +1942,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18220.C"
+		name = "EVT18210OPTC"
 		set_country_flag = cutoff_reactionary_UH_3
 		upper_house = {
 			ideology = reactionary
@@ -2124,7 +2134,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18225.A"
+		name = "EVT18225OPTA"
 		set_country_flag = reactionary_UH_4
 		upper_house = {
 			ideology = conservative
@@ -2160,7 +2170,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18225.B"
+		name = "EVT18225OPTB"
 		set_country_flag = reactionary_UH_4
 		upper_house = {
 			ideology = reactionary
@@ -2194,6 +2204,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_country_flag = cutoff_reactionary_UH_5 }
+		NOT = { election = yes }
 		civilized = yes
 		war = no
 		OR = {
@@ -2364,7 +2375,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18230.A"
+		name = "EVT18210OPTA"
 		set_country_flag = reactionary_UH_5
 		upper_house = {
 			ideology = conservative
@@ -2431,7 +2442,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18230.B"
+		name = "EVT18210OPTB"
 		set_country_flag = reactionary_UH_5
 		upper_house = {
 			ideology = reactionary
@@ -2553,7 +2564,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "18230.C"
+		name = "EVT18210OPTC"
 		set_country_flag = cutoff_reactionary_UH_5
 		upper_house = {
 			ideology = reactionary

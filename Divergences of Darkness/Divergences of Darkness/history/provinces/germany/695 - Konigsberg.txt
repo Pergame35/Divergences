@@ -4,11 +4,18 @@ add_core = PLC
 add_core = PRU
 trade_goods = cattle
 life_rating = 40
-terrain = marginal_farmland
 fort = 1
-#state_building = {
-#	level = 2 
-#	building = lumber_mill
-#	upgrade = yes
-#}
-
+naval_base = 1
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = clipper_shipyard
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 3 }

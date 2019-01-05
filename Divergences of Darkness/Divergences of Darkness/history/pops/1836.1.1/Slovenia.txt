@@ -63,6 +63,12 @@
 		religion = catholic
 		size = 43500
 	}
+	
+	serfs = {
+		culture = gypsy
+		religion = catholic
+		size = 1000
+	}
 }
 #Carniola Region (460000)  
 #under the rule of Austria in 1836  
@@ -155,5 +161,10 @@
 		religion = catholic
 		size = 1975
 	}
-
+	
+	farmers = {
+		culture = gypsy
+		religion = catholic
+		size = 500
+	}
 }

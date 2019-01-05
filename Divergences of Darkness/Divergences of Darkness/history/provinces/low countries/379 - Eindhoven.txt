@@ -4,7 +4,6 @@ add_core = BRG
 add_core = NET
 trade_goods = coal
 life_rating = 35
-terrain = marginal_farmland
 state_building = {
 	level = 2 
 	building = clipper_shipyard
@@ -12,6 +11,6 @@ state_building = {
 }
 state_building = {
 	level = 2
-	building = tropical_lumber_mill
+	building = glass_factory
 	upgrade = yes
 }

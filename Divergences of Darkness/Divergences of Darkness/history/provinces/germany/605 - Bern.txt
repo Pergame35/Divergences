@@ -3,14 +3,7 @@ controller = SWI
 add_core = SWI
 add_core = GER
 trade_goods = iron
-life_rating = 36
-terrain = forested_farmland
-fort = 1            
+life_rating = 34
+fort = 1
 
-state_building = {
-	level = 1
-	building = bank
-	upgrade = yes
-}
-
-
+1861.1.1 = { railroad = 1 }

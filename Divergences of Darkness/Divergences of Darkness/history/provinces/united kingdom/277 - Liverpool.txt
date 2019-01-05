@@ -4,7 +4,6 @@ add_core = DUA
 add_core = ENL
 trade_goods = fish
 life_rating = 40
-terrain = marginal_farmland
 railroad = 1
 state_building = {
 	level = 3
@@ -12,13 +11,22 @@ state_building = {
 	upgrade = yes
 }
 state_building = {
-	level = 4
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
 	building = regular_clothes_factory
 	upgrade = yes
 }
 state_building = {
 	level = 2
-	building = bronze_factory 
+	building = liquor_distillery
 	upgrade = yes
 }
 naval_base = 2
+1861.1.1 = { 
+	railroad = 3 
+	naval_base = 2
+}

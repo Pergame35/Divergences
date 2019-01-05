@@ -9,63 +9,53 @@ religion = sunni
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.03
-prestige = 10
-
-# Political reforms
-slavery = no_slavery
-upper_house_composition = appointed
-vote_franschise = none_voting
-public_meetings = yes_meeting
-press_rights = state_press
-trade_unions = non_socialist
-voting_system = first_past_the_post
-political_parties = underground_parties
-minorities_reform = oppression
-immigration_policy = nobody_gets_out
-conscription=mandatory_service
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
-# Social Reforms
-wage_reform = no_minimum_wage
-work_hours = no_work_hour_limit
-safety_regulations = no_safety
-health_care = no_health_care
-unemployment_subsidies = no_subsidies
-pensions = no_pensions
+literacy = 0.02
 
 ruling_party = AAA_conservative_4
 upper_house = {
 	fascist = 0
-	liberal = 11
-	conservative = 73
-	reactionary = 16
+	liberal = 10
+	conservative = 75
+	reactionary = 15
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
 
-# Level_2
-# Technologies
-early_classical_theory_and_critique = 1
-late_enlightenment_philosophy = 1
-enlightenment_thought = 1
-private_banks = 1
-
-# Inventions
-
-# Unciv Reforms
-diplomatic_reform = interactive
-academic_institutions = madrasahs
-admin_reform = yes_admin_reform
-taxation_reform = tax_farmers
-
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
-schools = culture_tech_school
 
-oob = "MUG_oob.txt"
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = none_voting
+public_meetings = no_meeting
+press_rights = state_press
+trade_unions = no_trade_unions
+voting_system = first_past_the_post
+political_parties = underground_parties
+
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions 
+school_reforms = no_schools
+
+# New Reforms
+conscription = mandatory_service
+debt_law = peonage
+penal_system = capital_punishment
+child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = closed_borders
+
+foreign_artillery = yes_foreign_artillery
+foreign_weapons = yes_foreign_weapons
+
+set_country_flag = sunni_country
+
+# Technologies
+flintlock_rifles = 1
+bronze_muzzle_loaded_artillery = 1

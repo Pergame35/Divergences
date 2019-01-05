@@ -3,6 +3,7 @@ political_decisions = {
 			potential = {
 				tag = BTV
 				NOT = { has_country_flag = claim_old_netherlands }
+				NOT = { has_country_flag = claim_south_africa }
 			}
 		
 			allow = {
@@ -30,6 +31,7 @@ political_decisions = {
 		return_home_BTV = {
 			potential = {
 				tag = BTV
+				has_country_flag = claim_old_netherlands
 			}
 		
 			allow = {

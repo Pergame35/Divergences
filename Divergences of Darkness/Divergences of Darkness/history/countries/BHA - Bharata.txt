@@ -26,6 +26,9 @@ plurality = 0.0
 nationalvalue = nv_enlightenment
 literacy = 0.02
 
+is_releasable_vassal = no
+set_country_flag = hindu_country
+
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
@@ -35,13 +38,6 @@ press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = underground_parties
-minorities_reform = limited
-immigration_policy = nobody_gets_out
-conscription=mandatory_service
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
@@ -49,6 +45,14 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
+school_reforms = no_schools
+# New Reforms
+conscription = no_draft
+debt_law = serfdom
+penal_system = capital_punishment
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
+border_policy = closed_borders
 
 ruling_party = AAA_conservative_4
 upper_house = {
@@ -71,10 +75,9 @@ private_banks = 1
 # Inventions
 
 # Unciv Reforms
-diplomatic_reform = interactive
-academic_institutions = madrasahs
+finance_reform = yes_finance_reform
 admin_reform = yes_admin_reform
-taxation_reform = tax_farmers
+foreign_training = yes_foreign_training
 
 # Starting Consciousness
 consciousness = 0

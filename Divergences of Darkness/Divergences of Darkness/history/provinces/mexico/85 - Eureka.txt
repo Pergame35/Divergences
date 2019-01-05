@@ -1,6 +1,12 @@
 owner = DNG
 controller = DNG
 add_core = DNG
-trade_goods = lead
-life_rating = 50
-terrain = deciduous_forest_mountains
+trade_goods = fish
+life_rating = 35
+1861.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	remove_core = MEX
+	colonial = 0
+}

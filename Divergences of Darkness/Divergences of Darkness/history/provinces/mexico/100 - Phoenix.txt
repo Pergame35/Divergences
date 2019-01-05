@@ -3,6 +3,14 @@ controller = CLM
 add_core = CLM
 add_core = LST
 add_core = DIN
-trade_goods = iron
+terrain = new_world_semidesert
+trade_goods = cattle
 life_rating = 35
-terrain = hilly_grassland
+1861.1.1 = {
+	controller = CSA
+	owner = CSA
+	add_core = USA
+	add_core = CSA
+	remove_core = MEX
+	colonial = 0
+}

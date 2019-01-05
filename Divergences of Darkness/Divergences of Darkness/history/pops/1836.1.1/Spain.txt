@@ -4,9 +4,15 @@
 	aristocrats = {
 		culture = castilian
 		religion = catholic
-		size = 2200
+		size = 1100
 	}
-
+	
+	aristocrats = {
+		culture = portuguese
+		religion = catholic
+		size = 1320
+	}
+	
 	officers = {
 		culture = castilian
 		religion = catholic
@@ -16,20 +22,38 @@
 	bureaucrats = {
 		culture = castilian
 		religion = catholic
-		size = 650
+		size = 200
 	}
+	
+	bureaucrats = {
+		culture = castilian
+		religion = catholic
+		size = 450
+	}	
 
 	clergymen = {
 		culture = castilian
 		religion = catholic
-		size = 2000
+		size = 700
 	}
+	
+	clergymen = {
+		culture = castilian
+		religion = catholic
+		size = 1300
+	}	
 
 	artisans = {
 		culture = castilian
 		religion = catholic
-		size = 6350
+		size = 2500
 	}
+	
+	artisans = {
+		culture = portuguese
+		religion = catholic
+		size = 3850
+	}	
 
 	soldiers = {
 		culture = castilian
@@ -41,8 +65,14 @@
 	farmers = {
 		culture = castilian
 		religion = catholic
-		size = 154350
+		size = 61700
 	}
+	
+	farmers = {
+		culture = portuguese
+		religion = catholic
+		size = 92650
+	}	
 }
 #Oviedo (448000/112000 POPS)
 475 = {
@@ -101,21 +131,39 @@
 	aristocrats = {
 		culture = castilian
 		religion = catholic
-		size = 700
+		size = 250
 	}
+	
+	aristocrats = {
+		culture = portuguese
+		religion = catholic
+		size = 450
+	}	
 
 	clergymen = {
 		culture = castilian
 		religion = catholic
-		size = 800
+		size = 300
 	}
+
+	clergymen = {
+		culture = portuguese
+		religion = catholic
+		size = 500
+	}	
 
 	artisans = {
 		culture = castilian
 		religion = catholic
-		size = 4000
+		size = 1500
 	}
 
+	artisans = {
+		culture = portuguese
+		religion = catholic
+		size = 2500
+	}	
+	
 	soldiers = {
 		culture = castilian
 		religion = catholic
@@ -126,9 +174,15 @@
 	farmers = {
 		culture = castilian
 		religion = catholic
-		size = 75500
+		size = 30000
 	}
 
+	farmers = {
+		culture = portuguese
+		religion = catholic
+		size = 45500
+	}
+	
 }
 #Leon Region (888000)
 #Leon (280000/70000 POPS)
@@ -1968,48 +2022,7 @@
 	}
 
 }
-#Gibraltar : 16000
-#Ruled by Britain 1836
-#Gibraltar (16000/4000 POPS)
-517 = {
-	officers = {
-		culture = castilian
-		religion = catholic
-		size = 15
-	}
-
-	bureaucrats = {
-		culture = castilian
-		religion = catholic
-		size = 55
-	}
-
-	clergymen = {
-		culture = castilian
-		religion = catholic
-		size = 105
-	}
-
-	soldiers = {
-		culture = castilian
-		religion = catholic
-		size= 350
-
-	}
-
-	artisans = {
-		culture = castilian
-		religion = catholic
-		size = 4135
-	}
-
-	farmers = {
-		culture = castilian
-		religion = catholic
-		size = 3200
-	}
-
-}
+#see Morocco.txt for Ceuta-Melilla
 #Canary Islands Region (208000)
 #Canary Islands (208000/52000 POPS)
 2136 = {
@@ -2096,6 +2109,49 @@
 		culture = portuguese
 		religion = catholic
 		size = 15048
+	}
+
+}
+
+#Gibraltar : 16000
+#Ruled by Britain 1836
+#Gibraltar (16000/4000 POPS)
+517 = {
+	officers = {
+		culture = castilian
+		religion = catholic
+		size = 15
+	}
+
+	bureaucrats = {
+		culture = castilian
+		religion = catholic
+		size = 55
+	}
+
+	clergymen = {
+		culture = castilian
+		religion = catholic
+		size = 105
+	}
+
+	soldiers = {
+		culture = castilian
+		religion = catholic
+		size= 350
+
+	}
+
+	artisans = {
+		culture = castilian
+		religion = catholic
+		size = 4135
+	}
+
+	farmers = {
+		culture = castilian
+		religion = catholic
+		size = 3200
 	}
 
 }

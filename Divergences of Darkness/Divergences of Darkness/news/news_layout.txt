@@ -5,7 +5,7 @@ article_tensions =
 	PEACE_OFFER_ACCEPT = 100
 	GAME_EVENT = 30
 	PROVINCE_CHANGE_CONTROLLER = 5
-	PROVINCE_CHANGE_OWNER = 5
+	PROVINCE_CHANGE_OWNER = 10
 	CONSTRUCTION_COMPLETE = 5
 	RESEARCH_COMPLETE = 2
 	BATTLE_OVER = 5
@@ -1372,7 +1372,7 @@ style =
 		# Arab ##########################
 		case =	{
 			trigger = { 
-				is_culture_group = arabic
+				is_culture_group = arab
 			}
 			picture = "news/arabic_newspaper_title.dds"
 		}

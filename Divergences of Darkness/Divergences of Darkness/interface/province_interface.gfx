@@ -56,7 +56,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_crime_strip"
 		textureFile = "gfx\\interface\\crime_strip.dds"
-		noOfFrames = 9
+		noOfFrames = 12
 	}
 	spriteType = {
 		name = "GFX_party_loyalty_strip"
@@ -71,12 +71,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_province_natfocus_strip"
 		textureFile = "gfx\\interface\\province_natfocus_strip.dds"
-		noOfFrames = 43
+		noOfFrames = 38
 	}
 	spriteType = {
 		name = "GFX_province_natfocus_strip_small"
 		textureFile = "gfx\\interface\\province_natfocus_strip_small.dds"
-		noOfFrames = 43
+		noOfFrames = 38
 	}
 	spriteType = {
 		name = "GFX_province_fort_strip"
@@ -142,11 +142,6 @@ spriteTypes = {
 		norefcount = yes
 	}
 	spriteType = {
-		name = "GFX_province_recruit_bg"
-		texturefile = "gfx\\interface\\province_recruit_bg.dds"
-		norefcount = yes
-	}
-	spriteType = {
 		name = "GFX_province_recruit_button"
 		texturefile = "gfx\\interface\\province_recruit_button.tga"
 		norefcount = yes
@@ -187,12 +182,12 @@ spriteTypes = {
 		name = "GFX_province_other_bg"
 		texturefile = "gfx\\interface\\province_other_bg.tga"
 	}
-	
 
 	spriteType = {
 		name = "GFX_province_colony_bg"
 		texturefile = "gfx\\interface\\province_colony_bg.tga"
 	}
+
 	progressbartype = {
 		name = "GFX_occupation_progress"
 		color = { 0.0 0.5 0.0 }
@@ -238,258 +233,12 @@ spriteTypes = {
 		size = 25
 	}
 	
-	
-	
-	
-	spriteType = {
-		name = "GFX_terrainimg_good_farmland"
-		texturefile = "gfx\\interface\\terrain_good_farmland.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_floodplain_farmland"
-		texturefile = "gfx\\interface\\terrain_floodplain_farmland.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_marginal_farmland"
-		texturefile = "gfx\\interface\\terrain_marginal_farmland.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_hilly_farmland"
-		texturefile = "gfx\\interface\\terrain_hilly_farmland.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_mountain_farmland"
-		texturefile = "gfx\\interface\\terrain_mountain_farmland.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_forested_farmland"
-		texturefile = "gfx\\interface\\terrain_forested_farmland.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_jungle_farmland"
-		texturefile = "gfx\\interface\\terrain_jungle_farmland.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_temperate_grassland"
-		texturefile = "gfx\\interface\\terrain_temperate_grassland.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_dry_grassland"
-		texturefile = "gfx\\interface\\terrain_dry_grassland.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_hilly_grassland"
-		texturefile = "gfx\\interface\\terrain_hilly_grassland.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_mountain_grassland"
-		texturefile = "gfx\\interface\\terrain_mountain_grassland.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_semi_desert"
-		texturefile = "gfx\\interface\\terrain_semi_desert.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_semi_desert_hills"
-		texturefile = "gfx\\interface\\terrain_semi_desert_hills.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_semi_desert_mountains"
-		texturefile = "gfx\\interface\\terrain_semi_desert_mountains.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_desert_hills"
-		texturefile = "gfx\\interface\\terrain_desert_hills.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_desert_mountains"
-		texturefile = "gfx\\interface\\terrain_desert_mountains.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_dry_forest"
-		texturefile = "gfx\\interface\\terrain_dry_forest.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_dry_forest_hills"
-		texturefile = "gfx\\interface\\terrain_dry_forest_hills.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_dry_forest_mountains"
-		texturefile = "gfx\\interface\\terrain_dry_forest_mountains.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_deciduous_forest"
-		texturefile = "gfx\\interface\\terrain_deciduous_forest.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_deciduous_forest_hills"
-		texturefile = "gfx\\interface\\terrain_deciduous_forest_hills.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_deciduous_forest_mountains"
-		texturefile = "gfx\\interface\\terrain_deciduous_forest_mountains.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_conifer_forest"
-		texturefile = "gfx\\interface\\terrain_conifer_forest.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_conifer_forest_hills"
-		texturefile = "gfx\\interface\\terrain_conifer_forest_hills.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_conifer_forest_mountains"
-		texturefile = "gfx\\interface\\terrain_conifer_forest_mountains.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_boreal_forest"
-		texturefile = "gfx\\interface\\terrain_boreal_forest.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_boreal_forest_hills"
-		texturefile = "gfx\\interface\\terrain_boreal_forest_hills.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_boreal_forest_mountains"
-		texturefile = "gfx\\interface\\terrain_boreal_forest_mountains.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_jungle_hills"
-		texturefile = "gfx\\interface\\terrain_jungle_hills.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_jungle_mountains"
-		texturefile = "gfx\\interface\\terrain_jungle_mountains.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_seasonal_jungle"
-		texturefile = "gfx\\interface\\terrain_seasonal_jungle.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_seasonal_jungle_hills"
-		texturefile = "gfx\\interface\\terrain_seasonal_jungle_hills.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_seasonal_jungle_mountains"
-		texturefile = "gfx\\interface\\terrain_seasonal_jungle_mountains.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_cold_desert"
-		texturefile = "gfx\\interface\\terrain_cold_desert.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_cold_desert_hills"
-		texturefile = "gfx\\interface\\terrain_cold_desert_hills.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_cold_desert_mountains"
-		texturefile = "gfx\\interface\\terrain_cold_desert_mountains.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_tundra"
-		texturefile = "gfx\\interface\\terrain_tundra.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_tundra_hills"
-		texturefile = "gfx\\interface\\terrain_tundra_hills.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_tundra_mountains"
-		texturefile = "gfx\\interface\\terrain_tundra_mountains.tga"
-		norefcount = yes
-	}
 	PieChartType = {
 		name = "GFX_province_chart_small"
 		size = 14
 	}
-	spriteType = {
-		name = "GFX_terrainimg_boreal_marsh"
-		texturefile = "gfx\\interface\\terrain_boreal_marsh.tga"
-		norefcount = yes
-	}
 	
-	spriteType = {
-		name = "GFX_terrainimg_swamp_jungle"
-		texturefile = "gfx\\interface\\terrain_swamp_jungle.tga"
-		norefcount = yes
-	}
-
+	
 	spriteType = {
 		name = "GFX_terrainimg_mountain"
 		texturefile = "gfx\\interface\\terrain_mountains.tga"
@@ -497,8 +246,26 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_terrainimg_montane_tundra"
+		texturefile = "gfx\\interface\\terrain_montane_tundra.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_montane_forest"
+		texturefile = "gfx\\interface\\terrain_montane_forest.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
 		name = "GFX_terrainimg_steppe"
 		texturefile = "gfx\\interface\\terrain_steppe.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_savanna"
+		texturefile = "gfx\\interface\\terrain_savanna.tga"
 		norefcount = yes
 	}
 	
@@ -513,10 +280,16 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\terrain_forest.tga"
 		norefcount = yes
 	}
-
+		
 	spriteType = {
-		name = "GFX_terrainimg_woods"
-		texturefile = "gfx\\interface\\terrain_woods.tga"
+		name = "GFX_terrainimg_boreal"
+		texturefile = "gfx\\interface\\terrain_boreal.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_dryhills"
+		texturefile = "gfx\\interface\\terrain_dryhills.tga"
 		norefcount = yes
 	}
 		
@@ -529,12 +302,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_terrainimg_plains"
 		texturefile = "gfx\\interface\\terrain_plains.tga"
-		norefcount = yes
-	}
-	
-	spriteType = {
-		name = "GFX_terrainimg_urban"
-		texturefile = "gfx\\interface\\terrain_farmlands.tga"
 		norefcount = yes
 	}
 	
@@ -557,6 +324,36 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_terrainimg_semidesert"
+		texturefile = "gfx\\interface\\terrain_semidesert.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_coastal_desert"
+		texturefile = "gfx\\interface\\terrain_coastal_desert.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_small_island"
+		texturefile = "gfx\\interface\\terrain_small_island.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_coral_island"
+		texturefile = "gfx\\interface\\terrain_coral_island.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_urban"
+		texturefile = "gfx\\interface\\terrain_urban.tga"
+		norefcount = yes
+	}
+
+	spriteType = {
 		name = "GFX_terrainimg_arctic"
 		texturefile = "gfx\\interface\\terrain_arctic.tga"
 		norefcount = yes
@@ -564,9 +361,64 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_terrainimg_ocean"
-		texturefile = "gfx\\interface\\terrain_mountains.tga"
+		texturefile = "gfx\\interface\\terrain_ocean.tga"
 		norefcount = yes
 	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_montane_tundra"
+		texturefile = "gfx\\interface\\terrain_new_world_montane_tundra.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_mountain"
+		texturefile = "gfx\\interface\\terrain_new_world_mountain.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_arctic"
+		texturefile = "gfx\\interface\\terrain_new_world_arctic.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_small_island"
+		texturefile = "gfx\\interface\\terrain_new_world_small_island.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_jungle"
+		texturefile = "gfx\\interface\\terrain_new_world_jungle.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_plains"
+		texturefile = "gfx\\interface\\terrain_new_world_plains.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_boreal"
+		texturefile = "gfx\\interface\\terrain_new_world_boreal.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_desert"
+		texturefile = "gfx\\interface\\terrain_new_world_desert.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_semidesert"
+		texturefile = "gfx\\interface\\terrain_new_world_semidesert.tga"
+		norefcount = yes
+	}
+	
 	spriteType = {
 		name = "GFX_invest_rail_button"
 		texturefile = "gfx\\interface\\invest_rail_button.tga"
@@ -608,6 +460,7 @@ spriteTypes = {
 		name = "GFX_rally_point_merge"
 		texturefile = "gfx\\interface\\rally_point_merge.tga"
 	}
+
 	spriteType = {
 		name = "GFX_colony_invest_strip"
 		textureFile = "gfx\\interface\\colony_invest_strip.dds"
@@ -620,5 +473,6 @@ spriteTypes = {
 		noOfFrames = 5
 		effectFile = "gfx\\FX\\buttonstate.fx"
    		norefcount = yes
-	}	
+	}
+	
 }

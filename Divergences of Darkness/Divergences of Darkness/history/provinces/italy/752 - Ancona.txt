@@ -2,11 +2,15 @@ owner = PAP
 controller = PAP
 add_core = PAP
 add_core = ITA
-trade_goods = wool
+trade_goods = fruit
 life_rating = 35
-terrain = good_farmland
 #state_building = {
 #	level = 1
 #	building = winery
 #	upgrade = yes
 #}
+1861.1.1 = {
+	controller = ITA
+	owner = ITA
+	add_core = ITA
+}

@@ -3,5 +3,11 @@ controller = SAR
 add_core = SAR
 add_core = ITA
 trade_goods = coal
-life_rating = 34
-terrain = deciduous_forest_mountains
+life_rating = 31
+1861.1.1 = {
+	remove_core = ITA
+	remove_core = SAR
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+}

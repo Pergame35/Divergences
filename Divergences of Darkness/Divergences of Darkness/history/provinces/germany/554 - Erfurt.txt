@@ -3,11 +3,10 @@ controller = THU
 add_core = THU
 add_core = GER
 trade_goods = iron
-life_rating = 39
-terrain = good_farmland 
-
+life_rating = 40
+1861.1.1 = { railroad = 3 }
 state_building = {
 	level = 2 
-	building = fertilizer_factory
+	building = steel_factory
 	upgrade = yes
 }

@@ -3,11 +3,9 @@ controller = SPA
 add_core = SPA
 trade_goods = iron
 life_rating = 35
-terrain = dry_forest_mountains 
-     
 state_building = {
 	level = 2 
-	building = bakery
+	building = steel_factory
 	upgrade = yes
 }       
 state_building = {
@@ -15,3 +13,4 @@ state_building = {
 	building = ammunition_factory
 	upgrade = yes
 }
+1861.1.1 = { railroad = 3 }

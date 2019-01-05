@@ -92,23 +92,23 @@ leader = {
 }
 
 army = {
-	name = "Imperial regulars"
+	name = "Imperial infantrys"
 	location = 860
 	regiment = {
 		name= "1. Bostancy-yy Hassa"
-		type = regular
+		type = infantry
 		home = 803
 	}
 
 	regiment = {
 		name= "2. Bostancy-yy Hassa"
-		type = regular
+		type = infantry
 		home = 803
 	}
 
 	regiment = {
 		name= "3. Bostancy-yy Hassa"
-		type = regular
+		type = infantry
 		home = 832
 	}
 
@@ -126,13 +126,13 @@ army = {
 	location = 861
 	regiment = {
 		name= "5. Piyade Tümeni"
-		type = regular
+		type = infantry
 		home = 810
 	}
 
 	regiment = {
 		name= "6. Piyade Tümeni"
-		type = regular
+		type = infantry
 		home = 810
 	}
 
@@ -229,13 +229,13 @@ army = {
 	location = 1746
 	regiment = {
 		name= "12. Piyade Tümeni"
-		type = regular
+		type = infantry
 		home = 876
 	}
 
 	regiment = {
 		name= "13. Piyade Tümeni"
-		type = regular
+		type = infantry
 		home = 881
 	}
 

@@ -6,5 +6,8 @@ add_core = GRE
 add_core = TUR
 trade_goods = fruit
 life_rating = 35
-terrain = hilly_grassland
 
+1861.1.1 = {
+	controller = TUR 
+	owner = TUR
+}

@@ -4,10 +4,8 @@ add_core = BAV
 add_core = GER
 trade_goods = coal
 life_rating = 40
-terrain = forested_farmland   
- 
 state_building = {
 	level = 2 
-	building = bakery
+	building = canned_food_factory
 	upgrade = yes
 }

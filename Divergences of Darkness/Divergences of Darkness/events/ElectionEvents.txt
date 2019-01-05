@@ -4,9 +4,273 @@
 # all marked as country_events, but they are actually state_scope
 #
 #
-# Event IDs 14000 are reserved for this. DO NOT CHANGE.
+# Event IDs 14000 are reserved for country. DO NOT CHANGE.
 #
 ###########################################################################
+#Select if you are going to vote on the elections or not
+
+#country_event = {
+#	id = 14005
+#	title = "EVTNAME14005"
+#	desc = "EVTDESC14005"
+#	picture = "election_polls"
+#	
+#	trigger = {
+#	election = yes
+#	NOT = {
+#		OR = {
+#		has_country_modifier = will_influence_elections
+#		has_country_modifier = let_the_chips_fall 
+#			}
+#		}
+#	}
+#		
+#	option = {
+#		name = "EVTOPTA14005"
+#		add_country_modifier = {
+#			name = will_influence_elections
+#			duration = 213
+#		}
+#		ai_chance = { factor =  1 }
+#	}
+#	
+#	option = {
+#		name = "EVTOPTB14005"
+#		random_list = {
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = protectionism
+#								}
+#							}
+#						}	
+#					}
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = free_trade
+#								}
+#							}
+#						}	
+#					}
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#						factor = 0.4
+#						value = protectionism
+#								}
+#						scaled_militancy = {
+#						issue = free_trade
+#						factor = 4
+#								}
+#							}			
+#						}	
+#					}
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#						factor = 0.4
+#						value = free_trade
+#								}
+#						scaled_militancy = {
+#						issue = protectionism
+#						factor = 4
+#								}
+#							}			
+#						}	
+#					}
+#				}
+#		random_list = {
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = laissez_faire
+#								}
+#							}
+#						}
+#					}
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = interventionism
+#								}
+#							}
+#						}	
+#					}
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = state_capitalism
+#								}
+#							}
+#						}	
+#					}
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = planned_economy
+#								}
+#							}
+#						}	
+#					}
+#				}
+#		random_list = {
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = pro_atheism
+#								}
+#							}
+#						}
+#					}
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							value = moralism
+#								}
+#							}
+#						}
+#					}
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = secularized
+#								}
+#							}
+#						}
+#					}
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = pluralism
+#								}
+#							}
+#						}
+#					}
+#				}
+#		random_list = {
+#			33 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = residency
+#								}
+#							}
+#						}
+#					}
+#			33 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = limited_citizenship
+#								}
+#							}
+#						}
+#					}
+#			33 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = full_citizenship
+#								}
+#							}
+#						}
+#					}
+#				}
+#		random_list = {
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = jingoism
+#								}
+#							}
+#						}
+#					}
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = pro_military
+#								}	
+#							}
+#						}
+#					}
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = anti_military
+#								}
+#							}
+#						}
+#					}
+#			25 = {
+#				random_state = {
+#					limit = { is_colonial = no }
+#					any_pop = {
+#						dominant_issue = {
+#							factor = 0.25
+#							value = pacifism
+#								}
+#							}
+#						}
+#					}
+#				}
+#		add_country_modifier = {
+#			name = let_the_chips_fall
+#			duration = 213
+#			}
+#		ai_chance = { factor = 0 }
+#		}
+#	}
+
+
 # A Heated Debate: Trade Policy
 country_event = {
 	id = 14000
@@ -16,21 +280,15 @@ country_event = {
 	election = yes
 	issue_group = trade_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
+	
 	
 	option = {
 		name = "EVTOPTA14000"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
+				factor = 0.2
 				value = protectionism
-			}
-			dominant_issue = {
-				factor = 0.01
-				value = interventionism
 			}
 			scaled_militancy = {
 				issue = free_trade
@@ -43,7 +301,7 @@ country_event = {
 		name = "EVTOPTB14000"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = protectionism
 			}
 			scaled_militancy = {
@@ -59,7 +317,7 @@ country_event = {
 			10 = {
 				any_pop = {
 					dominant_issue = {
-						factor = 0.025
+						factor = 0.25
 						value = free_trade
 					}
 				}
@@ -67,7 +325,7 @@ country_event = {
 			10 = {
 				any_pop = {
 					dominant_issue = {
-						factor = 0.025
+						factor = 0.25
 						value = protectionism
 					}
 				}
@@ -79,7 +337,7 @@ country_event = {
 		name = "EVTOPTD14000"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = free_trade
 			}
 			scaled_militancy = {
@@ -93,14 +351,9 @@ country_event = {
 		name = "EVTOPTE14000"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
+				factor = 0.2
 				value = free_trade
 			}
-			dominant_issue = {
-				factor = 0.01
-				value = laissez_faire
-			}
-
 			scaled_militancy = {
 				issue = protectionism
 				factor = 4
@@ -118,21 +371,18 @@ country_event = {
 	election = yes
 	issue_group = economic_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14010"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = laissez_faire
 			}
 			scaled_militancy = {
 				issue = planned_economy
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -141,12 +391,12 @@ country_event = {
 		name = "EVTOPTB14010"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = interventionism
 			}
 			scaled_militancy = {
 				issue = state_capitalism
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -155,12 +405,12 @@ country_event = {
 		name = "EVTOPTC14010"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = state_capitalism
 			}
 			scaled_militancy = {
 				issue = interventionism
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -169,12 +419,12 @@ country_event = {
 		name = "EVTOPTD14010"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = planned_economy
 			}
 			scaled_militancy = {
 				issue = laissez_faire
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -189,31 +439,19 @@ country_event = {
 	election = yes
 	issue_group = religious_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14020"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = pro_atheism
 			}
 			scaled_militancy = {
 				issue = moralism
-				factor = 3
+				factor = 0.2
 			}
-		}
-		clergymen = {
-			reduce_pop = 0.998
-			consciousness = 5
-			militancy = 1
-		}
-		clerks = { 
-			consciousness = 2
-			militancy = -1
 		}
 	}
 	
@@ -221,12 +459,12 @@ country_event = {
 		name = "EVTOPTB14020"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = secularized
 			}
 			scaled_militancy = {
 				issue = pluralism
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -235,12 +473,12 @@ country_event = {
 		name = "EVTOPTC14020"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = pluralism
 			}
 			scaled_militancy = {
 				issue = secularized
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -249,22 +487,13 @@ country_event = {
 		name = "EVTOPTD14020"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = moralism
 			}
 			scaled_militancy = {
 				issue = pro_atheism
-				factor = 3
+				factor = 0.2
 			}
-		}
-		clergymen = {
-			consciousness = 2
-			militancy = -1
-		}
-		clerks = { 
-			reduce_pop = 0.998
-			consciousness = 5
-			militancy = 1
 		}
 	}
 }
@@ -278,21 +507,18 @@ country_event = {
 	election = yes
 	issue_group = citizenship_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14030"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = residency
 			}
 			scaled_militancy = {
 				issue = limited_citizenship
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -301,12 +527,12 @@ country_event = {
 		name = "EVTOPTB14030"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = limited_citizenship
 			}
 			scaled_militancy = {
 				issue = full_citizenship
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -315,12 +541,12 @@ country_event = {
 		name = "EVTOPTC14030"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = full_citizenship
 			}
 			scaled_militancy = {
 				issue = residency
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -335,21 +561,18 @@ country_event = {
 	election = yes
 	issue_group = war_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14040"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = jingoism
 			}
 			scaled_militancy = {
 				issue = pacifism
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -358,12 +581,12 @@ country_event = {
 		name = "EVTOPTB14040"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = pro_military
 			}
 			scaled_militancy = {
 				issue = anti_military
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -372,12 +595,12 @@ country_event = {
 		name = "EVTOPTC14040"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = anti_military
 			}
 			scaled_militancy = {
 				issue = pro_military
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -386,12 +609,12 @@ country_event = {
 		name = "EVTOPTD14040"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.1
 				value = pacifism
 			}
 			scaled_militancy = {
 				issue = jingoism
-				factor = 3
+				factor = 0.2
 			}
 		}
 	}
@@ -406,21 +629,18 @@ country_event = {
 	election = yes
 	issue_group = trade_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14050"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.025
+				factor = 0.3
 				value = protectionism
 			}
 			scaled_militancy = {
 				issue = free_trade
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -429,12 +649,12 @@ country_event = {
 		name = "EVTOPTB14050"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.25
 				value = protectionism
 			}
-			dominant_issue = {
-				factor = 0.01
-				value = free_trade
+			scaled_militancy = {
+				issue = free_trade
+				factor = 0.2
 			}
 		}
 	}
@@ -442,9 +662,9 @@ country_event = {
 	option = {
 		name = "EVTOPTC14050"
 		any_pop = {
-			scaled_militancy = {
-				issue = free_trade
-				factor = 2
+			dominant_issue = {
+				factor = 0.15
+				value = protectionism
 			}
 		}
 	}
@@ -453,12 +673,8 @@ country_event = {
 		name = "EVTOPTD14050"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = free_trade
-			}
-			scaled_militancy = {
-				issue = protectionism
-				factor = 2
+				factor = 0.10
+				value = protectionism
 			}
 		}
 	}
@@ -467,12 +683,8 @@ country_event = {
 		name = "EVTOPTE14050"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.025
-				value = free_trade
-			}
-			scaled_militancy = {
-				issue = protectionism
-				factor = 4
+				factor = 0.05
+				value = protectionism
 			}
 		}
 	}
@@ -487,21 +699,18 @@ country_event = {
 	election = yes
 	issue_group = trade_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14060"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.03
+				factor = 0.30
 				value = free_trade
 			}
 			scaled_militancy = {
 				issue = protectionism
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -510,12 +719,12 @@ country_event = {
 		name = "EVTOPTB14060"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
+				factor = 0.25
 				value = free_trade
 			}
 			scaled_militancy = {
 				issue = protectionism
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -524,7 +733,7 @@ country_event = {
 		name = "EVTOPTC14060"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = free_trade
 			}
 		}
@@ -534,12 +743,8 @@ country_event = {
 		name = "EVTOPTD14060"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = protectionism
-			}
-			scaled_militancy = {
-				issue = free_trade
-				factor = 2
+				factor = 0.10
+				value = free_trade
 			}
 		}
 	}
@@ -548,12 +753,8 @@ country_event = {
 		name = "EVTOPTE14060"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
-				value = protectionism
-			}
-			scaled_militancy = {
-				issue = free_trade
-				factor = 4
+				factor = 0.05
+				value = free_trade
 			}
 		}
 	}
@@ -568,21 +769,18 @@ country_event = {
 	election = yes
 	issue_group = economic_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14070"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.025
+				factor = 0.30
 				value = laissez_faire
 			}
 			scaled_militancy = {
 				issue = planned_economy
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -591,12 +789,12 @@ country_event = {
 		name = "EVTOPTB14070"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.25
 				value = laissez_faire
 			}
 			scaled_militancy = {
 				issue = planned_economy
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -605,12 +803,8 @@ country_event = {
 		name = "EVTOPTC14070"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = laissez_faire
-			}
-			dominant_issue = {
-				factor = 0.01
-				value = planned_economy
 			}
 		}
 	}
@@ -619,12 +813,8 @@ country_event = {
 		name = "EVTOPTD14070"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = planned_economy
-			}
-			scaled_militancy = {
-				issue = laissez_faire
-				factor = 2
+				factor = 0.10
+				value = laissez_faire
 			}
 		}
 	}
@@ -633,12 +823,8 @@ country_event = {
 		name = "EVTOPTE14070"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.025
-				value = planned_economy
-			}
-			scaled_militancy = {
-				issue = laissez_faire
-				factor = 4
+				factor = 0.05
+				value = laissez_faire
 			}
 		}
 	}
@@ -653,24 +839,18 @@ country_event = {
 	election = yes
 	issue_group = economic_policy
 	is_triggered_only = yes
-
-	trigger = {
-		owner = {
-			NOT = { economic_policy = laissez_faire }
-		}
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14080"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.025
+				factor = 0.30
 				value = interventionism
 			}
 			scaled_militancy = {
 				issue = state_capitalism
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -679,12 +859,12 @@ country_event = {
 		name = "EVTOPTB14080"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.25
 				value = interventionism
 			}
 			scaled_militancy = {
 				issue = state_capitalism
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -693,12 +873,8 @@ country_event = {
 		name = "EVTOPTC14080"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = interventionism
-			}
-			dominant_issue = {
-				factor = 0.01
-				value = state_capitalism
 			}
 		}
 	}
@@ -707,12 +883,8 @@ country_event = {
 		name = "EVTOPTD14080"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = state_capitalism
-			}
-			scaled_militancy = {
-				issue = interventionism
-				factor = 2
+				factor = 0.10
+				value = interventionism
 			}
 		}
 	}
@@ -721,12 +893,8 @@ country_event = {
 		name = "EVTOPTE14080"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.025
-				value = state_capitalism
-			}
-			scaled_militancy = {
-				issue = interventionism
-				factor = 4
+				factor = 0.05
+				value = interventionism
 			}
 		}
 	}
@@ -741,17 +909,18 @@ country_event = {
 	election = yes
 	issue_group = economic_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14090"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
+				factor = 0.30
 				value = state_capitalism
+			}
+			scaled_militancy = {
+				issue = interventionism
+				factor = 0.2
 			}
 		}
 	}
@@ -760,8 +929,12 @@ country_event = {
 		name = "EVTOPTB14090"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.25
 				value = state_capitalism
+			}
+			scaled_militancy = {
+				issue = interventionism
+				factor = 0.2
 			}
 		}
 	}
@@ -770,8 +943,8 @@ country_event = {
 		name = "EVTOPTC14090"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = interventionism
+				factor = 0.15
+				value = state_capitalism
 			}
 		}
 	}
@@ -780,16 +953,8 @@ country_event = {
 		name = "EVTOPTD14090"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = interventionism
-			}
-			dominant_issue = {
-				factor = 0.01
-				value = laissez_faire
-			}
-			scaled_militancy = {
-				issue = state_capitalism
-				factor = 2
+				factor = 0.10
+				value = state_capitalism
 			}
 		}
 	}
@@ -798,12 +963,8 @@ country_event = {
 		name = "EVTOPTE14090"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
-				value = laissez_faire
-			}
-			scaled_militancy = {
-				issue = state_capitalism
-				factor = 4
+				factor = 0.05
+				value = state_capitalism
 			}
 		}
 	}
@@ -818,24 +979,18 @@ country_event = {
 	election = yes
 	issue_group = economic_policy
 	is_triggered_only = yes
-
-	trigger = {
-		owner = {
-			NOT = { economic_policy = laissez_faire }
-		}
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14100"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.03
+				factor = 0.30
 				value = planned_economy
 			}
 			scaled_militancy = {
 				issue = laissez_faire
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -844,12 +999,12 @@ country_event = {
 		name = "EVTOPTB14100"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
+				factor = 0.25
 				value = planned_economy
 			}
 			scaled_militancy = {
 				issue = laissez_faire
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -858,12 +1013,8 @@ country_event = {
 		name = "EVTOPTC14100"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = planned_economy
-			}
-			dominant_issue = {
-				factor = 0.01
-				value = laissez_faire
 			}
 		}
 	}
@@ -872,12 +1023,8 @@ country_event = {
 		name = "EVTOPTD14100"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = laissez_faire
-			}
-			scaled_militancy = {
-				issue = planned_economy
-				factor = 2
+				factor = 0.10
+				value = planned_economy
 			}
 		}
 	}
@@ -886,12 +1033,8 @@ country_event = {
 		name = "EVTOPTE14100"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
-				value = laissez_faire
-			}
-			scaled_militancy = {
-				issue = planned_economy
-				factor = 4
+				factor = 0.05
+				value = planned_economy
 			}
 		}
 	}
@@ -906,25 +1049,18 @@ country_event = {
 	election = yes
 	issue_group = religious_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14110"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
-				value = secularized
-			}
-			dominant_issue = {
-				factor = 0.01
+				factor = 0.30
 				value = pro_atheism
 			}
 			scaled_militancy = {
 				issue = moralism
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -933,12 +1069,12 @@ country_event = {
 		name = "EVTOPTB14110"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = secularized
+				factor = 0.25
+				value = pro_atheism
 			}
 			scaled_militancy = {
 				issue = moralism
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -947,12 +1083,8 @@ country_event = {
 		name = "EVTOPTC14110"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = secularized
-			}
-			dominant_issue = {
-				factor = 0.01
-				value = moralism
+				factor = 0.15
+				value = pro_atheism
 			}
 		}
 	}
@@ -961,12 +1093,8 @@ country_event = {
 		name = "EVTOPTD14110"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = moralism
-			}
-			scaled_militancy = {
-				issue = pro_atheism
-				factor = 2
+				factor = 0.10
+				value = pro_atheism
 			}
 		}
 	}
@@ -975,16 +1103,8 @@ country_event = {
 		name = "EVTOPTE14110"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
-				value = moralism
-			}
-			scaled_militancy = {
-				issue = secularized
-				factor = 2
-			}
-			scaled_militancy = {
-				issue = pro_atheism
-				factor = 4
+				factor = 0.05
+				value = pro_atheism
 			}
 		}
 	}
@@ -999,21 +1119,18 @@ country_event = {
 	election = yes
 	issue_group = religious_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14120"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.03
+				factor = 0.30
 				value = secularized
 			}
 			scaled_militancy = {
 				issue = pluralism
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -1022,12 +1139,12 @@ country_event = {
 		name = "EVTOPTB14120"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
+				factor = 0.25
 				value = secularized
 			}
 			scaled_militancy = {
 				issue = pluralism
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -1036,7 +1153,7 @@ country_event = {
 		name = "EVTOPTC14120"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = secularized
 			}
 		}
@@ -1046,12 +1163,8 @@ country_event = {
 		name = "EVTOPTD14120"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = pluralism
-			}
-			scaled_militancy = {
-				issue = secularized
-				factor = 2
+				factor = 0.10
+				value = secularized
 			}
 		}
 	}
@@ -1060,12 +1173,8 @@ country_event = {
 		name = "EVTOPTE14120"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
-				value = pluralism
-			}
-			scaled_militancy = {
-				issue = secularized
-				factor = 4
+				factor = 0.05
+				value = secularized
 			}
 		}
 	}
@@ -1080,21 +1189,18 @@ country_event = {
 	election = yes
 	issue_group = religious_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14130"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
+				factor = 0.30
 				value = pluralism
 			}
 			scaled_militancy = {
-				issue = moralism
-				factor = 4
+				issue = secularized
+				factor = 0.2
 			}
 		}
 	}
@@ -1103,12 +1209,12 @@ country_event = {
 		name = "EVTOPTB14130"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.25
 				value = pluralism
 			}
 			scaled_militancy = {
-				issue = moralism
-				factor = 2
+				issue = secularized
+				factor = 0.2
 			}
 		}
 	}
@@ -1117,12 +1223,8 @@ country_event = {
 		name = "EVTOPTC14130"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = pluralism
-			}
-			dominant_issue = {
-				factor = 0.01
-				value = moralism
 			}
 		}
 	}
@@ -1131,12 +1233,8 @@ country_event = {
 		name = "EVTOPTD14130"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = moralism
-			}
-			scaled_militancy = {
-				issue = pluralism
-				factor = 2
+				factor = 0.10
+				value = pluralism
 			}
 		}
 	}
@@ -1145,12 +1243,8 @@ country_event = {
 		name = "EVTOPTE14130"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
-				value = moralism
-			}
-			scaled_militancy = {
-				issue = pluralism
-				factor = 4
+				factor = 0.05
+				value = pluralism
 			}
 		}
 	}
@@ -1165,21 +1259,18 @@ country_event = {
 	election = yes
 	issue_group = religious_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14140"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.025
+				factor = 0.30
 				value = moralism
 			}
 			scaled_militancy = {
 				issue = pro_atheism
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -1188,12 +1279,12 @@ country_event = {
 		name = "EVTOPTB14140"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.25
 				value = moralism
 			}
 			scaled_militancy = {
 				issue = pro_atheism
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -1202,12 +1293,8 @@ country_event = {
 		name = "EVTOPTC14140"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = moralism
-			}
-			dominant_issue = {
-				factor = 0.01
-				value = pro_atheism
 			}
 		}
 	}
@@ -1216,12 +1303,8 @@ country_event = {
 		name = "EVTOPTD14140"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = pro_atheism
-			}
-			scaled_militancy = {
-				issue = moralism
-				factor = 2
+				factor = 0.10
+				value = moralism
 			}
 		}
 	}
@@ -1230,12 +1313,8 @@ country_event = {
 		name = "EVTOPTE14140"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.025
-				value = pro_atheism
-			}
-			scaled_militancy = {
-				issue = moralism
-				factor = 4
+				factor = 0.05
+				value = moralism
 			}
 		}
 	}
@@ -1250,21 +1329,18 @@ country_event = {
 	election = yes
 	issue_group = citizenship_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14150"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.025
+				factor = 0.30
 				value = residency
 			}
 			scaled_militancy = {
 				issue = limited_citizenship
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -1273,12 +1349,12 @@ country_event = {
 		name = "EVTOPTB14150"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.25
 				value = residency
 			}
 			scaled_militancy = {
 				issue = limited_citizenship
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -1287,12 +1363,8 @@ country_event = {
 		name = "EVTOPTC14150"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = residency
-			}
-			dominant_issue = {
-				factor = 0.01
-				value = limited_citizenship
 			}
 		}
 	}
@@ -1301,12 +1373,8 @@ country_event = {
 		name = "EVTOPTD14150"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = limited_citizenship
-			}
-			scaled_militancy = {
-				issue = residency
-				factor = 2
+				factor = 0.10
+				value = residency
 			}
 		}
 	}
@@ -1315,12 +1383,8 @@ country_event = {
 		name = "EVTOPTE14150"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.025
-				value = limited_citizenship
-			}
-			scaled_militancy = {
-				issue = residency
-				factor = 4
+				factor = 0.05
+				value = residency
 			}
 		}
 	}
@@ -1335,24 +1399,18 @@ country_event = {
 	election = yes
 	issue_group = citizenship_policy
 	is_triggered_only = yes
-
-	trigger = {
-		owner = {
-			NOT = { citizenship_policy = full_citizenship }
-		}
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14160"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.03
+				factor = 0.30
 				value = limited_citizenship
 			}
 			scaled_militancy = {
 				issue = full_citizenship
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -1361,12 +1419,12 @@ country_event = {
 		name = "EVTOPTB14160"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
+				factor = 0.25
 				value = limited_citizenship
 			}
 			scaled_militancy = {
 				issue = full_citizenship
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -1375,7 +1433,7 @@ country_event = {
 		name = "EVTOPTC14160"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = limited_citizenship
 			}
 		}
@@ -1385,12 +1443,8 @@ country_event = {
 		name = "EVTOPTD14160"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = full_citizenship
-			}
-			scaled_militancy = {
-				issue = limited_citizenship
-				factor = 2
+				factor = 0.10
+				value = limited_citizenship
 			}
 		}
 	}
@@ -1399,12 +1453,8 @@ country_event = {
 		name = "EVTOPTE14160"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
-				value = full_citizenship
-			}
-			scaled_militancy = {
-				issue = limited_citizenship
-				factor = 4
+				factor = 0.05
+				value = limited_citizenship
 			}
 		}
 	}
@@ -1419,21 +1469,18 @@ country_event = {
 	election = yes
 	issue_group = citizenship_policy
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14170"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.03
+				factor = 0.30
 				value = full_citizenship
 			}
 			scaled_militancy = {
 				issue = residency
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -1442,12 +1489,12 @@ country_event = {
 		name = "EVTOPTB14170"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
+				factor = 0.25
 				value = full_citizenship
 			}
 			scaled_militancy = {
 				issue = residency
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -1456,7 +1503,7 @@ country_event = {
 		name = "EVTOPTC14170"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = full_citizenship
 			}
 		}
@@ -1466,12 +1513,8 @@ country_event = {
 		name = "EVTOPTD14170"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = residency
-			}
-			scaled_militancy = {
-				issue = full_citizenship
-				factor = 2
+				factor = 0.10
+				value = full_citizenship
 			}
 		}
 	}
@@ -1480,12 +1523,8 @@ country_event = {
 		name = "EVTOPTE14170"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
-				value = residency
-			}
-			scaled_militancy = {
-				issue = full_citizenship
-				factor = 4
+				factor = 0.05
+				value = full_citizenship
 			}
 		}
 	}
@@ -1500,22 +1539,18 @@ country_event = {
 	election = yes
 	issue_group = war_policy
 	is_triggered_only = yes
-
-	trigger = {
-		any_owned_province = { jingoism = 5 }
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14180"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.03
+				factor = 0.30
 				value = jingoism
 			}
 			scaled_militancy = {
 				issue = pacifism
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -1524,16 +1559,12 @@ country_event = {
 		name = "EVTOPTB14180"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
+				factor = 0.25
 				value = jingoism
-			}
-			dominant_issue = {
-				factor = 0.01
-				value = pro_military
 			}
 			scaled_militancy = {
 				issue = pacifism
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -1542,7 +1573,7 @@ country_event = {
 		name = "EVTOPTC14180"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = jingoism
 			}
 		}
@@ -1552,12 +1583,8 @@ country_event = {
 		name = "EVTOPTD14180"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = anti_military
-			}
-			scaled_militancy = {
-				issue = jingoism
-				factor = 2
+				factor = 0.10
+				value = jingoism
 			}
 		}
 	}
@@ -1566,12 +1593,8 @@ country_event = {
 		name = "EVTOPTE14180"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = pacifism
-			}
-			scaled_militancy = {
-				issue = jingoism
-				factor = 4
+				factor = 0.05
+				value = jingoism
 			}
 		}
 	}
@@ -1586,44 +1609,42 @@ country_event = {
 	election = yes
 	issue_group = war_policy
 	is_triggered_only = yes
-
-	trigger = {
-		has_pop_type = soldiers
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14190"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.03
+				factor = 0.30
 				value = pro_military
 			}
+			scaled_militancy = {
+				issue = anti_military
+				factor = 0.2
+			}
 		}
-		soldiers = { militancy = -3 }
 	}
 	
 	option = {
 		name = "EVTOPTB14190"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
+				factor = 0.25
 				value = pro_military
 			}
+			scaled_militancy = {
+				issue = anti_military
+				factor = 0.2
+			}
 		}
-		soldiers = { militancy = -1 }
 	}
 		
 	option = {
 		name = "EVTOPTC14190"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = pro_military
-			}
-			dominant_issue = {
-				factor = 0.01
-				value = anti_military
 			}
 		}
 	}
@@ -1632,22 +1653,20 @@ country_event = {
 		name = "EVTOPTD14190"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = anti_military
+				factor = 0.10
+				value = pro_military
 			}
 		}
-		soldiers = { militancy = 1 }
 	}
 	
 	option = {
 		name = "EVTOPTE14190"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.02
-				value = anti_military
+				factor = 0.05
+				value = pro_military
 			}
 		}
-		soldiers = { militancy = 3 }
 	}
 }
 
@@ -1657,24 +1676,21 @@ country_event = {
 	title = "EVTNAME14200"
 	desc = "EVTDESC14200"
 	
-	election = yes
 	issue_group = war_policy
+	election = yes
 	is_triggered_only = yes
-
-	trigger = {
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14200"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.025
+				factor = 0.30
 				value = anti_military
 			}
 			scaled_militancy = {
 				issue = pro_military
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -1683,12 +1699,12 @@ country_event = {
 		name = "EVTOPTB14200"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.25
 				value = anti_military
 			}
 			scaled_militancy = {
 				issue = pro_military
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -1697,12 +1713,8 @@ country_event = {
 		name = "EVTOPTC14200"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = anti_military
-			}
-			dominant_issue = {
-				factor = 0.01
-				value = pro_military
 			}
 		}
 	}
@@ -1711,12 +1723,8 @@ country_event = {
 		name = "EVTOPTD14200"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = pro_military
-			}
-			scaled_militancy = {
-				issue = anti_military
-				factor = 2
+				factor = 0.10
+				value = anti_military
 			}
 		}
 	}
@@ -1725,12 +1733,8 @@ country_event = {
 		name = "EVTOPTE14200"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.025
-				value = pro_military
-			}
-			scaled_militancy = {
-				issue = anti_military
-				factor = 4
+				factor = 0.05
+				value = anti_military
 			}
 		}
 	}
@@ -1742,25 +1746,22 @@ country_event = {
 	title = "EVTNAME14210"
 	desc = "EVTDESC14210"
 	
-	election = yes
+	
 	issue_group = war_policy
+	election = yes
 	is_triggered_only = yes
-
-	trigger = {
-		any_owned_province = { pacifism = 5 }
-		is_colonial = no
-	}
+	#trigger = { country = { has_country_modifier = will_influence_elections } }
 	
 	option = {
 		name = "EVTOPTA14210"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.03
+				factor = 0.30
 				value = pacifism
 			}
 			scaled_militancy = {
 				issue = jingoism
-				factor = 4
+				factor = 0.2
 			}
 		}
 	}
@@ -1769,12 +1770,12 @@ country_event = {
 		name = "EVTOPTB14210"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.020
+				factor = 0.25
 				value = pacifism
 			}
 			scaled_militancy = {
 				issue = jingoism
-				factor = 2
+				factor = 0.2
 			}
 		}
 	}
@@ -1783,7 +1784,7 @@ country_event = {
 		name = "EVTOPTC14210"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
+				factor = 0.15
 				value = pacifism
 			}
 		}
@@ -1793,12 +1794,8 @@ country_event = {
 		name = "EVTOPTD14210"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = pro_military
-			}
-			scaled_militancy = {
-				issue = pacifism
-				factor = 2
+				factor = 0.10
+				value = pacifism
 			}
 		}
 	}
@@ -1807,13 +1804,10 @@ country_event = {
 		name = "EVTOPTE14210"
 		any_pop = {
 			dominant_issue = {
-				factor = 0.01
-				value = jingoism
-			}
-			scaled_militancy = {
-				issue = pacifism
-				factor = 4
+				factor = 0.05
+				value = pacifism
 			}
 		}
 	}
 }
+

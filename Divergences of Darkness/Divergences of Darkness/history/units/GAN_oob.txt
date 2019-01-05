@@ -18,17 +18,17 @@ army = {
 	name = "Army of the King of Zhourao"
 	location = 2468
 	regiment = {
-		name= "1. Royal regular"
-		type = regular
+		name= "1. Royal infantry"
+		type = infantry
 		home = 2468
 	}
 	regiment = {
-		name= "2. Royal regular"
+		name= "2. Royal infantry"
 		type = infantry
 		home = 2483
 	}
 	regiment = {
-		name= "2. Royal regular"
+		name= "2. Royal infantry"
 		type = hussar
 		home = 2483
 	}

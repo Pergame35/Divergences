@@ -3,4 +3,9 @@ controller = BRG
 add_core = BRG
 trade_goods = iron
 life_rating = 35
-terrain = forested_farmland
+1861.1.1 = { railroad = 3 }
+1861.1.1 = {
+	owner = LUX
+	controller = LUX
+	remove_core = NET
+}

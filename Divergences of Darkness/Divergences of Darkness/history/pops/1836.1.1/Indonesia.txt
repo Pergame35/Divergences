@@ -1900,7 +1900,7 @@
 		size = 11225
 	}
 }
-#Probolinggo (708000/177000 POPS)
+#Probolingo (708000/177000 POPS)
 1420 = {
 	aristocrats = {
 		culture = javan
@@ -3433,6 +3433,88 @@
 	}
 }
 #Ruled by Portugal 1836
+#Lifau (?/? POPS)
+2647 = {
+	aristocrats = {
+		culture = melanesian
+		religion = catholic
+		size = 15
+	}
+	
+	clergymen = {
+		culture = melanesian
+		religion = catholic
+		size = 20
+	}
+
+	artisans = {
+		culture = melanesian
+		religion = catholic
+		size = 25
+	}
+
+	soldiers = {
+		culture = melanesian
+		religion = catholic
+		size = 25
+	}
+
+	farmers = {
+		culture = melanesian
+		religion = catholic
+		size = 300
+	}
+
+	aristocrats = {
+		culture = melanesian
+		religion = animist
+		size = 5
+	}
+
+	clergymen = {
+		culture = melanesian
+		religion = animist
+		size = 50
+	}
+
+	artisans = {
+		culture = melanesian
+		religion = animist
+		size = 50
+	}
+
+	soldiers = {
+		culture = melanesian
+		religion = animist
+		size = 100
+	}
+
+	farmers = {
+		culture = melanesian
+		religion = animist
+		size = 750
+	}
+
+	bureaucrats = {
+		culture = anglois
+		religion = catholic
+		size = 5
+	}
+
+	artisans = {
+		culture = anglois
+		religion = catholic
+		size = 10
+	}
+
+	clergymen = {
+		culture = anglois
+		religion = catholic
+		size = 10
+	}
+}
+
+
 #Dili (88000/22000 POPS)
 1446 = {
 	clergymen = {

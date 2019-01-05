@@ -5,5 +5,8 @@ add_core = ROM
 add_core = TUR
 trade_goods = coal
 life_rating = 35
-terrain = good_farmland
 
+1861.1.1 = {
+	controller = ROM
+	owner = ROM
+}

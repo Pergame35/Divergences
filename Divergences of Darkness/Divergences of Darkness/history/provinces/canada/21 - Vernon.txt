@@ -1,8 +1,10 @@
 owner = DNG
 controller = DNG
 add_core = DNG
-
-
 trade_goods = timber
-life_rating = 35
-terrain = boreal_forest_mountains
+life_rating = 31
+1861.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 2
+}

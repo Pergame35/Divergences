@@ -3,12 +3,11 @@ controller = BAV
 add_core = BAV
 add_core = GER
 trade_goods = fruit
-life_rating = 39
-terrain = hilly_farmland  
- 
+life_rating = 40
+1861.1.1 = { railroad = 3 }
 state_building = {
 	level = 2 
-	building = bakery
+	building = canned_food_factory
 	upgrade = yes
 }  
  
@@ -17,4 +16,3 @@ state_building = {
 	building = lumber_mill
 	upgrade = yes
 }       
-

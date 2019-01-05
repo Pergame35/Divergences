@@ -1,17 +1,12 @@
-capital = 1036
+capital = 1030
 primary_culture = crimean
 religion = sunni
 government = absolute_monarchy
 plurality = 0.03
-nationalvalue = nv_progress
+nationalvalue = nv_tradition
 literacy = 0.15
-minorities_reform = oppression
-immigration_policy = quota_immigration
-conscription=mandatory_service
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+civilized = yes
+
 # Political reforms
 slavery = yes_slavery
 upper_house_composition = appointed
@@ -29,49 +24,42 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
+school_reforms = no_schools
+
+# New Reforms
+conscription = one_year_draft
+debt_law = serfdom
+penal_system = capital_punishment
+child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = AAA_conservative_1
 upper_house = {
 	fascist = 0
 	liberal = 13
-	conservative = 68
-	reactionary = 19
+	conservative = 77
+	reactionary = 10
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
 
-# Level_4
-# Technologies
-early_classical_theory_and_critique = 1
-late_enlightenment_philosophy = 1
-enlightenment_thought = 1
-private_banks = 1
-bronze_muzzle_loaded_artillery = 1
-flintlock_rifles = 1
-no_standard = 1
-military_staff_system = 1
-post_napoleonic_thought = 1
-introspectionism = 1
-army_command_principle = 1
-basic_chemistry = 1
-
-# Inventions
+set_country_flag = sunni_country
 
 # Unciv Reforms
-diplomatic_reform = interactive
-academic_institutions = madrasahs
 admin_reform = yes_admin_reform
-taxation_reform = tax_farmers
 army_schools = yes_army_schools
-foreign_weapons = modern_weapons
+foreign_weapons = yes_foreign_weapons
 foreign_navies = yes_foreign_navies
-finance_reform = yes_finance_reform
 foreign_training = yes_foreign_training
 military_constructions = yes_military_constructions
-disciplinary_reform = rehabilitation
 foreign_officers = yes_foreign_officers
-medicine_reform = alchemy
+
+army_command_principle = 1
+bronze_muzzle_loaded_artillery = 1
+flintlock_rifles = 1
+military_staff_system = 1
+post_napoleonic_thought = 1
 
 # Starting Consciousness
 consciousness = 0

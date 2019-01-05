@@ -2,6 +2,10 @@ add_core = SYR
 add_core = TUR
 add_core = NEJ
 add_core = JOR
-trade_goods = grain
-life_rating = 5
-terrain = desert
+trade_goods = cattle
+life_rating = 10
+
+1861.1.1 = {
+	controller = TUR 
+	owner = TUR
+}

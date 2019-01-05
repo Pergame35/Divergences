@@ -188,9 +188,8 @@
         size = 27325
     }
 }
-#Hokkaido Region (840000)
-#under the rule of Japan in 1836
-#Hakodate (240000/60000 POPS)
+#Hokkaido - Ezo Region (60000 People )
+#Hakodate (15000/6000 POPS)
 1642 = {
     clergymen = {
         culture = japanese
@@ -270,7 +269,7 @@
         size = 37075
     }
 }
-#Ishikara (240000/60000 POPS)
+#Ishikara (15000/5000 POPS)
 1643 = {
     clergymen = {
         culture = japanese
@@ -326,7 +325,7 @@
         size = 46275
     }
 }
-#Nemuru (360000/90000 POPS)
+#Nemuru - Meakan (15000/4000 POPS)
 1644 = {
     clergymen = {
         culture = japanese
@@ -1122,6 +1121,34 @@
         size = 5
     }
 }
+
+#Tsushima - formerly Shoyna
+2589 = {
+	clergymen = {
+		culture = japanese
+		religion = shinto
+		size = 124
+	}
+
+	artisans = {
+		culture = japanese
+		religion = shinto
+		size = 500
+	}
+
+	soldiers = {
+		culture = japanese
+		religion = shinto
+		size = 207
+	}
+
+	farmers = {
+		culture = japanese
+		religion = shinto
+		size = 3308
+	}
+}
+
 #Nagasaki (1012000/253000 POPS)
 1661 = {
     clergymen = {
@@ -1878,70 +1905,142 @@
 }
 #Ryukyu Region (272000)
 #tributary state to Japan in 1836
-#Okinawa (192000/48000 POPS)  #ryukyuan represented by japanese
+#Okinawa (192000/48000 POPS)  #ryukyuan represented by japanese 
 1678 = {
-    officers = {
-        culture = japanese
-        religion = mahayana
-        size = 75
-    }
+	aristocrats = {
+		culture = japanese
+		religion = shinto
+		size = 850
+	}
 
-    clergymen = {
-        culture = japanese
-        religion = mahayana
-        size = 450
-    }
+	bureaucrats = {
+		culture = japanese
+		religion = shinto
+		size = 45
+	}
 
-    artisans = {
-        culture = japanese
-        religion = mahayana
-        size = 2200
-    }
+	officers = {
+		culture = japanese
+		religion = shinto
+		size = 75
+	}
 
-    farmers = {
-        culture = japanese
-        religion = mahayana
-        size = 39930
-    }
+	clergymen = {
+		culture = japanese
+		religion = shinto
+		size = 450
+	}
 
-    clergymen = {
-        culture = beifaren
-        religion = mahayana
-        size = 75
-    }
+	artisans = {
+		culture = japanese
+		religion = shinto
+		size = 2200
+	}
 
-    artisans = {
-        culture = beifaren
-        religion = mahayana
-        size = 200
-    }
+	soldiers = {
+		culture = japanese
+		religion = shinto
+		size = 450
+	}
 
-    farmers = {
-        culture = beifaren
-        religion = mahayana
-        size = 3670
-    }
+	farmers = {
+		culture = japanese
+		religion = shinto
+		size = 59930
+	}
+
+	bureaucrats = {
+		culture = nanfaren
+		religion = shinto
+		size = 5
+	}
+
+	clergymen = {
+		culture = nanfaren
+		religion = shinto
+		size = 75
+	}
+
+	artisans = {
+		culture = nanfaren
+		religion = shinto
+		size = 200
+	}
+
+	soldiers = {
+		culture = nanfaren
+		religion = shinto
+		size = 2050
+	}
+
+	farmers = {
+		culture = nanfaren
+		religion = shinto
+		size = 3670
+	}
 }
 #Amari (80000/20000 POPS)
 1679 = {
-    clergymen = {
-        culture = japanese
-        religion = mahayana
-        size = 200
-    }
+	aristocrats = {
+		culture = japanese
+		religion = shinto
+		size = 375
+	}
 
-    artisans = {
-        culture = japanese
-        religion = mahayana
-        size = 1000
-    }
+	clergymen = {
+		culture = japanese
+		religion = shinto
+		size = 200
+	}
 
-    farmers = {
-        culture = japanese
-        religion = mahayana
-        size = 18225
-    }
+	artisans = {
+		culture = japanese
+		religion = shinto
+		size = 1100
+	}
+
+	soldiers = {
+		culture = japanese
+		religion = shinto
+		size = 200
+	}
+
+	farmers = {
+		culture = japanese
+		religion = shinto
+		size = 18225
+	}
+
 }
+
+#Sado - Old Reliance (2000/500 POPS)
+12 = {
+
+	clergymen = {
+		culture = japanese
+		religion = shinto
+		size = 250
+	}
+
+	artisans = {
+		culture = japanese
+		religion = shinto
+		size = 3500
+	}
+
+	soldiers = {
+		culture = japanese
+		religion = shinto
+		size = 1100
+	}
+
+	farmers = {
+		culture = japanese
+		religion = shinto
+		size = 20150
+	}
+}
+
 #Sakhalin-Kurile Region (16200)
 #uncolonized in 1836
 #Pogobi (4100/1025 POPS)
@@ -2020,6 +2119,7 @@
         size = 25
     }
 }
+
 #Shumshu (4000/1000 POPS)
 1088 = {
     aristocrats = {

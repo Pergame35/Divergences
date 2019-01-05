@@ -5,9 +5,11 @@ culture = sami
 religion = protestant
 government = democracy
 plurality = 0.5
-nationalvalue = nv_liberty
+nationalvalue = nv_productivity
 literacy = 0.7
+non_state_culture_literacy = 0.04
 civilized = yes
+prestige = 5
 
 # Political reforms
 slavery = no_slavery
@@ -18,32 +20,38 @@ press_rights = free_press
 trade_unions = no_trade_unions
 voting_system = jefferson_method
 political_parties = non_secret_ballots
-minorities_reform = limited
-immigration_policy = quota_immigration
-conscription=two_year_draft
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions
+pensions = no_pensions 
+school_reforms = no_schools
+
+# New Reforms
+conscription = no_draft
+debt_law = peonage
+penal_system = capital_punishment
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
+border_policy = quota_immigration
+
+set_country_flag = protestant_country
 
 ruling_party = AAA_conservative_1
 upper_house = {
 	fascist = 0
-	liberal = 20
-	conservative = 40
-	reactionary = 2
-	anarcho_liberal = 3
-	socialist = 35
+	liberal = 0
+	conservative = 80
+	reactionary = 20
+	anarcho_liberal = 0
+	socialist = 0
 	communist = 0
 }
 
+# Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
@@ -62,9 +70,9 @@ introspectionism = 1
 private_banks = 1
 no_standard = 1
 early_classical_theory_and_critique = 1
-freedom_of_trade = 1
 guild_based_production = 1
-water_wheel_power = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
+piston_steam_engine = 1
+

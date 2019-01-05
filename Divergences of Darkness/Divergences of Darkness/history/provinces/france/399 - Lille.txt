@@ -3,10 +3,17 @@ controller = BRG
 add_core = BRG
 add_core = FRA
 trade_goods = iron
-life_rating = 35
-terrain = good_farmland
+life_rating = 31
 #state_building = {
-#	level = 4
+#	level = 1
 #	building = steel_factory
 #	upgrade = yes
 #}
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 3 }

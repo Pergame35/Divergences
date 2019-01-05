@@ -1,10 +1,11 @@
 owner = AIN
 controller = AIN
 add_core = AIN
-
-trade_goods = copper
-life_rating = 20
-terrain = boreal_forest_mountains
+trade_goods = fish
+terrain = montane_tundra
+life_rating = 15
 colonial = 1
-
-
+1861.1.1 = {
+	fort = 1
+	naval_base = 1
+}

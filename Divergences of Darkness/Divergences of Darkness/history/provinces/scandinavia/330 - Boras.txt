@@ -3,7 +3,6 @@ controller = SCA
 add_core = SCA
 trade_goods = fish
 life_rating = 35
-terrain = forested_farmland
 state_building = {
 	level = 2 
 	building = lumber_mill
@@ -19,3 +18,11 @@ state_building = {
 	building = paper_mill
 	upgrade = yes
 }
+1861.1.1 = { 
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	} 
+}
+1861.1.1 = { railroad = 3 }

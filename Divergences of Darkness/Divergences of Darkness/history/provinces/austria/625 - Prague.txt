@@ -1,10 +1,14 @@
 owner = BOH
 controller = BOH
 add_core = BOH
+trade_goods = coal
+life_rating = 35
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
 
-trade_goods = iron
-life_rating = 40
-terrain = good_farmland
 state_building = {
 	level = 2
 	building = steel_factory
@@ -26,12 +30,26 @@ state_building = {
 	upgrade = yes
 }
 state_building = {
-	level = 2 
+	level = 3 
 	building = glass_factory
 	upgrade = yes
 }
 state_building = {
-	level = 1
-	building = stock_exchange
+	level = 2 
+	building = liquor_distillery
 	upgrade = yes
+}
+
+1861.1.1 = { railroad = 3 }
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
 }

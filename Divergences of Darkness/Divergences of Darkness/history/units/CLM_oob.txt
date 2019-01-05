@@ -140,7 +140,7 @@ army = {
 
 army = {
 	name = "Ejército del Norte"
-	location = 2146
+	location = 2148
 	regiment = {
 		name= "1.Division Cos"
 		type = infantry
@@ -201,13 +201,13 @@ army = {
 	location = 2174
 	regiment = {
 		name= "1.Division Comonfort"
-		type = regular
+		type = infantry
 		home = 2251
 	}
 
 	regiment = {
 		name= "2.Division Comonfort"
-		type = regular
+		type = infantry
 		home = 2264
 	}
 

@@ -8,8 +8,8 @@ country_event = {
 	trigger = {
 		civilized = yes
 		OR = {
-			pop_majority_religion = catholic
-			pop_majority_religion = protestant
+			has_country_flag = catholic_country
+			has_country_flag = protestant_country
 		}
 		NOT = {
 			has_country_modifier = libertine_culture
@@ -47,6 +47,10 @@ country_event = {
 		modifier = {
 			factor = 0.9
 			liquor = 50
+		}
+		modifier = {
+			factor = 0.5
+			is_culture_group = american_cultures
 		}
 		modifier = {
 			factor = 0.9
@@ -91,8 +95,8 @@ country_event = {
 	trigger = {
 		civilized = yes
 		OR = {
-			pop_majority_religion = catholic
-			pop_majority_religion = protestant
+			has_country_flag = catholic_country
+			has_country_flag = protestant_country
 		}
 		NOT = {
 			has_country_modifier = liquor_prohibition
@@ -356,8 +360,8 @@ country_event = {
 	trigger = {
 		civilized = yes
 		OR = {
-			pop_majority_religion = catholic
-			pop_majority_religion = protestant
+			has_country_flag = catholic_country
+			has_country_flag = protestant_country
 		}
 		moralism = 10
 		conservative = 20
@@ -427,8 +431,8 @@ country_event = {
 	trigger = {
 		civilized = yes
 		OR = {
-			pop_majority_religion = catholic
-			pop_majority_religion = protestant
+			has_country_flag = catholic_country
+			has_country_flag = protestant_country
 		}
 		has_country_modifier = temperance_league
 		NOT = { has_country_modifier = liquor_prohibition }
@@ -500,8 +504,8 @@ country_event = {
 	trigger = {
 		civilized = yes
 		OR = {
-			pop_majority_religion = catholic
-			pop_majority_religion = protestant
+			has_country_flag = catholic_country
+			has_country_flag = protestant_country
 		}
 		socialist = 20
 	}
@@ -651,7 +655,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "185.A"
+		name = "EVT185OPTA"
 		any_pop = {
 			dominant_issue = {
 				value = moralism
@@ -675,7 +679,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "185.B"
+		name = "EVT185OPTB"
 		random_state = {
 			limit = { is_colonial = no }
 			any_pop = {
@@ -748,7 +752,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "186.A"
+		name = "EVT186OPTA"
 		any_pop = {
 			limit = {
 				location = { is_colonial = no }
@@ -765,7 +769,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "186.B"
+		name = "EVT186OPTB"
 		remove_country_modifier = libertine_culture
 		any_pop = {
 			limit = {

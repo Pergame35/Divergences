@@ -3,7 +3,8 @@ controller = BEN
 add_core = HND
 add_core = BEN
 #add_core = MUG
-trade_goods = tea
-life_rating = 40
-terrain = floodplain_farmland
+trade_goods = dye
+life_rating = 32
 fort = 1
+naval_base = 1
+1861.1.1 = { railroad = 3 }

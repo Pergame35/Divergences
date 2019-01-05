@@ -5,11 +5,17 @@ add_core = GER
 add_core = POM
 trade_goods = fish
 life_rating = 40
-terrain = marginal_farmland
-naval_base = 1 
-#state_building = {
-#	level = 2 
-#	building = fertilizer_factory
-#	upgrade = yes
-#}
-
+naval_base = 1
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 3 }

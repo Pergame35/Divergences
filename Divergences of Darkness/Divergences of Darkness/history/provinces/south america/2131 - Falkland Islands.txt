@@ -3,5 +3,10 @@ controller = SCA
 add_core = NAN
 trade_goods = wool
 life_rating = 30
-terrain = hills
 colonial = 1
+terrain = new_world_plains
+1861.1.1 = { 
+	add_core = ARG
+	remove_core = ARC
+	colonial = 0
+}

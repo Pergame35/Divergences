@@ -171,6 +171,42 @@
 		size = 8800
 	}
 }
+
+#Orkney & Shetland - former Tamanrasset
+1724 = {
+
+	aristocrats = {
+		culture = scandinavian
+		religion = protestant
+		size = 40
+	}
+
+	clergymen = {
+		culture = scandinavian
+		religion = protestant
+		size = 225
+	}
+
+	soldiers = {
+		culture = scandinavian
+		religion = protestant
+		size = 375
+	}
+
+	artisans = {
+		culture = scandinavian
+		religion = protestant
+		size = 1000
+	}
+
+	farmers = {
+		culture = scandinavian
+		religion = protestant
+		size = 5860
+	}
+
+}
+
 #Dundee (364000/91000 POPS)
 268 = {
 	aristocrats = {
@@ -721,6 +757,7 @@
 	}
 
 }
+
 #Lancashire Region : 1896000
 #Liverpool (936000/234000 POPS)
 277 = {

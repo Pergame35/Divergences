@@ -167,39 +167,19 @@
 #uncolonized in 1836
 #Bonin (60/15 POPS)
 1654 = {
-    farmers = {
-        culture = micronesian
-        religion = animist
-        size = 15
-    }
-}
-#Wake (60/15 POPS)
-2524 = {
-    farmers = {
-        culture = micronesian
-        religion = animist
-        size = 15
-    }
-
-    aristocrats = {
-        culture = polynesian
-        religion = animist
-        size = 10
-    }
-
-    soldiers = {
-        culture = polynesian
-        religion = animist
-        size = 15
-    }
+	farmers = {
+		culture = micronesian
+		religion = animist
+		size = 7
+	}
 }
 #Marcus (60/15 POPS)
 2525 = {
-    farmers = {
-        culture = micronesian
-        religion = animist
-        size = 15
-    }
+	farmers = {
+		culture = micronesian
+		religion = animist
+		size = 15
+	}
 }
 #Easterns Micronesia (21000)
 #uncolonized in 1836

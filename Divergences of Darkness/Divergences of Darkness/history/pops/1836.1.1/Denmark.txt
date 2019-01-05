@@ -58,41 +58,27 @@
 		religion = protestant
 		size = 10000
 	}
-	
-	artisans = {
-		culture = scandinavian
-		religion = protestant
-		size = 3250
-	}
 
 	soldiers = {
 		culture = scandinavian
 		religion = protestant
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = scandinavian
-		religion = protestant
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = scandinavian
-		religion = protestant
-		size= 1000
-
+		size = 2500
 	}
 
 	farmers = {
 		culture = scandinavian
 		religion = protestant
-		size = 40325
+		size = 48075
+	}
+	
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 226
 	}
 }
 #Alborg (152000/38000 POPS)
+#5k farmers moved to 2557
 367 = {
 	aristocrats = {
 		culture = scandinavian
@@ -115,17 +101,18 @@
 	soldiers = {
 		culture = scandinavian
 		religion = protestant
-		size= 500
-
+		size = 1100
 	}
 
 	farmers = {
 		culture = scandinavian
 		religion = protestant
-		size = 25000 #5k moved to 2557
+		size = 14500
 	}
 }
 #Ribe (148000/37000 POPS)
+#1k moved to 2557
+#10k moved to 2557
 368 = {
 	aristocrats = {
 		culture = scandinavian
@@ -142,20 +129,19 @@
 	artisans = {
 		culture = scandinavian
 		religion = protestant
-		size = 1100 #1k moved to 2557
+		size = 1100 
 	}
 
 	soldiers = {
 		culture = scandinavian
 		religion = protestant
-		size= 500
-
+		size = 1100
 	}
 
 	farmers = {
 		culture = scandinavian
 		religion = protestant
-		size = 24000 #10k moved to 2557
+		size = 23400 
 	}
 
 }
@@ -175,8 +161,7 @@
 	soldiers = {
 		culture = scandinavian
 		religion = protestant
-		size= 250
-
+		size = 1100
 	}
 	aristocrats = {
 		culture = scandinavian
@@ -186,7 +171,7 @@
 	farmers = {
 		culture = scandinavian
 		religion = protestant
-		size = 14400
+		size = 23550
 	}
 }
 	

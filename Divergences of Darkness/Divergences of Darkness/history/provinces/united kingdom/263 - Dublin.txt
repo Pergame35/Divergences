@@ -3,11 +3,21 @@ controller = DUA
 add_core = DUA
 add_core = IRE
 trade_goods = grain
-life_rating = 35
 naval_base = 1
-terrain = good_farmland
-#state_building = {
-#	level = 4
-#	building = liquor_distillery
-#	upgrade = yes
-#}
+life_rating = 35
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = furniture_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = { 
+	railroad = 3
+	naval_base = 2
+}

@@ -4,6 +4,10 @@ add_core = EGY
 add_core = TUR
 add_core = PLS
 add_core = SYR
-trade_goods = fish
+trade_goods = fruit
 life_rating = 35
-terrain = hilly_farmland
+
+1861.1.1 = {
+	controller = TUR 
+	owner = TUR
+}

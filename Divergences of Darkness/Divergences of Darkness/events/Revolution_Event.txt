@@ -17,7 +17,12 @@ country_event = {
 	picture = "Danishgovernment"
 
 	option = {
-		name = "800050.A"
+		name = "EVT800050OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
@@ -142,16 +147,39 @@ country_event = {
 
 	is_triggered_only = yes
 
-	title = "EVTNAME800051"  #The New Regime- Fascist
+	title = "EVTNAME800051"  #The New Regime - Fascist
 	desc = "EVTDESC800051"
 	picture = "Fascist"
 
 	option = {
-		name = "800051.A"
+		name = "EVT800051OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
+		clr_country_flag = communist_gov
+		clr_country_flag = absolute_monarchy_gov
+		clr_country_flag = semi_constitutional_monarchy_gov
+		clr_country_flag = constitutional_monarchy_gov
+		clr_country_flag = democracy_gov
+		clr_country_flag = presidential_dictatorship_gov
+		set_country_flag = fascist_gov
+		clr_country_flag = anarcho_liberal_gov
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = paramilitaries_outlawed
 		clr_country_flag = rebels_in_capital
+		random_owned = { 
+			limit = { owner = { primary_culture = british accepted_culture = irish } } 
+			owner = { remove_accepted_culture = irish }
+		}
+		
+		random_owned = { 
+			limit = { owner = { tag = XIN } } 
+			owner = { remove_accepted_culture = uighur }
+		}
+		
 		random_owned = {
 			limit = {
 				owner = {
@@ -197,7 +225,6 @@ country_event = {
 			}
 		}
 		any_owned = {
-			remove_province_modifier = fascist_stronghold
 			remove_province_modifier = black_shirts
 			remove_province_modifier = fascist_welfare
 			remove_province_modifier = free_corps
@@ -400,7 +427,20 @@ country_event = {
 	picture = "Celebration"
 
 	option = {
-		name = "800052.A"
+		name = "EVT800052OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
+		set_country_flag = communist_gov
+		clr_country_flag = absolute_monarchy_gov
+		clr_country_flag = semi_constitutional_monarchy_gov
+		clr_country_flag = constitutional_monarchy_gov
+		clr_country_flag = democracy_gov
+		clr_country_flag = presidential_dictatorship_gov
+		clr_country_flag = fascist_gov
+		clr_country_flag = anarcho_liberal_gov
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
@@ -444,7 +484,6 @@ country_event = {
 			}
 		}
 		any_owned = {
-			remove_province_modifier = communist_stronghold
 			remove_province_modifier = labor_union
 			remove_province_modifier = militant_trade_union
 			remove_province_modifier = worker_union
@@ -489,7 +528,7 @@ country_event = {
 				OR = {
 					neighbour = THIS
 					is_culture_group = THIS
-				}
+				} 
 				government = proletarian_dictatorship
 				NOT = {
 					has_country_flag = former_sphere_leader
@@ -580,7 +619,7 @@ country_event = {
 			}
 			relation = { who = THIS value = -100 }
 			leave_alliance = THIS
-		}	
+		}		
 	}
 }
 
@@ -595,7 +634,21 @@ country_event = {
 	picture = "Revolution"
 
 	option = {
-		name = "800053.A"
+		name = "EVT800053OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
+		political_reform = open_borders
+		clr_country_flag = communist_gov
+		clr_country_flag = absolute_monarchy_gov
+		clr_country_flag = semi_constitutional_monarchy_gov
+		clr_country_flag = constitutional_monarchy_gov
+		clr_country_flag = democracy_gov
+		clr_country_flag = presidential_dictatorship_gov
+		clr_country_flag = fascist_gov
+		set_country_flag = anarcho_liberal_gov
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
@@ -784,7 +837,7 @@ country_event = {
 			}
 			relation = { who = THIS value = -100 }
 			leave_alliance = THIS
-		}	
+		}					
 	}
 }
 
@@ -799,7 +852,13 @@ country_event = {
 	picture = "Prosper"
 
 	option = {
-		name = "800054.A"
+		name = "EVT800054OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
+		random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = liberal_revolution_fired
@@ -847,28 +906,6 @@ country_event = {
 		}
 		remove_country_modifier = springtime_of_nations
 		remove_country_modifier = global_liberal_agitation
-		random_owned = { 
-		limit = { 
-			owner = { 
-					OR = { 	
-						tag = SAR 
-						tag = GEN 
-						tag = LUC
-						tag = FRR 
-						tag = MOD 	
-						tag = PAR
-						tag = LOM
-					}
-					has_country_flag = carbonari_activity 
-					OR = { 
-					government = absolute_monarchy
-					government = prussian_constitutionalism 
-					government = hms_government 
-					}
-				}
-			}
-		owner = { government = democracy }
-		}
 		random_owned = {
 			limit = {
 				owner = {
@@ -887,6 +924,7 @@ country_event = {
 				owner = { tag = TUR }
 			}
 			owner = {
+				remove_accepted_culture = kurdish
 				any_pop = {
 					limit = {
 						OR = {
@@ -1078,7 +1116,7 @@ country_event = {
 			}
 			relation = { who = THIS value = -100 }
 			leave_alliance = THIS
-		}
+		}						
 	}
 }
 
@@ -1093,7 +1131,7 @@ country_event = {
 	picture = "unite"
 	
 	option = {
-		name = "810055.A"
+		name = "EVT810055OPTA"
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
@@ -1162,7 +1200,13 @@ country_event = {
 	picture = "Prosper"
 
 	option = {
-		name = "810056.A"
+		name = "EVT810056OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
+		random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
@@ -1382,39 +1426,36 @@ country_event = {
 	}
 }
 
+#The Colonial Regime Overthrown! - REDO
 country_event = {
 	
 	id = 810057
 	
 	is_triggered_only = yes
 	
-	title = "EVTNAME810057" #The Colonial Regime Overthrown!
+	title = "EVTNAME810057"
 	desc = "EVTDESC810057"
 	picture = "unite"
 	
 	option = {
-		name = "810057.A"
+		name = "EVT810055OPTA"
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
 		clr_country_flag = post_colonial_country
-		#random_owned = {
-		#	limit = {
-		#		owner = { tag = BMK }
-		#	}
-		#	owner = { primary_culture = songhai }
-		#}
 		random_owned = {
-			limit = {
-				owner = { tag = BUG }
-			}
+			limit = { owner = { tag = MLI } }
+			owner = { primary_culture = fulbe }
+		}
+		random_owned = {
+			limit = { owner = { tag = BUG } }
 			owner = { primary_culture = baganda }
 		}
 		random_owned = {
 			limit = {
 				owner = {
 					OR = {
-						#tag = CGO
+						tag = CGO
 						tag = CNG
 						tag = ANG
 					}
@@ -1422,70 +1463,114 @@ country_event = {
 			}
 			owner = { primary_culture = bakongo }
 		}
-		#random_owned = {
-		#	limit = {
-		#		owner = {
-		#			OR = {
-		#				tag = CHD
-		#				tag = CAR
-		#			}
-		#		}
-		#	}
-		#	owner = { primary_culture = sara }
-		#}
-		#random_owned = {
-		#	limit = {
-		#		owner = {
-		#			OR = {
-		#				tag = CMR
-		#				tag = GAB
-		#			}
-		#		}
-		#	}
-		#	owner = { primary_culture = fang }
-		#}
 		random_owned = {
-			limit = {
-				owner = { tag = INO }
-			}
+			limit = { owner = { tag = CHD } }
+			owner = { primary_culture = sara }
+		}
+		random_owned = {
+			limit = { owner = { tag = CAR } }
+			owner = { primary_culture = ubangian }
+		}
+		random_owned = {
+			limit = { owner = { tag = GAB } }
+			owner = { primary_culture = fang }
+		}
+		random_owned = {
+			limit = { owner = { tag = CMR } }
+			owner = { primary_culture = forest_bantu }
+		}
+		random_owned = {
+			limit = { owner = { tag = INO } }
 			owner = { primary_culture = javan }
 		}
-		#random_owned = {
-		#	limit = {
-		#		owner = { tag = IVC }
-		#	}
-		#	owner = { primary_culture = akan }
-		#}
-		#random_owned = {
-		#	limit = {
-		#		owner = { tag = KNY }
-		#	}
-		#	owner = { primary_culture = swahili }
-		#}
+		random_owned = {
+			limit = { owner = { tag = IVC } }
+			owner = { primary_culture = dyula }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = KNY }
+			}
+			owner = { primary_culture = kikuyu }
+		}
 		random_owned = {
 			limit = {
 				owner = { tag = LBY }
 			}
 			owner = { primary_culture = maghrebi }
 		}
-		#random_owned = {
-		#	limit = {
-		#		owner = { tag = MOZ }
-		#	}
-		#	owner = { primary_culture = nguni }
-		#}
-		#random_owned = {
-		#	limit = {
-		#		owner = {
-		#			OR = {
-		#				tag = NGR
-		#				tag = NIG
-		#				tag = GNE
-		#			}
-		#		}
-		#	}
-		#	owner = { primary_culture = fulbe }
-		#}
+		random_owned = {
+			limit = {
+				owner = { tag = MOZ }
+			}
+			owner = { primary_culture = shona }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = NGR }
+			}
+			owner = { primary_culture = yoruba }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = NIG }
+			}
+			owner = { primary_culture = hausa }
+		}
+		random_owned = {
+			limit = { owner = { tag = GNE } }
+			owner = { primary_culture = fulbe }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = SNG }
+			}
+			owner = { primary_culture = wolof }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = TNZ }
+			}
+			owner = { primary_culture = swahili }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = TOG }
+			}
+			owner = { primary_culture = ewe }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = BKF }
+			}
+			owner = { primary_culture = mossi }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = TSW }
+			}
+			owner = { primary_culture = tswana }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = ZAM }
+			}
+			owner = { primary_culture = lunda }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = SLE }
+			}
+			owner = { primary_culture = western_nigritic }
+		}
+		random_owned = {
+			limit = { owner = { tag = GNE } }
+			owner = { primary_culture = mande }
+		}
+		random_owned = {
+			limit = { owner = { tag = GMB } }
+			owner = { primary_culture = mande }
+		}
 		random_owned = {
 			limit = {
 				owner = { tag = NZL }
@@ -1496,17 +1581,17 @@ country_event = {
 				primary_culture = maori
 				add_accepted_culture = british
 				relation = { who = ENG value = -200 }
-				#relation = { who = AST value = -200 }
+				relation = { who = AST value = -200 }
 				add_casus_belli = {
 					target = ENG
 					type = free_peoples
 					months = 250
 				}
-				#add_casus_belli = {
-				#	target = AST
-				#	type = free_peoples
-				#	months = 250
-				#}
+				add_casus_belli = {
+					target = AST
+					type = free_peoples
+					months = 250
+				}
 			}
 			ENG_2513 = {
 				remove_core = NZL
@@ -1525,47 +1610,6 @@ country_event = {
 				add_accepted_culture = nguni
 			}
 		}
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						tag = SLE
-						#tag = GMB
-					}
-				}
-			}
-			owner = { primary_culture = mande }
-		}
-		#random_owned = {
-		#	limit = {
-		#		owner = { tag = SNG }
-		#	}
-		#	owner = { primary_culture = wolof }
-		#}
-		#random_owned = {
-		#	limit = {
-		#		owner = { tag = TNZ }
-		#	}
-		#	owner = { primary_culture = unyamwezi }
-		#}
-		#random_owned = {
-		#	limit = {
-		#		owner = { tag = TOG }
-		#	}
-		#	owner = { primary_culture = ewe }
-		#}
-		random_owned = {
-			limit = {
-				owner = { tag = TSW }
-			}
-			owner = { primary_culture = tswana }
-		}
-		#random_owned = {
-		#	limit = {
-		#		owner = { tag = ZAM }
-		#	}
-		#	owner = { primary_culture = lunda }
-		#}
 		any_pop = {
 			militancy = -6
 		}
@@ -1575,7 +1619,7 @@ country_event = {
 				is_accepted_culture = no
 				NOT = {
 					OR = {
-						is_culture_group = arabic
+						is_culture_group = arab
 						is_culture_group = west_african
 						is_culture_group = central_african
 						is_culture_group = east_african
@@ -1633,7 +1677,7 @@ country_event = {
 			}
 			relation = { who = THIS value = -100 }
 			leave_alliance = THIS
-		}
+		}		
 	}
 }
 
@@ -1646,9 +1690,8 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "800147.A"
+		name = "EVT800147OPTA"
 		prestige_factor = -0.25
-		set_global_flag = british_dismantled
 		any_pop = {
 			limit = {
 				location = { is_core = HND }
@@ -1657,17 +1700,28 @@ country_event = {
 		}
 		any_country = {
 			limit = {
-				is_culture_group = south_asian
+				OR = {
+					tag = MUG
+					tag = BUN
+					tag = MEW
+					tag = AWA
+					tag = GWA
+					}
 				exists = yes
 			}
 			country_event = 800148
 		}
 		any_country = {
 			limit = {
+				OR = {
+					tag = MUG
+					tag = BUN
+					tag = MEW
+					tag = AWA
+					tag = GWA
+					}
 				any_core = { owned_by = THIS }
 				exists = no
-				is_cultural_union = no
-				is_culture_group = south_asian
 			}
 			add_casus_belli = {
 				target = THIS
@@ -1688,7 +1742,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "800148.A"
+		name = "EVT800148OPTA"
 		any_pop = {
 			militancy = -4
 		}
@@ -1718,7 +1772,7 @@ country_event = {
 			limit = {
 				owner = { civilized = no }
 			}
-			FROM = { release = THIS }
+			FROM = { release_vassal = THIS }
 		}
 		FROM = {
 			diplomatic_influence = {
@@ -1726,6 +1780,7 @@ country_event = {
 				value = -200
 			}
 		}
+
 	}
 }
 
@@ -1738,7 +1793,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "800149.A"
+		name = "EVT800149OPTA"
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		set_country_flag = angry_rioters_victorious
@@ -1749,57 +1804,23 @@ country_event = {
 		}
 		random_owned = {
 			limit = {
-				owner = { nationalvalue = nv_progress }
-			}
-			owner = {
-				nationalvalue = nv_enlightenment
-				remove_country_modifier = national_confusion
-				add_country_modifier = {
-					name = national_confusion
-					duration = 180
-				}
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						nationalvalue = nv_independence
-						nationalvalue = nv_loyalty
-					}
-				}
-			}
-			owner = {
-				nationalvalue = nv_tradition
-				remove_country_modifier = national_confusion
-				add_country_modifier = {
-					name = national_confusion
-					duration = 180
-				}
-			}
-		}
-		random_owned = {
-			limit = {
+				owner = { civilized = no }
 				owner = { has_country_modifier = western_influences }
 			}
 			owner = {
 				remove_country_modifier = western_influences
 				add_country_modifier = {
-					name = "uncivilized_isolationism"
+					name = uncivilized_isolationism
 					duration = -1
 				}
 			}
 		}
 		random_owned = {
-			limit = {
-				owner = { has_country_modifier = educational_reform }
-			}
+			limit = { owner = { has_country_modifier = educational_reform } }
 			owner = { remove_country_modifier = educational_reform }
 		}
 		random_owned = {
-			limit = {
-				owner = { civilized = no }
-			}
+			limit = { owner = { civilized = no } }
 			owner = {
 				any_owned = {
 					remove_province_modifier = peasant_revolt
@@ -1880,6 +1901,24 @@ country_event = {
 				}
 			}
 		}
+		
+		random_owned = {
+			limit = { owner = { foreign_naval_officers = yes_foreign_naval_officers } }
+			owner = { add_country_modifier = { name = isolationist_foreign_naval_officers duration = -1 } }
+		}
+		random_owned = {
+			limit = { owner = { foreign_training = yes_foreign_training } }
+			owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
+		}
+		random_owned = {
+			limit = { owner = { naval_schools = yes_naval_schools } }
+			owner = { add_country_modifier = { name = isolationist_foreign_naval_schools duration = -1 } }
+		}
+		random_owned = {
+			limit = { owner = { foreign_training = yes_foreign_training } }
+			owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
+		}
+		
 		any_country = {
 			limit = {
 				civilized = yes
@@ -1900,7 +1939,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "97700.A"
+		name = "EVT97700OPTA"
 		random_country = {
 			limit = {
 				tag = FROM
@@ -1968,7 +2007,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "97700.B"
+		name = "EVT97700OPTB"
 		any_pop = {
 			limit = { is_primary_culture = yes }
 			militancy = 3
@@ -2032,7 +2071,7 @@ country_event = {
 	}
 
 	option = {
-		name = "800151.A"
+		name = "EVT97700OPTA"
 		random_country = {
 			limit = {
 				neighbour = THIS
@@ -2143,7 +2182,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "800151.B"
+		name = "EVT97700OPTB"
 		any_pop = {
 			limit = { is_primary_culture = yes }
 			militancy = 3
@@ -2237,7 +2276,7 @@ country_event = {
 	}
 
 	option = {
-		name = "800152.A"
+		name = "EVT800152OPTA"
 		any_owned = {
 			limit = {
 				controlled_by = THIS
@@ -2259,7 +2298,7 @@ country_event = {
 	picture = "Unite"
 
 	option = {
-		name = "800055.A"
+		name = "EVT800055OPTA"
 		badboy = -1
 		any_pop = {
 			scaled_militancy = {
@@ -2340,7 +2379,7 @@ country_event = {
 	}
 
 	option = {
-		name = "800055.B"
+		name = "EVT800055OPTB"
 		clr_country_flag = former_overlord		
 		relation = {
 			who = FROM
@@ -2396,7 +2435,7 @@ country_event = {
 			
 	}
 	option = {
-		name = "800055.C" 
+		name = "EVT800055OPTC"
 		clr_country_flag = former_overlord
 		badboy = 2
 		any_pop = {
@@ -2527,7 +2566,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "800056.A"
+		name = "EVT800056OPTA"
 		clr_country_flag = former_sphere_leader
 		prestige = -5
 		any_pop = {
@@ -2619,7 +2658,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "800056.B"
+		name = "EVT800056OPTB"
 		clr_country_flag = former_sphere_leader
 		badboy = 1
 		any_pop = {
@@ -2648,7 +2687,7 @@ country_event = {
 				is_sphere_leader_of = FROM
 				NOT = { tag = THIS }
 			}
-			add_casus_belli = {	
+			add_casus_belli = {
 				target = THIS
 				type = take_from_sphere
 				months = 24
@@ -2781,7 +2820,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "10228.A"
+		name = "EVT97562OPTA"
 		prestige = -25
 		random_country = {
 			limit = { 
@@ -2807,8 +2846,8 @@ country_event = {
 #Notifying a sphere-owner if rebels are going to win
 country_event = {
 	id = 97565
-	title = "97565.T"
-	desc = "97565.D"
+	title = "EVTNAME97565"
+	desc = "EVTDESC97565"
 	
 	trigger = {
 		ai = yes
@@ -2837,7 +2876,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "17515.A"
+		name = "EVT97562OPTA"
 		set_country_flag = called_for_help
 		any_country = {
 			limit = {
@@ -2858,7 +2897,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "97566.A"
+		name = "EVT97566OPTA"
 		create_alliance = FROM
 		military_access = FROM
 		relation = { who = FROM value = 25 }
@@ -2868,7 +2907,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "97566.B"
+		name = "EVT97566OPTB"
 		relation = { who = FROM value = -50 }
 		ai_chance = {
 			factor = 0
@@ -2878,8 +2917,8 @@ country_event = {
 
 country_event = {
 	id = 97567
-	title = "97567.T"
-	desc = "97567.D"
+	title = "EVTNAME97567"
+	desc = "EVTDESC97567"
 	
 	trigger = {
 		ai = yes
@@ -2898,7 +2937,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "800023.A"
+		name = "EVT800152OPTA"
 		clr_country_flag = called_for_help
 	}
 }
@@ -2913,7 +2952,7 @@ province_event = {
 			war = no
 			has_country_flag = post_colonial_country
 			NOT = {
-				is_culture_group = arabic
+				is_culture_group = arab
 				is_culture_group = west_african
 				is_culture_group = central_african
 				is_culture_group = east_african
@@ -2924,13 +2963,13 @@ province_event = {
 		}
 		any_pop = {
 			OR = {
-				is_culture_group = arabic
+				is_culture_group = arab
 				is_culture_group = west_african
 				is_culture_group = central_african
 				is_culture_group = east_african
 				is_culture_group = southern_african
 				is_culture_group = southeast_asian
-				culture = maori
+				has_pop_culture = maori
 			}
 		}
 		controlled_by = THIS
@@ -2963,7 +3002,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "97570.A"
+		name = "EVT97570OPTA"
 		add_province_modifier = {
 			name = peasant_revolt
 			duration = 730
@@ -2978,3 +3017,74 @@ province_event = {
 	}
 }
 
+# Independence event for Indian minors
+country_event = {
+	
+	id = 97124
+	title = "EVTNAME97124"
+	desc = "EVTDESC97124"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA96031" #Great
+		FROM = { release_vassal = THIS }
+		random_country = {
+			limit = {
+				is_greater_power = yes
+				is_culture_group = south_asian
+			}
+			relation = { who = THIS value = 100 }
+			diplomatic_influence = { who = THIS value = 200 }
+		}
+		random_country = {
+			limit = {
+				is_greater_power = yes
+				NOT = { tag = FROM }
+				NOT = { any_greater_power = { is_culture_group = south_asian } }
+				neighbour = THIS
+			}
+			diplomatic_influence = { who = THIS value = 100 }
+		}
+		random_country = {
+			limit = {
+				is_greater_power = yes
+				NOT = { tag = FROM }
+				NOT = { any_greater_power = { is_culture_group = south_asian } }
+				NOT = { any_greater_power = { neighbour = THIS } }
+				any_owned_province = { continent = asia }
+			}
+			diplomatic_influence = { who = THIS value = 50 }
+		}
+		FROM = {
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+			relation = {
+				who = THIS
+				value = -200
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					NOT = { has_global_flag = indian_call_to_union }
+					OR = {
+						tag = MAH
+						tag = MUG
+						tag = BNG
+					}
+				}
+			}
+		}
+	}
+}

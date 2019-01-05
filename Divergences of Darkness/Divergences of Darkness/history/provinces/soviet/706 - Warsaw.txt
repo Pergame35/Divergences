@@ -3,15 +3,17 @@ controller = PLC
 add_core = PLC
 add_core = POL
 trade_goods = cattle
-life_rating = 35
-terrain = marginal_farmland
-#state_building = {
-#	level = 2 
-#	building = fabric_factory
-#	upgrade = yes
-#}
+life_rating = 40
 state_building = {
 	level = 1
-	building = stables
+	building = fabric_factory
 	upgrade = yes
 }
+1861.1.1 = { 
+	state_building = {
+		level = 1
+		building = regular_clothes_factory
+		upgrade = yes
+	} 
+}
+1861.1.1 = { railroad = 3 }

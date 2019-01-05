@@ -5,103 +5,101 @@ province_event = {
 	desc = "EVTDESC29900"
 	
 	trigger = {
+		owner = { invention = tractors }
 		NOT = { has_province_modifier = local_tractors }
-		OR = { 
-			AND = {
-				owner = { invention = tractors }
-				is_capital = yes
-			}
-			AND = {
-				OR = {
-					province_id = 2136 #Canary Islands
-					province_id = 502 #Balearic Islands
-					province_id = 765 #Cagliari
-					province_id = 854 #Malta
-					province_id = 848 #Iraklion
-					province_id = 855 #Nicosia
-					AND = {
-						is_overseas = yes
-						port = yes
-					}
-				}
-				capital_scope = { has_province_modifier = local_tractors }
-				owner = { invention = tractors }
-			}
-			any_neighbor_province = {
-				has_province_modifier = local_tractors
-			}
+		NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+		NOT = { state_scope = { is_slave = yes } }
+		OR = {
+			terrain = plains
+			terrain = steppe
+			terrain = savanna
+			terrain = forest
+			terrain = hills
+			terrain = dryhills
+			terrain = farmlands
+			terrain = mountain
+		}
+		OR = {
+			trade_goods = tobacco
+			trade_goods = tea
+			trade_goods = coffee
+			trade_goods = grain
+			trade_goods = opium
+			trade_goods = cotton
+			trade_goods = fruit
 		}
 	}
 	
+	allow_multiple_instances = no
+	
 	mean_time_to_happen = {
-		months = 300
+		months = 800
+		
 		modifier = {
-			factor = 3
-			NOT = {
-				owner = { invention = tractors }
-			}
+			factor = 0.75
+			any_neighbor_province = { has_province_modifier = local_tractors }
 		}
+		
 		modifier = {
-			factor = 0.2
+			factor = 0.7
 			is_capital = yes
 		}
+		
 		modifier = {
-			factor = 0.95
+			factor = 0.8
+			terrain = farmlands
+			NOT = { is_colonial = yes }
+		}
+		
+		modifier = {
+			factor = 0.9
 			literacy = 0.9
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			literacy = 0.8
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			literacy = 0.7
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			literacy = 0.6
 		}
 		modifier = {
 			factor = 1.5
-			NOT = {
-				literacy = 0.5
-			}
+			NOT = { literacy = 0.5 }
 		}
 		modifier = {
 			factor = 3
-			NOT = {
-				literacy = 0.25
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 15
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 20
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 25
-			}
+			NOT = { literacy = 0.25 }
 		}
 		
 		modifier = {
 			factor = 0.95
-			owner = {
-				plurality = 30
-			}
+			owner = { NOT = { num_of_cities = 30 } }
 		}
 		modifier = {
-			factor = 0.7
-			is_capital = yes
-		}		
+			factor = 0.95
+			owner = { NOT = { num_of_cities = 25 } }
+		}
+		
+		modifier = {
+			factor = 0.95
+			owner = { NOT = { num_of_cities = 20 } }
+		}
+		
+		modifier = {
+			factor = 0.95
+			owner = { NOT = { num_of_cities = 15 } }
+		}
+		
+		modifier = {
+			factor = 0.95
+			owner = { NOT = { num_of_cities = 10 } }
+		}
+		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 6
@@ -133,20 +131,17 @@ province_event = {
 		}
 		
 		modifier = {
-			factor = 0.95
-			NOT = {
-				average_militancy = 5
-			}
+			factor = 8
+			state_scope = { is_colonial = yes }
 		}
 		
 		modifier = {
-			factor = 4
-			state_scope = {
-				is_colonial = yes
-			}
-		}
-		modifier = {
 			factor = 2
+			state_scope = { has_pop_type = serfs }
+		}
+		
+		modifier = {
+			factor = 3
 			is_overseas = yes
 		}
 	}
@@ -156,163 +151,495 @@ province_event = {
 		state_scope = {
 			any_owned = {
 				limit = {
+					OR = {
+						terrain = plains
+						terrain = steppe
+						terrain = savanna
+						terrain = forest
+						terrain = hills
+						terrain = dryhills
+						terrain = farmlands
+						terrain = mountain
+					}
+					OR = {
+						trade_goods = tobacco
+						trade_goods = tea
+						trade_goods = coffee
+						trade_goods = grain
+						trade_goods = opium
+						trade_goods = cotton
+						trade_goods = fruit
+					}
+				}
+				add_province_modifier = { name = local_tractors duration = -1 }
+			}
+		}
+		
+		random_country = {
+			limit = {
+				tag = THIS
+				number_of_states = 10
+				any_owned_province = {
 					NOT = { has_province_modifier = local_tractors }
+					NOT = { state_scope = { is_slave = yes } }
+					NOT = { state_scope = { has_pop_type = serfs } }
+					NOT = { is_overseas = yes }
+					NOT = { is_colonial = yes }
+					NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+					state_scope = { literacy = 0.7 }
+					OR = {
+						terrain = plains
+						terrain = steppe
+						terrain = savanna
+						terrain = forest
+						terrain = hills
+						terrain = dryhills
+						terrain = farmlands
+						terrain = mountain
+					}
+					OR = {
+						trade_goods = tobacco
+						trade_goods = tea
+						trade_goods = coffee
+						trade_goods = grain
+						trade_goods = opium
+						trade_goods = cotton
+						trade_goods = fruit
+					}
 				}
-				add_province_modifier = {
-					name = local_tractors
-					duration = -1
+			}
+			random = {
+				chance = 50
+				random_owned = {
+					limit = {
+						NOT = { state_scope = { is_slave = yes } }
+						NOT = { state_scope = { has_pop_type = serfs } }
+						NOT = { is_overseas = yes }
+						NOT = { is_colonial = yes }
+						NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+						NOT = { has_province_modifier = local_tractors }
+						state_scope = { literacy = 0.7 }
+						OR = {
+							terrain = plains
+							terrain = steppe
+							terrain = savanna
+							terrain = forest
+							terrain = hills
+							terrain = dryhills
+							terrain = farmlands
+							terrain = mountain
+						}
+						OR = {
+							trade_goods = tobacco
+							trade_goods = tea
+							trade_goods = coffee
+							trade_goods = grain
+							trade_goods = opium
+							trade_goods = cotton
+							trade_goods = fruit
+						}
+					}
+					state_scope = {
+						any_owned = {
+						limit = {
+							OR = {
+								terrain = plains
+								terrain = steppe
+								terrain = savanna
+								terrain = forest
+								terrain = hills
+								terrain = dryhills
+								terrain = farmlands
+								terrain = mountain
+							}
+							OR = {
+								trade_goods = tobacco
+								trade_goods = tea
+								trade_goods = coffee
+								trade_goods = grain
+								trade_goods = opium
+								trade_goods = cotton
+								trade_goods = fruit
+							}
+						}
+						add_province_modifier = { name = local_tractors duration = -1 }
+						}
+					}
+				}
+			}
+		}
+		
+		random_country = {
+			limit = {
+				tag = THIS
+				number_of_states = 20
+				any_owned_province = {
+					NOT = { has_province_modifier = local_tractors }
+					NOT = { state_scope = { is_slave = yes } }
+					NOT = { state_scope = { has_pop_type = serfs } }
+					NOT = { is_overseas = yes }
+					NOT = { is_colonial = yes }
+					NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+					state_scope = { literacy = 0.7 }
+					OR = {
+						terrain = plains
+						terrain = steppe
+						terrain = savanna
+						terrain = forest
+						terrain = hills
+						terrain = dryhills
+						terrain = farmlands
+						terrain = mountain
+					}
+					OR = {
+						trade_goods = tobacco
+						trade_goods = tea
+						trade_goods = coffee
+						trade_goods = grain
+						trade_goods = opium
+						trade_goods = cotton
+						trade_goods = fruit
+					}
+				}
+			}
+			random = {
+				chance = 50
+				random_owned = {
+					limit = {
+						NOT = { state_scope = { is_slave = yes } }
+						NOT = { state_scope = { has_pop_type = serfs } }
+						NOT = { is_overseas = yes }
+						NOT = { is_colonial = yes }
+						NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+						NOT = { has_province_modifier = local_tractors }
+						state_scope = { literacy = 0.7 }
+						OR = {
+							terrain = plains
+							terrain = steppe
+							terrain = savanna
+							terrain = forest
+							terrain = hills
+							terrain = dryhills
+							terrain = farmlands
+							terrain = mountain
+						}
+						OR = {
+							trade_goods = tobacco
+							trade_goods = tea
+							trade_goods = coffee
+							trade_goods = grain
+							trade_goods = opium
+							trade_goods = cotton
+							trade_goods = fruit
+						}
+					}
+					state_scope = {
+						any_owned = {
+						limit = {
+							OR = {
+								terrain = plains
+								terrain = steppe
+								terrain = savanna
+								terrain = forest
+								terrain = hills
+								terrain = dryhills
+								terrain = farmlands
+								terrain = mountain
+							}
+							OR = {
+								trade_goods = tobacco
+								trade_goods = tea
+								trade_goods = coffee
+								trade_goods = grain
+								trade_goods = opium
+								trade_goods = cotton
+								trade_goods = fruit
+							}
+						}
+						add_province_modifier = { name = local_tractors duration = -1 }
+						}
+					}
+				}
+			}
+		}
+		
+		random_country = {
+			limit = {
+				tag = THIS
+				number_of_states = 30
+				any_owned_province = {
+					NOT = { has_province_modifier = local_tractors }
+					NOT = { state_scope = { is_slave = yes } }
+					NOT = { state_scope = { has_pop_type = serfs } }
+					NOT = { is_overseas = yes }
+					NOT = { is_colonial = yes }
+					NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+					state_scope = { literacy = 0.7 }
+					OR = {
+						terrain = plains
+						terrain = steppe
+						terrain = savanna
+						terrain = forest
+						terrain = hills
+						terrain = dryhills
+						terrain = farmlands
+						terrain = mountain
+					}
+					OR = {
+						trade_goods = tobacco
+						trade_goods = tea
+						trade_goods = coffee
+						trade_goods = grain
+						trade_goods = opium
+						trade_goods = cotton
+						trade_goods = fruit
+					}
+				}
+			}
+			random = {
+				chance = 50
+				random_owned = {
+					limit = {
+						NOT = { state_scope = { is_slave = yes } }
+						NOT = { state_scope = { has_pop_type = serfs } }
+						NOT = { is_overseas = yes }
+						NOT = { is_colonial = yes }
+						NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+						NOT = { has_province_modifier = local_tractors }
+						state_scope = { literacy = 0.7 }
+						OR = {
+							terrain = plains
+							terrain = steppe
+							terrain = savanna
+							terrain = forest
+							terrain = hills
+							terrain = dryhills
+							terrain = farmlands
+							terrain = mountain
+						}
+						OR = {
+							trade_goods = tobacco
+							trade_goods = tea
+							trade_goods = coffee
+							trade_goods = grain
+							trade_goods = opium
+							trade_goods = cotton
+							trade_goods = fruit
+						}
+					}
+					state_scope = {
+						any_owned = {
+						limit = {
+							OR = {
+								terrain = plains
+								terrain = steppe
+								terrain = savanna
+								terrain = forest
+								terrain = hills
+								terrain = dryhills
+								terrain = farmlands
+								terrain = mountain
+							}
+							OR = {
+								trade_goods = tobacco
+								trade_goods = tea
+								trade_goods = coffee
+								trade_goods = grain
+								trade_goods = opium
+								trade_goods = cotton
+								trade_goods = fruit
+							}
+						}
+						add_province_modifier = { name = local_tractors duration = -1 }
+						}
+					}
+				}
+			}
+		}
+		
+		random_country = {
+			limit = {
+				tag = THIS
+				number_of_states = 40
+				any_owned_province = {
+					NOT = { has_province_modifier = local_tractors }
+					NOT = { state_scope = { is_slave = yes } }
+					NOT = { state_scope = { has_pop_type = serfs } }
+					NOT = { is_overseas = yes }
+					NOT = { is_colonial = yes }
+					NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+					state_scope = { literacy = 0.7 }
+					OR = {
+						terrain = plains
+						terrain = steppe
+						terrain = savanna
+						terrain = forest
+						terrain = hills
+						terrain = dryhills
+						terrain = farmlands
+						terrain = mountain
+					}
+					OR = {
+						trade_goods = tobacco
+						trade_goods = tea
+						trade_goods = coffee
+						trade_goods = grain
+						trade_goods = opium
+						trade_goods = cotton
+						trade_goods = fruit
+					}
+				}
+			}
+			random = {
+				chance = 50
+				random_owned = {
+					limit = {
+						NOT = { state_scope = { is_slave = yes } }
+						NOT = { state_scope = { has_pop_type = serfs } }
+						NOT = { is_overseas = yes }
+						NOT = { is_colonial = yes }
+						NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+						NOT = { has_province_modifier = local_tractors }
+						state_scope = { literacy = 0.7 }
+						OR = {
+							terrain = plains
+							terrain = steppe
+							terrain = savanna
+							terrain = forest
+							terrain = hills
+							terrain = dryhills
+							terrain = farmlands
+							terrain = mountain
+						}
+						OR = {
+							trade_goods = tobacco
+							trade_goods = tea
+							trade_goods = coffee
+							trade_goods = grain
+							trade_goods = opium
+							trade_goods = cotton
+							trade_goods = fruit
+						}
+					}
+					state_scope = {
+						any_owned = {
+						limit = {
+							OR = {
+								terrain = plains
+								terrain = steppe
+								terrain = savanna
+								terrain = forest
+								terrain = hills
+								terrain = dryhills
+								terrain = farmlands
+								terrain = mountain
+							}
+							OR = {
+								trade_goods = tobacco
+								trade_goods = tea
+								trade_goods = coffee
+								trade_goods = grain
+								trade_goods = opium
+								trade_goods = cotton
+								trade_goods = fruit
+							}
+						}
+						add_province_modifier = { name = local_tractors duration = -1 }
+						}
+					}
 				}
 			}
 		}
 	}
 }
 
-# Electricity
+# Machine Tools - Mechanized Mining and nitroglycerin
 province_event = {
-	id = 29901
-	title = "EVTNAME29901"
-	desc = "EVTDESC29901"
+	id = 29904
+	title = "EVTNAME29904"
+	desc = "EVTDESC29904"
 	
 	trigger = {
-		NOT = {
-			has_province_modifier = local_electricity
-		}
-		owner = { invention = edison_light_bulb }		
+		NOT = { has_province_modifier = local_nitroglycerin_and_machine_tools }
+		owner = { invention = machine_tools invention = nitroglycerin }
+		NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+		NOT = { state_scope = { is_slave = yes } }
 		OR = {
-			any_neighbor_province = {
-				has_province_modifier = local_electricity
-			}
-			is_capital = yes
-			AND = {
-				OR = {
-					province_id = 2136 #Canary Islands
-					province_id = 502 #Balearic Islands
-					province_id = 765 #Cagliari
-					province_id = 854 #Malta
-					province_id = 848 #Iraklion
-					province_id = 855 #Nicosia
-					AND = {
-						is_overseas = yes
-						port = yes
-					}
-				}
-				capital_scope = { has_province_modifier = local_electricity }
-			}
+			trade_goods = coal
+			trade_goods = iron
+			trade_goods = oil
+			trade_goods = precious_metal
+			trade_goods = sulphur
 		}
+		NOT = { has_province_modifier = treaty_port }
 	}
 	
+	allow_multiple_instances = no
+	
 	mean_time_to_happen = {
-		months = 300
+		months = 800
 		
 		modifier = {
-			factor = 0.2
+			factor = 0.75
+			any_neighbor_province = { has_province_modifier = local_nitroglycerin_and_machine_tools }
+		}
+		
+		modifier = {
+			factor = 0.7
 			is_capital = yes
 		}
 		
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			literacy = 0.9
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			literacy = 0.8
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			literacy = 0.7
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			literacy = 0.6
 		}
 		modifier = {
 			factor = 1.5
-			NOT = {
-				literacy = 0.5
-			}
+			NOT = { literacy = 0.5 }
 		}
 		modifier = {
 			factor = 3
-			NOT = {
-				literacy = 0.25
-			}
+			NOT = { literacy = 0.25 }
 		}
 		modifier = {
 			factor = 0.95
-			owner = {
-				plurality = 15
-			}
+			owner = { NOT = { num_of_cities = 30 } }
 		}
 		modifier = {
 			factor = 0.95
-			owner = {
-				plurality = 20
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 25
-			}
+			owner = { NOT = { num_of_cities = 25 } }
 		}
 		
 		modifier = {
 			factor = 0.95
-			owner = {
-				plurality = 30
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 30
-				}
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 25
-				}
-			}
+			owner = { NOT = { num_of_cities = 20 } }
 		}
 		
 		modifier = {
 			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 20
-				}
-			}
+			owner = { NOT = { num_of_cities = 15 } }
 		}
 		
 		modifier = {
 			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 15
-				}
-			}
+			owner = { NOT = { num_of_cities = 10 } }
 		}
 		
 		modifier = {
 			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 10
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 5
-				}
-			}
+			owner = { NOT = { num_of_cities = 5 } }
 		}
 		
 		modifier = {
@@ -346,253 +673,285 @@ province_event = {
 		}
 		
 		modifier = {
-			factor = 0.95
-			NOT = {
-				average_militancy = 5
-			}
-		}
-		modifier = {
-			factor = 4
-			state_scope = {
-				is_colonial = yes
-			}
-		}
-		modifier = {
 			factor = 2
-			is_overseas = yes
+			state_scope = { has_pop_type = serfs }
 		}
-	}
-	
-	option = {
-		name = "EVTOPTA29901"
-		state_scope = {
-			any_owned = {
-				add_province_modifier = {
-					name = local_electricity
-					duration = -1
-				}
-			}
-		}
-	}
-}
-
-# Nitroglycerin
-province_event = {
-	id = 29902
-	title = "EVTNAME29902"
-	desc = "EVTDESC29902"
-	
-	trigger = {
-		NOT = { has_province_modifier = local_nitroglycerin }
-		OR = { 
-			AND = {
-				owner = { invention = nitroglycerin }	
-				is_capital = yes
-			}
-			any_neighbor_province = {
-				has_province_modifier = local_nitroglycerin
-			}
-			AND = {
-				OR = {
-					province_id = 2136 #Canary Islands
-					province_id = 502 #Balearic Islands
-					province_id = 765 #Cagliari
-					province_id = 854 #Malta
-					province_id = 848 #Iraklion
-					province_id = 855 #Nicosia
-					AND = {
-						is_overseas = yes
-						port = yes
-					}
-				}
-				capital_scope = { has_province_modifier = local_nitroglycerin }
-				owner = { invention = nitroglycerin }
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 300
 		
 		modifier = {
-			factor = 0.2
-			is_capital = yes
+			factor = 8
+			state_scope = { is_colonial = yes}
 		}
-		modifier = {
-			factor = 1.5
-			NOT = {
-				owner = { invention = nitroglycerin }
-			}
-		}		
-		modifier = {
-			factor = 0.95
-			literacy = 0.9
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.8
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.7
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.6
-		}
-		modifier = {
-			factor = 1.5
-			NOT = {
-				literacy = 0.5
-			}
-		}
+		
 		modifier = {
 			factor = 3
-			NOT = {
-				literacy = 0.25
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 15
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 20
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 25
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 30
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 30
-				}
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 25
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 20
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 15
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 10
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 5
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 6
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 8
-		}
-		
-		modifier = {
-			factor = 1.1
-			average_militancy = 5
-		}
-		
-		modifier = {
-			factor = 1.2
-			average_militancy = 6
-		}
-		
-		modifier = {
-			factor = 1.3
-			average_militancy = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			NOT = {
-				average_militancy = 5
-			}
-		}
-		modifier = {
-			factor = 4
-			state_scope = {
-				is_colonial = yes
-			}
-		}
-		modifier = {
-			factor = 2
 			is_overseas = yes
 		}
 	}
 	
 	option = {
-		name = "EVTOPTA29902"
+		name = "EVTOPTA29903"
 		state_scope = {
 			any_owned = {
 				limit = {
-					NOT = { has_province_modifier = local_nitroglycerin }
+					NOT = { has_province_modifier = treaty_port }
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = sulphur
+					}
 				}
-				add_province_modifier = {
-					name = local_nitroglycerin
-					duration = -1
+			add_province_modifier = { name = local_nitroglycerin_and_machine_tools duration = -1 }
+			}
+		}
+		
+		random_country = {
+			limit = {
+				tag = THIS
+				number_of_states = 10
+				any_owned_province = {
+					NOT = { has_province_modifier = local_nitroglycerin_and_machine_tools }
+					NOT = { state_scope = { is_slave = yes } }
+					NOT = { state_scope = { has_pop_type = serfs } }
+					NOT = { is_overseas = yes }
+					NOT = { is_colonial = yes }
+					NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+					NOT = { has_province_modifier = treaty_port }
+					state_scope = { literacy = 0.7 }
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = sulphur
+					}
+				}
+			}
+			random = {
+				chance = 50
+				random_owned = {
+					limit = {
+						NOT = { has_province_modifier = local_nitroglycerin_and_machine_tools }
+						NOT = { state_scope = { is_slave = yes } }
+						NOT = { state_scope = { has_pop_type = serfs } }
+						NOT = { is_overseas = yes }
+						NOT = { is_colonial = yes }
+						NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+						NOT = { has_province_modifier = treaty_port }
+						state_scope = { literacy = 0.7 }
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = sulphur
+						}
+					}
+					state_scope = {
+						any_owned = {
+							limit = { 
+								NOT = { has_province_modifier = treaty_port }
+								OR = {
+									trade_goods = coal
+									trade_goods = iron
+									trade_goods = oil
+									trade_goods = precious_metal
+									trade_goods = sulphur
+								}
+							}
+						add_province_modifier = { name = local_nitroglycerin_and_machine_tools duration = -1 }
+						}
+					}
+				}
+			}
+		}
+		
+		random_country = {
+			limit = {
+				tag = THIS
+				number_of_states = 20
+				any_owned_province = {
+					NOT = { has_province_modifier = local_nitroglycerin_and_machine_tools }
+					NOT = { state_scope = { is_slave = yes } }
+					NOT = { state_scope = { has_pop_type = serfs } }
+					NOT = { is_overseas = yes }
+					NOT = { is_colonial = yes }
+					NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+					NOT = { has_province_modifier = treaty_port }
+					state_scope = { literacy = 0.7 }
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = sulphur
+					}
+				}
+			}
+			random = {
+				chance = 50
+				random_owned = {
+					limit = {
+						NOT = { has_province_modifier = local_nitroglycerin_and_machine_tools }
+						NOT = { state_scope = { is_slave = yes } }
+						NOT = { state_scope = { has_pop_type = serfs } }
+						NOT = { is_overseas = yes }
+						NOT = { is_colonial = yes }
+						NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+						NOT = { has_province_modifier = treaty_port }
+						state_scope = { literacy = 0.7 }
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = sulphur
+						}
+					}
+					state_scope = {
+						any_owned = {
+							limit = { 
+								NOT = { has_province_modifier = treaty_port }
+								OR = {
+									trade_goods = coal
+									trade_goods = iron
+									trade_goods = oil
+									trade_goods = precious_metal
+									trade_goods = sulphur
+								}
+							}
+						add_province_modifier = { name = local_nitroglycerin_and_machine_tools duration = -1 }
+						}
+					}
+				}
+			}
+		}
+		
+		random_country = {
+			limit = {
+				tag = THIS
+				number_of_states = 30
+				any_owned_province = {
+					NOT = { has_province_modifier = local_nitroglycerin_and_machine_tools }
+					NOT = { state_scope = { is_slave = yes } }
+					NOT = { state_scope = { has_pop_type = serfs } }
+					NOT = { is_overseas = yes }
+					NOT = { is_colonial = yes }
+					NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+					NOT = { has_province_modifier = treaty_port }
+					state_scope = { literacy = 0.7 }
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = sulphur
+					}
+				}
+			}
+			random = {
+				chance = 50
+				random_owned = {
+					limit = {
+						NOT = { has_province_modifier = local_nitroglycerin_and_machine_tools }
+						NOT = { state_scope = { is_slave = yes } }
+						NOT = { state_scope = { has_pop_type = serfs } }
+						NOT = { is_overseas = yes }
+						NOT = { is_colonial = yes }
+						NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+						NOT = { has_province_modifier = treaty_port }
+						state_scope = { literacy = 0.7 }
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = sulphur
+						}
+					}
+					state_scope = {
+						any_owned = {
+							limit = { 
+								NOT = { has_province_modifier = treaty_port }
+								OR = {
+									trade_goods = coal
+									trade_goods = iron
+									trade_goods = oil
+									trade_goods = precious_metal
+									trade_goods = sulphur
+								}
+							}
+						add_province_modifier = { name = local_nitroglycerin_and_machine_tools duration = -1 }
+						}
+					}
+				}
+			}
+		}
+		
+		random_country = {
+			limit = {
+				tag = THIS
+				number_of_states = 40
+				any_owned_province = {
+					NOT = { has_province_modifier = local_nitroglycerin_and_machine_tools }
+					NOT = { state_scope = { is_slave = yes } }
+					NOT = { state_scope = { has_pop_type = serfs } }
+					NOT = { is_overseas = yes }
+					NOT = { is_colonial = yes }
+					NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+					NOT = { has_province_modifier = treaty_port }
+					state_scope = { literacy = 0.7 }
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = sulphur
+					}
+				}
+			}
+			random = {
+				chance = 50
+				random_owned = {
+					limit = {
+						NOT = { has_province_modifier = local_nitroglycerin_and_machine_tools }
+						NOT = { state_scope = { is_slave = yes } }
+						NOT = { state_scope = { has_pop_type = serfs } }
+						NOT = { is_overseas = yes }
+						NOT = { is_colonial = yes }
+						NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+						NOT = { has_province_modifier = treaty_port }
+						state_scope = { literacy = 0.7 }
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = oil
+							trade_goods = precious_metal
+							trade_goods = sulphur
+						}
+					}
+					state_scope = {
+						any_owned = {
+							limit = { 
+								NOT = { has_province_modifier = treaty_port }
+								OR = {
+									trade_goods = coal
+									trade_goods = iron
+									trade_goods = oil
+									trade_goods = precious_metal
+									trade_goods = sulphur
+								}
+							}
+						add_province_modifier = { name = local_nitroglycerin_and_machine_tools duration = -1 }
+						}
+					}
 				}
 			}
 		}
 	}
 }
+
 
 # Distribution Channels
 province_event = {
@@ -601,141 +960,78 @@ province_event = {
 	desc = "EVTDESC29903"
 	
 	trigger = {
-		NOT = { has_province_modifier = local_distribution_channels }
-		owner = { invention = distribution_channels }
-		OR = { 
-			is_capital = yes
-			any_neighbor_province = {
-				has_province_modifier = local_distribution_channels
-			}
-			AND = {
-				OR = {
-					province_id = 2136 #Canary Islands
-					province_id = 502 #Balearic Islands
-					province_id = 765 #Cagliari
-					province_id = 854 #Malta
-					province_id = 848 #Iraklion
-					province_id = 855 #Nicosia
-					AND = {
-						is_overseas = yes
-						port = yes
-					}
-				}
-				capital_scope = { has_province_modifier = local_distribution_channels }
-			}
-		}
+		NOT = { has_province_modifier = local_distribution_channels_und_electricity }
+		owner = { invention = distribution_channels invention = electrical_lighting }
+		NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+		NOT = { state_scope = { is_slave = yes } }
 	}
 	
+	allow_multiple_instances = no
+	
 	mean_time_to_happen = {
-		months = 300
+		months = 800
+		
 		modifier = {
-			factor = 0.2
+			factor = 0.75
+			any_neighbor_province = { has_province_modifier = local_distribution_channels_und_electricity }
+		}
+		
+		modifier = {
+			factor = 0.7
 			is_capital = yes
 		}
+		
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			literacy = 0.9
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			literacy = 0.8
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			literacy = 0.7
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			literacy = 0.6
 		}
 		modifier = {
 			factor = 1.5
-			NOT = {
-				literacy = 0.5
-			}
+			NOT = { literacy = 0.5 }
 		}
 		modifier = {
 			factor = 3
-			NOT = {
-				literacy = 0.25
-			}
+			NOT = { literacy = 0.25 }
 		}
 		modifier = {
 			factor = 0.95
-			owner = {
-				plurality = 15
-			}
+			owner = { NOT = { num_of_cities = 30 } }
 		}
 		modifier = {
 			factor = 0.95
-			owner = {
-				plurality = 20
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 25
-			}
+			owner = { NOT = { num_of_cities = 25 } }
 		}
 		
 		modifier = {
 			factor = 0.95
-			owner = {
-				plurality = 30
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 30
-				}
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 25
-				}
-			}
+			owner = { NOT = { num_of_cities = 20 } }
 		}
 		
 		modifier = {
 			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 20
-				}
-			}
+			owner = { NOT = { num_of_cities = 15 } }
 		}
 		
 		modifier = {
 			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 15
-				}
-			}
+			owner = { NOT = { num_of_cities = 10 } }
 		}
 		
 		modifier = {
 			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 10
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 5
-				}
-			}
+			owner = { NOT = { num_of_cities = 5 } }
 		}
 		
 		modifier = {
@@ -769,1294 +1065,149 @@ province_event = {
 		}
 		
 		modifier = {
-			factor = 0.95
-			NOT = {
-				average_militancy = 5
-			}
-		}
-		modifier = {
-			factor = 4
-			state_scope = {
-				is_colonial = yes
-			}
-		}
-		modifier = {
 			factor = 2
+			state_scope = { has_pop_type = serfs }
+		}
+		
+		modifier = {
+			factor = 8
+			state_scope = { is_colonial = yes }
+		}
+		
+		modifier = {
+			factor = 3
 			is_overseas = yes
 		}
 	}
 	
 	option = {
 		name = "EVTOPTA29903"
-		state_scope = {
-			any_owned = {
-				add_province_modifier = {
-					name = local_distribution_channels
-					duration = -1
+		state_scope = { any_owned = { add_province_modifier = { name = local_distribution_channels_und_electricity duration = -1 } } }
+		
+		random_country = {
+			limit = {
+				tag = THIS
+				number_of_states = 10
+				any_owned_province = {
+					NOT = { has_province_modifier = local_distribution_channels_und_electricity }
+					NOT = { state_scope = { is_slave = yes } }
+					NOT = { state_scope = { has_pop_type = serfs } }
+					NOT = { is_overseas = yes }
+					NOT = { is_colonial = yes }
+					NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+					state_scope = { literacy = 0.7 }
 				}
 			}
-		}
-	}
-}
-
-# Machine Tools
-province_event = {
-	id = 29904
-	title = "EVTNAME29904"
-	desc = "EVTDESC29904"
-	
-	trigger = {
-		NOT = { has_province_modifier = local_machine_tools }
-		OR = {
-			AND ={ 
-				owner = { invention = machine_tools }
-				is_capital = yes
-			}
-			any_neighbor_province = {
-				has_province_modifier = local_machine_tools
-			}
-			AND = {
-				OR = {
-					province_id = 2136 #Canary Islands
-					province_id = 502 #Balearic Islands
-					province_id = 765 #Cagliari
-					province_id = 854 #Malta
-					province_id = 848 #Iraklion
-					province_id = 855 #Nicosia
-					AND = {
-						is_overseas = yes
-						port = yes
+			random = {
+				chance = 50
+				random_owned = {
+					limit = {
+						NOT = { has_province_modifier = local_distribution_channels_und_electricity }
+						NOT = { state_scope = { is_slave = yes } }
+						NOT = { state_scope = { has_pop_type = serfs } }
+						NOT = { is_overseas = yes }
+						NOT = { is_colonial = yes }
+						NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+						state_scope = { literacy = 0.7 }
 					}
-				}
-				capital_scope = { has_province_modifier = local_machine_tools }
-				owner = { invention = machine_tools }
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 300
-		modifier = {
-			factor = 0.2
-			is_capital = yes
-		}
-		modifier = {
-			factor = 1.5
-			NOT = {
-				owner = {
-				invention = machine_tools
-			}
-			}
-		}		
-		modifier = {
-			factor = 0.95
-			literacy = 0.9
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.8
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.7
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.6
-		}
-		modifier = {
-			factor = 1.5
-			NOT = {
-				literacy = 0.5
-			}
-		}
-		modifier = {
-			factor = 3
-			NOT = {
-				literacy = 0.25
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 15
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 20
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 25
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 30
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 30
-				}
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 25
+					state_scope = { any_owned = { add_province_modifier = { name = local_distribution_channels_und_electricity duration = -1 } } }
 				}
 			}
 		}
 		
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 20
+		random_country = {
+			limit = {
+				tag = THIS
+				number_of_states = 20
+				any_owned_province = {
+					NOT = { has_province_modifier = local_distribution_channels_und_electricity }
+					NOT = { state_scope = { is_slave = yes } }
+					NOT = { state_scope = { has_pop_type = serfs } }
+					NOT = { is_overseas = yes }
+					NOT = { is_colonial = yes }
+					NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+					state_scope = { literacy = 0.7 }
 				}
 			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 15
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 10
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				NOT = {
-					num_of_cities = 5
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 6
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 8
-		}
-		
-		modifier = {
-			factor = 1.1
-			average_militancy = 5
-		}
-		
-		modifier = {
-			factor = 1.2
-			average_militancy = 6
-		}
-		
-		modifier = {
-			factor = 1.3
-			average_militancy = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			NOT = {
-				average_militancy = 5
-			}
-		}
-		modifier = {
-			factor = 4
-			state_scope = {
-				is_colonial = yes
-			}
-		}
-		modifier = {
-			factor = 2
-			is_overseas = yes
-		}
-	}
-	
-	option = {
-		name = "EVTOPTA29903"
-		state_scope = {
-			any_owned = {
-				add_province_modifier = {
-					name = local_machine_tools
-					duration = -1
-				}
-			}
-		}
-	}
-}
-
-#########################################
-#										#
-#		MINING RGO SPREAD EVENTS		#
-#										#
-#########################################
-
-#Shaft mines
-province_event = {
-	id = 299051
-	title = "299051.T"
-	desc = "299051.D"
-	
-	trigger = {
-		NOT = { has_province_modifier = shaft_mine }
-		NOT = { has_province_modifier = pit_mine }
-		NOT = { has_province_modifier = strip_mine }
-		OR = { 
-			AND = {
-				owner = { mechanized_mining = 1 }
-				is_capital = yes
-			}
-			any_neighbor_province = {
-				OR = {
-					has_province_modifier = shaft_mine
-					has_province_modifier = pit_mine
-					has_province_modifier = strip_mine
-				}
-			}
-			AND = {
-				OR = {
-					province_id = 2136 #Canary Islands
-					province_id = 502 #Balearic Islands
-					province_id = 765 #Cagliari
-					province_id = 854 #Malta
-					province_id = 848 #Iraklion
-					province_id = 855 #Nicosia
-					AND = {
-						is_overseas = yes
-						port = yes
+			random = {
+				chance = 50
+				random_owned = {
+					limit = {
+						NOT = { has_province_modifier = local_distribution_channels_und_electricity }
+						NOT = { state_scope = { is_slave = yes } }
+						NOT = { state_scope = { has_pop_type = serfs } }
+						NOT = { is_overseas = yes }
+						NOT = { is_colonial = yes }
+						NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+						state_scope = { literacy = 0.7 }
 					}
+					state_scope = { any_owned = { add_province_modifier = { name = local_distribution_channels_und_electricity duration = -1 } } }
 				}
-				capital_scope = { has_province_modifier = shaft_mine }
-				owner = { mechanized_mining = 1 }
 			}
 		}
-	}
 	
-	mean_time_to_happen = {
-		months = 300
-		modifier = {
-			factor = 3
-			NOT = {
-				owner = { mechanized_mining = 1 }
-			}
-		}
-		modifier = {
-			factor = 0.2
-			is_capital = yes
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.9
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.8
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.7
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.6
-		}
-		modifier = {
-			factor = 1.5
-			NOT = {
-				literacy = 0.5
-			}
-		}
-		modifier = {
-			factor = 3
-			NOT = {
-				literacy = 0.25
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 15
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 20
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 25
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 30
-			}
-		}
-		modifier = {
-			factor = 0.95
-			average_consciousness = 6
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 8
-		}
-		
-		modifier = {
-			factor = 1.1
-			average_militancy = 5
-		}
-		
-		modifier = {
-			factor = 1.2
-			average_militancy = 6
-		}
-		
-		modifier = {
-			factor = 1.3
-			average_militancy = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			NOT = {
-				average_militancy = 5
-			}
-		}
-		modifier = {
-			factor = 4
-			state_scope = {
-				is_colonial = yes
-			}
-		}
-		modifier = {
-			factor = 2
-			is_overseas = yes
-		}
-	}
-	
-	option = {
-		name = "333033.A"
-		state_scope = {
-			any_owned = {
-				limit = {
-					NOT = { has_province_modifier = shaft_mine }
-					NOT = { has_province_modifier = pit_mine }
-					NOT = { has_province_modifier = strip_mine }
-				}
-				add_province_modifier = {
-					name = shaft_mine
-					duration = -1
+	random_country = {
+			limit = {
+				tag = THIS
+				number_of_states = 30
+				any_owned_province = {
+					NOT = { has_province_modifier = local_distribution_channels_und_electricity }
+					NOT = { state_scope = { is_slave = yes } }
+					NOT = { state_scope = { has_pop_type = serfs } }
+					NOT = { is_overseas = yes }
+					NOT = { is_colonial = yes }
+					NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+					state_scope = { literacy = 0.7 }
 				}
 			}
-		}
-	}
-}
-
-province_event = {
-	id = 299052
-	title = "299052.T"
-	desc = "299052.D"
-	
-	trigger = {
-		has_province_modifier = shaft_mine
-		NOT = { has_province_modifier = pit_mine }
-		NOT = { has_province_modifier = strip_mine }
-		OR = { 
-			AND = {
-				owner = { cheap_iron = 1 }
-				is_capital = yes
-			}
-			any_neighbor_province = {
-				OR = {
-					has_province_modifier = pit_mine
-					has_province_modifier = strip_mine
-				}
-			}
-			AND = {
-				OR = {
-					province_id = 2136 #Canary Islands
-					province_id = 502 #Balearic Islands
-					province_id = 765 #Cagliari
-					province_id = 854 #Malta
-					province_id = 848 #Iraklion
-					province_id = 855 #Nicosia
-					AND = {
-						is_overseas = yes
-						port = yes
+			random = {
+				chance = 50
+				random_owned = {
+					limit = {
+						NOT = { has_province_modifier = local_distribution_channels_und_electricity }
+						NOT = { state_scope = { is_slave = yes } }
+						NOT = { state_scope = { has_pop_type = serfs } }
+						NOT = { is_overseas = yes }
+						NOT = { is_colonial = yes }
+						NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+						state_scope = { literacy = 0.7 }
 					}
-				}
-				capital_scope = { has_province_modifier = pit_mine }
-				owner = { cheap_iron = 1 }
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 300
-		modifier = {
-			factor = 3
-			NOT = {
-				owner = {
-					cheap_iron = 1
+					state_scope = { any_owned = { add_province_modifier = { name = local_distribution_channels_und_electricity duration = -1 } } }
 				}
 			}
 		}
-		modifier = {
-			factor = 0.2
-			is_capital = yes
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.9
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.8
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.7
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.6
-		}
-		modifier = {
-			factor = 1.5
-			NOT = {
-				literacy = 0.5
-			}
-		}
-		modifier = {
-			factor = 3
-			NOT = {
-				literacy = 0.25
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 15
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 20
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 25
-			}
-		}
 		
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 30
-			}
-		}
-		modifier = {
-			factor = 0.95
-			average_consciousness = 6
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 8
-		}
-		
-		modifier = {
-			factor = 1.1
-			average_militancy = 5
-		}
-		
-		modifier = {
-			factor = 1.2
-			average_militancy = 6
-		}
-		
-		modifier = {
-			factor = 1.3
-			average_militancy = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			NOT = {
-				average_militancy = 5
-			}
-		}
-		modifier = {
-			factor = 4
-			state_scope = {
-				is_colonial = yes
-			}
-		}
-		modifier = {
-			factor = 2
-			is_overseas = yes
-		}
-	}
-	
-	option = {
-		name = "44204.A"
-		state_scope = {
-			any_owned = {
-				limit = { has_province_modifier = shaft_mine }
-				remove_province_modifier = shaft_mine
-			}
-			any_owned = {
-				limit = {
-					NOT = { has_province_modifier = pit_mine }
-					NOT = { has_province_modifier = strip_mine }
-				}
-				add_province_modifier = {
-					name = pit_mine
-					duration = -1
+		random_country = {
+			limit = {
+				tag = THIS
+				number_of_states = 40
+				any_owned_province = {
+					NOT = { has_province_modifier = local_distribution_channels_und_electricity }
+					NOT = { state_scope = { is_slave = yes } }
+					NOT = { state_scope = { has_pop_type = serfs } }
+					NOT = { is_overseas = yes }
+					NOT = { is_colonial = yes }
+					NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+					state_scope = { literacy = 0.7 }
 				}
 			}
-		}
-	}
-}
-
-province_event = {
-	id = 299053
-	title = "299053.T"
-	desc = "299053.D"
-	
-	trigger = {
-		has_province_modifier = pit_mine
-		NOT = { has_province_modifier = strip_mine }
-		OR = { 
-			AND = {
-				owner = { electric_furnace  = 1 }
-				is_capital = yes
-			}
-			any_neighbor_province = {
-				has_province_modifier = strip_mine
-			}
-			AND = {
-				OR = {
-					province_id = 2136 #Canary Islands
-					province_id = 502 #Balearic Islands
-					province_id = 765 #Cagliari
-					province_id = 854 #Malta
-					province_id = 848 #Iraklion
-					province_id = 855 #Nicosia
-					AND = {
-						is_overseas = yes
-						port = yes
+			random = {
+				chance = 50
+				random_owned = {
+					limit = {
+						NOT = { has_province_modifier = local_distribution_channels_und_electricity }
+						NOT = { state_scope = { is_slave = yes } }
+						NOT = { state_scope = { has_pop_type = serfs } }
+						NOT = { is_overseas = yes }
+						NOT = { is_colonial = yes }
+						NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
+						state_scope = { literacy = 0.7 }
 					}
-				}
-				capital_scope = { has_province_modifier = strip_mine }
-				owner = { electric_furnace  = 1 }
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 300
-		modifier = {
-			factor = 3
-			NOT = {
-				owner = {
-					electric_furnace  = 1
+					state_scope = { any_owned = { add_province_modifier = { name = local_distribution_channels_und_electricity duration = -1 } } }
 				}
 			}
 		}
-		modifier = {
-			factor = 0.2
-			is_capital = yes
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.9
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.8
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.7
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.6
-		}
-		modifier = {
-			factor = 1.5
-			NOT = {
-				literacy = 0.5
-			}
-		}
-		modifier = {
-			factor = 3
-			NOT = {
-				literacy = 0.25
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 15
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 20
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 25
-			}
-		}
 		
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 30
-			}
-		}
-		modifier = {
-			factor = 0.95
-			average_consciousness = 6
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 8
-		}
-		
-		modifier = {
-			factor = 1.1
-			average_militancy = 5
-		}
-		
-		modifier = {
-			factor = 1.2
-			average_militancy = 6
-		}
-		
-		modifier = {
-			factor = 1.3
-			average_militancy = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			NOT = {
-				average_militancy = 5
-			}
-		}
-		modifier = {
-			factor = 4
-			state_scope = {
-				is_colonial = yes
-			}
-		}
-		modifier = {
-			factor = 2
-			is_overseas = yes
-		}
-	}
-	
-	option = {
-		name = "265407.A"
-		state_scope = {
-			any_owned = {
-				limit = { has_province_modifier = shaft_mine }
-				remove_province_modifier = shaft_mine
-			}
-			any_owned = {
-				limit = { has_province_modifier = pit_mine }
-				remove_province_modifier = pit_mine
-			}
-			any_owned = {
-				limit = {
-					NOT = { has_province_modifier = strip_mine }
-				}
-				add_province_modifier = {
-					name = strip_mine
-					duration = -1
-				}
-			}
-		}
 	}
 }
 
-#########################################
-#										#
-#		FARMING RGO SPREAD EVENTS		#
-#										#
-#########################################
-
-province_event = {
-	id = 29907
-	title = "29907.T"
-	desc = "29907.D"
-	
-	trigger = {
-		NOT = { has_province_modifier = crop_rotation }
-		NOT = { has_province_modifier = phosphates }
-		NOT = { has_province_modifier = nitrates }	
-		OR = { 
-			AND = {
-				owner = { water_wheel_power = 1 }
-				is_capital = yes
-			}
-			any_neighbor_province = {
-				OR = {
-					has_province_modifier = crop_rotation
-					has_province_modifier = phosphates
-					has_province_modifier = nitrates
-				}
-			}
-			AND = {
-				OR = {
-					province_id = 2136 #Canary Islands
-					province_id = 502 #Balearic Islands
-					province_id = 765 #Cagliari
-					province_id = 854 #Malta
-					province_id = 848 #Iraklion
-					province_id = 855 #Nicosia
-					AND = {
-						is_overseas = yes
-						port = yes
-					}
-				}
-				capital_scope = { has_province_modifier = crop_rotation }
-				owner = { water_wheel_power = 1 }
-			}
-		}	
-	}
-	
-	mean_time_to_happen = {
-		months = 300
-		modifier = {
-			factor = 0.2
-			is_capital = yes
-		}
-		modifier = {
-			factor = 5
-			owner = {
-				NOT = { water_wheel_power = 1 }
-			}
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.9
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.8
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.7
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.6
-		}
-		modifier = {
-			factor = 1.2
-			NOT = {
-				literacy = 0.25
-			}
-		}
-		modifier = {
-			factor = 3
-			NOT = {
-				literacy = 0.05
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 15
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 20
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 25
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 30
-			}
-		}
-		modifier = {
-			factor = 0.75
-			average_consciousness = 6
-		}
-		
-		modifier = {
-			factor = 0.75
-			average_consciousness = 7
-		}
-		
-		modifier = {
-			factor = 0.75
-			average_consciousness = 8
-		}
-		
-		modifier = {
-			factor = 1.1
-			average_militancy = 5
-		}
-		
-		modifier = {
-			factor = 1.2
-			average_militancy = 6
-		}
-		
-		modifier = {
-			factor = 1.3
-			average_militancy = 7
-		}
-		modifier = {
-			factor = 4
-			state_scope = {
-				is_colonial = yes
-			}
-		}
-		modifier = {
-			factor = 2
-			is_overseas = yes
-		}
-	}
-	
-	option = {
-		name = "29909.A"
-		state_scope = {
-			any_owned = {
-				limit = {
-					NOT = { has_province_modifier = crop_rotation }
-					NOT = { has_province_modifier = phosphates }
-					NOT = { has_province_modifier = nitrates }
-				}
-				add_province_modifier = {
-					name = crop_rotation
-					duration = -1
-				}
-			}
-		}		
-	}
-}
-
-province_event = {
-	id = 29906
-	title = "29906.T"
-	desc = "29906.D"
-	
-	trigger = {
-		has_province_modifier = crop_rotation
-		NOT = { has_province_modifier = phosphates }
-		NOT = { has_province_modifier = nitrates }	
-		OR = { 
-			AND = {
-				owner = { invention = artificial_fertilizers }
-				is_capital = yes
-			}
-			any_neighbor_province = {
-				OR = {
-					has_province_modifier = phosphates
-					has_province_modifier = nitrates
-				}
-			}
-			AND = {
-				OR = {
-					province_id = 2136 #Canary Islands
-					province_id = 502 #Balearic Islands
-					province_id = 765 #Cagliari
-					province_id = 854 #Malta
-					province_id = 848 #Iraklion
-					province_id = 855 #Nicosia
-					AND = {
-						is_overseas = yes
-						port = yes
-					}
-				}
-				capital_scope = { has_province_modifier = phosphates }
-				owner = { invention = artificial_fertilizers }
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 300
-		modifier = {
-			factor = 3
-			NOT = {
-				owner = {
-					invention = artificial_fertilizers
-				}
-			}
-		}
-		modifier = {
-			factor = 0.2
-			is_capital = yes
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.9
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.8
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.7
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.6
-		}
-		modifier = {
-			factor = 1.5
-			NOT = {
-				literacy = 0.5
-			}
-		}
-		modifier = {
-			factor = 3
-			NOT = {
-				literacy = 0.25
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 15
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 20
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 25
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 30
-			}
-		}
-		modifier = {
-			factor = 0.95
-			average_consciousness = 6
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 8
-		}
-		
-		modifier = {
-			factor = 1.1
-			average_militancy = 5
-		}
-		
-		modifier = {
-			factor = 1.2
-			average_militancy = 6
-		}
-		
-		modifier = {
-			factor = 1.3
-			average_militancy = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			NOT = {
-				average_militancy = 5
-			}
-		}
-		modifier = {
-			factor = 4
-			state_scope = {
-				is_colonial = yes
-			}
-		}
-		modifier = {
-			factor = 2
-			is_overseas = yes
-		}
-	}
-	
-	option = {
-		name = "299051.A"
-		state_scope = {
-			any_owned = {
-				limit = { has_province_modifier = crop_rotation }
-				remove_province_modifier = crop_rotation
-			}
-			any_owned = {
-				limit = {
-					NOT = { has_province_modifier = phosphates }
-					NOT = { has_province_modifier = nitrates }
-				}
-				add_province_modifier = {
-					name = phosphates
-					duration = -1
-				}
-			}
-		}		
-	}
-}
-
-province_event = {
-	id = 29905
-	title = "29905.T"
-	desc = "29905.D"
-	
-	trigger = {
-		has_province_modifier = phosphates
-		NOT = { has_province_modifier = nitrates }	
-		OR = { 
-			AND = {
-				owner = { invention = carbon_soil_enrichment }
-				is_capital = yes
-			}
-			any_neighbor_province = {
-				has_province_modifier = nitrates
-			}
-			AND = {
-				OR = {
-					province_id = 2136 #Canary Islands
-					province_id = 502 #Balearic Islands
-					province_id = 765 #Cagliari
-					province_id = 854 #Malta
-					province_id = 848 #Iraklion
-					province_id = 855 #Nicosia
-					AND = {
-						is_overseas = yes
-						port = yes
-					}
-				}
-				capital_scope = { has_province_modifier = nitrates }
-				owner = { invention = carbon_soil_enrichment }
-			}
-		}	
-	}
-	
-	mean_time_to_happen = {
-		months = 300
-		modifier = {
-			factor = 3
-			NOT = {
-				owner = {
-					invention = carbon_soil_enrichment
-				}
-			}
-		}
-		modifier = {
-			factor = 0.2
-			is_capital = yes
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.9
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.8
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.7
-		}
-		modifier = {
-			factor = 0.95
-			literacy = 0.6
-		}
-		modifier = {
-			factor = 1.5
-			NOT = {
-				literacy = 0.5
-			}
-		}
-		modifier = {
-			factor = 3
-			NOT = {
-				literacy = 0.25
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 15
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 20
-			}
-		}
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 25
-			}
-		}
-		
-		modifier = {
-			factor = 0.95
-			owner = {
-				plurality = 30
-			}
-		}
-		modifier = {
-			factor = 0.95
-			average_consciousness = 6
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			average_consciousness = 8
-		}
-		
-		modifier = {
-			factor = 1.1
-			average_militancy = 5
-		}
-		
-		modifier = {
-			factor = 1.2
-			average_militancy = 6
-		}
-		
-		modifier = {
-			factor = 1.3
-			average_militancy = 7
-		}
-		
-		modifier = {
-			factor = 0.95
-			NOT = {
-				average_militancy = 5
-			}
-		}
-		modifier = {
-			factor = 4
-			state_scope = {
-				is_colonial = yes
-			}
-		}
-		modifier = {
-			factor = 2
-			is_overseas = yes
-		}
-	}
-	
-	option = {
-		name = "EVTOPTA29900"
-		state_scope = {
-			any_owned = {
-				limit = { has_province_modifier = crop_rotation }
-				remove_province_modifier = crop_rotation
-			}
-			any_owned = {
-				limit = { has_province_modifier = phosphates }
-				remove_province_modifier = phosphates
-			}
-			any_owned = {
-				limit = {
-					NOT = { has_province_modifier = nitrates }
-				}
-				add_province_modifier = {
-					name = nitrates
-					duration = -1
-				}
-			}
-		}		
-	}
-}

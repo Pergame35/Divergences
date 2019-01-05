@@ -1,135 +1,5 @@
 #############################################
 #											#
-#        	Mines Running Dry				#
-#											#
-#############################################
-
-province_event = {
-	id = 199000
-	title = "EVTNAME199000" #$PROVINCENAME$ Mine Runs Dry
-	desc = "EVTDESC199000"
-
-	trigger = {
-		owned_by = THIS
-		controlled_by = THIS
-		OR = { 
-			trade_goods = coal
-			trade_goods = iron
-			trade_goods = copper
-		}
-		owner = {
-			war = no
-			civilized = yes
-		}
-		NOT = {
-			terrain = hills
-			terrain = dry_forest_hills
-			terrain = deciduous_forest_hills
-			terrain = conifer_forest_hills
-			terrain = boreal_forest_hills
-			terrain = jungle_hills
-			terrain = seasonal_jungle_hills
-			terrain = semi_desert_hills
-			terrain = desert_hills
-			terrain = cold_desert_hills
-			terrain = tundra_hills
-			terrain = mountain
-			terrain = dry_forest_mountains
-			terrain = deciduous_forest_mountains
-			terrain = conifer_forest_mountains
-			terrain = boreal_forest_mountains
-			terrain = jungle_mountains
-			terrain = seasonal_jungle_mountains
-			terrain = semi_desert_mountains
-			terrain = desert_mountains
-			terrain = cold_desert_mountains
-			terrain = tundra_mountains
-			terrain = tundra
-			terrain = cold_desert
-		}
-		NOT = {
-			terrain = steppe
-			terrain = dry_grassland
-			terrain = mountain_grassland
-			terrain = hilly_farmland
-			terrain = mountain_farmland
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 8000
-	}
-
-	option = {
-		name = "190451.A"
-		trade_goods = grain
-	}
-}
-
-province_event = {
-	id = 199001
-	title = "EVTNAME199000" #$PROVINCENAME$ Mine Runs Dry
-	desc = "EVTDESC199000"
-
-	trigger = {
-		controlled_by = THIS
-		owned_by = THIS
-		OR = { 
-			trade_goods = coal
-			trade_goods = iron
-			trade_goods = copper
-		}
-		owner = {
-			war = no
-			civilized = yes
-		}
-		NOT = {
-			terrain = hills
-			terrain = dry_forest_hills
-			terrain = deciduous_forest_hills
-			terrain = conifer_forest_hills
-			terrain = boreal_forest_hills
-			terrain = jungle_hills
-			terrain = seasonal_jungle_hills
-			terrain = semi_desert_hills
-			terrain = desert_hills
-			terrain = cold_desert_hills
-			terrain = tundra_hills
-			terrain = mountain
-			terrain = dry_forest_mountains
-			terrain = deciduous_forest_mountains
-			terrain = conifer_forest_mountains
-			terrain = boreal_forest_mountains
-			terrain = jungle_mountains
-			terrain = seasonal_jungle_mountains
-			terrain = semi_desert_mountains
-			terrain = desert_mountains
-			terrain = cold_desert_mountains
-			terrain = tundra_mountains
-			terrain = tundra
-			terrain = cold_desert
-		}
-		OR = {
-			terrain = steppe
-			terrain = dry_grassland
-			terrain = mountain_grassland
-			terrain = hilly_farmland
-			terrain = mountain_farmland
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 8000
-	}
-
-	option = {
-		name = "97260.A"
-		trade_goods = cattle
-	}
-}
-
-#############################################
-#											#
 #        	Discovering New Mines			#
 #											#
 #############################################
@@ -149,10 +19,7 @@ province_event = {
 		}
 		NOT = {
 			trade_goods = coal
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -168,38 +35,50 @@ province_event = {
 		}
 		OR = {
 			terrain = hills
-			terrain = hilly_farmland
-			terrain = dry_forest_hills
-			terrain = deciduous_forest_hills
-			terrain = conifer_forest_hills
-			terrain = boreal_forest_hills
-			terrain = jungle_hills
-			terrain = seasonal_jungle_hills
-			terrain = semi_desert_hills
-			terrain = desert_hills
-			terrain = cold_desert_hills
-			terrain = tundra_hills
+			terrain = dryhills
 			terrain = mountain
-			terrain = mountain_farmland
-			terrain = dry_forest_mountains
-			terrain = deciduous_forest_mountains
-			terrain = conifer_forest_mountains
-			terrain = boreal_forest_mountains
-			terrain = jungle_mountains
-			terrain = seasonal_jungle_mountains
-			terrain = semi_desert_mountains
-			terrain = desert_mountains
-			terrain = cold_desert_mountains
-			terrain = tundra_mountains
+			terrain = montane_forest
+			terrain = montane_tundra
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
+		modifier = {
+			factor = 1.5
+			OR = {
+				terrain = montane_tundra
+				terrain = montane_forest
+			}
+		}
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199005.A"
+		name = "EVT199022OPTA"
 		trade_goods = coal
 		add_province_modifier = {
 			name = switched_production
@@ -209,87 +88,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199005.B"
-		ai_chance = { factor = 0 }
-	}
-}
-
-province_event = {
-	id = 199006
-	title = "EVTNAME199006" #Prospector Strikes Copper!
-	desc = "EVTDESC199006"
-	
-	trigger = {
-		owned_by = THIS
-		controlled_by = THIS
-		province_control_days = 1095
-		owner = {
-			war = no
-			mechanized_mining = 1
-		}
-		NOT = {
-			trade_goods = copper
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
-			has_province_modifier = switched_production
-			has_province_modifier = new_production
-		}
-		OR = {
-			AND = {
-				unemployment_by_type = { type = farmers value = 0.5  }
-				has_pop_type = farmers
-				work_available = { worker = farmers }
-			}
-			AND = {
-				unemployment_by_type = { type = labourers value = 0.5  }
-				has_pop_type = labourers
-				work_available = { worker = labourers }
-			}
-		}
-		OR = {
-			terrain = hills
-			terrain = hilly_farmland
-			terrain = dry_forest_hills
-			terrain = deciduous_forest_hills
-			terrain = conifer_forest_hills
-			terrain = boreal_forest_hills
-			terrain = jungle_hills
-			terrain = seasonal_jungle_hills
-			terrain = semi_desert_hills
-			terrain = desert_hills
-			terrain = cold_desert_hills
-			terrain = tundra_hills
-			terrain = mountain
-			terrain = mountain_farmland
-			terrain = dry_forest_mountains
-			terrain = deciduous_forest_mountains
-			terrain = conifer_forest_mountains
-			terrain = boreal_forest_mountains
-			terrain = jungle_mountains
-			terrain = seasonal_jungle_mountains
-			terrain = semi_desert_mountains
-			terrain = desert_mountains
-			terrain = cold_desert_mountains
-			terrain = tundra_mountains
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 1000
-	}
-
-	option = {
-		name = "199006.A"
-		trade_goods = copper
-		add_province_modifier = {
-			name = switched_production
-			duration = 1825
-		}
-		ai_chance = { factor = 100 }
-	}
-	
-	option = {
-		name = "199006.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -309,10 +108,7 @@ province_event = {
 		}
 		NOT = {
 			trade_goods = iron
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -328,38 +124,50 @@ province_event = {
 		}
 		OR = {
 			terrain = hills
-			terrain = hilly_farmland
-			terrain = dry_forest_hills
-			terrain = deciduous_forest_hills
-			terrain = conifer_forest_hills
-			terrain = boreal_forest_hills
-			terrain = jungle_hills
-			terrain = seasonal_jungle_hills
-			terrain = semi_desert_hills
-			terrain = desert_hills
-			terrain = cold_desert_hills
-			terrain = tundra_hills
+			terrain = dryhills
 			terrain = mountain
-			terrain = mountain_farmland
-			terrain = dry_forest_mountains
-			terrain = deciduous_forest_mountains
-			terrain = conifer_forest_mountains
-			terrain = boreal_forest_mountains
-			terrain = jungle_mountains
-			terrain = seasonal_jungle_mountains
-			terrain = semi_desert_mountains
-			terrain = desert_mountains
-			terrain = cold_desert_mountains
-			terrain = tundra_mountains
+			terrain = montane_forest
+			terrain = montane_tundra
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
+		modifier = {
+			factor = 1.5
+			OR = {
+				terrain = montane_tundra
+				terrain = montane_forest
+			}
+		}
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199007.A"
+		name = "EVT199022OPTA"
 		trade_goods = iron
 		add_province_modifier = {
 			name = switched_production
@@ -369,87 +177,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199007.B"
-		ai_chance = { factor = 0 }
-	}
-}
-
-province_event = {
-	id = 199008
-	title = "EVTNAME199008" #Prospector Strikes Lead!
-	desc = "EVTDESC199008"
-	
-	trigger = {
-		owned_by = THIS
-		controlled_by = THIS
-		province_control_days = 1095
-		owner = {
-			war = no
-			mechanized_mining = 1
-		}
-		NOT = {
-			trade_goods = lead
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
-			has_province_modifier = switched_production
-			has_province_modifier = new_production
-		}
-		OR = {
-			AND = {
-				unemployment_by_type = { type = farmers value = 0.5  }
-				has_pop_type = farmers
-				work_available = { worker = farmers }
-			}
-			AND = {
-				unemployment_by_type = { type = labourers value = 0.5  }
-				has_pop_type = labourers
-				work_available = { worker = labourers }
-			}
-		}
-		OR = {
-			terrain = hills
-			terrain = hilly_farmland
-			terrain = dry_forest_hills
-			terrain = deciduous_forest_hills
-			terrain = conifer_forest_hills
-			terrain = boreal_forest_hills
-			terrain = jungle_hills
-			terrain = seasonal_jungle_hills
-			terrain = semi_desert_hills
-			terrain = desert_hills
-			terrain = cold_desert_hills
-			terrain = tundra_hills
-			terrain = mountain
-			terrain = mountain_farmland
-			terrain = dry_forest_mountains
-			terrain = deciduous_forest_mountains
-			terrain = conifer_forest_mountains
-			terrain = boreal_forest_mountains
-			terrain = jungle_mountains
-			terrain = seasonal_jungle_mountains
-			terrain = semi_desert_mountains
-			terrain = desert_mountains
-			terrain = cold_desert_mountains
-			terrain = tundra_mountains
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 1500
-	}
-
-	option = {
-		name = "199008.A"
-		trade_goods = lead
-		add_province_modifier = {
-			name = switched_production
-			duration = 1825
-		}
-		ai_chance = { factor = 100 }
-	}
-	
-	option = {
-		name = "199008.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -469,10 +197,7 @@ province_event = {
 		}
 		NOT = {
 			trade_goods = sulphur
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -488,38 +213,50 @@ province_event = {
 		}
 		OR = {
 			terrain = hills
-			terrain = hilly_farmland
-			terrain = dry_forest_hills
-			terrain = deciduous_forest_hills
-			terrain = conifer_forest_hills
-			terrain = boreal_forest_hills
-			terrain = jungle_hills
-			terrain = seasonal_jungle_hills
-			terrain = semi_desert_hills
-			terrain = desert_hills
-			terrain = cold_desert_hills
-			terrain = tundra_hills
+			terrain = dryhills
 			terrain = mountain
-			terrain = mountain_farmland
-			terrain = dry_forest_mountains
-			terrain = deciduous_forest_mountains
-			terrain = conifer_forest_mountains
-			terrain = boreal_forest_mountains
-			terrain = jungle_mountains
-			terrain = seasonal_jungle_mountains
-			terrain = semi_desert_mountains
-			terrain = desert_mountains
-			terrain = cold_desert_mountains
-			terrain = tundra_mountains
+			terrain = montane_forest
+			terrain = montane_tundra
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 1500
+		months = 3000
+		modifier = {
+			factor = 1.5
+			OR = {
+				terrain = montane_tundra
+				terrain = montane_forest
+			}
+		}
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199009.A"
+		name = "EVT199022OPTA"
 		trade_goods = sulphur
 		add_province_modifier = {
 			name = switched_production
@@ -529,7 +266,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199009.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -555,10 +292,7 @@ province_event = {
 		}
 		NOT = {
 			trade_goods = cotton
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -573,21 +307,44 @@ province_event = {
 			}
 		}
 		OR = {
-			terrain = farmlands
-			terrain = floodplain_farmland
 			terrain = plains
-			terrain = temperate_grassland
-			terrain = dry_grassland
-			terrain = coastal_desert
+			terrain = savanna
+			terrain = dryhills
+			terrain = steppe
+			terrain = hills
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199015.A"
+		name = "EVT199022OPTA"
 		trade_goods = cotton
 		add_province_modifier = {
 			name = switched_production
@@ -597,7 +354,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199015.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -617,10 +374,7 @@ province_event = {
 		}
 		NOT = {
 			trade_goods = tea
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -636,21 +390,47 @@ province_event = {
 		}
 		OR = {
 			continent = asia
+			continent = oceania
 			continent = africa
+			is_core = ARG
+			is_core = ARC
 		}
 		OR = {
 			terrain = farmlands
-			terrain = good_farmland
-			terrain = jungle_farmland
+			terrain = mountain
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199016.A"
+		name = "EVT199022OPTA"
 		trade_goods = tea
 		add_province_modifier = {
 			name = switched_production
@@ -660,74 +440,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199016.B"
-		ai_chance = { factor = 0 }
-	}
-}
-
-province_event = {
-	id = 199017
-	title = "EVTNAME199015" #Cash Crops - Spices
-	desc = "EVTDESC199017"
-	
-	trigger = {
-		owned_by = THIS
-		controlled_by = THIS
-		province_control_days = 1095
-		owner = {
-			war = no
-			civilized = yes
-		}
-		NOT = {
-			trade_goods = spices
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
-			has_province_modifier = switched_production
-			has_province_modifier = new_production
-		}
-		OR = {
-			AND = {
-				unemployment_by_type = { type = farmers value = 0.5  }
-				has_pop_type = farmers
-				work_available = { worker = farmers }
-			}
-			AND = {
-				unemployment_by_type = { type = labourers value = 0.5  }
-				has_pop_type = labourers
-				work_available = { worker = labourers }
-			}
-		}
-		OR = {
-			continent = asia
-			continent = south_america
-		}
-		OR = {
-			terrain = farmlands
-			terrain = hilly_farmland
-			terrain = forested_farmland
-			terrain = jungle_farmland
-			terrain = temperate_grassland
-			terrain = seasonal_jungle
-			terrain = seasonal_jungle_hills
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 1000
-	}
-
-	option = {
-		name = "199017.A"
-		trade_goods = spices
-		add_province_modifier = {
-			name = switched_production
-			duration = 1825
-		}
-		ai_chance = { factor = 100 }
-	}
-	
-	option = {
-		name = "199017.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -747,10 +460,7 @@ province_event = {
 		}
 		NOT = {
 			trade_goods = wool
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -765,24 +475,44 @@ province_event = {
 			}
 		}
 		OR = {
-			terrain = hilly_farmland
-			terrain = mountain_farmland
-			terrain = steppe
 			terrain = plains
-			terrain = temperate_grassland
-			terrain = dry_grassland
-			terrain = mountain_grassland
-			terrain = semi_desert_hills
-			terrain = semi_desert_mountains
+			terrain = savanna
+			terrain = dryhills
+			terrain = steppe
+			terrain = hills
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 4000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199018.A"
+		name = "EVT199022OPTA"
 		trade_goods = wool
 		add_province_modifier = {
 			name = switched_production
@@ -792,7 +522,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199018.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -812,10 +542,7 @@ province_event = {
 		}
 		NOT = {
 			trade_goods = fruit
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -831,20 +558,42 @@ province_event = {
 		}
 		OR = {
 			terrain = farmlands
-			terrain = good_farmland
-			terrain = hilly_farmland
-			terrain = mountain_farmland
-			terrain = forested_farmland
-			terrain = jungle_farmland
+			terrain = forest
+			terrain = jungle
+			terrain = marsh
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199019.A"
+		name = "EVT199022OPTA"
 		trade_goods = fruit
 		add_province_modifier = {
 			name = switched_production
@@ -854,7 +603,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199019.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -875,10 +624,7 @@ province_event = {
 		NOT = {
 			trade_goods = tobacco
 			continent = europe
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -892,25 +638,39 @@ province_event = {
 				work_available = { worker = labourers }
 			}
 		}
-		OR = {
-			terrain = farmlands
-			terrain = good_farmland
-			terrain = hilly_farmland
-			terrain = mountain_farmland
-			terrain = forested_farmland
-			terrain = jungle_farmland
-			terrain = seasonal_jungle
-			terrain = seasonal_jungle_hills
-			terrain = seasonal_jungle_mountains
-		}
+		terrain = farmlands
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199020.A"
+		name = "EVT199022OPTA"
 		trade_goods = tobacco
 		add_province_modifier = {
 			name = switched_production
@@ -920,7 +680,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199020.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -941,10 +701,7 @@ province_event = {
 		NOT = {
 			trade_goods = coffee
 			continent = europe
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -959,25 +716,42 @@ province_event = {
 			}
 		}
 		OR = {
-			terrain = hilly_farmland
-			terrain = mountain_farmland
-			terrain = forested_farmland
-			terrain = jungle_farmland
-			terrain = seasonal_jungle
-			terrain = seasonal_jungle_hills
-			terrain = seasonal_jungle_mountains
-			terrain = jungle
-			terrain = jungle_hills
-			terrain = jungle_mountains
+			terrain = mountain
+			terrain = montane_forest
+			terrain = hills
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199021.A"
+		name = "EVT199022OPTA"
 		trade_goods = coffee
 		add_province_modifier = {
 			name = switched_production
@@ -987,7 +761,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199021.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1008,10 +782,10 @@ province_event = {
 		}
 		NOT = {
 			trade_goods = silk
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
+			continent = europe
+			continent = north_america
+			continent = south_america
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -1026,25 +800,47 @@ province_event = {
 			}
 		}
 		OR = {
-			terrain = hilly_farmland
-			terrain = mountain_farmland
-			terrain = forested_farmland
-			terrain = jungle_farmland
-			terrain = seasonal_jungle
-			terrain = seasonal_jungle_hills
-			terrain = seasonal_jungle_mountains
 			terrain = jungle
-			terrain = jungle_hills
-			terrain = jungle_mountains
+			AND = {
+				terrain = farmlands
+				OR = {
+					is_core = CHI
+					is_core = HND
+				}
+			}
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 4000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199022.A"
+		name = "EVT199022OPTA"
 		trade_goods = silk
 		add_province_modifier = {
 			name = switched_production
@@ -1054,70 +850,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199022.B"
-		ai_chance = { factor = 0 }
-	}
-}
-
-province_event = {
-	id = 199023
-	title = "EVTNAME199015" #Cash Crops - Sugar
-	desc = "EVTDESC199023"
-	
-	trigger = {
-		owned_by = THIS
-		controlled_by = THIS
-		province_control_days = 1095
-		owner = {
-			war = no
-			civilized = yes
-		}
-		NOT = {
-			trade_goods = sugar
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
-			has_province_modifier = switched_production
-			has_province_modifier = new_production
-		}
-		OR = {
-			AND = {
-				unemployment_by_type = { type = farmers value = 0.5  }
-				has_pop_type = farmers
-				work_available = { worker = farmers }
-			}
-			AND = {
-				unemployment_by_type = { type = labourers value = 0.5  }
-				has_pop_type = labourers
-				work_available = { worker = labourers }
-			}
-		}
-		OR = {
-			terrain = jungle_farmland
-			terrain = seasonal_jungle
-			terrain = seasonal_jungle_hills
-			terrain = seasonal_jungle_mountains
-			terrain = jungle
-			terrain = jungle_hills
-			terrain = jungle_mountains
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 1000
-	}
-
-	option = {
-		name = "199023.A"
-		trade_goods = sugar
-		add_province_modifier = {
-			name = switched_production
-			duration = 1825
-		}
-		ai_chance = { factor = 100 }
-	}
-	
-	option = {
-		name = "199023.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1139,14 +872,11 @@ province_event = {
 		province_control_days = 1095
 		owner = {
 			war = no
-			invention = lumber_mills
+			civilized = yes
 		}
 		NOT = {
 			trade_goods = fish
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -1160,15 +890,39 @@ province_event = {
 				work_available = { worker = labourers }
 			}
 		}
-		port = yes
+		is_coastal = yes
 	}
 	
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199030.A"
+		name = "EVT199030OPTA"
 		trade_goods = fish
 		add_province_modifier = {
 			name = switched_production
@@ -1178,7 +932,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199030.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1194,14 +948,11 @@ province_event = {
 		province_control_days = 1095
 		owner = {
 			war = no
-			invention = lumber_mills
+			civilized = yes
 		}
 		NOT = {
 			trade_goods = timber
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -1217,25 +968,43 @@ province_event = {
 		}
 		OR = {
 			terrain = forest
-			terrain = woods
-			terrain = deciduous_forest
-			terrain = deciduous_forest_hills
-			terrain = deciduous_forest_mountains
-			terrain = conifer_forest
-			terrain = conifer_forest_hills
-			terrain = conifer_forest_mountains
-			terrain = boreal_forest
-			terrain = boreal_forest_hills
-			terrain = boreal_forest_mountains
+			terrain = mountain
+			terrain = boreal
+			terrain = hills
+			terrain = marsh
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199031.A"
+		name = "EVT199032OPTA"
 		trade_goods = timber
 		add_province_modifier = {
 			name = switched_production
@@ -1245,7 +1014,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199031.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1261,14 +1030,11 @@ province_event = {
 		province_control_days = 1095
 		owner = {
 			war = no
-			invention = tropical_lumber_mills
+			civilized = yes
 		}
 		NOT = {
 			trade_goods = tropical_wood
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -1282,19 +1048,39 @@ province_event = {
 				work_available = { worker = labourers }
 			}
 		}
-		OR = {
-			terrain = jungle
-			terrain = jungle_hills
-			terrain = jungle_mountains
-		}
+		terrain = jungle
 	}
 	
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199032.A"
+		name = "EVT199032OPTA"
 		trade_goods = tropical_wood
 		add_province_modifier = {
 			name = switched_production
@@ -1304,7 +1090,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199032.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1324,10 +1110,7 @@ province_event = {
 		}
 		NOT = {
 			trade_goods = cattle
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -1342,25 +1125,44 @@ province_event = {
 			}
 		}
 		OR = {
-			terrain = marginal_farmland
-			terrain = hilly_farmland
-			terrain = mountain_farmland
 			terrain = plains
-			terrain = temperate_grassland
-			terrain = dry_grassland
-			terrain = mountain_grassland
 			terrain = hills
-			terrain = semi_desert
-			terrain = semi_desert_hills
+			terrain = farmlands
+			terrain = dryhills
+			terrain = steppe
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199033.A"
+		name = "EVT199033OPTA"
 		trade_goods = cattle
 		add_province_modifier = {
 			name = switched_production
@@ -1370,7 +1172,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199033.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1390,10 +1192,7 @@ province_event = {
 		}
 		NOT = {
 			trade_goods = grain
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
 			has_province_modifier = switched_production
-			has_province_modifier = new_production
 		}
 		OR = {
 			AND = {
@@ -1409,27 +1208,43 @@ province_event = {
 		}
 		OR = {
 			terrain = farmlands
-			terrain = good_farmland
-			terrain = floodplain_farmland
-			terrain = marginal_farmland
-			terrain = hilly_farmland
-			terrain = mountain_farmland
-			terrain = forested_farmland
-			terrain = jungle_farmland
+			terrain = dryhills
 			terrain = steppe
 			terrain = plains
-			terrain = temperate_grassland
-			terrain = dry_grassland
-			terrain = mountain_grassland
+			terrain = hills
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = precious_goods }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
 	}
 
 	option = {
-		name = "199034.A"
+		name = "EVT199034OPTA"
 		trade_goods = grain
 		add_province_modifier = {
 			name = switched_production
@@ -1439,189 +1254,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "199034.B"
+		name = "EVT199034OPTB"
 		ai_chance = { factor = 0 }
-	}
-}
-
-#############################################
-#											#
-#      		Plantation Events				#
-#											#
-#############################################
-
-province_event = {
-	id = 199040
-	title = "EVTNAME199040" #Plantation Logic
-	desc = "EVTDESC199040"
-		
-	trigger = {
-		is_colonial = yes
-		owned_by = THIS
-		controlled_by = THIS
-		province_control_days = 1095
-		continent = africa
-		owner = {
-			war = no
-			invention = mission_to_civilize
-		}
-		NOT = {
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
-			has_province_modifier = switched_production
-			has_province_modifier = new_production
-			is_core = SAF
-			is_core = EGY
-			is_core = MOR
-			is_core = ALD
-			is_core = TUN
-			is_core = LBY
-			is_core = CYR
-			is_core = TRI
-		}
-		OR = {	
-			trade_goods = grain
-			trade_goods = fish
-			trade_goods = fruit
-			trade_goods = cattle
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 600
-	}
-	
-	option = {
-		name = "199040.A"
-		trade_goods = sugar
-		add_province_modifier = {
-			name = new_production
-			duration = 730
-		}			
-	}	
-	option = {
-		name = "199040.B"
-		trade_goods = coffee
-		add_province_modifier = {
-			name = new_production
-			duration = 730
-		}
-	}
-	option = {
-		name = "199040.C"
-		trade_goods = cotton
-		add_province_modifier = {
-			name = new_production
-			duration = 730
-		}
-	}
-	option = {
-		name = "199040.E"
-		trade_goods = spices
-		add_province_modifier = {
-			name = new_production
-			duration = 730
-		}
-	}
-	option = {
-		name = "199040.F"
-		trade_goods = tobacco
-		add_province_modifier = {
-			name = new_production
-			duration = 730
-		}
-	}
-	option = {
-		name = "199040.G"
-		add_province_modifier = {
-			name = intense_farming
-			duration = 730
-		}
-	}
-}
-
-province_event = {
-	id = 199041
-	title = "EVTNAME199041" #Intensive Farming
-	desc = "EVTDESC199041"
-		
-	trigger = {
-		is_colonial = no
-		owned_by = THIS
-		controlled_by = THIS
-		province_control_days = 1095
-		owner = {
-			war = no
-			basic_chemistry = 1
-		}
-		NOT = {
-			has_province_modifier = intense_farming
-			has_province_modifier = exhausted_land
-		}
-		OR = {	
-			trade_goods = grain
-			trade_goods = fish
-			trade_goods = fruit
-			trade_goods = cattle
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 2000
-	}
-	
-	option = {
-		name = "199041.A"
-		state_scope = {
-			rich_strata = {
-				consciousness = 3
-			}
-			farmers = {
-				militancy = -1
-			}
-		}
-	}	
-
-	option = {
-		name = "199041.B"
-		state_scope = {
-			any_owned = {
-				limit = {
-					OR = {	
-						trade_goods = grain
-						trade_goods = fish
-						trade_goods = fruit
-						trade_goods = cattle
-					}
-				}
-				add_province_modifier = {
-					name = intense_farming
-					duration = 1800
-				}
-			}
-		}
-	}
-}
-
-province_event = {
-	id = 199042
-	title = "EVTNAME199042" #Exhausted Farmland
-	desc = "EVTDESC199042"
-		
-	trigger = {
-		has_province_modifier = intense_farming
-	}
-	
-	mean_time_to_happen = {
-		months = 600
-	}
-	
-	option = {
-		name = "97360.A"
-		remove_province_modifier = intense_farming
-		add_province_modifier = {
-			name = exhausted_land
-			duration = 1800
-		}
 	}
 }

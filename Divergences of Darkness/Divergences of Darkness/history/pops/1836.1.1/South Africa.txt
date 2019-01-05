@@ -1,7 +1,7 @@
 #file includes modern South Africa, Lesotho and Swaziland
 #Western Cape Region (395100)
 #Ruled by Britain 1836
-#Boer POPs represent post-Great Trek migration
+#Boer POPs represent post-Great Trek migration 
 #Cape Town (173000/43250 POPS)
 2087 = {
     clergymen = {
@@ -591,7 +591,7 @@
 }
 #Karoo Region (244500)
 #Ruled by Britain 1836
-#Boer POPs represent post-Great Trek migration
+#Boer POPs represent post-Great Trek migration 
 #Beaufort (34600/8650 POPS)
 2092 = {
     clergymen = {
@@ -698,7 +698,7 @@
 
   soldiers = {
         culture = boer
-        religion =protestant
+        religion = protestant
         size = 1400
     }
 
@@ -782,7 +782,7 @@
         size = 2833
     }
 }
-#De Aar (30600/7650 POPS)
+#De Aar (30600/7650 POPS) 
 2558 = {
     clergymen = {
         culture = sotho
@@ -1175,7 +1175,7 @@
     }
 }
 #uncolonized/ruled by the Xhosa 1836
-#Bisho (40000/10000 POPS)
+#Bisho (80000/20000 POPS)
 2098 = {
     clergymen = {
         culture = xhosa
@@ -1207,7 +1207,7 @@
         size = 7208
     }
 }
-#Mathele (40000/10000 POPS)
+#Mathele (80000/20000 POPS)
 2099 = {
     clergymen = {
         culture = xhosa
@@ -1233,7 +1233,7 @@
         size = 4408
     }
 }
-#Umtata (72000/18000 POPS)
+#Umtata (144000/36000 POPS)
 2100 = {
     clergymen = {
         culture = xhosa
@@ -1261,7 +1261,7 @@
 }
 #Transorangia Region (509000)
 #uncolonized in 1836/dominated by the Sotho in 1836
-#Boer POPs represent post-Great Trek migration
+#Boer POPs represent post-Great Trek migration 
 #Bloemfontein (194000/48500 POPS)
 2101 = {
     soldiers = {
@@ -1401,7 +1401,7 @@
         size = 4482
     }
 }
-#Thaba Bosiu (128000/32000 POPS) #now Lesotho
+#Thaba Bosiu (256000/64000 POPS) #now Lesotho 
 2104 = {
 
     clergymen = {
@@ -1436,7 +1436,7 @@
 }
 #Transvaal Region (349000)
 #uncolonized in 1836/dominated by the Sotho in 1836
-#Boer POPs represent post-Great Trek migration
+#Boer POPs represent post-Great Trek migration 
 #Pretoria (137600/34400 POPS)
 2105 = {
     officers = {
@@ -1602,7 +1602,7 @@
 }
 #Limpopo Region (129000)
 #uncolonized in 1836/dominated by the Ndebele
-#Boer POPs represent post-Great Trek migration
+#Boer POPs represent post-Great Trek migration 
 #Mosega (48200/12050 POPS)
 2108 = {
     clergymen = {
@@ -1781,7 +1781,7 @@
 }
 #Natal Region (682000)
 #ruled/dominated by the Zulu in 1836
-#Boer POPs represent post-Great Trek migration
+#Boer POPs represent post-Great Trek migration 
 #Durban (126000/31500 POPS)
 2111 = {
     clergymen = {
@@ -1920,7 +1920,8 @@
         size = 75
     }
 }
-#Mbabane (80000/20000 POPS)  #now Swaziland
+#Ruled by Suazi 1836
+#Mbabane (160000/40000 POPS)  #now Swaziland
 2114 = {
     clergymen = {
         culture = zulu

@@ -2,7 +2,10 @@ owner = DUA
 controller = DUA
 add_core = DUA
 add_core = FRA
-trade_goods = lead
-life_rating = 35
-terrain = good_farmland
+trade_goods = fish
+life_rating = 31
 fort = 1 
+1861.1.1 = { 
+	railroad = 3 
+	naval_base = 2
+}

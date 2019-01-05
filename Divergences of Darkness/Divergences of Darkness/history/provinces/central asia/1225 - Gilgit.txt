@@ -4,6 +4,9 @@ add_core = PNJ
 add_core = KAS
 add_core = HND
 add_core = LAD
-trade_goods = sugar
+trade_goods = wool
 life_rating = 35
-terrain = tundra_mountains
+1861.1.1 = {
+	owner = KAS
+	controller = KAS
+}

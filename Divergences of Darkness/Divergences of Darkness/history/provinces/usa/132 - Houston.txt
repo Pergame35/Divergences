@@ -2,13 +2,10 @@ owner = CLM
 controller = CLM
 add_core = CLM
 add_core = LST
-add_core = PLA 
-
-trade_goods = cotton
-life_rating = 35
-terrain = forested_farmland
+add_core = PLA
 naval_base = 1
-
+trade_goods = cattle
+life_rating = 35
 
 1835.1.1 = {
 	controller = SPA

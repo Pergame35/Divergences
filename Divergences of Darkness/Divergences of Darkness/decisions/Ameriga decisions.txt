@@ -40,8 +40,8 @@ political_decisions = {
 		}
 	
 	conquest_of_the_desertNAN = {
-	
-		picture = conquest_of_the_desert
+
+		picture = NAN_colony
 	
 		potential = {
 			tag = NAN
@@ -93,7 +93,7 @@ political_decisions = {
 	}
 	
 	occupation_of_araucaniaINC = {
-		picture = conquest_of_the_desert
+		picture = INC_colony
 		potential = {
 			tag = INC
 			OR = {
@@ -332,34 +332,6 @@ political_decisions = {
 	}
 
 
-	integrate_guarani = { 
-	
-		potential = { 
-		tag = AMA 
-		NOT = { accepted_culture = guarani }
-		OR = { 
-		has_global_flag = AMAguarani
-		has_global_flag = Amerigue
-			}
-		}
-		
-		allow = { 
-		any_owned_province = { is_core = AVA }
-		}
-		
-		effect = { 
-		add_accepted_culture = guarani 
-		any_pop = { 
-		limit = { culture = lotharian }
-		militancy = 2
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	new_amsterdam_treaty_border = { 
 	picture = Congress_AMA
 		potential = { 
@@ -1016,7 +988,7 @@ political_decisions = {
 	}
 	
 	beornia_inca_border_treaty = {
-		picture = treaty_signing
+		picture = conquest_of_the_desert
 		potential = {
 			OR = {
 				tag = NAN

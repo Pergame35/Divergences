@@ -5,36 +5,37 @@ artillery = {
 	sprite = Artillery
 	active = no
 	unit_type = support
-	primary_culture = yes
 	floating_flag = no
-	
+
 	#Core Abilities
 	priority = 20
 	max_strength = 3
-	default_organisation = 5
-	maximum_speed = 2.50
+	default_organisation = 30
+	maximum_speed = 4.00
 	weighted_value = 5.0
 
+
 	#Building Costs
-	build_time = 40
+	build_time = 120
 	build_cost = {
-		artillery = 2.5
-		regular_clothes = 3
+		artillery = 10
+		canned_food = 10
+		liquor = 10
 	}
 	
-	supply_consumption = 1
+	supply_consumption = 1.0
 	supply_cost = {
-		artillery = 0.5
-		explosives = 0.25
+		artillery = 0.1 #0.008
+		canned_food = 0.06 #0.004
 	}
 	
 
 	#Land Abilties
 	reconnaissance = 0
-	attack = 0.5
-	defence = 0.5
-	discipline = 1
-	support = 3
-	maneuver = 2
-	siege = 1
+	attack = 1.5
+	defence = 3
+	discipline = 1.0
+	support = 2
+	maneuver = 1
+
 }

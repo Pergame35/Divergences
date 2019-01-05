@@ -5,31 +5,31 @@
 	aristocrats = {
 		culture = uighur
 		religion = sunni
-		size = 1100
+		size = 407
 	}
 
 	bureaucrats = {
 		culture = uighur
 		religion = sunni
-		size = 250
+		size = 93
 	}
 
 	officers = {
 		culture = uighur
 		religion = sunni
-		size = 325
+		size = 120
 	}
 
 	clergymen = {
 		culture = uighur
 		religion = sunni
-		size = 525
+		size = 195
 	}
 
 	artisans = {
 		culture = uighur
 		religion = sunni
-		size = 2600
+		size = 960
 	}
 
 	soldiers = {
@@ -42,38 +42,38 @@
 	farmers = {
 		culture = uighur
 		religion = sunni
-		size = 66775
+		size = 24710
 	}
 
 	aristocrats = {
 		culture = kirgiz
 		religion = animist
-		size = 225
+		size = 85
 	}
 
 	clergymen = {
 		culture = kirgiz
 		religion = animist
-		size = 125
+		size = 45
 	}
 
 	artisans = {
 		culture = kirgiz
 		religion = animist
-		size = 575
+		size = 212
 	}
 
 	soldiers = {
 		culture = kirgiz
 		religion = animist
-		size= 100
+		size= 37
 
 	}
 
 	farmers = {
 		culture = kirgiz
 		religion = animist
-		size = 10975
+		size = 4060
 	}
 
 	clergymen = {
@@ -103,7 +103,106 @@
 	artisans = {
 		culture = uzbek
 		religion = sunni
-		size = 975
+		size = 360
+	}
+}
+#Yarkand
+2614 = {
+	aristocrats = {
+		culture = uighur
+		religion = sunni
+		size = 1053
+	}
+
+	bureaucrats = {
+		culture = uighur
+		religion = sunni
+		size = 157
+	}
+
+	officers = {
+		culture = uighur
+		religion = sunni
+		size = 210
+	}
+
+	clergymen = {
+		culture = uighur
+		religion = sunni
+		size = 330
+	}
+
+	artisans = {
+		culture = uighur
+		religion = sunni
+		size = 1640
+	}
+
+	farmers = {
+		culture = uighur
+		religion = sunni
+		size = 44590
+	}
+
+	aristocrats = {
+		culture = oirat
+		religion = gelugpa
+		size = 140
+	}
+
+	clergymen = {
+		culture = oirat
+		religion = gelugpa
+		size = 80
+	}
+
+	artisans = {
+		culture = oirat
+		religion = gelugpa
+		size = 363
+	}
+
+	soldiers = {
+		culture = oirat
+		religion = gelugpa
+		size= 63
+
+	}
+
+	farmers = {
+		culture = oirat
+		religion = gelugpa
+		size = 6915
+	}
+
+	clergymen = {
+		culture = tajik
+		religion = sunni
+		size = 50
+	}
+
+	artisans = {
+		culture = tajik
+		religion = sunni
+		size = 500
+	}
+
+	farmers = {
+		culture = tajik
+		religion = sunni
+		size = 1450
+	}
+
+	clergymen = {
+		culture = uzbek
+		religion = sunni
+		size = 25
+	}
+
+	artisans = {
+		culture = uzbek
+		religion = sunni
+		size = 615
 	}
 }
 #Ili (168000/42000 POPS)
@@ -401,7 +500,7 @@
 		size = 39200
 	}
 }
-#Urumqi (332000/83000 POPS)
+#Urumqi (Tihwa) (332000/83000 POPS)
 1600 = {
 	aristocrats = {
 		culture = oirat
@@ -606,5 +705,4 @@
 		religion = gelugpa
 		size = 1800
 	}
-
 }

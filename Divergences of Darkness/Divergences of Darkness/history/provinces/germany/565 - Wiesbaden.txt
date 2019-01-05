@@ -2,9 +2,9 @@ owner = NAS
 controller = NAS
 add_core = NAS
 add_core = GER
-trade_goods = coal
-life_rating = 38
-terrain = deciduous_forest_hills
+trade_goods = fruit
+life_rating = 40
+1861.1.1 = { railroad = 3 }
 state_building = {
 	level = 2 
 	building = winery

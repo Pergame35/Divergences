@@ -115,7 +115,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "96215.A"
+		name = "EVT880130OPTA"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = reactionary }
@@ -267,7 +267,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "880130.A"
+		name = "EVT880130OPTA"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = conservative }
@@ -414,7 +414,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "880140.A"
+		name = "EVT880130OPTA"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = liberal }
@@ -562,7 +562,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "880150.A"
+		name = "EVT880130OPTA"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = anarcho_liberal }
@@ -710,7 +710,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "880160.A"
+		name = "EVT880130OPTA"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = socialist }
@@ -859,7 +859,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "880170.A"
+		name = "EVT880130OPTA"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = communist }
@@ -1008,7 +1008,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "880180.A"
+		name = "EVT880130OPTA"
 		random_owned = {
 			limit = {
 				owner = { ruling_party_ideology = fascist }
@@ -1104,7 +1104,9 @@ country_event = {
 	}
 	
 	option = {
-		name = "880200.A"
+		name = "EVT880200OPTA"
+		remove_country_modifier = ruling_party_scandal
+		remove_country_modifier = party_scandal_evidence
 		random_owned = {
 			limit = {
 				owner = {
@@ -1126,28 +1128,6 @@ country_event = {
 			owner = { prestige = -5 }
 		}
 		plurality = 1
-		remove_country_modifier = expert_diplomat
-		remove_country_modifier = successful_industrialist
-		remove_country_modifier = ivory_tower_intellectual
-		remove_country_modifier = man_of_the_people
-		remove_country_modifier = landed_gentleman
-		remove_country_modifier = military_man
-		remove_country_modifier = lord_admiral
-		remove_country_modifier = raving_loon
-		remove_country_modifier = luddite
-		remove_country_modifier = great_statesman
-		remove_country_modifier = backroom_boy
-		remove_country_modifier = great_reformer
-		remove_country_modifier = gauche_buffoon
-		remove_country_modifier = administrative_genius
-		remove_country_modifier = visionary_thinker
-		remove_country_modifier = competent_placeholder
-		remove_country_modifier = imperious_autocrat
-		remove_country_modifier = prince_of_terror
-		remove_country_modifier = efficient_sociopath
-		remove_country_modifier = pig_headed_isolationist
-		remove_country_modifier = ambitious_union_boss
-		remove_country_modifier = dour_economist
 		election = yes
 	}
 }
@@ -1209,7 +1189,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "880210.A"
+		name = "EVT880210OPTA"
 		remove_country_modifier = ruling_party_scandal
 		add_country_modifier = {
 			name = party_scandal_evidence

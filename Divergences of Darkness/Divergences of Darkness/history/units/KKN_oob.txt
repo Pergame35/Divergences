@@ -7,11 +7,11 @@ leader = {
 }
 
 army = {
-	name = "Kaiganese regular"
+	name = "Kaiganese infantry"
 	location = 5
 	regiment = {
-		name= "1. regular"
-		type = regular
+		name= "1. infantry"
+		type = infantry
 		home = 5
 	}
 }

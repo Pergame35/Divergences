@@ -2,9 +2,9 @@ owner = MNR
 controller = MNR
 add_core = MNR
 add_core = GER
-trade_goods = copper
+trade_goods = coal
 life_rating = 40
-terrain = forested_farmland
+1861.1.1 = { railroad = 3 }
 state_building = {
 	level = 2 
 	building = steel_factory

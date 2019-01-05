@@ -3,7 +3,6 @@ controller = ARA
 add_core = ARA
 trade_goods = fruit
 life_rating = 35
-terrain = dry_forest_hills
 state_building = {
 	level = 1
 	building = glass_factory
@@ -12,5 +11,18 @@ state_building = {
 state_building = {
 	level = 1
 	building = winery
-  upgrade = yes
+	upgrade = yes
 }
+1861.1.1 = { 
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = luxury_clothes_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 2 }

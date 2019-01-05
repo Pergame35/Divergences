@@ -2,12 +2,17 @@ owner = DUA
 controller = DUA
 add_core = DUA
 add_core = IRE
-trade_goods = copper
+trade_goods = fish
 life_rating = 35
-terrain = hilly_farmland
 naval_base = 2 #Base in Cobh, important since pre-Napoleonic times
-#state_building = {
-#	level = 2 
-#	building = glass_factory
-#	upgrade = yes
-#}
+
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = { 
+	railroad = 3 
+}

@@ -2,5 +2,7 @@ owner = VIN
 controller = VIN
 add_core = VIN
 trade_goods = cattle
-life_rating = 35
-terrain = conifer_forest_hills
+life_rating = 30
+1861.1.1 = {
+	remove_core = NEN
+}

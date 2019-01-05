@@ -2,6 +2,8 @@ owner = TUN
 controller = TUN
 add_core = TUN
 trade_goods = wool
-life_rating = 15
-terrain = desert
-add_core = TRI
+life_rating = 32
+1861.1.1 = {
+	owner = TUR
+	controller = TUR
+}

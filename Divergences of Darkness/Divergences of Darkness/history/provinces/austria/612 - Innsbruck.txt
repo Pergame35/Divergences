@@ -3,12 +3,9 @@ controller = TIR
 add_core = TIR
 add_core = GER
 trade_goods = timber
-life_rating = 33
-terrain = conifer_forest_mountains
-#state_building = {
-#	level = 2 
-#	building = lumber_mill
-#	upgrade = yes
-#}
-
-
+life_rating = 35
+state_building = {
+	level = 1
+	building = lumber_mill
+	upgrade = yes
+}

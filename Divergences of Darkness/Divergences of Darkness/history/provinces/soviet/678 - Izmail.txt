@@ -4,4 +4,8 @@ add_core = MOL
 add_core = ROM
 trade_goods = fish
 life_rating = 35
-terrain = dry_grassland
+fort = 1
+1861.1.1 = {
+	controller = ROM
+	owner = ROM
+}

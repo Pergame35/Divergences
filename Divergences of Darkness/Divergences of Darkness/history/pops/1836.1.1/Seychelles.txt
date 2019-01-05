@@ -20,27 +20,33 @@
         size = 3
     }
 
-    soldiers = {
-        culture = african_minor
-        religion = protestant
-        size = 205
-    }
+	aristocrats = {
+		culture = kreol
+		religion = catholic
+		size = 30
+	}
+	
+	soldiers = {
+		culture = kreol
+		religion = catholic
+		size = 30
+	}
+	
+	clergymen = {
+		culture = kreol
+		religion = catholic
+		size = 30
+	}
 
-    clergymen = {
-        culture = african_minor
-        religion = protestant
-        size = 60
-    }
+	artisans = {
+		culture = kreol
+		religion = catholic
+		size = 75
+	}
 
-    artisans = {
-        culture = african_minor
-        religion = protestant
-        size = 75
-    }
-
-    farmers = {
-        culture = african_minor
-        religion = protestant
-        size = 1175
-    }
+	farmers = {
+		culture = kreol
+		religion = catholic
+		size = 1175
+	}
 }

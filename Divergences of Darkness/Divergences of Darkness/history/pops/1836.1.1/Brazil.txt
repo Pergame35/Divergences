@@ -35,7 +35,7 @@
 }
 #Amazonas Region (80000)
 #Under rule of Brazil 1836
-#Manaus / Pase (40000/10000 POPS)
+#Manaus (40000/10000 POPS)
 2402 = {
 	clergymen = {
 		culture = amazonian_native
@@ -63,7 +63,7 @@
 	}
 }
 #Under loose authority of Brazil 1836
-#Cachoeira / Yagua (8000/2000 POPS)
+#Cachoeira (8000/2000 POPS)
 2403 = {
 	aristocrats = {
 		culture = amazonian_native
@@ -96,7 +96,7 @@
 		size = 1800
 	}
 }
-#Tefe / Matis (4000/1000 POPS)
+#Tefe (4000/1000 POPS)
 2404 = {
 	aristocrats = {
 		culture = amazonian_native
@@ -129,7 +129,7 @@
 		size = 900
 	}
 }
-#Borba /Tapajo (12000/3000 POPS)
+#Borba (12000/3000 POPS)
 2405 = {
 	aristocrats = {
 		culture = amazonian_native
@@ -162,7 +162,7 @@
 		size = 2700
 	}
 }
-#Tabatinga / Mayoruna (4000/1000 POPS)
+#Tabatinga (4000/1000 POPS)
 2407 = {
 	aristocrats = {
 		culture = amazonian_native
@@ -263,7 +263,7 @@
 }
 #Para Region (128000)
 #Under rule of Brazil 1836
-#Belem / Bethleem (60000/15000 POPS)
+#Belem (60000/15000 POPS)
 2410 = {
 	aristocrats = {
 		culture = amazonian
@@ -382,7 +382,7 @@
 		size = 2700
 	}
 }
-#Santarem / Xingu (20000/5000 POPS)
+#Santarem (20000/5000 POPS)
 2411 = {
 	clergymen = {
 		culture = amazonian_native
@@ -410,7 +410,7 @@
 	}
 }
 #Under loose authority of Brazil 1836
-#Obidos / Obidos (8000/2000 POPS)
+#Obidos (8000/2000 POPS)
 2412 = {
 	aristocrats = {
 		culture = amazonian_native
@@ -443,7 +443,7 @@
 		size = 900
 	}
 }
-#Cachimbo / Jouruna (12000/3000 POPS)
+#Cachimbo (12000/3000 POPS)
 2413 = {
 	aristocrats = {
 		culture = amazonian_native
@@ -476,33 +476,38 @@
 		size = 1800
 	}
 }
-#Amapa (8000/2000 POPS)
-2414 = {
+
+#Macapa (8000/2000 POPS)
+2415 = {
 	aristocrats = {
 		culture = guianan
 		religion = catholic
 		size = 40
 	}
-
 	clergymen = {
 		culture = guianan
 		religion = catholic
-		size = 25
+		size = 50
 	}
 
 	artisans = {
 		culture = guianan
 		religion = catholic
-		size = 15
+		size = 65
 	}
 
 	soldiers = {
 		culture = guianan
 		religion = catholic
-		size= 25
+		size= 50
 
 	}
 
+	farmers = {
+		culture = guianan
+		religion = catholic
+		size = 900
+	}
 	clergymen = {
 		culture = afro_latino
 		religion = catholic
@@ -533,59 +538,6 @@
 		religion = catholic
 		size = 680
 	}
-
-	clergymen = {
-		culture = amazonian_native
-		religion = animist
-		size = 25
-	}
-
-	artisans = {
-		culture = amazonian_native
-		religion = animist
-		size = 50
-	}
-
-	soldiers = {
-		culture = amazonian_native
-		religion = animist
-		size= 15
-
-	}
-
-	farmers = {
-		culture = amazonian_native
-		religion = animist
-		size = 910
-	}
-}
-#Macapa (8000/2000 POPS)
-2415 = {
-	clergymen = {
-		culture = guianan
-		religion = catholic
-		size = 25
-	}
-
-	artisans = {
-		culture = guianan
-		religion = catholic
-		size = 50
-	}
-
-	soldiers = {
-		culture = guianan
-		religion = catholic
-		size= 25
-
-	}
-
-	farmers = {
-		culture = guianan
-		religion = catholic
-		size = 900
-	}
-
 	aristocrats = {
 		culture = amazonian_native
 		religion = animist
@@ -595,29 +547,29 @@
 	clergymen = {
 		culture = amazonian_native
 		religion = animist
-		size = 25
+		size = 50
 	}
 
 	artisans = {
 		culture = amazonian_native
 		religion = animist
-		size = 50
+		size = 100
 	}
 
 	soldiers = {
 		culture = amazonian_native
 		religion = animist
-		size= 15
+		size= 30
 
 	}
 
 	farmers = {
 		culture = amazonian_native
 		religion = animist
-		size = 900
+		size = 1810
 	}
 }
-#Altamira / Shipaya (12000/3000 POPS)
+#Altamira (12000/3000 POPS)
 2600 = {
 	aristocrats = {
 		culture = amazonian_native
@@ -652,7 +604,7 @@
 }
 #Mato Grosso Region (108000)
 #Under the rule of Brazil 1836
-#Dourados / Sanapana (44000/11000 POPS)
+#Dourados (44000/11000 POPS)
 2416 = {
 	aristocrats = {
 		culture = guarani
@@ -686,7 +638,7 @@
 	}
 }
 #Under loose authority of Brazil 1836
-#Vila Bela / Iaco (28000/7000 POPS)
+#Vila Bela (28000/7000 POPS)
 2417 = {
 	aristocrats = {
 		culture = amazonian_native
@@ -719,7 +671,7 @@
 		size = 4575
 	}
 }
-#Cuiaba / Canamari (28000/7000 POPS)
+#Cuiaba (28000/7000 POPS)
 2418 = {
 	aristocrats = {
 		culture = amazonian_native
@@ -752,7 +704,7 @@
 		size = 900
 	}
 }
-#Corumba / Fort-le-due (8000/2000 POPS)
+#Corumba (8000/2000 POPS)
 2419 = {
 	aristocrats = {
 		culture = guarani
@@ -787,7 +739,7 @@
 }
 #Paraguay Region (20000) #see Paraguay.txt & Argentina.txt for balance of region
 #Under loose authority of Paraguay 1836
-#Igautemi / Fontenay (20000/5000 POPS) #now part of Brazil
+#Igautemi (20000/5000 POPS) #now part of Brazil
 2420 = {
 	clergymen = {
 		culture = lotharian
@@ -847,7 +799,7 @@
 }
 #Goias Region (64000)
 #Under the rule of Brazil 1836
-#Vila Boa / Vaura (44000/11000 POPS)
+#Vila Boa (44000/11000 POPS)
 2421 = {
 	aristocrats = {
 		culture = amazonian
@@ -941,7 +893,7 @@
 	}
 }
 #Under loose authority of Brazil 1836
-#Aganja /Monts Indiens (8000/2000 POPS)
+#Aganja (8000/2000 POPS)
 2422 = {
 	clergymen = {
 		culture = amazonian
@@ -985,7 +937,7 @@
 		size = 2900
 	}
 }
-#Palmas / Villefranche d'Amazonie (12000/3000 POPS)
+#Palmas (12000/3000 POPS)
 2423 = {
 	clergymen = {
 		culture = amazonian
@@ -1032,7 +984,7 @@
 }
 #Maranhao Region (412000)
 #Under the rule of Brazil 1836
-#Sao Luis / Saint Georges (160000/40000 POPS)
+#Sao Luis (160000/40000 POPS)
 2424 = {
 	aristocrats = {
 		culture = amazonian
@@ -1103,7 +1055,7 @@
 	}
 
 }
-#Chapada / Plateau St Louis (48000/12000 POPS)
+#Chapada (48000/12000 POPS)
 2425 = {
 	aristocrats = {
 		culture = amazonian
@@ -1236,7 +1188,6 @@
 		religion = catholic
 		size = 10850
 	}
-
 }
 #Oieras (44000/11000 POPS)
 2427 = {
@@ -1322,7 +1273,7 @@
 }
 #Paraiba Region (456000)
 #Under the rule of Brazil 1836
-#Paraiba / Saint Floret (92000/23000 POPS)
+#Paraiba (92000/23000 POPS)
 2428 = {
 	aristocrats = {
 		culture = amazonian
@@ -1386,7 +1337,7 @@
 		size = 13000
 	}
 }
-#Fortaleza / Charrox (180000/45000 POPS)
+#Fortaleza (180000/45000 POPS)
 2429 = {
 	aristocrats = {
 		culture = amazonian
@@ -1462,7 +1413,7 @@
 		size = 7000
 	}
 }
-#Crato / Pradelles (52000/13000 POPS)
+#Crato (52000/13000 POPS)
 2430 = {
 	aristocrats = {
 		culture = amazonian
@@ -1526,7 +1477,7 @@
 		size = 3000
 	}
 }
-#Natal / Port Liberte (132000/33000 POPS)
+#Natal (132000/33000 POPS)
 2431 = {
 	aristocrats = {
 		culture = amazonian
@@ -1627,7 +1578,7 @@
 }
 #Pernambuco Region (516000)
 #Under the rule of Brazil 1836
-#Recife / Le Faou (164000/41000 POPS)
+#Recife (164000/41000 POPS)
 2432 = {
 	aristocrats = {
 		culture = amazonian
@@ -1703,7 +1654,7 @@
 		size = 10000
 	}
 }
-#Cabreibo / Mont-Peyroux (80000/20000 POPS)
+#Cabreibo (80000/20000 POPS)
 2433 = {
 	aristocrats = {
 		culture = amazonian
@@ -1767,7 +1718,7 @@
 		size = 7000
 	}
 }
-#Maceio / Locronon (152000/38000 POPS)
+#Maceio (152000/38000 POPS)
 2434 = {
 	aristocrats = {
 		culture = amazonian
@@ -1831,7 +1782,7 @@
 		size = 7000
 	}
 }
-#Aracaju / Delta-Joseph (120000/30000 POPS)
+#Aracaju (120000/30000 POPS)
 2435 = {
 	aristocrats = {
 		culture = amazonian
@@ -1897,7 +1848,7 @@
 }
 #Bahia Region (896000)
 #Under the rule of Brazil 1836
-#Salvador de Bahia / Port Sucre (356000/89000 POPS)
+#Salvador de Bahia (356000/89000 POPS)
 2436 = {
 	aristocrats = {
 		culture = amazonian
@@ -1985,7 +1936,7 @@
 		size = 14000
 	}
 }
-#Juazeiro / Vallee Joseph (180000/45000 POPS)
+#Juazeiro (180000/45000 POPS)
 2437 = {
 	aristocrats = {
 		culture = amazonian
@@ -2049,7 +2000,7 @@
 		size = 13000
 	}
 }
-#Vila do Barra / Castel-Royal(140000/35000 POPS)
+#Vila do Barra (140000/35000 POPS)
 2438 = {
 	aristocrats = {
 		culture = amazonian
@@ -2113,7 +2064,7 @@
 		size = 9000
 	}
 }
-#Porto Seguro / Nouvelle Aquitaine (120000/30000 POPS)
+#Porto Seguro (120000/30000 POPS)
 2439 = {
 	aristocrats = {
 		culture = amazonian
@@ -2177,7 +2128,7 @@
 		size = 4000
 	}
 }
-#Vitoria da Conquista / Mont Putois (100000/25000 POPS)
+#Vitoria da Conquista (100000/25000 POPS)
 2440 = {
 	aristocrats = {
 		culture = amazonian
@@ -2243,7 +2194,7 @@
 }
 #Minas Gerais Region (716000)
 #Under the rule of Brazil 1836
-#Ouro Preto / Sainte Genieve (232000/58000 POPS)
+#Ouro Preto (232000/58000 POPS)
 2441 = {
 	aristocrats = {
 		culture = lotharian
@@ -2350,7 +2301,7 @@
 		size = 9000
 	}
 }
-#Sabara / Cyretere (104000/26000 POPS)
+#Sabara (104000/26000 POPS)
 2442 = {
 	aristocrats = {
 		culture = amazonian
@@ -2438,7 +2389,7 @@
 		size = 6000
 	}
 }
-#Januaria / Monts Noirs (100000/25000 POPS)
+#Januaria (100000/25000 POPS)
 2443 = {
 	aristocrats = {
 		culture = amazonian
@@ -2502,7 +2453,7 @@
 		size = 7000
 	}
 }
-#Paracatu / Paraquatou (80000/20000 POPS)
+#Paracatu (80000/20000 POPS)
 2444 = {
 	aristocrats = {
 		culture = amazonian
@@ -2585,7 +2536,7 @@
 		size = 6500
 	}
 }
-#Uberaba / Anzy-le-due (68000/17000 POPS)
+#Uberaba (68000/17000 POPS)
 2445 = {
 	aristocrats = {
 		culture = lotharian
@@ -2649,7 +2600,7 @@
 		size = 6000
 	}
 }
-#Sao Joao del Rey / Libreville (132000/33000 POPS)
+#Sao Joao del Rey (132000/33000 POPS)
 2446 = {
 	aristocrats = {
 		culture = lotharian
@@ -2715,7 +2666,7 @@
 }
 #Rio de Janeiro Region (976000)
 #Under the rule of Brazil 1836
-#Rio de Janeiro / Nouvelle Amsterdam (696000/174000 POPS)
+#Rio de Janeiro (696000/174000 POPS)
 2447 = {
 	aristocrats = {
 		culture = lotharian
@@ -2834,7 +2785,7 @@
 		size = 8000
 	}
 }
-#Campos / Cap-Lenotre (160000/40000 POPS)
+#Campos (160000/40000 POPS)
 2448 = {
 	aristocrats = {
 		culture = lotharian
@@ -2928,7 +2879,7 @@
 		size = 7000
 	}
 }
-#Vitoria / Victoire (120000/30000 POPS)
+#Vitoria (120000/30000 POPS)
 2449 = {
 	aristocrats = {
 		culture = lotharian
@@ -3024,7 +2975,7 @@
 }
 #Sao Paulo Region (580000)
 #Under the rule of Brazil 1836
-#Sorocaba / Rouvres-en-Plains (8000/2000 POPS)
+#Sorocaba (8000/2000 POPS)
 2306 = {
 	clergymen = {
 		culture = lotharian
@@ -3088,7 +3039,7 @@
 		size = 1800
 	}
 }
-#Sao Paulo / Saxi-Bourdon (252000/63000 POPS)
+#Sao Paulo (252000/63000 POPS)
 2450 = {
 	aristocrats = {
 		culture = lotharian
@@ -3164,7 +3115,7 @@
 		size = 9000
 	}
 }
-#Santos / Varennes-les-Ameriques (132000/33000 POPS)
+#Santos (132000/33000 POPS)
 2451 = {
 	aristocrats = {
 		culture = lotharian
@@ -3228,7 +3179,7 @@
 		size = 6000
 	}
 }
-#Campiras / Parigny-les-Vaux (64000/16000 POPS)
+#Campiras (64000/16000 POPS)
 2452 = {
 	aristocrats = {
 		culture = lotharian
@@ -3292,7 +3243,7 @@
 		size = 3500
 	}
 }
-#Assis / Villelbevin (52000/14000 POPS)
+#Assis (52000/14000 POPS)
 2453 = {
 	aristocrats = {
 		culture = lotharian
@@ -3356,7 +3307,7 @@
 		size = 8500
 	}
 }
-#Iguape / Sainte-Marie-la-Blanche (64000/16000 POPS)
+#Iguape (64000/16000 POPS)
 2455 = {
 	aristocrats = {
 		culture = lotharian
@@ -3420,7 +3371,7 @@
 		size = 5000
 	}
 }
-#Araraquara / Flavignerot (8000/2000 POPS)
+#Araraquara (8000/2000 POPS)
 2456 = {
 	clergymen = {
 		culture = lotharian
@@ -3498,7 +3449,7 @@
 }
 #Parana Region (512000)
 #Under the rule of Brazil 1836
-#Curitiba / Isenay (172000/43000 POPS)
+#Curitiba (172000/43000 POPS)
 2457 = {
 	aristocrats = {
 		culture = lotharian
@@ -3574,7 +3525,7 @@
 		size = 3000
 	}
 }
-#Garapuava / Sermoise-sur-Odon (40000/10000 POPS)
+#Garapuava (40000/10000 POPS)
 2458 = {
 	aristocrats = {
 		culture = lotharian
@@ -3663,7 +3614,7 @@
 		size = 910
 	}
 }
-#Lajes / Hauteroche (60000/15000 POPS)
+#Lajes (60000/15000 POPS)
 2459 = {
 	aristocrats = {
 		culture = lotharian
@@ -3758,7 +3709,7 @@
 		size = 4575
 	}
 }
-#Castro / Virey-le-Grande (72000/18000 POPS)
+#Castro (72000/18000 POPS)
 2460 = {
 	aristocrats = {
 		culture = lotharian
@@ -3847,7 +3798,7 @@
 		size = 910
 	}
 }
-#Desterro / Domecy-sur-Odon (88000/22000 POPS)
+#Desterro (88000/22000 POPS)
 2461 = {
 	aristocrats = {
 		culture = lotharian
@@ -3911,7 +3862,7 @@
 		size = 7500
 	}
 }
-#Sao Miguel / Dracey-le-fort (80000/20000 POPS)
+#Sao Miguel (80000/20000 POPS)
 2462 = {
 	aristocrats = {
 		culture = lotharian
@@ -3977,7 +3928,7 @@
 }
 #Sao Pedro Region (532000)
 #Under the rule of Brazil 1836
-#Porto Alegre / Fort Lothere (224000/56000 POPS)
+#Porto Alegre (224000/56000 POPS)
 2463 = {
 	aristocrats = {
 		culture = lotharian
@@ -4060,7 +4011,7 @@
 		size = 28000
 	}
 }
-#Sao Pedro / Jouaney (44000/11000 POPS)
+#Sao Pedro (44000/11000 POPS)
 2464 = {
 	aristocrats = {
 		culture = lotharian
@@ -4124,7 +4075,7 @@
 		size = 6500
 	}
 }
-#Passo Fundo / Vauclaix (112000/28000 POPS)
+#Passo Fundo (112000/28000 POPS)
 2465 = {
 	aristocrats = {
 		culture = lotharian
@@ -4277,7 +4228,7 @@
 		size = 3500
 	}
 }
-#Alegrete / Gergueil  (64000/16000 POPS)
+#Alegrete (64000/16000 POPS)
 2467 = {
 	clergymen = {
 		culture = lotharian
@@ -4343,7 +4294,7 @@
 }
 #Beni Region (32000) #see Bolivia.txt for balance of region
 #Under loose authority of Bolivia 1836
-#Tarauaca / Marubo (16000/4000 POPS) #now part of Brazil - Acre State
+#Tarauaca (16000/4000 POPS) #now part of Brazil - Acre State
 2549 = {
 	aristocrats = {
 		culture = amazonian_native
@@ -4376,7 +4327,7 @@
 		size = 3625
 	}
 }
-#Forte do Principe / Saranahua (16000/4000 POPS) #now part of Brazil - Rondonia State
+#Forte do Principe (16000/4000 POPS) #now part of Brazil - Rondonia State
 2550 = {
 	aristocrats = {
 		culture = amazonian_native

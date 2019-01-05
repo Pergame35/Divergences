@@ -2,6 +2,10 @@ owner = AMT
 controller = AMT
 add_core = AMT
 add_core = ETH
-trade_goods = dye
+trade_goods = cattle
 life_rating = 35
-terrain = mountain_farmland
+1861.1.1 = {
+	owner = ETH
+	controller = ETH
+	remove_core = TIG
+}

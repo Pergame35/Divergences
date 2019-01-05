@@ -4,11 +4,14 @@ add_core = ARA
 add_core = ITA
 add_core = SIC
 trade_goods = sulphur
-life_rating = 35
-terrain = dry_forest_mountains
+life_rating = 40
 #state_building = {
 #	level = 1
 #	building = winery
 #	upgrade = yes
 #}
-
+1861.1.1 = {
+	controller = ITA
+	owner = ITA
+	add_core = ITA
+}

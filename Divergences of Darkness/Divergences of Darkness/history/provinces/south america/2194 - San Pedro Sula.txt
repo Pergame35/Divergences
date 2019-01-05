@@ -3,6 +3,9 @@ controller = CLM
 add_core = UCA
 add_core = CLM
 add_core = ELS
-trade_goods = tobacco
-life_rating = 30
-terrain = seasonal_jungle_hills
+trade_goods = grain
+life_rating = 31
+1861.1.1 = {
+	owner = HON
+	controller = HON
+}

@@ -2,7 +2,10 @@ owner = JAP
 controller = JAP 
 add_core = JAP
 add_core = AIN
-
 trade_goods = fish
 life_rating = 15
-terrain = conifer_forest_hills
+terrain = mountain
+1861.1.1 = {
+	owner = TKG
+	controller = TKG
+}

@@ -3,10 +3,20 @@ controller = DUA
 add_core = DUA
 add_core = OCC
 trade_goods = fruit
-life_rating = 36
-terrain = forested_farmland
-state_building = {
-	level = 2
-	building = gunpowder_factory
-	upgrade = yes
+life_rating = 31
+#state_building = {
+#	level = 1
+#	building = winery
+#	upgrade = yes
+#}
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+}
+1861.1.1 = { 
+	railroad = 3 
+	naval_base = 1
 }

@@ -2,7 +2,14 @@ owner = CLM
 controller = CLM
 add_core = CLM
 add_core = LST
-
+terrain = new_world_semidesert
 trade_goods = cattle
-life_rating = 35
-terrain = dry_grassland
+
+1861.1.1 = {
+	controller = CSA
+	owner = CSA
+	add_core = CSA
+	add_core = USA
+	remove_core = MEX
+	colonial = 0
+}

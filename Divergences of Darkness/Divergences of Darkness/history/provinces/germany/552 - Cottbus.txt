@@ -3,6 +3,11 @@ controller = BOH
 add_core = BOH
 add_core = BRN
 add_core = GER
-trade_goods = timber
-life_rating = 35
-terrain = deciduous_forest
+trade_goods = fruit
+life_rating = 40
+1861.1.1 = { railroad = 3 }
+state_building = {
+	level = 2
+	building = winery
+	upgrade = yes
+}

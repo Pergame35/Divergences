@@ -3,6 +3,10 @@ controller = MIG
 add_core = MIG 
 add_core = TNG
 add_core = CHI
-trade_goods = cotton
-life_rating = 35
-terrain = deciduous_forest_mountains
+trade_goods = tea
+life_rating = 32
+1861.1.1 = {
+	owner = TPG
+	controller = TPG
+	add_core = TPG
+}

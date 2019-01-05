@@ -1,5 +1,10 @@
-add_core = YKT
-
-trade_goods = grain
+owner = LOM
+controller = LOM
+add_core = LOM
+add_core = ITA
+trade_goods = iron
 life_rating = 35
-terrain = boreal_forest
+1861.1.1 = {
+	owner = ITA
+	controller = ITA
+}

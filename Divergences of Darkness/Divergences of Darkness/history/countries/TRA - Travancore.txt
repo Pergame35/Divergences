@@ -4,24 +4,18 @@ culture = kannada
 religion = hindu
 government = prussian_constitutionalism
 plurality = 0.0
-nationalvalue = nv_progress
-literacy = 0.09
-civilized = no
-minorities_reform = limited
-immigration_policy = nobody_gets_out
-conscription=mandatory_service
-pollution=no_controls
-child_labor = child_labor_legal
-arts_endowment=no_endowment
-education = elite
+nationalvalue = nv_tradition
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
 vote_franschise = wealth_voting
-public_meetings = yes_meeting
+public_meetings = no_meeting
 press_rights = censored_press
 trade_unions = no_trade_unions
-voting_system = first_past_the_post
+voting_system = jefferson_method
 political_parties = non_secret_ballots
 
 # Social Reforms
@@ -31,6 +25,16 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
+school_reforms = no_schools
+
+# New Reforms
+conscription = mandatory_service
+debt_law = serfdom
+penal_system = capital_punishment
+child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = closed_borders
+
+set_country_flag = hindu_country
 
 ruling_party = AAA_conservative_3
 upper_house = {
@@ -43,31 +47,39 @@ upper_house = {
 	communist = 0
 }
 
-# Level_3
+
+foreign_artillery = yes_foreign_artillery
+foreign_weapons = yes_foreign_weapons
+admin_reform = yes_admin_reform
+
 # Technologies
-early_classical_theory_and_critique = 1
-late_enlightenment_philosophy = 1
-enlightenment_thought = 1
-private_banks = 1
+flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
-no_standard = 1
-military_staff_system = 1
-introspectionism = 1
 
 # Inventions
-
-# Unciv Reforms
-diplomatic_reform = interactive
-academic_institutions = madrasahs
-admin_reform = yes_admin_reform
-taxation_reform = tax_farmers
-army_schools = yes_army_schools
-finance_reform = yes_finance_reform
-foreign_training = yes_foreign_training
-disciplinary_reform = rehabilitation
+#bottling_process = yes
+modern_winemaking = yes
 
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
 oob = "TRA_oob.txt"
+1861.1.1 = {
+	oob = "/1861/TRA_oob.txt"
+}
+1861.1.1 = {
+
+foreign_training = yes_foreign_training
+foreign_weapons = yes_foreign_weapons
+army_schools = yes_army_schools
+
+# Technologies
+military_staff_system = 1
+flintlock_rifles = 1
+
+# Inventions
+#bottling_process = yes
+modern_winemaking = yes
+
+}
