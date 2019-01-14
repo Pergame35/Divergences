@@ -42,14 +42,6 @@ country_event = {
 				ARC = { NOT = { political_parties = non_secret_ballots } }
 				ARC = { NOT = { political_parties = secret_ballots } }
 			}
-			modifier = {
-				factor = 2
-				ARC = { NOT = { border_policy = open_borders } }
-			}
-			modifier = {
-				factor = 4
-				ARC = { NOT = { citizens_rights = all_voting_pops } }
-			}
 		}
 	}
     
@@ -214,11 +206,7 @@ country_event = {
 				culture = vinlander
 			}
 			militancy = 4
-      consciousness = 3
-      ideology = {
-			 	 value = separatist
-				  factor = 0.1
-			 }     
+      consciousness = 3 
 		}    
 		any_pop = {
 			limit = {
@@ -276,10 +264,6 @@ country_event = {
 			limit = {
 				culture = vinlander
 			}
-      ideology = {
-			 	 value = separatist
-				  factor = 0.1
-			 }
 			militancy = 4
       consciousness = 3     
 		}    
@@ -536,10 +520,6 @@ country_event = {
 			limit = {
 				culture = septiman
 			}
-			 ideology = {
-			 	 value = separatist
-				  factor = 0.1
-			 } 
 			militancy = 4
       consciousness = 3     
 		}    
@@ -600,11 +580,7 @@ country_event = {
 				culture = septiman
 			}
 			militancy = 4
-      consciousness = 3
-			 ideology = {
-			 	 value = separatist
-				  factor = 0.1
-			 }      
+      consciousness = 3   
 		}    
 		any_pop = {
 			limit = {
@@ -858,10 +834,6 @@ country_event = {
 			limit = {
 				culture = plantagenian
 			} 
-			 ideology = {
-			 	 value = separatist
-				  factor = 0.1
-			 } 
 			militancy = 4
       consciousness = 3     
 		}    
@@ -922,11 +894,7 @@ country_event = {
 				culture = plantagenian
 			}
 			militancy = 4
-      consciousness = 3
-			 ideology = {
-			 	 value = separatist
-				  factor = 0.05
-			 }      
+      consciousness = 3  
 		}    
 		any_pop = {
 			limit = {
@@ -1268,10 +1236,6 @@ country_event = {
 			}
 			militancy = 1
       consciousness = 2
-      ideology = {
-			 	 value = separatist
-				  factor = 0.05
-			 }   
 			scaled_militancy = {
 					ideology = liberal
 					factor = 2
@@ -1658,10 +1622,6 @@ country_event = {
 			limit = {
 				culture = lusitanian
 			} 
-			 ideology = {
-			 	 value = separatist
-				  factor = 0.1
-			 } 
 			militancy = 4
       consciousness = 3     
 		}    
@@ -1722,11 +1682,7 @@ country_event = {
 				culture = lusitanian
 			}
 			militancy = 4
-      consciousness = 3
-			 ideology = {
-			 	 value = separatist
-				  factor = 0.05
-			 }      
+      consciousness = 3  
 		}    
 		any_pop = {
 			limit = {
