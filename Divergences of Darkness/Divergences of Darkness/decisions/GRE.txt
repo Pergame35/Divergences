@@ -190,6 +190,7 @@ political_decisions = {
 		potential = { 
 		owns = 834
 		OR = { 
+		primary_culture = venetian
 		tag = GRE 
 		tag = VEN 
 		tag = MAC
@@ -450,7 +451,7 @@ political_decisions = {
 				}
 			}
 			861 = {
-				change_province_name = "Üsküdar"
+				change_province_name = "ÃœskÃ¼dar"
 			}
 			prestige = 2
 			random_country = {
