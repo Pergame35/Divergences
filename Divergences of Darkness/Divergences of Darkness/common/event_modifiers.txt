@@ -2557,3 +2557,68 @@ federales_CLM = {
 	core_pop_militancy_modifier = -0.02
 	icon = 1
 }
+#### Kiel Canal ####
+building_kiel_canal = {
+	icon = 9
+}
+
+kiel_canal = {
+	prestige = 0.03
+	icon = 15
+}
+
+kiel_canal_dividend = {
+	icon = 9
+}
+#### Panama Canal ####
+building_panama_canal = {
+	prestige = 0.03
+	icon = 9
+}
+
+panama_canal = {
+	prestige = 0.05
+	icon = 15
+}
+
+panama_canal_dividend = {
+	icon = 9
+}
+
+panama_canal_treaty = {
+	icon = 5
+}
+
+panama_canal_treaty_annuity = {
+	icon = 9
+}
+
+building_panama_canal_scandal = {
+	icon = 10
+}
+#### Suez Canal ####
+building_suez_canal = {
+	prestige = 0.03
+	icon = 9
+}
+
+building_suez_canal_revolt = {
+	icon = 16
+}
+
+suez_canal = {
+	prestige = 0.05
+	icon = 15
+}
+
+suez_canal_dividend = {
+	icon = 9
+}
+
+suez_canal_treaty = {
+	icon = 5
+}
+
+suez_canal_treaty_annuity = {
+	icon = 9
+}
