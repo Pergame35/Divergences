@@ -637,6 +637,7 @@ panama_canal_construction = {
 	icon = 11
 }
 
+
 eiffel_tower_construction = {
 	icon = 11
 }
@@ -649,7 +650,74 @@ small_immigration_boom = {
 	global_immigrant_attract = 1
 	icon = 17
 }
+#### Suez Canal ####
+building_suez_canal = {
+	prestige = 0.03
+	icon = 9
+}
 
+building_suez_canal_revolt = {
+	icon = 16
+}
+
+suez_canal = {
+	prestige = 0.05
+	icon = 15
+}
+
+suez_canal_dividend = {
+	icon = 9
+}
+
+suez_canal_treaty = {
+	icon = 5
+}
+
+suez_canal_treaty_annuity = {
+	icon = 9
+}
+
+#####DoD canal modifier  
+#### Panama Canal ####
+building_panama_canal = {
+	prestige = 0.03
+	icon = 9
+}
+
+panama_canal = {
+	prestige = 0.05
+	icon = 15
+}
+
+panama_canal_dividend = {
+	icon = 9
+}
+
+panama_canal_treaty = {
+	icon = 5
+}
+
+panama_canal_treaty_annuity = {
+	icon = 9
+}
+
+building_panama_canal_scandal = {
+	icon = 10
+}
+
+#### Kiel Canal ####
+building_kiel_canal = {
+	icon = 9
+}
+
+kiel_canal = {
+	prestige = 0.03
+	icon = 15
+}
+
+kiel_canal_dividend = {
+	icon = 9
+}
 land_of_opportunity = {
 	global_immigrant_attract = 4.5
 	icon = 13
@@ -1231,6 +1299,11 @@ the_homestead_act = {
 	global_immigrant_attract = 0.5	#50%
 	global_assimilation_rate = 0.5
 	core_pop_militancy_modifier = -0.05
+	icon = 9
+}
+the_homestead_act2 = {
+	global_immigrant_attract = 0.5	#50%
+	global_assimilation_rate = 0.5
 	icon = 9
 }
 
