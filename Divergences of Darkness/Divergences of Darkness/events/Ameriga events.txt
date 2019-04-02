@@ -1812,11 +1812,11 @@ country_event = {
 	sub_unit = { type = clipper_transport value = current }
 	sub_unit = { type = clipper_transport value = current }
 	sub_unit = { type = clipper_transport value = current }
-	sub_unit = { type = artillery value = current }
-	sub_unit = { type = dragoon value = current }
-	sub_unit = { type = regular value = current }
-	sub_unit = { type = regular value = current }
-	sub_unit = { type = regular value = current }
+	#sub_unit = { type = artillery value = current }
+	#sub_unit = { type = dragoon value = current }
+	#sub_unit = { type = regular value = current }
+	#sub_unit = { type = regular value = current }
+	#sub_unit = { type = regular value = current }
 	}
 	ammunition = 500
 	small_arms = 500
