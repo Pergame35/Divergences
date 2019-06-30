@@ -59,7 +59,13 @@ political_decisions = {
 			is_greater_power = yes
 			ALB = {
 				all_core = {
+					OR = {
 						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
 				}
 			}
 			YUG = {
@@ -76,6 +82,14 @@ political_decisions = {
 				all_core = {
 					add_core = YUG
 				}
+			}
+			
+			any_country = {
+				limit = {
+					tag = ALB
+					in_sphere = THIS
+				}
+				annex_to = THIS
 			}
 		}
 		ai_will_do = {
@@ -94,7 +108,13 @@ political_decisions = {
 			is_greater_power = yes
 			BUL = {
 				all_core = {
-						owned_by = THIS
+					OR = {
+						owned_by = THIS	
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
 				}
 			}
 			YUG = {
@@ -111,6 +131,14 @@ political_decisions = {
 				all_core = {
 					add_core = YUG
 				}
+			}
+			
+			any_country = {
+				limit = {
+					tag = BUL
+					in_sphere = THIS
+				}
+				annex_to = THIS
 			}
 		}
 		ai_will_do = {
