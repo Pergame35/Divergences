@@ -55,7 +55,6 @@ political_decisions = {
 
 		allow = {
 			NOT = { war = yes }
-			NOT = {	ALB = { exists = yes }	}
 			is_greater_power = yes
 			ALB = {
 				all_core = {
@@ -104,7 +103,6 @@ political_decisions = {
 
 		allow = {
 			NOT = { war = yes }
-			NOT = {	BUL = { exists = yes }	}
 			is_greater_power = yes
 			BUL = {
 				all_core = {
