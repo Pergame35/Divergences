@@ -90,6 +90,18 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
+			
+			any_country = {
+				limit = {
+					NOT = { tag = ALB }
+					in_sphere = THIS
+					any_owned_province = { is_core = ALB }
+				}
+				any_owned = {
+					limit = { is_core = ALB }
+					secede_province = THIS
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -137,6 +149,18 @@ political_decisions = {
 					in_sphere = THIS
 				}
 				annex_to = THIS
+			}
+			
+			any_country = {
+				limit = {
+					NOT = { tag = BUL }
+					in_sphere = THIS
+					any_owned_province = { is_core = BUL }
+				}
+				any_owned = {
+					limit = { is_core = BUL }
+					secede_province = THIS
+				}
 			}
 		}
 		ai_will_do = {
