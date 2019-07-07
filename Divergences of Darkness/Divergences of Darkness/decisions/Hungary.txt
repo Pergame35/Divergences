@@ -183,26 +183,26 @@ political_decisions = {
 		picture = "Triglav"
 		
 		potential = { 
-		OR = { 
-		tag = SLO
-		AND = { tag = CRO owns = 767 }
-		AND = { tag = YUG owns = 767 }
+			OR = { 
+				tag = SLO
+				AND = { tag = CRO owns = 767 }
+				AND = { tag = YUG owns = 767 }
 			}
-		NOT = { has_country_flag = independent_SLO }
+			NOT = { has_country_flag = SLO_independence }
 		}
 		
 		allow = { 
-		AUS = { exists = no }
-		war = no 
+			AUS = { exists = no }
+			war = no 
 		}
 		
 		effect = { 
-		any_owned = { 
-		limit = { is_core = SLO }
-		remove_core = AUS
-		remove_core = SGF 
-		remove_core = GER
-		set_country_flag = independent_SLO
+			any_owned = { 
+				limit = { is_core = SLO }
+				remove_core = AUS
+				remove_core = SGF 
+				remove_core = GER
+				set_country_flag = SLO_independence
 			}
 		}
 		
@@ -213,21 +213,20 @@ political_decisions = {
 		picture = "Triglav"
 	
 		potential = { 
-		tag = CRO 
-		NOT = { has_country_flag = accepted_slovenians }
+			tag = CRO 
+			NOT = { has_country_flag = accepted_slovenians }
 		}
 		
 		allow = { 
-		OR = { 
-		owns = 768 
-		owns = 769 
+			OR = { 
+				owns = 768 
+				owns = 769 
 			}
 		}
 		
 		effect = { 
-		set_country_flag = accepted_slovenians
-		add_accepted_culture = slovene
+			set_country_flag = accepted_slovenians
+			add_accepted_culture = slovene
 		}
-	
 	}
 }

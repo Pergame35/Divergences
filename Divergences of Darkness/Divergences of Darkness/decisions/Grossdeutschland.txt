@@ -56,43 +56,43 @@ political_decisions = {
 	}
 	
 	centralize_hre = { 
-	picture = Reich_kaiser
-	potential = { 
-	tag = BOH 
-	is_greater_power = yes 
-	NOT = { has_global_flag = liberal_revolutions_should_now_fire }
-	}
+		picture = Reich_kaiser
+		potential = { 
+			tag = BOH 
+			is_greater_power = yes 
+			NOT = { has_global_flag = liberal_revolutions_should_now_fire }
+		}
 	
-	allow = { 
-	GER = { 
-		all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
+		allow = { 
+			GER = { 
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
 							in_sphere = THIS
-							}
-							province_id = 529
-							province_id = 528
-							province_id = 530
-							province_id = 369 
-							province_id = 575 
-							province_id = 576 
-							province_id = 572 
-							province_id = 574
-							province_id = 573 
-							province_id = 570
-							province_id = 571 
-							province_id = 533
-							province_id = 624
 						}
+						province_id = 529
+						province_id = 528
+						province_id = 530
+						province_id = 369 
+						province_id = 575 
+						province_id = 576 
+						province_id = 572 
+						province_id = 574
+						province_id = 573 
+						province_id = 570
+						province_id = 571 
+						province_id = 533
+						province_id = 624
 					}
+				}
 			}
 		}
-	effect = { 
-	set_global_flag = hre_formed
-	prestige = 50 
-	change_tag = HLR 
-	country_event = 410009
+		effect = { 
+			set_global_flag = hre_formed
+			prestige = 50 
+			change_tag = HLR 
+			country_event = 410009
 		}
 	}
 	

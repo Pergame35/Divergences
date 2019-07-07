@@ -166,28 +166,28 @@ political_decisions = {
 	}
 
 
-	secret_police = {
-		alert = yes
-		potential = {	
-			not = { has_country_modifier = secret_police }		 	
-			OR = {
-				government = proletarian_dictatorship
-				government = presidential_dictatorship
-				government = bourgeois_dictatorship
-				government = fascist_dictatorship
-			}
-		}
-		allow = {
-			revolution_n_counterrevolution = 1
-		}
-		effect = {
-			add_country_modifier = {
-				name = secret_police 
-				duration = -1
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}	
+	# secret_police = {
+	# 	alert = yes
+	# 	potential = {	
+	# 		not = { has_country_modifier = secret_police }		 	
+	# 		OR = {
+	# 			government = proletarian_dictatorship
+	# 			government = presidential_dictatorship
+	# 			government = bourgeois_dictatorship
+	# 			government = fascist_dictatorship
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		revolution_n_counterrevolution = 1
+	# 	}
+	# 	effect = {
+	# 		add_country_modifier = {
+	# 			name = secret_police 
+	# 			duration = -1
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }	
 }

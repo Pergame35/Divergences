@@ -842,7 +842,7 @@ country_event = {
 				}
 				NOT = { tag = THIS }
 			}
-			all_core = { add_core = ARU }
+			all_core = { add_core = UAR }
 		}
 		any_country = {
 			limit = {
@@ -873,7 +873,7 @@ country_event = {
 				}
 			}
 		}
-		PER_1132 = { remove_core = ARU }
+		PER_1132 = { remove_core = UAR }
 		any_country = {
 			limit = {
 				exists = yes
