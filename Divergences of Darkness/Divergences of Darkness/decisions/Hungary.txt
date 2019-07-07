@@ -188,7 +188,7 @@ political_decisions = {
 				AND = { tag = CRO owns = 767 }
 				AND = { tag = YUG owns = 767 }
 			}
-			NOT = { has_country_flag = SLO_independence }
+			NOT = { has_country_flag = independent_SLO }
 		}
 		
 		allow = { 
@@ -202,8 +202,8 @@ political_decisions = {
 				remove_core = AUS
 				remove_core = SGF 
 				remove_core = GER
-				set_country_flag = SLO_independence
 			}
+			set_country_flag = independent_SLO
 		}
 		
 	}
