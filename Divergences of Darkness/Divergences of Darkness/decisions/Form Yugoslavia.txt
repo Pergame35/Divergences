@@ -93,12 +93,18 @@ political_decisions = {
 			
 			any_country = {
 				limit = {
-					NOT = { tag = ALB }
+					NOT = {
+						tag = ALB
+					}
 					in_sphere = THIS
-					any_owned_province = { is_core = ALB }
+					any_owned_province = {
+						is_core = ALB
+					}
 				}
 				any_owned = {
-					limit = { is_core = ALB }
+					limit = {
+						is_core = ALB
+					}
 					secede_province = THIS
 				}
 			}
@@ -119,7 +125,7 @@ political_decisions = {
 			BUL = {
 				all_core = {
 					OR = {
-						owned_by = THIS	
+						owned_by = THIS
 						owner = {
 							in_sphere = THIS
 							war = no
@@ -153,12 +159,20 @@ political_decisions = {
 			
 			any_country = {
 				limit = {
-					NOT = { tag = BUL }
+					NOT = {
+						tag = BUL
+					}
 					in_sphere = THIS
-					any_owned_province = { is_core = BUL }
+					
+					any_owned_province = {
+						is_core = BUL
+					}
 				}
+				
 				any_owned = {
-					limit = { is_core = BUL }
+					limit = {
+						is_core = BUL
+					}
 					secede_province = THIS
 				}
 			}
@@ -217,22 +231,22 @@ political_decisions = {
 	}
 	
 	integrate_serbia = { 
-	picture = "SERCRO_union"
-	potential = { 
-	tag = CRO 
-	SER = { vassal_of = THIS } 
-	}
-	
-	allow = { 
-	rank = 16 
-	OR = { 
-	year = 1850 
-	780 = { owned_by = THIS }
+		picture = "SERCRO_union"
+		potential = { 
+			tag = CRO 
+			SER = { vassal_of = THIS } 
 		}
-	}
 	
-	effect = { 
-	country_event = 1400105
+		allow = { 
+			rank = 16 
+			OR = { 
+				year = 1850 
+				780 = { owned_by = THIS }
+			}
+		}
+	
+		effect = { 
+			country_event = 1400105
 		}
 	
 	}

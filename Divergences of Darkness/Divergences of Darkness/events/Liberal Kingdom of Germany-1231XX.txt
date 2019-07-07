@@ -1420,7 +1420,7 @@ country_event = {
 	NOT = { has_country_flag = german_crown }
 	}
 	
-	mean_time_to_happen = ( 
+	mean_time_to_happen = { 
 	months = 300
 	modifier = { 
 	factor = 0.7 
@@ -1438,7 +1438,7 @@ country_event = {
 	factor = 0.5 
 	rank = 4 
 		}
-	)
+	}
 	
 	immediate = { 
 	set_country_flag = german_crown

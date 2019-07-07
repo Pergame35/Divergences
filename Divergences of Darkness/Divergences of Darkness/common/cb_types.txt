@@ -6567,19 +6567,16 @@ colonial_conquest = {
 	}
 	
 	allowed_states = {
-		OR = {
-			AND = {
-				THIS = { owns = 2060 }
-				any_owned_province = {
-					OR = {
-						region = POR_2060
-						region = POR_2053
-						region = POR_2054
-						region = POR_2049
-					}
-				}
+		THIS = { owns = 2060 }
+		any_owned_province = {
+			OR = {
+				region = POR_2060
+				region = POR_2053
+				region = POR_2054
+				region = POR_2049
 			}
 		}
+		
 	}
 
 	po_demand_state = yes
