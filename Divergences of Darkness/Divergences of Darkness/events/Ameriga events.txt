@@ -1801,29 +1801,29 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "775424.A"
-	relation = { who = NAN value = 200 }
-	277 = { 
-	sub_unit = { type = frigate value = current } 
-	sub_unit = { type = frigate value = current }
-	sub_unit = { type = frigate value = current }
-	sub_unit = { type = frigate value = current }
-	sub_unit = { type = clipper_transport value = current }
-	sub_unit = { type = clipper_transport value = current }
-	sub_unit = { type = clipper_transport value = current }
-	sub_unit = { type = clipper_transport value = current }
-	sub_unit = { type = artillery value = current }
-	sub_unit = { type = dragoon value = current }
-	sub_unit = { type = regular value = current }
-	sub_unit = { type = regular value = current }
-	sub_unit = { type = regular value = current }
-	}
-	ammunition = 500
-	small_arms = 500
-	artillery = 10
-	canned_food = 500
-	regular_clothes = 600
-	war_exhaustion = -5 
+		name = "775424.A"
+		relation = { who = NAN value = 200 }
+		277 = { 
+			sub_unit = { type = frigate value = current } 
+			sub_unit = { type = frigate value = current }
+			sub_unit = { type = frigate value = current }
+			sub_unit = { type = frigate value = current }
+			sub_unit = { type = clipper_transport value = current }
+			sub_unit = { type = clipper_transport value = current }
+			sub_unit = { type = clipper_transport value = current }
+			sub_unit = { type = clipper_transport value = current }
+			sub_unit = { type = artillery value = current }
+			sub_unit = { type = dragoon value = current }
+			sub_unit = { type = infantry value = current }
+			sub_unit = { type = infantry value = current }
+			sub_unit = { type = infantry value = current }
+		}
+		ammunition = 500
+		small_arms = 500
+		artillery = 10
+		canned_food = 500
+		regular_clothes = 600
+		war_exhaustion = -5 
 	}
 }
 
