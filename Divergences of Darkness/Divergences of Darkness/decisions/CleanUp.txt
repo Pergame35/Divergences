@@ -254,20 +254,35 @@ political_decisions = {
 				AND = { government = fascist_dictatorship NOT = { has_country_flag = fascist_gov } }
 				AND = { government = bourgeois_dictatorship NOT = { has_country_flag = anarcho_liberal_gov } }
 				AND = { exists = yes NOT = { has_country_flag = existing_country } }
-			}
-			any_neighbor_country = {
-				ai = no
-				OR = {
-					AND = { government = theocracy NOT = { has_country_flag = theocratic_government } }
-					AND = { government = proletarian_dictatorship NOT = { has_country_flag = communist_gov } }
-					AND = { government = absolute_monarchy NOT = { has_country_flag = absolute_monarchy_gov } }
-					AND = { government = prussian_constitutionalism NOT = { has_country_flag = semi_constitutional_monarchy_gov } }
-					AND = { government = hms_government NOT = { has_country_flag = constitutional_monarchy_gov } }
-					AND = { government = democracy NOT = { has_country_flag = democracy_gov } }
-					AND = { government = presidential_dictatorship NOT = { has_country_flag = presidential_dictatorship_gov } }
-					AND = { government = fascist_dictatorship NOT = { has_country_flag = fascist_gov } }
-					AND = { government = bourgeois_dictatorship NOT = { has_country_flag = anarcho_liberal_gov } }
-					AND = { exists = yes NOT = { has_country_flag = existing_country } }
+				any_neighbor_country = {
+					ai = no
+					OR = {
+						AND = { government = theocracy NOT = { has_country_flag = theocratic_government } }
+						AND = { government = proletarian_dictatorship NOT = { has_country_flag = communist_gov } }
+						AND = { government = absolute_monarchy NOT = { has_country_flag = absolute_monarchy_gov } }
+						AND = { government = prussian_constitutionalism NOT = { has_country_flag = semi_constitutional_monarchy_gov } }
+						AND = { government = hms_government NOT = { has_country_flag = constitutional_monarchy_gov } }
+						AND = { government = democracy NOT = { has_country_flag = democracy_gov } }
+						AND = { government = presidential_dictatorship NOT = { has_country_flag = presidential_dictatorship_gov } }
+						AND = { government = fascist_dictatorship NOT = { has_country_flag = fascist_gov } }
+						AND = { government = bourgeois_dictatorship NOT = { has_country_flag = anarcho_liberal_gov } }
+						AND = { exists = yes NOT = { has_country_flag = existing_country } }
+					}
+				}
+				any_greater_power = {
+					ai = no
+					OR = {
+						AND = { government = theocracy NOT = { has_country_flag = theocratic_government } }
+						AND = { government = proletarian_dictatorship NOT = { has_country_flag = communist_gov } }
+						AND = { government = absolute_monarchy NOT = { has_country_flag = absolute_monarchy_gov } }
+						AND = { government = prussian_constitutionalism NOT = { has_country_flag = semi_constitutional_monarchy_gov } }
+						AND = { government = hms_government NOT = { has_country_flag = constitutional_monarchy_gov } }
+						AND = { government = democracy NOT = { has_country_flag = democracy_gov } }
+						AND = { government = presidential_dictatorship NOT = { has_country_flag = presidential_dictatorship_gov } }
+						AND = { government = fascist_dictatorship NOT = { has_country_flag = fascist_gov } }
+						AND = { government = bourgeois_dictatorship NOT = { has_country_flag = anarcho_liberal_gov } }
+						AND = { exists = yes NOT = { has_country_flag = existing_country } }
+					}
 				}
 			}
 		}
@@ -404,6 +419,127 @@ political_decisions = {
 				set_country_flag = fascist_gov
 			}
 			any_neighbor_country = {
+				limit = { government = bourgeois_dictatorship NOT = { has_country_flag = anarcho_liberal_gov } }
+				clr_country_flag = theocratic_government
+				clr_country_flag = communist_gov
+				clr_country_flag = absolute_monarchy_gov
+				clr_country_flag = semi_constitutional_monarchy_gov
+				clr_country_flag = constitutional_monarchy_gov
+				clr_country_flag = democracy_gov
+				clr_country_flag = presidential_dictatorship_gov
+				clr_country_flag = fascist_gov
+				#clr_country_flag = anarcho_liberal_gov
+				set_country_flag = anarcho_liberal_gov
+			}
+			any_greater_power = {
+				limit = { exists = yes NOT = { has_country_flag = existing_country } }
+				set_country_flag = existing_country
+			}
+			any_greater_power = {
+				limit = { government = theocracy NOT = { has_country_flag = theocratic_government } }
+				#clr_country_flag = theocratic_government
+				clr_country_flag = communist_gov
+				clr_country_flag = absolute_monarchy_gov
+				clr_country_flag = semi_constitutional_monarchy_gov
+				clr_country_flag = constitutional_monarchy_gov
+				clr_country_flag = democracy_gov
+				clr_country_flag = presidential_dictatorship_gov
+				clr_country_flag = fascist_gov
+				clr_country_flag = anarcho_liberal_gov
+				set_country_flag = theocratic_government
+			}
+			any_greater_power = {
+				limit = { government = proletarian_dictatorship NOT = { has_country_flag = communist_gov } }
+				clr_country_flag = theocratic_government
+				#clr_country_flag = communist_gov
+				clr_country_flag = absolute_monarchy_gov
+				clr_country_flag = semi_constitutional_monarchy_gov
+				clr_country_flag = constitutional_monarchy_gov
+				clr_country_flag = democracy_gov
+				clr_country_flag = presidential_dictatorship_gov
+				clr_country_flag = fascist_gov
+				clr_country_flag = anarcho_liberal_gov
+				set_country_flag = communist_gov
+			}
+			any_greater_power = {
+				limit = { government = absolute_monarchy NOT = { has_country_flag = absolute_monarchy_gov } }
+				clr_country_flag = theocratic_government
+				clr_country_flag = communist_gov
+				#clr_country_flag = absolute_monarchy_gov
+				clr_country_flag = semi_constitutional_monarchy_gov
+				clr_country_flag = constitutional_monarchy_gov
+				clr_country_flag = democracy_gov
+				clr_country_flag = presidential_dictatorship_gov
+				clr_country_flag = fascist_gov
+				clr_country_flag = anarcho_liberal_gov
+				set_country_flag = absolute_monarchy_gov
+			}
+			any_greater_power = {
+				limit = { government = prussian_constitutionalism NOT = { has_country_flag = semi_constitutional_monarchy_gov } }
+				clr_country_flag = theocratic_government
+				clr_country_flag = communist_gov
+				clr_country_flag = absolute_monarchy_gov
+				#clr_country_flag = semi_constitutional_monarchy_gov
+				clr_country_flag = constitutional_monarchy_gov
+				clr_country_flag = democracy_gov
+				clr_country_flag = presidential_dictatorship_gov
+				clr_country_flag = fascist_gov
+				clr_country_flag = anarcho_liberal_gov
+				set_country_flag = semi_constitutional_monarchy_gov
+			}
+			any_greater_power = {
+				limit = { government = hms_government NOT = { has_country_flag = constitutional_monarchy_gov } }
+				clr_country_flag = theocratic_government
+				clr_country_flag = communist_gov
+				clr_country_flag = absolute_monarchy_gov
+				clr_country_flag = semi_constitutional_monarchy_gov
+				#clr_country_flag = constitutional_monarchy_gov
+				clr_country_flag = democracy_gov
+				clr_country_flag = presidential_dictatorship_gov
+				clr_country_flag = fascist_gov
+				clr_country_flag = anarcho_liberal_gov
+				set_country_flag = constitutional_monarchy_gov
+			}
+			any_greater_power = {
+				limit = { government = democracy NOT = { has_country_flag = democracy_gov } }
+				clr_country_flag = theocratic_government
+				clr_country_flag = communist_gov
+				clr_country_flag = absolute_monarchy_gov
+				clr_country_flag = semi_constitutional_monarchy_gov
+				clr_country_flag = constitutional_monarchy_gov
+				#clr_country_flag = democracy_gov
+				clr_country_flag = presidential_dictatorship_gov
+				clr_country_flag = fascist_gov
+				clr_country_flag = anarcho_liberal_gov
+				set_country_flag = democracy_gov
+			}
+			any_greater_power = {
+				limit = { government = presidential_dictatorship NOT = { has_country_flag = presidential_dictatorship_gov } }
+				clr_country_flag = theocratic_government
+				clr_country_flag = communist_gov
+				clr_country_flag = absolute_monarchy_gov
+				clr_country_flag = semi_constitutional_monarchy_gov
+				clr_country_flag = constitutional_monarchy_gov
+				clr_country_flag = democracy_gov
+				#clr_country_flag = presidential_dictatorship_gov
+				clr_country_flag = fascist_gov
+				clr_country_flag = anarcho_liberal_gov
+				set_country_flag = presidential_dictatorship_gov
+			}
+			any_greater_power = {
+				limit = { government = fascist_dictatorship NOT = { has_country_flag = fascist_gov } }
+				clr_country_flag = theocratic_government
+				clr_country_flag = communist_gov
+				clr_country_flag = absolute_monarchy_gov
+				clr_country_flag = semi_constitutional_monarchy_gov
+				clr_country_flag = constitutional_monarchy_gov
+				clr_country_flag = democracy_gov
+				clr_country_flag = presidential_dictatorship_gov
+				#clr_country_flag = fascist_gov
+				clr_country_flag = anarcho_liberal_gov
+				set_country_flag = fascist_gov
+			}
+			any_greater_power = {
 				limit = { government = bourgeois_dictatorship NOT = { has_country_flag = anarcho_liberal_gov } }
 				clr_country_flag = theocratic_government
 				clr_country_flag = communist_gov
