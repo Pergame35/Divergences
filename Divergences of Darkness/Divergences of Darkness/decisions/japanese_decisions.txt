@@ -400,7 +400,8 @@ political_decisions = {
 	organize_yakutia = { 
 	potential = {
 	tag = JAP
-	owns = 2669 
+	#used to be 2669 which is now Sondrio in italy  
+	owns = 2696
 	civilized = yes
 	NOT = { YKT = { exists = yes } }
 	NOT = { has_country_flag = yakutia_org }
