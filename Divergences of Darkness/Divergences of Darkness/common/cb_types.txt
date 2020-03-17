@@ -3105,97 +3105,97 @@ great_game_cb = {
 	}
 }
 
-restore_british_raj = {
-	sprite_index = 10
-	is_triggered_only = yes
-	months = 12
-	crisis = no
+# restore_british_raj = {
+# 	sprite_index = 10
+# 	is_triggered_only = yes
+# 	months = 12
+# 	crisis = no
 
-	badboy_factor = 0
-	prestige_factor = 1
-	peace_cost_factor = 0.8
-	penalty_factor = 2
+# 	badboy_factor = 0
+# 	prestige_factor = 1
+# 	peace_cost_factor = 0.8
+# 	penalty_factor = 2
 
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 48
+# 	break_truce_prestige_factor = 1
+# 	break_truce_infamy_factor = 1
+# 	break_truce_militancy_factor = 1
+# 	truce_months = 48
 	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
+# 	good_relation_prestige_factor = 1
+# 	good_relation_infamy_factor = 1
+# 	good_relation_militancy_factor = 1
 	
-	always = yes
+# 	always = yes
 
-	po_make_puppet = yes
+# 	po_make_puppet = yes
 
-	war_name = WAR_BRITISH_RAJ_NAME
+# 	war_name = WAR_BRITISH_RAJ_NAME
 	
-	can_use = {
-		is_vassal = no
-		is_disarmed = no
-		civilized = no
-		NOT = {
-			is_our_vassal = THIS
-			truce_with = THIS
-			tag = HND
-			has_country_modifier = neutrality
-			has_global_flag = british_dismantled
-		}
-		OR = {
-			tag = ASM
-			tag = AWA
-			tag = BAS
-			tag = BER
-			tag = BIH
-			tag = BIK
-			tag = BHO
-			tag = BNG
-			tag = BUN
-			tag = IND
-			tag = JAI
-			tag = JAS
-			tag = JOD
-			tag = MAH
-			tag = MEW
-			tag = MUG
-			tag = MYS
-			tag = NAG
-			tag = ORI
-			tag = TRA
-			tag = KUT
-		}
-		THIS = {
-			tag = ENG
-			OR = {
-				government = absolute_monarchy
-				government = prussian_constitutionalism
-				government = hms_government
-			}
-			NOT = { has_country_modifier = neutrality }
-		}
-		OR = {
-			war_with = THIS
-			THIS = {
-				NOT = {
-					has_country_modifier = no_more_war
-				}
-			}
-		}
-	}
+# 	can_use = {
+# 		is_vassal = no
+# 		is_disarmed = no
+# 		civilized = no
+# 		NOT = {
+# 			is_our_vassal = THIS
+# 			truce_with = THIS
+# 			tag = HND
+# 			has_country_modifier = neutrality
+# 			has_global_flag = british_dismantled
+# 		}
+# 		OR = {
+# 			tag = ASM
+# 			tag = AWA
+# 			tag = BAS
+# 			tag = BER
+# 			tag = BIH
+# 			tag = BIK
+# 			tag = BHO
+# 			tag = BNG
+# 			tag = BUN
+# 			tag = IND
+# 			tag = JAI
+# 			tag = JAS
+# 			tag = JOD
+# 			tag = MAH
+# 			tag = MEW
+# 			tag = MUG
+# 			tag = MYS
+# 			tag = NAG
+# 			tag = ORI
+# 			tag = TRA
+# 			tag = KUT
+# 		}
+# 		THIS = {
+# 			tag = ENG
+# 			OR = {
+# 				government = absolute_monarchy
+# 				government = prussian_constitutionalism
+# 				government = hms_government
+# 			}
+# 			NOT = { has_country_modifier = neutrality }
+# 		}
+# 		OR = {
+# 			war_with = THIS
+# 			THIS = {
+# 				NOT = {
+# 					has_country_modifier = no_more_war
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.25
-		}
-	}
+# 	on_add = {
+# 		move_issue_percentage = { 
+# 			from = jingoism 
+# 			to = pro_military
+# 			value = 0.25
+# 		}
+# 	}
 	
-	on_po_accepted = {
-		country_event = 19370
-	}
-}
+# 	on_po_accepted = {
+# 		country_event = 19370
+# 	}
+# }
 
 # Humiliate
 humiliate = {
@@ -6567,19 +6567,16 @@ colonial_conquest = {
 	}
 	
 	allowed_states = {
-		OR = {
-			AND = {
-				THIS = { owns = 2060 }
-				any_owned_province = {
-					OR = {
-						region = POR_2060
-						region = POR_2053
-						region = POR_2054
-						region = POR_2049
-					}
-				}
+		THIS = { owns = 2060 }
+		any_owned_province = {
+			OR = {
+				region = POR_2060
+				region = POR_2053
+				region = POR_2054
+				region = POR_2049
 			}
 		}
+		
 	}
 
 	po_demand_state = yes
