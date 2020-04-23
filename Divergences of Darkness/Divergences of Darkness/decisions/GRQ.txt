@@ -1,4 +1,4 @@
-political_decisions = {	
+political_decisions = {	     
 	greater_griqualand = {
 		potential = {
 			tag = GRQ
@@ -29,4 +29,46 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	
+	griqualand_coast = {
+		potential = {
+			tag = GRQ
+			NOT = { has_country_flag = griqualand_coast }      
+			OR = {              
+				2078 = { empty = yes }     
+				2079 = { empty = yes }
+				2080 = { empty = yes }
+				2083 = { empty = yes }
+				2084 = { empty = yes }
+				2085 = { empty = yes }
+				2086 = { empty = yes }
+			}
+			#OR = {     
+			#	ENG_2083 = { limit = { empty = yes } }
+			#	ENG_2078 = { limit = { empty = yes } }
+			#}
+		}
+
+		allow = {
+			NOT = { war = yes }
+			is_secondary_power = yes
+			money = 50001
+			state_n_government = 1
+		}
+		effect = {                         
+			set_country_flag = griqualand_coast   
+			money = -50000
+			prestige = 10                        
+			ENG_2083 = { limit = { empty = yes } secede_province = GRQ }
+			ENG_2078 = { limit = { empty = yes } secede_province = GRQ }      
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	   
 }
+
