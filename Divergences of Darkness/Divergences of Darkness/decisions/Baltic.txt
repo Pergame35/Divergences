@@ -201,9 +201,9 @@ political_decisions = {
 		}	
 		
 		effect = { 
-		set country_flag = ROM_cherson
-		badboy = 5 
-		RUS_965 = { add_core = ROM }
+			set_country_flag = ROM_cherson
+			badboy = 5 
+			RUS_965 = { add_core = ROM }
 		}
 	}
 

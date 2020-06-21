@@ -142,20 +142,6 @@ party = {
 }
 
 party = {
-	name = "GCO_social_liberal" # Justicialistas
-	start_date = 1870.1.1
-	end_date = 2000.1.1
-	
-	ideology = social_liberal
-	
-	economic_policy = interventionism
-	trade_policy = free_trade
-	religious_policy = secularized
-	citizenship_policy = full_citizenship
-	war_policy = anti_military
-}
-
-party = {
 	name = "GCO_socialist" # Populists
 	start_date = 1848.1.1
 	end_date = 1880.1.1

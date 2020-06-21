@@ -70,10 +70,10 @@ country_event = {
 			factor = 1.25
 			nationalvalue = nv_order
 		}
-		modifier = {
-			factor = 1.5
-			nationalvalue = nv_might
-		}	
+		# modifier = {
+		# 	factor = 1.5
+		# 	nationalvalue = nv_might
+		# }	
 	}
 	
 	option = {
@@ -1620,7 +1620,7 @@ country_event = {
 			factor = 1.5
 			OR = {
 				nationalvalue = nv_order
-				nationalvalue = nv_might
+				#nationalvalue = nv_might
 			}
 		}
 	}
@@ -2234,10 +2234,10 @@ province_event = {
 				NOT = { is_culture_group = scandinavian	}
 			}
 		}
-		modifier = {
-			factor = 1.5
-			owner = { nationalvalue = nv_might }
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	owner = { nationalvalue = nv_might }
+		# }
 	}
 	option = {
 		name = "EVTOPTA10170"
@@ -2564,7 +2564,7 @@ province_event = {
 			owner = {
 				OR = {
 					nationalvalue = nv_order
-					nationalvalue = nv_might
+					#nationalvalue = nv_might
 				}
 			}
 		}
@@ -2766,7 +2766,7 @@ country_event = {
 			factor = 1.25
 			OR = {
 				nationalvalue = nv_order
-				nationalvalue = nv_might
+				#nationalvalue = nv_might
 			}
 		}
 	}
@@ -2949,7 +2949,7 @@ province_event = {
 			owner = {
 				OR = {
 					nationalvalue = nv_order
-					nationalvalue = nv_might
+					#nationalvalue = nv_might
 				}
 			}
 		}
@@ -3475,12 +3475,12 @@ province_event = {
 				}
 			}
 		}
-		modifier = {
-			factor = 0.75
-			owner = {
-				nationalvalue = nv_might
-			}
-		}
+		# modifier = {
+		# 	factor = 0.75
+		# 	owner = {
+		# 		nationalvalue = nv_might
+		# 	}
+		# }
 	}
 	
 	option = {
@@ -4070,7 +4070,7 @@ country_event = {
 			factor = 1.25
 			OR = {
 				nationalvalue = nv_order
-				nationalvalue = nv_might
+				#nationalvalue = nv_might
 			}
 		}
 	}
@@ -4610,7 +4610,7 @@ country_event = {
 			factor = 1.25
 			OR = {
 				nationalvalue = nv_order
-				nationalvalue = nv_might
+				#nationalvalue = nv_might
 			}
 		}
 	}

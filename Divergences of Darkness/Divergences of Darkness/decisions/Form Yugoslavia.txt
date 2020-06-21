@@ -55,11 +55,16 @@ political_decisions = {
 
 		allow = {
 			NOT = { war = yes }
-			NOT = {	ALB = { exists = yes }	}
 			is_greater_power = yes
 			ALB = {
 				all_core = {
+					OR = {
 						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
 				}
 			}
 			YUG = {
@@ -77,6 +82,32 @@ political_decisions = {
 					add_core = YUG
 				}
 			}
+			
+			any_country = {
+				limit = {
+					tag = ALB
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+			
+			any_country = {
+				limit = {
+					NOT = {
+						tag = ALB
+					}
+					in_sphere = THIS
+					any_owned_province = {
+						is_core = ALB
+					}
+				}
+				any_owned = {
+					limit = {
+						is_core = ALB
+					}
+					secede_province = THIS
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -90,11 +121,16 @@ political_decisions = {
 
 		allow = {
 			NOT = { war = yes }
-			NOT = {	BUL = { exists = yes }	}
 			is_greater_power = yes
 			BUL = {
 				all_core = {
+					OR = {
 						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
 				}
 			}
 			YUG = {
@@ -110,6 +146,34 @@ political_decisions = {
 			BUL = {
 				all_core = {
 					add_core = YUG
+				}
+			}
+			
+			any_country = {
+				limit = {
+					tag = BUL
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+			
+			any_country = {
+				limit = {
+					NOT = {
+						tag = BUL
+					}
+					in_sphere = THIS
+					
+					any_owned_province = {
+						is_core = BUL
+					}
+				}
+				
+				any_owned = {
+					limit = {
+						is_core = BUL
+					}
+					secede_province = THIS
 				}
 			}
 		}
@@ -167,22 +231,22 @@ political_decisions = {
 	}
 	
 	integrate_serbia = { 
-	picture = "SERCRO_union"
-	potential = { 
-	tag = CRO 
-	SER = { vassal_of = THIS } 
-	}
-	
-	allow = { 
-	rank = 16 
-	OR = { 
-	year = 1850 
-	780 = { owned_by = THIS }
+		picture = "SERCRO_union"
+		potential = { 
+			tag = CRO 
+			SER = { vassal_of = THIS } 
 		}
-	}
 	
-	effect = { 
-	country_event = 1400105
+		allow = { 
+			rank = 16 
+			OR = { 
+				year = 1850 
+				780 = { owned_by = THIS }
+			}
+		}
+	
+		effect = { 
+			country_event = 1400105
 		}
 	
 	}

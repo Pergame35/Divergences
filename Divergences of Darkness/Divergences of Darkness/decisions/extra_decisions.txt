@@ -44,41 +44,41 @@ political_decisions = {
 		}
 	}
 	
-	change_national_value_on = {
-		alert = no
-		picture = national_value
-		potential = {
-			NOT = {	has_country_modifier = national_confusion }
-			NOT = {	has_country_flag = nv_change }
-			ai = no
-			civilized = yes
-		}
-		
-		allow = {
-			ideological_thought = 1
-		}
-		
-		effect = {
-			set_country_flag = nv_change
-		}
-	}
+	#change_national_value_on = {
+	#	alert = no
+	#	picture = national_value
+	#	potential = {
+	#		NOT = {	has_country_modifier = national_confusion }
+	#		NOT = {	has_country_flag = nv_change }
+	#		ai = no
+	#		civilized = yes
+	#	}
+	#	
+	#	allow = {
+	#		ideological_thought = 1
+	#	}
+	#	
+	#	effect = {
+	#		set_country_flag = nv_change
+	#	}
+	#}  
 
-	change_national_value_off = {
-		alert = no
-		picture = national_value
-		potential = {
-			ai = no
-			has_country_flag = nv_change
-		}
-		
-		allow = {
-			ideological_thought = 1
-		}
-		
-		effect = {
-			clr_country_flag = nv_change
-		}
-	}
+	#change_national_value_off = {
+	#	alert = no
+	#	picture = national_value
+	#	potential = {
+	#		ai = no
+	#		has_country_flag = nv_change
+	#	}
+	#	
+	#	allow = {
+	#		ideological_thought = 1
+	#	}
+	#	
+	#	effect = {
+	#		clr_country_flag = nv_change
+	#	}
+	#}
 	
 	leave_soi = {
 		alert = no
@@ -166,28 +166,28 @@ political_decisions = {
 	}
 
 
-	secret_police = {
-		alert = yes
-		potential = {	
-			not = { has_country_modifier = secret_police }		 	
-			OR = {
-				government = proletarian_dictatorship
-				government = presidential_dictatorship
-				government = bourgeois_dictatorship
-				government = fascist_dictatorship
-			}
-		}
-		allow = {
-			revolution_n_counterrevolution = 1
-		}
-		effect = {
-			add_country_modifier = {
-				name = secret_police 
-				duration = -1
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}	
+	# secret_police = {
+	# 	alert = yes
+	# 	potential = {	
+	# 		not = { has_country_modifier = secret_police }		 	
+	# 		OR = {
+	# 			government = proletarian_dictatorship
+	# 			government = presidential_dictatorship
+	# 			government = bourgeois_dictatorship
+	# 			government = fascist_dictatorship
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		revolution_n_counterrevolution = 1
+	# 	}
+	# 	effect = {
+	# 		add_country_modifier = {
+	# 			name = secret_police 
+	# 			duration = -1
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }	
 }

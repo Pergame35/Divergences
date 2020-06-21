@@ -1996,18 +1996,21 @@ country_event = {
 	desc = "CLM60.D"
 	
 	trigger = { 
-	tag = CLM 
-	NOT = { rank = 16 }
-	OR = { 
-	LST = { exists = yes }
-	UCA = { exists = yes }
-	AND = { GRA = { exists = yes } NOT = { has_country_flag = GRA_not_federation } }
+		tag = CLM 
+		NOT = { rank = 16 }
+		OR = { 
+			LST = { exists = yes }
+			UCA = { exists = yes }
+			AND = { 
+				GRA = { exists = yes } 
+				NOT = { has_country_flag = GRA_not_federation } 
+			}
 		}
-	NOT = { MEX = exists = yes }
+		NOT = { MEX = { exists = yes } }
 	}
 	
 	mean_time_to_happen = { 
-	months = 1 
+		months = 1 
 	}
 	
 	option = { 
