@@ -44,41 +44,41 @@ political_decisions = {
 		}
 	}
 	
-	change_national_value_on = {
-		alert = no
-		picture = national_value
-		potential = {
-			NOT = {	has_country_modifier = national_confusion }
-			NOT = {	has_country_flag = nv_change }
-			ai = no
-			civilized = yes
-		}
-		
-		allow = {
-			ideological_thought = 1
-		}
-		
-		effect = {
-			set_country_flag = nv_change
-		}
-	}
+	#change_national_value_on = {
+	#	alert = no
+	#	picture = national_value
+	#	potential = {
+	#		NOT = {	has_country_modifier = national_confusion }
+	#		NOT = {	has_country_flag = nv_change }
+	#		ai = no
+	#		civilized = yes
+	#	}
+	#	
+	#	allow = {
+	#		ideological_thought = 1
+	#	}
+	#	
+	#	effect = {
+	#		set_country_flag = nv_change
+	#	}
+	#}  
 
-	change_national_value_off = {
-		alert = no
-		picture = national_value
-		potential = {
-			ai = no
-			has_country_flag = nv_change
-		}
-		
-		allow = {
-			ideological_thought = 1
-		}
-		
-		effect = {
-			clr_country_flag = nv_change
-		}
-	}
+	#change_national_value_off = {
+	#	alert = no
+	#	picture = national_value
+	#	potential = {
+	#		ai = no
+	#		has_country_flag = nv_change
+	#	}
+	#	
+	#	allow = {
+	#		ideological_thought = 1
+	#	}
+	#	
+	#	effect = {
+	#		clr_country_flag = nv_change
+	#	}
+	#}
 	
 	leave_soi = {
 		alert = no
