@@ -11,6 +11,11 @@ country_event = {
 		prestige = 20
 		badboy = 12
 		set_global_flag = big_lit
+		LIT = {
+			all_core = {
+				add_core = SCA
+			}
+		}
 	}
 
 	option = {
@@ -18,6 +23,14 @@ country_event = {
 		prestige = 15
 		badboy = 8
 		set_global_flag = mid_lit
+		360 = { add_core = SCA }
+		361 = { add_core = SCA }
+		362 = { add_core = SCA }
+		363 = { add_core = SCA }
+		364 = { add_core = SCA }
+		365 = { add_core = SCA }
+		698 = { add_core = SCA }		
+		947 = { add_core = SCA }
 	}
 
 	option = {
@@ -25,6 +38,13 @@ country_event = {
 		prestige = 10
 		badboy = 5
 		set_global_flag = lite_lit
+		360 = { add_core = SCA }
+		361 = { add_core = SCA }
+		362 = { add_core = SCA }
+		363 = { add_core = SCA }
+		364 = { add_core = SCA }
+		365 = { add_core = SCA }
+		698 = { add_core = SCA }
 	}
 }
 

@@ -165,6 +165,12 @@ country_event = {
 			limit = {
 				tag = ITA
 				exists = yes
+				THIS = {
+					NOT = {
+						tag = ARA
+						tag = CAT
+					}
+				}					
 			}
 			diplomatic_influence = {
 				who = THIS
