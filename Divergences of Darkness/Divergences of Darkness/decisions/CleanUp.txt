@@ -164,79 +164,79 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 
-	abolishing_serfs = {
-		potential = {
-			ai = yes
-			exists = yes
-			OR = {
-				AND = {
-					any_owned_province = { has_pop_type = serfs }
-					NOT = { debt_law = serfdom }
-				}
-				any_neighbor_country = {
-					ai = no
-					any_owned_province = { has_pop_type = serfs }
-					NOT = { debt_law = serfdom }
-				}
-				any_greater_power = {
-					ai = no
-					any_owned_province = { has_pop_type = serfs }
-					NOT = { debt_law = serfdom }
-				}
-			}
-		}
-		
-		allow = {
-		}
-		
-		effect = {
-			random_owned = {
-				limit = {
-					owner = {
-						any_owned_province = { has_pop_type = serfs }
-						NOT = { debt_law = serfdom }
-					}
-				}
-				owner = {
-					any_owned = {
-						limit = {
-							has_pop_type = serfs
-							has_pop_type = labourers
-						}
-						any_pop = { limit = { type = serfs } pop_type = labourers }
-					}
-					any_owned = {
-						limit = {
-							has_pop_type = serfs
-							has_pop_type = farmers
-						}
-						any_pop = { limit = { type = serfs } pop_type = farmers }
-					}
-				}
-			}
-			any_country = {
-				limit = {
-					any_owned_province = { has_pop_type = serfs }
-					NOT = { debt_law = serfdom }
-				}
-				any_owned = {
-					limit = {
-						has_pop_type = serfs
-						has_pop_type = labourers
-					}
-					any_pop = { limit = { type = serfs } pop_type = labourers }
-				}
-				any_owned = {
-					limit = {
-						has_pop_type = serfs
-						has_pop_type = farmers
-					}
-					any_pop = { limit = { type = serfs } pop_type = farmers }
-				}
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
+#	abolishing_serfs = {
+#		potential = {
+#			ai = yes
+#			exists = yes
+#			OR = {
+#				AND = {
+#					any_owned_province = { has_pop_type = serfs }
+#					NOT = { debt_law = serfdom }
+#				}
+#				any_neighbor_country = {
+#					ai = no
+#					any_owned_province = { has_pop_type = serfs }
+#					NOT = { debt_law = serfdom }
+#				}
+#				any_greater_power = {
+#					ai = no
+#					any_owned_province = { has_pop_type = serfs }
+#					NOT = { debt_law = serfdom }
+#				}
+#			}
+#		}
+#		
+#		allow = {
+#		}
+#		
+#		effect = {
+#			random_owned = {
+#				limit = {
+#					owner = {
+#						any_owned_province = { has_pop_type = serfs }
+#						NOT = { debt_law = serfdom }
+#					}
+#				}
+#				owner = {
+#					any_owned = {
+#						limit = {
+#							has_pop_type = serfs
+#							has_pop_type = labourers
+#						}
+#						any_pop = { limit = { type = serfs } pop_type = labourers }
+#					}
+#					any_owned = {
+#						limit = {
+#							has_pop_type = serfs
+#							has_pop_type = farmers
+#						}
+#						any_pop = { limit = { type = serfs } pop_type = farmers }
+#					}
+#				}
+#			}
+#			any_country = {
+#				limit = {
+#					any_owned_province = { has_pop_type = serfs }
+#					NOT = { debt_law = serfdom }
+#				}
+#				any_owned = {
+#					limit = {
+#						has_pop_type = serfs
+#						has_pop_type = labourers
+#					}
+#					any_pop = { limit = { type = serfs } pop_type = labourers }
+#				}
+#				any_owned = {
+#					limit = {
+#						has_pop_type = serfs
+#						has_pop_type = farmers
+#					}
+#					any_pop = { limit = { type = serfs } pop_type = farmers }
+#				}
+#			}
+#		}
+#		ai_will_do = { factor = 1 }
+#	}
 	
 	missing_government_flags = {
 		potential = {

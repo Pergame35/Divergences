@@ -128,11 +128,11 @@ party = {
 }
 
 party = {
-	name = "INC_social_liberal" # Ayni Party
+	name = "INC_liberal" # Ayni Party
 	start_date = 1880.1.1
 	end_date = 2000.1.1
 	
-	ideology = social_liberal
+	ideology = liberal
 	
 	economic_policy = interventionism
 	trade_policy = free_trade

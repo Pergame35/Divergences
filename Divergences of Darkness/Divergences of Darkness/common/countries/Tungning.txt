@@ -142,11 +142,11 @@ party = {
 }
 
 party = {
-	name = "TNG_social_liberal" # Constitutionalists 
+	name = "TNG_liberal" # Constitutionalists 
 	start_date = 1880.1.1
 	end_date = 2000.1.1
 	
-	ideology = social_liberal
+	ideology = liberal
 	
 	economic_policy = interventionism
 	trade_policy = free_trade

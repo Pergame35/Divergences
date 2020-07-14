@@ -155,11 +155,11 @@ party = {
 	war_policy = jingoism
 }
 party = {
-	name = "AMA_social_liberal" # Parti Democratique
+	name = "AMA_liberal" # Parti Democratique
 	start_date = 1880.1.1
 	end_date = 2000.1.1
 	
-	ideology = social_liberal
+	ideology = liberal
 	
 	economic_policy = interventionism
 	trade_policy = free_trade

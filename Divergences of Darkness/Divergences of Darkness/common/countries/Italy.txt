@@ -142,11 +142,11 @@ party = {
 }
 
 party = {
-	name = "ITA_social_liberal" ## Democratic Party
+	name = "ITA_liberal" ## Democratic Party
 	start_date = 1890.1.1
 	end_date = 2000.1.1
 	
-	ideology = social_liberal
+	ideology = liberal
 	
 	economic_policy = interventionism
 	trade_policy = free_trade

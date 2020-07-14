@@ -157,11 +157,11 @@ party = {
 }
 
 party = {
-	name = "PLA_social_liberal" # Parti de la Justice
+	name = "PLA_liberal" # Parti de la Justice
 	start_date = 1880.1.1
 	end_date = 2000.1.1
 	
-	ideology = social_liberal
+	ideology = liberal
 	
 	economic_policy = interventionism
 	trade_policy = protectionism

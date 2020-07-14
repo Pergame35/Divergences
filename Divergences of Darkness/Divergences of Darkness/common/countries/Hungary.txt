@@ -141,11 +141,11 @@ party = {
 	war_policy = jingoism
 }
 party = {
-	name = "HUN_social_liberal_1" # Progressives
+	name = "HUN_liberal_1" # Progressives
 	start_date = 1905.1.1
 	end_date = 2000.1.1
 
-	ideology = social_liberal
+	ideology = liberal
 
 	economic_policy = interventionism
 	trade_policy = protectionism
