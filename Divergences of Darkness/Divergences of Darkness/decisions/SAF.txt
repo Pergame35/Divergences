@@ -73,7 +73,7 @@ political_decisions = {
 		potential = {
 			NOT = { part_of_sphere = yes }
 			NOT = { exists = SAF }
-			NOT = { has_country_flag = claim_south_africa }
+			NOT = { has_country_flag = claim_south_africa }			
 			OR = {
 				tag = TRN
 				tag = GRQ
@@ -102,7 +102,6 @@ political_decisions = {
 		
 		effect = {
 			prestige = 10
-			set_country_flag = claim_south_africa
 			any_country = {
 				limit = {
 					OR = {
@@ -119,12 +118,20 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
-			GRQ = { all_core = { add_core = BTV } }
+			any_owned = {
+				limit = {
+					is_core = THIS
+				}
+				add_core = SAF
+			}
+			BTV = { all_core = { add_core = SAF } }
+			GRQ = { all_core = { add_core = SAF } }
 			add_accepted_culture = boer
 			capital = 2087 
 			2087 = {
                 change_province_name = "Kaapstad"
             }
+			change_tag = SAF
 		}
 		ai_will_do = {
 			factor = 1
