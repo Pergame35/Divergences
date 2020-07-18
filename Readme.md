@@ -2,7 +2,7 @@ This branch is the most up to date version of the HPM port of Divergences (HPM-D
 
 History of the mod:
 
-A mod for Victoria II with Heart of Darkness Expansion that continues the legacy of Divergences : An Alter Vicky mod created by Kinniken. Mod caretaker: Attalus35. HPM port by capitanloco6.
+A mod for Victoria II with Heart of Darkness Expansion that continues the legacy of Divergences : An Alter Vicky mod created by Kinniken. HPM port by capitanloco6.
 
 
 According to the quantum theory, every decision made in the universe creates an alternative universe where all the following events take a different way. The first decision that diverged the timeline is called the Point of Divergence.
