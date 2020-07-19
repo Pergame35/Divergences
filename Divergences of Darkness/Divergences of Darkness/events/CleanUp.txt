@@ -2712,7 +2712,7 @@ country_event = {
     desc = "EVTDESC6016825"
     picture = "danishgovernment"
 
-#    is_triggered_only = yes
+    is_triggered_only = yes
 
     trigger = {
         ai = yes
