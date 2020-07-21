@@ -1608,6 +1608,14 @@ pan_nationalist_rebels = {
 		}
 		modifier = {
 			factor = 0
+			country = { tag = ARA }
+		}
+		modifier = {
+			factor = 0
+			country = { tag = CAT }
+		}		
+		modifier = {
+			factor = 0
 			country = { has_country_flag = post_colonial_country }
 		}
 		modifier = {
