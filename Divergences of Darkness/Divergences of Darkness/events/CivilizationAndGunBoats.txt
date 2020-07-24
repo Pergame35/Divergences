@@ -46,7 +46,7 @@ country_event = {
 				factor = 0
 				OR = {
 					is_culture_group = chinese
-					is_culture_group = chinese
+					is_culture_group = east_asian
 				}
 			}
 			modifier = {
@@ -185,7 +185,7 @@ country_event = {
 				factor = 0
 				OR = {
 					is_culture_group = chinese
-					is_culture_group = chinese
+					is_culture_group = east_asian
 				}
 			}
 		}
@@ -4184,7 +4184,7 @@ province_event = {
 		is_core = CHI
 		owner = {
 			civilized = yes
-			NOT = { is_culture_group = chinese }
+			NOT = { is_culture_group = east_asian }
 			NOT = { is_culture_group = chinese }
 			}
 		NOT = { any_neighbor_province = { owned_by = THIS } }
@@ -4211,7 +4211,7 @@ province_event = {
 		owner = { capital_scope = { continent = asia } }
 		OR = {
 			owner = { is_culture_group = chinese }
-			owner = { is_culture_group = chinese }
+			owner = { is_culture_group = east_asian }
 		}
 		trade_goods = precious_goods
 		OR = {
@@ -4329,7 +4329,7 @@ province_event = {
 		NOT = { has_province_modifier = treaty_port }
 		owner = {
 			civilized = yes
-			NOT = { is_culture_group = chinese }
+			NOT = { is_culture_group = east_asian }
 			NOT = { is_culture_group = chinese }
 		}
 		NOT = { any_neighbor_province = { owned_by = THIS } }
