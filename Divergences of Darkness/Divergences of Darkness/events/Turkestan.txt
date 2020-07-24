@@ -14,7 +14,7 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		NOT = { is_culture_group = iranian_turanian }
+		NOT = { is_culture_group = iranian }
 		NOT = { exists = TKM }
 		OR = {
 			nationalism_n_imperialism = 1
@@ -64,7 +64,7 @@ country_event = {
 	picture = "central_asian_tribes"
 	
 	trigger = {
-		NOT = { is_culture_group = iranian_turanian }
+		NOT = { is_culture_group = iranian }
 		NOT = { exists = KAZ }
 		KAZ = { all_core = { owned_by = THIS } }
 		OR = {
@@ -109,7 +109,7 @@ country_event = {
 	
 	trigger = {
 		is_greater_power = yes
-		NOT = { is_culture_group = iranian_turanian }
+		NOT = { is_culture_group = iranian }
 		NOT = { exists = UZB }
 		OR = {
 			nationalism_n_imperialism = 1
@@ -289,7 +289,7 @@ country_event = {
 	picture = "central_asian_tribes"
 	
 	trigger = {
-		NOT = { is_culture_group = iranian_turanian }
+		NOT = { is_culture_group = iranian }
 		NOT = { exists = TAJ }
 		OR = {
 			nationalism_n_imperialism = 1
@@ -334,7 +334,7 @@ country_event = {
 	
 	trigger = {
 		is_greater_power = yes
-		NOT = { is_culture_group = iranian_turanian }
+		NOT = { is_culture_group = iranian }
 		NOT = { exists = KYR }
 		OR = {
 			nationalism_n_imperialism = 1

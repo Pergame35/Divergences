@@ -5988,7 +5988,7 @@ acquire_any_state = {
 			limit = {
 				owner = {
 					civilized = no
-					is_culture_group = east_asian
+					is_culture_group = chinese
 					OR = {
 						owns = 1481
 						owns = 1496
@@ -6002,7 +6002,7 @@ acquire_any_state = {
 				}
 				THIS = {
 					civilized = yes
-					NOT = { is_culture_group = east_asian }
+					NOT = { is_culture_group = chinese }
 					num_of_ports = 1
 				}
 			}

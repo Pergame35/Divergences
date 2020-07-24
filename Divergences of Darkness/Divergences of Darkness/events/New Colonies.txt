@@ -97,7 +97,7 @@ province_event = {
 		}
 		owner = {
 			civilized = yes
-			NOT = { is_culture_group = southeast_asian }
+			NOT = { is_culture_group = austronesian }
 		}
 		OR = {
 			AND = {
@@ -165,7 +165,7 @@ province_event = {
 		}
 		owner = {
 			civilized = yes
-			NOT = { is_culture_group = southeast_asian }
+			NOT = { is_culture_group = austronesian }
 		}
 		OR = {
 			AND = {
@@ -224,7 +224,7 @@ province_event = {
 		}
 		owner = {
 			civilized = yes
-			NOT = { is_culture_group = southeast_asian }
+			NOT = { is_culture_group = austronesian }
 		}
 		OR = {
 			AND = {
@@ -282,7 +282,7 @@ province_event = {
 		}
 		owner = {
 			civilized = yes
-			NOT = { is_culture_group = southeast_asian }
+			NOT = { is_culture_group = austronesian }
 		}
 		OR = {
 			AND = {
