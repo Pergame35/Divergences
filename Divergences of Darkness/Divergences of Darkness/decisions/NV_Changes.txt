@@ -24,7 +24,7 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				OR = {
-					is_culture_group = east_asian
+					is_culture_group = chinese
 					substate_of = QNG
 				}
 			}

@@ -691,4 +691,71 @@ political_decisions = {
 			factor = 1
 		}
 	}	
+	
+#Sahara
+	sahara_1807 = {
+		picture = sahara_divergences
+		potential = {
+			colonial_nation = yes
+			owns = 1808
+			1807 = { empty = yes }
+		}
+
+		allow = {
+			war = no		
+		}
+
+		effect = {
+			prestige = 1
+			1807 = { secede_province = THIS }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sahara_1813 = {
+		picture = sahara_divergences
+		potential = {
+			colonial_nation = yes
+			owns = 1811
+			FRA_1813 = { empty = yes }
+		}
+
+		allow = {
+			war = no		
+		}
+
+		effect = {
+			prestige = 1
+			FRA_1813 = { secede_province = THIS }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sahara_1825 = {
+		picture = sahara_divergences
+		potential = {
+			colonial_nation = yes
+			owns = 1824
+			TRI_1739 = { empty = yes }
+		}
+
+		allow = {
+			war = no		
+		}
+
+		effect = {
+			prestige = 1
+			TRI_1739 = { secede_province = THIS }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 }

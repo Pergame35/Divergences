@@ -45,8 +45,8 @@ country_event = {
 			modifier = {
 				factor = 0
 				OR = {
+					is_culture_group = chinese
 					is_culture_group = east_asian
-					is_culture_group = far_east_asian
 				}
 			}
 			modifier = {
@@ -106,7 +106,7 @@ country_event = {
 		any_owned_province = { is_coastal = yes }
 		civilized = no
 		has_country_modifier = uncivilized_isolationism
-		NOT = { is_culture_group = east_asian }
+		NOT = { is_culture_group = chinese }
 		any_owned_province = {
 			port = yes
 			NOT = { has_province_modifier = boxer_presence }
@@ -173,7 +173,7 @@ country_event = {
 		}
 		
 		random_owned = {
-			limit = { NOT = { owner = { is_culture_group = east_asian } } }
+			limit = { NOT = { owner = { is_culture_group = chinese } } }
 			owner = {
 				
 			}
@@ -184,7 +184,7 @@ country_event = {
 			modifier = {
 				factor = 0
 				OR = {
-					is_culture_group = far_east_asian
+					is_culture_group = chinese
 					is_culture_group = east_asian
 				}
 			}
@@ -4185,7 +4185,7 @@ province_event = {
 		owner = {
 			civilized = yes
 			NOT = { is_culture_group = east_asian }
-			NOT = { is_culture_group = far_east_asian }
+			NOT = { is_culture_group = chinese }
 			}
 		NOT = { any_neighbor_province = { owned_by = THIS } }
 		any_neighbor_province = { owner = { capital_scope = {continent = asia } } }
@@ -4196,7 +4196,7 @@ province_event = {
 	option = {
 		name = "EVTOPTA90954"
 		trade_goods = precious_goods
-		any_pop = { limit = { is_culture_group = east_asian } reduce_pop = 1.2 }
+		any_pop = { limit = { is_culture_group = chinese } reduce_pop = 1.2 }
 		add_province_modifier = { name = treaty_port duration = -1 }
 	}
 }
@@ -4210,8 +4210,8 @@ province_event = {
 	trigger = {
 		owner = { capital_scope = { continent = asia } }
 		OR = {
+			owner = { is_culture_group = chinese }
 			owner = { is_culture_group = east_asian }
-			owner = { is_culture_group = far_east_asian }
 		}
 		trade_goods = precious_goods
 		OR = {
@@ -4270,7 +4270,7 @@ province_event = {
 			limit = {
 				is_primary_culture = no
 				is_accepted_culture = no 
-				is_culture_group = east_asian 
+				is_culture_group = chinese 
 				OR = {
 					type = artisans
 					type = soldiers
@@ -4330,7 +4330,7 @@ province_event = {
 		owner = {
 			civilized = yes
 			NOT = { is_culture_group = east_asian }
-			NOT = { is_culture_group = far_east_asian }
+			NOT = { is_culture_group = chinese }
 		}
 		NOT = { any_neighbor_province = { owned_by = THIS } }
 		any_neighbor_province = { owner = { capital_scope = {continent = asia } } }
@@ -4359,7 +4359,7 @@ country_event = {
 			limit = {
 				owner = {
 					OR = {
-						is_culture_group = east_asian
+						is_culture_group = chinese
 						has_country_modifier = uncivilized_isolationism
 						has_country_modifier = sakoku
 						vassal_of = QNG
@@ -4377,7 +4377,7 @@ country_event = {
 			limit = { 
 				owner = {
 					OR = {
-						is_culture_group = east_asian
+						is_culture_group = chinese
 						has_country_modifier = uncivilized_isolationism
 						has_country_modifier = sakoku
 						vassal_of = QNG
@@ -4395,7 +4395,7 @@ country_event = {
 			limit = { 
 				owner = {
 					OR = {
-						is_culture_group = east_asian
+						is_culture_group = chinese
 						has_country_modifier = uncivilized_isolationism
 						has_country_modifier = sakoku
 						vassal_of = QNG
@@ -4413,7 +4413,7 @@ country_event = {
 			limit = { 
 				owner = {
 					OR = {
-						is_culture_group = east_asian
+						is_culture_group = chinese
 						has_country_modifier = uncivilized_isolationism
 						has_country_modifier = sakoku
 						vassal_of = QNG

@@ -142,8 +142,8 @@ political_decisions = {
 				NOT = { has_province_modifier = holy_city }
 			}
 			OR = {
-				is_culture_group = arab	
-				is_culture_group = turko_semitic
+				is_culture_group = semitic	
+				is_culture_group = turkic
 			}
 		}
 		

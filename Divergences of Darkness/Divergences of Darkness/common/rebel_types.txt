@@ -1260,7 +1260,7 @@ nationalist_rebels = {
 		}
 		modifier = {
 			factor = 0.25
-			is_culture_group = east_asian
+			is_culture_group = chinese
 			has_global_flag = taiping_has_happened
 			TPG = { exists = yes }
 		}
@@ -1608,6 +1608,14 @@ pan_nationalist_rebels = {
 		}
 		modifier = {
 			factor = 0
+			country = { tag = ARA }
+		}
+		modifier = {
+			factor = 0
+			country = { tag = CAT }
+		}		
+		modifier = {
+			factor = 0
 			country = { has_country_flag = post_colonial_country }
 		}
 		modifier = {
@@ -1623,7 +1631,7 @@ pan_nationalist_rebels = {
 		}
 		modifier = {
 			factor = 0
-			is_culture_group = polish_culture_group
+			is_culture_group = west_slavic
 			country = { tag = PLC }
 		}
 		modifier = {
@@ -2462,7 +2470,7 @@ boxer_rebels = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { is_culture_group = east_asian }
+			NOT = { is_culture_group = chinese }
 		}
 		modifier = {
 			factor = 1.3
@@ -5202,12 +5210,12 @@ native_rebels = {
 			factor = 0
 			NOT = {
 				OR = {
-					is_culture_group = arab
+					is_culture_group = semitic
 					is_culture_group = west_african
 					is_culture_group = central_african
 					is_culture_group = east_african
 					is_culture_group = southern_african
-					is_culture_group = southeast_asian
+					is_culture_group = austronesian
 					culture = maori
 				}
 			}

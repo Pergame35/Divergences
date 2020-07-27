@@ -6,7 +6,7 @@ political_decisions = {
 			NOT = {
 				exists = IND
 				has_global_flag = indonesia_organized
-				is_culture_group = southeast_asian
+				is_culture_group = austronesian
 			}
 			state_n_government = 1
 			owns = 1413
@@ -56,7 +56,7 @@ political_decisions = {
 				NOT = { is_culture_group = THIS }
 			}
 			NOT = {
-				is_culture_group = southeast_asian
+				is_culture_group = austronesian
 			}
 		}
 		
@@ -103,7 +103,7 @@ political_decisions = {
 			NOT = {
 				exists = CHR
 				has_global_flag = christiania_organized
-				is_culture_group = southeast_asian
+				is_culture_group = austronesian
 			}
 			owns = 1463
 		}
@@ -151,7 +151,7 @@ political_decisions = {
 				NOT = { is_culture_group = THIS }
 			}
 			NOT = {
-				is_culture_group = southeast_asian
+				is_culture_group = austronesian
 			}
 		}
 		

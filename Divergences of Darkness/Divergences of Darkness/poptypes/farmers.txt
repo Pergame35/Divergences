@@ -101,16 +101,24 @@ country_migration_target = {
 			}
 			AND = {
 				THIS = { is_culture_group = french }
-				primary_culture = french_canadian
+				is_culture_group = anglois_american
 			}
 			AND = {
 				THIS = { is_culture_group = british }
-				OR = {
-					is_culture_group = american_cultures
-					primary_culture = australian
-					primary_culture = anglo_canadian
-				}
+				is_culture_group = english_american
 			}
+			AND = {
+				THIS = { is_culture_group = beneluxian }
+				is_culture_group = burgundian_american
+			}	
+			AND = {
+				THIS = { is_culture_group = italian }
+				is_culture_group = italian_american
+			}
+			AND = {
+				THIS = { is_culture_group = scandinavian }
+				is_culture_group = scandinavian_american
+			}			
 		}
 	}
 

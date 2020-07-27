@@ -959,54 +959,54 @@
     farmers = {
         culture = burgundian
         religion = protestant
-        size = 3200
+        size = 9200
     }
 
     clergymen = {
         culture = xhosa
-        religion = animist
+        religion = fetishist
         size = 24
     }
 
     artisans = {
         culture = xhosa
-        religion = animist
+        religion = fetishist
         size = 70
     }
 
     farmers = {
         culture = xhosa
-        religion = animist
-        size = 2730
+        religion = fetishist
+        size = 5730
     }
 
     clergymen = {
         culture = nguni
-        religion = animist
+        religion = fetishist
         size = 10
     }
 
     farmers = {
         culture = nguni
-        religion = animist
+        religion = fetishist
         size = 672
     }
 
     clergymen = {
         culture = khoisan
-        religion = animist
+        religion = fetishist
         size = 17
     }
 
     artisans = {
         culture = khoisan
-        religion = animist
+        religion = fetishist
         size = 35
     }
 
     farmers = {
         culture = khoisan
-        religion = animist
+        religion = fetishist
         size = 1030
     }
  
@@ -1073,7 +1073,7 @@
     farmers = {
         culture = afro_south_african
         religion = protestant
-        size = 8328
+        size = 11328
     }
 
     soldiers = {
@@ -1182,6 +1182,12 @@
         religion = fetishist
         size = 106
     }
+	
+    soldiers = {
+        culture = xhosa
+        religion = fetishist
+        size = 3000
+    }	
 
     artisans = {
         culture = boer
@@ -1192,7 +1198,7 @@
     farmers = {
         culture = xhosa
         religion = fetishist
-        size = 3152
+        size = 9152
     }
 
     clergymen = {
@@ -1214,11 +1220,17 @@
         religion = fetishist
         size = 206
     }
+	
+    soldiers = {
+        culture = xhosa
+        religion = fetishist
+        size = 3000
+    }	
 
     farmers = {
         culture = xhosa
         religion = fetishist
-        size = 10152
+        size = 16152
     }
 
     clergymen = {
@@ -1240,11 +1252,17 @@
         religion = fetishist
         size = 212
     }
+	
+    soldiers = {
+        culture = xhosa
+        religion = fetishist
+        size = 3000
+    }	
 
     farmers = {
         culture = xhosa
         religion = fetishist
-        size = 17240
+        size = 23240
     }
 
     clergymen = {
