@@ -14,7 +14,10 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		NOT = { is_culture_group = iranian }
+		OR = {
+			tag = MUS
+			tag = RUS
+		}
 		NOT = { exists = TKM }
 		OR = {
 			nationalism_n_imperialism = 1
