@@ -106,8 +106,12 @@ political_decisions = {
 				tag = GEO
 				tag = AZB
 				tag = ARM
-				tag = RUS
 			}
+			NOT = {
+				GEO = { ai = no }
+				AZB = { ai = no }
+				ARM = { ai = no }
+			}			
 			NOT = { exists = TCA }
 			NOT = { has_global_flag = transcaucasia_formed }
 			OR = {
