@@ -339,4 +339,39 @@ political_decisions = {
 	
 	}
 	
+	establish_writting_system = {
+		picture = become_hausaland
+		potential = {
+			has_country_flag = lacking_writing_system
+		}
+		
+		allow = {
+			war = no
+			OR = {
+				has_country_modifier = western_influences
+				has_country_modifier = western_presence
+				civilized = yes
+			}
+			NOT = { has_country_modifier = uncivilized_isolationism }
+			OR = {
+				literacy = 0.04
+				civilization_progress = 0.4
+				has_country_modifier = educational_reform
+				civilized = yes
+				AND = {
+					literacy = 0.03
+					has_country_modifier = military_reform
+				}
+			}
+		}
+		
+		effect = {
+			research_points = -2000
+			random_owned = { limit = { owner = { ai = yes } } owner = { research_points = -6000 } }
+			clr_country_flag = lacking_writing_system
+			remove_country_modifier = lacks_writing_system
+		}
+		ai_will_do = { factor = 1 }
+	}	
+	
 }
