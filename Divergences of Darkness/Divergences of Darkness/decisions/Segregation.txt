@@ -32,7 +32,12 @@ political_decisions = {
 					continent = australia_new_zealand
 				}
 				any_pop = {
-					OR = { is_culture_group = oceanic is_culture_group = native_american }
+					OR = { 
+						is_culture_group = oceanic
+						is_culture_group = mesoandean						
+						is_culture_group = native_north_american						
+						is_culture_group = native_south_american 
+					}
 				}
 			}
 		}
@@ -117,16 +122,26 @@ political_decisions = {
 			random_owned = {
 				limit = { OR = { continent = south_america continent = north_america } }
 				owner = {
-					any_pop = { limit = { NOT = { is_culture_group = native_american } }
+					any_pop = { limit = { NOT = { is_culture_group = native_north_american } }
 						scaled_militancy = { factor = 3 ideology = reactionary }
 						scaled_consciousness = { factor = 3 ideology = conservative }
 					}
 					
-					any_pop = { limit = { is_culture_group = native_american }
+					any_pop = { limit = { is_culture_group = native_north_american }
 						consciousness = 4
 						militancy = -2
 						dominant_issue = { factor = 0.5 value = full_citizenship }
 					}
+					any_pop = { limit = { NOT = { is_culture_group = native_south_american } }
+						scaled_militancy = { factor = 3 ideology = reactionary }
+						scaled_consciousness = { factor = 3 ideology = conservative }
+					}
+					
+					any_pop = { limit = { is_culture_group = native_south_american }
+						consciousness = 4
+						militancy = -2
+						dominant_issue = { factor = 0.5 value = full_citizenship }
+					}					
 				}
 			}
 			
@@ -376,7 +391,9 @@ political_decisions = {
 			any_pop = {
 				limit = {
 					OR = {
-						is_culture_group = native_american
+						is_culture_group = native_north_american
+						is_culture_group = native_south_american
+						is_culture_group = mesoandean						
 						is_culture_group = oceanic
 					}
 				}
@@ -487,7 +504,9 @@ political_decisions = {
 			any_pop = {
 				limit = {
 					OR = {
-						is_culture_group = native_american
+						is_culture_group = native_north_american
+						is_culture_group = native_south_american
+						is_culture_group = mesoandean						
 						is_culture_group = oceanic
 					}
 				}
@@ -497,7 +516,9 @@ political_decisions = {
 			any_pop = {
 				limit = {
 					OR = {
-						is_culture_group = native_american
+						is_culture_group = native_north_american
+						is_culture_group = native_south_american
+						is_culture_group = mesoandean						
 						is_culture_group = oceanic
 					}
 				}
