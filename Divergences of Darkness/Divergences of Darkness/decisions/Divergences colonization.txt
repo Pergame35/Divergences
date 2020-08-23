@@ -72,7 +72,6 @@ political_decisions = {
 		allow = {
 			war = no		
 			ideological_thought = 1
-			experimental_railroad = 1
 		}
 
 		effect = {
@@ -98,7 +97,6 @@ political_decisions = {
 			war = no		
 			medicine = 1
 			invention = prophylaxis_against_malaria
-			puddling = 1
 		}
 
 		effect = {
@@ -127,7 +125,6 @@ political_decisions = {
 			medicine = 1
 			breech_loaded_rifles = 1
 			revolution_n_counterrevolution = 1
-			iron_railroad = 1
 		}
 
 		effect = {
@@ -212,7 +209,6 @@ political_decisions = {
 			war = no		
 			medicine = 1
 			invention = prophylaxis_against_malaria
-			early_railroad = 1
 		}
 
 		effect = {
@@ -494,8 +490,7 @@ political_decisions = {
 
 		allow = {
 			war = no		
-			medicine = 1
-			invention = prophylaxis_against_malaria
+			civilized = yes
 		}
 
 		effect = {

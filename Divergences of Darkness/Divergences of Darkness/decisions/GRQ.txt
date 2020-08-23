@@ -52,13 +52,10 @@ political_decisions = {
 
 		allow = {
 			NOT = { war = yes }
-			is_secondary_power = yes
-			money = 50001
 			state_n_government = 1
 		}
 		effect = {                         
 			set_country_flag = griqualand_coast   
-			money = -50000
 			prestige = 10                        
 			ENG_2083 = { limit = { empty = yes } secede_province = GRQ }
 			ENG_2078 = { limit = { empty = yes } secede_province = GRQ }      
