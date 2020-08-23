@@ -71,43 +71,45 @@ kurland_annexation = {
 		}
 	}
 
-become_neu_kurland = { 
-	potential = { 
-	tag = KRL 
-	owns = 2229 
-	owns = 2238 
-	}
+	become_neu_kurland = { 
+		picture = new_krl
+		potential = {
+			picture = tsardom
+			tag = KRL 
+			owns = 2229 
+			owns = 2238 
+		}
 	
-	allow = { 
-	UBD = { all_core = { owned_by = THIS } } 
-	ai = no
-	}
+		allow = { 
+			UBD = { all_core = { owned_by = THIS } } 
+			ai = no
+		}
 	
-	effect = { 
-	capital = 2229 
-	any_owned = { 
-	limit = { NOT = { is_core = UBD } }
-	secede_province = SCA
-		}
-	357 = {
-			add_core = SCA
-		}
-	358 = {
-			add_core = SCA
-		}
-	359 = {
-			add_core = SCA
-		}
-	any_country = { 
-		any_owned = { 
-		limit = { is_core = KRL }
-		remove_core = UBD
+		effect = { 
+			capital = 2229 
+			any_owned = { 
+				limit = { NOT = { is_core = UBD } }
+				secede_province = SCA
 			}
-		}
-	primary_culture = livlandian
-	remove_accepted_culture = north_german
-	remove_accepted_culture = latvian
-	change_tag = UBD
+			357 = {
+				add_core = SCA
+			}
+			358 = {
+				add_core = SCA
+			}
+			359 = {
+				add_core = SCA
+			}
+			any_country = { 
+				any_owned = { 
+					limit = { is_core = KRL }
+					remove_core = UBD
+				}
+			}
+			primary_culture = livlandian
+			remove_accepted_culture = north_german
+			remove_accepted_culture = latvian
+			change_tag = UBD
 		}	
 	}	
 	
