@@ -353,7 +353,7 @@ political_decisions = {
 		allow = {
 			OR = {
 				owns = 2586
-				inorganic_chemistry = 1
+				civilized = yes
 			}
 		}
 
