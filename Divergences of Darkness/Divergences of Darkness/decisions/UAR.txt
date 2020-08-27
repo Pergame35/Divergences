@@ -143,6 +143,9 @@ political_decisions = {
 			add_core = 2585
 #			add_core = 1739
 			add_core = 1758 
+			add_core = 1734
+			add_core = 1740
+			add_core = 1731			
 			capital = 1745
 		}
 		ai_will_do = {
@@ -334,6 +337,7 @@ political_decisions = {
 			OR = {
 				owns = 2586
 				civilized = yes
+				year = 1890
 			}
 		}
 
@@ -356,7 +360,7 @@ political_decisions = {
 		allow = {
 			OR = {
 				owns = 2586
-				inorganic_chemistry = 1
+				civilized = yes
 			}
 		}
 
@@ -380,6 +384,7 @@ political_decisions = {
 			OR = {
 				owns = 1167
 				inorganic_chemistry = 1
+				year = 1890				
 			}
 		}
 
@@ -403,6 +408,7 @@ political_decisions = {
 			OR = {
 				owns = 926
 				inorganic_chemistry = 1
+				year = 1890				
 			}
 		}
 

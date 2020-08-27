@@ -7,7 +7,7 @@ leader = {
 	name = "Hong Xiuquan"
 	type = land
 	date = 1836.1.1
-	personality = imaginative
+	personality = resourceful
 	background = aristocrat
 }
 
@@ -15,7 +15,7 @@ leader = {
 	name = "Yang Xiuqing"
 	type = land
 	date = 1836.1.1
-	personality = indecisive
+	personality = reserved
 	background = renowned_adventurer
 }
 
@@ -23,7 +23,7 @@ leader = {
 	name = "Xiao Chaogui"
 	type = land
 	date = 1836.1.1
-	personality = secretive
+	personality = diplomatic
 	background = rising_star
 }
 leader = {
@@ -39,12 +39,12 @@ leader = {
 	type = land
 	date = 1836.1.1
 	personality = bastard
-	background = clerk
+	background = politician
 }
 
 army = {
 	name = "New Model Army"
-	location = 1525
+	location = 1524
 	regiment = {
 		name= "1st Standard"
 		type = infantry
@@ -108,7 +108,7 @@ army = {
 
 army = {
 	name = "Imperial Army"
-	location = 1519
+	location = 1516
 
 	regiment = {
 		name= "11th Standard"
@@ -173,7 +173,7 @@ army = {
 
 army = {
 	name = "Taiping Heavenly Army"
-	location = 1579
+	location = 1523
 
 	regiment = {
 		name= "21st Standard"

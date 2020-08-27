@@ -2,8 +2,24 @@ leader = {
 	name = "Selamet III Giray"
 	type = land
 	date = 1836.1.1
-	personality = tyrant
-	background = member_of_elite
+	personality = wrathful
+	background = powerful_friends
+}
+
+leader = {
+	name = "Galiaskar Rustam"
+	type = land
+	date = 1836.1.1
+	personality = resourceful
+	background = exranker
+}
+
+leader = {
+	name = "Baqi Tukay"
+	type = land
+	date = 1836.1.1
+	personality = reserved
+	background = diplomat
 }
 
 army = {
@@ -99,8 +115,8 @@ army = {
 }
 
 army = {
-	name = "Army of Odessa"
-	location = 1047
+	name = "Army of Danu"
+	location = 980
 	regiment = {
 		name= "1.Tatar"
 		type = hussar

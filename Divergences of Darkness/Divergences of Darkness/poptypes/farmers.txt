@@ -121,6 +121,11 @@ country_migration_target = {
 			}			
 		}
 	}
+	
+	modifier = {
+		factor = 4.0
+		has_country_flag = boer_immigration
+	}	
 
 	modifier = {
 		factor = 4.0

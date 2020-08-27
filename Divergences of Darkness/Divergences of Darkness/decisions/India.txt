@@ -12,7 +12,6 @@ political_decisions = {
 		
 		allow = {
 		NOT = { war = yes }
-		  prestige = 100
 		  OR = {      # Delhi
 				1236 = { owner = { in_sphere = THIS } }
 				owns = 1236
@@ -52,7 +51,6 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 20
-			badboy = 10
 			capital = 1236
 			change_tag = HND
 			add_accepted_culture = bengali
@@ -93,7 +91,6 @@ political_decisions = {
 		
 		allow = {
 		NOT = { war = yes }
-		  prestige = 100
 		  OR = {      # Delhi
 				1310 = { owner = { in_sphere = THIS } }
 				owns = 1310
@@ -121,7 +118,6 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 20
-			badboy = 10
 			capital = 1304
 			change_tag = DRA
 			add_accepted_culture = tamil
