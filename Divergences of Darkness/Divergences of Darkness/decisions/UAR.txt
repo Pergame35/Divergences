@@ -141,7 +141,7 @@ political_decisions = {
 			}
 			change_tag = UAR
 			add_core = 2585
-			add_core = 1739
+#			add_core = 1739
 			add_core = 1758 
 			capital = 1745
 		}
@@ -227,26 +227,6 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			1758 = { secede_province = THIS }
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	take_cyrenaican_desert = {
-		potential = {
-			owns = 1735
-			1739 = { empty = yes }
-		}
-
-		allow = {
-			inorganic_chemistry = 1
-		}
-
-		effect = {
-			prestige = 10
-			1739 = { secede_province = THIS }
 		}
 
 		ai_will_do = {
