@@ -220,7 +220,8 @@ political_decisions = {
 	
 	}
 	
-	uniting_turania = { 
+	uniting_turania = {
+	picture = turania	
 	potential = { 
 	OR = { 
 	tag = MGL 
@@ -320,6 +321,7 @@ political_decisions = {
 	}
 	
 	expanding_manchuria = { 
+	picture = manchuria	
 	potential = { 
 	tag = TKS 
 	NOT = { has_country_flag = manchuria_TKS }

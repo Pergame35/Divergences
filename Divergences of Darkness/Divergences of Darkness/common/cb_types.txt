@@ -92,7 +92,6 @@ china_conquest
 acquire_state
 acquire_any_state
 acquire_substate_region
-colonial_conquest
 demand_concession_BC_casus_belli
 demand_concession_NI_casus_belli
 demand_concession_casus_belli
@@ -6319,124 +6318,6 @@ install_democracy_make_puppet = {
 	}
 	
 	on_po_accepted = { THIS = { set_country_flag = friendly_democracy_puppet } country_event = 96085 }
-}
-
-#Colonial Conquest
-colonial_conquest = {
-	sprite_index = 21
-	months = 12
-	
-	construction_speed = 0.8
-
-	badboy_factor = 0
-	prestige_factor = 0.25
-	peace_cost_factor = 0.6
-	penalty_factor = 1
-	always = yes
-
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
-	truce_months = 48
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-	
-	can_use = {
-		NOT = { is_our_vassal = THIS }
-		THIS = {
-			NOT = { has_country_modifier = no_more_war }
-			NOT = { has_country_modifier = neutrality }
-			is_disarmed = no
-			NOT = { badboy = 0.88 }
-			state_n_government = 1
-			OR = {
-				war_policy = jingoism
-				war_policy = pro_military
-			}
-			capital_scope = { continent = europe }
-		}
-		OR = {
-			NOT = { relation = { who = THIS value = 150 } }
-			THIS = { ai = no }
-		}
-		THIS = { owns = 2060 }
-		any_owned_province = {
-			OR = {
-				region = POR_2060
-				region = POR_2053
-				region = POR_2054
-				region = POR_2049
-			}
-		}
-		is_vassal = no
-		neighbour = THIS
-		NOT = { has_country_modifier = neutrality }
-		NOT = { in_sphere = THIS }
-		OR = {
-			war_with = THIS
-			THIS = { NOT = { has_country_modifier = punitive_effects } }
-		}
-	}
-	
-	allowed_states = {
-		THIS = { owns = 2060 }
-		any_owned_province = {
-			OR = {
-				region = POR_2060
-				region = POR_2053
-				region = POR_2054
-				region = POR_2049
-			}
-		}
-		
-	}
-
-	po_demand_state = yes
-	
-	war_name = WAR_CONCESSION_NAME
-	
-	on_add = {
-		random_list = {
-			25 = { badboy = 0.5 }
-			25 = { badboy = 1 }
-			25 = { badboy = 1.5 }
-			25 = { badboy = 2 }
-		}
-		
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.25
-		}
-	}
-	
-	on_po_accepted = {
-		THIS = {
-			random_owned = {
-				limit = { owner = { has_global_flag = mozambique_created } }
-				owner = {
-					any_owned = { 
-						limit = {
-							NOT = { is_core = MOZ }
-							OR = {
-								region = POR_2060
-								region = POR_2053
-								region = POR_2054
-								region = POR_2049
-							}
-						}
-						add_core = MOZ
-						remove_core = GAZ
-						remove_core = AGC
-						remove_core = ZUL
-						remove_core = SHO
-					}
-				}
-			}
-		}
-	}
 }
 
 # War Reparations
