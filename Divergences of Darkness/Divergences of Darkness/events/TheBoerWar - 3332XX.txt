@@ -567,11 +567,12 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { 
-	name = "333219.A" 
-	add_country_modifier = { 
-	name = trek_boers
-	duration = 10000
+		name = "333219.A" 
+		add_country_modifier = { 
+			name = trek_boers
+			duration = 100000
 		}
+		set_country_flag = boer_immigration
 	}
 }
 	

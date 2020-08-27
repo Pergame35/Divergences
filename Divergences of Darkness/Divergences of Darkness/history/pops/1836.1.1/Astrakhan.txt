@@ -148,64 +148,34 @@
 	aristocrats = {
 		culture = astrakhani
 		religion = sunni
-		size = 25
+		size = 675
 	}
 
 	clergymen = {
 		culture = astrakhani
 		religion = sunni
-		size = 25
+		size = 300
 	}
 
 	artisans = {
 		culture = astrakhani
 		religion = sunni
-		size = 50
+		size = 1500
 	}
 
 	soldiers = {
 		culture = astrakhani
 		religion = sunni
-		size= 25
+		size= 325
 
 	}
 
 	farmers = {
 		culture = astrakhani
 		religion = sunni
-		size = 875
+		size = 27200
 	}
 
-	aristocrats = {
-		culture = oirat
-		religion = gelugpa
-		size = 650
-	}
-
-	clergymen = {
-		culture = oirat
-		religion = gelugpa
-		size = 275
-	}
-
-	artisans = {
-		culture = oirat
-		religion = gelugpa
-		size = 1450
-	}
-
-	soldiers = {
-		culture = oirat
-		religion = gelugpa
-		size= 300
-
-	}
-
-	farmers = {
-		culture = oirat
-		religion = gelugpa
-		size = 26325
-	}
 }
 #Migolinskaya (84000/21000 POPS)
 1045 = {
@@ -302,64 +272,34 @@
 	aristocrats = {
 		culture = astrakhani
 		religion = sunni
-		size = 150
-	}
-
-	clergymen = {
-		culture = astrakhani
-		religion = sunni
-		size = 75
-	}
-
-	artisans = {
-		culture = astrakhani
-		religion = sunni
-		size = 400
-	}
-
-	soldiers = {
-		culture = astrakhani
-		religion = sunni
-		size= 100
-
-	}
-
-	farmers = {
-		culture = astrakhani
-		religion = sunni
-		size = 7275
-	}
-
-	aristocrats = {
-		culture = oirat
-		religion = gelugpa
-		size = 100
-	}
-
-	clergymen = {
-		culture = oirat
-		religion = gelugpa
-		size = 50
-	}
-
-	artisans = {
-		culture = oirat
-		religion = gelugpa
 		size = 250
 	}
 
+	clergymen = {
+		culture = astrakhani
+		religion = sunni
+		size = 125
+	}
+
+	artisans = {
+		culture = astrakhani
+		religion = sunni
+		size = 650
+	}
+
 	soldiers = {
-		culture = oirat
-		religion = gelugpa
-		size= 50
+		culture = astrakhani
+		religion = sunni
+		size= 150
 
 	}
 
 	farmers = {
-		culture = oirat
-		religion = gelugpa
-		size = 4550
+		culture = astrakhani
+		religion = sunni
+		size = 11825
 	}
+
 }
 #Azov (172000/43000 POPS)
 1047 = {

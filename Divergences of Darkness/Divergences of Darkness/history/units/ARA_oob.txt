@@ -45,8 +45,8 @@ leader = {
 	name = "Josep Serna"
 	type = land
 	date = 1836.1.1
-	personality = energetic
-	background = unfulfilled_potential
+	personality = relentless
+	background = hated
 }
 
 leader = {
@@ -54,14 +54,14 @@ leader = {
 	type = land
 	date = 1836.1.1
 	personality = timid
-	background = university_educated
+	background = war_college
 }
 
 leader = {
-	name = "Antonio Verga"
+	name = "Antoni de Berga"
 	type = land
 	date = 1836.1.1
-	personality = rebellious
+	personality = bigoted
 	background = cavalry_school
 }
 
@@ -70,14 +70,14 @@ leader = {
 	type = sea
 	date = 1836.1.1
 	personality = resourceful
-	background = rags_to_riches
+	background = exranker
 }
 
 leader = {
 	name = "Giuseppe Settimo"
 	type = sea
 	date = 1836.1.1
-	personality = indecisive
+	personality = reserved
 	background = diplomat
 }
 
@@ -324,7 +324,7 @@ navy = {
 	}
 	
 	ship = {
-		name = "Buonaparte"
+		name = "Prades"
 		type = frigate
 	}
 	
@@ -379,7 +379,7 @@ navy = {
 	}
 	
 	ship = {
-		name = "Illa de Liberta"
+		name = "Cap de Roses"
 		type = frigate
 	}
 	
@@ -399,7 +399,7 @@ navy = {
 	}
 	
 	ship = {
-		name = "Alvarez"
+		name = "Ferrer"
 		type = frigate
 	}
 	
@@ -494,7 +494,7 @@ navy = {
 	}
 	
 	ship = {
-		name = "Herkules"
+		name = "Hèrcules"
 		type = manowar
 	}
 	
@@ -529,7 +529,7 @@ navy = {
 	}
 	
 	ship = {
-		name = "Pyrrenea"
+		name = "Pirineus"
 		type = manowar
 	}
 	
@@ -554,7 +554,7 @@ navy = {
 	}
 	
 	ship = {
-		name = "Alexandrea"
+		name = "Alexandra"
 		type = frigate
 	}
 	
@@ -574,7 +574,7 @@ navy = {
 	}
 	
 	ship = {
-		name = "Torejador"
+		name = "Mart"
 		type = frigate
 	}
 	
@@ -594,12 +594,12 @@ navy = {
 	}
 	
 	ship = {
-		name = "Nomine"
+		name = "Girona"
 		type = frigate
 	}
 	
 	ship = {
-		name = "Tartàrea"
+		name = "Tartària"
 		type = frigate
 	}
 	

@@ -4462,7 +4462,10 @@ annex_africa = {
 		number_of_states = 2
 		THIS = {
 			nationalism_n_imperialism = 1
-			capital_scope = { continent = europe }
+			OR = {
+				capital_scope = { continent = europe }
+				tag = SAF
+			}
 			NOT = { tag = RUS }
 			NOT = { tag = TUR }
 			slavery = no_slavery
@@ -4558,6 +4561,10 @@ annex_africa_full = {
 		NOT = { number_of_states = 2 }
 		THIS = {
 			nationalism_n_imperialism = 1
+			OR = {
+				capital_scope = { continent = europe }
+				tag = SAF
+			}
 			capital_scope = { continent = europe }
 			NOT = { tag = RUS }
 			NOT = { tag = TUR }

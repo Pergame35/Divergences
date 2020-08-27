@@ -33,7 +33,11 @@ political_decisions = {
 	
 	griqualand_coast = {
 		potential = {
-			tag = GRQ
+			OR = {
+				tag = GRQ			
+				tag = SAF
+			}
+
 			NOT = { has_country_flag = griqualand_coast }      
 			OR = {              
 				2078 = { empty = yes }     
