@@ -1453,3 +1453,105 @@ country_event = {
 	}
 	}
 }
+
+country_event = {
+	id = 124250 # Event for AI exiled Genoa to secede to whoever owns PROV724 Genoa
+	title = "EVTNAME124250"
+	desc = "EVTDESC124250"
+	picture = "gold_coast_treaty_70"
+	
+	trigger = { 
+		tag = GEN
+		GEN = { exists = yes }		
+		NOT = {
+			owns = 724
+		}
+		war = no 
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = { 
+		months = 12
+	}
+	
+	option = { 
+		name = "EVT124250OPTA"
+		random_country = {
+			limit = {
+				owns = 724
+			}
+			country_event = 124251		
+		}
+		ai_chance = { 
+			factor = 100 
+		}
+	}
+	
+	option = { 
+		name = "EVT124250OPTB"
+		prestige = 5
+		724 = {	
+			any_pop = {
+				limit = {
+					is_culture_group = italian
+					type = bureaucrats
+				}
+				move_pop = 1956
+			}
+		}
+		724 = {	
+			any_pop = {
+				limit = {
+					is_culture_group = italian
+					type = soldiers
+				}
+				move_pop = 1956
+			}
+		}
+		725 = {	
+			any_pop = {
+				limit = {
+					is_culture_group = italian
+					type = clergymen
+				}
+				move_pop = 1957
+			}
+		}
+		725 = {	
+			any_pop = {
+				limit = {
+					is_culture_group = italian
+					type = soldiers
+				}
+				move_pop = 1957
+			}
+		}		
+		ai_chance = { 
+			factor = 0 
+		}
+	}	
+}
+
+country_event = {
+	id = 124251 # Event about Genovese annexation that targets whoever owns Genova
+	title = "EVTNAME124251"
+	desc = "EVTDESC124251"
+	picture = "gold_coast_treaty_70"
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = "EVT124251OPTA"
+		random_country = {
+			limit = {
+				tag = GEN
+				exists = yes
+			}
+			annex_to = THIS
+		}
+		ai_chance = { 
+			factor = 100 
+		}
+	}
+}
