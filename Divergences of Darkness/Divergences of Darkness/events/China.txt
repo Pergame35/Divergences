@@ -378,7 +378,7 @@ country_event = {
 	name = "48902.A"
 	set_country_flag = empire_dislocated
 	any_owned = { 
-	limit = { OR = { is_core = KZH is_core = TNT is_core = MGL is_core = UGH is_core = UZB is_core = TJK is_core = KOK } }
+	limit = { OR = { is_core = KZH is_core = TNT is_core = MGL is_core = UGH is_core = UZB is_core = BDK is_core = KOK } }
 	remove_core = CHG
 		}
 	government = absolute_monarchy 
@@ -387,7 +387,7 @@ country_event = {
 	random_owned = { limit = { owner = { admin_reform = no_admin_reform } } owner = { economic_reform = yes_admin_reform activate_technology = enlightenment_thought}  }
 	release = TNT 
 	release = MGL 
-	release = TJK 
+	release = BDK 
 	release = UGH 
 	any_owned = { limit = { OR = { region = RUS_1184 region = RUS_1185} } secede_province = KZH }
 	any_owned = { limit = { is_core = CHI } secede_province = MGL }
@@ -407,14 +407,14 @@ country_event = {
 	name = "48902.B"
 	set_country_flag = empire_dislocated
 	any_owned = { 
-	limit = { OR = { is_core = KZH is_core = MGL is_core = UZB is_core = TJK is_core = KOK } }
+	limit = { OR = { is_core = KZH is_core = MGL is_core = UZB is_core = BDK is_core = KOK } }
 	remove_core = CHG
 		}
 	government = absolute_monarchy 
 	remove_country_modifier = feudal
 	release = TNT 
 	release = MGL 
-	release = TJK 
+	release = BDK 
 	release = UGH 
 	any_owned = { limit = { OR = { region = RUS_1184 region = RUS_1185} } secede_province = KZH }
 	any_owned = { limit = { is_core = TIB } secede_province = UGH }
@@ -448,7 +448,7 @@ country_event = {
 		}
 	release = TNT 
 	release = MGL 
-	release = TJK 
+	release = BDK 
 	release = UGH 
 	any_owned = { limit = { OR = { region = RUS_1184 region = RUS_1185 } } secede_province = KZH }
 	any_owned = { limit = { is_core = CHI } secede_province = MGL }
@@ -470,7 +470,7 @@ country_event = {
 			}
 		}
 	war = {
-			target = TJK
+			target = BDK
 			attacker_goal = {
 				casus_belli = annex_core_country
 			}
