@@ -59,13 +59,6 @@ form_iberia = {
 		effect = {
 			prestige = 20
 			set_country_flag = iberian_union
-			any_country = {
-				limit = {
-					tag = CAT
-					in_sphere = THIS
-				}
-				annex_to = THIS
-			}
 			any_owned = {
 				limit = {
 					is_core = CAT
@@ -75,7 +68,9 @@ form_iberia = {
 			SAR_765 = {
 				add_core = THIS
 			}
-			country_event = 333220
+			CAT = {
+				country_event = 333225
+			}			
 		}
 		ai_will_do = {
 			factor = 1
