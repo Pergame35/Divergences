@@ -336,7 +336,7 @@ political_decisions = {
 		}
 
 		effect = {
-			prestige = 5
+			prestige = 2
 			GAN_9 = { secede_province = THIS }
 		}
 
@@ -358,11 +358,10 @@ political_decisions = {
 			war = no		
 			medicine = 1
 			invention = prophylaxis_against_malaria
-			early_railroad = 1
 		}
 
 		effect = {
-			prestige = 5
+			prestige = 2
 			GAN_10 = { secede_province = THIS }
 		}
 
@@ -388,7 +387,7 @@ political_decisions = {
 		}
 
 		effect = {
-			prestige = 5
+			prestige = 2
 			GAN_7 = { secede_province = THIS }
 		}
 
@@ -414,7 +413,7 @@ political_decisions = {
 		}
 
 		effect = {
-			prestige = 5
+			prestige = 2
 			GAN_8 = { secede_province = THIS }
 		}
 
@@ -465,7 +464,6 @@ political_decisions = {
 			medicine = 1
 			breech_loaded_rifles = 1
 			revolution_n_counterrevolution = 1
-			iron_railroad = 1
 		}
 
 		effect = {
