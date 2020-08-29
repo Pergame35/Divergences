@@ -1082,65 +1082,73 @@ country_event = {
 	major = yes 
 	
 	trigger = { 
-	tag = BOH 
-	owns = 549 
-	owns = 546 
-	NOT = { owns = 369 }
-	war_with = SGF 
-	NOT = { has_country_flag = berlin_commune }
-	has_country_flag = german_unrest
+		tag = BOH 
+		owns = 549 
+		owns = 546 
+		NOT = { owns = 369 }
+		war_with = SGF 
+		NOT = { has_country_flag = berlin_commune }
+		has_country_flag = german_unrest
 	}
 	
 	mean_time_to_happen = { 
-	months = 2
+		months = 2
 	}
 	
 	option = { 
-	name = "123131.A"
-	set_country_flag = berlin_commune
-	any_owned = { 
-	limit = {
-	OR = { is_core = POM is_core = HOL is_core = BRN }
+		name = "123131.A"
+		set_country_flag = berlin_commune
+		any_owned = { 
+			limit = {
+				OR = { is_core = POM is_core = HOL is_core = BRN }
 			}
-	secede_province = NGF 
-	}
-	PRU_572 = { add_core = NGF } 	#Rhineland
-	HES_2560 = { add_core = NGF }	#Palatinate
-	PRU_575 = { add_core = NGF }	#Nordrhein
-	HES_566 = { add_core = NGF }	#Hessen
-	PRU_581 = { add_core = NGF }	#Westphalia
-	HAN_534 = { add_core = NGF }	#East Frisia
-	HAM_528 = { add_core = NGF }	#Hanover
-	PRU_546 = { add_core = NGF remove_core = SCA}	#Pomerania
-	SAX_1 = { add_core = NGF }		#Thuringia
-	HOL_369 = { add_core = NGF }	#Holstein
-	PRU_553 = { add_core = NGF }	#Anhalt
-	PRU_549 = { add_core = NGF }	#Brandenburg
-	SAX_558 = { add_core = NGF }	#Saxony
-	NGF = { 	
-	government = democracy 
-	ruling_party_ideology = liberal
-	political_reform = universal_voting
-	political_reform = state_equal_weight
-	political_reform = yes_meeting
-	political_reform = free_press
-	political_reform = non_socialist
-	political_reform = secret_ballots
-	capital = 549
-	treasury = 10000
-	ammunition = 1000
-	small_arms = 1000
-	artillery = 1000
-	canned_food = 1000
-	regular_clothes = 1000
-	add_country_modifier = {
+			secede_province = NGF 
+		}
+		PRU_572 = { add_core = NGF } 	#Rhineland
+		HES_2560 = { add_core = NGF }	#Palatinate
+		PRU_575 = { add_core = NGF }	#Nordrhein
+		HES_566 = { add_core = NGF }	#Hessen
+		PRU_581 = { add_core = NGF }	#Westphalia
+		HAN_534 = { add_core = NGF }	#East Frisia
+		HAM_528 = { add_core = NGF }	#Hanover
+		PRU_546 = { add_core = NGF remove_core = SCA}	#Pomerania
+		SAX_1 = { add_core = NGF }		#Thuringia
+		HOL_369 = { add_core = NGF }	#Holstein
+		PRU_553 = { add_core = NGF }	#Anhalt
+		PRU_549 = { add_core = NGF }	#Brandenburg
+		SAX_558 = { add_core = NGF }	#Saxony
+		NGF = { 	
+			government = democracy 
+			ruling_party_ideology = liberal
+			political_reform = universal_voting
+			political_reform = state_equal_weight
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = non_socialist
+			political_reform = secret_ballots
+			capital = 549
+			treasury = 10000
+			ammunition = 1000
+			small_arms = 1000
+			artillery = 1000
+			canned_food = 1000
+			regular_clothes = 1000
+			add_country_modifier = {
 				name = taiping_draft
 				duration = 365
-				}
 			}
-	BOH = { NGF = { split_troops = 0.30 } }
-	any_country = { limit = { primary_culture = north_german } country_event = 123132 }
-	country_event = { id = 123133 days = 15 }
+		}
+		BOH = { NGF = { split_troops = 0.30 } }
+		any_country = {
+			limit = { 
+				primary_culture = north_german
+				NOT = {
+					tag = KRL
+				}
+			} 
+			country_event = 123132 
+		}
+		country_event = { id = 123133 days = 15 }
 	}
 }
 	
