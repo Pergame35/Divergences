@@ -32,85 +32,6 @@ declaration_of_the_rights_of_man = {
 	}
 }
 
-caste_privileges = {
-	limit = {
-		enlightenment_thought = 1 
-		year = 1850
-		tag = ENG
-	}
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			religious_policy = moralism 
-		}
-		modifier = {
-			factor = 5
-			year = 1855
-		}
-	}
-	effect = {
-		rebel_org_gain = {
-			faction = indian_sepoys
-			value = 0.25
-		}
-	}
-}
-
-
-sati_abolished = {
-	limit = {
-		enlightenment_thought = 1 
-		year = 1855 
-		tag = ENG
-	}
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			religious_policy = moralism 
-		}
-		modifier = {
-			factor = 5
-			year = 1860
-		}
-	}
-	effect = {
-		rebel_org_gain = {
-			faction = indian_sepoys
-			value = 0.25
-		}
-	}
-}
-
-pig_fat_cartridges = {
-	limit = {
-		enlightenment_thought = 1 
-		year = 1860 
-		tag = ENG
-	}
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			religious_policy = moralism 
-		}
-		modifier = {
-			factor = 5
-			year = 1865
-		}
-	}
-	effect = {
-		rebel_org_gain = {
-			faction = indian_sepoys
-			value = 0.25
-		}
-	}
-}
-
 spirit_of_freedom = {
 	limit = { enlightenment_thought = 1 }
 	news = no
@@ -137,38 +58,6 @@ spirit_of_freedom = {
 		rebel_org_gain = {
 			faction = liberal_rebels
 			value = 0.25
-		}
-	}
-}
-
-carlism = {
-	limit = {
-		classicism_n_early_romanticism = 1
-		OR = {
-			tag = SPA
-			tag = SPC
-		}
-	}
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 3
-			ruling_party_ideology = reactionary
-		}
-		modifier = {
-			factor = 2
-			NOT = { government = absolute_monarchy }
-		}
-	}
-	effect = {
-		rebel_org_gain = {
-			faction = carlist_rebels
-			value = 0.75
-		}
-		rebel_org_gain = {
-			faction = christino_rebels
-			value = 0.75
 		}
 	}
 }
