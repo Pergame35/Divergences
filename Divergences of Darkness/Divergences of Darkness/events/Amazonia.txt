@@ -896,3 +896,32 @@ country_event = { #### Choice of government
 	factor = 20 } 
 	}
 }
+
+country_event = {
+    id = 98434
+    title = "EVTNAME98434"
+    desc = "EVTDESC98434"
+    picture = "iron"
+	
+	fire_only_once = yes
+	
+    trigger = {
+        OR = {
+			tag = AMA
+			tag = EQN
+			tag = LOT			
+			tag = AZL			
+		}
+		owns = 2442 #Cytere
+		bessemer_process = 1
+    }
+
+	mean_time_to_happen =  {
+		months = 5
+	}
+
+    option = {
+        name = "EVT98434OPTA" #Change RGOs to Iron
+		2442 = { trade_goods = iron }
+    }
+}

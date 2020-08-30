@@ -5,6 +5,8 @@ government = absolute_monarchy
 plurality = 0.02
 nationalvalue = nv_order
 literacy = 0.1
+civilized = yes
+prestige = 1
 
 ruling_party = AAA_conservative_1
 upper_house = {
@@ -43,17 +45,19 @@ penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
 border_policy = quota_immigration
 
-oob = "CRI_oob.txt"
+# Technologies
+post_napoleonic_thought = 1
+flintlock_rifles = 1
+post_nelsonian_thought = 1
+private_banks = 1
+no_standard = 1
+guild_based_production = 1
+classicism_n_early_romanticism = 1
+late_enlightenment_philosophy = 1
+piston_steam_engine = 1
+enlightenment_thought = 1
 
-# Unciv Reforms
-admin_reform = yes_admin_reform
-army_schools = yes_army_schools
-foreign_weapons = yes_foreign_weapons
-foreign_navies = yes_foreign_navies
-finance_reform = yes_finance_reform
-foreign_training = yes_foreign_training
-military_constructions = yes_military_constructions
-foreign_officers = yes_foreign_officers
+oob = "CRI_oob.txt"
 
 # Starting Consciousness
 consciousness = 0
