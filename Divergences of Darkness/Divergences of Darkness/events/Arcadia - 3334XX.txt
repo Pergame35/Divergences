@@ -2026,3 +2026,95 @@ country_event = {
 	name = "333501.A"
 	}
 }
+
+#Iron mines in Vinland
+
+country_event = {
+    id = 333504
+    title = "EVTNAME333504"
+    desc = "EVTDESC333504"
+    picture = "iron"
+	
+	fire_only_once = yes
+	
+    trigger = {
+        OR = {
+			tag = VIN
+			tag = ARC
+			tag = NBG
+			tag = PLA
+		}
+		owns = 157 #Askjavidrøijfjórd		
+		owns = 158 #Jernberg
+		owns = 177 #Ottestad
+		bessemer_process = 1
+    }
+
+	mean_time_to_happen =  {
+		months = 5
+	}
+
+    option = {
+        name = "EVT333504OPTA" #Change RGOs to Iron
+		157 = { trade_goods = iron }
+		158 = { trade_goods = iron }
+		177 = { trade_goods = iron }		
+    }
+}
+
+#Iron mines in the Seven Republics
+
+country_event = {
+    id = 333505
+    title = "EVTNAME333505"
+    desc = "EVTDESC333505"
+    picture = "iron"
+	
+	fire_only_once = yes
+	
+    trigger = {
+        OR = {
+			tag = VIN
+			tag = ARC
+			tag = NBG
+			tag = PLA
+		}
+		owns = 235 #Blegny		
+		bessemer_process = 1
+    }
+
+	mean_time_to_happen =  {
+		months = 5
+	}
+
+    option = {
+        name = "EVT333505OPTA" #Change RGOs to Iron
+		235 = { trade_goods = iron }
+    }
+}
+
+#Iron mines in Qingqiu
+
+country_event = {
+    id = 333506
+    title = "EVTNAME333506"
+    desc = "EVTDESC333506"
+    picture = "iron"
+	
+	fire_only_once = yes
+	
+    trigger = {
+		tag = DNG
+		owns = 98 #Yicheng		
+		bessemer_process = 1
+    }
+
+	mean_time_to_happen =  {
+		months = 5
+	}
+
+    option = {
+        name = "EVT333506OPTA" #Change RGOs to Iron
+		98 = { trade_goods = iron }
+    }
+}
