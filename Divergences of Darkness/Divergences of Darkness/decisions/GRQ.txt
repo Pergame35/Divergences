@@ -61,8 +61,8 @@ political_decisions = {
 		effect = {                         
 			set_country_flag = griqualand_coast   
 			prestige = 10                        
-			ENG_2083 = { limit = { empty = yes } secede_province = GRQ }
-			ENG_2078 = { limit = { empty = yes } secede_province = GRQ }      
+			ENG_2083 = { limit = { empty = yes } secede_province = THIS }
+			ENG_2078 = { limit = { empty = yes } secede_province = THIS }      
 
 		}
 		ai_will_do = {
