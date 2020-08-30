@@ -12,8 +12,9 @@ political_decisions = {
 		}
 	
 		allow = {
+			NOT = { has_country_flag = lacking_writing_system }
 			NOT = { has_country_modifier = kongo_missing_children }
-			PAP = { relation = { with = THIS value = 50 } }
+			749 = { owner = { relation = { with = KON value = 50 } } }
 			money = 5001
 		}
 	
