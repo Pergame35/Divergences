@@ -379,6 +379,8 @@ province_event = { ### Spread of Terra d'Oro cores
 	}
 }
 
+### Spread of Leonia cores 
+
 province_event = {
 	id = 971345
 	title = "971345.T"
@@ -405,6 +407,9 @@ province_event = {
 				is_culture_group = THIS
 			}
 		}
+		NOT = {
+			is_core = SLE
+		}		
 	}
 	
 	mean_time_to_happen = {
@@ -451,6 +456,9 @@ province_event = {
 				is_culture_group = THIS
 			}
 		}
+		NOT = {
+			is_core = SLE
+		}		
 	}
 	
 	mean_time_to_happen = {
@@ -497,6 +505,9 @@ province_event = {
 				is_culture_group = THIS
 			}
 		}
+		NOT = {
+			is_core = SLE
+		}		
 	}
 	
 	mean_time_to_happen = {
@@ -543,6 +554,9 @@ province_event = {
 				is_culture_group = THIS
 			}
 		}
+		NOT = {
+			is_core = SLE
+		}		
 	}
 	
 	mean_time_to_happen = {
@@ -589,6 +603,9 @@ province_event = {
 				is_culture_group = THIS
 			}
 		}
+		NOT = {
+			is_core = SLE
+		}		
 	}
 	
 	mean_time_to_happen = {
