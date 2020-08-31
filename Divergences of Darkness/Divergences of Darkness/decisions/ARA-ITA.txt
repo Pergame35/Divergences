@@ -272,15 +272,14 @@ political_decisions = {
 		effect = {
 			set_country_flag = latin_empire
 			prestige = 25
+			add_accepted_culture = provencal
 			
-			ALD_1704 = { add_core = THIS }
-			ALD_1708 = { add_core = THIS }
-			TUN_1726 = { add_core = THIS }
-			TRI_1743 = { add_core = THIS }
-			TRI_1741 = { add_core = THIS }
 			FRA_467 = { add_core = THIS }
 			FRA_461 = { add_core = THIS }
-			FRA_1700 = { add_core = THIS }
+			FRA_455 = { add_core = THIS }			
+			FRA_458 = { add_core = THIS }
+			FRA_448 = { add_core = THIS }
+			FRA_451 = { add_core = THIS }		
 			
 			random_owned = {
 				limit = {
