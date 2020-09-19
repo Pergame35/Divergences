@@ -51,18 +51,6 @@ political_decisions = {
 				NOT = { average_militancy = 4 }
 				NOT = { capital_scope = { controlled_by_rebels = yes } }
 			}
-			modifier = {
-				factor = 0
-				OR = {
-					tag = CAN
-					tag = AST
-					tag = NZL
-				}
-				overlord = { tag = ENG }
-				NOT = { revolt_percentage = .25 }
-				NOT = { average_militancy = 4 }
-				NOT = { capital_scope = { controlled_by_rebels = yes } }
-			}
 		}
 	}
 	

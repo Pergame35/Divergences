@@ -673,12 +673,9 @@ country_event = {
 			USA = { ai = yes }
 		}
 		NOT = {
-			tag = KUK
 			tag = AUS
 			tag = DNB
-			tag = CSA
 			tag = DES
-			tag = FSA
 			tag = UIL
 			tag = UNB
 			tag = UBD
@@ -1044,7 +1041,6 @@ country_event = {
 		NOT = { tag = YUG }
 		NOT = { tag = TOU }
 		NOT = { tag = SUD }
-		NOT = { tag = TPG }
 	}
 
 	mean_time_to_happen = { months = 1 }

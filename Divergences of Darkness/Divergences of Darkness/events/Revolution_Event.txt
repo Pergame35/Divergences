@@ -1573,33 +1573,6 @@ country_event = {
 		}
 		random_owned = {
 			limit = {
-				owner = { tag = NZL }
-			}
-			owner = {
-				all_core = { add_core = AOT }
-				change_tag = AOT
-				primary_culture = maori
-				add_accepted_culture = british
-				relation = { who = ENG value = -200 }
-				relation = { who = AST value = -200 }
-				add_casus_belli = {
-					target = ENG
-					type = free_peoples
-					months = 250
-				}
-				add_casus_belli = {
-					target = AST
-					type = free_peoples
-					months = 250
-				}
-			}
-			ENG_2513 = {
-				remove_core = NZL
-				add_core = SNZ
-			}
-		}
-		random_owned = {
-			limit = {
 				owner = { tag = SAF }
 			}
 			owner = {

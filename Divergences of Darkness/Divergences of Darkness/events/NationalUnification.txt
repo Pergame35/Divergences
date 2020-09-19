@@ -168,7 +168,6 @@ country_event = {
 			limit = {
 				owner = {
 					NOT = { tag = AUS }
-					NOT = { tag = KUK }
 					NOT = { tag = MOL }
 					NOT = { tag = SYL }
 					NOT = { tag = LUX }

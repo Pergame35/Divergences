@@ -3853,7 +3853,6 @@ country_event = {
 	trigger = {
 		vassal_of = ENG
 		ai = yes
-		NOT = { tag = PAK }
 		NOT = { has_country_flag = no_british_doctrine }
 		ENG = { ideological_thought = 1 exists = yes }
 		NOT = { has_global_flag = eic_spawned }
@@ -4033,7 +4032,6 @@ country_event = {
 		NOT = {
 			tag = QNG
 			tag = CHI
-			tag = TPG
 			AND = {
 				NOT = { has_global_flag = the_dragon_wakes }
 				OR = {
