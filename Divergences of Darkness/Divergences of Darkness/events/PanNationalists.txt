@@ -344,12 +344,6 @@ country_event = {
 			limit = {
 				tag = GER
 				exists = yes
-				THIS = {
-					NOT = {
-						tag = KUK
-						tag = DNB
-					}
-				}
 			}
 			diplomatic_influence = {
 				who = THIS
@@ -419,10 +413,6 @@ country_event = {
 			limit = {
 				owner = {
 					primary_culture = south_german
-					NOT = {
-						tag = KUK
-						tag = DNB
-					}
 				}
 				NOT = { exists = GER }
 				exists = SGF
@@ -459,10 +449,6 @@ country_event = {
 			limit = {
 				owner = {
 					primary_culture = south_german
-					NOT = {
-						tag = KUK
-						tag = DNB
-					}
 				}
 				NOT = { exists = GER }
 				NOT = { exists = SGF }
@@ -540,10 +526,6 @@ country_event = {
 			limit = {
 				owner = {
 					primary_culture = south_german
-					NOT = {
-						tag = KUK
-						tag = DNB
-					}
 				}
 				NOT = { exists = GER }
 				NOT = { exists = SGF }
@@ -571,9 +553,6 @@ country_event = {
 					is_greater_power = yes
 					is_sphere_leader_of = THIS
 					neighbour = THIS
-					NOT = {
-						tag = KUK
-					}
 				}
 				country_event = 60130
 			}
@@ -584,7 +563,6 @@ country_event = {
 					OR = {
 						NOT = { is_sphere_leader_of = THIS }
 						NOT = { neighbour = THIS }
-						tag = KUK
 					}
 				}
 				country_event = 11104
@@ -598,160 +576,6 @@ country_event = {
 					}
 				}
 				country_event = 11104
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						tag = KUK
-						tag = DNB
-					}
-				}
-			}
-			any_country = {
-				limit = {
-					NOT = { is_culture_group = germanic }
-					is_greater_power = yes
-					any_greater_power = { is_culture_group = germanic }
-				}
-				leave_alliance = THIS
-				diplomatic_influence = {
-					who = THIS
-					value = -200
-				}
-				relation = {
-					who = THIS
-					value = -100
-				}
-			}
-			random_country = {
-				limit = {
-					tag = GER
-					is_greater_power = yes
-					exists = yes
-				}
-				diplomatic_influence = {
-					who = THIS
-					value = 200
-				}
-				relation = {
-					who = THIS
-					value = 100
-				}
-			}
-			random_country = {
-				limit = {
-					tag = SGF
-					is_greater_power = yes
-					exists = yes
-					GER = {
-						OR = {
-							exists = no
-							is_greater_power = no
-						}
-					}
-				}
-				diplomatic_influence = {
-					who = THIS
-					value = 200
-				}
-				relation = {
-					who = THIS
-					value = 100
-				}
-				set_country_flag = crown_from_the_gutter
-			}
-			random_country = {
-				limit = {
-					tag = NGF
-					is_greater_power = yes
-					exists = yes
-					GER = {
-						OR = {
-							exists = no
-							is_greater_power = no
-						}
-					}
-					SGF = {
-						OR = {
-							exists = no
-							is_greater_power = no
-						}
-					}
-				}
-				diplomatic_influence = {
-					who = THIS
-					value = 200
-				}
-				relation = {
-					who = THIS
-					value = 100
-				}
-				set_country_flag = crown_from_the_gutter
-			}
-			random_country = {
-				limit = {
-					primary_culture = south_german
-					is_greater_power = yes
-					exists = yes
-					GER = {
-						OR = {
-							exists = no
-							is_greater_power = no
-						}
-					}
-					SGF = {
-						OR = {
-							exists = no
-							is_greater_power = no
-						}
-					}
-					NGF = {
-						OR = {
-							exists = no
-							is_greater_power = no
-						}
-					}
-				}
-				diplomatic_influence = {
-					who = THIS
-					value = 200
-				}
-				relation = {
-					who = THIS
-					value = 100
-				}
-			}
-			random_country = {
-				limit = {
-					primary_culture = north_german
-					is_greater_power = yes
-					exists = yes
-					NOT = {
-						any_greater_power = { primary_culture = south_german }
-					}
-					GER = {
-						OR = {
-							exists = no
-							is_greater_power = no
-						}
-					}
-					NGF = {
-						OR = {
-							exists = no
-							is_greater_power = no
-						}
-					}
-				}
-				diplomatic_influence = {
-					who = THIS
-					value = 200
-				}
-				relation = {
-					who = THIS
-					value = 100
-				}
 			}
 		}
 		any_country = {
