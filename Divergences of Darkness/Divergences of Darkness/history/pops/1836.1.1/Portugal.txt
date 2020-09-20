@@ -71,11 +71,11 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 45060
+		size = 105140
 	}
 
 	aristocrats = {
-		culture = castilian
+		culture = portuguese
 		religion = catholic
 		size = 1050
 	}
@@ -99,7 +99,7 @@
 	}
 
 	artisans = {
-		culture = castilian
+		culture = portuguese
 		religion = catholic
 		size = 10000
 	}
@@ -119,7 +119,7 @@
 	farmers = {
 		culture = castilian
 		religion = catholic
-		size = 105140
+		size = 45060
 	}
 
 }
@@ -153,19 +153,19 @@
 	farmers = {
 		culture = castilian
 		religion = catholic
-		size = 66925
+		size = 20925
 	}
 
 	clergymen = {
 		culture = portuguese
 		religion = catholic
-		size = 40
+		size = 140
 	}
 
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 2350
+		size = 48350
 	}
 }
 #Covilha (568000/142000 POPS)
@@ -173,25 +173,25 @@
 	aristocrats = {
 		culture = castilian
 		religion = catholic
-		size = 1250
+		size = 750
 	}
 
 	clergymen = {
 		culture = castilian
 		religion = catholic
-		size = 1500
+		size = 500
 	}
 
 	artisans = {
 		culture = castilian
 		religion = catholic
-		size = 10000
+		size = 3500
 	}
 	
 	artisans = {
 		culture = castilian
 		religion = catholic
-		size = 7250
+		size = 2250
 	}
 
 	soldiers = {
@@ -204,8 +204,38 @@
 	farmers = {
 		culture = castilian
 		religion = catholic
-		size = 120500
+		size = 40500
 	}
+	
+	aristocrats = {
+		culture = portuguese
+		religion = catholic
+		size = 500
+	}
+
+	clergymen = {
+		culture = portuguese
+		religion = catholic
+		size = 1000
+	}
+
+	artisans = {
+		culture = portuguese
+		religion = catholic
+		size = 6500
+	}
+	
+	artisans = {
+		culture = portuguese
+		religion = catholic
+		size = 5250
+	}
+
+	farmers = {
+		culture = portuguese
+		religion = catholic
+		size = 80750
+	}	
 
 }
 #Beira-Estremadura Region (1060000)
@@ -292,7 +322,7 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 18000
+		size = 48000
 	}
 
 	aristocrats = {
@@ -340,7 +370,7 @@
 	farmers = {
 		culture = castilian
 		religion = catholic
-		size = 10500
+		size = 40500
 	}
 }
 #Coimbra (460000/115000 POPS)
@@ -372,7 +402,7 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 64870
+		size = 84870
 	}
 
 	aristocrats = {
@@ -402,7 +432,7 @@
 	farmers = {
 		culture = castilian
 		religion = catholic
-		size = 34930
+		size = 54930
 	}
 }
 #Abrantes (140000/35000 POPS)
@@ -435,7 +465,7 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 22085
+		size = 42085
 	}
 
 	aristocrats = {
@@ -465,7 +495,7 @@
 	farmers = {
 		culture = castilian
 		religion = catholic
-		size = 9465
+		size = 29465
 	}
 }
 #Setubal (112000/28000 POPS)
@@ -497,7 +527,7 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 15960
+		size = 19960
 	}
 
 	aristocrats = {
@@ -527,7 +557,7 @@
 	farmers = {
 		culture = castilian
 		religion = catholic
-		size = 6840
+		size = 16840
 	}
 
 }
@@ -616,7 +646,7 @@
 	farmers = {
 		culture = castilian
 		religion = catholic
-		size = 15440
+		size = 35440
 	}
 }
 #Beja (96000/24000 POPS)
@@ -648,7 +678,7 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 9788
+		size = 10788
 	}
 
 	aristocrats = {
@@ -678,7 +708,7 @@
 	farmers = {
 		culture = castilian
 		religion = catholic
-		size = 11962
+		size = 18962
 	}
 
 }
@@ -741,7 +771,7 @@
 	farmers = {
 		culture = castilian
 		religion = catholic
-		size = 14864
+		size = 24864
 	}
 }
 #Azores & Madeira Region (308000)

@@ -160,41 +160,41 @@ political_decisions = {
 	}
 	
 	integrate_scotland = { 
-	potential = {
-	tag = DUA 
-	NOT = { has_country_flag = Paris_congress }
-	NOT = { has_country_flag = scotland_acc }
-	has_global_flag = english_int
-	}
+		potential = {
+			tag = DUA 
+			NOT = { has_country_flag = Paris_congress }
+			NOT = { has_country_flag = scotland_acc }
+			has_global_flag = english_int
+		}
 	
-	allow = { 
-	SCO = { all_core = { owned_by = THIS } }
-	}
+		allow = { 
+			SCO = { all_core = { owned_by = THIS } }
+		}
 	
-	effect = { 
-	set_country_flag = scotland_acc 
-	SCO = { all_core = { add_core = THIS } }
-	}
+		effect = { 
+			set_country_flag = scotland_acc 
+			SCO = { all_core = { add_core = THIS } }
+		}
 	
 	}
 	
 	integrating_scottish = { 
-	potential = {
-	NOT = { has_country_flag = Paris_congress }
-	NOT = { has_country_flag = scottish_acc }
-	NOT = { has_country_flag = DUA_schooling }
-	tag = DUA 
-	has_country_flag = scotland_acc
-	}
+		potential = {
+			NOT = { has_country_flag = Paris_congress }
+			NOT = { has_country_flag = scottish_acc }
+			NOT = { has_country_flag = DUA_schooling }
+			tag = DUA 
+			has_country_flag = scotland_acc
+		}
 	
-	allow = { 
-	SCO = { all_core = { owned_by = THIS } }
-	nationalism_n_imperialism = 1 
-	}
+		allow = { 
+			SCO = { all_core = { owned_by = THIS } }
+			nationalism_n_imperialism = 1 
+		}
 	
-	effect = { 
-	set_country_flag = scottish_acc
-	add_accepted_culture = scottish 
+		effect = { 
+			set_country_flag = scottish_acc
+			add_accepted_culture = scottish 
 		}
 	
 	}
