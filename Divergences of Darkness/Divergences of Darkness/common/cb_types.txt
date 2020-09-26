@@ -49,7 +49,6 @@ colonial_competition
 acquire_all_cores
 acquire_core_state
 colonial_reconquest_cb
-restore_british_raj
 unification_casus_belli
 civil_war
 unification_annex_casus_belli
@@ -70,7 +69,6 @@ liberate_country
 free_peoples
 free_allied_cores
 free_balkans
-monroe_doctrine
 oriental_crisis
 unification_release_puppet_cb
 release_puppet
@@ -638,7 +636,6 @@ unification_casus_belli = {
 		NOT = { is_our_vassal = THIS }
 		NOT = { tag = PRU }
 		NOT = { tag = NGF }
-		THIS = { NOT = { tag = KUK } }
 		THIS = { NOT = { tag = DNB } }
 		THIS = { NOT = { tag = UBD } }
 		THIS = {
@@ -654,8 +651,6 @@ unification_casus_belli = {
 				war_with = THIS
 				is_culture_group = THIS
 				part_of_sphere = no
-				THIS = { NOT = { tag = AUS } }
-				THIS = { NOT = { tag = KUK } }
 				THIS = { NOT = { tag = DNB } }
 				THIS = { NOT = { tag = UBD } }
 			}
@@ -785,8 +780,6 @@ unification_annex_casus_belli = {
 				war_with = THIS
 				is_culture_group = THIS
 				part_of_sphere = no
-				THIS = { NOT = { tag = AUS } }
-				THIS = { NOT = { tag = KUK } }
 				THIS = { NOT = { tag = DNB } }
 				THIS = { NOT = { tag = UBD } }
 			}
@@ -972,7 +965,6 @@ unification_humiliate_cb = {
 			nationalism_n_imperialism = 1
 			is_greater_power = yes
 			NOT = { has_country_modifier = neutrality }
-			NOT = { tag = KUK }
 			NOT = { tag = UBD }
 			NOT = { tag = DNB }
 		}
@@ -1037,7 +1029,6 @@ unification_GP_humiliate = {
 			is_greater_power = yes
 			nationalism_n_imperialism = 1
 			NOT = { has_country_modifier = neutrality }
-			NOT = { tag = KUK }
 			NOT = { tag = UBD }
 			NOT = { tag = DNB }
 		}
@@ -1106,7 +1097,6 @@ unification_release_puppet_cb = {
 				is_cultural_union = yes
 				has_country_modifier = neutrality
 			}
-			NOT = { tag = KUK }
 			NOT = { tag = UBD }
 			NOT = { tag = DNB }
 		}
@@ -1177,7 +1167,6 @@ unification_add_to_sphere = {
 			ai = yes
 			is_greater_power = yes
 			nationalism_n_imperialism = 1
-			NOT = { tag = KUK }
 			NOT = { tag = UBD }
 			NOT = { tag = DNB }
 			NOT = {
@@ -1355,13 +1344,9 @@ free_peoples = {
 			FROM = { tag = UKR }
 			FROM = { tag = HND }
 			FROM = { tag = PLC }
-			FROM = { tag = TPG }
 			FROM = { tag = POL }
-			FROM = { tag = CPL }
 			FROM = { tag = QNG }
 			FROM = { tag = CHI }
-			FROM = { tag = CSA }
-			FROM = { tag = USA }
 			FROM = { tag = KAM }
 			FROM = { tag = KAZ }
 			FROM = { tag = BDK }
@@ -2158,156 +2143,6 @@ free_balkans = {
 	}
 }
 
-monroe_doctrine = {
-	sprite_index = 19
-	is_triggered_only = yes
-	months = 12
-	crisis = no
-	
-	construction_speed = 1.0
-
-	badboy_factor = 0
-	prestige_factor = 2
-	peace_cost_factor = 0.5
-	penalty_factor = 0.5
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 48
-	always = yes
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-
-	can_use = {
-		THIS = {
-			tag = USA
-			government = democracy
-			is_greater_power = yes
-		}
-		is_vassal = no
-		OR = {
-			capital_scope = { continent = europe }
-			capital_scope = { continent = africa }
-			capital_scope = { continent = asia }
-			capital_scope = { continent = oceania }
-			capital_scope = { continent = australia_new_zealand }
-			capital_scope = { continent = polynesia }
-		}
-		any_owned_province = {
-			OR = {
-				continent = south_america
-				continent = north_america
-			}
-			any_core = {
-				OR = {
-					primary_culture = mexican
-					primary_culture = central_american
-					primary_culture = north_andean
-					primary_culture = south_andean
-					primary_culture = platinean
-					primary_culture = brazilian
-					AND = {
-						tag = CUB
-						USA = { has_country_flag = maine_incident }
-					}
-				}
-			}
-			NOT = {
-				is_core = USA
-				region = ENG_1979
-				region = ARG_2391 
-				region = CHL_2332
-				region = ENG_2132
-				#region = NET_2235
-				region = ARG_2398
-				province_id = 2190
-				province_id = 2200
-			}
-		}
-		OR = {
-			war_with = THIS
-			THIS = { NOT = { has_country_modifier = no_more_war } }
-		}
-		OR = {
-			NOT = { has_country_flag = dismantle_declared }
-			THIS = { NOT = { has_country_flag = in_great_war } }
-			THIS = { ai = no }
-		}
-	}
-
-	# THIS - us
-	# FROM - country scope is possible match?
-	# war target country of goal is scope
-	allowed_countries = {
-		NOT = { tag = FROM }
-		any_owned_province = {
-			is_core = FROM
-			NOT = { is_core = USA }
-		}
-		FROM = {
-			OR = {
-				primary_culture = mexican
-				primary_culture = central_american
-				primary_culture = north_andean
-				primary_culture = south_andean
-				primary_culture = platinean
-				primary_culture = brazilian
-				AND = {
-					tag = CUB
-					USA = { has_country_flag = maine_incident }
-				}
-			}
-			OR = {
-				exists = yes
-				is_cultural_union = no
-			}
-		}
-	}
-
-	# THIS - us
-	# FROM - country scope is possible match?
-	# war target country of goal's state
-	allowed_states = {
-		any_owned_province = {
-			is_core = FROM
-			OR = {
-				continent = north_america
-				continent = south_america
-			}
-		}
-		NOT = {
-			any_owned_province = {
-				OR = {
-					is_core = USA
-					region = ENG_1979
-					region = ARG_2391 
-					region = CHL_2332
-					region = ENG_2132
-					#region = NET_2235
-					region = ARG_2398
-					province_id = 2190
-					province_id = 2200
-				}
-			}
-		}
-	}
-
-	po_transfer_provinces = yes
-
-	war_name = WAR_MONROE_DOCTRINE_NAME
-	
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.25
-		}
-	}
-}
-
 oriental_crisis = {
 	sprite_index = 26
 	is_triggered_only = yes
@@ -2812,98 +2647,6 @@ great_game_cb = {
 		country_event = 19370
 	}
 }
-
-# restore_british_raj = {
-# 	sprite_index = 10
-# 	is_triggered_only = yes
-# 	months = 12
-# 	crisis = no
-
-# 	badboy_factor = 0
-# 	prestige_factor = 1
-# 	peace_cost_factor = 0.8
-# 	penalty_factor = 2
-
-# 	break_truce_prestige_factor = 1
-# 	break_truce_infamy_factor = 1
-# 	break_truce_militancy_factor = 1
-# 	truce_months = 48
-	
-# 	good_relation_prestige_factor = 1
-# 	good_relation_infamy_factor = 1
-# 	good_relation_militancy_factor = 1
-	
-# 	always = yes
-
-# 	po_make_puppet = yes
-
-# 	war_name = WAR_BRITISH_RAJ_NAME
-	
-# 	can_use = {
-# 		is_vassal = no
-# 		is_disarmed = no
-# 		civilized = no
-# 		NOT = {
-# 			is_our_vassal = THIS
-# 			truce_with = THIS
-# 			tag = HND
-# 			has_country_modifier = neutrality
-# 			has_global_flag = british_dismantled
-# 		}
-# 		OR = {
-# 			tag = ASM
-# 			tag = AWA
-# 			tag = BAS
-# 			tag = BER
-# 			tag = BIH
-# 			tag = BIK
-# 			tag = BHO
-# 			tag = BNG
-# 			tag = BUN
-# 			tag = IND
-# 			tag = JAI
-# 			tag = JAS
-# 			tag = JOD
-# 			tag = MAH
-# 			tag = MEW
-# 			tag = MUG
-# 			tag = MYS
-# 			tag = NAG
-# 			tag = ORI
-# 			tag = TRA
-# 			tag = KUT
-# 		}
-# 		THIS = {
-# 			tag = ENG
-# 			OR = {
-# 				government = absolute_monarchy
-# 				government = prussian_constitutionalism
-# 				government = hms_government
-# 			}
-# 			NOT = { has_country_modifier = neutrality }
-# 		}
-# 		OR = {
-# 			war_with = THIS
-# 			THIS = {
-# 				NOT = {
-# 					has_country_modifier = no_more_war
-# 				}
-# 			}
-# 		}
-# 	}
-	
-# 	on_add = {
-# 		move_issue_percentage = { 
-# 			from = jingoism 
-# 			to = pro_military
-# 			value = 0.25
-# 		}
-# 	}
-	
-# 	on_po_accepted = {
-# 		country_event = 19370
-# 	}
-# }
 
 # Humiliate
 humiliate = {

@@ -284,10 +284,6 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				NOT = { year = 1915 }
-				OR = {
-					tag = USA
-					tag = CAN
-				}
 			}
 		}
 	}
