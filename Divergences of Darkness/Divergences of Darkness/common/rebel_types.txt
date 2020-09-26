@@ -98,6 +98,11 @@ reactionary_rebels = {
 		}
 		
 		modifier = {
+			factor = 0
+			type = slaves
+		}
+		
+		modifier = {
 			factor = 1.0115
 			pop_majority_ideology = reactionary
 		}
@@ -190,23 +195,6 @@ reactionary_rebels = {
 			factor = 1.015
 			country = { NOT = { plurality = 35 } }
 		}
-		modifier = {
-			factor = 0.1
-			country = {
-				tag = SPA
-				NOT = { has_global_flag = carlists_pacified }
-				OR = {
-					government = hms_government
-					government = prussian_constitutionalism
-					government = absolute_monarchy
-					government = democracy
-				}
-			}
-			OR = {
-				pop_majority_ideology = reactionary
-				pop_majority_ideology = conservative
-			}
-		}	
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -1258,12 +1246,6 @@ nationalist_rebels = {
 				has_country_flag = panthay_rebellion
 			}
 		}
-		modifier = {
-			factor = 0.25
-			is_culture_group = chinese
-			has_global_flag = taiping_has_happened
-			TPG = { exists = yes }
-		}
 	}
 	
 	# The rebel type with the highest modifier for this pop gets picked
@@ -1581,14 +1563,6 @@ pan_nationalist_rebels = {
 		modifier = {
 			factor = 0
 			country = { tag = DNB }
-		}
-		modifier = {
-			factor = 0
-			country = { tag = CSA }
-		}
-		modifier = {
-			factor = 0
-			country = { tag = FSA }
 		}
 		modifier = {
 			factor = 0
@@ -4375,7 +4349,9 @@ sioux_nation = {
 		any_pop = {
 			limit = {
 				NOT = {
-					is_culture_group = native_american
+					is_culture_group = native_north_american			
+					is_culture_group = mesoandean			
+					is_culture_group = native_south_american
 				}
 			}
 			reduce_pop = 0.90
@@ -4501,7 +4477,9 @@ apache = {
 		any_pop = {
 			limit = {
 				not = {
-					is_culture_group = native_american
+					is_culture_group = native_north_american			
+					is_culture_group = mesoandean			
+					is_culture_group = native_south_american
 				}
 			}
 			reduce_pop = 0.50

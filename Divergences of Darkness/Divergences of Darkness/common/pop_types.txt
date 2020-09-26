@@ -854,7 +854,9 @@ assimilation_chance = {
 			has_country_flag = native_assimilation_enacted
 		}
 		OR = {
-			is_culture_group = native_american
+			is_culture_group = native_north_american			
+			is_culture_group = mesoandean			
+			is_culture_group = native_south_american
 			is_culture_group = oceanic
 		}
 		OR = {
@@ -889,7 +891,10 @@ assimilation_chance = {
 			NOT = { has_country_flag = native_assimilation_enacted }
 		}
 		OR = {
-			is_culture_group = native_american
+			is_culture_group = african_diaspora_cultures
+			is_culture_group = native_north_american			
+			is_culture_group = mesoandean
+			is_culture_group = native_south_american			
 			is_culture_group = oceanic
 		}
 		OR = {
