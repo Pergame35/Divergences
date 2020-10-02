@@ -663,15 +663,6 @@ country_event = {
 			sphere_owner = { state_n_government = 1 }
 			NOT = { is_culture_group = american_cultures }
 		}
-		OR = {
-			NOT = { tag = BAN }
-			sphere_owner = { neighbour = THIS }
-		}
-		OR = {
-			NOT = { tag = NEN }
-			has_country_flag = usstatehood_we_have_applied
-			USA = { ai = yes }
-		}
 		NOT = {
 			tag = AUS
 			tag = DNB
@@ -2574,33 +2565,6 @@ country_event = {
 			521 = {
 				party_loyalty = {
 					ideology = liberal
-					loyalty_value = -25
-				}
-			}
-		}
-		#Uruguay
-		URU = {
-			2344 = {
-				party_loyalty = {
-					ideology = liberal
-					loyalty_value = -30
-				}
-			}
-			2345 = {
-				party_loyalty = {
-					ideology = conservative
-					loyalty_value = -25
-				}
-			}
-			2347 = {
-				party_loyalty = {
-					ideology = conservative
-					loyalty_value = -25
-				}
-			}
-			2346 = {
-				party_loyalty = {
-					ideology = conservative
 					loyalty_value = -25
 				}
 			}

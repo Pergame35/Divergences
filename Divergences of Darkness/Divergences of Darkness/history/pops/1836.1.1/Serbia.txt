@@ -92,14 +92,27 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 3315  
+		size = 750  
 	}
 	
 	serfs = {
 		culture = south_german
 		religion = catholic
-		size = 2210  
+		size = 400  
 	}
+	
+	farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 2565  
+	}
+	
+	serfs = {
+		culture = bosniak
+		religion = sunni
+		size = 1810  
+	}
+	
 }
 #Pancevo (268000/67000 POPS) #part of Serbia today
 792 = {
@@ -171,10 +184,22 @@
 		size = 3480 
 	}	
 
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 750 
+	}
+	
+	serfs = {
+		culture = hungarian
+		religion = sunni
+		size = 600 
+	}
+
 	aristocrats = {
 		culture = south_german
 		religion = catholic
-		size = 1100  
+		size = 100  
 	}
 
 	clergymen = {
@@ -183,29 +208,53 @@
 		size = 200   
 	}
 
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 1100   
-	}
-
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size= 200
-
-	}
-
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 11264  
+		size = 1500  
 	}
 	
 	serfs = {
 		culture = south_german
 		religion = catholic
-		size = 6336  
+		size = 450  
+	}
+
+	aristocrats = {
+		culture = bosniak
+		religion = sunni
+		size = 1000  
+	}
+
+	clergymen = {
+		culture = bosniak
+		religion = sunni
+		size = 200   
+	}
+
+	artisans = {
+		culture = bosniak
+		religion = sunni
+		size = 1100   
+	}
+
+	soldiers = {
+		culture = bosniak
+		religion = sunni
+		size= 200
+
+	}
+
+	farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 7264  
+	}
+	
+	serfs = {
+		culture = bosniak
+		religion = sunni
+		size = 4336  
 	}	
 
 	clergymen = {
@@ -306,13 +355,25 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 15900 
+		size = 14000 
 	}
 	
 	serfs = {
 		culture = hungarian
 		religion = catholic
-		size = 10600 
+		size = 10000 
+	}
+
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 3750 
+	}
+	
+	serfs = {
+		culture = hungarian
+		religion = sunni
+		size = 1600 
 	}	
 
 	clergymen = {
@@ -380,39 +441,57 @@
 	aristocrats = {
 		culture = south_german
 		religion = catholic
-		size = 1100  
-	}
-
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 225
+		size = 50  
 	}
 
 	artisans = {
 		culture = south_german
 		religion = catholic
-		size = 1150   
-	}
-
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size= 250
-
+		size = 150   
 	}
 
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 12225 
+		size = 1200 
 	}
 
 	serfs = {
 		culture = south_german
 		religion = catholic
-		size = 8150 
-	}	
+		size = 800 
+	}
+
+	clergymen = {
+		culture = bosniak
+		religion = sunni
+		size = 225
+	}
+
+	artisans = {
+		culture = bosniak
+		religion = sunni
+		size = 1150   
+	}
+
+	soldiers = {
+		culture = bosniak
+		religion = sunni
+		size= 250
+
+	}
+
+	farmers = {
+		culture = bosniak
+		religion = catholic
+		size = 10225 
+	}
+
+	serfs = {
+		culture = bosniak
+		religion = catholic
+		size = 4150 
+	}		
 }
 #Serbia Region (180310) - 721.240 people
 #under the rule of Serbia in 1836

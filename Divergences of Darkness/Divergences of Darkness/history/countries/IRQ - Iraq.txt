@@ -49,7 +49,7 @@ upper_house = {
 }
 
 set_country_flag = sunni_country
-schools = unciv_tech_school
+
 
 foreign_artillery = yes_foreign_artillery
 foreign_weapons = yes_foreign_weapons
@@ -60,4 +60,4 @@ admin_reform = yes_admin_reform
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
 
-
+oob = "IRQ_oob.txt"

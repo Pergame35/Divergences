@@ -85,34 +85,3 @@ army = {
 		home = 1117
 	}	
 }
-
-navy = {
-	name = "Victorious Fleet"
-	location = 935
-	ship = {
-		name= "Basra"
-		type = manowar
-	}
-
-	ship = {
-		name= "Cairo"
-		type = frigate
-	}
-
-	ship = {
-		name= "Mecca"
-		type = frigate
-	}
-
-	ship = {
-		name= "1st Transport Flotilla"
-		type = clipper_transport
-	}
-
-	ship = {
-		name= "2nd Transport Flotilla"
-		type = clipper_transport
-	}
-
-}
-

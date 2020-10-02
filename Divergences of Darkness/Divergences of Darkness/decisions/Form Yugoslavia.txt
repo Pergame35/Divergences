@@ -5,7 +5,6 @@ political_decisions = {
 			OR = {
 				primary_culture = croat
 				primary_culture = serb
-				primary_culture = slavonian
 				primary_culture = bulgarian
 				primary_culture = slovene
 				primary_culture = bosniak
@@ -29,7 +28,6 @@ political_decisions = {
 			change_tag = YUG
 			add_accepted_culture = croat
 			add_accepted_culture = serb
-			add_accepted_culture = slavonian
 			add_accepted_culture = slovene
 			add_accepted_culture = bosniak
 			any_country = {
@@ -319,7 +317,6 @@ political_decisions = {
 			CRO = { all_core = { add_core = YUG } }
 			BOS = { all_core = { add_core = YUG } }
 			SLO = { all_core = { add_core = YUG } }
-			SLA = { all_core = { add_core = YUG } }
 			TUR_806 = { add_core = YUG }
 			any_country = {
 				limit = {
@@ -329,7 +326,6 @@ political_decisions = {
 						tag = CRO
 						tag = BOS
 						tag = SLO
-						tag = SLA
 					}
 					ai = yes
 					in_sphere = THIS

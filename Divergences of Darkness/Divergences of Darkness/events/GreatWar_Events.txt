@@ -1253,7 +1253,13 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				NOT = { is_culture_group = FROM }
-				NOT = { is_culture_group = neo_european_cultures }
+				NOT = { 
+					is_culture_group = anglois_american
+					is_culture_group = burgundian_american
+					is_culture_group = italian_american
+					is_culture_group = scandinavian_american
+					is_culture_group = english_american
+				}
 			}
 			modifier = {
 				factor = 1.25
