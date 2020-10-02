@@ -727,61 +727,6 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	colonial_legacy = {
-		picture = begin_line_of_advantage
-		potential = {
-			civilized = no
-			tech_school = unciv_tech_school
-		}
-		
-		allow = {
-			war = no
-			literacy = 0.15
-		}
-		
-		effect = {
-			civilized = yes
-			clr_country_flag = lacking_writing_system
-			random_owned = { limit = { owner = { ai = yes } } owner = { add_country_modifier = { name = law_changed_by_force duration = 3 } } }
-			random_owned = { 
-				limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
-				owner = { activate_technology = experimental_railroad  clr_country_flag = activate_experimental_railroad }
-			}
-			random_list = {
-				34 = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
-				33 = { add_country_modifier = { name = global_baby_boom duration = 3285 } }
-				33 = { add_country_modifier = { name = global_baby_boom duration = 4015 } }
-			}
-			remove_country_modifier = assegai
-			remove_country_modifier = educational_reform
-			remove_country_modifier = military_reform
-			remove_country_modifier = western_influences
-			remove_country_modifier = uncivilized_isolationism
-			remove_country_modifier = trade_restrictions
-			remove_country_modifier = sayings_of_the_dutch
-			remove_country_modifier = rangaku
-			remove_country_modifier = western_presence
-			remove_country_modifier = isolationist_foreign_naval_officers
-			remove_country_modifier = isolationist_foreign_naval_schools
-			remove_country_modifier = isolationist_foreign_officers
-			remove_country_modifier = isolationist_foreign_training
-			any_owned = {
-				remove_province_modifier = western_presence
-				remove_province_modifier = foreign_smugglers
-				remove_province_modifier = foreign_trading_post
-				remove_province_modifier = local_opium_habit
-				remove_province_modifier = european_military_mission
-				remove_province_modifier = legation_quarter
-				remove_province_modifier = kettler_denkmal
-				remove_province_modifier = extraterritoriality_granted
-				remove_province_modifier = boxer_presence
-				remove_province_modifier = boxer_agitation
-			}
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
-	
 	end_of_natural_dyes = {
 		picture = tea_production
 		potential = {

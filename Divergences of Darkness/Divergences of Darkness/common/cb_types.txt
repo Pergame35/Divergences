@@ -73,7 +73,6 @@ oriental_crisis
 unification_release_puppet_cb
 release_puppet
 release_puppet_AI
-great_game_cb
 make_puppet
 install_fascism_make_puppet
 install_communism_make_puppet
@@ -1361,10 +1360,6 @@ free_peoples = {
 				FROM = { tag = ETH }
 				ETH = { exists = no }
 			}
-			AND = {
-				FROM = { tag = BOL }
-				exists = PBC
-			}
 		}
 		FROM = {
 			OR = {
@@ -1706,10 +1701,6 @@ liberate_country = {
 			AND = {
 				FROM = { tag = ETH }
 				NOT = { exists = ETH }
-			}
-			AND = {
-				FROM = { tag = BOL }
-				exists = PBC
 			}
 		}
 		OR = {
@@ -2538,113 +2529,6 @@ cut_down_to_size = {
 			owner = { 1686 = { secede_province = THIS } clr_country_flag = holding_tangiers }
 			THIS = { 1686 = { secede_province = MOR } }
 		}
-		random_owned = { limit = { owner = { has_country_flag = refused_to_cede_congo } }
-			owner = { any_owned = { limit = { is_core = CNG } secede_province = THIS } clr_country_flag = refused_to_cede_congo }
-			THIS = { any_owned = { limit = { is_core = CNG } secede_province = CNG } }
-		}
-	}
-}
-
-great_game_cb = {
-	sprite_index = 22
-	is_triggered_only = yes
-	months = 12
-	crisis = no
-	
-	construction_speed = 0.8
-
-	badboy_factor = 1
-	prestige_factor = 2
-	peace_cost_factor = 0.5
-	penalty_factor = 1
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 48
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-	
-	po_make_puppet = yes
-
-	war_name = WAR_PUPPET_NAME
-	
-	can_use = {
-		is_vassal = no
-		civilized = no
-		NOT = {
-			has_global_flag = british_dismantled
-			is_our_vassal = THIS
-			truce_with = THIS
-			in_sphere = THIS
-		}
-		OR = {
-			neighbour = THIS
-			any_neighbor_country = { vassal_of = THIS }
-		}
-		OR = {
-			tag = SIN
-			tag = KAL
-			tag = MAK
-			tag = AFG
-			tag = KAS
-			tag = CHL
-			tag = KOK
-			tag = KHI
-			tag = BUK
-			tag = CRL
-			tag = KAZ
-			tag = BDK
-			AND = {
-				tag = PNJ
-				has_country_flag = ranjit_singh_dead
-			}
-		}
-		ENG = { is_greater_power = yes }
-		RUS = { is_greater_power = yes }
-		THIS = {
-			OR = {
-				tag = ENG
-				tag = RUS
-			}
-			OR = {
-				government = absolute_monarchy
-				government = prussian_constitutionalism
-				government = hms_government
-			}
-			NOT = {
-				has_country_flag = no_more_great_game
-				has_country_modifier = punitive_effects
-			}
-		}
-		OR = {
-			war_with = THIS
-			THIS = { NOT = { has_country_modifier = no_more_war } }
-		}
-	}
-	
-	on_add = {
-		random_country = {
-			limit = {
-				OR = {
-					tag = RUS
-					tag = ENG
-				}
-				NOT = { tag = THIS }
-			}
-			relation = { who = THIS value = -50 }
-		}
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.25
-		}
-	}
-	
-	on_po_accepted = {
-		country_event = 19370
 	}
 }
 

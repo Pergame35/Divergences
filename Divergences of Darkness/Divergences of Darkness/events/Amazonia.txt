@@ -1,64 +1,65 @@
 country_event = { 
 
-		id = 98401
-		title = "AMA1.T"
-		desc = "AMA1.D"
+	id = 98401
+	title = "AMA1.T"
+	desc = "AMA1.D"
 		
-		trigger = { 
-		tag = AMA 
+	trigger = { 
+		tag = AMA
+		exists = yes
 		CLM = { 
-		owns = 2415
-		owns = 2408
-		owns = 2412
-		war_with = SPA 
-			}
+			owns = 2415
+			owns = 2408
+			owns = 2412
+			war_with = SPA 
+		}
 		NOT = { has_global_flag = congress_of_panama }
-		}
+	}
 		
-		mean_time_to_happen = { 
+	mean_time_to_happen = { 
 		months = 2
-		}
+	}
 		
-		option = { 
+	option = { 
 		name = "98401.A"
 		CLM = { country_event = 98402 }
 		badboy = 5 
 		prestige = 3 
 		BRZ_2408 = { 
-		add_core = AMA
-		add_core = EQN
-				}
-		ai_chance = { 
-		factor = 99 
-			}
+			add_core = AMA
+			add_core = EQN
 		}
+		ai_chance = { 
+			factor = 99 
+		}
+	}
 		
-		option = { 
+	option = { 
 		name = "98401.B"
 		prestige = 5 
 		relation = { who = CLM value = 150 }
 		ai_chance = { 
-		factor = 1
-			}
+			factor = 1
 		}
+	}
 }
 
 country_event = { 
 		
-		id = 98402 
-		title = "AMA2.T"
-		desc = "AMA2.D"
+	id = 98402 
+	title = "AMA2.T"
+	desc = "AMA2.D"
 		
-		is_triggered_only = yes
+	is_triggered_only = yes
 		
-		option = {
+	option = {
 		name = "98402.A"
 		BRZ_2408  = {
-		remove_core = CLM 
+			remove_core = CLM 
 		}
 		any_owned = { 
-		limit = { region = BRZ_2408 }
-		secede_province = AMA
+			limit = { region = BRZ_2408 }
+			secede_province = AMA
 		}
 	}
 }
@@ -71,47 +72,48 @@ country_event = { ######SPA reaction after Partial Peace
 	desc = "AMA3.D"
 		
 	trigger = { 
-	tag = SPA 
-	OR = { has_global_flag = partial_peace has_country_flag = spaCLM } 
-	2414 = { owned_by = AMA }
-	NOT = { 
-		OR = { 
-	has_global_flag = paracash 
-	has_global_flag = paraclaim 
-	has_global_flag = paraabandon
+		tag = SPA
+		exists = yes
+		OR = { has_global_flag = partial_peace has_country_flag = spaCLM } 
+		2414 = { owned_by = AMA }
+		NOT = { 
+			OR = { 
+				has_global_flag = paracash 
+				has_global_flag = paraclaim 
+				has_global_flag = paraabandon
 			}
 		}
 	}
 	
 	mean_time_to_happen = { 
-	days = 1 
+		days = 1 
 	}
 	
 	option = { 
-	name = "98403.A"
-	set_global_flag = paracash 
-	AMA = { country_event = 98404 }
-	prestige = -5 
-	ai_chance = { 
-	factor = 30
+		name = "98403.A"
+		set_global_flag = paracash 
+		AMA = { country_event = 98404 }
+		prestige = -5 
+		ai_chance = { 
+			factor = 30
 		}
 	}
 	
 	option = { 
-	name = "98403.B"
-	set_global_flag = paraclaim 
-	AMA = { country_event = 98412 }
-	ai_chance = { 
-	factor = 60
+		name = "98403.B"
+		set_global_flag = paraclaim 
+		AMA = { country_event = 98412 }
+		ai_chance = { 
+			factor = 60
 		}
 	}
 	
 	option = { 
-	name = "98403.C"
-	set_global_flag = paraabandon
-	AMA = { country_event = 97095 }
-	ai_chance = { 
-	factor = 10 
+		name = "98403.C"
+		set_global_flag = paraabandon
+		AMA = { country_event = 97095 }
+		ai_chance = { 
+			factor = 10 
 		}
 	}
 }
@@ -311,29 +313,30 @@ country_event = { ######SPA reaction after Complete Victory
 	desc = "AMA14.D"
 		
 	trigger = { 
-	tag = SPA 
-	has_global_flag = spaCLM 
-	2414 = { owned_by = AMA }
-	NOT = { 
-		OR = { 
-	has_global_flag = paracash 
-	has_global_flag = paraclaim 
-	has_global_flag = paraabandon
+		tag = SPA
+		exists = yes
+		has_global_flag = spaCLM 
+		2414 = { owned_by = AMA }
+		NOT = { 
+			OR = { 
+				has_global_flag = paracash 
+				has_global_flag = paraclaim 
+				has_global_flag = paraabandon
 			}
 		}
 	}
 	
 	mean_time_to_happen = { 
-	days = 1 
+		days = 1 
 	}
 	
 	option = { 
-	name = "98414.A"
-	AMA = { country_event = 98404 }
-	set_global_flag = paracash
-	prestige = -5 
-	ai_chance = { 
-	factor = 50
+		name = "98414.A"
+		AMA = { country_event = 98404 }
+		set_global_flag = paracash
+		prestige = -5 
+		ai_chance = { 
+			factor = 50
 		}
 	}
 	

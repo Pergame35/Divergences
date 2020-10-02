@@ -614,13 +614,25 @@
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 3015
+		size = 2265
 	}
 	
 	serfs = {
 		culture = hungarian
 		religion = catholic
-		size = 2010
+		size = 1710
+	}
+
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 750
+	}
+	
+	serfs = {
+		culture = hungarian
+		religion = sunni
+		size = 300
 	}	
 
 	aristocrats = {
@@ -651,14 +663,27 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 3180 
+		size = 880 
 	}
 	
 	serfs = {
 		culture = south_german
 		religion = catholic
-		size = 2120 
+		size = 675 
+	}
+
+	farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 2300 
+	}
+	
+	serfs = {
+		culture = bosniak
+		religion = sunni
+		size = 1445 
 	}	
+	
 }
 #Dalmatia Region (320000) #see Montenegro.txt for balance of region 
 #under the rule of Austria in 1836
@@ -973,6 +998,13 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 1785 
+		size = 785 
 	}
+
+	farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 1000 
+	}	
+	
 }

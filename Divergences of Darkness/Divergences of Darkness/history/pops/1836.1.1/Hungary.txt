@@ -290,6 +290,12 @@
 		religion = jewish
 		size = 2900   
 	}
+	
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 1200   
+	}	
 
 	clergymen = {
 		culture = slovene
@@ -351,6 +357,18 @@
 		culture = croat
 		religion = catholic
 		size = 2545 
+	}
+
+	farmers = {
+		culture = turkish
+		religion = sunni
+		size = 5000 
+	}
+	
+	serfs = {
+		culture = turkish
+		religion = sunni
+		size = 3500 
 	}	
 }
 #Baranya Region (232000) #see Croatia.txt for balance of Region
@@ -471,13 +489,25 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 11498
+		size = 4748
 	}
 	
 	serfs = {
 		culture = south_german
 		religion = catholic
-		size = 7047
+		size = 2047
+	}
+
+	farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 6750
+	}
+	
+	serfs = {
+		culture = bosniak
+		religion = sunni
+		size = 5000
 	}	
 
 	officers = {
@@ -639,6 +669,12 @@
 		size = 875    
 	}
 
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 3200    
+	}
+
 	aristocrats = {
 		culture = south_german
 		religion = catholic
@@ -679,14 +715,27 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 9300
+		size = 1200
 	}
 	
 	serfs = {
 		culture = south_german
 		religion = catholic
-		size = 6200
-	}	
+		size = 750
+	}
+
+	farmers = {
+		culture = turkish
+		religion = sunni
+		size = 8200
+	}
+	
+	serfs = {
+		culture = turkish
+		religion = sunni
+		size = 5450
+	}
+	
 }
 #Gyor (384000/96000 POPS) 
 642 = {
@@ -790,6 +839,12 @@
 		size = 495     
 	}
 	
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 1600     
+	}	
+	
 	serfs = {
 		culture = hungarian
 		religion = jewish
@@ -856,7 +911,20 @@
 		culture = slovak
 		religion = catholic
 		size = 11670 
-	}	
+	}
+
+	farmers = {
+		culture = turkish
+		religion = sunni
+		size = 2400 
+	}
+	
+	serfs = {
+		culture = turkish
+		religion = sunni
+		size = 1100 
+	}
+	
 }
 #Szekesfehervar (364000/91000 POPS) 
 643 = {
@@ -932,6 +1000,18 @@
 		culture = hungarian
 		religion = protestant
 		size = 5697    
+	}
+
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 750    
+	}
+	
+	serfs = {
+		culture = hungarian
+		religion = sunni
+		size = 200    
 	}	
 
 	aristocrats = {
@@ -962,14 +1042,38 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 15535
+		size = 5000
 	}
 	
 	serfs = {
 		culture = south_german
 		religion = catholic
-		size = 8365
+		size = 2365
 	}
+	
+	farmers = {
+		culture = turkish
+		religion = sunni
+		size = 4735
+	}
+	
+	serfs = {
+		culture = turkish
+		religion = sunni
+		size = 1200
+	}
+
+	farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 5800
+	}
+	
+	serfs = {
+		culture = bosniak
+		religion = sunni
+		size = 4800
+	}	
 	
 }
 #Kaposvar (392000/98000 POPS) 
@@ -1072,6 +1176,12 @@
 		religion = jewish
 		size = 825     
 	}
+	
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 1200     
+	}	
 
 	clergymen = {
 		culture = south_german
@@ -1095,13 +1205,25 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 4111
+		size = 750
 	}
 
 	serfs = {
 		culture = south_german
 		religion = catholic
-		size = 2414
+		size = 500
+	}
+
+	farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 3361
+	}
+
+	serfs = {
+		culture = bosniak
+		religion = sunni
+		size = 1914
 	}	
 	
 }
@@ -1205,6 +1327,12 @@
 		religion = jewish
 		size = 1275   
 	}
+	
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 3100   
+	}	
 
 	clergymen = {
 		culture = south_german
@@ -1228,8 +1356,14 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 800 
+		size = 250 
 	}
+	
+	farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 550 
+	}	
 }
 #Felvidek Region (320000) #see Slovakia.txt and Ukraine.txt for balance of Region
 #under the rule of Austria in 1836  
@@ -1338,7 +1472,19 @@
 		culture = hungarian
 		religion = jewish
 		size = 530    
-	}	
+	}
+
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 1600    
+	}
+
+	serfs = {
+		culture = hungarian
+		religion = sunni
+		size = 985    
+	}		
 	
 	clergymen = {
 		culture = slovak
@@ -1369,6 +1515,30 @@
 		culture = slovak
 		religion = catholic
 		size = 2640 
+	}	
+	
+	farmers = {
+		culture = turkish
+		religion = sunni
+		size = 2500 
+	}
+
+	serfs = {
+		culture = turkish
+		religion = sunni
+		size = 1750 
+	}
+
+	farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 975 
+	}
+
+	serfs = {
+		culture = bosniak
+		religion = sunni
+		size = 650 
 	}	
 	
 }
@@ -1480,6 +1650,12 @@
 		religion = jewish
 		size = 825     
 	}
+	
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 1300     
+	}	
 
 	clergymen = {
 		culture = slovak
@@ -1505,6 +1681,12 @@
 		religion = catholic
 		size = 915 
 	}
+	
+	farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 1100 
+	}	
 }
 #Szeged (628000/157000 POPS) 
 649 = {
@@ -1617,6 +1799,18 @@
 		culture = hungarian
 		religion = jewish
 		size = 330     
+	}
+
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 1750     
+	}
+	
+	serfs = {
+		culture = hungarian
+		religion = sunni
+		size = 475     
 	}	
 
 	clergymen = {
@@ -1641,14 +1835,26 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 3225  
+		size = 1500  
 	}
 	
 	serfs = {
 		culture = south_german
 		religion = catholic
-		size = 2150  
+		size = 750  
 	}
+	
+	farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 1725  
+	}
+	
+	serfs = {
+		culture = bosniak
+		religion = sunni
+		size = 1400  
+	}	
 	
 }
 #Bekescsab (328000/82000 POPS) 
@@ -1757,6 +1963,12 @@
 		religion = jewish
 		size = 825     
 	}
+	
+	farmers = {
+		culture = hungarian
+		religion = sunni
+		size = 1500     
+	}	
 
 	clergymen = {
 		culture = south_german
@@ -1780,13 +1992,25 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 1072  
+		size = 322  
 	}
 
 	serfs = {
 		culture = south_german
 		religion = catholic
-		size = 603  
+		size = 203  
+	}
+
+	farmers = {
+		culture = bosniak
+		religion = sunni
+		size = 750  
+	}
+
+	serfs = {
+		culture = bosniak
+		religion = sunni
+		size = 400  
 	}	
 	
 }

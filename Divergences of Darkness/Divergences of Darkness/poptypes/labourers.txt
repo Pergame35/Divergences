@@ -109,6 +109,10 @@ country_migration_target = {
 				is_culture_group = english_american
 			}
 			AND = {
+				THIS = { has_pop_culture = rheinish }
+				primary_culture = septiman
+			}
+			AND = {
 				THIS = { is_culture_group = beneluxian }
 				is_culture_group = burgundian_american
 			}	
@@ -119,6 +123,10 @@ country_migration_target = {
 			AND = {
 				THIS = { is_culture_group = scandinavian }
 				is_culture_group = scandinavian_american
+			}
+			AND = {
+				THIS = { is_culture_group = chinese }
+				is_culture_group = oversea_chinese
 			}			
 		}
 	}
