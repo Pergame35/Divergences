@@ -168,8 +168,6 @@ SYC		="countries/Sicily.txt"
 MDV		="countries/Moldova.txt"
 ABK		="countries/Abkhazia.txt"
 CRT		="countries/Corrientes.txt"
-SBA		="countries/Buenos Aires.txt"
-ARC		="countries/Argentine Conf.txt"
 LHJ		="countries/Lahej.txt"
 FDL		="countries/Fadhli.txt"
 KTH		="countries/Kathiri.txt"
@@ -197,11 +195,8 @@ CEQ		= "countries/Equador Confederation.txt"
 ENT		= "countries/Entre Rios.txt"
 GCO		= "countries/Gran Colombia.txt"
 GUY		= "countries/Guyana.txt"
-LOS		= "countries/Los Altos.txt"
 PTG		= "countries/Patagonia.txt"
 RGR		= "countries/Rio Grande.txt"
-SON		= "countries/Sonora.txt"
-SPU		= "countries/South Peru.txt"
 YUC		= "countries/Yucatan.txt"
 SFJ		= "countries/Sudurhafeyjar.txt"
 AZL		= "countries/Federation.txt" 
@@ -215,10 +210,7 @@ LSK		= "countries/Alaska.txt"
 PRI		= "countries/Puerto Rico.txt"
 RPL		= "countries/Rupert's Land.txt"
 TTB		= "countries/Trinidad.txt"
-UIL		= "countries/Illinois.txt"
-UNB		= "countries/Nebraska.txt"
-UNM		= "countries/New Mexico.txt"
-UOR		= "countries/Oregon.txt"
+UNM		= "countries/New Mexico.txt" #Pueblo
 
 #Europe
 ALS		= "countries/Elsass.txt"
@@ -254,7 +246,6 @@ WES		= "countries/Westfalen.txt"
 
 #Russia
 AKH		= "countries/Astrakhan.txt"
-ALT		= "countries/Altai Republic.txt"
 DON		= "countries/Cossackia.txt"
 IZH		= "countries/Ingria.txt"
 KAZ 	= "countries/Kazakhstan.txt"
@@ -264,6 +255,9 @@ TAR 	= "countries/Tatarstan.txt"
 TNT		= "countries/Tannu Tuva.txt"
 URA 	= "countries/Ural Republic.txt"
 YAK 	= "countries/Yakutia.txt"
+MRL 	= "countries/Mari El.txt"
+MRD 	= "countries/Mordvinia.txt"
+CHV 	= "countries/Chuvashia.txt"
 
 #Middle East
 ASY		= "countries/Assyria.txt"
@@ -419,7 +413,6 @@ YZW		= "countries/Yonezawa.txt"
 # Australasia & the Pacific
 AOT     = "countries/Aotearoa.txt"
 FIJ		= "countries/Fiji.txt"
-SNZ     = "countries/South Island.txt"
 TGA		= "countries/Tonga.txt"
 
 ### END OF NEW NATIONS MOD ###
@@ -503,6 +496,7 @@ RUT		= "countries/Ruthenia.txt"
 SIE		= "countries/Siebenburgen.txt"
 UKR		= "countries/Ukraine.txt"
 CZH		= "countries/Czechoslovakia.txt"
+
 
 # Balkans
 ALB		="countries/Albania.txt"

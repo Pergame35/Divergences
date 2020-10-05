@@ -1,21 +1,21 @@
-capital = 1068
-primary_culture = tatar
-religion = sunni
-government = hms_government
-plurality = 0.02
-nationalvalue = nv_order
-literacy = 0.1
+capital = 1028
+primary_culture = mari
+religion = orthodox
+government = absolute_monarchy
+plurality = 0.0
+nationalvalue = nv_tradition
+literacy = 0.01
 civilized = yes
 
 # Political reforms
-slavery = no_slavery
+slavery = yes_slavery
 upper_house_composition = appointed
-vote_franschise = wealth_voting
+vote_franschise = none_voting
 public_meetings = yes_meeting
-press_rights = censored_press
-trade_unions = non_socialist
+press_rights = state_press
+trade_unions = no_trade_unions
 voting_system = first_past_the_post
-political_parties = non_secret_ballots
+political_parties = underground_parties
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -27,22 +27,23 @@ pensions = no_pensions
 school_reforms = no_schools
 
 # New Reforms
-conscription = two_year_draft
-debt_law = serfdom
+conscription = no_draft
+debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
-citizens_rights = culture_voting_only
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
-ruling_party = ALT_conservative
+
+ruling_party = TAR_conservative
 upper_house = {
 	fascist = 0
 	liberal = 13
-	conservative = 68
-	reactionary = 19
+	conservative = 77
+	reactionary = 10
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
 
-set_country_flag = sunni_country
+set_country_flag = orthodox_country
