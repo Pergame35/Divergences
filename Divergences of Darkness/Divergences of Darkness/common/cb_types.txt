@@ -69,7 +69,6 @@ liberate_country
 free_peoples
 free_allied_cores
 free_balkans
-oriental_crisis
 unification_release_puppet_cb
 release_puppet
 release_puppet_AI
@@ -1351,7 +1350,6 @@ free_peoples = {
 			FROM = { tag = BDK }
 			FROM = { tag = SIB }
 			FROM = { tag = YKT }
-			FROM = { tag = ALT }
 			FROM = { tag = URA }
 			FROM = { tag = MCK }
 			FROM = { tag = XIN }
@@ -1385,11 +1383,6 @@ free_peoples = {
 			FROM = { in_sphere = THIS }
 			FROM = { relation = { who = THIS value = 100 } }
 			FROM = { involved_in_crisis = yes }
-			AND = {
-				tag = EGY
-				THIS = { has_country_flag = oriental_crisis_support_OE }
-				FROM = { tag = TUR }
-			}
 			THIS = { ai = no }
 		}
 		any_owned_province = {
@@ -1858,11 +1851,6 @@ liberate_country = {
 			FROM = { in_sphere = THIS }
 			FROM = { relation = { who = THIS value = 100 } }
 			FROM = { involved_in_crisis = yes }
-			AND = {
-				tag = EGY
-				THIS = { has_country_flag = oriental_crisis_support_OE }
-				FROM = { tag = TUR }
-			}
 			THIS = { ai = no }
 		}
 	}
@@ -2124,86 +2112,6 @@ free_balkans = {
 	po_remove_cores = yes
 
 	war_name = WAR_FREE_BALKANS_NAME
-	
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.25
-		}
-	}
-}
-
-oriental_crisis = {
-	sprite_index = 26
-	is_triggered_only = yes
-	months = 12
-	crisis = no
-
-	badboy_factor = 0
-	prestige_factor = 1
-	peace_cost_factor = 1
-	penalty_factor = 1
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 48
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-	
-	always = yes
-
-	can_use = {
-		NOT = { is_our_vassal = THIS }
-		is_vassal = no
-		number_of_states = 2
-		tag = EGY
-		civilized = no
-		has_global_flag = oriental_crisis
-		any_owned_province = { is_core = TUR }
-		NOT = { has_country_modifier = neutrality }
-		NOT = { year = 1860 }
-		OR = {
-			war_with = THIS
-			THIS = {
-				NOT = { has_country_modifier = no_more_war }
-			}
-		}
-		THIS = {
-			has_country_flag = oriental_crisis_support_OE
-			NOT = { truce_with = TUR }
-			OR = {
-				alliance_with = TUR
-				relation = { who = TUR value = 50 }
-			}
-		}
-	}
-
-	# THIS - us
-	# FROM - country scope is possible match?
-	# war target country of goal is scope
-	allowed_countries = {
-		FROM = { tag = TUR }
-		any_owned_province = {
-			is_core = FROM
-			NOT = { is_core = THIS }
-		}
-	}
-
-	# THIS - us
-	# FROM - country scope is possible match?
-	# war target country of goal's state
-	allowed_states = {
-		any_owned_province = { is_core = FROM }
-		#not = { any_owned_province = { is_capital = yes } } #code can deal with capitals they get new state
-	}
-
-	po_transfer_provinces = yes
-
-	war_name = WAR_NAME
 	
 	on_add = {
 		move_issue_percentage = { 
