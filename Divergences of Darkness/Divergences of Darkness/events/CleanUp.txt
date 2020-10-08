@@ -388,7 +388,11 @@ country_event = {
 	picture = "Monarchy"
 	
 	trigger = {
-		government = absolute_monarchy
+		OR = {
+			government = absolute_monarchy
+			government = feudal_monarchy
+			government = khanate			
+		}
 		NOT = { vote_franschise = none_voting }		
 		civilized = yes	
 	}

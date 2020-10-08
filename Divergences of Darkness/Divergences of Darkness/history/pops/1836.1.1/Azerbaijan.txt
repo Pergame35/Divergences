@@ -234,9 +234,46 @@
 	farmers = {
 		culture = dagestani
 		religion = sunni
-		size = 17710
+		size = 13610
 		militancy = 9
 	}
+	
+	aristocrats = {
+		culture = avar
+		religion = sunni
+		size = 50
+	}
+
+	clergymen = {
+		culture = avar
+		religion = sunni
+		size = 50
+	}
+
+	farmers = {
+		culture = avar
+		religion = sunni
+		size = 4000
+	}
+
+	artisans = {
+		culture = lezgin
+		religion = sunni
+		size = 100
+	}
+
+	soldiers = {
+		culture = lezgin
+		religion = sunni
+		size = 100
+	}
+
+	farmers = {
+		culture = lezgin
+		religion = sunni
+		size = 4600
+	}
+	
 }
 #Sheki (24000/6000 POPS)
 1104 = {
@@ -303,39 +340,35 @@
 	}
 
 	aristocrats = {
-		culture = dagestani
+		culture = lezgin
 		religion = sunni
-		size = 210
-		militancy = 9
+		size = 50
 	}
 
 	clergymen = {
-		culture = dagestani
+		culture = lezgin
 		religion = sunni
-		size = 300
-		militancy = 9
+		size = 100
 	}
 
 	artisans = {
-		culture = dagestani
+		culture = lezgin
 		religion = sunni
-		size = 465
-		militancy = 9
+		size = 150
 	}
 
 	soldiers = {
-		culture = dagestani
+		culture = lezgin
 		religion = sunni
-		size= 550
-		militancy = 9
+		size = 100
 	}
-
+	
 	farmers = {
-		culture = dagestani
+		culture = avar
 		religion = sunni
-		size = 10005
-		militancy = 9
-	}
+		size = 2600
+	}	
+	
 }
 #Ganja (68000/17000 POPS)
 1105 = {

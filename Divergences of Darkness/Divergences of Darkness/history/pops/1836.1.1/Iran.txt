@@ -1633,8 +1633,14 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 88950
+		size = 78000
 	}
+	
+	farmers = {
+		culture = khalaj
+		religion = shiite
+		size = 10950
+	}	
 
 	clergymen = {
 		culture = sephardic
@@ -1714,8 +1720,15 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 16750
+		size = 10000
 	}
+	
+	farmers = {
+		culture = khalaj
+		religion = shiite
+		size = 6750
+	}
+	
 }
 #Kashan (112000/28000 POPS)
 1129 = {
@@ -1747,8 +1760,14 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 28975
+		size = 23975
 	}
+	
+	farmers = {
+		culture = khalaj
+		religion = shiite
+		size = 5000
+	}	
 
 	clergymen = {
 		culture = sephardic
@@ -1791,8 +1810,14 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 29450
+		size = 25950
 	}
+	
+	farmers = {
+		culture = khalaj
+		religion = shiite
+		size = 3500
+	}	
 
 	clergymen = {
 		culture = sephardic
@@ -2043,7 +2068,7 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 9875
+		size = 4275
 	}
 
 	aristocrats = {
@@ -2063,6 +2088,12 @@
 		religion = shiite
 		size = 2275
 	}
+	
+	farmers = {
+		culture = turkmen
+		religion = shiite
+		size = 4600
+	}	
 
 	clergymen = {
 		culture = sephardic
@@ -2131,7 +2162,7 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 19325
+		size = 9325
 	}
 
 	aristocrats = {
@@ -2155,8 +2186,14 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 21825
+		size = 11000
 	}
+	
+	farmers = {
+		culture = turkmen
+		religion = shiite
+		size = 20825
+	}	
 
 	clergymen = {
 		culture = sephardic
@@ -2235,7 +2272,7 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 11675
+		size = 6675
 	}
 
 	artisans = {
@@ -2247,8 +2284,15 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 15675
+		size = 5000
 	}
+	
+	farmers = {
+		culture = persian
+		religion = shiite
+		size = 15675
+	}	
+	
 }
 #Yasuj (144000/36000 POPS)
 1137 = {
@@ -2291,8 +2335,15 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 19100
+		size = 13100
 	}
+	
+	farmers = {
+		culture = khalaj
+		religion = shiite
+		size = 6000
+	}	
+	
 }
 #Kangan (48000/12000 POPS)
 1138 = {
@@ -2323,7 +2374,7 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 8925
+		size = 4425
 	}
 
 	artisans = {
@@ -2341,8 +2392,15 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 5025
+		size = 2025
 	}
+	
+	farmers = {
+		culture = persian
+		religion = shiite
+		size = 6500
+	}	
+	
 }
 #Sirjan (16000/4000 POPS)
 1139 = {
@@ -2373,8 +2431,15 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 4975
+		size = 3975
 	}
+	
+	farmers = {
+		culture = khalaj
+		religion = shiite
+		size = 1000
+	}	
+	
 }
 #Kerman Region (332000)
 #under the rule of Persia in 1836
@@ -2419,8 +2484,14 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 22025
+		size = 17000
 	}
+	
+	farmers = {
+		culture = khalaj
+		religion = shiite
+		size = 5025
+	}	
 
 	clergymen = {
 		culture = parsi
@@ -2626,8 +2697,14 @@
 	farmers = {
 		culture = persian
 		religion = shiite
-		size = 10975
+		size = 8475
 	}
+	
+	farmers = {
+		culture = khalaj
+		religion = shiite
+		size = 2500
+	}	
 
 	aristocrats = {
 		culture = baluchi
@@ -3160,6 +3237,12 @@
 		religion = shiite
 		size = 1025
 	}
+	
+	farmers = {
+		culture = mashriqi
+		religion = shiite
+		size = 500
+	}	
 	
 	farmers = {
 		culture = bedouin

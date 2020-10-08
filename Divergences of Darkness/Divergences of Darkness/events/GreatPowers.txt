@@ -1354,35 +1354,6 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = 19301
-	title = "EVTNAME19301"
-	desc = "EVTDESC19301"
-	major = yes
-	
-	fire_only_once = yes
-	
-	trigger = {
-	tag = USA
-	has_country_modifier = the_statue_of_liberty
-	OR = {
-		NOT = { government = democracy }
-		AND = {
-			has_global_flag = disunited_states
-			has_global_flag = second_american_civil_war
-			}
-		}
-	}
-		
-	mean_time_to_happen = { months = 1 }
-	
-	
-	option = {
-		name = "EVTOPTA19301"
-		remove_country_modifier = the_statue_of_liberty
-	}
-}
-
 # The Mandate of Heaven
 country_event = {
 	id = 19310

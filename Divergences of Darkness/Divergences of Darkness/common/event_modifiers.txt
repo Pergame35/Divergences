@@ -2658,3 +2658,43 @@ kongo_missionaries = {
 	core_pop_militancy_modifier = 0.05
 	icon = 5
 }
+
+### Ideological Strongholds ###
+reactionary_stronghold = {
+	pop_consciousness_modifier = -0.2
+	icon = 3
+}
+
+conservative_stronghold = {
+	pop_consciousness_modifier = -0.1
+	pop_militancy_modifier = -0.05
+	icon = 3
+}
+
+liberal_stronghold = {
+	pop_consciousness_modifier = 0.1
+	icon = 3
+}
+
+anarcho_liberal_stronghold = {
+	pop_consciousness_modifier = 0.1
+	pop_militancy_modifier = 0.05
+	icon = 3
+}
+
+socialist_stronghold = {
+	pop_consciousness_modifier = 0.1
+	icon = 3
+}
+
+communist_stronghold = {
+	pop_consciousness_modifier = 0.1
+	pop_militancy_modifier = 0.05
+	icon = 3
+}
+
+fascist_stronghold = {
+	pop_consciousness_modifier = -0.1
+	pop_militancy_modifier = 0.05
+	icon = 3
+}

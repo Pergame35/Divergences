@@ -503,7 +503,7 @@
 	farmers = {
 		culture = georgian
 		religion = orthodox
-		size = 35675
+		size = 30675
 	}
 
 	clergymen = {
@@ -523,6 +523,19 @@
 		religion = sunni
 		size = 3150
 	}
+	
+	farmers = {
+		culture = greek
+		religion = orthodox
+		size = 5500
+	}
+	
+	farmers = {
+		culture = abkhaz
+		religion = orthodox
+		size = 1000
+	}	
+	
 }
 #Sukhumi (72000/18000 POPS) #north_caucasian = abkhaz
 1095 = {
@@ -547,7 +560,7 @@
 	soldiers = {
 		culture = georgian
 		religion = orthodox
-		size= 100
+		size= 1100
 	}
 
 	farmers = {
@@ -557,87 +570,66 @@
 	}
 
 	aristocrats = {
-		culture = russian
-		religion = orthodox
-		size = 400
-	}
-
-	clergymen = {
-		culture = russian
+		culture = abkhaz
 		religion = orthodox
 		size = 150
 	}
 
+	clergymen = {
+		culture = abkhaz
+		religion = orthodox
+		size = 75
+	}
+
 	artisans = {
-		culture = russian
+		culture = abkhaz
 		religion = orthodox
-		size = 750
+		size = 450
 	}
-
-	soldiers = {
-		culture = russian
-		religion = orthodox
-		size= 1000
-	}
-
+	
 	farmers = {
-		culture = russian
+		culture = abkhaz
 		religion = orthodox
-		size = 13225
+		size = 28225
 	}
 
 	aristocrats = {
-		culture = north_caucasian
+		culture = abkhaz
 		religion = sunni
-		size = 1050
-		militancy = 9
+		size = 100
 	}
 
 	clergymen = {
-		culture = north_caucasian
+		culture = abkhaz
 		religion = sunni
-		size = 720
-		militancy = 9
+		size = 50
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = abkhaz
 		religion = sunni
-		size = 4500
-		militancy = 9
+		size = 250
 	}
 
 	soldiers = {
-		culture = north_caucasian
+		culture = abkhaz
+		religion = sunni
+		size = 50
+	}
+
+	farmers = {
+		culture = abkhaz
+		religion = sunni
+		size = 20550
+	}
+
+	soldiers = {
+		culture = abkhaz
 		religion = sunni
 		size= 3000
 		militancy = 9
 	}
 
-	farmers = {
-		culture = north_caucasian
-		religion = sunni
-		size = 28500
-		militancy = 9
-	}
-
-	aristocrats = {
-		culture = north_caucasian
-		religion = orthodox
-		size = 400
-	}
-
-	clergymen = {
-		culture = north_caucasian
-		religion = orthodox
-		size = 185
-	}
-
-	farmers = {
-		culture = north_caucasian
-		religion = orthodox
-		size = 850
-	}
 }
 #Kars Region (76000) #see Turkey.txt for balance of region  
 #under the rule of Ottoman Empire in 1836  

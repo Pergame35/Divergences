@@ -137,10 +137,6 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 1.5
-				FROM = { tag = USA }
-			}
-			modifier = {
 				factor = 2
 				NOT = { has_country_modifier = egyptian_excavations }
 			}
