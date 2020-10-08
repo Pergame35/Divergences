@@ -414,6 +414,19 @@
 		religion = orthodox
 		size = 200
 	}
+	
+	artisans = {
+		culture = krymchak
+		religion = jewish
+		size = 50
+	}
+
+	farmers = {
+		culture = krymchak
+		religion = jewish
+		size = 150
+	}
+	
 }
 #Kuban Region (520000)
 #under the rule of Russia in 1836
@@ -461,6 +474,19 @@
 		religion = orthodox
 		size = 800
 	}
+	
+	artisans = {
+		culture = krymchak
+		religion = jewish
+		size = 300
+	}
+
+	farmers = {
+		culture = krymchak
+		religion = jewish
+		size = 500
+	}	
+	
 }
 #Temen (60000/15000 POPS)
 1049 = {
@@ -720,21 +746,18 @@
 		culture = north_caucasian
 		religion = sunni
 		size = 4250
-		militancy = 9
 	}
 
 	clergymen = {
 		culture = north_caucasian
 		religion = sunni
 		size = 2000
-		militancy = 9
 	}
 
 	artisans = {
 		culture = north_caucasian
 		religion = sunni
 		size = 11000
-		militancy = 9
 	}
 
 	soldiers = {
@@ -749,7 +772,6 @@
 		religion = sunni
 		size= 3000
 
-		militancy = 9
 	}
 
 	soldiers = {
@@ -757,7 +779,6 @@
 		religion = sunni
 		size= 3000
 
-		militancy = 9
 	}
 
 	soldiers = {
@@ -765,7 +786,6 @@
 		religion = sunni
 		size= 3000
 
-		militancy = 9
 	}
 
 	soldiers = {
@@ -773,7 +793,6 @@
 		religion = sunni
 		size= 3000
 
-		militancy = 9
 	}
 
 	soldiers = {
@@ -781,7 +800,6 @@
 		religion = sunni
 		size= 3000
 
-		militancy = 9
 	}
 
 	soldiers = {
@@ -789,15 +807,20 @@
 		religion = sunni
 		size= 3000
 
-		militancy = 9
 	}
 
 	farmers = {
 		culture = north_caucasian
 		religion = sunni
-		size = 135750
-		militancy = 9
+		size = 75750
 	}
+	
+	farmers = {
+		culture = karachai
+		religion = sunni
+		size = 65175
+	}	
+	
 }
 #Dagestan Region (324000)
 #under the rule of Russia in 1836
@@ -854,8 +877,26 @@
 	farmers = {
 		culture = dagestani
 		religion = sunni
-		size = 31400
+		size = 21400
 	}
+	
+	farmers = {
+		culture = lezgin
+		religion = sunni
+		size = 2000
+	}
+	
+	farmers = {
+		culture = avar
+		religion = sunni
+		size = 6000
+	}
+	
+	farmers = {
+		culture = lak
+		religion = orthodox
+		size = 12000
+	}	
 
 	clergymen = {
 		culture = sephardic
@@ -904,25 +945,20 @@
 		religion = sunni
 		size = 1950
 	}
+	
+	farmers = {
+		culture = lezgin
+		religion = sunni
+		size = 5000
+	}	
+	
 }
 #Gunib (164000/41000 POPS)
 1053 = {
 	aristocrats = {
 		culture = dagestani
 		religion = sunni
-		size = 800
-	}
-
-	clergymen = {
-		culture = dagestani
-		religion = sunni
-		size = 450
-	}
-
-	artisans = {
-		culture = dagestani
-		religion = sunni
-		size = 1860
+		size = 75
 	}
 
 	soldiers = {
@@ -931,16 +967,10 @@
 		size= 2500
 	}
 
-	farmers = {
-		culture = dagestani
-		religion = sunni
-		size = 29200
-	}
-
 	artisans = {
 		culture = dagestani
 		religion = sunni
-		size = 1350
+		size = 350
 	}
 
 	soldiers = {
@@ -952,8 +982,38 @@
 	farmers = {
 		culture = dagestani
 		religion = sunni
-		size = 14350
+		size = 4350
 	}
+	
+	aristocrats = {
+		culture = avar
+		religion = sunni
+		size = 650
+	}
+
+	clergymen = {
+		culture = avar
+		religion = sunni
+		size = 350
+	}
+
+	artisans = {
+		culture = avar
+		religion = sunni
+		size = 1750
+	}
+
+	soldiers = {
+		culture = avar
+		religion = sunni
+		size = 4350
+	}
+
+	farmers = {
+		culture = avar
+		religion = sunni
+		size = 32200
+	}	
 
 	clergymen = {
 		culture = sephardic
@@ -998,9 +1058,9 @@
 	}
 
 	farmers = {
-		culture = azerbaijani
+		culture = lak
 		religion = sunni
-		size = 4975
+		size = 4775
 	}
 }
 
@@ -1113,21 +1173,33 @@
 #Grozny (68000/17000 POPS)
 1055 = {
 	aristocrats = {
-		culture = dagestani
+		culture = chechen
 		religion = sunni
-		size = 400
+		size = 1325
 	}
 
 	clergymen = {
-		culture = dagestani
+		culture = chechen
 		religion = sunni
-		size = 255
+		size = 1175
 	}
 
 	artisans = {
-		culture = dagestani
+		culture = chechen
 		religion = sunni
-		size = 1250
+		size = 3850
+	}
+
+	soldiers = {
+		culture = chechen
+		religion = sunni
+		size = 42650
+	}
+
+	farmers = {
+		culture = chechen
+		religion = sunni
+		size = 99000
 	}
 
 	soldiers = {
@@ -1137,52 +1209,11 @@
 	}
 
 	farmers = {
-		culture = dagestani
+		culture = ingush
 		religion = sunni
-		size = 17500
-	}
-
-	farmers = {
-		culture = dagestani
-		religion = sunni
-		size = 7805
-	}
-
-	clergymen = {
-		culture = ossetian
-		religion = orthodox
-		size = 300
-	}
-
-	artisans = {
-		culture = ossetian
-		religion = orthodox
-		size = 790
-	}
-
-	farmers = {
-		culture = ossetian
-		religion = orthodox
-		size = 1050
-	}
-
-	aristocrats = {
-		culture = ossetian
-		religion = animist
-		size = 120
-	}
-
-	clergymen = {
-		culture = ossetian
-		religion = animist
-		size = 300
-	}
-
-	farmers = {
-		culture = ossetian
-		religion = animist
-		size = 4320
-	}
+		size = 80000
+	}	
+	
 }
 #Pyatigorsk (136000/34000 POPS)
 1056 = {
@@ -1283,45 +1314,63 @@
 		religion = sunni
 		size = 670
 	}
+	
+	aristocrats = {
+		culture = kumyk
+		religion = orthodox
+		size = 125
+	}
+
+	clergymen = {
+		culture = kumyk
+		religion = orthodox
+		size = 75
+	}
 
 	artisans = {
-		culture = dagestani
+		culture = kumyk
 		religion = orthodox
-		size = 340
+		size = 2350
+	}
+
+	soldiers = {
+		culture = kumyk
+		religion = orthodox
+		size = 2075
 	}
 
 	farmers = {
-		culture = dagestani
+		culture = kumyk
 		religion = orthodox
 		size = 8950
-	}
+	}	
 
 	aristocrats = {
-		culture = dagestani
+		culture = kumyk
 		religion = sunni
 		size = 180
 	}
 
 	clergymen = {
-		culture = dagestani
+		culture = kumyk
 		religion = sunni
 		size = 130
 	}
 
 	artisans = {
-		culture = dagestani
+		culture = kumyk
 		religion = sunni
 		size = 475
 	}
 
 	soldiers = {
-		culture = dagestani
+		culture = kumyk
 		religion = sunni
 		size= 3000
 	}
 
 	farmers = {
-		culture = dagestani
+		culture = kumyk
 		religion = sunni
 		size = 16775
 	}

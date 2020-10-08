@@ -844,6 +844,7 @@ CHI_presidential_dictatorship;Chinese Empire;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;
 CHI_proletarian_dictatorship;People's Republic of China;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 CHI_democracy;Republic of China;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 CHI_absolute_monarchy;China;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+CHI_khanate;Empire of the Great Khan;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 CHI;China;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 CHO;Chugoku;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 CHO_ADJ;Chugokuan;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -3620,6 +3621,7 @@ ARY_ADJ;Aryan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ASK;Astrakhan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ASK_ADJ;Astrakhan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ASK_feudal_monarchy;Astrakhan Khanate;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ASK_khanate;Astrakhan Khanate;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ASK_absolute_monarchy;Astrakhan Khanate;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ATL;Atlantia;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ATL_ADJ;Atlantian;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -3635,6 +3637,8 @@ AZB;Azerbaijan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AZB_ADJ;Azeri;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AZB_feudal_monarchy;Shaki Khanate;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AZB_feudal_monarchy_ADJ;Shaki;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+AZB_khanate;Shaki Khanate;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+AZB_khanate_ADJ;Shaki;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AZB_absolute_monarchy;Azerbaijan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AZB_absolute_monarchy_ADJ;Azeri;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AZB_prussian_constitutionalism;Azerbaijan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -4002,6 +4006,7 @@ NOG_ADJ;Nogai;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 NOG_proletarian_dictatorship;The People's Republic of Nogai;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 NOG_fascist_dictatorship;The State of Nogai;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 NOG_feudal_monarchy;The Nogai Horde;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+NOG_khanate;The Nogai Horde;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 NOG_absolute_monarchy;The Nogai Khanate;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 NOG_prussian_constitutionalism;The Nogai Khanate;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 NOG_hms_government;The Nogai Khanate;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -4261,3 +4266,23 @@ UDM_proletarian_dictatorship;The Udmurt ASSR;;;;;;;;;;;;x
 CHV;Chuvashia;;;;;;;;;;;;x
 CHV_ADJ;Chuvash;;;;;;;;;;;;x
 CHV_proletarian_dictatorship;The Chuvash ASSR;;;;;;;;;;;;x
+KOM;Komia;;;;;;;;;;;;x
+KOM_ADJ;Komi;;;;;;;;;;;;x
+BSK;Bashkiria;;;;;;;;;;;;x
+BSK_ADJ;Bashkir;;;;;;;;;;;;x
+KMY;Kumykia;;;;;;;;;;;;x
+KMY_ADJ;Kumyk;;;;;;;;;;;;x
+KRI;Karachay;;;;;;;;;;;;x
+KRI_ADJ;Karachay;;;;;;;;;;;;x
+AVR;Avaristan;;;;;;;;;;;;x
+AVR_ADJ;Avar;;;;;;;;;;;;x
+ING;Ingushetia;;;;;;;;;;;;x
+ING_ADJ;Ingush;;;;;;;;;;;;x
+LEZ;Lekia;;;;;;;;;;;;x
+LEZ_ADJ;Lezgin;;;;;;;;;;;;x
+LAK;Lakia;;;;;;;;;;;;x
+LAK_ADJ;Lak;;;;;;;;;;;;x
+OSS;Ossetia;;;;;;;;;;;;x
+OSS_ADJ;Ossetian;;;;;;;;;;;;x
+KLJ;Khalajstan;;;;;;;;;;;;x
+KLJ_ADJ;Khalaj;;;;;;;;;;;;x

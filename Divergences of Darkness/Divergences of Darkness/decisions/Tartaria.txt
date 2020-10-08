@@ -69,6 +69,7 @@ political_decisions = {
     }
     #Makes Sevestapol and Astrakhan grow. More POPs for a unified Tataristan.
     TAR_encourage_sedentarization = {
+		picture = tatar_sedentarization	
         potential = {
             tag = TAR
             NOT = { has_country_flag = TAR_urbanization}
@@ -96,6 +97,33 @@ political_decisions = {
                         duration = 1825
                     }     
             }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+
+    }
+
+    #Accept Krymchaks after secularising society
+    TAR_krymchak = {
+		picture = krymchak
+        potential = {
+            OR = {
+				tag = TAR
+				tag = CRI
+			}
+            has_country_flag = secularized_muslim_society
+            NOT = { has_country_flag = abolished_jizya}
+        }
+        allow = {
+            civilized = yes
+            owns = 967 #Sebestapol
+            revolution_n_counterrevolution = 1
+
+        }
+        effect = {
+            set_country_flag = abolished_jizya
+			add_accepted_culture = krymchak
         }
         ai_will_do = {
             factor = 1

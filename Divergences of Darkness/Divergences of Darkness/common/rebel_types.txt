@@ -24,10 +24,13 @@ reactionary_rebels = {
 		presidential_dictatorship = absolute_monarchy
 		bourgeois_dictatorship = presidential_dictatorship
 		fascist_dictatorship = presidential_dictatorship
+		feudal_monarchy = feudal_monarchy		
+		khanate = khanate		
 		absolute_monarchy = absolute_monarchy
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = presidential_dictatorship
+		merchant_republic = presidential_dictatorship		
 		theocracy = absolute_monarchy
 	}
 	
@@ -307,10 +310,13 @@ fascist_rebels = {
 		presidential_dictatorship = fascist_dictatorship
 		bourgeois_dictatorship = fascist_dictatorship
 		fascist_dictatorship = fascist_dictatorship
+		feudal_monarchy = fascist_dictatorship
+		khanate = fascist_dictatorship		
 		absolute_monarchy = fascist_dictatorship
 		prussian_constitutionalism = fascist_dictatorship
 		hms_government = fascist_dictatorship
 		democracy = fascist_dictatorship
+		merchant_republic = fascist_dictatorship		
 		theocracy = fascist_dictatorship
 	}
 	
@@ -593,10 +599,13 @@ communist_rebels = {
 		presidential_dictatorship = proletarian_dictatorship
 		bourgeois_dictatorship = proletarian_dictatorship
 		fascist_dictatorship = proletarian_dictatorship
+		feudal_monarchy = proletarian_dictatorship
+		khanate = proletarian_dictatorship		
 		absolute_monarchy = proletarian_dictatorship
 		prussian_constitutionalism = proletarian_dictatorship
 		hms_government = proletarian_dictatorship
 		democracy = proletarian_dictatorship
+		merchant_republic = proletarian_dictatorship		
 		theocracy = proletarian_dictatorship
 	}
 	
@@ -875,10 +884,13 @@ anarcho_liberal_rebels = {
 		presidential_dictatorship = bourgeois_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
 		fascist_dictatorship = bourgeois_dictatorship
+		feudal_monarchy = bourgeois_dictatorship
+		khanate = bourgeois_dictatorship		
 		absolute_monarchy = bourgeois_dictatorship
 		prussian_constitutionalism = bourgeois_dictatorship
 		hms_government = bourgeois_dictatorship
 		democracy = bourgeois_dictatorship
+		merchant_republic = bourgeois_dictatorship		
 		theocracy = bourgeois_dictatorship
 	}
 	
@@ -1184,10 +1196,13 @@ nationalist_rebels = {
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
 		fascist_dictatorship = fascist_dictatorship
+		feudal_monarchy = feudal_monarchy
+		khanate = khanate
 		absolute_monarchy = absolute_monarchy
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		merchant_republic = democracy		
 		theocracy = theocracy
 	}
 	
@@ -1470,10 +1485,13 @@ pan_nationalist_rebels = {
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
 		fascist_dictatorship = fascist_dictatorship
+		feudal_monarchy = feudal_monarchy
+		khanate = khanate		
 		absolute_monarchy = absolute_monarchy
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		merchant_republic = democracy		
 		theocracy = theocracy
 	}
 
@@ -1555,13 +1573,6 @@ pan_nationalist_rebels = {
 		}
 		modifier = {
 			factor = 0
-			country = {
-				tag = KUK
-				NOT = { has_country_flag = austrian_greater_germany }
-			}
-		}
-		modifier = {
-			factor = 0
 			country = { tag = DNB }
 		}
 		modifier = {
@@ -1572,10 +1583,6 @@ pan_nationalist_rebels = {
 			factor = 0
 			country = { tag = CAT }
 		}		
-		modifier = {
-			factor = 0
-			country = { has_country_flag = post_colonial_country }
-		}
 		modifier = {
 			factor = 0
 			country = {
@@ -1825,10 +1832,13 @@ red_shirts = {
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
 		fascist_dictatorship = fascist_dictatorship
+		feudal_monarchy = feudal_monarchy
+		khanate = khanate		
 		absolute_monarchy = absolute_monarchy
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		merchant_republic = merchant_republic		
 		theocracy = democracy
 	}
 
@@ -2061,10 +2071,13 @@ indian_nationalists = {
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
 		fascist_dictatorship = fascist_dictatorship
+		feudal_monarchy = feudal_monarchy
+		khanate = khanate		
 		absolute_monarchy = absolute_monarchy
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		merchant_republic = merchant_republic		
 		theocracy = theocracy
 	}
 
@@ -2275,10 +2288,13 @@ liberal_rebels = {
 		presidential_dictatorship = democracy
 		bourgeois_dictatorship = democracy
 		fascist_dictatorship = democracy
+		feudal_monarchy = hms_government
+		khanate = hms_government		
 		absolute_monarchy = hms_government
 		prussian_constitutionalism = hms_government
 		hms_government = democracy
 		democracy = democracy
+		merchant_republic = democracy		
 		theocracy = democracy
 	}
 	
@@ -2711,10 +2727,13 @@ unciv_reactionary_rebels = {
 		presidential_dictatorship = absolute_monarchy
 		bourgeois_dictatorship = absolute_monarchy
 		fascist_dictatorship = absolute_monarchy
+		feudal_monarchy = feudal_monarchy
+		khanate = khanate		
 		absolute_monarchy = absolute_monarchy
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = absolute_monarchy
+		merchant_republic = absolute_monarchy		
 		theocracy = absolute_monarchy
 	}
 	
@@ -2948,10 +2967,13 @@ separatist_rebels = {
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
 		fascist_dictatorship = fascist_dictatorship
+		feudal_monarchy = feudal_monarchy
+		khanate = khanate		
 		absolute_monarchy = absolute_monarchy
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		merchant_republic = merchant_republic		
 		theocracy = theocracy
 	}
 	
@@ -3204,11 +3226,14 @@ socialist_rebels = {
 		presidential_dictatorship = democracy
 		bourgeois_dictatorship = democracy
 		fascist_dictatorship = democracy
+		feudal_monarchy = democracy
+		khanate = democracy		
 		absolute_monarchy = democracy
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
 		theocracy = democracy
+		merchant_republic = democracy		
 	}
 	
 	
@@ -3676,10 +3701,13 @@ independence_rebels = {
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
 		fascist_dictatorship = fascist_dictatorship
+		feudal_monarchy = feudal_monarchy
+		khanate = khanate		
 		absolute_monarchy = absolute_monarchy
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		merchant_republic = merchant_republic		
 		theocracy = theocracy
 	}
 	
@@ -3837,10 +3865,13 @@ turkish_nationalist_rebels = {
 		presidential_dictatorship = democracy
 		bourgeois_dictatorship = democracy
 		fascist_dictatorship = democracy
+		feudal_monarchy = democracy	
+		khanate = democracy		
 		absolute_monarchy = democracy
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
+		merchant_republic = democracy		
 		theocracy = theocracy
 	}
 	
@@ -4079,10 +4110,13 @@ native_rebels = {
 		presidential_dictatorship = democracy
 		bourgeois_dictatorship = democracy
 		fascist_dictatorship = democracy
+		feudal_monarchy = democracy
+		khanate = democracy		
 		absolute_monarchy = democracy
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
+		merchant_republic = democracy		
 		theocracy = democracy
 	}
 	
@@ -4263,10 +4297,13 @@ sioux_nation = {
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
 		fascist_dictatorship = fascist_dictatorship
+		feudal_monarchy = feudal_monarchy
+		khanate = khanate		
 		absolute_monarchy = absolute_monarchy
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		merchant_republic = merchant_republic		
 		theocracy = theocracy
 	}
 
@@ -4386,10 +4423,13 @@ apache = {
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
 		fascist_dictatorship = fascist_dictatorship
+		feudal_monarchy = feudal_monarchy
+		khanate = khanate		
 		absolute_monarchy = absolute_monarchy
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		merchant_republic = merchant_republic		
 		theocracy = democracy
 	}
 

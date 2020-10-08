@@ -1041,3 +1041,35 @@ province_event = {
 		}
 	}
 }
+
+country_event = {  ### Event for Arabia to gain PROV1806 if they own Khartoum (PROV1827)
+
+	id = 22262
+
+	title = "EVTNAME22262"
+	desc = "EVTDESC22262"
+	picture = "khartoum"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = UAR
+		exists = yes
+		1806 = { empty = yes }
+		war = no
+		owns = 1827
+	}
+
+	mean_time_to_happen = {
+		months = 18
+	}
+
+	option = {
+		name = "EVTOPTA22262"
+		1806 = { secede_province = THIS }
+		1806 = { add_core = THIS }		
+		ai_chance = {
+			factor = 100
+		}	
+	}
+}
