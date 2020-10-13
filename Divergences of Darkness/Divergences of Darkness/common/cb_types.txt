@@ -98,6 +98,7 @@ annex_africa
 annex_africa_full
 annex_india_AI
 annex_india_full_AI
+caliphate_jihad_cb
 establish_protectorate_BC_casus_belli
 establish_protectorate_NI_casus_belli
 establish_protectorate_casus_belli
@@ -6248,5 +6249,80 @@ annex_india_full_AI = {
 			to = pro_military
 			value = 0.1
 		}
+	}
+}
+
+
+caliphate_jihad_cb = {
+	sprite_index = 29
+	is_triggered_only = no
+	months = 12
+	
+	badboy_factor = 0.0
+	prestige_factor = 2
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 1
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	always = yes
+
+	can_use = {
+		neighbour = THIS
+		NOT = { is_our_vassal = THIS }
+		NOT = {
+			OR = {
+				has_country_flag = sunni_country
+				has_country_flag = shiite_country
+				has_country_flag = ibadi_country
+			}
+		}
+		THIS = {
+			has_country_flag = declared_permanent_jihad
+			NOT = { has_country_flag = secularized_muslim_society }
+			NOT = { has_country_flag = jihad_broken }
+			NOT = { has_country_modifier = no_more_war }
+			NOT = { has_country_modifier = neutrality }
+			NOT = { has_recently_lost_war = yes }
+			OR = {
+				government = theocracy
+				government = absolute_monarchy
+			}
+		}
+	}
+
+	po_annex = yes
+	
+	war_name = WAR_CONQUEST_NAME
+	
+	on_add = {
+		badboy = 10
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+		FROM = {
+			any_pop = {
+				militancy = -2.0
+			}
+			casus_belli = {
+				target = THIS
+				type = cut_down_to_size
+				months = 120
+			}
+		}
+		country_event = 90671
+	}
+	
+	on_po_accepted = {
+		country_event = 90672
 	}
 }
