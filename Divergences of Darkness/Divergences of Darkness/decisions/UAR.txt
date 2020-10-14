@@ -20,6 +20,10 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						empty = yes
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
 					}
 				}
 			}
@@ -28,6 +32,10 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						empty = yes
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
 					}
 				}
 			}
@@ -36,6 +44,10 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						empty = yes
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
 					}
 				}
 			}
@@ -45,6 +57,10 @@ political_decisions = {
 						OR = {
 							owned_by = THIS
 							empty = yes
+							owner = {
+								in_sphere = THIS
+								war = no
+							}
 						}
 					}
 				}
@@ -53,6 +69,10 @@ political_decisions = {
 						OR = {
 							owned_by = THIS
 							empty = yes
+							owner = {
+								in_sphere = THIS
+								war = no
+							}
 						}
 					}
 				}
@@ -61,6 +81,10 @@ political_decisions = {
 						OR = {
 							owned_by = THIS
 							empty = yes
+							owner = {
+								in_sphere = THIS
+								war = no
+							}
 						}
 					}
 				}
@@ -147,7 +171,42 @@ political_decisions = {
 			add_core = 1758 
 			add_core = 1734
 			add_core = 1740
-			add_core = 1731			
+			add_core = 1731
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					OR = {
+						tag = TRI
+						tag = ALH
+						tag = HDJ
+						tag = IRQ
+						tag = ABU
+						tag = DAR
+						tag = FUN
+						tag = OMA
+						tag = YEM
+						tag = NEJ
+						tag = JOR
+						tag = SYR
+						tag = EGY
+					}
+				}
+				annex_to = THIS
+			}
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					any_owned_province = {
+						is_core = UAR
+					}
+				}
+				any_owned = {
+					limit = {
+						is_core = UAR
+					}
+					secede_province = THIS
+				}
+			}
 			capital = 1745
 		}
 		ai_will_do = {
