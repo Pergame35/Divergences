@@ -226,24 +226,27 @@ country_event = {
 	desc = "334307.D"
 	
 	trigger = { 
-	tag = JAP 
-	year = 1915 
-	NOT = { YKT = { exists = yes } } 
-	YKT = { all_core = { owned_by = THIS } }
+		tag = JAP 
+		year = 1915 
+		NOT = { YKT = { exists = yes } } 
+		YKT = { all_core = { owned_by = THIS } }
 	} 
 	
 	mean_time_to_happen = { 
-	months = 20
+		months = 20
 	}
 	
 	option = { 
-	name = "334307.A"
-	release_vassal = YKT
-	YKT = { civilized = yes }
-	relation = { who = YKT value = 200 }
-	diplomatic_influence = { who = YKT value = 300 }
-	ai_chance = { 
-		factor = 100 
+		name = "334307.A"
+		release_vassal = YKT
+		YKT = { 
+			civilized = yes
+			government = colonial_company
+		}
+		relation = { who = YKT value = 200 }
+		diplomatic_influence = { who = YKT value = 300 }
+		ai_chance = { 
+			factor = 100 
 		}
 	}
 	

@@ -66,16 +66,16 @@ political_decisions = {
 	reclaim_croatia = { 
 	
 		potential = { 
-		tag = HUN 
-		OR = { 
-		is_greater_power = yes 
-		has_country_flag = holy_crown
+			tag = HUN 
+			OR = { 
+				is_greater_power = yes 
+				has_country_flag = holy_crown
 			}
-		NOT = { has_country_flag = Hungarian_CRO }
+			NOT = { has_country_flag = Hungarian_CRO }
 		}
 		
 		allow = { 
-		state_n_government = 1 
+			state_n_government = 1 
 		}
 		
 		effect = { 

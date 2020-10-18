@@ -1000,34 +1000,34 @@ country_event = {
 	major = yes 
 	
 	option = { 
-	name = "97090.A"
-	badboy = 8 
-	LOT_2446 = { add_core = AMA }
-	LOT_2 = { add_core = AMA }
-	set_global_flag = borderAMA
+		name = "97090.A"
+		badboy = 8 
+		LOT_2446 = { add_core = AMA }
+		LOT_2 = { add_core = AMA }
+		set_global_flag = borderAMA
 	}
 	
 	option = { 
-	name = "97090.B" 
-	LOT_2446 = { add_core = AMA }
-	LOT_2 = { add_core = AMA }
-	LOT_2458 = { add_core = AMA }
-	SA_4 = { add_core = AMA }
-	LOT_3 = { add_core = AMA }
-	SA_5 = { add_core = AMA }
-	badboy = 18
-	set_global_flag = AMAguarani
+		name = "97090.B" 
+		LOT_2446 = { add_core = AMA }
+		LOT_2 = { add_core = AMA }
+		LOT_2458 = { add_core = AMA }
+		SA_4 = { add_core = AMA }
+		LOT_3 = { add_core = AMA }
+		SA_5 = { add_core = AMA }
+		badboy = 18
+		set_global_flag = AMAguarani
 	}
 	
 	option = { 
-	name = "97090.C"
-	badboy = 30
-	set_global_flag = Amerigue
-	LOT = {
+		name = "97090.C"
+		badboy = 24 ### Need to add badboy modifiers
+		set_global_flag = Amerigue
+		LOT = {
 			all_core = {
-					add_core = THIS
-				}
+				add_core = THIS
 			}
+		}
 	}
 }
 
@@ -1041,7 +1041,7 @@ country_event = {
 	
 	option = {
 		name = "97091.A"
-		random_list = {
+		random_list = { ###Need to add modifiers
 			50 = { 
 				add_accepted_culture = lotharian
 				badboy = -5
@@ -1402,12 +1402,12 @@ country_event = {
 	option = {
 		name = "775414.A"
 		random_list = {
-			75 = { 
+			100 = { 
 				add_accepted_culture = beornian
 				badboy = -5
 				set_country_flag = beornia_accepted
 			}
-			25 = { 
+			0 = { 
 				any_pop = {
 					limit = {
 						culture = beornian

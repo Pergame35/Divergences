@@ -2,10 +2,11 @@ country_event = {
 	id = 222110
 	title = "EVTNAME222110"
 	desc = "EVTDESC222110"
-	picture = "?"
+	picture = "napols"
 	
 	trigger = {
 		tag = ARA
+		exists = yes
 		NOT = { is_greater_power = yes }
 		NOT = { owns = 495 } # Zaragoza
 		NOT = { owns = 503 } # Valencia
@@ -73,12 +74,13 @@ country_event = {
 
 country_event = {
 	id = 222111
-	title = "CAT.T"
-	desc = "CAT.D"
-	picture = "?"
+	title = "EVTNAME222111"
+	desc = "EVTDESC222111"
+	picture = "port_barcelona"
 	
 	trigger = {
 		tag = ARA
+		exists = yes
 		NOT = { is_greater_power = yes }
 		NOT = { owns = 762 } # Palermo
 		NOT = { owns = 754 } # Napoli
@@ -91,7 +93,7 @@ country_event = {
 		months = 1
 	}
 	
-	option = {
+	option = { ### Need to improve localisation
 		name = "222111.A"
 		prestige = -10
 		set_country_flag = ARA_SIC
@@ -102,13 +104,26 @@ country_event = {
 		any_country = {
 			any_owned = {
 				limit = {
-					OR = { is_core = SIC
-					is_core = MLT }
+					OR = { 
+						is_core = SIC
+						is_core = MLT
+					}
 				}
 				remove_core = ARA
 				remove_core = CAT 
 			}
 		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = { 
+						is_core = MGH
+						is_core = SRD
+					}
+				}
+				remove_core = ARA
+			}
+		}		
 		any_owned = {
 			limit = {
 					is_core = ARA

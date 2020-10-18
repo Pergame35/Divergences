@@ -372,7 +372,8 @@ political_decisions = {
 		
 	}
 	
-	reclaim_flanders = { 
+	reclaim_flanders = {
+		picture = vlaanderen		
 		potential = { 
 		tag = NET 
 		exists = yes 
@@ -450,6 +451,7 @@ political_decisions = {
 	}
 	
 	accept_rhenish_BRG = { 
+		picture = froehliche_rheinland	
 		potential = { 
 			tag = BRG 
 			NOT = { has_country_flag = BRG_rhein }

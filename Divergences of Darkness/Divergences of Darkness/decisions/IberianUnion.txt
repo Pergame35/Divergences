@@ -1,5 +1,6 @@
 political_decisions = {
 form_iberia = {
+		picture = iberian	
 		potential = {
 			tag = SPA
 			NOT = {
@@ -209,7 +210,7 @@ form_iberia = {
 	
 	}
 	
-	mancomunidad_de_naciones = { 
+	mancomunidad_de_naciones = { ### Need to re-code, make exclusive with Iberia
 		potential = { 
 			tag = SPA  
 			has_country_flag = spaCLM

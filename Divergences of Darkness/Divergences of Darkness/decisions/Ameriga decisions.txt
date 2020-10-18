@@ -32,7 +32,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			treasury = -50000
+			treasury = -50000 ## Need to double check values
 			set_country_flag = kings_statue
 			NAN = { relation = { who = LOT value = 200}
 				}	
@@ -413,36 +413,36 @@ political_decisions = {
 	}
 	
 	Ameriga_AMA = { 
-	
+		picture = federation
 		potential = { 
-		tag = AMA 
-		is_greater_power = yes 
-		OR = { 
-		has_global_flag = AMAguarani
-		has_global_flag = Amerigue
-		has_global_flag = borderAMA 
-		LOT = { government = democracy }
+			tag = AMA 
+			OR = { 
+				has_global_flag = AMAguarani
+				has_global_flag = Amerigue
+				has_global_flag = borderAMA 
+				LOT = { government = democracy }
 			}
 		}
 		
 		allow = { 
-		AMA = { all_core = { owned_by = THIS } }
-		OR = { 
-		NOT = { LOT = { exists = yes } }
-		LOT = { 
-			in_sphere = THIS
+			AMA = { all_core = { owned_by = THIS } }
+			is_greater_power = yes 			
+			OR = { 
+				NOT = { LOT = { exists = yes } }
+				LOT = { 
+					in_sphere = THIS
 				}
 			}
 		}
 
 		
 		effect = { 
-		prestige = 20
-		change_tag = AZL
-		capital = 2447
-		LOT = { all_core = { add_core = AZL } }
-		add_accepted_culture = lotharian 
-		LOT = { country_event = 97096 }
+			prestige = 20
+			change_tag = AZL
+			capital = 2447
+			LOT = { all_core = { add_core = AZL } }
+			add_accepted_culture = lotharian 
+			LOT = { country_event = 97096 }
 		}
 	
 		ai_will_do = { 
@@ -451,20 +451,20 @@ political_decisions = {
 	}
 	
 	Ameriga_LOT = { 
-	
+		picture = federation
 		potential = { 
 		tag = LOT 
 		is_greater_power = yes 
 		}
 		
 		allow = { 
-		OR = { 
-		NOT = { AMA = { exists = yes } }
-		AMA = { 
-			in_sphere = THIS
+			OR = { 
+				NOT = { AMA = { exists = yes } }
+				AMA = { 
+					in_sphere = THIS
+				}
 			}
-		}
-		LOT = { all_core = { owned_by = THIS } }
+			LOT = { all_core = { owned_by = THIS } }
 		}
 
 		
@@ -510,7 +510,7 @@ political_decisions = {
 	}
 	
 	Federation_NAN = { 
-	
+	picture = NAN_federation	
 	potential = { 
 	tag = AZL 
 	is_greater_power = yes 
@@ -876,7 +876,7 @@ political_decisions = {
 	}
 	
 	liberty_enlightening_the_world_AZL = {
-		picture = statue_liberté
+		picture = phrygian
 	
 		potential = {
 			NOT = {
@@ -912,15 +912,15 @@ political_decisions = {
 	AZL_annexation_INC = { 
 	
 	potential = { 
-	has_country_flag = ameriga_united
-	is_greater_power = yes 
-	INC = { exists = yes }
-	NOT = { 
-	AND = { 
-	government = democracy 
-	OR = { 
-	INC = { government = democracy }
-	INC = { government = hms_government }
+		has_country_flag = ameriga_united
+		is_greater_power = yes 
+		INC = { exists = yes }
+		NOT = { 
+			AND = { 
+				government = democracy 
+				OR = { 
+					INC = { government = democracy }
+					INC = { government = hms_government }
 				}
 			}
 		}

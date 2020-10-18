@@ -175,30 +175,30 @@ political_decisions = {
 		potential = {
 			tag = JAP
 			NOT = { has_country_flag = high_castle }
-      owns = 1
-      DNG = { 
-          owns = 15  
-      }
+			owns = 1
+			DNG = { 
+				owns = 15  
+			}
 		}
 
 		allow = {
 			NOT = { war = yes }
 			nationalism_n_imperialism = 1
-      is_greater_power = yes
-      DNG = { is_greater_power = no }
+			is_greater_power = yes
+			DNG = { is_greater_power = no }
 		}
 	
 		effect = {
 			prestige = 10
 			set_country_flag = high_castle
 			badboy = 20
-      DNG = { country_event = 334302 }
-	  casus_belli = {
+			DNG = { country_event = 334302 }
+			casus_belli = {
 				target = DNG
 				type = conquest
 				months = 24
-		 }
-      war = {
+			}
+			war = {
 				target = DNG
 				attacker_goal = {
 					casus_belli = conquest
@@ -207,15 +207,15 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-      modifier = {
+			modifier = {
 				factor = 0
 				average_militancy = 4
 			}   
-      modifier = {
+			modifier = {
 				factor = 0
-				NOT = { badboy = 0.8 } 
+				NOT = { badboy = 0.15 } 
 			} 
-      modifier = {
+			modifier = {
 				factor = 0
 				DNG = { rank = 12 }
 			}
@@ -398,23 +398,25 @@ political_decisions = {
 	}
 	
 	organize_yakutia = { 
-	potential = {
-	tag = JAP
-	#used to be 2669 which is now Sondrio in italy  
-	owns = 2696
-	civilized = yes
-	NOT = { YKT = { exists = yes } }
-	NOT = { has_country_flag = yakutia_org }
+		potential = {
+		tag = JAP
+		#used to be 2669 which is now Sondrio in italy  
+		owns = 2696
+		civilized = yes
+		NOT = { YKT = { exists = yes } }
+		NOT = { has_country_flag = yakutia_org }
 	}
 	
-	allow = { 
-	nationalism_n_imperialism = 1 
-	}
+		allow = { 
+			nationalism_n_imperialism = 1 
+		}
 	
-	effect = { 
-	set_country_flag = yakutia_org
-	YKT = { set_country_flag = civilize_after_release 
-		primary_culture = THIS add_accepted_culture = yakut
+		effect = { 
+			set_country_flag = yakutia_org
+			YKT = { 
+				set_country_flag = civilize_after_release 
+				primary_culture = THIS
+				add_accepted_culture = yakut
 			}
 		}
 	}

@@ -85,6 +85,7 @@ dismantle_forts
 china_acquire_state
 china_acquire_state_2
 china_conquest
+persia_acquire_state
 acquire_state
 acquire_any_state
 acquire_substate_region
@@ -1348,9 +1349,7 @@ free_peoples = {
 			FROM = { tag = KAM }
 			FROM = { tag = KAZ }
 			FROM = { tag = BDK }
-			FROM = { tag = SIB }
 			FROM = { tag = YKT }
-			FROM = { tag = URA }
 			FROM = { tag = MCK }
 			FROM = { tag = XIN }
 			this_culture_union = FROM
@@ -3062,6 +3061,86 @@ china_acquire_state_2 = {
 	}
 }
 
+persia_acquire_state = {
+	sprite_index = 2
+	months = 12
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 6
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	always = yes
+
+	can_use = {
+		year = 1840
+		NOT = { is_our_vassal = THIS }
+		neighbour = THIS        
+		any_owned_province = {
+				NOT = { is_core = THIS }
+				is_core = PER
+			}
+		THIS = {
+            OR = {	
+				primary_culture = persian		
+			    tag = AZB
+	            tag = AFS
+			    tag = QAJ
+			    tag = ZND				
+			}	
+			number_of_states = 2
+			NOT = {
+				has_country_modifier = neutrality
+				war_policy = pacifism
+			}
+		}
+		is_vassal = no
+		OR = {
+			war_with = THIS
+			THIS = {
+				NOT = {
+					has_country_modifier = no_more_war
+				}
+			}
+		}
+	}
+	
+	allowed_states = {
+		OR = {
+			any_owned_province = {
+				NOT = { is_core = THIS }
+				is_core = PER
+			}
+			any_owned_province = {
+				owner = { is_culture_group = iranian }
+				NOT = { is_core = PER }
+			}
+		}
+	}
+
+	po_demand_state = yes
+	
+	war_name = WAR_PERSIA_REUNIFICATION
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.10
+		}
+	}
+}
+
 sahel_jihad_cb = {
 	sprite_index = 29
 	is_triggered_only = yes
@@ -4016,7 +4095,6 @@ annex_africa = {
 			tag = MOR
 			tag = ALD
 			tag = TRI
-			tag = LIB
 			has_country_flag = post_colonial_country
 		}
 		civilized = no
@@ -4117,7 +4195,6 @@ annex_africa_full = {
 			tag = MOR
 			tag = ALD
 			tag = TRI
-			tag = LIB
 			has_country_flag = post_colonial_country
 		}
 		capital_scope = { continent = africa }
