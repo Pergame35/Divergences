@@ -32,6 +32,7 @@ reactionary_rebels = {
 		democracy = presidential_dictatorship
 		merchant_republic = presidential_dictatorship		
 		theocracy = absolute_monarchy
+		colonial_company = absolute_monarchy		
 	}
 	
 	
@@ -318,6 +319,7 @@ fascist_rebels = {
 		democracy = fascist_dictatorship
 		merchant_republic = fascist_dictatorship		
 		theocracy = fascist_dictatorship
+		colonial_company = fascist_dictatorship		
 	}
 	
 	
@@ -607,6 +609,7 @@ communist_rebels = {
 		democracy = proletarian_dictatorship
 		merchant_republic = proletarian_dictatorship		
 		theocracy = proletarian_dictatorship
+		colonial_company = proletarian_dictatorship		
 	}
 	
 	
@@ -892,6 +895,7 @@ anarcho_liberal_rebels = {
 		democracy = bourgeois_dictatorship
 		merchant_republic = bourgeois_dictatorship		
 		theocracy = bourgeois_dictatorship
+		colonial_company = bourgeois_dictatorship		
 	}
 	
 	
@@ -1204,6 +1208,7 @@ nationalist_rebels = {
 		democracy = democracy
 		merchant_republic = democracy		
 		theocracy = theocracy
+		colonial_company = democracy		
 	}
 	
 	
@@ -1493,6 +1498,7 @@ pan_nationalist_rebels = {
 		democracy = democracy
 		merchant_republic = democracy		
 		theocracy = theocracy
+		colonial_company = democracy		
 	}
 
 	defection = none			# (It was pan_nationalist) If the country seeks independence, defection specifies what type of provinces it wants.
@@ -1840,6 +1846,7 @@ red_shirts = {
 		democracy = democracy
 		merchant_republic = merchant_republic		
 		theocracy = democracy
+		colonial_company = hms_government		
 	}
 
 	defection = none			# (Was pan_nationalist) If the country seeks independence, defection specifies what type of provinces it wants.
@@ -2079,6 +2086,7 @@ indian_nationalists = {
 		democracy = democracy
 		merchant_republic = merchant_republic		
 		theocracy = theocracy
+		colonial_company = democracy		
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -2296,6 +2304,7 @@ liberal_rebels = {
 		democracy = democracy
 		merchant_republic = democracy		
 		theocracy = democracy
+		colonial_company = democracy		
 	}
 	
 	
@@ -2735,6 +2744,7 @@ unciv_reactionary_rebels = {
 		democracy = absolute_monarchy
 		merchant_republic = absolute_monarchy		
 		theocracy = absolute_monarchy
+		colonial_company = colonial_company		
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -2975,6 +2985,7 @@ separatist_rebels = {
 		democracy = democracy
 		merchant_republic = merchant_republic		
 		theocracy = theocracy
+		colonial_company = democracy		
 	}
 	
 	
@@ -3233,7 +3244,8 @@ socialist_rebels = {
 		hms_government = democracy
 		democracy = democracy
 		theocracy = democracy
-		merchant_republic = democracy		
+		merchant_republic = democracy
+		colonial_company = democracy		
 	}
 	
 	
@@ -3709,6 +3721,7 @@ independence_rebels = {
 		democracy = democracy
 		merchant_republic = merchant_republic		
 		theocracy = theocracy
+		colonial_company = democracy		
 	}
 	
 	
@@ -3873,6 +3886,7 @@ turkish_nationalist_rebels = {
 		democracy = democracy
 		merchant_republic = democracy		
 		theocracy = theocracy
+		colonial_company = democracy		
 	}
 	
 	
@@ -4118,6 +4132,7 @@ native_rebels = {
 		democracy = democracy
 		merchant_republic = democracy		
 		theocracy = democracy
+		colonial_company = democracy		
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -4305,6 +4320,7 @@ sioux_nation = {
 		democracy = democracy
 		merchant_republic = merchant_republic		
 		theocracy = theocracy
+		colonial_company = democracy		
 	}
 
 	defection = none					# Will defect to the "best" alternative.
@@ -4431,6 +4447,7 @@ apache = {
 		democracy = democracy
 		merchant_republic = merchant_republic		
 		theocracy = democracy
+		colonial_company = democracy		
 	}
 
 	defection = none					# Will defect to the "best" alternative.

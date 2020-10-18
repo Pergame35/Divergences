@@ -134,3 +134,14 @@ khanate = {
 	appoint_ruling_party = yes
 	flagType = monarchy
 }
+
+colonial_company = {
+	#which ideology of parties.
+	liberal = yes
+	socialist = yes
+	conservative = yes
+	reactionary = yes
+	
+	election = no
+	appoint_ruling_party = yes
+}
