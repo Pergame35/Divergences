@@ -2659,6 +2659,13 @@ kongo_missionaries = {
 	icon = 5
 }
 
+recent_jihad = {
+	population_growth = -0.01
+	pop_militancy_modifier = 0.1
+	non_accepted_pop_consciousness_modifier = 0.05
+	icon = 16
+}
+
 ### Ideological Strongholds ###
 reactionary_stronghold = {
 	pop_consciousness_modifier = -0.2
