@@ -381,7 +381,7 @@ country_event = {
 	limit = { OR = { is_core = KZH is_core = TNT is_core = MGL is_core = UGH is_core = UZB is_core = BDK is_core = KOK } }
 	remove_core = CHG
 		}
-	government = absolute_monarchy 
+	government = khanate 
 	remove_country_modifier = feudal
 	random_owned = { limit = { owner = { admin_reform = yes_admin_reform } } owner = { economic_reform = advanced_admin_reform activate_technology = ideological_thought  }  }
 	random_owned = { limit = { owner = { admin_reform = no_admin_reform } } owner = { economic_reform = yes_admin_reform activate_technology = enlightenment_thought}  }
@@ -394,9 +394,10 @@ country_event = {
 	any_owned = { limit = { is_core = TIB } secede_province = UGH }
 	release = UZB 
 	release = KOK
-	TNT = { government = absolute_monarchy }
-	MGL = { government = absolute_monarchy }
-	UZB = { government = absolute_monarchy }
+	TNT = { government = khanate }
+	MGL = { government = khanate }
+	BDK = { government = khanate }	
+	UZB = { government = khanate }
 	remove_accepted_culture = uzbek 
 	remove_accepted_culture = uighur 
 	remove_accepted_culture = kazak  
@@ -410,7 +411,7 @@ country_event = {
 	limit = { OR = { is_core = KZH is_core = MGL is_core = UZB is_core = BDK is_core = KOK } }
 	remove_core = CHG
 		}
-	government = absolute_monarchy 
+	government = khanate 
 	remove_country_modifier = feudal
 	release = TNT 
 	release = MGL 
@@ -421,9 +422,10 @@ country_event = {
 	any_owned = { limit = { is_core = CHI } secede_province = MGL }
 	release = UZB 
 	release = KOK
-	TNT = { government = absolute_monarchy }
-	MGL = { government = absolute_monarchy }
-	UZB = { government = absolute_monarchy }
+	TNT = { government = khanate }
+	MGL = { government = khanate }
+	BDK = { government = khanate }	
+	UZB = { government = khanate }
 	war = {
 			target = UGH
 			attacker_goal = {
@@ -454,9 +456,10 @@ country_event = {
 	any_owned = { limit = { is_core = CHI } secede_province = MGL }
 	release = UZB 
 	release = KOK
-	TNT = { government = absolute_monarchy }
-	MGL = { government = absolute_monarchy }
-	UZB = { government = absolute_monarchy }
+	TNT = { government = khanate }
+	MGL = { government = khanate }
+	BDK = { government = khanate }	
+	UZB = { government = khanate }
 	war = {
 			target = UGH
 			attacker_goal = {

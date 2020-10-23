@@ -1,6 +1,7 @@
 political_decisions = {
 	
 	dominium_maris_baltici = {
+		picture = baltic_sea	
 		potential = {
 			tag = SCA 
 			is_greater_power = yes 
@@ -39,6 +40,7 @@ political_decisions = {
 	}
 
 	lithuania_kidnapping = {
+		picture = lithuania	
 		potential = {
 			tag = SCA
 			is_greater_power = yes 
@@ -99,7 +101,7 @@ political_decisions = {
 	}
 	
 	act_of_union = {
-
+		picture = PLC_union	
 		potential = {
 			tag = PLC 
 			NOT = { has_country_flag = lublin_new }
@@ -186,7 +188,8 @@ political_decisions = {
 		}
 	}
 	
-	romanian_cherson = { 
+	romanian_cherson = {
+		picture = cherson	
 		potential = { 
 		tag = ROM 
 		NOT = { has_country_flag = ROM_cherson }
@@ -209,7 +212,7 @@ political_decisions = {
 	}
 
 	baltic_cultures = {
-
+		picture = latvia_birch
 		potential = {
 			tag = PLC
 			has_country_flag = lublin_new
@@ -245,7 +248,7 @@ political_decisions = {
 	}
 	
 	treaty_hadiach = {
-		picture = "treaty_hadiach"
+		picture = treaty_hadiach
 
 		potential = { 
 			tag = PLC 
@@ -302,7 +305,7 @@ political_decisions = {
 	}
 
 	integrate_germans = {
-
+		picture = greifswald
 		potential = {
 			tag = SCA
 			is_greater_power = yes
@@ -397,7 +400,7 @@ political_decisions = {
 
 
 	nordtyskland = {
-	
+		picture = pomerania	
 		potential = { 
 			tag = SCA 
 			is_greater_power = yes 
@@ -486,7 +489,7 @@ political_decisions = {
 	}
 
 	meddle_with_cossacks = { 
-	
+		picture = cossack	
 		potential = { 
 		OR = { tag = RUS }
 		is_greater_power = yes 
@@ -508,7 +511,7 @@ political_decisions = {
 	}
 	
 	annex_ruthenia = { 
-		
+		picture = rus_trident		
 		potential = { 
 		tag = RUS 
 		RUT = { exists = yes }

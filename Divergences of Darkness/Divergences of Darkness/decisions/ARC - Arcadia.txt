@@ -1,6 +1,6 @@
 political_decisions = {
 	form_arcadia_vinland = { # Vinland
-    picture = "UniteARC"
+    picture = UniteARC
 		potential = {
 			tag = VIN
       NOT = { ARC = { exists = yes } }
@@ -50,7 +50,7 @@ political_decisions = {
   } 
   
 	form_arcadia_septiman = { # 7Rep  
-    picture = "UniteARC"
+    picture = UniteARC
 		potential = {
 			tag = NBG
       NOT = { ARC = { exists = yes } }
@@ -100,7 +100,7 @@ political_decisions = {
   
   
 	form_arcadia_plantagenia = { # Plantagenia    
-    picture = "UniteARC"
+    picture = UniteARC
 		potential = {
 			tag = PLA
       NOT = { ARC = { exists = yes } }
@@ -150,7 +150,7 @@ political_decisions = {
   }
   ###################################################################
   erase_vinland = { # Vinland   
-    picture = "Vinland"
+    picture = Vinland
 		potential = {
 			tag = ARC
       NOT = { has_country_flag = vinlandic_arcadia } 
@@ -180,7 +180,7 @@ political_decisions = {
 		}
   }        
   erase_nbg = { # 7Rep    
-    picture = "SevenRep"
+    picture = SevenRep
 		potential = {
 			tag = ARC
       NOT = { has_country_flag = septiman_arcadia }  
@@ -210,7 +210,7 @@ political_decisions = {
 		}
   }
   erase_plantagenia = { # Plantagenia
-    picture = "Plantagenia"
+    picture = Plantagenia
 		potential = {
 			tag = ARC
       NOT = { has_country_flag = plantagenian_arcadia }
@@ -241,7 +241,7 @@ political_decisions = {
   } 
   
   erase_lusitania = { # Lusitania, bonus treatment for PLA 
-    picture = "lusitania"
+    picture = lusitania
 		potential = {
 			tag = ARC
       has_country_flag = pla_manifest_destiny
@@ -273,7 +273,7 @@ political_decisions = {
   } 
   ###################################################################
   embrace_panarcadianism = {       
-    picture = "Panarcadianism"
+    picture = Panarcadianism
 		potential = {
 			tag = ARC
       has_country_flag = plantagenian_arcadia
@@ -348,7 +348,7 @@ political_decisions = {
 		}
   }   
   discuss_capital = {      
-    picture = "ARCcapital"
+    picture = ARCcapital
 		potential = {
 			tag = ARC
       has_country_flag = panarcadianism
@@ -377,7 +377,7 @@ political_decisions = {
  ###################################################################
  
    the_continental_congress_arc = {   
-    picture = "CoCongress"
+    picture = CoCongress
 		potential = {
 			tag = ARC
       NOT = { has_country_flag = panarcadianism } 
@@ -435,29 +435,29 @@ political_decisions = {
 #	Caribbean cultures	  #
 ###########################
 	accepting_athesia = {
-	picture = "athesia"
-	potential = { 
-	ATS = { exists = no }
-	OR = { 
-	tag = PLA 
-	tag = ARC 
-	tag = CUB 
-	tag = SFJ 
-	tag = AZL 
-	tag = UBD
-	}
-	owns = 200 
-	NOT = { has_country_flag = athesian_culture }
-	}
+		picture = athesia
+		potential = { 
+			ATS = { exists = no }
+			OR = { 
+				tag = PLA 
+				tag = ARC 
+				tag = CUB 
+				tag = SFJ 
+				tag = AZL 
+				tag = UBD
+			}
+			owns = 200 
+			NOT = { has_country_flag = athesian_culture }
+		}
 
-	allow = { 
-	OR = { 
-	government = democracy 
-	government = hms_government 
-	}
-	citizenship_policy = full_citizenship 
-	state_n_government = 1 
-	OR = {
+		allow = { 
+			OR = { 
+				government = democracy 
+				government = hms_government 
+			}
+			citizenship_policy = full_citizenship 
+			state_n_government = 1 
+			OR = {
 				upper_house = {
 					ideology = socialist
 					value = 0.3
@@ -478,47 +478,48 @@ political_decisions = {
 				}
 			}
 	
-	}
+		}
 	
-	effect = { 
-	add_accepted_culture = athesian 
-	set_country_flag = athesian_culture
-	any_pop = { 
-	limit = { culture = athesian }
-		militancy = -3
-			}
-	random_owned = {
-			limit = { 
-			200 = { NOT = { is_core = THIS } } 
-			}
-			NA_16 = { add_core = THIS }
+		effect = { 
+			add_accepted_culture = athesian 
+			set_country_flag = athesian_culture
+			any_pop = { 
+				limit = { culture = athesian }
+					militancy = -3
+				}
+			random_owned = {
+				limit = { 
+					200 = { NOT = { is_core = THIS } } 
+				}
+				NA_16 = { add_core = THIS }
 			}
 		}
 	}
 	
-	accepting_caribenos = { 
-	potential = { 
-	CUB = { exists = no }
-	OR = { 
-	tag = PLA 
-	tag = ARC 
-	tag = ATS 
-	tag = SFJ 
-	tag = AZL 
-	tag = UBD
-	}
-	owns = 2209 
-	NOT = { has_country_flag = caribeno_culture }
-	}
+	accepting_caribenos = {
+		picture = cuba	
+		potential = { 
+			CUB = { exists = no }
+			OR = { 
+				tag = PLA 
+				tag = ARC 
+				tag = ATS 
+				tag = SFJ 
+				tag = AZL 
+				tag = UBD
+			}
+			owns = 2209 
+			NOT = { has_country_flag = caribeno_culture }
+		}
 
-	allow = { 
-	OR = { 
-	government = democracy 
-	government = hms_government 
-	}
-	citizenship_policy = full_citizenship 
-	state_n_government = 1 
-	OR = {
+		allow = { 
+			OR = { 
+				government = democracy 
+				government = hms_government 
+			}
+			citizenship_policy = full_citizenship 
+			state_n_government = 1 
+			OR = {
 				upper_house = {
 					ideology = socialist
 					value = 0.3
@@ -539,47 +540,48 @@ political_decisions = {
 				}
 			}
 		
-	}
+		}
 	
-	effect = { 
-	add_accepted_culture = caribeno 
-	set_country_flag = caribeno_culture
-	any_pop = { 
-	limit = { culture = caribeno }
-		militancy = -3
+		effect = { 
+			add_accepted_culture = caribeno 
+			set_country_flag = caribeno_culture
+			any_pop = { 
+				limit = { culture = caribeno }
+				militancy = -3
 			}
-	random_owned = {
-			limit = {
-			2209 = { NOT = { is_core = THIS } } 
-			}
-			SPA_2209 = { add_core = THIS }
+			random_owned = {
+				limit = {
+					2209 = { NOT = { is_core = THIS } } 
+				}
+				SPA_2209 = { add_core = THIS }
 			}
 		}
 	}
 	
-	accepting_ayitians = { 
-	potential = { 
-	NOT = { SFJ = { exists = yes } }
-	OR = { 
-	tag = PLA 
-	tag = ARC 
-	tag = ATS 
-	tag = CUB 
-	tag = AZL 
-	tag = UBD
-	}
-	owns = 2213 
-	NOT = { has_country_flag = ayitian_culture }
-	}
+	accepting_ayitians = {
+		picture = ayti	
+		potential = { 
+			NOT = { SFJ = { exists = yes } }
+			OR = { 
+				tag = PLA 
+				tag = ARC 
+				tag = ATS 
+				tag = CUB 
+				tag = AZL 
+				tag = UBD
+			}
+			owns = 2213 
+			NOT = { has_country_flag = ayitian_culture }
+		}
 
-	allow = { 
-	OR = { 
-	government = democracy 
-	government = hms_government 
-	}
-	citizenship_policy = full_citizenship 
-	state_n_government = 1 
-	OR = {
+		allow = { 
+			OR = { 
+				government = democracy 
+				government = hms_government 
+			}
+			citizenship_policy = full_citizenship 
+			state_n_government = 1 
+			OR = {
 				upper_house = {
 					ideology = socialist
 					value = 0.3
@@ -600,22 +602,22 @@ political_decisions = {
 				}
 			}
 	
-	}
-	
-	effect = { 
-	add_accepted_culture = ayitian 
-	set_country_flag = ayitian_culture
-	any_pop = { 
-	limit = { culture = ayitian }
-		militancy = -3
-			}
-	random_owned = {
-			limit = {
-			2213 = { NOT = { is_core = THIS } } 
-			}
-			HAI_2213 = { add_core = THIS }
 		}
-	}
+	
+		effect = { 
+			add_accepted_culture = ayitian 
+			set_country_flag = ayitian_culture
+			any_pop = { 
+				limit = { culture = ayitian }
+				militancy = -3
+			}
+			random_owned = {
+				limit = {
+					2213 = { NOT = { is_core = THIS } } 
+				}
+				HAI_2213 = { add_core = THIS }
+			}
+		}
 	}
 	
 	Western_border_treaty = { 

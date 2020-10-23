@@ -1295,25 +1295,25 @@ country_event = {
 	
 	option = {
 	name = "135602.A"
-		money = 100000
+		money = 50000
 		2233 = { remove_core = THIS }
 		FROM = { country_event = 371262 }
 		ai_chance = {
 			factor = 75
-		modifier = { 
-		factor = 1.5 
-		relation = { who = FROM value = 100 }
+			modifier = { 
+				factor = 1.5 
+				relation = { who = FROM value = 100 }
 			}
-		modifier = { 
-		factor = 1.5 
-		relation = { who = FROM value = 150 }
+			modifier = { 
+				factor = 1.5 
+				relation = { who = FROM value = 150 }
 			}
 		}
 	}
 
 	option = {
 	name = "135602.B"
-	FROM = { country_event = 371263 }
+		FROM = { country_event = 371263 }
 		ai_chance = {
 			factor = 25
 		}
@@ -1328,12 +1328,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = "190441.A"
-	prestige = 5
-	money = -100000
-	2233 = { secede_province = THIS }
-	relation = { who = FROM value = 50 }
-	any_pop = { consciousness = -1 }
+		name = "190441.A"
+		prestige = 5
+		money = -50000
+		2233 = { secede_province = THIS }
+		relation = { who = FROM value = 50 }
+		any_pop = { consciousness = -1 }
 	}
 }
 
@@ -1359,9 +1359,9 @@ country_event = {
 	
 	option = {
 	name = "135620.A"
-		money = 150000
+		money = 50000
 		any_owned = { 
-		ENG_2228 = { remove_core = THIS secede_province = FROM }
+			ENG_2228 = { remove_core = THIS secede_province = FROM }
 		}
 		FROM = { country_event = 371265 }
 		ai_chance = {
@@ -1396,7 +1396,7 @@ country_event = {
 	option = {
 	name = "97205.A"
 	prestige = 5
-	money = -150000
+	money = -50000
 	relation = { who = FROM value = 50 }
 	any_pop = { consciousness = -1 }
 	}
@@ -1424,7 +1424,7 @@ country_event = {
 	
 	option = {
 	name = "135630.A"
-		money = 100000
+		money = 50000
 		2231 = { remove_core = THIS}
 		FROM = { country_event = 371268 }
 		ai_chance = {
@@ -1459,7 +1459,7 @@ country_event = {
 	option = {
 	name = "97255.A"
 	prestige = 5
-	money = -100000
+	money = -50000
 	2231 = { secede_province = THIS }
 	relation = { who = FROM value = 50 }
 	any_pop = { consciousness = -1 }
@@ -1487,7 +1487,7 @@ country_event = {
 	
 	option = {
 	name = "135623.A"
-		money = 150000
+		money = 50000
 		any_owned = { 
 		2228 = { remove_core = THIS secede_province = FROM }
 		}
@@ -1524,7 +1524,7 @@ country_event = {
 	option = {
 	name = "97355.A"
 	prestige = 5
-	money = -150000
+	money = -50000
 	relation = { who = FROM value = 50 }
 	any_pop = { consciousness = -1 }
 	}
@@ -1552,7 +1552,7 @@ country_event = {
 	
 	option = {
 	name = "371261.A"
-		money = 150000
+		money = 50000
 		any_owned = { 
 		ENG_2224 = { remove_core = THIS secede_province = FROM }
 		}
@@ -1589,7 +1589,7 @@ country_event = {
 	option = {
 	name = "48912.A"
 	prestige = 5
-	money = -150000
+	money = -50000
 	relation = { who = FROM value = 50 }
 	any_pop = { consciousness = -1 }
 	}
@@ -1747,7 +1747,7 @@ country_event = {
 	
 	option = {
 	name = "371270.A"
-	money = 75000
+	money = 50000
 	2223 = { secede_province = FROM }
 	2226 = { secede_province = FROM }
 	2236 = { secede_province = FROM}
@@ -1784,7 +1784,7 @@ country_event = {
 	option = {
 	name = "135621.A"
 	prestige = 5
-	money = -75000
+	money = -50000
 	relation = { who = FROM value = 50 }
 	any_pop = { consciousness = -1 }
 	}

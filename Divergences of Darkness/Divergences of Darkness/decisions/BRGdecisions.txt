@@ -70,6 +70,7 @@ political_decisions = {
 	}
 
 	treaty_of_neuchatel = {
+		picture = neuchatel	
 		potential = {
 			NOT = { owns = 406 }
 			NOT = { owns = 407 }
@@ -201,6 +202,7 @@ political_decisions = {
 	}
 
 	savoi_at_last2 = {
+		picture = piedmont	
 		potential = {
 			tag = GNV
 			NOT = {
@@ -287,6 +289,7 @@ political_decisions = {
 #	}
 
 	fall_of_burgundy = {
+		picture = cape_colony	
 		potential = {
 			tag = BRG
 			has_global_flag = Burgundy_is_cape
@@ -336,7 +339,7 @@ political_decisions = {
 	}
 	
 	move_to_namur = { 
-	
+		picture = namur	
 		potential = { 
 		tag = BRG 
 		NOT = { owns = 381 }
@@ -354,7 +357,8 @@ political_decisions = {
 		}
 	}
 	
-	move_back_anvers = { 
+	move_back_anvers = {
+		picture = antwerpen		
 		potential = { 
 			tag = BRG 
 			has_country_flag = anvers_lost
@@ -403,7 +407,8 @@ political_decisions = {
 	
 	}
 	
-	dutch_flanders = { 
+	dutch_flanders = {
+		picture = kortrijk	
 		potential = { 
 			tag = NET  
 			has_country_flag = flanders_reclaimed 
@@ -426,7 +431,7 @@ political_decisions = {
 	}
 	
 	burgundian_flanders = {
-	
+		picture = gent		
 		potential = { 
 		has_global_flag = flanders_renamed
 		tag = BRG

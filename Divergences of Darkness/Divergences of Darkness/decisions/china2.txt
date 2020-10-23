@@ -46,6 +46,7 @@ jiangsu_control = {
 	}
 
 	unequal_treaty = {
+		picture = unequal_treaty	
 		potential = {
 			any_owned_province = { continent = asia }
 			NOT = { has_country_flag = intervened_boxer_war }

@@ -67,7 +67,7 @@ political_decisions = {
 		}
 		
 		colombian_empire = {
-		picture = emperor_colombia
+		picture = maximilian_crown
 			potential = {
 				NOT = { CLM = { exists = yes } }
 		    		has_global_flag = congress_of_panama_over
@@ -255,6 +255,7 @@ political_decisions = {
 		}
 	
 		colombian_republic = {
+		picture = ciudad_mexico		
 			potential = {
 				NOT = { CLM = { exists = yes } }
 		    	has_global_flag = congress_of_panama_over
@@ -410,7 +411,7 @@ political_decisions = {
 		}
 		
 		restore_lusitania = { 
-		picture = restore_order_GC
+		picture = restore_order_LST
 		potential = { 
 		tag = SPA 
 		has_global_flag = partial_peace 
@@ -441,7 +442,7 @@ political_decisions = {
 		}
 		
 		restore_mexico = {
-			picture = restore_order_GC
+			picture = restore_order_MEX
 		
 			potential = { 
 				tag = SPA 
@@ -488,6 +489,7 @@ political_decisions = {
 		}
 		
 	marching_apache = {
+		picture = marching_apache	
 		potential = {
 			tag = LST
 			NOT = {
@@ -556,6 +558,7 @@ political_decisions = {
 	}
 	
 	rename_laofeng = {
+		picture = laofeng	
         potential = {
 			OR = { 
 			tag = CLM
@@ -596,6 +599,7 @@ political_decisions = {
     }
 
     restore_laofeng = {
+		picture = laofeng	
         potential = {
             OR = {
                 tag = KKN
@@ -635,41 +639,43 @@ political_decisions = {
         }
     }    
 	
-	dictatorshipCLM = { 
-	potential = { 
-	tag = CLM 
-	has_country_flag = dictatorshipCLM
+	dictatorshipCLM = {
+		picture = dictatorship_CLM	
+		potential = { 
+			tag = CLM 
+			has_country_flag = dictatorshipCLM
 		}
 		
-	allow = { 
-	OR = { 
-	year = 1855 
-	state_n_government = 1 
+		allow = { 
+			OR = { 
+				year = 1855 
+				state_n_government = 1 
+			}
+			war = no 
 		}
-	war = no 
-	}
 
-	effect = { 
-	any_country = {
-		limit = {
-			OR = { tag = LST tag = UCA }
-		}
-		annex_to = THIS
-	}
-	government = absolute_monarchy 
-	LST = { all_core = { add_core = THIS } }
-	MEX = { all_core = { add_core = THIS } }
-	UCA = { all_core = { add_core = THIS } }
-	GRA = { all_core = { add_core = THIS } }
-	add_accepted_culture = lusitanian 
-	add_accepted_culture = central_american 
-	add_accepted_culture = granadan 
-	clr_country_flag = dictatorshipCLM 
-	clr_country_flag = calm_before_tempest
+		effect = { 
+			any_country = {
+				limit = {
+				OR = { tag = LST tag = UCA }
+				}
+				annex_to = THIS
+			}
+			government = absolute_monarchy 
+			LST = { all_core = { add_core = THIS } }
+			MEX = { all_core = { add_core = THIS } }
+			UCA = { all_core = { add_core = THIS } }
+			GRA = { all_core = { add_core = THIS } }
+			add_accepted_culture = lusitanian 
+			add_accepted_culture = central_american 
+			add_accepted_culture = granadan 
+			clr_country_flag = dictatorshipCLM 
+			clr_country_flag = calm_before_tempest
 		}		
 	}
 	
 	integrate_granadans = {
+		picture = cartagena_indias	
 		potential = {
 			tag = CLM
 			has_country_flag = granadans_refusal

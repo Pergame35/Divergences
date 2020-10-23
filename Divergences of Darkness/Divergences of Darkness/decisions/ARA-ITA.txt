@@ -131,6 +131,7 @@ political_decisions = {
 	}
 	
 	start_ai_cw = {
+		picture = north_italy	
 		potential = {
 			tag = ARI
 			is_greater_power = yes
@@ -158,6 +159,7 @@ political_decisions = {
 	}
 	
 	integrate_north_italians = {
+		picture = integrate_north_italians	
 		potential = {
 			tag = ARI
 			has_country_flag = waroveritalyend
@@ -219,7 +221,7 @@ political_decisions = {
 	}
 	
 	venetian_question = { 
-	
+		picture = venetian_question	
 		potential = { 
 			tag = ARI 
 			has_country_flag = italian_integration
@@ -257,6 +259,7 @@ political_decisions = {
 	}
 	
 	latin_empire = {
+		picture = cat_occitania		
 		potential = {
 			tag = ARI
 			has_country_flag = venetia_ARI
@@ -331,23 +334,26 @@ political_decisions = {
 	}
 	
 	annex_provence = { 
-		
+		picture = provence		
 		potential = { 
-		tag = ARI 
-		has_country_flag = latin_empire
-		PRV = { exists = yes }
-		is_greater_power = yes 
-		NOT = { 458 = { owned_by = PRV } }
-		NOT = { 455 = { owned_by = PRV } }
+			tag = ARI 
+			has_country_flag = latin_empire
+			PRV = { exists = yes }
+			is_greater_power = yes 
+			NOT = { 458 = { owned_by = PRV } }
+			NOT = { 455 = { owned_by = PRV } }
 		}
 		
 		allow = { 
-		PRV = { war = no in_sphere = THIS }
-		war = no 
+			PRV = { 
+				war = no
+				in_sphere = THIS 
+			}
+			war = no 
 		}
 		
 		effect = { 
-		inherit = PRV 
+			inherit = PRV 
 		}
 	
 	
