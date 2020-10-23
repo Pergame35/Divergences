@@ -1,7 +1,7 @@
 political_decisions = {
 	claim_old_england = {
 	
-		picture = England_NAN
+		picture = map_england
 		
 			potential = {
 				tag = NAN
@@ -52,26 +52,31 @@ political_decisions = {
 		}
 	
 		effect = {
-				badboy = 24 
+			badboy = 24 
 				
-				relation = { who = ENL value = -200 }
+			relation = { who = ENL value = -200 }
 				
-				ENL = {
-					all_core = {
-						add_core = THIS
-					}
+			ENL = {
+				all_core = {
+					add_core = THIS
 				}
-				
-				set_country_flag = claim_old_england
 			}
-			ai_will_do = {
-				factor = 1
+			set_country_flag = claim_old_england
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.1 
 			}
+			
+		}
 	}
 	
 	return_home_NAN = {
 	
-		picture = England_NAN
+		picture = wyvern
 	
 			potential = {
 				tag = NAN

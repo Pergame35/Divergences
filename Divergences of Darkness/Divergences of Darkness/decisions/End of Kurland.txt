@@ -1,5 +1,6 @@
 political_decisions = {
 	end_of_kurland = {
+		picture = courland	
 		potential = {
 			tag = SCA
 			is_greater_power = yes
@@ -40,7 +41,8 @@ political_decisions = {
 		}
 	}
 
-kurland_annexation = { 
+kurland_annexation = {
+		picture = courland_2 
 		potential = {
 			tag = SCA
 			is_greater_power = yes
@@ -110,6 +112,7 @@ kurland_annexation = {
 	}	
 	
 become_neu_kurland_2 = { 
+	picture = new_krl
 	potential = { 
 		tag = KRL 
 		owns = 2229
@@ -130,7 +133,8 @@ become_neu_kurland_2 = {
 		}	
 	}	
 
-	master_of_the_antilles = { 
+	master_of_the_antilles = {
+	picture = claim_the_caribbean	
 	potential = { 
 	tag = UBD 
 	NOT = { has_country_flag = master_of_the_antille }
@@ -155,161 +159,169 @@ become_neu_kurland_2 = {
 	}	
 	
 
-	Purchase_of_St_Andrjew = { 
+	Purchase_of_St_Andrjew = {
+		picture = St_Andrjew	
 		potential = { 
 			tag = UBD 
 			PLC = { owns = 2233 }
 			NOT = { has_country_flag = st_andrjew }
 		}
 	
-	allow = { 
-	relation = { who = PLC value = 0 }
-	money = 100000
-	NOT = { PLC = { is_greater_power = yes } }
-	}
+		allow = { 
+			relation = { who = PLC value = 0 }
+			money = 50000
+			NOT = { PLC = { is_greater_power = yes } }
+		}
 	
-	effect = { 
-	PLC = { country_event = 371261 }
-	set_country_flag = st_andrjew
+		effect = { 
+			PLC = { country_event = 371261 }
+			set_country_flag = st_andrjew
 		}
 	}
 
-    Purchase_of_Spanish_antilles = { 
-	potential = { 
-	tag = UBD 
-	OR = { SPA = { owns = 2232 } SPA = { owns = 2409 } }
-	NOT = { has_country_flag = sao_joao }
-	}
+    Purchase_of_Spanish_antilles = {
+		picture = Spanish_antilles	
+		potential = { 
+			tag = UBD 
+			OR = { SPA = { owns = 2232 } SPA = { owns = 2409 } }
+			NOT = { has_country_flag = sao_joao }
+		}
 	
-	allow = { 
-	relation = { who = SPA value = 0 } 
-	money = 150000
-	NOT = { SPA = { is_greater_power = yes } }
-	}
+		allow = { 
+			relation = { who = SPA value = 0 } 
+			money = 50000
+			NOT = { SPA = { is_greater_power = yes } }
+		}
 	
-	effect = { 
-	SPA = { country_event = 371264 }
-	set_country_flag = sao_joao
+		effect = { 
+			SPA = { country_event = 371264 }
+			set_country_flag = sao_joao
 		}
 	}
 
 	
-	Purchase_of_Aragonese_antilles = { 
-	potential = { 
-	tag = UBD 
-	ARA = { owns = 2231 } 
-	NOT = { has_country_flag = ARA_antilles }
-	}
+	Purchase_of_Aragonese_antilles = {
+		picture = Aragonese_antilles	
+		potential = { 
+			tag = UBD 
+			ARA = { owns = 2231 } 
+			NOT = { has_country_flag = ARA_antilles }
+		}
 	
-	allow = { 
-	owns = 2233
-	owns = 2409
-	relation = { who = ARA value = 0 } 
-	money = 100000
-	}
+		allow = { 
+			owns = 2233
+			owns = 2409
+			relation = { who = ARA value = 0 } 
+			money = 50000
+		}
 	
-	effect = { 
-	ARA = { country_event = 371267 }
-	set_country_flag = ARA_antilles
+		effect = { 
+			ARA = { country_event = 371267 }
+			set_country_flag = ARA_antilles
 		}
 	}
 	
-	martinique_purchase = { 
-	potential = { 
-	tag = UBD 
-	BRG = { owns = 2228 }
-	owns = 2233 
-	owns = 2409 
-	NOT = { has_country_flag = martinique_BRG }
-	}
-	
-	allow = {
-	owns = 2231 
-	relation = { who = BRG value = 0 } 
-	money = 150000
-	}
-	
-	effect = { 
-	set_country_flag = martinique_BRG 
-	BRG = { country_event = 371270 }
-	}
-	
-	}
-	
-	SCA_purchase_antilles = { 
+	martinique_purchase = {
+		picture = martinique	
 		potential = { 
-		tag = UBD 
-		SCA = { owns = 2225 owns = 2230 }
-		NOT = { has_country_flag = SCA_antilles }
+			tag = UBD 
+			BRG = { owns = 2228 }
+			owns = 2233 
+			owns = 2409 
+			NOT = { has_country_flag = martinique_BRG }
+		}
+	
+		allow = {
+			owns = 2231 
+			relation = { who = BRG value = 0 } 
+			money = 50000
+		}
+	
+		effect = { 
+			set_country_flag = martinique_BRG 
+			BRG = { country_event = 371270 }
+		}
+	
+	}
+	
+	SCA_purchase_antilles = {
+		picture = SCA_antilles	
+		potential = { 
+			tag = UBD 
+			SCA = { owns = 2225 owns = 2230 }
+			NOT = { has_country_flag = SCA_antilles }
 		}
 		
 		allow = { 
-		owns = 2232 
-		money = 150000
-		relation = { who = SCA value = 0 }
+			owns = 2232 
+			money = 50000
+			relation = { who = SCA value = 0 }
 		}
 		
 		effect = { 
-		set_country_flag = SCA_antilles
-		SCA = { country_event = 371273 }
+			set_country_flag = SCA_antilles
+			SCA = { country_event = 371273 }
 		}
 	}
 	
-	montserrat_purchase = { 
+	montserrat_purchase = {
+		picture = montserrat_island	
 		potential = { 
-		tag = UBD 
-		ARA = { owns = 2224 }
-		owns = 2230 
-		NOT = { has_country_flag = montserrat_purchase }
+			tag = UBD 
+			ARA = { owns = 2224 }
+			owns = 2230 
+			NOT = { has_country_flag = montserrat_purchase }
 		}
 		
 		allow = { 
-		relation = { who = ARA value = 0 }
-		NOT = { ARA = { is_greater_power = yes } } 
-		money = 50000
+			relation = { who = ARA value = 0 }
+			NOT = { ARA = { is_greater_power = yes } } 
+			money = 50000
 		}
 		
 		effect = { 
-		ARA = { country_event = 371276 }
-		set_country_flag = montserrat_purchase
+			ARA = { country_event = 371276 }
+			set_country_flag = montserrat_purchase
 		}
 	}
 	
-	cristobal_purchase = { 
+	cristobal_purchase = {
+		picture = cristobal
 		potential = { 
-		tag = UBD 
-		SPA = { owns = 2227 }
-		NOT = { has_country_flag = cristoba_purchase }
-		owns = 2230 
+			tag = UBD 
+			SPA = { owns = 2227 }
+			NOT = { has_country_flag = cristoba_purchase }
+			owns = 2230 
 		}
 		
 		allow = { 
-		relation = { who = SPA value = 0 }
-		money = 50000
+			relation = { who = SPA value = 0 }
+			money = 50000
 		}
 		
 		effect = { 
-		set_country_flag = cristoba_purchase 
-		SPA = { country_event = 371279 }
+			set_country_flag = cristoba_purchase 
+			SPA = { country_event = 371279 }
 		}
 	}
 	
-	virgin_islands = { 
+	virgin_islands = {
+		picture = virgin_islands	
 		potential = { 
-		tag = UBD 
-		DUA = { owns = 2223 owns = 2226 owns = 2236 }
-		owns = 2227
-		NOT = { has_country_flag = virgin_islands_DUA }
+			tag = UBD 
+			DUA = { owns = 2223 owns = 2226 owns = 2236 }
+			owns = 2227
+			NOT = { has_country_flag = virgin_islands_DUA }
 		}
 		
 		allow = { 
-		relation = { who = DUA value = 0 }
-		money = 75000
+			relation = { who = DUA value = 0 }
+			money = 50000
 		}
 		
 		effect = { 
-		set_country_flag = virgin_islands_DUA
-		DUA = { country_event = 371282 }
+			set_country_flag = virgin_islands_DUA
+			DUA = { country_event = 371282 }
 		}
 	}
 }

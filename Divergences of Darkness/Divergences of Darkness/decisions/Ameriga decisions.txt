@@ -1,6 +1,7 @@
 political_decisions = {
 
 	LOT_NAN_friendship_decision = {
+		picture = LOT_NAN_friendship	
 		potential = { 
 			tag = LOT
 			NOT = {
@@ -12,7 +13,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			money = 50000
+			money = 25000
 			prestige = 20
 			war = no
 			romanticism = 1
@@ -32,12 +33,11 @@ political_decisions = {
 		}
 		
 		effect = {
-			treasury = -50000 ## Need to double check values
+			treasury = -25000 ## Need to double check values
 			set_country_flag = kings_statue
-			NAN = { relation = { who = LOT value = 200}
-				}	
-			}
+			NAN = { relation = { who = LOT value = 200} }	
 		}
+	}
 	
 	conquest_of_the_desertNAN = {
 
@@ -239,6 +239,7 @@ political_decisions = {
 	}
 	
 	LST_recognized = {
+		picture = LST_flag	
 		potential = {
 			tag = LST
 			NOT = { has_country_flag = LST_recognized }
@@ -300,6 +301,7 @@ political_decisions = {
 	}
 	
 	Manifest_destiny_AMADEM = {
+	picture = amerigan_destiny	
 		potential = {
 			tag = AMA
 			NOT = { has_country_flag = AMALOT }
@@ -555,7 +557,7 @@ political_decisions = {
 	}
 	
 	Granada_border = { 
-	
+	picture = Granada_map	
 	potential = { 
 	tag = AZL 
 	is_greater_power = yes 
@@ -598,7 +600,7 @@ political_decisions = {
 	}
 	
 	integrate_beornians = { 
-	
+	picture = beornians	
 	potential = {
 	owns = 2348 
 	NOT = { has_country_flag = beornia_accepted }
@@ -627,7 +629,7 @@ political_decisions = {
 	}
 	
 	integrate_granadan = { 
-	
+	picture = granadans	
 	potential = {
 	owns = 2348 
 	has_country_flag = congress_GRA
@@ -857,7 +859,8 @@ political_decisions = {
 		}
 	}
 	
-	independent_equinoxia = { 
+	independent_equinoxia = {
+	picture = equinoxia	
 		potential = { 
 		tag = EQN 
 		NOT = { has_country_flag = indepence_EQN }
@@ -910,7 +913,7 @@ political_decisions = {
 	}
 	
 	AZL_annexation_INC = { 
-	
+		picture = annexation_INC	
 	potential = { 
 		has_country_flag = ameriga_united
 		is_greater_power = yes 

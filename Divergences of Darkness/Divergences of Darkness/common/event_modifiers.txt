@@ -2698,3 +2698,11 @@ fascist_stronghold = {
 	pop_militancy_modifier = 0.05
 	icon = 3
 }
+
+### Caliphate ###
+recent_jihad = {
+	population_growth = -0.01
+	pop_militancy_modifier = 0.1
+	non_accepted_pop_consciousness_modifier = 0.05
+	icon = 16
+}

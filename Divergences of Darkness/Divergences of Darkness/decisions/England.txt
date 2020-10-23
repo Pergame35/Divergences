@@ -177,6 +177,7 @@ political_decisions = {
 	}
 	
 	OCC_recognized = {
+		picture = occitania_free	
 		potential = {
 		NOT = { has_global_flag = wait_DUA }
 		tag = OCC
@@ -211,6 +212,7 @@ political_decisions = {
 	}
 	
 	OCC_claim = {
+		picture = occitania_claim	
 		potential = {
 			tag = DUA
 			has_global_flag = OCC_loss 
@@ -237,6 +239,7 @@ political_decisions = {
 	}
 	
 	IRE_recognized = {
+		picture = ireland_free	
 		potential = {
 			tag = IRE
 			NOT = { has_country_flag = IRE_recognized }
@@ -272,6 +275,7 @@ political_decisions = {
 	}
 	
 	IRE_claim = {
+		picture = ireland_claim	
 		potential = {
 			tag = DUA
 			has_global_flag = IRE_loss 
@@ -299,6 +303,7 @@ political_decisions = {
 	}
 	
 	SCO_recognized = {
+		picture = scotland_free	
 		potential = {
 			tag = SCO
 			NOT = { has_country_flag = SCO_recognized }
@@ -333,6 +338,7 @@ political_decisions = {
 	}
 	
 	SCO_claim = {
+		picture = scotland_claim		
 		potential = {
 			tag = SCA
 			has_global_flag = SCO_loss 
@@ -360,7 +366,8 @@ political_decisions = {
 		}
 	}
 	
-	end_DUA_ENL = { 
+	end_DUA_ENL = {
+		picture = france_1350	
 		potential = { 
 				OR = { 
 					tag = ENL 
@@ -392,7 +399,8 @@ political_decisions = {
 	
 	}
 	
-	English_north_ENL = { 
+	English_north_ENL = {
+		picture = liverpool	
 		potential = { 
 			OR = { tag = ENL tag = ENG }
 			owns = 281 
@@ -421,7 +429,8 @@ political_decisions = {
 		}
 	}
 	
-	English_north_DUA = { 
+	English_north_DUA = {
+		picture = liverpool	
 		potential = { 
 			tag = DUA
 			owns = 281 
@@ -450,7 +459,8 @@ political_decisions = {
 		}
 	}
 	
-	English_south_ENL = { 
+	English_south_ENL = {
+		picture = london		
 		potential = { 
 			OR = { tag = ENL tag = ENG }
 			owns = 287 
@@ -473,7 +483,8 @@ political_decisions = {
 		}
 	}
 	
-	English_south_DUA = { 
+	English_south_DUA = {
+		picture = london	
 		potential = { 
 			tag = DUA
 			owns = 287 

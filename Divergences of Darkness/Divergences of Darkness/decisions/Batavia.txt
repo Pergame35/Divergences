@@ -1,5 +1,6 @@
 political_decisions = {
     claim_old_netherlands = {
+		picture = old_netherlands	
 			potential = {
 				tag = BTV
 				NOT = { has_country_flag = claim_old_netherlands }
@@ -29,6 +30,7 @@ political_decisions = {
 			}
 	}
 		return_home_BTV = {
+		picture = become_belgium		
 			potential = {
 				tag = BTV
 				has_country_flag = claim_old_netherlands
