@@ -1,6 +1,7 @@
 political_decisions = {
 
 	kingdom_of_hanover = {
+		picture = hanover	
         potential = {
             tag = HAN
             NOT = { has_country_flag = kingdom_of_hanover }
@@ -59,6 +60,7 @@ political_decisions = {
     }
 	
 	united_frisia = {
+		picture = frisa_coa	
 		potential = {
 			tag = FRI
 			NOT = { has_country_flag = united_frisia }
@@ -83,6 +85,7 @@ political_decisions = {
 	}
 	
 	form_westphalia = {
+		picture = westphalia		
 		potential = {
 			OR = {
 				tag = MNR
@@ -117,6 +120,7 @@ political_decisions = {
 	}
 	
 	form_rhineland_BEG = {
+		picture = froehliche_rheinland	
 		potential = {
 			tag = BEG
 			RHI = { exists = no }
@@ -143,6 +147,7 @@ political_decisions = {
 	}
 	
 	join_rhineland_BEG = {
+		picture = froehliche_rheinland	
 		potential = {
 			tag = BEG
 			RHI = { exists = yes }
@@ -171,6 +176,7 @@ political_decisions = {
 	}
 	
 	greater_rhineland = {
+		picture = froehliche_rheinland	
 		potential = {
 			tag = RHI
 			NOT = { has_country_flag = greater_rhineland }

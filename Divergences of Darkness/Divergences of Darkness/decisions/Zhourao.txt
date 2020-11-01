@@ -50,7 +50,8 @@ political_decisions = {
 			}
 	}
 	
-	assimilate_tributaries = { 
+	assimilate_tributaries = {
+		picture = aboriginie_zhourao
 		potential = { 
 		tag = GAN
 		NOT = { has_country_flag = assimilate_tributaries } 

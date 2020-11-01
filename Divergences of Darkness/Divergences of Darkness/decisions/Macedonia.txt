@@ -1,5 +1,6 @@
 political_decisions = {
 	restore_macedonia = {
+		picture = restore_macedonia	
 			potential = {
 				tag = MAC
 				
@@ -43,6 +44,7 @@ political_decisions = {
 			}
 	}
 	macedi_idea = {
+			picture = thrace
 			potential = {
 				tag = MAC
 				NOT = { is_vassal = yes }
@@ -87,6 +89,7 @@ political_decisions = {
 	}
 
 	to_north = {
+			picture = greater_bulgaria
 			potential = {
 				tag = MAC
 				NOT = { has_country_flag = macedon_greece }
@@ -131,7 +134,8 @@ political_decisions = {
 		NOT = { has_country_flag = macedon_greece }
 		NOT = { has_country_flag = macedon_serb }		
 		NOT = { has_country_flag = challenge_greece }
-		GRE = { exists = yes 
+		GRE = { 
+			exists = yes 
 			OR = {
                 government = absolute_monarchy
                 government = prussian_constitutionalism

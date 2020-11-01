@@ -1,5 +1,6 @@
 political_decisions = {
 	form_mejico = {
+		picture = form_mejico	
 		potential = {
 			NOT = {	MEX = { exists = yes }	}
 			NOT = {	CLM = { exists = yes }	}
@@ -44,6 +45,7 @@ political_decisions = {
 	}
 
 	embrace_mexican_unity = {
+		picture = mexican_unity	
 			potential = {
 				tag = MEX
 		   		has_global_flag = congress_of_panama_over

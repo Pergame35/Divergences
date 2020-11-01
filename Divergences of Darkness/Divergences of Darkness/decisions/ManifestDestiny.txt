@@ -1,5 +1,6 @@
 political_decisions = {
 	vin_manifest_destiny = { # Vinland
+		picture = viland_destiny	
 		potential = {
 			tag = VIN
 			NOT = { has_country_flag = vin_manifest_destiny }
@@ -56,6 +57,7 @@ political_decisions = {
 	}
 	
 	nbg_manifest_destiny = { # Seven Republics
+		picture = septiman_destiny	
 		potential = {
 			tag = NBG
 			NOT = { has_country_flag = nbg_manifest_destiny }
@@ -131,6 +133,7 @@ political_decisions = {
 	
 	pla_manifest_destiny = { # Plantagenia
 	picture = Destiny_PLA
+		picture = plantagenian_destiny	
 		potential = {
 			tag = PLA
 			NOT = { has_country_flag = pla_manifest_destiny }
@@ -184,6 +187,7 @@ political_decisions = {
 	}
 	
 	dng_manifest_destiny = { # Qingqiu
+		picture = qingqiu_destiny	
 		potential = {
 			tag = DNG
 			NOT = { has_country_flag = dng_manifest_destiny }

@@ -1,5 +1,6 @@
 political_decisions = {
 	claim_the_desert = {
+		picture = egyptian_desert	
 		potential = {
 			tag = MGH
 			NOT = { has_country_flag = our_sahara }
@@ -18,6 +19,7 @@ political_decisions = {
 	}
 
 	claim_the_west_desert = {
+		picture = sahara_divergences	
 		potential = {
 			tag = MGH
 			NOT = { has_country_flag = our_west }
@@ -36,6 +38,7 @@ political_decisions = {
 	}
 
 	claim_tripoli = {
+		picture = tripoli	
 		potential = {
 			tag = MGH
 			NOT = { has_country_flag = our_trip }
@@ -56,6 +59,7 @@ political_decisions = {
 
 
 	organize_mauretania = {
+		picture = mauretania	
 		potential = {
 			NOT = { tag = ARA }
 			NOT = { tag = ARI }
@@ -94,6 +98,7 @@ political_decisions = {
 	}
 
 	organize_numidia = {
+		picture = numidia	
 		potential = {
 			civilized = yes
 			NOT = { tag = SPA }
@@ -131,6 +136,7 @@ political_decisions = {
 	}
 
 	organize_libia = {
+		picture = lybia	
 		potential = {
 			civilized = yes
 			NOT = { capital_scope = { continent = africa } }
@@ -163,6 +169,7 @@ political_decisions = {
 	}
 	
 	end_the_merina_monarchy = {
+		picture = merina	
 		potential = {
 			is_greater_power = yes
 			continent = europe
@@ -200,7 +207,8 @@ political_decisions = {
 		}
 	}
 	
-	pegu_treaty = { 
+	pegu_treaty = {
+	picture = pegu	
 	potential = { 
 	tag = SPA 
 	owns = 1330 

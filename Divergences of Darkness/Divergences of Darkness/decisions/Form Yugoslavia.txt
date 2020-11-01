@@ -1,5 +1,6 @@
 political_decisions = {
 	form_yugoslavia = {
+		picture = yugoslavia	
 		potential = {
 			NOT = {	YUG = { exists = yes }	}
 			OR = {
@@ -46,6 +47,7 @@ political_decisions = {
 		}
 	}
 	claim_albania = {
+		picture = albania	
 		potential = {
 			tag = YUG
 			NOT = { has_country_flag = yugalbania }
@@ -112,6 +114,7 @@ political_decisions = {
 		}
 	}
 	claim_bulgaria = {
+		picture = bulgaria	
 		potential = {
 			tag = YUG
 			NOT = { has_country_flag = yugbulgaria }
@@ -180,6 +183,7 @@ political_decisions = {
 		}
 	}
 	claim_greeks = {
+		picture = greeks	
 		potential = {
 			OR = {
 				tag = YUG
@@ -229,7 +233,7 @@ political_decisions = {
 	}
 	
 	integrate_serbia = { 
-		picture = "SERCRO_union"
+		picture = SERCRO_union
 		potential = { 
 			tag = CRO 
 			SER = { vassal_of = THIS } 

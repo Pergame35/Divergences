@@ -1,5 +1,6 @@
 political_decisions = {
 	tanzimat_reforms_1 = {
+		picture = tanzimat	
 		potential = {
 			has_global_flag = fartheewell
 			NOT = { has_country_flag = macedoniaTURloss1 }
@@ -61,6 +62,7 @@ political_decisions = {
 		}
 	}
 	tanzimat_reforms_2 = {
+		picture = osmanisches	
 		potential = {
 			has_global_flag = fartheewell
 			NOT = { has_country_flag = albaniaTURloss }
@@ -161,6 +163,7 @@ political_decisions = {
 	}
 
 	reclaim_macedonia = {
+		picture = greater_macedonia	
 		potential = {
 			has_global_flag = fartheewell
 			OR = {
@@ -229,6 +232,7 @@ political_decisions = {
 	}
 
 	reclaim_kurdistan = {
+		picture = TUR_kurdistan		
 		potential = {
 			has_global_flag = fartheewell
 			has_country_flag = kurdistanTURloss
@@ -282,7 +286,8 @@ political_decisions = {
 		}
 	}
 	
-	egypt_levant = { 
+	egypt_levant = {
+	picture = egypt_levant	
 	potential = {
 		NOT = { has_country_flag = levant_claim }
 		tag = EGY 
@@ -302,7 +307,7 @@ political_decisions = {
 	}
 	
 	unequal_treaty_CRO = {
-	
+		picture = croatian_serbia		
 		potential = {
 			NOT = { has_country_flag = SER_rebellion }
 			ai = yes
@@ -423,6 +428,7 @@ political_decisions = {
 	}
 	
 	freeSER = {
+		picture = misar	
 		potential = {
 			tag = CRO 
 			war_with = TUR 
@@ -478,7 +484,8 @@ political_decisions = {
 		}
 	}
 	
-	cyrenaica_TUN = { 
+	cyrenaica_TUN = {
+	picture = cyrenaica		
 	potential = {
 	tag = TUN 
 	1735 = { owned_by = THIS }
@@ -497,6 +504,7 @@ political_decisions = {
 	}
 
 	move_capital_to_ankara = {
+	picture = move_capital_to_ankara	
 		potential = {
 			tag = TUR
 			NOT = { capital = 876 }

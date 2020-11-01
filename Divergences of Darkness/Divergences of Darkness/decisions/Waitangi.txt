@@ -1,7 +1,7 @@
 political_decisions = {
 
 	treaty_of_waitangiDVG = {
-	
+		picture = waitangi	
 		potential = {
 			is_greater_power = yes
 			owns = 2515
@@ -31,6 +31,7 @@ political_decisions = {
 	}
 	
 	organize_new_zealand = {
+		picture = map_new_zealand	
 		potential = {
 			civilized = yes
 			continent = europe
@@ -70,6 +71,7 @@ political_decisions = {
 	}
 	
 	reorganize_new_zealand = {
+		picture = map_new_zealand
 		potential = {
 			civilized = yes
 			has_global_flag = nzl_organized
@@ -102,7 +104,8 @@ political_decisions = {
 		}	
 	}
 	
-	accept_maoris = { 
+	accept_maoris = {
+	picture = maori		
 	potential = { 
 	tag = NZL 
 	NOT = { has_country_flag = maoris_acc }

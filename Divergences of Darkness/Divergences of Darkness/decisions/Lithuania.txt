@@ -1,5 +1,6 @@
 political_decisions = {
 		reform_the_grand_duchy = {
+			picture = grand_duchy		
 			potential = {
 				tag = LIT
 				NOT = { has_country_flag = grand_duchy }

@@ -1,6 +1,7 @@
 political_decisions = {
 	
 	unite_ethiopia_1 = {
+	picture = ethiopia	
 		potential = {
 			tag = AMT	
 		}
@@ -39,6 +40,7 @@ political_decisions = {
 		}
 	}
 	unite_ethiopia_2 = {
+	picture = ethiopia	
 		potential = {
 			tag = ETH
 			NOT = { has_country_flag = amatsa }	
@@ -77,6 +79,7 @@ political_decisions = {
 		}
 	}
 	unite_ethiopia_3 = {
+	picture = ethiopia	
 		potential = {
 			tag = ORO	
 		}
@@ -116,6 +119,7 @@ political_decisions = {
 		}
 	}
 	unite_ethiopia_4 = {
+	picture = ethiopia	
 		potential = {
 			tag = ADA
 			NOT = { has_country_flag = greater_adal }	

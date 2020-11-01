@@ -1,6 +1,7 @@
 political_decisions = {
 
 form_greece = {
+		picture = form_greece
 		potential = {
 			NOT = { GRE = { exists = yes }	}
 			primary_culture = greek

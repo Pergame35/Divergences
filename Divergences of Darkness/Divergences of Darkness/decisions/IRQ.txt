@@ -1,5 +1,6 @@
 political_decisions = {
 	shield_of_levant = {
+		picture = shield_of_levant	
 		potential = {
 			tag = IRQ
 			NOT = {	has_country_flag = levantines }
@@ -50,6 +51,7 @@ political_decisions = {
 	}
 
 	persiania = {
+		picture = persiania	
 		potential = {
 			tag = IRQ
 			NOT = {	has_country_flag = persiania }

@@ -1,5 +1,6 @@
 political_decisions = {
 	form_italy = {
+		picture = italy	
 		potential = {
 			is_culture_group = italian
 			NOT = {
@@ -126,7 +127,8 @@ political_decisions = {
 		}
 	}
 	
-	venetians_culture = { 
+	venetians_culture = {
+	picture = venetian_question	
 		potential = { 
 			OR = { 
 				tag = ITA
@@ -154,6 +156,7 @@ political_decisions = {
 	}
 	
 	italia_irredenta = {
+	picture = italia_irredenta		
 		potential = {
 			tag = ITA
 			NOT = { has_country_flag = italia_ulterior }
@@ -181,6 +184,7 @@ political_decisions = {
 	}
 	
 	savoy_of_italy = {
+	picture = piedmont		
 		potential = {
 			tag = DUA
 			has_country_flag = meddle_in_italy
@@ -512,6 +516,7 @@ political_decisions = {
 	}
 	
 	dalmatia_VEN = { 
+		picture = dalmatia	
 		potential = { 
 		tag = VEN 
 		NOT = { has_country_flag = dalmatia_cores }

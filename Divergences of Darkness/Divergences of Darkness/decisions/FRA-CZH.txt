@@ -1,5 +1,6 @@
 political_decisions = {
 	bridge_over_salzach = {
+		picture = bridge_nantes	
 		potential = {
 			DUA = {
 				OR = {
@@ -73,6 +74,7 @@ political_decisions = {
 	}
 
 	partition_of_venice = {
+		picture = stato_da_terra		
 		potential = {
 			has_global_flag = salzachongoing
 			tag = AUS
