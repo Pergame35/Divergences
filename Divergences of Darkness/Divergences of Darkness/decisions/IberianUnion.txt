@@ -78,7 +78,8 @@ form_iberia = {
 		}
 	}
 	
-	integrate_navarra = { 
+	integrate_navarra = {
+		picture = euskadia	
 		potential = {
 			tag = SPA
 			OR = { 
@@ -107,6 +108,7 @@ form_iberia = {
 	}
 	
 	integrate_catalans = {
+		picture = quatre_columnes		
 		potential = {
 			tag = SPA
 			has_country_flag = iberian_union
@@ -211,6 +213,7 @@ form_iberia = {
 	}
 	
 	mancomunidad_de_naciones = { ### Need to re-code, make exclusive with Iberia
+		picture = spanish_commonwealth	
 		potential = { 
 			tag = SPA  
 			has_country_flag = spaCLM

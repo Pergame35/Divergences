@@ -25,7 +25,8 @@ political_decisions = {
 
 	}
 
-	HUN_prague = { 
+	HUN_prague = {
+	picture = prague	
 	picture = hungary
 	potential = { 
 	tag = HUN 
@@ -44,7 +45,8 @@ political_decisions = {
 		}
 	}
 	
-	BOH_buda = { 
+	BOH_buda = {
+	picture = budapest	
 	picture = hungary
 	potential = { 
 	tag = BOH 
@@ -64,7 +66,7 @@ political_decisions = {
 	}
 	
 	reclaim_croatia = { 
-	
+	picture = dalmatia	
 		potential = { 
 			tag = HUN 
 			OR = { 
@@ -102,7 +104,7 @@ political_decisions = {
 	}
 	
 	croatian_compromise = {
-		picture = embrace_minority
+		picture = croatian_compromise
 		potential = {
 			tag = HUN
 			771 = { is_core = THIS }

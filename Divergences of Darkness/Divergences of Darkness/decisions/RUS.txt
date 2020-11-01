@@ -55,6 +55,7 @@ political_decisions = {
 
 
 	mongolian_protectorate = {
+		picture = mongolia_sunrise	
 		potential = {
 			OR = { 
 			tag = RUS
@@ -91,6 +92,7 @@ political_decisions = {
 
 	#New Russian focus event.
 	set_expansion_focus = {
+		picture = mandylion	
 			potential = {
 				tag = RUS
 				NOT = { 
@@ -117,6 +119,7 @@ political_decisions = {
 #Next step: Moving the capital, once all relevant territory is reclaimed.
 	#St. Petersburg will be named after Mikhail I ("Mikhailgrad")
 	move_capital_to_nyenschantz = {
+		picture = petersburg	
 		potential = {
 			tag = RUS
 			has_country_flag = baltic_focus
@@ -149,6 +152,7 @@ political_decisions = {
 
 	#Rostov retains its name.
 	move_capital_to_rostov = {
+		picture = rostov		
 		potential = {
 			tag = RUS
 			has_country_flag = southern_focus
@@ -180,6 +184,7 @@ political_decisions = {
 
 #Once you've moved the capital and picked up some tech, you can start accepting cultures.
 	integrate_ruthenian_culture = {
+		picture = kiev_wedding	
 		potential = {
 			tag = RUS
 			has_country_flag = panslavic_focus
@@ -203,6 +208,7 @@ political_decisions = {
 	}
 	#Steppe/Caucasus cultures
 	integrate_tatar_culture = {
+		picture = balcic	
 		potential = {
 			tag = RUS
 			has_country_flag = southern_focus
@@ -224,6 +230,7 @@ political_decisions = {
 		}
 	}	
 	integrate_astrakhani_culture = {
+		picture = astrakhan	
 		potential = {
 			tag = RUS
 			has_country_flag = southern_focus
@@ -244,6 +251,7 @@ political_decisions = {
 		}
 	}	
 	integrate_georgian_culture = {
+		picture = tiflis		
 		potential = {
 			tag = RUS
 			has_country_flag = southern_focus
@@ -267,6 +275,7 @@ political_decisions = {
 	}	
 	#Baltic cultures
 	integrate_estonian_culture = {
+		picture = tallinn	
 		potential = {
 			tag = RUS
 			has_country_flag = baltic_focus
@@ -287,6 +296,7 @@ political_decisions = {
 		}
 	}	
 	integrate_latvian_culture = {
+		picture = latvia_birch	
 		potential = {
 			tag = RUS
 			has_country_flag = baltic_focus
@@ -306,6 +316,7 @@ political_decisions = {
 		}
 	}	
 	integrate_finnish_culture = {
+		picture = helsinki	
 		potential = {
 			tag = RUS
 			has_country_flag = baltic_focus

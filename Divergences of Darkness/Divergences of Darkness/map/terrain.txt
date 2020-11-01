@@ -165,6 +165,16 @@ categories =  {
 		supply_limit = 10
 	}
 	
+	mining_district = {
+		movement_cost = 1.0
+		color = { 137 104 165 }
+		farm_rgo_size = 0.0
+		farm_rgo_eff = 0.0
+		mine_rgo_size = 0.0
+		mine_rgo_eff = 0.25
+		supply_limit = 10
+	}	
+	
 	mountain = {
 		movement_cost = 1.4
 		defence = 3

@@ -97,7 +97,7 @@ political_decisions = {
 	}
 	
 	move_to_frankfurt = { 
-	
+	picture = frankfurt	
 	potential = { 
 	tag = HLR 
 	NOT = { has_country_flag = frankfurt_unify }
@@ -132,7 +132,7 @@ political_decisions = {
 	}
 	
 	form_elbian_confederation = { 
-	
+	picture = elbian_confederation	
 	potential = { 
 	tag = BOH 
 	has_global_flag = liberal_revolutions_should_now_fire
@@ -343,7 +343,7 @@ political_decisions = {
 	}
 	
 	integrate_prussia = { 
-		
+	picture = prussia		
 	potential = { 
 	OR = { tag = HLR tag = CAE } 
 	690 = { owned_by = THIS }
@@ -366,7 +366,7 @@ political_decisions = {
 	}
 	
 	integrate_elsass = { 
-		
+	picture = elsass		
 	potential = { 
 	tag = HLR 
 	409 = { owned_by = THIS }

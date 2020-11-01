@@ -223,6 +223,7 @@ political_decisions = {
 	}
   
   annex_hawaii = {
+    picture = hawaii  
 		potential = {
 			exists = HAW
 			HAW = { ai = yes }
@@ -397,7 +398,8 @@ political_decisions = {
 	
 	}
 	
-	organize_yakutia = { 
+	organize_yakutia = {
+		picture = yakutia
 		potential = {
 		tag = JAP
 		#used to be 2669 which is now Sondrio in italy  

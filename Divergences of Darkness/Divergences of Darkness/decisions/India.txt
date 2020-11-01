@@ -1,6 +1,7 @@
 political_decisions = {
 	  
 	form_india = {
+	picture = map_india	
 		potential = {
 			is_culture_group = south_asian
 			NOT = {
@@ -81,6 +82,7 @@ political_decisions = {
 
 
 	form_dravida = {
+	picture = dravidia		
 		potential = {
 			is_culture_group = dravidian
 			NOT = {

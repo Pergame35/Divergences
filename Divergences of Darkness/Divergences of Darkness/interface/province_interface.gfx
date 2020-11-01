@@ -420,6 +420,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_terrainimg_mining_district"
+		texturefile = "gfx\\interface\\terrain_mining_district.tga"
+		norefcount = yes
+	}	
+	
+	spriteType = {
 		name = "GFX_invest_rail_button"
 		texturefile = "gfx\\interface\\invest_rail_button.tga"
 	}

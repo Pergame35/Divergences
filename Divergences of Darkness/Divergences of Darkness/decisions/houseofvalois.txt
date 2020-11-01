@@ -63,7 +63,7 @@ political_decisions = {
 	}
 
 	reclaim_occitania = { 
-
+		picture = Occitania
 		potential = { 
 			tag = ITA 
 			has_country_flag = valois_italy
@@ -145,7 +145,8 @@ political_decisions = {
 		}
 	}
 	
-	france_italy = { 
+	france_italy = {
+	picture = charlemagne	
 	potential = { 
 			tag = ITA 
 			OR = { 
@@ -323,6 +324,7 @@ political_decisions = {
 	}
 	
 	reclaim_paris_DUA = {
+	picture = reclaim_paris	
 		potential = {
 			tag = DUA
 			FRA = { has_country_flag = PRV_paris }
@@ -341,7 +343,8 @@ political_decisions = {
 		}
 	}
 	
-	integrate_bretons = { 
+	integrate_bretons = {
+	picture = brittany	
 	potential = { 
 	OR = { tag = FRT 
 	AND = { tag = PRV has_country_flag = valois_rulez }
@@ -361,7 +364,8 @@ political_decisions = {
 	
 	}
 	
-	lucca_war = { 
+	lucca_war = {
+	picture = lucca	
 	potential = { 
 	tag = PRV 
 	OR = { 

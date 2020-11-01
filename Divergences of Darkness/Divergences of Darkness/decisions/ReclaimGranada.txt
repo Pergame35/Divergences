@@ -1,5 +1,6 @@
 political_decisions = {
 	reclaim_granada = {
+        picture = Granada_map	
 		potential = {
 			has_global_flag = death_toGRC
 			NOT = { has_country_flag = reclaim_granada }
@@ -51,6 +52,7 @@ political_decisions = {
 	}
 	
 	form_granada = {
+        picture = form_granada	
 		potential = {
 			NOT = { tag = GRA }
 			NOT = { exists = GRA }

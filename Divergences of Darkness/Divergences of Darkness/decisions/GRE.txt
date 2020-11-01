@@ -1,5 +1,6 @@
 political_decisions = {
-	treaty_of_Corfu = { 
+	treaty_of_Corfu = {
+		picture = morea	
 		potential = { 
 			tag = GRE
 			VEN = {
@@ -50,6 +51,7 @@ political_decisions = {
 	}
 
 	claim_thrace = {
+			picture = thrace		
 			potential = {
 				tag = GRE
 				NOT = { is_vassal = yes }
@@ -83,7 +85,8 @@ political_decisions = {
 			}
 	}
 	megali_idea = {
-			potential = {
+			picture = megali	
+			potential = {	
 				tag = GRE
 				NOT = { is_vassal = yes }
 				NOT = { has_country_flag = megali_idea }
@@ -219,7 +222,7 @@ political_decisions = {
 	}
 	
 	settle_east_MAC = { 
-	
+	picture = east_macedonia	
 	potential = { 
 	tag = GRE 
 	owns = 823 
@@ -244,6 +247,7 @@ political_decisions = {
 	}
 	
 	Enosis_GRE = { 
+	picture = enosis	
 	potential = { 
 	tag = GRE 
 	has_country_flag = megali_idea 
@@ -271,6 +275,7 @@ political_decisions = {
 	}
 	
 	greek_epirus = {
+	picture = epirus	
 		potential = {
 			tag = GRE
 			owns = 824 #Janina
@@ -294,6 +299,7 @@ political_decisions = {
 	}
 
 	restore_epirus = {
+		picture = epirus	
 		potential = {
 			OR = {
 				tag = TUR
@@ -325,6 +331,7 @@ political_decisions = {
 	}
 	
 	greek_thrace = {
+		picture = adrianople	
 		potential = {
 			tag = GRE
 			OR = {
@@ -361,6 +368,7 @@ political_decisions = {
 	}
 
 	restore_thrace = {
+		picture = adrianople	
 		potential = {
 			tag = TUR
 			has_global_flag = greek_thrace
@@ -402,6 +410,7 @@ political_decisions = {
 	}
 	
 	greek_constantinople = {
+		picture = constantinople	
 		potential = {
 			tag = GRE
 			owns = 860 #Istanbul
@@ -431,6 +440,7 @@ political_decisions = {
 	}
 
 	restore_istanbul = {
+		picture = constantinople		
 		potential = {
 			tag = TUR
 			has_global_flag = greek_constantinople
@@ -465,6 +475,7 @@ political_decisions = {
 	}
 	
 	greek_ionia = {
+		picture = smyrna	
 		potential = {
 			tag = GRE
 			owns = 869 #Izmir
@@ -495,6 +506,7 @@ political_decisions = {
 	}
 
 	restore_aydin = {
+		picture = smyrna	
 		potential = {
 			tag = TUR
 			has_global_flag = greek_ionia
@@ -527,6 +539,7 @@ political_decisions = {
 	}
 	
 	greek_nicaea = {
+		picture = nicomedia	
 		potential = {
 			tag = GRE
 			owns = 863 #Bursa
@@ -561,6 +574,7 @@ political_decisions = {
 	}
 
 	restore_hudavendigar = {
+		picture = nicomedia		
 		potential = {
 			tag = TUR
 			owns = 863 #Bursa
@@ -601,6 +615,7 @@ political_decisions = {
 	}
 	
 	greek_pontus = {
+		picture = Trapezounda		
 		potential = {
 			tag = GRE
 			owns = 860 #Istanbul
@@ -637,6 +652,7 @@ political_decisions = {
 	}
 
 	restore_pontus = {
+		picture = Trapezounda	
 		potential = {
 			tag = TUR
 			has_global_flag = greek_pontus

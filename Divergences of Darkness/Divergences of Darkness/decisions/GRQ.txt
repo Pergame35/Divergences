@@ -1,5 +1,6 @@
 political_decisions = {	     
 	greater_griqualand = {
+		picture = map_africa
 		potential = {
 			tag = GRQ
 			NOT = { has_country_flag = greater_griqualand }
@@ -32,6 +33,7 @@ political_decisions = {
 	
 	
 	griqualand_coast = {
+		picture = griqualand_coast	
 		potential = {
 			OR = {
 				tag = GRQ			

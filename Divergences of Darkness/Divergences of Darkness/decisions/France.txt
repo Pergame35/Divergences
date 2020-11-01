@@ -1,4 +1,5 @@
 political_decisions = {
+	picture = dismantle_DUA
 	anschluss_DUA = {
 	potential = { 
 	has_country_flag = anschluss_DUA 
@@ -77,7 +78,8 @@ political_decisions = {
 	
 	}
 	
-	savoy_cores_OCC = { 
+	savoy_cores_OCC = {
+	picture = piedmont	
 	potential = { 
 	OR = { tag = OCC
 	AND = { tag = FRA 
@@ -98,7 +100,8 @@ political_decisions = {
 	
 	}
 	
-	savoy_cores_ITA = { 
+	savoy_cores_ITA = {
+	picture = piedmont	
 	potential = { 
 	tag = ITA
 	NOT = { has_global_flag = savoy_cores }
@@ -115,7 +118,8 @@ political_decisions = {
 	
 	}
 	
-	integrating_provencal = { 
+	integrating_provencal = {
+	picture = provence_castle	
 	potential = {
 	NOT = { has_country_flag = Paris_congress }
 	NOT = { has_country_flag = provencal_acc }
@@ -137,7 +141,8 @@ political_decisions = {
 	
 	}
 	
-	integrating_irish = { 
+	integrating_irish = {
+	picture = bentheim	
 	potential = {
 	NOT = { has_country_flag = Paris_congress }
 	NOT = { has_country_flag = irish_acc }
@@ -159,7 +164,8 @@ political_decisions = {
 	
 	}
 	
-	integrate_scotland = { 
+	integrate_scotland = {
+	picture = scotland_claim	
 		potential = {
 			tag = DUA 
 			NOT = { has_country_flag = Paris_congress }
@@ -178,7 +184,8 @@ political_decisions = {
 	
 	}
 	
-	integrating_scottish = { 
+	integrating_scottish = {
+	picture = glasgow	
 		potential = {
 			NOT = { has_country_flag = Paris_congress }
 			NOT = { has_country_flag = scottish_acc }
@@ -199,7 +206,8 @@ political_decisions = {
 	
 	}
 	
-	integrating_basque = { 
+	integrating_basque = {
+	picture = bank_vitoria	
 	potential = {
 	NOT = { has_country_flag = Paris_congress }
 	NOT = { has_country_flag = basque_acc }
@@ -220,7 +228,7 @@ political_decisions = {
 	}
 	
 	anglois_language_schooling = {
-	
+	picture = vergonha	
 		potential = {
 			tag = DUA
 			OR = { has_global_flag = english_int has_global_flag = french_int has_country_flag = Anglois_accepted }
