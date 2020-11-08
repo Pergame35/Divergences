@@ -356,6 +356,7 @@ political_decisions = {
 		potential = {
 			owns = 1835
 			2564 = { empty = yes }
+			1806 = { empty = yes }			
 		}
 
 		allow = {
@@ -365,6 +366,7 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			2564 = { secede_province = THIS }
+			1806 = { secede_province = THIS }		
 		}
 
 		ai_will_do = {

@@ -2706,3 +2706,27 @@ recent_jihad = {
 	non_accepted_pop_consciousness_modifier = 0.05
 	icon = 16
 }
+
+### Dictatorship ###
+underground_newspaper = {
+	pop_consciousness_modifier = 0.05
+	pop_militancy_modifier = 0.02
+	icon = 18
+}
+
+freedom_talks = {
+	global_pop_consciousness_modifier = 0.01
+	icon = 16
+}
+
+growing_unrest = {
+	global_pop_consciousness_modifier = 0.03
+	global_pop_militancy_modifier = 0.02
+	icon = 16
+}
+
+revolutionary_society = {
+	global_pop_consciousness_modifier = 0.01
+	global_pop_militancy_modifier = 0.01
+	icon = 16
+}

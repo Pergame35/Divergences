@@ -4289,68 +4289,103 @@ establish_protectorate_casus_belli = {
 						capital_scope = { continent = south_america } 
 						capital_scope = { continent = north_america }
 						capital_scope = { continent = australia_new_zealand }
-						}
 					}
 				}
 			}
+		}
 		
 		OR = {
-			NOT = { is_culture_group = chinese }
-			NOT = { total_pops = 700000 }
-			NOT = { any_owned_province = { is_core = CHI } }
-			AND = {
-				THIS = { ai = no naval_directionism = 1 machine_guns = 1 NOT = { capital_scope = { continent = asia } } }
-				any_owned_province = { any_neighbor_province = { OR = { NOT = { owned_by = THIS } is_overseas = yes } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = { capital_scope = { continent = asia } ai = no naval_logistics = 1 num_of_ports = 1 }
-				NOT = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = {
-					integral_rail_system = 1
-					military_logistics = 1
-					machine_guns = 1
-					ai = no
-					NOT = { capital_scope = { continent = asia } }
-				}
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-			AND = {
-				THIS = { steel_railroad = 1 military_logistics = 1 machine_guns = 1 ai = no capital_scope = { continent = asia } }
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
+			THIS = { total_pops = 1000000 }
+			THIS = { machine_guns = 1 }
+			NOT = { total_pops = 200000 }
 		}
 		
 		THIS = {
 			civilized = yes
+			military_score = 1			
 			NOT = { has_country_modifier = neutrality }
 		}
+		
 		OR = {
 			THIS = { NOT = { nationalism_n_imperialism = 1 } }
 			NOT = { has_global_flag = berlin_conference }
-			primary_culture = japanese
-			primary_culture = korean
-			primary_culture = persian
-			civilization_progress = 0.7
+			civilization_progress = 0.6
 			has_country_flag = post_colonial_country
 		}
 		OR = {
 			THIS = { NOT = { nationalism_n_imperialism = 1 } }
-			primary_culture = japanese
-			primary_culture = korean
-			primary_culture = persian
-			civilization_progress = 0.7
+			civilization_progress = 0.6
 			has_country_flag = post_colonial_country
 			AND = {
 				THIS = { nationalism_n_imperialism = 1 }
 				capital_scope = { continent = africa }
 			}
 		}
+		
+		#Restrictions to non-African State conquering
+		OR = {
+			capital_scope = { continent = africa }
+		
+			NOT = { total_pops = 500000 }
+			
+			AND = {
+				NOT = { total_pops = 1000000 }
+				OR = {
+					capital_scope = { is_overseas = no }
+					THIS = {
+						ai = no
+						naval_logistics = 1
+					}
+					THIS = {
+						ai = yes
+						raider_group_doctrine = 1
+						iron_steamers = 1
+					}
+				}
+			}
+			
+			AND = {
+				NOT = { total_pops = 2000000 }
+				THIS = { machine_guns = 1 }
+				OR = {
+					capital_scope = { is_overseas = no }
+					THIS = {
+						ai = no
+						naval_directionism = 1
+					}
+					THIS = {
+						ai = yes
+						steam_turbine_ships = 1
+					}
+				}
+			}
+			AND = {
+				NOT = { total_pops = 3000000 }
+				THIS = {
+					bolt_action_rifles = 1
+					army_risk_management = 1
+				}
+				OR = {
+					capital_scope = { is_overseas = no }
+					THIS = {
+						ai = no
+						naval_integration = 1
+					}
+					THIS = {
+						ai = yes
+						oil_driven_ships = 1
+					}
+				}
+			}
+			AND = {
+				total_pops = 3000000
+				THIS = {
+					modern_divisional_structure = 1
+					army_nco_training = 1
+				}
+			}
+		} ###End of Non-African Restrictions
+	
 	}
 	
 	po_annex = yes
@@ -4400,7 +4435,9 @@ establish_protectorate_NI_casus_belli = {
 			}
 		}
 		NOT = { is_our_vassal = THIS }
+		
 		THIS = {
+			military_score = 1
 			civilized = yes
 			nationalism_n_imperialism = 1
 			NOT = {
@@ -4408,11 +4445,9 @@ establish_protectorate_NI_casus_belli = {
 				has_global_flag = berlin_conference
 			}
 		}
+		
 		NOT = {
-			primary_culture = japanese
-			primary_culture = korean
-			primary_culture = persian
-			civilization_progress = 0.7
+			civilization_progress = 0.6
 			has_country_flag = post_colonial_country
 			has_country_modifier = neutrality
 			capital_scope = { continent = africa }
@@ -4426,6 +4461,12 @@ establish_protectorate_NI_casus_belli = {
 		}
 		
 		OR = {
+			THIS = { total_pops = 1000000 }
+			THIS = { machine_guns = 1 }
+			NOT = { total_pops = 200000 }
+		}
+		
+		OR = {
 			THIS = { ai = no }
 			THIS = { war_policy = jingoism NOT = { government = democracy } }
 			NOT = { 
@@ -4434,42 +4475,74 @@ establish_protectorate_NI_casus_belli = {
 						capital_scope = { continent = south_america } 
 						capital_scope = { continent = north_america }
 						capital_scope = { continent = australia_new_zealand }
-						}
 					}
 				}
 			}
-		
-		OR = {
-			NOT = { is_culture_group = chinese }
-			NOT = { total_pops = 700000 }
-			NOT = { any_owned_province = { is_core = CHI } }
-			AND = {
-				THIS = { ai = no naval_directionism = 1 machine_guns = 1 NOT = { capital_scope = { continent = asia } } }
-				any_owned_province = { any_neighbor_province = { OR = { NOT = { owned_by = THIS } is_overseas = yes } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = { capital_scope = { continent = asia } ai = no naval_logistics = 1 num_of_ports = 1 }
-				NOT = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = {
-					integral_rail_system = 1
-					military_logistics = 1
-					machine_guns = 1
-					ai = no
-					NOT = { capital_scope = { continent = asia } }
-				}
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-			AND = {
-				THIS = { steel_railroad = 1 military_logistics = 1 machine_guns = 1 ai = no capital_scope = { continent = asia } }
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
 		}
+		
+		#Restrictions to non-African State conquering
+		OR = {
+			capital_scope = { continent = africa }
+		
+			NOT = { total_pops = 500000 }
+			
+			AND = {
+				NOT = { total_pops = 1000000 }
+				OR = {
+					capital_scope = { is_overseas = no }
+					THIS = {
+						ai = no
+						naval_logistics = 1
+					}
+					THIS = {
+						ai = yes
+						raider_group_doctrine = 1
+						iron_steamers = 1
+					}
+				}
+			}
+			
+			AND = {
+				NOT = { total_pops = 2000000 }
+				THIS = { machine_guns = 1 }
+				OR = {
+					capital_scope = { is_overseas = no }
+					THIS = {
+						ai = no
+						naval_directionism = 1
+					}
+					THIS = {
+						ai = yes
+						steam_turbine_ships = 1
+					}
+				}
+			}
+			AND = {
+				NOT = { total_pops = 3000000 }
+				THIS = {
+					bolt_action_rifles = 1
+					army_risk_management = 1
+				}
+				OR = {
+					capital_scope = { is_overseas = no }
+					THIS = {
+						ai = no
+						naval_integration = 1
+					}
+					THIS = {
+						ai = yes
+						oil_driven_ships = 1
+					}
+				}
+			}
+			AND = {
+				total_pops = 3000000
+				THIS = {
+					modern_divisional_structure = 1
+					army_nco_training = 1
+				}
+			}
+		} ###End of Non-African Restrictions
 	}
 	
 	po_annex = yes
@@ -4519,17 +4592,19 @@ establish_protectorate_BC_casus_belli = {
 			}
 		}
 		NOT = { is_our_vassal = THIS }
+		
 		THIS = {
+			military_score = 1
 			civilized = yes
 			nationalism_n_imperialism = 1
 			has_global_flag = berlin_conference
 			NOT = { has_country_modifier = neutrality }
 		}
+		
 		NOT = {
-			primary_culture = japanese
-			primary_culture = korean
-			primary_culture = persian
-			civilization_progress = 0.7
+			civilized = yes
+			war_with = THIS
+			civilization_progress = 0.6
 			has_country_flag = post_colonial_country
 			has_country_modifier = neutrality
 		}
@@ -4539,9 +4614,15 @@ establish_protectorate_BC_casus_belli = {
 		}
 		civilized = no
 		is_vassal = no
+		#OR = {
+		#	war_with = THIS
+		#	THIS = { NOT = { has_country_modifier = punitive_effects } }
+		#}
+		
 		OR = {
-			war_with = THIS
-			THIS = { NOT = { has_country_modifier = punitive_effects } }
+			THIS = { total_pops = 1000000 }
+			THIS = { machine_guns = 1 }
+			NOT = { total_pops = 200000 }
 		}
 		
 		OR = {
@@ -4553,42 +4634,74 @@ establish_protectorate_BC_casus_belli = {
 						capital_scope = { continent = south_america } 
 						capital_scope = { continent = north_america }
 						capital_scope = { continent = australia_new_zealand }
-						}
 					}
 				}
 			}
-		
-		OR = {
-			NOT = { is_culture_group = chinese }
-			NOT = { total_pops = 700000 }
-			NOT = { any_owned_province = { is_core = CHI } }
-			AND = {
-				THIS = { ai = no naval_directionism = 1 machine_guns = 1 NOT = { capital_scope = { continent = asia } } }
-				any_owned_province = { any_neighbor_province = { OR = { NOT = { owned_by = THIS } is_overseas = yes } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = { capital_scope = { continent = asia } ai = no naval_logistics = 1 num_of_ports = 1 }
-				NOT = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = {
-					integral_rail_system = 1
-					military_logistics = 1
-					machine_guns = 1
-					ai = no
-					NOT = { capital_scope = { continent = asia } }
-				}
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
-			AND = {
-				THIS = { steel_railroad = 1 military_logistics = 1 machine_guns = 1 ai = no capital_scope = { continent = asia } }
-				NOT = { total_pops = 2000000 }
-				any_owned_province = { any_neighbor_province = { owned_by = THIS is_overseas = no has_building = railroad } }
-			}
 		}
+		
+		#Restrictions to non-African State conquering
+		OR = {
+			capital_scope = { continent = africa }
+		
+			NOT = { total_pops = 500000 }
+			
+			AND = {
+				NOT = { total_pops = 1000000 }
+				OR = {
+					capital_scope = { is_overseas = no }
+					THIS = {
+						ai = no
+						naval_logistics = 1
+					}
+					THIS = {
+						ai = yes
+						raider_group_doctrine = 1
+						iron_steamers = 1
+					}
+				}
+			}
+			
+			AND = {
+				NOT = { total_pops = 2000000 }
+				THIS = { machine_guns = 1 }
+				OR = {
+					capital_scope = { is_overseas = no }
+					THIS = {
+						ai = no
+						naval_directionism = 1
+					}
+					THIS = {
+						ai = yes
+						steam_turbine_ships = 1
+					}
+				}
+			}
+			AND = {
+				NOT = { total_pops = 3000000 }
+				THIS = {
+					bolt_action_rifles = 1
+					army_risk_management = 1
+				}
+				OR = {
+					capital_scope = { is_overseas = no }
+					THIS = {
+						ai = no
+						naval_integration = 1
+					}
+					THIS = {
+						ai = yes
+						oil_driven_ships = 1
+					}
+				}
+			}
+			AND = {
+				total_pops = 3000000
+				THIS = {
+					modern_divisional_structure = 1
+					army_nco_training = 1
+				}
+			}
+		} ###End of Non-African Restrictions
 	}
 	
 	po_annex = yes
