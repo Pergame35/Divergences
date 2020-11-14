@@ -17,7 +17,7 @@ party = {
 }
 
 party = {
-	name = "HUN_conservative_2" # Magyar Party
+	name = "HUN_conservative_2" # Palatine Party
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -32,7 +32,7 @@ party = {
 }
 
 party = {
-	name = "HUN_liberal_1" # Dunai Part
+	name = "HUN_liberal_1" # Blue Danube Liege
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -62,7 +62,7 @@ party = {
 }
 
 party = {
-	name = "HUN_socialist_1" # Hungaryan Peopl's Party
+	name = "HUN_socialist_1" # Hungarian Worker's union
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
@@ -77,7 +77,7 @@ party = {
 }
 
 party = {
-	name = "HUN_socialist_2" # Slavonian Worker's union
+	name = "HUN_socialist_2" # Statewide Peace Party
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
@@ -88,7 +88,7 @@ party = {
 	trade_policy = protectionism
 	religious_policy = secularized
 	citizenship_policy = full_citizenship
-	war_policy = anti_military
+	war_policy = pacifism
 }
 
 party = {
@@ -107,7 +107,7 @@ party = {
 }
 
 party = {
-	name = "HUN_anarcho_liberal_1" # Republicans
+	name = "HUN_anarcho_liberal_1" # Radical Republicans
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -137,7 +137,7 @@ party = {
 }
 
 party = {
-	name = "HUN_fascist_1" # Pannonian
+	name = "HUN_fascist_1" # Pannonian Party
 	start_date = 1905.1.1
 	end_date = 2000.1.1
 
@@ -151,7 +151,7 @@ party = {
 	war_policy = jingoism
 }
 party = {
-	name = "HUN_liberal_1" # Progressives
+	name = "HUN_liberal_3" # Progressives
 	start_date = 1905.1.1
 	end_date = 2000.1.1
 
@@ -167,39 +167,66 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		"Szent Istvan" Zrinyi Arpad Szigetvar Sava Temes Bodrog Szamos Koros Maros Leitha Balaton Csepel Lika Orjen Tatra Triglav Dinara Csikos Pandur Reka Turul Huszar Ulan 
+		Zrínyi Árpád Réka Kund Helka Ciprián "Szent László" "Szent István" Csák	# People
+		Szigetvár Csepel Nyitra Budapest Tihany									# Cities and geographical regions 
+		Száva Temes Bodrog Szamos Körös Maros Lajta Rába Balaton Fertő			# Rivers and lakes
+		Tátra Dinara Carpathia													# Mountains
+		Csíkos Pandúr Turul Huszár												# Other
 	}
 	ironclad = {
-		Zrinyi Arpad Szigetvar Sava Temes Bodrog Szamos Koros Maros Leitha Balaton Csepel Lika Orjen Tatra Triglav Dinara Csikos 	Pandur Reka Turul Huszar Ulan 
-		
-		
+		Zrínyi Árpád Réka Kund Helka Ciprián "Szent László" "Szent István" Csák	# People
+		Szigetvár Csepel Nyitra Budapest Tihany									# Cities and geographical regions 
+		Száva Temes Bodrog Szamos Körös Maros Lajta Rába Balaton Fertő			# Rivers and lakes
+		Tátra Dinara Carpathia													# Mountains
+		Csíkos Pandúr Turul Huszár												# Other
 	}
 	manowar = {
-		Zrinyi Arpad Szigetvar Sava Temes Bodrog Szamos Koros Maros Leitha Balaton Csepel Lika Orjen Tatra Triglav Dinara Csikos 	Pandur Reka Turul Huszar Ulan 
-		
+		Zrínyi Árpád Réka Kund Helka Ciprián "Szent László" "Szent István" Csák	# People
+		Szigetvár Csepel Nyitra Budapest Tihany									# Cities and geographical regions 
+		Száva Temes Bodrog Szamos Körös Maros Lajta Rába Balaton Fertő			# Rivers and lakes
+		Tátra Dinara Carpathia													# Mountains
+		Csíkos Pandúr Turul Huszár												# Other		
 	}
 	cruiser = {
-		Zrinyi Arpad Szigetvar Sava Temes Bodrog Szamos Koros Maros Leitha Balaton Csepel Lika Orjen Tatra Triglav Dinara Csikos 	Pandur Reka Turul Huszar Ulan 
-		
+		Zrínyi Árpád Réka Kund Helka Ciprián "Szent László" "Szent István" Csák	# People
+		Szigetvár Csepel Nyitra Budapest Tihany									# Cities and geographical regions 
+		Száva Temes Bodrog Szamos Körös Maros Lajta Rába Balaton Fertő			# Rivers and lakes
+		Tátra Dinara Carpathia													# Mountains
+		Csíkos Pandúr Turul Huszár												# Other
 	}
 	frigate = {
-		Zrinyi Arpad Szigetvar Sava Temes Bodrog Szamos Koros Maros Leitha Balaton Csepel Lika Orjen Tatra Triglav Dinara Csikos 	Pandur Reka Turul Huszar Ulan 
-		
+		Zrínyi Árpád Réka Kund Helka Ciprián "Szent László" "Szent István" Csák	# People
+		Szigetvár Csepel Nyitra Budapest Tihany									# Cities and geographical regions 
+		Száva Temes Bodrog Szamos Körös Maros Lajta Rába Balaton Fertő			# Rivers and lakes
+		Tátra Dinara Carpathia													# Mountains
+		Csíkos Pandúr Turul Huszár												# Other
 	}
 	monitor = {
-		Zrinyi Arpad Szigetvar Sava Temes Bodrog Szamos Koros Maros Leitha Balaton Csepel Lika Orjen Tatra Triglav Dinara Csikos 	Pandur Reka Turul Huszar Ulan 
-		
-		
+		Zrínyi Árpád Réka Kund Helka Ciprián "Szent László" "Szent István" Csák	# People
+		Szigetvár Csepel Nyitra Budapest Tihany									# Cities and geographical regions 
+		Száva Temes Bodrog Szamos Körös Maros Lajta Rába Balaton Fertő			# Rivers and lakes
+		Tátra Dinara Carpathia													# Mountains
+		Csíkos Pandúr Turul Huszár												# Other
 	}
 	clipper_transport = {
-		
+		Zrínyi Árpád Réka Kund Helka Ciprián "Szent László" "Szent István" Csák	# People
+		Szigetvár Csepel Nyitra Budapest Tihany									# Cities and geographical regions 
+		Száva Temes Bodrog Szamos Körös Maros Lajta Rába Balaton Fertő			# Rivers and lakes
+		Tátra Dinara Carpathia													# Mountains
+		Csíkos Pandúr Turul Huszár												# Other
 	}
 	steam_transport = {
-		
+		Zrínyi Árpád Réka Kund Helka Ciprián "Szent László" "Szent István" Csák	# People
+		Szigetvár Csepel Nyitra Budapest Tihany									# Cities and geographical regions 
+		Száva Temes Bodrog Szamos Körös Maros Lajta Rába Balaton Fertő			# Rivers and lakes
+		Tátra Dinara Carpathia													# Mountains
+		Csíkos Pandúr Turul Huszár												# Other
 	}
 	commerce_raider = {
-		Zrinyi Arpad Szigetvar Sava Temes Bodrog Szamos Koros Maros Leitha Balaton Csepel Lika Orjen Tatra Triglav Dinara Csikos Pandur Reka Turul Huszar Ulan 	
-		
-		
+		Zrínyi Árpád Réka Kund Helka Ciprián "Szent László" "Szent István" Csák	# People
+		Szigetvár Csepel Nyitra Budapest Tihany									# Cities and geographical regions 
+		Száva Temes Bodrog Szamos Körös Maros Lajta Rába Balaton Fertő			# Rivers and lakes
+		Tátra Dinara Carpathia													# Mountains
+		Csíkos Pandúr Turul Huszár												# Other
 	}
 }
