@@ -40,6 +40,11 @@ border_policy = quota_immigration
 set_country_flag = mahayana_country
 set_country_flag = new_world_nation
 
+govt_flag = {
+	government = absolute_monarchy
+	flag = theocracy
+}
+
 ruling_party = AAA_conservative_3
 upper_house = {
 	fascist = 0
