@@ -1745,5 +1745,85 @@ country_event = {
 		}
 	end_war = TUN 
 	}
+}
+
+country_event = { 
+	id = 125161
+	title = "EVTNAME125161"
+	desc = "EVTDESC125161"
+	picture = "ottoman_sofia"	
+
+	trigger = { 
+		tag = TUR
+		has_country_flag = claimed_madjaristan
+		war = no
+		2538 = { owned_by = TUR } #Novi Sad
+		643 = { owned_by = TUR } #Szekesfehevar
+		635 = { owned_by = TUR } #Nitra
+		641 = { owned_by = TUR } #Budapest
+		652 = { owned_by = TUR } #Temesvar
+		661 = { owned_by = TUR } #Beszterce
+		660 = { owned_by = TUR } #Udvarhely
+		624 = { owned_by = TUR } #Eisenstadt		
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}	
+	
+	option = { 
+		name = "EVTOPTA125161"
+		badboy = -10
+		AUS_777 = { 
+			remove_core = TUR			
+		}
+		AUS_623 = { 
+			remove_core = TUR			
+		}		
+		AUS_633 = { 
+			remove_core = TUR			
+		}	
+		AUS_641 = { 
+			remove_core = TUR			
+		}			
+		AUS_647 = { 
+			remove_core = TUR			
+		}
+		AUS_654 = { 
+			remove_core = TUR			
+		}
+		AUS_657 = { 
+			remove_core = TUR			
+		}
+		624 = { remove_core = TUR }
+		TUR = {
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 8
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+			}
+		}
+		release_vassal = HUN
+		HUN = { 
+			civilized = yes
+			government = colonial_company
+		}
+		relation = { who = HUN value = 200 }
+		diplomatic_influence = { who = HUN value = 300 }		
+		
+	}
+	
+	option = { 
+		name = "EVTOPTB125161"
+		set_global_flag = ottoman_madjaristan
+		any_pop = { limit = { culture = hungarian } consciousness = 7 militancy = 9 }
+		any_pop = { limit = { culture = croat } consciousness = 7 militancy = 9 }		
+	}	
+	
 }	
 	

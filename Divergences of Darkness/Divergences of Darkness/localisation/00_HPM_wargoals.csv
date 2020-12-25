@@ -318,7 +318,7 @@ AGRESSION_WAR_ALL_CORES_NAME_USA_ENG;$ORDER$British-American War;;;;;;;;;;;;x,,,
 NORMAL_WAR_ALL_CORES_NAME_USA_ENG;$ORDER$British-American War;;;;;;;;;;;;x,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AGRESSION_WAR_ALL_CORES_NAME_ENG_USA;$ORDER$British-American War;;;;;;;;;;;;x,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 NORMAL_WAR_ALL_CORES_NAME_ENG_USA;$ORDER$British-American War;;;;;;;;;;;;x,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-NORMAL_WAR_PERSIA_REUNIFICATION;$ORDER$ War of Iranian Reunification;Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Krieg;Baza;Base:;Base:;Alap:;Základna:;;;;;;;x;;;;;;;;;;;;;;,,,
+NORMAL_WAR_PERSIA_REUNIFICATION;$ORDER$War of Iranian Reunification;Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Krieg;Baza;Base:;Base:;Alap:;Základna:;;;;;;;x;;;;;;;;;;;;;;,,,
 AGRESSION_WAR_PERSIA_REUNIFICATION;$ORDER$War of Iranian Reunification;Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Krieg;Baza;Base:;Base:;Alap:;Základna:;;;;;;;x;;;;;;;;;;;;;;,,,
 persia_acquire_state;Iranian Reunification;Prendre État;$STATE$ erwerben;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,;;;;;;;;;;;;;;;;;;;;;;
 persia_acquire_state_short;Acquire $STATE$;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,;;;;;;;;;;;;;;;;;;;;;;
@@ -328,3 +328,7 @@ caliphate_jihad_cb;Jihad;Prendre territoire cl?Kernprovinz erwerben;;;;;;;;;;;;x
 caliphate_jihad_cb_desc;Acquire an infidel §Yenemy country§W, this will gives us §R10 infamy§W;Prendre un §YÉtat§W ennemi o?nous avons des §Yprovinces principales§W;Erobern Sie einen feindlichen §YStaat§W, in dem wir §YKernprovinzen§W haben.;;;;;;;;;;;x,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 caliphate_jihad_cb_short;Annex $RECIPIENT$;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,;;;;;;;;;;;;;;;;;;;;;;
 caliphate_jihad_cb_setup;Annex $RECIPIENT$;Prendre État cl?$STATE$ de $RECIPIENT$;Kern-$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,;;;;;;;;;;;;;;;;;;;;;;
+acquire_core_substate_region;Acquire core substate region;x
+acquire_core_substate_region_desc;Acquire one of your core regions from enemy ¡±Ysubstate¡±W;x
+acquire_core_substate_region_short;Acquire $STATE$;x
+acquire_core_substate_region_setup;Acquire your core, $STATE$, from $RECIPIENT$;x
