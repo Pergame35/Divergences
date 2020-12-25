@@ -1317,7 +1317,6 @@ province_event = {
 					province_id = 2099  #King's William Town
 					province_id = 2098  #Port Rex
 					province_id = 2101  #Bloemfontein
-					province_id = 2103  #Philoppolis
 					province_id = 2104  #Thaba Bosiu
 					province_id = 2100  #Port St. Johns
 					province_id = 2114 	#Mbabane
@@ -1479,7 +1478,6 @@ province_event = {
 			}
 			AND = {
 				OR = {
-					province_id = 2108 #Nylstroom
 					province_id = 2110 #Hoedspruit
 					province_id = 2103 #Philippolis
 					province_id = 1727 #Gafsa

@@ -34,7 +34,8 @@ political_decisions = {
   		effect = {
   			prestige = 30
   			add_accepted_culture = beifaren
-			add_accepted_culture = nanfaren	
+			add_accepted_culture = nanfaren
+			add_accepted_culture = hui			
   			change_tag = CHI
         1499 = { add_core = THIS }
 			any_country = {
@@ -417,6 +418,9 @@ political_decisions = {
   			NOT = {
 				exists = CHI
   			}
+  			NOT = {
+				tag = MCK
+  			}			
   		}
   		
   		allow = { 
