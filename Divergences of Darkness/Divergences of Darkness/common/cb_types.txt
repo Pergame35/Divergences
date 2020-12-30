@@ -635,8 +635,7 @@ unification_casus_belli = {
 	can_use = {
 		is_vassal = no
 		NOT = { is_our_vassal = THIS }
-		NOT = { tag = PRU }
-		NOT = { tag = NGF }
+		NOT = { tag = TSS }
 		THIS = { NOT = { tag = UBD } }
 		THIS = {
 			culture_has_union_tag = yes
@@ -3460,7 +3459,6 @@ demand_concession_NI_casus_belli = {
 			war_with = THIS
 			NOT = {
 				civilization_progress = 0.6
-				has_country_flag = post_colonial_country
 			}
 		}		
 		NOT = { 

@@ -170,6 +170,7 @@ political_decisions = {
 			capital = 979
 			979 = {
 				    life_rating = 5
+				    change_province_name = "Rostov" 					
 				    add_province_modifier = {
 				    	name = gateway_to_russia
 						duration = 7300
@@ -191,7 +192,7 @@ political_decisions = {
 			NOT = { has_country_flag = ruthenian_culture }
 			NOT = { accepted_culture = ruthenian}
 		}
-		#Ruthenes have higher tech requirements and lower capitol movement requirements. 
+		#Ruthenes have higher tech requirements and lower capital movement requirements. 
 		allow = {
 			revolution_n_counterrevolution = 1 
 			biologism = 1 
@@ -249,7 +250,28 @@ political_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
+	integrate_crimean_culture = {
+		picture = ai_petri	
+		potential = {
+			tag = RUS
+			has_country_flag = southern_focus
+			has_country_flag = RUS_moved_capital
+			NOT = { has_country_flag = crimean_culture }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			biologism = 1 
+		}
+		effect = {
+			prestige = 5
+			add_accepted_culture = crimean
+			set_country_flag = crimean_culture 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}		
 	integrate_georgian_culture = {
 		picture = tiflis		
 		potential = {

@@ -23,7 +23,7 @@ leader = {
 }
 
 army = {
-	name = "Army Corps of the infantry"
+	name = "Army Corps of the Infantry"
 	location = 1008
 	regiment = {
 		name= "1.1-ya Gvardeiskaya Pekhotnaya Diviziya"
@@ -40,72 +40,72 @@ army = {
 	regiment = {
 		name= "3.1-ya Gvardeiskaya Pekhotnaya Diviziya"
 		type = infantry
-		home = 1008
+		home = 1009
 	}
 
 	regiment = {
 		name= "1.2-ya Gvardeiskaya Pekhotnaya Diviziya"
 		type = infantry
-		home = 1008
+		home = 1010
 	}
 
 	regiment = {
 		name= "2.2-ya Gvardeiskaya Pekhotnaya Diviziya"
 		type = infantry
-		home = 1008
+		home = 1011
 	}
 
 	regiment = {
 		name= "3.2-ya Gvardeiskaya Pekhotnaya Diviziya"
 		type = artillery
-		home = 1008
+		home = 1012
 	}
 
 }
 
 army = {
-	name = "infantrys hussar Corps"
+	name = "Hussar Corps"
 	location = 1010
 	regiment = {
 		name= "1.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
 		type = hussar
-		home = 1008
+		home = 1013
 	}
 
 	regiment = {
 		name= "2.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
 		type = hussar
-		home = 1009
+		home = 1014
 	}
 
 	regiment = {
 		name= "3.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
 		type = hussar
-		home = 1009
+		home = 1015
 	}
 
 	regiment = {
 		name= "4.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
 		type = cuirassier
-		home = 998
+		home = 1016
 	}
 
 	regiment = {
 		name= "1.2-ya Gvardeiskaya Kavaleriiskaya Diviziya"
 		type = hussar
-		home = 1008
+		home = 1017
 	}
 
 	regiment = {
 		name= "2.2-ya Gvardeiskaya Kavaleriiskaya Diviziya"
 		type = hussar
-		home = 1037
+		home = 1019
 	}
 
 	regiment = {
 		name= "3.2-ya Gvardeiskaya Kavaleriiskaya Diviziya"
 		type = hussar
-		home = 1037
+		home = 1019
 	}
 }
 
@@ -115,13 +115,13 @@ army = {
 	regiment = {
 		name= "1.1-ya Grenaderskaya Diviziya"
 		type = infantry
-		home = 1037
+		home = 1018
 	}
 
 	regiment = {
 		name= "2.1-ya Grenaderskaya Diviziya"
 		type = infantry
-		home = 1034
+		home = 1021
 	}
 
 	regiment = {
@@ -139,26 +139,26 @@ army = {
 	regiment = {
 		name= "2.2-ya Grenaderskaya Diviziya"
 		type = infantry
-		home = 1020
+		home = 1022
 	}
 
 	regiment = {
 		name= "3.2-ya Grenaderskaya Diviziya"
 		type = infantry
-		home = 1039
+		home = 1025
 	}
 
 	
 	regiment = {
 		name= "1.1-ya Kavalerijskaya Diviziya"
 		type = hussar
-		home = 1039
+		home = 1030
 	}
 
 	regiment = {
 		name= "2.2-ya Kavalerijskaya Diviziya"
 		type = hussar
-		home = 1008
+		home = 1033
 	}
 
 

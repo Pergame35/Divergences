@@ -179,6 +179,7 @@ political_decisions = {
 				NOT = { average_militancy = 3 }
 				is_greater_power = yes
 				NOT = { war = yes }
+				nationalism_n_imperialism = 1
 				MEX = {
 					all_core = {
 						OR = {

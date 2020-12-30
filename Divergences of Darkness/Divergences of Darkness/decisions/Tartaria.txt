@@ -71,7 +71,10 @@ political_decisions = {
     TAR_encourage_sedentarization = { ### Write alternative event in case Crimea reforms/revolts out of Khanate before renovations
 		picture = tatar_sedentarization	
         potential = {
-            tag = TAR
+            OR = {
+				tag = TAR
+				tag = CRI
+			}
             NOT = { has_country_flag = TAR_urbanization}
 			government = khanate
         }
@@ -85,6 +88,8 @@ political_decisions = {
         effect = {
             set_country_flag = TAR_urbanization
 			government = absolute_monarchy
+			remove_country_modifier = nomadic_confederation
+			clr_country_flag = nomad			
             967 = {
                     life_rating = 5
                     add_province_modifier = {

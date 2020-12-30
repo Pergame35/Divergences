@@ -7,7 +7,7 @@ political_decisions = {
       OR = {       
 			     tag = BRG
            tag = DUA
-      }
+		}
 			NOT = {
 				has_global_flag = selon_treaty
 			}     
@@ -19,6 +19,7 @@ political_decisions = {
 			is_greater_power = yes
 			NOT = { war = yes }
 			SPA = { is_greater_power = no }
+			SPC = { exists = no }
 		}
 		
 		effect = {

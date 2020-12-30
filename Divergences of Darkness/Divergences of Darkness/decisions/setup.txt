@@ -151,6 +151,18 @@ political_decisions = {
 				}
 				set_country_flag = feudal
 			}
+			
+			any_country = {
+				limit = {
+					government = khanate
+					NOT = { has_country_flag = nomad }
+				}
+				add_country_modifier = {
+					name = nomadic_confederation
+					duration = -1
+				}
+				set_country_flag = nomad
+			}			
 		
 			any_country = {
 				limit = {

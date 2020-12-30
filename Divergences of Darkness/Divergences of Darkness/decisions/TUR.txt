@@ -610,7 +610,7 @@ political_decisions = {
 		picture = ottoman_illyria	
 		potential = {
 			tag = TUR
-			has_country_flag_flag = claimed_montenegro			
+			has_country_flag = claimed_montenegro			
 			NOT = {
 				has_country_flag = claimed_illyria
 			}
@@ -657,7 +657,7 @@ political_decisions = {
 		picture = ottoman_hungary	
 		potential = {
 			tag = TUR
-			has_country_flag_flag = claimed_illyria			
+			has_country_flag = claimed_illyria			
 			NOT = {
 				has_country_flag = claimed_madjaristan
 			}

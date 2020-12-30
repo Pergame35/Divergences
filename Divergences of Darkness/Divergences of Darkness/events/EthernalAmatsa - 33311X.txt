@@ -2,13 +2,14 @@ country_event = {
 	id = 333110
 	title = "EVTNAME333110"
 	desc = "EVTDESC333110"
-	picture = "?"
+	picture = "zemene_mesafint"
 	
 	trigger = {
 		tag = ETH
 		NOT = { war_with = AMT }
 		AMT = { exists = yes }
 		any_neighbor_country = { tag = AMT }
+		ETH = { military_score = 1 }		
 	}
 
 	mean_time_to_happen = {
