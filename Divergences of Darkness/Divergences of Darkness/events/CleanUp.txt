@@ -390,8 +390,7 @@ country_event = {
 	trigger = {
 		OR = {
 			government = absolute_monarchy
-			government = feudal_monarchy
-			government = khanate			
+			government = feudal_monarchy			
 		}
 		NOT = { vote_franschise = none_voting }		
 		civilized = yes	

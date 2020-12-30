@@ -2,7 +2,7 @@ country_event = {
 	id = 124100 #Declaration - reaction event
 	title = "EVTNAME124100"
 	desc = "EVTDESC124100"
-	picture = "?"
+	picture = "rome_ossolinski"
 	
 	is_triggered_only = yes
 	
@@ -27,6 +27,7 @@ country_event = {
 	id = 124102 # Consolidation
 	title = "EVTNAME124102"
 	desc = "EVTDESC124102"
+	picture = "milano"	
 	
 	trigger = {
 		tag = ARI
@@ -42,6 +43,9 @@ country_event = {
 		name = "EVTOPTA124102"
 		release = LOM
 		create_vassal = LOM
+		LOM = { 
+			government = colonial_company
+		}		
 		diplomatic_influence = {
 			who = LOM
 			value = 200
@@ -121,6 +125,9 @@ country_event = {
 		name = "EVTOPTA124105"
 		set_country_flag = waroveritaly
 		release_vassal = LOM
+		LOM = { 
+			government = democracy
+		}			
 		relation = {
 			who = LOM
 			value = -200

@@ -76,7 +76,7 @@ relutanct_figher = {
 	icon = 16
 }
 
-### DVG - included just to make combination easier, not actually referenced in PDM. Well, yet.
+### DVG
 feudal = {
 	research_points_modifier = -0.33
 	tax_efficiency = -0.1
@@ -2728,5 +2728,14 @@ growing_unrest = {
 revolutionary_society = {
 	global_pop_consciousness_modifier = 0.01
 	global_pop_militancy_modifier = 0.01
+	icon = 16
+}
+
+### Khanates ###
+
+nomadic_confederation = {
+	research_points_modifier = -0.15
+	mobilisation_size = -2.0	
+	tax_efficiency = -0.1
 	icon = 16
 }
