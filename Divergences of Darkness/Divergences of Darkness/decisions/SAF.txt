@@ -141,7 +141,7 @@ political_decisions = {
 	
 	Baastards_SAF = { 
 		potential = { 
-			tag = BTV 
+			tag = SAF 
 			NOT = { has_country_flag = baastards_SAF }
 			has_country_flag = claim_south_africa
 			owns = 2574
