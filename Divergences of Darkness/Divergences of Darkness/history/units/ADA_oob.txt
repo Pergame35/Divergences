@@ -6,6 +6,30 @@ leader = {
 	background = war_college
 }
 
+leader = {
+	name = "Mahamud Afrah"
+	type = land
+	date = 1836.1.1
+	personality = diplomatic
+	background = aristocrat
+}
+
+leader = {
+	name = "Naleye Adeer"
+	type = land
+	date = 1836.1.1
+	personality = hellbent
+	background = disgraced
+}
+
+leader = {
+	name = "Dalmar Aduk"
+	type = land
+	date = 1836.1.1
+	personality = fanatic
+	background = incompetent
+}
+
 army = {
 	name = "Freedom Warriors"
 	location = 1873

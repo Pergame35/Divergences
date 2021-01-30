@@ -38,7 +38,23 @@ leader = {
 }
 
 leader = {
-	name = "Alonso de Lugo"
+	name = "José Manuel Portález"
+	type = land
+	date = 1836.1.1
+	personality = clever
+	background = gifted_administrator
+}
+
+leader = {
+	name = "Marcos Aragonés"
+	type = land
+	date = 1836.1.1
+	personality = maladroit
+	background = cartographer
+}
+
+leader = {
+	name = "Miguel de Lugo"
 	type = sea
 	date = 1836.1.1
 	personality = pisspoor
@@ -140,7 +156,7 @@ army = {
 
 army = {
 	name = "Ejército del Norte"
-	location = 2148
+	location = 138
 	regiment = {
 		name= "1.Division Cos"
 		type = infantry
@@ -174,7 +190,7 @@ army = {
 }
 
 army = {
-	name = "Activo Oajaca"
+	name = "Ejército de Oajaca"
 	location = 2177
 	regiment = {
 		name= "1.Oajaca y Tlaxcala"

@@ -673,6 +673,10 @@ country_event = {
 			tag = IRE
 			tag = ARA 
 			tag = CAT
+			tag = UKR
+			tag = BLR			
+			tag = RUT			
+			tag = POL			
 		}
 		NOT = { has_country_flag = post_colonial_country }
 	}

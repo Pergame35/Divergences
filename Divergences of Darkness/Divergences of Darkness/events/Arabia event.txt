@@ -2,13 +2,17 @@ country_event = {
 	id = 22239
 	title = "22239.T"
 	desc = "22239.D"
-	picture = "News"
+	picture = "nordwestliche_afrika"
 	
 	trigger = {
 		tag = MGH
 		exists = yes
 		year = 1855
 		NOT = { has_global_flag = reb_in_mag }
+		NOT = {
+			1686 = { owned_by = THIS }
+			1700 = { owned_by = THIS }
+		}		
 	}
 	
 	mean_time_to_happen = {

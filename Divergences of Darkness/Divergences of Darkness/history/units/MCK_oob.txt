@@ -19,7 +19,7 @@ leader = {
 	type = land
 	date = 1836.1.1
 	personality = resourceful
-	background = inventor
+	background = innovative_tactician
 }
 
 leader = {
@@ -31,11 +31,43 @@ leader = {
 }
 
 leader = {
+	name = "Mingzhu Xingde"
+	type = land
+	date = 1836.1.1
+	personality = earnest
+	background = rising_star
+}
+
+leader = {
+	name = "Changlin Tiemei"
+	type = land
+	date = 1836.1.1
+	personality = polite
+	background = yesman
+}
+
+leader = {
+	name = "Oboi Linge"
+	type = land
+	date = 1836.1.1
+	personality = romantic
+	background = womanizer
+}
+
+leader = {
 	name = "Geng Jingzhong"
 	type = sea
 	date = 1836.1.1
 	personality = impulsive
 	background = corrupt
+}
+
+leader = {
+	name = "Ma Xiangying"
+	type = sea
+	date = 1836.1.1
+	personality = glory_hound
+	background = elderly
 }
 
 army = {
@@ -56,49 +88,49 @@ army = {
 	regiment = {
 		name= "3rd Green Standard"
 		type = infantry
-		home = 1565
+		home = 1567
 	}
 	
 	regiment = {
 		name= "4th Green Standard"
 		type = infantry
-		home = 1565
+		home = 1567
 	}
 
 	regiment = {
 		name= "5th Green Standard"
 		type = infantry
-		home = 1565
+		home = 1613
 	}
 
 	regiment = {
 		name= "6th Green Standard"
 		type = infantry
-		home = 1565
+		home = 1613
 	}
 	
 	regiment = {
 		name= "7th Green Standard"
 		type = infantry
-		home = 1565
+		home = 1613
 	}
 
 	regiment = {
 		name= "8th Green Standard"
 		type = hussar
-		home = 1565
+		home = 1613
 	}
 
 	regiment = {
 		name= "9th Green Standard"
 		type = hussar
-		home = 1565
+		home = 1613
 	}
 	
 	regiment = {
 		name= "10th Green Standard"
 		type = hussar
-		home = 1565
+		home = 1614
 	}
 }
 
@@ -109,7 +141,7 @@ army = {
 	regiment = {
 		name= "11th Green Standard"
 		type = infantry
-		home = 1472
+		home = 1614
 	}
 
 	regiment = {
@@ -127,43 +159,43 @@ army = {
 	regiment = {
 		name= "14th Green Standard"
 		type = infantry
-		home = 1472
+		home = 1615
 	}
 
 	regiment = {
 		name= "15th Green Standard"
 		type = infantry
-		home = 1472
+		home = 1615
 	}
 	
 	regiment = {
 		name= "16th Green Standard"
 		type = infantry
-		home = 1472
+		home = 1616
 	}
 
 	regiment = {
 		name= "17th Green Standard"
 		type = infantry
-		home = 1472
+		home = 1616
 	}
 
 	regiment = {
 		name= "18th Green Standard"
 		type = hussar
-		home = 1472
+		home = 1616
 	}
 
 	regiment = {
 		name= "19th Green Standard"
 		type = hussar
-		home = 1472
+		home = 1616
 	}
 
 	regiment = {
 		name= "20th Green Standard"
 		type = hussar
-		home = 1472
+		home = 1616
 	}
 }
 
@@ -173,7 +205,7 @@ army = {
 	regiment = {
 		name= "1. Manchu Yellow Banner"
 		type = infantry
-		home = 1555
+		home = 1616
 	}
 
 	regiment = {
@@ -185,79 +217,79 @@ army = {
 	regiment = {
 		name= "3.Manchu Yellow Banner"
 		type = infantry
-		home = 1555
+		home = 1002
 	}
 
 	regiment = {
 		name= "1st Standard"
 		type = infantry
-		home = 1555
+		home = 1533
 	}
 
 	regiment = {
 		name= "2nd Standard"
 		type = infantry
-		home = 1555
+		home = 1479
 	}
 
 	regiment = {
 		name= "3rd Standard"
 		type = infantry
-		home = 1553
+		home = 1479
 	}
 	
 	regiment = {
 		name= "4th Standard"
 		type = infantry
-		home = 1553
+		home = 1479
 	}
 
 	regiment = {
 		name= "5th Standard"
 		type = infantry
-		home = 1553
+		home = 1479
 	}
 
 	regiment = {
 		name= "6th Standard"
 		type = infantry
-		home = 1553
+		home = 1575
 	}
 	
 	regiment = {
 		name= "7th Standard"
 		type = infantry
-		home = 1553
+		home = 1576
 	}
 
 	regiment = {
 		name= "8th Standard"
 		type = infantry
-		home = 1613
+		home = 1612
 	}
 
 	regiment = {
 		name= "9th Standard"
 		type = infantry
-		home = 1613
+		home = 1612
 	}
 	
 	regiment = {
 		name= "10th Standard"
 		type = infantry
-		home = 1613
+		home = 1612
 	}
 
 	regiment = {
 		name= "11th Standard"
 		type = infantry
-		home = 1613
+		home = 1617
 	}
 
 	regiment = {
 		name= "12th Standard"
 		type = infantry
-		home = 1613
+		home = 1617
 	}
 }
 
@@ -268,91 +300,91 @@ army = {
 	regiment = {
 		name= "1.Manchu Bordered Yellow Banner"
 		type = infantry
-		home = 1613
+		home = 1617
 	}
 
 	regiment = {
 		name= "2.Manchu Bordered Yellow Banner"
 		type = infantry
-		home = 1613
+		home = 1618
 	}
 
 	regiment = {
 		name= "3.Manchu Bordered Yellow Banner"
 		type = infantry
-		home = 1613
+		home = 1618
 	}
 
 	regiment = {
 		name= "1st Standard"
 		type = infantry
-		home = 1613
+		home = 1618
 	}
 
 	regiment = {
 		name= "2nd Standard"
 		type = infantry
-		home = 1613
+		home = 1565
 	}
 
 	regiment = {
 		name= "3rd Standard"
 		type = infantry
-		home = 1613
+		home = 1565
 	}
 	
 	regiment = {
 		name= "4th Standard"
 		type = infantry
-		home = 1613
+		home = 1565
 	}
 
 	regiment = {
 		name= "5th Standard"
 		type = infantry
-		home = 1613
+		home = 1564
 	}
 
 	regiment = {
 		name= "6th Standard"
 		type = infantry
-		home = 1612
+		home = 1564
 	}
 	
 	regiment = {
 		name= "7th Standard"
 		type = infantry
-		home = 1612
+		home = 1563
 	}
 
 	regiment = {
 		name= "8th Standard"
 		type = infantry
-		home = 1612
+		home = 1563
 	}
 
 	regiment = {
 		name= "9th Standard"
 		type = infantry
-		home = 1612
+		home = 1563
 	}
 	
 	regiment = {
 		name= "10th Standard"
 		type = infantry
-		home = 1612
+		home = 1563
 	}
 
 	regiment = {
 		name= "11th Standard"
 		type = infantry
-		home = 1612
+		home = 2062
 	}
 
 	regiment = {
 		name= "12th Standard"
 		type = infantry
-		home = 1612
+		home = 1562
 	}
 }
 
@@ -363,91 +395,91 @@ army = {
 	regiment = {
 		name= "1.Manchu White Banner"
 		type = infantry
-		home = 1612
+		home = 1562
 	}
 
 	regiment = {
 		name= "2.Manchu White Banner"
 		type = infantry
-		home = 1612
+		home = 1562
 	}
 
 	regiment = {
 		name= "3.Manchu White Banner"
 		type = infantry
-		home = 1612
+		home = 1562
 	}
 
 	regiment = {
 		name= "1st Standard"
 		type = infantry
-		home = 1612
+		home = 1561
 	}
 
 	regiment = {
 		name= "2nd Standard"
 		type = infantry
-		home = 1612
+		home = 1561
 	}
 
 	regiment = {
 		name= "3rd Standard"
 		type = infantry
-		home = 1612
+		home = 1559
 	}
 	
 	regiment = {
 		name= "4th Standard"
 		type = infantry
-		home = 1612
+		home = 1559
 	}
 
 	regiment = {
 		name= "5th Standard"
 		type = infantry
-		home = 1612
+		home = 1559
 	}
 
 	regiment = {
 		name= "6th Standard"
 		type = infantry
-		home = 1576
+		home = 1559
 	}
 	
 	regiment = {
 		name= "7th Standard"
 		type = infantry
-		home = 1576
+		home = 1510
 	}
 
 	regiment = {
 		name= "8th Standard"
 		type = infantry
-		home = 1576
+		home = 1510
 	}
 
 	regiment = {
 		name= "9th Standard"
 		type = infantry
-		home = 1576
+		home = 1510
 	}
 	
 	regiment = {
 		name= "10th Standard"
 		type = infantry
-		home = 1576
+		home = 1511
 	}
 
 	regiment = {
 		name= "11th Standard"
 		type = infantry
-		home = 1576
+		home = 1511
 	}
 
 	regiment = {
 		name= "12th Standard"
 		type = infantry
-		home = 1576
+		home = 1511
 	}
 }
 
@@ -458,55 +490,55 @@ army = {
 	regiment = {
 		name= "1.Manchu Red Banner"
 		type = infantry
-		home = 1573
+		home = 1511
 	}
 
 	regiment = {
 		name= "2.Manchu Red Banner"
 		type = infantry
-		home = 1573
+		home = 1512
 	}
 
 	regiment = {
 		name= "3.Manchu Red Banner"
 		type = infantry
-		home = 1573
+		home = 1512
 	}
 
 	regiment = {
 		name= "1st Standard"
 		type = infantry
-		home = 1573
+		home = 1512
 	}
 
 	regiment = {
 		name= "2nd Standard"
 		type = infantry
-		home = 1573
+		home = 1512
 	}
 
 	regiment = {
 		name= "3rd Standard"
 		type = infantry
-		home = 1563
+		home = 1514
 	}
 	
 	regiment = {
 		name= "4th Standard"
 		type = infantry
-		home = 1563
+		home = 1514
 	}
 
 	regiment = {
 		name= "5th Standard"
 		type = infantry
-		home = 1563
+		home = 1514
 	}
 
 	regiment = {
 		name= "6th Standard"
 		type = infantry
-		home = 1563
+		home = 1514
 	}
 }
 
@@ -517,37 +549,37 @@ army = {
 	regiment = {
 		name= "7th Standard"
 		type = infantry
-		home = 1563
+		home = 1478
 	}
 
 	regiment = {
 		name= "8th Standard"
 		type = infantry
-		home = 1563
+		home = 1478
 	}
 
 	regiment = {
 		name= "9th Standard"
 		type = infantry
-		home = 1563
+		home = 1478
 	}
 	
 	regiment = {
 		name= "10th Standard"
 		type = infantry
-		home = 1563
+		home = 1480
 	}
 
 	regiment = {
 		name= "11th Standard"
 		type = infantry
-		home = 1563
+		home = 1480
 	}
 
 	regiment = {
 		name= "12th Standard"
 		type = infantry
-		home = 1563
+		home = 1480
 	}
 }
 

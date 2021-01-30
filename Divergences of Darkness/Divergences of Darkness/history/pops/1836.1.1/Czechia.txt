@@ -26,11 +26,17 @@
 		size = 600
 	}
   
-  clerks = {
+	clerks = {
+		culture = czech
+		religion = catholic
+		size = 5000
+	}
+	
+	artisans = {
 		culture = anglois
 		religion = catholic
 		size = 20000
-	}
+	}	
 
 	clergymen = {
 		culture = czech

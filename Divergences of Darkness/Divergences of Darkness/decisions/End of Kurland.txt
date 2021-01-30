@@ -203,8 +203,10 @@ become_neu_kurland_2 = {
 	Purchase_of_Aragonese_antilles = {
 		picture = Aragonese_antilles	
 		potential = { 
-			tag = UBD 
-			ARA = { owns = 2231 } 
+			tag = UBD
+			OR = {
+				ARA = { owns = 2231 }			
+			}
 			NOT = { has_country_flag = ARA_antilles }
 		}
 	
@@ -220,6 +222,52 @@ become_neu_kurland_2 = {
 			set_country_flag = ARA_antilles
 		}
 	}
+	
+	Purchase_of_Aragonese_Italian_antilles = {
+		picture = Aragonese_antilles	
+		potential = { 
+			tag = UBD
+			OR = {
+				ARI = { owns = 2231 }			
+			}
+			NOT = { has_country_flag = ARA_antilles }
+		}
+	
+		allow = { 
+			owns = 2233
+			owns = 2409
+			relation = { who = ARI value = 0 } 
+			money = 50000
+		}
+	
+		effect = { 
+			ARI = { country_event = 371267 }
+			set_country_flag = ARA_antilles
+		}
+	}
+
+	Purchase_of_Catalan_antilles = {
+		picture = Aragonese_antilles	
+		potential = { 
+			tag = UBD
+			OR = {
+				CAT = { owns = 2231 }			
+			}
+			NOT = { has_country_flag = ARA_antilles }
+		}
+	
+		allow = { 
+			owns = 2233
+			owns = 2409
+			relation = { who = CAT value = 0 } 
+			money = 50000
+		}
+	
+		effect = { 
+			CAT = { country_event = 371267 }
+			set_country_flag = ARA_antilles
+		}
+	}	
 	
 	martinique_purchase = {
 		picture = martinique	

@@ -61,17 +61,19 @@ country_event = {   #Japan is informed of the refusal
 
 	option = {
 		name = "EVTOPTA334301"
-    prestige = -15
-    add_casus_belli = {
+		prestige = -15
+		JAP = {
+			casus_belli = {
 				target = MCK
 				type = humiliate
 				months = 12
-		}
-    relation = {
+			}
+		}		
+		relation = {
 			who = FROM
 			value = -50
 		}
-    any_pop = {
+		any_pop = {
 			dominant_issue = {
 				factor = 0.02
 				value = jingoism

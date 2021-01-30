@@ -1902,3 +1902,143 @@ country_event = {
 	}
 
 }
+
+### Event to allow Equinoxia to submit to Ameriga or fight
+
+country_event = {
+	id = 775427
+	title = "EVTNAME775427"
+	desc = "EVTDESC775427"
+	picture = "botafogo"
+
+	is_triggered_only = yes 
+	
+	option = {
+		name = "EVTOPTA775427"
+		AZL = {
+			inherit = EQN
+		}
+		any_owned = {
+			limit = {
+				is_core = EQN
+			}
+			add_core = AZL
+		}		
+		any_country = {
+			any_owned = {
+				limit = {
+					is_core = EQN
+				}
+				add_core = AZL
+			}
+		}		
+        ai_chance = {
+            factor = 80
+            modifier = {
+                factor = 1.25
+                AZL = {
+					press_rights = free_press
+				}
+            }
+            modifier = {
+                factor = 1.25
+                AZL = {
+					vote_franschise = universal_voting
+				}
+            }			
+            modifier = {
+                factor = 1.25
+                AZL = {
+					OR = {
+						political_parties = non_secret_ballots
+						political_parties = secret_ballots
+					}
+				}
+            }			
+            modifier = {
+                factor = 1.25
+                alliance_with = AZL
+            }
+        }
+	}
+	
+	option = {
+		name = "EVTOPTB775427"
+		prestige = 15
+        relation = {
+            who = AZL
+            value = -200
+        }
+		AZL = {
+			country_event = 775428
+		}
+        ai_chance = {
+            factor = 20
+        }		
+	}	
+}
+
+### Event to notify Ameriga of the Equinoxean refusal
+
+country_event = {
+	id = 775428
+	title = "EVTNAME775428"
+	desc = "EVTDESC775428"
+	picture = "treaty_of_petropolis"
+
+	is_triggered_only = yes 
+	
+	option = {
+		name = "EVTOPTA775428"
+		AZL = {
+			leave_alliance = EQN
+		}
+		diplomatic_influence = {
+			who = EQN
+			value = -400
+		}
+		any_owned = {
+			limit = {
+				is_core = EQN
+			}
+			add_core = AZL
+		}		
+		any_country = {
+			any_owned = {
+				limit = {
+					is_core = EQN
+				}
+				add_core = AZL
+			}
+		}
+		badboy = 10
+        ai_chance = {
+            factor = 75
+			modifier = {
+				factor = 0
+				badboy = 0.55
+			}	
+        }
+	}
+
+	option = {
+		name = "EVTOPTB775428"
+		prestige = -50
+        ai_chance = {
+            factor = 25
+            modifier = {
+                factor = 1.5
+                AZL = {
+					war_exhaustion = 30					
+				}
+            }
+            modifier = {
+                factor = 1.5
+                AZL = {
+					has_recently_lost_war = yes				
+				}
+            }			
+        }
+	}	
+	
+}

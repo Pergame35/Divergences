@@ -20,6 +20,14 @@ leader = {
 }
 
 leader = {
+	name = "Knud Rosenkrantz"
+	type = land
+	date = 1836.1.1
+	personality = harsh
+	background = rising_star
+}
+
+leader = {
 	name = "Hugo Welfer"
 	type = sea
 	date = 1836.1.1
@@ -39,7 +47,7 @@ army = {
 	regiment = {
 		name= "2.1st Division"
 		type = infantry
-		home = 58
+		home = 61
 	}
 
 	regiment = {
@@ -51,7 +59,7 @@ army = {
 	regiment = {
 		name= "4.1st Division"
 		type = artillery
-		home = 70
+		home = 66
 	}
 }
 army = {
@@ -78,7 +86,7 @@ army = {
 
 navy = {
 	name = "Fleet of Vinland"
-	location = 77
+	location = 71
 
 
 	ship = {

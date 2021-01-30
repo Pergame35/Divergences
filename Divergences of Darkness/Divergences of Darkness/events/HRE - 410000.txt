@@ -2288,3 +2288,375 @@ country_event = {
 	}
 	
 }
+
+# Fredensborg incident
+country_event = { 
+	id = 410072
+	title = "EVTNAME410072"
+	desc = "EVTDESC410072"
+	picture = "wolta_gebeit"
+	
+	trigger = { 
+		tag = CAE 
+		owns = 369 #Kiel
+		total_amount_of_ships = 5
+		war = no
+		ASH = {
+			exists = yes
+			civilised = no
+			war = no
+			owns = 1907 #Fredensborg
+		}
+		
+	}
+	
+	fire_only_once = yes	
+	
+	mean_time_to_happen = { 
+		months = 24	
+		modifier = {
+			factor = 0.5
+			year = 1870
+		}
+		modifier = {
+			factor = 0.5
+			raider_group_doctrine = 1
+		} 
+	}
+	
+	option = { 
+		name = "EVTOPTA410072"
+		badboy = 2.5
+		ASH = {
+			country_event = 410073
+		}
+        ai_chance = {
+            factor = 75
+			modifier = {
+				factor = 0
+				badboy = 0.85
+			}	
+        }		
+	}
+
+	option = { 
+		name = "EVTOPTB410072"
+		prestige = -5
+        ai_chance = {
+            factor = 25
+        }		
+	}	
+	
+}
+
+#Elbian Demands
+country_event = {
+	id = 410073
+	title = "EVTNAME410073"
+	desc = "EVTDESC410073"
+	picture = "Opiumwar"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT410073OPTA"
+		CAE = { country_event = 410074 }
+		prestige = 5
+		ai_chance = { factor = 90 }
+	}
+	option = {
+		name = "EVT410073OPTB"
+		1907 = { secede_province = CAE }
+		CAE = { relation = { who = THIS value = 100 } }
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			militancy = 3
+		}
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = {
+	id = 410074
+	title = "EVTNAME410074" #Elbian response
+	desc = "EVTDESC410074"
+	news = yes
+	news_desc_long = "EVTDESC410074_NEWS_LONG"
+	news_desc_medium = "EVTDESC410074_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC410074_NEWS_SHORT"
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT410074OPTA"
+		leave_alliance = FROM
+		end_military_access = FROM
+		war = {
+			target = FROM
+			attacker_goal = { 
+				casus_belli = treaty_port_casus_belli
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = no
+		}
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "EVT410074OPTB"
+		prestige_factor = -0.25
+	}
+}
+
+# Secession Crisis in CAE if CAE becomes a dictatorship
+country_event = { 
+	id = 410075
+	title = "EVTNAME410075"
+	desc = "EVTDESC410075"
+	picture = "barrikadenkaempfe_berlin"
+	
+	trigger = { 
+		tag = CAE
+		OR = {
+			government = presidential_dictatorship
+			government = absolute_monarchy
+			government = proletarian_dictatorship
+			government = fascist_dictatorship 			
+		}
+		war = no
+		NGF = { exists = no }		
+	}
+	
+	fire_only_once = yes	
+	
+	mean_time_to_happen = { 
+		months = 12	
+		modifier = {
+			factor = 0.7
+			war_exhaustion = 50
+		}
+		modifier = {
+			factor = 0.5
+			has_recently_lost_war = yes
+		}
+		modifier = {
+			factor = 0.5
+			any_owned_province = {
+				culture = north_german
+				average_militancy = 5
+			}
+		}		
+	}
+	
+	option = { 
+		name = "EVTOPTA410075"
+		set_country_flag = elbian_uprising
+		585 = { add_core = NGF } #Detmold
+		582 = { add_core = NGF } #Minden	
+		HAN_534 = { add_core = NGF }	#East Frisia
+		HAM_528 = { add_core = NGF }	#Hanover
+		PRU_546 = { add_core = NGF }	#Pomerania
+		SAX_1 = { add_core = NGF }		#Thuringia
+		HOL_369 = { add_core = NGF }	#Holstein
+		PRU_553 = { add_core = NGF }	#Anhalt
+		PRU_549 = { add_core = NGF }	#Brandenburg
+		SAX_558 = { add_core = NGF }	#Saxony		
+		release_vassal = NGF
+		NGF = {
+			government = democracy 
+			define_general = {
+				name = "Ernst Haushofer"
+				personality = audacious
+				background = natural_born_leader
+			}
+			define_general = {
+				name = "Erich Pflanzer"
+				personality = efficient
+				background = school_of_offense
+			}
+			define_general = {
+				name = "Berent Haller"
+				personality = hellbent
+				background = innovative_tactician
+			}			
+		}
+		ai_chance = { factor = 90 }
+	}
+
+	option = { 
+		name = "EVTOPTB410075"
+		prestige = -15
+		badboy = -5
+		set_country_flag = allow_elbian_secession
+		585 = { #Detmold
+			add_core = NGF
+			remove_core = CAE
+		} 
+		582 = { #Minden
+			add_core = NGF
+			remove_core = CAE			
+		} 	
+		HAN_534 = { #East Frisia
+			add_core = NGF
+			remove_core = CAE			
+		}	
+		HAM_528 = { #Hanover
+			add_core = NGF
+			remove_core = CAE			
+		}	
+		PRU_546 = { #Pomerania
+			add_core = NGF
+			remove_core = CAE			
+		}	
+		SAX_1 = { #Thuringia
+			add_core = NGF
+			remove_core = CAE			
+		}		
+		HOL_369 = { #Holstein
+			add_core = NGF 
+			remove_core = CAE			
+		}	
+		PRU_553 = { #Anhalt
+			add_core = NGF
+			remove_core = CAE			
+		}	
+		PRU_549 = { #Brandenburg
+			add_core = NGF
+			remove_core = CAE			
+		}	
+		SAX_558 = { #Saxony
+			add_core = NGF
+			remove_core = CAE			
+		}			
+		release = NGF
+		NGF = { government = democracy }		
+        ai_chance = {
+            factor = 10
+        }		
+	}	
+}
+
+# CAE-NGF war breaks out
+country_event = { 
+	id = 410076
+	title = "EVTNAME410076"
+	desc = "EVTDESC410076"
+	news = yes
+	news_desc_long = "EVTDESC410076_NEWS_LONG"
+	news_desc_medium = "EVTDESC410076_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC410076_NEWS_SHORT"
+	major = yes
+	
+	trigger = { 
+		tag = CAE
+		has_country_flag = elbian_uprising
+		NGF = { exists = yes }		
+	}
+	
+	fire_only_once = yes	
+	
+	mean_time_to_happen = { 
+		months = 10	
+		modifier = {
+			factor = 0.3
+			NGF = { military_score = 100}
+		}	
+	}
+	
+	option = { 
+		name = "EVTOPTA410076"
+		CAE = {
+			release_vassal = NGF
+			war = {
+				target = NGF
+				attacker_goal = { casus_belli = civil_war }
+				defender_goal = { casus_belli = status_quo }
+			}
+		}
+		ai_chance = { factor = 100 }
+	}	
+}
+
+# If CAE loses the Civil War, or choose to peacefully let NGF go, dissolve CAE
+country_event = { 
+	id = 410077
+	title = "EVTNAME410077"
+	desc = "EVTDESC410077"
+	news = yes
+	news_desc_long = "EVTDESC410077_NEWS_LONG"
+	news_desc_medium = "EVTDESC410077_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC410077_NEWS_SHORT"
+	major = yes
+	
+	trigger = { 
+		tag = CAE
+		war = no
+		OR = {
+			AND = {
+				has_country_flag = elbian_uprising
+				truce_with = NGF
+			}
+			has_country_flag = allow_elbian_secession
+		}
+		NGF = { exists = yes }		
+	}
+	
+	fire_only_once = yes	
+	
+	mean_time_to_happen = { 
+		months = 6	
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 50
+		}
+		modifier = {
+			factor = 0.5
+			has_recently_lost_war = yes
+		}		
+	}
+	
+	option = { 
+		name = "EVTOPTA410077"
+		prestige = -50
+		set_country_flag = dismantled_CAE
+		clr_country_flag = elbian_uprising
+		clr_country_flag = allow_elbian_secession
+		any_country = {
+			any_owned = {
+				limit = {
+					is_core = CAE
+				}
+				remove_core = CAE
+			}
+		}
+		any_owned = {
+			limit = {
+				is_core = CAE
+			}
+			remove_core = CAE
+		}
+		any_owned = {
+			limit = {
+				is_overseas = yes
+			}
+			secede_province = NGF
+		}
+		PRU_553 = { #Anhalt
+			remove_core = BOH			
+		}	
+		PRU_549 = { #Brandenburg
+			remove_core = BOH			
+		}	
+		SAX_558 = { #Saxony
+			remove_core = BOH			
+		}
+		change_tag = BOH
+		remove_accepted_culture = north_german
+        ai_chance = {
+            factor = 100
+        }		
+	}	
+}

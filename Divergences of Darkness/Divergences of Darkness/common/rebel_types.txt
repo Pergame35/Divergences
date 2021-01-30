@@ -1341,9 +1341,8 @@ nationalist_rebels = {
 		}
 		modifier = {
 			factor = 0
-			culture = south_andean
-			location = { is_core = BOL }
-			country = { tag = PBC }
+			culture = persian
+			location = { is_core = PER }
 		}
 		modifier = {
 			factor = 0

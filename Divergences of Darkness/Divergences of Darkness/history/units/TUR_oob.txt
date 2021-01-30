@@ -52,7 +52,7 @@ leader = {
 	name = "Demet Hassan"
 	type = land
 	date = 1836.1.1
-	personality = lazy
+	personality = reserved
 	background = toady
 }
 
@@ -108,7 +108,7 @@ army = {
 	regiment = {
 		name= "2. Bostancy-yy Hassa"
 		type = infantry
-		home = 803
+		home = 833
 	}
 
 	regiment = {
@@ -138,7 +138,7 @@ army = {
 	regiment = {
 		name= "6. Piyade Tümeni"
 		type = infantry
-		home = 810
+		home = 811
 	}
 
 	regiment = {
@@ -156,13 +156,13 @@ army = {
 	regiment = {
 		name= "1. Redif Trabzon"
 		type = infantry
-		home = 794
+		home = 795
 	}
 
 	regiment = {
 		name= "2. Redif Trabzon"
 		type = infantry
-		home = 803
+		home = 811
 	}
 
 	regiment = {
@@ -179,13 +179,13 @@ army = {
 	regiment = {
 		name= "4. Sipahis"
 		type = hussar
-		home = 823
+		home = 812
 	}
 
 	regiment = {
 		name= "5. Sipahis"
 		type = hussar
-		home = 860
+		home = 812
 	}
 
 	regiment = {
@@ -201,7 +201,7 @@ army = {
 	regiment = {
 		name= "12. Piyade Tümeni"
 		type = infantry
-		home = 884
+		home = 883
 	}
 
 	regiment = {
@@ -225,7 +225,7 @@ army = {
 	regiment = {
 		name= "3. Redif Halab"
 		type = infantry
-		home = 884
+		home = 882
 	}
 }
 
@@ -235,7 +235,7 @@ army = {
 	regiment = {
 		name= "12. Piyade Tümeni"
 		type = infantry
-		home = 876
+		home = 870
 	}
 
 	regiment = {
@@ -247,19 +247,19 @@ army = {
 	regiment = {
 		name= "1. Redif Halab"
 		type = infantry
-		home = 876
+		home = 877
 	}
 
 	regiment = {
 		name= "2. Redif Halab"
 		type = infantry
-		home = 884
+		home = 878
 	}
 }
 
 navy = {
 	name = "Ottoman Navy"
-	location = 844
+	location = 860
 	ship = {
 		name= "Masudiya"
 		type = manowar

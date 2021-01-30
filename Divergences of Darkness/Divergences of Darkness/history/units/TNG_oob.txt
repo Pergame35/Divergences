@@ -58,55 +58,55 @@ army = {
 	regiment = {
 		name= "1st Artillery"
 		type = artillery
-		home = 1487
+		home = 1611
 	}
 	
 	regiment = {
-		name= "1st hussar"
+		name= "1. Hussar"
 		type = hussar
-		home = 1487
+		home = 1611
 	}
 	
 	regiment = {
 		name= "1. Brigade"
 		type = infantry
-		home = 1611
+		home = 1494
 	}
 
 	regiment = {
 		name= "2. Brigade"
 		type = infantry
-		home = 1611
+		home = 1494
 	}
 
 	regiment = {
 		name= "3. Brigade"
 		type = infantry
-		home = 1611
+		home = 1494
 	}
 
 	regiment = {
 		name= "4. Brigade"
 		type = infantry
-		home = 1611
+		home = 1497
 	}
 
 	regiment = {
 		name= "2nd Artillery"
 		type = artillery
-		home = 1487
+		home = 1497
 	}
 	
 	regiment = {
 		name= "2nd hussar"
 		type = hussar
-		home = 1487
+		home = 1482
 	}
 }
 
 navy = {
 	name = "Fleet of the Phoenix Emperor"
-	location = 1485
+	location = 1482
   
   ship = {
 		name= "Shanghai"

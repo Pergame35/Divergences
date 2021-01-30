@@ -3,7 +3,8 @@ political_decisions = {
     picture = UniteARC
 		potential = {
 			tag = VIN
-      NOT = { ARC = { exists = yes } }
+			NOT = { ARC = { exists = yes } }
+			NOT = { has_country_flag = vin_distmantled }			
 			has_country_flag = vin_manifest_destiny
 		}
 		allow = {
@@ -43,6 +44,7 @@ political_decisions = {
 			  }				
 				country_event = 333452
 				set_country_flag = vinlandic_arcadia
+				set_country_flag = vinland_formed_arcadia				
 		}  
     ai_will_do = {
 			factor = 1
@@ -53,7 +55,8 @@ political_decisions = {
     picture = UniteARC
 		potential = {
 			tag = NBG
-      NOT = { ARC = { exists = yes } }
+			NOT = { ARC = { exists = yes } }
+			NOT = { has_country_flag = nbg_distmantled }
 			has_country_flag = nbg_manifest_destiny
 		}
 		allow = {
@@ -92,6 +95,7 @@ political_decisions = {
 				country_event = 333452
 				
 				set_country_flag = septiman_arcadia
+				set_country_flag = septimania_formed_arcadia
 		}   
     ai_will_do = {
 			factor = 1
@@ -103,7 +107,8 @@ political_decisions = {
     picture = UniteARC
 		potential = {
 			tag = PLA
-      NOT = { ARC = { exists = yes } }
+			NOT = { ARC = { exists = yes } }
+			NOT = { has_country_flag = pla_distmantled }			
 			has_country_flag = pla_manifest_destiny
 		}
 		allow = {
@@ -143,6 +148,7 @@ political_decisions = {
 				country_event = 333452
 				
 				set_country_flag = plantagenian_arcadia
+				set_country_flag = plantagenia_formed_arcadia				
 		} 
     ai_will_do = {
 			factor = 1
