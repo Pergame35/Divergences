@@ -62,6 +62,13 @@
 		religion = orthodox
 		size = 1200
 	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size= 3000
+
+	}	
 
 	farmers = {
 		culture = greek
@@ -142,7 +149,7 @@
 	soldiers = {
 		culture = turkish
 		religion = sunni
-		size= 1100
+		size= 3100
 
 	}
 
@@ -166,7 +173,7 @@
 	farmers = {
 		culture = greek
 		religion = orthodox
-		size = 9575
+		size = 11575
 	}
 }
 

@@ -1,30 +1,30 @@
 political_decisions = {
 
 	form_batavia = { 
+		picture = boers_artillery	
+		potential = { 
+			OR = { tag = LWE  tag = TRN tag = NFL }
+		}
 	
-	potential = { 
-	OR = { tag = LWE  tag = TRN tag = NFL }
-	}
-	
-	allow = { 
-	LWE = {
-			OR = {
-				tag = LWE
-				AND = { 
-					NOT = { LWE = { exists = yes } }
-					owns = 2096
+		allow = { 
+			LWE = {
+				OR = {
+					tag = LWE
+					AND = { 
+						NOT = { LWE = { exists = yes } }
+						owns = 2096
 					}
-				in_sphere = THIS
-				vassal_of = THIS
+					in_sphere = THIS
+					vassal_of = THIS
 				}
 	
 			}
-	TRN = {
-			all_core = {
+			TRN = {
+				all_core = {
 					OR = {
 						owned_by = THIS
 						owner = {
-								OR = {
+							OR = {
 								in_sphere = THIS
 								vassal_of = THIS
 							}
@@ -33,25 +33,25 @@ political_decisions = {
 	
 				}
 			}
-	NFL = {
-			all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
+			NFL = {
+				all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
 								OR = {
 								in_sphere = THIS
 								vassal_of = THIS
+								}
 							}
 						}
-					}
 	
+					}
 				}
-			}
 			
-	}
+			}
 	
-	effect = { 
-	any_country = {
+		effect = { 
+			any_country = {
 				limit = {
 					primary_culture = boer
 					OR = {
@@ -61,15 +61,16 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
-	ENG_2087 = { add_core = BTV }
-	change_tag = BTV 
-	prestige = 20 
+			ENG_2087 = { add_core = BTV }
+			change_tag = BTV 
+			prestige = 20 
 	}
 }
 	
 	
 	
 	form_south_africa = {
+		picture = cape_colony	
 		potential = {
 			NOT = { part_of_sphere = yes }
 			NOT = { exists = SAF }
@@ -139,9 +140,10 @@ political_decisions = {
 		}
 	}
 	
-	Baastards_SAF = { 
+	Baastards_SAF = {
+		picture = cape_emancipation
 		potential = { 
-			tag = BTV 
+			tag = SAF 
 			NOT = { has_country_flag = baastards_SAF }
 			has_country_flag = claim_south_africa
 			owns = 2574

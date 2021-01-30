@@ -132,12 +132,15 @@ political_decisions = {
 	}
 	
 	form_elbian_confederation = { 
-	picture = elbian_confederation	
-	potential = { 
-	tag = BOH 
-	has_global_flag = liberal_revolutions_should_now_fire
-	NOT = { government = absolute_monarchy }
-	}
+		picture = elbian_confederation	
+		potential = { 
+			tag = BOH 
+			has_global_flag = liberal_revolutions_should_now_fire
+			NOT = { 
+				government = absolute_monarchy 
+				has_global_flag = cae_formed
+			}
+		}
 		
 	allow = { 
 	is_greater_power = yes 
@@ -311,11 +314,13 @@ political_decisions = {
 	
 	effect = { 
 	set_global_flag = cae_formed
-	PRU_572 = { add_core = CAE } 	#Rhineland
-	HES_2560 = { add_core = CAE }	#Palatinate
-	PRU_575 = { add_core = CAE }	#Nordrhein
-	HES_566 = { add_core = CAE }	#Hessen
-	PRU_581 = { add_core = CAE }	#Westphalia
+	#PRU_572 = { add_core = CAE } 	#Rhineland
+	#HES_2560 = { add_core = CAE }	#Palatinate
+	#PRU_575 = { add_core = CAE }	#Nordrhein
+	#HES_566 = { add_core = CAE }	#Hessen
+	#PRU_581 = { add_core = CAE }	#Westphalia
+	585 = { add_core = CAE } #Detmold
+	582 = { add_core = CAE } #Minden	
 	HAN_534 = { add_core = CAE }	#East Frisia
 	HAM_528 = { add_core = CAE }	#Hanover
 	PRU_546 = { add_core = CAE }	#Pomerania
@@ -330,6 +335,7 @@ political_decisions = {
 					in_sphere = THIS
 					NOT = {
 						tag = THIS
+						tag = KRL
 					}
 				}
 				annex_to = THIS
@@ -448,5 +454,36 @@ political_decisions = {
 	}
 	
 	}
+	
+	reclaim_bradenburg = { 
+		picture = reclaim_bradenburg
+		potential = { 
+			tag = BOH 
+			has_country_flag = dismantled_CAE
+			NOT = { has_country_flag = reclaimed_brandenburg }
+		}
+		
+		allow = { 
+			is_greater_power = yes 
+			war_policy = jingoism
+			military_score = 75
+			NOT = { has_recently_lost_war = yes }
+		}
+	
+		effect = {
+			set_country_flag = reclaimed_brandenburg
+			PRU_553 = { #Anhalt
+				add_core = BOH			
+			}	
+			PRU_549 = { #Brandenburg
+				add_core = BOH			
+			}	
+			SAX_558 = { #Saxony
+				add_core = BOH			
+			}
+		}
+	
+	}	
+	
 }
 	

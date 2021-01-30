@@ -9,8 +9,10 @@ political_decisions = {
 			NOT = { has_country_modifier = academic_confusion }
 			prestige = 45
 			military_score = 100
-			jingoism = 5
-			pro_military = 5
+			OR = {
+				jingoism = 5
+				pro_military = 5
+			}
 			OR = {
 				ruling_party_ideology = conservative
 				ruling_party_ideology = reactionary
@@ -37,8 +39,10 @@ political_decisions = {
 			prestige = 45
 			military_score = 100
 			total_amount_of_ships = 30
-			pro_military = 5
-			laissez_faire = 5
+			OR = {
+				pro_military = 5
+				laissez_faire = 5
+			}
 			any_owned_province = { is_overseas = yes }
 			OR = {
 				ruling_party_ideology = conservative
@@ -65,8 +69,10 @@ political_decisions = {
 			NOT = { has_country_modifier = academic_confusion }
 			prestige = 45
 			average_consciousness = 4
-			pacifism = 5
-			secularized = 5
+			OR = {
+				pacifism = 5
+				secularized = 5
+			}
 			OR = {
 				ruling_party_ideology = liberal
 				ruling_party_ideology = fascist
@@ -92,8 +98,10 @@ political_decisions = {
 			NOT = { has_country_modifier = academic_confusion }
 			prestige = 45
 			industrial_score = 100
-			laissez_faire = 5
-			free_trade = 5
+			OR = {
+				laissez_faire = 5
+				free_trade = 5
+			}
 			OR = {
 				ruling_party_ideology = liberal
 				ruling_party_ideology = anarcho_liberal
@@ -118,8 +126,10 @@ political_decisions = {
 			NOT = { has_country_modifier = academic_confusion }
 			prestige = 45
 			industrial_score = 100
-			interventionism = 5
-			protectionism = 5
+			OR = {
+				interventionism = 5
+				protectionism = 5
+			}
 			OR = {
 				ruling_party_ideology = conservative
 				ruling_party_ideology = socialist

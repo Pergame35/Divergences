@@ -1214,6 +1214,36 @@ political_decisions = {
 	
 	}
 	
+	ameriga_annex_equinoxia = {
+		picture = icarai	
+		potential = { 
+			tag = AZL
+			NOT = { has_country_flag = federation_equinoxia }
+			EQN = { 
+				exists = yes 
+			}
+		}
+		
+		allow = {
+			war = no
+			EQN = { 
+				war = no 
+				in_sphere = THIS
+			}
+			slavery = no_slavery 
+			OR = {
+				government = hms_government
+				government = democracy				
+			}			
+		}
+		
+		effect = {
+			EQN = { country_event = 775427 }
+			set_country_flag = federation_equinoxia
+		}
+	}	
+	
+	
 }
 
 

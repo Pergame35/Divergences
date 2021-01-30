@@ -11,7 +11,15 @@ leader = {
 	type = land
 	date = 1836.1.1
 	personality = charismatic
-	background = inventor
+	background = innovative_tactician
+}
+
+leader = {
+	name = "Denoel Nânesse"
+	type = land
+	date = 1836.1.1
+	personality = openminded
+	background = sycophant
 }
 
 leader = {
@@ -34,13 +42,13 @@ army = {
 	regiment = {
 		name= "2ème Brigade d'Infanterie"
 		type = infantry
-		home = 243
+		home = 244
 	}
 	
 	regiment = {
 		name= "3ème Brigade d'Infanterie"
 		type = infantry
-		home = 243
+		home = 245
 	}
 }
 
@@ -56,19 +64,19 @@ army = {
 	regiment = {
 		name= "2ème Brigade d'Infanterie"
 		type = infantry
-		home = 223
+		home = 222
 	}
 
 	regiment = {
 		name= "3ème Brigade d'Infanterie"
 		type = infantry
-		home = 223
+		home = 219
 	}
 	
 	regiment = {
 		name= "1ère Brigade de Cavalerie"
 		type = hussar
-		home = 225
+		home = 220
 	}
 }
 
@@ -84,7 +92,7 @@ army = {
 	regiment = {
 		name= "2ème Brigade d'Infanterie"
 		type = infantry
-		home = 225
+		home = 226
 	}
 
 	regiment = {

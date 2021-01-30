@@ -7,11 +7,27 @@ leader = {
 }
 
 leader = {
+	name = "Roland Claudric"
+	type = land
+	date = 1836.1.1
+	personality = deeply_religious
+	background = gifted_administrator
+}
+
+leader = {
+	name = "Lucas Rodrigue"
+	type = land
+	date = 1836.1.1
+	personality = bigoted
+	background = armchair_general
+}
+
+leader = {
 	name = "Samuel de Champlain"
 	type = sea
 	date = 1836.1.1
 	personality = gregarious
-	background = inventor
+	background = innovative_tactician
 }
 
 army = {

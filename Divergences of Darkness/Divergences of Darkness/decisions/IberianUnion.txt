@@ -476,4 +476,29 @@ form_iberia = {
 		}
 	}
 	
+	make_lisboa_capital = {
+		picture = lisboa
+		potential = {
+			tag = SPC
+			owns = 521
+			521 = { is_capital = no }
+		}
+		
+		allow = {
+			war = no
+			owns = 521
+			521 = { is_capital = no }
+			economic_responsibility = 1
+		}
+		
+		effect = {
+			capital = 521
+			521 = {
+				add_province_modifier = { name = gateway_to_harbor duration = 1825 }
+				life_rating = 5
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}	
+	
 }

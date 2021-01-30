@@ -6,6 +6,14 @@ leader = {
 	background = uncommonly_young
 }
 
+leader = {
+	name = "Uthman ibn Ishaq"
+	type = land
+	date = 1836.1.1
+	personality = meticulous
+	background = gifted_administrator
+}
+
 army = {
 	name = "Army of the Bey of Tunis"
 	location = 1730
@@ -24,13 +32,13 @@ army = {
 	regiment = {
 		name= "3.Askäris"
 		type = infantry
-		home = 1727
+		home = 1728
 	}
 
 	regiment = {
 		name= "4.Askäris"
 		type = hussar
-		home = 1727
+		home = 1728
 	}
 }
 
@@ -40,19 +48,19 @@ army = {
 	regiment = {
 		name= "1.Askäris"
 		type = infantry
-		home = 1731
+		home = 1729
 	}
 
 	regiment = {
 		name= "2.Askäris"
 		type = infantry
-		home = 1731
+		home = 1730
 	}
 
 	regiment = {
 		name= "3.Askäris"
 		type = infantry
-		home = 1731
+		home = 1730
 	}
 
 	regiment = {

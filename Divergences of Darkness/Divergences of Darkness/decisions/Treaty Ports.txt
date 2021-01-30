@@ -694,4 +694,23 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
+	
+	fredensborg_treaty_port = {
+		picture = fredensborg
+		potential = {
+			has_country_modifier = negotiating_treaty
+			1907 = { owner = { has_country_modifier = negotiating_unequal_treaty civilized = no truce_with = THIS } }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			remove_country_modifier = negotiating_treaty
+			1907 = { secede_province = THIS change_controller = THIS }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}	
+	
 }

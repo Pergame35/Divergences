@@ -11,39 +11,39 @@ army = {
 	name = "Army of Lotharingia"
 	location = 2455
 	regiment = {
-		name= "1.1. hussar"
+		name= "1.1. Hussar"
+		type = hussar
+		home = 2457
+	}
+
+	regiment = {
+		name= "2.1. Hussar"
 		type = hussar
 		home = 2346
 	}
 
 	regiment = {
-		name= "2.1. hussar"
-		type = hussar
-		home = 2346
-	}
-
-	regiment = {
-		name= "3.1. hussar"
+		name= "3.1. Hussar"
 		type = hussar
 		home = 2461
 	}
 
 	regiment = {
-		name= "1.3. infantry"
+		name= "1.3. Infantry"
 		type = infantry
-		home = 2461
+		home = 2462
 	}
 
 	regiment = {
-		name= "2.3. infantry"
+		name= "2.3. Infantry"
 		type = infantry
-		home = 2461
+		home = 2463
 	}
 
 	regiment = {
-		name= "3.3. infantry"
+		name= "3.3. Infantry"
 		type = infantry
-		home = 2461
+		home = 2464
 	}
 }
 

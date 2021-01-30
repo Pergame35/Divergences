@@ -1012,7 +1012,14 @@ country_event = { #Success Glorious Revolution
 	trigger = { 
 	NOT = { has_global_flag = DVG_infamy }
 	has_global_flag = glorious_revolution
-	ENL = { exists = yes war = no }
+	ENL = {
+		exists = yes
+		war = no
+		OR = {
+			truce_with = DUA
+			truce_with = FRA
+		}
+	}
 	NOT = { tag = DUA tag = ENL }
 	is_greater_power = yes 
 	continent = europe 

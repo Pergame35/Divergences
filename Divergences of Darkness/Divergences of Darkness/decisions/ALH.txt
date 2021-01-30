@@ -1,6 +1,6 @@
 political_decisions = {
-	picture = exile_house_of_rashid
 	restore_rashids = {
+		picture = exile_house_of_rashid	
 		potential = {
 			NOT = { part_of_sphere = yes }
 			tag = ALH
