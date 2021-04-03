@@ -1180,57 +1180,66 @@ country_event = {
 	desc = "334341.D"
 	picture = "Japanese_CHI"
 	
+	fire_only_once = yes
+	
 	trigger = { 
-	tag = JAP 
-	MIG = { civilized = no exists = yes war = no }
-	DUA = { exists = yes has_country_flag = seeking_port_china }
-	1538 = { owned_by = MIG }
-	1606 = { owned_by = MIG }
-	war = no
-	OR = { 
-	is_greater_power = yes
-	1624 = { owned_by = JAP } 
+		tag = JAP 
+		MIG = { 
+			civilized = no
+			exists = yes
+			war = no
+		}
+		DUA = { 
+			exists = yes
+			has_country_flag = seeking_port_china 
+		}
+		1538 = { owned_by = MIG }
+		1606 = { owned_by = MIG }
+		war = no
+		OR = { 
+			is_greater_power = yes
+			1624 = { owned_by = JAP } 
 		}
 	}
 	
 	mean_time_to_happen = { 
-	months = 12 
+		months = 12 
 	}
 	
 	immediate = { 
-	clr_country_flag = seeking_port_china
+		clr_country_flag = seeking_port_china
 	}
 	
 	option = { 
-	name = "334341.A" #Protect MIG
-	prestige = 5
-	create_alliance = MIG 
-	relation = { who = MIG value = 100 }
-	DUA = { country_event = 334342 }
-	ai_chance = {
+		name = "334341.A" #Protect MIG
+		prestige = 5
+		create_alliance = MIG 
+		relation = { who = MIG value = 100 }
+		DUA = { country_event = 334342 }
+		ai_chance = {
 			factor = 40
 		}
 	}
 	
 	option = { 
-	name = "334341.B" #Offer to carve MIG 
-	DUA = { country_event = 334345 }
-	ai_chance = {
+		name = "334341.B" #Offer to carve MIG 
+		DUA = { country_event = 334345 }
+		ai_chance = {
 			factor = 50
 		}
 	}
 	
 	option = { 
-	name = "334341.C" #Leave MIG alone
-	MIG = { country_event = 334351 }
-	prestige = -5
-	ai_chance = {
-		factor = 10
-		modifier = {
-			factor = 30
-			any_greater_power = { war_with = THIS }
+		name = "334341.C" #Leave MIG alone
+		MIG = { country_event = 334351 }
+		prestige = -5
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 30
+				any_greater_power = { war_with = THIS }
+				}
 			}
-		}
 	}
 }
 

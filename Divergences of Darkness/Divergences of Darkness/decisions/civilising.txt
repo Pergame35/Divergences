@@ -8,7 +8,10 @@ political_decisions = {
 		}
 		allow = {
 			NOT = { average_militancy = 2.5 }
-			civilization_progress = 0.5
+			OR = {
+				civilization_progress = 0.5
+				civilized = yes
+			}
 		}
 		effect = {
 			#prestige = 10

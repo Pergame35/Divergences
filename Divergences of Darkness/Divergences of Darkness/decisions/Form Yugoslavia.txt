@@ -18,11 +18,51 @@ political_decisions = {
 			NOT = { is_vassal = yes }
 			rank = 20
 			prestige = 50
-			771 = { owned_by = THIS }
-			783 = { owned_by = THIS }
-			2583 = { owned_by = THIS }
-			794 = { owned_by = THIS }
-			780 = { owned_by = THIS }
+			771 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}			
+			}
+			783 = { 
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}			
+			}
+			2583 = { 
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+			}
+			794 = { 
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+			}
+			780 = { 
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+			}
 		}
 		effect = {
 			prestige = 20

@@ -499,6 +499,51 @@ form_iberia = {
 			}
 		}
 		ai_will_do = { factor = 1 }
+	}
+
+	iberian_cooperation_treaty = {
+		picture = spanish_commonwealth
+		potential= {
+			tag = SPC
+			NOT = { has_country_flag = iberian_cooperation_treaty }
+			OR = {
+				ARA = {
+					exists = yes 
+				}
+				ARI = {
+					exists = yes
+				}
+			}
+		}
+		
+		allow = {
+			war = no
+			NOT = { is_vassal = yes }
+		}
+		
+		effect = {
+			set_country_flag = iberian_cooperation_treaty
+			relation = {
+				who = DUA
+				value = -50
+			}
+			any_country = {
+				limit = {
+					tag = ARA
+					exists = yes
+				}
+				country_event = 333227
+			}
+			any_country = {
+				limit = {
+					tag = ARI
+					exists = yes
+				}
+				country_event = 333227
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}	
-	
 }

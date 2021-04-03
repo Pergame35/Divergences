@@ -350,24 +350,29 @@ political_decisions = {
 		picture = meiji_court
 		potential = {
 			tag = JAP
-			owns = 1485
+			owns = 2681
+			owns = 2406
 			owns = 2562
 			NOT = { has_country_flag = taiwan_administration }
 		}
 		allow = {
 			civilized = yes
-			owns = 1485
+			owns = 2681
+			owns = 2406
 			owns = 2562
 		}
 		effect = {
 			prestige = 1
-			1485 = {
+			2681 = {
 				change_province_name = "Taihoku"
 			}
+			2406 = {
+                change_province_name = "Hoko"
+			}
 			2562 = {
-				change_province_name = "Takao"
+				change_province_name = "Taito"
 				state_scope = {
-					change_region_name = "Takasago"
+					change_region_name = "Taiwan"
 				}
 			}
 			set_country_flag = taiwan_administration

@@ -13,16 +13,10 @@ country_event = {
 
 	trigger = {
 		civilized = yes
-		OR = {
-			revolution_n_counterrevolution = 1
-			any_neighbor_country = { has_country_flag = arab_revolt }
-		}
-		year = 1900
+		has_country_flag = arab_revolt_encouraged
+		war_exhaustion = 49
 		NOT = {
-			AND = {
-				has_country_modifier = ottomanism_reform
-				citizens_rights = all_voting_pops
-			}
+			citizens_rights = all_voting_pops
 			is_culture_group = semitic
 			is_culture_group = iranian
 			has_country_flag = arab_revolt

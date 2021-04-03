@@ -142,9 +142,9 @@ country_event = {
 		}			
 	}
 	
-#	mean_time_to_happen = { 
-#		months = 1 
-#	}
+	mean_time_to_happen = { 
+		months = 1 
+	}
 	
 	option = { 
 		name = "EVTOPTA32419"
@@ -169,5 +169,33 @@ country_event = {
 		any_owned = { limit = { any_core = { region = RUS_2642 } } add_core = TSS }			
 		any_owned = { limit = { any_core = { region = RUS_1071 } } add_core = TSS }	
 		any_owned = { limit = { any_core = { region = RUS_2668 } } add_core = TSS }			
+	}
+}
+
+country_event = { 
+	id = 32420
+	title = "EVTNAME32420"
+	desc = "EVTDESC32420"
+	picture = "nizhny_novgorod"		
+	
+	trigger = { 
+		tag = RUS 
+		exists = yes
+		war = no 
+		NOV = { 
+			exists = yes
+			vassal_of = THIS
+		} 
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = { 
+		months = 3 
+	}
+	
+	option = { 
+		name = "EVTOPTA32420"
+		RUS = { inherit = NOV }
 	}
 }

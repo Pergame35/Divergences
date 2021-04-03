@@ -21,11 +21,6 @@ LIT = {
 	level = 5		#3=cordial, 4 = friendly, 5 sphere
 	influence_value = 100
 }
-RUT = {
-	value = 150		#relation
-	level = 5		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 100
-}
 
 VIN = {
 	value = 100		#relation
@@ -99,6 +94,22 @@ leader = {
 }
 
 leader = {
+	name = "Vermund Helgesen"
+	type = land
+	date = 1836.1.1
+	personality = polite
+	background = politician
+}
+
+leader = {
+	name = "Sigger Holst"
+	type = land
+	date = 1836.1.1
+	personality = choleric
+	background = innovative_tactician
+}
+
+leader = {
 	name = "Erik Blom"
 	type = sea
 	date = 1836.1.1
@@ -120,6 +131,22 @@ leader = {
 	date = 1836.1.1
 	personality = inept
 	background = pawn
+}
+
+leader = {
+	name = "Kornelius Mikkelsen"
+	type = sea
+	date = 1836.1.1
+	personality = careful
+	background = armchair_general
+}
+
+leader = {
+	name = "Brynjolf Knutsen"
+	type = sea
+	date = 1836.1.1
+	personality = brash
+	background = butcher
 }
 
 army = {
@@ -146,7 +173,7 @@ army = {
 	regiment = {
 		name= "4.1. Infanteridivision"
 		type = artillery
-		home = 544
+		home = 530
 	}
 
 	regiment = {
@@ -170,13 +197,13 @@ army = {
 	regiment = {
 		name= "2.1. Kavalleridivision"
 		type = hussar
-		home = 544
+		home = 545
 	}
 
 	regiment = {
 		name= "3.1. Kavalleridivision"
 		type = hussar
-		home = 544
+		home = 547
 	}
 
 }
@@ -287,37 +314,37 @@ army = {
 }
 
 army = {
-	name = "Army of the Eastern Indies"
+	name = "Army of the East Indies"
 	location = 1433
 	regiment = {
 		name= "1.1. Infanteridivision"
 		type = infantry
-		home = 1907
+		home = 369
 	}
 
 	regiment = {
 		name= "2.1. Infanteridivision"
 		type = infantry
-		home = 1291
+		home = 548
 	}
 
 	regiment = {
 		name= "3.1. Infanteridivision"
 		type = infantry
-		home = 1291
+		home = 548
 	}
 
 
 	regiment = {
 		name= "2.1. Kavalleridivision"
 		type = hussar
-		home = 1291
+		home = 372
 	}
 
 }
 
 army = {
-	name = "Finnish infantry"
+	name = "Finnish Jäggers"
 	location = 343
 	regiment = {
 		name= "1.1. Infanteridivision"
@@ -339,7 +366,7 @@ army = {
 }
 
 army = {
-	name = "Scottish infantry"
+	name = "Scottish Garrison"
 	location = 269
 	regiment = {
 		name= "1.1. Infanteridivision"

@@ -2,6 +2,49 @@
 #under the rule of Russia in 1836  
 #Riga (220000/55000 POPS)  
 354 = {
+
+    aristocrats = {
+        culture = north_german
+        religion = protestant
+        size = 600
+    }
+
+    clergymen = {
+        culture = north_german
+        religion = protestant
+        size = 400
+    }
+
+    artisans = {
+        culture = north_german
+        religion = protestant
+        size = 1300
+    }
+
+    soldiers = {
+        culture = north_german
+        religion = protestant
+        size = 700
+    }
+
+    bureaucrats = {
+        culture = north_german
+        religion = protestant
+        size = 500
+    }
+
+    officers = {
+        culture = north_german
+        religion = protestant
+        size = 50
+    }
+
+    farmers = {
+        culture = north_german
+        religion = protestant
+        size = 29000
+    }	
+
 	aristocrats = {
 		culture = latvian
 		religion = protestant
@@ -23,7 +66,7 @@
     artisans = {
         culture = latvian
         religion = protestant
-        size = 8500
+        size = 1500
     }
 
     soldiers = {
@@ -35,7 +78,7 @@
     farmers = {
         culture = latvian
         religion = protestant
-        size = 36061
+        size = 16061
     }
 
     officers = {
@@ -119,7 +162,7 @@
 	farmers = {
 		culture = scandinavian
 		religion = protestant
-		size = 3200
+		size = 1200
 	}
 }
 #Valmeira (516000/129000 POPS)  
@@ -139,7 +182,7 @@
     farmers = {
         culture = latvian
         religion = protestant
-        size = 99045
+        size = 93045
     }
 
     clergymen = {
@@ -159,6 +202,48 @@
         religion = jewish
         size = 3604
     }
+	
+    aristocrats = {
+        culture = north_german
+        religion = protestant
+        size = 25
+    }
+
+    clergymen = {
+        culture = north_german
+        religion = protestant
+        size = 50
+    }
+
+    artisans = {
+        culture = north_german
+        religion = protestant
+        size = 300
+    }
+
+    soldiers = {
+        culture = north_german
+        religion = protestant
+        size = 500
+    }
+
+    bureaucrats = {
+        culture = north_german
+        religion = protestant
+        size = 50
+    }
+
+    officers = {
+        culture = north_german
+        religion = protestant
+        size = 50
+    }
+
+    farmers = {
+        culture = north_german
+        religion = protestant
+        size = 6500
+    }		
 
     clergymen = {
         culture = scandinavian
@@ -215,6 +300,48 @@
         religion = protestant
         size = 24808
     }
+	
+    aristocrats = {
+        culture = north_german
+        religion = protestant
+        size = 25
+    }
+
+    clergymen = {
+        culture = north_german
+        religion = protestant
+        size = 50
+    }
+
+    artisans = {
+        culture = north_german
+        religion = protestant
+        size = 300
+    }
+
+    soldiers = {
+        culture = north_german
+        religion = protestant
+        size = 500
+    }
+
+    bureaucrats = {
+        culture = north_german
+        religion = protestant
+        size = 50
+    }
+
+    officers = {
+        culture = north_german
+        religion = protestant
+        size = 50
+    }
+
+    farmers = {
+        culture = north_german
+        religion = protestant
+        size = 1000
+    }	
 
     clergymen = {
         culture = ashkenazi
@@ -275,7 +402,7 @@
     farmers = {
         culture = latvian
         religion = protestant
-        size = 26296
+        size = 27296
     }
 
     aristocrats = {
@@ -299,7 +426,7 @@
     soldiers = {
         culture = north_german
         religion = protestant
-        size = 2125
+        size = 3500
     }
 
     bureaucrats = {
@@ -363,6 +490,12 @@
         religion = protestant
         size = 29388
     }
+	
+    aristocrats = {
+        culture = north_german
+        religion = protestant
+        size = 100
+    }	
 
     clergymen = {
         culture = north_german
@@ -413,6 +546,12 @@
         religion = protestant
         size = 19972
     }
+	
+    aristocrats = {
+        culture = north_german
+        religion = protestant
+        size = 100
+    }	
 
     clergymen = {
         culture = north_german
@@ -425,6 +564,12 @@
         religion = protestant
         size = 400
     }
+	
+    farmers = {
+        culture = north_german
+        religion = protestant
+        size = 1170
+    }	
 
     clergymen = {
         culture = ashkenazi

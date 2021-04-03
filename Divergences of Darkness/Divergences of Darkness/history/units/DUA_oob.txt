@@ -100,6 +100,30 @@ leader = {
 }
 
 leader = {
+	name = "Albèrt Bellamy"
+	type = land
+	date = 1836.1.1
+	personality = hellbent
+	background = drillmaster
+}
+
+leader = {
+	name = "Léan Dubosc"
+	type = land
+	date = 1836.1.1
+	personality = irate
+	background = warmonger
+}
+
+leader = {
+	name = "Rémin Turgot"
+	type = land
+	date = 1836.1.1
+	personality = resourceful
+	background = generals_aide
+}
+
+leader = {
 	name = "Charles Diderot"
 	type = sea
 	date = 1836.1.1
@@ -269,7 +293,7 @@ army = {
 	regiment = {
 		name= "3.Cavalerie régulière"
 		type = hussar
-		home = 420
+		home = 421
 	}
 
 	regiment = {
@@ -458,7 +482,7 @@ army = {
 	regiment = {
 		name= "4.11ème Division d'Infanterie"
 		type = hussar
-		home = 254
+		home = 255
 	}
 
 
