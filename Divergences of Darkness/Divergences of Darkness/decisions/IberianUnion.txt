@@ -476,29 +476,52 @@ form_iberia = {
 		}
 	}
 	
-	make_lisboa_capital = {
+	jewel_of_the_commonwealth = {
 		picture = lisboa
 		potential = {
 			tag = SPC
 			owns = 521
-			521 = { is_capital = no }
+			521 = { is_capital = yes }
 		}
 		
 		allow = {
 			war = no
 			owns = 521
-			521 = { is_capital = no }
+			521 = { is_capital = yes }
 			economic_responsibility = 1
 		}
 		
 		effect = {
-			capital = 521
 			521 = {
 				add_province_modifier = { name = gateway_to_harbor duration = 1825 }
-				life_rating = 5
 			}
 		}
 		ai_will_do = { factor = 1 }
 	}	
 	
+	make_madrid_capital = {
+		picture = madrid
+		potential = {
+			tag = SPA
+			has_country_flag = iberian_union
+			owns = 487
+			487 = { is_capital = no }
+		}
+		
+		allow = {
+			war = no
+			owns = 487
+			487 = { is_capital = no }
+			economic_responsibility = 1
+		}
+		
+		effect = {
+			capital = 487
+			487 = {
+				add_province_modifier = { name = baby_boom duration = 1825 }
+				life_rating = 5
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
 }
