@@ -494,6 +494,7 @@ form_iberia = {
 		effect = {
 			521 = {
 				add_province_modifier = { name = gateway_to_harbor duration = 1825 }
+				life_rating = 5
 			}
 		}
 		ai_will_do = { factor = 1 }
@@ -518,8 +519,7 @@ form_iberia = {
 		effect = {
 			capital = 487
 			487 = {
-				add_province_modifier = { name = baby_boom duration = 1825 }
-				life_rating = 5
+				add_province_modifier = { name = small_immigration_boom duration = 1825 }
 			}
 		}
 		ai_will_do = { factor = 1 }
