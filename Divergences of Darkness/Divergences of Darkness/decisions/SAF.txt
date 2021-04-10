@@ -8,14 +8,18 @@ political_decisions = {
 	
 		allow = { 
 			LWE = {
-				OR = {
-					tag = LWE
-					AND = { 
-						NOT = { LWE = { exists = yes } }
-						owns = 2096
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+						empty = yes						
 					}
-					in_sphere = THIS
-					vassal_of = THIS
+	
 				}
 	
 			}
@@ -145,6 +149,7 @@ political_decisions = {
 		potential = { 
 			tag = SAF 
 			NOT = { has_country_flag = baastards_SAF }
+			NOT = { accepted_culture = afro_south_african }			
 			has_country_flag = claim_south_africa
 			owns = 2574
 			owns = 2098

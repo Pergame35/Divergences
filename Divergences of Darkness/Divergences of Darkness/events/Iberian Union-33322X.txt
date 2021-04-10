@@ -419,3 +419,160 @@ country_event = {
 	}	
 	
 }
+
+# The Iberian Cooperation Treaty
+country_event = {
+	id = 333227
+	title = "EVTNAME333227"
+	desc = "EVTDESC333227"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA333227"
+		relation = {
+			who = SPC
+			value = 150
+		}	
+		prestige = 15
+		SPC = { prestige = 15 }
+		create_alliance = SPC
+		SPC = {
+					country_event = 333228
+				}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				OR = {
+					495 = { owned_by = SPA }
+					498 = { owned_by = SPA }
+					503 = { owned_by = SPA }
+					1700 = { owned_by = SPA }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB333227"
+		prestige = -15
+		SPC = { prestige = -15 }
+		relation = {
+			who = SPC
+			value = -100
+		}
+		SPC = {
+					country_event = 333229
+				}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2
+				OR = {
+					495 = { owned_by = SPA }
+					498 = { owned_by = SPA }
+					503 = { owned_by = SPA }
+					1700 = { owned_by = SPA }
+				}
+			}
+			modifier = {
+				factor = 4
+				not = {
+					relation = { who = SPC value = 0 }
+				}
+			}
+			modifier = {
+				factor = 0.25
+				relation = { who = SPC value 150 }
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTC333227"
+		prestige = 15
+		SPC = { prestige = -15 }
+		relation = {
+			who = SPC
+			value = -300
+		}
+		leave_alliance = SPC
+		add_casus_belli = {
+			target = SPC
+			type = humiliate
+			months = 12
+		}
+		casus_belli = {
+			target = SPC
+			type = cut_down_to_size
+			months = 12
+		}
+		badboy = 3
+		SPC = {
+					country_event = 333230
+				}
+		ai_chance = {
+			factor = 50
+			modifier = {
+					factor = 0
+					NOT = {
+						OR = {
+							495 = { owned_by = SPA }
+							498 = { owned_by = SPA }
+							503 = { owned_by = SPA }
+							1700 = { owned_by = SPA }
+						}
+					}
+				}
+		}
+	}
+}
+
+country_event = {
+	id = 333228
+	title = "EVTNAME333228"
+	desc = "EVTDESC333228"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA333228"
+	}
+}
+		
+country_event = {
+	id = 333229
+	title = "EVTNAME333229"
+	desc = "EVTDESC333229"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA333229"
+	}
+}
+		
+country_event = {
+	id = 333230
+	title = "EVTNAME333230"
+	desc = "EVTDESC333230"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA333230"
+		dominant_issue = {
+			value = jingoism
+			factor = 0.1
+		}
+		casus_belli = {
+			target = SPC
+			type = cut_down_to_size
+			months = 12
+		}
+	}
+}

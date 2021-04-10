@@ -797,7 +797,7 @@
 	soldiers = {
 		culture = granadan
 		religion = catholic
-		size= 2000
+		size= 3000
 	}
 
 	farmers = {
@@ -818,13 +818,6 @@
 		size = 800
 	}
 
-	soldiers = {
-		culture = quechua
-		religion = inti
-		size= 175
-
-	}
-
 	farmers = {
 		culture = quechua
 		religion = catholic
@@ -835,7 +828,7 @@
 	slaves = {
 		culture = quechua
 		religion = inti
-		size = 7500
+		size = 7675
 	}
 
 	clergymen = {
@@ -850,17 +843,10 @@
 		size = 2000
 	}
 
-	soldiers = {
-		culture = afro_latino
-		religion = catholic
-		size= 50
-
-	}
-
 	farmers = {
 		culture = afro_latino
 		religion = catholic
-		size = 1400
+		size = 1450
 	}
 
 	slaves = {

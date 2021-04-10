@@ -25,11 +25,17 @@
         religion = catholic
         size = 2400
     }
+	
+    soldiers = {
+		culture = catalan
+		religion = catholic
+		size = 3000
+    }	
 
     farmers = {
         culture = catalan
         religion = catholic
-        size = 23065
+        size = 20065
     }
 
     clergymen = {
@@ -86,7 +92,7 @@
     soldiers = {
         culture = catalan
         religion = catholic
-        size = 1000
+        size = 3000
     }
 
     soldiers = {
@@ -264,7 +270,7 @@
     farmers = {
         culture = berber
         religion = sunni
-        size = 19500
+        size = 19550
     }
 
     clergymen = {
@@ -286,15 +292,9 @@
     }
 
     soldiers = {
-	culture = berber
-	religion = catholic
-	size = 5300
-    }
-
-    soldiers = {
-        culture = berber
-        religion = sunni
-        size = 50
+		culture = berber
+		religion = catholic
+		size = 5300
     }
 
     soldiers = {
@@ -318,6 +318,12 @@
         religion = catholic
         size = 1020
     }
+	
+    soldiers = {
+		culture = catalan
+		religion = catholic
+		size = 3000
+    }	
 
     farmers = {
         culture = catalan
@@ -369,6 +375,12 @@
         religion = catholic
         size = 100
     }
+	
+    soldiers = {
+		culture = catalan
+		religion = catholic
+		size = 3000
+    }	
 
     clergymen = {
         culture = maghrebi

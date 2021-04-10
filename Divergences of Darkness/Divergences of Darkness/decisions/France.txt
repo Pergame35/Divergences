@@ -170,7 +170,10 @@ political_decisions = {
 			tag = DUA 
 			NOT = { has_country_flag = Paris_congress }
 			NOT = { has_country_flag = scotland_acc }
-			has_global_flag = english_int
+			OR = { 
+				has_global_flag = english_int
+				has_country_flag = Anglois_accepted
+			}
 		}
 	
 		allow = { 

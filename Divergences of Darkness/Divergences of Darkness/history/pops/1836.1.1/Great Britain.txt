@@ -469,6 +469,12 @@
 		size = 2000
 	}
 
+	soldiers = {
+		culture = scottish
+		religion = protestant
+		size = 3000
+	}
+
 	farmers = {
 		culture = scottish
 		religion = protestant
@@ -1011,8 +1017,14 @@
 	labourers = {
 		culture = english
 		religion = catholic
-		size = 64850
+		size = 61850
 	}
+	
+	soldiers = {
+		culture = english
+		religion = catholic
+		size = 3000
+	}	
 	
 	labourers = {
 		culture = english

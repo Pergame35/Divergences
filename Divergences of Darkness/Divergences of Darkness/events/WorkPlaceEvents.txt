@@ -1206,6 +1206,10 @@ province_event = {
 			factor = 1.3
 			safety_regulations = trinket_safety
 		}
+		modifier = {
+			factor = 2
+			safety_regulations = low_safety
+		}		
 	}
 	
 	option = {

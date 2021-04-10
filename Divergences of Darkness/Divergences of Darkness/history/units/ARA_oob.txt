@@ -66,6 +66,14 @@ leader = {
 }
 
 leader = {
+	name = "Berenguer de Narbona"
+	type = land
+	date = 1836.1.1
+	personality = romantic
+	background = toady
+}
+
+leader = {
 	name = "Carles Montaner"
 	type = sea
 	date = 1836.1.1
@@ -79,6 +87,14 @@ leader = {
 	date = 1836.1.1
 	personality = reserved
 	background = diplomat
+}
+
+leader = {
+	name = "Rafael de Bricfeus"
+	type = sea
+	date = 1836.1.1
+	personality = bold
+	background = artillerist
 }
 
 #Army
@@ -216,7 +232,7 @@ army = {
 	regiment = {
 		name= "8. Brigada de Infanteria"
 		type = infantry
-		home = 1703
+		home = 1704
 	}
 
 	regiment = {
@@ -234,13 +250,13 @@ army = {
 	regiment = {
 		name= "11. Brigada de Infanteria"
 		type = infantry
-		home = 763
+		home = 1705
 	}
 	
 	regiment = {
 		name= "12. Brigada de Infanteria"
 		type = infantry
-		home = 763
+		home = 1700
 	}
 }
 

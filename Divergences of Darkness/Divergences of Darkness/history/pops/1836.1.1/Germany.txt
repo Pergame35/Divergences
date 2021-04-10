@@ -35,7 +35,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size= 1000
+		size= 3000
 
 	}
 
@@ -450,7 +450,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size= 2000
+		size= 3000
 
 	}
 
@@ -514,7 +514,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size= 1250
+		size= 3000
 
 	}
 
@@ -559,7 +559,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size= 1000
+		size= 3000
 
 	}
 
@@ -1249,7 +1249,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size= 1000
+		size= 3000
 
 	}
 
@@ -1282,7 +1282,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size= 1000
+		size= 3000
 
 	}
 
@@ -1307,7 +1307,7 @@
 	soldiers = {
 		culture = north_german
 		religion = catholic
-		size= 1000
+		size= 3000
 
 	}
 
@@ -1384,10 +1384,9 @@
 	soldiers = {
 		culture = north_german
 		religion = catholic
-		size= 4000
+		size= 6000
 
 	}
-
 
 	farmers = {
 		culture = north_german
@@ -1416,7 +1415,7 @@
 	soldiers = {
 		culture = czech
 		religion = catholic
-		size= 3900
+		size= 6000
 	}
 
 	farmers = {
@@ -1453,13 +1452,6 @@
 		culture = polish
 		religion = catholic
 		size = 150
-	}
-
-	soldiers = {
-		culture = polish
-		religion = catholic
-		size= 50
-
 	}
 
 }
@@ -1532,7 +1524,7 @@
 	soldiers = {
 		culture = north_german
 		religion = catholic
-		size= 2000
+		size= 3000
 
 	}
 
@@ -1557,7 +1549,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size = 1200
+		size = 3000
 	}
 
 	farmers = {
@@ -2072,13 +2064,7 @@
 	soldiers = {
 		culture = czech
 		religion = catholic
-		size= 3000
-	}
-
-	soldiers = {
-		culture = czech
-		religion = catholic
-		size = 1500
+		size= 6000
 	}
 
 	farmers = {
@@ -3041,7 +3027,7 @@
 	soldiers = {
 		culture = rheinish
 		religion = protestant
-		size= 500
+		size= 3000
 
 	}
 
@@ -3063,17 +3049,10 @@
 		size = 1100         
 	}
 
-	soldiers = {
-		culture = burgundian
-		religion = protestant
-		size= 100
-
-	}
-
 	farmers = {
 		culture = burgundian
 		religion = protestant
-		size = 8700          
+		size = 8800          
 	}
 
 	clergymen = {
@@ -3323,7 +3302,7 @@
 	soldiers = {
 		culture = rheinish
 		religion = protestant
-		size= 350
+		size= 3050
 
 	}
 
@@ -3349,13 +3328,6 @@
 		culture = burgundian
 		religion = protestant
 		size = 1350
-	}
-
-	soldiers = {
-		culture = burgundian
-		religion = protestant
-		size= 250
-
 	}
 
 	farmers = {
@@ -3506,7 +3478,7 @@
 	soldiers = {
 		culture = rheinish
 		religion = protestant
-		size= 2000
+		size= 3000
 
 	}
 
@@ -3883,17 +3855,10 @@
 		size = 1100
 	}
 
-	soldiers = {
-		culture = rheinish
-		religion = protestant
-		size= 500
-
-	}
-
 	farmers = {
 		culture = rheinish
 		religion = protestant
-		size = 14625
+		size = 15125
 	}
 
 	aristocrats = {

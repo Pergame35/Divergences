@@ -13,6 +13,7 @@ political_decisions = {
 			all_core = {
 					OR = {
 						owned_by = THIS
+						empty = yes						
 						owner = {
 							in_sphere = THIS
 						}
@@ -157,18 +158,21 @@ political_decisions = {
   ###################################################################
   erase_vinland = { # Vinland   
     picture = Vinland
-		potential = {
-			tag = ARC
-      NOT = { has_country_flag = vinlandic_arcadia } 
-      NOT = { has_country_flag = vinlandic_arcadia_trial }
-		}
-		allow = {
-			is_greater_power = yes
-      VIN = {
+	potential = {
+		tag = ARC
+		NOT = { has_country_flag = vinlandic_arcadia } 
+		NOT = { has_country_flag = vinlandic_arcadia_trial }
+	}
+	allow = {
+		is_greater_power = yes
+		VIN = {
 			all_core = {
-						owned_by = THIS
+				OR = {
+					owned_by = THIS
+					empty = yes
+				}
 			}
-      }
+		}
 			social_thought = 1
 		}
 		effect = {

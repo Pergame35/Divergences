@@ -332,3 +332,29 @@ acquire_core_substate_region;Acquire core substate region;x
 acquire_core_substate_region_desc;Acquire one of your core regions from enemy ¡±Ysubstate¡±W;x
 acquire_core_substate_region_short;Acquire $STATE$;x
 acquire_core_substate_region_setup;Acquire your core, $STATE$, from $RECIPIENT$;x
+NORMAL_WAR_INDIA_REUNIFICATION;$ORDER$War of Indian Reunification;Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Krieg;Baza;Base:;Base:;Alap:;Základna:;;;;;;;x;;;;;;;;;;;;;;,,,
+AGRESSION_WAR_INDIA_REUNIFICATION;$ORDER$War of Indian Reunification;Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Krieg;Baza;Base:;Base:;Alap:;Základna:;;;;;;;x;;;;;;;;;;;;;;,,,
+india_acquire_state;Indian Reunification;Prendre État;$STATE$ erwerben;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,;;;;;;;;;;;;;;;;;;;;;;
+india_acquire_state_short;Acquire $STATE$;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,;;;;;;;;;;;;;;;;;;;;;;
+india_acquire_state_setup;Acquire $STATE$ from $RECIPIENT$;Prendre $STATE$ de $RECIPIENT$;$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,;;;;;;;;;;;;;;;;;;;;;;
+india_acquire_state_desc;Acquire an Indian §Ystate§W;Prendre un §YÉtat§W ennemi;Erobern Sie einen feindlichen §YStaat§W.;;;;;;;;;;;x,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+liberate_puppet;Liberate and Puppet Country;;Befreit das Land;;;;;;;;x;;;;
+liberate_puppet_desc;Liberate and puppet an ¡±Yentire country¡±W from its oppressors\n\n¡±YNOTE: ¡±RDo not use it with normal Free people or Liberate Country CBs for other non existent countries.¡±W;;Befreit ein ¡±Yganzes Land¡±W von seinen Unterdruckern;;;;;;;;x;;;;
+liberate_puppet_short;$THIRD$ acquires $STATE$ and becomes a puppet;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;$THIRD$ adquiere $STATE$;;;;;;;;;x;
+liberate_puppet_setup;Puppet and return $STATE$ to $THIRD$ from $RECIPIENT$;Prendre $STATE$ a $RECIPIENT$ pour le rendre a $THIRD$;Gebt $STATE$ an $THIRD$ von $RECIPIENT$ zuruck;;Arrebatar el estado de $STATE$ de manos de $RECIPIENT$ y devolverselo a $THIRD$;;;;;;;;;x;
+free_baltic_cores;Liberate Baltic Elbians;Prendre État;$STATE$ erwerben;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,;;;;;;;;;;;;;;;;;;;;;;
+free_baltic_cores_short;Acquire $STATE$;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,;;;;;;;;;;;;;;;;;;;;;;
+free_baltic_cores_setup;Acquire $STATE$ from $RECIPIENT$;Prendre $STATE$ de $RECIPIENT$;$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,;;;;;;;;;;;;;;;;;;;;;;
+free_baltic_cores_desc;Acquire a Baltic Elbian §Ystate§W;Prendre un §YÉtat§W ennemi;Erobern Sie einen feindlichen §YStaat§W.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,
+acquire_capital;Acquire Capital;x
+acquire_capital_short;Acquire the capital state of $STATE$;x
+acquire_capital_desc;Acquire the capital of ¡±Ycountry¡±W;x
+acquire_capital_setup;Annex the capital of $RECIPIENT$;x
+demand_capital_concession;Demand Capital Concession;x
+demand_capital_concession_short;Demand the capital state of $STATE$;x
+demand_capital_concession_desc;Force a ¡±Ycountry¡±W to secede its capital to form a concession;x
+demand_capital_concession_setup;Demand that $RECIPIENT$ secede their capital to form a concession;x
+minor_conquest;Minor Conquest;x
+minor_conquest_short;Annex $RECIPIENT$;x
+minor_conquest_desc;Annex a minor ¡±Ycountry¡±W;x
+minor_conquest_setup;Annex $RECIPIENT$;x

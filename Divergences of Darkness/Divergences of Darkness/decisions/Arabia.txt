@@ -107,7 +107,7 @@ political_decisions = {
 		effect = {
 			set_global_flag = arab_nationalism_encouraged
 			set_country_flag = friend_of_the_arabs
-			TUR = { country_event = 96100 }
+			TUR = { set_country_flag = arab_revolt_encouraged }
 		}
 	}
 
@@ -197,4 +197,27 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
+	
+	integrate_zanj = {
+		picture = zanj_market
+		potential = {
+			tag = MGH
+			NOT = { has_country_flag = integrated_zanj }
+		}
+		
+		allow = {
+			slavery = no_slavery 
+			OR = {
+				government = hms_government
+				government = democracy
+			}			
+			high_pressure_steam_engine = 1
+		}
+		
+		effect = {
+			set_country_flag = integrated_zanj
+			badboy = -1
+			add_accepted_culture = zanj
+		}
+	}	
 }
