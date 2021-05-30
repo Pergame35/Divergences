@@ -1989,7 +1989,7 @@ country_event = { ####Stabilization
 }
 
 
-country_event = { 
+country_event = { ##Fires after partial peace, if GRA is released as a Spanish dominion
 
 	id = 46510
 	title = "CLM60.T"
@@ -2002,7 +2002,10 @@ country_event = {
 			LST = { exists = yes }
 			UCA = { exists = yes }
 			AND = { 
-				GRA = { exists = yes } 
+				GRA = { 
+					exists = yes 
+					is_vassal = no
+				} 
 				NOT = { has_country_flag = GRA_not_federation } 
 			}
 		}

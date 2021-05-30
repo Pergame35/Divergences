@@ -441,7 +441,7 @@
 	soldiers = {
 		culture = mashriqi
 		religion = sunni
-		size= 2000
+		size= 6000
 	}
 
 	farmers = {
@@ -509,7 +509,7 @@
 	farmers = {
 		culture = mashriqi
 		religion = shiite
-		size = 11450
+		size = 15450
 	}
 
 	clergymen = {
@@ -527,7 +527,7 @@
 	farmers = {
 		culture = assyrian
 		religion = assyrian
-		size = 7050
+		size = 9050
 	}
 
 	clergymen = {
@@ -978,6 +978,43 @@
 		religion = shiite
 		size = 24005
 	}
+	
+	farmers = {
+		culture = lurish
+		religion = sunni
+		size = 1300
+	}
+
+	aristocrats = {
+		culture = lurish
+		religion = shiite
+		size = 25
+	}
+
+	clergymen = {
+		culture = lurish
+		religion = shiite
+		size = 50
+	}
+
+	artisans = {
+		culture = lurish
+		religion = shiite
+		size = 100
+	}
+
+	soldiers = {
+		culture = lurish
+		religion = shiite
+		size = 25
+	}
+
+	farmers = {
+		culture = lurish
+		religion = shiite
+		size = 800
+	}	
+	
 }
 #Badiyat al-Sham Region (8000)  #see Jordan.txt, Syria.txt & Saudi Arabia.txt for balance of region
 #under the "rule" of Egypt in 1836
@@ -1038,7 +1075,7 @@
 	soldiers = {
 		culture = mashriqi
 		religion = sunni
-		size= 625
+		size= 3000
 	}
 
 	farmers = {

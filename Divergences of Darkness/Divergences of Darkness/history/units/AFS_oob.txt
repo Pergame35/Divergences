@@ -1,5 +1,5 @@
 leader = {
-	name = "Tahmasp Afsharid"
+	name = "Tahmasp Timurtash"
 	type = land
 	date = 1836.1.1
 	personality = spirited
@@ -15,42 +15,42 @@ leader = {
 }
 
 army = {
-	name = "Afsharid Army"
+	name = "Timurtash Army"
 	location = 1204
 	regiment = {
 		name= "1. Infantry Brigade"
 		type = infantry
-		home = 1196
+		home = 1116
 	}
 
 	regiment = {
 		name= "2. Infantry Brigade"
 		type = infantry
-		home = 1196
+		home = 1204
 	}
 
 	regiment = {
 		name= "3. Infantry Brigade"
 		type = infantry
-		home = 1196
+		home = 1147
 	}
 
 	regiment = {
 		name= "4. Infantry Brigade"
 		type = infantry
-		home = 1196
+		home = 1147
 	}
 	
 	regiment = {
 		name= "5. Infantry Brigade"
 		type = infantry
-		home = 1196
+		home = 1212
 	}
 	
 	regiment = {
 		name= "6. Infantry Brigade"
 		type = infantry
-		home = 1196
+		home = 1214
 	}
 }
 
@@ -61,19 +61,19 @@ army = {
 	regiment = {
 		name= "2. Turkmen Cavalry"
 		type = hussar
-		home = 1127
+		home = 3330
 	}
 
 	regiment = {
 		name= "2. Turkmen Cavalry"
 		type = hussar
-		home = 1127
+		home = 3331
 	}
 
 	regiment = {
 		name= "2. Turkmen Cavalry"
 		type = hussar
-		home = 1113
+		home = 1116
 	}
 
 }

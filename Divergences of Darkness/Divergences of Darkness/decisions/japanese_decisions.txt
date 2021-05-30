@@ -110,27 +110,27 @@ political_decisions = {
 			tag = JAP
 			has_country_flag = koreaisjapanese   
 			NOT = { has_country_flag = japanese_offer }
-      MCK = {
-        owns = 1084
-        civilized = no
-      }
+			MCK = {
+				owns = 1084
+				owns = 1080
+				civilized = no
+			}
 		}
-
 		allow = {
 			NOT = { war = yes }
-      money = 50000
+			money = 50000
 			KOR = {
 				all_core = {
-						owned_by = THIS
+					owned_by = THIS
 				}
 			}
-      ideological_thought = 1
+			ideological_thought = 1
 		}
 		effect = {
 			prestige = 10
 			clr_country_flag = koreaisjapanese
-      set_country_flag = japanese_offer
-      MCK = { country_event = 334300 }
+			set_country_flag = japanese_offer
+			MCK = { country_event = 334300 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -141,13 +141,14 @@ political_decisions = {
     picture = unequal_treaty
 		potential = {
 			tag = JAP
+			owns = 1084
 			NOT = { has_country_flag = ainuisjapanese }
-      AIN = { 
-          vassal_of = THIS
-          ai = yes    
-      }
+			AIN = { 
+			  vassal_of = THIS
+			  owns = 1080
+			  ai = yes
+			}
 		}
-
 		allow = {
 			NOT = { war = yes }
 			state_n_government = 1 
@@ -344,64 +345,65 @@ political_decisions = {
 			}
 			set_country_flag = bonin_administration
 		}	
-	}  	
-
-	taiwan_administration = {
-		picture = meiji_court
-		potential = {
-			tag = JAP
-			owns = 2681
-			owns = 2406
-			owns = 2562
-			NOT = { has_country_flag = taiwan_administration }
-		}
-		allow = {
-			civilized = yes
-			owns = 2681
-			owns = 2406
-			owns = 2562
-		}
-		effect = {
-			prestige = 1
-			2681 = {
-				change_province_name = "Taihoku"
-			}
-			2406 = {
-                change_province_name = "Hoko"
-			}
-			2562 = {
-				change_province_name = "Taito"
-				state_scope = {
-					change_region_name = "Taiwan"
-				}
-			}
-			set_country_flag = taiwan_administration
-		}	
 	}
-	
-	organize_yakutia = {
-		picture = yakutia
-		potential = {
-		tag = JAP
-		#used to be 2669 which is now Sondrio in italy  
-		owns = 2696
-		civilized = yes
-		NOT = { YKT = { exists = yes } }
-		NOT = { has_country_flag = yakutia_org }
-	}
-	
-		allow = { 
-			nationalism_n_imperialism = 1 
-		}
-	
-		effect = { 
-			set_country_flag = yakutia_org
-			YKT = { 
-				set_country_flag = civilize_after_release 
-				primary_culture = THIS
-				add_accepted_culture = yakut
-			}
-		}
-	}
+  	
+# Will be redone
+#	taiwan_administration = {
+#		picture = meiji_court
+#		potential = {
+#			tag = JAP
+#			owns = 2681
+#			owns = 2406
+#			owns = 2562
+#			NOT = { has_country_flag = taiwan_administration }
+#		}
+#		allow = {
+#			civilized = yes
+#			owns = 2681
+#			owns = 2406
+#			owns = 2562
+#		}
+#		effect = {
+#			prestige = 1
+#			2681 = {
+#				change_province_name = "Taihoku"
+#			}
+#			2406 = {
+#               change_province_name = "Hoko"
+#			}
+#			2562 = {
+#				change_province_name = "Taito"
+#				state_scope = {
+#					change_region_name = "Taiwan"
+#				}
+#			}
+#			set_country_flag = taiwan_administration
+#		}	
+#	}
+#	
+#	organize_yakutia = {
+#		picture = yakutia
+#		potential = {
+#		tag = JAP
+#		#used to be 2669 which is now Sondrio in italy  
+#		owns = 2696
+#		civilized = yes
+#		NOT = { YKT = { exists = yes } }
+#		NOT = { has_country_flag = yakutia_org }
+#	}
+#	
+#		allow = { 
+#			nationalism_n_imperialism = 1 
+#		}
+#	
+#		effect = { 
+#			set_country_flag = yakutia_org
+#			YKT = { 
+#				set_country_flag = civilize_after_release 
+#				primary_culture = THIS
+#				add_accepted_culture = yakut
+#			}
+#		}
+#	}
 	
 }

@@ -58,7 +58,7 @@
 	soldiers = {
 		culture = turkmen
 		religion = sunni
-		size= 300
+		size= 3000
 
 	}
 
@@ -70,31 +70,52 @@
 
 	clergymen = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size = 25
 	}
 
 	artisans = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size = 200
-	}
-
-	soldiers = {
-		culture = persian
-		religion = shiite
-		size= 25
-
 	}
 
 	farmers = {
 		culture = persian
-		religion = shiite
-		size = 3750
+		religion = sunni
+		size = 6750
 	}
 }
 #Kizil Arvut (88000/22000 POPS)   
 1205 = {
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 75
+	}
+
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 100
+	}
+
+	artisans = {
+		culture = turkmen
+		religion = sunni
+		size = 450
+	}
+
+	farmers = {
+		culture = turkmen
+		religion = sunni
+		size = 7400
+	}
+
+}
+
+#Dihistan
+3329 = {
 	aristocrats = {
 		culture = turkmen
 		religion = sunni
@@ -113,74 +134,68 @@
 		size = 850
 	}
 
-	soldiers = {
-		culture = turkmen
-		religion = sunni
-		size= 200
-
-	}
-
 	farmers = {
 		culture = turkmen
 		religion = sunni
-		size = 17400
+		size = 10000
 	}
 
 	clergymen = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size = 25
 	}
 
 	artisans = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size = 150
 	}
 
 	soldiers = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size= 25
 
 	}
 
 	farmers = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size = 2800
 	}
 }
+
 #under the rule of Bukhara in 1836  
 #Chardzhou (132000/33000 POPS)   
 1206 = {
 	aristocrats = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 25
 	}
 
 	clergymen = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 25
 	}
 
 	artisans = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 100
 	}
 
 	soldiers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size= 25
 
 	}
 
 	farmers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 1825
 	}
@@ -218,32 +233,32 @@
 
 	aristocrats = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size = 50
 	}
 
 	clergymen = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size = 50
 	}
 
 	artisans = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size = 400
 	}
 
 	soldiers = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size= 75
 
 	}
 
 	farmers = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size = 6925
 	}
 
@@ -261,66 +276,168 @@
 
 }
 
-#Merv - Former Line Islands (?/? POPS)
+#Kara-Kum - Former Line Islands (?/? POPS)
 686 = {
 	aristocrats = {
 		culture = turkmen
+		religion = sunni
+		size = 50
+	}
+
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 50
+	}
+
+	artisans = {
+		culture = turkmen
+		religion = sunni
+		size = 200
+	}
+
+	farmers = {
+		culture = turkmen
+		religion = sunni
+		size = 4000
+	}
+	
+	aristocrats = {
+		culture = persian
+		religion = sunni
+		size = 10
+	}
+
+	artisans = {
+		culture = persian
+		religion = sunni
+		size = 100
+	}
+
+	farmers = {
+		culture = persian
+		religion = sunni
+		size = 500
+	}
+}
+
+# Merv
+3330 = { 
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 50
+	}
+
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 50
+	}
+
+	artisans = {
+		culture = turkmen
+		religion = sunni
+		size = 200
+	}
+	
+	soldiers = {
+		culture = turkmen
+		religion = sunni
+		size = 3000
+	}	
+
+	farmers = {
+		culture = turkmen
+		religion = sunni
+		size = 4000
+	}
+	
+	aristocrats = {
+		culture = persian
 		religion = sunni
 		size = 100
 	}
 
 	clergymen = {
-		culture = turkmen
+		culture = persian
 		religion = sunni
 		size = 200
 	}
 
 	artisans = {
-		culture = turkmen
+		culture = persian
 		religion = sunni
-		size = 200
-	}
-
-	soldiers = {
-		culture = turkmen
-		religion = sunni
-		size = 250
+		size = 400
 	}
 
 	farmers = {
-		culture = turkmen
+		culture = persian
 		religion = sunni
-		size = 5000
+		size = 9675
 	}
 	
+	farmers = {
+		culture = baluchi
+		religion = sunni
+		size = 1000
+	}	
+	
+}
+
+# Merutschak
+3331 = { 
 	aristocrats = {
-		culture = persian
-		religion = shiite
+		culture = turkmen
+		religion = sunni
 		size = 50
 	}
 
 	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 100
+	}
+
+	artisans = {
+		culture = turkmen
+		religion = sunni
+		size = 200
+	}
+	
+	soldiers = {
+		culture = turkmen
+		religion = sunni
+		size = 3000
+	}	
+
+	farmers = {
+		culture = turkmen
+		religion = sunni
+		size = 10000
+	}
+	
+	aristocrats = {
 		culture = persian
-		religion = shiite
-		size = 50
+		religion = sunni
+		size = 100
+	}
+
+	clergymen = {
+		culture = persian
+		religion = sunni
+		size = 200
 	}
 
 	artisans = {
 		culture = persian
-		religion = shiite
-		size = 400
-	}
-
-	soldiers = {
-		culture = persian
-		religion = shiite
-		size = 75
+		religion = sunni
+		size = 750
 	}
 
 	farmers = {
 		culture = persian
-		religion = shiite
-		size = 2425
+		religion = sunni
+		size = 14025
 	}
 }
-

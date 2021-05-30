@@ -1015,10 +1015,7 @@ country_event = { #Success Glorious Revolution
 	ENL = {
 		exists = yes
 		war = no
-		OR = {
-			truce_with = DUA
-			truce_with = FRA
-		}
+		has_country_flag = ENL_recognized
 	}
 	NOT = { tag = DUA tag = ENL }
 	is_greater_power = yes 
