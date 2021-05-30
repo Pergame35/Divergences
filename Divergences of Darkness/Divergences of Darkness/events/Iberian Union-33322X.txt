@@ -485,7 +485,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.25
-				relation = { who = SPC value 150 }
+				relation = { 
+					who = SPC 
+					value = 150 
+				}
 			}
 		}
 	}

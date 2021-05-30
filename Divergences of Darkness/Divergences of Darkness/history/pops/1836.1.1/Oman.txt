@@ -98,19 +98,19 @@
 
 	clergymen = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size = 25
 	}
 
 	artisans = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size = 50
 	}
 
 	farmers = {
 		culture = persian
-		religion = shiite
+		religion = sunni
 		size = 925
 	}
 
@@ -455,6 +455,30 @@
 		religion = sunni
 		size = 100
 	}
+	
+	aristocrats = {
+		culture = persian
+		religion = sunni
+		size = 15
+	}
+
+	clergymen = {
+		culture = persian
+		religion = sunni
+		size = 25
+	}
+
+	artisans = {
+		culture = persian
+		religion = sunni
+		size = 50
+	}	
+	
+	farmers = {
+		culture = persian
+		religion = sunni
+		size = 1500
+	}	
 }
 
 #Gwadar - Ziryanka (1000/250 POPS)

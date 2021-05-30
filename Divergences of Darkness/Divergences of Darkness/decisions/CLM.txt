@@ -100,26 +100,6 @@ political_decisions = {
 		}
 	}
 	
-	accept_caribenos = {
-		picture = map_caribbean
-		allow = { 
-		tag = CLM 
-		2209 = { owned_by = CLM }
-		}
-		
-		potential = {  
-		2209 = { is_core = CLM } 
-		tag = CLM
-		NOT = { has_country_flag = caraibe }
-		}
-		
-		effect = { 
-		add_accepted_culture = caribeno 
-		set_country_flag = caraibe
-		}
-		
-	}
-	
 	spanish_treaty_1 = { 
 		picture = colombia_freed	
 		potential = { 

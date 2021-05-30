@@ -22,47 +22,57 @@ political_decisions = {
 				OR = {
 					owned_by = THIS
 					owner = {
-						in_sphere = THIS
-						vassal_of = THIS
-					}
-				}			
-			}
+					        OR = {
+						        in_sphere = THIS
+						        vassal_of = THIS
+					    }
+				    }
+			    }			
+		    }
 			783 = { 
 				OR = {
 					owned_by = THIS
 					owner = {
-						in_sphere = THIS
-						vassal_of = THIS
-					}
-				}			
+					        OR = {
+						        in_sphere = THIS
+						        vassal_of = THIS
+					    }
+				    }
+			    }		
 			}
 			2583 = { 
 				OR = {
 					owned_by = THIS
 					owner = {
-						in_sphere = THIS
-						vassal_of = THIS
-					}
-				}
+					        OR = {
+						        in_sphere = THIS
+						        vassal_of = THIS
+					    }
+				    }
+			    }
 			}
 			794 = { 
 				OR = {
 					owned_by = THIS
 					owner = {
-						in_sphere = THIS
-						vassal_of = THIS
-					}
-				}
+					        OR = {
+						        in_sphere = THIS
+						        vassal_of = THIS
+					    }
+				    }
+			    }
 			}
 			780 = { 
 				OR = {
 					owned_by = THIS
 					owner = {
-						in_sphere = THIS
-						vassal_of = THIS
-					}
-				}
-			}
+					        OR = {
+						        in_sphere = THIS
+						        vassal_of = THIS
+					    }
+				    }
+		        }
+			}	
 		}
 		effect = {
 			prestige = 20
@@ -323,8 +333,11 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						owner = {
+						    war = no
+						    OR = {
 							in_sphere = THIS
-							war = no
+							vassal_of = THIS
+						    }
 						}
 					}
 				}
@@ -334,8 +347,11 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						owner = {
+						    war = no
+						    OR = {
 							in_sphere = THIS
-							war = no
+							vassal_of = THIS
+						    }
 						}
 					}
 				}
@@ -345,12 +361,15 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						owner = {
+						    war = no
+						    OR = {
 							in_sphere = THIS
-							war = no
+							vassal_of = THIS
+						    }
 						}
 					}
 				}
-			}
+			}	
 		}
 		effect = {
 			set_global_flag = yugoslavia_formed
@@ -372,14 +391,20 @@ political_decisions = {
 						tag = SLO
 					}
 					ai = yes
-					in_sphere = THIS
+					OR = {
+					    in_sphere = THIS
+					    vassal_of = THIS
+						}
 				}
 				annex_to = THIS
 			}
 			any_country = {
 				limit = {
 					NOT = { is_culture_group = south_slavic }
-					in_sphere = THIS
+					OR = {
+					    in_sphere = THIS
+					    vassal_of = THIS
+						}
 					war = no
 					any_owned_province = {
 						OR = {

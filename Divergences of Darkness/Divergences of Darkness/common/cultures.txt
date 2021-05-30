@@ -1461,19 +1461,6 @@ iranian = {
 			}
 	}
 
-	tajik = {
-		color = {122 127 111}
-			first_names = {
-			Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
-			Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali" 
-			Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin 
-			Nadir "Naser ed-Din" Nosret Reza
-			}
-		last_names = {
-			Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
-			}
-		radicalism = 10
-	}
 	pashtun = {
 		color = {199 151 230}
 		
@@ -1496,15 +1483,6 @@ iranian = {
 		}
 		last_names = {
 			Khan
-		}
-	}
-	hazara = {
-		color = {108 203 223}
-		first_names = {
-			Ali Azim Jafar Mohammad Riza
-		}
-		last_names = {
-			Beg Khan
 		}
 	}
 	
@@ -1565,7 +1543,54 @@ iranian = {
 		last_names = {
 			Badirkhan Barzani Khan Shilak
 			}
-	}	
+	}
+	tat = {
+		color = {20 78 100}
+		first_names = {
+			Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+			Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali" 
+			Mahmoud Massoud Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin 
+			"Naser ed-Din" Nosret Reza
+			}
+		last_names = {
+			Airom Ansari Ayrum Buzarjomehri Davallu Esfahani Farhani 
+			Jahanbani Kashani Khan Khuzai
+			Meshhedi Nakhchevani Pesyan Rokni Shafaei Shahbakhti 
+			Shirazi Tabrizi Tahmasebi Zahedi
+			}
+	}
+	caspian = {
+		color = {187 160 133}
+		first_names = {
+			Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+			Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali" 
+			Mahmoud Massoud Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin 
+			"Naser ed-Din" Nosret Reza
+			}
+		last_names = {
+			Airom Ansari Ayrum Buzarjomehri Davallu Esfahani Farhani 
+			Jahanbani Kashani Khan Khuzai
+			Meshhedi Nakhchevani Pesyan Rokni Shafaei Shahbakhti 
+			Shirazi Tabrizi Tahmasebi Zahedi
+			}
+	}
+
+	lurish = {
+		color = {122 160 236}
+		first_names = {
+			Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+			Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali" 
+			Mahmoud Massoud Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin 
+			"Naser ed-Din" Nosret Reza
+			}
+		last_names = {
+			Airom Ansari Ayrum Buzarjomehri Davallu Esfahani Farhani 
+			Jahanbani Kashani Khan Khuzai
+			Meshhedi Nakhchevani Pesyan Rokni Shafaei Shahbakhti 
+			Shirazi Tabrizi Tahmasebi Zahedi
+			}
+	}
+	
 	union = ARY	
 }
 
@@ -1723,6 +1748,17 @@ central_asian = {
                
 		}
 	}
+	
+	nuristani = {
+		color = {108 203 223}
+		first_names = {
+			Ali Azim Jafar Mohammad Riza
+		}
+		last_names = {
+			Beg Khan
+		}
+	}	
+	
 }
 
 dravidian = {

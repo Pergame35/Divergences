@@ -47,7 +47,13 @@ political_decisions = {
 			FRA_412 = {
 				add_core = GER
 			}
-			capital = 564
+			564 = {
+				life_rating = 10
+				add_province_modifier = { 
+				    name = global_baby_boom
+					duration = 5475
+					}
+			}
 			country_event = 123110
 		}
 		ai_will_do = {

@@ -37,6 +37,7 @@ political_decisions = {
 			war = no
 			civilized = yes
 			rank = 24
+			2562 = { owned_by = THIS }
 		}
 		effect = {
 			prestige = 25
@@ -45,7 +46,7 @@ political_decisions = {
 			SPA_2517 = { add_core = PLY }
 			AST_2527 = { add_core = PLY }
 			JAP_1654 = { add_core = PLY }
-			CHI_2562 = { add_core = PLY }
+			CHI_1485 = { add_core = PLY }
 		}
 	}
 

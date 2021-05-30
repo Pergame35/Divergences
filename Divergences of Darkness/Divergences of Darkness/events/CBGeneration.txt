@@ -9,10 +9,22 @@ country_event = {
 		NOT = { involved_in_crisis = yes }
 		constructing_cb_progress = 10 #10% progress
 		OR = {
+			constructing_cb_type = acquire_all_cores
+			constructing_cb_type = acquire_capital
+			constructing_cb_type = acquire_core_state
+			constructing_cb_type = acquire_core_substate_region
 			constructing_cb_type = acquire_state
+			constructing_cb_type = acquire_substate_region
+			constructing_cb_type = annex_core_country
 			constructing_cb_type = conquest
+			constructing_cb_type = demand_capital_concession
+			constructing_cb_type = demand_concession_BC_casus_belli
+			constructing_cb_type = demand_concession_NI_casus_belli
 			constructing_cb_type = demand_concession_casus_belli
 			constructing_cb_type = establish_protectorate_casus_belli
+			constructing_cb_type = minor_conquest
+			constructing_cb_type = liberate_puppet
+			constructing_cb_type = treaty_port_casus_belli
 			}
 		NOT = {
 			OR = {	
@@ -58,10 +70,22 @@ country_event = {
 		NOT = { involved_in_crisis = yes }
 		constructing_cb_progress = 10 #10% progress
 		OR = {
+			constructing_cb_type = acquire_all_cores
+			constructing_cb_type = acquire_capital
+			constructing_cb_type = acquire_core_state
+			constructing_cb_type = acquire_core_substate_region
 			constructing_cb_type = acquire_state
+			constructing_cb_type = acquire_substate_region
+			constructing_cb_type = annex_core_country
 			constructing_cb_type = conquest
+			constructing_cb_type = demand_capital_concession
+			constructing_cb_type = demand_concession_BC_casus_belli
+			constructing_cb_type = demand_concession_NI_casus_belli
 			constructing_cb_type = demand_concession_casus_belli
 			constructing_cb_type = establish_protectorate_casus_belli
+			constructing_cb_type = minor_conquest
+			constructing_cb_type = liberate_puppet
+			constructing_cb_type = treaty_port_casus_belli
 			}
 		NOT = {
 			OR = {	

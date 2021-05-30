@@ -1,5 +1,5 @@
 leader = {
-	name = "Babur Khan"
+	name = "Karim Shahivand"
 	date = 1836.1.1
 	type = land
 	personality = clever
@@ -7,7 +7,7 @@ leader = {
 }
 
 leader = {
-	name = "Sadeq Zand"
+	name = "Sadeq Shekhbizin"
 	type = land
 	date = 1836.1.1
 	personality = stouthearted
@@ -15,7 +15,7 @@ leader = {
 }
 
 army = {
-	name = "Zand Army"
+	name = "Shekhbizin Army"
 	location = 1135
 
 	regiment = {
@@ -56,3 +56,26 @@ army = {
 
 }
 
+army = {
+	name = "Kermanshah Garrison"
+	location = 1119
+
+	regiment = {
+		name= "4.Afridye"
+		type = infantry
+		home = 1119
+	}
+
+	regiment = {
+		name= "5.Afridye"
+		type = infantry
+		home = 1120
+	}
+
+	regiment = {
+		name= "6.Afridye"
+		type = infantry
+		home = 1134
+	}
+
+}

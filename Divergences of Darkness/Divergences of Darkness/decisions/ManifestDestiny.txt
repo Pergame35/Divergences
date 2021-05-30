@@ -376,6 +376,10 @@ political_decisions = {
 					owns = 200 
 					owns = 2219 
 					}
+				AND = { 
+					tag = CLM
+					owns = 2185 
+				}						
 				tag = ATS
 				}
 			2209 = {
@@ -502,7 +506,10 @@ political_decisions = {
 		picture = "falkland"
 	
 		potential = { 
-		tag = NAN 
+		OR = {
+		    tag = NAN
+			tag = HBE
+		}
 		2131 = { owned_by = SCA }
 		}
 		

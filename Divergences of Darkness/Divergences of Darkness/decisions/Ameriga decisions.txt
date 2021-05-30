@@ -427,7 +427,20 @@ political_decisions = {
 		}
 		
 		allow = { 
-			AMA = { all_core = { owned_by = THIS } }
+			AMA = {
+			    all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    war = no
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+		                    }
+						}
+					}
+				}
+			}
 			is_greater_power = yes 			
 			OR = { 
 				NOT = { LOT = { exists = yes } }
@@ -466,7 +479,20 @@ political_decisions = {
 					in_sphere = THIS
 				}
 			}
-			LOT = { all_core = { owned_by = THIS } }
+			LOT = {
+			    all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+						    war = no
+						    OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+		                    }
+						}
+					}
+				}
+			}
 		}
 
 		

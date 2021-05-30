@@ -153,9 +153,10 @@ political_decisions = {
 			add_accepted_culture = pashtun
 			add_accepted_culture = baluchi
 			add_accepted_culture = kurdish
-			add_accepted_culture = hazara
-			add_accepted_culture = tajik
-			add_accepted_culture = parsi 
+			add_accepted_culture = parsi
+			add_accepted_culture = tat
+			add_accepted_culture = caspian
+			add_accepted_culture = lursih 			
 			any_country = {
 				limit = {
 					OR = {
@@ -224,28 +225,60 @@ political_decisions = {
 		}
 	}
 	
-	timurid_legacy = {
-    picture = tamerlane_gate	
-	potential = { 
-	tag = ZND 
-	QAJ = { exists = yes }
-	NOT = { truce_with = QAJ }
-	NOT = { has_country_flag = legacy_timur }
+#	timurid_legacy = {
+#    picture = tamerlane_gate	
+#	potential = { 
+#	tag = ZND 
+#	QAJ = { exists = yes }
+#	NOT = { truce_with = QAJ }
+#	NOT = { has_country_flag = legacy_timur }
+#		}
+#	
+#	allow = { 
+#	all_core = { owned_by = THIS }
+#		}
+#		
+#	effect = { 
+#	set_country_flag = legacy_timur
+#	war = { 
+#		target = QAJ 
+#		attacker_goal = { 
+#		casus_belli = conquest 
+#			}
+#		}
+#	}
+#	
+#	}
+
+	AFS_turkmenia = {
+		picture = karakum
+		potential = {
+			tag = AFS
+			owns = 1204
+			686 = { empty = yes }
+			1205 = { empty = yes }
 		}
-	
-	allow = { 
-	all_core = { owned_by = THIS }
-		}
-		
-	effect = { 
-	set_country_flag = legacy_timur
-	war = { 
-		target = QAJ 
-		attacker_goal = { 
-		casus_belli = conquest 
+
+		allow = {
+			war = no
+			OR = {
+				civilized = yes
+				AND = {
+					civilization_progress = 0.6
+					year = 1860					
+				}
 			}
 		}
+
+		effect = {
+			prestige = 5
+			686 = { secede_province = THIS }
+			1205 = { secede_province = THIS }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
 	}
-	
-	}
+
 }

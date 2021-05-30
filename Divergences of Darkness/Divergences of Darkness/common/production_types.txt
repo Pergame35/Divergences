@@ -334,7 +334,7 @@ luxury_clothes_factory = {
 	template = factory_template
 	input_goods = {   
 		regular_clothes = 0.9	#5.22
-		silk = 3.9		#39	total input+maint = 54
+		silk = 2		#39	total input+maint = 54
 	}
 	output_goods = luxury_clothes
 	value = 1			#65
@@ -631,7 +631,7 @@ fabric_factory = {
 	template = factory_template
 	input_goods = {     
 		cotton = 18		# 36
-		dye = 2			# 24 total input+maint = 70
+		dye = 1			# 24 total input+maint = 70
 	}
 	output_goods = fabric
 	value = 45			#81

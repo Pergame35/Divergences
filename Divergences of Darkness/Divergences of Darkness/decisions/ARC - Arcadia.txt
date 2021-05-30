@@ -13,9 +13,12 @@ political_decisions = {
 			all_core = {
 					OR = {
 						owned_by = THIS
-						empty = yes						
+						empty = yes		
 						owner = {
-							in_sphere = THIS
+							OR = {
+						        in_sphere = THIS
+						        vassal_of = THIS
+							}	
 						}
 					}
 			}
@@ -34,12 +37,15 @@ political_decisions = {
 			  any_country = {
 				limit = {
 					OR = {
-          tag = PLA
-          tag = NBG
-          tag = KKN
-		  tag = ATS
-          }
-					in_sphere = THIS
+                        tag = VIN
+                        tag = NBG
+                        tag = LST
+		                tag = ATS
+                    }
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
 				}
 				country_event = 333458
 			  }				
@@ -66,12 +72,15 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						owner = {
-							in_sphere = THIS
+							OR = {
+						        in_sphere = THIS
+						        vassal_of = THIS
+							}	
 						}
 					}
 			}
-      NOT = { PLA = { is_greater_power = yes } }
-      NOT = { VIN = { is_greater_power = yes } }
+			NOT = { PLA = { is_greater_power = yes } }
+			NOT = { VIN = { is_greater_power = yes } }
 			nationalism_n_imperialism = 1
 		}
 		effect = {
@@ -81,27 +90,31 @@ political_decisions = {
 				NBG = { all_core = { add_core = ARC	} }
 				NBG = { all_core = { remove_core = NBG	} }
         
-        change_tag = ARC 
-			  any_country = {
-				limit = {
-					OR = {
-          tag = PLA
-          tag = VIN
-		  tag = ATS
-          }
-					in_sphere = THIS
+				change_tag = ARC 
+				any_country = {
+					limit = {
+						OR = {
+							tag = VIN
+							tag = NBG
+							tag = LST
+							tag = ATS
+						}
+						OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+					country_event = 333458					
 				}
-				country_event = 333458
-			  }				  
-				country_event = 333452
-				
+				country_event = 333452				
 				set_country_flag = septiman_arcadia
-				set_country_flag = septimania_formed_arcadia
-		}   
-    ai_will_do = {
+				set_country_flag = septimania_formed_arcadia				
+		}				  
+		
+		ai_will_do = {
 			factor = 1
-		}
-  }
+		}				
+	}   
   
   
 	form_arcadia_plantagenia = { # Plantagenia    
@@ -118,7 +131,10 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						owner = {
-							in_sphere = THIS
+							OR = {
+						        in_sphere = THIS
+						        vassal_of = THIS
+							}	
 						}
 					}
 			}
@@ -137,12 +153,15 @@ political_decisions = {
 			  any_country = {
 				limit = {
 					OR = {
-          tag = VIN
-          tag = NBG
-          tag = LST
-		  tag = ATS
-          }
-					in_sphere = THIS
+                        tag = VIN
+                        tag = NBG
+                        tag = LST
+		                tag = ATS
+                    }
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
 				}
 				country_event = 333458
 			  }				
@@ -361,19 +380,25 @@ political_decisions = {
     picture = ARCcapital
 		potential = {
 			tag = ARC
-      has_country_flag = panarcadianism
-      NOT = { has_country_flag = new_capital }
+			has_country_flag = panarcadianism
+			NOT = { has_country_flag = new_capital }
 		}
 		allow = {
 			is_greater_power = yes
 			political_thought = 1
-      war = no 
-      money = 50000     
-      ARC = {
-			all_core = {
+			war = no 
+			money = 50000     
+			ARC = {
+				all_core = {
+					OR = {
 						owned_by = THIS
+						empty = yes
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}	
 			}
-      }
 		}
 		effect = {	
 				set_country_flag = new_capital   
@@ -453,7 +478,8 @@ political_decisions = {
 				tag = ARC 
 				tag = CUB 
 				tag = SFJ 
-				tag = AZL 
+				tag = AZL
+				tag = CLM
 				tag = UBD
 			}
 			owns = 200 
@@ -514,8 +540,9 @@ political_decisions = {
 				tag = PLA 
 				tag = ARC 
 				tag = ATS 
-				tag = SFJ 
-				tag = AZL 
+				tag = SFJ
+				tag = AZL				
+				tag = CLM 
 				tag = UBD
 			}
 			owns = 2209 
@@ -577,7 +604,8 @@ political_decisions = {
 				tag = ARC 
 				tag = ATS 
 				tag = CUB 
-				tag = AZL 
+				tag = AZL
+				tag = CLM
 				tag = UBD
 			}
 			owns = 2213 

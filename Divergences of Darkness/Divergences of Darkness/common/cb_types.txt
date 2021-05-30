@@ -6984,6 +6984,7 @@ acquire_capital = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
+		THIS = { ai = no }
 		OR = {
 			NOT = { has_country_modifier = war_focus }
 			THIS = {
@@ -7097,6 +7098,7 @@ demand_capital_concession = {
 				civilized = no
 				THIS = {
 					civilized = yes
+					ai = no
 				}
 		   }
 	}

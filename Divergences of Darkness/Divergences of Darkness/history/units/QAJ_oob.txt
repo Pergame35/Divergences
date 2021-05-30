@@ -15,58 +15,47 @@ leader = {
 }
 
 army = {
-	name = "Army of Teheran"
-	location = 1121
-	regiment = {
-		name= "1. hussar Brigade"
-		type = hussar
-		home = 1121
-	}
-
-	regiment = {
-		name= "2. hussar Brigade"
-		type = hussar
-		home = 1121
-	}
+	name = "Southern Army"
+	location = 1125
 
 	regiment = {
 		name= "1. Bakhsh-i Piyadenizam"
 		type = infantry
-		home = 1121
+		home = 1125
 	}
 
 	regiment = {
 		name= "2. Bakhsh-i Piyadenizam"
 		type = infantry
-		home = 1127
+		home = 1113
 	}
 }
 
 army = {
-	location = 1149
-	name = "Eastern Army"
+	location = 1115
+	name = "Army of Sari"
 
 	regiment = {
 		name= "3. Bakhsh-i Piyadenizam"
 		type = infantry
-		home = 1127
+		home = 1115
 	}
 
 	regiment = {
 		name= "4. Bakhsh-i Piyadenizam"
 		type = infantry
-		home = 1127
+		home = 1115
 	}
 
 	regiment = {
 		name= "5. Bakhsh-i Piyadenizam"
 		type = infantry
-		home = 1113
+		home = 1114
 	}
 
 	regiment = {
 		name= "6. Bakhsh-i Piyadenizam"
 		type = infantry
-		home = 1113
+		home = 1121
 	}
 }

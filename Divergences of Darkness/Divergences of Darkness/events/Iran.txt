@@ -1,0 +1,66 @@
+country_event = { 
+	id = 180000
+	title = "EVTNAME180000"
+	desc = "EVTDESC180000"
+	picture = "kalat"
+	
+	trigger = { 
+		tag = KAL 
+		vassal_of = SIN
+		year = 1840
+	}
+	
+	mean_time_to_happen = { 
+		months = 12 
+	}
+	
+	fire_only_once = yes	
+	
+	option = { 
+		name = "EVTOPTA180000"
+		SIN = {
+			release_vassal = KAL
+			leave_alliance = KAL
+		}
+		KAL = { 
+			add_country_modifier = {
+				name = taiping_draft
+				duration = 1000
+			}
+		}
+	}
+	
+}
+
+country_event = { 
+	id = 180001
+	title = "EVTNAME180001"
+	desc = "EVTDESC180001"
+	picture = "house_wisdom"
+	
+	trigger = { 
+		tag = TUR 
+		year = 1840
+		NOT = {
+			owns = 926
+			has_global_flag = fartheewell
+		}
+	}
+	
+	mean_time_to_happen = { 
+		months = 3 
+	}
+	
+	fire_only_once = yes	
+	
+	option = { 
+		name = "EVTOPTA180001"
+		IRQ = {
+			all_core = { remove_core = TUR }
+		}
+		PER = {
+			all_core = { remove_core = TUR }
+		}		
+	}
+	
+}
