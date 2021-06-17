@@ -12,13 +12,13 @@ country_event = {                      #Japan approaches Manchu with the desire 
 		name = "EVTOPTA334300"
 
 		any_owned = {
-      limit = {
-            region = CHI_1082      
-      }
-      limit = {
+        limit = {
+		  OR = {
             region = CHI_2697
-      }
-      secede_province = JAP
+            region = CHI_1082
+        	}    
+      	}
+      	secede_province = JAP
     }
     money = 50000
     years_of_research = 0.3
