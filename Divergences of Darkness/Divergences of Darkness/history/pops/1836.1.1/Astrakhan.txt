@@ -494,100 +494,42 @@
 		culture = north_caucasian
 		religion = sunni
 		size = 2750
-		militancy = 9
 	}
 
 	clergymen = {
 		culture = north_caucasian
 		religion = sunni
 		size = 1500
-		militancy = 9
 	}
 
 	artisans = {
 		culture = north_caucasian
 		religion = sunni
 		size = 7500
-		militancy = 9
 	}
 
 	soldiers = {
 		culture = north_caucasian
 		religion = sunni
-		size= 3000
-
-		militancy = 9
+		size= 6000
 	}
 
 	soldiers = {
 		culture = north_caucasian
 		religion = sunni
-		size= 3000
-
-		militancy = 9
+		size= 6000
 	}
 
 	soldiers = {
 		culture = north_caucasian
 		religion = sunni
-		size= 3000
-
-		militancy = 9
-	}
-
-	soldiers = {
-		culture = north_caucasian
-		religion = sunni
-		size= 3000
-
-		militancy = 9
-	}
-
-	soldiers = {
-		culture = north_caucasian
-		religion = sunni
-		size= 3000
-
-		militancy = 9
-	}
-
-	soldiers = {
-		culture = north_caucasian
-		religion = sunni
-		size= 3000
-
-		militancy = 9
-	}
-
-	soldiers = {
-		culture = north_caucasian
-		religion = sunni
-		size= 3000
-
-		militancy = 9
-	}
-
-	soldiers = {
-		culture = north_caucasian
-		religion = sunni
-		size= 3000
-
-		militancy = 9
-	}
-
-	soldiers = {
-		culture = north_caucasian
-		religion = sunni
-		size= 3000
-
-		militancy = 9
+		size= 6000
 	}
 
 	farmers = {
 		culture = north_caucasian
 		religion = sunni
-		size = 248250
-		militancy = 9
+		size = 338250
 	}
 
 	farmers = {
@@ -763,56 +705,21 @@
 	soldiers = {
 		culture = north_caucasian
 		religion = sunni
-		size= 3000
+		size= 6000
 
 	}
 
 	soldiers = {
 		culture = north_caucasian
 		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = north_caucasian
-		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = north_caucasian
-		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = north_caucasian
-		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = north_caucasian
-		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = north_caucasian
-		religion = sunni
-		size= 3000
+		size= 6000
 
 	}
 
 	farmers = {
 		culture = north_caucasian
 		religion = sunni
-		size = 75750
+		size = 78750
 	}
 	
 	farmers = {
@@ -1663,13 +1570,13 @@
 	soldiers = {
 		culture = chechen
 		religion = sunni
-		size = 42650
+		size = 12650
 	}
 
 	farmers = {
 		culture = chechen
 		religion = sunni
-		size = 105000
+		size = 108000
 	}
 	
 	aristocrats = {
@@ -1717,13 +1624,13 @@
 	soldiers = {
 		culture = chechen
 		religion = animist
-		size = 7000
+		size = 3000
 	}
 
 	farmers = {
 		culture = chechen
 		religion = animist
-		size = 26000
+		size = 30000
 	}	
 	
 	soldiers = {
@@ -1798,7 +1705,7 @@
 	soldiers = {
 		culture = north_caucasian
 		religion = sunni
-		size= 2350
+		size= 3000
 	}
 
 	farmers = {
@@ -1846,7 +1753,7 @@
 	farmers = {
 		culture = north_caucasian
 		religion = animist
-		size = 23650
+		size = 24650
 	}
 	
 	farmers = {
@@ -1924,13 +1831,13 @@
 	soldiers = {
 		culture = ossetian
 		religion = shiite
-		size = 1350
+		size = 3000
 	}
 
 	farmers = {
 		culture = ossetian
 		religion = shiite
-		size = 3875
+		size = 5875
 	}
 	
 	artisans = {
@@ -1942,7 +1849,7 @@
 	soldiers = {
 		culture = karachai
 		religion = sunni
-		size = 2350
+		size = 3000
 	}
 
 	farmers = {
@@ -1954,13 +1861,13 @@
 	soldiers = {
 		culture = astrakhani
 		religion = sunni
-		size = 4000
+		size = 3000
 	}
 	
 	farmers = {
 		culture = astrakhani
 		religion = sunni
-		size = 8650
+		size = 9650
 	}
 	
 }

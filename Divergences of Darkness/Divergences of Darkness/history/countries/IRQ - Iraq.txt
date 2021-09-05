@@ -51,10 +51,14 @@ upper_house = {
 set_country_flag = sunni_country
 
 
-foreign_artillery = yes_foreign_artillery
+admin_reform = yes_admin_reform
+monetary_reform = yes_monetary_reform
+land_reform = yes_land_reform
+education_reform = yes_western_science
+firearms_production = yes_firearms_production
+army_schools = yes_army_schools
 foreign_weapons = yes_foreign_weapons
 foreign_training = yes_foreign_training
-admin_reform = yes_admin_reform
 
 # Technologies
 flintlock_rifles = 1

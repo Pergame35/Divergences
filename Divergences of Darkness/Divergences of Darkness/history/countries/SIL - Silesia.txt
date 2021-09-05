@@ -1,6 +1,6 @@
 capital = 682
-primary_culture = north_german
-culture = czech
+primary_culture = czech
+culture = south_german
 religion = protestant
 government = absolute_monarchy
 plurality = 0.0
@@ -40,13 +40,13 @@ set_country_flag = protestant_country
 
 ruling_party = GEN_GER_conservative_2
 upper_house = {
-	fascist = 0
-	liberal = 33
-	conservative = 57
-	reactionary = 10
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 33
+    conservative = 57
+    reactionary = 10
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 # Technologies

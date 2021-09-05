@@ -52,9 +52,13 @@ upper_house = {
 # Inventions
 
 # Unciv Reforms
-admin_reform = yes_admin_reform
 army_schools = yes_army_schools
 foreign_training = yes_foreign_training
+foreign_artillery = yes_foreign_artillery
+foreign_weapons = yes_foreign_weapons
+admin_reform = yes_admin_reform
+monetary_reform = yes_monetary_reform
+land_reform = yes_land_reform
 
 # Starting Consciousness
 consciousness = 0

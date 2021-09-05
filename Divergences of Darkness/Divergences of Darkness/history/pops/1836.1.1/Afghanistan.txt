@@ -261,11 +261,6 @@
 }
 #Herat (324000/81000 POPS)
 1212 = {
-	aristocrats = {
-		culture = pashtun
-		religion = sunni
-		size = 825
-	}
 
 	clergymen = {
 		culture = pashtun
@@ -273,23 +268,10 @@
 		size = 375
 	}
 
-	artisans = {
-		culture = pashtun
-		religion = sunni
-		size = 2050
-	}
-
-	soldiers = {
-		culture = pashtun
-		religion = sunni
-		size= 1000
-
-	}
-
 	farmers = {
 		culture = pashtun
 		religion = sunni
-		size = 17850
+		size = 8850
 	}
 
 	clergymen = {
@@ -307,14 +289,20 @@
 	farmers = {
 		culture = persian
 		religion = sunni
-		size = 13350
+		size = 14350
 	}
 
 	aristocrats = {
 		culture = persian
 		religion = sunni
-		size = 115
+		size = 1015
 	}
+	
+	artisans = {
+		culture = persian
+		religion = sunni
+		size = 2050
+	}	
 
 	clergymen = {
 		culture = persian
@@ -322,23 +310,16 @@
 		size = 238
 	}
 
-	soldiers = {
-		culture = persian
-		religion = sunni
-		size= 1000
-
-	}
-
 	farmers = {
 		culture = persian
 		religion = sunni
-		size = 22812
+		size = 43812
 	}
 	
 	aristocrats = {
 		culture = pashtun
 		religion = sunni
-		size = 700
+		size = 225
 	}
 
 	clergymen = {
@@ -353,17 +334,10 @@
 		size = 1500
 	}
 
-	soldiers = {
-		culture = pashtun
-		religion = sunni
-		size= 3000
-
-	}
-
 	farmers = {
 		culture = pashtun
 		religion = sunni
-		size = 19750
+		size = 11750
 	}
 
 	clergymen = {
@@ -527,13 +501,13 @@
 	soldiers = {
 		culture = pashtun
 		religion = sunni
-		size= 3000
+		size= 1500
 	}
 
 	farmers = {
 		culture = pashtun
 		religion = sunni
-		size = 28762
+		size = 30262
 	}
 
 	clergymen = {
