@@ -1,162 +1,139 @@
 political_decisions = {
-	
-	unite_ethiopia_1 = {
-	picture = ethiopia	
-		potential = {
-			tag = AMT	
-		}
-		
-		allow = {
-			NOT = { ETH = { exists = yes } }
-			NOT = { war = yes }
-		}
-		
-		effect = {
-			prestige = 20
-			change_tag = ETH
-			any_country = {
-				any_owned = {
-					limit = {
-						is_core = AMT
-					}
-					remove_core = AMT
-				}
-			}
-			any_owned = {
-				limit = {
-					is_core = AMT
-					}
-				remove_core = AMT
-			}
-			religion = coptic
-			1864 = { secede_province = THIS }
-			add_accepted_culture = tigray
-			add_accepted_culture = amhara
-			set_country_flag = amatsa
-			capital = 1859
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	unite_ethiopia_2 = {
-	picture = ethiopia	
-		potential = {
-			tag = ETH
-			NOT = { has_country_flag = amatsa }	
-		}
-		
-		allow = {
-			AMT = { exists = no }
-			 war = yes
-		}
-		
-		effect = {
-			set_country_flag = amatsa
-			prestige = 20
-			any_country = {
-				any_owned = {
-					limit = {
-						is_core = AMT
-					}
-				remove_core = AMT
-				add_core = ETH
-				}
-			}
-			any_owned = {
-				limit = {
-					is_core = AMT
-				}
-				remove_core = AMT
-				add_core = ETH
-			}
-			1864 = { secede_province = THIS }
-			add_accepted_culture = tigray
-			add_accepted_culture = amhara
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	unite_ethiopia_3 = {
-	picture = ethiopia	
-		potential = {
-			tag = ORO	
-		}
-		
-		allow = {
-			AMT = { exists = no }
-			war = no
-			ETH = { all_core = { owned_by = THIS } }
-			ETH = { exists = no }
-		}
-		
-		effect = {
-			prestige = 20
-			any_country = {
-				any_owned = {
-					limit = {
-						is_core = AMT
-					}
-				remove_core = AMT
-				add_core = ETH
-				}
-			}
-			any_owned = {
-				limit = {
-					is_core = AMT
-				}
-				remove_core = AMT
-				add_core = ETH
-			}
-			change_tag = ETH
-			add_accepted_culture = oromo
-			add_accepted_culture = amhara
-			capital = 1859
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	unite_ethiopia_4 = {
-	picture = ethiopia	
-		potential = {
-			tag = ADA
-			NOT = { has_country_flag = greater_adal }	
-		}
-		
-		allow = {
-			AMT = { exists = no }
-			war = no
-			ETH = { all_core = { owned_by = THIS } }
-			ETH = { exists = no }
-		}
-		
-		effect = {
-			set_country_flag = greater_adal
-			prestige = 20
-			any_country = {
-				any_owned = {
-					limit = {
-						is_core = ADA
-					}
-				remove_core = AMT
-				}
-			}
-			any_country = {
-				any_owned = {
-					limit = {
-						is_core = AJU
-					}
-				add_core = ADA
-				}
-			}
-			1858 = { add_core = THIS }
-			1851 = { add_core = THIS }
-			1875 = { add_core = THIS }
-		} 
-		ai_will_do = {
-			factor = 1
-		}
-	}
+    unite_ethiopia_1 = {
+        picture = ethiopia
+        potential = { tag = AMT }
+
+        allow = {
+            NOT = {
+                ETH = { exists = yes }
+            }
+            NOT = { war = yes }
+        }
+
+        effect = {
+            prestige = 20
+            change_tag = ETH
+            any_country = {
+                any_owned = {
+                    limit = { is_core = AMT }
+                    remove_core = AMT
+                }
+            }
+            any_owned = {
+                limit = { is_core = AMT }
+                remove_core = AMT
+            }
+            religion = coptic
+            1864 = { secede_province = THIS }
+            add_accepted_culture = tigray
+            add_accepted_culture = amhara
+            set_country_flag = amatsa
+            capital = 1859
+        }
+        ai_will_do = { factor = 1 }
+    }
+    unite_ethiopia_2 = {
+        picture = ethiopia
+        potential = {
+            tag = ETH
+            NOT = { has_country_flag = amatsa }
+        }
+
+        allow = {
+            AMT = { exists = no }
+            war = yes
+        }
+
+        effect = {
+            set_country_flag = amatsa
+            prestige = 20
+            any_country = {
+                any_owned = {
+                    limit = { is_core = AMT }
+                    remove_core = AMT
+                    add_core = ETH
+                }
+            }
+            any_owned = {
+                limit = { is_core = AMT }
+                remove_core = AMT
+                add_core = ETH
+            }
+            1864 = { secede_province = THIS }
+            add_accepted_culture = tigray
+            add_accepted_culture = amhara
+        }
+        ai_will_do = { factor = 1 }
+    }
+    unite_ethiopia_3 = {
+        picture = ethiopia
+        potential = { tag = ORO }
+
+        allow = {
+            AMT = { exists = no }
+            war = no
+            ETH = {
+                all_core = { owned_by = THIS }
+            }
+            ETH = { exists = no }
+        }
+
+        effect = {
+            prestige = 20
+            any_country = {
+                any_owned = {
+                    limit = { is_core = AMT }
+                    remove_core = AMT
+                    add_core = ETH
+                }
+            }
+            any_owned = {
+                limit = { is_core = AMT }
+                remove_core = AMT
+                add_core = ETH
+            }
+            change_tag = ETH
+            add_accepted_culture = oromo
+            add_accepted_culture = amhara
+            capital = 1859
+        }
+        ai_will_do = { factor = 1 }
+    }
+    unite_ethiopia_4 = {
+        picture = ethiopia
+        potential = {
+            tag = ADA
+            NOT = { has_country_flag = greater_adal }
+        }
+
+        allow = {
+            AMT = { exists = no }
+            war = no
+            ETH = {
+                all_core = { owned_by = THIS }
+            }
+            ETH = { exists = no }
+        }
+
+        effect = {
+            set_country_flag = greater_adal
+            prestige = 20
+            any_country = {
+                any_owned = {
+                    limit = { is_core = ADA }
+                    remove_core = AMT
+                }
+            }
+            any_country = {
+                any_owned = {
+                    limit = { is_core = AJU }
+                    add_core = ADA
+                }
+            }
+            1858 = { add_core = THIS }
+            1851 = { add_core = THIS }
+            1875 = { add_core = THIS }
+        }
+        ai_will_do = { factor = 1 }
+    }
 }

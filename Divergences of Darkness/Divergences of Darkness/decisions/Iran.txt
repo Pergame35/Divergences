@@ -1,0 +1,173 @@
+political_decisions = {
+
+    end_kartveli_autonomy = {
+        picture = annex_georgian_principalities
+        potential = {
+            tag = AZB
+            NOT = { has_country_flag = annexed_georgian_principalities }
+            IME = { 
+				exists = yes
+				vassal_of = AZB 
+			}
+            SAM = {
+				exists = yes			
+				vassal_of = AZB
+			}			
+        }
+        allow = {
+            war = no
+			owns = 1090
+            OR = {
+                civilization_progress = 0.75
+                civilized = yes
+            }
+        }
+        effect = {
+            prestige = 10
+            IME = { annex_to = THIS }
+            SAM = { annex_to = THIS }
+            IME = {
+                all_core = { 
+					add_core = AZB
+					remove_core = IME
+				}
+            }
+            SAM = {
+                all_core = { 
+					add_core = AZB
+					remove_core = SAM
+				}
+            }			
+            set_country_flag = annexed_georgian_principalities
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+    end_shamkhalate = {
+        picture = annex_shamkhalate
+        potential = {
+            tag = AZB
+            NOT = { has_country_flag = annexed_tarki_shamkhalate }
+            KMY = { 
+				exists = yes
+				substate_of = AZB 
+			}			
+        }
+        allow = {
+            war = no
+			owns = 1104
+			functionalism = 1
+        }
+        effect = {
+            prestige = 10
+            KMY = { annex_to = THIS }			
+            set_country_flag = annexed_tarki_shamkhalate
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    integrate_kumyks = {
+        picture = tarki
+        potential = {
+            OR = { 
+				tag = AZB
+				tag = TCA
+			}
+            NOT = { has_country_flag = accepted_kumyk }
+            KMY = { exists = no }			
+        }
+        allow = {
+            war = no
+            biologism = 1			
+            owns = 3322
+        }
+        effect = {
+            add_accepted_culture = kumyk
+			set_country_flag = accepted_kumyk
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+    encourage_baku_refineries = {
+        picture = baku_refinery
+        potential = {
+            OR = { 
+				tag = AZB
+				tag = TCA
+			}
+            NOT = { has_country_flag = baku_refinery }
+			1102 = { NOT = { trade_goods = oil } }
+        }
+        allow = {
+            war = no
+            pneumatic_and_hydraulics = 1			
+            owns = 1102
+			owns = 1104
+        }
+        effect = {
+            1102 = { 
+				trade_goods = oil
+				life_rating = 2
+			}
+			set_country_flag = baku_refinery			
+        }
+        ai_will_do = { factor = 1 }
+    }	
+
+    move_capital_baku = {
+        picture = baku_1850
+        potential = {
+            OR = { 
+				tag = AZB
+				tag = TCA
+			}
+            NOT = { has_country_flag = capital_baku }
+            1102 = { 
+				is_capital = no 
+				trade_goods = oil
+			}						
+        }
+        allow = {
+            war = no
+			NOT = { government = khanate }		
+            owns = 1102
+			owns = 1104			
+        }
+        effect = {
+            capital = 1102
+            1102 = {
+                add_province_modifier = {
+                    name = gateway_to_harbor
+                    duration = 1825
+                }
+                life_rating = 3
+            }	
+			set_country_flag = capital_baku			
+        }
+        ai_will_do = { factor = 1 }
+    }		
+
+    integrate_tats = {
+        picture = darband
+        potential = {
+            OR = { 
+				tag = AZB
+				tag = TCA
+			}
+            1102 = { is_capital = yes }			
+            NOT = { has_country_flag = accepted_tats }
+			NOT = { accepted_culture = tat }			
+        }
+        allow = {
+            war = no
+            social_science = 1			
+            owns = 1102
+        }
+        effect = {
+            add_accepted_culture = tat
+			set_country_flag = accepted_tats	
+        }
+        ai_will_do = { factor = 1 }
+    }		
+	
+}

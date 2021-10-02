@@ -1,6 +1,6 @@
 capital = 1385
 primary_culture = malay
-culture = yue
+culture = tionghoa
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
@@ -51,8 +51,13 @@ set_country_flag = sunni_country
 
 foreign_weapons = yes_foreign_weapons
 army_schools = yes_army_schools
+foreign_officers = yes_foreign_officers
 foreign_training = yes_foreign_training
 admin_reform = yes_admin_reform
+firearms_production = yes_firearms_production
+monetary_reform = yes_monetary_reform
+land_reform = yes_land_reform
+firearms_production = yes_firearms_production
 
 flintlock_rifles = 1
 

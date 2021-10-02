@@ -47,12 +47,15 @@ upper_house = {
 
 set_country_flag = ibadi_country
 
-foreign_weapons = yes_foreign_weapons
+military_constructions = yes_military_constructions
+foreign_officers = yes_foreign_officers
+admin_reform = yes_admin_reform
+monetary_reform = yes_monetary_reform
+land_reform = yes_land_reform
+firearms_production = yes_firearms_production
 army_schools = yes_army_schools
 foreign_weapons = yes_foreign_weapons
 foreign_training = yes_foreign_training
-military_constructions = yes_military_constructions
-foreign_officers = yes_foreign_officers
 
 # Technologies
 flintlock_rifles = 1

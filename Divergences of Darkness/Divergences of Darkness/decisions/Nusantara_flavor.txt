@@ -1,4 +1,4 @@
-political_decisions = { 
+political_decisions = {
 
     #Allows Java to reclaim the western part of their island if they hold Batavia (ID 1413) for a while.
     #Based off the Treaty of Vereeniging.
@@ -13,12 +13,12 @@ political_decisions = {
                 }
             }
         }
-        
+
         allow = {
             war = yes
-            1413 = { 
-                controlled_by = THIS 
-                province_control_days = 730 
+            1413 = {
+                controlled_by = THIS
+                province_control_days = 730
             }
             #As long as Java hasn't lost any cores, I think?
             JAV = {
@@ -38,7 +38,7 @@ political_decisions = {
                 }
             }
         }
-        
+
         effect = {
             random_country = {
                 limit = {
@@ -48,10 +48,7 @@ political_decisions = {
                 country_event = 98250
             }
         }
-        
-        ai_will_do = {
-            factor = 1
-        }
-    }
 
+        ai_will_do = { factor = 1 }
+    }
 }

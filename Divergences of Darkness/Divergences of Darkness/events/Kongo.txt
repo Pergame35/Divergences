@@ -1,197 +1,193 @@
-
 country_event = {
-	id = 13901400
-	title = "EVTNAME13901400"
-	desc = "EVTDESC13901400"
-	picture = "congo_ship"
-	
-	trigger = {
-		tag = KON
-		exists = yes
-		war = no
-		civilized = no
-		
-		521 = {
-			owner = {
-				relation = { who = THIS value = 10 }
-			}
-		}
-	}
-	
-	fire_only_once = yes 
+    id = 13901400
+    title = "EVTNAME13901400"
+    desc = "EVTDESC13901400"
+    picture = "congo_ship"
 
-	mean_time_to_happen = {
-		months = 3
-		modifier = {
-			factor = 0.5
-			year = 1838
-		}
-		modifier = {
-			factor = 0.2
-			year = 1840
-		}
-	}
+    trigger = {
+        tag = KON
+        exists = yes
+        war = no
+        civilized = no
 
-	option = {
-		name = "EVT13901400OPTA"
-		set_country_flag = kongo_children
-		prestige = -10
-		any_pop = {
-			limit = { location = { is_core = KON } }
-			militancy = 4
-			reduce_pop = 0.99
-		}
-		add_country_modifier = {
-			name = kongo_missing_children
-			duration = 3650
-		}
-		521 = {
-			owner = {
-				relation = {
-					who = THIS
-					value = 100
-				}
-				diplomatic_influence = {
-					who = THIS
-					value = 200
-				}
-			}
-		}
-		ai_chance = {
-			factor = 50
-		}	
-	}
-	
-	option = {
-		name = "EVT13901400OPTB"
-		521 = {
-			owner = {
-				relation = {
-					who = THIS
-					value = -10
-				}
-			}
-		}
-		ai_chance = {
-			factor = 50
-		}
-	}
+        521 = {
+            owner = {
+                relation = {
+                    who = THIS
+                    value = 10
+                }
+            }
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 3
+        modifier = {
+            factor = 0.5
+            year = 1838
+        }
+        modifier = {
+            factor = 0.2
+            year = 1840
+        }
+    }
+
+    option = {
+        name = "EVT13901400OPTA"
+        set_country_flag = kongo_children
+        prestige = -10
+        any_pop = {
+            limit = {
+                location = { is_core = KON }
+            }
+            militancy = 4
+            reduce_pop = 0.99
+        }
+        add_country_modifier = {
+            name = kongo_missing_children
+            duration = 3650
+        }
+        521 = {
+            owner = {
+                relation = {
+                    who = THIS
+                    value = 100
+                }
+                diplomatic_influence = {
+                    who = THIS
+                    value = 200
+                }
+            }
+        }
+        ai_chance = { factor = 50 }
+    }
+
+    option = {
+        name = "EVT13901400OPTB"
+        521 = {
+            owner = {
+                relation = {
+                    who = THIS
+                    value = -10
+                }
+            }
+        }
+        ai_chance = { factor = 50 }
+    }
 }
 
 country_event = {
-	id = 13901401
-	title = "EVTNAME13901401"
-	desc = "EVTDESC13901401"
-	picture = "boma_congo"
-	
-	trigger = {
-		tag = KON
-		exists = yes
-		war = no
-		has_country_flag = kongo_children
-		NOT = { has_country_modifier = kongo_missing_children }
-	}
-	
-	fire_only_once = yes 
+    id = 13901401
+    title = "EVTNAME13901401"
+    desc = "EVTDESC13901401"
+    picture = "boma_congo"
 
-	mean_time_to_happen = {
-		months = 1
-	}
+    trigger = {
+        tag = KON
+        exists = yes
+        war = no
+        has_country_flag = kongo_children
+        NOT = { has_country_modifier = kongo_missing_children }
+    }
 
-	option = {
-		name = "EVT13901401OPTA"
-		any_pop = {
-			limit = { location = { is_core = KON } }
-			militancy = -1
-			reduce_pop = 1.01
-			literacy = 0.02
-		}
-		add_country_modifier = {
-			name = influx_of_ideas
-			duration = 1825
-		}
-		random_owned = {
-			owner = {
-				economic_reform = yes_education_reform
-				economic_reform = yes_admin_reform
-				military_reform = yes_foreign_officers
-				military_reform = yes_foreign_weapons
-				activate_technology = flintlock_rifles
-				clr_country_flag = lacking_writing_system
-				remove_country_modifier = lacks_writing_sytem
-			}
-		}
-		
-		521 = {
-			owner = {
-				relation = {
-					who = THIS
-					value = 100
-				}
-				diplomatic_influence = {
-					who = THIS
-					value = 200
-				}
-			}
-		}
-		ai_chance = {
-			factor = 100
-		}	
-	}
+    fire_only_once = yes
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVT13901401OPTA"
+        any_pop = {
+            limit = {
+                location = { is_core = KON }
+            }
+            militancy = -1
+            reduce_pop = 1.01
+            literacy = 0.02
+        }
+        add_country_modifier = {
+            name = influx_of_ideas
+            duration = 1825
+        }
+        random_owned = {
+            owner = {
+                economic_reform = yes_education_reform
+                economic_reform = yes_admin_reform
+                military_reform = yes_foreign_officers
+                military_reform = yes_foreign_weapons
+                activate_technology = flintlock_rifles
+                clr_country_flag = lacking_writing_system
+                remove_country_modifier = lacks_writing_sytem
+            }
+        }
+
+        521 = {
+            owner = {
+                relation = {
+                    who = THIS
+                    value = 100
+                }
+                diplomatic_influence = {
+                    who = THIS
+                    value = 200
+                }
+            }
+        }
+        ai_chance = { factor = 100 }
+    }
 }
 
 country_event = {
-	id = 13901402
-	title = "EVTNAME13901402"
-	desc = "EVTDESC13901402"
-	picture = "african_king"
-	
-	trigger = {
-		tag = KON
-		exists = yes
-		has_country_flag = integrate_congo_cultures
-	}
-	
-	fire_only_once = yes 
+    id = 13901402
+    title = "EVTNAME13901402"
+    desc = "EVTDESC13901402"
+    picture = "african_king"
 
-	mean_time_to_happen = {
-		months = 36
-		modifier = {
-			factor = 0.5
-			NOT = { average_militancy = 3 }
-		}
-		modifier = {
-			factor = 2
-			average_militancy = 5
-		}
-	}
+    trigger = {
+        tag = KON
+        exists = yes
+        has_country_flag = integrate_congo_cultures
+    }
 
-	option = {
-		name = "EVT13901402OPTA"
-		add_accepted_culture = fang
-		add_accepted_culture = chokwe
-		add_accepted_culture = lunda
-		add_accepted_culture = luba
-		add_accepted_culture = kuba
-		add_accepted_culture = south_forest_bantu
-		add_accepted_culture = forest_bantu
-		add_accepted_culture = lendu
-		add_accepted_culture = kingwana
-		add_accepted_culture = mongo
-		add_accepted_culture = azande
-		add_accepted_culture = ubangian
-		add_accepted_culture = ruanda
-		add_accepted_culture = baganda
-		add_accepted_culture = unyamwezi
-		add_accepted_culture = nyasa
-		add_accepted_culture = rundi
-		add_accepted_culture = sukuma
-		#add_accepted_culture = yao
-		#add_accepted_culture = makua
-		#add_accepted_culture = shona
-		#add_accepted_culture = southern_bantu
-		ai_chance = {
-			factor = 100
-		}	
-	}
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 36
+        modifier = {
+            factor = 0.5
+            NOT = { average_militancy = 3 }
+        }
+        modifier = {
+            factor = 2
+            average_militancy = 5
+        }
+    }
+
+    option = {
+        name = "EVT13901402OPTA"
+        add_accepted_culture = fang
+        add_accepted_culture = chokwe
+        add_accepted_culture = lunda
+        add_accepted_culture = luba
+        add_accepted_culture = kuba
+        add_accepted_culture = south_forest_bantu
+        add_accepted_culture = forest_bantu
+        add_accepted_culture = lendu
+        add_accepted_culture = kingwana
+        add_accepted_culture = mongo
+        add_accepted_culture = azande
+        add_accepted_culture = ubangian
+        add_accepted_culture = ruanda
+        add_accepted_culture = baganda
+        add_accepted_culture = unyamwezi
+        add_accepted_culture = nyasa
+        add_accepted_culture = rundi
+        add_accepted_culture = sukuma
+        #add_accepted_culture = yao
+        #add_accepted_culture = makua
+        #add_accepted_culture = shona
+        #add_accepted_culture = southern_bantu
+        ai_chance = { factor = 100 }
+    }
 }

@@ -2,23 +2,6 @@
 #under the rule of Russia in 1836
 #Erivan (128000/32000 POPS)
 1098 = {
-	bureaucrats = {
-		culture = russian
-		religion = orthodox
-		size = 90
-	}
-
-	clergymen = {
-		culture = russian
-		religion = orthodox
-		size = 55
-	}
-
-	soldiers = {
-		culture = russian
-		religion = orthodox
-		size= 1000
-	}
 
 	aristocrats = {
 		culture = armenian
@@ -29,7 +12,7 @@
 	bureaucrats = {
 		culture = armenian
 		religion = coptic
-		size = 100
+		size = 190
 	}
 
 	officers = {
@@ -41,7 +24,7 @@
 	clergymen = {
 		culture = armenian
 		religion = coptic
-		size = 190
+		size = 245
 	}
 
 	artisans = {
@@ -59,7 +42,7 @@
 	farmers = {
 		culture = armenian
 		religion = coptic
-		size = 41850
+		size = 42850
 	}
 
 	aristocrats = {

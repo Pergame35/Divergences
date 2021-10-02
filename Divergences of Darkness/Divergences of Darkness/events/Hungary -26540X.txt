@@ -1,364 +1,425 @@
-country_event = { 
-	id = 265401
-	title = "HUN1.T"
-	desc = "HUN1.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "265401.A"
-	clr_global_flag = crown_stefen
-	relation = { who = HUN value = 200 }
-	diplomatic_influence = { who = HUN value = 50 }
-	prestige = -20 
-	FROM = { country_event = 265402 }
-	ai_chance = { 
-	factor = 10
-	modifier = { 
-	factor = 2 
-	HUN = { is_greater_power = yes }
-			}
-	modifier = { 
-	factor = 1.2 
-	relation = { who = HUN value = 100 }
-			}
-	modifier = { 
-	factor = 1.3 
-	relation = { who = HUN value = 150 }
-			}
-	modifier = { 
-	factor = 2 
-	war = yes
-			}
-		}
-	}
-	
-	option = { 
-	name = "265401.B"
-	FROM = { country_event = 265403 }
-	ai_chance = { 
-	factor = 50
-	modifier = { 
-	factor = 2 
-	HUN = { is_greater_power = no }
-			}
-	modifier = { 
-	factor = 1.1 
-	NOT = { relation = { who = HUN value = 0 } }
-			}
-	modifier = { 
-	factor = 1.3 
-	NOT = { relation = { who = HUN value = -100 } }
-			}
-	modifier = { 
-	factor = 1.2 
-	war = no
-			}
-		}
-	}
-	
-	option = { 
-	name = "265401.C"
-	FROM = { country_event = 265406 }
-	ai_chance = { 
-	factor = 30
-	modifier = { 
-	factor = 0.7 
-	HUN = { is_greater_power = yes }
-			}
-	modifier = { 
-	factor = 1.1 
-	NOT = { relation = { who = HUN value = 0 } }
-			}
-	modifier = { 
-	factor = 1.3 
-	NOT = { relation = { who = HUN value = -100 } }
-			}
-	modifier = { 
-	factor = 0.5 
-	war = yes
-			}
-		}
-	}
-	
-	option = { 
-	name = "265401.E"
-	FROM = { country_event = 265408 }
-	ai_chance = { 
-	factor = 10
-	modifier = { 
-	factor = 1.9 
-	NOT = { relation = { who = HUN value = 0 } }
-			}
-	modifier = { 
-	factor = 3 
-	NOT = { relation = { who = HUN value = -100 } }
-			}
-	modifier = { 
-	factor = 0
-	HUN = { is_greater_power = yes }
-			}
-	modifier = { 
-	factor = 0.5 
-	war = yes
-			}
-		}
-	}
+country_event = {
+    id = 265401
+    title = "HUN1.T"
+    desc = "HUN1.D"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "265401.A"
+        clr_global_flag = crown_stefen
+        relation = {
+            who = HUN
+            value = 200
+        }
+        diplomatic_influence = {
+            who = HUN
+            value = 50
+        }
+        prestige = -20
+        FROM = { country_event = 265402 }
+        ai_chance = {
+            factor = 10
+            modifier = {
+                factor = 2
+                HUN = { is_greater_power = yes }
+            }
+            modifier = {
+                factor = 1.2
+                relation = {
+                    who = HUN
+                    value = 100
+                }
+            }
+            modifier = {
+                factor = 1.3
+                relation = {
+                    who = HUN
+                    value = 150
+                }
+            }
+            modifier = {
+                factor = 2
+                war = yes
+            }
+        }
+    }
+
+    option = {
+        name = "265401.B"
+        FROM = { country_event = 265403 }
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 2
+                HUN = { is_greater_power = no }
+            }
+            modifier = {
+                factor = 1.1
+                NOT = {
+                    relation = {
+                        who = HUN
+                        value = 0
+                    }
+                }
+            }
+            modifier = {
+                factor = 1.3
+                NOT = {
+                    relation = {
+                        who = HUN
+                        value = -100
+                    }
+                }
+            }
+            modifier = {
+                factor = 1.2
+                war = no
+            }
+        }
+    }
+
+    option = {
+        name = "265401.C"
+        FROM = { country_event = 265406 }
+        ai_chance = {
+            factor = 30
+            modifier = {
+                factor = 0.7
+                HUN = { is_greater_power = yes }
+            }
+            modifier = {
+                factor = 1.1
+                NOT = {
+                    relation = {
+                        who = HUN
+                        value = 0
+                    }
+                }
+            }
+            modifier = {
+                factor = 1.3
+                NOT = {
+                    relation = {
+                        who = HUN
+                        value = -100
+                    }
+                }
+            }
+            modifier = {
+                factor = 0.5
+                war = yes
+            }
+        }
+    }
+
+    option = {
+        name = "265401.E"
+        FROM = { country_event = 265408 }
+        ai_chance = {
+            factor = 10
+            modifier = {
+                factor = 1.9
+                NOT = {
+                    relation = {
+                        who = HUN
+                        value = 0
+                    }
+                }
+            }
+            modifier = {
+                factor = 3
+                NOT = {
+                    relation = {
+                        who = HUN
+                        value = -100
+                    }
+                }
+            }
+            modifier = {
+                factor = 0
+                HUN = { is_greater_power = yes }
+            }
+            modifier = {
+                factor = 0.5
+                war = yes
+            }
+        }
+    }
 }
 
-country_event = { 
-	id = 265402
-	title = "HUN2.T"
-	desc = "HUN2.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	prestige = 5 
-	clr_global_flag = crown_stefen
-	set_country_flag = holy_crown
-	name = "97086.A"
-	relation = { who = FROM value = 200 }
-	any_pop = { 
-	limit = { culture = hungarian } militancy = -6 
-		}
-	}
+country_event = {
+    id = 265402
+    title = "HUN2.T"
+    desc = "HUN2.D"
+
+    is_triggered_only = yes
+
+    option = {
+        prestige = 5
+        clr_global_flag = crown_stefen
+        set_country_flag = holy_crown
+        name = "97086.A"
+        relation = {
+            who = FROM
+            value = 200
+        }
+        any_pop = {
+            limit = { culture = hungarian }
+            militancy = -6
+        }
+    }
 }
 
-country_event = { 
-	id = 265403
-	title = "HUN2.T"
-	desc = "HUN3.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "265403.A"
-	prestige_factor = -0.5
-	FROM = { country_event = 265404 }
-	ai_chance = { 
-	factor = 75
-		}
-	}
-	
-	option = { 
-	name = "265403.B"
-	FROM = { country_event = 265405 }
-	FROM = { country_event = { id = 265409 days = 97 } }
-	ai_chance = { 
-	factor = 25	
-		}
-	}
-	
-	option = { 
-	name = "265403.C"
-	prestige = 15
-	FROM = { country_event = 265405 }
-	any_pop = { 
-	limit = { culture = hungarian } militancy = 6 
-		}
-	ai_chance = { 
-	factor = 0	
-		}
-	}
+country_event = {
+    id = 265403
+    title = "HUN2.T"
+    desc = "HUN3.D"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "265403.A"
+        prestige_factor = -0.5
+        FROM = { country_event = 265404 }
+        ai_chance = { factor = 75 }
+    }
+
+    option = {
+        name = "265403.B"
+        FROM = { country_event = 265405 }
+        FROM = {
+            country_event = {
+                id = 265409
+                days = 97
+            }
+        }
+        ai_chance = { factor = 25 }
+    }
+
+    option = {
+        name = "265403.C"
+        prestige = 15
+        FROM = { country_event = 265405 }
+        any_pop = {
+            limit = { culture = hungarian }
+            militancy = 6
+        }
+        ai_chance = { factor = 0 }
+    }
 }
 
-country_event = { 
-	id = 265404
-	title = "HUN4.T"
-	desc = "HUN4.D"
-	picture = "apologies_HUN"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "265404.A"
-	prestige = 25
-	diplomatic_influence = { who = HUN value = 250 }	
-	relation = { who = HUN value = -300 }
-	HUN = { country_event = 265411 }
-	}
+country_event = {
+    id = 265404
+    title = "HUN4.T"
+    desc = "HUN4.D"
+    picture = "apologies_HUN"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "265404.A"
+        prestige = 25
+        diplomatic_influence = {
+            who = HUN
+            value = 250
+        }
+        relation = {
+            who = HUN
+            value = -300
+        }
+        HUN = { country_event = 265411 }
+    }
 }
 
-country_event = { 
-	id = 265405
-	title = "HUN5.T"
-	desc = "HUN5.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "265405.A"
-	}
+country_event = {
+    id = 265405
+    title = "HUN5.T"
+    desc = "HUN5.D"
+
+    is_triggered_only = yes
+
+    option = { name = "265405.A" }
 }
 
-country_event = { 
-	id = 265406
-	title = "HUN2.T"
-	desc = "HUN6.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "265406.A"
-	release_vassal = SLV 
-	FROM = { country_event = 265407 } 
-	ai_chance = { 
-	factor = 50
-		}
-	}
-	
-	option = { 
-	name = "265406.B"
-	FROM = { country_event = 265405 }
-	FROM = { country_event = { id = 265409 days = 97 } }
-	ai_chance = { 
-	factor = 50
-		}
-	}
-	
-	option = { 
-	name = "265406.C"
-	prestige = 15
-	FROM = { country_event = 265405 }
-	any_pop = { 
-	limit = { culture = hungarian } militancy = 6 
-		}
-	ai_chance = { 
-	factor = 0	
-		}
-	}
+country_event = {
+    id = 265406
+    title = "HUN2.T"
+    desc = "HUN6.D"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "265406.A"
+        release_vassal = SLV
+        FROM = { country_event = 265407 }
+        ai_chance = { factor = 50 }
+    }
+
+    option = {
+        name = "265406.B"
+        FROM = { country_event = 265405 }
+        FROM = {
+            country_event = {
+                id = 265409
+                days = 97
+            }
+        }
+        ai_chance = { factor = 50 }
+    }
+
+    option = {
+        name = "265406.C"
+        prestige = 15
+        FROM = { country_event = 265405 }
+        any_pop = {
+            limit = { culture = hungarian }
+            militancy = 6
+        }
+        ai_chance = { factor = 0 }
+    }
 }
 
-country_event = { 
-	id = 265407
-	title = "HUN7.T"
-	desc = "HUN7.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "333033.A"
-	diplomatic_influence = { who = SLV value = 300}
-	FROM = { country_event = 265411 } 
-	}
+country_event = {
+    id = 265407
+    title = "HUN7.T"
+    desc = "HUN7.D"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "333033.A"
+        diplomatic_influence = {
+            who = SLV
+            value = 300
+        }
+        FROM = { country_event = 265411 }
+    }
 }
 
-country_event = { 
-	id = 265408
-	title = "HUN2.T"
-	desc = "HUN8.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "265408.A"
-	FROM = { country_event = { id = 265409 days = 97 } }
-	}
-	
-	option = { 
-	name = "265408.B"
-	any_pop = { 
-	limit = { culture = hungarian } militancy = 6 
-		}
-	}
+country_event = {
+    id = 265408
+    title = "HUN2.T"
+    desc = "HUN8.D"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "265408.A"
+        FROM = {
+            country_event = {
+                id = 265409
+                days = 97
+            }
+        }
+    }
+
+    option = {
+        name = "265408.B"
+        any_pop = {
+            limit = { culture = hungarian }
+            militancy = 6
+        }
+    }
 }
 
-country_event = { 
-	id = 265409 ### Heist in Prague
-	title = "HUN9.T"
-	desc = "HUN9.D"
-	
-	is_triggered_only = yes 
-	major = yes
-	
-	option = { 
-	name = "265409.A"
-	HUN = { country_event = 265410 }
-	capital_scope = { 
-	any_pop = { militancy = 3 }
-		}
-	war = {
-			target = HUN
-			attacker_goal = {
-				casus_belli = cut_down_to_size
-			}
-			defender_goal = {
-				casus_belli = cut_down_to_size
-			}
-		}
-	}
+country_event = {
+    id = 265409 ### Heist in Prague
+    title = "HUN9.T"
+    desc = "HUN9.D"
+
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = "265409.A"
+        HUN = { country_event = 265410 }
+        capital_scope = {
+            any_pop = { militancy = 3 }
+        }
+        war = {
+            target = HUN
+            attacker_goal = { casus_belli = cut_down_to_size }
+            defender_goal = { casus_belli = cut_down_to_size }
+        }
+    }
 }
 
-country_event = { 
-	id = 265410 ### Heist in Prague
-	title = "HUN10.T"
-	desc = "HUN10.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "265410.A"
-	}
+country_event = {
+    id = 265410 ### Heist in Prague
+    title = "HUN10.T"
+    desc = "HUN10.D"
+
+    is_triggered_only = yes
+
+    option = { name = "265410.A" }
 }
 
-country_event = { 
-	id = 265411 ### Coronation
-	title = "HUN11.T"
-	desc = "HUN11.D"
-	picture = "stefen_crown"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "265411.A"
-	clr_global_flag = crown_stefen
-	set_country_flag = holy_crown
-	}
+country_event = {
+    id = 265411 ### Coronation
+    title = "HUN11.T"
+    desc = "HUN11.D"
+    picture = "stefen_crown"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "265411.A"
+        clr_global_flag = crown_stefen
+        set_country_flag = holy_crown
+    }
 }
 
-country_event = { 
-	id = 265412 ### Bohemian defeat
-	title = "HUN12.T"
-	desc = "HUN12.D"
+country_event = {
+    id = 265412 ### Bohemian defeat
+    title = "HUN12.T"
+    desc = "HUN12.D"
 
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "265412.A"
-	prestige_factor = -0.5
-	end_war = HUN
-	}
+    is_triggered_only = yes
+
+    option = {
+        name = "265412.A"
+        prestige_factor = -0.5
+        end_war = HUN
+    }
 }
 
-country_event = { 
-	id = 265413 ### Hungarian defeat
-	title = "HUN13.T"
-	desc = "HUN13.D"
+country_event = {
+    id = 265413 ### Hungarian defeat
+    title = "HUN13.T"
+    desc = "HUN13.D"
 
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "265413.A"
-	any_pop = { militancy = 6 }
-	prestige_factor = -0.5
-	FROM = { diplomatic_influence = { who = THIS value = 300 } }
-	any_owned = { limit = { is_core = SLV } secede_province = FROM }
-	FROM = { country_event = 265414 }
-	end_war = BOH
-	}
+    is_triggered_only = yes
+
+    option = {
+        name = "265413.A"
+        any_pop = { militancy = 6 }
+        prestige_factor = -0.5
+        FROM = {
+            diplomatic_influence = {
+                who = THIS
+                value = 300
+            }
+        }
+        any_owned = {
+            limit = { is_core = SLV }
+            secede_province = FROM
+        }
+        FROM = { country_event = 265414 }
+        end_war = BOH
+    }
 }
 
-country_event = { 
-	id = 265414 ### Hungarian defeat
-	title = "HUN14.T"
-	desc = "HUN14.D"
+country_event = {
+    id = 265414 ### Hungarian defeat
+    title = "HUN14.T"
+    desc = "HUN14.D"
 
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "265414.A"
-	release_vassal = SLV 
-	prestige = 25 
-	}
+    is_triggered_only = yes
+
+    option = {
+        name = "265414.A"
+        release_vassal = SLV
+        prestige = 25
+    }
 }

@@ -1,124 +1,114 @@
 
 #Jihad broken when having lost a war - CB gets permanently disabled
 country_event = {
-	id = 90670
-	title = "EVTNAME90670"
-	desc = "EVTDESC90670"
-	picture = "abd_al_qadir"
-	
-	trigger = {
-		has_country_flag = declared_permanent_jihad
-		NOT = { has_country_flag = jihad_broken }
-		OR = {
-			is_disarmed = yes
-			has_recently_lost_war = yes
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	immediate = {
-		set_country_flag = jihad_broken
-	}
-	
-	option = {
-		name = "EVTOPTA90670"
-		government = absolute_monarchy
-		any_pop = {
-			militancy = 10.0
-			consciousness = 5.0
-		}
-	}
+    id = 90670
+    title = "EVTNAME90670"
+    desc = "EVTDESC90670"
+    picture = "abd_al_qadir"
+
+    trigger = {
+        has_country_flag = declared_permanent_jihad
+        NOT = { has_country_flag = jihad_broken }
+        OR = {
+            is_disarmed = yes
+            has_recently_lost_war = yes
+        }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    immediate = { set_country_flag = jihad_broken }
+
+    option = {
+        name = "EVTOPTA90670"
+        government = absolute_monarchy
+        any_pop = {
+            militancy = 10.0
+            consciousness = 5.0
+        }
+    }
 }
 
 #Jihad declared
 country_event = {
-	id = 90671
-	title = "EVTNAME90671"
-	desc = "EVTDESC90671"
-	picture = "arab_revolt"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA90671"
-		any_pop = {
-			limit = {
-				NOT = {
-					OR = {
-						is_accepted_culture = yes
-						religion = sunni
-						religion = shiite
-						religion = ibadi
-					}
-				}
-			}
-			militancy = 3
-		}
-	}
+    id = 90671
+    title = "EVTNAME90671"
+    desc = "EVTDESC90671"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA90671"
+        any_pop = {
+            limit = {
+                NOT = {
+                    OR = {
+                        is_accepted_culture = yes
+                        religion = sunni
+                        religion = shiite
+                        religion = ibadi
+                    }
+                }
+            }
+            militancy = 3
+        }
+    }
 }
 
 #Jihad successful - loser event trigger on peace acceptance
 country_event = {
-	id = 90672
-	title = "We have lost to the Caliphate!"
-	desc = "EVTDESC90672"
-	picture = "arab_revolt"
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		FROM = {
-			country_event = 90673
-		}
-	}
-	
-	option = {
-		name = "Ok"
-	}
+    id = 90672
+    title = "We have lost to the Caliphate!"
+    desc = "EVTDESC90672"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    immediate = {
+        FROM = { country_event = 90673 }
+    }
+
+    option = { name = "Ok" }
 }
 
 #Jihad successful - winner event reduces conquered population and decreases militancy for caliphate accepted pops
 country_event = {
-	id = 90673
-	title = "EVTNAME90673"
-	desc = "EVTDESC90673"
-	picture = "arab_revolt"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA90673"
-		
-		any_owned = {
-			limit = {
-				is_core = FROM
-			}
-			any_pop = {
-				limit = {
-					NOT = {
-						OR = {
-							is_accepted_culture = yes
-							religion = sunni
-							religion = shiite
-							religion = ibadi
-						}
-					}
-				}
-				militancy = 5.0
-				reduce_pop = 0.9
-			}
-			add_province_modifier = { name = recent_jihad duration = 3650 }
-		}
-		
-		any_pop = {
-			limit = {
-				is_accepted_culture = yes
-			}
-			militancy = -2
-		}
-		
-	}
+    id = 90673
+    title = "EVTNAME90673"
+    desc = "EVTDESC90673"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA90673"
+
+        any_owned = {
+            limit = { is_core = FROM }
+            any_pop = {
+                limit = {
+                    NOT = {
+                        OR = {
+                            is_accepted_culture = yes
+                            religion = sunni
+                            religion = shiite
+                            religion = ibadi
+                        }
+                    }
+                }
+                militancy = 5.0
+                reduce_pop = 0.9
+            }
+            add_province_modifier = {
+                name = recent_jihad
+                duration = 3650
+            }
+        }
+
+        any_pop = {
+            limit = { is_accepted_culture = yes }
+            militancy = -2
+        }
+    }
 }

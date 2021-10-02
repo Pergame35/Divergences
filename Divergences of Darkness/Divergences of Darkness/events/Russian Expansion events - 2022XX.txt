@@ -18,48 +18,20 @@ country_event = {
         #Memel, which might be a bit iffy.
         LIT_698 = { add_core = RUS }
         #Finland
-        982 = {
-            add_core = RUS
-        }
-        338 = {
-            add_core = RUS
-        }
-        342 = {
-            add_core = RUS
-        }
-        337 = {
-            add_core = RUS
-        }
-        336 = {
-            add_core = RUS
-        }
-        339 = {
-            add_core = RUS
-        }
-        340 = {
-            add_core = RUS
-        }
-        341 = {
-            add_core = RUS
-        }
-        343 = {
-            add_core = RUS
-        }
-        344 = {
-            add_core = RUS
-        }
-        345 = {
-            add_core = RUS
-        }
-        346 = {
-            add_core = RUS
-        }
-        347 = {
-            add_core = RUS
-        }
-        ai_chance = { 
-            factor = 33
-        }
+        982 = { add_core = RUS }
+        338 = { add_core = RUS }
+        342 = { add_core = RUS }
+        337 = { add_core = RUS }
+        336 = { add_core = RUS }
+        339 = { add_core = RUS }
+        340 = { add_core = RUS }
+        341 = { add_core = RUS }
+        343 = { add_core = RUS }
+        344 = { add_core = RUS }
+        345 = { add_core = RUS }
+        346 = { add_core = RUS }
+        347 = { add_core = RUS }
+        ai_chance = { factor = 33 }
     }
     #Steppe/Caucasus focus
     option = {
@@ -73,9 +45,7 @@ country_event = {
         RUS_1090 = { add_core = RUS } #Georgia proper
 
 
-        ai_chance = { 
-             factor = 33
-        }
+        ai_chance = { factor = 33 }
     }
 
     #Pan-slavic focus
@@ -88,9 +58,6 @@ country_event = {
         RUS_955 = { add_core = RUS } #Rovne
         RUS_718 = { add_core = RUS } #Minsk
 
-        ai_chance = { 
-             factor = 33
-        }
+        ai_chance = { factor = 33 }
     }
-
 }
