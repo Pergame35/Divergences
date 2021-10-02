@@ -1526,3 +1526,53 @@ country_event = {
         set_country_flag = mad_baron
     }
 }
+
+country_event = { #Event to prevent Chinese uncivs from mobilising through the new unciv reforms
+    id = 48943
+    title = "EVTNAME48943"
+    desc = "EVTDESC48943"
+    picture = "emperor_xuande"
+
+    trigger = {
+        is_culture_group = chinese
+		exists = yes
+        civilized = no
+		NOT = { year = 1910 }
+        NOT = { has_country_flag = weisuo_mobilisation }
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    option = {
+        name = "EVT48943OPTA"
+		set_country_flag = weisuo_mobilisation
+		add_country_modifier = {
+			name = "china_weisuo"
+			duration = -1
+		}		
+    }
+}
+
+country_event = { #Event to allow Chinese nations to civilise past 1910 or if they are civilised
+    id = 48944
+    title = "EVTNAME48944"
+    desc = "EVTDESC48944"
+    picture = "levee_breaks"
+
+    trigger = {
+		exists = yes
+        OR = {
+			civilized = yes
+			year = 1910
+		}
+        has_country_flag = weisuo_mobilisation
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    option = {
+        name = "EVT48944OPTA"
+        remove_country_modifier = china_weisuo
+        clr_country_flag = weisuo_mobilisation		
+    }
+}
