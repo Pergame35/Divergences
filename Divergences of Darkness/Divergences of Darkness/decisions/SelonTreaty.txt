@@ -23,4 +23,35 @@ political_decisions = {
             SPA = { prestige = -10 }
         }
     }
+
+    selon_treaty_SPA = {
+        picture = borneo_map
+        potential = {
+            tag = SPA
+            year = 1840
+            NOT = { has_global_flag = selon_treaty }
+            NOT = { has_global_flag = DVG_infamy }
+        }
+        allow = {
+            is_greater_power = yes
+            NOT = { war = yes }
+        }
+        effect = {
+            set_global_flag = selon_treaty
+            country_event = 95601
+            badboy = 10
+            relation = {
+                who = DUA
+                value = -25
+            }
+            relation = {
+                who = BRG
+                value = -25
+            }
+            relation = {
+                who = SCA
+                value = -25
+            }
+        }
+    }    
 }
