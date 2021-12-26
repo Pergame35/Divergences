@@ -12,6 +12,7 @@ country_event = {
         OR = {
             is_disarmed = yes
             has_recently_lost_war = yes
+			NOT = { government = theocracy }
         }
     }
 
@@ -21,7 +22,6 @@ country_event = {
 
     option = {
         name = "EVTOPTA90670"
-        government = absolute_monarchy
         any_pop = {
             militancy = 10.0
             consciousness = 5.0
@@ -110,5 +110,27 @@ country_event = {
             limit = { is_accepted_culture = yes }
             militancy = -2
         }
+    }
+}
+
+#Change goverment event - "government" effect doesn't seem to work in event option -> any_country = {...} scope (condition check for theocracy required, rebels might've flipped you to something else)
+country_event = {
+    id = 90674
+    title = "EVTNAME90674"
+    desc = "EVTDESC90674"
+    picture = "abd_al_qadir"
+
+    trigger = {
+        has_country_flag = declared_permanent_jihad
+        has_country_flag = jihad_broken
+		goverment = theocracy
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA90674"
+
+        government = absolute_monarchy
     }
 }

@@ -661,4 +661,43 @@ political_decisions = {
         }
     }	
 	
+    reclaim_cyprus = {
+        picture = Greece_VEN
+        potential = {
+            has_global_flag = fartheewell
+			834 = { owned_by = THIS }
+			832 = { owned_by = THIS }
+			839 = { owned_by = THIS }
+            MAC = {
+                all_core = { owned_by = THIS }
+            }
+            BUL = {
+                all_core = { owned_by = THIS }
+            }
+            tag = TUR
+            NOT = { has_country_flag = tur_cyp_claimed }
+            OR = {
+                government = absolute_monarchy
+                government = prussian_constitutionalism
+                government = hms_government
+            }
+        }
+        allow = {
+            NOT = { exists = MAC }
+            is_greater_power = yes
+            NOT = { war = yes }
+        }
+
+        effect = {
+            prestige = 4
+            badboy = 5
+            set_country_flag = tur_cyp_claimed
+            CYP = {
+				all_core = { add_core = THIS }
+            }
+			847 = { add_core = THIS }
+			848 = { add_core = THIS }
+        }
+        ai_will_do = { factor = 1 }
+    }
 }

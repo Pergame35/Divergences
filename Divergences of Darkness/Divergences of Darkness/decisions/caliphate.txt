@@ -28,6 +28,9 @@ political_decisions = {
                     }
                 }
             }
+			
+			#NOT = { has_country_flag = secularized_muslim_society }
+			#intentionally not required because a player might accidentally lock himself out as secularization can not be undone.
         }
 
         effect = {
@@ -62,4 +65,58 @@ political_decisions = {
             }
         }
     }
+	
+	
+#    mend_muslim_schism = {
+#        picture = form_arab_union
+#        potential = {
+#			tag = UAR
+#            has_country_flag = declared_permanent_jihad
+#            NOT = { has_country_flag = mend_muslim_schism }
+#			NOT = { has_country_flag = jihad_broken }
+#            OR = {
+#                has_country_flag = sunni_country
+#                has_country_flag = shiite_country
+#                has_country_flag = ibadi_country
+#            }
+#            government = theocracy
+#		}
+#		
+#		allow = {
+#            UAR = {
+#                all_core = {
+#					owned_by = THIS
+#                }
+#            }
+#            ARY = {
+#                all_core = {
+#					owned_by = THIS
+#				}
+#			}
+			#oman
+			#delhi
+			#constantinople
+			#sicily
+			#cordoba
+			#samarkand
+			#Sindh
+			#Bengal
+			#Sumatra, Malacca
+			#Kano, Timbuktu, Dakar, Mogadishu, zanzibar
+#		
+#		}
+#		
+#       effect = {
+#           set_country_flag = mend_muslim_schism
+#			any_owned = {
+#				convert = yes		#<- doesnt exist sadly :(
+#			}
+#		}
+#		
+#        ai_will_do = {
+#            factor = 1
+#        }
+#	}
+
+
 }

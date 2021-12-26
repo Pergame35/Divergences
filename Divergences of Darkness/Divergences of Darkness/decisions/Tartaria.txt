@@ -52,7 +52,10 @@ political_decisions = {
         effect = {
             any_country = {
                 limit = {
-                    is_culture_group = tatar_group
+                    OR = {
+						is_culture_group = tatar_group
+						tag = CIR
+					}
                     OR = {
                         in_sphere = THIS
                         vassal_of = THIS

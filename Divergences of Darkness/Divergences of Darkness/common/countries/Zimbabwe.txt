@@ -19,7 +19,7 @@ party = {
 }
 
 party = {
-    name = "AAA_conservative_3" # Monarchists
+    name = "ZBW_conservative" # Monarchists
     start_date = 1830.1.1
     end_date = 2000.1.1
 
@@ -34,7 +34,7 @@ party = {
 }
 
 party = {
-    name = "AAA_liberal_3" # Reformists
+    name = "ZBW_liberal" # Reformists
     start_date = 1830.1.1
     end_date = 2000.1.1
 
@@ -49,37 +49,7 @@ party = {
 }
 
 party = {
-    name = "AAA_liberal_4" # Liberal Democrats
-    start_date = 1830.1.1
-    end_date = 2000.1.1
-
-    ideology = liberal
-    social_policy = no_position_set
-
-    economic_policy = laissez_faire
-    trade_policy = free_trade
-    religious_policy = secularized
-    citizenship_policy = full_citizenship
-    war_policy = pacifism
-}
-
-party = {
-    name = "AAA_socialist_1" # Labour Party
-    start_date = 1848.1.1
-    end_date = 2000.1.1
-
-    ideology = socialist
-    social_policy = welfare_state
-
-    economic_policy = interventionism
-    trade_policy = protectionism
-    religious_policy = secularized
-    citizenship_policy = limited_citizenship
-    war_policy = jingoism
-}
-
-party = {
-    name = "AAA_socialist_3" # People's Party
+    name = "ZBW_socialist" # People's Party
     start_date = 1848.1.1
     end_date = 2000.1.1
 
@@ -94,7 +64,7 @@ party = {
 }
 
 party = {
-    name = "AAA_reactionary_1" # Traditionalists
+    name = "ZBW_reactionary" # Traditionalists
     start_date = 1820.1.1
     end_date = 2000.1.1
 
@@ -109,7 +79,7 @@ party = {
 }
 
 party = {
-    name = "AAA_anarcho_liberal_1" # Free Trade Party
+    name = "ZBW_anarcho_liberal" # Free Trade Party
     start_date = 1830.1.1
     end_date = 2000.1.1
 
@@ -124,7 +94,7 @@ party = {
 }
 
 party = {
-    name = "AAA_communist_2" # Internationalists
+    name = "ZBW_communist" # Internationalists
     start_date = 1848.1.1
     end_date = 2000.1.1
 
@@ -139,7 +109,7 @@ party = {
 }
 
 party = {
-    name = "AAA_fascist_1" # National Socialists
+    name = "ZBW_fascist" # National Socialists
     start_date = 1905.1.1
     end_date = 2000.1.1
 

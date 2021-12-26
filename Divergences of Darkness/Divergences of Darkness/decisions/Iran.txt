@@ -168,6 +168,190 @@ political_decisions = {
 			set_country_flag = accepted_tats	
         }
         ai_will_do = { factor = 1 }
-    }		
+    }
+
+    treaty_of_bandar_abbas = {
+        picture = treaty_bandar_abbas
+        potential = {
+            OR = {
+                tag = ZND
+                tag = PER
+                tag = ARY
+            }
+            1071 = {
+                owner = {
+                    OR = {
+						NOT = { primary_culture = persian }
+						capital_scope = { continent = europe }
+					}
+                    war_with = THIS
+                }
+            }
+			NOT = { has_country_flag = signed_bandar_abbas }
+        }
+
+        allow = {
+            war = yes
+            1071 = {
+                controlled_by = THIS
+                province_control_days = 365
+            }
+
+            THIS = {
+                all_core = {
+                    OR = {
+                        controlled_by = THIS
+                        controller = { alliance_with = THIS }
+                        empty = yes
+                        province_id = 1071
+                        owner = {
+                            NOT = { war_with = THIS }
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+			set_country_flag = signed_bandar_abbas
+            random_country = {
+                limit = {
+                    owns = 1071
+                    war_with = THIS
+                }
+                country_event = 180015
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    settle_iranian_nomads = {
+        picture = bakhtiari_khan
+        potential = {
+            OR = { 
+                tag = ZND
+                tag = PER
+                tag = ARY
+			}
+			has_country_flag = tribal_troubles_shekhbizin
+            NOT = { has_country_flag = settled_iranian_nomads }			
+        }
+        allow = {
+            war = no
+            freedom_of_trade = 1			
+            owns = 1117			
+            owns = 1127
+            owns = 1135			
+        }
+        effect = {
+            remove_accepted_culture = lurish
+            remove_accepted_culture = qashqai
+			1119 = { trade_goods = cotton }
+			1120 = { trade_goods = cotton }			
+			1122 = { trade_goods = fruit }
+			1128 = { trade_goods = iron }
+			1133 = { trade_goods = grain }
+			1134 = { trade_goods = cotton }
+			3326 = { trade_goods = fruit }
+            any_owned = {
+                limit = { has_province_modifier = lurish_administration }
+                remove_province_modifier = lurish_administration
+            }
+            any_owned = {
+                limit = { has_province_modifier = qashqai_administration }
+                remove_province_modifier = qashqai_administration
+            }
+			PER_1135 = { add_core = QSQ }
+			PER_1122 = { add_core = LUR }
+			PER_1138 = { add_core = LUR }
+			925 = { add_core = LUR }
+			928 = { add_core = LUR }
+            any_pop = {
+                limit = { has_pop_culture = lurish }
+                militancy = 3
+                consciousness = 2
+            }
+            any_pop = {
+                limit = { has_pop_culture = qashqai }
+                militancy = 3
+                consciousness = 2
+            }			
+			set_country_flag = settled_iranian_nomads	
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    reform_iranian_tribal_army = {
+        picture = bakhtiari_isfahan
+        potential = {
+            OR = { 
+                tag = ZND
+                tag = PER
+                tag = ARY
+			}
+			has_country_flag = settled_iranian_nomads
+            NOT = { has_country_flag = reformed_iranian_tribal_army }			
+        }
+        allow = {
+            war = no
+            military_plans = 1			
+            owns = 1117			
+            owns = 1127
+            owns = 1135			
+        }
+        effect = {
+			remove_country_modifier = shekhbizin_tribal_army	
+			set_country_flag = reformed_iranian_tribal_army	
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    shekhbizin_basra = {
+        picture = basra_map
+        potential = {
+            OR = { 
+                tag = ZND
+                tag = PER
+			}
+			has_country_flag = tribal_troubles_shekhbizin
+			NOT = { 932 = { is_core = THIS } }
+        }
+        allow = {
+            war = no		
+            owns = 1132			
+        }
+        effect = {
+			932 = { add_core = THIS }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    shekhbizin_mazun = {
+        picture = buyyid_gulf
+        potential = {
+            OR = { 
+                tag = ZND
+                tag = PER
+				tag = ARY
+			}
+			932 = { is_core = THIS }
+			has_country_flag = tribal_troubles_shekhbizin
+			NOT = { has_country_flag = mazun_shekhbizin }
+        }
+        allow = {
+            war = no		
+            owns = 932
+			state_n_government = 1
+        }
+        effect = {
+			ABU_1162 = { add_core = THIS }		
+			935 = { add_core = THIS }
+			1163 = { add_core = THIS }
+			1164 = { add_core = THIS }			
+			set_country_flag = mazun_shekhbizin
+        }
+        ai_will_do = { factor = 1 }
+    }	
 	
 }

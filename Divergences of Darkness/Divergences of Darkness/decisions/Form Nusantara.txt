@@ -61,19 +61,7 @@ political_decisions = {
             1458 = { add_core = NUS }
             1455 = { add_core = NUS }
             1456 = { add_core = NUS }
-            2562 = { add_core = NUS }
-            1485 = { add_core = NUS }
-            1379 = { add_core = NUS }
-            1378 = { add_core = NUS }
-            1368 = { add_core = NUS }
-            1381 = { add_core = NUS }
-            1380 = { add_core = NUS }
-            1382 = { add_core = NUS }
-            1383 = { add_core = NUS }
-            1367 = { add_core = NUS }
-            1364 = { add_core = NUS }
-            2244 = { add_core = NUS }
-            2406 = { add_core = NUS }
+			
         }
         ai_will_do = { factor = 1 }
     }
@@ -93,6 +81,7 @@ political_decisions = {
         }
         effect = {
             prestige = 15
+			badboy = 10
             set_country_flag = greater_nusantara_claimed
             add_accepted_culture = champa
             add_accepted_culture = melanesian
@@ -101,6 +90,29 @@ political_decisions = {
             add_accepted_culture = balinese
             add_accepted_culture = dayak
             add_accepted_culture = acehnese
+			
+			#Champa + Taiwan
+            1379 = { add_core = NUS }
+            1378 = { add_core = NUS }
+            1368 = { add_core = NUS }
+            1381 = { add_core = NUS }
+            1380 = { add_core = NUS }
+            1382 = { add_core = NUS }
+            1383 = { add_core = NUS }
+            1367 = { add_core = NUS }
+            1364 = { add_core = NUS }
+            2244 = { add_core = NUS }
+            2406 = { add_core = NUS }
+            2681 = { add_core = NUS }
+            1485 = { add_core = NUS }
+            2562 = { add_core = NUS }
+			
+			#Thai States
+			SIA_1366 = { add_core = NUS }
+			SIA_1346 = { add_core = NUS }
+			ENG_1352 = { add_core = NUS }
+			
+			#Polynesia + Madagascar + NZ
             2123 = { add_core = NUS }
             2124 = { add_core = NUS }
             2120 = { add_core = NUS }
@@ -160,6 +172,7 @@ political_decisions = {
             2526 = { add_core = NUS }
             2623 = { add_core = NUS }
             658 = { add_core = NUS }
+            1499 = { add_core = NUS }
         }
         ai_will_do = { factor = 1 }
     }

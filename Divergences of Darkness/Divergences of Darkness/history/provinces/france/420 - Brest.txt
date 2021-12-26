@@ -11,13 +11,4 @@ naval_base = 2
 #	building = lumber_mill
 #	upgrade = yes
 #}
-1861.1.1 = {
-	state_building = {
-		level = 1
-		building = steamer_shipyard
-		upgrade = yes
-	}
-}
-1861.1.1 = { 
-	naval_base = 3
-}
+

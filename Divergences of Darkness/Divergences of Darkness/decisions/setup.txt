@@ -116,6 +116,7 @@ political_decisions = {
         allow = { always = no }
 
         effect = {
+			CLN = { country_event = 477877789 }
             any_country = {
                 limit = { exists = yes }
                 set_country_flag = existing_country
@@ -157,8 +158,69 @@ political_decisions = {
             }
 
             TUS = { country_event = 36720 }
+			
+            ###################### Uncivs Stuff #######################
+            any_country = {
+                limit = {
+                    civilized = no
+                    has_country_modifier = uncivilized_isolationism
+                }
+                political_reform = closed_borders
+            }
+			
+            any_country = {
+                limit = {
+                    has_country_flag = lacking_writing_system
+                    exists = yes
+                }
+                add_country_modifier = { name = lacks_writing_system duration = -1 }
+            }
+			
+			ADA = { add_country_modifier = { name = zemene_mesafint duration = 3650 } small_arms = 50 canned_food = 50 regular_clothes = 50 }
+			AMT = { add_country_modifier = { name = zemene_mesafint duration = 3650 } small_arms = 50 canned_food = 50 regular_clothes = 50 }
+			ETH = { add_country_modifier = { name = zemene_mesafint duration = 3650 } small_arms = 100 canned_food = 100 regular_clothes = 100 grain = 200 }
+			
+            ##########################################################
+			
+            any_country = {
+                limit = {
+                    war = yes
+				}
+				treasury = 10000
+			}
+            any_country = {
+                limit = {
+                    war = yes
+					civilized = no
+				}
+				grain = 200
+				small_arms = 20
+				canned_food = 20
+				regular_clothes = 20
+			}
+            any_country = {
+                limit = {
+                    war = yes
+					civilized = yes
+				}
+				small_arms = 100
+				canned_food = 100
+				regular_clothes = 100
+			}
+            any_country = {
+                limit = {
+                    war = yes
+					civilized = yes
+					is_greater_power = yes
+				}
+				small_arms = 400
+				canned_food = 400
+				regular_clothes = 400
+			}
+			
 
             set_global_flag = setup_complete
+			
         }
 
         ai_will_do = { factor = 0 }

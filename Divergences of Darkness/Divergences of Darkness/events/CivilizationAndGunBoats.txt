@@ -4176,16 +4176,16 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        1714 = { empty = no }
+        1720 = { empty = no }
         1718 = { empty = no }
-        1714 = {
+        1720 = {
             NOT = { is_core = ALD }
         }
         1718 = {
             NOT = { is_core = ALD }
         }
         OR = {
-            owns = 1714
+            owns = 1720
             owns = 1718
         }
         NOT = { has_global_flag = algeria_claimed_sahara }
@@ -4194,7 +4194,7 @@ country_event = {
     option = {
         name = "EVTOPTA90953"
         set_global_flag = algeria_claimed_sahara
-        #		ALD_1714 = { add_core = ALD }
+        ALD_1714 = { add_core = ALD }
         ALD_1718 = { add_core = ALD }
     }
 }
@@ -4426,14 +4426,19 @@ province_event = {
                 NOT = { province_id = 1496 }
                 NOT = { province_id = 1569 }
                 NOT = { province_id = 1566 }
+                NOT = { province_id = 1481 }
             }
             AND = {
                 province_id = 1569
-                total_pops = 30000
+                #total_pops = 30000
             }
             AND = {
                 province_id = 1566
-                total_pops = 30000
+                #total_pops = 30000
+            }
+            AND = {
+                province_id = 1481
+                #total_pops = 30000
             }
         }
         port = yes

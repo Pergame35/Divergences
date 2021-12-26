@@ -686,15 +686,19 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { 
-	name = "334323.A"
-	war = { 
-	target = TON  
-	attacker_goal = {
+		name = "334323.A"
+        casus_belli = {
+            target = TON
+            type = establish_protectorate_casus_belli
+            months = 60
+        }		
+		war = { 
+			target = TON  
+			attacker_goal = {
 				casus_belli = establish_protectorate_casus_belli 
 			}
 		}
-	badboy = -7 
-	ai_chance = { factor = 90 }
+		ai_chance = { factor = 90 }
 	}
 	
 	option = { 
@@ -1608,6 +1612,101 @@ country_event = {
 		}
 	}
 }	
+
+#KKN cores on DNG
+country_event = {
+	id = 334353
+	title = "334353.T"
+	desc = "334353.D"
+	picture = "occupation_of_araucania"
+
+	fire_only_once = yes
+	
+	trigger = { 
+		OR = {
+			tag = JAP
+			AND = {
+				tag = KKN
+				JAP = { is_our_vassal = KKN }
+			}
+		}
+		exists = yes
+		DNG = { 
+			exists = no
+			all_core = {
+				OR = {
+					owned_by = JAP
+					owned_by = KKN
+					empty = yes
+				}
+			}
+		}
+		war = no
+	}
+	
+	mean_time_to_happen = { 
+		months = 6
+	}
+	
+	option = {
+		name = "334353.A"
+		DNG = { 
+			all_core = {
+				add_core = KKN
+			}
+		}
+		random_country = {
+			limit = {
+				tag = KKN
+				exists = yes
+				THIS = { is_our_vassal = KKN }
+			}
+			country_event = 334354
+		}
+		prestige = 5
+		
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "334353.B"
+		prestige = -1
+		ai_chance = { factor = 0 }
+	}
+}	
+
+#DNG transfer to KKN
+country_event = {
+	id = 334354
+	title = "334354.T"
+	desc = "334354.D"
+	picture = "occupation_of_araucania"
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "334354.A"
+		FROM = {
+			any_owned = {
+				limit = {
+					is_core = THIS
+				}
+				secede_province = THIS
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
 #Spanish islands
 

@@ -556,7 +556,7 @@ political_reforms = {
                     is_culture_group = native_north_american
                     is_culture_group = mesoandean
                     is_culture_group = native_south_american
-                    is_culture_group = latin_american_cultures
+                    is_culture_group = latin_american
                     is_culture_group = scandinavian_american
                     is_culture_group = burgundian_american
                     is_culture_group = anglois_american
@@ -857,6 +857,7 @@ economic_reforms = {
 			tax_efficiency = 0.05
 			civilization_progress_modifier = 0.10
 			research_points = 0.1
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -891,6 +892,7 @@ economic_reforms = {
 			education_efficiency_modifier = 0.10
 			civilization_progress_modifier = 0.05
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -917,6 +919,7 @@ economic_reforms = {
 			education_efficiency_modifier = 0.10
 			civilization_progress_modifier = 0.10
 			research_points = 0.1
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -949,7 +952,7 @@ economic_reforms = {
 		yes_firearms_production = {
 			technology_cost = 5000
 			civilization_progress_modifier = 0.05
-			allow = { NOT = { has_country_flag = lacking_writing_system } money = 10000 }
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			research_points = 0.05
 			
 			on_execute = {
@@ -977,6 +980,7 @@ economic_reforms = {
 			technology_cost = 7500
 			civilization_progress_modifier = 0.10
 			research_points = 0.1
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1011,6 +1015,7 @@ economic_reforms = {
 			technology_cost = 5000 #was 8000
 			civilization_progress_modifier = 0.05 #was 0.15
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1036,6 +1041,7 @@ economic_reforms = {
 			technology_cost = 7500
 			civilization_progress_modifier = 0.10
 			research_points = 0.1
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1067,6 +1073,7 @@ economic_reforms = {
 			technology_cost = 5000 #was 10000
 			civilization_progress_modifier = 0.05
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1092,6 +1099,7 @@ economic_reforms = {
 			technology_cost = 7500
 			civilization_progress_modifier = 0.10
 			research_points = 0.1
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1125,6 +1133,7 @@ economic_reforms = {
 			civilization_progress_modifier = 0.05 #was 0.15
 			max_loan_modifier = -1.0 # no loan 4 u
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1151,6 +1160,7 @@ economic_reforms = {
 			civilization_progress_modifier = 0.10 #was 0.35
 			research_points = 0.1
 			max_loan_modifier = -0.2 # 80% loans
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1183,6 +1193,7 @@ economic_reforms = {
 			technology_cost = 5000
 			civilization_progress_modifier = 0.05
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1209,6 +1220,7 @@ economic_reforms = {
 			technology_cost = 7500
 			civilization_progress_modifier = 0.10
 			research_points = 0.1
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			
 			on_execute = {
@@ -1245,6 +1257,7 @@ economic_reforms = {
 			mine_rgo_eff = 0.20
 			civilization_progress_modifier = 0.05 #was 0.15
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				trigger = {
@@ -1283,6 +1296,7 @@ economic_reforms = {
 			mine_rgo_eff = 0.40
 			civilization_progress_modifier = 0.10
 			research_points = 0.1
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1315,6 +1329,7 @@ economic_reforms = {
 			technology_cost = 5000 #was 15000
 			civilization_progress_modifier = 0.05 #was 0.10
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				trigger = {
@@ -1345,6 +1360,7 @@ economic_reforms = {
 			technology_cost = 7500
 			civilization_progress_modifier = 0.10
 			research_points = 0.1
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1379,6 +1395,7 @@ economic_reforms = {
 			technology_cost = 5000
 			civilization_progress_modifier = 0.05
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1404,6 +1421,7 @@ economic_reforms = {
 			technology_cost = 7500
 			civilization_progress_modifier = 0.10
 			research_points = 0.1
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1434,7 +1452,7 @@ military_reforms = {
 	foreign_training = {
 		next_step_only = yes
 		no_foreign_training = {
-					global_pop_militancy_modifier = -0.01
+			global_pop_militancy_modifier = -0.01
 		}
 		yes_foreign_training = {
 			technology_cost = 5000 #was 8000
@@ -1467,11 +1485,13 @@ military_reforms = {
 		}
 		foreign_training_two = {
 			technology_cost = 7500
+			
 			land_organisation = 0.15
 			mobilisation_size = 0.2
 			civilization_progress_modifier = 0.10
 			#research_points_on_conquer = 0.10
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 
 			on_execute = {
@@ -1500,8 +1520,9 @@ military_reforms = {
 			global_pop_militancy_modifier = -0.01
 		}
 		yes_foreign_weapons = {
-			land_defense_modifier = 0.1
 			technology_cost = 5000 #was 10000
+			
+			land_defense_modifier = 0.1
 			civilization_progress_modifier = 0.05 #was 0.10
 			#research_points_on_conquer = 0.05 #0.25
 			research_points = 0.02
@@ -1528,6 +1549,7 @@ military_reforms = {
 		}
 		foreign_weapons_two = {
 			technology_cost = 7500
+			
 			land_defense_modifier = 0.15
 			civilization_progress_modifier = 0.10
 			#research_points_on_conquer = 0.10
@@ -1561,6 +1583,7 @@ military_reforms = {
 		}
 		yes_military_constructions = {
 			technology_cost = 5000 #10000
+			
 			civilization_progress_modifier = 0.05
 			research_points = 0.02
 			
@@ -1587,8 +1610,10 @@ military_reforms = {
 		}
 		military_constructions_two = {
 			technology_cost = 7500
+			
 			civilization_progress_modifier = 0.10
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 
 			on_execute = {
 				effect = {
@@ -1618,14 +1643,16 @@ military_reforms = {
 	foreign_officers = {
 		next_step_only = yes
 		no_foreign_officers = {
-				global_pop_militancy_modifier = -0.01
+			global_pop_militancy_modifier = -0.01
 		}
 		yes_foreign_officers = {
-			leadership_modifier = 0.10
 			technology_cost = 5000 #was 10000
+			
+			leadership_modifier = 0.10
 			civilization_progress_modifier = 0.05 #was 0.10
 			#research_points_on_conquer = 0.10 #was 0.25
 			research_points = 0.02
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1648,11 +1675,13 @@ military_reforms = {
 			}
 		}
 		foreign_officers_two = { #new
-			leadership_modifier = 0.20
 			technology_cost = 7500
+			
+			leadership_modifier = 0.20
 			civilization_progress_modifier = 0.10
 			#research_points_on_conquer = 0.15
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 
 			on_execute = {
 
@@ -1682,8 +1711,9 @@ military_reforms = {
 				global_pop_militancy_modifier = -0.01
 		}
 		yes_army_schools = {
-			land_unit_start_experience = 10
 			technology_cost = 5000 #was 10000
+			
+			land_unit_start_experience = 10
 			civilization_progress_modifier = 0.05 #was 0.10
 			research_points = 0.02
 		
@@ -1708,10 +1738,12 @@ military_reforms = {
 			}
 		}
 		army_schools_two = { #new
-			land_unit_start_experience = 10
 			technology_cost = 7500
+			
+			land_unit_start_experience = 10
 			civilization_progress_modifier = 0.10
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 		
 			on_execute = {
 				effect = {
@@ -1737,14 +1769,16 @@ military_reforms = {
 	foreign_naval_officers = {
 		next_step_only = yes
 		no_foreign_naval_officers = {
-				global_pop_militancy_modifier = -0.01
+			global_pop_militancy_modifier = -0.01
 		}
 		yes_foreign_naval_officers = {
-			tariff_efficiency_modifier = 0.10 #was 0.20
 			technology_cost = 5000 #was 10000
+			
+			tariff_efficiency_modifier = 0.10 #was 0.20
 			civilization_progress_modifier = 0.05 #was 0.10
 			#research_points_on_conquer = 0.05 #new
 			research_points = 0.02
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1767,11 +1801,13 @@ military_reforms = {
 			}
 		}
 		foreign_naval_officers_two = { #new
-			tariff_efficiency_modifier = 0.20
 			technology_cost = 7500
+			
+			tariff_efficiency_modifier = 0.20
 			civilization_progress_modifier = 0.10
 			#research_points_on_conquer = 0.10
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 
 			on_execute = {
 				effect = {
@@ -1798,12 +1834,12 @@ military_reforms = {
 	foreign_navies = {
 		next_step_only = yes
 		no_foreign_navies = {
-				global_pop_militancy_modifier = -0.01
+			global_pop_militancy_modifier = -0.01
 		}
 		yes_foreign_navies = {
+			technology_cost = 5000 #10000
 			naval_attack_modifier = 0.2
 			naval_defense_modifier = 0.2
-			technology_cost = 5000 #10000
 			civilization_progress_modifier = 0.05 #was 0.10
 			#research_points_on_conquer = 0.05 #new
 			research_points = 0.02
@@ -1829,12 +1865,13 @@ military_reforms = {
 			}
 		}
 		foreign_navies_two = {
+			technology_cost = 7500 #10000
 			naval_attack_modifier = 0.4
 			naval_defense_modifier = 0.4
-			technology_cost = 7500 #10000
 			civilization_progress_modifier = 0.1
 			#research_points_on_conquer = 0.10
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1861,13 +1898,15 @@ military_reforms = {
 	naval_schools = {
 		next_step_only = yes
 		no_naval_schools = {
-				global_pop_militancy_modifier = -0.01
+			global_pop_militancy_modifier = -0.01
 		}
 		yes_naval_schools = {
-			naval_unit_start_experience = 10
 			technology_cost = 5000 #was 10000
+			
+			naval_unit_start_experience = 10
 			civilization_progress_modifier = 0.05 #was 0.10
 			research_points = 0.02
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {
@@ -1891,8 +1930,10 @@ military_reforms = {
 		}
 		naval_schools_two = { #new
 			technology_cost = 7500
+			
 			civilization_progress_modifier = 0.10
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 
 			on_execute = {
 				effect = {
@@ -1923,6 +1964,7 @@ military_reforms = {
 		
 		yes_western_shipyards = {
 			technology_cost = 5000
+			
 			civilization_progress_modifier = 0.05
 			research_points = 0.02
 			
@@ -1954,12 +1996,14 @@ military_reforms = {
 		
 		western_shipyards_two = {
 			technology_cost = 7500
+			
 			civilization_progress_modifier = 0.10
 			research_points = 0.05
 			
 			allow = {
 				any_owned_province = { port = yes }
 				ai = no
+				NOT = { has_country_flag = lacking_writing_system }
 			}
 			
 			on_execute = {
@@ -1992,6 +2036,7 @@ military_reforms = {
 		}
 		yes_foreign_artillery = {
 			technology_cost = 5000
+			
 			civilization_progress_modifier = 0.05
 			research_points = 0.02
 			
@@ -2019,8 +2064,10 @@ military_reforms = {
 		
 		foreign_artillery_two = {
 			technology_cost = 7500
+			
 			civilization_progress_modifier = 0.10
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } }
 			
 			on_execute = {
 				effect = {

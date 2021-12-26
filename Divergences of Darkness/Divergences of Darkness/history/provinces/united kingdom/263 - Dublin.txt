@@ -4,20 +4,5 @@ add_core = DUA
 add_core = IRE
 trade_goods = grain
 naval_base = 1
-life_rating = 35
-1861.1.1 = {
-	state_building = {
-		level = 1
-		building = fabric_factory
-		upgrade = yes
-	}
-	state_building = {
-		level = 1
-		building = furniture_factory
-		upgrade = yes
-	}
-}
-1861.1.1 = { 
-	railroad = 3
-	naval_base = 2
-}
+life_rating = 37
+

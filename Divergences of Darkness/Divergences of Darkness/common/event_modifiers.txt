@@ -2056,6 +2056,13 @@ disunited_country = {
     icon = 8
 }
 
+zemene_mesafint = {
+    war_exhaustion = -2.5
+    supply_consumption = -0.75
+    icon = 18
+}
+
+
 ### The Great Game ###
 border_incident = {
     war_exhaustion = -0.01
@@ -2439,11 +2446,11 @@ italian_emigration = {
     icon = 4
 }
 
-integration_sicily = { tax_efficiency = -0.2 }
+integration_sicily = { tax_efficiency = -0.05 }
 
 integration_arborea = { tax_efficiency = -0.05 }
 
-integration_venice = { tax_efficiency = -0.15 }
+integration_venice = { tax_efficiency = -0.05 }
 
 stroganov_romanov = {
     research_points = 1
@@ -2555,26 +2562,23 @@ federales_CLM = {
 
 ####
 
+
+war_propaganda = {
+    war_exhaustion = -0.02
+    badboy = 0.01
+    icon = 15
+}
+
+government_propaganda = {
+    literacy_con_impact = -0.20
+    issue_change_speed = -0.20
+    ruling_party_support = 0.2
+    icon = 5
+}
+
 war_focus = {
     war_exhaustion = -0.1
     icon = 7
-}
-
-kongo_missing_children = {
-    core_pop_militancy_modifier = 0.15
-    icon = 7
-}
-
-influx_of_ideas = {
-    research_points_modifier = 0.5
-    education_efficiency_modifier = 0.1
-    icon = 5
-}
-
-kongo_missionaries = {
-    education_efficiency_modifier = 0.2
-    core_pop_militancy_modifier = 0.05
-    icon = 5
 }
 
 ### Ideological Strongholds ###
@@ -2614,6 +2618,29 @@ communist_stronghold = {
 fascist_stronghold = {
     pop_consciousness_modifier = -0.1
     pop_militancy_modifier = 0.05
+    icon = 3
+}
+
+### Kongo ###
+kongo_missing_children = {
+    core_pop_militancy_modifier = 0.15
+    icon = 7
+}
+
+influx_of_ideas = {
+    research_points_modifier = 0.5
+    education_efficiency_modifier = 0.1
+    icon = 5
+}
+
+kongo_missionaries = {
+    education_efficiency_modifier = 0.2
+    core_pop_militancy_modifier = 0.05
+    icon = 5
+}
+
+demoralized_warriors = {
+    land_organisation = -0.5
     icon = 3
 }
 
@@ -2668,6 +2695,39 @@ flowers_of_ruin = {
 	land_defense_modifier = 0.05
 	supply_consumption = -0.1	
 	icon = 5
+}
+
+qeshm_trade = {
+	tax_efficiency = 0.05
+	research_points_modifier = 0.05
+    global_pop_consciousness_modifier = 0.01
+    global_pop_militancy_modifier = 0.01	
+	icon = 7
+}
+
+esfahan_opium_production = {
+    tariff_efficiency_modifier = 0.2
+    pop_consciousness_modifier = 0.15	
+	icon = 16
+}
+
+shekhbizin_tribal_army = {
+    mobilisation_size = -0.15
+    icon = 18
+}
+
+lurish_administration = {
+    local_RGO_throughput = -0.25
+	farm_rgo_eff = -0.25
+	mine_rgo_eff = -0.25	
+    icon = 4
+}
+
+qashqai_administration = {
+    local_RGO_throughput = -0.25
+	farm_rgo_eff = -0.25
+	mine_rgo_eff = -0.25	
+    icon = 4
 }
 
 ### China ###

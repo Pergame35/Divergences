@@ -1070,7 +1070,7 @@ style = {
             trigger = {
                 or = {
                     and = {
-                        is_culture_group = latin_american_cultures
+                        is_culture_group = latin_american
                         ruling_party_ideology = communist
                     }
                     and = {
@@ -1078,7 +1078,7 @@ style = {
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            is_culture_group = latin_american_cultures
+                            is_culture_group = latin_american
                             ruling_party_ideology = communist
                         }
                     }
@@ -1087,7 +1087,7 @@ style = {
                         is_vassal = yes
 
                         overlord = {
-                            is_culture_group = latin_american_cultures
+                            is_culture_group = latin_american
                             ruling_party_ideology = communist
                         }
                     }
@@ -1100,7 +1100,7 @@ style = {
             trigger = {
                 or = {
                     and = {
-                        is_culture_group = latin_american_cultures
+                        is_culture_group = latin_american
                         ruling_party_ideology = fascist
                     }
                     and = {
@@ -1108,7 +1108,7 @@ style = {
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            is_culture_group = latin_american_cultures
+                            is_culture_group = latin_american
                             ruling_party_ideology = fascist
                         }
                     }
@@ -1117,7 +1117,7 @@ style = {
                         is_vassal = yes
 
                         overlord = {
-                            is_culture_group = latin_american_cultures
+                            is_culture_group = latin_american
                             ruling_party_ideology = fascist
                         }
                     }
@@ -1130,7 +1130,7 @@ style = {
             trigger = {
                 or = {
                     and = {
-                        is_culture_group = latin_american_cultures
+                        is_culture_group = latin_american
                         ruling_party_ideology = reactionary
                     }
                     and = {
@@ -1138,7 +1138,7 @@ style = {
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            is_culture_group = latin_american_cultures
+                            is_culture_group = latin_american
                             ruling_party_ideology = reactionary
                         }
                     }
@@ -1147,7 +1147,7 @@ style = {
                         is_vassal = yes
 
                         overlord = {
-                            is_culture_group = latin_american_cultures
+                            is_culture_group = latin_american
                             ruling_party_ideology = reactionary
                         }
                     }
@@ -1159,18 +1159,18 @@ style = {
         case = {
             trigger = {
                 or = {
-                    and = { is_culture_group = latin_american_cultures }
+                    and = { is_culture_group = latin_american }
                     and = {
                         civilized = no
                         part_of_sphere = yes
 
-                        sphere_owner = { is_culture_group = latin_american_cultures }
+                        sphere_owner = { is_culture_group = latin_american }
                     }
                     and = {
                         civilized = no
                         is_vassal = yes
 
-                        overlord = { is_culture_group = latin_american_cultures }
+                        overlord = { is_culture_group = latin_american }
                     }
                 }
             }

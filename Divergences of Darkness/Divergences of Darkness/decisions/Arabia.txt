@@ -192,6 +192,9 @@ political_decisions = {
             OR = {
                 is_culture_group = semitic
                 is_culture_group = turkic
+                has_country_flag = sunni_country
+                has_country_flag = shiite_country
+                has_country_flag = ibadi_country
             }
         }
 

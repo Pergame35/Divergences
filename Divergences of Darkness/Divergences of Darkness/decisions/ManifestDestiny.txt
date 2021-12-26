@@ -149,6 +149,13 @@ political_decisions = {
                     tag = CLM
                     owns = 2209
                 }
+                AND = {
+                    tag = AZL
+                    OR = {
+						owns = 2209
+						owns = 198
+					}
+                }
             }
             2219 = {
                 NOT = { owned_by = THIS }

@@ -34,6 +34,7 @@ political_decisions = {
             prestige = 20
             change_tag = PER
             add_accepted_culture = persian
+            add_accepted_culture = caspian			
             any_country = {
                 limit = {
                     is_culture_group = iranian

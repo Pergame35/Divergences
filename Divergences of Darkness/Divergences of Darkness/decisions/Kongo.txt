@@ -117,4 +117,66 @@ political_decisions = {
         }
         ai_will_do = { factor = 1 }
     }
+	
+    kongo_liferating = {
+        picture = "rubber_cycle"
+	
+        potential = {
+            war = no
+            has_country_flag = congo_cultures_integrated
+            NOT = { has_country_flag = kongo_liferating }
+        }
+	
+        allow = {
+            all_core = {
+				owned_by = THIS
+			}
+			money = 10000
+			iron_railroad = 1
+		}
+		
+        effect = {
+            prestige = 5
+			money = -10000
+            set_country_flag = kongo_liferating
+			
+			THIS = { all_core = { limit = { NOT = { life_rating = 10 }  } life_rating = 15 } }
+			THIS = { all_core = { limit = { NOT = { life_rating = 20 }  } life_rating = 5 } }
+			THIS = { all_core = { limit = { NOT = { life_rating = 25 }  } life_rating = 3 } }
+			
+        }
+        ai_will_do = { factor = 1 }
+	}
+	
+	kongo_mining = {
+        picture = "diamond_extraction"
+	
+        potential = {
+            war = no
+            has_country_flag = kongo_liferating
+            NOT = { has_country_flag = kongo_mining }
+        }
+	
+        allow = {
+            all_core = {
+				owned_by = THIS
+			}
+			money = 50000
+		}
+		
+        effect = {
+            prestige = 5
+			money = -50000
+            set_country_flag = kongo_mining
+			
+            1990 = { trade_goods = coal }
+            1987 = { trade_goods = iron }
+            1991 = { trade_goods = precious_metal }
+            1984 = { trade_goods = precious_metal }
+            #2010 = { trade_goods = precious_goods }
+            #2006 = { trade_goods = precious_goods }
+        }
+        ai_will_do = { factor = 1 }
+	}
+	
 }

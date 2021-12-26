@@ -548,8 +548,13 @@ political_decisions = {
                     # Factor = (sphere_owner regiments) / (our regiments).
                     # Returns true if( factor >= x ).
                     # Use NOT statement to check if( factor < x )
- brigades_compare = 3 }
+					brigades_compare = 3 }
             }
+			
+            modifier = {#PLC will reach GP status on their own - so they don't get beaten up by bohemia
+                factor = 0
+				tag = PLC
+			}
         }
     }
 
