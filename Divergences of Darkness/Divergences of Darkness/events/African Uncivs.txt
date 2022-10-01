@@ -6,8 +6,8 @@ country_event = {
     picture = "toucouleur"
 
     trigger = {
+        exists = yes	
         tag = MAL
-        exists = yes
         war = no
         year = 1845
         owns = 1800

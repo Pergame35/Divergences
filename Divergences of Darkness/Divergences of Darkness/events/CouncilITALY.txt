@@ -862,3 +862,241 @@ country_event = {
 
     option = { name = "124218.A" }
 }
+
+country_event = { #If Venice lets Greece go peacefully, become the San Marco's Republic
+    id = 124217
+    title = "EVTNAME124217"
+    desc = "EVTDESC124217"
+
+    picture = "venice_nighttime"
+
+    trigger = {
+		exists = yes	
+        tag = VEN
+		war = no
+		has_country_flag = venice_lost_greece
+        ITA = { exists = no }
+    }
+
+    mean_time_to_happen = { days = 120 }
+	
+    fire_only_once = yes	
+
+    option = {
+        name = "EVTOPTA124217"
+        government = democracy		
+		clr_country_flag = venice_lost_greece
+		set_country_flag = hosting_second_council_ITA
+    }
+}
+
+country_event = { #Opening of the Second Council of Italy
+    id = 124218
+    title = "EVTNAME124218"
+    desc = "EVTDESC124218"
+
+	major = yes
+
+    trigger = {
+		exists = yes	
+        tag = VEN
+		war = no
+		year = 1860		
+		has_country_flag = hosting_second_council_ITA
+		NOT = { has_global_flag = council_of_italy }
+        ITA = { exists = no }
+    }
+
+    mean_time_to_happen = { days = 30 }
+	
+    fire_only_once = yes	
+
+    option = {
+        name = "EVTOPTA124218"	
+        THIS = { 
+			country_event = { 
+				id = 124219
+				days = 5
+			}
+		}
+    }
+}
+
+country_event = { #Second Council of Italy: the Italian Republics
+    id = 124219
+    title = "EVTNAME124219"
+    desc = "EVTDESC124219"
+
+    picture = "adriaticus_sinus"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA124219"
+        any_country = {
+            limit = {
+				exists = yes			
+                is_culture_group = italian
+				NOT = { primary_culture = catalan }
+                has_country_flag = democracy_gov
+				NOT = { rank = 15 }
+            }
+            country_event = 124220
+        }
+        THIS = { 
+			country_event = { 
+				id = 124221
+				days = 5
+			}
+		}		
+    }
+}
+
+country_event = { #Italian Republics choose to be annexed or not
+    id = 124220
+    title = "EVTNAME124220"
+    desc = "EVTDESC124220"
+
+    picture = "adriaticus_sinus"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA124220"
+		FROM = { inherit = THIS }
+        ai_chance = { factor = 100 }			
+    }
+	
+    option = {
+        name = "EVTOPTB124220"
+		prestige = 5
+        ai_chance = { factor = 0 }			
+    }	
+}
+
+country_event = { #Second Council of Italy: the non-aligned nations
+    id = 124221
+    title = "EVTNAME124221"
+    desc = "EVTDESC124221"
+
+    picture = "adriaticus_sinus"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA124221"
+        any_country = {
+            limit = {
+				exists = yes			
+                is_culture_group = italian
+				NOT = { primary_culture = catalan }
+				part_of_sphere = no
+				NOT = { rank = 15 }
+            }
+            country_event = 124220
+        }
+        THIS = { 
+			country_event = { 
+				id = 124222
+				days = 5
+			}
+		}		
+    }	
+}
+
+country_event = { #Second Council of Italy: the rest
+    id = 124222
+    title = "EVTNAME124222"
+    desc = "EVTDESC124222"
+
+    picture = "adriaticus_sinus"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA124222"
+        any_country = {
+            limit = {
+				exists = yes
+                is_culture_group = italian
+				NOT = { primary_culture = catalan }
+				NOT = { rank = 15 }
+            }
+            country_event = 124223
+        }
+        THIS = { 
+			country_event = { 
+				id = 124224
+				days = 5
+			}
+		}		
+    }	
+}
+
+country_event = { #Remaining Italian countries choose to be annexed or not
+    id = 124223
+    title = "EVTNAME124223"
+    desc = "EVTDESC124223"
+
+    picture = "adriaticus_sinus"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA124223"
+		FROM = { inherit = THIS }
+        ai_chance = {
+			factor = 70
+            modifier = {
+                factor = 1.1
+                relation = {
+                    who = FROM
+                    value = 50
+                }
+            }
+            modifier = {
+                factor = 1.2
+                relation = {
+                    who = FROM
+                    value = 100
+                }
+            }
+            modifier = {
+                factor = 0.8
+                government = merchant_republic
+            }
+            modifier = {
+                factor = 0
+                government = absolute_monarchy
+            }
+            modifier = {
+                factor = 0.25
+                ruling_party_ideology = reactionary
+            }			
+		}			
+    }
+	
+    option = {
+        name = "EVTOPTB124223"
+		prestige = 5
+        ai_chance = { factor = 30 }			
+    }	
+}
+
+country_event = { #Second Council of Italy: the result
+    id = 124224
+    title = "EVTNAME124224"
+    desc = "EVTDESC124224"
+
+    picture = "lombardy_xiii"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA124224"
+		add_accepted_culture = north_italian
+		add_accepted_culture = south_italian
+		prestige = 15
+		change_tag = ITA
+    }	
+}

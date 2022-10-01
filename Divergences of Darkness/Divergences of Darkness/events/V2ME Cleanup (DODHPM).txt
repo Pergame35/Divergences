@@ -1,5 +1,5 @@
 #
-# V2ME Cleanup 1.0.3 by Bob Bobington and Dr, configured for DOD-HPM
+# V2ME Cleanup 1.0.6 by Bob Bobington and Dr, configured for DOD-HPM
 #
 #
 #
@@ -20,6 +20,7 @@
 #	-Prevent countries with slavery outlawed from having bugged slave states
 #	-Prevents existing countries from having non-existing overlords
 #	-Prevents existing countries from having non-existing vassals (disabled by default, this is intended in some mods)
+#	-Prevents non-existing countries from being at war
 #
 # Upcoming features (TBA):
 #	-Permanent fix to craftsmen exploit/bug, without player interaction
@@ -37,6 +38,16 @@ country_event = {
 	option = {
 		name = "Checking..."
 		
+		#prevents non-existing country from being at war
+		#NOTE: if this bug happens often in your mod, look at your code! you may be starting invalid wars
+		any_country = {
+			limit = {
+				exists = no
+				war = yes
+			}
+			annex_to = FROM
+		}
+		
 		#abolishing serfdom
 		any_country = {
             limit = {
@@ -44,27 +55,53 @@ country_event = {
                 any_owned_province = { has_pop_type = serfs }
                 NOT = { debt_law = serfdom }
             }
-            any_owned = {
-                limit = {
-                    has_pop_type = serfs
-                    has_pop_type = labourers
-                }
-                any_pop = { limit = { type = serfs } pop_type = labourers money = 1000 }
-            }
-            any_owned = {
-                limit = {
-                    has_pop_type = serfs
-                    has_pop_type = farmers
-                }
-                any_pop = { limit = { type = serfs } pop_type = farmers money = 1000 }
-            }
-            any_owned = {
-                limit = {
-                    has_pop_type = serfs
-                    NOT = { has_pop_type = farmers has_pop_type = labourers }
-                }
-                any_pop = { limit = { type = serfs } pop_type = farmers money = 1000 }
-            }
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = cattle
+						trade_goods = coffee
+						trade_goods = cotton
+						trade_goods = dye
+						trade_goods = fish
+						trade_goods = grain
+						trade_goods = opium
+						trade_goods = fruit
+						trade_goods = wool
+						trade_goods = silk
+						trade_goods = tea
+						trade_goods = tobacco
+					}
+				}
+				any_pop = {
+					limit = {
+						type = serfs
+					}
+					pop_type = farmers
+					money = 1000
+				}
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = oil
+						trade_goods = precious_metal
+						trade_goods = precious_goods
+						trade_goods = rubber
+						trade_goods = sulphur
+						trade_goods = timber
+						trade_goods = tropical_wood
+					}
+				}
+				any_pop = {
+					limit = {
+						type = serfs
+					}
+					pop_type = labourers
+					money = 1000
+				}
+			}
         }
 		
 		#updating existing country flags
@@ -295,9 +332,8 @@ country_event = {
 		#	limit = {
 		#		is_vassal = yes
 		#		exists = no
-		#		overlord = { exists = yes }
 		#	}
-		#	country_event = 477877788
+		#	country_event = 477877794
 		#}
 		
 		#cleanup bad govflags
@@ -800,6 +836,19 @@ country_event = {
 	option = {
 		name = "Nice."
 		overlord = { release_vassal = THIS }
+	}
+}
+
+country_event = {
+	id = 477877794
+	title = "Non-Existing Vassal Cleanup"
+	desc = "We have acquired independence!"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Nice."
+		THIS = { annex_to = THIS }
 	}
 }
 

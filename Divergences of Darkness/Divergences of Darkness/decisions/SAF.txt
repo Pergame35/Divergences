@@ -141,7 +141,10 @@ political_decisions = {
         potential = {
             tag = SAF
             NOT = { has_country_flag = bastaards_SAF }
-            NOT = { accepted_culture = afro_south_african }
+            NOT = { 
+				accepted_culture = afro_south_african
+				primary_culture = afro_south_african
+			}
             has_country_flag = claim_south_africa
             owns = 2574
             owns = 2098

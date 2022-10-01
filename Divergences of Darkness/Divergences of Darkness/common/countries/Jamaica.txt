@@ -155,26 +155,31 @@ party = {
 
 unit_names = {
     dreadnought = {
-        Bosna Herzceg Dalmacija "Gazi Husrev-beg" "Kotromanici" "Kulin ban" Miljacka Sarajevo "Stjepan II" "Tvrtko I"
+        "Charles le Téméraire" "La Bourgogne" Ambiorix
     }
     ironclad = {
-        Bosna Herzceg Dalmacija "Gazi Husrev-beg" "Kotromanici" "Kulin ban" Miljacka Sarajevo "Stjepan II" "Tvrtko I"
+        "Comte de Hainaut" "Comte de Namur" "Prince de Liege" "Duc d'Ursel"
     }
     manowar = {
-        Bosna Herzceg Dalmacija "Gazi Husrev-beg" "Kotromanici" "Kulin ban" Miljacka Sarajevo "Stjepan II" "Tvrtko I"
+        "St. Marie" "St. Joris" "St. Franciscus" "St. Jacobus" "St. Petrus" "St. Bonifatius"
     }
     cruiser = {
-        Bosna Herzceg Dalmacija "Gazi Husrev-beg" "Kotromanici" "Kulin ban" Miljacka Sarajevo "Stjepan II" "Tvrtko I"
+        "François Pelsaert" "Louis Boisot" "Olivier Brunel" "Simon de Cordes" "Albert Dorville" "Jessé de Forest" "Louis Hennepin" "Jacob Mahu"
     }
     frigate = {
-        Bosna Herzceg Dalmacija "Gazi Husrev-beg" "Kotromanici" "Kulin ban" Miljacka Sarajevo "Stjepan II" "Tvrtko I"
+        Wielingen Mercator "Willem van Rubroeck" "Simon van Salingen" "Joris van Spilbergen" "Willem Usselincx"
     }
     monitor = {
-        Bosna Herzceg Dalmacija "Gazi Husrev-beg" "Kotromanici" "Kulin ban" Miljacka Sarajevo "Stjepan II" "Tvrtko I"
+        Belgica Brabantia Flandriae Henogovia Limburgia Luxemburgum Vallonia
     }
-    clipper_transport = {}
-    steam_transport = {}
+    clipper_transport = {
+        Antwerpen Arlon Brugge Brussel Charleroi Gent Hasselt Leuven Liege Mechelen
+        Namur Nieuwpoort Oostende Sluis Zeebrugge
+    }
+    steam_transport = {
+        Dender Dijle IJzer Leie Maas Ourthe Sambre Schelde Semois
+    }
     commerce_raider = {
-        Bosna Herzceg Dalmacija "Gazi Husrev-beg" "Kotromanici" "Kulin ban" Miljacka Sarajevo "Stjepan II" "Tvrtko I"
+        "Jan Baert" "Michiel Jacobsen" "Jacob van Brugge" "Willem van der Haegen" "Jacob le Maire" "Pierre van Alstein" "Sebald de Weert" "Cornelis Weus"
     }
 }

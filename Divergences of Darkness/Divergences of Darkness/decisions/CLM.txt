@@ -432,9 +432,9 @@ political_decisions = {
             modifier = {
                 factor = 0
                 AND = {
-                    governement = democracy
+                    government = democracy
                     NOT = {
-                        CLM = { governement = democracy }
+                        CLM = { government = democracy }
                     }
                 }
             }
@@ -442,32 +442,32 @@ political_decisions = {
                 factor = 0
                 AND = {
                     OR = {
-                        governement = presidential_dictatorship
+                        government = presidential_dictatorship
                         government = absolute_monarchy
                         government = prussian_constitutionalism
                         government = hms_government
                     }
                     OR = {
-                        CLM = { governement = democracy }
-                        CLM = { governement = proletarian_dictatorship }
+                        CLM = { government = democracy }
+                        CLM = { government = proletarian_dictatorship }
                     }
                 }
             }
             modifier = {
                 factor = 0
                 AND = {
-                    governement = proletarian_dictatorship
+                    government = proletarian_dictatorship
                     NOT = {
-                        CLM = { governement = proletarian_dictatorship }
+                        CLM = { government = proletarian_dictatorship }
                     }
                 }
             }
             modifier = {
                 factor = 0
                 AND = {
-                    governement = fascist_dictatorship
+                    government = fascist_dictatorship
                     NOT = {
-                        CLM = { governement = fascist_dictatorship }
+                        CLM = { government = fascist_dictatorship }
                     }
                 }
             }

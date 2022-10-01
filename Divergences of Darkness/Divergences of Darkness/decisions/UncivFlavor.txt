@@ -560,11 +560,11 @@ political_decisions = {
             set_global_flag = org_zam
             any_owned = {
                 limit = { region = ENG_2014 }
-                add_core = ZBW
+                add_core = ZAM
                 remove_core = LUN
                 remove_core = KZB				
             }
-            ZBW = { primary_culture = THIS }
+            ZAM = { primary_culture = THIS }
         }
     }
 
@@ -678,7 +678,7 @@ political_decisions = {
         allow = {
             war = no
             nationalism_n_imperialism = 1
-            AZA = { exists = no }		
+            BUG = { exists = no }		
             owns = 2021
 		
         }
@@ -692,7 +692,554 @@ political_decisions = {
             }
             UGA = { primary_culture = THIS }
         }
-    }		
+    }
+
+    organize_gabon = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_gab }
+            owns = 2624	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            MNG = { exists = no }
+            KON = { exists = no }
+            LOA = { exists = no }			
+            owns = 1976
+            owns = 1980
+            owns = 1983			
+            owns = 1995			
+		
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_gab
+            any_owned = {
+                limit = {			
+                    OR = {
+                        region = FRA_1972
+                        region = FRA_1978						
+						province_id = 1983
+						province_id = 1995						
+						province_id = 2000					
+                    }
+				}
+                add_core = GAB
+                remove_core = MNG
+                remove_core = KON
+                remove_core = LOA				
+            }
+            GAB = { primary_culture = THIS }
+        }
+    }
+
+    organize_cameroon = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_cmr }
+            owns = 1956	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            NRI = { exists = no }			
+            owns = 1934
+            owns = 1959		
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_cmr
+            any_owned = {
+                limit = {			
+                    OR = {
+                        region = ENG_1956
+                        region = ENG_1960				
+                    }
+				}
+                add_core = CMR
+                remove_core = NRI				
+            }
+            CMR = { primary_culture = THIS }
+        }
+    }
+
+    organize_CAR = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_car }
+            owns = 1966	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            AZA = { exists = no }		
+            owns = 1970
+		
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_car
+            any_owned = {
+                limit = { region = FRA_1965 }
+                add_core = CAR
+                remove_core = AZA				
+            }
+            CAR = { primary_culture = THIS }
+        }
+    }
+
+    organize_chad = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_chd }
+            owns = 1818	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            KAN = { exists = no }			
+            owns = 1825
+            owns = 1820		
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_chd
+            any_owned = {
+                limit = {			
+                    OR = {
+                        region = ENG_1825
+                        region = TRI_1739
+						province_id = 1820
+                    }
+				}
+                add_core = CHD
+                remove_core = KAN				
+            }
+            CHD = { primary_culture = THIS }
+        }
+    }
+
+    organize_nigeria = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_ngr }
+            owns = 1933	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            KAN = { exists = no }
+            SOK = { exists = no }
+            ADW = { exists = no }
+            NRI = { exists = no }			
+            owns = 1936
+            owns = 1937		
+            owns = 1964			
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_ngr
+            any_owned = {
+                limit = {			
+                    OR = {
+                        region = FRA_1931
+                        region = FRA_1930
+                        region = FRA_1937						
+						province_id = 1819
+						province_id = 1964						
+                    }
+				}
+                add_core = NGR
+                remove_core = KAN
+                remove_core = SOK
+                remove_core = ADW
+                remove_core = NRI				
+            }
+            NGR = { primary_culture = THIS }
+        }
+    }
+
+    organize_hausaland = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_hsl }
+            owns = 1948	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            KNO = { exists = no }
+            SOK = { exists = no }
+            ILO = { exists = no }			
+            owns = 1945		
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_hsl
+            any_owned = {
+                limit = {			
+                    OR = {
+                        region = FRA_1927
+                        region = FRA_1939					
+                    }
+				}
+                add_core = HSL
+                remove_core = KNO
+                remove_core = SOK
+                remove_core = ILO				
+            }
+            HSL = { primary_culture = THIS }
+        }
+    }
+
+    organize_niger = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_nig }
+            owns = 1812	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            KNO = { exists = no }
+            SOK = { exists = no }
+            ILO = { exists = no }				
+            owns = 1810
+            owns = 1811			
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_nig
+            any_owned = {
+                limit = {			
+                    OR = {
+                        region = FRA_1808
+                        region = FRA_1813				
+                    }
+				}
+                add_core = NIG
+                remove_core = KNO
+                remove_core = SOK
+                remove_core = ILO				
+            }
+            NIG = { primary_culture = THIS }
+        }
+    }
+
+    organize_bornu = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_bor }
+            owns = 1951	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            KAN = { exists = no }		
+            owns = 1952
+		
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_bor
+            any_owned = {
+                limit = { region = FRA_1965 }
+                add_core = BOR
+                remove_core = KAN				
+            }
+            BOR = { primary_culture = THIS }
+        }
+    }
+
+    organize_ife = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_ife }
+            owns = 1926	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            OYO = { exists = no }		
+            owns = 1928
+		
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_ife
+            any_owned = {
+                limit = { region = FRA_1923 }
+                add_core = IFE
+                remove_core = OYO				
+            }
+            IFE = { primary_culture = THIS }
+        }
+    }
+
+    organize_togo = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_tog }
+            owns = 1919	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            DHY = { exists = no }
+            ASH = { exists = no }				
+            owns = 1918			
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_tog
+            any_owned = {
+                limit = {			
+                    OR = {
+                        region = FRA_1914
+						province_id = 1918
+						province_id = 1921
+						province_id = 1922						
+                    }
+				}
+                add_core = TOG
+                remove_core = DHY
+                remove_core = ASH			
+            }
+            TOG = { primary_culture = THIS }
+        }
+    }
+
+    organize_ghana = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_ghn }
+            owns = 1909	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            ASH = { exists = no }				
+            owns = 1911
+            owns = 1912			
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_ghn
+            any_owned = {
+                limit = {			
+                    OR = {
+                        region = FRA_1907
+						province_id = 1912
+						province_id = 1913
+						province_id = 1916					
+                    }
+				}
+                add_core = GHN
+                remove_core = ASH			
+            }
+            GHN = { primary_culture = THIS }
+        }
+    }
+
+    organize_burkina_faso = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_bkf }
+            owns = 1902	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            MAL = { exists = no }
+            TOU = { exists = no }			
+            owns = 1901
+		
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_bkf
+            any_owned = {
+                limit = { region = FRA_1901 }
+                add_core = BKF
+                remove_core = MAL
+                remove_core = TOU				
+            }
+            BKF = { primary_culture = THIS }
+        }
+    }
+
+    organize_timbuktu = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_azw }
+            owns = 1803	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            MAL = { exists = no }
+            TOU = { exists = no }			
+            owns = 1807
+		
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_azw
+            any_owned = {
+                limit = { region = FRA_1803 }
+                add_core = AZW
+                remove_core = MAL
+                remove_core = TOU				
+            }
+            AZW = { primary_culture = THIS }
+        }
+    }
+
+    organize_mali = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_mli }
+            owns = 1794	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            MAL = { exists = no }
+            TOU = { exists = no }
+            FJA = { exists = no }				
+            owns = 1800		
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_mli
+            any_owned = {
+                limit = {			
+                    OR = {
+                        region = FRA_1801
+                        region = FRA_1798				
+                    }
+				}
+                add_core = MLI
+                remove_core = MAL
+                remove_core = TOU
+                remove_core = FJA				
+            }
+            MLI = { primary_culture = THIS }
+        }
+    }
+
+    organize_gambia = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_gmb }
+            owns = 1785	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+            FJA = { exists = no }			
+            owns = 1792
+		
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_gmb
+            any_owned = {
+                limit = { region = FRA_1788 }
+                add_core = GMB
+                remove_core = FJA					
+            }
+            GMB = { primary_culture = THIS }
+        }
+    }
+
+    organize_western_sahara = {
+        picture = map_africa
+        potential = {
+            civilized = yes
+            NOT = {
+                capital_scope = { continent = africa }
+            }
+            NOT = { has_global_flag = org_wsh }
+            owns = 1696	
+        }
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1	
+            owns = 1773
+		
+        }
+        effect = {
+            prestige = 10
+            set_global_flag = org_wsh
+            any_owned = {
+                limit = { region = MOR_1696 }
+                add_core = WSH				
+            }
+            WSH = { primary_culture = THIS }
+        }
+    }	
 	
 
     end_the_merina_monarchy = {

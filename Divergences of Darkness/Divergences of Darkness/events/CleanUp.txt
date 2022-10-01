@@ -1042,6 +1042,9 @@ country_event = {
         NOT = { tag = TOU }
         NOT = { tag = SUD }
         NOT = { tag = UAR }
+        NOT = { tag = QAJ }
+        NOT = { tag = PER }
+        NOT = { tag = ARY }		
     }
 
     mean_time_to_happen = { months = 1 }

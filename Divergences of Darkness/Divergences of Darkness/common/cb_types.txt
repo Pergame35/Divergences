@@ -3565,7 +3565,10 @@ china_conquest = {
             is_culture_group = chinese
         }
         THIS = {
-            is_culture_group = chinese
+            OR = {
+                is_culture_group = chinese
+                is_culture_group = oversea_chinese
+            }
             NOT = {
                 has_country_modifier = neutrality
                 war_policy = pacifism
@@ -3701,10 +3704,10 @@ persia_acquire_state = {
         THIS = {
             OR = {
                 primary_culture = persian
-                tag = AZB
-                tag = AFS
-                tag = QAJ
-                tag = ZND
+                AND = { 
+					tag = AZB
+					has_country_flag = iranian_ambition
+				}
             }
             number_of_states = 2
             NOT = {
@@ -4976,7 +4979,6 @@ annex_africa_full = {
                 capital_scope = { continent = europe }
                 tag = SAF
             }
-            capital_scope = { continent = europe }
             slavery = no_slavery
             OR = {
                 is_greater_power = yes

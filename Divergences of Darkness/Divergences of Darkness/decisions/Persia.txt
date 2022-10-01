@@ -5,7 +5,10 @@ political_decisions = {
             NOT = {
                 PER = { exists = yes }
             }
-            NOT = { tag = ARY }
+            NOT = { 
+				tag = ARY
+				tag = AFS
+			}
             OR = {
                 is_culture_group = iranian
                 AND = {
@@ -13,7 +16,6 @@ political_decisions = {
                     has_country_flag = persiania
                 }
                 tag = AZB
-                tag = AFS
             }
         }
         allow = {

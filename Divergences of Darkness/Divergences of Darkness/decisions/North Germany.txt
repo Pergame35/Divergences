@@ -36,6 +36,7 @@ political_decisions = {
 
         effect = {
             prestige = 10
+			add_accepted_culture = rheinish
             any_country = {
                 limit = {
                     war = no

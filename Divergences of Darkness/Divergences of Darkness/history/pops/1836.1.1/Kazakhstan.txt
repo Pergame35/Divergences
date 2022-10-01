@@ -555,68 +555,110 @@
 #under the rule of Khiva in 1836
 #Kyzylorda (108000/27000 POPS)
 1193 = {
-	aristocrats = {
-		culture = uzbek
-		religion = sunni
-		size = 250
-	}
-
-	clergymen = {
-		culture = uzbek
-		religion = sunni
-		size = 125
-	}
-
-	artisans = {
-		culture = uzbek
-		religion = sunni
-		size = 700
-	}
-
-	soldiers = {
-		culture = uzbek
-		religion = sunni
-		size= 150
-
-	}
-
-	farmers = {
-		culture = uzbek
-		religion = sunni
-		size = 12775
-	}
-
+    
 	aristocrats = {
 		culture = kazak
 		religion = sunni
-		size = 250
+		size = 350
 	}
 
 	clergymen = {
 		culture = kazak
 		religion = sunni
-		size = 125
+		size = 200
 	}
 
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 600
+		size = 1200
 	}
 
 	soldiers = {
 		culture = kazak
 		religion = sunni
-		size= 125
-
+		size = 150
 	}
 
 	farmers = {
 		culture = kazak
 		religion = sunni
-		size = 11900
+		size = 38000
+	}
+	
+	aristocrats = {
+		culture = uzbek
+		religion = sunni
+		size = 35
+	}
+
+	clergymen = {
+		culture = uzbek
+		religion = sunni
+		size = 20
+	}
+
+	artisans = {
+		culture = uzbek
+		religion = sunni
+		size = 200
+	}
+
+	soldiers = {
+		culture = uzbek
+		religion = sunni
+		size = 125
+	}
+
+	farmers = {
+		culture = uzbek
+		religion = sunni
+		size = 3250
+	}
+	
+	aristocrats = {
+		culture = persian
+		religion = sunni
+		size = 35
+	}
+
+	clergymen = {
+		culture = persian
+		religion = sunni
+		size = 20
+	}
+
+	artisans = {
+		culture = persian
+		religion = sunni
+		size = 200
+	}
+
+	soldiers = {
+		culture = persian
+		religion = sunni
+		size = 200
+	}
+
+	farmers = {
+		culture = persian
+		religion = sunni
+		size = 1250
+	}
+	
+	slaves = {
+		culture = persian
+		religion = sunni
+		size = 1500
+	}
+	
+	slaves = {
+		culture = uzbek
+		religion = sunni
+		size = 3500
 	}
 }
+
 #Aqtau (32000/8000 POPS)
 1194 = {
 	aristocrats = {
@@ -749,4 +791,61 @@
 		size = 27450
 	}
 
+}
+
+#Aktash
+3375 = {
+    aristocrats = {
+		culture = kazak
+		religion = sunni
+		size = 70
+	}
+
+	clergymen = {
+		culture = kazak
+		religion = sunni
+		size = 125
+	}
+
+	artisans = {
+		culture = kazak
+		religion = sunni
+		size = 300
+	}
+
+	soldiers = {
+		culture = kazak
+		religion = sunni
+		size = 325
+	}
+
+	farmers = {
+		culture = kazak
+		religion = sunni
+		size = 3475
+	}
+
+	clergymen = {
+		culture = uzbek
+		religion = sunni
+		size = 25
+	}
+
+	artisans = {
+		culture = uzbek
+		religion = sunni
+		size = 350
+	}
+	
+	clergymen = {
+		culture = persian
+		religion = sunni
+		size = 15
+	}
+
+	artisans = {
+		culture = persian
+		religion = sunni
+		size = 150
+	}
 }

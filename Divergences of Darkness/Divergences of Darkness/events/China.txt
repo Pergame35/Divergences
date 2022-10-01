@@ -410,13 +410,18 @@ country_event = {
         release = UGH
         any_owned = {
             limit = {
-                OR = {
-                    region = RUS_1184
-                    region = RUS_1185
-                }
+				AND = {
+					OR = {
+						region = RUS_1184
+						region = RUS_1185
+						region = TRN_1193
+					}
+					is_core = KZH
+				}
             }
             secede_province = KZH
         }
+		3356 = { secede_province = KZH }
         any_owned = {
             limit = { is_core = CHI }
             secede_province = MGL
@@ -426,7 +431,7 @@ country_event = {
             secede_province = UGH
         }
         release = UZB
-        release = KOK
+        release = KOK			
         TNT = { government = khanate }
         MGL = { government = khanate }
         BDK = { government = khanate }

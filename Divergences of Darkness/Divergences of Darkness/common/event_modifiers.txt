@@ -2527,18 +2527,22 @@ pompeji_excavations = {
 #Janissary
 janissary_rule = {
     assimilation_rate = -0.25
-    pop_militancy_modifier = 0.05
+    pop_militancy_modifier = 0.025
     icon = 7
 }
 
 janissary_system = {
-    pop_militancy_modifier = 0.02
-    non_accepted_pop_militancy_modifier = 0.2
-    non_accepted_pop_consciousness_modifier = 0.5
+    pop_militancy_modifier = 0.01
     icon = 16
 }
 
 university_athens = {
+    research_points_modifier = 0.05
+    prestige = 0.02
+    icon = 5
+}
+
+university_venice = {
     research_points_modifier = 0.05
     prestige = 0.02
     icon = 5
@@ -2730,9 +2734,77 @@ qashqai_administration = {
     icon = 4
 }
 
+former_naib_land = {
+    assimilation_rate = 1
+    population_growth = 0.005
+    local_rgo_output = 1
+}
+
+armenian_intellectual_diaspora = {
+    research_points_modifier = 0.15
+}	
+
+rasht_silk_trade = {
+    education_efficiency_modifier = 0.05
+    literacy_con_impact = 0.1
+    pop_consciousness_modifier = 0.01	
+    icon = 5
+}
+
+lahijan_tea_production = {
+    tariff_efficiency_modifier = 0.2	
+	icon = 16
+}
+
+daylamite_mountaineers = {
+	land_attrition = -0.02
+	land_unit_start_experience = 5	
+	icon = 17
+}
+
+kar_kiya_land_redistribution = {
+    tax_efficiency = 0.15
+    max_loan_modifier = 0.2
+    icon = 10
+}
+
+kalwatiya_forced_conversion = {
+    global_assimilation_rate = 0.15
+	tax_efficiency = 0.15
+    icon = 14
+}
+
+gorgan_lease = {
+	tax_efficiency = 0.05
+	research_points_modifier = 0.05
+    education_efficiency_modifier = 0.05	
+    global_pop_consciousness_modifier = 0.01	
+	icon = 7
+}
+
 ### China ###
 
 china_weisuo = {
     mobilisation_size = -0.2
     icon = 18
+}
+
+### Venice - Greece ###
+
+hellas_independence_war = {
+    war_exhaustion = -0.02
+	land_attrition = -0.01
+	org_regain = 0.05
+    icon = 15
+}
+
+second_year_greek_war = {
+    war_exhaustion = -0.05
+    icon = 15
+}
+
+hellinopoieisi = {
+    culture_tech_research_bonus = 0.1
+    global_assimilation_rate = 0.5
+    icon = 10
 }

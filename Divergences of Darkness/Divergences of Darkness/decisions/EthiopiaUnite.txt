@@ -148,11 +148,6 @@ political_decisions = {
         picture = zanzibar_oman
         potential = {
             tag = ETH
-            has_country_flag = eth_nubia
-            NOT = { has_country_flag = eth_nubia_integrated }
-            all_core = { owned_by = THIS }
-			EGY_1834 = { owned_by = THIS }
-			EGY_1827 = { owned_by = THIS }
         }
 			
         allow = {
@@ -162,25 +157,27 @@ political_decisions = {
 
         effect = {
             set_country_flag = eth_nubia_integrated
+			treasury = -50000
+			EGY_1834 = {
+				add_core = THIS
+				#add_province_modifier = {
+				#	name = core_integration
+				#	duration = -1
+				#}
+			}
+			EGY_1827 = {
+				add_core = THIS
+				#add_province_modifier = {
+				#	name = core_integration
+				#	duration = -1
+				#}
+			}
+			
 			add_accepted_culture = nubian
 			add_accepted_culture = cushitic
 			add_accepted_culture = coptic
 			add_accepted_culture = sidama
 			add_accepted_culture = wolayta
-			treasury = -50000
-			
-			EGY_1834 = {
-				add_province_modifier = {
-					name = core_integration
-					duration = -1
-				}
-			}
-			EGY_1827 = {
-				add_province_modifier = {
-					name = core_integration
-					duration = -1
-				}
-			}
 			
 			#move pops
 			

@@ -1,0 +1,13 @@
+owner = TUR
+controller = TUR
+add_core = TUR  
+add_core = IRQ
+add_core = NEJ
+add_core = KUR
+add_core = ASY
+trade_goods = wool
+life_rating = 35
+revolt = {
+	type = nationalist_rebels
+	controller = yes
+}

@@ -549,7 +549,7 @@ political_decisions = {
         }
     }
 
-    nee_oostkoloniastie = { #Decision for dictatorship CAE to core the Baltic, when no Baltic Elbian states exist
+    nee_oostkolonisatie = { #Decision for dictatorship CAE to core the Baltic, when no Baltic Elbian states exist
         picture = oostkoloniastie
         potential = {
             tag = CAE
@@ -560,7 +560,7 @@ political_decisions = {
                 government = fascist_dictatorship
             }
             NOT = { 
-				has_country_flag = nee_oostkoloniastie 
+				has_country_flag = nee_oostkolonisatie 
 				has_country_flag = free_riga_CAE 				
 			}
             KRL = { exists = no }
@@ -581,7 +581,7 @@ political_decisions = {
         }
 
         effect = {
-            set_country_flag = nee_oostkoloniastie
+            set_country_flag = nee_oostkolonisatie
             badboy = 20
             LIT_698 = { #Memel Region
  add_core = CAE }
