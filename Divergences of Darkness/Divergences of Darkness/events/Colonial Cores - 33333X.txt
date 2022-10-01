@@ -1,30 +1,3 @@
-#Angola
-country_event = {
-    id = 333330
-    title = "EVTNAME333330"
-    desc = "EVTDESC333330"
-    picture = "greatpowers"
-
-    trigger = {
-        has_global_flag = berlin_conference
-        owns = 1999
-    }
-
-    mean_time_to_happen = { months = 3 }
-
-    fire_only_once = yes
-
-    option = {
-        name = "EVTOPTA333330"
-        prestige = 5
-        ANG = {
-            add_core = 1999
-            add_core = 2001
-            add_core = 2002
-        }
-    }
-}
-
 #South Adamawan Protectorate
 
 country_event = {

@@ -956,6 +956,28 @@ pan_albanian = {
         }
         radicalism = 15
     }
+	
+    arvanite = {
+        color = {
+            221 148 142
+        }
+        first_names = {
+            Ahmet Ali Azem Bajram Behxhet Davud Ekrem Elez Enver Eqrem
+            Esad Fatmir Fejzi Fiqri Gjergj Gjon Hasan Hashim Ibrahim Idhomene
+            Iliaz Ishak Ismail Izet Kara Kastriot Koçi Köpryly Kostaq Lekë
+            Maliq Marin mehdi Musa Mustafa Pandeli Petro Qamil Qazim Ramush
+            Rexhep Shefqet Skënder Sulejman Tewfik Theofan Turhan Vasil Veton Xhafer
+        }
+
+        last_names = {
+            Ahmeti al-Albani Bardha Bazna "Bej Alizoti" "Bej Biçakçiu" "Bej Delvina" "Bej Frashëri" "Bej Libohova" "Bej Ndroque"
+            "Bej Prishtina" "Bej Verlaci" "Bej Vrioni" "Bej Ypi" "Bej Zogu" Belishi Burbank Bushati Buza Çabej
+            Çeku Dine Dragoti Dukagiini Dushku Evangjeli Feza Hoxha Islami Kadare
+            Koculi Konica Konushevci Kosturi Kota Logoreci Merlika-Kruja Mitrovica Mula Noli
+            "Pashë Përmeti" "Pashë Tepelena" "Pashë Toptani" Poga "Qemal Bej" Shahini Skiroi Thaçi Troja Xoxe
+        }
+    }	
+	
 }
 
 pan_romanian = {
@@ -1618,6 +1640,18 @@ turkic = {
             Beg Khan
         }
     }
+	
+    qashqai = {
+        color = {
+            100 60 90
+        }
+        first_names = {
+            Ahmed Haydar Mehmed Murad Nurberdi Qilich
+        }
+        last_names = {
+            Beg Khan
+        }
+    }	
 
     khalaj = {
         color = {
@@ -1971,6 +2005,7 @@ iranian = {
         }
         radicalism = 1
     }
+	
     ossetian = {
         color = {
             227 177 41
@@ -2079,6 +2114,19 @@ iranian = {
             Zahedi
         }
     }
+
+	pamiri = {
+		color = { 100 180 160 } 
+		first_names = {
+			Abdullah Ahmad Azam Khudadad
+			Mehrab Mohammad Muhabbat 
+			Nasir Nawaz
+			Samandar Sherdil
+		}
+		last_names = {
+			Khan
+		}
+	}
 
     union = ARY
 }

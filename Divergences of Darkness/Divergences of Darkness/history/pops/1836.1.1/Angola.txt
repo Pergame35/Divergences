@@ -133,31 +133,31 @@
 2001 = {
 	aristocrats = {
 		culture = bakongo
-		religion = protestant
+		religion = catholic
 		size = 100
 	}
 
 	clergymen = {
 		culture = bakongo
-		religion = protestant
+		religion = catholic
 		size = 50
 	}
 
 	artisans = {
 		culture = bakongo
-		religion = protestant
+		religion = catholic
 		size = 400
 	}
 
 	soldiers = {
 		culture = bakongo
-		religion = protestant
+		religion = catholic
 		size = 100
 	}
 
 	farmers = {
 		culture = bakongo
-		religion = protestant
+		religion = catholic
 		size = 7350
 	}
 
@@ -196,6 +196,18 @@
 		religion = animist
 		size = 4000
 	}
+	
+	officers = {
+		culture = bakongo
+		religion = catholic
+		size = 50
+	}
+	
+	officers = {
+		culture = bakongo
+		religion = animist
+		size = 50
+	}
 
 	aristocrats = {
 		culture = kavango
@@ -220,6 +232,7 @@
 		religion = animist
 		size = 200
 	}
+	
 
 	farmers = {
 		culture = kavango
@@ -310,6 +323,18 @@
 		culture = bakongo
 		religion = animist
 		size = 5000
+	}
+	
+	officers = {
+		culture = bakongo
+		religion = catholic
+		size = 25
+	}
+	
+	officers = {
+		culture = bakongo
+		religion = animist
+		size = 100
 	}
 
 	aristocrats = {

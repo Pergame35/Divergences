@@ -145,4 +145,153 @@ political_decisions = {
         ai_will_do = { factor = 1 }
     }
 
+    create_georgia = { 
+	    picture = st_george 
+        potential = {
+			ai = no
+            NOT = {
+                exists = GEO
+                tag = SAM
+				tag = IME 
+				tag = KRT 
+				tag = AZB 
+                has_global_flag = georgia_formed
+            }
+            OR = {
+                any_owned_province = { is_core = SAM }
+                any_owned_province = { is_core = IME }
+				any_owned_province = { is_core = KRT }
+                is_sphere_leader_of = SAM 
+                is_sphere_leader_of = IME
+                is_sphere_leader_of = KRT
+            }
+        }
+        allow = {
+            war = no
+            SAM = {
+                ai = yes
+                all_core = {
+                    OR = {
+                        owned_by = THIS
+                        owner = {
+                            war = no
+                            OR = {
+                                in_sphere = THIS
+                                vassal_of = THIS
+                            }
+                        }
+                    }
+                }
+            }
+            IME = {
+                ai = yes
+                all_core = {
+                    OR = {
+                        owned_by = THIS
+                        owner = {
+                            war = no
+                            OR = {
+                                in_sphere = THIS
+                                vassal_of = THIS
+                            }
+                        }
+                    }
+                }
+            }
+            KRT = {
+                ai = yes
+                all_core = {
+                    OR = {
+                        owned_by = THIS
+                        owner = {
+                            war = no
+                            OR = {
+                                in_sphere = THIS
+                                vassal_of = THIS
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        effect = {
+            set_global_flag = georgia_formed
+            prestige = 20
+            badboy = 2
+            SAM = {
+                all_core = { add_core = GEO }
+            }
+            IME = {
+                all_core = { add_core = GEO }
+            }
+            KRT = {
+                all_core = { add_core = GEO }
+            }
+            any_country = {
+                limit = {
+                    OR = {
+                        tag = SAM
+                        tag = IME
+                        tag = KRT
+                    }
+                    ai = yes
+                    OR = {
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                }
+                annex_to = THIS
+            }
+            any_country = {
+                limit = {
+                    NOT = { is_culture_group = GEO }
+                    OR = {
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                    war = no
+                    any_owned_province = {
+                        OR = {
+                            is_core = SAM
+                            is_core = IME
+                            is_core = KRT
+                        }
+                    }
+                }
+                any_owned = {
+                    limit = {
+                        OR = {
+                            is_core = SAM
+                            is_core = IME
+                            is_core = KRT
+                        }
+                    }
+                    secede_province = THIS
+                }
+            }
+            any_owned = {
+                limit = {
+                    is_core = GEO
+                    NOT = { is_core = THIS }					
+                }
+                secede_province = GEO
+            }
+            create_vassal = GEO
+            create_alliance = GEO
+            diplomatic_influence = {
+                who = GEO
+                value = 300
+            }
+            GEO = { prestige = -400 }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    tag = AZB
+                }
+            }
+        }
+    }
 }

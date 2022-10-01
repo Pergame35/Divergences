@@ -136,12 +136,15 @@ political_decisions = {
         ai_will_do = { factor = 1 }
     }
 
-    Baastards_SAF = {
+    Bastaards_SAF = {
         picture = cape_emancipation
         potential = {
             tag = SAF
-            NOT = { has_country_flag = baastards_SAF }
-            NOT = { accepted_culture = afro_south_african }
+            NOT = { has_country_flag = bastaards_SAF }
+            NOT = { 
+				accepted_culture = afro_south_african
+				primary_culture = afro_south_african
+			}
             has_country_flag = claim_south_africa
             owns = 2574
             owns = 2098
@@ -177,7 +180,7 @@ political_decisions = {
 
         effect = {
             prestige = -15
-            set_country_flag = baastards_SAF
+            set_country_flag = bastaards_SAF
             add_accepted_culture = afro_south_african
             any_pop = {
                 limit = { is_primary_culture = boer }

@@ -1514,11 +1514,6 @@ province_event = {
             year = 1905
         }
         modifier = {
-            factor = 10
-            province_id = 1399
-            NOT = { year = 1914 }
-        }
-        modifier = {
             factor = 2
             owner = { civilized = no }
         }
@@ -1591,13 +1586,11 @@ province_event = {
                     province_id = 1727 #Gafsa
                     province_id = 1630 #Kangnung
                     province_id = 1522 #Wuchang
-                    province_id = 1397 #Sandakan
                     province_id = 1303 #Goa
                     province_id = 1528 #Yuezhou
                 }
                 year = 1900
             }
-            province_id = 1404 #Palak Pinang - Belitung Island
             province_id = 513 #Granada, Spain
             province_id = 712 #Lodz, Poland, after 1850
             province_id = 412 #Metz, after 1860

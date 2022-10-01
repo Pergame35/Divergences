@@ -2,59 +2,65 @@
 #under the "rule" of Kokand in 1836  
 #Bishkek (236000/59000 POPS) #now part of Kirghizstan   
 1189 = {
-    clergymen = {
-        culture = kirgiz
-        religion = sunni
-        size = 425
-    }
+	aristocrats = {
+		culture = kirgiz
+		religion = sunni
+		size = 800
+	}
 
-    artisans = {
-        culture = kirgiz
-        religion = sunni
-        size = 2000
-    }
+	clergymen = {
+		culture = kirgiz
+		religion = sunni
+		size = 425
+	}
 
-    farmers = {
-        culture = kirgiz
-        religion = sunni
-        size = 33775
-    }
+	artisans = {
+		culture = kirgiz
+		religion = sunni
+		size = 2000
+	}
 
-    clergymen = {
-        culture = kazak
-        religion = sunni
-        size = 75
-    }
+	soldiers = {
+		culture = kirgiz
+		religion = sunni
+		size = 1000
+	}
 
-    artisans = {
-        culture = kazak
-        religion = sunni
-        size = 300
-    }
+	farmers = {
+		culture = kirgiz
+		religion = sunni
+		size = 26000
+	}
+	
+	farmers = {
+		culture = kirgiz
+		religion = animist
+		size = 3775
+	}
 
-    farmers = {
-        culture = kazak
-        religion = sunni
-        size = 6450
-    }
+	aristocrats = {
+		culture = kazak
+		religion = sunni
+		size = 100
+	}
 
-    clergymen = {
-        culture = uighur
-        religion = sunni
-        size = 75
-    }
+	clergymen = {
+		culture = kazak
+		religion = sunni
+		size = 75
+	}
 
-    artisans = {
-        culture = uighur
-        religion = sunni
-        size = 350
-    }
+	artisans = {
+		culture = kazak
+		religion = sunni
+		size = 375
+	}
 
-    farmers = {
-        culture = uighur
-        religion = sunni
-        size = 7375
-    }
+	farmers = {
+		culture = kazak
+		religion = sunni
+		size = 6450
+	}
 }
 #Naryn (56000/14000 POPS) #now part of Kirghizstan    
 1190 = {
@@ -190,6 +196,70 @@
         size = 200
     }
 }
+
+#Kyzylsu 
+3358 = {
+	aristocrats = {
+		culture = uighur
+		religion = sunni
+		size = 50
+	}
+
+	clergymen = {
+		culture = uighur
+		religion = sunni
+		size = 50
+	}
+
+	artisans = {
+		culture = uighur
+		religion = sunni
+		size = 100
+	}
+
+	farmers = {
+		culture = uighur
+		religion = sunni
+		size = 2175
+	}
+
+	aristocrats = {
+		culture = kirgiz
+		religion = sunni
+		size = 100
+	}
+
+	clergymen = {
+		culture = kirgiz
+		religion = sunni
+		size = 50
+	}
+
+	artisans = {
+		culture = kirgiz
+		religion = sunni
+		size = 200
+	}
+
+	soldiers = {
+		culture = kirgiz
+		religion = sunni
+		size = 1050
+	}
+
+	farmers = {
+		culture = kirgiz
+		religion = sunni
+		size = 4000
+	}
+	
+	farmers = {
+		culture = kirgiz
+		religion = animist
+		size = 6600
+	}
+}
+
 #Mawarannahr Region (112000) #see Kazakhstan.txt, persianistan.txt, Uzbekistan.txt for balance of region 
 #under the rule of Kokand in 1836  
 #Osh (112000/28000 POPS) #Now part of Kirghizstan   
@@ -209,7 +279,7 @@
     farmers = {
         culture = uzbek
         religion = sunni
-        size = 8200
+        size = 13550
     }
 
     clergymen = {
@@ -227,6 +297,31 @@
     farmers = {
         culture = kirgiz
         religion = sunni
-        size = 13550
+        size = 8200
     }
+	
+	aristocrats = {
+		culture = persian
+		religion = sunni
+		size = 300
+	}
+
+	clergymen = {
+		culture = persian
+		religion = sunni
+		size = 125
+	}	
+	
+	artisans = {
+		culture = persian
+		religion = sunni
+		size = 1350
+	}
+
+	farmers = {
+		culture = persian
+		religion = sunni
+		size = 4550
+	}	
+	
 }

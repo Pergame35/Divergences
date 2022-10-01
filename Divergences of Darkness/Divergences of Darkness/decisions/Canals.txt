@@ -37,14 +37,19 @@ political_decisions = {
             NOT = { has_global_flag = suez_canal_global }
         }
         allow = {
-            OR = {
-                1755 = {
-                    owner = { in_sphere = THIS }
-                }
-                owns = 1755
-            }
             steam_turbine = 1
-            money = 25000
+            OR = {
+				AND = {
+					1755 = {
+						owner = { in_sphere = THIS }
+					}
+					money = 325000
+				}
+				AND = {
+					owns = 1755
+					money = 25000
+				}
+            }
         }
         effect = {
             treasury = -25000

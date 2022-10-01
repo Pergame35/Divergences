@@ -2,6 +2,31 @@
 #under the rule of Khiva in 1836  
 #Dashhowuz (40000/10000 POPS) #now part of Turkmenistan  
 1196 = {
+
+	aristocrats = {
+		culture = persian
+		religion = sunni
+		size = 175
+	}
+
+	clergymen = {
+		culture = persian
+		religion = sunni
+		size = 75
+	}
+
+	artisans = {
+		culture = persian
+		religion = sunni
+		size = 5500
+	}
+	
+	farmers = {
+		culture = persian
+		religion = sunni
+		size = 2300
+	}
+
 	aristocrats = {
 		culture = turkmen
 		religion = sunni
@@ -17,7 +42,7 @@
 	artisans = {
 		culture = turkmen
 		religion = sunni
-		size = 450
+		size = 650
 	}
 
 	soldiers = {
@@ -30,8 +55,15 @@
 	farmers = {
 		culture = turkmen
 		religion = sunni
-		size = 9200
+		size = 16700
 	}
+	
+	farmers = {
+		culture = turkmen
+		religion = sunni
+		size = 3500
+	}	
+	
 }
 #Turkmenia Region (368000) 
 #under the rule of Khiva in 1836  
@@ -170,96 +202,69 @@
 #Chardzhou (132000/33000 POPS)   
 1206 = {
 	aristocrats = {
-		culture = persian
+		culture = uzbek
 		religion = sunni
-		size = 25
+		size = 225
 	}
 
 	clergymen = {
-		culture = persian
+		culture = uzbek
 		religion = sunni
-		size = 25
+		size = 125
 	}
 
 	artisans = {
-		culture = persian
+		culture = uzbek
 		religion = sunni
 		size = 100
 	}
 
 	soldiers = {
-		culture = persian
+		culture = uzbek
 		religion = sunni
-		size= 25
-
+		size = 2025
 	}
 
 	farmers = {
-		culture = persian
+		culture = uzbek
 		religion = sunni
-		size = 1825
+		size = 11000
 	}
 
-	aristocrats = {
+	soldiers = {
 		culture = turkmen
+		religion = sunni
+		size = 1250
+	}
+
+	farmers = {
+		culture = turkmen
+		religion = sunni
+		size = 2025
+	}
+	
+	aristocrats = {
+		culture = persian
 		religion = sunni
 		size = 400
 	}
-
+	
 	clergymen = {
-		culture = turkmen
+		culture = persian
 		religion = sunni
 		size = 225
 	}
 
 	artisans = {
-		culture = turkmen
-		religion = sunni
-		size = 1100
-	}
-
-	soldiers = {
-		culture = turkmen
-		religion = sunni
-		size= 250
-
-	}
-
-	farmers = {
-		culture = turkmen
-		religion = sunni
-		size = 21025
-	}
-
-	aristocrats = {
 		culture = persian
 		religion = sunni
-		size = 50
+		size = 1000
 	}
-
-	clergymen = {
-		culture = persian
-		religion = sunni
-		size = 50
-	}
-
-	artisans = {
-		culture = persian
-		religion = sunni
-		size = 400
-	}
-
-	soldiers = {
-		culture = persian
-		religion = sunni
-		size= 75
-
-	}
-
+	
 	farmers = {
 		culture = persian
 		religion = sunni
-		size = 6925
+		size = 9825
 	}
 
 	clergymen = {
@@ -428,4 +433,50 @@
 		religion = sunni
 		size = 14025
 	}
+}
+
+# Tejen
+3354 = { 
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 10
+	}
+
+	artisans = {
+		culture = turkmen
+		religion = sunni
+		size = 100
+	}
+	
+	farmers = {
+		culture = turkmen
+		religion = sunni
+		size = 5000
+	}
+	
+	aristocrats = {
+		culture = persian
+		religion = sunni
+		size = 25
+	}
+
+	clergymen = {
+		culture = persian
+		religion = sunni
+		size = 75
+	}
+
+	artisans = {
+		culture = persian
+		religion = sunni
+		size = 200
+	}
+
+	farmers = {
+		culture = persian
+		religion = sunni
+		size = 7500
+	}
+	
 }

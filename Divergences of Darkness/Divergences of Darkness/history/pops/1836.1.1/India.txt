@@ -81,81 +81,138 @@
 	aristocrats = {
 		culture = pashtun
 		religion = sunni
-		size = 675
+		size = 135
 	}
 
 	clergymen = {
 		culture = pashtun
 		religion = sunni
-		size = 875
+		size = 130
 	}
 
 	artisans = {
 		culture = pashtun
 		religion = sunni
-		size = 4500
+		size = 900
 	}
 
 	soldiers = {
 		culture = pashtun
 		religion = sunni
-		size= 2000
+		size= 400
 
 	}
 
 	farmers = {
 		culture = pashtun
 		religion = sunni
-		size = 51500
+		size = 8560
 	}
+	
+	clergymen = {
+		culture = persian
+		religion = ismaili
+		size = 45
+	}
+
+	farmers = {
+		culture = persian
+		religion = ismaili
+		size = 1740
+	}	
 
 	aristocrats = {
 		culture = panjabi
 		religion = sikh
-		size = 150
+		size = 30
 	}
 
 	soldiers = {
 		culture = panjabi
 		religion = sikh
-		size= 3000
+		size= 600
 
 	}
 
 	farmers = {
 		culture = panjabi
 		religion = sikh
-		size = 16500
+		size = 3300
 	}
 
 	aristocrats = {
 		culture = kalash
 		religion = animist
-		size = 845
+		size = 175
 	}
 
 	clergymen = {
 		culture = kalash
 		religion = animist
-		size = 315
+		size = 65
 	}
 
 	artisans = {
 		culture = kalash
 		religion = animist
-		size = 2550
+		size = 510
 	}
 
 	soldiers = {
 		culture = kalash
 		religion = animist
-		size= 1500
+		size= 300
 	}
 
 	farmers = {
 		culture = kalash
 		religion = animist
-		size = 65985
+		size = 13200
+	}
+}
+
+#Kohistan (160000/40000 POPS)
+3347 = {
+	aristocrats = {
+		culture = kashmiri
+		religion = sunni
+		size = 500
+	}
+
+	clergymen = {
+		culture = kashmiri
+		religion = sunni
+		size = 500
+	}
+
+	artisans = {
+		culture = kashmiri
+		religion = sunni
+		size = 2000
+	}
+
+	soldiers = {
+		culture = kashmiri
+		religion = sunni
+		size = 3000
+	}
+
+	farmers = {
+		culture = kashmiri
+		religion = sunni
+		size = 9000
+	}
+	
+	soldiers = {
+		culture = pashtun
+		religion = sunni
+		size = 1500
+	}
+
+	farmers = {
+		culture = pashtun
+		religion = sunni
+		size = 8500
 	}
 }
 #Under the Rule of Kalat 1836
@@ -164,33 +221,19 @@
 	aristocrats = {
 		culture = pashtun
 		religion = sunni
-		size = 950
+		size = 250
 	}
 
 	clergymen = {
 		culture = pashtun
 		religion = sunni
-		size = 1250
+		size = 325
 	}
 
 	artisans = {
 		culture = pashtun
 		religion = sunni
-		size = 8750
-	}
-
-	soldiers = {
-		culture = pashtun
-		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = pashtun
-		religion = sunni
-		size= 3000
-
+		size = 2190
 	}
 
 	soldiers = {
@@ -203,56 +246,50 @@
 	farmers = {
 		culture = pashtun
 		religion = sunni
-		size = 103325
+		size = 25850
 	}
 
 	aristocrats = {
 		culture = panjabi
 		religion = sikh
-		size = 580
+		size = 145
 	}
 
 	soldiers = {
 		culture = panjabi
 		religion = sunni
-		size= 3000
+		size= 750
 
 	}
 
 	farmers = {
 		culture = panjabi
 		religion = sunni
-		size= 17500
+		size= 4375
 	}
 
 	aristocrats = {
 		culture = baluchi
 		religion = sunni
-		size = 185
+		size = 100
 	}
 
 	farmers = {
 		culture = baluchi
 		religion = sunni
-		size = 20250
-	}
-
-	aristocrats = {
-		culture = baluchi
-		religion = sunni
-		size = 195
+		size = 5065
 	}
 
 	clergymen = {
 		culture = baluchi
 		religion = sunni
-		size = 105
+		size = 30
 	}
 
 	farmers = {
 		culture = baluchi
 		religion = sunni
-		size = 23725
+		size = 5935
 	}
 
 	clergymen = {
@@ -264,7 +301,7 @@
 	farmers = {
 		culture = parsi
 		religion = zoroastrian
-		size = 2425
+		size = 700
 	}
 }
 #Dalbandin (88000/22000 POPS)
@@ -445,11 +482,53 @@
 		religion = sunni
 		size = 5160
 	}
+	
 	slaves = {
 		culture = kilombero #african_minor
 		religion = animist
+		size = 2000
+	}
+}
+
+#Makran
+3351 = {
+	
+	aristocrats = {
+		culture = baluchi
+		religion = sunni
+		size = 700
+	}
+
+	clergymen = {
+		culture = baluchi
+		religion = sunni
+		size = 250
+	}
+
+	soldiers = {
+		culture = baluchi
+		religion = sunni
+		size = 1840
+	}
+
+	farmers = {
+		culture = baluchi
+		religion = sunni
+		size = 18000
+	}
+	
+	farmers = {
+		culture = kannada
+		religion = sunni
+		size = 4250
+	}
+
+	slaves = {
+		culture = kilombero
+		religion = animist
 		size = 5000
 	}
+
 }
 #Kashmir Region (1208000)
 #under rule of Panjab in 1836
@@ -4524,7 +4603,7 @@
 	soldiers = {
 		culture = rajput
 		religion = hindu
-		size= 1000
+		size= 1200
 
 	}
 
@@ -4552,18 +4631,17 @@
 		size = 2500
 	}
 
-	soldiers = {
-		culture = avadhi
-		religion = sunni
-		size= 200
-
-	}
-
 	farmers = {
 		culture = avadhi
 		religion = sunni
-		size = 7100
+		size = 5000
 	}
+	
+	farmers = {
+		culture = avadhi
+		religion = ismaili
+		size = 2100
+	}	
 }
 #Under rule of Bikaner 1836  
 #Bikaner (1044000/261000 POPS)

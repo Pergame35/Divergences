@@ -858,7 +858,7 @@ country_event = { #Sicilian emigration
             }
             militancy = -5
         }
-        money = -1000000
+        money = -10000
         add_country_modifier = {
             name = integration_sicily
             duration = 3650
@@ -905,7 +905,7 @@ country_event = { #Sicilian emigration
             }
             militancy = 1
         }
-        money = -550000
+        money = -5500
         add_country_modifier = {
             name = integration_sicily
             duration = 10950
@@ -1005,7 +1005,7 @@ country_event = { #Arborean emigration
             }
             militancy = -5
         }
-        money = -250000
+        money = -10000
         add_country_modifier = {
             name = integration_arborea
             duration = 3650
@@ -1055,7 +1055,7 @@ country_event = { #Arborean emigration
             }
             militancy = 1
         }
-        money = -75000
+        money = -7500
         add_country_modifier = {
             name = integration_arborea
             duration = 10950
@@ -1168,7 +1168,7 @@ country_event = { #Venitian emigration
             }
             militancy = -5
         }
-        money = -500000
+        money = -10000
         add_country_modifier = {
             name = integration_venice
             duration = 3650
@@ -1220,7 +1220,7 @@ country_event = { #Venitian emigration
             }
             militancy = 6
         }
-        money = -300000
+        money = -3000
         add_country_modifier = {
             name = integration_venice
             duration = 10950

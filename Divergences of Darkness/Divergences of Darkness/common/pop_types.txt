@@ -1079,6 +1079,8 @@ conversion_chance = {
             has_pop_religion = shiite
             has_pop_religion = sunni
             has_pop_religion = ibadi
+            has_pop_religion = zaydi
+            has_pop_religion = ismaili	
             AND = {
                 has_pop_religion = shinto
                 has_culture_core = yes
@@ -1149,4 +1151,14 @@ conversion_chance = {
         factor = 0.15
         not = { culture = this }
     }
+	
+    modifier = {
+        factor = 10
+        OR = { 
+			has_pop_religion = shiite
+			has_pop_religion = ismaili
+		}
+		country = { has_country_flag = kalwatiya_conversion }		
+    }	
+	
 }

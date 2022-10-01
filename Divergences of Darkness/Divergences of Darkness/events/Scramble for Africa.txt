@@ -686,6 +686,47 @@ country_event = {
             }
         }
     }
+	
+    option = {
+        name = "EVT95509OPTB"
+        set_global_flag = assab_sold
+        relation = {
+            who = FROM
+            value = -200
+        }
+        leave_alliance = FROM
+		
+		FROM = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 1851
+						province_id = 1849
+						province_id = 1850
+					}
+				}
+				secede_province = THIS
+			}
+			
+            war = {
+                target = THIS
+                attacker_goal = {
+					casus_belli = acquire_any_state
+					state_province_id = 1851
+				}
+            }
+			
+            casus_belli = {
+                target = THIS
+                type = demand_concession_BC_casus_belli
+                months = 60
+            }
+		}
+		
+        ai_chance = {
+            factor = 0
+        }
+    }
 }
 
 country_event = {
