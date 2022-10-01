@@ -695,23 +695,14 @@ emigration_chance = {
         modifier = {
             factor = -0.1
             not = { consciousness = 8 }
-            country = {
-                NOT = { has_country_flag = preparations_to_kill }
-            }
         }
         modifier = {
             factor = -0.1
             not = { consciousness = 7 }
-            country = {
-                NOT = { has_country_flag = preparations_to_kill }
-            }
         }
         modifier = {
             factor = -0.1
             not = { consciousness = 6 }
-            country = {
-                NOT = { has_country_flag = preparations_to_kill }
-            }
         }
     }
 
@@ -739,17 +730,6 @@ emigration_chance = {
     modifier = {
         factor = -0.3
         state_scope = { has_factories = yes }
-        country = {
-            NOT = { has_country_flag = preparations_to_kill }
-        }
-        OR = {
-            country = {
-                NOT = { has_country_flag = great_irish_famine }
-            }
-            location = {
-                NOT = { is_core = IRE }
-            }
-        }
     }
 
     modifier = {
@@ -792,22 +772,7 @@ emigration_chance = {
     group = {
         modifier = {
             factor = -0.2
-            OR = {
-                AND = {
-                    agree_with_ruling_party = 0.25
-                    country = {
-                        NOT = { has_country_flag = preparations_to_kill }
-                    }
-                }
-                AND = {
-                    agree_with_ruling_party = 0.51
-                    country = { has_country_flag = preparations_to_kill }
-                    OR = {
-                        is_primary_culture = yes
-                        is_accepted_culture = yes
-                    }
-                }
-            }
+            agree_with_ruling_party = 0.25
         }
     }
 
@@ -859,6 +824,9 @@ assimilation_chance = {
     modifier = {
         factor = -20
         has_culture_core = yes
+		#NOT = {
+		#	location = { has_province_modifier = forced_integration }
+		#}		
     }
 
     #modifier = {
@@ -1153,7 +1121,7 @@ conversion_chance = {
     }
 	
     modifier = {
-        factor = 10
+        factor = 50
         OR = { 
 			has_pop_religion = shiite
 			has_pop_religion = ismaili
