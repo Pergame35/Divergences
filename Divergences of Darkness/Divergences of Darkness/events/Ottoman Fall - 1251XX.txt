@@ -563,7 +563,19 @@ country_event = {
 
     trigger = {
         tag = TUR
-        KUR = { exists = yes }
+		year = 1840
+		SRN = {
+            exists = yes 
+		}	
+		BHT = {
+            exists = yes 
+		}
+		BTL = {
+		    exists = yes 
+		}
+		BDN = {
+            exists = yes 
+		}	
         NOT = { has_country_flag = kurdistanTUR }
         NOT = { has_global_flag = fartheewell }
     }
@@ -620,25 +632,18 @@ country_event = {
 
     trigger = {
         tag = TUR
-        KUR = { exists = no }
-        891 = {
-            NOT = { controlled_by = REB }
-        }
-        899 = {
-            NOT = { controlled_by = REB }
-        }
-        893 = {
-            NOT = { controlled_by = REB }
-        }
-        889 = {
-            NOT = { controlled_by = REB }
-        }
-        890 = {
-            NOT = { controlled_by = REB }
-        }
-        892 = {
-            NOT = { controlled_by = REB }
-        }
+		SRN = {
+            exists = no
+		}	
+		BHT = {
+            exists = no
+		}
+		BTL = {
+		    exists = no
+		}
+		BDN = {
+            exists = no
+		}	
         NOT = { has_country_flag = kurdistanTUR }
         NOT = { has_global_flag = fartheewell }
     }
@@ -661,10 +666,12 @@ country_event = {
 
     trigger = {
         tag = AZB
-        TUR = { has_country_flag = kurdistanTURloss }
+		NOT = {
+		    TUR = { owns = 899 }	
+		}		
         NOT = { has_global_flag = fartheewell }
-        NOT = { owns = 887 }
-        NOT = { war = yes }
+        NOT = { owns = 899 }
+		war = no
     }
 
     fire_only_once = yes
@@ -1279,7 +1286,7 @@ country_event = {
         name = "EVTOPTA125133"
 
         any_pop = {
-            limit = { culture = turkish }
+            limit = { has_pop_culture = turkish }
             militancy = -2
             scaled_militancy = {
                 factor = -5
@@ -1604,14 +1611,1308 @@ country_event = {
         name = "EVTOPTB125161"
         set_global_flag = ottoman_madjaristan
         any_pop = {
-            limit = { culture = hungarian }
+            limit = { has_pop_culture = hungarian }
             consciousness = 7
             militancy = 9
         }
         any_pop = {
-            limit = { culture = croat }
+            limit = { has_pop_culture = croat }
             consciousness = 7
             militancy = 9
         }
     }
 }
+
+### New Kurdish content
+
+country_event = { # Bohtan is asked to protect the brigands 
+    id = 125162
+	title = "EVTNAME125162"
+	desc = "EVTDESC125162"
+	picture = "kurds_aras"
+	
+	trigger = {
+	    tag = BHT 
+		NOT = {
+		    OR = {
+			    has_country_flag = refused_sponsoring_kurdish_brigands
+			    has_country_flag = supporting_the_kuren_kurdistana_azad
+			}
+	    }
+    }
+
+	fire_only_once = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "EVTOPTA125162"
+        set_country_flag = supporting_the_kuren_kurdistana_azad
+        badboy = 3
+        prestige = -5
+		add_country_modifier = {
+			name = "kuren_kurdistana_azad"
+			duration = -1
+		}		
+		ai_chance = {
+		    factor = 50
+		    modifier = {
+		        factor = 0
+			    BTL = { 
+			        ai = no
+			    }
+		    }
+	    }	
+	}
+
+    option = {
+        name = "EVTOPTB125162"
+        set_country_flag = refused_sponsoring_kurdish_brigands
+        prestige = 2 
+		BTL = {
+		    country_event = 125163
+		}	
+        ai_chance = {
+		    factor = 50
+			modifier = {
+			    factor = 100
+				BTL = {
+				    ai = no
+				}
+			}
+		}
+	}
+}
+
+country_event = { # Bitlis is asked to protect the brigands If Bohtan refuses 
+    id = 125163
+	title = "EVTNAME125162"
+	desc = "EVTDESC125162"
+	picture = "kurds_aras"
+	
+	is_triggered_only = yes 
+
+    option = {
+        name = "EVTOPTA125162"
+        set_country_flag = supporting_the_kuren_kurdistana_azad
+        badboy = 3
+        prestige = -5
+		add_country_modifier = {
+			name = "kuren_kurdistana_azad"
+			duration = -1
+		}		
+		ai_chance = {
+		    factor = 50 
+
+	    }	
+	}
+
+    option = {
+        name = "EVTOPTB125162"
+        set_country_flag = refused_sponsoring_kurdish_brigands
+        prestige = 2 	
+        ai_chance = {
+		    factor = 50
+		}
+	}
+}
+
+country_event = { # Kurdish rebels in Tur Abdin join their sponsor
+    id = 125164
+	title = "EVTNAME125164"
+    desc = "EVTDESC125164"
+	picture = "hamidiye_regiment" 
+	
+	trigger = {
+	    tag = TUR 
+		TUR = {
+		    any_owned_province = {
+				province_id = 3378
+			    controlled_by_rebels = yes 
+			}
+		}
+		OR = {
+			BHT = { has_country_flag = supporting_the_kuren_kurdistana_azad }
+			BTL = { has_country_flag = supporting_the_kuren_kurdistana_azad }			
+		}
+	}	
+	
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = "EVTOPTA125164"
+        any_country = {
+            limit = { has_country_flag = supporting_the_kuren_kurdistana_azad }
+            country_event = 125165
+        }
+    }
+}
+
+country_event = { # Tur Abdin secedes
+    id = 125165
+	title = "EVTNAME125165"
+	desc = "EVTDESC125165"
+	picture = "kurdish_anarchists"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = "EVTOPTA125165"
+		prestige = 1
+        3378 = { secede_province = THIS }
+        3378 = { add_core = THIS }		
+	}
+}
+
+country_event = { # Kurdish rebels in Diyarbakir join their sponsor
+    id = 125166
+	title = "EVTNAME125166"
+    desc = "EVTDESC125164"
+	picture = "diyarbakir_citadel" 
+	
+	trigger = {
+	    tag = TUR 
+		TUR = {
+		    any_owned_province = {
+				province_id = 893
+			    controlled_by_rebels = yes 
+			}
+		}
+		OR = {
+			BHT = { has_country_flag = supporting_the_kuren_kurdistana_azad }
+			BTL = { has_country_flag = supporting_the_kuren_kurdistana_azad }			
+		}
+	}	
+	
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = "EVTOPTA125164"
+        any_country = {
+            limit = { has_country_flag = supporting_the_kuren_kurdistana_azad }
+            country_event = 125167
+        }
+    }
+}
+
+country_event = { # Diyarbakir secedes
+    id = 125167
+	title = "EVTNAME125167"
+	desc = "EVTDESC125165"
+	picture = "diyarbakir_gravuru"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = "EVTOPTA125165"
+		prestige = 1
+        893 = { secede_province = THIS }
+        893 = { add_core = THIS }		
+	}
+}
+
+#Needed to start at 125181 here, since this way of coding the secession requires more events
+
+country_event = { # Kurdish rebels in Al Hasakah join their sponsor
+    id = 125181
+	title = "EVTNAME125181"
+    desc = "EVTDESC125166"
+	picture = "kurden_nach_der_schlacht" 
+	
+	trigger = {
+	    tag = TUR 
+		TUR = {
+		    any_owned_province = {
+				province_id = 3376
+			    controlled_by_rebels = yes 
+			}
+		}
+		OR = {
+			BHT = { has_country_flag = supporting_the_kuren_kurdistana_azad }
+			BTL = { has_country_flag = supporting_the_kuren_kurdistana_azad }			
+		}
+	}	
+	
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = "EVTOPTA125166"
+        any_country = {
+            limit = { has_country_flag = supporting_the_kuren_kurdistana_azad }
+            country_event = 125182
+        }
+    }
+}
+
+country_event = { # Al Hasakah secedes
+    id = 125182
+	title = "EVTNAME125182"
+	desc = "EVTDESC125165"
+	picture = "bahri_pasha"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = "EVTOPTA125165"
+		prestige = 1
+        3376 = { secede_province = THIS }
+        3376 = { add_core = THIS }		
+	}
+}
+
+country_event = { # Kurdish rebels in Malatya join their sponsor
+    id = 125183
+	title = "EVTNAME125183"
+    desc = "EVTDESC125166"
+	picture = "malatya_sandjak" 
+	
+	trigger = {
+	    tag = TUR 
+		TUR = {
+		    any_owned_province = {
+				province_id = 889
+			    controlled_by_rebels = yes 
+			}
+		}
+		OR = {
+			BHT = { has_country_flag = supporting_the_kuren_kurdistana_azad }
+			BTL = { has_country_flag = supporting_the_kuren_kurdistana_azad }			
+		}
+	}	
+	
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = "EVTOPTA125166"
+        any_country = {
+            limit = { has_country_flag = supporting_the_kuren_kurdistana_azad }
+            country_event = 125184
+        }
+    }
+}
+
+country_event = { # Malatya secedes
+    id = 125184
+	title = "EVTNAME125184"
+	desc = "EVTDESC125165"
+	picture = "malatya_market"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = "EVTOPTA125165"
+		prestige = 1
+        889 = { secede_province = THIS }
+        889 = { add_core = THIS }		
+	}
+}
+
+country_event = { # Kurdish rebels in Urfa join their sponsor
+    id = 125185
+	title = "EVTNAME125185"
+    desc = "EVTDESC125166"
+	picture = "urfa_bridge" 
+	
+	trigger = {
+	    tag = TUR 
+		TUR = {
+		    any_owned_province = {
+				province_id = 899
+			    controlled_by_rebels = yes 
+			}
+		}
+		OR = {
+			BHT = { has_country_flag = supporting_the_kuren_kurdistana_azad }
+			BTL = { has_country_flag = supporting_the_kuren_kurdistana_azad }			
+		}
+	}	
+	
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = "EVTOPTA125166"
+        any_country = {
+            limit = { has_country_flag = supporting_the_kuren_kurdistana_azad }
+            country_event = 125186
+        }
+    }
+}
+
+country_event = { # Urfa secedes
+    id = 125186
+	title = "EVTNAME125186"
+	desc = "EVTDESC125165"
+	picture = "urfa_panorama"
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = "EVTOPTA125165"
+		prestige = 1
+        899 = { secede_province = THIS }
+        899 = { add_core = THIS }		
+	}
+}			
+
+
+country_event = { # Soran annexes Mosul
+    id = 125168
+	title = "EVTNAME125168"
+	desc = "EVTDESC125168"
+	picture = "malik_khoshaba"
+	
+	trigger = {
+	    tag = TUR 
+	    923 = {
+		    owned_by = TUR
+		    controlled_by_rebels = yes 
+		}
+	}
+
+    mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA125168"
+		prestige = -3
+		any_owned = {
+			limit = {
+				owned_by = TUR 
+		        is_core = SRN 
+			    controlled_by_rebels = yes 
+			}		
+			secede_province = SRN
+	    }
+		SRN = { 
+		    country_event = 125169
+		}	
+	}
+}
+
+country_event = { # Soran is given the choice to either keep Mosul or leave the Assyrians to their fate
+    id = 125169
+	title = "EVTNAME125169"
+	desc = "EVTDESC125169"
+	picture = "malik_barkho"
+	
+	is_triggered_only = yes 
+	
+    option = {
+        name = "EVTOPTA125169"
+		prestige = -5	
+		relation = {
+		    who = BTL 
+			value = -50
+		}
+		relation = {
+		    who = BHT
+			value = -50
+		}
+		relation = {
+		    who = BDN
+			value = -50
+		}
+		add_accepted_culture = assyrian
+		set_country_flag = soran_assyria
+	}
+	option = {  
+        name = "EVTOPTB125169"
+        SRN = {
+		    923 = {
+            secede_province = ASY
+			}
+		    relation = {
+		        who = ASY 
+			    value = -100
+		    }	
+        }
+    }
+} 
+
+country_event = { # The Kuren Kurdistana Azad 
+    id = 125170
+	title = "EVTNAME125170"
+	desc = "EVTDESC125170"
+	picture = "kara_fatima_khanum"
+	
+	trigger = {
+	    has_country_flag = supporting_the_kuren_kurdistana_azad
+		TUR =  {
+		    has_country_flag = kurdistanTURloss
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = "EVTOPTA125170"
+	}	
+}
+
+
+country_event = { # compensating KKA 
+    id = 125171
+    title = "EVTNAME125171"
+	desc = "EVTDESC125171"
+	picture = "mahabad_market"
+	
+	trigger = {
+	    has_country_flag = supporting_the_kuren_kurdistana_azad
+		NOT = { 
+		    has_country_flag = kuren_kurdistana_azad_appeased_1	
+		}
+		NOT = {
+		    has_country_flag = withdrawn_support_kuren_kurdistana_azad
+		}	
+		war = no 
+	}
+	
+	mean_time_to_happen = { months = 48 }
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = "EVTOPTA125171"
+		prestige = -5
+		money = -7000
+		any_pop = {
+			limit = {
+				has_pop_culture = kurdish 
+				pop_type = soldiers
+			}
+			reduce_pop = 1.2
+		}
+		any_pop = {
+		    limit = {
+				pop_type = farmers 
+			}
+			militancy = 2
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = soldiers 
+			}
+			militancy = -5
+		}
+		set_country_flag = kuren_kurdistana_azad_appeased_1
+	}
+	
+	option = {
+	    name = "EVTOPTB125171"
+		prestige = -3
+		any_pop = {
+			limit = {
+				has_pop_culture = kurdish 
+				pop_type = soldiers
+			}
+			reduce_pop = 1.2
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish 
+				pop_type = farmers 
+			}
+			militancy = 2
+		}
+		
+		any_pop = {
+		    limit =  { 
+			    has_pop_culture = assyrian 
+				pop_type = farmers 
+			}
+			militancy = 6
+		}
+		
+		any_pop = {
+		    limit =  { 
+			    has_pop_culture = armenian  
+				pop_type = farmers 
+			}
+			militancy = 6
+		}
+		
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = soldiers 
+			}
+			militancy = -5
+		}
+		set_country_flag = kuren_kurdistana_azad_appeased_1	
+	}
+	
+	option = {
+	    name = "EVTOPTC125171"
+		prestige = 3
+		any_pop = {
+		    limit = {
+				pop_type = farmers 
+			}
+			militancy = -2
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = soldiers 
+			}
+			militancy = 8
+			reduce_pop = 0.75			
+		}
+		set_country_flag = withdrawn_support_kuren_kurdistana_azad
+		clr_country_flag = supporting_the_kuren_kurdistana_azad
+		remove_country_modifier = kuren_kurdistana_azad
+	}
+}
+
+country_event = { # Traditional Warfare KKA
+    id = 125172
+    title = "EVTNAME125172"
+	desc = "EVTDESC125172"
+	picture = "izzet_pasha"
+	
+	trigger = {
+	    OR = {
+		    foreign_training = yes_foreign_training
+			foreign_officers = yes_foreign_officers
+		}	
+		has_country_flag = kuren_kurdistana_azad_appeased_1
+		NOT = {
+		    has_country_flag = kuren_kurdistana_azad_appeased_2
+	    }
+		NOT = {
+		    has_country_flag = withdrawn_support_kuren_kurdistana_azad
+		}	
+	}
+ 
+    mean_time_to_happen = { months = 1 }
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = "EVTOPTA125172"
+		prestige = -5
+		military_reform = no_foreign_training
+		military_reform = no_foreign_officers 
+		casus_belli = {
+		    target = BTL 
+			type = conquest
+			months = 60
+		}	
+		casus_belli = {
+		    target = BHT 
+			type = conquest
+			months = 60
+		}	
+		casus_belli = {
+		    target = SRN 
+			type = conquest
+			months = 60
+		}
+        casus_belli = {
+		    target = BDN 
+			type = conquest
+			months = 60
+		}			
+		set_country_flag = kuren_kurdistana_azad_appeased_2
+		set_country_flag = kurdish_hegemon
+		clr_country_flag = kuren_kurdistana_azad_appeased_1
+	}
+	
+	option = {
+	    name = "EVTOPTB125172"
+		prestige = 3
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = soldiers 
+			}
+			militancy = 8
+			reduce_pop = 0.75			
+		}
+		set_country_flag = withdrawn_support_kuren_kurdistana_azad
+		clr_country_flag = kuren_kurdistana_azad_appeased_1
+		clr_country_flag = supporting_the_kuren_kurdistana_azad
+		remove_country_modifier = kuren_kurdistana_azad		
+	}	
+}
+
+country_event = { # Marriage Proposal KKA
+    id = 125173
+    title = "EVTNAME125173"
+	desc = "EVTDESC125173"
+	picture = "midyat_wedding"	
+	
+	trigger = {
+	    has_country_flag = kuren_kurdistana_azad_appeased_2
+		NOT = { 
+		    has_country_flag = kuren_kurdistana_azad_appeased_3
+		}	
+		war = no 
+	}
+	
+	mean_time_to_happen = { months = 48 }
+	
+	fire_only_once = yes
+
+	option = {
+	    name = "EVTOPTA125173"
+		prestige = -15
+		money = -4000
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish 
+				pop_majority_ideology = reactionary
+			}
+			militancy = 6
+		}
+		
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish 
+				pop_majority_ideology = conservative
+			}
+			militancy = 4
+		}
+		define_general = {
+            name = "Kumar Farsi"
+            personality = defiant
+            background = rising_star
+        }
+		set_country_flag = kuren_kurdistana_azad_appeased_3
+		clr_country_flag = kuren_kurdistana_azad_appeased_2
+	}
+	
+    option = {
+	    name = "EVTOPTB125173"
+		prestige = 3
+		any_pop = {
+		    limit = {
+				has_pop_culture = kurdish 
+				pop_majority_ideology = reactionary 
+			}
+			militancy = -4
+		}
+		any_pop = {
+		    limit = {
+				has_pop_culture = kurdish 
+				pop_majority_ideology = conservative
+			}
+			militancy = -2
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = soldiers 
+			}
+			militancy = 8
+			reduce_pop = 0.75			
+		}
+		set_country_flag = withdrawn_support_kuren_kurdistana_azad
+		clr_country_flag = kuren_kurdistana_azad_appeased_2
+		clr_country_flag = supporting_the_kuren_kurdistana_azad
+		remove_country_modifier = kuren_kurdistana_azad			
+	}
+}
+
+country_event = { # The Assyrian Question
+    id = 125174
+    title = "EVTNAME125174"
+	desc = "EVTDESC125174"
+	picture = "assyrian_archeology"	
+	
+	trigger = {
+	    NOT = { 892 = { is_core = TUR } }	
+	    OR = {
+		    tag = KUR 
+			tag = BHT
+			tag = BTL
+			tag = BDN 
+        }
+        any_owned_province = {
+			has_pop_culture = assyrian 
+            average_militancy = 4
+        }
+	}
+	
+	mean_time_to_happen = { months = 48 }
+	
+	fire_only_once = yes
+
+	option = {
+	    name = "EVTOPTA125174"
+	    any_pop = {
+		    limit = {
+			    has_pop_culture = assyrian 
+			}
+	        militancy = 4
+		    consciousness = 4
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = armenian
+			}
+	    militancy = 2
+		consciousness = 2
+		}
+		any_country = {
+		    limit = {
+			    accepted_culture = assyrian 
+			}	
+			country_event = 125175
+		}
+    }
+	
+	option = {
+	    name = "EVTOPTB125174"
+	    any_pop = {
+		    limit = {
+			    has_pop_culture = assyrian 
+			}
+			militancy = -4
+			consciousness = -4
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = armenian
+			}
+			militancy = -2
+			consciousness = -2
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+                pop_type = farmers 				
+			}
+			militancy = 3
+			consciousness = 3
+		}
+	}
+	option = {
+	    name = "EVTOPTC125174"
+	    any_pop = {
+		    limit = {
+			    has_pop_culture = assyrian 
+			}
+	        militancy = 8
+		    consciousness = 8
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = armenian
+			}
+	    militancy = 4
+		consciousness = 4
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+                pop_type = farmers 				
+			}
+			militancy = -2
+			consciousness = -2
+		}
+		any_country = {
+		    limit = {
+			    accepted_culture = assyrian 
+			}	
+			country_event = 125175
+		}
+		set_country_flag = assyrian_massacre_support
+	}		
+}
+
+country_event = { # Countries with assyrians accepted react 
+	id = 125175
+    title = "EVTNAME125175"
+	desc = "EVTDESC125175"
+	picture = "el_djezairi"	
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = "EVTOPTA125175"
+	    prestige = 5
+	    any_pop = {
+		    limit = {
+			    has_pop_culture = assyrian 
+			}
+			militancy = -2
+			consciousness = -2
+			dominant_issue = {
+                value = jingoism
+                factor = 0.1
+            }
+		}
+		casus_belli = {
+		    target = FROM 
+			type = conquest
+			months = 24			
+        }
+	}	
+	
+	option = {
+	    name = "EVTOPTB125175"
+	    prestige = -5
+	    any_pop = {
+		    limit = {
+			    has_pop_culture = assyrian 
+			}
+			militancy = 4
+			consciousness = 4
+		}
+		set_country_flag = assyria_receives_no_aid
+	}
+}	
+
+country_event = { # The Assyrians have lost - subjugation
+	id = 125176
+    title = "EVTNAME125176"
+	desc = "EVTDESC125176"
+	picture = "assyrian_harput"		
+	
+	trigger = {
+		has_country_flag = assyrian_massacre
+		OR = {
+		    OR = {
+			    truce_with = ASY 
+			    truce_with = SRN     
+			}
+			OR = {
+			    ASY = {
+				    has_country_flag = assyria_receives_no_aid
+				}
+				SRN = {
+				    has_country_flag = assyria_receives_no_aid
+				}
+			}	
+		}
+	}
+	
+	mean_time_to_happen = { days = 14 }
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = "EVTOPTA125176"
+        any_pop ={
+		    limit = {
+			    has_pop_culture = assyrian 
+		    }
+			reduce_pop = 0.7
+			militancy = -4
+			consciousness = -4
+		}
+		any_country = {
+		    limit = {
+			    accepted_culture = assyrian 
+			}
+			country_event = 125178
+	    }
+    }	
+}	
+
+country_event = { # The Assyrians have lost - Massacre
+	id = 125177
+    title = "EVTNAME125177"
+	desc = "EVTDESC125177"
+	picture = "wawela_massacre"		
+	
+	trigger = {
+	    has_country_flag = assyrian_massacre_support
+		OR = {
+		    OR = {
+			    truce_with = ASY 
+			    truce_with = SRN     
+			}
+			OR = {
+			    ASY = {
+				    has_country_flag = assyria_receives_no_aid
+				}
+				SRN = {
+				    has_country_flag = assyria_receives_no_aid
+				}
+			}	
+		}
+	}
+	
+	mean_time_to_happen = { days = 14 }
+	
+	fire_only_once = yes	
+	
+	option = {
+	    name = "EVTOPTA125177"
+        any_pop ={
+		    limit = {
+			    has_pop_culture = assyrian 
+		    }
+			reduce_pop = 0.5
+			militancy = -4
+			consciousness = -4
+		}
+		any_country = {
+		    limit = {
+			    accepted_culture = assyrian 
+			}
+			country_event = 125178
+	    }
+    }
+}
+
+country_event = { # accepting assyrian refugees 
+	id = 125178
+    title = "EVTNAME125178"
+	desc = "EVTDESC125178"
+	picture = "assyrian_refugees"	
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = "EVTOPTA125178"
+	    prestige = 2
+		any_pop = {
+		    limit = {
+			    has_pop_culture = assyrian 
+			}
+			reduce_pop = 1.4
+			militancy = -2
+			consciousness = -2
+	    }
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+			}
+			militancy = 2
+			consciousness = 2
+	    }
+	}
+
+	option = {
+	    name = "EVTOPTB125178"
+	    prestige = -2
+		any_pop = {
+		    limit = {
+			    has_pop_culture = assyrian 
+			}
+            militancy = 3
+			consciousness = 3
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+			}
+            militancy = -1
+			consciousness = -1
+		}
+	}
+}
+
+country_event = {
+	id = 125179
+    title = "EVTNAME125179"
+	desc = "EVTDESC125179"
+	picture = "barzani"	
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = "EVTOPTA125179"
+		money = -10000
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = soldiers
+			}
+            militancy = -2
+			consciousness = -2
+			reduce_pop = 1.3
+		}	
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = officers 
+			}
+            militancy = -1
+			consciousness = -1
+			reduce_pop = 1.3	
+		}
+		remove_country_modifier = kuren_kurdistana_azad			
+	}
+	option = {
+	    name = "EVTOPTB125179"
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = soldiers
+			}
+            militancy = 4
+			consciousness = 4
+			reduce_pop = 0.9
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = officers 
+			}
+            militancy = 8
+			consciousness = 8
+			reduce_pop = 0.5
+		}
+		any_pop = {
+		    limit = {
+				pop_type = farmers
+			}
+            militancy = -3
+			consciousness = -3
+		}
+		remove_country_modifier = kuren_kurdistana_azad			
+	}
+	option = {
+	    name = "EVTOPTC125179"
+		prestige = 15 
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = soldiers
+			}
+            militancy = 6
+			consciousness = 6
+			reduce_pop = 0.5
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = officers 
+			}
+            militancy = 8
+			consciousness = 8
+			reduce_pop = 0.5
+		}
+		any_pop = {
+		    limit = {
+				pop_type = farmers
+			}
+            militancy = -5
+			consciousness = -5
+			reduce_pop = 1.1
+		}
+		remove_country_modifier = kuren_kurdistana_azad			
+	}
+}
+
+country_event = {
+	id = 125180
+    title = "EVTNAME125180"
+	desc = "EVTDESC125180"
+	picture = "kurdistan_ethnic"	
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = "EVTOPTA125180"
+		894 = {
+		    add_core = KUR 
+		}	
+		896 = {
+		    add_core = KUR 
+		}
+		897 = {
+		    add_core = KUR 
+		}
+		900 = {
+		    add_core = KUR 
+		}
+		901 = {
+		    add_core = KUR 
+		}
+		904 = {
+		    add_core = KUR 
+		}
+		905 = {
+		    add_core = KUR 
+		}
+	}
+	
+	option = {
+	    name = "EVTOPTB125180"
+		926 = {
+		    add_core = KUR 
+		}	
+		927 = {
+		    add_core = KUR 
+		}
+		929 = {
+		    add_core = KUR 
+		}
+		930 = {
+		    add_core = KUR 
+		}
+		932 = {
+		    add_core = KUR 
+		}
+		933 = {
+		    add_core = KUR 
+		}
+		934 = {
+		    add_core = KUR 
+		}
+	}
+
+	option = {
+	    name = "EVTOPTC125180"
+		882 = {
+		    add_core = KUR 
+		}
+		885 = {
+		    add_core = KUR 
+		}
+		886 = {
+		    add_core = KUR 
+		}
+		887 = {
+		    add_core = KUR 
+		}
+		888 = {
+		    add_core = KUR 
+		}
+		1100 = {
+		    add_core = KUR 
+		}
+		1101 = {
+		    add_core = KUR 
+		}
+	}
+}
+
+country_event = {
+	id = 125187
+    title = "EVTNAME125187"
+	desc = "EVTDESC125187"
+	picture = "souk_baghdad"	
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = "EVTOPTA125187"
+		money = -10000
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = artisans
+			}
+            militancy = -2
+			consciousness = -2
+		}	
+	}
+	
+	option = {
+	    name = "EVTOPTB125187"
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = artisans
+			}
+            militancy = 1
+			consciousness = 1
+		}
+        relation = {
+            who = TUR
+            value = -50
+        }
+		economic_reform = firearms_production_two
+	}
+
+	option = {
+	    name = "EVTOPTC125187"
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+				pop_type = artisans
+			}
+            militancy = 5
+			consciousness = 5
+		}
+		add_country_modifier = {
+			name = disbanded_guilds
+			duration = -1
+		}
+        relation = {
+            who = TUR
+            value = -200
+        }		
+	}
+}
+
+country_event = {
+	id = 125188
+    title = "EVTNAME125188"
+	desc = "EVTDESC125188"
+	picture = "nisroch"	
+	
+    trigger = {
+        war = no
+		has_country_flag = soran_assyria
+		civilized = yes
+    }
+	
+    mean_time_to_happen = { days = 120 }
+	
+    fire_only_once = yes		
+	
+	option = {
+	    name = "EVTOPTA125188"
+		any_pop = {
+		    limit = {
+			    has_pop_culture = assyrian
+			}
+            militancy = 8
+			consciousness = 6
+		}
+		remove_accepted_culture = assyrian
+	}
+	
+	option = {
+	    name = "EVTOPTB125188"
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+			}
+            militancy = 8
+			consciousness = 6
+		}
+        primary_culture = assyrian
+        remove_accepted_culture = kurdish
+		change_tag = ASY
+	}
+
+	option = {
+	    name = "EVTOPTC125188"
+		any_pop = {
+		    limit = {
+			    has_pop_culture = assyrian
+			}
+            militancy = 4
+			consciousness = 3
+		}
+		any_pop = {
+		    limit = {
+			    has_pop_culture = kurdish
+			}
+            militancy = 4
+			consciousness = 3
+		}		
+	}
+}
+
+
