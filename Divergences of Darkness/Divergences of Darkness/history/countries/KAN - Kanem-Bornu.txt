@@ -1,7 +1,7 @@
 capital = 1816
-primary_culture = fulbe
+primary_culture = kanuri
 culture = bedouin
-culture = kanuri
+culture = fulbe
 culture = african_minor
 religion = sunni
 government = feudal_monarchy
@@ -48,6 +48,7 @@ upper_house = {
 }
 
 set_country_flag = sunni_country
+set_country_flag = lacking_writing_system
 
 # Level_1
 # Technologies

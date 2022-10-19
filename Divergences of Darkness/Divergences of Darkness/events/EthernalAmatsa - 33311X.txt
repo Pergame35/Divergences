@@ -162,37 +162,3 @@ country_event = {
 		}
     }
 }
-
-
-
-
-
-#Adal reverts to Ajuraan
-country_event = {
-    id = 333119
-    title = "EVTNAME333119"
-    desc = "EVTDESC333119"
-
-    trigger = {
-		tag = ADA
-		war = no
-		owns = 1868
-		NOT = { number_of_states = 2 }
-		has_country_flag = greater_adal
-		#ai = no
-    }
-
-    mean_time_to_happen = { days = 1 }
-
-    option = {
-        name = "EVTOPTA333119"
-		
-		any_owned = {
-			limit = {
-				is_core = AJU
-			}
-			secede_province = AJU
-			remove_core = THIS
-		}
-    }
-}

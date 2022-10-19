@@ -525,6 +525,16 @@ country_event = {
             factor = 70
             modifier = {
                 factor = 2
+                NOT = { money = 50000 }
+                OR = {
+                    tag = AUS
+                    tag = DNB
+                    tag = TUR
+                    tag = RUS
+                }
+            }
+            modifier = {
+                factor = 2
                 NOT = { money = 5000 }
             }
             modifier = {
@@ -692,6 +702,16 @@ country_event = {
                 OR = {
                     nationalvalue = nv_autocracy
                     nationalvalue = nv_tradition
+                }
+            }
+            modifier = {
+                factor = 1.5
+                NOT = { money = 200000 }
+                OR = {
+                    tag = AUS
+                    tag = DNB
+                    tag = TUR
+                    tag = RUS
                 }
             }
             modifier = {
@@ -968,6 +988,16 @@ country_event = {
             }
             modifier = {
                 factor = 2
+                NOT = { money = 50000 }
+                OR = {
+                    tag = AUS
+                    tag = DNB
+                    tag = TUR
+                    tag = RUS
+                }
+            }
+            modifier = {
+                factor = 2
                 NOT = { money = 5000 }
             }
             modifier = {
@@ -1151,6 +1181,16 @@ country_event = {
             modifier = {
                 factor = 2
                 NOT = { ruling_party_ideology = liberal }
+            }
+            modifier = {
+                factor = 2
+                NOT = { money = 100000 }
+                OR = {
+                    tag = AUS
+                    tag = DNB
+                    tag = TUR
+                    tag = RUS
+                }
             }
             modifier = {
                 factor = 2

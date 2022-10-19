@@ -41,8 +41,9 @@ consciousness = 0
 nonstate_consciousness = 0
 
 set_country_flag = theocratic_government
-set_country_flag = theocracy_allowed
 set_country_flag = sunni_country
+
+oob = "DAG_oob.txt"
 
 decision = caucasus_muslims_1836_setup
 
@@ -51,6 +52,8 @@ foreign_artillery = yes_foreign_artillery
 
 
 # Technologies
+flintlock_rifles = 1
+bronze_muzzle_loaded_artillery = 1
 
 upper_house = {
 	fascist = 0

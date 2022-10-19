@@ -50,10 +50,10 @@ upper_house = {
 
 set_country_flag = sunni_country
 
-set_country_flag = lacking_writing_system
-foreign_weapons = yes_foreign_weapons
-
+#set_country_flag = lacking_writing_system
+#foreign_weapons = yes_foreign_weapons
 # Technologies
+#flintlock_rifles = 1
 
 # Inventions
 
@@ -61,3 +61,7 @@ foreign_weapons = yes_foreign_weapons
 consciousness = 0
 nonstate_consciousness = 0
 
+oob = "DND_oob.txt"
+1861.1.1 = {
+	oob = "/1861/DND_oob.txt"
+}

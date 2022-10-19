@@ -3824,61 +3824,181 @@ country_event = {
     }
 }
 
-#Dragon Wakes - China westernisation
+#Doctrine of Lapse 1/2
 country_event = {
-	title = "EVTNAME90900"
-	desc = "EVTDESC90900"
-	picture = "Celebration"
+    id = 13357
+    title = "EVTNAME13357"
+    desc = "EVTDESC13357"
 
-	id = 90900
-	news = yes
-	news_desc_long = "EVTDESC90900_NEWS_LONG"
-	news_desc_medium = "EVTDESC90900_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC90900_NEWS_SHORT"
+    picture = "Rebellion"
 
-	is_triggered_only = yes
-	
-	trigger = {
-		OR = {
-			tag = CHI
-			is_culture_group = chinese
-			tag = MCK
-		}
-	}
+    trigger = {
+        vassal_of = ENG
+        ai = yes
+        NOT = { has_country_flag = no_british_doctrine }
+        ENG = {
+            ideological_thought = 1
+            exists = yes
+        }
+        NOT = { has_global_flag = eic_spawned }
+        OR = {
+            primary_culture = assamese
+            primary_culture = baluchi
+            primary_culture = bengali
+            primary_culture = bihari
+            primary_culture = manipuri
+            primary_culture = nepali
+            primary_culture = oriya
+            primary_culture = sinhala
+            primary_culture = avadhi
+            primary_culture = kanauji
+            primary_culture = kashmiri
+            primary_culture = panjabi
+            primary_culture = gujarati
+            primary_culture = marathi
+            primary_culture = sindi
+            primary_culture = rajput
+            primary_culture = kannada
+            primary_culture = malayalam
+            primary_culture = tamil
+            primary_culture = telegu
+            tag = CRL
+        }
+    }
 
-	option = {					
-		name = "EVTOPTA90900"
-		set_global_flag = the_dragon_wakes
-		random_owned = { limit = { owner = { ai = yes } } owner = { add_country_modifier = { name = law_changed_by_force duration = 3 } } }
-		random_owned = { 
-			limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
-			owner = { activate_technology = experimental_railroad  clr_country_flag = activate_experimental_railroad }
-		}
-		add_country_modifier = { name = global_baby_boom duration = 730 }
-		prestige = 10
-		remove_country_modifier = educational_reform
-		remove_country_modifier = military_reform
-		remove_country_modifier = western_influences
-		remove_country_modifier = uncivilized_isolationism
-		remove_country_modifier = trade_restrictions
-		remove_country_modifier = sayings_of_the_dutch
-		clr_country_flag = using_foreign_weapons
-		clr_country_flag = using_foreign_artillery
-		clr_country_flag = using_foreign_ships
-		clr_country_flag = using_foreign_shipyards
-		any_owned = {
-			remove_province_modifier = western_presence
-			remove_province_modifier = foreign_smugglers
-			remove_province_modifier = foreign_trading_post
-			remove_province_modifier = local_opium_habit
-			remove_province_modifier = european_military_mission
-			remove_province_modifier = legation_quarter
-			remove_province_modifier = kettler_denkmal
-			remove_province_modifier = extraterritoriality_granted
-			remove_province_modifier = boxer_presence
-			remove_province_modifier = boxer_agitation
-		}
-	}
+    mean_time_to_happen = {
+        months = 75
+        modifier = {
+            factor = 1.5
+            NOT = { average_militancy = 1 }
+        }
+        modifier = {
+            factor = 1.2
+            NOT = { average_militancy = 2 }
+        }
+        modifier = {
+            factor = 1.1
+            NOT = { average_militancy = 3 }
+        }
+        modifier = {
+            factor = 0.9
+            average_militancy = 4
+        }
+        modifier = {
+            factor = 0.8
+            average_militancy = 5
+        }
+        modifier = {
+            factor = 0.5
+            num_of_revolts = 1
+        }
+        modifier = {
+            factor = 0.9
+            NOT = { prestige = 10 }
+        }
+        modifier = {
+            factor = 0.9
+            NOT = { prestige = 5 }
+        }
+        modifier = {
+            factor = 0.1
+            OR = {
+                tag = BHP
+                tag = CRL
+                NOT = {
+                    government = absolute_monarchy
+                    government = prussian_constitutionalism
+                    government = hms_government
+                }
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTA13357"
+        tech_school = unciv_tech_school
+        set_country_flag = no_british_doctrine
+        any_pop = {
+            limit = { is_primary_culture = yes }
+            militancy = 4
+            consciousness = 1
+        }
+        political_reform = peonage
+        any_owned = {
+            limit = {
+                has_pop_type = labourers
+                has_pop_type = serfs
+            }
+            any_pop = {
+                limit = { type = serfs }
+                pop_type = labourers
+            }
+        }
+        any_owned = {
+            limit = {
+                has_pop_type = farmers
+                has_pop_type = serfs
+            }
+            any_pop = {
+                limit = { type = serfs }
+                pop_type = farmers
+            }
+        }
+        ENG = { country_event = 13358 }
+    }
+}
+
+# Doctrine of Lapse 2/2
+country_event = {
+    id = 13358
+    title = "EVTNAME13358"
+    desc = "EVTDESC13358"
+    news = yes
+    news_desc_long = "EVTDESC13358_NEWS_LONG"
+    news_desc_medium = "EVTDESC13358_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC13358_NEWS_SHORT"
+
+    picture = "india"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA13358"
+        prestige = 5
+        inherit = FROM
+        any_owned = {
+            limit = { is_core = HND }
+            any_pop = {
+                limit = { is_culture_group = south_asian }
+                militancy = 4
+                consciousness = 1
+            }
+            random_list = {
+                50 = {
+                    add_province_modifier = {
+                        name = nationalist_agitation
+                        duration = 1825
+                    }
+                }
+                25 = {
+                    add_province_modifier = {
+                        name = nationalist_agitation
+                        duration = 365
+                    }
+                }
+                25 = {}
+            }
+        }
+        set_global_flag = doctrine_of_lapse_has_been_used
+    }
+
+    option = {
+        name = "EVTOPTB13358"
+        prestige = -2
+        FROM = {
+            any_pop = { militancy = -2 }
+        }
+    }
 }
 
 country_event = {
@@ -3896,6 +4016,7 @@ country_event = {
 
     trigger = {
         NOT = {
+            tag = QNG
             tag = CHI
             AND = {
                 NOT = { has_global_flag = the_dragon_wakes }
@@ -4343,6 +4464,8 @@ country_event = {
                         is_culture_group = chinese
                         has_country_modifier = uncivilized_isolationism
                         has_country_modifier = sakoku
+                        vassal_of = QNG
+                        substate_of = QNG
                     }
                     civilized = no
                     naval_schools = yes_naval_schools
@@ -4364,6 +4487,8 @@ country_event = {
                         is_culture_group = chinese
                         has_country_modifier = uncivilized_isolationism
                         has_country_modifier = sakoku
+                        vassal_of = QNG
+                        substate_of = QNG
                     }
                     civilized = no
                     foreign_officers = yes_foreign_officers

@@ -148,11 +148,6 @@ political_decisions = {
         picture = zanzibar_oman
         potential = {
             tag = ETH
-			has_country_flag = eth_nubia
-			NOT = { has_country_flag = eth_nubia_integrated }
-			all_core = { owned_by = THIS }
-			EGY_1834 = { owned_by = THIS }
-			EGY_1827 = { owned_by = THIS }
         }
 			
         allow = {

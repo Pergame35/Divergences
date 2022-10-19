@@ -4,4 +4,7 @@ add_core = TUR
 add_core = KUR
 trade_goods = iron
 life_rating = 35
-
+revolt = {
+	type = nationalist_rebels
+	controller = yes
+}

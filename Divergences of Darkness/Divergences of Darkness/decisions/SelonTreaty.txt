@@ -23,27 +23,4 @@ political_decisions = {
             SPA = { prestige = -10 }
         }
     }
-	
-    spain_selon_treaty = {
-        picture = esfera_celeste
-        potential = {
-            ai = no
-            OR = {
-                tag = SPA
-                tag = SPC
-            }
-            NOT = { has_global_flag = selon_treaty }
-        }
-        allow = {
-            is_greater_power = yes
-            war = no
-			nationalism_n_imperialism = 1
-        }
-
-        effect = {
-            set_global_flag = selon_treaty
-            country_event = 95601
-        }
-    }	
-	
 }

@@ -731,7 +731,7 @@ political_decisions = {
                 limit = {
                     province_id = 349
                     owner = {
-                        is_culture_group = germanic
+                        OR = { is_culture_group = germanic }
                     }
                 }
                 349 = { change_province_name = "Reval" }

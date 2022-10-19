@@ -32,89 +32,51 @@ leader = {
 
 army = {
 	name = "1st Kurdish Army"
-	location = 893
+	location = 899
 	regiment = {
 		name= "1. Bostancy-yy Hassa"
 		type = infantry
-		home = 899
+		home = 889
 	}
 
 	regiment = {
 		name= "2. Bostancy-yy Hassa"
 		type = infantry
-		home = 899
+		home = 889
 	}
 
 	regiment = {
 		name= "3. Bostancy-yy Hassa"
 		type = infantry
-		home = 899
+		home = 889
 	}
 
 	regiment = {
 		name= "4. Bostancy-yy Hassa"
 		type = infantry
-		home = 899
+		home = 889
 	}
 	regiment = {
-		name= "5. Bostancy-yy Hassa"
+		name= "1. Bostancy-yy Hassa"
 		type = infantry
-		home = 899
+		home = 889
 	}
 	regiment = {
-		name= "6. Bostancy-yy Hassa"
+		name= "1. Bostancy-yy Hassa"
 		type = infantry
-		home = 899
+		home = 889
 	}
 	regiment = {
-		name= "7. Bostancy-yy Hassa"
+		name= "1. Bostancy-yy Hassa"
 		type = infantry
-		home = 899
+		home = 889
 	}
 
 }
 
 army = {
-	name = "2nd Kurdish Army"
-	location = 3378
-	regiment = {
-		name= "1. Bostancy-yy Hassa"
-		type = infantry
-		home = 889
-	}
-
-	regiment = {
-		name= "2. Bostancy-yy Hassa"
-		type = infantry
-		home = 889
-	}
-
-	regiment = {
-		name= "3. Bostancy-yy Hassa"
-		type = infantry
-		home = 889
-	}
-
-	regiment = {
-		name= "4. Bostancy-yy Hassa"
-		type = infantry
-		home = 889
-	}
-	regiment = {
-		name= "5. Bostancy-yy Hassa"
-		type = infantry
-		home = 889
-	}
-	regiment = {
-		name= "6. Bostancy-yy Hassa"
-		type = infantry
-		home = 889
-	}
-}	
-
-army = {
 	name = "Syrian Army"
-	location = 905
+	location = 904
 	regiment = {
 		name= "1. Bostancy-yy Hassa"
 		type = infantry
@@ -287,49 +249,3 @@ army = {
 		home = 876
 	}
 }
-
-army = {
-    name = "Christian Guard"
-	location = 923
-	regiment = {
-	    name = "1. Istra'tia deimin Dbita'laha"
-		type = infantry 
-		home = 923
-	}
-    regiment = {
-	    name = "2. Istra'tia deimin Dbita'laha"
-		type = infantry 
-		home = 923
-	}		
-	regiment = {
-	    name = "3. Istra'tia deimin Dbita'laha"
-		type = infantry 
-		home = 923
-	}
-	regiment = {
-	    name = "4. Istra'tia deimin Dbita'laha"
-		type = infantry 
-		home = 923
-	}
-		regiment = {
-	    name = "5. Istra'tia deimin Dbita'laha"
-		type = infantry 
-		home = 923
-	}
-		regiment = {
-	    name = "6. Istra'tia deimin Dbita'laha"
-		type = infantry 
-		home = 923
-	}
-	regiment = {
-	    name = "1. Havatats’yalneri milits’ia"
-		type = infantry 
-		home = 923
-	}
-	regiment = {
-	    name = "2. Havatats’yalneri milits’ia"
-		type = infantry 
-		home = 923
-	}
-
-}	

@@ -381,42 +381,4 @@ political_decisions = {
             }
         }
     }
-	
-    instigate_occitan_revolt = {
-        picture = batalha_mureth
-        potential = {
-			ai = no
-			has_global_flag = liberal_revolution_somewhere			
-            NOT = { has_country_flag = instigated_occ_revolt }
-            tag = PRV
-			DUA = { 
-				exists = yes
-				ai = yes
-				owns = 455
-			}
-        }
-        allow = {
-            war = no
-        }
-
-        effect = {
-			set_global_flag = wait_DUA
-			set_global_flag = glorious_revolution
-            set_country_flag = instigated_occ_revolt
-			DUA = {
-				set_country_flag = OCC_revolted
-				any_owned = {
-					limit = { is_core = OCC }
-					secede_province = OCC
-				}
-				OCC = { country_event = 650223 }
-				diplomatic_influence = {
-					who = OCC
-					value = 300
-				}				
-			}
-        }
-        ai_will_do = { factor = 0 }
-    }	
-	
 }

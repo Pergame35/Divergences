@@ -216,6 +216,11 @@ country_event = {
         social_reform = no_subsidies
         social_reform = no_pensions
         social_reform = no_health_care
+        clr_country_flag = everywhere_genocide_only
+        clr_country_flag = non_colonial_genocide_only
+        clr_country_flag = colonial_genocide_only
+        clr_country_flag = preparations_to_kill
+        remove_country_modifier = preparations_to_kill
         country_event = 800053
     }
 }
@@ -509,6 +514,11 @@ country_event = {
         set_country_flag = presidential_dictatorship_gov
         clr_country_flag = fascist_gov
         clr_country_flag = anarcho_liberal_gov
+        clr_country_flag = everywhere_genocide_only
+        clr_country_flag = non_colonial_genocide_only
+        clr_country_flag = colonial_genocide_only
+        clr_country_flag = preparations_to_kill
+        remove_country_modifier = preparations_to_kill
     }
 }
 
@@ -543,6 +553,11 @@ country_event = {
         clr_country_flag = presidential_dictatorship_gov
         clr_country_flag = fascist_gov
         set_country_flag = anarcho_liberal_gov
+        clr_country_flag = everywhere_genocide_only
+        clr_country_flag = non_colonial_genocide_only
+        clr_country_flag = colonial_genocide_only
+        clr_country_flag = preparations_to_kill
+        remove_country_modifier = preparations_to_kill
     }
 }
 
@@ -577,6 +592,11 @@ country_event = {
         clr_country_flag = presidential_dictatorship_gov
         clr_country_flag = fascist_gov
         clr_country_flag = anarcho_liberal_gov
+        clr_country_flag = everywhere_genocide_only
+        clr_country_flag = non_colonial_genocide_only
+        clr_country_flag = colonial_genocide_only
+        clr_country_flag = preparations_to_kill
+        remove_country_modifier = preparations_to_kill
     }
 }
 
@@ -612,6 +632,11 @@ country_event = {
         clr_country_flag = presidential_dictatorship_gov
         set_country_flag = fascist_gov
         clr_country_flag = anarcho_liberal_gov
+        clr_country_flag = everywhere_genocide_only
+        clr_country_flag = non_colonial_genocide_only
+        clr_country_flag = colonial_genocide_only
+        clr_country_flag = preparations_to_kill
+        remove_country_modifier = preparations_to_kill
     }
 }
 
@@ -643,6 +668,8 @@ country_event = {
             sphere_owner = { state_n_government = 1 }
         }
         NOT = {
+            tag = DNB
+            tag = DES
             tag = UBD
             tag = INO
             tag = IRE
@@ -1004,7 +1031,20 @@ country_event = {
 
     trigger = {
         government = theocracy
-		NOT = { has_country_flag = theocracy_allowed }	
+        NOT = { tag = MON }
+        NOT = { tag = ITA }
+        NOT = { tag = PAP }
+        NOT = { tag = TIB }
+        NOT = { tag = DAG }
+        NOT = { tag = TOO }
+        NOT = { tag = JAL }
+        NOT = { tag = YUG }
+        NOT = { tag = TOU }
+        NOT = { tag = SUD }
+        NOT = { tag = UAR }
+        NOT = { tag = QAJ }
+        NOT = { tag = PER }
+        NOT = { tag = ARY }		
     }
 
     mean_time_to_happen = { months = 1 }

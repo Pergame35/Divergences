@@ -50,7 +50,13 @@ upper_house = {
 
 set_country_flag = lacking_writing_system
 foreign_weapons = yes_foreign_weapons
+flintlock_rifles = 1
 
 #Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
+
+oob = "BRD_oob.txt"
+1861.1.1 = {
+	oob = "/1861/BRD_oob.txt"
+}

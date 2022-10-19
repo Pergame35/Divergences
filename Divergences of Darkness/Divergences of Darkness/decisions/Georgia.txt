@@ -37,9 +37,7 @@ political_decisions = {
     unify_georgia = {
         picture = seal_bagrationi
         potential = {
-            NOT = {
-                GEO = { exists = yes }
-            }
+            GEO = { exists = no }
             primary_culture = georgian
         }
         allow = {
@@ -151,8 +149,8 @@ political_decisions = {
 	    picture = st_george 
         potential = {
 			ai = no
-			GEO = { exists = no }			
             NOT = {
+                exists = GEO
                 tag = SAM
 				tag = IME 
 				tag = KRT 
@@ -246,8 +244,7 @@ political_decisions = {
             }
             any_country = {
                 limit = {
-                    NOT = { tag = GEO }
-
+                    NOT = { is_culture_group = GEO }
                     OR = {
                         in_sphere = THIS
                         vassal_of = THIS

@@ -44,6 +44,9 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+set_country_flag = sunni_country
+oob = "CRL_oob.txt"
+
 
 # Technologies
 
@@ -52,3 +55,6 @@ upper_house = {
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
+
+foreign_weapons = yes_foreign_weapons
+flintlock_rifles = 1

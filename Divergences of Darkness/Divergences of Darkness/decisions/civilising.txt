@@ -4,11 +4,7 @@ political_decisions = {
         alert = yes
         potential = {
             has_country_flag = feudal
-            NOT = { 
-				ruling_party_ideology = reactionary
-				tag = AFS
-				has_country_flag = timurtash_remnant
-			}
+            NOT = { ruling_party_ideology = reactionary }
         }
         allow = {
             NOT = { average_militancy = 2.5 }

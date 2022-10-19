@@ -8,6 +8,7 @@ nationalvalue = nv_liberty
 literacy = 0.18
 civilized = yes
 
+
 # Political reforms
 slavery = no_slavery
 upper_house_composition = state_equal_weight
@@ -17,7 +18,6 @@ press_rights = free_press
 trade_unions = non_socialist
 voting_system = first_past_the_post
 political_parties = non_secret_ballots
-
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
@@ -26,7 +26,6 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
-
 # New Reforms
 conscription = two_year_draft
 debt_law = debtors_prisons

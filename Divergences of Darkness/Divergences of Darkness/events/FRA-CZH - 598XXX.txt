@@ -497,6 +497,16 @@ country_event = { ######All cultures accepted
 
     option = {
         name = "650301.A"
+        any_owned = {
+            remove_core = FRA
+            remove_core = ENL
+        }
+        any_country = {
+            any_owned = {
+                remove_core = FRA
+                remove_core = ENL
+            }
+        }
         any_pop = { militancy = -3 }
         add_accepted_culture = french
         add_accepted_culture = english
@@ -522,15 +532,13 @@ country_event = { ###Irish and English puppets
         any_owned = {
             limit = { is_core = ENL }
             remove_core = DUA
-			secede_province = ENL
         }
         any_owned = {
             limit = { is_core = IRE }
             remove_core = DUA
-			secede_province = IRE
         }
-        create_vassal = ENL
-        create_vassal = IRE
+        release_vassal = ENL
+        release_vassal = IRE
         diplomatic_influence = {
             who = ENL
             value = 300
@@ -710,6 +718,16 @@ country_event = { ######All cultures accepted
 
     option = {
         name = "650311.A"
+        any_owned = {
+            remove_core = FRA
+            remove_core = ENL
+        }
+        any_country = {
+            any_owned = {
+                remove_core = FRA
+                remove_core = ENL
+            }
+        }
         any_pop = { militancy = -3 }
         add_accepted_culture = french
         add_accepted_culture = english
@@ -1012,6 +1030,16 @@ country_event = { ######All cultures accepted
 
     option = {
         name = "650321.A"
+        any_owned = {
+            remove_core = FRA
+            remove_core = ENL
+        }
+        any_country = {
+            any_owned = {
+                remove_core = FRA
+                remove_core = ENL
+            }
+        }
         any_pop = { militancy = -3 }
         add_accepted_culture = french
         add_accepted_culture = english
@@ -1210,10 +1238,6 @@ country_event = {
                 name = anglois_cultural_unity
                 duration = -1
             }
-            add_province_modifier = {
-                name = forced_integration
-                duration = -1
-            }			
         }
         ai_chance = { factor = 50 }
     }

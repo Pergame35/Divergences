@@ -1,9 +1,11 @@
-owner = BDN
-controller = BDN
-add_core = BDN
+owner = TUR
+controller = TUR
 add_core = TUR             
 add_core = ARY
 add_core = KUR
 trade_goods = fruit
 life_rating = 35
-
+revolt = {
+	type = nationalist_rebels
+	controller = yes
+}

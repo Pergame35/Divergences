@@ -588,10 +588,11 @@ political_decisions = {
 				has_country_flag = burgundy_helps_greece				
 				has_country_modifier = second_year_greek_war
 			}
-            VEN = { 
-				war_with = THIS
-				has_country_flag = greek_rebellion
-			}			
+            729 = {
+                owner = {
+                    war_with = THIS
+                }
+            }			
         }
 
         allow = {

@@ -51,5 +51,9 @@ nonstate_consciousness = 0
 set_country_flag = sunni_country
 foreign_weapons = yes_foreign_weapons
 admin_reform = yes_admin_reform
+flintlock_rifles = 1
 
 oob = "ATJ_oob.txt"
+1861.1.1 = {
+	oob = "/1861/ATJ_oob.txt"
+}

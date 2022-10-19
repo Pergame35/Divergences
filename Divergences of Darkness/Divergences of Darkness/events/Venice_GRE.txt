@@ -3217,8 +3217,7 @@ country_event = { #Venice is forced to the negotiating table
 
     option = {
         name = "EVTOPTA106116"	
-        prestige = -25
-		clr_country_flag = greek_rebellion		
+        prestige = -25	
         random_country = {
             limit = {
                 war_with = THIS

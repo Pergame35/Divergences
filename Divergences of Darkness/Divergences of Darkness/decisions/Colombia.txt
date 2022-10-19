@@ -709,7 +709,7 @@ political_decisions = {
                 limit = { culture = mexican }
                 literacy = 0.05
             }
-            public_meetings = yes_meeting
+            social_reform = public
             scaled_militancy = {
                 issue = moralism
                 factor = 3

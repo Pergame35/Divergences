@@ -49,8 +49,10 @@ set_country_flag = sunni_country
 foreign_weapons = yes_foreign_weapons
 
 # Technologies
+flintlock_rifles = 1
 
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
+oob = "FDL_oob.txt"

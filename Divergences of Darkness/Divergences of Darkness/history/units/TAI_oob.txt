@@ -1,3 +1,8 @@
+TNG = {
+   value = -20
+   truce_until = "1840.1.1"
+}
+
 leader = {
 	name = "Hong Xiuquan"
 	type = land
@@ -11,7 +16,7 @@ leader = {
 	type = land
 	date = 1836.1.1
 	personality = reserved
-	background = adventurer
+	background = renowned_adventurer
 }
 
 leader = {
@@ -485,5 +490,4 @@ MIG = {
 
 TNG = { 
 	value = -150 		#relation
-	truce_until = "1840.1.1"
 }

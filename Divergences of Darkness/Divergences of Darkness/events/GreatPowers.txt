@@ -2140,6 +2140,362 @@ country_event = {
     }
 }
 
+#Tangier Protocol
+country_event = {
+    id = 81002215
+    title = "EVTNAME81002215"
+    desc = "EVTDESC81002215"
+    picture = "greatpowers"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA81002215" #we agree
+        set_country_flag = agreed_to_tangier_protocol
+        FROM = {
+            change_variable = {
+                which = yes_to_tangier
+                value = 1
+            }
+        }
+        ai_chance = {
+            factor = 0.7
+            modifier = {
+                factor = 0.5
+                owns = 1686
+            }
+            modifier = {
+                factor = 1.2
+                relation = {
+                    who = FROM
+                    value = 100
+                }
+            }
+            modifier = {
+                factor = 2
+                in_sphere = FROM
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTB81002215" #we disagree
+        relation = {
+            who = FROM
+            value = -50
+        }
+        FROM = {
+            change_variable = {
+                which = no_to_tangier
+                value = 1
+            }
+        }
+        ai_chance = {
+            factor = 0.3
+            modifier = {
+                factor = 1.5
+                owns = 1686
+            }
+            modifier = {
+                factor = 0.8
+                relation = {
+                    who = FROM
+                    value = 100
+                }
+            }
+            modifier = {
+                factor = 0
+                in_sphere = FROM
+            }
+            modifier = {
+                factor = 0
+                vassal_of = FROM
+            }
+        }
+    }
+}
+
+#Tangier Protocol - Success
+country_event = {
+    id = 81002216
+    title = "EVTNAME81002216"
+    desc = "EVTDESC81002216"
+    major = yes
+
+    fire_only_once = yes
+
+    trigger = {
+        check_variable = {
+            which = yes_to_tangier
+            value = 2.99
+        }
+        NOT = {
+            check_variable = {
+                which = no_to_tangier
+                value = 3.99
+            }
+        }
+        has_country_flag = called_the_tangier_protocol
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "EVTOPTA81002216"
+        prestige = 10
+        random_owned = {
+            limit = {
+                owner = { has_country_flag = agreed_to_tangier_protocol }
+                province_id = 1686
+            }
+            owner = {
+                1686 = { secede_province = MOR }
+                clr_country_flag = agreed_to_tangier_protocol
+            }
+        }
+        random_country = {
+            limit = {
+                exists = yes
+                tag = MOR
+            }
+            government = hms_government
+            civilized = yes
+            THIS = {
+                create_vassal = MOR
+                relation = {
+                    who = MOR
+                    value = 200
+                }
+            }
+        }
+        any_country = {
+            limit = { has_country_flag = agreed_to_tangier_protocol }
+            diplomatic_influence = {
+                who = MOR
+                value = 50
+            }
+            relation = {
+                who = MOR
+                value = 200
+            }
+            clr_country_flag = agreed_to_tangier_protocol
+        }
+        random_country = {
+            limit = {
+                exists = yes
+                owns = 1686
+                NOT = { tag = MOR }
+            }
+            country_event = 81002218
+        }
+        clr_country_flag = agreed_to_tangier_protocol
+        clr_country_flag = called_the_tangier_protocol
+        MOR = {
+            set_country_flag = international_zone
+            1686 = { life_rating = 5 }
+            add_country_modifier = {
+                name = international_zone_modifier
+                duration = -1
+            }
+            remove_country_modifier = educational_reform
+            remove_country_modifier = military_reform
+            remove_country_modifier = western_influences
+            remove_country_modifier = uncivilized_isolationism
+            remove_country_modifier = trade_restrictions
+            remove_country_modifier = sayings_of_the_dutch
+            remove_country_modifier = western_presence
+            remove_country_modifier = rangaku
+            remove_country_modifier = sakoku
+            remove_country_modifier = isolationist_foreign_naval_officers
+            remove_country_modifier = isolationist_foreign_naval_schools
+            remove_country_modifier = isolationist_foreign_officers
+            remove_country_modifier = isolationist_foreign_training
+            any_owned = {
+                remove_province_modifier = western_presence
+                remove_province_modifier = foreign_smugglers
+                remove_province_modifier = foreign_trading_post
+                remove_province_modifier = local_opium_habit
+                remove_province_modifier = european_military_mission
+                remove_province_modifier = legation_quarter
+                remove_province_modifier = kettler_denkmal
+                remove_province_modifier = extraterritoriality_granted
+                remove_province_modifier = boxer_presence
+                remove_province_modifier = boxer_agitation
+            }
+        }
+    }
+}
+
+#Tangier Protocol - Failure
+country_event = {
+    id = 81002217
+    title = "EVTNAME81002217"
+    desc = "EVTDESC81002217"
+    major = yes
+
+    fire_only_once = yes
+
+    trigger = {
+        OR = {
+            check_variable = {
+                which = no_to_tangier
+                value = 3.99
+            }
+            NOT = {
+                check_variable = {
+                    which = yes_to_tangier
+                    value = 2.99
+                }
+            }
+        }
+        has_country_flag = called_the_tangier_protocol
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "EVTOPTA81002217"
+        prestige_factor = -0.1
+        clr_country_flag = called_the_tangier_protocol
+        clr_country_flag = agreed_to_tangier_protocol
+        any_country = {
+            limit = { has_country_flag = agreed_to_tangier_protocol }
+            clr_country_flag = agreed_to_tangier_protocol
+        }
+    }
+}
+
+#Tangier Protocol - Ultimatum
+country_event = {
+    id = 81002218
+    title = "EVTNAME81002215"
+    desc = "EVTDESC81002218"
+    picture = "greatpowers"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA81002218" #We concede
+        badboy = -1
+        relation = {
+            who = FROM
+            value = 25
+        }
+        random_owned = {
+            limit = { province_id = 1686 }
+            secede_province = MOR
+        }
+        clr_country_flag = agreed_to_tangier_protocol
+        FROM = {
+            create_vassal = MOR
+            relation = {
+                who = MOR
+                value = 200
+            }
+            clr_country_flag = agreed_to_tangier_protocol
+        }
+        random_country = {
+            limit = {
+                exists = yes
+                tag = MOR
+            }
+            government = hms_government
+            civilized = yes
+        }
+        any_country = {
+            limit = { has_country_flag = agreed_to_tangier_protocol }
+            diplomatic_influence = {
+                who = MOR
+                value = 50
+            }
+            relation = {
+                who = MOR
+                value = 200
+            }
+            clr_country_flag = agreed_to_tangier_protocol
+        }
+        ai_chance = {
+            factor = 0.7
+            modifier = {
+                factor = 10
+                is_greater_power = no
+            }
+            modifier = {
+                factor = 1.2
+                relation = {
+                    who = FROM
+                    value = 100
+                }
+            }
+            modifier = {
+                factor = 1.2
+                in_sphere = FROM
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTB81002218" #We will not give it
+        badboy = 4
+        relation = {
+            who = FROM
+            value = -50
+        }
+        set_country_flag = holding_tangiers
+        any_country = {
+            limit = {
+                is_greater_power = yes
+                capital_scope = { continent = europe }
+                NOT = {
+                    tag = TUR
+                    tag = RUS
+                }
+            }
+            casus_belli = {
+                target = THIS
+                type = cut_down_to_size
+                months = 36
+            }
+        }
+        MOR = {
+            government = hms_government
+            civilized = yes
+        }
+        ai_chance = {
+            factor = 0.3
+            modifier = {
+                factor = 0.5
+                is_greater_power = no
+            }
+            modifier = {
+                factor = 1.2
+                NOT = {
+                    relation = {
+                        who = FROM
+                        value = 0
+                    }
+                }
+            }
+            modifier = {
+                factor = 0
+                in_sphere = FROM
+            }
+            modifier = {
+                factor = 0
+                vassal_of = FROM
+            }
+            modifier = {
+                factor = 0
+                is_disarmed = yes
+            }
+            modifier = {
+                factor = 0.5
+                NOT = { military_score = 100 }
+            }
+        }
+    }
+}
+
 #Copenhagen Convention of 1857  1/6 - Denmark decides what to do
 country_event = {
     id = 810003

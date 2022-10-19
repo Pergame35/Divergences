@@ -210,9 +210,9 @@ political_decisions = {
         picture = Aragonese_antilles
         potential = {
             tag = UBD
-
-			ARA = { owns = 2231 }
-				
+            OR = {
+                ARA = { owns = 2231 }
+            }
             NOT = { has_country_flag = ARA_antilles }
         }
 
@@ -236,9 +236,9 @@ political_decisions = {
         picture = Aragonese_antilles
         potential = {
             tag = UBD
-
-			ARI = { owns = 2231 }
-
+            OR = {
+                ARI = { owns = 2231 }
+            }
             NOT = { has_country_flag = ARA_antilles }
         }
 
@@ -262,9 +262,9 @@ political_decisions = {
         picture = Aragonese_antilles
         potential = {
             tag = UBD
-
-			CAT = { owns = 2231 }
-
+            OR = {
+                CAT = { owns = 2231 }
+            }
             NOT = { has_country_flag = ARA_antilles }
         }
 
