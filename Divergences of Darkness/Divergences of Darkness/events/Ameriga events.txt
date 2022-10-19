@@ -1657,7 +1657,6 @@ country_event = {
         artillery = -100
         canned_food = -1000
         regular_clothes = -1000
-        prestige = 2
         ENL = {
             country_event = {
                 id = 775424
@@ -1667,7 +1666,7 @@ country_event = {
         prestige = 5
         relation = {
             who = DUA
-            value = -100
+            value = -100`
         }
         ai_chance = {
             factor = 60
@@ -1679,11 +1678,13 @@ country_event = {
                 factor = 1.2
                 rank = 16
             }
-        }
-        modifier = {
+			modifier = {
             factor = 0.8
             ENL = { government = democracy }
+			}
+
         }
+        
     }
 
     option = {

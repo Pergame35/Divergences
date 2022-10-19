@@ -25,7 +25,6 @@ political_decisions = {
 
     HUN_prague = {
         picture = prague
-        picture = hungary
         potential = {
             tag = HUN
             war_with = BOH
@@ -45,7 +44,6 @@ political_decisions = {
 
     BOH_buda = {
         picture = budapest
-        picture = hungary
         potential = {
             tag = BOH
             war_with = HUN
@@ -130,7 +128,7 @@ political_decisions = {
             add_accepted_culture = croat
             random_owned = {
                 limit = {
-                    owner = { minorities_reform = primary_culture_only }
+                    owner = { citizens_rights = primary_culture_only }
                 }
                 owner = { political_reform = culture_voting_only }
             }

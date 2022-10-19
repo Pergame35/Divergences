@@ -202,10 +202,6 @@ country_event = {
         }
         modifier = {
             factor = 0.9
-            has_country_modifier = inca_excavations
-        }
-        modifier = {
-            factor = 0.9
             has_country_flag = had_arch_exhibition
         }
         modifier = {
@@ -428,10 +424,6 @@ country_event = {
         }
         modifier = {
             factor = 0.9
-            has_country_modifier = inca_excavations
-        }
-        modifier = {
-            factor = 0.9
             has_country_flag = had_arch_exhibition
         }
         modifier = {
@@ -474,7 +466,7 @@ country_event = {
                 owner = { in_sphere = THIS }
             }
         }
-        cheap_steel = 1
+        puddling = 1
     }
 
     major = yes
@@ -517,38 +509,5 @@ country_event = {
         set_global_flag = erectus
         prestige = 30
         years_of_research = 0.75
-    }
-}
-
-country_event = {
-    id = 1905301
-    title = "Australopithecus africanus discovered!"
-    desc = "The bones of primative ancient men have been found in Taung!"
-    picture = "paleoanthropology"
-
-    trigger = {
-        NOT = {
-            has_global_flag = africanus #hahaahahahahahahhhhahaha
-        }
-        is_greater_power = yes
-        OR = {
-            owns = 2095
-            2095 = {
-                owner = { in_sphere = THIS }
-            }
-        }
-        anti__rationalism = 1
-        year = 1920
-    }
-
-    major = yes
-
-    mean_time_to_happen = { months = 120 }
-
-    option = {
-        name = "Marvellous!"
-        set_global_flag = africanus
-        prestige = 50
-        years_of_research = 1
     }
 }

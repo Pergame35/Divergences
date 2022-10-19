@@ -128,13 +128,10 @@ political_decisions = {
 
         allow = {
             war = no
-            OR = {
-                NOT = { neighbour = ENG }
-                AND = {
-                    war_policy = jingoism
-                    civilized = yes
-                }
-            }
+            AND = {
+                war_policy = jingoism
+                civilized = yes
+            }            
             military_score = 30
             government = fascist_dictatorship
         }
@@ -142,6 +139,7 @@ political_decisions = {
         effect = {
             set_country_flag = claimed_greater_nepal
             1235 = { add_core = NEP }
+            1238 = { add_core = NEP }			
             1328 = { add_core = NEP }
             1252 = { add_core = NEP }
             1255 = { add_core = NEP }
@@ -149,6 +147,7 @@ political_decisions = {
                 limit = {
                     OR = {
                         owns = 1235
+                        owns = 1238						
                         owns = 1328
                         owns = 1252
                         owns = 1255
@@ -246,7 +245,7 @@ political_decisions = {
             war = no
             is_vassal = no
             nationalism_n_imperialism = 1
-            MOL_676 = { owned_by = THIS }
+            RUS_676 = { owned_by = THIS }
         }
 
         effect = {
@@ -256,7 +255,7 @@ political_decisions = {
                 33 = { badboy = 4 }
                 33 = { badboy = 5 }
             }
-            RUS_968 = { add_core = ROM }
+            RUS_965 = { add_core = ROM }
         }
         ai_will_do = { factor = 1 }
     }

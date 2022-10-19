@@ -271,6 +271,12 @@
 		size = 1015
 	}
 	
+	bureaucrats = {
+		culture = persian
+		religion = sunni
+		size = 500
+	}	
+	
 	artisans = {
 		culture = persian
 		religion = sunni
@@ -286,7 +292,7 @@
 	farmers = {
 		culture = persian
 		religion = sunni
-		size = 52812
+		size = 52312
 	}
 	
 	clergymen = {
@@ -447,8 +453,20 @@
 	farmers = {
 		culture = pashtun
 		religion = sunni
-		size = 12262
+		size = 11762
 	}
+	
+	soldiers = {
+		culture = pashtun
+		religion = sunni
+		size = 500
+	}	
+	
+	bureaucrats = {
+		culture = persian
+		religion = sunni
+		size = 50
+	}		
 
 	clergymen = {
 		culture = persian
@@ -465,7 +483,7 @@
 	farmers = {
 		culture = persian
 		religion = sunni
-		size = 18500
+		size = 18450
 	}
 	
 	clergymen = {

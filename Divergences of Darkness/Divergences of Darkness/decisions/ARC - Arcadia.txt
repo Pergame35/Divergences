@@ -228,7 +228,6 @@ political_decisions = {
                     }
                 }
             }
-            social_thought = 1
         }
         effect = {
             random_country = {
@@ -259,7 +258,6 @@ political_decisions = {
                     }
                 }
             }
-            social_thought = 1
         }
         effect = {
             random_country = {
@@ -290,7 +288,6 @@ political_decisions = {
                     }
                 }
             }
-            social_thought = 1
         }
         effect = {
             random_country = {
@@ -323,7 +320,6 @@ political_decisions = {
                     }
                 }
             }
-            social_thought = 1
         }
         effect = {
             random_country = {
@@ -349,7 +345,6 @@ political_decisions = {
         }
         allow = {
             is_greater_power = yes
-            political_thought = 1
             war = no
         }
         effect = {
@@ -416,7 +411,6 @@ political_decisions = {
         }
         allow = {
             is_greater_power = yes
-            political_thought = 1
             war = no
             money = 50000
             ARC = {

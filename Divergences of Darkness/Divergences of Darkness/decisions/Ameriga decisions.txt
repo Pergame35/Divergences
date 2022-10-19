@@ -671,7 +671,6 @@ political_decisions = {
         }
         allow = {
             is_greater_power = yes
-            political_thought = 1
             war = no
         }
         effect = {
@@ -888,7 +887,7 @@ political_decisions = {
             year = 1850
         }
 
-        allow = { cheap_steel = 1 }
+        allow = { bessemer_process  = 1 }
 
         effect = {
             set_global_flag = statue_of_liberty_has_been_built
@@ -970,7 +969,7 @@ political_decisions = {
 
         allow = {
             medicine = 1
-            cheap_iron = 1
+            hot_blast = 1
             romanticism = 1
         }
 

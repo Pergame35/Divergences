@@ -382,7 +382,7 @@ political_decisions = {
         allow = { iron_railroad = 1 }
 
         effect = {
-            prestige = 5
+            prestige = 15
             set_global_flag = transcontinental_railroad
             137 = {
                 infrastructure = 1
@@ -408,7 +408,6 @@ political_decisions = {
                 infrastructure = 1
                 life_rating = 5
             }
-            prestige = 10
         }
     }
 

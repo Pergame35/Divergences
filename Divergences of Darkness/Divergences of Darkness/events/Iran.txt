@@ -123,7 +123,7 @@ country_event = {
 		exists = yes
 		war = no		
 		owns = 925
-		KDS = { exists = no }
+		RDL = { exists = no }
         NOT = {
 			any_owned_province = {
 				is_core = PER
@@ -149,7 +149,7 @@ country_event = {
             }
         }
 
-		change_tag = KUR
+		change_tag = RDL
 	
         primary_culture = kurdish
 		add_accepted_culture = lurish
@@ -778,10 +778,8 @@ country_event = { #If Shekhbizin wins the civil war, erase QSQ and LUR cores
     option = {
         name = "EVTOPTA180020"
         LUR = { all_core = { remove_core = LUR } }
-        QSQ = { all_core = { remove_core = QSQ } }		
-		add_accepted_culture = lurish
-		add_accepted_culture = qashqai
-		add_accepted_culture = khalaj
+        QSQ = { all_core = { remove_core = QSQ } }
+		set_country_flag = shekhbizin_pending_reconciliation
     }
 }
 
@@ -1038,7 +1036,7 @@ country_event = { #Shaki informed about losing cores on most of Armenia
 	    name = "EVTOPTA180028"
 		prestige = -5
 		any_pop = {
-		    limit = { culture = azeri }
+		    limit = { culture = azerbaijani }
 			consciousness = 2
 		}
 	}	
@@ -1407,7 +1405,7 @@ country_event = { #how to deal with the shaki naibs
             limit = { 
 				culture = azerbaijani
 			    NOT = { 
-					pop_type = aristocratS
+					pop_type = aristocrats
 					pop_type = soldiers 
 				}
 			}
@@ -1415,7 +1413,7 @@ country_event = { #how to deal with the shaki naibs
 			militancy = 2
 			consciousness = 2
 		}
-		relations = {
+		relation = {
 		    who = AZB
 			value = -50
 		}
@@ -1520,9 +1518,11 @@ country_event = { #how to deal with the shaki naibs
 		prestige = -10
 		any_pop = {
 		    limit = { 
-			    culture = armenian
-                pop_type = aristocrats
-                pop_type = bureaucrats 
+			    has_pop_culture = armenian
+				OR = {
+					pop_type = aristocrats
+					pop_type = bureaucrats 
+				}
 			}	
             militancy = 2
 			consciousness = 2
@@ -1874,8 +1874,10 @@ country_event = { #Kalwatiya Uprising against Kar-Kiya royalists
     option = {
         name = "EVTOPTA180048"
         THIS = { 
-			country_event = 180052
-			days = 3			
+			country_event = { 
+				id = 180052
+				days = 3
+			}			
 		}
         ai_chance = { factor = 70 }			
     }
@@ -2025,7 +2027,7 @@ country_event = { #Kar-Kiya Royalists crush Kalwatiya
     }	
 }
 
-country_event = { #Once civilised, change constitutionalist Kar-Kiya to Constitutionalist Monarchy - uncivs can't get proper political reforms
+country_event = { #Once civilized, change constitutionalist Kar-Kiya to Constitutionalist Monarchy - uncivs can't get proper political reforms
     id = 180053
     title = "EVTNAME180053"
     desc = "EVTDESC180053"
@@ -2443,7 +2445,7 @@ country_event = { #Iranians incite rebellion in Dagestan
     option = {
         name = "EVTOPTA180065"	
         release = DAG
-        owner = {
+        DAG = {
             economic_reform = advanced_admin_reform
             activate_technology = no_standard
 			military_reform = foreign_weapons_two
@@ -2550,14 +2552,24 @@ country_event = { #Introduction event to the Timurtash Empire
     fire_only_once = yes
 
     option = {
-        name = "EVTOPTA18006"
-		set_country_flag = timurtash_remnant	
-        THIS = { country_event = 180069 }			
+        name = "EVTOPTA180068"
+		set_country_flag = timurtash_remnant		
+        THIS = { country_event = 180069 }
+        CLN = {
+            set_variable = {
+                which = dehqan_unrest
+                value = 1
+            }
+            set_variable = {
+                which = timurtash_legitimacy
+                value = 1
+            }			
+        }		
     }
 
 }
 
-country_event = { #Sets up maluses in Deqan land and in the domains of Idris Timurtash
+country_event = { #Sets up maluses in Dehqan land and in the domains of Idris Timurtash
     id = 180069
     title = "EVTNAME180069"
     desc = "EVTDESC180069"
@@ -2567,8 +2579,7 @@ country_event = { #Sets up maluses in Deqan land and in the domains of Idris Tim
 
     option = {
         name = "EVTOPTA180069"
-
-		set_country_flag = tribal_troubles_shekhbizin
+		set_country_flag = timurtash_soyurghal		
         any_owned = {
             limit = {
 				OR = {
@@ -2579,10 +2590,1074 @@ country_event = { #Sets up maluses in Deqan land and in the domains of Idris Tim
 				}
 			}
             add_province_modifier = {
-                name = qashqai_administration
+                name = dehqan_autonomy
                 duration = -1
-            }
-        }		
+            }		
+        }
+		add_country_modifier = {
+			name = "idris_insolence"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "soyurghal_system"
+			duration = -1
+		}		
 		
     }
+}
+
+country_event = { #Legitimacy: conquest of Bukhara
+    id = 180070
+    title = "EVTNAME180070"
+    desc = "EVTDESC180070"
+    picture = "bukhara_registan"
+
+
+    trigger = {
+        owns = 1198
+        has_country_flag = timurtash_remnant
+		NOT = { has_country_flag = bukhara_conquered }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA180070"
+		set_country_flag = bukhara_conquered
+		clr_country_flag = bukhara_lost
+        CLN = {
+            change_variable = {
+                which = timurtash_legitimacy
+                value = 1
+            }
+        }		
+    }
+
+}
+
+country_event = { #Legitimacy: loss of Bukhara
+    id = 180071
+    title = "EVTNAME180071"
+    desc = "EVTDESC180071"
+    picture = "bukhara_1920"
+
+
+    trigger = {
+		exists = yes
+        has_country_flag = timurtash_remnant
+		has_country_flag = bukhara_conquered
+		NOT = { owns = 1198 }
+		NOT = { has_country_flag = bukhara_lost }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA180071"
+		set_country_flag = bukhara_lost
+		clr_country_flag = bukhara_conquered
+        CLN = {
+            change_variable = {
+                which = timurtash_legitimacy
+                value = -1
+            }
+        }		
+    }
+
+}
+
+country_event = { #Legitimacy: conquest of Isfahan
+    id = 180072
+    title = "EVTNAME180072"
+    desc = "EVTDESC180072"
+    picture = "isfahan_liberated"
+
+
+    trigger = {
+        owns = 1127
+        has_country_flag = timurtash_remnant
+		NOT = { has_country_flag = isfahan_conquered }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA180072"
+		set_country_flag = isfahan_conquered
+		clr_country_flag = isfahan_lost
+        CLN = {
+            change_variable = {
+                which = timurtash_legitimacy
+                value = 1
+            }
+        }		
+    }
+
+}
+
+country_event = { #Legitimacy: loss of Isfahan
+    id = 180073
+    title = "EVTNAME180073"
+    desc = "EVTDESC180073"
+    picture = "isfahan_ruins"
+
+
+    trigger = {
+		exists = yes
+        has_country_flag = timurtash_remnant
+		has_country_flag = isfahan_conquered
+		NOT = { owns = 1127 }
+		NOT = { has_country_flag = isfahan_lost }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA180073"
+		set_country_flag = isfahan_lost
+		clr_country_flag = isfahan_conquered
+        CLN = {
+            change_variable = {
+                which = timurtash_legitimacy
+                value = -1
+            }
+        }		
+    }
+
+}
+
+country_event = { #Legitimacy: conquest of Shiraz
+    id = 180074
+    title = "EVTNAME180074"
+    desc = "EVTDESC180074"
+    picture = "shiraz_carpets"
+
+
+    trigger = {
+        owns = 1135
+        has_country_flag = timurtash_remnant
+		NOT = { has_country_flag = shiraz_conquered }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA180074"
+		set_country_flag = shiraz_conquered
+		clr_country_flag = shiraz_lost
+        CLN = {
+            change_variable = {
+                which = timurtash_legitimacy
+                value = 1
+            }
+        }		
+    }
+
+}
+
+country_event = { #Legitimacy: loss of Shiraz
+    id = 180075
+    title = "EVTNAME180075"
+    desc = "EVTDESC180075"
+    picture = "shiraz_ruins"
+
+
+    trigger = {
+		exists = yes
+        has_country_flag = timurtash_remnant
+		has_country_flag = shiraz_conquered
+		NOT = { owns = 1135 }
+		NOT = { has_country_flag = shiraz_lost }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA180075"
+		set_country_flag = shiraz_lost
+		clr_country_flag = shiraz_conquered
+        CLN = {
+            change_variable = {
+                which = timurtash_legitimacy
+                value = -1
+            }
+        }		
+    }
+
+}
+
+country_event = { #Legitimacy: conquest of Lahijan
+    id = 180076
+    title = "EVTNAME180076"
+    desc = "EVTDESC180076"
+    picture = "rasht_bazaar"
+
+
+    trigger = {
+        owns = 3332
+        has_country_flag = timurtash_remnant
+		NOT = { has_country_flag = lahijan_conquered }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA180076"
+		set_country_flag = lahijan_conquered
+		clr_country_flag = lahijan_lost
+        CLN = {
+            change_variable = {
+                which = timurtash_legitimacy
+                value = 1
+            }
+        }		
+    }
+
+}
+
+country_event = { #Legitimacy: loss of Lahijan
+    id = 180077
+    title = "EVTNAME180077"
+    desc = "EVTDESC180077"
+    picture = "chahar_padshahan"
+
+
+    trigger = {
+		exists = yes
+        has_country_flag = timurtash_remnant
+		has_country_flag = lahijan_conquered
+		NOT = { owns = 3332 }
+		NOT = { has_country_flag = lahijan_lost }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA180077"
+		set_country_flag = lahijan_lost
+		clr_country_flag = lahijan_conquered
+        CLN = {
+            change_variable = {
+                which = timurtash_legitimacy
+                value = -1
+            }
+        }		
+    }
+
+}
+
+country_event = { #Legitimacy: conquest of Tabriz
+    id = 180078
+    title = "EVTNAME180078"
+    desc = "EVTDESC180078"
+    picture = "tabriz_garden"
+
+
+    trigger = {
+        owns = 1108
+        has_country_flag = timurtash_remnant
+		NOT = { has_country_flag = tabriz_conquered }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA180078"
+		set_country_flag = tabriz_conquered
+		clr_country_flag = tabriz_lost
+        CLN = {
+            change_variable = {
+                which = timurtash_legitimacy
+                value = 1
+            }
+        }		
+    }
+
+}
+
+country_event = { #Legitimacy: loss of Tabriz
+    id = 180079
+    title = "EVTNAME180079"
+    desc = "EVTDESC180079"
+    picture = "tabriz_1908"
+
+
+    trigger = {
+		exists = yes
+        has_country_flag = timurtash_remnant
+		has_country_flag = tabriz_conquered
+		NOT = { owns = 1108 }
+		NOT = { has_country_flag = tabriz_lost }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA180079"
+		set_country_flag = tabriz_lost
+		clr_country_flag = tabriz_conquered
+        CLN = {
+            change_variable = {
+                which = timurtash_legitimacy
+                value = -1
+            }
+        }		
+    }
+
+}
+
+country_event = { #Legitimacy: loss of Herat
+    id = 180080
+    title = "EVTNAME180080"
+    desc = "EVTDESC180080"
+    picture = "herat_citadel"
+
+
+    trigger = {
+		exists = yes
+        has_country_flag = timurtash_remnant
+		NOT = { owns = 1212 }
+		NOT = { has_country_flag = herat_lost }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA180080"
+		set_country_flag = herat_lost
+        CLN = {
+            change_variable = {
+                which = timurtash_legitimacy
+                value = -3
+            }
+        }		
+    }
+
+}
+
+country_event = { #Ismaili repression in Dehqan land
+    id = 180081
+    title = "EVTNAME180081"
+    desc = "EVTDESC180081"
+    picture = "fedai_vizier"
+
+
+    trigger = {
+        exists = yes
+        has_country_flag = timurtash_remnant
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA180081"
+		set_country_flag = timurtash_ismaili_repression	
+        any_pop = {
+			limit = { has_pop_religion = ismaili }
+            militancy = 1
+            consciousness = 3
+        }		
+    }
+
+}
+
+country_event = { ## Once Dehqan unrest grows, introduce the Khorasani Triumvirate
+
+    id = 180082
+    title = "EVTNAME180082"
+    desc = "EVTDESC180082"
+    picture = "samanid_execution"
+
+    fire_only_once = yes
+
+    trigger = {
+		exists = yes
+        has_country_flag = timurtash_remnant
+        CLN = {
+            check_variable = {
+                which = dehqan_unrest
+                value = 1.99
+            }
+        }		
+    }
+	
+    mean_time_to_happen = { months = 3 }	
+
+    option = {
+        name = "EVTOPTA180082"
+        any_pop = {
+            limit = {
+                OR = {
+                    type = officers
+                    type = aristocrats
+                }
+            }
+            consciousness = 3
+        }		
+    }	
+	
+}
+
+country_event = { ## If Dehqan unrest is greater than 4, and legitimacy lower than 5, or the Soyurghal system was abolished and legitimacy is lower than 6 trigger Dehqan Revolt in Khorasan
+
+    id = 180083
+    title = "EVTNAME180083"
+    desc = "EVTDESC180083"
+    picture = "mahmud_confrontation"
+
+    fire_only_once = yes
+
+    trigger = {
+		exists = yes
+		war = no		
+        has_country_flag = timurtash_remnant
+		OR = {
+			AND = {
+				NOT = {
+					CLN = {
+						check_variable = {
+							which = timurtash_legitimacy
+							value = 4.99
+						}
+					}
+				}
+				CLN = {
+					check_variable = {
+						which = dehqan_unrest
+						value = 3.99
+					}
+				}
+			}
+			AND = {
+				NOT = {
+					CLN = {
+						check_variable = {
+							which = timurtash_legitimacy
+							value = 5.99
+						}
+					}
+				}
+				has_country_flag = abolished_soyurghal
+			}			
+		}		
+    }
+	
+    mean_time_to_happen = { months = 3 }	
+
+    option = {
+        name = "EVTOPTA180083"
+		set_country_flag = dehqan_rebellion
+        any_owned = {
+            limit = { region = IRN_1116	}
+			add_core = GLS
+        }
+        any_owned = {
+            limit = { region = IRN_3339	}
+			add_core = KRS
+        }
+        any_owned = {
+            limit = { region = IRN_1148	}
+			add_core = KHT
+        }
+        release_vassal = GLS
+        GLS = {
+            define_general = {
+                name = "Ali Bulend"
+                personality = audacious
+                background = natural_born_leader
+            }
+			add_country_modifier = {
+				name = "flowers_of_ruin"
+				duration = -1
+			}
+			ammunition = 100
+			small_arms = 100
+			artillery = 25
+			canned_food = 100			
+        }		
+        release_vassal = KRS
+        KRS = {
+            define_general = {
+                name = "Nasr Mihirabani"
+                personality = efficient
+                background = school_of_offense
+            }
+			add_country_modifier = {
+				name = "flowers_of_ruin"
+				duration = -1
+			}
+			ammunition = 100
+			small_arms = 100
+			artillery = 25
+			canned_food = 100			
+        }
+        release_vassal = KHT
+        KHT = {
+            define_general = {
+                name = "Behar Kaskar"
+                personality = skilled
+                background = school_of_defense
+            }
+			add_country_modifier = {
+				name = "flowers_of_ruin"
+				duration = -1
+			}
+			ammunition = 100
+			small_arms = 100
+			artillery = 25
+			canned_food = 100			
+        }		
+    }	
+	
+}
+
+country_event = { #War between the Timurtash Empire and the Khorasani Warlords
+    id = 180084
+    title = "EVTNAME180084"
+    desc = "EVTDESC180084"
+    picture = "mahmud_battle"
+	
+    trigger = {
+		exists = yes
+		war = no
+		has_country_flag = dehqan_rebellion		
+		KHT = { exists = yes }
+		KRS = { exists = yes }
+		GLS = { exists = yes }		
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 6
+        modifier = {
+            factor = 0.6
+            war_exhaustion = 50
+        }
+    }
+
+    option = {
+        name = "EVTOPTA180084"
+        THIS = {
+            release_vassal = KHT
+            war = {
+                target = KHT
+                attacker_goal = { casus_belli = civil_war }
+                defender_goal = { casus_belli = status_quo }
+            }
+            release_vassal = KRS
+            war = {
+                target = KRS
+                attacker_goal = { casus_belli = civil_war }
+                defender_goal = { casus_belli = status_quo }
+            }
+            release_vassal = GLS
+            war = {
+                target = GLS
+                attacker_goal = { casus_belli = civil_war }
+                defender_goal = { casus_belli = status_quo }
+            }			
+        }
+        KHT = { country_event = 180085 }
+        KRS = { country_event = 180085 }
+        GLS = { country_event = 180085 }		
+		set_country_flag = timurtash_civil_war
+        ai_chance = { factor = 95 }
+    }
+	
+    option = {
+        name = "EVTOPTB180084"
+        prestige = -25		
+        THIS = {
+            release_vassal = KHT
+            release_vassal = KRS
+            release_vassal = GLS			
+        }
+        KHT = { country_event = 180085 }
+        KRS = { country_event = 180085 }
+        GLS = { country_event = 180085 }		
+		set_country_flag = timurtash_civil_war		
+        ai_chance = { factor = 5 }
+    }	
+	
+}
+
+country_event = { #Khorasani Warlords get cores on each other
+    id = 180085
+    title = "EVTNAME180085"
+    desc = "EVTDESC180085"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA180085"
+        any_owned = {
+            limit = {
+				OR = {
+					region = IRN_3339
+					region = IRN_1116
+					region = IRN_1148
+					region = AFG_1212					
+				}
+			}
+			add_core = THIS
+        }		
+    }	
+}
+
+country_event = { #If the Timurtash crush the Khorasani Warlords, erase their cores
+    id = 180086
+    title = "EVTNAME180086"
+    desc = "EVTDESC180086"
+    picture = "malik_shah"
+
+    trigger = {
+		exists = yes
+		war = no		
+		has_country_flag = timurtash_civil_war		
+		KHT = { exists = no }
+		KRS = { exists = no }		
+		GLS = { exists = no }		
+    }
+
+    mean_time_to_happen = { months = 3 }
+	
+    fire_only_once = yes	
+
+    option = {
+        name = "EVTOPTA180086"
+        KHT = { all_core = { remove_core = KHT } }
+        KRS = { all_core = { remove_core = KRS } }
+        GLS = { all_core = { remove_core = GLS } }			
+        any_pop = {
+            limit = { culture = persian }
+            militancy = -3
+        }
+    }
+}
+
+country_event = { #Event to change Nishapur's RGO to precious goods to reflect turquoise mining
+    id = 180087
+    title = "EVTNAME180087"
+    desc = "EVTDESC180087"
+    picture = "madan_turquoise_mines"
+
+    trigger = {
+		exists = yes
+		war = no		
+        has_country_flag = timurtash_remnant
+		year = 1855
+		3339 = { owned_by = THIS }
+    }
+
+    mean_time_to_happen = { months = 6 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA180087"
+		3339 = { 
+			trade_goods = precious_goods
+            add_province_modifier = {
+                name = madan_turquoise
+                duration = -1
+            }			
+		}	
+        ai_chance = { factor = 100 }		
+    }
+	
+    option = {
+        name = "EVTOPTB180087"
+        ai_chance = { factor = 0 }
+    }		
+	
+}
+
+country_event = { #Add Timurtash cores to Western Iran, once the Kar-Kiya and Shekhbizin Empire no longer exist and Zanjan is owned
+    id = 180088
+    title = "EVTNAME180088"
+    desc = "EVTDESC180088"
+    picture = "arsacid_empire"
+
+    trigger = {
+		exists = yes
+		war = no		
+        has_country_flag = timurtash_remnant
+		1123 = { owned_by = THIS }
+		QAJ = { exists = no }
+		ZND = { exists = no }
+		PER = { exists = no }
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA180088"
+		add_accepted_culture = caspian
+		set_country_flag = western_iran_reclaimed
+        PER = { 
+			all_core = {
+				add_core = THIS
+				remove_core = PER
+			}
+		}			
+    }
+	
+}
+
+country_event = { #If the Ismailis are protected, and Badakshan is conquered, falvour event
+    id = 180089
+    title = "EVTNAME180089"
+    desc = "EVTDESC180089"
+    picture = "tashkurgan_fortress"
+
+
+    trigger = {
+        exists = yes
+        has_country_modifier = ismaili_education
+		owns = 1208
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA180089"
+		prestige = 15
+        any_pop = {
+			limit = { has_pop_culture = pamiri }
+			literacy = 0.15
+        }		
+    }
+
+}
+
+country_event = { #If Murghab and Osh are owned and cored, event to subjugate the Tarim Khojas
+    id = 180090
+    title = "EVTNAME180090"
+    desc = "EVTDESC180090"
+    picture = "east_turkestan_map"
+
+
+    trigger = {
+        exists = yes
+		war = no
+        has_country_flag = timurtash_syrdaria
+		owns = 1203		
+		owns = 3360
+		UGH = { 
+			exists = yes
+			is_vassal = no			
+			owns = 1594
+			owns = 3359
+		}
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA180090"
+        UGH = { country_event = 180091 }
+		set_country_flag = timurtash_tarim
+    }
+	
+    option = {
+        name = "EVTOPTB180090"
+        any_pop = {
+            scaled_militancy = {
+                issue = jingoism
+                factor = 2
+            }
+            scaled_militancy = {
+                issue = pacifism
+                factor = -1
+            }
+        }	
+    }	
+
+}
+
+country_event = { #Moghulistan decides to accept Iranian overlordship or not
+    id = 180091 
+    title = "EVTNAME180091"
+    desc = "EVTDESC180091"
+    picture = "kyzyl_yar_pass"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA180091"
+        FROM = { create_vassal = THIS }
+        FROM = {
+			country_event = {
+				id = 180092 
+				days = 7
+			}
+		}		
+		prestige = -5
+        ai_chance = { factor = 0 }
+    }
+
+    option = {
+        name = "EVTOPTB180091"
+        FROM = {
+			country_event = {
+				id = 180093 
+				days = 7
+			}
+		}
+		prestige = 5		
+        ai_chance = { factor = 100 }
+    }		
+	
+}
+
+country_event = { #Moghulistan peacefully becomes an Iranian vassal
+    id = 180092 
+    title = "EVTNAME180092"
+    desc = "EVTDESC180092"
+    picture = "poskam_bazar"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA180092"
+        relation = {
+            who = FROM
+            value = 300
+        }
+        ai_chance = { factor = 100 }
+    }	
+	
+}
+
+country_event = { #Moghulistan refuses to become an Iranian vassal
+    id = 180093 
+    title = "EVTNAME180093"
+    desc = "EVTDESC180093"
+    picture = "khotani_fighters"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA180093"
+        casus_belli = {
+            target = FROM
+            type = make_puppet
+            months = 60
+        }
+        relation = {
+            who = FROM
+            value = -300
+        }		
+        ai_chance = { factor = 80 }
+    }
+
+    option = {
+        name = "EVTOPTB180093"
+		prestige = -5		
+        ai_chance = { factor = 20 }
+    }		
+	
+}
+
+country_event = { #If Moghulistan is an Iranian vassal, event to take Kashgar and Tashkurgan
+    id = 180094
+    title = "EVTNAME180094"
+    desc = "EVTDESC180094"
+    picture = "kashgar_mosque"
+
+
+    trigger = {
+        exists = yes
+		war = no
+        has_country_flag = timurtash_syrdaria
+		owns = 1203		
+		owns = 3360
+		UGH = { 
+			vassal_of = THIS		
+			owns = 1594
+			owns = 3359
+		}
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA180094"
+        1594 = { secede_province = THIS }
+        3359 = { secede_province = THIS }		
+    }	
+
+}
+
+country_event = { #If Tashkurgan and Kashgar are owned, event to improve forts and infrastructure
+    id = 180095
+    title = "EVTNAME180095"
+    desc = "EVTDESC180095"
+    picture = "sughet_kurgan"
+
+
+    trigger = {
+        exists = yes
+		war = no
+        has_country_flag = timurtash_tarim
+		owns = 1594		
+		owns = 3359
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA180095"
+        1594 = {
+            infrastructure = 1
+            fort = 2
+        }
+        1594 = {
+            infrastructure = 1
+            fort = 2
+        }		
+    }	
+
+}
+
+country_event = { #If Tabriz is owned, and the Fahlavis were liberated, event for the reconstruction of Azerbaijan
+    id = 180096
+    title = "EVTNAME180096"
+    desc = "EVTDESC180096"
+    picture = "tabriz_blue_mosque"
+
+
+    trigger = {
+        exists = yes
+        has_country_flag = liberated_fahlavi
+		owns = 1108
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA180096"
+        any_owned = {
+            limit = { region = PER_1112 }
+            add_province_modifier = {
+                name = azarbaijan_reconstruction
+                duration = 7300
+            }
+        }
+		add_country_modifier = {
+			name = "investing_azarbaijan"
+			duration = 1000
+		}		
+    }
+	
+    option = {
+        name = "EVTOPTB180096"
+		prestige = -2
+    }	
+
+}
+
+country_event = { #If Gorjestan is owned as Iranshahr, core Ossetia
+    id = 180097
+    title = "EVTNAME180097"
+    desc = "EVTDESC180097"
+    picture = "caucasus_village"
+
+
+    trigger = {
+        exists = yes
+		tag = ARY
+		owns = 1091
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA180097"
+		1054 = { add_core = THIS }
+    }
+
+} 
+
+country_event = { #Death of Firuz II: low legitimacy
+    id = 180098
+    title = "EVTNAME180098"
+    desc = "EVTDESC180098"
+    picture = "tehran_shah_funeral"
+
+
+    trigger = {
+		year = 1880
+        exists = yes
+		has_country_flag = timurtash_remnant
+		NOT = {
+			CLN = {
+				check_variable = {
+					which = timurtash_legitimacy
+					value = 3.99
+				}
+			}
+			has_country_flag = western_iran_reclaimed			
+		}		
+    }
+
+    mean_time_to_happen = { months = 6 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA180098"
+        any_pop = { consciousness = 1 }
+    }
+
+} 
+
+country_event = { #Death of Firuz II: high legitimacy
+    id = 180099
+    title = "EVTNAME180099"
+    desc = "EVTDESC180099"
+    picture = "tehran_shah_funeral"
+
+
+    trigger = {
+		year = 1880
+        exists = yes
+		has_country_flag = western_iran_reclaimed
+		CLN = {
+			check_variable = {
+				which = timurtash_legitimacy
+				value = 3.99
+			}
+		}		
+    }
+
+    mean_time_to_happen = { months = 6 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA180099"
+        any_pop = {
+            militancy = -1
+            consciousness = 1
+        }
+    }
+
 }

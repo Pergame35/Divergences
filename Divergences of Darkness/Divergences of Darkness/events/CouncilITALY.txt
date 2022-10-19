@@ -864,9 +864,9 @@ country_event = {
 }
 
 country_event = { #If Venice lets Greece go peacefully, become the San Marco's Republic
-    id = 124217
-    title = "EVTNAME124217"
-    desc = "EVTDESC124217"
+    id = 124259
+    title = "EVTNAME124259"
+    desc = "EVTDESC124259"
 
     picture = "venice_nighttime"
 
@@ -883,7 +883,7 @@ country_event = { #If Venice lets Greece go peacefully, become the San Marco's R
     fire_only_once = yes	
 
     option = {
-        name = "EVTOPTA124217"
+        name = "EVTOPTA124259"
         government = democracy		
 		clr_country_flag = venice_lost_greece
 		set_country_flag = hosting_second_council_ITA
@@ -891,9 +891,9 @@ country_event = { #If Venice lets Greece go peacefully, become the San Marco's R
 }
 
 country_event = { #Opening of the Second Council of Italy
-    id = 124218
-    title = "EVTNAME124218"
-    desc = "EVTDESC124218"
+    id = 124252
+    title = "EVTNAME124252"
+    desc = "EVTDESC124252"
 
 	major = yes
 
@@ -912,10 +912,10 @@ country_event = { #Opening of the Second Council of Italy
     fire_only_once = yes	
 
     option = {
-        name = "EVTOPTA124218"	
+        name = "EVTOPTA124252"	
         THIS = { 
 			country_event = { 
-				id = 124219
+				id = 124253
 				days = 5
 			}
 		}
@@ -923,16 +923,16 @@ country_event = { #Opening of the Second Council of Italy
 }
 
 country_event = { #Second Council of Italy: the Italian Republics
-    id = 124219
-    title = "EVTNAME124219"
-    desc = "EVTDESC124219"
+    id = 124253
+    title = "EVTNAME124253"
+    desc = "EVTDESC124253"
 
     picture = "adriaticus_sinus"
 
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA124219"
+        name = "EVTOPTA124253"
         any_country = {
             limit = {
 				exists = yes			
@@ -941,11 +941,11 @@ country_event = { #Second Council of Italy: the Italian Republics
                 has_country_flag = democracy_gov
 				NOT = { rank = 15 }
             }
-            country_event = 124220
+            country_event = 124254
         }
         THIS = { 
 			country_event = { 
-				id = 124221
+				id = 124255
 				days = 5
 			}
 		}		
@@ -953,38 +953,38 @@ country_event = { #Second Council of Italy: the Italian Republics
 }
 
 country_event = { #Italian Republics choose to be annexed or not
-    id = 124220
-    title = "EVTNAME124220"
-    desc = "EVTDESC124220"
+    id = 124254
+    title = "EVTNAME124254"
+    desc = "EVTDESC124254"
 
     picture = "adriaticus_sinus"
 
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA124220"
+        name = "EVTOPTA124254"
 		FROM = { inherit = THIS }
         ai_chance = { factor = 100 }			
     }
 	
     option = {
-        name = "EVTOPTB124220"
+        name = "EVTOPTB124254"
 		prestige = 5
         ai_chance = { factor = 0 }			
     }	
 }
 
 country_event = { #Second Council of Italy: the non-aligned nations
-    id = 124221
-    title = "EVTNAME124221"
-    desc = "EVTDESC124221"
+    id = 124255
+    title = "EVTNAME124255"
+    desc = "EVTDESC124255"
 
     picture = "adriaticus_sinus"
 
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA124221"
+        name = "EVTOPTA124255"
         any_country = {
             limit = {
 				exists = yes			
@@ -993,11 +993,11 @@ country_event = { #Second Council of Italy: the non-aligned nations
 				part_of_sphere = no
 				NOT = { rank = 15 }
             }
-            country_event = 124220
+            country_event = 124254
         }
         THIS = { 
 			country_event = { 
-				id = 124222
+				id = 124256
 				days = 5
 			}
 		}		
@@ -1005,16 +1005,16 @@ country_event = { #Second Council of Italy: the non-aligned nations
 }
 
 country_event = { #Second Council of Italy: the rest
-    id = 124222
-    title = "EVTNAME124222"
-    desc = "EVTDESC124222"
+    id = 124256
+    title = "EVTNAME124256"
+    desc = "EVTDESC124256"
 
     picture = "adriaticus_sinus"
 
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA124222"
+        name = "EVTOPTA124256"
         any_country = {
             limit = {
 				exists = yes
@@ -1022,11 +1022,11 @@ country_event = { #Second Council of Italy: the rest
 				NOT = { primary_culture = catalan }
 				NOT = { rank = 15 }
             }
-            country_event = 124223
+            country_event = 124257
         }
         THIS = { 
 			country_event = { 
-				id = 124224
+				id = 124258
 				days = 5
 			}
 		}		
@@ -1034,16 +1034,16 @@ country_event = { #Second Council of Italy: the rest
 }
 
 country_event = { #Remaining Italian countries choose to be annexed or not
-    id = 124223
-    title = "EVTNAME124223"
-    desc = "EVTDESC124223"
+    id = 124257
+    title = "EVTNAME124257"
+    desc = "EVTDESC124257"
 
     picture = "adriaticus_sinus"
 
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA124223"
+        name = "EVTOPTA124257"
 		FROM = { inherit = THIS }
         ai_chance = {
 			factor = 70
@@ -1077,23 +1077,23 @@ country_event = { #Remaining Italian countries choose to be annexed or not
     }
 	
     option = {
-        name = "EVTOPTB124223"
+        name = "EVTOPTB124257"
 		prestige = 5
         ai_chance = { factor = 30 }			
     }	
 }
 
 country_event = { #Second Council of Italy: the result
-    id = 124224
-    title = "EVTNAME124224"
-    desc = "EVTDESC124224"
+    id = 124258
+    title = "EVTNAME124258"
+    desc = "EVTDESC124258"
 
     picture = "lombardy_xiii"
 
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA124224"
+        name = "EVTOPTA124258"
 		add_accepted_culture = north_italian
 		add_accepted_culture = south_italian
 		prestige = 15

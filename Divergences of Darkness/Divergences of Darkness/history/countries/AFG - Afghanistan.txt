@@ -50,7 +50,6 @@ foreign_weapons = yes_foreign_weapons
 admin_reform = yes_admin_reform
 
 # Technologies
-flintlock_rifles = 1
 
 # Inventions
 
@@ -59,11 +58,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "AFG_oob.txt"
-1861.1.1 = {
-	oob = "/1861/AFG_oob.txt"
-}
-
-1861.1.1 = {
-	#Military Reforms
-	military_constructions = yes_military_constructions
-}
