@@ -45,9 +45,9 @@ country_event = {
                 NOT = {
                     OR = {
                         is_accepted_culture = yes
-                        religion = sunni
-                        religion = shiite
-                        religion = ibadi
+                        has_pop_religion = sunni
+                        has_pop_religion = shiite
+                        has_pop_religion = ibadi
                     }
                 }
             }
@@ -91,9 +91,9 @@ country_event = {
                     NOT = {
                         OR = {
                             is_accepted_culture = yes
-                            religion = sunni
-                            religion = shiite
-                            religion = ibadi
+                            has_pop_religion = sunni
+                            has_pop_religion = shiite
+                            has_pop_religion = ibadi
                         }
                     }
                 }

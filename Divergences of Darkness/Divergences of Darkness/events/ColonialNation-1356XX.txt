@@ -381,7 +381,7 @@ country_event = {
 
     option = {
         name = "135630.A"
-        money = 250000
+        money = 50000
         JAM = {
             all_core = { remove_core = THIS }
         }
@@ -417,7 +417,7 @@ country_event = {
     option = {
         name = "135631.A"
         prestige = 5
-        money = -250000
+        money = -50000
         JAM = {
             all_core = { add_core = THIS }
         }

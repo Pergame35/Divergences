@@ -72,8 +72,14 @@
 	aristocrats = {
 		culture = turkmen
 		religion = sunni
-		size = 500
+		size = 400
 	}
+	
+	bureaucrats = {
+		culture = turkmen
+		religion = sunni
+		size = 200
+	}	
 
 	clergymen = {
 		culture = turkmen
@@ -97,7 +103,7 @@
 	farmers = {
 		culture = turkmen
 		religion = sunni
-		size = 25675
+		size = 25575
 	}
 
 	clergymen = {
@@ -151,8 +157,14 @@
 	aristocrats = {
 		culture = turkmen
 		religion = sunni
-		size = 375
+		size = 275
 	}
+	
+	bureaucrats = {
+		culture = turkmen
+		religion = sunni
+		size = 100
+	}	
 
 	clergymen = {
 		culture = turkmen
@@ -333,6 +345,12 @@
 		religion = sunni
 		size = 50
 	}
+	
+	bureaucrats = {
+		culture = turkmen
+		religion = sunni
+		size = 50
+	}	
 
 	clergymen = {
 		culture = turkmen
@@ -349,7 +367,7 @@
 	farmers = {
 		culture = turkmen
 		religion = sunni
-		size = 7000
+		size = 6950
 	}
 	
 	aristocrats = {
@@ -391,6 +409,12 @@
 		religion = sunni
 		size = 50
 	}
+	
+	bureaucrats = {
+		culture = turkmen
+		religion = sunni
+		size = 50
+	}	
 
 	clergymen = {
 		culture = turkmen
@@ -407,7 +431,7 @@
 	farmers = {
 		culture = turkmen
 		religion = sunni
-		size = 13000
+		size = 12950
 	}
 	
 	aristocrats = {
@@ -460,6 +484,12 @@
 		religion = sunni
 		size = 25
 	}
+	
+	bureaucrats = {
+		culture = persian
+		religion = sunni
+		size = 50
+	}	
 
 	clergymen = {
 		culture = persian
@@ -476,7 +506,7 @@
 	farmers = {
 		culture = persian
 		religion = sunni
-		size = 7500
+		size = 7450
 	}
 	
 }

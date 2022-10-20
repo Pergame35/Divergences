@@ -12,3 +12,17 @@ country_event = {
         prestige = 25
     }
 }
+
+country_event = {
+    id = 95601
+    title = "EVTNAME95601" #The Selon Treaty
+    desc = "EVTDESC95601"
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We must protect our trade with India"
+        prestige = 25
+    }
+}

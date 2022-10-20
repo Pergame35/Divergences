@@ -3704,7 +3704,7 @@ persia_acquire_state = {
         THIS = {
             OR = {
                 primary_culture = persian
-                AND = { 
+				AND = {
 					tag = AZB
 					has_country_flag = iranian_ambition
 				}
@@ -4075,6 +4075,15 @@ demand_concession_casus_belli = {
             THIS = { ai = no }
         }
 
+		OR = {
+			year = 1900
+			NOT = {
+				any_owned_province = {
+					is_core = CHI
+				}
+			}
+		}
+		
         #Restrictions to non-African State conquering
         OR = {
             continent = africa
@@ -4082,60 +4091,75 @@ demand_concession_casus_belli = {
             NOT = { total_pops = 500000 }
 
             AND = {
+                NOT = { total_pops = 750000 }
+				OR = {
+					year = 1855
+					THIS = {
+						naval_plans = 1
+					}
+				}
+			}
+			
+            AND = {
                 NOT = { total_pops = 1000000 }
-                OR = {
-                    any_owned_province = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_logistics = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        raider_group_doctrine = 1
-                        iron_steamers = 1
-                    }
-                }
+				OR = {
+					year = 1860
+					THIS = {
+						naval_statistics = 1
+					}
+					THIS = {
+						raider_group_doctrine = 1
+					}
+				}
+            }
+			
+			
+            AND = {
+                NOT = { total_pops = 1500000 }
+				OR = {
+					year = 1865
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+					}
+				}
             }
 
             AND = {
                 NOT = { total_pops = 2000000 }
-                THIS = { machine_guns = 1 }
-                OR = {
-                    any_owned_province = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_directionism = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        steam_turbine_ships = 1
-                    }
-                }
+				OR = {
+					year = 1870
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+						iron_steamers = 1
+					}
+				}
             }
+			
+            AND = {
+                NOT = { total_pops = 2500000 }
+				OR = {
+					year = 1875
+					THIS = {
+						naval_logistics = 1
+					}
+				}
+            }
+			
             AND = {
                 NOT = { total_pops = 3000000 }
-                THIS = {
-                    bolt_action_rifles = 1
-                    army_risk_management = 1
-                }
-                OR = {
-                    any_owned_province = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_integration = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        oil_driven_ships = 1
-                    }
-                }
+				OR = {
+					year = 1880
+					THIS = {
+						naval_logistics = 1
+						blue_and_brown_water_schools = 1
+					}
+				}
             }
             AND = {
                 total_pops = 3000000
-                THIS = {
-                    modern_divisional_structure = 1
-                    army_nco_training = 1
-                }
+				year = 1885
             }
         } ###End of Non-African Restrictions
     }
@@ -4274,6 +4298,15 @@ demand_concession_NI_casus_belli = {
             THIS = { ai = no }
         }
 
+		OR = {
+			year = 1900
+			NOT = {
+				any_owned_province = {
+					is_core = CHI
+				}
+			}
+		}
+		
         #Restrictions to non-African State conquering
         OR = {
             continent = africa
@@ -4281,60 +4314,75 @@ demand_concession_NI_casus_belli = {
             NOT = { total_pops = 500000 }
 
             AND = {
+                NOT = { total_pops = 750000 }
+				OR = {
+					year = 1845
+					THIS = {
+						naval_plans = 1
+					}
+				}
+			}
+			
+            AND = {
                 NOT = { total_pops = 1000000 }
-                OR = {
-                    any_owned_province = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_logistics = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        raider_group_doctrine = 1
-                        iron_steamers = 1
-                    }
-                }
+				OR = {
+					year = 1850
+					THIS = {
+						naval_statistics = 1
+					}
+					THIS = {
+						raider_group_doctrine = 1
+					}
+				}
+            }
+			
+			
+            AND = {
+                NOT = { total_pops = 1500000 }
+				OR = {
+					year = 1855
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+					}
+				}
             }
 
             AND = {
                 NOT = { total_pops = 2000000 }
-                THIS = { machine_guns = 1 }
-                OR = {
-                    any_owned_province = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_directionism = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        steam_turbine_ships = 1
-                    }
-                }
+				OR = {
+					year = 1860
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+						iron_steamers = 1
+					}
+				}
             }
+			
+            AND = {
+                NOT = { total_pops = 2500000 }
+				OR = {
+					year = 1865
+					THIS = {
+						naval_logistics = 1
+					}
+				}
+            }
+			
             AND = {
                 NOT = { total_pops = 3000000 }
-                THIS = {
-                    bolt_action_rifles = 1
-                    army_risk_management = 1
-                }
-                OR = {
-                    any_owned_province = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_integration = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        oil_driven_ships = 1
-                    }
-                }
+				OR = {
+					year = 1870
+					THIS = {
+						naval_logistics = 1
+						blue_and_brown_water_schools = 1
+					}
+				}
             }
             AND = {
                 total_pops = 3000000
-                THIS = {
-                    modern_divisional_structure = 1
-                    army_nco_training = 1
-                }
+				year = 1875
             }
         } ###End of Non-African Restrictions
     }
@@ -4470,6 +4518,15 @@ demand_concession_BC_casus_belli = {
             THIS = { ai = no }
         }
 
+		OR = {
+			year = 1900
+			NOT = {
+				any_owned_province = {
+					is_core = CHI
+				}
+			}
+		}
+		
         #Restrictions to non-African State conquering
         OR = {
             continent = africa
@@ -4477,60 +4534,75 @@ demand_concession_BC_casus_belli = {
             NOT = { total_pops = 500000 }
 
             AND = {
+                NOT = { total_pops = 750000 }
+				OR = {
+					year = 1845
+					THIS = {
+						naval_plans = 1
+					}
+				}
+			}
+			
+            AND = {
                 NOT = { total_pops = 1000000 }
-                OR = {
-                    any_owned_province = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_logistics = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        raider_group_doctrine = 1
-                        iron_steamers = 1
-                    }
-                }
+				OR = {
+					year = 1850
+					THIS = {
+						naval_statistics = 1
+					}
+					THIS = {
+						raider_group_doctrine = 1
+					}
+				}
+            }
+			
+			
+            AND = {
+                NOT = { total_pops = 1500000 }
+				OR = {
+					year = 1855
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+					}
+				}
             }
 
             AND = {
                 NOT = { total_pops = 2000000 }
-                THIS = { machine_guns = 1 }
-                OR = {
-                    any_owned_province = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_directionism = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        steam_turbine_ships = 1
-                    }
-                }
+				OR = {
+					year = 1860
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+						iron_steamers = 1
+					}
+				}
             }
+			
+            AND = {
+                NOT = { total_pops = 2500000 }
+				OR = {
+					year = 1865
+					THIS = {
+						naval_logistics = 1
+					}
+				}
+            }
+			
             AND = {
                 NOT = { total_pops = 3000000 }
-                THIS = {
-                    bolt_action_rifles = 1
-                    army_risk_management = 1
-                }
-                OR = {
-                    any_owned_province = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_integration = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        oil_driven_ships = 1
-                    }
-                }
+				OR = {
+					year = 1870
+					THIS = {
+						naval_logistics = 1
+						blue_and_brown_water_schools = 1
+					}
+				}
             }
             AND = {
                 total_pops = 3000000
-                THIS = {
-                    modern_divisional_structure = 1
-                    army_nco_training = 1
-                }
+				year = 1875
             }
         } ###End of Non-African Restrictions
     }
@@ -5126,7 +5198,7 @@ establish_protectorate_casus_belli = {
         OR = {
             THIS = { total_pops = 1000000 }
             THIS = { machine_guns = 1 }
-            NOT = { total_pops = 200000 }
+            NOT = { total_pops = 500000 }
         }
 
         THIS = {
@@ -5155,67 +5227,91 @@ establish_protectorate_casus_belli = {
             }
         }
 
+		OR = {
+			year = 1900
+			NOT = {
+				any_owned_province = {
+					is_core = CHI
+				}
+			}
+		}
+		
         #Restrictions to non-African State conquering
         OR = {
-            capital_scope = { continent = africa }
+            continent = africa
 
             NOT = { total_pops = 500000 }
 
             AND = {
+                NOT = { total_pops = 750000 }
+				OR = {
+					year = 1855
+					THIS = {
+						naval_plans = 1
+					}
+				}
+			}
+			
+            AND = {
                 NOT = { total_pops = 1000000 }
-                OR = {
-                    capital_scope = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_logistics = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        raider_group_doctrine = 1
-                        iron_steamers = 1
-                    }
-                }
+				OR = {
+					year = 1860
+					THIS = {
+						naval_statistics = 1
+					}
+					THIS = {
+						raider_group_doctrine = 1
+					}
+				}
+            }
+			
+			
+            AND = {
+                NOT = { total_pops = 1500000 }
+				OR = {
+					year = 1865
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+					}
+				}
             }
 
             AND = {
                 NOT = { total_pops = 2000000 }
-                THIS = { machine_guns = 1 }
-                OR = {
-                    capital_scope = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_directionism = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        steam_turbine_ships = 1
-                    }
-                }
+				OR = {
+					year = 1870
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+						iron_steamers = 1
+					}
+				}
             }
+			
+            AND = {
+                NOT = { total_pops = 2500000 }
+				OR = {
+					year = 1875
+					THIS = {
+						naval_logistics = 1
+					}
+				}
+            }
+			
             AND = {
                 NOT = { total_pops = 3000000 }
-                THIS = {
-                    bolt_action_rifles = 1
-                    army_risk_management = 1
-                }
-                OR = {
-                    capital_scope = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_integration = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        oil_driven_ships = 1
-                    }
-                }
+				OR = {
+					year = 1880
+					THIS = {
+						naval_logistics = 1
+						blue_and_brown_water_schools = 1
+					}
+				}
             }
             AND = {
                 total_pops = 3000000
-                THIS = {
-                    modern_divisional_structure = 1
-                    army_nco_training = 1
-                }
+				year = 1885
             }
         } ###End of Non-African Restrictions
     }
@@ -5301,7 +5397,7 @@ establish_protectorate_NI_casus_belli = {
         OR = {
             THIS = { total_pops = 1000000 }
             THIS = { machine_guns = 1 }
-            NOT = { total_pops = 200000 }
+            NOT = { total_pops = 500000 }
         }
 
         OR = {
@@ -5320,68 +5416,92 @@ establish_protectorate_NI_casus_belli = {
                 }
             }
         }
+		
+		OR = {
+			year = 1900
+			NOT = {
+				any_owned_province = {
+					is_core = CHI
+				}
+			}
+		}
 
         #Restrictions to non-African State conquering
         OR = {
-            capital_scope = { continent = africa }
+            continent = africa
 
             NOT = { total_pops = 500000 }
 
             AND = {
+                NOT = { total_pops = 750000 }
+				OR = {
+					year = 1845
+					THIS = {
+						naval_plans = 1
+					}
+				}
+			}
+			
+            AND = {
                 NOT = { total_pops = 1000000 }
-                OR = {
-                    capital_scope = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_logistics = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        raider_group_doctrine = 1
-                        iron_steamers = 1
-                    }
-                }
+				OR = {
+					year = 1850
+					THIS = {
+						naval_statistics = 1
+					}
+					THIS = {
+						raider_group_doctrine = 1
+					}
+				}
+            }
+			
+			
+            AND = {
+                NOT = { total_pops = 1500000 }
+				OR = {
+					year = 1855
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+					}
+				}
             }
 
             AND = {
                 NOT = { total_pops = 2000000 }
-                THIS = { machine_guns = 1 }
-                OR = {
-                    capital_scope = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_directionism = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        steam_turbine_ships = 1
-                    }
-                }
+				OR = {
+					year = 1860
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+						iron_steamers = 1
+					}
+				}
             }
+			
+            AND = {
+                NOT = { total_pops = 2500000 }
+				OR = {
+					year = 1865
+					THIS = {
+						naval_logistics = 1
+					}
+				}
+            }
+			
             AND = {
                 NOT = { total_pops = 3000000 }
-                THIS = {
-                    bolt_action_rifles = 1
-                    army_risk_management = 1
-                }
-                OR = {
-                    capital_scope = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_integration = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        oil_driven_ships = 1
-                    }
-                }
+				OR = {
+					year = 1870
+					THIS = {
+						naval_logistics = 1
+						blue_and_brown_water_schools = 1
+					}
+				}
             }
             AND = {
                 total_pops = 3000000
-                THIS = {
-                    modern_divisional_structure = 1
-                    army_nco_training = 1
-                }
+				year = 1875
             }
         } ###End of Non-African Restrictions
     }
@@ -5467,7 +5587,7 @@ establish_protectorate_BC_casus_belli = {
         OR = {
             THIS = { total_pops = 1000000 }
             THIS = { machine_guns = 1 }
-            NOT = { total_pops = 200000 }
+            NOT = { total_pops = 500000 }
         }
 
         OR = {
@@ -5487,67 +5607,91 @@ establish_protectorate_BC_casus_belli = {
             }
         }
 
+		OR = {
+			year = 1900
+			NOT = {
+				any_owned_province = {
+					is_core = CHI
+				}
+			}
+		}
+
         #Restrictions to non-African State conquering
         OR = {
-            capital_scope = { continent = africa }
+            continent = africa
 
             NOT = { total_pops = 500000 }
 
             AND = {
+                NOT = { total_pops = 750000 }
+				OR = {
+					year = 1845
+					THIS = {
+						naval_plans = 1
+					}
+				}
+			}
+			
+            AND = {
                 NOT = { total_pops = 1000000 }
-                OR = {
-                    capital_scope = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_logistics = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        raider_group_doctrine = 1
-                        iron_steamers = 1
-                    }
-                }
+				OR = {
+					year = 1850
+					THIS = {
+						naval_statistics = 1
+					}
+					THIS = {
+						raider_group_doctrine = 1
+					}
+				}
+            }
+			
+			
+            AND = {
+                NOT = { total_pops = 1500000 }
+				OR = {
+					year = 1855
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+					}
+				}
             }
 
             AND = {
                 NOT = { total_pops = 2000000 }
-                THIS = { machine_guns = 1 }
-                OR = {
-                    capital_scope = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_directionism = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        steam_turbine_ships = 1
-                    }
-                }
+				OR = {
+					year = 1860
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+						iron_steamers = 1
+					}
+				}
             }
+			
+            AND = {
+                NOT = { total_pops = 2500000 }
+				OR = {
+					year = 1865
+					THIS = {
+						naval_logistics = 1
+					}
+				}
+            }
+			
             AND = {
                 NOT = { total_pops = 3000000 }
-                THIS = {
-                    bolt_action_rifles = 1
-                    army_risk_management = 1
-                }
-                OR = {
-                    capital_scope = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_integration = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        oil_driven_ships = 1
-                    }
-                }
+				OR = {
+					year = 1870
+					THIS = {
+						naval_logistics = 1
+						blue_and_brown_water_schools = 1
+					}
+				}
             }
             AND = {
                 total_pops = 3000000
-                THIS = {
-                    modern_divisional_structure = 1
-                    army_nco_training = 1
-                }
+				year = 1875
             }
         } ###End of Non-African Restrictions
     }
@@ -5599,55 +5743,6 @@ status_quo = {
     po_status_quo = yes
 
     war_name = WAR_NAME
-}
-
-#New with AHD
-cut_down_to_size_boxer = {
-    sprite_index = 8
-    is_triggered_only = yes
-    months = 12
-    constructing_cb = no
-    crisis = no
-
-    can_use = {
-        tag = QNG
-        civilized = no
-        has_country_flag = boxers_appeared
-        NOT = { has_country_flag = boxers_disbanded }
-    }
-
-    badboy_factor = 1.1
-    prestige_factor = 5
-    peace_cost_factor = 12.5
-    penalty_factor = 1
-
-    break_truce_prestige_factor = 1
-    break_truce_infamy_factor = 1
-    break_truce_militancy_factor = 1
-    truce_months = 48
-
-    good_relation_prestige_factor = 1
-    good_relation_infamy_factor = 1
-    good_relation_militancy_factor = 1
-
-    po_disarmament = yes
-    po_reparations = yes
-
-    war_name = WAR_BOXER_NAME
-
-    on_add = {
-        set_country_flag = intervened_boxer_war
-        move_issue_percentage = {
-            from = jingoism
-            to = pro_military
-            value = 0.25
-        }
-    }
-
-    on_po_accepted = {
-        THIS = { clr_country_flag = intervened_boxer_war }
-        country_event = 99015
-    }
 }
 
 # Make Puppet
@@ -7700,6 +7795,24 @@ demand_capital_concession = {
             THIS = { ai = no }
         }
 
+		OR = {
+			year = 1900
+			NOT = {
+				any_owned_province = {
+					is_core = CHI
+				}
+			}
+		}
+		
+		OR = {
+			year = 1900
+			NOT = {
+				any_owned_province = {
+					is_core = CHI
+				}
+			}
+		}
+
         #Restrictions to non-African State conquering
         OR = {
             continent = africa
@@ -7707,60 +7820,117 @@ demand_capital_concession = {
             NOT = { total_pops = 500000 }
 
             AND = {
+                NOT = { total_pops = 750000 }
+				OR = {
+					year = 1855
+					AND = {
+						year = 1845
+						THIS = {
+							nationalism_n_imperialism = 1
+						}
+					}
+					THIS = {
+						naval_plans = 1
+					}
+				}
+			}
+			
+            AND = {
                 NOT = { total_pops = 1000000 }
-                OR = {
-                    any_owned_province = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_logistics = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        raider_group_doctrine = 1
-                        iron_steamers = 1
-                    }
-                }
+				OR = {
+					year = 1860
+					AND = {
+						year = 1850
+						nationalism_n_imperialism = 1
+					}
+					THIS = {
+						naval_statistics = 1
+					}
+					THIS = {
+						raider_group_doctrine = 1
+					}
+				}
+            }
+			
+			
+            AND = {
+                NOT = { total_pops = 1500000 }
+				OR = {
+					year = 1865
+					AND = {
+						year = 1855
+						THIS = {
+							nationalism_n_imperialism = 1
+						}
+					}
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+					}
+				}
             }
 
             AND = {
                 NOT = { total_pops = 2000000 }
-                THIS = { machine_guns = 1 }
-                OR = {
-                    any_owned_province = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_directionism = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        steam_turbine_ships = 1
-                    }
-                }
+				OR = {
+					year = 1870
+					AND = {
+						year = 1860
+						THIS = {
+							nationalism_n_imperialism = 1
+						}
+					}
+					THIS = {
+						naval_statistics = 1
+						raider_group_doctrine = 1
+						iron_steamers = 1
+					}
+				}
             }
+			
+            AND = {
+                NOT = { total_pops = 2500000 }
+				OR = {
+					year = 1875
+					AND = {
+						year = 1865
+						THIS = {
+							nationalism_n_imperialism = 1
+						}
+					}
+					THIS = {
+						naval_logistics = 1
+					}
+				}
+            }
+			
             AND = {
                 NOT = { total_pops = 3000000 }
-                THIS = {
-                    bolt_action_rifles = 1
-                    army_risk_management = 1
-                }
-                OR = {
-                    any_owned_province = { is_overseas = no }
-                    THIS = {
-                        ai = no
-                        naval_integration = 1
-                    }
-                    THIS = {
-                        ai = yes
-                        oil_driven_ships = 1
-                    }
-                }
+				OR = {
+					year = 1880
+					AND = {
+						year = 1870
+						THIS = {
+							nationalism_n_imperialism = 1
+						}
+					}
+					THIS = {
+						naval_logistics = 1
+						blue_and_brown_water_schools = 1
+					}
+				}
             }
             AND = {
                 total_pops = 3000000
-                THIS = {
-                    modern_divisional_structure = 1
-                    army_nco_training = 1
-                }
+				OR = {
+					year = 1885
+					AND = {
+						year = 1875
+						THIS = {
+							nationalism_n_imperialism = 1
+						}
+					}
+				}
             }
         } ###End of Non-African Restrictions
     }

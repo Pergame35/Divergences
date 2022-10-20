@@ -378,7 +378,7 @@ political_decisions = {
         }
 
         allow = {
-            cheap_iron = 1
+            hot_blast = 1
             iron_railroad = 1
         }
 
@@ -410,7 +410,7 @@ political_decisions = {
 
         allow = {
             medicine = 1
-            cheap_iron = 1
+            hot_blast = 1
             OR = {
                 realism = 1
                 state_n_government = 1
@@ -474,8 +474,9 @@ political_decisions = {
 
         allow = {
             state_n_government = 1
-            NOT = {
-                CRO = { rank = 16 }
+            OR = {
+                CRO = { NOT = { rank = 16 } }
+				CRO = { exists = no }
             }
         }
 
