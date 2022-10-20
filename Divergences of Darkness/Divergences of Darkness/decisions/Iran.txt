@@ -1206,7 +1206,6 @@ political_decisions = {
         }
 
         effect = {
-			remove_country_modifier = idris_insolence
 			set_country_flag = abolished_mosallamiyat
 			add_country_modifier = {
 				name = "mosallamiyat_abolished"
