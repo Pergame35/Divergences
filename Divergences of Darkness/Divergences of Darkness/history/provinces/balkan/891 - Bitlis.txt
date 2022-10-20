@@ -1,11 +1,9 @@
-owner = TUR
-controller = TUR
+owner = BTL
+controller = BTL
+add_core = BTL
 add_core = TUR
 add_core = ERZ
 add_core = KUR
 trade_goods = grain
 life_rating = 35
-revolt = {
-	type = nationalist_rebels
-	controller = yes
-}
+

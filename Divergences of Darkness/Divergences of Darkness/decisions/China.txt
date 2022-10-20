@@ -45,9 +45,9 @@ political_decisions = {
   			change_tag = CHI
 			any_country = {
   				limit = {
-  					OR = {
-  						is_culture_group = chinese
-  					}
+  					
+  					is_culture_group = chinese
+  					
   					in_sphere = THIS
   					NOT = {
   						tag = THIS
@@ -106,9 +106,9 @@ political_decisions = {
   			change_tag = CHI  
   			any_country = {
   				limit = {
-  					OR = {
-  						is_culture_group = chinese
-  					}
+  					
+  					is_culture_group = chinese
+  					
   					in_sphere = THIS
   					NOT = {
   						tag = THIS
@@ -169,9 +169,9 @@ political_decisions = {
   			change_tag = CHI 
   			any_country = {
   				limit = {
-  					OR = {
-  						is_culture_group = chinese
-  					}
+  					
+  					is_culture_group = chinese
+  					
   					in_sphere = THIS
   					NOT = {
   						tag = THIS
@@ -234,9 +234,9 @@ political_decisions = {
   			change_tag = CHI   
 			any_country = {
 				limit = {
-					OR = {
-						is_culture_group = chinese
-					}
+					
+					is_culture_group = chinese
+				
 					in_sphere = THIS
 					NOT = {
 						tag = THIS
@@ -344,10 +344,10 @@ political_decisions = {
   			change_tag = CHI 
 			any_country = {
 				limit = {
-					OR = {
-						is_culture_group = chinese
-					}
+					is_culture_group = chinese
+					
 					in_sphere = THIS
+					
 					NOT = {
 						tag = THIS
 					}

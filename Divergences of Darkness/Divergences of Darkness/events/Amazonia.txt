@@ -16,6 +16,8 @@ country_event = {
     }
 
     mean_time_to_happen = { months = 2 }
+	
+	fire_only_once = yes
 
     option = {
         name = "98401.A"
@@ -71,7 +73,7 @@ country_event = { ######SPA reaction after Partial Peace
             has_global_flag = partial_peace
             has_country_flag = spaCLM
         }
-        2414 = { owned_by = AMA }
+        2415 = { owned_by = AMA }
         NOT = {
             OR = {
                 has_global_flag = paracash
@@ -160,15 +162,15 @@ country_event = {
         SPA = {
             casus_belli = {
                 target = AMA
-                type = acquire_state
+                type = acquire_any_state
                 months = 60
             }
         }
         war = {
             target = AMA
             attacker_goal = {
-                casus_belli = acquire_state
-                state_province_id = 2414
+                casus_belli = acquire_any_state
+                state_province_id = 2415
             }
         }
     }
@@ -304,7 +306,7 @@ country_event = { ######SPA reaction after Complete Victory
         tag = SPA
         exists = yes
         has_global_flag = spaCLM
-        2414 = { owned_by = AMA }
+        2415 = { owned_by = AMA }
         NOT = {
             OR = {
                 has_global_flag = paracash
@@ -350,7 +352,7 @@ country_event = { ######CLM united reaction
         NOT = {
             GRA = { exists = yes }
         }
-        2414 = { owned_by = AMA }
+        2415 = { owned_by = AMA }
         NOT = {
             OR = {
                 has_global_flag = paracash
@@ -440,15 +442,15 @@ country_event = {
         CLM = {
             casus_belli = {
                 target = AMA
-                type = acquire_state
+                type = acquire_any_state
                 months = 60
             }
         }
         war = {
             target = AMA
             attacker_goal = {
-                casus_belli = acquire_state
-                state_province_id = 2414
+                casus_belli = acquire_any_state
+                state_province_id = 2415
             }
         }
     }
@@ -604,7 +606,7 @@ country_event = { ######Possibilty of a military dictatorship if Atlantia is los
         political_reform = censored_press
         political_reform = no_trade_unions
         political_reform = underground_parties
-        political_reform = nobody_gets_out
+        political_reform = closed_borders
         political_reform = appointed
         add_country_modifier = {
             name = fight_the_power
@@ -830,7 +832,7 @@ country_event = { #### Choice of government
         political_reform = censored_press
         political_reform = no_trade_unions
         political_reform = underground_parties
-        political_reform = nobody_gets_out
+        political_reform = closed_borders
         political_reform = appointed
         ai_chance = { factor = 40 }
     }

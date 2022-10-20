@@ -449,7 +449,7 @@ political_decisions = {
     meddle_with_cossacks = {
         picture = cossack
         potential = {
-            OR = { tag = RUS }
+            tag = RUS
             is_greater_power = yes
             UKR = { substate_of = PLC }
             963 = { owned_by = UKR }

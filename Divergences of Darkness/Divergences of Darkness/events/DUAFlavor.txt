@@ -485,14 +485,6 @@ country_event = {
             }
             militancy = -4
         }
-        random_owned = {
-            limit = {
-                FRA = { exists = no }
-            }
-            FRA = {
-                all_core = { remove_core = FRA }
-            }
-        }
     }
 }
 
@@ -1109,11 +1101,6 @@ country_event = {
             }
             militancy = -4
         }
-        random_owned = {
-            ENL = {
-                all_core = { remove_core = ENL }
-            }
-        }
     }
 }
 
@@ -1644,9 +1631,9 @@ country_event = { ##The Glorious Revolution -reconquest
     option = {
         name = "650242.A"
         set_country_flag = ENL_revolt_end
-        ENG_273 = { remove_core = ENL }
-        ENG_296 = { remove_core = ENL }
-        ENG_300 = { remove_core = ENL }
+        #ENG_273 = { remove_core = ENL }
+        #ENG_296 = { remove_core = ENL }
+        #ENG_300 = { remove_core = ENL }
         any_owned = {
             limit = { is_core = ENL }
             add_province_modifier = {
@@ -2044,26 +2031,6 @@ country_event = { ##The Anglois success
         add_accepted_culture = french
         add_accepted_culture = english
         any_pop = { militancy = -3 }
-        any_country = {
-            any_owned = {
-                limit = { is_core = ENL }
-                remove_core = ENL
-            }
-        }
-        any_country = {
-            any_owned = {
-                limit = { is_core = FRA }
-                remove_core = FRA
-            }
-        }
-        any_owned = {
-            limit = { is_core = FRA }
-            remove_core = FRA
-        }
-        any_owned = {
-            limit = { is_core = ENL }
-            remove_core = ENL
-        }
     }
 }
 
@@ -3946,9 +3913,9 @@ country_event = { ##The Glorious Revolution -reconquest
     option = {
         name = "650291.A"
         set_country_flag = ENL_revolt_end
-        ENG_273 = { remove_core = ENL }
-        ENG_296 = { remove_core = ENL }
-        ENG_300 = { remove_core = ENL }
+        #ENG_273 = { remove_core = ENL }
+        #ENG_296 = { remove_core = ENL }
+        #ENG_300 = { remove_core = ENL }
         any_owned = {
             limit = { is_core = ENL }
             add_province_modifier = {

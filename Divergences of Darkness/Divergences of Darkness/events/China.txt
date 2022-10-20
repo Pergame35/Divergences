@@ -797,28 +797,6 @@ country_event = {
 
     option = {
         name = "48909.A"
-        remove_country_modifier = expert_diplomat
-        remove_country_modifier = successful_industrialist
-        remove_country_modifier = ivory_tower_intellectual
-        remove_country_modifier = man_of_the_people
-        remove_country_modifier = landed_gentleman
-        remove_country_modifier = military_man
-        remove_country_modifier = lord_admiral
-        remove_country_modifier = raving_loon
-        remove_country_modifier = luddite
-        remove_country_modifier = great_statesman
-        remove_country_modifier = backroom_boy
-        remove_country_modifier = great_reformer
-        remove_country_modifier = gauche_buffoon
-        remove_country_modifier = administrative_genius
-        remove_country_modifier = visionary_thinker
-        remove_country_modifier = competent_placeholder
-        remove_country_modifier = imperious_autocrat
-        remove_country_modifier = prince_of_terror
-        remove_country_modifier = efficient_sociopath
-        remove_country_modifier = pig_headed_isolationist
-        remove_country_modifier = ambitious_union_boss
-        remove_country_modifier = dour_economist
         prestige = -3
         any_pop = {
             limit = { type = aristocrats }
@@ -1376,6 +1354,11 @@ country_event = {
     option = {
         name = "48935.A"
         CHG = { country_event = 48936 }
+        casus_belli = {
+            target = CHG
+            type = make_puppet
+            months = 60
+        }		
         war = {
             target = CHG
             attacker_goal = { casus_belli = make_puppet }
@@ -1558,7 +1541,7 @@ country_event = { #Event to prevent Chinese uncivs from mobilising through the n
     }
 }
 
-country_event = { #Event to allow Chinese nations to civilise past 1910 or if they are civilised
+country_event = { #Event to allow Chinese nations to mobilise past 1910 or if they are civilized
     id = 48944
     title = "EVTNAME48944"
     desc = "EVTDESC48944"
@@ -1580,4 +1563,36 @@ country_event = { #Event to allow Chinese nations to civilise past 1910 or if th
         remove_country_modifier = china_weisuo
         clr_country_flag = weisuo_mobilisation		
     }
+}
+
+country_event = { #Switch production from tea to cotton once civilised
+    id = 48945
+    title = "EVTNAME48945"
+    desc = "EVTDESC48945"
+    picture = "ningbo_cotton"
+
+    trigger = {
+		owns = 1518
+		owns = 1519
+		owns = 1524
+		owns = 1548	
+        civilized = yes
+    }
+
+	fire_only_once = yes
+	
+    mean_time_to_happen = { months = 3 }
+
+    option = {
+        name = "EVT48945OPTA"
+		1518 = { trade_goods = cotton }		
+		1519 = { trade_goods = cotton }	
+		1524 = { trade_goods = cotton }	
+		1548 = { trade_goods = cotton }			
+    }
+	
+    option = {
+        name = "EVT48945OPTB"	
+    }	
+	
 }

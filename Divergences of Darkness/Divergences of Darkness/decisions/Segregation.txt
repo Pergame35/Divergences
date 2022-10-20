@@ -384,12 +384,12 @@ political_decisions = {
             random_owned = {
                 limit = {
                     is_core = THIS
-                    any_pop = { has_pop_culture = rhonnst }
+                    any_pop = { has_pop_culture = rohnnst }
                     NOT = {
-                        owner = { accepted_culture = rhonnst }
+                        owner = { accepted_culture = rohnnst }
                     }
                 }
-                owner = { add_accepted_culture = rhonnst }
+                owner = { add_accepted_culture = rohnnst }
             }
             random_owned = {
                 limit = {

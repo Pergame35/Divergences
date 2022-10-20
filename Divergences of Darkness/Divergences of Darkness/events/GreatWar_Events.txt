@@ -4557,7 +4557,7 @@ country_event = {
             }
         }
 
-        # Remove Sibir cores west of the Urals if Sibir doesn't exist or is not civilised
+        # Remove Sibir cores west of the Urals if Sibir doesn't exist or is not civilized
 
         random_owned = {
             limit = {
@@ -4565,7 +4565,7 @@ country_event = {
                 SIB = {
                     OR = {
                         exists = no
-                        civilised = no
+                        civilized = no
                     }
                 }
             }
@@ -4578,7 +4578,7 @@ country_event = {
                 SIB = {
                     OR = {
                         exists = no
-                        civilised = no
+                        civilized = no
                     }
                 }
             }
@@ -4591,7 +4591,7 @@ country_event = {
                 SIB = {
                     OR = {
                         exists = no
-                        civilised = no
+                        civilized = no
                     }
                 }
             }
@@ -4604,7 +4604,7 @@ country_event = {
                 SIB = {
                     OR = {
                         exists = no
-                        civilised = no
+                        civilized = no
                     }
                 }
             }

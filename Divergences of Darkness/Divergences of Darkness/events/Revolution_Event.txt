@@ -1520,7 +1520,6 @@ country_event = {
                 owner = {
                     OR = {
                         tag = CGO
-                        tag = CNG
                         tag = ANG
                     }
                 }
