@@ -1,3 +1,29 @@
+#Clipper Design
+modern_sail_ships = {
+    limit = { clipper_design = 1 }
+    chance = {
+        base = 10
+        modifier = {
+            factor = 10
+            alphabetic_flag_signaling = 1
+        }
+    }
+    effect = {
+        clipper_transport = {
+		    maximum_speed = 9
+		}
+        frigate = {
+            hull = 1
+            gun_power = 1
+            maximum_speed = 9
+        }
+        manowar = {
+            hull = 1
+            gun_power = 2
+            maximum_speed = 7
+        }
+    }
+}
 schrapnel_standard_design = {
     limit = { steel_breech_loaded_artillery = 1 } #1870
     chance = {

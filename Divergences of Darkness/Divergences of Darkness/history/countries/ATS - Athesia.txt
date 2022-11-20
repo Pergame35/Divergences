@@ -35,6 +35,9 @@ child_labor = child_labor_legal
 citizens_rights = culture_voting_only
 border_policy = open_borders
 
+#fix https://www.reddit.com/r/victoria2/comments/o69opn/dod_i_played_an_entire_game_as_athesia_florida/
+set_country_flag = new_world_nation
+set_country_flag = catholic_country
 ruling_party = AAA_liberal_1
 upper_house = {
 	fascist = 0

@@ -1394,13 +1394,13 @@ terrorism = {
     effect = { enable_crime = terrorist_cells }
 }
 #general_strikes = {
-#	limit = { revolution_n_counterrevolution = 1 }
-#	news = no
-#	chance = {
-#		base = 5
-#	}
-#	effect = {
-#	}
+#    limit = { revolution_n_counterrevolution = 1 }
+#    news = no
+#    chance = {
+#        base = 5
+#    }
+#    effect = {
+#    }
 #}
 secret_police = {
     news = no

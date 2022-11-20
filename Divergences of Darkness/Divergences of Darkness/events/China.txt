@@ -100,11 +100,10 @@ country_event = {
         FROM = { country_event = 1316083 }
         prestige = -5
         treasury = -200000
-        capital_scope = {
-            add_province_modifier = {
-                name = legation_quarter
-                duration = -1
-            }
+        add_country_modifier = { name = legation_quarter duration = -1 }
+        random_owned = {
+            limit = { owner = { NOT = { border_policy = open_borders } } }
+            owner = { political_reform = open_borders }
         }
         random_owned = {
             limit = {
@@ -116,15 +115,6 @@ country_event = {
                     name = "western_influences"
                     duration = -1
                 }
-            }
-        }
-        random_owned = {
-            limit = {
-                owner = { diplomatic_reform = isolationism }
-            }
-            owner = {
-                economic_reform = interactive
-                activate_technology = classicism_n_early_romanticism
                 any_pop = {
                     scaled_militancy = {
                         ideology = liberal
@@ -388,11 +378,18 @@ country_event = {
         remove_country_modifier = feudal
         random_owned = {
             limit = {
+                owner = { admin_reform = admin_reform_two }
+            }
+            owner = {
+                research_points = 8000
+            }
+        }
+        random_owned = {
+            limit = {
                 owner = { admin_reform = yes_admin_reform }
             }
             owner = {
-                economic_reform = advanced_admin_reform
-                activate_technology = ideological_thought
+                economic_reform = admin_reform_two
             }
         }
         random_owned = {
@@ -401,7 +398,6 @@ country_event = {
             }
             owner = {
                 economic_reform = yes_admin_reform
-                activate_technology = enlightenment_thought
             }
         }
         release = TNT
@@ -431,7 +427,7 @@ country_event = {
             secede_province = UGH
         }
         release = UZB
-        release = KOK			
+        release = KOK
         TNT = { government = khanate }
         MGL = { government = khanate }
         BDK = { government = khanate }
@@ -797,6 +793,28 @@ country_event = {
 
     option = {
         name = "48909.A"
+        remove_country_modifier = expert_diplomat
+        remove_country_modifier = successful_industrialist
+        remove_country_modifier = ivory_tower_intellectual
+        remove_country_modifier = man_of_the_people
+        remove_country_modifier = landed_gentleman
+        remove_country_modifier = military_man
+        remove_country_modifier = lord_admiral
+        remove_country_modifier = raving_loon
+        remove_country_modifier = luddite
+        remove_country_modifier = great_statesman
+        remove_country_modifier = backroom_boy
+        remove_country_modifier = great_reformer
+        remove_country_modifier = gauche_buffoon
+        remove_country_modifier = administrative_genius
+        remove_country_modifier = visionary_thinker
+        remove_country_modifier = competent_placeholder
+        remove_country_modifier = imperious_autocrat
+        remove_country_modifier = prince_of_terror
+        remove_country_modifier = efficient_sociopath
+        remove_country_modifier = pig_headed_isolationist
+        remove_country_modifier = ambitious_union_boss
+        remove_country_modifier = dour_economist
         prestige = -3
         any_pop = {
             limit = { type = aristocrats }
@@ -916,11 +934,16 @@ country_event = {
         name = "48913.A"
         random_owned = {
             limit = {
+                owner = { army_schools = army_schools_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
                 owner = { army_schools = no_army_schools }
             }
             owner = {
                 military_reform = yes_army_schools
-                activate_technology = bronze_muzzle_loaded_artillery
             }
         }
         random_owned = {
@@ -928,9 +951,14 @@ country_event = {
                 owner = { army_schools = yes_army_schools }
             }
             owner = {
-                military_reform = army_academies
-                activate_technology = iron_muzzle_loaded_artillery
+                military_reform = army_schools_two
             }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_training = foreign_training_two }
+            }
+            owner = { research_points = 8000 }
         }
         random_owned = {
             limit = {
@@ -938,7 +966,6 @@ country_event = {
             }
             owner = {
                 military_reform = yes_foreign_training
-                activate_technology = military_staff_system
             }
         }
         random_owned = {
@@ -946,8 +973,7 @@ country_event = {
                 owner = { foreign_training = yes_foreign_training }
             }
             owner = {
-                military_reform = advanced_foreign_training
-                activate_technology = military_plans
+                military_reform = foreign_training_two
             }
         }
         any_pop = {
@@ -1045,20 +1071,26 @@ country_event = {
         any_pop = { literacy = 0.05 }
         random_owned = {
             limit = {
-                owner = { education_reform = yes_education_reform }
+                owner = { research_reform = education_reform_two }
             }
             owner = {
-                economic_reform = advanced_education_reform
-                activate_technology = positivism
+                research_points = 8000
             }
         }
         random_owned = {
             limit = {
-                owner = { education_reform = no_education_reform }
+                owner = { research_reform = yes_education_reform }
+            }
+            owner = {
+                economic_reform = education_reform_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { research_reform = no_education_reform }
             }
             owner = {
                 economic_reform = yes_education_reform
-                activate_technology = malthusian_thought
             }
         }
         ai_chance = {
@@ -1078,35 +1110,40 @@ country_event = {
         any_pop = { literacy = 0.1 }
         random_owned = {
             limit = {
-                owner = { education_reform = yes_education_reform }
+                owner = { research_reform = education_reform_two }
             }
             owner = {
-                economic_reform = advanced_education_reform
-                activate_technology = positivism
+                research_points = 8000
             }
         }
         random_owned = {
             limit = {
-                owner = { education_reform = no_education_reform }
+                owner = { research_reform = yes_education_reform }
+            }
+            owner = {
+                economic_reform = education_reform_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { research_reform = no_education_reform }
             }
             owner = {
                 economic_reform = yes_education_reform
-                activate_technology = malthusian_thought
             }
         }
         random_owned = {
             limit = {
-                owner = { academic_institutions = universities }
+                owner = { education_reform = western_science_two }
             }
             owner = { research_points = 8000 }
         }
         random_owned = {
             limit = {
-                owner = { academic_institutions = madrasahs }
+                owner = { education_reform = yes_western_science }
             }
             owner = {
-                economic_reform = universities
-                activate_technology = idealism
+                economic_reform = western_science_two
             }
         }
         ai_chance = {

@@ -8,6 +8,8 @@ political_decisions = {
                 has_country_flag = sunni_country
                 has_country_flag = shiite_country
                 has_country_flag = ibadi_country
+                has_country_flag = ismaili_country
+                has_country_flag = zaydi_country
             }
         }
 
@@ -195,6 +197,8 @@ political_decisions = {
                 has_country_flag = sunni_country
                 has_country_flag = shiite_country
                 has_country_flag = ibadi_country
+                has_country_flag = ismaili_country
+                has_country_flag = zaydi_country
             }
         }
 
@@ -220,6 +224,8 @@ political_decisions = {
                     has_country_flag = sunni_country
                     has_country_flag = shiite_country
                     has_country_flag = ibadi_country
+                    has_country_flag = ismaili_country
+                    has_country_flag = zaydi_country
                 }
             }
             NOT = { has_global_flag = dar_es_salaam_built }

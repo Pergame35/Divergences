@@ -1,15 +1,15 @@
-monitor = {
+monitor = { #Submarine
     icon = 10
     naval_icon = 7
 
     type = naval
     sprite = Monitor
-    unit_type = big_ship
+    unit_type = light_ship
     floating_flag = yes
     active = no
     move_sound = steam_move
     select_sound = steam_selected
-    colonial_points = 10
+    colonial_points = 14
 
 
     #Core Abilities
@@ -18,31 +18,34 @@ monitor = {
     default_organisation = 30
     maximum_speed = 8
     weighted_value = 10.0
+    can_build_overseas = yes
 
     #Building Costs
     build_time = 360
     build_cost = {
-        steamer_convoy = 25
-        artillery = 12
-        canned_food = 12
-        regular_clothes = 12
+        steamer_convoy = 20
+        artillery = 6
+        canned_food = 10
+        liquor = 5
+        fuel = 5
     }
     min_port_level = 3
     limit_per_port = -1
-    supply_consumption_score = 3
+    supply_consumption_score = 15
 
     supply_consumption = 1.0
     supply_cost = {
-        steamer_convoy = 0.35
-        artillery = 0.3
+        steamer_convoy = 0.32
+        artillery = 0.096
         canned_food = 0.8
-        ammunition = 0.3
+        liquor = 0.5
+        fuel = 0.7
     }
 
     #Naval Abilties
-    hull = 10
-    gun_power = 20
-    fire_range = 0.6
-    evasion = 0
+    hull = 20
+    gun_power = 15
+    fire_range = 0.5
+    evasion = 0.50
     torpedo_attack = 0
 }

@@ -35,6 +35,8 @@ child_labor = child_labor_legal
 citizens_rights = primary_culture_only
 border_policy = open_borders
 
+set_country_flag = catholic_country
+
 ruling_party = AAA_conservative_5
 upper_house = {
 	fascist = 0
@@ -46,6 +48,7 @@ upper_house = {
 	communist = 0
 }
 
+# Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1

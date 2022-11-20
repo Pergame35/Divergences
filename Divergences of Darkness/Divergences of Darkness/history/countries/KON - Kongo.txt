@@ -7,6 +7,7 @@ plurality = 0.0
 nationalvalue = nv_tradition
 literacy = 0.01
 non_state_culture_literacy = 0.01
+prestige = 1
 
 # Political reforms
 slavery = yes_slavery
@@ -36,6 +37,8 @@ citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
+set_country_flag = lacking_writing_system
+set_country_flag = delay_unciv_annexation
 
 ruling_party = KON_conservative
 upper_house = {
@@ -48,10 +51,14 @@ upper_house = {
 	communist = 0
 }
 
-set_country_flag = lacking_writing_system
-set_country_flag = delay_unciv_annexation
+#Unciv Reforms
+foreign_weapons = yes_foreign_weapons
+education_reform = yes_western_science
+admin_reform = yes_admin_reform
+#land_reform = yes_land_reform
 
 # Technologies
+flintlock_rifles = 1
 
 # Inventions
 

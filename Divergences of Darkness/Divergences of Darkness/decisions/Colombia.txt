@@ -694,6 +694,7 @@ political_decisions = {
             tag = CLM
             rank = 16
             NOT = { has_country_flag = university_MEX }
+            NOT = { school_reforms = good_schools }
         }
 
         allow = {
@@ -704,12 +705,12 @@ political_decisions = {
 
         effect = {
             set_country_flag = university_MEX
+            social_reform = good_schools
             any_pop = { literacy = 0.1 }
             any_pop = {
                 limit = { culture = mexican }
                 literacy = 0.05
             }
-            public_meetings = yes_meeting
             scaled_militancy = {
                 issue = moralism
                 factor = 3

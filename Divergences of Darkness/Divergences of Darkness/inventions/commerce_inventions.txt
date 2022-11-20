@@ -1515,8 +1515,8 @@ autarky = {
             ruling_party_ideology = socialist
         }
         #modifier = {
-        #	factor = 100
-        #	stupidity = yes
+        #    factor = 100
+        #    stupidity = yes
         #}
     }
     effect = { loan_interest = -0.005 }
@@ -1558,6 +1558,8 @@ modern_winemaking = {
                 has_country_flag = sunni_country
                 has_country_flag = shiite_country
                 has_country_flag = ibadi_country
+                has_country_flag = ismaili_country
+                has_country_flag = zaydi_country
             }
             has_country_flag = secularized_muslim_society
             has_country_flag = post_colonial_country

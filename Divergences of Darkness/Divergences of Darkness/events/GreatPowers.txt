@@ -2166,8 +2166,9 @@ country_event = {
                         capital_scope = { continent = europe }
                         NOT = { tag = TUR }
                     }
-                    tag = SWE
-                    tag = NOR
+                    tag = POL
+                    tag = PLC
+                    tag = PSV
                     tag = RUS
                 }
             }
@@ -2258,7 +2259,7 @@ country_event = {
         random_country = {
             limit = {
                 NOT = { tag = THIS }
-                tag = ENG
+                tag = DUA
             }
             country_event = {
                 id = 810005
@@ -2281,7 +2282,7 @@ country_event = {
                 owner = {
                     OR = {
                         tag = RUS
-                        tag = ENG
+                        tag = DUA
                     }
                 }
             }
@@ -2292,7 +2293,7 @@ country_event = {
                     is_greater_power = yes
                     NOT = { tag = RUS }
                     NOT = { tag = TUR }
-                    NOT = { tag = ENG }
+                    NOT = { tag = DUA }
                     NOT = { owns = 372 }
                     OR = {
                         primary_culture = north_german
@@ -2454,7 +2455,7 @@ country_event = {
                 factor = 0
                 OR = {
                     tag = RUS
-                    tag = ENG
+                    tag = DUA
                 }
             }
         }

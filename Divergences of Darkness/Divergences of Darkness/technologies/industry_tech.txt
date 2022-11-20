@@ -44,7 +44,10 @@ piston_steam_engine = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
     }
 }
@@ -79,8 +82,18 @@ high_pressure_steam_engine = {
             year = 1850
         }
         modifier = {
+            factor = 5
+            OR = {
+                tag = LOT
+                tag = DNG
+            }
+        }
+        modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 1.02
@@ -127,8 +140,19 @@ compound_steam_engines = {
             year = 1865
         }
         modifier = {
+            factor = 2
+            OR = {
+                tag = AMA
+                tag = LOT
+                tag = DNG
+            }
+        }
+        modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 1.2
@@ -172,7 +196,18 @@ steam_turbine = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
+        }
+        modifier = {
+            factor = 2
+            OR = {
+                tag = AMA
+                tag = LOT
+                tag = DNG
+            }
         }
         modifier = {
             factor = 1.2
@@ -228,7 +263,10 @@ combustion_engine = {
         }
         modifier = {
             factor = 2
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 2
@@ -277,7 +315,10 @@ electrical_power_generation = {
         }
         modifier = {
             factor = 3
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 1.2
@@ -326,7 +367,10 @@ mechanical_production = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 1.2
@@ -384,7 +428,10 @@ interchangeable_parts = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
     }
 }
@@ -445,7 +492,10 @@ semi_automatization = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
     }
 }
@@ -479,7 +529,10 @@ pneumatic_and_hydraulics = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 0.25
@@ -509,7 +562,10 @@ assembly_line = {
         }
         modifier = {
             factor = 3
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 0.25
@@ -541,7 +597,10 @@ shift_work = {
         }
         modifier = {
             factor = 3
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 0.25
@@ -593,7 +652,10 @@ mechanized_mining = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
 
         modifier = {
@@ -626,7 +688,7 @@ puddling = {
             OR = {
                 tag = NGF
                 tag = GER
-                tag = PRU
+                tag = ENL
                 tag = FRA
                 tag = AUS
                 tag = RUS
@@ -681,7 +743,10 @@ puddling = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 0.25
@@ -710,9 +775,14 @@ hot_blast = {
             OR = {
                 tag = NGF
                 tag = GER
-                tag = PRU
+                tag = HLR
+                tag = AUS
+                tag = ENG
+                tag = ENL
                 tag = FRA
                 tag = RUS
+                tag = BOH
+                tag = BRG
             }
         }
         modifier = {
@@ -763,7 +833,10 @@ hot_blast = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 0.25
@@ -792,10 +865,16 @@ bessemer_process = {
             OR = {
                 tag = FRA
                 tag = ENG
+                tag = ENL
+                tag = DUA
+                tag = BRG
+                tag = NBG
                 tag = NGF
                 tag = GER
-                tag = PRU
+                tag = HLR
+                tag = AUS
                 tag = RUS
+                tag = BOH
             }
         }
         modifier = {
@@ -843,7 +922,10 @@ bessemer_process = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 0.25
@@ -871,10 +953,17 @@ advanced_metallurgy = {
             factor = 20
             OR = {
                 tag = FRA
+                tag = ENG
+                tag = ENL
+                tag = DUA
+                tag = BRG
+                tag = NBG
                 tag = NGF
                 tag = GER
-                tag = PRU
+                tag = HLR
+                tag = AUS
                 tag = RUS
+                tag = BOH
             }
         }
         modifier = {
@@ -921,7 +1010,10 @@ advanced_metallurgy = {
         }
         modifier = {
             factor = 3
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 0.25
@@ -987,7 +1079,10 @@ electric_furnace = {
         }
         modifier = {
             factor = 3
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 0.25
@@ -1015,7 +1110,8 @@ experimental_railroad = {
             OR = {
                 tag = NGF
                 tag = GER
-                tag = PRU
+                tag = POL
+                tag = PLC
                 tag = AUS
             }
         }
@@ -1046,7 +1142,10 @@ experimental_railroad = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
     }
 }
@@ -1064,8 +1163,9 @@ early_railroad = {
             OR = {
                 tag = NGF
                 tag = GER
-                tag = PRU
+                tag = BOH
                 tag = AUS
+                tag = PLC
             }
         }
         modifier = {
@@ -1091,7 +1191,10 @@ early_railroad = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
     }
 }
@@ -1107,6 +1210,7 @@ iron_railroad = {
             factor = 20
             OR = {
                 tag = AUS
+                tag = BOH
             }
         }
         modifier = {
@@ -1120,7 +1224,10 @@ iron_railroad = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 1.4
@@ -1151,7 +1258,10 @@ steel_railroad = {
         }
         modifier = {
             factor = 3
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 4
@@ -1178,7 +1288,10 @@ integral_rail_system = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 1.4
@@ -1208,7 +1321,10 @@ limited_access_roads = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 1.4
@@ -1237,7 +1353,10 @@ basic_chemistry = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
     }
 }
@@ -1256,7 +1375,10 @@ medicine = {
         }
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 30
@@ -1279,7 +1401,10 @@ inorganic_chemistry = {
         factor = 5
         modifier = {
             factor = 2
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 5
@@ -1342,7 +1467,10 @@ organic_chemistry = {
         factor = 5
         modifier = {
             factor = 2
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 5
@@ -1385,7 +1513,10 @@ electricity = {
         factor = 5
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 8
@@ -1428,7 +1559,10 @@ synthetic_polymers = {
         factor = 1.1
         modifier = {
             factor = 1.02
-            tech_school = industrial_tech_school
+            OR = {
+                tech_school = industrial_tech_school
+                tech_school = czech_tech_school
+            }
         }
         modifier = {
             factor = 2

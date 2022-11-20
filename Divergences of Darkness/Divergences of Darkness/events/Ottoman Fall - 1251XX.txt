@@ -1391,9 +1391,72 @@ country_event = {
     option = {
         name = "125150.A"
         prestige = 20
-        military_reform = yes_foreign_weapons
-        military_reform = yes_military_constructions
-        military_reform = yes_foreign_officers
+        random_owned = {
+            limit = {
+                owner = { foreign_weapons = foreign_weapons_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_weapons = yes_foreign_weapons }
+            }
+            owner = {
+                military_reform = foreign_weapons_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_weapons = no_foreign_weapons }
+            }
+            owner = {
+                military_reform = yes_foreign_weapons
+            }
+        } 
+        random_owned = {
+            limit = {
+                owner = { foreign_officers = foreign_officers_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_officers = yes_foreign_officers }
+            }
+            owner = {
+                military_reform = foreign_officers_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_officers = no_foreign_officers }
+            }
+            owner = {
+                military_reform = yes_foreign_officers
+            }
+        } 
+        random_owned = {
+            limit = {
+                owner = { military_constructions = military_constructions_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
+                owner = { military_constructions = yes_military_constructions }
+            }
+            owner = {
+                military_reform = military_constructions_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { military_constructions = no_military_constructions }
+            }
+            owner = {
+                military_reform = yes_military_constructions
+            }
+        } 
         set_country_flag = warTUR
     }
 }
@@ -1418,16 +1481,116 @@ country_event = {
     option = {
         name = "125151.A"
         prestige = 50
-        military_reform = yes_foreign_weapons
-        economic_reform = yes_land_reform
-        economic_reform = yes_education_reform
-        military_reform = yes_military_constructions
-        military_reform = yes_foreign_officers
-        activate_technology = no_standard
-        activate_technology = enlightenment_thought
-        activate_technology = flintlock_rifles
-        activate_technology = bronze_muzzle_loaded_artillery
-        activate_technology = army_command_principle
+        random_owned = {
+            limit = {
+                owner = { research_reform = education_reform_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
+                owner = { research_reform = yes_education_reform }
+            }
+            owner = {
+                economic_reform = education_reform_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { research_reform = no_education_reform }
+            }
+            owner = {
+                economic_reform = yes_education_reform
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { land_reform = land_reform_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
+                owner = { land_reform = yes_land_reform }
+            }
+            owner = {
+                economic_reform = land_reform_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { land_reform = no_land_reform }
+            }
+            owner = {
+                economic_reform = yes_land_reform
+            }
+        } 
+        random_owned = {
+            limit = {
+                owner = { foreign_weapons = foreign_weapons_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_weapons = yes_foreign_weapons }
+            }
+            owner = {
+                military_reform = foreign_weapons_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_weapons = no_foreign_weapons }
+            }
+            owner = {
+                military_reform = yes_foreign_weapons
+            }
+        } 
+        random_owned = {
+            limit = {
+                owner = { foreign_officers = foreign_officers_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_officers = yes_foreign_officers }
+            }
+            owner = {
+                military_reform = foreign_officers_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_officers = no_foreign_officers }
+            }
+            owner = {
+                military_reform = yes_foreign_officers
+            }
+        } 
+        random_owned = {
+            limit = {
+                owner = { military_constructions = military_constructions_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
+                owner = { military_constructions = yes_military_constructions }
+            }
+            owner = {
+                military_reform = military_constructions_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { military_constructions = no_military_constructions }
+            }
+            owner = {
+                military_reform = yes_military_constructions
+            }
+        } 
         set_country_flag = warTUR
         EGY_921 = { remove_core = TUR }
     }

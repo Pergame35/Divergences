@@ -84,7 +84,7 @@ promotion_chance = {
 
     modifier = {
         factor = -0.1
-        is_state_religion = no
+        not = { religion = this }
     }
     modifier = {
         factor = -0.1
@@ -261,7 +261,7 @@ demotion_chance = {
 
     modifier = {
         factor = -0.1
-        is_state_religion = no
+        not = { religion = this }
         strata = poor
     }
 
@@ -379,26 +379,26 @@ migration_chance = {
 
         modifier = {
             factor = 0.3
-            location = { controlled_by = owner }
             unemployment = 0.2
+            location = { controlled_by = owner }
         }
 
         modifier = {
             factor = 0.4
-            location = { controlled_by = owner }
             unemployment = 0.3
+            location = { controlled_by = owner }
         }
 
         modifier = {
             factor = 0.5
-            location = { controlled_by = owner }
             unemployment = 0.4
+            location = { controlled_by = owner }
         }
 
         modifier = {
             factor = 0.6
-            location = { controlled_by = owner }
             unemployment = 0.5
+            location = { controlled_by = owner }
         }
     }
 }
@@ -475,7 +475,7 @@ colonialmigration_chance = {
 
     group = {
         modifier = {
-            factor = 0.3
+            factor = 0.2
             unemployment = 0.1
         }
 
@@ -486,19 +486,19 @@ colonialmigration_chance = {
         }
 
         modifier = {
-            factor = 0.3
+            factor = 0.4
             location = { controlled_by = owner }
             unemployment = 0.3
         }
 
         modifier = {
-            factor = 0.4
+            factor = 0.5
             location = { controlled_by = owner }
             unemployment = 0.4
         }
 
         modifier = {
-            factor = 0.5
+            factor = 0.6
             location = { controlled_by = owner }
             unemployment = 0.5
         }
@@ -779,7 +779,7 @@ emigration_chance = {
     modifier = {
         factor = 0.05
         country = { religious_policy = moralism }
-        is_state_religion = no
+        not = { religion = this }
     }
 
     modifier = {
@@ -839,7 +839,7 @@ assimilation_chance = {
 
     modifier = {
         factor = -0.2
-        not = { is_state_religion = yes }
+        not = { religion = this }
     }
 
     modifier = {

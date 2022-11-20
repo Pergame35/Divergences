@@ -177,7 +177,7 @@ state_of_emergency_modifier = {
     war_exhaustion = -0.1
     global_pop_militancy_modifier = -0.3
     min_military_spending = 0.25
-    max_social_spending = -0.3
+    max_social_spending = 0.3
     min_tariff = 0.25
     ruling_party_support = -0.25
     icon = 5
@@ -1003,7 +1003,7 @@ militant_trade_union = {
 
 worker_union = {
     pop_consciousness_modifier = 0.1
-    poor_everyday_needs = -0.1
+#    poor_everyday_needs = -0.1
     farm_rgo_eff = -0.05
     mine_rgo_eff = -0.05
     icon = 4
@@ -1062,7 +1062,7 @@ the_massacre = {
     icon = 18
 }
 fascist_welfare = {
-    poor_everyday_needs = -0.1
+#    poor_everyday_needs = -0.1
     population_growth = 0.001
     pop_militancy_modifier = -0.05
     icon = 12
@@ -1110,7 +1110,7 @@ educational_reform = {
 }
 
 legation_quarter = {
-    pop_militancy_modifier = 0.03
+    global_pop_militancy_modifier = 0.03
     research_points_modifier = 0.05
     icon = 8
 }

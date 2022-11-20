@@ -18,7 +18,7 @@ ironclad = {
     priority = 35
     max_strength = 100
     default_organisation = 30
-    maximum_speed = 6
+    maximum_speed = 20
     weighted_value = 6.0
 
 
@@ -45,6 +45,6 @@ ironclad = {
     #Naval Abilties
     hull = 15
     gun_power = 15
-    fire_range = 0.6
+    fire_range = 0.5
     evasion = 0
 }

@@ -9,7 +9,7 @@ country_event = {
         exists = yes
         war = no
         civilized = no
-
+        education_reform = yes_western_science
         521 = {
             owner = {
                 relation = {
@@ -41,7 +41,7 @@ country_event = {
     option = {
         name = "EVT13901400OPTA"
         set_country_flag = kongo_children
-        prestige = -10
+        #prestige = -10
         any_pop = {
             limit = {
                 location = { is_core = KON }
@@ -65,15 +65,16 @@ country_event = {
                 }
                 diplomatic_influence = {
                     who = THIS
-                    value = 150
+                    value = 100
                 }
             }
         }
-        ai_chance = { factor = 20 }
+        ai_chance = { factor = 0.5 }
     }
 
     option = {
         name = "EVT13901400OPTB"
+        economic_reform = no_western_science
         521 = {
             owner = {
                 relation = {
@@ -82,7 +83,7 @@ country_event = {
                 }
             }
         }
-        ai_chance = { factor = 80 }
+        ai_chance = { factor = 0.5 }
     }
 }
 
@@ -122,12 +123,103 @@ country_event = {
             owner = {
                 clr_country_flag = lacking_writing_system
                 remove_country_modifier = lacks_writing_system
-                economic_reform = yes_western_science
+                #economic_reform = yes_western_science
+                #military_reform = yes_foreign_training
+                #military_reform = yes_foreign_navies
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { research_reform = education_reform_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
+                owner = { research_reform = yes_education_reform }
+            }
+            owner = {
+                economic_reform = education_reform_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { research_reform = no_education_reform }
+            }
+            owner = {
+                economic_reform = yes_education_reform
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { admin_reform = admin_reform_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
+                owner = { admin_reform = yes_admin_reform }
+            }
+            owner = {
+                economic_reform = admin_reform_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { admin_reform = no_admin_reform }
+            }
+            owner = {
                 economic_reform = yes_admin_reform
-                military_reform = yes_foreign_training
+            }
+        } 
+        random_owned = {
+            limit = {
+                owner = { foreign_officers = foreign_officers_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_officers = yes_foreign_officers }
+            }
+            owner = {
+                military_reform = foreign_officers_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_officers = no_foreign_officers }
+            }
+            owner = {
+                military_reform = yes_foreign_officers
+            }
+        } 
+        random_owned = {
+            limit = {
+                owner = { foreign_weapons = foreign_weapons_two }
+            }
+            owner = { research_points = 8000 }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_weapons = yes_foreign_weapons }
+            }
+            owner = {
+                military_reform = foreign_weapons_two
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { foreign_weapons = no_foreign_weapons }
+            }
+            owner = {
                 military_reform = yes_foreign_weapons
-                military_reform = yes_foreign_navies
-                activate_technology = flintlock_rifles
+            }
+        } 
+        random_owned = {
+            owner = {
+                clr_country_flag = lacking_writing_system
+                remove_country_modifier = lacks_writing_sytem
             }
         }
 
@@ -176,6 +268,7 @@ country_event = {
     option = {
         name = "EVT13901402OPTA"
         set_country_flag = congo_cultures_integrated
+        add_accepted_culture = ovimbundu
         add_accepted_culture = fang
         add_accepted_culture = chokwe
         add_accepted_culture = lunda

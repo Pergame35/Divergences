@@ -35,8 +35,9 @@ debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
-border_policy = quota_immigration
+border_policy = open_borders #quota_immigration
 
+set_country_flag = protestant_country
 ruling_party = BRG_liberal_1
 upper_house = {
 	fascist = 0

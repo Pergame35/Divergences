@@ -25,19 +25,19 @@ news_priority = {
             }
             OR = {
                 tags_eq = {
-                    0 0 ENG
+                    0 0 DUA
                 }
                 tags_eq = {
-                    0 0 FRA
+                    0 0 BRG
                 }
                 tags_eq = {
                     0 0 RUS
                 }
                 tags_eq = {
-                    0 0 USA
+                    0 0 ARC
                 }
                 tags_eq = {
-                    0 0 PRU
+                    0 0 BOH
                 }
                 tags_eq = {
                     0 0 NGF
@@ -49,13 +49,22 @@ news_priority = {
                     0 0 GER
                 }
                 tags_eq = {
-                    0 0 AUS
+                    0 0 HLR
                 }
                 tags_eq = {
-                    0 0 KUK
+                    0 0 PLC
                 }
                 tags_eq = {
                     0 0 ITA
+                }
+                tags_eq = {
+                    0 0 SCA
+                }
+                tags_eq = {
+                    0 0 SPA
+                }
+                tags_eq = {
+                    0 0 SPC
                 }
             }
         }
@@ -73,25 +82,25 @@ news_priority = {
                     0 0 CHI
                 }
                 tags_eq = {
-                    0 0 KMT
+                    0 0 QNG
+                }
+                tags_eq = {
+                    0 0 TAI
                 }
                 tags_eq = {
                     0 0 JAP
                 }
                 tags_eq = {
-                    0 0 SPA
-                }
-                tags_eq = {
-                    0 0 SPC
+                    0 0 ARA
                 }
                 tags_eq = {
                     0 0 TUR
                 }
                 tags_eq = {
-                    0 0 NET
+                    0 0 CLM
                 }
                 tags_eq = {
-                    0 0 BEL
+                    0 0 CLM
                 }
             }
         }
@@ -106,28 +115,31 @@ news_priority = {
             }
             OR = {
                 tags_eq = {
-                    0 0 SWE
+                    0 0 INC
                 }
                 tags_eq = {
-                    0 0 SCA
+                    0 0 FRA
                 }
                 tags_eq = {
-                    0 0 CAN
+                    0 0 ENL
                 }
                 tags_eq = {
-                    0 0 POR
+                    0 0 VIN
                 }
                 tags_eq = {
-                    0 0 SAR
+                    0 0 MEX
                 }
                 tags_eq = {
-                    0 0 CSA
+                    0 0 TUS
                 }
                 tags_eq = {
-                    0 0 FSA
+                    0 0 PLA
                 }
                 tags_eq = {
-                    0 0 AST
+                    0 0 AMA
+                }
+                tags_eq = {
+                    0 0 DNG
                 }
                 tags_eq = {
                     0 0 POL
@@ -137,9 +149,6 @@ news_priority = {
                 }
                 tags_eq = {
                     0 0 HND
-                }
-                tags_eq = {
-                    0 0 TKG
                 }
             }
         }
@@ -152,19 +161,25 @@ news_priority = {
                     0 0 PLAYER
                 }
                 tags_eq = {
-                    0 0 ENG
+                    0 0 DUA
+                }
+                tags_eq = {
+                    0 0 ENL
                 }
                 tags_eq = {
                     0 0 FRA
                 }
                 tags_eq = {
+                    0 0 BRG
+                }
+                tags_eq = {
                     0 0 RUS
                 }
                 tags_eq = {
-                    0 0 USA
+                    0 0 ARC
                 }
                 tags_eq = {
-                    0 0 PRU
+                    0 0 BOH
                 }
                 tags_eq = {
                     0 0 NGF
@@ -176,10 +191,10 @@ news_priority = {
                     0 0 GER
                 }
                 tags_eq = {
-                    0 0 AUS
+                    0 0 HLR
                 }
                 tags_eq = {
-                    0 0 KUK
+                    0 0 PLC
                 }
                 tags_eq = {
                     0 0 ITA
@@ -188,7 +203,10 @@ news_priority = {
                     0 0 CHI
                 }
                 tags_eq = {
-                    0 0 KMT
+                    0 0 QNG
+                }
+                tags_eq = {
+                    0 0 TAI
                 }
                 tags_eq = {
                     0 0 JAP
@@ -200,37 +218,40 @@ news_priority = {
                     0 0 SPC
                 }
                 tags_eq = {
+                    0 0 ARA
+                }
+                tags_eq = {
                     0 0 TUR
                 }
                 tags_eq = {
-                    0 0 NET
+                    0 0 DNB
                 }
                 tags_eq = {
-                    0 0 BEL
+                    0 0 MUS
                 }
                 tags_eq = {
-                    0 0 SWE
+                    0 0 NOV
                 }
                 tags_eq = {
                     0 0 SCA
                 }
                 tags_eq = {
-                    0 0 CAN
+                    0 0 VIN
                 }
                 tags_eq = {
-                    0 0 POR
+                    0 0 MEX
                 }
                 tags_eq = {
-                    0 0 SAR
+                    0 0 TUS
                 }
                 tags_eq = {
-                    0 0 CSA
+                    0 0 PLA
                 }
                 tags_eq = {
-                    0 0 FSA
+                    0 0 AMA
                 }
                 tags_eq = {
-                    0 0 AST
+                    0 0 DNG
                 }
                 tags_eq = {
                     0 0 POL
@@ -242,7 +263,13 @@ news_priority = {
                     0 0 HND
                 }
                 tags_eq = {
-                    0 0 TKG
+                    0 0 INC
+                }
+                tags_eq = {
+                    0 0 NBG
+                }
+                tags_eq = {
+                    0 0 CLM
                 }
             }
         }

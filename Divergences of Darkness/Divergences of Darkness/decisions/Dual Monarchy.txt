@@ -263,15 +263,32 @@ political_decisions = {
 
         allow = {
             war = no
-			NOT = {
-				school_reforms = no_schools
-			}
+            NOT = { citizenship_policy = full_citizenship }
+
+            NOT = {
+                OR = {
+                    school_reforms = no_schools
+                    school_reforms = good_schools
+                }
+            }
             invention = biased_multiculturalism
             invention = social_darwinism
         }
 
         effect = {
-            set_country_flag = enacted_anglois_schooling            
+            set_country_flag = enacted_anglois_schooling
+            random_owned = {
+                limit = {
+                    owner = { school_reforms = acceptable_schools }
+                }
+                owner = { social_reform = good_schools }
+            }
+            random_owned = {
+                limit = {
+                    owner = { school_reforms = low_schools }
+                }
+                owner = { social_reform = acceptable_schools }
+            }
             country_event = 650330
         }
     }

@@ -143,7 +143,7 @@ country_event = {
         government = absolute_monarchy
         any_pop = { militancy = 1 }
         years_of_research = 2
-        ai_chance = { factor = 30 }
+        ai_chance = { factor = 0.3 }
     }
 
     option = {
@@ -151,7 +151,7 @@ country_event = {
         government = merchant_republic
         political_reform = landed_voting
         any_pop = { militancy = 2 }
-        ai_chance = { factor = 40 }
+        ai_chance = { factor = 0.4 }
     }
 
     option = {
@@ -164,6 +164,6 @@ country_event = {
         ruling_party_ideology = liberal
         any_pop = { militancy = 1 }
         years_of_research = 4
-        ai_chance = { factor = 30 }
+        ai_chance = { factor = 0.3 }
     }
 }

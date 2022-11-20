@@ -1,25 +1,26 @@
 political_decisions = {
+
     change_national_value_on = {
         alert = yes
         picture = national_value
         potential = {
             nationalvalue = nv_tradition
-            NOT = { has_country_flag = nv_change }
+            NOT = {    has_country_flag = nv_change }
             civilized = no
         }
-
+        
         allow = {
             civilization_progress = 0.5
-            NOT = { has_country_modifier = national_confusion }
+            NOT = {    has_country_modifier = national_confusion }
             war = no
             NOT = { num_of_revolts = 1 }
         }
-
+        
         effect = { set_country_flag = nv_change }
-
-        ai_will_do = {
-            factor = 1
-
+        
+        ai_will_do = { 
+            factor = 1 
+            
             modifier = {
                 factor = 0
                 OR = {
@@ -33,14 +34,47 @@ political_decisions = {
     change_national_value_off = {
         alert = no
         picture = national_value
-        potential = { has_country_flag = nv_change }
-
-        allow = {}
-
+        potential = {
+            has_country_flag = nv_change
+        }
+        
+        allow = { }
+        
         effect = { clr_country_flag = nv_change }
-
+        
         ai_will_do = { factor = 0 }
     }
+
+    # All five national values are designed to be picked at random by eligible AI countries. Normally this would be
+    # achieved through e.g. a `random_list` command. Unfortunately this can be tricky to get right when done from a
+    # decision as all countries activating the same decision on the same day can get identical results.
+    #
+    # Instead we rely on the `ai_will_do` factor which, for a decision, is the chance (should all requirements be met)
+    # that the AI activates it on any given day. However because the engine processes available decisions top to bottom
+    # (order being the same as in the decision file) the actual factors have to be computed carefully.
+    #
+    # For instance if the first processed decision has weight A, the practical factor B' of the second decision
+    # should be the original weight B but rescaled over the smaller probability space in the outcome that the preceding
+    # decision was not activated, which has complement probablity (1 - A):
+    #
+    #     B' = B / (1 - A)
+    #
+    # This generalises to multiple successive decisions. Notably it leads to a last practical factor of 1, such that
+    # whenever it is the day for an AI country to pick a new national value they are guaranteed to choose (as long as no
+    # other higher priority decision is available to be taken).
+    #
+    # The following table summarises the desired random weights & probabilities, as well as some of the computation
+    # details leading to the final practical factor:
+    #
+    # National value | Weight | Probability | Cumulative Rescale Divisor (CRD) | Practical Factor (Probability over CRD)
+    # ---------------+--------+-------------+----------------------------------+----------------------------------------
+    # Order          |      1 |         20% |                                1 |                                  0.200
+    # Productivity   |      1 |         20% |                              0.8 |                                  0.250
+    # Autocracy      |      1 |         20% |                              0.6 |                                  0.333
+    # Liberty        |      1 |         20% |                              0.4 |                                  0.500
+    # Equality       |      1 |         20% |                              0.2 |                                  1.000
+    #
+    # (Note that in testing the engine did not seem to handle decimals well beyond the thousandth place.)
 
     switch_to_order = {
         picture = switch_to_order
@@ -50,13 +84,13 @@ political_decisions = {
             NOT = { has_country_flag = switched_nv }
             has_country_flag = nv_change
         }
-
+        
         allow = {
             war = no
             NOT = { has_country_modifier = national_confusion }
             NOT = { num_of_revolts = 1 }
         }
-
+        
         effect = {
             clr_country_flag = nv_change
             set_country_flag = switched_nv
@@ -80,10 +114,10 @@ political_decisions = {
                 }
             }
         }
-
-        ai_will_do = { factor = 1 }
+        
+        ai_will_do = { factor = 0.200 }
     }
-
+    
     switch_to_production = {
         picture = switch_to_productivity
         potential = {
@@ -92,13 +126,13 @@ political_decisions = {
             NOT = { has_country_flag = switched_nv }
             has_country_flag = nv_change
         }
-
+        
         allow = {
             war = no
             NOT = { has_country_modifier = national_confusion }
             NOT = { num_of_revolts = 1 }
         }
-
+        
         effect = {
             clr_country_flag = nv_change
             set_country_flag = switched_nv
@@ -122,10 +156,10 @@ political_decisions = {
                 }
             }
         }
-
-        ai_will_do = { factor = 0.25 }
+        
+        ai_will_do = { factor = 0.250 }
     }
-
+    
     switch_to_autocracy = {
         picture = switch_to_autocracy
         potential = {
@@ -134,12 +168,13 @@ political_decisions = {
             NOT = { has_country_flag = switched_nv }
             has_country_flag = nv_change
         }
-
+        
         allow = {
             war = no
             NOT = { has_country_modifier = national_confusion }
+            NOT = { num_of_revolts = 1 }
         }
-
+        
         effect = {
             clr_country_flag = nv_change
             set_country_flag = switched_nv
@@ -163,10 +198,10 @@ political_decisions = {
                 }
             }
         }
-
-        ai_will_do = { factor = 0.75 }
+        
+        ai_will_do = { factor = 0.333 }
     }
-
+    
     switch_to_equality = {
         picture = switch_to_equality
         potential = {
@@ -175,13 +210,13 @@ political_decisions = {
             NOT = { has_country_flag = switched_nv }
             has_country_flag = nv_change
         }
-
+        
         allow = {
             war = no
             NOT = { has_country_modifier = national_confusion }
             NOT = { num_of_revolts = 1 }
         }
-
+        
         effect = {
             clr_country_flag = nv_change
             set_country_flag = switched_nv
@@ -205,10 +240,10 @@ political_decisions = {
                 }
             }
         }
-
-        ai_will_do = { factor = 0 }
+        
+        ai_will_do = { factor = 0.500 }
     }
-
+    
     switch_to_liberty = {
         picture = switch_to_liberty
         potential = {
@@ -217,13 +252,13 @@ political_decisions = {
             NOT = { has_country_flag = switched_nv }
             has_country_flag = nv_change
         }
-
+        
         allow = {
             war = no
             NOT = { has_country_modifier = national_confusion }
             NOT = { num_of_revolts = 1 }
         }
-
+        
         effect = {
             clr_country_flag = nv_change
             set_country_flag = switched_nv
@@ -247,7 +282,7 @@ political_decisions = {
                 }
             }
         }
-
-        ai_will_do = { factor = 0 }
+        
+        ai_will_do = { factor = 1.000 }
     }
 }

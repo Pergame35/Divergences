@@ -322,21 +322,28 @@ country_event = {
 #															#
 #############################################################
 
-#Crisis prevention for Native states
+#REMOVE THIS
+
+#Native Genocide
 province_event = {
     id = 20110
     title = "EVTNAME20110" #Natives in $STATENAME$
     desc = "EVTDESC20110"
-
+    
     trigger = {
         owner = {
             crisis_exist = no
-            NOT = { is_culture_group = native_american }
+            NOT = { is_culture_group = native_north_american }
+            NOT = { is_culture_group = native_south_american }
+            NOT = { is_culture_group = mesoandean }
             NOT = { year = 1900 }
             has_global_flag = revolution_n_counter_researched
         }
         any_core = {
-            is_culture_group = native_american
+            OR = {
+                is_culture_group = native_north_american
+                is_culture_group = native_south_american
+            }
             exists = no
         }
         state_scope = {
@@ -356,7 +363,7 @@ province_event = {
             state_scope = { flashpoint_tension = 90 }
         }
     }
-
+    
     option = {
         name = "EVT20110OPTA"
         owner = {
@@ -366,7 +373,12 @@ province_event = {
         state_scope = {
             flashpoint_tension = -75
             any_pop = {
-                limit = { is_culture_group = native_american }
+                limit = {
+                    OR = {
+                        is_culture_group = native_north_american
+                        is_culture_group = native_south_american
+                    }
+                }
                 reduce_pop = 0.95
                 militancy = -4
                 consciousness = -4
@@ -380,7 +392,7 @@ province_event = {
             }
         }
     }
-
+    
     option = {
         name = "EVT20110OPTB"
         owner = {
@@ -394,7 +406,12 @@ province_event = {
         state_scope = {
             flashpoint_tension = -50
             any_pop = {
-                limit = { is_culture_group = native_american }
+                limit = {
+                    OR = {
+                        is_culture_group = native_north_american
+                        is_culture_group = native_south_american
+                    }
+                }
                 militancy = -2
                 consciousness = -2
             }

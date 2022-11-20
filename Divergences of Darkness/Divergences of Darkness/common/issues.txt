@@ -214,7 +214,7 @@ political_reforms = {
             rules = { slavery_allowed = yes }
             allow = {
                 NOT = { has_country_flag = communist_gov }
-                NOT = { has_country_flag = fascist_gov }
+                #NOT = { has_country_flag = fascist_gov }
                 NOT = { has_country_flag = slave_revolution }
             }
         }
@@ -223,7 +223,7 @@ political_reforms = {
             rules = { slavery_allowed = yes }
             allow = {
                 NOT = { has_country_flag = communist_gov }
-                NOT = { has_country_flag = fascist_gov }
+                #NOT = { has_country_flag = fascist_gov }
                 NOT = { has_country_flag = slave_revolution }
                 OR = {
                     NOT = { has_country_flag = the_slavery_debate }
@@ -523,7 +523,7 @@ political_reforms = {
             administrative_efficiency_modifier = 0.05
             tariff_efficiency_modifier = 0.05
             administrative_multiplier = 2
-            allow = { has_country_flag = modern_central_bank_system_invented }
+            allow = { has_country_flag = central_bank_instituted }
         }
     }
 

@@ -1985,27 +1985,6 @@ iranian = {
         }
         last_names = { Khan }
     }
-
-    gypsy = {
-        color = {
-            16 102 163
-        }
-        first_names = {
-            Amberline Belcher Baul Bavol Bersh Beval Bidshika Brishen Camlo Chik
-            Cam Chaine Chal Chavula Danior Dukker Durriken Durril Dangerfield Garridan
-            Gillie Guibran Goliath Gilderoy Hezekiah Jal Javert Jibben Jivin Ker
-            Lel Lennor Lendar Lensar Mander Merripen Mestipen Major Nehemiah Pal
-            Pattin Pias Pov Rye Stiggur Shadrack Silvanus Tas Tobar Tobbar
-            Tawno Tem Terkari Vandlo Wen Wesh Yarb
-        }
-
-        last_names = {
-            Petulengro Vardo-mescro Chumomisto Gry Balorengre Purrum Bedra-kero Camlo Mokkado Baremescre
-            Baryor Beshaley Kaulo
-        }
-        radicalism = 1
-    }
-	
     ossetian = {
         color = {
             227 177 41
@@ -2586,6 +2565,26 @@ south_asian = {
             Alwani Bjaeen Bhatti Bhil Bhurgari Bulfati Chandio Daudpota Gabol Kalpar
             Kolhi Magsi Mallaah Rajpar Sarki Sirki Solangi
         }
+    }
+
+    gypsy = {
+        color = {
+            16 102 163
+        }
+        first_names = {
+            Amberline Belcher Baul Bavol Bersh Beval Bidshika Brishen Camlo Chik
+            Cam Chaine Chal Chavula Danior Dukker Durriken Durril Dangerfield Garridan
+            Gillie Guibran Goliath Gilderoy Hezekiah Jal Javert Jibben Jivin Ker
+            Lel Lennor Lendar Lensar Mander Merripen Mestipen Major Nehemiah Pal
+            Pattin Pias Pov Rye Stiggur Shadrack Silvanus Tas Tobar Tobbar
+            Tawno Tem Terkari Vandlo Wen Wesh Yarb
+        }
+
+        last_names = {
+            Petulengro Vardo-mescro Chumomisto Gry Balorengre Purrum Bedra-kero Camlo Mokkado Baremescre
+            Baryor Beshaley Kaulo
+        }
+        radicalism = 1
     }
     union = HND
 }
@@ -4553,10 +4552,24 @@ central_african = {
         }
         first_names = {
             Poaty Loembe M'voudoukousala Pratt N'Gangue M'voumbe Mfutila Kivuzi Nteve Kenje
+			Agustín Alberto Alejandro Alfonso Álvaro Antonio "Antonio María" Arsenio Augusto Baldomero
+		Baltasar Benito Bernardino Bernardo Calixto Carlos Celestino Claudio Cristobal Dámaso
+		Diego Dionisio Eduardo Emilio Estanislao Federico Felipe Félix Fernando Francisco
+		"Francisco Javier" Gabino Gabriel Gaspar Genaro Gonzalo Ignacio Isidro Jacobo Jaime
+		Joaquín José "José Antonio" "José Manuel" "José María" Juan "Juan Bautista" Julio Leopoldo Lorenzo 
+		Luis Manuel Marcelo Mariano Mateo Melchor Miguel Nicolás Pablo Pascual
+		Pedro Rafael Raimundo Ramón Ricardo Santiago Sebastián Segismundo Valeriano Vicente
         }
 
         last_names = {
             "Ma Nombo" "Ma N'Sangou" N'Gombi Matou Mvemba Lukeni Mpanzu Nimi Nsindi
+			Acuña Aguirre Alcalá-Zamora Allendesalazar Alonso Álvarez "Álvarez de Toledo" Aranda Argüelles-Meres Asensio
+		Aznar Barradas Bugallal Cabrera "Cagigal de la Vega" Cano Cervera "de Albornoz" "de Borbón"
+		"de Carvajal" "de la Fuente" "de Orleans" Díaz Espartero Fernández "Fernández de Córdoba" "Fitz-James Stuart" Franco 
+		García "García de la Noceda" González Heredia Hernández Herrera Hevia "Hidalgo de Cisneros" Linares López 
+		Maroto Márquez Martínez-Campos Maura Menéndez Miaja Millán-Astray Mina Mola Muñoz 
+		Narváez O'Donnell Ortega Pavía Pérez "Primo de Rivera" "Queipo de Llano" Rodríguez Rojo Ruiz 
+		Sanjurjo Serrano Silvestre Topete Valdés Varela Villapol Villar Weyler Yagüe
         }
     }
     baguirmi = {

@@ -887,7 +887,7 @@ political_decisions = {
             year = 1850
         }
 
-        allow = { bessemer_process  = 1 }
+        allow = { bessemer_process = 1 }
 
         effect = {
             set_global_flag = statue_of_liberty_has_been_built

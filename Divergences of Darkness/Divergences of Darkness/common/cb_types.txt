@@ -2994,6 +2994,20 @@ cut_down_to_size = {
             limit = {
                 owner = {
                     civilized = no
+                    NOT = { has_country_modifier = legation_quarter }
+                }
+            }
+            owner = {
+                add_country_modifier = {
+                    name = legation_quarter
+                    duration = -1
+                }
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    civilized = no
                     NOT = {
                         capital_scope = { has_country_modifier = legation_quarter }
                     }
@@ -7578,6 +7592,8 @@ caliphate_jihad_cb = {
                 has_country_flag = sunni_country
                 has_country_flag = shiite_country
                 has_country_flag = ibadi_country
+                has_country_flag = ismaili_country
+                has_country_flag = zaydi_country
             }
         }
         THIS = {

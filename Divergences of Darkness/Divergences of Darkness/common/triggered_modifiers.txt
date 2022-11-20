@@ -3,6 +3,17 @@
 #
 # Effects are fully scriptable here.
 
+unciv_pop_growth = {
+    trigger = {
+        exists = yes
+		civilized = no
+        administration_spending = 0.2
+        health_care = no_health_care
+    }
+    global_population_growth = 0.001
+    icon = 19
+}
+
 trinket_health_care_fully_funded = {
     trigger = {
         exists = yes
@@ -172,6 +183,8 @@ islamic_law_triggered = {
             has_country_flag = sunni_country
             has_country_flag = shiite_country
             has_country_flag = ibadi_country
+            has_country_flag = ismaili_country
+            has_country_flag = zaydi_country
         }
         NOT = { has_country_flag = secularized_muslim_society }
         NOT = { has_country_flag = dynamic_tag }
@@ -195,7 +208,7 @@ the_british_raj = {
             government = prussian_constitutionalism
             government = hms_government
         }
-        NOT = { is_culture_group = indo_iranian }
+        NOT = { is_culture_group = iranian }
         NOT = { is_culture_group = south_asian }
         1227 = {
             is_colonial = yes
@@ -357,6 +370,8 @@ sound_dues = {
             is_culture_group = british
             is_culture_group = french
             is_culture_group = beneluxian
+            primary_culture = czech
+            primary_culture = polish
             primary_culture = north_german
             primary_culture = russian
         }

@@ -21,10 +21,13 @@ country_event = {
 
     option = {
         name = "EVTOPTA21500"
-        2694 = {
-            any_pop = { reduce_pop = 0.10 }
-            life_rating = -10
-        }
+        random_owned = { limit = { province_id = 2694 has_building = railroad } infrastructure = -6 }
+        random_owned = { limit = { province_id = 2694 has_building = fort } fort = -6 }
+        random_owned = { limit = { province_id = 2694 total_pops = 10000 } any_pop = { reduce_pop = 0.99 } }
+        #2694 = {
+        #    any_pop = { reduce_pop = 0.10 }
+        #    life_rating = -10
+        #}
     }
 }
 
@@ -51,10 +54,14 @@ country_event = {
 
     option = {
         name = "EVTOPTA21510"
-        1414 = {
-            any_pop = { reduce_pop = 0.8 }
-            life_rating = -10
-        }
+        #1414 = {
+        #    any_pop = { reduce_pop = 0.1 }
+        #    life_rating = -10
+        #}
+        1414 = { any_pop = { reduce_pop = 0.96 } }
+        random_owned = { limit = { province_id = 1414 has_building = railroad } infrastructure = -1 }
+        random_owned = { limit = { province_id = 1414 has_building = fort } fort = -1 }
+        random_owned = { limit = { province_id = 1413 has_building = naval_base } naval_base = -1 }
     }
 }
 
@@ -96,26 +103,26 @@ country_event = {
 
     trigger = {
         NOT = { has_country_modifier = national_tragedy }
-        invention = industrial_railroads
+        early_railroad = 1
     }
-
+    
     mean_time_to_happen = {
         months = 900
         modifier = {
             factor = 0.95
-            invention = the_iron_horse
+            iron_railroad = 1
         }
         modifier = {
             factor = 0.95
-            invention = commercial_railroads
+            steel_railroad = 1
         }
         modifier = {
             factor = 0.95
-            invention = arteries_of_commerce
+            integral_rail_system = 1
         }
         modifier = {
             factor = 0.95
-            invention = autobahn
+            limited_access_roads = 1
         }
         modifier = {
             factor = 0.75
@@ -340,7 +347,7 @@ country_event = {
     id = 880290
     title = "EVTNAME880290"
     desc = "EVTDESC880290"
-    picture = "cholera" #Was not able to find a decent historical picture without clear (c) status. -GAGA
+    picture = "typeix" #Was not able to find a decent historical picture without clear (c) status. -GAGA
 
     trigger = {
         NOT = { has_country_modifier = national_tragedy }

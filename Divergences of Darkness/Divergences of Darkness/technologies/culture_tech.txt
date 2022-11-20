@@ -50,6 +50,13 @@ romanticism = {
             factor = 2
             tech_school = culture_tech_school
         }
+        modifier = {
+            factor = 50
+            OR = {
+                tag = FRM
+                tag = TUS
+            }
+        }
     }
 }
 
@@ -67,7 +74,10 @@ realism = {
         }
         modifier = {
             factor = 5
-            tag = ENG
+            OR = {
+                tag = DUA
+                tag = TUS
+            }
         }
         modifier = {
             factor = 0.1
@@ -460,7 +470,11 @@ positivism = {
             NOT = { tag = TUR }
             OR = {
                 not = { literacy = 0.40 }
-                tag = ENG
+                tag = DUA
+                tag = NGF
+                tag = GER
+                tag = HLR
+                tag = ARC
             }
             OR = {
                 is_greater_power = yes
@@ -474,10 +488,11 @@ positivism = {
         modifier = {
             factor = 3
             OR = {
-                tag = PRU
+                tag = DUA
                 tag = NGF
                 tag = GER
-                tag = ENG
+                tag = HLR
+                tag = ARC
             }
         }
     }
@@ -523,10 +538,11 @@ functionalism = {
         modifier = {
             factor = 3
             OR = {
-                tag = PRU
+                tag = DUA
                 tag = NGF
                 tag = GER
-                tag = ENG
+                tag = HLR
+                tag = ARC
             }
         }
     }
@@ -573,10 +589,11 @@ biologism = {
         modifier = {
             factor = 5
             OR = {
-                tag = PRU
+                tag = DUA
                 tag = NGF
                 tag = GER
-                tag = ENG
+                tag = HLR
+                tag = ARC
             }
         }
     }
@@ -610,7 +627,11 @@ social_science = {
             OR = {
                 not = { literacy = 0.75 }
                 year = 1890
-                tag = ENG
+                tag = DUA
+                tag = NGF
+                tag = GER
+                tag = HLR
+                tag = ARC
             }
             OR = {
                 is_greater_power = yes
@@ -730,7 +751,13 @@ ideological_thought = {
         }
         modifier = {
             factor = 20
-            tag = PRU
+            OR = {
+                tag = ENL
+                tag = DUA
+                tag = FRA
+                tag = FRM
+                tag = TUS
+            }
         }
     }
 }
@@ -779,8 +806,9 @@ state_n_government = {
             factor = 51
             OR = {
                 year = 1860
-                tag = SAR
-                tag = PRU
+                tag = FRA
+                tag = FRM
+                tag = ARC
             }
         }
         modifier = {
@@ -867,7 +895,7 @@ nationalism_n_imperialism = {
                     cultural_union = { exists = no }
                     is_greater_power = yes
                 }
-                tag = POR
+                tag = BOH
             }
         }
     }
@@ -902,7 +930,10 @@ revolution_n_counterrevolution = {
 
         modifier = {
             factor = 10
-            tag = RUS
+            OR = {
+                tag = DUA
+                tag = SPA
+            }
         }
 
         modifier = {

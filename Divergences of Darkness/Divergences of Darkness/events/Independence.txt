@@ -1071,216 +1071,683 @@ country_event = {
     }
 }
 
+# Independence for Palestine?
+country_event = {
+    id = 90034
+
+    title = "EVTNAME90034"
+    desc = "EVTDESC90034"
+    picture = "abd_al_qadir"
+
+    trigger = {
+        war = no
+        NOT = {
+            exists = PLS
+            has_country_flag = no_palestine_independence
+            primary_culture = mashriqi
+        }
+        is_possible_vassal = PLS
+        revolution_n_counterrevolution = 1
+        OR = {
+            AND = {
+                NOT = { accepted_culture = mashriqi }
+                any_state = {
+                    any_owned_province = {
+                        is_core = PLS
+                        culture = mashriqi
+                        literacy = 0.25
+                    }
+                    average_militancy = 3
+                }
+            }
+            AND = {
+                accepted_culture = mashriqi
+                any_state = {
+                    any_owned_province = {
+                        is_core = PLS
+                        culture = mashriqi
+                        literacy = 0.5
+                    }
+                    average_militancy = 7
+                    average_consciousness = 7
+                }
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 120
+        modifier = {
+            factor = 1.5
+            any_pop = {
+                has_pop_culture = mashriqi
+                is_accepted_culture = yes
+            }
+        }
+        modifier = {
+            factor = 1.5
+            NOT = { invention = separatism }
+        }
+        modifier = {
+            factor = 0.9
+            any_state = {
+                any_owned_province = { is_core = PLS }
+                average_militancy = 4
+            }
+        }
+        modifier = {
+            factor = 0.9
+            any_state = {
+                any_owned_province = { is_core = PLS }
+                average_militancy = 5
+            }
+        }
+        modifier = {
+            factor = 0.9
+            any_state = {
+                any_owned_province = { is_core = PLS }
+                average_militancy = 6
+            }
+        }
+    }
+
+    immediate = {
+        random_owned = {
+            limit = {
+                owner = { accepted_culture = mashriqi }
+            }
+            owner = { remove_accepted_culture = mashriqi }
+        }
+    }
+
+    option = {
+        name = "EVT90017OPTA"
+        any_pop = {
+            limit = { has_pop_culture = mashriqi }
+            militancy = 3
+        }
+        any_owned = {
+            limit = { is_core = PLS }
+            add_province_modifier = {
+                name = nationalist_agitation
+                duration = 365
+            }
+        }
+        ai_chance = {
+            factor = 95
+            modifier = {
+                factor = 1.75
+                government = absolute_monarchy
+            }
+            modifier = {
+                factor = 1.25
+                is_greater_power = yes
+            }
+            modifier = {
+                factor = 0.5
+                government = democracy
+            }
+            modifier = {
+                factor = 1.5
+                war_policy = jingoism
+            }
+            modifier = {
+                factor = 1.25
+                war_policy = pro_military
+            }
+            modifier = {
+                factor = 0.75
+                war_policy = anti_military
+            }
+            modifier = {
+                factor = 0.5
+                war_policy = pacifism
+            }
+            modifier = {
+                factor = 0.8
+                militancy = 3
+            }
+            modifier = {
+                factor = 0.8
+                militancy = 5
+            }
+        }
+    }
+    option = {
+        name = "EVT90017OPTB"
+        badboy = -5
+        prestige = -25
+        release_vassal = PLS
+        PLS = {
+            any_pop = {
+                limit = { has_pop_culture = mashriqi }
+                militancy = -8
+            }
+        }
+        any_pop = {
+            limit = { has_pop_culture = mashriqi }
+            militancy = -3
+        }
+        any_pop = {
+            limit = {
+                NOT = { has_pop_culture = mashriqi }
+                is_primary_culture = no
+            }
+            militancy = 1
+        }
+        relation = {
+            who = PLS
+            value = 50
+        }
+        diplomatic_influence = {
+            who = PLS
+            value = 200
+        }
+        ai_chance = {
+            factor = 5
+            modifier = {
+                factor = 0
+                OR = {
+                    government = proletarian_dictatorship
+                    government = bourgeois_dictatorship
+                    government = fascist_dictatorship
+                    government = presidential_dictatorship
+                }
+            }
+            modifier = {
+                factor = 0.25
+                government = absolute_monarchy
+            }
+            modifier = {
+                factor = 1.5
+                government = democracy
+            }
+            modifier = {
+                factor = 0.5
+                war_policy = jingoism
+            }
+            modifier = {
+                factor = 0.75
+                war_policy = pro_military
+            }
+            modifier = {
+                factor = 1.25
+                war_policy = anti_military
+            }
+            modifier = {
+                factor = 1.5
+                war_policy = pacifism
+            }
+            modifier = {
+                factor = 0.5
+                is_greater_power = yes
+            }
+            modifier = {
+                factor = 1.2
+                militancy = 3
+            }
+            modifier = {
+                factor = 1.2
+                militancy = 5
+            }
+        }
+    }
+    option = {
+        name = "EVT90017OPTC"
+        set_country_flag = no_palestine_independence
+        any_pop = {
+            limit = {
+                location = { is_core = PLS }
+                has_pop_culture = mashriqi
+            }
+            militancy = 8
+        }
+        ai_chance = { factor = 0 }
+    }
+}
+
+# Lebanese Independence?
+country_event = {
+    id = 90035
+
+    title = "EVTNAME90035"
+    desc = "EVTDESC90035"
+    picture = "Ottoman"
+
+    trigger = {
+        war = no
+        NOT = {
+            exists = LBN
+            has_country_flag = no_lebanon_independence
+            primary_culture = mashriqi
+        }
+        is_possible_vassal = LBN
+        revolution_n_counterrevolution = 1
+        OR = {
+            AND = {
+                NOT = { accepted_culture = mashriqi }
+                any_state = {
+                    any_owned_province = {
+                        is_core = LBN
+                        culture = mashriqi
+                        literacy = 0.25
+                    }
+                    average_militancy = 3
+                }
+            }
+            AND = {
+                accepted_culture = mashriqi
+                any_state = {
+                    any_owned_province = {
+                        is_core = LBN
+                        culture = mashriqi
+                        literacy = 0.5
+                    }
+                    average_militancy = 7
+                    average_consciousness = 7
+                }
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 120
+        modifier = {
+            factor = 1.5
+            any_pop = {
+                has_pop_culture = mashriqi
+                is_accepted_culture = yes
+            }
+        }
+        modifier = {
+            factor = 1.5
+            NOT = { invention = separatism }
+        }
+        modifier = {
+            factor = 0.9
+            any_state = {
+                any_owned_province = { is_core = LBN }
+                average_militancy = 4
+            }
+        }
+        modifier = {
+            factor = 0.9
+            any_state = {
+                any_owned_province = { is_core = LBN }
+                average_militancy = 5
+            }
+        }
+        modifier = {
+            factor = 0.9
+            any_state = {
+                any_owned_province = { is_core = LBN }
+                average_militancy = 6
+            }
+        }
+    }
+
+    immediate = {
+        random_owned = {
+            limit = {
+                owner = { accepted_culture = mashriqi }
+            }
+            owner = { remove_accepted_culture = mashriqi }
+        }
+    }
+
+    option = {
+        name = "EVT90017OPTA"
+        any_pop = {
+            limit = { has_pop_culture = mashriqi }
+            militancy = 3
+        }
+        any_owned = {
+            limit = { culture = mashriqi }
+            add_province_modifier = {
+                name = nationalist_agitation
+                duration = 365
+            }
+        }
+        ai_chance = {
+            factor = 95
+            modifier = {
+                factor = 1.75
+                government = absolute_monarchy
+            }
+            modifier = {
+                factor = 1.25
+                is_greater_power = yes
+            }
+            modifier = {
+                factor = 0.5
+                government = democracy
+            }
+            modifier = {
+                factor = 1.5
+                war_policy = jingoism
+            }
+            modifier = {
+                factor = 1.25
+                war_policy = pro_military
+            }
+            modifier = {
+                factor = 0.75
+                war_policy = anti_military
+            }
+            modifier = {
+                factor = 0.5
+                war_policy = pacifism
+            }
+            modifier = {
+                factor = 0.8
+                militancy = 3
+            }
+            modifier = {
+                factor = 0.8
+                militancy = 5
+            }
+        }
+    }
+    option = {
+        name = "EVT90017OPTB"
+        badboy = -5
+        prestige = -25
+        release_vassal = LBN
+        LBN = {
+            any_pop = {
+                limit = { has_pop_culture = mashriqi }
+                militancy = -8
+            }
+        }
+        any_pop = {
+            limit = { has_pop_culture = mashriqi }
+            militancy = -3
+        }
+        any_pop = {
+            limit = {
+                NOT = { has_pop_culture = mashriqi }
+                is_primary_culture = no
+            }
+            militancy = 1
+        }
+        relation = {
+            who = LBN
+            value = 50
+        }
+        diplomatic_influence = {
+            who = LBN
+            value = 200
+        }
+        ai_chance = {
+            factor = 5
+            modifier = {
+                factor = 0
+                OR = {
+                    government = proletarian_dictatorship
+                    government = bourgeois_dictatorship
+                    government = fascist_dictatorship
+                    government = presidential_dictatorship
+                }
+            }
+            modifier = {
+                factor = 0.25
+                government = absolute_monarchy
+            }
+            modifier = {
+                factor = 1.5
+                government = democracy
+            }
+            modifier = {
+                factor = 0.5
+                war_policy = jingoism
+            }
+            modifier = {
+                factor = 0.75
+                war_policy = pro_military
+            }
+            modifier = {
+                factor = 1.25
+                war_policy = anti_military
+            }
+            modifier = {
+                factor = 1.5
+                war_policy = pacifism
+            }
+            modifier = {
+                factor = 0.5
+                is_greater_power = yes
+            }
+            modifier = {
+                factor = 1.2
+                militancy = 3
+            }
+            modifier = {
+                factor = 1.2
+                militancy = 5
+            }
+        }
+    }
+    option = {
+        name = "EVT90017OPTC"
+        set_country_flag = no_lebanon_independence
+        any_pop = {
+            limit = { has_pop_culture = mashriqi }
+            militancy = 8
+        }
+        ai_chance = { factor = 0 }
+    }
+}
+
 #########################################
-#		Scandinavian Dominions			#
+#        Scandinavian Dominions            #
 #########################################
 
 #Norway asks for independence from Sweden
-country_event = {
-    id = 49505
-
-    title = "EVTNAME49505"
-    desc = "EVTDESC49505"
-    picture = "danishgovernment"
-
-    trigger = {
-        war = no
-        tag = SWE
-        any_state = {
-            any_owned_province = { is_core = NOR }
-            average_militancy = 2
-        }
-        average_consciousness = 6
-        year = 1880
-        revolution_n_counterrevolution = 1
-        is_possible_vassal = NOR
-        NOT = {
-            has_country_flag = norway_asks_for_indepenedence
-            exists = NOR
-        }
-    }
-
-    mean_time_to_happen = {
-        days = 1
-        modifier = {
-            factor = 0.5
-            press_rights = free_press
-        }
-        modifier = {
-            factor = 0.75
-            vote_franschise = universal_voting
-        }
-        modifier = {
-            factor = 0.85
-            vote_franschise = universal_weighted_voting
-        }
-        modifier = {
-            factor = 0.95
-            vote_franschise = wealth_voting
-        }
-        modifier = {
-            factor = 1.25
-            press_rights = censored_press
-        }
-        modifier = {
-            factor = 1.5
-            press_rights = state_press
-        }
-    }
-
-    immediate = {
-        random_owned = {
-            limit = {
-                owner = { accepted_culture = norwegian }
-            }
-            owner = { remove_accepted_culture = norwegian }
-        }
-    }
-
-    option = {
-        name = "EVT49505OPTA"
-        any_owned = {
-            limit = { is_core = NOR }
-            remove_core = SWE
-        }
-        release = NOR
-        any_pop = { consciousness = -4 }
-        NOR = {
-            any_pop = { militancy = -4 }
-            relation = {
-                who = THIS
-                value = 100
-            }
-        }
-        set_country_flag = norway_asks_for_indepenedence
-        ai_chance = { factor = 90 }
-    }
-
-    option = {
-        name = "EVT49505OPTB"
-        any_pop = {
-            limit = { culture = norwegian }
-            consciousness = 4
-            militancy = 3
-        }
-        any_country = {
-            limit = {
-                is_greater_power = yes
-                continent = europe
-            }
-            relation = {
-                who = THIS
-                value = -20
-            }
-        }
-        set_country_flag = norway_asks_for_indepenedence
-        ai_chance = { factor = 10 }
-    }
-}
+#country_event = {
+#    id = 49505
+#
+#    title = "EVTNAME49505"
+#    desc = "EVTDESC49505"
+#    picture = "danishgovernment"
+#
+#    trigger = {
+#        war = no
+#        tag = SWE
+#        any_state = {
+#            any_owned_province = { is_core = NOR }
+#            average_militancy = 2
+#        }
+#        average_consciousness = 6
+#        year = 1880
+#        revolution_n_counterrevolution = 1
+#        is_possible_vassal = NOR
+#        NOT = {
+#            has_country_flag = norway_asks_for_indepenedence
+#            exists = NOR
+#        }
+#    }
+#
+#    mean_time_to_happen = {
+#        days = 1
+#        modifier = {
+#            factor = 0.5
+#            press_rights = free_press
+#        }
+#        modifier = {
+#            factor = 0.75
+#            vote_franschise = universal_voting
+#        }
+#        modifier = {
+#            factor = 0.85
+#            vote_franschise = universal_weighted_voting
+#        }
+#        modifier = {
+#            factor = 0.95
+#            vote_franschise = wealth_voting
+#        }
+#        modifier = {
+#            factor = 1.25
+#            press_rights = censored_press
+#        }
+#        modifier = {
+#            factor = 1.5
+#            press_rights = state_press
+#        }
+#    }
+#
+#    immediate = {
+#        random_owned = {
+#            limit = {
+#                owner = { accepted_culture = norwegian }
+#            }
+#            owner = { remove_accepted_culture = norwegian }
+#        }
+#    }
+#
+#    option = {
+#        name = "EVT49505OPTA"
+#        any_owned = {
+#            limit = { is_core = NOR }
+#            remove_core = SWE
+#        }
+#        release = NOR
+#        any_pop = { consciousness = -4 }
+#        NOR = {
+#            any_pop = { militancy = -4 }
+#            relation = {
+#                who = THIS
+#                value = 100
+#            }
+#        }
+#        set_country_flag = norway_asks_for_indepenedence
+#        ai_chance = { factor = 90 }
+#    }
+#
+#    option = {
+#        name = "EVT49505OPTB"
+#        any_pop = {
+#            limit = { culture = norwegian }
+#            consciousness = 4
+#            militancy = 3
+#        }
+#        any_country = {
+#            limit = {
+#                is_greater_power = yes
+#                continent = europe
+#            }
+#            relation = {
+#                who = THIS
+#                value = -20
+#            }
+#        }
+#        set_country_flag = norway_asks_for_indepenedence
+#        ai_chance = { factor = 10 }
+#    }
+#}
 
 #Norway demands independence from Sweden
-country_event = {
-    id = 49506
-    title = "EVTNAME49506"
-    desc = "EVTDESC49506"
-    picture = "danishgovernment"
-
-    trigger = {
-        war = no
-        tag = SWE
-        any_state = {
-            any_owned_province = { is_core = NOR }
-            average_militancy = 3
-        }
-        average_consciousness = 7
-        year = 1910
-        revolution_n_counterrevolution = 1
-        is_possible_vassal = NOR
-        has_country_flag = norway_asks_for_indepenedence
-        NOT = {
-            exists = NOR
-            has_country_flag = norway_demands_independence
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 40
-        modifier = {
-            factor = 0.5
-            press_rights = free_press
-        }
-        modifier = {
-            factor = 0.75
-            vote_franschise = universal_voting
-        }
-        modifier = {
-            factor = 0.85
-            vote_franschise = universal_weighted_voting
-        }
-        modifier = {
-            factor = 0.95
-            vote_franschise = wealth_voting
-        }
-        modifier = {
-            factor = 1.25
-            press_rights = censored_press
-        }
-        modifier = {
-            factor = 1.5
-            press_rights = state_press
-        }
-    }
-
-    immediate = {
-        random_owned = {
-            limit = {
-                owner = { accepted_culture = norwegian }
-            }
-            owner = { remove_accepted_culture = norwegian }
-        }
-    }
-
-    option = {
-        name = "EVT49506OPTA"
-        any_owned = {
-            limit = { is_core = NOR }
-            remove_core = SWE
-            remove_core = SCA
-        }
-        release = NOR
-        any_pop = { consciousness = -4 }
-        NOR = {
-            capital = 313
-            any_pop = { militancy = -4 }
-        }
-        badboy = -10
-        set_country_flag = norway_demands_independence
-        ai_chance = { factor = 90 }
-    }
-
-    option = {
-        name = "EVT49506OPTB"
-        any_owned = {
-            limit = { is_core = NOR }
-            secede_province = NOR
-        }
-        war = {
-            target = NOR
-            attacker_goal = { casus_belli = civil_war }
-
-            defender_goal = { casus_belli = status_quo }
-        }
-        any_greater_power = {
-            limit = { continent = europe }
-            relation = {
-                who = THIS
-                value = -40
-            }
-        }
-        set_country_flag = norway_demands_independence
-        ai_chance = { factor = 10 }
-    }
-}
+#country_event = {
+#    id = 49506
+#    title = "EVTNAME49506"
+#    desc = "EVTDESC49506"
+#    picture = "danishgovernment"
+#
+#    trigger = {
+#        war = no
+#        tag = SWE
+#        any_state = {
+#            any_owned_province = { is_core = NOR }
+#            average_militancy = 3
+#        }
+#        average_consciousness = 7
+#        year = 1910
+#        revolution_n_counterrevolution = 1
+#        is_possible_vassal = NOR
+#        has_country_flag = norway_asks_for_indepenedence
+#        NOT = {
+#            exists = NOR
+#            has_country_flag = norway_demands_independence
+#        }
+#    }
+#
+#    mean_time_to_happen = {
+#        months = 40
+#        modifier = {
+#            factor = 0.5
+#            press_rights = free_press
+#        }
+#        modifier = {
+#            factor = 0.75
+#            vote_franschise = universal_voting
+#        }
+#        modifier = {
+#            factor = 0.85
+#            vote_franschise = universal_weighted_voting
+#        }
+#        modifier = {
+#            factor = 0.95
+#            vote_franschise = wealth_voting
+#        }
+#        modifier = {
+#            factor = 1.25
+#            press_rights = censored_press
+#        }
+#        modifier = {
+#            factor = 1.5
+#            press_rights = state_press
+#        }
+#    }
+#
+#    immediate = {
+#        random_owned = {
+#            limit = {
+#                owner = { accepted_culture = norwegian }
+#            }
+#            owner = { remove_accepted_culture = norwegian }
+#        }
+#    }
+#
+#    option = {
+#        name = "EVT49506OPTA"
+#        any_owned = {
+#            limit = { is_core = NOR }
+#            remove_core = SWE
+#            remove_core = SCA
+#        }
+#        release = NOR
+#        any_pop = { consciousness = -4 }
+#        NOR = {
+#            capital = 313
+#            any_pop = { militancy = -4 }
+#        }
+#        badboy = -10
+#        set_country_flag = norway_demands_independence
+#        ai_chance = { factor = 90 }
+#    }
+#
+#    option = {
+#        name = "EVT49506OPTB"
+#        any_owned = {
+#            limit = { is_core = NOR }
+#            secede_province = NOR
+#        }
+#        war = {
+#            target = NOR
+#            attacker_goal = { casus_belli = civil_war }
+#
+#            defender_goal = { casus_belli = status_quo }
+#        }
+#        any_greater_power = {
+#            limit = { continent = europe }
+#            relation = {
+#                who = THIS
+#                value = -40
+#            }
+#        }
+#        set_country_flag = norway_demands_independence
+#        ai_chance = { factor = 10 }
+#    }
+#}
 
 #Finnish Independence from Sweden
 country_event = {
@@ -1368,7 +1835,7 @@ country_event = {
         name = "EVT49507OPTA"
         any_owned = {
             limit = { is_core = FIN }
-            remove_core = SWE
+            remove_core = SCA
         }
         release = FIN
         FIN = {
@@ -1401,272 +1868,272 @@ country_event = {
 }
 
 #Danish Independence from Sweden
-country_event = {
-    id = 49508
-    title = "EVTNAME49508"
-    desc = "EVTDESC49508"
-    picture = "danishgovernment"
-
-    trigger = {
-        war = no
-        year = 1900
-        tag = SWE
-        any_state = {
-            any_owned_province = { is_core = DEN }
-            average_militancy = 2
-        }
-        average_consciousness = 5
-        revolution_n_counterrevolution = 1
-        is_possible_vassal = DEN
-        NOT = {
-            exists = DEN
-            has_country_flag = danish_independence
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 120
-        modifier = {
-            factor = 0.5
-            press_rights = free_press
-        }
-        modifier = {
-            factor = 0.75
-            vote_franschise = universal_voting
-        }
-        modifier = {
-            factor = 0.85
-            vote_franschise = universal_weighted_voting
-        }
-        modifier = {
-            factor = 0.95
-            vote_franschise = wealth_voting
-        }
-        modifier = {
-            factor = 1.25
-            press_rights = censored_press
-        }
-        modifier = {
-            factor = 1.5
-            press_rights = state_press
-        }
-    }
-
-    option = {
-        name = "EVT49508OPTA"
-        any_owned = {
-            limit = { is_core = DEN }
-            remove_core = SWE
-        }
-        release = DEN
-        DEN = {
-            any_pop = { militancy = -4 }
-            relation = {
-                who = THIS
-                value = 100
-            }
-        }
-        set_country_flag = danish_independence
-    }
-
-    option = {
-        name = "EVT49508OPTB"
-        any_pop = {
-            limit = { culture = danish }
-            consciousness = 5
-            militancy = 5
-        }
-        set_country_flag = danish_independence
-    }
-}
+#country_event = {
+#    id = 49508
+#    title = "EVTNAME49508"
+#    desc = "EVTDESC49508"
+#    picture = "danishgovernment"
+#
+#    trigger = {
+#        war = no
+#        year = 1900
+#        tag = SWE
+#        any_state = {
+#            any_owned_province = { is_core = DEN }
+#            average_militancy = 2
+#        }
+#        average_consciousness = 5
+#        revolution_n_counterrevolution = 1
+#        is_possible_vassal = DEN
+#        NOT = {
+#            exists = DEN
+#            has_country_flag = danish_independence
+#        }
+#    }
+#
+#    mean_time_to_happen = {
+#        months = 120
+#        modifier = {
+#            factor = 0.5
+#            press_rights = free_press
+#        }
+#        modifier = {
+#            factor = 0.75
+#            vote_franschise = universal_voting
+#        }
+#        modifier = {
+#            factor = 0.85
+#            vote_franschise = universal_weighted_voting
+#        }
+#        modifier = {
+#            factor = 0.95
+#            vote_franschise = wealth_voting
+#        }
+#        modifier = {
+#            factor = 1.25
+#            press_rights = censored_press
+#        }
+#        modifier = {
+#            factor = 1.5
+#            press_rights = state_press
+#        }
+#    }
+#
+#    option = {
+#        name = "EVT49508OPTA"
+#        any_owned = {
+#            limit = { is_core = DEN }
+#            remove_core = SWE
+#        }
+#        release = DEN
+#        DEN = {
+#            any_pop = { militancy = -4 }
+#            relation = {
+#                who = THIS
+#                value = 100
+#            }
+#        }
+#        set_country_flag = danish_independence
+#    }
+#
+#    option = {
+#        name = "EVT49508OPTB"
+#        any_pop = {
+#            limit = { culture = danish }
+#            consciousness = 5
+#            militancy = 5
+#        }
+#        set_country_flag = danish_independence
+#    }
+#}
 
 #The Grand Duchy of Finland to Russia
-country_event = {
-    id = 49510
-    title = "EVTNAME49510"
-    desc = "EVTDESC49510"
-    picture = "diet_of_finland"
-
-    fire_only_once = yes
-
-    trigger = {
-        war = no
-        tag = RUS
-        NOT = { has_country_flag = no_grand_duchy_finland }
-        is_our_vassal = FIN
-        nationalism_n_imperialism = 1
-        OR = {
-            government = absolute_monarchy
-            government = prussian_constitutionalism
-            government = hms_government
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 120
-        modifier = {
-            factor = 1.5
-            any_pop = {
-                has_pop_culture = finnish
-                is_accepted_culture = yes
-            }
-        }
-        modifier = {
-            factor = 0.5
-            nationalism_n_imperialism = 1
-        }
-        modifier = {
-            factor = 0.5
-            revolution_n_counterrevolution = 1
-        }
-        modifier = {
-            factor = 0.8
-            invention = separatism
-        }
-    }
-
-    option = {
-        name = "EVT90017OPTA"
-        FIN = {
-            any_pop = {
-                limit = { has_pop_culture = finnish }
-                militancy = 7
-            }
-        }
-        any_pop = {
-            limit = { has_pop_culture = finnish }
-            militancy = 6
-        }
-        any_owned = {
-            limit = { culture = finnish }
-            add_province_modifier = {
-                name = nationalist_agitation
-                duration = 1825
-            }
-        }
-        ai_chance = {
-            factor = 15
-            modifier = {
-                factor = 1.5
-                war_policy = jingoism
-            }
-            modifier = {
-                factor = 1.25
-                war_policy = pro_military
-            }
-            modifier = {
-                factor = 0.75
-                war_policy = anti_military
-            }
-            modifier = {
-                factor = 0.5
-                war_policy = pacifism
-            }
-            modifier = {
-                factor = 0.8
-                militancy = 3
-            }
-            modifier = {
-                factor = 0.8
-                militancy = 5
-            }
-        }
-    }
-    option = {
-        name = "EVT49510OPTB"
-        badboy = -1
-        set_country_flag = finland_is_recognized
-        FIN = {
-            government = prussian_constitutionalism
-            ruling_party_ideology = conservative
-            political_reform = landed_voting
-            political_reform = appointed
-            political_reform = yes_meeting
-            political_reform = censored_press
-            political_reform = no_trade_unions
-            political_reform = harassment
-            set_country_flag = grand_duchy_finland
-            remove_accepted_culture = swedish
-            any_pop = {
-                limit = { has_pop_culture = finnish }
-                militancy = -8
-            }
-        }
-        any_pop = {
-            limit = { has_pop_culture = finnish }
-            militancy = -3
-        }
-        any_pop = {
-            limit = {
-                NOT = { has_pop_culture = finnish }
-                is_primary_culture = no
-            }
-            militancy = 2
-        }
-        relation = {
-            who = FIN
-            value = 200
-        }
-        diplomatic_influence = {
-            who = FIN
-            value = 200
-        }
-        ai_chance = {
-            factor = 90
-            modifier = {
-                factor = 1.25
-                war_policy = anti_military
-            }
-            modifier = {
-                factor = 1.5
-                war_policy = pacifism
-            }
-            modifier = {
-                factor = 1.2
-                militancy = 3
-            }
-            modifier = {
-                factor = 1.2
-                militancy = 5
-            }
-        }
-    }
-    option = {
-        name = "EVT90017OPTC"
-        set_country_flag = no_grand_duchy_finland
-        badboy = 1
-        any_pop = {
-            limit = {
-                location = { is_core = FIN }
-                has_pop_culture = finnish
-            }
-            militancy = 8
-        }
-        FIN = {
-            remove_accepted_culture = swedish
-            any_owned = {
-                limit = { culture = finnish }
-                add_province_modifier = {
-                    name = nationalist_agitation
-                    duration = 3650
-                }
-            }
-            any_pop = {
-                limit = { has_pop_culture = finnish }
-                militancy = 9
-                consciousness = 9
-            }
-        }
-        any_owned = {
-            limit = { culture = finnish }
-            add_province_modifier = {
-                name = nationalist_agitation
-                duration = 3650
-            }
-        }
-        ai_chance = { factor = 0 }
-    }
-}
+#country_event = {
+#    id = 49510
+#    title = "EVTNAME49510"
+#    desc = "EVTDESC49510"
+#    picture = "diet_of_finland"
+#
+#    fire_only_once = yes
+#
+#    trigger = {
+#        war = no
+#        tag = RUS
+#        NOT = { has_country_flag = no_grand_duchy_finland }
+#        is_our_vassal = FIN
+#        nationalism_n_imperialism = 1
+#        OR = {
+#            government = absolute_monarchy
+#            government = prussian_constitutionalism
+#            government = hms_government
+#        }
+#    }
+#
+#    mean_time_to_happen = {
+#        months = 120
+#        modifier = {
+#            factor = 1.5
+#            any_pop = {
+#                has_pop_culture = finnish
+#                is_accepted_culture = yes
+#            }
+#        }
+#        modifier = {
+#            factor = 0.5
+#            nationalism_n_imperialism = 1
+#        }
+#        modifier = {
+#            factor = 0.5
+#            revolution_n_counterrevolution = 1
+#        }
+#        modifier = {
+#            factor = 0.8
+#            invention = separatism
+#        }
+#    }
+#
+#    option = {
+#        name = "EVT90017OPTA"
+#        FIN = {
+#            any_pop = {
+#                limit = { has_pop_culture = finnish }
+#                militancy = 7
+#            }
+#        }
+#        any_pop = {
+#            limit = { has_pop_culture = finnish }
+#            militancy = 6
+#        }
+#        any_owned = {
+#            limit = { culture = finnish }
+#            add_province_modifier = {
+#                name = nationalist_agitation
+#                duration = 1825
+#            }
+#        }
+#        ai_chance = {
+#            factor = 15
+#            modifier = {
+#                factor = 1.5
+#                war_policy = jingoism
+#            }
+#            modifier = {
+#                factor = 1.25
+#                war_policy = pro_military
+#            }
+#            modifier = {
+#                factor = 0.75
+#                war_policy = anti_military
+#            }
+#            modifier = {
+#                factor = 0.5
+#                war_policy = pacifism
+#            }
+#            modifier = {
+#                factor = 0.8
+#                militancy = 3
+#            }
+#            modifier = {
+#                factor = 0.8
+#                militancy = 5
+#            }
+#        }
+#    }
+#    option = {
+#        name = "EVT49510OPTB"
+#        badboy = -1
+#        set_country_flag = finland_is_recognized
+#        FIN = {
+#            government = prussian_constitutionalism
+#            ruling_party_ideology = conservative
+#            political_reform = landed_voting
+#            political_reform = appointed
+#            political_reform = yes_meeting
+#            political_reform = censored_press
+#            political_reform = no_trade_unions
+#            political_reform = harassment
+#            set_country_flag = grand_duchy_finland
+#            remove_accepted_culture = swedish
+#            any_pop = {
+#                limit = { has_pop_culture = finnish }
+#                militancy = -8
+#            }
+#        }
+#        any_pop = {
+#            limit = { has_pop_culture = finnish }
+#            militancy = -3
+#        }
+#        any_pop = {
+#            limit = {
+#                NOT = { has_pop_culture = finnish }
+#                is_primary_culture = no
+#            }
+#            militancy = 2
+#        }
+#        relation = {
+#            who = FIN
+#            value = 200
+#        }
+#        diplomatic_influence = {
+#            who = FIN
+#            value = 200
+#        }
+#        ai_chance = {
+#            factor = 90
+#            modifier = {
+#                factor = 1.25
+#                war_policy = anti_military
+#            }
+#            modifier = {
+#                factor = 1.5
+#                war_policy = pacifism
+#            }
+#            modifier = {
+#                factor = 1.2
+#                militancy = 3
+#            }
+#            modifier = {
+#                factor = 1.2
+#                militancy = 5
+#            }
+#        }
+#    }
+#    option = {
+#        name = "EVT90017OPTC"
+#        set_country_flag = no_grand_duchy_finland
+#        badboy = 1
+#        any_pop = {
+#            limit = {
+#                location = { is_core = FIN }
+#                has_pop_culture = finnish
+#            }
+#            militancy = 8
+#        }
+#        FIN = {
+#            remove_accepted_culture = swedish
+#            any_owned = {
+#                limit = { culture = finnish }
+#                add_province_modifier = {
+#                    name = nationalist_agitation
+#                    duration = 3650
+#                }
+#            }
+#            any_pop = {
+#                limit = { has_pop_culture = finnish }
+#                militancy = 9
+#                consciousness = 9
+#            }
+#        }
+#        any_owned = {
+#            limit = { culture = finnish }
+#            add_province_modifier = {
+#                name = nationalist_agitation
+#                duration = 3650
+#            }
+#        }
+#        ai_chance = { factor = 0 }
+#    }
+#}
 
 # Iceland's Independence
 country_event = {
@@ -1839,185 +2306,185 @@ country_event = {
 }
 
 # Independence for Norway
-country_event = {
-    id = 95095
-
-    title = "EVTNAME95095"
-    desc = "EVTDESC95095"
-    picture = "norwegian_storting"
-
-    trigger = {
-        NOT = { tag = SCA }
-        war = no
-        is_our_vassal = NOR
-        OR = {
-            AND = {
-                revolution_n_counterrevolution = 1
-                NOR = { average_consciousness = 3 }
-                year = 1900
-            }
-            AND = {
-                tag = SWE
-                NOT = {
-                    government = absolute_monarchy
-                    government = prussian_constitutionalism
-                    government = hms_government
-                }
-            }
-            AND = {
-                NOT = {
-                    relation = {
-                        who = NOR
-                        value = 0
-                    }
-                }
-                NOR = { average_consciousness = 6 }
-            }
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 24
-        modifier = {
-            factor = 0.8
-            NOR = { average_militancy = 3 }
-        }
-        modifier = {
-            factor = 0.8
-            NOR = { average_militancy = 4 }
-        }
-        modifier = {
-            factor = 0.25
-            year = 1905
-        }
-        modifier = {
-            factor = 0.8
-            mass_politics = 1
-        }
-    }
-
-    fire_only_once = yes
-
-    option = {
-        name = "EVT95095OPTA"
-        prestige = -5
-        badboy = -2
-        release_vassal = NOR
-        random_owned = {
-            limit = {
-                owner = { accepted_culture = norwegian }
-            }
-            owner = { remove_accepted_culture = norwegian }
-        }
-        NOR = {
-            any_pop = { militancy = -8 }
-            any_owned = {
-                limit = { is_core = THIS }
-                remove_core = THIS
-            }
-        }
-        relation = {
-            who = NOR
-            value = 100
-        }
-        diplomatic_influence = {
-            who = NOR
-            value = 100
-        }
-        any_pop = { consciousness = 1 }
-        ai_chance = {
-            factor = 80
-            modifier = {
-                factor = 0
-                OR = {
-                    government = proletarian_dictatorship
-                    government = bourgeois_dictatorship
-                    government = fascist_dictatorship
-                    government = presidential_dictatorship
-                }
-            }
-            modifier = {
-                factor = 0.25
-                government = absolute_monarchy
-            }
-            modifier = {
-                factor = 1.5
-                government = democracy
-            }
-            modifier = {
-                factor = 1.25
-                war_policy = anti_military
-            }
-            modifier = {
-                factor = 1.5
-                war_policy = pacifism
-            }
-            modifier = {
-                factor = 1.2
-                militancy = 3
-            }
-            modifier = {
-                factor = 1.2
-                militancy = 5
-            }
-        }
-    }
-    option = {
-        name = "EVT95095OPTB"
-        badboy = 1
-        random_owned = {
-            limit = {
-                owner = { accepted_culture = norwegian }
-            }
-            owner = { remove_accepted_culture = norwegian }
-        }
-        relation = {
-            who = NOR
-            value = -400
-        }
-        diplomatic_influence = {
-            who = NOR
-            value = -400
-        }
-
-        any_pop = {
-            limit = { has_pop_culture = norwegian }
-            militancy = 7
-        }
-
-        release_vassal = NOR
-
-        war = {
-            target = NOR
-            attacker_goal = { casus_belli = make_puppet }
-        }
-
-        ai_chance = {
-            factor = 20
-            modifier = {
-                factor = 1.75
-                government = absolute_monarchy
-            }
-            modifier = {
-                factor = 0.5
-                government = democracy
-            }
-            modifier = {
-                factor = 0.75
-                war_policy = anti_military
-            }
-            modifier = {
-                factor = 0.5
-                war_policy = pacifism
-            }
-            modifier = {
-                factor = 0.8
-                militancy = 3
-            }
-            modifier = {
-                factor = 0.8
-                militancy = 5
-            }
-        }
-    }
-}
+#country_event = {
+#    id = 95095
+#
+#    title = "EVTNAME95095"
+#    desc = "EVTDESC95095"
+#    picture = "norwegian_storting"
+#
+#    trigger = {
+#        NOT = { tag = SCA }
+#        war = no
+#        is_our_vassal = NOR
+#        OR = {
+#            AND = {
+#                revolution_n_counterrevolution = 1
+#                NOR = { average_consciousness = 3 }
+#                year = 1900
+#            }
+#            AND = {
+#                tag = SWE
+#                NOT = {
+#                    government = absolute_monarchy
+#                    government = prussian_constitutionalism
+#                    government = hms_government
+#                }
+#            }
+#            AND = {
+#                NOT = {
+#                    relation = {
+#                        who = NOR
+#                        value = 0
+#                    }
+#                }
+#                NOR = { average_consciousness = 6 }
+#            }
+#        }
+#    }
+#
+#    mean_time_to_happen = {
+#        months = 24
+#        modifier = {
+#            factor = 0.8
+#            NOR = { average_militancy = 3 }
+#        }
+#        modifier = {
+#            factor = 0.8
+#            NOR = { average_militancy = 4 }
+#        }
+#        modifier = {
+#            factor = 0.25
+#            year = 1905
+#        }
+#        modifier = {
+#            factor = 0.8
+#            mass_politics = 1
+#        }
+#    }
+#
+#    fire_only_once = yes
+#
+#    option = {
+#        name = "EVT95095OPTA"
+#        prestige = -5
+#        badboy = -2
+#        release_vassal = NOR
+#        random_owned = {
+#            limit = {
+#                owner = { accepted_culture = norwegian }
+#            }
+#            owner = { remove_accepted_culture = norwegian }
+#        }
+#        NOR = {
+#            any_pop = { militancy = -8 }
+#            any_owned = {
+#                limit = { is_core = THIS }
+#                remove_core = THIS
+#            }
+#        }
+#        relation = {
+#            who = NOR
+#            value = 100
+#        }
+#        diplomatic_influence = {
+#            who = NOR
+#            value = 100
+#        }
+#        any_pop = { consciousness = 1 }
+#        ai_chance = {
+#            factor = 80
+#            modifier = {
+#                factor = 0
+#                OR = {
+#                    government = proletarian_dictatorship
+#                    government = bourgeois_dictatorship
+#                    government = fascist_dictatorship
+#                    government = presidential_dictatorship
+#                }
+#            }
+#            modifier = {
+#                factor = 0.25
+#                government = absolute_monarchy
+#            }
+#            modifier = {
+#                factor = 1.5
+#                government = democracy
+#            }
+#            modifier = {
+#                factor = 1.25
+#                war_policy = anti_military
+#            }
+#            modifier = {
+#                factor = 1.5
+#                war_policy = pacifism
+#            }
+#            modifier = {
+#                factor = 1.2
+#                militancy = 3
+#            }
+#            modifier = {
+#                factor = 1.2
+#                militancy = 5
+#            }
+#        }
+#    }
+#    option = {
+#        name = "EVT95095OPTB"
+#        badboy = 1
+#        random_owned = {
+#            limit = {
+#                owner = { accepted_culture = norwegian }
+#            }
+#            owner = { remove_accepted_culture = norwegian }
+#        }
+#        relation = {
+#            who = NOR
+#            value = -400
+#        }
+#        diplomatic_influence = {
+#            who = NOR
+#            value = -400
+#        }
+#
+#        any_pop = {
+#            limit = { has_pop_culture = norwegian }
+#            militancy = 7
+#        }
+#
+#        release_vassal = NOR
+#
+#        war = {
+#            target = NOR
+#            attacker_goal = { casus_belli = make_puppet }
+#        }
+#
+#        ai_chance = {
+#            factor = 20
+#            modifier = {
+#                factor = 1.75
+#                government = absolute_monarchy
+#            }
+#            modifier = {
+#                factor = 0.5
+#                government = democracy
+#            }
+#            modifier = {
+#                factor = 0.75
+#                war_policy = anti_military
+#            }
+#            modifier = {
+#                factor = 0.5
+#                war_policy = pacifism
+#            }
+#            modifier = {
+#                factor = 0.8
+#                militancy = 3
+#            }
+#            modifier = {
+#                factor = 0.8
+#                militancy = 5
+#            }
+#        }
+#    }
+#}

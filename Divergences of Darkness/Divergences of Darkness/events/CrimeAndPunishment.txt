@@ -199,6 +199,7 @@ country_event = {
     picture = "prisoners"
 
     trigger = {
+        NOT = { penal_system = rehabilitation }
         civilized = yes
         NOT = { poor_strata_everyday_needs = 0.9 }
         average_militancy = 2

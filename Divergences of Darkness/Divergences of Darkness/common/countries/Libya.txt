@@ -12,7 +12,7 @@ party = {
     social_policy = no_position_set
 
     economic_policy = state_capitalism
-    trade_policy = protectionism
+    trade_policy = free_trade
     religious_policy = moralism
     citizenship_policy = residency
     war_policy = pro_military
@@ -21,16 +21,16 @@ party = {
 party = {
     name = "TRI_liberal"
     start_date = 1820.1.1
-    end_date = 1936.1.1
+    end_date = 2000.1.1
 
     ideology = liberal
     social_policy = no_position_set
 
-    economic_policy = laissez_faire
+    economic_policy = interventionism
     trade_policy = protectionism
     religious_policy = pluralism
-    citizenship_policy = full_citizenship
-    war_policy = pacifism
+    citizenship_policy = limited_citizenship
+    war_policy = pro_military
 }
 
 party = {
@@ -61,6 +61,49 @@ party = {
     religious_policy = pro_atheism
     citizenship_policy = full_citizenship
     war_policy = pro_military
+}
+party = {
+    name = "TRI_socialist"
+    start_date = 1848.1.1
+    end_date = 2000.1.1
+
+    ideology = socialist
+    social_policy = welfare_state
+
+    economic_policy = state_capitalism
+    trade_policy = protectionism
+    religious_policy = pluralism
+    citizenship_policy = full_citizenship
+    war_policy = anti_military
+}
+party = {
+    name = "TRI_communist"
+    start_date = 1848.1.1
+    end_date = 2000.1.1
+
+    ideology = communist
+    social_policy = populist_welfare
+
+    economic_policy = planned_economy
+    trade_policy = protectionism
+    religious_policy = pro_atheism
+    citizenship_policy = full_citizenship
+    war_policy = pro_military
+}
+
+party = {
+    name = "TRI_fascist"
+    start_date = 1905.1.1
+    end_date = 2000.1.1
+
+    ideology = fascist
+    social_policy = populist_welfare
+
+    economic_policy = state_capitalism
+    trade_policy = protectionism
+    religious_policy = moralism
+    citizenship_policy = residency
+    war_policy = jingoism
 }
 
 unit_names = {

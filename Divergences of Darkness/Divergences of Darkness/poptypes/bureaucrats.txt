@@ -177,8 +177,7 @@ country_migration_target = {
         OR = {
             continent = north_america
             continent = south_america
-            primary_culture = ganguan
-            has_country_flag = NZ_immigration
+            continent = australia_new_zealand
         }
         OR = {
             government = democracy
@@ -195,8 +194,7 @@ country_migration_target = {
         OR = {
             continent = north_america
             continent = south_america
-            primary_culture = ganguan
-            has_country_flag = NZ_immigration
+            continent = australia_new_zealand
         }
         OR = {
             government = democracy

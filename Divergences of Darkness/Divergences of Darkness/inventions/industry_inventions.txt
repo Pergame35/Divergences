@@ -138,7 +138,7 @@ sharp_n_roberts_power_loom = {
     effect = {
         factory_goods_throughput = { fabric = 0.1 }
         #rgo_goods_output = {
-        #	cotton = 0.2
+        #    cotton = 0.2
         #}
         rgo_goods_output = { wool = 0.2 }
     }
@@ -157,10 +157,12 @@ jacquard_power_loom = {
         }
     }
     effect = {
+        activate_building = luxury_clothes_factory
+
         rgo_goods_output = { wool = 0.2 }
         rgo_goods_output = { silk = 0.2 }
         #factory_goods_output = {
-        #	fabric = 0.05
+        #    fabric = 0.05
         #}
     }
 }
@@ -535,24 +537,24 @@ fordism = {
     }
 }
 #massproduced_rail = {
-#	limit = { assembly_line = 1 }
-#	chance = {
-#		base = 3
-#		modifier = {
-#			factor = 2
-#			bessemer_process = 1
-#		}
-#		modifier = {
-#			factor = 2
-#			steel_railroad = 1
-#		}
-#		modifier = {
-#			factor = 2
-#			invention = fordism
-#		}
-#	}
-#	effect = {
-#	}
+#    limit = { assembly_line = 1 }
+#    chance = {
+#        base = 3
+#        modifier = {
+#            factor = 2
+#            bessemer_process = 1
+#        }
+#        modifier = {
+#            factor = 2
+#            steel_railroad = 1
+#        }
+#        modifier = {
+#            factor = 2
+#            invention = fordism
+#        }
+#    }
+#    effect = {
+#    }
 #}
 industrialized_armament_industry = {
     limit = { assembly_line = 1 }
@@ -1381,8 +1383,8 @@ cotton_gin = {
 
 
 #early_electrical_telegraph = {
-#	limit = { high_pressure_steam_engine = 1 }
-#		chance = { base = 1 }
+#    limit = { high_pressure_steam_engine = 1 }
+#        chance = { base = 1 }
 #
 #	effect = {  }
 #}

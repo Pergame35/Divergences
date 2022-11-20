@@ -6,7 +6,7 @@ graphical_culture = ChineseGC
 party = {
     name = "TAI_conservative"
     start_date = 1800.1.1
-    end_date = 1861.1.1
+    end_date = 2000.1.1
 
     ideology = conservative
 
@@ -22,7 +22,7 @@ party = {
 party = {
     name = "TAI_liberal"
     start_date = 1830.1.1
-    end_date = 1921.1.1
+    end_date = 2000.1.1
 
     ideology = liberal
 
@@ -38,7 +38,7 @@ party = {
 party = {
     name = "TAI_reactionary"
     start_date = 1830.1.1
-    end_date = 1921.1.1
+    end_date = 2000.1.1
 
     ideology = reactionary
 
@@ -84,7 +84,7 @@ party = {
 
 party = {
     name = "TAI_communist"
-    start_date = 1890.1.1
+    start_date = 1848.1.1
     end_date = 2000.1.1
 
     ideology = communist

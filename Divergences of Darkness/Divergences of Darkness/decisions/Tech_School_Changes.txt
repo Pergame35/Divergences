@@ -164,6 +164,30 @@ political_decisions = {
             }
             tech_school = traditional_academic
         }
-        ai_will_do = { factor = 0 }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    encourage_the_skoda_works = {
+        picture = skoda_works
+        potential = {
+            NOT = { tech_school = czech_tech_school }
+            is_culture_group = czecho_slovak_culture_group
+        }
+
+        allow = {
+            advanced_metallurgy = 1
+            iron_breech_loaded_artillery = 1
+            state_n_government = 1
+            industrial_score = 150
+            owns = 629
+            629 = { state_scope = { has_building = steel_factory } }
+        }
+
+        effect = {
+            tech_school = czech_tech_school
+            prestige = 5
+        }
     }
 }

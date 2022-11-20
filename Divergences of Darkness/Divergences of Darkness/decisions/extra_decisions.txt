@@ -580,6 +580,7 @@ political_decisions = {
             OR = {
                 continent = north_america
                 continent = south_america
+                continent = australia_new_zealand
             }
             NOT = { has_country_flag = land_of_opportunity }
         }

@@ -40,25 +40,25 @@
 
     clergymen = {
         culture = bakongo
-        religion = protestant
+        religion = catholic
         size = 150
     }
 
     artisans = {
         culture = bakongo
-        religion = protestant
+        religion = catholic
         size = 3000
     }
 
     farmers = {
         culture = bakongo
-        religion = protestant
+        religion = catholic
         size = 11550
     }
 
     soldiers = {
         culture = bakongo
-        religion = protestant
+        religion = catholic
         size = 1150
     }
 
@@ -374,21 +374,38 @@
 #Benguela (116000/29000 POPS)
 2003 = {
 	aristocrats = {
+		culture = castilian
+		religion = catholic
+		size = 150
+	}
+
+	clergymen = {
+		culture = castilian
+		religion = catholic
+		size = 150
+	}
+	aristocrats = {
 		culture = ovimbundu
 		religion = animist
-		size = 300
+		size = 150
 	}
 
 	clergymen = {
 		culture = ovimbundu
 		religion = animist
-		size = 300
+		size = 150
 	}
 
 	artisans = {
+		culture = castilian
+		religion = catholic
+		size = 250
+	}
+	
+	artisans = {
 		culture = ovimbundu
 		religion = animist
-		size = 1500
+		size = 1250
 	}
 
 	soldiers = {

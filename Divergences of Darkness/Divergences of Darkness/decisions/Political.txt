@@ -61,6 +61,7 @@ political_decisions = {
         }
 
         effect = {
+            set_country_flag = central_bank_instituted
             add_country_modifier = {
                 name = central_bank_established
                 duration = -1

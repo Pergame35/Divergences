@@ -72,10 +72,16 @@
 1983 = {
 	aristocrats = {
 		culture = bakongo
-		religion = animist
+		religion = catholic
 		size = 640
 	}
 
+	clergymen = {
+		culture = bakongo
+		religion = catholic
+		size = 100
+	}
+	
 	clergymen = {
 		culture = bakongo
 		religion = animist
@@ -103,7 +109,7 @@
 	farmers = {
 		culture = bakongo
 		religion = animist
-		size = 349250
+		size = 349150 #349250
 	}
 
 	slaves = {
