@@ -1,12 +1,13 @@
-capital = 657
-primary_culture = romanian
+capital = 2533
+primary_culture = siebenburger
 culture = hungarian
-religion = orthodox
+religion = protestant
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.1
+literacy = 0.2
 civilized = yes
+is_releasable_vassal = no
 
 
 # Political reforms
@@ -36,9 +37,9 @@ child_labor = child_labor_legal
 citizens_rights = primary_culture_only
 border_policy = open_borders
 
-set_country_flag = orthodox_country
+set_country_flag = protestant_country
 
-ruling_party = AAA_conservative_3
+ruling_party = SIE_conservative_3
 upper_house = {
 	fascist = 0
 	liberal = 20

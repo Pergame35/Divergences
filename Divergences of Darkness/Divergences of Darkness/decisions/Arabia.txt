@@ -1,14 +1,107 @@
 political_decisions = {
-    secularize_society = {
+
+    institutionalise_sharia = {
         picture = the_holy_city
         potential = {
-            NOT = { has_country_flag = secularized_muslim_society }
-            civilized = yes
             OR = {
                 has_country_flag = sunni_country
                 has_country_flag = shiite_country
                 has_country_flag = ibadi_country
+            }		
+            civilized = yes			
+            NOT = { has_country_modifier = institutionalised_sharia }
+        }
+
+        allow = {
+            OR = {
+                government = theocracy
+                religious_policy = moralism
             }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = institutionalised_sharia
+                duration = -1
+            }
+            any_pop = {
+                limit = { is_state_religion = no }
+                consciousness = 3
+                militancy = 1
+                scaled_consciousness = {
+                    factor = 9
+                    issue = pro_atheism
+                }
+                scaled_militancy = {
+                    factor = 9
+                    issue = pro_atheism
+                }
+                scaled_consciousness = {
+                    factor = 6
+                    issue = secularized
+                }
+                scaled_militancy = {
+                    factor = 3
+                    issue = pluralism
+                }
+                scaled_militancy = {
+                    factor = 4
+                    ideology = liberal
+                }
+                scaled_consciousness = {
+                    factor = 4
+                    ideology = liberal
+                }
+                scaled_consciousness = {
+                    factor = -9
+                    issue = moralism
+                }
+                scaled_militancy = {
+                    factor = -9
+                    issue = moralism
+                }
+                scaled_consciousness = {
+                    factor = -6
+                    issue = pluralism
+                }
+                scaled_militancy = {
+                    factor = -3
+                    issue = pluralism
+                }
+            }
+            any_pop = {
+                limit = { is_state_religion = yes }
+                consciousness = -2
+                militancy = -2
+            }
+            move_issue_percentage = {
+                from = moralism
+                to = pluralism
+                value = 0.5
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    average_militancy = 5
+                    pro_atheism = 7
+                }
+            }
+        }
+    }
+
+    secularize_society = {
+        picture = the_holy_city
+        potential = {
+            OR = {
+                has_country_flag = sunni_country
+                has_country_flag = shiite_country
+                has_country_flag = ibadi_country
+            }		
+			has_country_modifier = institutionalised_sharia
         }
 
         allow = {
@@ -31,7 +124,7 @@ political_decisions = {
         }
 
         effect = {
-            set_country_flag = secularized_muslim_society
+			remove_country_modifier = institutionalised_sharia
             prestige_factor = -0.2
             any_pop = {
                 limit = { is_state_religion = yes }

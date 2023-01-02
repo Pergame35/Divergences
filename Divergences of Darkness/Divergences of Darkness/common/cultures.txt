@@ -66,6 +66,26 @@ germanic = {
             "von Tirpitz" "von Waldeck und Pyrmont" "von Wettin" "von Wrangel" "von Zieten" "zur Lippe" "von Roon"
         }
     }
+	
+    siebenburger = {
+        color = { 90 65 65 }
+        first_names = {
+            Adolf Albrecht Alexander Alfons Alois Anton Arthur Bernhard Christian Edmund
+            Eduard Engelbert Ernst Erwin Ferdinand Franz Friedrich Gebhard Gerhard Gottfried
+            Günther Gustav Heinrich Hermann Horst Jakob Joachim Johann Joseph Julius
+            Karl Konrad Kurt Leonhard Leopold Lorenz Lothar Ludwig Maximilian Michael
+            Otto Reinhold Rudolf Stefan Theodor Viktor Walter Werner Wilhelm
+        }
+
+        last_names = {
+            Beck-Rzikowsky Blos Dankl Eisner Geiss Goering Hainisch Haus Held Hellpach
+            Hoffmann Hummel Köhler Mergenthaler Miklas Remmele Schmitt Schobber Seitz Steeb
+            Stolzer Trunk "von Baden" "von Benedek" "von Böhm-Ermolli" "von Brudermann" "von Clam-Gallas" "von der Tann" "von Dietrich" "von Gablenz"
+            "von Grünne" "von Habsburg" "von Hartmann" "von Haynau" "von Hess" "von Hohenhausen" "d'Aspre von Hoobreuk" "von Hortstein" "von Hötzendorf" "von Kirbach"
+            "von Kobratin" "von Schönburg" "von Tegetthoff" "von Uchatius" "von Wittelsbach" "von Württemberg" "von Zahringen" Wagner Wittmann "zu Hohenlohe"
+        }
+    }	
+	
     union = GER
 }
 
@@ -1030,8 +1050,30 @@ hungarian_culture_group = {
             Molnár Nagy-Sándor Ostrovac Pauk Petõfi Perczel Reményi Teleki Thököly Széchenyi
             Szemere Szent-Györgyi Tersztyánszky Török Varga Vécsey
         }
-        radicalism = 5
     }
+	
+    kunok = {
+        color = {
+            100 30 20
+        }
+        first_names = {
+            Alajos Albert Álmos Attila András Arisztid Aurél Béla Benedek Bertalan
+            Botond Dániel Dávid Edvárd Éliás Ernõ Ferenc Gábor Gábriel Gáspár
+            György Gyula Ignác Imre István Izidor János József Kálmán Károly
+            Kelemen Krisztian Lajos László Mihály Mór Miklós Mózes Nepomuk Ödön
+            Ottó Péter Rafael Sándor Simon Tivadar Vilmos Zsigmond
+        }
+
+        last_names = {
+            Andrássy Apponyi Bacher Baross Batthyány Beöthy Bethlen Damjanich Dessewffy Egressy
+            Farkas Geönczeöl Goldziher Hauszmann Heller Horthy Izsó Joseffy Katona Karcsay
+            Kaufman Károlyi Kéler Kiss Knezich Kogutowicz Lahner Lázár Liszt Mikszáth
+            Molnár Nagy-Sándor Ostrovac Pauk Petõfi Perczel Reményi Teleki Thököly Széchenyi
+            Szemere Szent-Györgyi Tersztyánszky Török Varga Vécsey
+        }
+        radicalism = 5
+    }	
+	
 }
 
 west_slavic = {
@@ -2142,9 +2184,7 @@ iranian = {
             Khuzai Meshhedi Nakhchevani Pesyan Rokni Sassanid Shafaei Shahbakhti Shirazi Tabrizi
             Tahmasebi Zahedi
         }
-    }	
-
-    union = ARY
+    }
 }
 
 central_asian = {

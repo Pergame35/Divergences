@@ -238,7 +238,7 @@ country_event = {
 country_event = {
     id = 125113
     title = "EVTNAME125112"
-    desc = "EVTDESC125112"
+    desc = "EVTDESC125113"
     picture = "Ottoman"
 
     trigger = {
@@ -264,7 +264,7 @@ country_event = {
         prestige = 5
         badboy = 3
         TUR = { set_country_flag = HUNwar }
-
+		set_country_flag = HUN_opportunism
 		casus_belli = {
 			target = TUR
 			type = acquire_state
@@ -1574,6 +1574,7 @@ country_event = {
         badboy = -10
         AUS_777 = { remove_core = TUR }
         AUS_623 = { remove_core = TUR }
+        HUN_637 = { remove_core = TUR }		
         AUS_633 = { remove_core = TUR }
         AUS_641 = { remove_core = TUR }
         AUS_647 = { remove_core = TUR }
@@ -2792,6 +2793,12 @@ country_event = {
 		1101 = {
 		    add_core = KUR 
 		}
+		3389 = {
+		    add_core = KUR 
+		}
+		3391 = {
+		    add_core = KUR 
+		}		
 	}
 }
 

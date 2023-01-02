@@ -132,7 +132,6 @@ post_napoleonic_thought = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -277,7 +276,6 @@ strategic_mobility = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -421,7 +419,6 @@ point_defense_system = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -564,7 +561,6 @@ deep_defense_system = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -642,7 +638,6 @@ infiltration = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -779,7 +774,6 @@ modern_army_doctrine = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -917,7 +911,6 @@ flintlock_rifles = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -1052,7 +1045,6 @@ muzzle_loaded_rifles = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -1192,7 +1184,6 @@ breech_loaded_rifles = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -1325,7 +1316,6 @@ machine_guns = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -1460,7 +1450,6 @@ bolt_action_rifles = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -1595,7 +1584,6 @@ modern_divisional_structure = {
             factor = 1.5
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -1775,7 +1763,6 @@ iron_muzzle_loaded_artillery = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -1911,7 +1898,6 @@ iron_breech_loaded_artillery = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -2048,7 +2034,6 @@ steel_breech_loaded_artillery = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -2186,7 +2171,6 @@ indirect_artillery_fire = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -2324,7 +2308,6 @@ heavy_armament_dunno = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -2464,7 +2447,6 @@ military_staff_system = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -2601,7 +2583,6 @@ military_plans = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -2738,7 +2719,6 @@ military_statistics = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -2876,7 +2856,6 @@ military_logistics = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -3012,7 +2991,6 @@ military_directionism = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -3149,7 +3127,6 @@ aeronautics = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -3293,7 +3270,6 @@ army_command_principle = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -3377,7 +3353,6 @@ army_professionalism = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -3462,7 +3437,6 @@ army_decision_making = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -3547,7 +3521,6 @@ army_risk_management = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -3633,7 +3606,6 @@ army_nco_training = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }
@@ -3714,7 +3686,6 @@ great_war_experience = {
             factor = 3
             OR = {
                 tech_school = army_tech_school
-                tech_school = prussian_tech_school
                 tech_school = japanese_tech_school
             }
         }

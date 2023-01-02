@@ -152,44 +152,44 @@
 	aristocrats = {
 		culture = albanian
 		religion = sunni
-		size = 1400
+		size = 490
 	}
 
 	clergymen = {
 		culture = albanian
 		religion = sunni
-		size = 625
+		size = 220
 	}
 
 	artisans = {
 		culture = albanian
 		religion = sunni
-		size = 3250
+		size = 1135
 	}
 
 	soldiers = {
 		culture = albanian
 		religion = sunni
-		size= 700
+		size= 245
 
 	}
 
 	farmers = {
 		culture = albanian
 		religion = sunni
-		size = 56025
+		size = 19610
 	}
 
 	clergymen = {
 		culture = albanian
 		religion = orthodox
-		size = 350
+		size = 125
 	}
 
 	farmers = {
 		culture = albanian
 		religion = orthodox
-		size = 5450
+		size = 1360
 	}
 }
 853 = {
@@ -247,6 +247,112 @@
 		culture = greek
 		religion = orthodox
 		size = 10775
+	}
+
+}
+
+#Fier
+3404 = {
+	aristocrats = {
+		culture = albanian
+		religion = sunni
+		size = 910
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = sunni
+		size = 400
+	}
+
+	artisans = {
+		culture = albanian
+		religion = sunni
+		size = 2100
+	}
+
+	soldiers = {
+		culture = albanian
+		religion = sunni
+		size= 455
+
+	}
+
+	farmers = {
+		culture = albanian
+		religion = sunni
+		size = 34035
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = orthodox
+		size = 225
+	}
+
+	farmers = {
+		culture = albanian
+		religion = orthodox
+		size = 3540
+	}
+}
+
+#Sarande
+3405 = {
+	aristocrats = {
+		culture = albanian
+		religion = sunni
+		size = 450
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = sunni
+		size = 150
+	}
+
+
+	soldiers = {
+		culture = albanian
+		religion = sunni
+		size= 1860
+
+	}
+
+	farmers = {
+		culture = albanian
+		religion = sunni
+		size = 13725
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = orthodox
+		size = 200
+	}
+
+	farmers = {
+		culture = albanian
+		religion = orthodox
+		size = 3990
+	}
+
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 50
+	}
+
+	artisans = {
+		culture = greek
+		religion = orthodox
+		size = 250
+	}
+
+	farmers = {
+		culture = greek
+		religion = orthodox
+		size = 2310
 	}
 
 }

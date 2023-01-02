@@ -1544,3 +1544,525 @@ country_event = {
         ai_chance = { factor = 100 }
     }
 }
+
+country_event = { #Invest into Albania in exchange for influence
+    id = 124260
+    title = "EVTNAME124260"
+    desc = "EVTDESC124260"
+    picture = "golfo_venezia"
+
+
+    trigger = {
+        exists = yes
+		war = no
+		owns = 780
+		is_greater_power = yes
+        is_culture_group = italian
+		NOT = { primary_culture = catalan }
+		ALB = {
+			exists = yes
+			war = no
+			owns = 852
+		}
+    }
+
+    mean_time_to_happen = { months = 6 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA124260"
+		prestige = -3		
+        ai_chance = { 
+			factor = 30		
+		}		
+    }
+
+    option = {
+        name = "EVTOPTB124260"
+		ALB = { country_event = 124261 }	
+        ai_chance = { factor = 70 }			
+    }	
+
+}
+
+country_event = {
+    id = 124261 # Albania is approached about Italian investment
+    title = "EVTNAME124261"
+    desc = "EVTDESC124261"
+    picture = "golfo_venezia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT124261OPTA"
+		prestige = 3
+        FROM = {
+            relation = {
+                who = THIS
+                value = -200
+            }
+        }		
+        ai_chance = { factor = 0 }
+    }
+	
+    option = {
+        name = "EVT124261OPTB"
+        852 = {
+            add_province_modifier = {
+                name = italian_investment_valona
+                duration = -1
+            }
+        }
+        FROM = {
+			country_event = 124262
+            relation = {
+                who = THIS
+                value = 200
+            }
+            diplomatic_influence = {
+                who = THIS
+                value = 200
+            }			
+        }		
+        ai_chance = { factor = 100 }
+    }	
+}
+
+country_event = {
+    id = 124262 # Italy invests in Valona
+    title = "EVTNAME124262"
+    desc = "EVTDESC124262"
+    picture = "terra_dotranto"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT124262OPTA"
+		prestige = -5	
+        ai_chance = { factor = 5 }
+    }
+	
+    option = {
+        name = "EVT124262OPTB"
+		treasury = -20000
+		FROM = { treasury = 20000 }
+		set_country_flag = founded_albanian_company
+        ai_chance = { 
+			factor = 95 
+            modifier = {
+                factor = 0
+                NOT = { money = 30000 }
+            }			
+		}
+    }	
+}
+
+country_event = { #Invest into Albanian infrastructure
+    id = 124263
+    title = "EVTNAME124263"
+    desc = "EVTDESC124263"
+    picture = "port_valona"
+
+
+    trigger = {
+        exists = yes
+		war = no
+		owns = 780
+		is_greater_power = yes
+        has_country_flag = founded_albanian_company
+		ALB = {
+			exists = yes
+			war = no
+			owns = 852
+		}
+    }
+
+    mean_time_to_happen = { months = 6 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA124263"
+		prestige = -5
+		clr_country_flag = founded_albanian_company
+        ai_chance = { factor = 30 }		
+    }
+
+    option = {
+        name = "EVTOPTB124263"
+		clr_country_flag = founded_albanian_company		
+		ALB = { country_event = 124264 }	
+        ai_chance = { factor = 70 }			
+    }	
+
+}
+
+country_event = {
+    id = 124264 # Albania is approached about improving roads, bridges and ports
+    title = "EVTNAME124264"
+    desc = "EVTDESC124264"
+    picture = "port_valona"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT124264OPTA"
+        FROM = {	
+            relation = {
+                who = THIS
+                value = -400
+            }
+			country_event = 124265
+        }		
+        ai_chance = { factor = 0 }
+    }
+	
+    option = {
+        name = "EVT124264OPTB"
+        852 = {
+			naval_base = 1
+			fort = 1
+			infrastructure = 1
+        }
+        849 = {
+			infrastructure = 1
+        }
+        3404 = {
+			infrastructure = 1
+        }	
+        3405 = {
+			infrastructure = 1
+        }			
+        FROM = {
+			country_event = 124266
+            relation = {
+                who = THIS
+                value = 200
+            }
+            diplomatic_influence = {
+                who = THIS
+                value = 200
+            }			
+        }		
+        ai_chance = { factor = 100 }
+    }	
+}
+
+country_event = {
+    id = 124265 # Treaty of friendship broken
+    title = "EVTNAME124265"
+    desc = "EVTDESC124265"
+    picture = "albanian_brigands"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT124265OPTA"
+		prestige = -10
+		clr_country_flag = founded_albanian_company
+        ai_chance = { factor = 25 }
+    }
+	
+    option = {
+        name = "EVT124265OPTB"
+		THIS = { 
+			country_event = { 
+				id = 124267
+				days = 30
+			}			
+		}		
+		clr_country_flag = founded_albanian_company
+        badboy = 5			
+        ai_chance = { 
+			factor = 75	
+            modifier = {
+                factor = 0
+                badboy = 0.75
+            }			
+		}
+    }	
+}
+
+country_event = {
+    id = 124266 # Italy invests in Albanian infrastructure
+    title = "EVTNAME124266"
+    desc = "EVTDESC124266"
+    picture = "vlore_postcard"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT124266OPTA"
+		prestige = -5	
+        ai_chance = { factor = 5 }
+    }
+	
+    option = {
+        name = "EVT124266OPTB"
+		treasury = -20000
+		FROM = { treasury = 20000 }
+		set_country_flag = italian_infrastructure_albania
+        ai_chance = { 
+			factor = 95 
+            modifier = {
+                factor = 0
+                NOT = { money = 30000 }
+            }			
+		}
+    }	
+}
+
+country_event = {
+    id = 124267 # Assassination of the King of Albania
+    title = "EVTNAME124267"
+    desc = "EVTDESC124267"
+    picture = "italian_landing_albania"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT124267OPTA"
+        THIS = {
+			casus_belli = {
+				target = ALB
+				type = make_puppet
+				months = 12
+			}		
+            war = {
+                target = ALB
+                attacker_goal = { casus_belli = make_puppet }
+                defender_goal = { casus_belli = status_quo }
+            }
+        }
+		ALB = { country_event = 124268 }
+        ai_chance = { factor = 30 }
+    }
+	
+    option = {
+        name = "EVT124267OPTB"
+		set_country_flag = italy_wants_vlore
+        THIS = {
+			casus_belli = {
+				target = ALB
+				type = cut_down_to_size
+				months = 12
+			}		
+            war = {
+                target = ALB
+                attacker_goal = { casus_belli = cut_down_to_size }
+                defender_goal = { casus_belli = status_quo }
+            }
+        }
+		ALB = { 
+			country_event = 124268
+			set_country_flag = italy_attacked_vlore
+		}		
+        ai_chance = { 
+			factor = 70		
+		}
+    }	
+}
+
+country_event = {
+    id = 124268 # Albania is informed of assassination and war
+    title = "EVTNAME124268"
+    desc = "EVTDESC124268"
+    picture = "italian_landing_albania"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT124268OPTA"
+        small_arms = 100
+        canned_food = 200
+        artillery = 50
+        luxury_clothes = 50
+        wine = 50
+        liquor = 50
+        ammunition = 100
+        money = 10000
+        ai_chance = { factor = 100 }
+    }	
+	
+}
+
+country_event = {
+    id = 124269 # If Italy wins the war, cede Vlore
+    title = "EVTNAME124269"
+    desc = "EVTDESC124269"
+    picture = "italian_fleet_1915"
+
+    trigger = {
+        exists = yes
+		war = no
+        has_country_flag = italy_wants_vlore
+		ALB = {
+			exists = yes
+			war = no
+			owns = 852
+			has_recently_lost_war = yes
+			has_country_flag = italy_attacked_vlore
+		}
+    }
+
+    mean_time_to_happen = { days = 3 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVT124269OPTA"
+        ALB = {
+			any_owned = {
+				limit = { province_id = 852 }
+				secede_province = THIS
+			}
+			clr_country_flag = italy_attacked_vlore
+		}
+        ai_chance = { factor = 100 }
+    }	
+}
+
+country_event = { #Train the Albanian military
+    id = 124270
+    title = "EVTNAME124270"
+    desc = "EVTDESC124270"
+    picture = "italian_officer_albania"
+
+
+    trigger = {
+        exists = yes
+		war = no
+		has_country_flag = italian_infrastructure_albania
+		ALB = {
+			exists = yes
+			war = no
+			owns = 852
+		}
+    }
+
+    mean_time_to_happen = { months = 6 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA124270"
+		prestige = -5
+		clr_country_flag = italian_infrastructure_albania
+        ai_chance = { 
+			factor = 10		
+		}		
+    }
+
+    option = {
+        name = "EVTOPTB124270"
+		clr_country_flag = italian_infrastructure_albania		
+		ALB = { country_event = 124271 }	
+        ai_chance = { factor = 90 }			
+    }	
+
+}
+
+country_event = {
+    id = 124271 # Albania is approached about military cooperation with Italy
+    title = "EVTNAME124271"
+    desc = "EVTDESC124271"
+    picture = "italian_officer_albania"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT124271OPTA"
+        FROM = {	
+            relation = {
+                who = THIS
+                value = -400
+            }
+			country_event = 124265
+        }		
+        ai_chance = { factor = 0 }
+    }
+	
+    option = {
+        name = "EVT124271OPTB"
+        small_arms = 100
+        canned_food = 200
+        artillery = 50
+        ammunition = 100
+        add_country_modifier = {
+            name = italian_mission_albania
+            duration = -1
+        }
+		FROM = { country_event = 124272 }
+        ai_chance = { factor = 100 }
+    }	
+}
+country_event = {
+    id = 124272 # Italy trains Albanian military
+    title = "EVTNAME124272"
+    desc = "EVTDESC124272"
+    picture = "kuk_albanians"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT124272OPTA"
+		set_country_flag = italian_training_albania
+        ai_chance = { 
+			factor = 100			
+		}
+    }	
+}
+
+country_event = { #Economic pressure fails
+    id = 124273
+    title = "EVTNAME124273"
+    desc = "EVTDESC124273"
+    picture = "italian_officer_albania"
+
+
+    trigger = {
+        exists = yes
+		war = no
+		has_country_flag = italian_training_albania
+		ALB = {
+			exists = yes
+			war = no
+			owns = 852
+		}
+    }
+
+    mean_time_to_happen = { months = 6 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA124273"
+		prestige = -15
+        any_pop = {
+            scaled_militancy = {
+                issue = jingoism
+                factor = 2
+            }
+            scaled_militancy = {
+                issue = pacifism
+                factor = -1
+            }
+        }		
+		clr_country_flag = italian_training_albania
+        ai_chance = { factor = 10 }			
+    }
+
+    option = {
+        name = "EVTOPTB124273"
+		clr_country_flag = italian_training_albania		
+		THIS = { 
+			country_event = { 
+				id = 124267
+				days = 30
+			}			
+		}
+        ai_chance = { factor = 90 }			
+    }	
+
+}

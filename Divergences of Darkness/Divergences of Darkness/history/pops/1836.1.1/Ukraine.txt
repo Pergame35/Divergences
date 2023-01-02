@@ -300,137 +300,112 @@
 }
 #Felvidek Region (856000) #see Hungary.txt and Slovakia.txt for balance of Region
 #under the rule of Austria in 1836  
-#Uzgorod (856000/214000 POPS) #Part of Ukraine today
+#Huszt
 950 = {
 	clergymen = {
 		culture = ruthenian
 		religion = orthodox
-		size = 850  
+		size = 255  
 	}
 
 	artisans = {
 		culture = ruthenian
 		religion = orthodox
-		size = 4600 
+		size = 1380 
 	}
 
 	soldiers = {
 		culture = ruthenian
 		religion = orthodox
-		size= 900
+		size= 270
 
 	}
 
 	farmers = {
 		culture = ruthenian
 		religion = orthodox
-		size = 85650  
-	}
-
-	clergymen = {
-		culture = slovak
-		religion = catholic
-		size = 150 
-	}
-
-	artisans = {
-		culture = slovak
-		religion = catholic
-		size = 850
-	}
-
-	soldiers = {
-		culture = slovak
-		religion = catholic
-		size= 175
-
-	}
-
-	farmers = {
-		culture = slovak
-		religion = catholic
-		size = 15825
+		size = 25695  
 	}
 
 	aristocrats = {
 		culture = hungarian
 		religion = catholic
-		size = 4250  
+		size = 1275  
 	}
 
 	clergymen = {
 		culture = hungarian
 		religion = catholic
-		size = 425  
+		size = 128  
 	}
 
 	artisans = {
 		culture = hungarian
 		religion = catholic
-		size = 2150 
+		size = 645 
 	}
 
 	soldiers = {
 		culture = hungarian
 		religion = catholic
-		size= 450
+		size= 135
 
 	}
 
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 35725  
+		size = 10718  
 	}
 
 	clergymen = {
 		culture = hungarian
 		religion = protestant
-		size = 400  
+		size = 120  
 	}
 
 	artisans = {
 		culture = hungarian
 		religion = protestant
-		size = 2250 
+		size = 675 
 	}
 
 	soldiers = {
 		culture = hungarian
 		religion = protestant
-		size= 400
+		size= 120
 
 	}
 
 	farmers = {
 		culture = hungarian
 		religion = protestant
-		size =  38950   
+		size = 11685   
 	}
 
 	clergymen = {
 		culture = ashkenazi
 		religion = jewish
-		size = 75  
+		size = 25  
 	}
 
 	artisans = {
 		culture = ashkenazi
 		religion = jewish
-		size = 800 
+		size = 250 
 	}
 
 	soldiers = {
 		culture = ashkenazi
 		religion = jewish
-		size= 50
+		size= 20
 
 	}
 
 	farmers = {
 		culture = ashkenazi
 		religion = jewish
-		size = 3075    
+		size = 925    
 	}
 
 	clergymen = {
@@ -442,7 +417,7 @@
 	artisans = {
 		culture = south_german
 		religion = catholic
-		size = 75 
+		size = 25 
 	}
 
 	soldiers = {
@@ -455,33 +430,218 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 875  
+		size = 265  
 	}
 
 	clergymen = {
 		culture = romanian
 		religion = orthodox
-		size = 125  
+		size = 38  
 	}
 
 	artisans = {
 		culture = romanian
 		religion = orthodox
-		size = 750 
+		size = 225 
 	}
 
 	soldiers = {
 		culture = romanian
 		religion = orthodox
-		size= 150
+		size= 45
 
 	}
 
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 13975
+		size = 4193
 	}
+}
+
+#Bereg
+3402 = {
+	clergymen = {
+		culture = ruthenian
+		religion = orthodox
+		size = 250  
+	}
+
+	artisans = {
+		culture = ruthenian
+		religion = orthodox
+		size = 1000 
+	}
+
+	soldiers = {
+		culture = ruthenian
+		religion = orthodox
+		size= 423
+
+	}
+
+	farmers = {
+		culture = ruthenian
+		religion = orthodox
+		size = 19445 
+	}
+
+	aristocrats = {
+		culture = hungarian
+		religion = catholic
+		size = 400  
+	}
+
+	clergymen = {
+		culture = hungarian
+		religion = catholic
+		size = 125  
+	}
+
+	artisans = {
+		culture = hungarian
+		religion = catholic
+		size = 600 
+	}
+
+	soldiers = {
+		culture = hungarian
+		religion = catholic
+		size= 717
+
+	}
+
+	farmers = {
+		culture = hungarian
+		religion = catholic
+		size = 9593  
+	}
+
+	clergymen = {
+		culture = hungarian
+		religion = protestant
+		size = 100  
+	}
+
+	artisans = {
+		culture = hungarian
+		religion = protestant
+		size = 500 
+	}
+
+	soldiers = {
+		culture = hungarian
+		religion = protestant
+		size= 125
+
+	}
+
+	farmers = {
+		culture = hungarian
+		religion = protestant
+		size = 10960   
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 25  
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 250 
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size= 20
+
+	}
+
+	farmers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 925    
+	}
+
+	clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 25  
+	}
+
+	artisans = {
+		culture = south_german
+		religion = catholic
+		size = 25 
+	}
+
+	soldiers = {
+		culture = south_german
+		religion = catholic
+		size= 25
+
+	}
+
+	farmers = {
+		culture = south_german
+		religion = catholic
+		size = 258  
+	}
+
+	clergymen = {
+		culture = romanian
+		religion = orthodox
+		size = 25  
+	}
+
+	artisans = {
+		culture = romanian
+		religion = orthodox
+		size = 225 
+	}
+
+	soldiers = {
+		culture = romanian
+		religion = orthodox
+		size= 50
+
+	}
+
+	farmers = {
+		culture = romanian
+		religion = orthodox
+		size = 986
+	}
+	
+	clergymen = {
+		culture = slovak
+		religion = catholic
+		size = 45 
+	}
+
+	artisans = {
+		culture = slovak
+		religion = catholic
+		size = 255
+	}
+
+	soldiers = {
+		culture = slovak
+		religion = catholic
+		size= 55
+
+	}
+
+	farmers = {
+		culture = slovak
+		religion = catholic
+		size = 4750
+	}	
+	
 }
 #Galicia Region (2576000) #see Poland.txt for balance of region 
 #under the rule of Austria in 1836

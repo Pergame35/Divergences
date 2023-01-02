@@ -157,10 +157,10 @@ battleship_column_doctrine = {
         modifier = {
             factor = 100
             OR = {
-                tag = BEL
+                tag = BRG
                 tag = SPA
-                tag = SPC
-                tag = CHL
+                tag = SCA
+                tag = JAP
             }
         }
     }
@@ -262,9 +262,9 @@ raider_group_doctrine = {
         modifier = {
             factor = 100
             OR = {
-                tag = BEL
+                tag = BRG
                 tag = SPA
-                tag = SPC
+                tag = SCA
             }
         }
     }
@@ -359,9 +359,9 @@ blue_and_brown_water_schools = {
         modifier = {
             factor = 100
             OR = {
-                tag = BEL
+                tag = BRG
                 tag = SPA
-                tag = SPC
+                tag = SCA
             }
         }
     }
@@ -740,7 +740,7 @@ iron_steamers = {
         }
         modifier = {
             factor = 30
-            tag = ENG
+            tag = DUA
         }
         modifier = {
             factor = 100
@@ -1812,15 +1812,6 @@ naval_statistics = {
         modifier = {
             factor = 0
             NOT = { total_amount_of_ships = 1 }
-        }
-        modifier = {
-            factor = 30
-            is_greater_power = yes
-            OR = {
-                tag = GER
-                tag = NGF
-                tag = PRU
-            }
         }
         modifier = {
             factor = 1.02

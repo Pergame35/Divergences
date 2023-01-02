@@ -164,29 +164,6 @@ neglected_education = {
     icon = 19
 }
 
-islamic_law_triggered = {
-    trigger = {
-        exists = yes
-        civilized = yes
-        OR = {
-            has_country_flag = sunni_country
-            has_country_flag = shiite_country
-            has_country_flag = ibadi_country
-        }
-        NOT = { has_country_flag = secularized_muslim_society }
-        NOT = { has_country_flag = dynamic_tag }
-        NOT = { has_country_flag = post_colonial_country }
-        NOT = { religious_policy = pro_atheism }
-    }
-    research_points_modifier = -0.05
-    education_efficiency_modifier = -0.15
-    literacy_con_impact = -0.5
-    issue_change_speed = -0.5
-    suppression_points_modifier = 0.5
-    tax_efficiency = 0.05
-    icon = 5
-}
-
 the_british_raj = {
     trigger = {
         exists = yes

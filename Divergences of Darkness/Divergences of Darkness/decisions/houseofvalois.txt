@@ -404,6 +404,7 @@ political_decisions = {
 			set_global_flag = glorious_revolution
             set_country_flag = instigated_occ_revolt
 			DUA = {
+				release_vassal = OCC
 				set_country_flag = OCC_revolted
 				any_owned = {
 					limit = { is_core = OCC }

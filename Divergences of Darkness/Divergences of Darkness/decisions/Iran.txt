@@ -56,7 +56,7 @@ political_decisions = {
         allow = {
             war = no
 			owns = 1104
-			empiricism = 1
+			idealism = 1
         }
         effect = {
             prestige = 10
@@ -1444,7 +1444,10 @@ political_decisions = {
 			1100 = { add_core = THIS }
 			1101 = { add_core = THIS }			
 			1109 = { add_core = THIS }
-			1110 = { add_core = THIS }			
+			1110 = { add_core = THIS }
+            3385 = { add_core = THIS }
+            3386 = { add_core = THIS }
+            3390 = { add_core = THIS }			
 			PER_1112 = { add_core = THIS }	
 			RUS_1102 = { add_core = THIS }				
 			set_country_flag = timurtash_caucasus
@@ -1507,7 +1510,10 @@ political_decisions = {
 			1100 = { add_core = THIS }
 			1101 = { add_core = THIS }			
 			1109 = { add_core = THIS }
-			1110 = { add_core = THIS }			
+			1110 = { add_core = THIS }
+            3385 = { add_core = THIS }
+            3386 = { add_core = THIS }
+            3390 = { add_core = THIS }			
 			PER_1112 = { add_core = THIS }	
 			RUS_1102 = { add_core = THIS }				
 			set_country_flag = iranian_caucasus

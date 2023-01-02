@@ -623,11 +623,7 @@ market_structure = {
 
         modifier = {
             factor = 50
-            OR = {
-                tag = NGF
-                tag = GER
-                tag = PRU
-            }
+			tag = NGF
         }
         modifier = {
             factor = 1.2
@@ -850,11 +846,7 @@ organized_factories = {
         factor = 1.03
         modifier = {
             factor = 50
-            OR = {
-                tag = NGF
-                tag = GER
-                tag = PRU
-            }
+			tag = NGF
         }
         modifier = {
             factor = 1.2

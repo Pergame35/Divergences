@@ -1,5 +1,5 @@
 leader = {
-	name = "Kurt Dietrich"
+	name = "Alfred Rassloff"
 	type = land
 	date = 1836.1.1
 	personality = mediocre
@@ -7,22 +7,22 @@ leader = {
 }
 
 army = {
-	name = "Hannöversche Heer"
-	location = 534
+	name = "Lüneburgische Heer"
+	location = 532
 	regiment = {
-		name= "1. Hannöversche Infanteriebrigade"
+		name= "1. Lüneburgische Infanteriebrigade"
 		type = infantry
 		home = 534
 	}
 
 	regiment = {
-		name= "2. Hannöversche Infanteriebrigade"
+		name= "2. Lüneburgische Infanteriebrigade"
 		type = infantry
 		home = 534
 	}
 
 	regiment = {
-		name= "3. Hannöversche Infanteriebrigade"
+		name= "3. Lüneburgische Infanteriebrigade"
 		type = infantry
 		home = 534
 	}
@@ -33,7 +33,7 @@ navy = {
 	location = 531
 
 	ship = {
-		name= "Hannover"
+		name= "Lüneburg"
 		type = frigate
 	}
 
