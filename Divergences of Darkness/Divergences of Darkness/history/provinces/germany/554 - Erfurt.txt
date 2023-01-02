@@ -1,11 +1,7 @@
-owner = THU
-controller = THU
-add_core = THU
+owner = ERF
+controller = ERF
+add_core = ERF
 add_core = GER
-trade_goods = iron
+trade_goods = grain
 life_rating = 35
-state_building = {
-	level = 2 
-	building = steel_factory
-	upgrade = yes
-}
+

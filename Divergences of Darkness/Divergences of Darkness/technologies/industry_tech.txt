@@ -626,9 +626,9 @@ puddling = {
             OR = {
                 tag = NGF
                 tag = GER
-                tag = PRU
+                tag = DUA
                 tag = FRA
-                tag = AUS
+                tag = BOH
                 tag = RUS
             }
         }
@@ -709,8 +709,8 @@ hot_blast = {
             factor = 20
             OR = {
                 tag = NGF
-                tag = GER
-                tag = PRU
+                tag = BOH
+                tag = DUA
                 tag = FRA
                 tag = RUS
             }
@@ -790,11 +790,9 @@ bessemer_process = {
         modifier = {
             factor = 40
             OR = {
-                tag = FRA
-                tag = ENG
+                tag = DUA
                 tag = NGF
                 tag = GER
-                tag = PRU
                 tag = RUS
             }
         }
@@ -873,7 +871,6 @@ advanced_metallurgy = {
                 tag = FRA
                 tag = NGF
                 tag = GER
-                tag = PRU
                 tag = RUS
             }
         }
@@ -1015,8 +1012,8 @@ experimental_railroad = {
             OR = {
                 tag = NGF
                 tag = GER
-                tag = PRU
-                tag = AUS
+                tag = BOH
+                tag = DUA
             }
         }
         modifier = {
@@ -1064,8 +1061,8 @@ early_railroad = {
             OR = {
                 tag = NGF
                 tag = GER
-                tag = PRU
-                tag = AUS
+                tag = DUA
+                tag = BOH
             }
         }
         modifier = {

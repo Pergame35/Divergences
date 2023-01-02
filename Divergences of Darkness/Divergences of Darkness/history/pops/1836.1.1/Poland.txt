@@ -962,59 +962,174 @@
 	aristocrats = {
 		culture = north_german
 		religion = protestant
+		size = 448
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 80  
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 896  
+	}
+
+	soldiers = {
+		culture = north_german
+		religion = protestant
+		size= 640
+
+	}
+
+	farmers = {
+		culture = north_german
+		religion = protestant
+		size = 15632 
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 50 
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 288
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size= 640
+
+	}
+
+	farmers = {
+		culture = polish
+		religion = catholic
+		size = 4784
+	}
+}
+
+#Marienburg
+3411 = {
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 350
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 62  
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
 		size = 700
 	}
 
-	clergymen = {
-		culture = north_german
-		religion = protestant
-		size = 125  
-	}
-
-	artisans = {
-		culture = north_german
-		religion = protestant
-		size = 1400  
-	}
-
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size= 1000
-
+		size = 900
 	}
 
 	farmers = {
 		culture = north_german
 		religion = protestant
-		size = 24425 
+		size = 11212 
 	}
 
 	clergymen = {
 		culture = polish
 		religion = catholic
-		size = 75 
+		size = 38 
 	}
 
 	artisans = {
 		culture = polish
 		religion = catholic
-		size = 450
+		size = 225
 	}
 
 	soldiers = {
 		culture = polish
 		religion = catholic
-		size= 1000
-
+		size = 600
 	}
 
 	farmers = {
 		culture = polish
 		religion = catholic
-		size = 7475
+		size = 2738
 	}
 }
+
+#Ermland
+3412 = {
+	aristocrats = {
+		culture = north_german
+		religion = protestant
+		size = 550 
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = protestant
+		size = 238   
+	}
+
+	artisans = {
+		culture = north_german
+		religion = protestant
+		size = 1300
+	}
+
+	soldiers = {
+		culture = north_german
+		religion = protestant
+		size = 275  
+	}
+
+	farmers = {
+		culture = north_german
+		religion = protestant
+		size = 18638
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 12 
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 12 
+	}
+
+	farmers = {
+		culture = polish
+		religion = catholic
+		size = 2525 
+	}
+}
+
 #Torun (156000/44000 POPS) 
 694 = {
 	aristocrats = {

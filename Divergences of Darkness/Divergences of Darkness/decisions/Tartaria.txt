@@ -151,12 +151,12 @@ political_decisions = {
                 tag = TAR
                 tag = CRI
             }
-            has_country_flag = secularized_muslim_society
             NOT = { has_country_flag = abolished_jizya }
         }
         allow = {
             civilized = yes
             owns = 967 #Sebestapol
+			invention = secularization
             revolution_n_counterrevolution = 1
         }
         effect = {

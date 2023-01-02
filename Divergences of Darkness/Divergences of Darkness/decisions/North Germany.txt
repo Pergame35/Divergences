@@ -86,8 +86,7 @@ political_decisions = {
             OR = {
                 tag = MNR
                 tag = LIP
-                tag = NAS
-                tag = HEK
+                tag = MRK
             }
             WES = { exists = no }
         }
@@ -106,6 +105,7 @@ political_decisions = {
             all_core = { remove_core = THIS }
             change_tag = WES
             PRU_581 = { add_core = WES }
+			538 = { add_core = WES }
             HES_566 = { add_core = WES }
             capital = 566
         }

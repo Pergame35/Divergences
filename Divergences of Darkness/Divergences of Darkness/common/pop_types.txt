@@ -821,14 +821,6 @@ assimilation_chance = {
         }
     }
 
-    modifier = {
-        factor = -20
-        has_culture_core = yes
-		#NOT = {
-		#	location = { has_province_modifier = forced_integration }
-		#}		
-    }
-
     #modifier = {
     #	factor = -20
     #	OR = {
@@ -927,6 +919,12 @@ assimilation_chance = {
         }
     }
 
+    modifier = {
+        factor = 10
+        country = { has_country_flag = boer_immigration }
+        location = { continent = africa }
+    }
+
     #modifier = {
     #	factor = -1
     #	is_accepted_culture = yes
@@ -1011,6 +1009,13 @@ assimilation_chance = {
             }
         }
     }
+	
+    modifier = {
+        factor = -20
+        has_culture_core = yes
+		NOT = { location = { is_core = U01 } }
+    }	
+	
 }
 
 #general conversion mtth, same for all pops

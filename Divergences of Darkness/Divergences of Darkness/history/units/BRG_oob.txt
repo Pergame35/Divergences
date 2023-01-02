@@ -40,11 +40,30 @@ NAS = {
 	influence_value = 100
 }
 
+MRK = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
 BAD = {
 	value = 75		#relation
 	level = 5		#3=cordial, 4 = friendly, 5 sphere
 	influence_value = 100
 }
+
+FRB = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
+FTB = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 100
+}
+
 
 WUR = {
 	value = 75		#relation

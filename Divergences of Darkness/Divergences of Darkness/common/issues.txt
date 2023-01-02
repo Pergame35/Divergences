@@ -511,7 +511,10 @@ political_reforms = {
             poor_savings_modifier = -0.25
             allow = {
                 OR = {
-                    NOT = { has_country_flag = serfdom_not_abolished }
+                    NOT = { 
+						has_country_flag = serfdom_not_abolished 
+						has_country_flag = cannot_abolish_serfdom 						
+					}
                     year = 1870
                 }
             }

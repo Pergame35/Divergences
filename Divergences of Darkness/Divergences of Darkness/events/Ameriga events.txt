@@ -339,6 +339,8 @@ country_event = {
     title = "kingstatueevent1name"
     desc = "kingstatueevent1desc"
 
+	fire_only_once = yes
+
     trigger = {
         tag = LOT
         has_country_flag = kings_statue

@@ -2901,3 +2901,91 @@ hellinopoieisi = {
     global_assimilation_rate = 0.5
     icon = 10
 }
+
+### Hungary ###
+
+hungarian_noble_privilege = {
+    poor_life_needs = 0.1
+    poor_income_modifier = -0.1	
+    middle_life_needs = 0.1
+    middle_income_modifier = -0.1	
+    icon = 14
+}
+
+szekely_privilege = {
+    farm_rgo_eff = -0.25
+    farm_rgo_size = -0.25	
+    icon = 18
+}
+
+koenigsboden = {
+    local_artisan_output = 0.1
+    assimilation_rate = -0.5
+    icon = 19
+}
+
+szekely_tax_exemption = {
+    land_organisation = 0.05
+    tax_efficiency = -0.15
+    icon = 10
+}
+
+szekely_unrest = {
+    local_artisan_output = -0.25
+    local_RGO_output = -0.25
+    life_rating = -0.1
+    immigrant_push = 0.25
+    pop_militancy_modifier = 0.01
+    icon = 18
+}
+
+vlach_unrest = {
+    local_artisan_output = -0.25
+    local_RGO_output = -0.25
+    pop_militancy_modifier = 0.01
+    icon = 16
+}
+
+ADS_activity = {
+    local_artisan_output = -0.2
+    local_RGO_output = -0.2
+    pop_militancy_modifier = 0.02
+    pop_consciousness_modifier = 0.02	
+    icon = 10
+}
+
+transylvanian_revolution = {
+    mobilisation_size = 0.02
+    supply_consumption = -0.2
+    war_exhaustion = -0.25
+    icon = 5
+}
+
+negotiations_moldavia = {
+    global_assimilation_rate = -0.5
+    icon = 18
+}
+
+italian_mission_albania = {
+	land_attrition = -0.05
+	land_unit_start_experience = 5
+    land_organisation = 0.1
+    org_regain = 0.1
+    mobilisation_size = 0.1
+    mobilisation_economy_impact = -0.1	
+	icon = 17
+}
+
+italian_investment_valona = {
+    local_repair = 0.5
+    local_ship_build = -0.05
+	icon = 17
+}
+
+## Islamic Law ##
+institutionalised_sharia = {
+	literacy_con_impact = -0.5
+	issue_change_speed = -0.5
+	suppression_points_modifier = 0.5	
+	icon = 5
+}

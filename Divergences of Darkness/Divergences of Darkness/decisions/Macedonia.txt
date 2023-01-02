@@ -139,7 +139,11 @@ political_decisions = {
 
         effect = {
             set_country_flag = challenge_greece
-
+			casus_belli = {
+				target = GRE
+				type = conquest
+				months = 24
+			}
             war = {
                 target = GRE
                 attacker_goal = { casus_belli = conquest }

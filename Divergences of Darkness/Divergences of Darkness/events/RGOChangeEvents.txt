@@ -1360,7 +1360,7 @@ province_event = {
             OR = {
                 civilized = yes
                 tag = KOR
-                tag = QNG
+                tag = MCK
                 tag = TPG
                 tag = CHI
             }
@@ -1542,7 +1542,7 @@ province_event = {
             AND = {
                 owner = {
                     OR = {
-                        tag = QNG
+                        tag = MCK
                         tag = CHI
                         tag = TAI
                         tag = KOR

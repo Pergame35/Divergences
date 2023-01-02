@@ -123,7 +123,7 @@ country_event = {
     trigger = {
         has_country_flag = declared_permanent_jihad
         has_country_flag = jihad_broken
-		goverment = theocracy
+		government = theocracy
     }
 
     mean_time_to_happen = { months = 1 }

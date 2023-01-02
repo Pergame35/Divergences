@@ -4,7 +4,7 @@ color = {
 graphical_culture = EuropeanGC
 
 party = {
-    name = "AAA_conservative_2" # Centrists
+    name = "SIE_conservative_2" # Centrists
     start_date = 1830.1.1
     end_date = 2000.1.1
 
@@ -19,14 +19,14 @@ party = {
 }
 
 party = {
-    name = "AAA_conservative_3" # Monarchists
+    name = "SIE_conservative_3" # Monarchists
     start_date = 1830.1.1
     end_date = 2000.1.1
 
     ideology = conservative
     social_policy = no_position_set
 
-    economic_policy = interventionism
+    economic_policy = state_capitalism
     trade_policy = protectionism
     religious_policy = pluralism
     citizenship_policy = full_citizenship
@@ -34,7 +34,7 @@ party = {
 }
 
 party = {
-    name = "AAA_liberal_1" # Republican Party
+    name = "SIE_liberal_1" # Republican Party
     start_date = 1830.1.1
     end_date = 2000.1.1
 
@@ -49,7 +49,7 @@ party = {
 }
 
 party = {
-    name = "AAA_liberal_4" # Liberal Democrats
+    name = "SIE_liberal_4" # Liberal Democrats
     start_date = 1830.1.1
     end_date = 2000.1.1
 
@@ -64,14 +64,14 @@ party = {
 }
 
 party = {
-    name = "AAA_socialist_1" # Labour Party
+    name = "SIE_socialist_1" # Labour Party
     start_date = 1848.1.1
     end_date = 2000.1.1
 
     ideology = socialist
     social_policy = welfare_state
 
-    economic_policy = interventionism
+    economic_policy = state_capitalism
     trade_policy = protectionism
     religious_policy = secularized
     citizenship_policy = limited_citizenship
@@ -79,7 +79,7 @@ party = {
 }
 
 party = {
-    name = "AAA_socialist_4" # Social Democrats
+    name = "SIE_socialist_4" # Social Democrats
     start_date = 1848.1.1
     end_date = 2000.1.1
 
@@ -94,7 +94,7 @@ party = {
 }
 
 party = {
-    name = "AAA_reactionary_1" # Traditionalists
+    name = "SIE_reactionary_1" # Traditionalists
     start_date = 1820.1.1
     end_date = 2000.1.1
 
@@ -109,7 +109,7 @@ party = {
 }
 
 party = {
-    name = "AAA_anarcho_liberal_1" # Free Trade Party
+    name = "SIE_anarcho_liberal_1" # Free Trade Party
     start_date = 1830.1.1
     end_date = 2000.1.1
 
@@ -124,7 +124,7 @@ party = {
 }
 
 party = {
-    name = "AAA_communist_1" # Workers' Party
+    name = "SIE_communist_1" # Workers' Party
     start_date = 1848.1.1
     end_date = 2000.1.1
 
@@ -139,7 +139,7 @@ party = {
 }
 
 party = {
-    name = "AAA_fascist_1" # National Socialists
+    name = "SIE_fascist_1" # National Socialists
     start_date = 1905.1.1
     end_date = 2000.1.1
 

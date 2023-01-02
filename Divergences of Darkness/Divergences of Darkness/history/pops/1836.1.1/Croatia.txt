@@ -589,101 +589,57 @@
 	aristocrats = {
 		culture = hungarian
 		religion = catholic
-		size = 550 
+		size = 100 
 	}
 
 	clergymen = {
 		culture = hungarian
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	artisans = {
 		culture = hungarian
 		religion = catholic
-		size = 300
+		size = 650
 	}
 
 	soldiers = {
 		culture = hungarian
 		religion = catholic
-		size= 75
+		size= 125
 
 	}
 
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 2265
+		size = 1775
 	}
 	
 	serfs = {
 		culture = hungarian
 		religion = catholic
-		size = 1710
+		size = 1073
 	}
-
+	
 	farmers = {
 		culture = hungarian
-		religion = sunni
-		size = 750
+		religion = protestant
+		size = 2170
 	}
 	
 	serfs = {
 		culture = hungarian
-		religion = sunni
-		size = 300
+		religion = protestant
+		size = 1312
 	}	
 
-	aristocrats = {
-		culture = south_german
-		religion = catholic
-		size = 350  
-	}
-
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 50 
-	}
-
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 350 
-	}
-
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size= 50
-
-	}
-
 	farmers = {
-		culture = south_german
-		religion = catholic
-		size = 880 
-	}
-	
-	serfs = {
-		culture = south_german
-		religion = catholic
-		size = 675 
-	}
-
-	farmers = {
-		culture = bosniak
+		culture = kunok
 		religion = sunni
-		size = 2300 
-	}
-	
-	serfs = {
-		culture = bosniak
-		religion = sunni
-		size = 1445 
+		size = 4795
 	}	
-	
 }
 #Dalmatia Region (320000) #see Montenegro.txt for balance of region 
 #under the rule of Austria in 1836
@@ -971,38 +927,38 @@
 	}
 
 	aristocrats = {
-		culture = south_german
+		culture = hungarian
 		religion = catholic
 		size = 50  
 	}
 
 	clergymen = {
-		culture = south_german
+		culture = hungarian
 		religion = catholic
 		size = 40   
 	}
 
 	artisans = {
-		culture = south_german
+		culture = hungarian
 		religion = catholic
 		size = 100   
 	}
 
 	soldiers = {
-		culture = south_german
+		culture = hungarian
 		religion = catholic
 		size= 25
 
 	}
 
 	farmers = {
-		culture = south_german
+		culture = hungarian
 		religion = catholic
 		size = 785 
 	}
 
 	farmers = {
-		culture = bosniak
+		culture = kunok
 		religion = sunni
 		size = 1000 
 	}	
